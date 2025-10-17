@@ -1,0 +1,995 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Gerçek Zamanlı GPS ile Çalışma</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GERÇEK ZAMANLI GPS İLE ÇALIŞMA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td class="Parrafo" style="width: 694px;">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#modo_configuracion">Çalışma Modu </a><span style="font-style: italic;"><a href="#modo_configuracion">Yapılandırma</a></span><br />
+      <span style="font-style: italic;">
+      </span></div>
+
+      <div style="margin-left: 80px;"><a href="#definicion">GPS Tanımı</a><br />
+      <a href="#conexion">GPS ile Bağlantı</a><br /><a href="#actividad">GPS Aktivite Kaydı</a><br />
+      <a href="#zoom_auto">Otomatik Yakınlaştırma</a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><span style="font-style: italic;">
+
+
+
+      </span><a href="#modo_seguimiento">
+Çalışma Modu <span style="font-style: italic;">Takip</span></a><br />
+      </div>
+
+<div style="margin-left: 80px;"><a href="#precision_comando">Komuta Göre Hassasiyet</a><br />
+      <a href="#precision_gga">GGA Hassasiyeti</a><br />
+      <a href="#informacion_eco">
+Yankı Bilgisi</a><br />
+
+      <a href="#replanteo">Aplikasyon</a><br />
+      <a href="#cartografia">Haritacılık</a><br />
+      <a href="#desatendido">Gözetimsiz</a><br />
+      <a href="#auto_toc">Otomatik TOC</a><br /></div>
+      <div style="margin-left: 40px;"><a href="#uso_gps">GPS Kullanımı</a><br />
+      </div>
+<div style="margin-left: 80px;"><a href="#ubicacion_gps">Konumlandırma</a><br /><a href="#dibujo_gps">Çizim</a><br /><a href="#replanteo_gps">Aplikasyon</a><br /><a href="#anotaciones">Notlar</a><br /></div><br /><br /><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br /><br /><img style="width: 117px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/acceso_CRS.png" align="right" />Bir
+GPS ile çalışmak için, her ikisinin de koordinatlarının
+birbiriyle tutarlı olması amacıyla haritanın ve GPS'in <a href="EDM_georreferenciacion.html#crs">koordinat referans sistemleri</a>
+ayarlanmalıdır. Bunun için <span style="font-weight: bold;">Ayarlar</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <a href="EDM_georreferenciacion.html"><span style="font-weight: bold;">Koordinat Referans Sistemi…</span></a> menüsüne veya ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ekranının sol alt kısmında bulunan ilgili simgeye tıklanmalıdır.<br /><br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 634px; text-align: justify;">Program,
+<a href="EDM_georreferenciacion.html#transf_crs_tiempo_real_helmert_3D"><span style="font-style: italic;">3D Helmert Düzeltmesi ile Gerçek Zamanlı CRS'ler Arası Dönüşümler</span></a> bölümünde açıklandığı gibi, tanımlanmış bir 3D Helmert düzeltmesi varsa bile, CRS'ler arasında gerçek zamanlı dönüşümler yapar.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Ardından <span style="font-weight: bold;">Araçlar</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Yardımcı Araçlar</span><span style="font-weight: bold;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">GPS ile Bağlantı</span> seçeneğine veya GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>&nbsp;<img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarGPS_gps.png" /> düğmesine basılarak bu cihazla çalışılır.<br /><br />
+
+
+
+      <div style="text-align: center;"><img style="width: 396px; height: 466px;" alt="" src="Imagenes/acceso_gps.png" /><br />
+      </div>
+<br /><img style="width: 126px; height: 118px; margin-left: 7px;" alt="" src="Imagenes/toolBar_gps.png" align="right" />Bu, GPS ile çalışma parametrelerinin tanımlandığı bir menüye yol açar. Bu menünün iki <span style="font-weight: bold;">çalışma modu</span> vardır:<br />
+      <ul>
+        <li><a href="#modo_configuracion"><span style="font-weight: bold;">Yapılandırma</span></a>, varsayılan olarak, GPS cihazlarının özelliklerini yapılandırmak ve onlarla bağlantı kurmak için.</li>
+      </ul>
+
+
+      <ul>
+
+        <li><a href="#modo_seguimiento"><span style="font-weight: bold;">Takip</span></a>, bu cihazdan bilgi almak için.</li>
+      </ul>
+<br /><span class="Titulo_2"><a name="modo_configuracion">Çalışma modu <span style="font-style: italic;">Yapılandırma</span></a></span><br />
+      <br />
+      Bu menüde şunları tanımlamak önemlidir:<br />
+
+
+      <ul>
+        <li>GPS anteninin, ölçülmek istenen noktaya göre göreli konumu.</li>
+
+      </ul>
+      <ul>
+        <li>ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+
+programı ile cihaz arasındaki bağlantı, ilgili COM portu aracılığıyla ve PC'nin atadığı şekilde (genellikle bluetooth veya USB bağlantısı aracılığıyla).</li>
+
+      </ul>
+      <div style="text-align: center;"><img style="width: 625px; height: 361px;" alt="" src="Imagenes/gps_configuracion.png" /><br />
+      </div>
+
+      <br />
+Ayrıca <a href="#modo_seguimiento"><span style="font-style: italic;">Takip</span></a> moduna geçmeyi sağlayan bir düğme de bulunur. Bu iletişim kutusu kapatılırsa, HARİTA pencerelerindeki GPS bağlantı ve görüntüleme durumu değişmez.<br />
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="definicion">GPS Tanımı</a></span><br />
+      <br />
+Bu menüyle çalışabilmek için, programın bağlanacağı GPS cihazlarını tanımlamak gerekir. Bunun için iletişim kutusunun <span style="font-weight: bold;">G.P.S.</span> alanı kullanılır.<br />
+
+      <br />
+Normalde GPS anteni, yerdeki bir noktanın koordinatlarını hesaplamak için yere sıfır veya yarı gömülü değildir, bunun yerine bir araca veya anteni destekleyen bir jalon üzerine sabitlenmiştir. Menünün bu alanında, antenin ölçülmek istenen noktaya göre göreli konumu tanımlanır. Yine de, bu tür bir düzeltmenin GPS cihazının kendisinde yapılandırılması ve bu menüde yapılmasına gerek olmaması yaygındır.<br />
+
+      <br />
+
+      <img style="width: 435px; height: 75px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_gps.png" align="right" />İki GPS cihazı tanımlama imkanı vardır, her biri bir <span style="font-weight: bold;">Ad</span>, <span style="font-weight: bold;">Delta X</span>, <span style="font-weight: bold;">Delta Y</span> ve <span style="font-weight: bold;">Delta Z</span> seçenek satırında.<br />
+
+      <br />
+
+Bir GPS ile çalışıldığının kabul edilmesi için satırlardan birine en az bir veri girilmelidir. Örneğin, antenin ölçüm alım noktasını yerden 2 metre yüksekliğe yerleştiren bir jalon (direk) ile, birinci veya ikinci GPS'in <span style="font-weight: bold;">Delta Z</span> değerini 2 olarak doldurmak yeterli olacaktır.<br />
+
+      <br />
+Bir değer girildiğinde, GPS'e otomatik olarak bir ad verilir, varsayılan olarak GPS1. Bu ad, kullanıcının istediği başka bir adla değiştirilebilir. Eğer doldurulan ilk veri GPS'in kendi adıysa, otomatik olarak herhangi bir varsayılan değerle değiştirilmez.<br />
+      <br />
+<span style="font-weight: bold;">Hata</span> alanları, GPS ölçümlerinde gözlemlenebilen sistematik bir hatayı ifade eder, öyle ki cihaz tarafından yapılan okumalar da bu değerlere göre düzeltilir. <span style="font-weight: bold;">[Noktaya göre otomatik düzeltme]</span> düğmesi, GPS'in bulunduğu haritadaki noktayı seçerek (genellikle bir tür yakalama modu etkinleştirilmişken) bu alanları otomatik olarak doldurmayı sağlar.<br />
+      <br />
+      <img style="width: 104px; height: 186px; margin-right: 7px;" alt="" src="Imagenes/gps_simbolo.png" align="left" />Bir
+GPS tanımlandığında, bu menünün sağındaki grafiklerde sarı bir nokta belirir. Bu grafikler, GPS antenini tutan yapıyı temsil eden sembollerdir (kullanıcı tarafından <a href="EDM_definicion_tipos.html#definir_simbolo">sembol editöründe</a> değiştirilebilir).
+Sarı nokta, menüde belirtilen göreli koordinatlara göre her sembolün koordinat başlangıcına göre yerleştirilir. Menünün G. P. S. alanındaki <span style="font-weight: bold;">Sembol</span>
+
+
+alanı, GPS cihazının antenini temsil etmek için hangi sembolün kullanılacağını belirtmeyi sağlar (varsayılan olarak S950). Menünün <span style="font-weight: bold;">Mobil</span> alanındaki <span style="font-weight: bold;">Sembol</span> ve <span style="font-weight: bold;">Sembol P</span> (profil sembolü) seçenekleri, GPS antenini tutan ve ölçülmek istenen noktaya yerleştirilecek yapıyı temsil etmek için hangi sembollerin kullanılacağını belirtmeyi sağlar. Bu yapının bir plan ve bir profil şeması tanımlanabilir.<br />
+      <br />
+<span style="font-weight: bold;">Mobil</span> alanında, bu menünün yapılandırmasının açıklayıcı bir adı da belirtilebilir ve bu yapılandırmayı <span style="font-weight: bold;">kaydetmeye</span> ve <span style="font-weight: bold;">yüklemeye</span> olanak tanıyan iki düğme vardır.
+Son kaydedilen veya yüklenen yapılandırma, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> bir sonraki başlatıldığında varsayılan yapılandırma olarak kullanılacaktır. GPS yapılandırmasını kaydetmek, sadece bir GPS kullanmak istediğinizde her seferinde yapmak zorunda kalmamak için değil, aynı zamanda GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>&nbsp;<img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarGPS_puerto.png" /> bağlantı düğmesinden doğrudan bağlantıya da olanak tanır.<br />
+
+      <br />
+      <div style="text-align: center;"><img style="width: 435px; height: 37px;" alt="" src="Imagenes/dialogo_gps_movil.png" /><br />
+
+      </div>
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="conexion">GPS ile Bağlantı</a></span><br />
+      <br />
+Bluetooth, USB veya seri port aracılığıyla, GPS cihazı bilgisayara bağlanmalı ve iletişim için bir COM portu kullanılabilir bırakmalıdır. <span style="font-weight: bold;">Bağlantı</span> alanında, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün erişmesi gereken portların yapılandırması ve cihazlarla bağlantı durumu yönetilir.<br /><br /><div style="text-align: center;"><img style="width: 406px; height: 77px;" alt="" src="Imagenes/dialogo_gps_conexion.png" /><br /></div><br /><span style="font-weight: bold;">G.P.S.</span> alanında bir GPS tanımlandığında,
+bu alanın cihaz seçicisine otomatik olarak eklenir.
+İki GPS bağlı olsa ve her ikisi de haritada ve diğer pencerelerde gösterilse bile, sadece o seçicide etkin olan GPS'ten koordinatlar alınacaktır.<br /><br />Bağlantıyı yönetmek için kullanılabilecek değerler <span style="font-weight: bold;">COM portu</span>, bağlantı <span style="font-weight: bold;">hızı</span>, <span style="font-weight: bold;">veri bitleri</span>, <span style="font-weight: bold;">parite</span> ve <span style="font-weight: bold;">duruş bitleridir</span>. <span style="font-weight: bold;">[Bağlan]</span> düğmesi ile ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+
+
+ile GPS cihazı arasında bağlantı kurulur. Bu alanın sağında, cihazdan alınan bilgilerin gösterileceği boş satırlar bulunur.<br /><br />
+
+      Aşağıdaki resimde, <span style="font-style: italic;">GPS 1</span> olarak adlandırılan, uygun jalon üzerine yerleştirildiğinde yerden 2 metre yükseklikte bir antene sahip bir GPS cihazının yapılandırıldığı bir örnek gösterilmektedir. Bu cihaz COM2 portuna, 38400 bit/s hızında, 8 veri biti, paritesiz ve 1 duruş biti ile bağlanır (COM2, 38400, 8/N/1). Ayrıca alınan GGA ve GST komutları da gösterilmektedir.<br /><br /><div style="text-align: center;"><img style="width: 583px; height: 337px;" alt="" src="Imagenes/dialogo_gps_ejemplo_conexion.png" /><br /></div><br /><img style="width: 294px; height: 143px; margin-right: 7px;" alt="" src="Imagenes/ejem_gps.png" align="left" />Bağlantı
+sırasında, <span style="font-weight: bold;">[Bağlan]</span> düğmesi (veya <img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarGPS_puerto.png" /> simgesi) <span style="font-weight: bold;">[Bağlantıyı Kes]</span> (simge <img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarGPS_puerto_on.png" />) olarak değişir ve menünün üst kısmında <span style="font-weight: bold;">[Duraklat]</span> düğmesi belirir. Bu düğmeye (veya <img style="width: 21px; height: 20px;" alt="" src="Imagenes/icono_toolBarGPS_pausa.png" /> simgesine) basıldığında, aynı yeri kaplayan <span style="font-weight: bold;">[Devam Et]</span> düğmesiyle değişir ve bağlantıyı kaybetmeden GPS cihazına olan ilgiyi yönetirler.<br /><br />GPS'e
+dikkat edilirken, harita pencerelerinde resimdeki gibi bir sembol belirir ve her an GPS'in konumunu gösterir.<br /><br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="actividad">GPS Aktivite Kaydı</a></span><br /><br />Son olarak, <span style="font-weight: bold;">Kayıt</span>
+
+
+alanında, GPS'in bulunduğu tüm konumları birleştiren belirtilen <span style="font-weight: bold;">tipte</span> bir çizginin <span style="font-weight: bold;">çizilmesi</span> (alınan koordinatların nasıl yönetildiğinden bağımsız olarak), yani <span style="font-weight: bold;">iz yolunun</span> etkinleştirilmesi mümkündür. İstenirse, GPS'in tüm aktivitesini içeren bir "log" dosyası ve ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ile çalışmak için dikkate alınan tüm GPS konum koordinatlarının kaydedildiği bir <a href="EDM_topografia.html#ficheros_toc"><span class="Archivo">.toc</span> formatında</a> bir dosya da oluşturulabilir. [Sıfırla] düğmeleri, 'log' dosyasını veya &nbsp;<span class="Archivo">.toc</span> dosyasını sıfırlamayı sağlar.<br /><br /><div style="text-align: center;"><img style="width: 435px; height: 82px;" alt="" src="Imagenes/dialogo_gps_registro.png" /><br /></div><br />Yeniden
+çizimin çok yavaş olduğu durumlar için saniyede maksimum yeniden çizim sıklığı belirtilebilir. Eğer <span style="font-weight: bold; font-style: italic;">Haritayı otomatik kaydet</span> seçeneği etkinleştirilirse, program haritayı belirtilen <span style="font-weight: bold;">aralığa</span> göre otomatik olarak kaydeder.<br /><br />
+<br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="zoom_auto">Otomatik Yakınlaştırma</a></span><br />
+      <br />
+Menünün bu alanında, GPS mevcut görünümden her çıktığında, programın harita görünümünü otomatik olarak GPS konumuna ortalaması ayarlanabilir. Eğer <span style="font-weight: bold;">kenar boşlukları</span> (%) olarak ayarlanırsa, o zaman bu <span style="font-weight: bold;">otomatik kaydırma</span>, GPS'in konumunun görünümden 'çıkmasını' beklemek yerine bu kenar boşluklarına ulaştığında gerçekleşir. <span style="font-weight: bold; font-style: italic;">Çizgi</span> seçeneği etkinleştirildiğinde, ekranda bu kenar boşlukları gösterilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 435px; height: 37px;" alt="" src="Imagenes/dialogo_gps_zoom_auto.png" /><br />
+      </div>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="modo_seguimiento">Çalışma modu <span style="font-style: italic;">Takip</span></a></span><br /><br />Bu modda, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün kullanıcıya GPS'in konumu ve durumu hakkında göstereceği bilgiler yapılandırılır.<br /><br /><img style="width: 301px; height: 90px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_seguimiento_1.png" align="right" /><span style="font-style: italic;">Takip</span> modunda, GPS ile çalışma menüsü, tüm çalışma penceresini kullanıcıya bırakmak amacıyla en aza indirilir.<br /><br /><span style="font-weight: bold;">[Yapılandırma]</span> düğmesi, <a href="#modo_configuracion"><span style="font-style: italic;">Yapılandırma</span></a> moduna geri döner veya geçer. <span style="font-weight: bold;">[Duraklat]</span> / <span style="font-weight: bold;">[Devam Et]</span> düğmeleri, GPS cihazına olan ilgiyi yönetir (bağlantıyı kaybetmeden) ve &nbsp;<img style="width: 15px; height: 15px;" alt="" src="Imagenes/boton_cerrar_ventana.png" /> düğmesi menüyü gizler.<br /><br />Mavi
+bir kutu içinde aktif GPS'in temel bilgileri (konum, hassasiyet ve hata) gösterilir. Bu bilgi, GPS'in gönderdiği verilerin her doğru okumasında, her "epokta" güncellenir.<br /><br /><a href="#zoom_auto"><span style="font-weight: bold; font-style: italic;">Otomatik Yakınlaştırma</span></a> seçeneği, yapılandırmada ayarlananla aynıdır.<br /><br /><span style="font-weight: bold;">.toc kodu</span>, eğer GPS yapılandırmasının <a href="#actividad">aktivite kaydı</a> bölümünde bu dosyanın oluşturulması belirtilmişse, <a href="EDM_topografia.html#ficheros_toc">&nbsp;<span class="Archivo">.toc</span> dosyasının</a> her satırına eklenen metindir. Bu kod, kullanıcının istediği herhangi bir zamanda değiştirilebilir ve bu kod değiştirilene kadar o dosyanın sonraki verileriyle birlikte gönderilir.<br /><br /><img style="width: 302px; height: 96px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_seguimiento_2.png" align="right" /><span style="font-weight: bold;">[Not]</span> düğmesi, kullanıcının GPS'ten almak istediği bilgileri özel bir <a href="#anotaciones">notlar</a> dosyasına kaydetmesini sağlar.
+Öte yandan, bir seçici, bu menünün bu modda nasıl gösterileceğini ve GPS sembolünün haritada nasıl gösterileceğini yapılandırmayı sağlar. Bu seçici aşağıdaki seçenekleri sunar:<br /><ul><li><span style="font-weight: bold;">Simge Durumuna Küçült</span>:
+Varsayılan seçenektir ve ayrıca GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a> <img style="width: 18px; height: 11px;" alt="" src="Imagenes/icono_toolBarGPS_minimizar.png" /> simgesi aracılığıyla da erişilir. Sadece menüyü önceki resimlerde görüldüğü gibi gösterir. GPS sembolünün sunduğu görünüm ve bilgiyi etkilemez.</li></ul><ul><li><a href="#precision_comando"><span style="font-weight: bold;">Komuta Göre Hassasiyet</span></a>: GPS sembolünün çizim parametrelerini, GST veya RRE komutlarının hata bilgilerine göre ayarlar.</li></ul><ul><li><a href="#precision_gga"><span style="font-weight: bold;">GGA Hassasiyeti</span></a>:
+GPS sembolünün çizim parametrelerini, GGA komutunun hassasiyet bilgilerine göre ayarlar (GPS cihazı hata değerlendirme komutlarını göndermediğinde kullanışlıdır).</li></ul><ul><li><a href="#informacion_eco"><span style="font-weight: bold;">Yankı Bilgisi</span></a>: GPS sembolünün yanında hangi metinsel bilgilerin görüneceğini belirtir.</li></ul><ul><li><a href="#replanteo"><span style="font-weight: bold;">Aplikasyon</span></a>: Noktaların, çizgilerin ve eksen elemanlarının aplikasyon parametrelerini ayarlar.</li></ul>
+      <ul>
+        <li><a href="#cartografia"><span style="font-weight: bold;">Haritacılık</span></a>: Haritada <a href="EDM_entidades_basicas.html#lineas">çizgiler</a> oluşturmayı sağlar.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#desatendido"><span style="font-weight: bold;">Gözetimsiz</span></a>: Haritada <a href="EDM_entidades_basicas.html#lineas">çizgiler</a> ve <a href="EDM_entidades_basicas.html#simbolos">semboller</a>
+oluşturmayı sağlar, ancak önceki durumdan farklı olarak, veri alımı kullanıcının müdahalesi olmadan otomatik olarak yapılır.<br />
+ </li>
+      </ul>
+      <ul>
+        <li><a href="#auto_toc"><span style="font-weight: bold;">Otomatik TOC</span></a>: Kodlar ve komutlarla otomatik olarak bir <a href="EDM_topografia.html#ficheros_toc">&nbsp;<span class="Archivo">.toc</span> dosyası</a> oluşturmayı sağlar.<br />
+        </li>
+      </ul>
+<br /><span style="font-weight: bold; font-style: italic;"><a name="precision_comando">Komuta Göre Hassasiyet</a></span><br /><br /><img style="width: 383px; height: 180px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_seguimiento_3.png" align="right" />Bu
+seçeneği seçtiğinizde, GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a> <img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarGPS_precision.png" /> simgesi aracılığıyla da erişilebilen, resimdekine benzer bir menü görüntülenir. Eğer
+GPS cihazı GST veya RRE komutları gönderiyorsa, bu varsayılan hassasiyet yönetim sistemidir ve menünün üst kısmındaki kutucukta işaretli olarak görünür.<br />
+
+
+      <br />
+4 hassasiyet türü ve her biri için XY
+ve Z'de <span style="font-weight: bold;">izin verilen maksimum hatalar</span> tanımlanır. Her hassasiyet türü için, harita
+pencerelerinde GPS konumunda gösterilecek bir
+sembol belirtilir. GPS'in döndürdüğü değerleri kabul etmeye başlamak için
+gerekli olan, uygun hassasiyete sahip <span style="font-weight: bold;">epok</span> sayısı ayarlanır.
+Eğer bu sayı 0 ise tüm okumalar kabul edilir, 1 veya daha büyükse
+(50'ye kadar) sadece kabul edilebilir bir hassasiyete sahip okumalar kabul edilir.
+Kabul edilebilir hassasiyetler maksimum veya maksimumdan 2, 3 veya 4'e kadar olabilir.<br />
+      <br />
+Kabul edilen epok sayısı, GPS'in konumu izin verilen maksimum hatadan daha büyük bir mesafede değiştiğinde 0'a sıfırlanır.
+Kullanılan epok sayısı 1'den büyük olduğunda, GPS'in konumu ve hatası olarak
+son n kabul edilen epokun konumlarının ve hatalarının ortalaması alınır.<br />
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;"><a name="precision_gga">GGA Hassasiyeti</a></span><br /><br />
+GST veya RRE komutları mevcut değilse,
+bu hassasiyet yönetim sistemi kullanılabilir. Burada hassasiyet değerlendirmeleri
+GPS cihazı üreticisine bağlıdır.
+İşleyiş, önceki hassasiyet türüne benzer:<br />
+      <br />
+
+      <div style="text-align: center;"><img style="width: 386px; height: 211px;" alt="" src="Imagenes/dialogo_gps_seguimiento_4.png" /><br />
+
+      </div>
+<br /><br /><span style="font-weight: bold; font-style: italic;"><a name="informacion_eco">Yankı Bilgisi</a></span><br /><br />
+Bu seçenekte, GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a> <img style="width: 22px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_eco.png" /> simgesi aracılığıyla da erişilebilen,
+yapılan hesaplamalardan bağımsız olarak ekranda hangi metinsel bilgilerin gösterileceği belirtilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 384px; height: 195px;" alt="" src="Imagenes/dialogo_gps_seguimiento_5.png" /><br />
+      </div>
+      <br />
+
+Programın sunduğu olanaklar şunlardır:<br />
+      <br />
+
+      <table style="text-align: left; width: 625px; height: 349px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 116px;">Veri<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 98px;">Ortam<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 383px;">Anlamı<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">XY Koordinatı<br />
+            </td>
+
+            <td style="vertical-align: top; width: 98px; text-align: center;">Herhangi<br />
+            </td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS tarafından döndürülen X ve Y koordinatları gösterilir.<br />
+
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <span style="font-style: italic;"><br />
+            </span>
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">X 354035.657 Y 4607921-842</span><br />
+            </div>
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Z Koordinatı<br />
+
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Herhangi</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS tarafından döndürülen Z koordinatı gösterilir.<br />
+            <br />
+
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Z GPS 592.325</span><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 116px;">Toleranstaki Epoklar<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Herhangi</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS'in
+kabul edilebilir bir hassasiyetle ve GPS'in
+durgun olduğunu varsaymaya olanak tanıyan bir aralıkta bir konum verdiği epok sayısı
+gösterilir.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Epok 24</span><br />
+            </div>
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Hassasiyet<br />
+            </td>
+
+            <td style="vertical-align: top; width: 98px; text-align: center;">Herhangi</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS'in hassasiyeti ve hatası gösterilir. XY ve Z'deki hata gösterilir.<br />
+
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Hata XY 0.546 Z 0.823 (Hassasiyet 4 (Minimum))</span><br />
+            </div>
+
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Mevcut yüzey<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Herhangi</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Mevcut <a href="EDM_control_entidades.html#control_superficies">yüzey</a> ile GPS konumu arasındaki kot farkı gösterilir.<br />
+
+
+            <br />
+Örnek: <span style="font-style: italic;">(Mev. Yüz. Kotu -Z GPS) 1.342</span><br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Mevcut kot<br />
+
+            </td>
+
+            <td style="vertical-align: top; width: 98px; text-align: center;">Herhangi</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Mevcut kot ile GPS'in kotu arasındaki fark gösterilir.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">(Mev. Kot -Z GPS) -2.342</span><br />
+
+            </div>
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">KM ve mesafe<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Plan veya Boykesit<br />
+
+            </td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS konumunun KM'si ve onu mevcut eksenden ayıran mesafe gösterilir.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><span style="font-style: italic;"><br />
+            <br />
+            </span>
+            <div style="margin-left: 40px;"><span style="font-style: italic;">KM 5398.452 m 5.274</span><br />
+
+            </div>
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Semt Açısı (Azimut)<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Plan veya Boykesit</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS'in KM'sindeki mevcut eksenin semt açısı gösterilir.<br />
+
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Az 233.451</span><br />
+            </div>
+            <br />
+
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Plan elemanları<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Plan veya Boykesit</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS'in bulunduğu Plan elemanının parametreleri gösterilir.<br />
+
+            <br />
+            <span style="text-decoration: underline;">Örnekler</span><br />
+
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">A 420 (R -1935.465) L 165.939 veya R 300.000 L 24.568</span><span style="font-style: italic;"><br />
+            <span style="font-style: italic;">DOĞRU L 164.525</span><br style="font-style: italic;" />
+            </span></div>
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 116px;">Kırmızı kot Z<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Boykesit<br />
+            </td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS'in KM'sindeki mevcut eksenin <a href="OL_rasantes_diseno.html">kırmızı kotunun</a> kotu gösterilir.<br />
+            <br />
+
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Kırmızı Kot Z 187.398</span><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 116px;">Kırmızı kot Z - Z GPS<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Boykesit</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS'in KM'sindeki <a href="OL_rasantes_diseno.html">kırmızı kot</a> ile GPS arasındaki kot farkı gösterilir. Kırmızı kot daha yüksekse pozitiftir.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">(KırmızıKotZ -Z GPS) 2.496</span><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Kırmızı kot eğimi<br />
+
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Boykesit</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS'in KM'sindeki <a href="OL_rasantes_diseno.html">kırmızı kotun</a> eğimi gösterilir.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Kırmızı Kot Eğimi 1.453%</span><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Dever<br />
+            </td>
+
+            <td style="vertical-align: top; width: 98px; text-align: center;">Boykesit</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">GPS konumundaki <a href="OL_peraltes.html">Dever</a>.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Dever 2.000%</span><br />
+
+            </div>
+
+            <br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      Veriler renk gruplarına ayrılarak gösterilir, bu da okunmalarını kolaylaştırır.<br />
+
+      <br />
+Bu pencerenin konumu, kullanıcı tarafından piksel cinsinden belirtilen pencere koordinatlarına göre <span style="font-weight: bold;">sabit</span> veya GPS sembolünün görünür boyutuna orantılı değerlerle GPS sembolünün konumuna <span style="font-weight: bold;">göreli</span> olabilir.<br />
+      <br />
+Veriler sırayla üç farklı yazı tipi <span style="font-weight: bold;">boyutunda</span> gösterilebilir: <span style="font-weight: bold;">küçük</span>, <span style="font-weight: bold;">orta</span> veya <span style="font-weight: bold;">büyük</span>.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 550px; height: 380px;" alt="" src="Imagenes/ejem_gps_info_eco.png" /><br />
+      </div>
+<br /><br /><span style="font-weight: bold; font-style: italic;"><a name="replanteo">Aplikasyon</a></span><br /><br />Bu
+seçenekte, GPS sembolüne eşlik edecek metinsel bilgiler, belirli aplikasyonlar yapmak amacıyla belirtilir:<br />
+      <ul>
+        <li><a href="#replanteo_eje">Eksen için</a> (proje eksen elemanları).</li>
+        <li><a href="#replanteo_punto">Noktalar</a>.</li>
+        <li><a href="#replanteo_linea">Çizgiler</a>.</li>
+
+
+        <li><a href="#replanteo_perfil">Enkesitler</a> (<a href="EDM_editor_perfiles.html">enkesit editörü</a>).</li>
+      </ul>
+      <br /><a name="replanteo_eje">EKSEN İÇİN APLİKASYON</a><br />
+      <br />
+Çalışılan eksenin noktalarını, enkesitlerini veya yüzeylerini aplike etmek için kullanılırlar ve ayrıca GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a> <img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_repEje.png" /> simgesi aracılığıyla da erişilir. Bu aplikasyonlar sadece BOYKESİT ortamında uygulanabilir.<br />
+      <br />
+
+
+      <div style="text-align: center;"><img style="width: 384px; height: 312px;" alt="" src="Imagenes/dialogo_gps_seguimiento_6.png" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; width: 635px; height: 165px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 132px;">Veri<br />
+            </td>
+
+
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 483px;">Anlamı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Kırmızı Kot deverli - Z GPS<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 483px;">GPS
+konumu ile kırmızı kotun kotu (dever dikkate alınarak) artı kullanıcı tarafından belirtilen bir değer (<span style="font-weight: bold;">Kot Artışı</span>) arasındaki kot farkı gösterilir.<br />
+            <br />
+<span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">((KırmızıKotDever (682.272) + Kot Artışı) - Z GPS) 3.573</span><br />
+            </div>
+            <br />
+<div style="text-align: center;"><img style="width: 257px; height: 124px;" alt="" src="Imagenes/ejem_gps_rep_zper_zgps.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Kod/yüzeye olan mesafe<br />
+
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 483px;">Belirtilen
+yüzey ve koda karşılık gelen nokta ile GPS konumu arasındaki mesafe ve kot farkı gösterilir.
+Koda ulaşmak için eksenden uzaklaşmak gerekiyorsa pozitiftir.
+Bir satırda mesafe, diğerinde kot farkı gösterilir.
+Yüzeyi, kodu ve kodun kotuna eklenen bir kot artışını belirtmeye olanak tanır.<br />
+            <br />Eğer
+kod olarak 0.0 değeri belirtilirse,
+ölçümleri yapmak için GPS'e en yakın yüzeyin köşe noktası kullanılır.<br />
+            <br />
+<span style="font-weight: bold;">Nokta kilitleme</span>, belirli bir sıra numarasına sahip enkesit köşe noktasının kullanılmasını gerektirir.<br />
+            <br />
+<span style="text-decoration: underline;">Örnek</span><br />
+
+            <br />
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">(Mes GPS -Mes Kod 1.0 (Yüz 67)(1.500)) 10.209</span><br />
+            <span style="font-style: italic;">((Kod Kotu (682.452) + Kot Artışı) - Z GPS) 1.452</span><br />
+            </div>
+            <br />
+Bilgi metninde, kodun değeri, yüzey,
+kodun eksene olan mesafesi ve birinci satırda kod ile
+GPS arasındaki XY mesafesi; ikinci satırda ise kodun kotu
+ve kot farkı belirtilir.<br />
+            <br />
+
+            <div style="text-align: center;"><img style="width: 305px; height: 152px;" alt="" src="Imagenes/ejem_gps_rep_sup_cod.png" /><br />
+            </div>
+
+            <br />
+Eğer <span style="font-weight: bold;">Geri Çekme</span> seçeneği etkinleştirilirse, belirtilen yüzey kodunu, <span style="font-weight: bold;">önceki</span> veya <span style="font-weight: bold;">sonraki</span> (seçime göre) köşe noktasıyla birleştiren bir çizgi, yani geri çekme çizgisi de gösterilir. Yankı ayrıca aşağıdaki ek bilgileri de gösterecektir:<br />
+            <ul>
+              <li>GPS'ten bu çizgiye olan yatay ve dikey mesafe.</li>
+            </ul>
+            <ul>
+              <li>Kullanıcı tarafından belirtilen ve koddan ölçülen geri çekme <span style="font-weight: bold;">yatay mesafesinde</span> bulunan geri çekme çizgisindeki bir noktaya olan yatay ve dikey mesafe.</li>
+            </ul><img style="width: 247px; height: 146px; margin-left: 7px;" alt="" src="Imagenes/ejem_gps_retranqueo_eco.png" align="right" />Aşağıdaki
+görüntü, 65 numaralı yüzeyin (kırmızı) -11 kodundan 1 m mesafede bir geri çekmeye karşılık gelir ve bu kodu aynı yüzeyin önceki noktasıyla birleştiren çizgi dikkate alınır.<br />
+            <br />
+Sağda ayrıca bu geri çekme bilgisiyle birlikte yankı da gösterilir.<br />
+            <br />
+            <br />
+
+            <div style="text-align: center;"><img style="width: 349px; height: 165px;" alt="" src="Imagenes/ejem_gps_retranqueo.png" /><br />
+            </div>
+
+            <br />
+Eğer <span style="font-weight: bold; font-style: italic;">Eğim-&gt;Mesafe</span>
+seçeneği etkinleştirilirse, geri çekme noktasına olan mesafe,
+yatay olarak ölçülmek yerine, geri
+çekme çizgisinin eğimi dikkate alınarak ölçülür.<br />
+<br />
+            <img style="width: 234px; height: 144px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_eco_dist_cod_sup.png" align="right" /><span style="font-weight: bold;">[Kod/yüzeye olan mesafe]</span> düğmesine tıklandığında, kullanıcının yankıda hangi bilgilerin gösterilmesini istediğini belirtebileceği bir iletişim kutusu görüntülenir.<br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Enkesit yüzeyine olan mesafe<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 483px;">GPS
+ile bir enkesit yüzeyi arasındaki kot farkı gösterilir.
+Çalışılacak enkesit yüzeyini ve yüzeyin kotuna eklenen bir kot artışını belirtmeyi sağlar.<br />
+            <br />
+
+Enkesit yüzeyinin segmenti, GPS'in dikeyiyle kesişen segmenttir, ancak <span style="font-weight: bold;">kilitlenirse</span>, bu durumda belirli bir sıra numarasına sahip segment kullanılır.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">(Yüz. Kotu 67 (682.274) - Z GPS) -0.874 Enk. Eğimi.16.7%</span><br />
+
+            <span style="font-style: italic;">Şev mesafesi 2.45 Eleman genişliği 5.00</span><br />
+            </div>
+
+            <br />
+Bilgi metninde yüzey, GPS'in XY konumundaki yüzeyin kotu ve kot farkı belirtilir. Ayrıca,
+GPS'in konumu enkesitlerin içindeyse, enkesitin enine eğimi, ikinci bir satırda enkesite olan
+yatay mesafe ve GPS konumundaki elemanın (iki ardışık enkesit noktasıyla tanımlanan) genişliği belirtilir.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 311px; height: 155px;" alt="" src="Imagenes/ejem_gps_rep_dist_sup_perf.png" /><br />
+            </div>
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 132px;">Enkesit sembolüne olan mesafe<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 483px;">GPS
+konumundan belirtilen sembole olan mesafe gösterilir.
+Sembol tipini ve sembolün kotuna eklenen bir kot artışını belirtmeyi sağlar.<br />
+            <br />
+
+Eğer enkesitlerde belirtilen tipten birden fazla sembol varsa,
+ölçümler GPS konumuna en yakın sembole göre yapılır.<br />
+            <br />
+Sembol kilitleme, belirli bir sıra numarasına sahip sembolün kullanılmasını gerektirir.<br />
+            <br />
+
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Sembole (309) olan mesafe 14.342</span><br />
+
+            <span style="font-style: italic;">Yatay (Semb Mes - GPS Mes) 14.148</span><br />
+            <span style="font-style: italic;">Dikey ((Semb Kotu + Kot Artışı) - Z GPS) 2.639</span><br />
+            </div>
+            <br />
+
+Bilgi metninde, ölçümlerin yapıldığı sembolün kodu ve
+GPS ile sembol arasındaki yatay ve dikey mesafe gösterilir.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 306px; height: 153px;" alt="" src="Imagenes/ejem_gps_rep_dist_simb_perf.png" /><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Boykesitte GPS enkesitini göster<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 483px;">Eksenin
+gerçek kesit penceresinde, imlecin konumunun gösterdiği enkesitin mi yoksa
+GPS konumunun gösterdiği enkesitin mi gösterileceğini seçmeyi sağlar.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Enterpole edilmemiş enkesitleri kullan<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 483px;">Eğer
+Boykesitte GPS enkesiti gösteriliyorsa, programın
+gerçek kesit penceresinde, GPS'in KM'sine en yakın hesaplanmış enkesiti
+göstermesini zorunlu kılar.<br />
+
+            <br />
+Eğer <span style="font-weight: bold; font-style: italic;">KM ve Mesafe</span>
+seçeneği işaretliyse, gösterilen KM'ye ulaşmak için eksen boyunca
+ne kadar ileri veya geri gidilmesi gerektiğini belirtmek üzere sonuç bilgi satırı değiştirilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 132px;">KM'ye göre enkesit kullan<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 483px;">Eğer
+BOYKESİTTE GPS enkesiti gösteriliyorsa, programın
+gerçek kesit penceresinde, kullanıcı tarafından seçilen KM'nin enkesitini
+göstermesini zorunlu kılar. İstenen KM'yi girmeyi ve kullanıcı tarafından yapılandırılabilen aralıklarla KM'leri ileri veya geri gitmeyi sağlar. GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>  <img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_avanzar.png" /> ve <img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_retroceder.png" /> düğmeleri de KM'leri ileri ve geri gitmeyi sağlar.<br />
+            <br />
+Eğer bu seçenek ve <span style="font-weight: bold; font-style: italic;">Enterpole edilmemiş enkesitleri kullan</span> seçeneği işaretliyse, bu seçenek önceliklidir.<br />
+            <br />
+
+Eğer <span style="font-weight: bold; font-style: italic;">KM ve Mesafe</span> seçeneği işaretliyse,
+
+gösterilen KM'ye ulaşmak için eksen boyunca ne kadar ileri veya geri gidilmesi gerektiğini belirtmek üzere sonuç bilgi satırı değiştirilir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br /><a name="replanteo_punto">NOKTA APLİKASYONU</a><br />
+
+      <br />GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a> <img style="width: 21px; height: 18px;" alt="" src="Imagenes/icono_toolBarGPS_repPunto.png" /> simgesi aracılığıyla da erişilebilen bu seçenek, Kuzey, bir baz istasyonu veya aplikasyon için seçilen önceki noktayı referans alarak noktaları aplike etmeyi sağlar. Herhangi bir ortamda kullanılabilir.<br />
+<br /><div style="text-align: center;"><img style="width: 384px; height: 240px;" alt="" src="Imagenes/dialogo_gps_seguimiento_7.png" /><br /></div><br />
+      Aplike edilecek noktalar ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> harita penceresinde tıklanır,
+ancak tüm "yakalama" seçeneklerinden yararlanılabilir. Baz istasyonları da benzer şekilde seçilebilir. Aplikasyon için yeni bir nokta seçildiğinde, eski olan "önceki nokta" olur.<br /><br />
+      <table style="text-align: left; width: 650px; height: 96px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 166px;">Veri<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 464px;">Anlamı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 166px;">Nokta Aplikasyonu (KUZEY)<br />
+
+            </td>
+            <td style="vertical-align: top; width: 464px; text-align: justify;">GPS
+konumundan seçilen noktaya (daire) olan mesafe gösterilir.
+Nokta üzerinde bir kot artışı belirtmeyi sağlar.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Nokta Aplikasyonu (KUZEY): Mesafe 10.097</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Geri git 1.384</span><br style="font-style: italic;" />
+
+            <span style="font-style: italic;">Sol 10.002</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Yukarı 0.771</span><br />
+            </div>
+            <br />
+Bilgi metninde XY'deki noktaya olan mesafe belirtilir.
+Sonraki satırlarda, seçilen noktaya ulaşmak için yapılması gereken ilerleme yönü gösterilir.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 296px; height: 197px;" alt="" src="Imagenes/ejem_gps_rep_punto_norte.png" /><br />
+            </div>
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 166px;">Nokta Aplikasyonu (BAZ)<br />
+            </td>
+            <td style="vertical-align: top; width: 464px; text-align: justify;">GPS
+konumundan seçilen noktaya (daire) olan mesafe gösterilir ve baz istasyonunun
+yönünü belirtir. Eğer bu, çizilen harita alanında görünürse,
+onu da işaretler (üçgen). Nokta üzerinde bir kot artışı belirtmeyi sağlar.<br />
+            <br />
+
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Nokta Aplikasyonu (BAZ): Mesafe 5.364</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">İleri 4.412</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Sol 3.050</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Yukarı 0.635</span><br />
+
+            </div>
+            <br />
+Bilgi metninde XY'deki noktaya olan mesafe belirtilir.
+Sonraki satırlarda, her zaman baz istasyonuna yönelik olarak,
+seçilen noktaya ulaşmak için yapılması gereken ilerleme yönü gösterilir.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 326px; height: 185px;" alt="" src="Imagenes/ejem_gps_rep_punto_base.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 166px;">Nokta Aplikasyonu (ÖNCEKİ)<br />
+            </td>
+            <td style="vertical-align: top; width: 464px; text-align: justify;">GPS
+konumundan seçilen noktaya (daire) olan mesafe gösterilir.
+Eğer harita alanında görünürse, aplikasyon için seçilen önceki noktayı da
+işaretler (kare). Nokta üzerinde bir kot artışı belirtmeyi sağlar.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Nokta Aplikasyonu (ÖNCEKİ): Mesafe 4.937</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">İleri 4.657</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Sağ 1.640</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Yukarı 0.691</span><br />
+            </div>
+            <br />
+Bilgi metninde XY'deki noktaya olan mesafe belirtilir.
+Sonraki satırlarda, her zaman aplike edilen önceki noktaya
+yönelik olarak, seçilen noktaya ulaşmak için yapılması gereken ilerleme yönü gösterilir.<br />
+
+            <br />
+            <div style="text-align: center;"><img style="width: 334px; height: 143px;" alt="" src="Imagenes/ejem_gps_rep_punto_anterior.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+
+<br /><a name="replanteo_linea">ÇİZGİ APLİKASYONU</a><br />
+      <br />GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a> <img style="width: 17px; height: 21px;" alt="" src="Imagenes/icono_toolBarGPS_repLinea.png" /> simgesi aracılığıyla da erişilebilen bu seçenek, haritadaki bir çizgiyi referans alarak, onu veya ona paralel çizgileri aplike etmeyi sağlar.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 359px; height: 210px;" alt="" src="Imagenes/dialogo_gps_seguimiento_8.png" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; width: 665px; height: 50px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 101px;">Veri<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 544px;">Anlamı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 101px;">Çizgi aplikasyonu<br />
+
+            </td>
+            <td style="vertical-align: top; width: 544px;">
+            <div style="text-align: justify;">GPS
+konumundan, seçilen çizgi üzerine yansıtıldığı noktaya olan mesafe
+gösterilir. Çizgi üzerinde bir kot artışı belirtmeyi sağlar.
+Segment kilitleme, belirli bir sıra numarasına sahip segmentin kullanılmasını gerektirir.<br />
+            <br />
+            <span style="text-decoration: underline;">Örnek</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Çizgi Aplikasyonu. KM 2421.104</span><br style="font-style: italic;" />
+
+            <span style="font-style: italic;">Çizgiye Mesafe 3.059</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">((Çizgi Kotu + Kot Artışı) - Z GPS) 1.957</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Önceki Tekil KM 2420.928 Sonraki Tekil 2430.974</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">En Yakın Tekil Noktaya Mes. 0.176</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Çizgi Segmenti Eğimi 0.680%</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">GPS Eğimi (Çizgi + Kot Artışı) 63. 958%</span><br style="font-style: italic;" />
+
+            <span style="font-style: italic;">Paralel Eğimi: 1.000%</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Paralel ile Kot Farkı: 1.987</span><br />
+            </div>
+            <br />
+Bilgi metninde, çizgi boyunca kat edilen mesafe KM olarak, GPS ile
+çizgi üzerindeki projeksiyonu arasındaki mesafe, üzerine yansıtıldığı
+çizgi segmentinin eğimi, GPS'ten projeksiyon noktasına olan eğim,
+aplike edilen çizgiye paralel çizgi oluşturma eğimi ve bu paralelle olan
+kot farkı belirtilir.<br />
+            <br />
+<br />
+            <br />
+            </div>
+            <div style="text-align: center;"><img style="width: 294px; height: 235px;" alt="" src="Imagenes/ejem_gps_rep_linea.png" /><br />
+
+            </div>
+            <br />
+            <span class="Parf_negrita">KM </span>= çizginin güzergahının bir km'sinde ve bu çizgiden enine bir mesafede (sağa pozitif, sola negatif) bulunan bir noktayı aplike etmek.<br />
+Eğer km negatifse, nokta çizginin ilk segmentinin uzantısı üzerine yansıtılır. Eğer çizginin uzunluğundan büyükse, son segmentin uzantısı üzerine yansıtılır.<br />
+<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br /><a name="replanteo_perfil">ENKESİT APLİKASYONU</a><br />
+
+      <br />GPS <a href="EDM_barras_herramientas.html">araç çubuğundaki</a> <img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_repPerfil.png" /> simgesi aracılığıyla da erişilebilen bu seçenek, bir enkesiti referans alarak ve <a href="EDM_editor_perfiles.html">enkesit editörü</a> içindeyken, <a href="#replanteo_eje"><span style="font-style: italic;">Eksen için Aplikasyon</span></a> bölümünde zaten görülen aynı seçenekleri sunar. GPS'e yakalama, <a href="EDM_editor_perfiles.html">enkesit editörü</a> içinde de mevcuttur, bu da çok kullanışlıdır.<br />
+      <br />
+&nbsp;<img style="width: 650px; height: 214px;" alt="gps_replanteo_perfiles" src="Imagenes/gps_replanteo_perfiles.png" /><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 384px; height: 283px;" alt="" src="Imagenes/dialogo_gps_seguimiento_9.png" /><br />
+      </div>
+      <br />
+Bir
+enkesit kodunun geri çekilmesi olarak hesaplanan nokta, Nokta Aplikasyonu
+menüsünde kullanılmak üzere otomatik olarak aktarılabilir, böylece sistem
+kullanıcıyı, koordinatları Nokta Aplikasyonu menüsüne girilmiş gibi
+bulması için yönlendirir.<br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="cartografia">Haritacılık</a></span><br />
+      <br />
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="desatendido">Gözetimsiz</a></span><br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="auto_toc">
+Otomatik TOC<br />
+      <br />
+      </a></span><a name="auto_toc">Yeni menü, Topografyada kullanılan kod sözlüklerini ve komutları destekler. Ayrıca
+komutlar bir araç çubuğunda mevcuttur.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="auto_toc">&nbsp;</a><img style="width: 427px; height: 372px;" alt="gps_autotoc" src="Imagenes/gps_autotoc.png" /><br />
+      <br />
+      <div style="text-align: left;">Sözlük yüklü menü<br />
+      </div>
+      <br />
+      <img style="width: 505px; height: 323px;" alt="gps_autotoc_diccionario" src="Imagenes/gps_autotoc_diccionario.png" /><br />
+      <br />
+      <div style="text-align: left;">ETKİNLEŞTİR seçeneği: sözlükten yüklenen tüm kodlar arasından o menüde seçilebilecek kodları etkinleştirmeye veya devre dışı bırakmaya olanak tanır.<br />
+      </div>
+      <img style="width: 407px; height: 283px;" alt="gps_autotoc_activacion" src="Imagenes/gps_autotoc_activacion.png" /><br />
+      <br />
+      <br />
+      <div style="text-align: left;">Komutlar için mevcut araç çubuğu ile: <br />
+      </div>
+      <br />
+      <img style="width: 103px; height: 125px;" alt="gps_gpstoc_barra" src="Imagenes/gps_gpstoc_barra.png" /><br />
+      <br />
+      <br />
+      <br />
+      </div>
+      <a name="auto_toc" /><span style="font-weight: bold; font-style: italic;"><a name="auto_toc"><br />
+      </a></span>
+<br />
+<br /><span class="Titulo_2"><a name="uso_gps">GPS Kullanımı</a></span><br /><br />GPS
+cihazına dikkat sistemi yapılandırıldıktan sonra, bu sistem
+otonom olarak çalışmaya devam eder ve istenen bilgiyi
+sürekli olarak gösterir.<br /><br />Bu, GPS'in
+üç çalışma işlevi için kullanılmasını sağlar: konumlandırma, çizim ve aplikasyon.
+Bu işlevler, GPS ile bağlantı süresince eş zamanlı olarak yürütülür.<br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="ubicacion_gps">Konumlandırma</a></span><br /><br />En
+basit işlevdir, GPS konumunu bildirir, onu
+yüklü haritada gösterir ve ekran sınırlarının dışına çıkılacağı zaman
+harita görünümünü güncellemeyle ilgilenir.<br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="dibujo_gps">Çizim</a></span><br /><br /><img style="width: 271px; height: 489px; margin-left: 7px;" alt="" src="Imagenes/ejem_gps_dibujo.png" align="right" />GPS'in
+konumu, yakalama destekleyen herhangi bir veri girişi için kullanılabilir.
+GPS'e dikkat edilirken, yakalama menüsünde GPS seçeneği belirir. Bu yakalamanın etkinleştirilmesi, yakalama <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>&nbsp;<img style="width: 10px; height: 13px;" alt="" src="Imagenes/icono_toolBarEnganches_gps.png" /> simgesi aracılığıyla da yapılabilir. Bu şekilde, herhangi bir harita elemanını yerleştirmek için GPS konumu kullanılabilir.<br /><br />Böylece,
+bu seçenek etkinleştirildiğinde ve kullanıcıdan imleçle bir nokta tıklaması gereken bir koordinat bilgisi istendiğinde
+(semboller, etiketler, hücreler ve çizgiler oluşturmak/değiştirmek veya
+güzergahlar oluşturmak/değiştirmek için), işaretleme cihazıyla (fare veya dokunmatik ekranlarda kalem) tıklandığında, imlecin konumundan bağımsız olarak GPS'in koordinatları alınacaktır.<br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="replanteo_gps">Aplikasyon</a></span><br /><br />Daha
+önce bahsedilen aplikasyon seçenekleri, bir eksen, bir
+nokta veya bir çizgiyi referans alarak bir projenin durumunu değerlendirmeyi sağlar.
+Bunları kullanmak için, aplikasyon menülerinde bu seçeneklerin
+görüntülenmesini seçmek yeterlidir.<br /><br />GPS'in
+yanında "yankı" olarak ve harita, enkesit ve kırmızı kot çizimlerinde gösterilen
+bilgiler, projenin teorik modeline ulaşmak için ne kadar ilerlenmesi,
+kazılması veya doldurulması gerektiğini belirtir.<br /><br />
+
+<br /><span style="font-weight: bold; font-style: italic;"><a name="anotaciones">Notlar</a></span><br /><br />GPS
+yankısında gösterilen tüm bilgiler ve bu bilgiyi türetmeyi sağlayan veriler,
+daha sonra incelenmek üzere bir dosyaya kaydedilebilir. Bu işlevi
+gerçekleştirmek için <span style="font-weight: bold;">Notlar</span> menüsü vardır.<br /><br /><img style="width: 282px; height: 281px; margin-right: 7px;" alt="" src="Imagenes/ejem_gps_anotaciones.png" align="left" />Herhangi
+bir not düğmesine basıldığında (birkaç GPS menüsünde ve araç çubuğunda <img style="width: 16px; height: 15px;" alt="" src="Imagenes/icono_toolBarGPS_anota.png" /> simgesiyle mevcuttur),
+yankının tüm bilgilerini ve bunları türetmeyi sağlayan verileri gösteren bir menü belirir.
+Bu menü, bu bilgiyi gözden geçirmeyi ve geçerli olarak kabul etmeyi veya reddetmeyi sağlar.
+Kabul edilmesi durumunda, proje klasöründe kaydedilen ve ticari hesap tablosu programları tarafından doğrudan kullanılabilen &nbsp;<span class="Archivo">AnotacionesGPS.csv</span> adlı bir dosyaya kaydedilir.<br /><br />Dosya
+mevcut değilse otomatik olarak oluşturulur ve zaten mevcutsa,
+notlar sonuna eklenir. Her not, yapıldığı tarih ve saati taşır.<br /><br />Ayrıca, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+aktif uygulama ise ve içinde herhangi bir metin düzenlenmiyorsa, &lt;Enter&gt; tuşuna basarak da bir not alınabilir.
+Bu seçenek, klavyesi olmasa bile bu işleve sahip bir düğmesi olan tablet PC'ler için çok kullanışlıdır.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <span style="font-weight: normal;" class="Titulo_2"><span class="Texto_cursiva"><span class="Titulo_2"><span class="Apartados">Güzergahlar:</span></span></span></span><br />
+      <br />
+&nbsp;<img style="width: 448px; height: 301px;" alt="gps_gestion_itinerarios" src="Imagenes/gps_gestion_itinerarios.png" align="left" hspace="5" vspace="5" />Istram'ın GPS yöneticisi bir seçeneğe sahiptir: Güzergahlar.<br />
+Aplike edilebilir her nokta veya nokta tipi, bir çalışma güzergahını oluşturan bir "yol noktaları" listesine gönderilebilir.<br />
+Bir KM'ye bağlı olan veya bir çizgi üzerine projeksiyona göreli olan nokta türleri, GPS'in bulunduğu her KM için yeniden hesaplanır.<br />
+      <br />
+Bu, diğer şeylerin yanı sıra, şantiyedeki her bir sonraki arama noktasını karakterize etmek zorunda kalmamayı, bunun yerine ofiste hazırlanıp onlarla birlikte sahaya çıkılmasını sağlar.<br />
+      <br />
+Varsayılan olarak Istram en yakın noktaya yönlendirecektir, ancak belirli bir noktaya yönlendirilmesi istenebilir. Güzergahın noktaları etkinleştirilebilir ve devre dışı bırakılabilir ve sıraları değiştirilebilir. Ayrıca, başka bir zaman kullanılmak üzere dosyalara kaydedilebilirler.<br />
+      <br />
+<br /><span class="Parrafo" /></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Şablonlar .gui: Kırmızı Kotlar</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BOYKESİT PAFTALARI İÇİN ŞABLONLAR: KIRMIZI KOTLAR<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><br /></span><img style="width: 310px; height: 250px; float: right;" alt="" src="Imagenes/gui_rasantes.png" hspace="5" /><span class="Parrafo">Buradan, kırmızı kot (proje kotu) hattının, düşey kurpların, referans dikey çizgilerinin vb. kırmızı kota (sağ veya sol) bağlı grafiksel gösterimi ayarlanır.<br />
+      <br />
+Menünün üst kısmında, SOL KIRMIZI KOT'ta belirtilen tüm değerleri sağ kırmızı kota kopyalayan <span style="font-weight: bold;">[Sol K.Kottan Kopyala]</span> butonu bulunur. SOL KIRMIZI KOT bölümünde de benzer bir buton mevcuttur.<br />
+      <br />
+Sol kırmızı kot için <span style="font-weight: bold;">karşılaştırma düzleminin konumunu ayırmak</span> ve böylece onları ayrı ayrı gösterebilmek mümkündür. DobleRas.gui şablonu bu imkanı kullanır.<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_desdoblar.png" style="width: 298px; height: 49px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+<span style="font-weight: bold;">.gui DÜZENLE</span> diyalog kutusu açıkken, koordinat bilgisi (ekranın alt kısmında) bize karşılaştırma düzlemine göre (dX, dY) değerlerini gösterecektir.<br />
+</span><span class="Parrafo"><br />
+      </span>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><img src="Imagenes/gui_eco_coord.png" style="width: 300px; height: 57px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+
+      <span class="Parrafo">
+      </span><br />
+      <span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#eje_alzado"><span class="Parrafo">Boykesitte Güzergah. Kırmızı Kotlar ve Düşey Kurplar</span></a><br />
+      <a href="#simb_anot"><span class="Parrafo">Kırmızı Kot veya Bilgi Bandındaki Semboller ve Notasyonlar</span></a><br />
+      <span class="Parrafo"><a href="#ptos_altos_bajos">Tepe ve Çukur Noktaları</a></span><br />
+      <span class="Parrafo"><a href="#pozos"><span class="Parrafo">Muayene Bacaları ve Düşey Düşüler</span></a><br />
+      <span class="Parrafo"><a href="#tubos">Borular</a></span><br />
+      <span class="Parrafo"><a href="#viaductos"><span class="Parrafo">Sanat Yapıları: Viyadükler ve Üstgeçitler</span></a><br />
+      <a href="#tuneles"><span class="Parrafo">Sanat Yapıları: Tüneller ve Altgeçitler</span></a><br />
+      <span class="Parrafo"><a href="#codos">Dirsekler</a><br /><a href="#Ecuaciones_de_PK">KM Eşitlikleri</a><br />
+</span>
+      <span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="eje_alzado">Boykesitte Güzergah. Kırmızı Kotlar ve Düşey Kurplar</a></span><br />
+      <span class="Parrafo"><br />
+Buradan, kırmızı kot diyagramı için çizgi tipleri ayarlanır.<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 690px; height: 272px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <img src="Imagenes/gui_rasantes_eje_alzado.png" style="width: 345px; height: 294px;" alt="" />
+
+            <br />
+</td>
+            <td style="vertical-align: middle; text-align: right;"><img src="Imagenes/gui_rasantes_ejemp_alzado.png" alt="" style="width: 327px; height: 180px;" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <table style="text-align: left; width: 690px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">Kırmızı Kot</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">Kırmızı kotun temsil edildiği çizgi tipi. Negatif bir değer çizilmemesine neden olur.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">Dikeyler KD-K.Kot</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">Kırmızı kottan karşılaştırma düzlemine ve <span style="font-weight: bold;">Katlar</span>'da belirlenen düzene göre dikey çizgilerin çizildiği çizgi tipi. Çizgi tipi için negatif bir değer, bunların gösterilmemesine neden olur. Kullanıcıya, arazi çizgisi için eşdeğer seçeneğin <a style="font-weight: bold;" href="OL_gui_terreno.html">ARAZİ</a> &#8594; <a style="font-weight: bold;" href="OL_gui_terreno.html#perfil_terreno">ARAZİ PROFİLİ</a> &#8594; <span style="font-weight: bold;">Dikey</span>'de bulunduğu hatırlatılır, bu nedenle gridin aşırı yoğunlaşmasını önlemek için çoğu zaman bu dikeyler gösterilmez ve arazininkiler gösterilir.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">Giriş-Some-Çıkış</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">Bir düşey kurbun teğet noktalarını some noktasıyla birleştiren çoklu doğru, burada tanımlanan tiple temsil edilir. </span><span class="Parrafo">Negatif bir değer çizilmemesine neden olur.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Ölçülendirme</span><br />
+            </td>
+            <td style="vertical-align: top;">Düşey kurbun giriş ve çıkış noktalarından başlayan iki dikey segmentten oluşan ve bu noktaların en yükseğinden ölçülen bir dy yüksekliğinde yatay bir segmentle birleştirilen bir ölçülendirme çizgisi çizilebilir. İçbükey ve dışbükey kurplar için farklı bir dy verilebilir.<br />
+Düşey kurpların ölçülendirmesinde oklar için bir sembol tanımlanabilir (varsayılan S97).<br />
+<br />
+            <div style="text-align: center;"><img src="Imagenes/gui_rasantes_acotacion_simbolo.png" style="width: 233px; height: 30px;" alt="" /><br />
+            </div>
+            <br />
+Ayrıca dy'nin karşılaştırma düzleminden tanımlanması için bir kutucuk işaretlenebilir.</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">Sağ K.Kot - Sol K.Kot</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">Sağ kırmızı kottan sol kırmızı kota (her ikisi de gösterildiğinde) ve <span style="font-weight: bold;">Katlar</span>'da belirlenen düzene göre dikey çizgilerin çizildiği çizgi tipi. </span><span class="Parrafo">Negatif bir değer çizilmemesine neden olur.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">K.Kot - Arazi</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">Kırmızı kottan arazi boykesitine, <span style="font-weight: bold;">dolgu</span> ve <span style="font-weight: bold;">yarma</span> durumlarında ve <span style="font-weight: bold;">Katlar</span>'da belirlenen düzene göre dikey çizgilerin çizildiği çizgi tipi. </span><span class="Parrafo">Negatif bir değer çizilmemesine neden olur.</span></td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Alternatifleri çiz</span><br />
+            </td>
+            <td style="vertical-align: top;">Farklı alternatif kırmızı kotları çizmek için 10 çizgi tipi belirlemeyi sağlar. Ayrıca, bunların gösterimi bağımsız olarak etkinleştirilebilir veya devre dışı bırakılabilir ve ayrıca Giriş-Some-Çıkış çizgisinin çizimini ve <a href="#simb_anot">Semboller ve Notasyonlar</a> komutlarını içeren bir kutucuk (<span style="font-style: italic;">bilgi kutucuklarını çiz</span>) etkinleştirilebilir.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span style="font-weight: bold;">KARAKTERİSTİK NOKTALARDA DİKEY ÇİZGİLER</span> ile ilgili olarak, boykesitin karakteristik noktalarına (bir düşey kurbun <span style="font-weight: bold;">giriş</span> teğeti, <span style="font-weight: bold;">some</span> veya <span style="font-weight: bold;">çıkış</span> teğeti, ya da boru hatları durumunda olduğu gibi <span style="font-weight: bold;">düşey kurp olmayan</span> some noktasının kendisi) göre dikey çizgiler çizmeyi sağlayan parametreler belirtilir. Bu çizgiler şu şekilde çizilebilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Karşılaştırma düzleminden</span>: Dikey çizgiler, belirtilen çizgi tipiyle (negatif değerler çizilmemesine neden olur) ve karşılaştırma düzlemine göre belirtilen koordinatlardan başlayıp biterek çizilir. Ayrıca, bu çizgiler için bir yatay öteleme de tanımlanabilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Kırmızı kotun bir noktasından</span>: Belirlenen bir çizgi tipiyle (negatif değerler çizilmemesine neden olur), karakteristik noktadan karşılaştırma düzlemine kadar dikey bir çizgi çizilir. İsteğe bağlı olarak bu çizgiler için bir yatay öteleme ve karşılaştırma düzlemine göre bitiş noktası belirtilebilir (pozitif değerler kısaltmaya, negatif değerler uzatmaya neden olur).</span></li>
+      </ul>
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="simb_anot">Kırmızı Kot veya Bilgi Bandındaki Semboller ve Notasyonlar</a></span><br />
+      <span class="Parrafo"><br />
+Buradan, kırmızı kotun hangi değerlerinin gösterileceğini tanımlayan çok önemli bir diyalog kutusuna erişilir. <br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_simb_anot.png" style="width: 490px; height: 177px;" alt="" />&nbsp;</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Etiketleme seçenekleri şunlardır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Herhangi bir sembol (<span style="font-weight: bold;">Herhangi Bir Sembol</span>): Belirtilen sembolü gösterir. Örneğin, yukarıdaki ekran görüntüsünde S3 sembolü, düşey kurpların teğet noktalarını ve some noktasını vurgulayan küçük bir dairedir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">İçbükey düşey kurplarda herhangi bir sembol (<span style="font-weight: bold;">İçbükey D.K. Sembolü</span>): Öncekiyle aynıdır, ancak sembol sadece içbükey düşey kurplar durumunda gösterilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dışbükey düşey kurplarda herhangi bir sembol (<span style="font-weight: bold;">Dışbükey D.K. Sembolü</span>): Öncekiyle aynıdır, ancak dışbükey düşey kurplar için.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">KM etiketi (<span style="font-weight: bold;">KM (G,S,Ç)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurpların some kotu (<span style="font-weight: bold;">SK (Some Kotu)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurp parametresi (<span style="font-weight: bold;">KV Düşey Kurp</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Bir düşey kurba giriş ve çıkış eğimleri arasındaki açı farkı, radyan cinsinden (<span style="font-weight: bold;">W Açı Çe-Ge rad</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurbun uzunluğu, metre cinsinden (<span style="font-weight: bold;">Düşey Kurp Uzunluğu</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurpların dış mesafesi (bisektris) (<span style="font-weight: bold;">DışMesafe SK-Zkırmızı</span>): Some ile kırmızı kot arasındaki kot farkı.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Karakteristik noktalardaki kırmızı kot (<span style="font-weight: bold;">Zkırmızı G,S,Ç</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurp somelerindeki kırmızı kot (<span style="font-weight: bold;">Zkırmızı S'de Sk-DışM</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">KM cinsinden düşey kurp uzunluğu (Uzunluk=2T): Gösterilen değer KM'ler arası bir mesafedir (dolayısıyla düşey kurbun gerçek uzunluğunu dikkate almaz).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurbun dış mesafesi (<span style="font-weight: bold;">DışMesafe=T*T/(2Kv)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Some numarası (<span style="font-weight: bold;">Sıra No (GVc,GPc)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey güzergah elemanı uzunluğu (<span style="font-weight: bold;">Kırmızı Kot Uzunluğu</span>): Her sabit eğimli kesimin uzunluğu.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Yüzde olarak eğim (<span style="font-weight: bold;">Eğim % 131,565</span>): Bu veriyi etiketlemek için S131 veya S565 sembollerinin kullanılması önerilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Birim başına eğim (<span style="font-weight: bold;">Eğim Birim x1 161</span>): Bu veriyi etiketlemek için S161 sembolünün kullanılması önerilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Binde olarak eğim (<span style="font-weight: bold;">E.binde x1000 525</span>): Bu veriyi etiketlemek için S525 sembolünün kullanılması önerilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurpsuz bir somenin girişindeki teğet (<span style="font-weight: bold;">TgG Some. Kurpsuz</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurpsuz bir somenin çıkışındaki teğet (<span style="font-weight: bold;">TgÇ Some. Kurpsuz</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">İki ardışık düşey kurp somesi arasındaki mesafe (<span style="font-weight: bold;">Someler arası Mesafe</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurbun ortasındaki teğet (<span style="font-weight: bold;">Tg=Uzunluk/2</span>): Giriş ve çıkış KM'leri arasındaki mesafenin yarısına göre hesaplanan düşey kurbun orta noktası (düşey kurbun gerçek uzunluğunu dikkate almaz).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Bir düşey kurba giriş ve çıkış eğimleri arasındaki açı farkı, yüzde olarak (<span style="font-weight: bold;">W Açı Çe-Ge (%)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Bir düşey kurba giriş ve çıkış eğimleri arasındaki açı farkı, birim başına (<span style="font-weight: bold;">W Açı Çe-Ge (x1)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Arazi kotu (<span style="font-weight: bold;">Z Arazi</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Kırmızı kot farkı (<span style="font-weight: bold;">Z Kırmızı</span>): Kırmızı kot ile arazi arasındaki kot farkı.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Kırmızı kot farkı, yarma durumunda (<span style="font-weight: bold;">Z Kırmızı Yarma</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Kırmızı kot farkı, dolgu durumunda (<span style="font-weight: bold;">Z Kırmızı Dolgu</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Önceki hektometreye göreli mesafeler (<span style="font-weight: bold;">Onluklar (KM)</span>).</span></li>
+      </ul></span>
+      <ul style="font-weight: bold;">
+        <li>Sahte KM (G,S,Ç)</li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li>KV Düşey Kurp / 100</li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li><span style="font-weight: normal;"><span style="font-weight: bold;">Sıra No + 1</span>, düşey kurp numarası artı bir.</span><br />
+</li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li>Some kot farkı</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kazık No (G,S,Ç)</span> S756 veya S757 gibi bir sembolle kazık numaralarını etiketleme imkanımız vardır.<br />
+        </li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Düşey kurpların dış mesafesi </span></span>(DışMesafe Zkırmızı-SK) <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">: Kırmızı kot ile some arasındaki kot farkı.</span></span></span></span></li>
+      </ul>
+      <ul>
+        
+        <li><span style="font-weight: bold;">W Açı Çe-Ge (x1000) </span>Düşey açı Çe-Ge'yi binde olarak etiketleyebiliriz.<br />
+        </li>
+
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <ul>
+        <li><span style="font-weight: bold;">Durma mesafesi</span>: KV ile ilişkili durma görüş mesafesini etiketleme imkanı. Değer, .dia tablosundan, sırasıyla minimum dışbükey veya içbükey düşey kurp sütununa göre arama yapılarak ve durma mesafesi sütunundaki değer enterpole edilerek alınır.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Parabolün kirişi üzerindeki yüksekliği<br />
+          <br />
+          </span></li>
+        <li><span style="font-weight: bold;">26 m'lik kesimdeki sehim</span></li>
+
+      </ul>
+      <ul><li><span class="Parf_negrita">KV1 Asimetrik D.Kurp</span> ve <span class="Parf_negrita">KV2 Asimetrik D.Kurp</span>: Asimetrik düşey kurplarda iki KV'yi etiketleme imkanı.</li></ul><ul><li>KM eşitliklerinden türetilen <span style="font-weight: bold;">kullanıcı KM'lerini</span> etiketleme imkanı.</li></ul>
+      <ul>
+        <li>Derece, dakika ve saniye cinsinden eğim<br />
+        </li>
+      </ul>
+
+      
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+Açıkçası, kullanılacak sembol tipi gösterilecek veriye uygun olmalıdır. Etiketlenecek veri tipi seçildikten sonra, bu verinin aşağıdaki olasılıklardan hangisinden (veya hangisinde, duruma göre) gösterilmek istendiği belirtilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Düşey kurp someleri.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Teğet noktaları (düşey kurp giriş ve çıkışları). Ayrıca, sembolün teğet noktalarına mı yoksa someye mi yerleştirileceği de seçilebilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey kurpsuz someler.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Sabit eğimli bir kesimin ortası.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eşit bir aralığa göre ve sabit eğimli kesimlerde.</span></li>
+      </ul></span>
+      <ul>
+        <li>Ölçülendirme: Bu durumda veri, somenin kilometresi üzerine yerleştirilir ve yükseklik, düşey kurbun giriş ve çıkış noktalarından en yüksek olanına göre belirlenir.</li>
+      </ul>
+      <ul>
+        <li>Başlangıç noktası (Boykesitte güzergahın başlangıç noktası, ilk kırmızı kotun P1,Z1'i). Bu noktalarda KM (KM G,S,Ç) veya kot (Zkırmızı G,S,Ç) hem kırmızı kota göre hem de bilgi bandında sabit bir konumda etiketlenebilir.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Bitiş noktası (Boykesitte güzergahın bitiş noktası, son kırmızı kotun P2,Z2'si). Bu noktalarda KM (KM G,S,Ç) veya kot (Zkırmızı G,S,Ç) hem kırmızı kota göre hem de bilgi bandında sabit bir konumda etiketlenebilir.<br />
+        </li>
+      </ul>
+
+      <span class="Parrafo">
+      <span class="Parrafo">Etiketler, diyagram alanına (tüm diyagram için (<span style="font-weight: bold;">D.Kurp/K.Kot</span>), sadece <span style="font-weight: bold;">İçbükey D.Kurp</span> için veya sadece<span style="font-weight: bold;"> Dışbükey D.Kurp</span> için) veya bilgi bandı alanına yerleştirilebilir.<br />
+      <br />
+Her veri için bir sembol tipi (negatif değerler gösterilmemesine neden olur) ve, uygunsa, yatay ve dikey ötelemeler ilişkilendirilmelidir. Dikey öteleme durumunda, etiketlenecek yer diyagram alanına karşılık geliyorsa, bu öteleme diyagramın noktalarına göredir, ancak bilgi bandı alanına karşılık geliyorsa, karşılaştırma düzlemine görelidir. Ayrıca bir açı da doldurulabilir ve eğer <span style="font-weight: bold;">Bir veri</span> sütununda <span style="font-weight: bold;">K.Kotta Eşit Aralık</span> seçilmişse, bu eşit aralık <span style="font-weight: bold;">EşitA</span> sütununda belirtilir.<br />
+      <br />
+Kırmızı kotun uzunluğu, eğimi veya diğer parametreler üzerine ve açı = 0 ile etiketlendiğinde, bu veriler kırmızı kotun eğimine göre yönlendirilir. dx ve dy'de verdiğimiz değerler kırmızı kot üzerine ve ona dik olarak alınacaktır.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Bilgi kutucuklarında çakışmayı önle</span> seçeneği, düşey kurpların somelerine referanslı tüm sembolleri etkiler ve tanımlanan yatay ve dikey mesafelerden daha yakın çizilen someler için, ikinci somenin tüm sembollerinin dikey olarak minimum dikey mesafeye ulaşana kadar kaydırılmasını sağlar (minimum yatay ve dikey mesafeler yaklaşık olarak bilgi kutucuğunun boyutlarıyla eşleşmelidir). Programın bilgi kutucuğunun yeni konumunu someyle birleştirmek için çizeceği çizgi tipi belirtilebilir.<br />
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="ptos_altos_bajos">Tepe ve Çukur Noktaları</a></span><br />
+      <span class="Parrafo"><br />
+Kırmızı kotun tepe ve çukur noktalarına karşılık gelen KM, kot, kazık no veya herhangi bir sembolü etiketlemeyi sağlar. Eğer <span style="font-weight: bold;">Bir veri</span> sütununda sadece <span style="font-weight: bold;">tepe noktası</span> veya <span style="font-weight: bold;">çukur noktası</span> belirtilirse, o zaman bu noktalar bir düşey kurpta veya düşey kurpsuz bir somede olup olmadığına bakılmaksızın etiketlenir. Diğer seçenekler bu durumları ayırt etmeyi sağlar:<br />
+</span></span>
+      <ul>
+        <li>Tepe noktası (DÜŞEY KURP): Düşey kurplu güzergah elemanları arasındaki tepe noktasını etiketlemeyi sağlar.<br />
+        </li>
+        <li>Çukur noktası (DÜŞEY KURP): Düşey kurplu güzergah elemanları arasındaki çukur noktasını etiketlemeyi sağlar.<br />
+        </li>
+        <li>Tepe noktası (SOME): Düşey kurpsuz güzergah elemanlarındaki tepe noktasını etiketlemeyi sağlar.<br />
+        </li>
+        <li>Çukur noktası (SOME): Düşey kurpsuz güzergah elemanlarındaki çukur noktasını etiketlemeyi sağlar.<br />
+        </li>
+        <li>Başlangıç noktası: Kırmızı kotun başlangıç noktasında etiketlemeyi sağlar.<br />
+        </li>
+        <li>Bitiş noktası: Kırmızı kotun bitiş noktasında etiketlemeyi sağlar.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_ptos_altos_bajos.png" style="width: 490px; height: 177px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Etiketleme, diyagram alanında veya bilgi bandı alanında, belirtilen sembol tipiyle (negatif değerler etiketlenmemesine neden olur), yatay öteleme, dikey öteleme ve açıyla yapılabilir. Etiketleme bilgi bandı alanında ise, dikey öteleme karşılaştırma düzlemine görelidir.<br />
+      <br />
+Etiketimizin notasyonu (Yer) <span style="font-weight: bold;">D.Kurp/K.Kot</span>'a, <span style="font-weight: bold;">bilgi bandına</span>, <span style="font-weight: bold;">someye</span> veya düşey kurbun <span style="font-weight: bold;">ölçülendirmesine</span>, yani somenin kilometresine ve giriş ile çıkış noktası arasındaki en yüksek kota referanslı olabilir.<br />
+      <br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM®/ISPOL®</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span> kütüphanesiyle birlikte bu noktaları etiketlemek için özel semboller verilir. Örneğin, S324 ve S325 sembolleri bunları sarı renkle vurgular ve sırasıyla <span style="font-style: italic;">PA</span> ve <span style="font-style: italic;">PB</span> olarak etiketler.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="pozos">Muayene Bacaları ve Düşey Düşüler</a></span><br />
+      <span class="Parrafo"><br />
+<a href="OL_tuberias.html">Boru hattı projelerindeki</a> kırmızı kotlar için, bu tür projelere özgü elemanların özel etiketlemeleri mevcuttur.<br /><br />Muayene bacaları ile ilgili olarak, mevcut güzergahın geçtiği diğer güzergahlarda tanımlanan bacalar da çizilir ve bu bacalarda kendi bacalarıyla aynı parametreler (KM, ad, açıklama, Kotlar,....) etiketlenebilir.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_pozos.png" style="width: 500px; height: 472px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+Böylece, bu menüden, ilgili kutucuklar işaretlenerek, bacalar ve düşülerle ilgili aşağıdaki verilerin etiketlenmesi belirtilebilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Bacanın kilometresi (<span style="font-weight: bold;">BACA KM</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Bacalar arası mesafe (<span style="font-weight: bold;">BACA MES.</span>): Bu durumda, etiketlenen ilk mesafe başlangıç ile ilk baca arasındaki mesafedir ve geri kalanı her baca ile bir önceki arasındaki mesafedir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşüye giriş noktasındaki kot <span style="font-weight: bold;">(Z giriş DD</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşey düşüden çıkış noktasındaki kot (<span style="font-weight: bold;">Z çıkış DD</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşüye giriş noktası ile arazi arasındaki kot farkı (<span style="font-weight: bold;">Zkırmızı giriş DD</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Düşüden çıkış noktası ile arazi arasındaki kot farkı (<span style="font-weight: bold;">Zkırmızı çıkış DD</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Baca ağzı kotu (<span style="font-weight: bold;">Z ağız</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Baca taban kotu (<span style="font-weight: bold;">Z taban</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Arazi kotu (<span style="font-weight: bold;">Z Arazi</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Kırmızı kot (<span style="font-weight: bold;">Z Kırmızı Kot</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Baca tabanı ile arazi arasındaki kot farkı (<span style="font-weight: bold;">Zkırmızı taban</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Baca derinliği (<span style="font-weight: bold;">Za - Zt</span>), yani ağız ile taban arasındaki kot farkı.</span></li>
+      </ul></span>
+      <ul>
+        <li><span style="font-weight: bold;">Zkırmızı giriş Baca</span> ve <span style="font-weight: bold;">Zkırmızı çıkış Baca</span>: Bacanın giriş ve çıkışındaki kırmızı kot farkının etiketlenmesi eklenmiştir.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Z Giriş&nbsp; ve Z Çıkış Baca</span>: Bacanın iç yüzeyiyle borunun kırmızı kotunun kesişiminde kabul edilen, bacanın giriş ve çıkış kotlarını etiketleme imkanı. Borunun plandaki ve gerçek uzunlukları da bacanın iç bölgesini çıkarır. <br />
+        </li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Bacanın içinden geçen <span style="font-weight: bold;">diğer güzergahların</span> borularının giriş ve çıkış kotlarını etiketleme imkanı.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li><span class="Parf_negrita">İlişkili Sembol</span>: Bacanın ilişkili sembolünü çizmeyi sağlar.</li></ul>
+      <ul>
+        <li>Bir düşey düşünün giriş ve çıkışındaki hendek tabanının yarmadaki kırmızı kot farkı (<span style="font-weight: bold;">Zkırmızı68 giriş/çıkış DD yarma</span>).<br />
+        </li>
+      </ul>
+<ul><li><span style="font-weight: bold;">DİĞER GÜZERGAH</span>'ın adını etiketleyebilirsiniz. (Pozos.gui dosyası bu yeni komutları kullanır). <br />
+        </li>
+      </ul>
+      <span class="Parrafo">
+      <span class="Parrafo">Bu verilerin her biri, bilgi bandı alanında, kırmızı kot veya baca ağzı alanında (duruma göre) etiketlenebilir ve bir etiket tipi (negatif değerler gösterilmemesine neden olur), karşılaştırma düzlemine (bilgi bandı alanında gösteriliyorsa) veya kırmızı kota veya baca ağzına (diyagram alanında gösteriliyorsa) olan bir mesafe, bir yatay öteleme ve bir açı ile ilişkilidir.<br />
+      <br />
+Bir <span style="font-weight: bold;">hücre</span> (C47) tipi bilgi kutucuğu ve bir <span style="font-weight: bold;">dY</span> (bilgi kutucuğunun direğinin yüksekliği) tanımlanabilir, böylece baca ağzına referanslı belirli semboller ve metinler, düzenlemede bilgi kutucuğunun direğinin üst noktası hareket ettirildiğinde sürüklenir. Etkilenen öğeler: Baca adı, Z ağız, Za-Zt, Z giriş baca ve Z çıkış baca.<br />
+      <br />
+Eğer <span style="font-weight: bold; font-style: italic;">Bacaları çiz</span> kutucuğu işaretlenirse, her baca, belirtilen <span style="font-weight: bold;">çizgi</span> tipi, <span style="font-weight: bold;">yarıçap</span> (kağıt mm cinsinden) ve baca duvarının <span style="font-weight: bold;">kalınlığı</span> (yine kağıt mm cinsinden) ile sembolik olarak çizilir, ancak Kırmızı Kotlar/Bacalar menüsünde bacaların çapları tanımlanmışsa, bu durumda o menüde belirttiğimiz çapı okuyacaktır. Ayrıca her bacanın <span style="font-weight: bold;">adının</span> ve <span style="font-weight: bold;">açıklamasının</span>, bilgi bandı alanında veya baca ağzında ve belirtilen stil, karşılaştırma düzlemine (veya baca ağzına) olan mesafe, yatay öteleme, açı ve boyutla etiketlenmesi de belirtilebilir. Etiketin yerleştirme (bağlantı) noktası da belirtilmelidir.<br />
+<span style="font-weight: bold;">Rögarlar</span> ve <span style="font-weight: bold;">baca kazıları</span> için farklı bir çizgi tipi belirlenebilir. <br />
+<br />
+Eğer bacalara özgü bilgi bandı alanında <span style="font-weight: bold;">dikey çizgiler</span> çizmek isteniyorsa, bu menünün alt kısmı kullanılacak, bu çizgilerin çizgi tipi (negatif değerler gösterilmemesine neden olur) ve gerekirse yatay ötelemeleri belirtilecektir. </span></span><span class="Parrafo"><span class="Parrafo">Eğer <span style="font-weight: bold;">başlangıç</span> ve <span style="font-weight: bold;">bitiş</span>te iki eşit değer verilirse, o zaman çizgi kırmızı kottan çizilir. </span></span><span class="Parrafo"><span class="Parrafo">İstenildiği kadar dikey çizgi grubu gösterilebilir ve bu verilerin her biri, karşılaştırma düzlemine olan mesafeler olarak verilen çizgilerin uzunluğu ile ilişkilendirilecektir.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="tubos">Borular</a></span><br />
+      <span class="Parrafo"><br />
+Önceki bölümle bağlantılı olarak, bu diyalog kutusunda <a href="OL_tuberias.html">boruların</a> gösterimiyle ilgili her şey sunulmaktadır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_tubos.png" style="width: 566px; height: 324px;" alt="" />&nbsp;</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Sunulan olanaklar şunlardır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Her borunun 2D uzunluğu (<span style="font-weight: bold;">Uzunluk (planda)</span>).</span></li>
+        <li><span class="Parrafo">Her borunun 3D uzunluğu (<span style="font-weight: bold;">Uzunluk (gerçek)</span>).</span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Her borunun başlangıç <span style="font-weight: bold;">KM</span>'sini bilgi bandında etiketleme imkanı.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Boruların et kalınlığı (<span class="Parf_negrita">Boru Et Kalınlığı</span> ve <span class="Parf_negrita">Sol Boru Et Kalınlığı</span>).<br /></span></span></li>
+
+        <li><span class="Parrafo">Her borunun malzemesi ve çapı (<span style="font-weight: bold;">Malzeme ve çap</span>). Boruların malzemesini ve çaplarını bağımsız olarak etiketleme imkanı.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Boru ve sol borunun malzemesini</span> etiketleme imkanı.</span></li><li><span class="Parrafo"><span style="font-weight: bold;">Boru</span> tipi ve sol boru tipi.<br /></span></li>
+
+        <li><span class="Parrafo">Her borunun açıklaması (<span style="font-weight: bold;">Açıklama</span>).</span></li>
+      </ul>
+      <span class="Parrafo">Her verinin konumu, karşılaştırma düzlemine olan mesafesi (malzeme ve çap ile açıklama durumunda, etiketleme boru üzerindeyse mesafe kırmızı kotun boykesitine görelidir), yatay öteleme ve açı ile verilecek ve belirtilen sembol veya etiket (stil) tipiyle temsil edilecektir. Borunun açıklaması, borunun merkez kilometresine göre yerleştirilebilir.<br />
+      <br />
+Etiketler durumunda, stili belirtmenin yanı sıra bir boyut ve etiketin yerleştirme noktasını (yatay ve dikey bağlantılar) da belirtmek gerekecektir. Ayrıca, borular belirtilen çizgi tipiyle çizilecek, taramalı bir çizgi tipi (L73, L74...) kullanılabilecek ve <span style="font-weight: bold; font-style: italic;">Boru çiz</span> seçeneği işaretlendiği sürece. <span style="font-weight: bold;">Dış</span> sütunu (Boru Çiz) aracılığıyla, dış çapı bir çizgi tipiyle çizerek borunun et kalınlığını göstermek mümkündür.&nbsp; İki boru durumunda, <span style="font-weight: bold;">sol boruyu</span> başka bir çizgi tipi kullanarak çizme imkanı sunulur.<br />
+      <br />
+Eğer borulara özgü bilgi bandı alanında <span style="font-weight: bold;">dikey çizgiler</span> çizmek isteniyorsa, bu menünün alt kısmı kullanılacak, bu çizgilerin çizgi tipi (negatif değerler gösterilmemesine neden olur) ve gerekirse yatay ötelemeleri belirtilecektir. İstenildiği kadar dikey çizgi grubu gösterilebilir ve bu verilerin her biri, karşılaştırma düzlemine olan mesafeler olarak verilen çizgilerin uzunluğu ile ilişkilendirilecektir.<br />
+      <br />
+Kırmızı kotlar menüsünde ve boykesit çiziminde, borular, kırmızı kotlar/bacalar/borular menüsünde tanımlanan baca çapı ve et kalınlığı kullanılarak bacaların olduğu bölgede kesilir.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="viaductos">Sanat Yapıları: Viyadükler ve Üstgeçitler</a></span><br />
+      <span class="Parrafo"><br />
+Eğer ENKESİT (ALZADO) menüsünün <a href="OL_estructuras.html">SANAT YAPILARI</a> bölümüne veri girilmişse, bunlar aşağıdaki menü aracılığıyla boykesit paftasına yansıtılabilir:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_viaductos.png" style="width: 520px; height: 256px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Diyagram alanında, işaretlendiği takdirde, yapının <span style="font-weight: bold;">uzunluğu</span> ve <span style="font-weight: bold;">başlangıç ve bitiş KM'leri</span>, belirtilen sembollerle (etiketlerle) ve <span style="font-weight: bold;">Dikey Mes.</span> sütununa girilen değerlere göre yapıya göre dikey olarak ötelenmiş şekilde etiketlenebilir. Bu etiketlere bir yatay öteleme ve bir açı atamak da mümkündür. Eğer <span style="font-weight: bold; font-style: italic;">3D Uzunluk</span> seçeneği işaretlenirse, gösterilen yapının uzunluğu gerçek uzunluktur. <span style="font-weight: bold;">Kazık No</span> kutucuğunu etkinleştirerek ve kazıklara karşılık gelen bir sembolle (S757) başlangıç ve bitiş kilometresi yerine kazık numarasını etiketleyebiliriz.<br />
+Eksen boyunca (KM farkı) veya tabliye merkezinden ölçülen ve her biri için 2D (planda) veya 3D (eğimi dikkate alarak) olarak <span style="font-weight: bold;">açıklık uzunluğu</span> etiketlenebilir.<br />
+      <br />
+Ayrıca, yapının <span style="font-weight: bold;">adını</span> tek başına, <span style="font-weight: bold;">bitiş kilometresine göre</span> veya <span style="font-weight: bold;">merkezinde</span>; belirtilen stil, ötelemeler, açı, boyut ve yerleştirme noktası ile etiketlemek de mümkündür.<br />
+      <br />
+Yapının <span style="font-weight: bold;">çizimi</span> ile ilgili olarak, kenarayaklar, tabliye ve ayaklar ayırt edilir ve her biri belirtilen çizgi tipiyle temsil edilir (negatif değerler çizilmemesine neden olur). Ayaklar, belirtilen yarıçapla (kağıt mm cinsinden) temsil edilecektir. Eğer daha önce bahsedilen <a href="OL_estructuras.html">SANAT YAPILARI menüsünde</a> bir ayak genişliği belirtilmişse, burada belirtilen yerine o değer dikkate alınacaktır.<br />
+      <br />
+Ayakların KM'lerini etiketleme imkanı.<br />
+      <br />
+Viyadüklerin başlangıç, bitiş ve ayak KM'lerinde kullanıcı KM'lerini kullanma imkanı.<br />
+      <br />
+<span class="Archivo">estruc.gui</span> bilgi bandı, bu tip için iyi bir örnek teşkil eder.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="tuneles">Sanat Yapıları: Tüneller ve Altgeçitler</a></span><br />
+      <span class="Parrafo"><br />
+Yukarıdakileri tamamlayıcı olarak, bu menü tüneller ve altgeçitlerle ilgili her şeyi göstermek için tasarlanmıştır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_tuneles.png" style="width: 520px; height: 161px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Görülebileceği gibi, işleyişi tam olarak aynıdır, tek fark, yapıyı çizerken belirtilen çizgi tiplerinin tünel ağzına ve kemerine karşılık gelmesidir.<br />
+      <br />
+Yine <span class="Archivo">estruc.gui</span> bilgi bandı, bu tür gösterimlerin kullanımına örnek olarak uygundur.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="codos">Dirsekler</a></span><br />
+      <span class="Parrafo"><br />
+<a href="OL_tuberias.html">Boru hattı projeleri</a> durumunda, <a href="OL_tuberias.html#planta">plan tasarımında</a> (BORU modunda) tanımlanan aksesuarların boykesitte bir gösterimine sahip olmak ilginç olabilir. Bunun için aşağıdaki diyalog kutusu mevcuttur:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_codos.png" style="width: 560px; height: 327px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Buradan, ilgili kutucuk işaretlenerek, <span style="font-weight: bold;">gerçek açının</span>, <span style="font-weight: bold;">KM</span>'nin, <span style="font-weight: bold;">kotun</span>, her aksesuara referanslı <span style="font-weight: bold;">herhangi bir sembolün</span>, plandaki (CP), boykesitteki (CA) ve plan ile boykesitin oluşturduğu açıya (CPA) referanslı dirsek açısı listesine ait <span style="font-weight: bold;">numaranın</span>, seçilen tipler için özel parçaların KM'sinin ve plan ile boykesit açılarının etiketlenmesi belirtilebilir. Bu veriler hem boykesit alanında hem de bilgi bandı alanında gösterilebilir ve belirtilen sembol tipiyle ve dikey bir ötelemeyle (bilgi bandı alanında gösterilmesi durumunda karşılaştırma düzlemine göre olacaktır) yapılacaktır. Ayrıca, bir yatay öteleme ve bir açı da belirtilebilir.<br />
+      <br />
+Ayrıca, istenmeyen noktaların etiketlenmesini önlemek için genel bir <span style="font-weight: bold;">minimum açı</span> ve plan ile boykesit açıları için daha spesifik bir açı da belirlenebilir.<br />
+      <br />
+Plandaki etiketlemeye benzer şekilde, tipe göre dirseklerin <span style="font-weight: bold;">adını</span> ve bir sembolünü etiketleme. <br />
+      <br />
+Dirsek açısını etiketleme seçeneği etkinken, program dirsek tablosunda uyum sağlayan bir tane olup olmadığını arar (açı + tolerans) ve adını da etiketler.<br />
+      <br />
+Serbest olanlar hariç, sadece planda tanımlanan dirsekleri etiketlemeye izin verilir.<br />
+      <br />
+Dirseklerin adlarını (Tiplerini) bilgi bandına göre etiketleme imkanı.<br /><br /></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Ecuaciones_de_PK"><span class="Titulo_2">KM Eşitlikleri</span><br /><br />KM Eşitliklerinin KM'lerini (önceki ve sonraki) profilde etiketleme imkanı.<br /><br /></a></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Ecuaciones_de_PK"><img style="width: 322px; height: 166px;" alt="" src="Imagenes/gui_ec_pk.png" /></a></span></span></span><a name="Ecuaciones_de_PK"><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></a></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Ecuaciones_de_PK"><br /></a></span></span></span><span class="Parrafo"><span class="Parrafo">
+<a name="Ecuaciones_de_PK"><br />
+      </a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Ecuaciones_de_PK"> </a></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Yatay Güzergah Tasarımı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table style="width: 700px; height: 1px;" border="0" cellpadding="0">
+
+<tbody>
+<tr>
+<td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+<a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+<a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+<tbody>
+<tr>
+<td class="Titulo_2">
+<div align="center"><strong>YATAY GÜZERGAH TASARIMI<br />
+</strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="height: 1782px; width: 694px;" border="0" cellpadding="0">
+
+<tbody>
+<tr>
+<td class="Parrafo"><br />
+<span class="Parrafo">Bu bölüm aşağıdaki kısımlara ayrılmıştır:<br />
+<br />
+</span>
+
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a><br />
+</span>
+<div style="margin-left: 40px;"><a href="#modos_visualizacion"><span class="Parrafo">İletişim kutusunu görüntülemenin iki modu</span></a><br />
+<span class="Parrafo"></span></div>
+
+<span class="Parrafo"><a href="#descripcion_dialogo">İletişim kutusunun açıklaması</a></span><br />
+<span class="Parrafo"></span></div><div style="margin-left: 80px;"><span class="Parrafo"><a href="#navegador_alineaciones">Güzergah elemanları gezgini</a><br />
+<a href="#tipologia_alineaciones">Güzergah elemanlarının tipleri</a><br />
+</span><span class="Parrafo"><a href="OL_planta_diseno.html#def_ali">Her güzergah elemanının verilerinin tanımı</a><br />
+</span>
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#radios">Yarıçapların bildirilmesi</a></span><br />
+<span class="Parrafo"><a href="#curvas_trans">Geçiş eğrilerinin bildirilmesi</a><br />
+      <a href="#generacion_pi">PI'dan güzergah elemanlarının oluşturulması ve eklenmesi</a><br />
+</span>
+<span class="Parrafo"><a href="#normativa">Yönetmelik</a></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<span class="Parrafo"></span></span></div>
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#modif_dinamica">Dinamik veya gerçek zamanlı değişiklik</a></span><br />
+<span class="Parrafo"><a href="#calculo">Hesaplama, geometrik çözüm ve listeler</a><br />
+</span>
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#errores_geom">Geometrik hataların kontrolü</a></span><br />
+<span class="Parrafo"><a href="#listados">Listelerin oluşturulması</a></span><br />
+<span class="Parrafo"><a href="#dibujo_ejes">Eksenlerin çizimi</a></span><br />
+<span class="Parrafo"></span></div>
+
+<span class="Parrafo"></span></div>
+      <div style="margin-left: 40px;"><a href="OL_tanteo_de_rasantes.html"><span class="Parrafo">Kırmızı Kot Denemesi</span></a><br />
+      <a href="OL_regresion.html">Regresyon</a><br /><a href="#Ajustar_a_una_linea">Bir çizgiye uydur</a><br />
+      </div>
+      <span class="Parrafo">
+<br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+<span class="Parrafo"><br /></span>
+<div style="text-align: justify;"><span class="Parrafo">YATAY GÜZERGAH tasarım menüsü, yataydaki eksenleri tanımlamayı sağlar. Her eksen, güzergah elemanlarından (doğrular ve dairesel kurplar) ve yatay birleşim eğrilerinden (klotoidler) oluşacaktır.</span><br />
+<span class="Parrafo">
+</span><br />
+<span class="Parrafo">
+Bu menü, DOĞRUSAL YAPI modülüne girildiğinde belirir. Girildiğinde, program girmeden önceki harita görünümünü aynı şekilde gösterir, ancak çalışma ortamı artık bu amaca uygun yatay güzergah tasarım menülerini de gösterir:</span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 550px; height: 459px;" alt="" src="Imagenes/diseno_planta.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<br />
+
+Güzergah elemanlarının tanımlandığı iletişim kutusu, karayolu ve demiryolu projeleri için benzerdir, boru hattı projeleri için özel bir tane olmasına rağmen, bunun da kullanılmasına engel bir durum yoktur.<br />
+<br />Eksenlerin görüntüleme seçenekleri ve <a href="OL_planta_normativa.html#repaso_norma">yönetmelik kontrolünde</a> kullanılan renkler gibi diğer seçenekler, sabit yan menüden erişilebilen <a href="OL_planta_opciones_visualizacion.html">[SEÇENEKLER]</a> iletişim kutusu aracılığıyla yapılandırılır.<br />
+<br />
+<br />
+</span><a style="font-weight: bold; font-style: italic;" name="modos_visualizacion"><span class="Parrafo">İletişim kutusunu görüntülemenin iki modu</span></a><br />
+<span class="Parrafo"><br />
+Varsayılan olarak, iki sekmeye sahip 'kısa' bir menü gösterilir: EKSENLER ve GÜZERGAH ELEMANLARI. Her biri, iki bilgi alanını görüntülemeyi ve tanımlamayı sağlar.<br />
+<br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 582px; height: 134px;" alt="" src="Imagenes/dialogo_planta_ejes.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo"><br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 582px; height: 147px;" alt="" src="Imagenes/dialogo_planta_alineaciones.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<br />
+Sabit menüden, her iki sekmenin verilerinin birlikte gösterildiği uzun menü şekline geçilebilir. Bu pencere görüntüleme değişikliği, <a href="OL_planta_opciones_visualizacion.html#menu_largo">yatay güzergah görüntüleme seçeneklerinden</a> yapılır:<br />
+<br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 582px; height: 210px;" alt="" src="Imagenes/dialogo_planta.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<br />
+Kullanıcı, hangi yatay güzergah görüntüleme moduyla çalışmayı tercih ettiğine karar vermelidir ve tasarımın herhangi bir aşamasında bir moddan diğerine geçiş yapılabilir.<br />
+</span><span class="Parrafo"><br />
+Bu menünün üst kısmında bulunan <img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolbarEstandar_nuevo.png" />, <img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />, <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" /> kutucukları aracılığıyla sırasıyla bir <span class="Archivo">.pol&nbsp;<span class="Parrafo">veya bir&nbsp;<a href="OL_proyecto.html#archivos_isa"><span class="Archivo">.isa</span></a></span></span> dosyasını indirebilir, yükleyebilir veya kaydedebiliriz. <span class="Archivo">.pol</span> dosyası, doğrusal yapı projesinin indeksidir. Bu dosya, doğrusal yapı <a href="OL_proyecto.html">projesinin</a> geri kalan dosyalarını ilişkilendirir.<br />
+      <br />
+</span><span class="Parrafo">Yatay güzergah dosyası adının hemen yanındaki <img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolbarEstandar_nuevo.png" />, <img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />, <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" /> kutucukları aracılığıyla, projemin farklı eksenlerini içeren bir <span class="Archivo">.cej</span> dosyasını sırasıyla indirebilir, yükleyebilir veya kaydedebiliriz.</span><br />
+      <span class="Parrafo">
+<br />
+      </span><span class="Titulo_2"><a name="descripcion_dialogo">İletişim kutusunun açıklaması</a></span><br />
+<span class="Parrafo"> <br /></span>
+<table style="text-align: left; width: 692px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;"><span class="Parrafo Info">Aşağıda geliştirilen açıklama, iletişim kutusunun <a href="OL_planta_diseno.html#modos_visualizacion">mod</a> <span style="font-style: italic;">uzun</span> haline karşılık gelir ve tüm açıklamalar diğer <a href="OL_planta_diseno.html#modos_visualizacion">mod</a> için de benzerdir.</span></td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><br />
+</span><span class="Parrafo">Çalışılacak eksenin seçimi, <span style="font-weight: bold;">EKSEN</span> yatay kaydırıcısı kullanılarak veya <span style="font-weight: bold;">[EKSEN: i/n]</span> düğmesine basıldıktan sonra doğrudan numarasını yazarak yapılır. Bu düğmenin özel bir davranışı vardır:<br /><br /></span><ul><li><span class="Parrafo">Eğer mevcut son eksenden daha büyük bir eksen numarası girilirse (i>n), sonuncudan sonraki numarayla yeni bir eksen oluşturulur.</span></li><li><span class="Parrafo">Eğer i>(n+1) olacak şekilde bir i eksen numarası girilirse, ara eksenler oluşturulabilir. Örneğin, 5 eksenimiz varsa ve 6'dan büyük bir sayı (örn. 10) girersek, bize sorulacaktır:</span></li><ul><li><span class="Parrafo">Ara eksenleri (6-9) boş olarak oluşturmak istiyor musunuz?</span></li><li><span class="Parrafo">HAYIR yanıtını verirsek, 6. eksen eklenecektir.</span></li><li><span class="Parrafo">EVET yanıtını verirsek, 6,7,8,9 ve 10 numaralı ara eksenler oluşturulur ve sonuncusu mevcut eksen olarak kalır.<br /></span></li></ul></ul><span class="Parrafo"><br />
+</span><span class="Parrafo"><span style="font-weight: bold;">[Ekle]</span> düğmesi, tanımlanan sonuncunun ardından yeni bir eksen oluşturmayı da sağlar. 1 numaralı eksenin otomatik olarak oluşturulduğunu unutmamak gerekir, bu nedenle PLAN'a girerken bu seçenek kullanılırsa, 2 numaralı eksen oluşturulur ve 1 numaralı eksen boş kalır.<br /></span><span style="font-size: 11pt; line-height: 107%; font-family: &quot;Calibri&quot;,sans-serif;" lang="ES"><span class="Parrafo"><br />
+Boykesit için, <span class="Archivo">.cej</span> dosyasında saklanacak bir ad ilişkilendirmek mümkündür. Bu açıklayıcı ad, eksen numarasını girme düğmesinin sağındaki boşluğa girilir.<br />
+</span><span class="Parrafo"><br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 575px; height: 207px;" alt="" src="Imagenes/selec_eje_planta.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo"><span class="Parrafo"><br />
+<table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: top; height: 5px; font-weight: bold;"><span class="Parrafo">Baş.KM</span></td>
+	<td style="vertical-align: top; height: 5px; text-align: justify;"><span class="Parrafo">Mevcut eksenin başlangıç kilometresi (KM) olarak atanan değeri tanımlamayı veya değiştirmeyi sağlar, yani mevcut eksenin ilk güzergah elemanının ilk veri noktası (başlangıç KM). Varsayılan olarak tüm eksenler KM 0'da başlar, ancak bu değer pozitif, negatif ve ondalıklı veya ondalıksız olabilir.<br />
+	<br />
+</span></td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; height: 8px; font-weight: bold;"><span class="Parrafo">Grup</span><br />
+</td>
+	<td style="vertical-align: top; height: 8px; text-align: justify;"><span class="Parrafo">Belirli ortak özelliklere sahip eksenleri gruplamayı sağlar. Örneğin, bir bağlantıyı oluşturan tüm eksenlere aynı numara verilebilir ve ana yol için 0 grubu ayrılabilir.<br />
+	<br />
+Varsayılan olarak program, 1 numaralı eksene 0 grubunu ve projenin geri kalan eksenlerine 1 grubunu atar. Buradan sadece bir eksenin ait olduğu grup numarası atanır, ancak hem PLAN hem de BOYKESİT dikey menüsünde bulunan özel <a href="OL_grupos.html">gruplar menüsünde</a>, projenin tam hesaplamalarını yaparken gruplar etkinleştirilebilir ve devre dışı bırakılabilir. Yatay güzergahtaki elemanlar temsil edilirken sadece aktif gruplardaki eksenler çizilecektir.<br />
+	<br />
+</span></td>
+  </tr><tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;"><a name="Vp">Vp</a></span>
+	</td>
+	<td style="vertical-align: top; text-align: justify;">Bu alan, varsayılan olarak 80 km/s olan <span style="font-weight: bold;">proje hızını</span> atamayı sağlar. Bu hız, eksenin geometrik tanımıyla birlikte <span class="Archivo">.cej</span> dosyasında saklanır, böylece diğer fonksiyonlar tarafından ve ayrıca <a href="OL_general.html">GENEL sekmesinden</a> her eksene atanan <a href="OL_planta_normativa.html">.dip yatay güzergah tasarım tablolarında</a> kullanılabilir.<br />
+	</td>
+  </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">İlk kurp</span><br />
+            </td>
+            <td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo">Eksenin ilk kurbunu tanımlamak için numarayı belirtir. Yeni numaralandırma <span class="Archivo">ceje.res</span> listelerinde ve grafik ekranda yansıtılacaktır.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">İlk eleman</span><br />
+            </td>
+            <td style="vertical-align: top;">Eksenin ilk güzergah elemanını tanımlamak için numarayı belirtir. Yeni numaralandırma <span class="Archivo">ceje.res</span> listelerinde ve grafik ekranda yansıtılacaktır.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">PI Numaralandırma</span><br />
+            </td>
+            <td style="vertical-align: top;">Yatay Güzergah->Eksen sekmesinde, iki doğru arasındaki some noktalarını kurp olarak numaralandırmama seçeneğimiz bulunmaktadır.<br />
+            </td>
+          </tr>
+
+
+
+</tbody>
+</table>
+</span><br />
+<span class="Parrafo"><img style="width: 242px; height: 139px; margin-left: 7px;" alt="" src="Imagenes/dibujar_anchos.png" align="right" /><span class="Parrafo"><span class="Parrafo"><a name="dib_lin_paral"><span style="font-weight: bold;">S</span> ve <span style="font-weight: bold;">D</span> alanlarından, eksenden olan mesafeler atanarak, eksenin sağına üç ve soluna üç olmak üzere 6 adede kadar çizginin otomatik olarak çizilmesi sağlanabilir. Böylece, <a href="OL_planta_opciones_visualizacion.html#dibujar_anchos">görüntüleme seçeneklerinde</a> genişliklerin gösterimi etkinse, her hesaplamada eksene paralel bu çizgiler çizilerek, örneğin, platform ve banketin teorik genişlikleri simüle edilir. Varsayılan olarak, bu genişlikleri çizmek için kullanılan çizgi 401'dir, ancak <span style="font-weight: bold;">ÇizgiTipi</span> alanından yapılandırılabilir.<br />
+      <br />
+Eğer Yatay Güzergah seçenekleri arasında <a href="OL_Planta_Opciones_Visualizacion.html#dibujar_entronques">Kavşaklar</a> seçeneğini etkinleştirirsek, kavşakların karakteristik noktalarının doğru görüntülenmesi için bu mesafeler yapılandırılmalıdır.<br />
+<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 188px; height: 35px;" alt="" src="Imagenes/opc_dibujar_anchos_planta.png" /></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br /></span></span></span>
+<table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle; width: 30px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td>
+	<td style="vertical-align: middle; width: 607px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">Bu genişlikler yol göstericidir, hiçbir durumda genişletmeler hesaplanmaz veya enterpolasyonlar yapılmaz.</span></span></span></span></td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span><span style="font-weight: bold; font-style: italic;"><a name="navegador_alineaciones">Güzergah elemanları gezgini</a></span><br />
+<span class="Parrafo"> <br />
+</span></span></span><img style="width: 124px; height: 68px;" alt="" src="Imagenes/navegador_ali_planta.png" align="right" hspace="4" />Güzergah elemanları gezgini, tanımlanacak veya değiştirilecek eksen elemanını seçmenin yanı sıra veri silme ve ekleme imkanı sunar. Varsayılan olarak her zaman boş olsa bile bir veri bulunur.<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bir elemanın seçimi, üzerine tıklayarak grafiksel olarak da yapılabilir. Eğer başka bir eksenin bir elemanı seçilirse, program otomatik olarak eksen değiştirir.</span><span class="Parrafo"><br />
+<br />
+<table style="text-align: left; width: 692px; height: 91px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;">[-]<br />
+[+]</span><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;">Bu düğmeler, mevcut eksenin elemanları arasında sırasıyla geriye ve ileriye doğru ardışık olarak 'gezinmeyi' sağlar.<br />
+<br />
+	</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;">[ELEMAN: i/n]</span><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;">Mevcut eksen içindeki mevcut elemanın <span style="font-style: italic;">i</span> numarasını ve eksenin toplam <span style="font-style: italic;">n</span> eleman sayısını bildirir. Ayrıca, istenen elemanı doğrudan seçmeyi de sağlar, çünkü bu tuşa basıldığında gidilmek istenen elemanın numarası istenir. Eğer eleman sayısından büyük bir numara girilirse, sistem yeni bir tane ekler.<br />
+<br />
+	</td>
+  </tr>
+<tr>
+	<td style="vertical-align: top; height: 5px; font-weight: bold;">[Ekle]</td>
+	<td style="vertical-align: top; height: 5px; text-align: justify;">Tanımlanan <span style="font-weight: bold;">sonuncunun ardından</span> yeni bir eleman oluşturur.<br />
+            <br />
+</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; height: 8px; font-weight: bold;">[Araya Ekle]</td>
+	<td style="vertical-align: top; height: 8px; text-align: justify;">Mevcut olanın <span style="font-weight: bold;">hemen önüne</span> yeni bir eleman oluşturur.<br />
+            <br />
+</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; height: 25px; font-weight: bold;">[Sil]<br />
+	</td>
+	<td style="vertical-align: top; height: 25px; text-align: justify;"><span class="Parrafo">Mevcut elemanı siler. Eğer bir eksenin tek elemanı silinirse, dosyadaki tek eksen olmadığı sürece eksen de silinir.</span></td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><br />
+Yeni bir eleman eklendiğinde veya araya eklendiğinde, varsayılan olarak tip 0 atanır, ancak bu davranış <a href="OL_planta_opciones_visualizacion.html#ali_defecto">yatay güzergah seçeneklerinde</a> değiştirilebilir.<br />
+      <br />
+<br />
+</span></span><span style="font-weight: bold; font-style: italic;"><a name="tipologia_alineaciones">Güzergah elemanlarının tipleri</a></span><br />
+<span class="Parrafo"><span class="Parrafo"> <br />
+</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 145px; height: 201px; margin-left: 7px;" alt="" src="Imagenes/tipos_ali.png" align="right" /><span class="Parrafo"><span class="Parrafo">Bir eksen, birbirine teğet olan kurp ve doğru güzergah elemanlarının bir dizisinden oluşur. ISTRAM<sup>®</sup>/ISPOL</span></span></span><span class="Parrafo"><sup>®</sup></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, geniş bir <a href="OL_planta_alineaciones.html">yatay güzergah elemanı tipolojisine</a> sahiptir.<br />
+
+</span></span><span class="Parrafo"><span class="Parrafo"><br />
+
+Açılır menüdeki <span style="font-weight: bold;">[TİPLER]</span> tuşuna basıldığında, kullanıcıya mevcut olasılıkların çoğu sunulur.<br />
+<br />
+Tamamlayıcı olarak, dikey menüdeki <span style="font-weight: bold;">[Tipler]</span> düğmesine basıldığında, bir yeniden çizimle kaybolan tiplerin ve ilişkili verilerin bir özet tablosu ekranda gösterilir:<br />
+
+<br />
+</span></span></span></span></span></span></span></span>
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 469px; height: 330px;" alt="" src="Imagenes/resumen_tipos_ali.png" /></span></span><br />
+</div>
+<br />
+<span class="Parrafo"><br /></span></span></span></span></span></span>
+      <div style="text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><span style="font-weight: bold; font-style: italic;"><a name="def_ali">Her güzergah elemanının verilerinin tanımı</a></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+
+<span class="Parrafo"><a href="OL_planta_alineaciones.html">Güzergah elemanı tiplerinin</a> bildirilmesi, eksenin doğru bir şekilde hesaplanması için belirleyicidir. <span style="font-weight: bold;">[TİPLER]</span> düğmesi tarafından sunulan tablodan bir tane seçilerek doldurulabilen <span style="font-weight: bold;">Tip</span> alanından, programın geri kalan verilerle birlikte girilen elemanın tipini anlaması sağlanır. </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yeni bir eleman eklendiğinde veya araya eklendiğinde varsayılan olarak tip 0 atanır, ancak bu davranış <a href="OL_planta_opciones_visualizacion.html#ali_defecto">yatay güzergah seçeneklerinde</a> değiştirilebilir.</span></span></span></span><br />      
+      <br />
+      <span class="Parrafo"><span class="Parrafo">
+Pencerenin alt şeridi, mevcut elemanın verilerini, önceki ve sonraki elemanların yarıçaplarını ve üçü arasındaki ara klotoidleri içerir ve ayrıca bunların değiştirilmesine izin verir.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span>
+
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 579px; height: 77px;" alt="" src="Imagenes/dialogo_planta_datos_ali.png" /></span><br />
+</div>
+<br />
+      <div style="text-align: justify;">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+
+Güzergah elemanları eklendikçe, çizilebilecek sabit elemanlar, yani kullanıcı tarafından girilen verileri olanlar ekranda gösterilecektir.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Mevcut eleman, eğer sabitse, harita üzerinde sarı renkte çizilir ve siyan renginde çizilecek olan diğerlerinden ayırt edilir.</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<span class="Parrafo">Tipik <span style="font-weight: bold;">[Tıkla/Klavye]</span>&nbsp;
+düğmesi, veri giriş modunu grafiksel ve sayısal arasında değiştirir. </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Grafik modunda, kullanıcı kırmızı kot tasarımına özgü <a href="OL_planta_enganches.html">yakalama</a> modlarından yararlanabilir.</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<a href="OL_planta_alineaciones.html">Güzergah elemanı tipine</a> bağlı olarak, onu tanımlamak için hiç, bir, iki veya üç noktaya kadar gerekebilir; bu noktalar geçiş noktaları, merkezler veya basit referans noktaları olabilir. Bu noktaların tanımı grafiksel (ekranda tıklayarak), bu durumda tüm yakalama modları veya klavye ile mutlak, göreceli veya polar koordinatlarda giriş geçerlidir veya klavye aracılığıyla sayısal olarak da girilebilir.</span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Koordinat çiftlerinin yanında, nokta çiftlerinin koordinatları üzerinde işlem yapmayı sağlayan iki tür tuş bulunur:</span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span></span>
+<table style="text-align: left; width: 691px; height: 318px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: top; width: 40px; font-weight: bold;">[0]<br />
+	</td>
+	<td style="vertical-align: top; width: 631px; text-align: justify;">X ve Y koordinatlarını 0 yapmak için kullanılır. Bu, örneğin bir sabit elemanı serbest veya döner bir elemana dönüştürmek istendiğinde kullanışlıdır.<br />
+	</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; width: 40px; font-weight: bold;"><a name="tecla_V">[Ö.K.]<br />
+	</a></td>
+	<td style="vertical-align: top; width: 631px; text-align: justify;"><span style="font-weight: bold;">[ÖNCEKİ KÖŞE]</span>: Mevcut elemanın <span style="font-weight: bold;">X1</span> ve <span style="font-weight: bold;">Y1</span>'ine, önceki elemanın <span style="font-weight: bold;">X2</span> ve <span style="font-weight: bold;">Y2</span> koordinatlarını kopyalar. Bu, işlem sonunda gerekli serbest elemanları ekleyerek, köşelerden poligon hatlarla eksenleri hızlı bir şekilde tanımlamayı sağlar.<br />
+            <span style="font-weight: bold;">[SONRAKİ KÖŞE]</span>: <span style="font-weight: bold;">X2</span> ve <span style="font-weight: bold;">Y2</span> koordinatları için, mevcut elemandan itibaren bulunan ilk sabit elemanın <span style="font-weight: bold;">X1</span> ve <span style="font-weight: bold;">Y1</span> değerlerini kopyalar.<br />
+	</td>
+  </tr><tr>
+	<td style="vertical-align: top; width: 40px;"><span style="font-weight: bold;">[L x 1]</span><br />
+	</td>
+	<td style="vertical-align: top; width: 631px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Burada güzergah elemanının uzunluğu bildirilir. Bu değeri giriş verisi olarak kabul eden <a href="OL_planta_alineaciones.html">elemanlar</a> hariç, bu gereksiz bir veridir ve dikkate alınmaz.<br />
+<br />
+Düğmeye basıldığında, uzunluğun girilebileceği farklı modlar arasında geçiş yapar:<br />
+<ul><li><span style="font-weight: bold;">L x 1</span>: Uzunluk, doğrudan burada bildirilen değerdir.</li></ul>
+<ul><li><span style="font-weight: bold;">L x PI</span>: Değer PI ile çarpılır, bu da dairesel dönel kavşaklarda uzunluğu tam olarak tanımlamayı sağlar. Örneğin, 30 yarıçaplı bir dönel kavşak, L x PI = 60 verisi kullanılarak tanımlanır.</li></ul>
+<ul><li><span style="font-weight: bold;">Açı</span>: Dairesel elemanın uzunluğu, yayın derecesi cinsinden açısıyla tanımlanır.</li></ul>
+<ul><li><span style="font-weight: bold;">Grad</span>: Dairesel elemanın uzunluğu, yayın grad cinsinden açısıyla tanımlanır.</li></ul>Başka bir sabit doğrunun arkasında, sadece uzunluğuyla tanımlanan bir bağlantı doğrusuna izin verilir.<br />
+
+</span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;">Az</span><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;">Bu alana, gerektiğinde güzergah elemanının azimutu girilebilir. DOĞRUSAL YAPI modülündeki azimutlar grad cinsinden ifade edilir, kuzey sıfır ve saat yönünde pozitiftir.<br />
+	</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;">Öte</span><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;">Tanımlanan elemanın P1 (X1,Y1) ve P2 (X2,Y2) noktalarına göre geçmesi gereken mesafeyi belirtir. <span style="font-weight: bold;">Öteleme</span>, eleman noktaların sağından geçtiğinde pozitif ve solundan geçtiğinde negatif olacaktır.<br />
+	<br />
+İki nokta artı bir yarıçap ve bir öteleme ile tanımlanan elemanlar durumunda, iki noktadan geçen ve yarıçapı, yarıçap değeri artı ötelemeye eşit olan bir yay temsil edilir, böylece tanımlanan yarıçapla hesaplanan eleman ona paralel olur.<br />
+	</td>
+  </tr>
+
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><br /><span style="font-weight: bold;">[P(%)]</span> düğmesi, yatay güzergah tasarım aşamasından itibaren, özel bir iletişim kutusundan <a href="OL_planta_peralte_velocidad_obligados.html">zorunlu deverleri ve proje hızlarını</a> bildirmeyi sağlar.<br />
+<br /><br /><a name="radios">
+YARIÇAPLARIN BİLDİRİLMESİ</a><br />
+<br />
+<span style="font-weight: bold;">YARIÇAP</span> alanından, <a href="OL_planta_alineaciones.html#convenio_radio">programın kuralına</a> göre güzergah elemanının yarıçap değeri girilir veya değiştirilir. Mevcut elemandan, sırasıyla <span style="font-weight: bold;">R önce</span> ve <span style="font-weight: bold;">R sonra</span> alanları aracılığıyla önceki ve sonraki elemanların yarıçapına erişim sağlanır.<br />
+
+<br /></span>
+<img style="width: 209px; height: 74px; margin-right: 7px;" alt="" src="Imagenes/planta_radios_clotoides.png" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Eğer doğrudan <span style="font-weight: bold;">[YARIÇAP]</span>, <span style="font-weight: bold;">[R önce]</span> veya <span style="font-weight: bold;">[R sonra]</span> düğmelerine basılırsa, bunlar sırasıyla <span style="font-weight: bold;">[DERECE]</span>, <span style="font-weight: bold;">[D önce]</span> ve <span style="font-weight: bold;">[D sonra]</span>'ya dönüşür ve o zaman kurplar yarıçaplarına göre değil, bazı Latin Amerika ülkelerinde yaygın olduğu gibi kurp derecesine göre tanımlanır.<br />
+<br /><br />
+<br /><a name="curvas_trans">
+GEÇİŞ EĞRİLERİNİN BİLDİRİLMESİ</a><br />
+<br />
+</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_planta_curvas_transicion.html">Birleşim eğrileri</a>, ana güzergah elemanları arasındaki geçişleri yapmayı sağlar.</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><a href="OL_planta_alineaciones.html#libertad">Serbestlik derecelerine</a> bağlı olarak, bu birleşim eğrileri tek çözümlü olabilir, bu durumda program onları hesaplar (bir <a href="OL_planta_curvas_transicion.html#relacion_param">parametreler arası ilişki</a> belirtme imkanıyla) veya kullanıcı tarafından tanımlanabilir, bu durumda kullanıcının uygun parametreyi bildirmesi gerekir.</span></span></span></span><br />
+<span class="Parrafo">
+<br />
+</span>
+<table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: top; width: 34px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td><td style="vertical-align: top; width: 630px; text-align: justify;"><span class="Info"><a href="OL_planta_curvas_transicion.html">Birleşim eğrileri</a> ana güzergah elemanları DEĞİLDİR. Dolayısıyla, gerekirse sadece onları karakterize eden parametreyi bildirmek yeterlidir.</span><br />
+	</td></tr></tbody>
+</table>
+<br />
+
+<span class="Parrafo">Bu parametre, klotoidin A sabitine göre yapılmak isteniyorsa <span style="font-weight: bold;">[A]</span> alanında bildirilir, ancak bu düğme <span style="font-weight: bold;">[L]</span>'ye dönüştürülebilir ve o zaman klotoid uzunluğuna göre tanımlanabilir. Özel durumlar hariç, geçiş eğrisinin <a href="OL_planta_curvas_transicion.html#signo">işaretini</a> belirtmek gerekmez.<br />
+<br />
+A=0 değeri, mevcut elemanın ve ondan öncekinin ara birleşim eğrisi olmadan doğrudan teğet olduğunu belirtir. Bu durumda ve ardışık iki eleman iki doğru ise, bir köşe noktası oluşur ve program olası hata hakkında uyarır.<br />
+<br />
+</span><span class="Parrafo"><img style="width: 177px; height: 57px;" alt="" src="Imagenes/clotoide_vert.png" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Hesaplama sonucunda bir <a href="OL_planta_curvas_transicion.html#clotoide_vertice_fijas">some klotoidi</a> ortaya çıktığında, sonuçlarda bu noktada, o somenin eğrilik yarıçapını ve iki klotoid kolu arasındaki teğetlik noktasının konumunu belirten sıfır uzunluklu sanal bir dairesel eleman görünür. Somedeki yarıçap değerini sabitlemek de mümkündür.<br />
+<br /></span></span></span></span></span><img style="width: 202px; height: 73px; margin-right: 7px;" alt="" src="Imagenes/clotoide_S.png" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Bir S kurbunda iki farklı parametre kullanıldığında, birincisi birinci dairesel kurptan çıkışa ve ikincisi ikinciye girişe uygulanır; örneğin, R=-250, A=120, A=140, R=280. S'nin iki klotoidinden birini kaldırmak isteniyorsa, geçişsiz dairesel kurba bitişik olanın parametresini 0 olarak bildirmek yeterlidir.<br />
+<br /><br />
+      <a name="generacion_pi">PI'DAN GÜZERGAH ELEMANLARININ OLUŞTURULMASI VE EKLENMESİ<br />
+      <br />
+</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="generacion_pi">Mevcut eksene (eğer son eleman iki noktalı sabit bir doğru ise) yeni doğru elemanlar eklemeyi sağlar. Yeni elemanın P1'i önceki doğrunun P2'sinde bir köşe oluşturur ve yeni elemanın P2'si grafiksel olarak seçilir.<br />
+İkisi arasına, <a href="OL_planta_opciones_visualizacion.html#opciones">Yatay Güzergah Seçenekleri</a>'nde önceden tanımlanmış R yarıçaplı ve A parametreli serbest bir daire eklenir.<br />
+Doğrular arasındaki sapma, klotoidlerin gerektirdiği sapmaların toplamından az ise klotoidler eklenmez.<br />
+Yarıçapın işareti, doğrular arasındaki sapmanın işaretine göre hesaplanır.<br />
+Seçenek döngüseldir ve P2 sabitlendikten sonra yeni elemanlar eklemeye devam etmeyi sağlar.<br />
+Koordinatsız tek bir elemanla yeni bir eksen eklersek, <span style="font-weight: bold;">PI Ekle</span> seçeneği önce bu ilk elemanın P1 ve P2 noktalarının konumunu grafiksel olarak tıklamamızı ister.</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 615px; height: 82px;" alt="" src="Imagenes/planta_anadirpi.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">PI Ekle</span> komutuyla, iki noktalı sabit bir doğru elemanı seçip, aralarında serbest bir kurp olacak şekilde iki doğruya bölebiliriz; kurbun somesi (PI) grafiksel olarak belirlenecektir.<br />
+Kurbun yarıçapı ve klotoidlerin parametreleri <a href="OL_planta_opciones_visualizacion.html#opciones">Yatay Güzergah Seçenekleri</a>'nde önceden tanımlanır.<br />
+Yarıçapın işareti, somenin konumuna göre otomatik olarak hesaplanır.<br />
+A klotoidleri, sadece doğrular arasındaki sapma her ikisinin de kesişmeden sığmasına izin veriyorsa konur.<br />
+Seçenek döngüseldir, bir some sabitlendikten sonra aynı veya başka bir doğru seçilebilir ve PI'lar eklemeye devam edilebilir.<br />
+Bu seçenekle, önce başlangıç ve bitiş noktası arasında bir doğru oluşturarak (eksen hesaplanır) ve ardından tüm somelerini ekleyerek bir eksen çizebiliriz.<br />
+<span style="font-weight: bold;">PI Sil</span> komutuyla, başlangıç ve bitiş noktaları dahil olmak üzere bu noktaları aynı döngüsel şekilde silebiliriz. Bir nokta silindiğinde, kalan doğrunun önceki ve sonraki kurplarında klotoidlerin sığıp sığmadığı veya kaldırılması gerekip gerekmediği ve dairesel elemanın yarıçapının işaretinin değiştirilmesi gerekip gerekmediği analiz edilir.<br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><a name="normativa">
+YÖNETMELİK</a><br />
+<br />
+</span><span class="Parrafo">Eğer bir <a href="OL_planta_normativa.html">yatay güzergah tasarım tablosu</a> yüklenmişse, <a href="OL_planta_normativa.html#tecla_R">[R] düğmesi</a> aracılığıyla yönetmeliğe göre o tablonun önerilerini izleyerek yarıçapı seçmek mümkündür.<br />
+<br />
+Benzer şekilde, <a href="OL_planta_normativa.html#tecla_T">[T] tuşu</a> klotoid parametreleri sunar. Bu durumda en fazla üç [T] tuşu görünebilir. En üstteki birincisi, mevcut ana elemandan önceki bir veya iki klotoidi değiştirir, ortadaki mevcut dairesel kurba bitişik olan ikisini değiştirir (eğer bir doğru ise düğme pasif olur) ve üçüncüsü sonrakileri değiştirir.</span><br />
+<br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><span class="Titulo_2"><a name="modif_dinamica">Dinamik veya gerçek zamanlı değişiklik</a></span><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+<br />
+<span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Program, fareyi kullanarak ve eksenin 'veri' noktalarını (tutamakları) hareket ettirerek yatay güzergah eksenlerinin interaktif olarak değiştirilmesi imkanını sunar, böylece tasarımın nasıl değiştiği ekranda gözlemlenebilir:</span><br />
+<br style="font-weight: normal;" />
+</span></span></span></span></span></span></span></span></span></span></span></span>
+<div style="text-align: center;"><span class="Parrafo"><span style="font-weight: normal;"><img style="width: 528px; height: 307px;" alt="" src="Imagenes/pinzamientos_planta.png" /></span></span><br />
+</div>
+<br /><span class="Parrafo">
+Eğer alınan tutamak yarıçapa karşılık geliyorsa ve o güzergah elemanıyla ilişkili klotoidler varsa, klotoid parametreleri ilişkili <a href="OL_planta_normativa.html">yönetmelik tablosuna</a> göre otomatik olarak yeniden ayarlanır.<br />
+<br />
+      <img style="width: 138px; height: 81px;" alt="" src="Imagenes/botones_modif_planta.png" align="left" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Bu gerçek zamanlı değişiklikler ve daha fazlası, ilgili düğmeler aracılığıyla da yapılabilir. Kullanımı şöyledir: Bir tıklama, değiştirilecek veriyi grafiksel olarak 'almayı' sağlar ve imleçle kaydırıldıktan sonra, yeni bir tıklama ekranda gerçek zamanlı olarak gösterilen değişikliklerin kabul edildiği anlamına gelir.<br />
+<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+
+</span><table style="text-align: left; width: 692px; height: 236px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: top; width: 36px; font-weight: bold;"><span class="Parrafo">[.]</span><br />
+	</td>
+	<td class="Parrafo" style="vertical-align: top; width: 636px; text-align: justify; font-weight: normal;">Bir güzergah elemanının tanım veri noktalarından (P1, P2 veya P3) birini “yakalamayı” ve hesaplama sonucunu dinamik olarak kontrol ederken sürüklemeyi sağlar. Bir elemanın seçilen (X2,Y2) koordinatları, bir sonraki elemanın (X1,Y1) koordinatlarıyla çakışıyorsa, her iki nokta da aynı anda sürüklenir. Aynı işlev, ilgili veri noktasıyla ilişkili tutamağı hareket ettirerek de gerçekleştirilir.<br />
+<br />
+	</td>
+  </tr>
+  <tr>
+	<td class="Parrafo" style="vertical-align: top; width: 36px; font-weight: bold;">[:]<br />
+	</td>
+	<td class="Parrafo" style="vertical-align: top; width: 636px; text-align: justify; font-weight: normal;"><span style="font-weight: bold;">[.]</span>'a benzer, ancak P1 ve P2 noktalarını aynı anda, aralarındaki göreceli konumu koruyarak sürüklemeyi sağlar. <span class="Parrafo"><span style="font-weight: normal;">Aynı işlev, ilgili güzergah elemanıyla ilişkili merkez tutamağı hareket ettirerek de gerçekleştirilir.<br />
+            <br />
+</span></span>
+	</td>
+  </tr>
+  <tr>
+	<td class="Parrafo" style="vertical-align: top; width: 36px; font-weight: bold;">[R]<br />
+	</td>
+	<td class="Parrafo" style="vertical-align: top; width: 636px; text-align: justify; font-weight: normal;">Bir dairesel güzergah elemanını grafiksel olarak seçmeyi ve hesaplamanın grafik sonucunun nasıl değiştiğini gözlemlerken yarıçapını dinamik olarak değiştirmeyi sağlar.<br />
+<br />
+	</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; width: 36px; font-weight: bold;"><span class="Parrafo">[aRa]</span><br />
+	</td>
+	<td style="vertical-align: top; width: 636px; text-align: justify; font-weight: normal;"><span class="Parrafo"><span style="font-weight: bold;">[R]</span>'ye benzer, ancak yarıçapın aldığı değerlere bağlı olarak, önceki ve sonraki klotoidlerin parametre değerleri, yüklenen <a href="OL_planta_normativa.html">tasarım tablosuna</a> göre otomatik olarak değiştirilir. Bu değerler ayrıca bilgi yankısında dinamik olarak gösterilir. Hesaplanan klotoidler, dinamik olarak hesaplanan gerçek omega'ya karşılık gelir. Aynı işlev, ilgili dairesel elemanla ilişkili <span style="font-style: italic;">R</span> harfli tutamağı hareket ettirerek de gerçekleştirilir.<br />
+            <br />
+Aynı etki, <a href="OL_planta_opciones_visualizacion.html">yatay güzergah görüntüleme seçenekleri</a> içindeki <a href="OL_planta_opciones_visualizacion.html#A_auto"><span style="font-weight: bold;">R değiştiğinde A otomatik</span></a> seçeneği etkin olduğu sürece, yarıçapı sayısal olarak değiştirerek veya yönetmelik öneri tablosundan birini seçerek de elde edilir.<br />
+	</span></td>
+  </tr>
+  
+</tbody>
+</table>
+<span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: normal;">Dinamik değişiklik, herhangi bir dinamik değişikliği gerçekleştirmek için sıcak noktaları seçmeyi sağlar. Bir sıcak nokta, bir sabit elemanın P2 noktasının bir sonraki sabitin P1 noktasıyla çakıştığı zaman oluşan V somesi olabilir. Bu some yeni bir konuma sürüklenebilir.<br />
+Başka bir sıcak nokta, iki sabit doğru arasında ve klotoidsiz serbest elemanlarda tanımlanan veya iki noktalı ve bir yarıçaplı sabit elemanlarda tanımlanan PR (geçiş noktasından yarıçap) olabilir.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><img style="width: 542px; height: 350px;" alt="" src="Imagenes/planta_pr.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Hem tutamakları doğrudan manipüle ederek hem de bu düğmeleri kullanarak, &lt;Esc&gt; tuşu değişiklik işlemini anında iptal eder.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+<br />
+<br />
+<span style="font-weight: normal;"><span class="Titulo_2"><a name="calculo">Hesaplama, geometrik çözüm ve listeler</a></span><span class="Parrafo"><span style="font-weight: normal;"><br />
+</span><br />
+</span></span><img style="width: 313px; height: 256px;" alt="" src="Imagenes/calculo_planta.png" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Tanımlanan güzergah elemanlarından yola çıkarak, <span style="font-weight: bold;">[Hesapla]</span> düğmesi eksenlerin hesaplanmasını gerçekleştirir, bir dizi ara dosya, sonuç listeleri oluşturur ve hesaplanan eksenleri ekranda çizer. Eğer <span style="font-weight: bold;">[Mevcut]</span> düğmesine basılırsa, o zaman sadece bulunulan eksen hesaplanır.<br />
+      <br />
+Bir hesaplama yapıldığında, eksenlerin tanımının on adede kadar durumu bir yığında saklanır.<br />
+<span style="font-weight: bold;">Hesapla</span> komutuyla birlikte program, yaptığımız işlemleri geri alma&nbsp;<img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_toolBarEstandar_deshacer.png" /> veya yineleme&nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarEstandar_rehacer.png" /> imkanı sunar.<br />
+Geri al ile yığından bir durum kurtarıldığında, bu durumun yığının dışında kalmaması isteniyorsa, yeniden yap'a basılmayacaksa <span style="font-weight: bold;">Hesapla</span> komutuna tıklanmalıdır.<br />
+<br />
+</span></span></span></span></span></span></span></span></span></span></span>
+<table style="text-align: left; width: 327px; height: 59px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td>
+	<td class="Info" style="vertical-align: top; width: 634px; text-align: justify;"><span style="font-weight: normal;">
+ISTRAM</span><span style="font-weight: normal;"><sup>®</sup></span><span class="Parrafo"><span style="font-weight: normal;">/ISPOL</span></span><span style="font-weight: normal;"><sup>®</sup></span><span style="font-weight: normal;">, sistemin beklenmedik duruşlarına karşı bir önlem olarak, hesaplama verilerinin mevcut durumunu otomatik olarak <span class="Archivo">IS#.cej</span> dosyasında saklar. Önceden, <span class="Archivo">IS#.cej</span>'in sahip olduğu denemeyle <span class="Archivo">IS#pre.cej</span> otomatik olarak güncellenir, bu da son değişiklikler tatmin edici değilse geri alınmasını sağlar.</span></td>
+  </tr>
+</tbody>
+</table>
+<span style="font-weight: normal;"><br /></span></span><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: bold;"><a name="errores_geom">Geometrik hataların kontrolü</a></span><br />
+<span class="Parrafo"><span style="font-weight: normal;">
+<br />
+</span></span></span></span><img style="width: 326px; height: 98px; margin-right: 7px;" alt="" src="Imagenes/errores_geometricos.png" align="left" /><span class="Parrafo"><span style="font-weight: normal;">Eğer hesaplamayı çalıştırdıktan sonra tanımlanan tüm eksenler görünmüyorsa veya bir kısmının bir bölümü eksikse, bu, tanımsızlık veya veri uyumsuzluğu hatalarından kaynaklanmaktadır.<br />
+<br />
+Birikmiş sayı ve yapılan hatalar, yatay güzergah her hesaplandığında mesaj alanında görünür.<br />
+<br />
+</span></span><img style="width: 227px; height: 349px;" alt="" src="Imagenes/errores_geometricos_ver.png" align="right" hspace="4" /><span class="Parrafo"><span style="font-weight: normal;">Geometrik hatalar, eksenin "yumuşak" sürekliliğine, yani eksen kesintileri, köşe noktaları, geri dönüşler veya negatif uzunluklar, aşırı veri nedeniyle tutarsızlıklar vb. olmamasına atıfta bulunur. Dolayısıyla, <a href="OL_planta_normativa.html">yönetmelik</a> uygulamasına yönelik hatalarla karıştırılmamalıdır.<br />
+<br /></span></span>
+<table style="text-align: left; width: 473px; height: 64px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle; width: 34px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td>
+	<td style="vertical-align: top; width: 416px; text-align: justify;"><span class="Parrafo"><span class="Info">DOĞRUSAL YAPI modülü karayolları, otoyollar, demiryolları, kanallar, boru hatları, toprak barajlar vb. tasarımı için kullanışlı olduğundan, poligon eksenlerin tasarımına da izin verilir, bu nedenle bu durumda köşe noktaları hakkında uyaran hata mesajları dikkate alınmamalıdır.</span></span><br />
+	</td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+Hata mesajları ardışık olduğu ve yüksek hızda göründüğü için, sabit yan menüde bulunan <span style="font-weight: bold;">[Parametreler]</span> seçeneğinde, hata mesajları arasında bekleme süresi ayarlanabilir, böylece onları görmek için zaman olur, ancak en rahatı, yan menüdeki <span style="font-weight: bold;">[TASARIM]</span> &#8594; HATALAR seçeneğine gitmektir, bu seçenek yatay güzergah hesaplamasında bulunan tüm hataları içeren ayrıntılı bir tablo açar.<br />
+<br />
+<br />
+</span></span></span><span class="Parrafo"><span style="font-weight: bold;"><a name="listados">Listelerin oluşturulması</a></span><br />
+<span class="Parrafo"><span style="font-weight: normal;">
+<br />     
+Hesaplama sırasında, hem hesaplama sonuçlarını hem de verileri içeren çeşitli eksen listeleri dosyaları otomatik olarak oluşturulur:<br />
+</span></span></span>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<span style="font-weight: normal;">Her eksen için, o eksenin hesaplama sonuçlarını ve giriş verilerini içeren <span class="Archivo">ceje#.res</span> (# eksen numarasıdır) oluşturulur. <span class="Archivo">ceje0.res</span> dosyası, projenin tüm eksenleri için aynı bilgiyi içerir.</span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+</ul>
+<ul>
+
+<li><span style="font-weight: normal;"><span class="Parrafo"><span style="font-weight: bold;">[Hesapla]</span> veya <span style="font-weight: bold;">[Mevcut]</span> düğmesine basıldığına bağlı olarak, oluşturulan <span class="Archivo">ceje.res</span> dosyası, mevcut eksenin veya tümünün listesini içerir. Bu <span class="Archivo">ceje.res</span> dosyası, <span style="font-weight: bold;">[ceje.res]</span> düğmesine basıldığında ekranda listelenen dosyadır.</span></span></li>
+
+</ul>
+<span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Bu listelere, <a href="OL_listados_geometria.html#eje_planta">geometri listeleri</a> menüsünden de erişilebilir.<br />
+<br />
+<br /></span></span></span><span style="font-weight: bold;"><span class="Parrafo"><a name="dibujo_ejes">
+Eksenlerin çizimi</a></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">
+<br />
+Yatay güzergah her hesaplandığında, program eksen hesaplamasını EDM üzerinde 53 tipi bir 2D çizgiyle temsil eder.<br />
+<br />
+</span></span></span></span></span></span><span style="font-weight: normal;">Eğer <span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Görüntüleme</span> &#8594; <span style="font-weight: bold; font-style: italic;">Sonradan çizim</span> menüsündeki kutucuk devre dışı bırakılmışsa, o zaman sabit güzergah elemanları sunulmaz ve sadece eksenlerin çizimi gösterilir.<br />
+<br />
+Hesaplama bittiğinde (mesajlardan anlaşılır), eğer o anda ilgi çekmiyorsa, eksenlerin ve ana noktaların ve etiketlerin çizim süreci &lt;Esc&gt; tuşuna basılarak kesilebilir.<br />
+<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span><img style="width: 349px; height: 252px; margin-left: 7px;" alt="" src="Imagenes/calculo_planta_antes_refrescar.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Hesaplama yaparken, program otomatik eksen çizimini (53 tipi EDM çizgileri) ve özel noktalarını ekrandan silmez, böylece ardışık çözümler görsel olarak karşılaştırılabilir:<br />
+<br />
+Yeniden çizim yapıldığında ekran yenilenir ve sadece son hesaplananların çizimi kalır.<br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Parrafo"><span style="font-weight: normal;"><br /><br />
+      <br />
+      <br />
+<br />
+<br />
+<br />
+</span></span>
+<table style="text-align: left; width: 691px; height: 37px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle; width: 35px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+	</td>
+	<td style="vertical-align: top; width: 636px; text-align: justify;"><span class="Parrafo"><span class="Parrafo Info"><span style="font-weight: normal;"><span style="font-weight: bold;">Dosya</span> &#8594; <span style="font-weight: bold;">Yedekleme</span> &#8594; <span style="font-weight: bold;">Kaydet</span> seçeneğinin kullanılması, bu L53'ler ve kullanıcının yatay güzergah düzenlemesi sırasında çizimde oluşturduğu tüm çizgiler dahil olmak üzere, haritadaki tüm çizgilerin çizimini kalıcı olarak sabitler.</span></span></span></td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><span style="font-weight: normal;"><br />
+Yatay güzergah her hesaplandığında, mevcut eksen de etiketlenmiş olarak görünür. Bu eksen etiketlemesi, <a href="OL_planta_opciones_visualizacion.html">görüntüleme seçenekleri menüsündeki</a> <span style="font-weight: bold; font-style: italic;">Mevcut ekseni etiketle</span> yerine <span style="font-weight: bold; font-style: italic;">Tümü</span> seçeneği etkinleştirilirse tüm eksenlere genişletilebilir. Ayrıca, etiketlenecek elemanlar, o anda aktif olan ve dikey menüdeki <span style="font-weight: bold;">[Eleman etiketl. modu]</span> seçeneğinden değiştirilebilen etiketleme moduna bağlı olacaktır. Varsayılan etiketleme modu yalnızca özel noktaları işaretler, KM'leri ve kurp tiplerini (doğru, dairesel veya klotoid) belirtir, ancak kütüphanede çok daha ayrıntılı etiketleme modları bulunur ve bunlar eksende kilometre noktaları oluşturmayı, ötelenmiş, başka bir eksene dik, veri panoları,... oluşturmayı sağlar.<br />
+<br />
+</span></span>
+<table style="text-align: left; width: 691px; height: 37px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 34px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+</td>
+<td style="vertical-align: top; width: 637px; text-align: justify;"><span class="Parrafo"><span style="font-weight: normal;"><span class="Info">Yatay güzergah her hesaplandığında görünen etiketleme yalnızca tasarım düzeyindedir ve EDM'de sabitlenmez. Bunun gerçekleşmesi için eksen etiketleme menüsü kullanılmalıdır.<br />
+	</span></span></span></td>
+</tr></tbody>
+</table>
+<br />
+<table style="text-align: left; width: 691px; height: 37px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 35px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+</td>
+<td style="vertical-align: top; width: 636px; text-align: justify;"><img style="width: 163px; height: 42px;" alt="" src="Imagenes/min_pix.png" align="right" hspace="4" />&nbsp;<span class="Parrafo Info"><span style="font-weight: normal;"><span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Görüntüleme</span>'den, hem Dekorlu hem de Dekorsuz modda sembollerin, metinlerin ve hücrelerin görüntüleneceği piksel cinsinden en küçük boyuta karşılık gelen <span style="font-weight: bold; font-style: italic;">Minimum piksel</span> parametresini kontrol etmek mümkündür. Bu değeri değiştirerek, belirli bir yakınlaştırma seviyesinden sonra sembollerin yeniden çizilmesi engellenir ve dolayısıyla güzergah elemanlarını etiketlemek için harcanan zaman azaltılır.</span></span></td>
+</tr></tbody>
+</table>
+<span class="Parrafo"><span style="font-weight: normal;"><br /><a name="Ajustar_a_una_linea"><span class="Titulo_2">Bir çizgiye uydur</span><br /><br />
+Araçlar bağlam menüsünden, Çizgiyle Eleman Ekle ve Ayarla yapılabilir. Farenin sağ tuşuna basarak Eleman Ekle ve Ayarla yapabilirsiniz. Yeni elemanların başlangıç ve bitiş noktalarını art arda tıklayarak hızlı bir şekilde bir eksen oluşturmayı veya genişletmeyi sağlar. P2 noktasına tıklandığında ISTRAM onu ayarlar ve bitirdiğinde bir sonraki için noktaları ister, [Esc] tuşuyla çıkarız.<br /><br /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span style="font-size: 11pt; line-height: 107%; font-family: &quot;Calibri&quot;,sans-serif;" lang="ES"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Parrafo"><span style="font-weight: normal;"><a name="Ajustar_a_una_linea"><img style="width: 300px; height: 163px;" alt="" src="Imagenes/ajustar_linea.png" /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="Ajustar_a_una_linea"><br /><span style="font-size: 11pt; line-height: 107%; font-family: &quot;Calibri&quot;,sans-serif;" lang="ES"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></div><span style="font-size: 11pt; line-height: 107%; font-family: &quot;Calibri&quot;,sans-serif;" lang="ES"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Parrafo"><span style="font-weight: normal;"><a name="Ajustar_a_una_linea"><br /><br /><br />
+
+</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td></tr></tbody></table></body></html>

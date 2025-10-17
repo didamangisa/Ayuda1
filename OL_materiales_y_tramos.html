@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  
+
+  
+  
+  <title>Malzemeler ve Güzergah Kesimleri</title><link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a>
+      <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>MALZEMELER VE GÜZERGAH KESİMLERİ
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Malzemeler ve Güzergah Kesimleri aracı, belirtilen güzergah kesimleri için <a href="EDM_editor_perfiles.html#tablas_cubic">metraj tablosuna</a> göre bir metrajı olan seçili malzemelerin listelerini oluşturur.</span><span class="Parrafo"><br />
+      </span> <br />
+      <div style="margin-left: 40px;"><a href="#general"><span class="Parrafo">Genel Kullanım</span></a><br />
+      <a href="#modos"><span class="Parrafo">Rapor Formatları</span></a><a href="#angulo_codos"><span class="Parrafo"></span></a><br />
+      </div>
+      <ul>
+      </ul>
+      <span class="Parrafo"> <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 600px; height: 249px;" alt="" src="Imagenes/OL_mat_y_tramos_xtramos.png" /><br />
+      </div>
+      <br />
+      </span><a name="general"><span class="Titulo_2">Genel Kullanım</span></a><br />
+      <br />
+Bu aracı başarılı bir şekilde kullanmak için eksenin önceden hesaplanmış olması tavsiye edilir. Ayrıca, PROJE sekmesindeki ilgili bölümde yüklenmiş olması gereken bir imalat takip dosyası üzerinde de kullanılabilir.<br />
+      <br />
+Temel kullanım yöntemi basittir: Pencerenin sol tarafında çalışmak istediğimiz malzemeler seçilir. Pencerenin orta kısmında kullanılacak güzergah kesimleri oluşturulur. <span style="font-weight: bold;">Oluştur</span> butonuna basıldığında liste oluşturulur.<br />
+      <br />
+Pencerenin sol tarafındaki <span style="font-weight: bold;">malzeme listesi</span> şu sütunları sunar:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Seçim kutusu:</span>
+Seçilen malzemeler rapor oluşturulurken dikkate alınır. Tümü etkinleştirilebilir/devre dışı bırakılabilir ve seçim tersine çevrilebilir.
+Ayrıca seçimi aynı Gruptaki tüm eksenlere taşımak ve aktivasyon durumlarını .mtm formatında bir dosyaya kaydetmek/yüklemek de mümkündür.<br />
+        </li>
+        <li><span style="font-weight: bold;">Metraj No:</span>
+<span class="Parrafo"><a href="EDM_editor_perfiles.html#tablas_cubic">Metraj tablosuna</a></span> göre metraj numarasını gösterir.</li>
+        <li><span style="font-weight: bold;">Malzeme:</span>
+<span class="Parrafo"><a href="EDM_editor_perfiles.html#tablas_cubic">Metraj tablosundaki</a></span> metraj kaleminin adını gösterir.<br />
+        </li>
+        <li><span style="font-weight: bold;">Çizgi Tipi:</span>
+Bu metraj kaleminin planda, .per enkesit dosyalarında vb. çizildiği grafiksel gösterimi gösterir.</li>
+      </ul>
+      <span style="font-weight: normal;">Orta kısımda çeşitli <span style="font-weight: bold;">hesap kesimleri</span> belirtilebilir.
+Kesimler</span> bitişik olabilir (birinin bitiş KM'si diğerinin başlangıç KM'si ile aynı olabilir) veya olmayabilir.
+Rapor, metrajı kesimlere göre böler ve her kesim için bir birikimli toplam ve sonunda tüm kesimleri toplayan bir genel toplam oluşturur.
+Kesim tanımlaması, boşluklarla ayrılmış üç sütunlu (Başlangıç KM, Bitiş KM, Kesim Adı) bir .txt dosyasından yüklenebilir.<br />
+      <span style="font-weight: normal;"><br />
+Sağ tarafta <span style="font-weight: bold;">diğer eksenler</span> listesi bulunur: her kesim için, diğer eksenlerin belirli kesimlerine karşılık gelen metrajlar eklenebilir.<br style="font-weight: normal;" />
+      </span><br style="font-weight: normal;" />
+      <span style="font-weight: normal;">Bu araç ayrıca aşağıdaki özelliklere sahiptir:</span><br style="font-weight: normal;" />
+      <ul style="font-weight: normal;">
+        <li><img src="Imagenes/icono_excel.png" alt="" style="width: 24px; height: 24px;" align="middle" />:
+Raporu .xlsx formatında oluşturur.<br />
+          <br />
+        </li>
+        <li><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_explorar.png" align="middle" />:
+Raporların bulunduğu .\res klasörünü açar.<br />
+          <br />
+        </li>
+        <li><img style="width: 19px; height: 24px;" alt="" src="Imagenes/OL_mat_y_tramos_edit_cab.png" />:&nbsp; Rapor başlıklarını yapılandırır.</li></ul><ul style="font-weight: normal;"><li><span style="font-weight: bold;">KM Seçimi:</span> Sayısal olarak/tıklayarak, mevcut veya enterpole edilmiş enkesit üzerinden KM seçimi.</li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span style="font-weight: bold;">Tüm Enkesitler / Katları</span>: Raporu <span class="Archivo">ISPOLn.per</span> dosyasındaki tüm enkesitler için veya belirli bir sayının katı olan KM'ler için oluşturur.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">.vol dosyasına kaydet</span>:
+Bu pencerede kullanılan seçenekleri, sonraki oturumlarda kullanılmak üzere .vol dosyasına kaydeder.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sadece Özetler</span>:
+Raporların içeriğini, her enkesit için metrajları detaylandırmadan, sadece nihai özetlerle sınırlar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Bağımsız Listeler</span>:
+Her bir hesap kesimi için ayrı bir .xlsx dosyası oluşturur.</li>
+      </ul>
+      <span style="font-weight: normal;">Bu menünün yapılandırması</span><span style="font-weight: bold;"><span class="Parrafo"> &nbsp;<img style="width: 69px; height: 19px;" alt="" src="Imagenes/OL_mat_y_tramos_ini_carga_guarda.png" /> ikonları ile başlatılabilir, kaydedilebilir ve yüklenebilir.<br /><br /></span></span><span class="Parrafo"><a href="OL_tuberias.html#def_pozos">Boru Hatları</a> projeleri için, bacalar arasındaki kesimleri otomatik olarak oluşturma seçeneği mevcuttur:</span><span style="font-weight: bold;"><span class="Parrafo"><br />
+      <br />
+      </span></span><div style="text-align: center;"><span class="Parrafo"><img style="width: 150px; height: 36px;" alt="" src="Imagenes/OL_mat_y_tramos_tramos_entre_pozos.png" /></span><br /><span class="Parrafo"></span></div><span class="Parrafo"><br /><br />
+      </span><span class="Titulo_2"><a name="modos">Rapor Formatları</a></span><br />
+      <span class="Parrafo"><span style="color: red;"><br />
+      </span></span>Varsayılan rapor formatı <span style="font-weight: bold;">Kesimlere Göre</span>'dir.
+Bu mod etkinken, <span style="font-weight: bold;">malzeme listesinde</span> seçilen malzemelerle, <span style="font-weight: bold;">hesap kesimlerinde</span> belirtilen kesimlere bölünmüş bir rapor oluşturulur. <span class="Parrafo"><span class="Parrafo">Eğer proje, <a href="OL_proyecto.html">PROJE menüsündeki</a> <span style="font-weight: bold;">Üstyapıyı Dahil Et</span> seçeneği ile hesaplandıysa
+ve herhangi bir üstyapı tabakası seçilirse, kesimin başlangıç KM'sinden itibaren birikimli
+sulama (aplikasyon) alanını içeren bir sütun da eklenir.<br />
+      </span></span><span style="font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 261px;" alt="" src="Imagenes/OL_mat_y_tramos_list_xtramos.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span></span></span><span class="Parrafo"><br />
+
+      <span style="font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>Başka bir rapor formatı daha vardır: <span style="font-weight: bold;">Malzemelere Göre</span>.
+Bu modda, başlangıç KM'sine karşılık gelen kilometre ile yazdırılacak tarih, metraj türü ve önek de belirtilebilir:<br />
+      <br />
+
+      
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 308px;" alt="" src="Imagenes/OL_mat_y_tramos_xmateriales.png" /></span><br />
+      <span class="Parrafo"></span></div>
+
+      <span class="Parrafo"><br />
+      </span>Aynı format için rapora Ara Hacim sütunu da eklenir.<br />
+      <br />
+Oluşturulan rapor aşağıdaki sütun dağılımına sahiptir.<span style="font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 155px;" alt="" src="Imagenes/OL_mat_y_tramos_list_xmateriales.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"></span></span><span style="font-weight: bold;"><span style="font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+</body></html>

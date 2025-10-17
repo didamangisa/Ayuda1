@@ -1,0 +1,1162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Coğrafi Referanslama</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>COĞRAFİ REFERANSLAMA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#crs">Koordinat Referans Sistemi (C.R.S.)</a><br />
+      </div>
+
+      
+      
+      <div style="margin-left: 80px;"><a href="#transf_crs">
+CRS'ler Arası Dönüşümler</a><br />
+      <div style="margin-left: 40px;"><a href="#rejilla">Grid
+Dosyaları ile Dönüşümler. ED50'den ETRS89'a Dönüşüm ve Tersi</a><br />
+      <a href="#kml">Google Earth<sup>®</sup> .kml Dosyalarına Dışa Aktarma</a><br />
+      <a href="#transf_local">CRS'ler Arasında Yerel Dönüşümlerin Manuel Tanımlanması</a><br />
+      <a href="#transf_crs_tiempo_real_helmert_3D">3D Helmert Düzeltmesi ile Gerçek Zamanlı CRS'ler Arası Dönüşüm</a><br />
+      </div>
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#Utilidades">Yardımcı Araçlar</a><br />
+      <div style="margin-left: 40px;"><a href="#huso">Dilim Değişikliği</a><br />
+      <a href="EDM_georreferenciacion.html#utm_geograficas">UTM'den Coğrafi Koordinatlara ve Tersi</a><br />
+      <a href="#imp_coord_geograf">Coğrafi Koordinatları İçe Aktarma</a><br />
+      <a href="#coord_geocentricas">Jeosentrik Koordinatlardan Mevcut CRS Projeksiyon Sistemine Geçiş</a><br />
+      <a href="#Listar_Coorde">Coğrafi Koordinatları Listele</a><br /><a href="#Geograficas_a_XY">Coğrafiden XY'ye</a><br />
+      </div>
+
+      
+      
+      <a href="#Compensaciones_UTM">UTM Dengelemeleri</a><br />
+      <div style="margin-left: 40px;"><a href="#compens_radiaciones">Alım Hesaplamaları için Dengelemeler</a><br />
+      <a href="#correcciones_replanteo">Aplikasyon Noktaları için Düzeltmeler</a><br />
+</div></div>
+      <div style="margin-left: 40px;"><a href="EDM_georreferenciacion.html#predefinidos">Öntanımlı Mod<br />
+      </a></div>
+      <div style="margin-left: 40px;">
+      <div style="margin-left: 40px;">
+      </div>
+
+
+      
+      </div>
+
+
+      
+      
+      
+      
+      
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+      <img style="width: 117px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/acceso_CRS.png" align="right" />Bu
+bölüm, çalışılan koordinat referans sisteminin (CRS) nasıl yapılandırılacağını
+ve CRS değişikliklerinin nasıl yapılacağını açıklar. Bu iletişim kutusuna hem <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Koordinat Referans Sistemi</span> menüsünden hem de
+alt kısımdaki DİLİM simgesinden erişilir. <br />
+      <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 460px; height: 91px;" alt="" src="Imagenes/dialogo_proyeccion.png" /><br />
+      </div>
+      <br />
+Girdiğimizde karşılaştığımız iletişim kutusu, sırayla şunları yapmamızı sağlar:<br />
+      <ul>
+        <li>Tam veritabanından <img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%2520base%2520datos%2520completa.png" />, <span style="font-weight: bold;">favorilerden</span> <img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono%20favoritos.png" />, &nbsp;<span class="Archivo">.crs</span> dosyasından bir C.R.S. seçmek veya tam iletişim kutusuna <img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%20crs.png" /> erişmek.
+Yeni bir CRS seçildiğinde, eğer ilişkili bir dönüşümü yoksa,
+temel CRS'sine bağlı bir dönüşüm aranır.</li>
+        <li>Sıfırla:&nbsp;<img style="width: 16px; height: 17px;" alt="yeni" src="Imagenes/icono_toolbarEstandar_nuevo.png" />&nbsp;
+kullanıcı modunda, mevcut veya kaynak CRS'yi kaldırır. Öntanımlı modda
+varsayılan CRS'yi alır. Her iki durumda da yüklü bilgilerle (harita, ttp'ler,
+vb.) herhangi bir dönüşüm gerçekleştirmez.<br />
+        </li>
+
+      </ul>
+      <ul>
+        <li>Topografik ölçüm defterlerinin hesaplamalarında veya aplikasyon listelerinin oluşturulmasında <span style="font-weight: bold;">UTM dengelemeleri</span> için parametreleri tanımlamak veya değiştirmek üzere başka bir iletişim kutusuna erişmek.</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Topografik ölçüm defterinin mesafe ve kot hesaplamalarında kullanılacak dengelemeleri tanımlamak.</li>
+          <li>Topografik ölçüm defterindeki poligonların dengelenmesinde uygulanacak düzeltme modunu tanımlamak.</li>
+          <li>Hem topografik ölçüm defteri hesaplamaları hem de GÜZERGAH PROJESİ ve YÜZEY MODELLEME
+modüllerinin <a href="OL_listados_replanteos.html">aplikasyon
+listeleri</a> için anamorfoz katsayılarının belirlenmesi için parametreleri tanımlamak.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Dilim Değişikliği veya coğrafi ya da jeosentrik koordinatların işlenmesi gibi <span style="font-weight: bold;">yardımcı araçlar</span> içeren başka bir iletişim kutusuna erişmek.</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Dilim Değişikliği</li>
+          <li>X,Y koordinatlarından Coğrafi koordinatlara geçiş<br />
+          </li>
+          <li>Coğrafi koordinatlardaki baz istasyonu dosyalarını yükleme</li>
+          <li>Jeosentrik koordinatlardan X,Y,Z'ye geçiş.</li>
+        </ul>
+      </ul>CRS yönetim iletişim kutusunda aşağıdaki olanaklara sahipsiniz:<br />
+      <ul>
+        <li>İletişim kutusunu, Datum, Elipsoid, Meridyen, Sistem, Projeksiyon ve Dikey SR verilerini gizleyerek genişletebilir/daraltabilirsiniz.</li>
+      </ul>
+      <ul>
+        <li>Hedef CRS'yi değiştirmeden bir Mevcut CRS yükleme imkanı.</li>
+      </ul>
+      <ul>
+        <li>Mevcut CRS'yi değiştirmeden Hedef CRS'yi değiştirme imkanı.</li>
+      </ul>
+      <ul>
+        <li>Mevcut Mevcut CRS ile Hedef CRS arasında veritabanından bir dönüşüm seçme imkanı.</li>
+      </ul>
+      <ul>
+        <li>Mevcut ve Hedef CRS'lerin Kodları ve dönüşüm parametreleriyle basitleştirilmiş bir .crs dosyasını (kütüphaneye) kaydetme imkanı. </li>
+      </ul>
+
+
+      <br />
+      <span class="Titulo_2"><a name="crs">Koordinat Referans Sistemi
+(CRS)</a></span><br />
+      <br />
+<span style="font-weight: bold;">[C.R.S.]</span> düğmesine tıklandığında,
+kullanılan referans sistemini özelleştirmeye veya
+koordinat referans sistemleri arasında dönüşümler yapmaya olanak tanıyan iletişim kutusuna erişilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 169px;" alt="" src="Imagenes/dialogo_crs.png" /><br />
+      </div>
+      <br />CRS kutucuğuna tıklandığında menüyü açarız:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 357px;" alt="" src="Imagenes/crs_largo.png" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">Koordinat referans sistemleri</span> veya <span style="font-weight: bold;">CRS</span>
+(İngilizce Coordinates Reference System'in kısaltması),
+OGP (International Association of Oil and Gas Producers) tarafından, 2005'e kadar EPSG (European Petroleum Survey
+Group) olarak bilinen kuruluş tarafından ve daha spesifik olarak,
+farklı koordinat referans sistemlerinin tüm parametrelerini ve koordinat dönüşümleri için açıklamaları içeren bir veritabanını düzenli olarak güncelleyen ve yayınlayan OGP Surveying and Positioning
+Committee tarafından standartlaştırılmıştır.
+Bu veritabanı serbestçe dağıtılabilir ve <a href="http://www.epsg.org">http://www.epsg.org</a> adresinde mevcuttur. <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>,
+daha sonra açıklanan değişiklikleri yapılandırmak ve gerçekleştirmek için
+bu veritabanını kullanır (ve periyodik olarak günceller).
+Programda bulunan ve CRS, Datumlar, Elipsoidler, Meridyenler,
+Projeksiyonlar, Koordinat Sistemleri ve CRS'ler Arası Dönüşümler veritabanına referans veren son güncelleme,
+Ocak 2022 tarihli EPSG V10.051'dir.<br />
+      <br />
+Bir CRS, aşağıdaki şemada gösterildiği gibi bir <span style="font-weight: bold;">datum</span>,
+bir <span style="font-weight: bold;">koordinat sistemi</span>
+türü ve bir <span style="font-weight: bold;">projeksiyon</span> türü ile tanımlanır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 490px; height: 238px;" alt="" src="Imagenes/esquema_crs.png" /><br />
+      </div>
+      <br />
+Bir datum, sırayla, bir <span style="font-weight: bold;">elipsoid</span> ve bir <span style="font-weight: bold;">referans meridyeni</span>
+ile tanımlanır. Örneğin, ED50 CRS'si, datum olarak European
+Datum 1950'yi (aynı zamanda CRS'ye adını veren ED50 olarak da adlandırılır) kullanır,
+elipsoidi Uluslararası 1924 (Hayford 1909 elipsoidi olarak da adlandırılır) ve referans meridyeni Greenwich'tir.<br />
+      <br />
+Koordinat sistemi ise, <span style="font-weight: bold;">küresel</span> (nadiren kullanılır) veya <span style="font-weight: bold;">elipsoidal</span>
+(doğal koordinatlar enlem, boylam ve dikey bir sistem kullanılmıyorsa kot) olabilir.
+Eğer elipsoidal bir sistem durumunda belirli bir projeksiyon tanımlanırsa (örneğin, UTM için dilim sabitlenerek), o zaman bu bir <span style="font-weight: bold;">kartezyen</span>
+sistemdir (doğal koordinatlar X, Y ve/veya Z'dir). Örneğin, seçilen CRS
+belirli bir dilim için bir ED50 ise (örneğin, 23030 kodlu ED50 / UTM zone 30N), sistem kartezyen olur.<br />
+      <br />
+Z koordinatı, bu sistemlerden birine göre veya
+bağımsız olarak tek boyutlu bir <span style="font-weight: bold;">dikey</span> koordinat sistemi aracılığıyla (İspanya'da 2015'ten itibaren kullanımı zorunlu olan European Terrestrial Reference System 1989, ETRS89 durumu) hesaplanabilir.<br />
+      <br />
+<span style="font-weight: bold;">Projeksiyon</span> türü
+bir işlemden oluşur. Başlıca mevcut işlemler şunlardır:<br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 282px;">
+            <ul>
+              <li>Mercator (1SP)</li>
+              <li>Mercator (2SP)</li>
+              <li>Transverse Mercator (UTM ve Gauss-Kruger)<br />
+              </li>
+              <li>Cassini-Soldner&nbsp;&nbsp;&nbsp; </li>
+            </ul>
+            </td>
+            <td style="vertical-align: top; width: 350px;">
+            <ul>
+              <li>Oblique Mercator</li>
+              <li>Hotine Oblique Mercator</li>
+              <li>Lambert Conical (1SP)</li>
+              <li>Lambert Conical (2SP)</li>
+              <li>Oblique Stereographic</li>
+              <li>Krovak (9819)</li>
+              <li>Kuzeye Yönelik Krovak (1041)</li>
+              <li>EPSG 9822: ALBERS EQUAL AREA Operasyonuna sahibiz,
+örneğin CRS 3005: NAD83/BC Albers için tanımlanmış 19984: British Columbia
+Albers gibi bazı projeksiyonlar tarafından kullanılır.<br />
+              </li>
+
+
+            </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+Her işlem, UTM hariç, ilişkili parametreler taşır.
+Örneğin, Transverse Mercator ve Oblique
+Stereographic işlemleri aşağıdaki parametreleri kullanır:<br />
+      <ul>
+        <li>Doğal başlangıç enlemi</li>
+        <li>Doğal başlangıç boylamı</li>
+        <li>Doğal başlangıç ölçek faktörü</li>
+        <li>Sağa Değer</li>
+        <li>Yukarı Değer</li>
+      </ul>
+Eğer iletişim kutusunda <span style="font-weight: bold;">[&nbsp;&nbsp;&nbsp; &#8230;]</span> düğmesine basılırsa,
+aşağıdaki tablo açılır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 169px;" alt="" src="Imagenes/selec_crs.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img style="width: 682px; height: 231px;" alt="" src="Imagenes/datum_tabla.png" /><br />
+      </div>
+<br />
+Bu tabloda, ilk sütun
+CRS'nin kimlik koduna (eski EPSG, şimdiki OGP tarafından belirlenen kodlar), ikinci sütun
+CRS'nin adına, üçüncü sütun takma adına (yani, CRS'nin bilindiği diğer ad) ve ardından
+CRS'yi oluşturan datum, koordinat sistemi ve projeksiyon tipinin
+(OGP'ye göre) kimlik kodları yer alır.<br />
+      <br />
+Bu tabloda seçmek ve işaretli CRS'yi yüklemek için &nbsp;<span class="Parf_negrita">[Seç: xxxxx]</span> düğmesine basmak gerekir.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 23px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Bir favori CRS listesine sahip olabiliriz. Kullanıcı mevcut CRS'yi bu listeye ekleyebilir.<br />
+            </td>
+            <td style="vertical-align: top;"><img style="width: 101px; height: 40px;" alt="" src="Imagenes/crs_favoritos.png" align="right" hspace="5" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br />
+Eğer <span style="font-weight: bold;">[Datum]</span> düğmesine basılmış olsaydı,
+o zaman aynı tablo, hemen altında belirtilen datuma sahip tüm
+CRS'lere göre filtrelenmiş olarak açılırdı.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 333px; height: 78px;" alt="" src="Imagenes/crs_datum.png" /><br />
+      </div>
+      <br />
+Bir CRS seçip bu tabloyu kapatmak, programın
+kullanıcı onayı aldıktan sonra CRS'yi değiştirmesi için yeterlidir.<br />
+      <br />
+Aynı şekilde, datum için <span style="font-weight: bold;">[&nbsp;&nbsp;&nbsp; &#8230;]</span> düğmesine basıldığında,
+mevcut tüm datumları içeren yeni bir tablo açılır. Bu tabloda her biri için OGP'ye göre ilgili kimlik kodları, ad, takma ad ve kullanılan elipsoid ve
+meridyenin kimlik kodları belirtilir. Yine, birini seçmek, tabloyu kapattıktan ve kullanıcı tarafından onaylandıktan sonra onun belirlenmesi için yeterlidir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 682px; height: 231px;" alt="" src="Imagenes/selec_datum.png" /><br />
+      </div>
+      <br />
+Bu durumda, eğer <span style="font-weight: bold;">[Elipsoid]</span> düğmesine basılmış olsaydı, tablo aşağıda belirtilen
+elipsoidi kullanan tüm datumlara göre filtrelenirdi.<br />
+      <br />
+Koordinat sistemi, seçilen CRS için kullanılanı gösterir. <span style="font-weight: bold;">[Gör]</span>
+düğmesi, sadece her sistem için OGP kimlik kodlarını içeren tabloyu gösterir, kullanıcının bu veriyi değiştirmesine izin vermez çünkü anlamsızdır.<br />
+      <br />
+Kullanılan projeksiyon sistemiyle ilgili olarak, <span style="font-weight: bold;">[Gör]</span> düğmesi aşağıdaki tabloyu
+bilgilendirme amaçlı olarak açar:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 682px; height: 255px;" alt="" src="Imagenes/crs_proyecciones.png" /><br />
+      </div>
+      <br />
+Burada, projeksiyon sistemi için OGP'ye göre kimlik kodu, bu projeksiyon sisteminin adı,
+sistemin kullandığı işleme karşılık gelen kod ve ad ile
+onun parametreleri görülebilir.<br />
+      <br />
+Belirli bir projeksiyonla ilişkilendirilmemiş CRS'ler için, belirtilen
+dilimde bir UTM projeksiyonu kullanıldığı anlaşılır.&nbsp;&nbsp; <br />
+      <br />
+Son olarak, datuma geri dönersek, hem
+elipsoid hem de referans meridyeni seçilebilir. Elipsoide
+karşılık gelen <span style="font-weight: bold;">[&nbsp;&nbsp;&nbsp; &#8230;]</span> düğmesine basıldığında, açılan tablo şudur:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 682px; height: 255px;" alt="" src="Imagenes/crs_elipsoides.png" /><br />
+      </div>
+      <br />
+Burada, elipsoidin
+kimlik kodu (OGP'ye göre), adı ve takma adı, büyük ve küçük yarıçapları ve
+basıklık katsayısının tersi gösterilir. Birini seçip
+tabloyu kapattıktan sonra, kullanıcı onayıyla bu, çalışma
+elipsoidi olacaktır.<br />
+      <br />
+Meridyen durumunda, <span style="font-weight: bold;">[Gör]</span> düğmesine basıldığında,
+bilgilendirme amaçlı olarak OGP kodu, meridyenin adı ve Greenwich meridyenine göreli boylamı gösterilir.<br />
+      <br />
+Dolayısıyla, bu iletişim kutusunu kullanarak, çalışılan
+haritanın CRS'sini belirlemek mümkündür. Bir &nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> dosyasında
+hem CRS hem de dilim ve koordinat dönüşümü (aşağıda açıklanmıştır) kaydedilir.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 35px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; text-align: justify; width: 637px;"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>,
+varsayılan olarak C.R.S. 4258'i (ETRS89) ayarlar,
+meğer ki EDM zaten bir tane ile ilişkilendirilmiş olsun veya programın yapılandırma dosyasında başka bir tane belirtilmiş olsun.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="transf_crs"> CRS'ler Arası Dönüşümler</a></span><br />
+      <br />
+      <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>,
+koordinat dönüşümü için Transverse Mercator (UTM ve Gauss-Kruger),
+oblik stereografik ve Lambert konik 2SP (2 standart paralel,
+örneğin Fransa'da sıkça kullanılan 2154: RGF93/Lambert-93 kodu) işlemlerini
+destekler. Başka birini seçmek bir uyarı mesajına neden olacaktır.
+Bir projeksiyon sistemi için başka bir işleme ihtiyacınız varsa,
+programlanması için Buhodra Mühendislik A.Ş. ile iletişime geçmekten çekinmeyin.<br />
+      <br />
+Koordinat dönüşümü, haritayı, <a href="EDM_topografia.html">topografyayı</a>, <a href="EDM_imagenes.html">görüntüleri</a> ve eğer <a href="OL_planta_diseno.html">GÜZERGAH PROJESİ menüsündeyseniz, plan eksenlerini</a>, <a href="OL_lineas_frontera.html">sınır çizgileri</a> dosyasını,
+Sanat Yapıları dosyasını (ağız ve çıkış) ve Yarma, Dolgu veya Hendek şevlerinin Tip Kesitlerinin 3B Çizgilerini de etkiler. Ayrıca, Güzergah Projeleri aplikasyon menüsünde yüklenen
+baz istasyonlarının koordinatlarının dönüşümünü de etkiler.<br />
+      <br />
+Dönüşüm, jeosentrik koordinatlar arasında gerçekleşir ve
+aşağıdaki şemayı takip eder:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 590px; height: 57px;" alt="" src="Imagenes/esquema_transf_crs.png" /><br />
+      </div>
+      <br />
+Kartezyen koordinatlardan coğrafi koordinatlara geçiş, sadece
+CRS'nin doğal koordinat sistemi kartezyen ise gereklidir.<br />
+      <br />
+Standart bir koordinat dönüşümü gerçekleştirmek için
+aşağıdaki adımları izlemek gerekir:<br />
+      <ol>
+        <li>Standart bir dönüşüm seçin. Bu
+dönüşümler OGP'ye göre tablolanmıştır. <span style="font-weight: bold;">[&nbsp;&nbsp;&nbsp; &#8230;]</span>
+düğmesine basıldığında tüm tablo açılır, her dönüşüm bir
+kodla tanımlanır ve ayrıca o dönüşümün adı, kullanım alanı,
+kaynak ve hedef CRS kodları ve jeosentrik koordinatların yedi Helmert dönüşüm parametresi
+(metre cinsinden eksen ötelemesi, altmışlık saniye cinsinden eksen dönüşü ve
+milyonda bir parça cinsinden ölçek faktörü) gösterilir. Önce kaynak CRS'yi
+seçmeniz ve ardından <span style="font-weight: bold;">[CRS]</span>
+düğmesine basmanız tavsiye edilir, böylece dönüşümler kaynak CRS'ye göre filtrelenmiş olarak görünür.</li>
+      </ol>
+      <ol start="2">
+        <li>Eğer kaynak, hedef veya her ikisi de UTM projeksiyonu kullanıyorsa,
+o zaman çalışma dilimini belirtmek gerekecektir, aksi takdirde
+bu veri yok sayılacaktır. Eğer güney yarımkürede çalışılıyorsa,
+dilim değerini negatif işaretle belirtmek gerekecektir.</li>
+      </ol>
+      <ol start="3">
+        <li>Son olarak, koordinat dönüşümünü yürütmek için <span style="font-weight: bold;">[Dönüştür]</span>
+düğmesine basmak yeterlidir. Dönüşüm
+gerçekleştirildikten sonra, program kaynak ve
+hedef CRS'leri otomatik olarak değiştirir, bu da kullanıcının ters
+dönüşümü (yani, orijinal koordinatlara geri dönme) sadece
+aynı düğmeye tekrar basarak gerçekleştirmesini sağlar.</li>
+      </ol>
+      <div style="text-align: center;"><img style="width: 675px; height: 84px;" alt="" src="Imagenes/dialogo_crs_transf.png" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">[Değiştir]</span> düğmesi,
+dönüşümü tersine çevirmeyi sağlar. Bu, örneğin,
+WGS 84 CRS'sinden ED50'ye geçmek istendiğinde kullanışlıdır. Kullanıcı 1145 kodlu dönüşümü (tersi olan) yükleyecek ve bu düğmeye basacaktır.<br />
+      <br />
+<span style="font-weight: bold;">[Yeni]</span> düğmesi, kullanıcının
+yerel dönüşüm parametrelerini tanımlamasına olanak tanır, ancak sadece
+jeosentrik eksenlerin bir ötelemesiyle sınırlıdır (<span style="font-weight: bold;">dX</span>, <span style="font-weight: bold;">dY</span>, <span style="font-weight: bold;">dZ</span>).
+<a href="#kml"><span style="font-style: italic;">Google Earth .kml Dosyalarına Dışa Aktarma</span><sup style="font-style: italic;">®</sup></a>
+bölümünde, bu seçeneğin nasıl kullanılacağı açıklanmaktadır.<br />
+      <br />
+      <br />
+      <a name="rejilla">GRID DOSYALARI İLE DÖNÜŞÜMLER</a><br />
+      <br />
+      <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>,
+NTV2 formatındaki grid dosyalarını
+kullanarak CRS'ler arasında bir dönüşüm yapmaya olanak tanır. Program kütüphanesi,
+dönüşümlerle ilişkili aşağıdaki gridleri içerir:<br />
+      <br />
+      <table style="text-align: left; width: 618px; height: 165px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center; height: 30px; font-weight: bold;">DOSYA
+ADI<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold;">DÖNÜŞÜM<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold;">YAYINLAYAN<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold;">UYGULAMA
+ALANI<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">peninsula_ED50_ETRS89.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ED50 &#8594;
+ETRS89<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">I.G.N.<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">İber
+Yarımadası<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">peninsula_ETRS89_ED50.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ETRS89
+&#8594; ED50<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">Buhodra
+Mühendislik, A.Ş.<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">İber
+Yarımadası<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">cat_ED50_ETRS89.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ED50 &#8594;
+ETRS89</td>
+            <td style="vertical-align: top; text-align: center;">I.C.C.<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">Katalonya<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">cat_ETRS89_ED50.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ETRS89
+&#8594; ED50</td>
+            <td style="vertical-align: top; text-align: center;">Buhodra
+Mühendislik, A.Ş.</td>
+            <td style="vertical-align: top; text-align: center;">Katalonya<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">baleares_ED50_ETRS89.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ED50 &#8594;
+ETRS89</td>
+            <td style="vertical-align: top; text-align: center;">I.G.N.<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">Balear
+Adaları<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">baleares_ETRS89_ED50.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ETRS89
+&#8594; ED50</td>
+            <td style="vertical-align: top; text-align: center;">Buhodra
+Mühendislik, A.Ş.</td>
+            <td style="vertical-align: top; text-align: center;">Balear
+Adaları<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<span style="font-weight: bold; font-style: italic;">Grid</span> seçeneği etkinleştirildiğinde,
+dosyayı seçmeniz istenir ve
+buradan kaynak ve hedef CRS'lerin adları okunur. <span style="font-weight: bold;">[Dönüştür]</span>'e basıldığında,
+her nokta için enlem ve
+boylam artışı, onu çevreleyen gridin dört düğümüne bağlı değerlerin
+çift doğrusal enterpolasyonu ile hesaplanır.<br />
+      <br />
+      <img style="width: 314px; height: 55px; margin-right: 7px;" alt="" src="Imagenes/crs_rejilla_z.png" align="left" />&nbsp;<span class="Archivo">.gsb</span>
+gridleri sadece X ve
+Y koordinatlarını etkiler. Ancak, jeoid dalgalanmasından kaynaklanan
+<span style="font-weight: bold;">dikey referans sistemi</span> dönüşümleri için de gridler mevcuttur
+(jeoidin elipsoid üzerindeki yüksekliğini sağlarlar).<br />
+      <br />
+Bu dosyaların uzantısı &nbsp;<span class="Archivo">.gzb</span>'dir ve kütüphanede &nbsp;<span class="Archivo">EGM08_REDNAP.gzb</span> (İber Yarımadası için genel),&nbsp;<span class="Archivo">EGM08_REDNAP_Canarial.gzb</span> (Kanarya Adaları için) ve &nbsp;<span class="Archivo">EGM08_cat.gzb</span> (Katalonya bölgesi için) dosyaları bulunur.<br />
+      <br />
+Kütüphanemizde, NTV2 formatındaki veri gridlerini kullanarak CRS dönüşümü için, İber Yarımadası ve Balear Adaları için IGN tarafından, Katalonya için ise ICC tarafından yayınlanmış dosyalar bulunmaktadır. 2008 ve 2009'da yayınlanan güncel sürümler ve 2003 ve 2005'te yayınlanan ve artık güncelliğini yitirmiş eski sürümler olmak üzere iki sürüm vardır. Kütüphanelerimizden eski sürümü kaldırmıştık; ancak bunları kullanmış olan projeler için, onları daha net bir şekilde tanımlayan dosya adlarıyla yeniden dahil ediyoruz.<br />
+      <br />
+ESKİLER: peninsula_2003.gsb; INV_peninsula_2003.gsb; baleares_2005.gsb; INV_baleares_2005.gsb<br />
+      <br />
+GÜNCEL:peninsula_ED50_ETRS89.gsb;peninsula_ETRS89_ED50.gsb;baleares_ED50_ETRS89.gsb;
+baleares_ETRS89_ED50.gsb; cat_ED50_ETRS89.gsb; cat_ETRS89_ED50.gsb.<br />
+<br />
+      <a name="kml">GOOGLE EARTH .kml DOSYALARINA DIŞA AKTARMA<sup>®</sup></a><br />
+      <br />
+.kml dosyalarının dışa aktarımı <a href="EDM_exportacion.html#kml">burada</a> açıklanmaktadır.<br />
+      <br />
+      <br />
+      <a name="transf_local">CRS'LER ARASINDA YEREL DÖNÜŞÜMLERİN MANUEL TANIMLANMASI</a><br />
+      <br />
+      <img style="width: 116px; height: 74px;" alt="" src="Imagenes/crs_local.png" align="right" hspace="4" /><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>,
+kullanıcıların belirli yerel CRS'leri ve CRS'ler arası dönüşümleri tanımlamasına olanak tanır.
+Bir kullanıcı dosyasının kullanımı, <span style="font-weight: bold;">[Yükle]</span> düğmesi aracılığıyla mümkündür.<br />
+      <br />
+<span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>® </sup></span>
+boş olarak başlatıldığında veya önceden tanımlanmış bir CRS olmadan bir dosya yüklendiğinde veya Dosya &gt; Yeni seçeneğiyle, Mevcut CRS bilgisi kaldırılır ve varsayılan bir CRS tanımlanmaz.<br />
+      <br />
+Bir .crs dosyasından bir CRS veya Dönüşüm yüklendiğinde, dosya adı CRS iletişim kutusunda gösterilir. Bir Mevcut CRS tanımlandıktan sonra, bir .edm dosyası, bir ikili .edb dosyası veya yedek kopyayı kaydedersek, CRS dosyasının adı onlarla birlikte kaydedilir ve dolayısıyla Mevcut CRS ile tanımlanır.<br />
+Bu şekilde, yeni bir oturum başlatıldığında veya .edm veya .edb dosyası yüklendiğinde, o .crs dosyasında tanımlanan koordinat referans sistemi ayarlanır.<br />
+      <br />
+Program kütüphanesinde birkaç örnek dosya bulunmaktadır.&nbsp;<span class="Archivo">ElCobre.crs</span>, en basit olanıdır:&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Yeni bir projeksiyon aracılığıyla bir CRS tanımı.<br />
+# CRS'nin adı ve projeksiyonun adı ile <br />
+# parametreleri tanımlanır.<br />
+# DATUM (ELİPSOİD ve MERİDYEN), SİSTEM ve<br />
+# İŞLEM veritabanı kodları olmalıdır.<br />
+# Burada ayrıca hedef CRS ve DİLİM de tanımlanır.<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+WGS8 84 / EL COBRE / UTM zone 19S<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS 84)<br />
+&nbsp;SİSTEM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4400&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Kartezyen)<br />
+&nbsp;İŞLEM&nbsp;&nbsp;&nbsp;&nbsp;
+9807&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transverse Mercator<br />
+&nbsp;PROJEKSİYON&nbsp;&nbsp;&nbsp; EL COBRE<br />
+&nbsp;Doğal.Baş.Enl&nbsp; 0.000000000<br />
+&nbsp;Doğal.Baş.Boy&nbsp; -70.5000000<br />
+&nbsp;Doğ.Baş.Ölçek.F&nbsp; 1.000188147<br />
+&nbsp;SağaDeğer&nbsp;&nbsp;&nbsp;&nbsp; 200000.0000<br />
+&nbsp;YukarıDeğer&nbsp;&nbsp;&nbsp; 7000000.000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_hedef&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS
+84)<br />
+&nbsp;DİLİM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (19S)<br />
+#----------------------------------------------------<br />
+&nbsp;SON<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />
+&nbsp;<span class="Archivo">Oviedo.crs</span> dosyası da iyi bir kullanım örneğidir, çünkü zaten dönüşüm parametrelerini kullanır (ancak sadece öteleme parametrelerini,
+bu yüzden üç parametreli bir dönüşümdür):<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Yeni bir projeksiyon aracılığıyla bir CRS tanımı.<br />
+# CRS'nin Adı ve projeksiyonun adı ile <br />
+# parametreleri tanımlanır.<br />
+# DATUM (ELİPSOİD ve MERİDYEN), SİSTEM ve<br />
+# İŞLEM veritabanı kodları olmalıdır.<br />
+# Burada ayrıca hedef CRS ve DİLİM de tanımlanır.<br />
+# 3 veya 7 parametreli bir dönüşüm de tanımlanabilir.<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ED50 / OVIEDO<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6230&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (European Datum 1950)<br />
+&nbsp;SİSTEM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6422&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (elipsoidal)<br />
+&nbsp;İŞLEM&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+&nbsp;PROJEKSİYON&nbsp;&nbsp;&nbsp; OVIEDO<br />
+#Doğal.Baş.Enl&nbsp; 0.000000000<br />
+#Doğal.Baş.Boy&nbsp; 0.000000000<br />
+#Doğ.Baş.Ölçek.F&nbsp; 0.000000000<br />
+#SağaDeğer&nbsp;&nbsp;&nbsp;&nbsp; 0.000000000<br />
+#YukarıDeğer&nbsp;&nbsp;&nbsp; 0.000000000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_hedef&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS
+84)<br />
+&nbsp;DİLİM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30<br />
+&nbsp;DÖNÜŞÜM ED50'den WGS84'e (Oviedo)<br />
+&nbsp;dX -141.00000000&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dY -102.00000000&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dZ -165.00000000&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;rX&nbsp;&nbsp;&nbsp; 0.00000000&nbsp;&nbsp;&nbsp; saniye<br />
+&nbsp;rY&nbsp;&nbsp;&nbsp; 0.00000000&nbsp;&nbsp;&nbsp; saniye<br />
+&nbsp;rZ&nbsp;&nbsp;&nbsp; 0.00000000&nbsp;&nbsp;&nbsp; saniye<br />
+&nbsp;dE&nbsp;&nbsp;&nbsp; 0.00000000&nbsp;&nbsp;&nbsp; Milyonda
+Birim<br />
+#----------------------------------------------------<br />
+&nbsp;SON<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />
+&nbsp;<span class="Archivo">Cat_ED50_WGS84.crs</span> dosyası,
+yedi parametreli yerel dönüşümler yapmayı sağlar:<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Yeni bir projeksiyon aracılığıyla bir CRS tanımı.<br />
+# CRS'nin Adı ve projeksiyonun adı ile <br />
+# parametreleri tanımlanır.<br />
+# DATUM (ELİPSOİD ve MERİDYEN), SİSTEM ve<br />
+# İŞLEM veritabanı kodları olmalıdır.<br />
+# Burada ayrıca hedef CRS ve DİLİM de tanımlanır.<br />
+# 3 veya 7 parametreli bir dönüşüm de tanımlanabilir.<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ED50 / KATALONYA<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6230&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (European Datum 1950)<br />
+&nbsp;SİSTEM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6422&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (elipsoidal)<br />
+&nbsp;İŞLEM&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+&nbsp;PROJEKSİYON&nbsp;&nbsp;&nbsp; KATALONYA<br />
+#Doğal.Baş.Enl&nbsp; 0.000000000<br />
+#Doğal.Baş.Boy&nbsp; 0.000000000<br />
+#Doğ.Baş.Ölçek.F&nbsp; 0.000000000<br />
+#SağaDeğer&nbsp;&nbsp;&nbsp;&nbsp; 0.000000000<br />
+#YukarıDeğer&nbsp;&nbsp;&nbsp; 0.000000000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_hedef&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS
+84)<br />
+&nbsp;DİLİM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31<br />
+&nbsp;DÖNÜŞÜM ED50'den WGS84'e (ICC Katalonya)<br />
+&nbsp;dX&nbsp;&nbsp;&nbsp;&nbsp;
+-128.14907000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-70.93672000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dZ&nbsp;&nbsp;&nbsp;&nbsp;
+-182.41914000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;rX_rad&nbsp;&nbsp;&nbsp; 0.000002632283&nbsp; radyan<br />
+&nbsp;rY_rad&nbsp;&nbsp;&nbsp; 0.000002701445&nbsp; radyan<br />
+&nbsp;rZ_rad&nbsp;&nbsp;&nbsp; 0.000008649425&nbsp; radyan<br />
+&nbsp;dE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11.51502700&nbsp;&nbsp;&nbsp;&nbsp; Milyonda Birim<br />
+#----------------------------------------------------<br />
+&nbsp;SON<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />
+&nbsp;<span class="Archivo">Cat_ED50_GWS84b.crs</span> dosyası,
+yedi parametreli bir dönüşümün başka bir örneğidir, ancak bunun özelliği,
+kaynak CRS'nin manuel olarak tanımlanmak yerine, <span style="font-style: italic;">CRS_KAYNAK</span> komutu kullanılarak mevcut olanlardan birinin kullanılmasıdır:<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Bir Dönüşümün Tanımı.<br />
+# CRS kodu tanımlanır. <br />
+# Burada ayrıca hedef CRS ve DİLİM de tanımlanır.<br />
+# 3 veya 7 parametreli bir dönüşüm de tanımlanabilir.<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_kaynak&nbsp;&nbsp;&nbsp; 4230&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(ED50)<br />
+&nbsp;CRS_hedef&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS
+84)<br />
+&nbsp;DİLİM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31<br />
+&nbsp;DÖNÜŞÜM ED50'den WGS84'e (ICC Katalonya)<br />
+&nbsp;dX&nbsp;&nbsp;&nbsp;&nbsp;
+-128.14907000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-70.93672000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dZ&nbsp;&nbsp;&nbsp;&nbsp;
+-182.41914000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;rX_rad&nbsp;&nbsp;&nbsp; 0.000002632283&nbsp; radyan<br />
+&nbsp;rY_rad&nbsp;&nbsp;&nbsp; 0.000002701445&nbsp; radyan<br />
+&nbsp;rZ_rad&nbsp;&nbsp;&nbsp; 0.000008649425&nbsp; radyan<br />
+&nbsp;dE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11.51502700&nbsp;&nbsp;&nbsp;&nbsp; Milyonda Birim<br />
+#----------------------------------------------------<br />
+&nbsp;SON<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />&nbsp;<span class="Archivo">N_Algerie_Clarke_WGS84.crs</span> dosyası,
+Cezayir'in kuzeyi için bir Lambert Konik Konformal (2SP) projeksiyonlu bir CRS ve bu CRS'den 32. dilimdeki WGS84'e bir dönüşüm tanımlar:<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# CRS: Clarke Kuzey Cezayir<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CLARKE Kuzey Cezayir<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6671&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Voirol 1879)<br />
+&nbsp;SİSTEM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4499&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Kartezyen)<br />
+&nbsp;İŞLEM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9802&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lambert Konik Konformal (2SP)<br />
+&nbsp;PROJEKSİYON&nbsp;&nbsp;&nbsp;&nbsp; Kuzey Cezayir<br />
+&nbsp;Sahte.Baş.Enl&nbsp; 36.000000000<br />
+&nbsp;Sahte.Baş.Boy&nbsp;&nbsp; 2.700000000<br />
+&nbsp;İlk.SP.Enl&nbsp; 37.566182509<br />
+&nbsp;İkinci.SP.Enl&nbsp; 34.423190119<br />
+&nbsp;Sahte.Doğu.Baş&nbsp; 500135.00000<br />
+&nbsp;Sahte.Kuzey.Baş&nbsp; 300090.00000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_hedef&nbsp;&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS 84)<br />
+&nbsp;DİLİM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (32N)<br />
+#----------------------------------------------------<br />
+&nbsp;DÖNÜŞÜM CLARKE Kuzey Cezayir'den WGS84'e<br />
+&nbsp;dX&nbsp;&nbsp;&nbsp;&nbsp; -156.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -94.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dZ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 311.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;rX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s<br />
+&nbsp;rY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s<br />
+&nbsp;rZ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.8140000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s<br />
+&nbsp;dE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -6.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Milyonda Birim<br />
+#----------------------------------------------------<br />
+&nbsp;SON<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />
+&nbsp;<span class="Archivo">LTM_Chile(-71).crs</span> dosyası, Şili'de kullanılan Yerel Transverse Mercator projeksiyonunu aşağıdaki parametrelerle içerir:<br /><br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Yeni bir projeksiyon aracılığıyla bir CRS tanımı.<br />
+# CRS'nin Adı ve projeksiyonun adı ile <br />
+# parametreleri tanımlanır.<br />
+# DATUM (ELİPSOİD ve MERİDYEN), SİSTEM ve<br />
+# İŞLEM veritabanı kodları olmalıdır.<br />
+# Burada ayrıca hedef CRS ve DİLİM de tanımlanır.<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WGS8 84 / LTM_CHILE / UTM zone 19S<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS 84)<br />
+&nbsp;SİSTEM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4400&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Kartezyen)<br />
+&nbsp;İŞLEM&nbsp;&nbsp;&nbsp;&nbsp; 9807&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transverse Mercator<br />
+&nbsp;PROJEKSİYON&nbsp;&nbsp;&nbsp; LTM CHILE (-71)<br />
+&nbsp;Doğal.Baş.Enl&nbsp; 0.000000000<br />
+&nbsp;Doğal.Baş.Boy&nbsp; -71.0000000<br />
+&nbsp;Doğ.Baş.Ölçek.F&nbsp; 1.000047037<br />
+&nbsp;SağaDeğer&nbsp;&nbsp;&nbsp;&nbsp; 200000.0000<br />
+&nbsp;YukarıDeğer&nbsp;&nbsp;&nbsp; 7000000.000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_hedef&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS 84)<br />
+&nbsp;DİLİM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (19S)<br />
+#----------------------------------------------------<br />
+&nbsp;SON<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />ISPOL
+kütüphanesinde bulunan diğer yerel CRS'lerden biri de, İngiltere'deki haritaları bu
+iki sistem arasında dönüştürmek için kullanılan OSGB36_to_WGS84(6).crs dosyasıdır. EPSG 1314
+dönüşümü yerine bu dosya kullanılmalıdır,
+çünkü bu dönüşüm, EPSG veritabanında kullanılan kaynak CRS'nin projeksiyonu eksik olduğu için
+düzgün çalışmaz.<br />
+      <br />
+Ayrıca, bazı parametreleri (Sahte Doğu Başlangıcı ve Sahte Kuzey Başlangıcı) fit (US_Feet) cinsinden tanımlama imkanı sunan Texas_Central_Lambert2SP.crs dosyasına da sahip olacaksınız.<br />
+      <br />
+S-JTSK(EN)_Zvolen.crs dosyası, CRS (5221) S-JTSK(Ferro)/Krovak East North'tan (4326) WGS84'e dönüşüm yapmayı sağlar. Bu CRS, Zvolen (Slovakya) bölgesine karşılık gelir.<br />
+<br />
+      <div style="text-align: center;"><img style="width: 354px; height: 252px;" alt="" src="Imagenes/crs_Zloven.png" /><br />
+      </div>
+      <br />
+Kütüphanede, örneğin Sırbistan'ın belirli bir bölgesi için &nbsp;<span class="Archivo">MGI_Balkans_Zone_7_a_WGS84.crs</span> veya Bolivya'nın geniş bir bölgesi için &nbsp;<span class="Archivo">Bolivia_Lambert.crs</span> veya Ekvador'da kullanılan, WGS84 Datumuna dayalı ve Quito (TMQ) için değiştirilmiş bir UTM projeksiyon sistemine sahip bir CRS tanımlayan &nbsp;<span class="Archivo">SIRES-DMQ.crs</span> gibi daha fazla &nbsp;<span class="Archivo">.crs</span> dosyası mevcuttur. Özetle, bu tür dosyalarda şunlar tanımlanır:<br />
+      <ul>
+        <li>Bir <span style="font-weight: bold;">kaynak CRS</span>. <span style="font-style: italic;">CRS</span> komutu, manuel olarak tanımlamayı sağlar, oysa <span style="font-style: italic;">CRS_KAYNAK</span> komutu kullanılırsa, OGP koduna göre mevcut olanlardan biri kullanılır. İlk durum (manuel tanım) seçilirse, o zaman (daha önce bahsedilen &nbsp;<span class="Archivo">ElCobre.crs</span> dosyası örnek olarak alınarak) şunlar bildirilmelidir:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ul style="list-style-type: circle;">
+        <li>Yeni CRS için ad: WGS 84 / EL COBRE / zone 19S</li>
+        <li>Datum kodu: 6326 (WGS 84)</li>
+        <li>Sistem kodu: SİSTEM 4400 (Kartezyen)</li>
+        <li>İşlem: 9807 Transverse Mercator</li>
+        <li>Projeksiyon için ad: EL COBRE</li>
+        <li>Projeksiyon parametreleri:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ol>
+        <li>Doğal başlangıç enlemi: 0.000000000</li>
+        <li>Doğal başlangıç boylamı: -70.5000000</li>
+        <li>Doğal başlangıç ölçek faktörü: 1.000188147</li>
+        <li>Sağa Değer: 200000.0000</li>
+        <li>Yukarı Değer: 7000000.000</li>
+      </ol>
+      </div>
+      </div>
+      <ul>
+        <li>OGP koduna göre, mevcut olanlar arasından <span style="font-weight: bold;">hedef CRS</span>.</li>
+        <li><span style="font-weight: bold;">Bölge</span> veya dilim.</li>
+        <li>İsteğe bağlı olarak, 3 (sadece öteleme) veya 7 olabilen <span style="font-weight: bold;">dönüşüm
+parametreleri</span>:</li>
+      </ul>
+      <ul style="list-style-type: circle; margin-left: 40px;">
+        <li>Metre cinsinden <span style="font-weight: bold;">öteleme</span>
+parametreleri (<span style="font-style: italic;">dX</span>, <span style="font-style: italic;">dY</span> ve <span style="font-style: italic;">dZ</span> komutları).</li>
+        <li>Saniye cinsinden <span style="font-weight: bold;">dönme</span>
+parametreleri (<span style="font-style: italic;">rX</span>, <span style="font-style: italic;">rY</span> ve <span style="font-style: italic;">rZ</span> komutları) veya radyan cinsinden (<span style="font-style: italic;">rX_rad</span>, <span style="font-style: italic;">rY_rad</span> ve <span style="font-style: italic;">rZ_rad</span> komutları).</li>
+        <li>Milyonda bir parça cinsinden <span style="font-weight: bold;">ölçek faktörü</span>
+(dE komutu), öyle ki <img style="width: 79px; height: 28px; margin-bottom: 5px;" alt="" src="Imagenes/crs_escala.png" align="middle" />.</li>
+      </ul>Kütüphanemizde,
+Kolombiya'nın mevcut 5 referans sisteminden yeni tek projeksiyon sistemine dönüşüm sağlayan 5 CRS bulunmaktadır:<br /><ul><li>MAGNA_SIRGAS-ColombiaFarWestZone_Colombia73W.crs</li><li>MAGNA_SIRGAS-ColombiaWestZone_Colombia73W.crs</li><li>MAGNA_SIRGAS-ColombiaBogotaZone_Colombia73W.crs</li><li>MAGNA_SIRGAS-ColombiaEastCentralZone_Colombia73W.crs</li><li>MAGNA_SIRGAS-ColombiaEastZone_Colombia73W.crs</li></ul><div style="text-align: center;"><img style="width: 600px; height: 313px;" alt="" src="Imagenes/magnasirgas_colom.png" /><br /></div><br />Ayrıca bu sistemden WGS84'e dönüşüm sağlayan bir başkasına da sahibiz:<br /><ul><li>Colombia(73W)_WGS84.crs</li></ul>Kolombiya'da
+kentsel alanlarda kullanılan PROJEKSİYONLAR için İŞLEM içinde EPSG kodu 1052'ye sahibiz. Bu, EPSG 6247:MAGNA-SIRGAS/Bogota kentsel gridi veya EPSG
+6349:MAGNA-SIRGAS/Cali kentsel gridi gibi bir dizi CRS'ye yol açar....<br /><br /><div style="text-align: center;"><img style="width: 600px; height: 313px;" alt="" src="Imagenes/crs_colombia_urban.png" /><br /><br /></div><span style="font-weight: bold; font-style: italic;"><a name="transf_crs_tiempo_real_helmert_3D">3D Helmert Düzeltmesi ile Gerçek Zamanlı CRS'ler Arası Dönüşüm</a></span><br />
+      <br />
+<a href="EDM_gps.html">GPS koordinat takibi</a> aracı, CRS değişikliğini ve varsa tanımlanmış bir 3D Helmert koordinat dönüşümünü aynı anda kullanır.<br />
+      <br />
+      <span style="text-decoration: underline;">Örnek</span><br />
+      <br />
+ED50 CRS'sinde referanslandırılmış bir harita olduğunu ve <a href="#transf_crs">CRS'ler arası dönüşümler</a> iletişim kutusunda mevcut CRS olarak ED50 ve hedef olarak WGS84 göründüğünü varsayalım. Aynı şekilde, CRS değişikliği için 3 veya 7 parametreli bir dönüşüm tanımlanmıştır.<br />
+      <br />
+Aynı anda, <span style="font-weight: bold;">Araçlar</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <a href="EDM_transf_coord.html"><span style="font-weight: bold;">Koordinat Dönüşümü</span></a> iletişim kutusunda,
+önceki CRS dönüşümü ile ED50'ye çevrilmiş GPS okumalarına ve bu baz istasyonlarının ED50'deki gerçek koordinatlarına sahip bir dizi baz istasyonundan statik veya dinamik bir 3D Helmert dönüşümü tanımlanmıştır.<br />
+      <br />
+GPS bağlandığında, elde edilen okumalar
+önce CRS dönüşümü kullanılarak WGS84'ten ED50'ye çevrilir ve elde edilen
+koordinatlar daha sonra 3D Helmert <a href="EDM_transf_coord.html">koordinat dönüşümü</a> ile ayarlanır.<br />
+      <br />
+Eğer GPS deniz seviyesinden yüksekliği döndürmezse, hedef CRS (WGS84) ile düzenli bir <a href="#rejilla">grid</a> içeren bir dikey referans sistemi yüklenebilir.<br />
+      <br />
+      <a name="Utilidades"><span class="Titulo_2">Yardımcı Araçlar</span><br />
+      <br />
+      </a><div style="text-align: center;"><a name="Utilidades"><img style="width: 458px; height: 124px;" alt="" src="Imagenes/crs_utilidades.png" /><br />
+      </a></div>
+<a name="Utilidades"><br />
+      </a><a name="huso"><span class="Titulo_2">Dilim Değişikliği</span></a><br />
+      <br />
+      <img style="width: 117px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/acceso_CRS.png" align="right" /> Mantıksal olarak, dilim
+değişiklikleri sadece projeksiyon sistemi olarak UTM kullanan
+CRS'ler için anlamlıdır, çünkü Transverse Mercator (Gauss-Kruger) veya Oblique
+Stereographic gibi diğer projeksiyon türleri her özel durumda kendi doğal başlangıç noktalarını tanımlar.<br />
+      <br />
+Bir dilim değişikliği yapmak için, <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Koordinat Referans Sistemi</span> menüsünden ve
+ayrıca alt kısımdaki DİLİM simgesinden seçeneğe erişmek gerekir. Tüm bunlar Yardımcı Araçlar bölümündedir.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <img style="width: 447px; height: 61px;" alt="" src="Imagenes/cambio_huso.png" align="right" hspace="4" />O zaman sadece
+<span style="font-weight: bold;">kaynak dilimi</span> ve <span style="font-weight: bold;">hedef dilimi</span> belirtmek ve ardından
+<span style="font-weight: bold;">[DİLİM DEĞİŞTİR]</span> düğmesine basmak,
+programın koordinat
+dönüşümünü yürütmesi için yeterlidir.<br />
+<br />
+Değişiklik, hem harita, hem <a href="EDM_topografia.html">topografya</a>, hem eksenler hem de yüklenen görüntüler
+üzerinde etkili olur.<br />
+      <br />
+      <br />
+
+      <span class="Titulo_2"><a name="utm_geograficas">UTM'den
+Coğrafi Koordinatlara ve Tersi</a></span><br />
+
+      <br />
+
+Bu araç, UTM koordinatlarını (kaynak dilim)
+coğrafi koordinatlara ve coğrafi koordinatları UTM'ye (hedef dilim) dönüştürmeyi sağlar.<br />
+
+      <br />
+
+Coğrafi koordinatlardayken koordinat yansımasında
+enlem ve boylam gösterilir, örn. -6/20/15.2346&nbsp;
++42/55/10.1234.<br />
+
+      <br />
+
+Coğrafi koordinatlarda, &nbsp;<span class="Archivo">.edm</span>
+(ve &nbsp;<span class="Archivo">.top</span>/<span class="Archivo">.toc</span>) dosyasında saklanan
+ve ölçümler için kullanılan koordinatların sırası saniyenin 1/20'sidir;
+bu birim metreye çok yakındır ve çok fazla bozulma olmadan 3B görünümler yapmaya olanak tanır.<br />
+
+      <br />
+
+Eğer bir &nbsp;<span class="Archivo">.edm</span> dosyası coğrafi koordinatlardayken
+yazılırsa, program onu tekrar yüklediğinde tanıyacaktır, ancak
+UTM ve Coğrafi koordinatlardaki dosyaları birlikte yüklememelisiniz.<br />
+
+      <br />
+
+Ölçekle çalışırken veya ölçeği değiştirirken, anlamı şöyledir, örn.:<br />
+
+      <br />
+
+ÖLÇEK 1:1000 &#8594; 1 metre kağıt, 1000 × (1/20 saniye) temsil eder &#8594; 1
+metre &#8594; 50 saniye.<br />
+      <br />
+      <span class="Titulo_2"><a name="imp_coord_geograf">Coğrafi Koordinatları İçe Aktarma</a></span><br />
+      <br /><span style="font-weight: bold;">[COĞRAFİ KOORDİNATLARI YÜKLE]</span> düğmesi, coğrafi koordinatlardaki noktaları içeren ve ayrıca <a href="OL_replanteo_planta.html#def_bases">aplikasyon baz istasyonlarıyla</a> ilişkilendirilebilen dosyaları yüklemeyi sağlar.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 450px; height: 28px;" alt="" src="Imagenes/cargar_geo.png" /><br />
+      </div>
+      <br />
+Dosya
+seçildikten sonra, verilerin Doğu veya Batı boylamına göre mi olduğunu
+belirtmeniz gereken bir iletişim kutusu gösterilir, böylece ikinci durumda,
+program verilerin işaretini değiştirir:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 337px; height: 147px;" alt="" src="Imagenes/cargar_geo_2.png" align="middle" /><br />
+      </div>
+      <br />
+Coğrafi koordinat dosyaları herhangi bir uzantıya sahip olabilir (varsayılan olarak program <span class="Archivo">.geo</span>'yu önerir) ve aşağıdaki formatlar kabul edilir:<br />
+      <ul>
+        <li>İlk dört sütun <span style="font-style: italic;">Ad</span> <span style="font-style: italic;">Boylam</span> <span style="font-style: italic;">Enlem</span> <span style="font-style: italic;">Yükseklik</span> şeklinde, boylam ve enlem derece, dakika ve saniye olarak bir eğik çizgi ile ayrılmış:<br />
+        </li>
+      </ul>
+
+      
+      <table style="text-align: left; height: 96px; width: 443px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 228px; height: 30px;">Ad
+(boşluksuz)</td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 60px;">Boylam</td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 61px;">Enlem</td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 60px;">Yükseklik</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 228px;">ALMONACID_SIERRA_KOOPERATIFI&nbsp;&nbsp;
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">1/19/32</td>
+            <td style="vertical-align: top; text-align: center; width: 61px;">41/23/46</td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">598</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 228px;">ALMONACID_SIERRA_D_G_A&nbsp;
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">1/19/05</td>
+            <td style="vertical-align: top; text-align: center; width: 61px;">41/23/53</td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">600</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 228px;">CARIÑENA__LA_PARDINA</td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">1/12/57</td>
+            <td style="vertical-align: top; text-align: center; width: 61px;"> 41/24/16</td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">496</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <ul>
+        <li>İlk dört sütun yine <span style="font-style: italic;">Ad</span> <span style="font-style: italic;">Boylam</span> <span style="font-style: italic;">Enlem</span> <span style="font-style: italic;">Yükseklik</span> şeklinde, ancak boylam ve enlem ondalık olarak toplam derece cinsinden ifade edilmiş.<br />
+        </li>
+      </ul>
+<span style="font-weight: bold;">Atla</span> alanında,
+dosyanın başında göz ardı edilecek ve genellikle başlığa karşılık gelen
+satır sayısını belirtebilirsiniz. Bunu kolaylaştırmak için, <span style="font-weight: bold;">[Başlığı Gör]</span>
+düğmesi, dosyanın ilk birkaç satırını görüntülemenizi sağlar, bu da geleneksel
+bir metin düzenleyiciyle açılması zor olan çok büyük dosyalarda çok kullanışlıdır.<br />
+      <br />
+Yüklenebilecek başka bir olası format şudur: (K/G)Enlem(d)&nbsp; (D/B)Boylam(d).<br />
+      <br />
+      <div style="margin-left: 40px;">örn:<br />
+      <br />
+G25.38557 B57.12265<br />
+G25.38999 B57.06684<br />
+G25.38042 B56.98954<br />
+G25.39120 B56.96494<br />
+      <br />
+Bu dosyayı yüklemeden önce, bu verileri UTM'ye dönüştürmek için uygun mevcut CRS'yi ve Dilimi seçtiğimizden emin olmalıyız.<br />
+      </div>
+<br />
+Bu kutucuk ayrıca, <a href="OL_replanteo_planta.html">eksen aplikasyonu</a> için bir &nbsp;<span class="Archivo">.bas</span> baz istasyonu dosyası oluşturma seçeneği de sunar.<br />
+      <br />Coğrafi koordinatlardaki noktaları içe aktarırken,
+aşağıdaki hususları göz önünde bulundurmak gerekir:<br />
+      <ul>
+        <li>Seçeneğe basmadan önce <span style="font-weight: bold;">hedef dilim</span> seçilmelidir.</li>
+      </ul>
+      <ul>
+        <li>Her nokta için bir sembol (S43) ve bir etiket (mevcut stil ve boyutta) oluşturulur.</li>
+      </ul>
+      <ul>
+        <li>Eğer önceden hiçbir şey yüklenmemişse, bu seçenek kenar boşluklarını ve ofseti ayarlar. Eğer zaten bir eleman varsa, sadece kenar boşluklarını ayarlar.</li>
+      </ul>
+      <ul>
+        <li>Önceden uygun ölçeği ayarlamanız tavsiye edilir.</li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="coord_geocentricas">Jeosentrik Koordinatlardan Mevcut CRS Projeksiyon Sistemine Geçiş</a></span><br />
+      <br />
+      <img style="width: 361px; height: 102px; margin-left: 7px;" alt="" src="Imagenes/geocentricas_xyz.png" align="right" /><span style="font-weight: bold;">[Jeosentrik -&gt; XYZ]</span> düğmesi, jeosentrik koordinatların, mevcut olarak tanımlanmış <a href="#crs">CRS</a>'nin projeksiyon sistemindeki koordinatlara dönüştürülmesini sağlayan bir iletişim kutusu açar. Dönüşüm, ayarlanmış olan <span style="font-weight: bold;">kaynak diliminde</span> gerçekleştirilir.<br />
+      <br />
+
+<span style="font-weight: bold;">Atla</span> alanında,
+dosyanın başında göz ardı edilecek ve genellikle başlığa karşılık gelen
+satır sayısını belirtebilirsiniz. Bunu kolaylaştırmak için, <span style="font-weight: bold;">[Başlığı Gör]</span>
+düğmesi, dosyanın ilk birkaç satırını görüntülemenizi sağlar, bu da geleneksel
+bir metin düzenleyiciyle açılması zor olan çok büyük dosyalarda çok kullanışlıdır.<br />
+      <br />
+Çıktı dosyası, üç sütunlu (X, Y ve Z), &nbsp;<span class="Archivo">.xyz</span> uzantılı ve kullanıcının belirttiği ada sahip bir ASCII dosyası olacaktır.<br />
+      <br />
+      <a name="Listar_Coorde"><span class="Titulo_2">Coğrafi Koordinatları Listele</span><br />
+      <br />
+Aktif elemanların (çizgiler, noktalar, metinler) tüm noktalarını
+içeren, coğrafi koordinatlarda ve şu formatta bir &nbsp;<span class="Archivo">geo.res</span> listesi oluşturur: enlem boylam yükseklik. Enlem
+ve boylam ondalık olarak altmışlık derecelerle. Coğrafi Koordinatları Yükle seçeneği için,
+önceki araçla oluşturulan format girdi formatı olarak eklenir.<br />
+Bu listeye elemanlarla ilgili ek bilgiler eklenir:<br />
+Çizgi noktaları durumunda:<br />
+&nbsp; L&lt;çizgi tipi&gt; ,&nbsp; Çizgi numarası , Nokta numarası.<br />
+&nbsp;Tekil Nokta Sembolleri durumunda: <br />
+&nbsp; S&lt;nokta tipi&gt;,&nbsp; Nokta numarası, Öznitelik (bir nokta numarası olabilir,<br />
+&nbsp; km, vb.).<br />
+Bir metin durumunda: <br />
+&nbsp; R&lt;metin stili&gt;&nbsp; , Metin numarası, Metin.<br /><br /></a><a name="Geograficas_a_XY"><span class="Titulo_2">Coğrafiden XY'ye</span><br /><br />Harita
+coğrafi koordinatlardayken, yani X'ler ondalık olarak altmışlık derecelerle Boylamlar ve Y'ler ondalık olarak altmışlık derecelerle Enlemler olduğunda,
+o zaman tüm
+koordinatların aralık içinde olduğu (-180 &lt; X &lt; 180) ve (-90
+&lt; Y &lt; 90) ve geçerli bir CRS ayarlandığı kontrol edilir. Onaylandığında,
+dönüşüm gerçekleştirilir.<br />
+<br />
+      <br />
+      </a><a name="Compensaciones_UTM"><span class="Titulo_2">UTM Dengelemeleri</span><br />
+      <br />
+      </a><div style="text-align: center;"><a name="Compensaciones_UTM"><img style="width: 459px; height: 177px;" alt="" src="Imagenes/compensaciones%20utm.png" /><br />
+      </a></div>
+<a name="Compensaciones_UTM"><br />
+      </a><a name="compens_radiaciones"><span class="Titulo_2">Alım Hesaplamaları için Dengelemeler</span></a><br />
+      <br />
+      <img style="width: 212px; height: 121px; margin-left: 7px;" alt="" src="Imagenes/crs_compens_radiac.png" align="right" />Aşağıdakiler
+arasından kullanılmak istenenler seçilmelidir:<br />
+      <ul>
+        <li>Küreviyet ve kırılma için kot dengelemesi.</li>
+        <li>Deniz seviyesine olan mesafenin indirgenmesi.</li>
+        <li>Kiriş mesafesinin yaya dönüştürülmesi.</li>
+        <li>U.T.M. düzlemine geçiş.</li>
+      </ul>
+Anamorfoz katsayısı, <span style="font-weight: bold;">K&#8217;</span> × <span style="font-weight: bold;">Genel Ölçek Faktörü</span> çarpımı olarak hesaplanır.<br />
+      <br />
+Genel <span style="font-weight: bold;">ölçek faktörü</span>
+sayısal olarak tanımlanır. Bitişikteki <span style="font-weight: bold;">[0]</span>
+düğmesi değerini 0.9996000 olarak başlatır.<br />
+      <br />
+      <span style="font-weight: bold;">K&#8217;</span>,
+koordinatlara ve
+tanımlanmış <span style="font-weight: bold;">dilime</span> bağlı olarak aşağıdaki olasılıklardan
+otomatik olarak hesaplanır:<br />
+      <ul>
+        <li>İSTASYONA GÖRE.<br />
+</li>
+        <li>BAZ-NOKTA ARASI ORTALAMA</li>
+        <li>TEK, değerini sayısal olarak girerek.</li>
+      </ul>
+Poligonların kapanma düzeltmesini hesaplamak için
+aşağıdaki üç yöntem kullanılabilir:<br />
+      <ul>
+        <li>Kısmi koordinatlara orantılı.</li>
+        <li>Aralıkların uzunluğuna orantılı.</li>
+        <li>Aralık sayısına orantılı.</li>
+        <li>SANGUET yöntemine göre.<br />
+</li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="correcciones_replanteo">Aplikasyon
+Noktaları için Düzeltmeler</a></span><br />
+      <br />
+      <img style="width: 211px; height: 121px; margin-left: 7px;" alt="" src="Imagenes/crs_correcciones_replanteos.png" align="right" /> NOKTA APLİKASYONU'nda (GÜZERGAH PROJESİ modülü) U.T.M.
+seçeneği etkinleştirildiğinde, program parametre tablolarını analiz eder: <br />
+      <ul>
+        <li>Küreviyet ve kırılma.</li>
+        <li>Deniz seviyesine indirgeme.</li>
+        <li>Kirişten yaya geçiş.</li>
+        <li>U.T.M. düzlemine geçiş.<br />
+</li>
+      </ul>
+Bu dengelemeler ters yönde uygulanır. Küreviyet ve
+kırılma dengelemesi, Aplikasyon menüsünde noktaların
+kotuyla çalışılmadığı için işlem yapmaz.<br />
+      <br />
+Anamorfoz düzeltmesi: <span style="font-weight: bold;">K</span>
+= <span style="font-weight: bold;">Genel Ölçek Faktörü</span>
+×&nbsp; <span style="font-weight: bold;">K'</span>&nbsp;&nbsp; olmak üzere:<br />
+      <br />
+Bir noktaya olan mesafe&nbsp; <span style="font-weight: bold;">Dp</span>
+= <span style="font-weight: bold;">Trigonometrik Mesafe</span> / <span style="font-weight: bold;">K</span><br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Uzun
+görüşler için formüller </span><br />
+      <br />
+Çok uzun veya çok eğimli görüşlerle veya yüksek
+kotlarda çalışılması durumunda daha hassas bir formülasyonu etkinleştirme
+imkanı sunar.<br />
+      <br />
+Uzun görüşler için formülasyon etkinleştirildiğinde,
+küreviyet ve kırılma düzeltmeleri ile deniz
+seviyesine indirgeme (veya elipsoid kirişine geçiş) düzeltmeleri birlikte
+etkinleştirilir.<br />
+      <br />
+      <a name="predefinidos"><span class="Titulo_2">Öntanımlı Mod</span><br />
+      </a><br />
+Başlangıçtaki CRS seçim penceresi varsayılan olarak Kullanıcı modunda başlar, ancak açılır listeden seçerek aracı Öntanımlı moduna alabiliriz.<br />
+&nbsp;<span class="Parf_negrita">[Öntanımlılar]</span> modunda çalışmak için, &nbsp;<span class="Parf_negrita">[Elipsoidal]</span> sistem yerine &nbsp;<span class="Parf_negrita">[Kartezyen]</span> sistemdeki CRS'leri kullanmanız önerilir.
+Örneğin: ED50 Dilim 29'da Haritamız varsa, 29 dilimli CRS 4230 (ED50) yerine CRS: 23029 (ED50 / UTM zone 29N) kullanmalıyız.<br />
+      <br />
+Eğer Öntanımlı Mod'daysak, bir veya daha fazla edm/edb dosyası yüklediğimizde:<br />
+      <ul>
+        <li>Eğer ilk dosya, varsayılan olandan (örn. 23029) farklı bir CRS'de (örn. 23030) ise, yeni CRS'yi (23030) kabul etmek mi yoksa dosyayı varsayılana (23029) dönüştürmek mi istediğimiz sorulur.</li>
+        <li>Sonraki dosyalar, ilkinin yüklendiği CRS ile eşleşmezse, otomatik olarak dönüştürülür.<br />
+        </li>
+      </ul>
+
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img style="width: 600px; height: 78px;" alt="" src="Imagenes/dialogo_proyeccion_predefinidos.png" /><br />
+      </div>
+
+      <br />
+
+Bu moddan, favoriler listesinden bir CRS yükleyebilir veya <span style="font-weight: bold;">[Daha Fazla...]</span>'yı açarak EPSG'nin tam listesinden yükleyebiliriz. Mevcut CRS'yi <span style="font-weight: bold;">[Ekle]</span> düğmesiyle favoriler listesine ekleyebilir veya mevcut CRS'yi <span style="font-weight: bold;">[Varsayılan Olarak Ayarla]</span>yabiliriz, böylece yeni bir proje başlattığımızda yüklenir.<br />
+
+      <br />
+Seçilen CRS modu (<span style="font-style: italic;">kullanıcı</span> veya <span style="font-style: italic;">öntanımlılar</span>)
+Istram yapılandırma dosyasında kaydedilir ve ayrıca kaydettiğimiz topografik dosyalarda da saklanır (&nbsp;<span class="Archivo">.ttg</span>,&nbsp;<span class="Archivo">.toc</span>,&nbsp;<span class="Archivo">.top</span> dosyaları...).
+Bu dosyaları açtığımızda, eğer tanımlanmış bir varsayılan CRS'miz yoksa, program (izinle) dosyada saklanan CRS'yi alacaktır. Eğer zaten bir tane tanımlamışsak, dosyada kaydedilen koordinatları otomatik olarak kullandığımız sisteme dönüştürecektir.<br />
+      <br />
+
+Ayrıca, EPSG listesinden veya bir &nbsp;<span class="Archivo">.crs</span> dosyasından bir dönüşüm de yükleyebiliriz.</td>
+    </tr><tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body></html>

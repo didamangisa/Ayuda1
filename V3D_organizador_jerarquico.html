@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><title>BIM Ağacı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BIM AĞACI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      
+      
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#estructura_general">Ağacın Genel Yapısı</a><br />
+      <a href="#seleccion_nodo_actual">Mevcut Düğümün Seçimi: Olası Eylemler</a><br />
+      <a href="#organizacion_jerarquica">Elemanların, Bağlantıların ve Bağımlılıkların Hiyerarşik Organizasyonu</a><br />
+      </div>
+
+      
+      <br />
+<br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+
+      BIM Ağacı, proje ve Sanal 3B'deki temsili hakkındaki tüm bilgileri hiyerarşik bir şekilde göstermekten sorumludur. Bu ağaç aracılığıyla çeşitli görselleştirme, oluşturma ve eleman değiştirme seçenekleri gerçekleştirilebilir.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Çok değerli bir başlangıç sınıflandırması yapan çeşitli ana düğümlerden veya klasörlerden oluşur. Her yeni eleman, otomatik olarak uygun klasör içinde oluşturulur.<br />
+      <br />
+Saklanan elemanlar üzerinde gezinme, fare ve dikey kaydırma çubuğu aracılığıyla yapılır.<br />
+      <br />
+Her bölümü gizleme ve gösterme, klasörleri genişletme veya daraltma olanağının yanı sıra, herhangi bir elemana tıklandığında bu eleman seçilir ve 3B alanda bir 'sınırlayıcı kutu' ile vurgulanır. Ağaç ayrıca, seçilen düğüme göre özelleştirilmiş bir bağlam menüsü sunarak bazı doğrudan eylemlerin hızlı bir şekilde gerçekleştirilmesine olanak tanır.<br />
+      <br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="estructura_general">Ağacın Genel Yapısı</a></span><br />
+      
+      <br />
+
+      <img style="width: 189px; height: 200px; margin-left: 7px;" alt="" src="Imagenes/V3D_arbol_escenario.png" align="right" />Bir projenin temel BIM ağacı yapısı, birincil düğümlerle temsil edilen temel bir yapı üzerine kuruludur.<br />
+
+      <br />
+
+
+      <ul>
+        <li><span class="Parrafo">İlk düğüm (sağdaki örnekte <span style="font-weight: bold;">ED50</span>), projede kullanılan CRS (Koordinat Referans Sistemi) hakkında bilgi içerir.<br />
+          <br />
+          </span></li>
+        <li><span style="font-weight: bold;">Haritacılık</span>: Arazinin haritacılık ve topografik temsiliyle ilgili varlıkları içerir: <a href="EDM.html">harita paftaları</a>, <a href="EDM_topografia.html#ficheros_temporales">TTP'ler (üçgenlenmiş yüzeyler)</a>, <a href="EDM_control_entidades.html#control_superficies">SAM yüzeyleri</a>, <a href="EDM_datos_laser.html">yoğun nokta bulutları</a>...<br />
+
+          <br />
+
+          </li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sanal 3B</span>:
+Sanal 3B'deki temsille ilgili varlıkları içerir: ışıklar, kameralar, billboard'lar, animasyonlar, render seçenekleri...<br />
+          <br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Proje</span>:
+Projenin kendisiyle ilgili varlıkları içerir: eksenler, KM aralıkları ve yarmalar ve dolgular, duvarlar, üstyapı katmanları, kazılar gibi projeyle ilgili nesneler...<br />
+          <br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">İçe Aktarılan_IFC</span>: IFC formatında içe aktarılan nesneleri içerir.<br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="seleccion_nodo_actual">Mevcut Düğümün Seçimi: Olası Eylemler</a></span><br />
+      <br />
+Bir nesne seçildiğinde, özellikler penceresinde özellikleri sunulur ve bunlardan herhangi biri değiştirilebilir. Bir elemanın seçimi, ağaçtaki adına tıklayarak veya Sanal 3B penceresinde üzerine tıklayarak yapılabilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 295px;" alt="" src="Imagenes/V3D_arbol_escenario_actual.png" /><br />
+      </div>
+      <br />Her iki şekilde de, seçilen nesne, nesnenin minimum ve maksimum koordinatlarına göre oluşturulan sınırlayıcı kutusu veya 'kutusu' ile vurgulanır.<br />
+      <br />Bazı elemanlarda veya düğümlerde, isim doğrudan ağaç üzerinden değiştirilebilir. Bunun için üzerine fare ile ikinci bir kez tıklamak yeterlidir.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Elemanların Görünürlüğünü Etkinleştirme ve Devre Dışı Bırakma </span><br />
+      <br />
+      <img style="width: 137px; height: 105px; margin-left: 7px;" alt="" src="Imagenes/V3D_arbol_escenario_activacion.png" align="right" />Her düğümün ve her klasörün yanında, görünürlüğünü etkinleştirmeye veya devre dışı bırakmaya olanak tanıyan bir onay kutusu bulunur. Eğer bu bir klasör ise, içerdiği tüm elemanların görünürlüğü etkinleştirilir veya devre dışı bırakılır.<br />
+      <br />
+Bu eylem, veri hacmi nedeniyle sahnenin <span style="font-style: italic;">ağır</span> olduğu durumlarda veya sadece belirli bir nesne grubunun "rahatsız etmesi" istenmediğinde çok faydalı olabilir.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Elemanları Silme</span><br />
+      <br />
+      Bağlam menüsü tarafından sunulan nesne silme seçeneklerine ek olarak, ağaç, &lt;Del&gt; tuşuna basıldığında anında tepki verir ve işaretlenen nesneleri hemen siler.<br />
+      <br />
+Bu eylemin bir klasör düğümünde gerçekleştirilmesi durumunda, kullanıcıdan onay istenir ve barındırılan tüm elemanların silineceği bildirilir. Bu durumda, birincil düğümler 'boşaltılır', ancak var olmaya devam eder.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Bağlam Menüleri</span><br />
+      <br />
+      <img style="width: 259px; height: 246px; margin-left: 7px;" alt="" src="Imagenes/V3D_arbol_escenario_contextual.png" align="right" />Her nesnenin, sağ fare tuşuna basıldığında sunulan özel bağlam menüsü seçenekleri vardır. Tüm düzenleme ve organizasyon eylemleri bu sistem aracılığıyla gerçekleştirilir.<br />
+      <br />Seçilen düğümün türüne bağlı olarak, farenin ikincil tuşuna basıldığında, bazı eylemlerin çok rahat ve basit bir şekilde gerçekleştirilmesini sağlayan özel bir bağlam menüsü sunulur. <br />
+<br /> Basit (düzenleyici olmayan) nesneler durumunda, bağlam menüsünün ilk bölümünde aşağıdaki seçenekler gösterilir:<br />
+
+      
+      
+      <ul>
+        <li><span style="font-weight: bold;">Nesneye Bak</span>:
+Kameranın referansını değiştirir, böylece kamera ona "nişan alır": işaretlenen nesne ekranın ortasına konumlandırılır.</li>
+      </ul><ul>
+        <li><span style="font-weight: bold;">Nesneye Yakınlaş</span>: Önceki durumla aynıdır, ancak bu durumda kamera ayrıca nesneye yaklaşır ve onu ön plana çıkarır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Otomatik Odaklanma</span>:
+Bu seçenek etkinleştirilirse, bir elemana her tıklandığında otomatik olarak bir Nesneye Yakınlaşma gerçekleştirilir. Bu seçenek, klavye oklarıyla birlikte, her yerde hangi elemanların olduğunu keşfetmeye ve öğrenmeye olanak tanıdığı için çok kullanışlıdır.</li>
+      </ul>
+      Bazı nesnelerin bağlam menüsünde bir dizi ek eylem bulunur, örneğin:<br />
+
+      
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Çoğalt</span>: Seçilenle aynı, ancak bağımsız olarak davranacak bir nesne oluşturur.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sil</span>: Elemanı siler. Klavyedeki &lt;Del&gt; tuşu kullanılarak da silinebilir.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Klonla</span>: Selefinin özelliklerini kopyalayarak seçilenle aynı bir nesne oluşturur.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kes</span>: Nesneyi panoya kaydeder ve siler, başka bir klasöre yapıştırmaya hazır hale getirir.</li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kopyala</span>: Öncekine benzer, ancak 'yapıştır' işlemi gerçekleştirildiğinde seçilen klasörde nesnenin bir kopyası oluşturulur.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Yapıştır</span>: Kesilen veya kopyalanan nesne, eylem gerçekleştirildiği anda işaretlenen klasörün içine yerleştirilir.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span>
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Klasör Oluştur</span>: Yeni elemanları barındırmak için bir klasör düğümü oluşturur.</span></span></span></span></span></span></span></span></span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Aktif Üst Düğüm</span>:
+Bu eylem bir düğüm üzerinde yürütüldüğünde, programa, yeni oluşturulan veya içe aktarılan herhangi bir elemanın, başka bir yerde konumlanmış olsa bile, o düğümün içine 'yerleştirileceğini' belirtir. Aktif düzenleyicinin adı her zaman bu menünün penceresinin alt kısmında görüntülenir.</span></span></span></span></span></span></span></span></span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Dosyadan Ekle</span>:
+Bir dosyadan yeni bir eleman eklemeyi sağlar. Bu durumda, orijinal koordinatlarına yerleştirilir. Ayrıca, <span style="font-weight: bold;">Araçlar</span> menüsünden&nbsp;<span class="Archivo">.3do</span> dosyalarında saklanan nesneleri yüklemek de mümkündür.</span></span></span></span></li>
+      
+      </ul>
+
+      
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="organizacion_jerarquica">Elemanların, Bağlantıların ve Bağımlılıkların Hiyerarşik Organizasyonu</a></span><br />
+
+      <br />
+Görüldüğü gibi, elemanları bir klasörden diğerine taşıma, yeni klasörler oluşturma ve elemanlar arasında bağlantılar kurma imkanı vardır. Bu seçenekler, bir sahnenin organizasyonunun çok basit bir görev olmasını sağlamak için geliştirilmiştir ve aynı zamanda animasyonlar oluştururken çok faydalı olan belirli mekansal davranışlara izin vermekten sorumludur.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Klonlama: Özelliklerin Kalıtımıyla Nesne Kopyalama</span><br style="font-weight: bold; font-style: italic;" />
+
+      <br />
+
+Bir elemanı klonlama imkanı, kullanıcının bir sahne tasarlarken zaman kazanmasını ve sistemin pozisyonları hesaplarken, dokuları uygularken veya aynı türdeki nesneleri değiştirirken zaman kazanmasını sağlar. <br />
+
+      <br />
+
+Klonlama sadece fiziksel özellikler düzeyinde çalışır: geometri, boyut ve malzeme; ancak konum ve yönelimde farklılık gösterebilirler.<br />
+
+      <br />
+
+Aynı olacak birden fazla eleman olduğunda bu tekniği kullanmak uygundur, çünkü hesaplama düzeyinde çok hızlı bir şekilde işlenirler, çünkü bellekte sadece bir orijinal eleman bulunur, geri kalan klonlar ise sadece bir referans kullandıkları için neredeyse hiç yer kaplamaz.<br />
+
+      <br />
+
+Klonlanmış nesneler, önlerine '>>' öneki eklendiği ve oluşturuldukları nesneyle aynı adı korudukları için ağaçta hemen ayırt edilir. İkonları da karakteristiktir.<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 542px; height: 252px;" alt="" src="Imagenes/V3D_arbol_escenario_clones.png" /></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Nesneler Arası Mekansal Bağımlılık</span><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span><img style="width: 355px; height: 175px; margin-left: 7px;" alt="" src="Imagenes/V3D_arbol_escenario_dependencia.png" align="right" />Nesneler arasında bağımlılıklar oluşturmak, bir birim olarak davranması gereken elemanları tasarlarken çok kullanışlıdır. Böylece, bir otomobil, bir ev vb. organize bir şekilde tanımlanabilir, bu da örneğin tüm elemanları tek seferde taşımaya olanak tanır. Böylece, bir 'ev' nesnesi oluşturulabilir ve içine temeller, kolonlar, pencereler vb. yerleştirilerek 'ev' nesnesine mekansal bir bağımlılıkları olabilir.<br />
+
+      <br />
+
+Her 'bağlı' eleman orijinal koordinatlarını kaybeder ve onu içeren 'ebeveyn'e göreli koordinatlara sahip olur. Ağaçta, bazı nesnelerin diğerlerinin içine dahil edildiği hiyerarşik bir ilişki gözlemlenebilir.<br />
+
+      <br />
+
+Gösterilen durumda, 'ebeveyn' olarak davranan platform aracı hareket ettirildiğinde, tüm set otomatik olarak hareket eder.<br />
+
+      <br />
+
+Diğer bir çok önemli husus, nesnelerin konum ve dönüşünün, 'ebeveynler ve çocuklar'ın bağımsız animasyon elemanlarına dahil edilebilme olasılığını dikkate almasıdır; 'çocuklar' öteleme ve dönüşü miras alır, ancak kendilerinin de kendi öteleme ve dönüşlerine sahip olma seçeneği vardır. Bu olgunun en basit açıklaması, sahnede hareket eden bir araç durumunda, tekerleklerin bağımsız olarak dönebilmesiyle sunulur.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Hiyerarşik Bağımlılıklara Sahip Bileşik Elemanlar</span><br />
+
+      <br />
+
+Sahnenin organizasyonunda gerekli ve arzu edilen 'düzen', klasörlerin yanı sıra, hiyerarşik üstlerine bağlı olan birkaç elemandan oluşan 'birimler' oluşturma amacıyla nesneler arasında hiyerarşik ilişkiler kullanma imkanıyla da sağlanabilir.<br />
+
+      <br />
+
+Böylece, örneğin, bir otomobil birkaç bileşenden oluşacaktır: şasi, tekerlekler, vb. Bunların her biri sahnede zaten mevcut olabilir veya inşa ediliyor olabilir. Aynı durum bir rüzgar türbini, bir tünel için bir fan, bir baskül köprü vb. için de geçerli olabilir.<br />
+
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"> </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

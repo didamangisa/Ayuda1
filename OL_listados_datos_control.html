@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Veri ve Kontrol Raporları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>VERİ VE KONTROL RAPORLARI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+Özel veri ve kontrol raporları şunlardır:<br />
+      </span> <br />
+      <div style="margin-left: 40px;"><a href="#resumen_ejes"><span class="Parrafo">Güzergah Özeti</span></a><br />
+      <a href="#inter_ejes"><span class="Parrafo">Güzergah Kesişimi</span></a><br />
+      <a href="#inter_ejes"><span class="Parrafo"> </span></a><a href="#caracteristicas"><span class="Parrafo">Özellikler</span></a><br />
+      <a href="#datos_vol"><span class="Parrafo">.vol Dosyası Verileri</span></a><br />
+      <a href="#invent"><span class="Parrafo">Çizgi ve Nokta Envanteri</span></a><br />
+      <a href="#Senalizacion_puntual">Noktasal İşaretleme</a><br />
+      <span class="Parrafo"><a href="#anejos">Güzergah Ekleri</a><br />
+      <a href="#sectipo">Tip Kesitler</a><br />
+      <a href="#repaso">Yönetmelik Kontrolü</a><br />
+      <a href="#Listado_de_bulones">Bulon Raporu</a><br />
+      </span> <a href="#cunet"><span class="Parrafo">Hendekler ve Kafa Hendekleri</span></a><br />
+      <span class="Parrafo"><a href="#perf">Arazi Enkesitleri</a></span><br />
+      <a href="#obrasFab"><span class="Parrafo">Sanat Yapıları</span></a><br />
+      <a href="#lon_esp"><span class="Parrafo">Özel Boykesitler</span></a><br />
+      <a href="#estruct"><span class="Parrafo">Sanat Yapıları (Viyadük/Tünel)</span></a><br />
+      <a href="#geom_planta"><span class="Parrafo">Plan Geometrisi</span></a><br />
+      <a href="#control_pend">Eğim Kontrolü</a><br />
+      <a href="OL_listados_datos_control.html#tramos_firmes">Üstyapı Kesimleri</a><br />
+      <a href="#ControlGP">Gabari Kontrolü</a><br />
+      <span class="Parrafo"><a href="#control_z">Kot Kontrolü</a></span><br />
+      <div style="margin-left: 40px;"><a href="#controlZ_top"><span class="Parrafo">Bir <span class="Archivo">.top</span>/<span class="Archivo">.toc</span> dosyasından</span></a><br />
+      <a href="#controlZ_per"><span class="Parrafo">Bir <span class="Archivo">.per</span> dosyasından</span></a><br />
+      </div>
+      <a href="OL_listados_datos_control.html#control_dist_talud"><span class="Parrafo"></span></a><a href="OL_listados_datos_control.html#control_dist_talud">Şeve olan mesafe kontrolü</a><br />
+      <a href="#z_dist_fijas"><span class="Parrafo">Sabit Mesafelerdeki Kotlar</span></a><br />
+      <a href="#cotas_rojas">Sabit Kodlardaki Kırmızı Kot Farkları</a><br />
+      <a href="#Distancias_RadialesNormales">Radyal/Normal Mesafeler</a><br />
+      <a href="#ST"><span class="Parrafo">Uygulanan Tip Kesitler</span></a><br />
+      <span class="Parrafo"><a href="#consulta">Sorgu</a></span><br />
+      <span class="Parrafo"> </span></div>
+      <ul>
+      </ul>
+      <span class="Parrafo">
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_listados_datos_control.png" style="width: 600px; height: 409px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="resumen_ejes">Güzergah Özeti</a></span><br />
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">GÜZERGAH ÖZETİ</span> raporu (<span class="Archivo">ejes.res</span>), her güzergah için ait olduğu grubu, güzergah numarasını, başlangıç KM'sini, bitiş KM'sini, uzunluğunu, hesaplama aralıklarının veya kısıtlı hesaplama bölgesinin başlangıç ve bitiş KM'sini, hesaplama aralıklarına veya kısıtlı hesaplama bölgesine göre uzunluğunu, güzergahın adını veya başlığını, ENKESİT (ALZADO) menüsünden (<span style="font-weight: bold;">[?]</span> butonu) girilebilen <span class="Archivo">.vol</span> dosyasında belirtilen yorumları ve her güzergahın proje hızını içerir.<br />
+      <br />
+Gruplara göre toplam uzunlukları ve tüm projenin toplamını elde etme imkanı.<br />
+      </span> <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="inter_ejes">Güzergah Kesişimi</a></span><br />
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">GÜZERGAH KESİŞİMİ</span> raporu (<span class="Archivo">inters.res</span>), plandaki güzergahlar arasındaki tüm kesişimlerin <span style="font-weight: bold;">KM'lerini</span>, <span style="font-weight: bold;">X</span>, <span style="font-weight: bold;">Y</span>, <span style="font-weight: bold;">Z</span> <span style="font-weight: bold;">koordinatlarını</span>, <span style="font-weight: bold;">güzergahların</span> ve <span style="font-weight: bold;">arazinin kotlarını</span>, <span style="font-weight: bold;">kot farklarını</span> ve her güzergahın <span style="font-weight: bold;">azimutlarını</span> içeren bir rapor oluşturur. Kesişimleri aramak için güzergahların uçlarında uzatılmasına neden olan bir <span style="font-weight: bold;">tolerans</span> eklemeye izin verir. Bu rapor sadece aktif gruplara ait güzergahları analiz eder.<br /><br />Bağlayıcılar veya etiketler aracılığıyla güzergahlar arasındaki bağlantıları rapora eklemek, <span style="font-weight: bold;">Bağlı güzergahları ekle</span> kutucuğu etkinleştirilerek mümkündür; bu durumda güzergahlar arasındaki mesafeyi içeren bir sütun eklenir.<br />
+      <br />
+      </span><span class="Parrafo">Diyalog kutusu ayrıca, kesişim noktalarının koordinatlarını, her güzergahın numarasını, KM'sini ve azimutunu, güzergahlar arasındaki kot farkını ve ikinci güzergahın mutlak kotunu <span style="font-weight: bold;">etiketleme</span> imkanı sunar.<br />
+      <br />
+<span style="font-weight: bold;">KM'ler Kazık No Olarak</span> kutucuğu ile, kesişim noktalarının etiketlenmesini KM yerine Kazık Numarası olarak elde ederiz.<br />
+      </span> <span class="Parrafo"><br />
+Bu menünün tanımı kaydedilebilir <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" />, yüklenebilir&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> veya sıfırlanabilir&nbsp;<img src="Imagenes/icono_toolbarEstandar_nuevo.png" style="width: 16px; height: 17px;" alt="" />.<br />
+      <br />
+      </span><span class="Parrafo">
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 312px; height: 341px;" alt="" src="Imagenes/dialogo_listados_datos_control_inters.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="caracteristicas">Özellikler</a></span><br />
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">ÖZELLİKLER</span> raporu (<span class="Archivo">caracte.res</span>), güzergahların plan ve boykesit özelliklerinin gruplara göre bir özetini (uzunluklar, maksimum ve minimum eğimler ve yarıçaplar, hızlar, kesim ve düşey kurp sayısı vb.) içerir. Bu raporda, sadece plandaki güzergahın başlangıç ve bitiş KM'leri arasında kalan kırmızı kot kesimi dikkate alınır ve bir güzergahın kendisiyle olası kesişimleri dikkate alınır.<br />
+Sağa ve sola toplam kurp sayısı ve aliyman sayısı hakkında bilgi sahibi olacağız.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_caracte.png" style="width: 549px; height: 64px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="datos_vol">.vol Dosyası Verileri</a></span><br />
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">.VOL DOSYASI VERİLERİ</span> raporu (<span class="Archivo">datvol.res</span>), <span style="font-weight: bold;">mevcut</span> güzergahın veya <span style="font-weight: bold;">tüm</span> aktif güzergahların numarasını ve adını içeren, özelleştirilebilir bir rapor oluşturmayı sağlar. Bu rapora, kullanıcının ilgili kutucuğu etkinleştirerek istediği <span class="Archivo">.vol</span> dosyası verileri eklenebilir (varsayılan olarak <a href="OL_peraltes.html">deverler</a>, <a href="OL_anchos.html">genişlikler</a>, <a href="OL_calzadas_aux.html">yardımcı taşıt yolları</a> ve <a href="OL_zonas_calculo.html">hesaplama bölgeleri</a> verileri etkinleştirilmiş olarak gelir). <br />
+Hesaplama aralıklarında, yazdırılan km'lerin KM Eşitliklerinden türetilen kullanıcı KM'leri olması belirtilebilir.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_datvol.png" style="width: 579px; height: 222px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="invent">Çizgi ve Nokta Envanteri</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">ÇİZGİLER VE NOKTALAR</span> raporu (<span class="Archivo">invent.res</span>), bir projeyle ilişkili bilgi çıkarımını tamamlamak için tanımlanmıştır, çünkü kullanıcı tarafından tanımlanan belirli çizgi ve nokta tiplerinden yola çıkarak projenin her bir güzergahıyla ilişkili öğelerin bir envanterini yapmayı sağlar. </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">(aynı modelde olmalıdırlar)</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Ayrıca, her nokta için eksene olan mesafesi ve kapalı çizgiler durumunda alanın alanı da listelenir. Tip seçimi sayısal olarak veya tıklayarak yapılabilir.<br />
+      <br />
+Çizgiler ve noktalar bölümündeki <span class="Parf_negrita">Tümü</span> butonu, listeyi seçilen güzergah veya tüm aktif güzergahlar için mevcut tüm çizgi/sembol tipleriyle doldurmak için kullanılır.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_invent.png" style="width: 459px; height: 237px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Her bir güzergah için bir KM aralığı sınırlayarak bir rapor oluşturulabilir veya aktif gruplara ait tüm güzergahları içeren bir rapor oluşturulabilir.<br />
+      <br />
+      <span class="Titulo_2">Noktasal İşaretleme</span><br />
+      <br />
+Projenin Noktasal İşaretleme bilgilerini içeren bir rapor oluşturur. Her güzergahın sonunda her bir hücrenin kaç kez göründüğü ve tüm güzergahların son bir özeti belirtilir.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/listados_senpun.png" style="width: 400px; height: 391px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span><a name="anejos"><span class="Titulo_2">Güzergah Ekleri</span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">GÜZERGAH EKLERİ</span> raporu (anejos.res ve Anejos_Trazado.xlsx), oluşturulması için <a href="OL_general.html">GENEL sekmesinde</a> bir <a href="OL_rasantes_normativa.html">.dia yönetmelik tablosu</a> beyan edilmiş olmasını gerektirir ve şunları içerir:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Plan güzergah elemanları özeti</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aliymanlar (Düz hatlar)</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Dairesel kurplar</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Geçiş eğrilerinin analizi</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Plan güzergahının geometrik elemanlarının koordinasyonu</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Boykesit güzergahının özeti (bisektris dahil)</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Düşey kurplar</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Estetik değerlendirmeler</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Plan ve boykesit güzergahlarının koordinasyonunun kontrolü</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Raporun boykesitle ilgili kısımlarında, sadece hesaplama bölgesi içindeki KM'ler ele alınır.<br />
+      <br />
+      <span class="Titulo_2"><a name="sectipo">Tip Kesitler</a></span><br />
+      <br />
+<span style="font-weight: bold;">TİP KESİTLER</span> raporu (<span class="Archivo">sectipo.res</span>), beyan edilen tüm tip kesitlerin, adlarıyla ve güzergahlara göre düzenlenmiş bir listesini ve tip kesitlerin uygulama bölgelerini oluşturur.<br />
+      <br />
+      </span></span></span><a name="repaso"><span class="Titulo_2">Yönetmelik Kontrolü</span></a><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Bu rapor, güzergahın ilgili tasarım tablosunu beyan etmiş olması koşuluyla, her bir güzergah için veya tüm aktif güzergahları içeren bir raporla, plan ve/veya boykesit yönetmeliği kontrol sonuçlarını oluşturmayı sağlar.<br />
+Birleşik dosya normas0.res olarak adlandırılır, ayrıca her bir N güzergahı için bir normasN.res dosyası oluşturulur.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/list_repaso.png" style="width: 549px; height: 64px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Ayrıca, hesap tablolarında işlenmek üzere ./res raporlar klasöründe <span class="Archivo">norma_N.xlsx</span> ve <span class="Archivo">normaalz_N.xlsx</span> raporları da oluşturulur.<br />
+      <br />
+Bu rapor tüm aktif güzergahlar için oluşturulduğunda (normas0.res), ayrıca iki rapor daha oluşturulur: norma_0.xlsx ve normaalz_0.xlsx, sırasıyla tüm aktif güzergahlar için plan ve boykesit kontrolünü xlsx formatında içerir.<br />
+      <br />
+Çalışma Plan/Tasarım/Yönetmelik Kontrolü veya Boykesit/Tasarım/Yönetmelik Kontrolü'nden yapıldığında, Istram veri gridi açık kalır.<br />
+      <br />
+Raporlar/Veri ve Kontrol/Yönetmelikler'den yapıldığında, son grid, Yapılandırma/Tercihler/Raporlar'da seçilen seçeneğe bağlı olarak açık veya kapalı kalacaktır.<br />
+      <br />
+      </span></span></span><a name="Listado_de_bulones"><span class="Titulo_2">Bulon Raporu</span><br />
+      <br />
+Bir tünelin enkesitlerine, bir dizi değişkene dayanarak bulonları yerleştirmek için bir özellik eklenen rapor:<br />
+      </a>
+      <ul>
+        <li>Bulon uzunluğu</li>
+      </ul>
+      <ul>
+        <li>Tabandan yelpaze başlangıç uzunluğu</li>
+      </ul>
+      <ul>
+        <li>Bulon girişleri arası maksimum aralık</li>
+      </ul>
+      <ul>
+        <li>Tünel profilinin ardışık segmentleri arasındaki maksimum dış açı</li>
+      </ul>
+      <ul>
+        <li>Başlangıç ve bitiş KM'si</li>
+      </ul>
+Bunun için, bu veriler girilir ve değiştirilecek <span class="Archivo">.per</span> dosyası bir kutucukta seçilir; bu dosya, anormal sonuçları önlemek için önceden filtrelenmeli ve eksene göre kesilmelidir.<br />
+Oluştur'a tıklandığında, değiştirilmiş verilerle yeni bir <span class="Archivo">.per</span> dosyası oluşturma veya mevcut bir dosyanın üzerine yazma seçeneği sunulur.<br />
+Ayrıca, yelpaze numarasını, her yelpaze içindeki bulon numarasını ve her bulonun başlangıç ve bitişinin genel koordinatlarını içeren bir .csv dosyası oluşturulur.<br />
+      <br />
+Bulonların oluşturulmasında, gösterimleri için özel bir çizgi kullanılır.&nbsp; Enkesitin belirtilen yüzeyi, bulonların yerleştirildiği yüzeydir.<br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Listado_de_bulones"><img src="Imagenes/listado_bulones.png" style="width: 600px; height: 136px;" alt="" /></a></span></span></span><a name="Listado_de_bulones"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Listado_de_bulones"><br />
+      <br />
+      </a></span></span></span><a name="cunet"><span class="Titulo_2">Hendekler ve Kafa Hendekleri</span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">HENDEKLER VE KAFA HENDEKLERİ</span> raporu (<span class="Archivo">cunet.res</span>,&nbsp;<span class="Archivo">cungd.res</span>), belirtilen güzergah ve kesime veya tüm aktif güzergahlara (ilgili kutucuk işaretlenerek) ait, hem yarma hem de dolgudaki <a href="OL_cunetas.html">hendeklerin</a> veya kafa hendeklerinin (diyalog kutusunda seçildiği gibi) bir raporudur.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_cunet.png" style="width: 549px; height: 117px;" alt="" />&nbsp;</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Aşağıdaki seçeneklerle, <a href="OL_rasantes_diseno.html">kırmızı kot tasarımında</a>, sağda veya solda (S, D) kullanılmak üzere <span class="Archivo">.ras</span> veya <span class="Archivo">.lon</span> uzantılı dosyalar da oluşturulur:<br />
+      <br />
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">cun_S.ras, cun_D.ras</span>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold; font-style: italic;">cun_S.lon, cun_D.lon</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+KIRMIZI KOTLAR menüsünden bu verileri yüklemek ve gerekirse daha sonra değiştirmek mümkündür.<br />
+      <br />
+Raporda, eksene olan mesafeler, X, Y ve hendek tabanı kotu, ara uzunluklar ve boyuna eğimler yer alır; kaplamalı hendekler, birikimli uzunluğun arkasında bir "K" ile ayırt edilir. Raporun sonunda ayrıca, kaplamalı ve kaplamasız hendeklerin toplamını ayrıştırarak her bir taraf için toplam hendek uzunluğu da yazdırılır.<br />
+      <br />
+Bu rapora iki veri eklenir: <br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Listelenen hendek noktasının üzerindeki arazi kotu.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Hendek numarası, normal hendek durumunda Tip Kesit numarası ve kafa hendekleri durumunda kafa hendekleri tablosundaki hendek numarasıdır. </span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Rapor tüm aktif güzergahlar için çıkarıldığında, her bir güzergah için metrajın toplamını ve projenin tüm güzergahları için toplamı içeren bir özet eklenir. Kesişimlerin birleşim yerlerindeki hendekler de dahil edilir.<br />
+      <br />
+Ayrıca sadece <span style="font-weight: bold;">kaplamalı hendekleri</span> listeleme imkanı da vardır.<br />
+      <br />
+      <span style="font-weight: bold;">Geometriyi listele </span>, kullanılan hendeklerin genişlik, yükseklik ve şev ölçülerini raporun sonunda yazdırır. Kafa hendeklerinin geometrisi de listelenir.<br />
+      <br />
+      <br />
+      </span></span></span><span class="Titulo_2"><a name="perf">Enkesitler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">ENKESİTLER</span> raporu (<span class="Archivo">perf.res</span>), her bir enkesit için KM'sini, eksene olan mesafesini ve enkesitin her bir noktasının kotunu içeren raporu, tek bir güzergahta veya projenin tümünde ekranda sunar.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_perf.png" style="width: 550px; height: 109px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Rapor, <span class="Archivo">perf#.res</span> adıyla (# güzergah numarasıdır) veya isteğe bağlı olarak <span class="Archivo">.xls</span> formatında kaydedilir:<br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Raporu elde etmek için mevcut seçenekler şunlardır:<br />
+      </span></span></span>
+      <ul>
+        <li>Arazi enkesitleri</li>
+        <li><span class="Archivo">ISPOL.per</span>'deki yüzey, yüzey tipine göre</li>
+        <li><span class="Archivo">ISFIR.per</span>'deki yüzey, yüzey tipine göre</li>
+        <li><span class="Archivo">ISPOLn.per</span> dosyasının belirli bir metrajının konturu</li>
+        <li><span class="Archivo">ISFIR.per</span> dosyasının belirli bir metrajının konturu<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span><span class="Titulo_2"><a name="obrasFab">Sanat Yapıları</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">SANAT YAPILARI</span> raporu (<span class="Archivo">obras.res</span>), projenin <a href="OL_obras_fabrica.html">sanat yapılarını</a> içerir.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/listado_of.png" style="width: 549px; height: 76px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Azimut ve şevlilik açısı için açının <span style="font-weight: bold;">grad</span> mı yoksa <span style="font-weight: bold;">derece</span> mi olduğu önceden ayarlanabilir.<br />
+      <br />
+Bu rapora, sanat yapısı ekseniyle kesişimdeki ana güzergahın kırmızı kotu sütunu eklenmiştir.<br />
+      <br />
+      <img src="Imagenes/listado_obrares.png" style="border: 1px solid ; width: 800px; height: 157px;" alt="listado_obrares" /><br />
+      <br />
+      <span class="Parf_negrita">matobras.res:</span>&nbsp;Proje hesaplandığında oluşturulan matobras.res (sanat yapılarının kazı ve dolgu malzemeleri) dosyasını düzenlemek için erişim.<br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/matobrasres.png" style="border: 1px solid ; width: 600px; height: 190px;" alt="matobras" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span style="font-weight: bold;">Kanat noktalarını dahil et: </span>Eğer bu bayrak etkinleştirilirse, kanatların 11 karakteristik noktasının koordinatları ve kanatların uzunluğu .res dosyasına dahil edilir.&nbsp;Aynı şekilde, Excel kutucuğunun oluşturulması etkinleştirilirse, bu noktalar ve uzunluklar da .xlsx dosyasına dahil edilecektir.<br />
+      <br />
+      <br />
+      </span></span></span><span class="Titulo_2"><a name="lon_esp">Özel Boykesitler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">ÖZEL BOYKESİTLER</span> raporu (<span class="Archivo">lon.res</span>), iki farklı boykesit raporu ve dosyası oluşturmayı sağlar:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo Archivo"><span style="font-weight: bold;">lonfm#.res</span></span>, <span class="Parrafo Archivo"><span style="font-weight: bold;">lonfm#.lon</span></span> (# güzergah numarasıdır): Orta refüj tabanı raporu veya boykesiti.</span></li>
+        <li><span class="Parrafo"><span class="Parrafo Archivo"><span style="font-weight: bold;">lonpf#.res</span></span>, <span class="Parrafo Archivo"><span style="font-weight: bold;">lonpf#.lon</span></span> (# güzergah numarasıdır): Deverin orta refüje doğru döndüğü taraftaki ilk üstyapı katmanının iç ayağı raporu veya boykesiti.</span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ayrıca boykesitlerin planını (3D olarak) oluşturmayı da sağlar.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_lonEsp.png" style="width: 549px; height: 147px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="estruct">Sanat Yapıları (Viyadük/Tünel)</a></span><br />
+      <br />
+<span style="font-weight: bold;">SANAT YAPILARI</span> raporu (<span class="Archivo">estr_.res</span>), SANAT YAPILARI menüsünden çıkarılan bilgileri içerir: yapı tipi, taşıt yolu, KM, arazi ve kırmızı kot, yapının başlangıç, orta ve bitiş noktalarındaki güzergahın X,Y koordinatları, azimut, plandaki ve gerçek (3D) uzunluk ve yapının adı. Ayrıca, viyadükler ve üstgeçitler durumunda, ayakların KM'leri de görünür.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_estruc.png" style="width: 600px; height: 70px;" alt="" /><br />
+      </div>
+      <br />
+Bu rapor, aynı anda tüm aktif güzergahlar için de oluşturulabilir, bu durumda bu güzergahlarla <span class="Archivo">estr_0.res</span> dosyası oluşturulur.<br />
+      <br />
+Bu rapordan:<br />
+      <ul>
+        <li>Başlıkları düzenleme imkanı.</li>
+        <li>Hesap tabloları için .xlsx formatında çıktı.</li>
+        <li>Raporlar klasörüne erişim.</li>
+      </ul>
+      <span class="Titulo_2"><a name="geom_planta">Plan Geometrisi</a></span><br />
+      <br />
+<span style="font-weight: bold;">PLAN GEOMETRİSİ</span> raporu (<span class="Archivo">elementos.res</span>), tüm aktif güzergahların plan güzergahını oluşturan elemanların geometrik özelliklerinin bir listesinden oluşur. Hem .res hem de .xlsx formatında elde edilebilir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_elementos_res.png" style="width: 468px; height: 352px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <a name="control_pend"><span class="Titulo_2">Eğim Kontrolü</span><br />
+      <br />
+Bu rapor, bir dizi güzergahta, boyuna eğimi belirli bir değere ulaşan kesimleri analiz etmeyi sağlar.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/control_pend.png" style="width: 549px; height: 64px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <a name="tramos_firmes"><span class="Titulo_2">Üstyapı Kesimleri</span></a><br />
+      <br />
+Bu seçenek, projede kullanılan tüm farklı üstyapı kesitlerini ve tüm aktif güzergahlar için hangi kesimlerde uygulandıklarını içeren bir rapor oluşturur.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_tramos_firmes.png" style="width: 600px; height: 191px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="ControlGP">ControlGP GABARİ KONTROLÜ .per'den</a></span><a name="ControlGP"><br />
+      <br />
+Bir enkesit dosyası verildiğinde, örneğin bir yüzeyle tanımlanmış bir tünel, her bir KM için, kırmızı kota göreli iki kot arasında bulunan, eksene minimum mesafedeki her iki taraftaki noktaları hesaplar.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="ControlGP"><img src="Imagenes/dialogo_listados_datos_control_control_GP_galib_per.png" style="width: 550px; height: 131px;" alt="" /><br />
+      </a></div>
+      <a name="ControlGP"><br />
+      </a><a name="control_z"><span class="Titulo_2">Kot Kontrolü</span><span class="Titulo_2"></span></a><br />
+      <br />
+<span style="font-weight: bold;">KOT KONTROLÜ</span> raporları (<span class="Archivo">controlZ.res</span>), kotları bir referans yüzeyine göre iki farklı şekilde karşılaştırmayı sağlar:<br />
+      <ol>
+        <li><a name="controlZ_top"><span style="font-weight: bold;">Bir <span class="Archivo">.top</span>/<span class="Archivo">.toc</span> dosyası kullanarak</span></a> kotlarını referans yüzeyiyle (üstyapı katmanları dahil herhangi biri olabilir) ve bir <span style="font-weight: bold;">teorik derinlik</span> ile bir <span style="font-weight: bold;">toleransa</span> göre karşılaştırmak. Her noktanın KM'si ve eksene olan mesafesi, ayrıca deveri ve <span style="font-weight: bold;">teorik derinliği</span> dikkate alarak teorik Z'si hesaplanır, kot farkı (hata) yazdırılır ve bu fark toleransın üzerindeyse, teorik değerin üstünde mi yoksa altında mı olduğu dikkate alınarak işaretlenir.<br />
+          <br />
+Her güzergah için sadece belirtilen yüzey içinde bulunan noktalar listelenir.
+        </li>
+      </ol>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_controlZtop.png" style="width: 550px; height: 185px;" alt="" /><br />
+      </div>
+&nbsp;<br />
+      <div style="margin-left: 40px;">Proje kotunun belirlendiği yüzeyi seçmek için birkaç olasılık vardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Ana taşıt yolunun deverini uzatarak</span>: eksendeki kırmızı kotun kotundan başlar ve deveri "sonsuz" bir çizgide uygular, palyeleri, bordürleri veya 67 yüzeyi üzerindeki diğer eğim değişikliklerini dikkate almaz. Deverin hangi taraftan alınacağı zorlanabilir (<span style="font-weight: bold; font-style: italic;">Otomatik</span> durumda, taraf, noktanın geometrik eksene göre konumuna göre belirlenir).
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Gerçek yüzey</span>: Eğer nokta platform alanındaysa 67 yüzeyini kullanır, dışındaysa 68'i kullanır ve 68 yüzeyinin dışındaysa kot 0 atanır. Eğer <span style="font-style: italic;">Uzat</span> seçeneği işaretlenirse, nokta yüzeyin dışında kaldığında yüzey son kesimin eğimiyle uzatılır, ayrıca <span style="font-style: italic;">Kapanışı hariç tut</span> kutucuğu etkinleştirilerek yüzeyin son segmenti yarı-dikey ise kullanılmaması sağlanabilir.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Enkesitin herhangi bir yüzeyinden</span>, kullanıcı tarafından belirtilir. <span style="font-style: italic;">Uzat</span> seçeneği, önceki bölümde olduğu gibi çalışır.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Tabliyeden</span>, varsayılan olarak 2770 yüzeyiyle belirtilir ve kotun tabliyenin tabanına mı yoksa tavanına mı referans alınacağı seçilebilir.<span style="font-weight: bold;"><br />
+          </span></li>
+      </ul>
+      </div>
+      <ol start="2">
+        <li><a name="controlZ_per"><span style="font-weight: bold;">Bir <span class="Archivo">.per</span> enkesit dosyasından</span></a>, birkaç yüzeyle, eksene sabit mesafelerde ikisini karşılaştırmak mümkündür. İlk yüzeyden bir <span style="font-weight: bold;">teorik derinlik</span> çıkarılabilir. Ayrıca, hatası o değeri aşan noktaları işaretlemek için iki <span style="font-weight: bold;">tolerans</span>, alt ve üst, verilir. Raporda, kot farkından sonra, altındaysa 'A', üstündeyse 'Ü' ve belirtilen tolerans aralığı içindeyse hiçbir şey belirtilmez.</li>
+      </ol>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_controlZper.png" style="width: 550px; height: 147px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <a name="control_dist_talud"><span class="Titulo_2">.top'tan şeve olan mesafe kontrolü<br />
+      </span><br />
+<span style="font-weight: bold;">ŞEVE OLAN MESAFE KONTROLÜ</span> raporu (<span class="Archivo">controlD.res</span>), KM'nin eksen üzerine yansıtıldığı noktadan yarma veya dolgu şevine olan yatay mesafeyi inceler. Rapor, kullanıcının seçmesi gereken bir <span class="Archivo">.top</span>/<span class="Archivo">.toc</span> dosyasını referans alır.<br />
+      <br />
+<span style="font-weight: bold;">Uzat</span> kutucuğu, dolgu şevlerini dolgu eteğinin altından ve yarma şevlerini yarma başının üstünden uzatarak çözümü aramayı sağlar. Eğer çözümü bu uzatılmış kesimde bulursa, raporda bunu bize belirtecektir.<br />
+      </a><br />
+<div style="text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_disttalud.png" style="width: 550px; height: 147px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="z_dist_fijas">Sabit Mesafelerdeki Kotlar</a></span><br />
+      <br />
+<span style="font-weight: bold;">SABİT MESAFELERDEKİ KOTLAR</span> raporu (<span class="Archivo">cotas.res</span>), önceden belirlenmiş eksene olan mesafelerde, arazi yüzeyinin, projenin (subrasante) ve kırmızı kotun kotlarını ve aralarındaki kot farklarını çıkarmayı sağlar. Bu raporda ayrıca, noktanın X,Y koordinatlarını içeren iki sütun da elde edilir.<br />
+      <br />
+<span style="font-weight: bold;">Son noktayı ekle</span> kutucuğunu etkinleştirerek, program, eksenden olan mesafenin yanı sıra proje yüzeyinden olan mesafeyi de alır.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_zDistFijas.png" style="width: 450px; height: 294px;" alt="" /><br />
+      </div>
+      <br />
+Varsayılan olarak mevcut güzergahın çözüm enkesit dosyası (ispol#.per, # güzergah numarasıdır) kullanılır, ancak <span style="font-weight: bold; font-style: italic;">Dosya seç</span> seçeneği etkinleştirilerek kullanılacak dosya seçilebilir.<br />
+      <br />
+Tüm enkesitleri veya sadece belirli bir değerin katlarını (ayrıca ilk ve sonuncuyu) listeleme imkanı.<br />
+      <br />
+Yüzeylerin adını değiştirmek de mümkündür.<br />
+      <br />
+Raporun başlıklarını düzenlemeye izin verilir.<br />
+Veri dosyasının uzantısı .cdf -&gt;.zdf olarak değiştirilir.<br />
+.xlsx formatında oluşturmaya izin verilir. <br />
+      <br />
+      <a name="cotas_rojas"><span class="Titulo_2">Sabit Kodlardaki Kırmızı Kot Farkları</span><br />
+      <br />
+Bu rapor, kullanıcı tarafından tanımlanan sabit kodlarda ve altı farklı yüzeyde bir referans yüzeyinden kırmızı kot farklarını yazdırır.<br />
+      <br />
+Bu raporu hesap tabloları için .xlsx formatında oluşturma imkanı. Ayrıca başlıkları düzenleme imkanı da mevcuttur.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/cotas_rojas_list.png" style="width: 459px; height: 300px;" alt="" /><br />
+      </div>
+      <br />
+      <a name="Distancias_RadialesNormales"><span class="Titulo_2">Radyal/Normal Mesafeler</span><br />
+      <br />
+radiales.res Raporu: Bir .per dosyasında radyal mesafe kontrolü: İki tünel takip tipi yüzey arasındaki radyal mesafeyi ölçmeyi sağlar, .res ve .xlsx raporları oluşturur ve .per dosyasına mesafe değeri olan semboller eklemeyi sağlar. Ölçüm, her iki yüzeyin noktalarında yapılabilir ve açısal referans, bir tanesinin ortalaması veya eksen ve kırmızı kotun kotuna göreli bir değer olarak alınabilir.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="Distancias_RadialesNormales"><img src="Imagenes/listados_radiales.png" style="width: 600px; height: 210px;" alt="" /><br />
+      </a></div>
+      <a name="Distancias_RadialesNormales"> <br />
+      <span class="Titulo_2"></span></a><a name="ST"><span class="Apartados"><span class="Titulo_2">Uygulanan Tip Kesitler</span></span><span class="Titulo_2"></span></a><br />
+      <br />
+<span style="font-weight: bold;">UYGULANAN TİP KESİTLER</span> raporu (<span class="Archivo">ST.res</span>), eksenin her iki tarafına uygulanan tip kesiti KM'lere göre belirtir. Bu rapor, ENKESİT (ALZADO)'dan veya <a href="OL_proyecto.html">PROJE</a>'den hesaplandığında her bir güzergah için otomatik olarak oluşturulur, bu nedenle zaten oluşturulmuş bu dosyalar arasından seçim yapmak yeterlidir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_listados_datos_control_ST.png" style="width: 411px; height: 202px;" alt="" /><br />
+      </div>
+      <br />
+Raporda, platformda, hendekte, yarmada veya dolguda uygulanan tip kesitte bir değişiklik olduğunda veya yarmadan dolguya bir değişiklik olduğunda boş bir satır eklenir. Bu şekilde, aynı tipolojiye sahip tüm enkesitler gruplandırılmış olur.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="consulta">Sorgu</a></span><br />
+      <br />
+      <img src="Imagenes/consulta_res.png" style="width: 229px; height: 123px;" alt="" align="right" hspace="6" /><span style="font-weight: bold;">[SORGU (P)]</span> butonu, kullanıcının interaktif olarak yaptığı farklı sorgulardan (örneğin <a href="OL_PK_dist.html">KM-mesafe</a> seçeneği, KIRMIZI KOTLAR menüsünün <a href="OL_rasantes_herramientas.html#cota_roja">kırmızı kot farkları</a>, enkesitleri alırken başarısız olan enkesitler vb.) oluşturulan <span class="Archivo">CONSULTA.res</span> rapor dosyasına doğrudan erişim sağlar. Ayrıca her oturum için bir geçmiş <span class="Archivo">CSnnnnn.res</span> dosyası da oluşturulur.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">List.KM,Mes</span> seçeneği etkinken, kullanıcıya KM-mesafe seçeneği bittiğinde raporu görüntülemek isteyip istemediği sorulur.<br />
+      <br />
+Mevcut <span class="Archivo">.res</span> veya <span class="Archivo">.lst</span> dosyalarından herhangi birini görüntülemek veya yazdırmak için seçmek amacıyla, sırasıyla <span style="font-weight: bold;">[*.res]</span> ve <span style="font-weight: bold;">[*.lst]</span> butonlarına erişilir.<br />
+      <br />
+Bu raporda elde ettiğimiz değerler resimdeki örnekte görülmektedir:<br />
+      <ul>
+        <li>Noktanın X,Y,Z koordinatları</li>
+        <li>Güzergah numarası <br />
+        </li>
+        <li>Her noktanın eksene olan mesafesi</li>
+        <li>İzdüşüm noktasındaki güzergahın azimutu</li>
+        <li>İzdüşüm noktasındaki güzergahın yarıçapı</li>
+        <li>Güzergahın X koordinatı</li>
+        <li>Güzergahın Y koordinatı</li>
+        <li>Yansıtılan kot</li>
+        <li>Beyaz şerit kotu</li>
+        <li>Dever</li>
+        <li>Eğim</li>
+        <li>Noktanın kotu eksi platforma yansıtılan kot</li>
+        <li>Kırmızı kot</li>
+        <li>Noktanın kotu eksi kırmızı kot</li>
+        <li>Platform kotu</li>
+        <li>Eksantriklik</li>
+        <li>Noktanın arazi üzerine yansıtılmasının kotu</li>
+        <li>Noktanın kırmızı kot farkı</li>
+        <li>Noktalar bir .top dosyasından geliyorsa metin<br />
+        </li>
+      </ul>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/consulta_res_list.png" style="width: 508px; height: 134px;" alt="" /><br />
+      </div>
+      <br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

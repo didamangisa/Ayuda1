@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Yatay Güzergahta Geçiş Eğrileri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table style="width: 700px; height: 1px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YATAY GÜZERGAH: BİRLEŞİM VEYA GEÇİŞ EĞRİLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="height: 1510px; width: 700px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 690px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">
+Genel Bilgiler</a><br />
+      <a href="#retranqueo">
+Kaydırma (Öteleme)</a><br />
+      <a href="#calculo">Geçiş Eğrilerinin Tanımlanması ve Hesaplanması</a><br />
+      <div style="margin-left: 40px;"><a href="#trans_sin_GL">Serbestlik Derecesi Olmayan Elemanlar Arası Geçiş</a><br />
+      <a href="#trans_con_GL">Bir Serbestlik Derecesine Sahip Elemanlar Arası Geçiş</a><br />
+      </div>
+      </div>
+<br /><br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+İki ana güzergah elemanı (doğrular veya dairesel kurplar) arasına genellikle, eğriliğin kademeli bir geçişini sağlayan bir spiral eğri eklenir.<br />
+      <br />
+Genellikle, doğrusal yapı projelerinde Cornu spirali (<span style="font-weight: bold;">klotoid</span> olarak bilinir) kullanılır, ancak <span style="font-weight: bold;">yarım sinüs dalgası</span> (half sine wave), <span style="font-weight: bold;">kübik spiral</span> ve <span style="font-weight: bold;">kübik parabol</span> gibi başka eğriler de mevcuttur (kullanılacak geçiş eğrisi tipi <a href="OL_general.html">GENEL sekmesinden</a> seçilmelidir, ancak program varsayılan olarak klotoid ile çalışır).<br /><br /><img style="width: 250px; height: 240px; margin-left: 7px;" alt="" src="Imagenes/curva_clotoide.png" align="right" />Klotoid eğrisinin ana özelliği, herhangi bir noktadaki eğriliğinin, başlangıçtan ölçülen eğri boyunca orantılı olmasıdır, bu da şu formülle ifade edilir:<br /><br />
+      <div style="text-align: center;"><font size="+1">R × L = A<sup>2</sup></font><br />
+      </div>
+<br />burada:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">R</span>, klotoid yayının bir noktasındaki eğrilik yarıçapıdır.<br />
+      <span style="font-weight: bold;">L</span>, o noktaya kadar olan klotoid yayının gelişimidir.<br />
+      <span style="font-weight: bold;">A</span>, klotoidin sabitidir.<br />
+      </div>
+<br /><br />
+Ortaya çıkabilecek geometrik senaryolar dörttür:<br />
+      <ul>
+
+        <li>Bir doğru ile R yarıçaplı bir dairesel kurp arasında, sonsuz yarıçaplı ucu doğruya teğet ve R yarıçaplı noktası dairesel kurba teğet olan bir klotoid yayı bulunur.</li>
+      </ul>
+      <ul>
+        <li>Farklı işaretli yarıçaplara sahip iki dairesel kurp arasında, sorun, sonsuz yarıçaplı noktalarında birbirine teğet olan ve her durumda ilgili yarıçapla dairesel kurplara teğet olan iki klotoid yayı ile çözülebilir. Bu tür bir geçişe, güzergahın aldığı şekil nedeniyle genellikle <span style="font-weight: bold;">S klotoidleri</span> denir.</li>
+      </ul>
+      <ul>
+
+        <li>Aynı işaretli yarıçaplara sahip iki dairesel kurp arasında, sorun, bir dairesel kurp yarıçapından diğerinin yarıçapına geçiş yapan tek bir klotoid kolu ile çözülür. Bu tür geçiş genellikle <span style="font-weight: bold;">C kurpu</span> olarak bilinir.</li>
+      </ul>
+      <ul>
+        <li>İki doğru arasında geçiş, sonsuz yarıçaplı noktada doğrulara teğet olan ve minimum yarıçaplı bir noktada birbirine teğet olan iki klotoid kolu kullanılarak yapılabilir. Bu geçiş <span style="font-weight: bold;">some klotoidi</span> olarak bilinir ve kullanımı birçok güzergah yönetmeliğinde kısıtlanmıştır.<br />
+        </li>
+      </ul>
+
+      <br />
+      <span class="Titulo_2"><a name="retranqueo">Kaydırma (Öteleme)</a></span><br />
+      <br />Eğer başlangıçtaki bir tasarımda doğru ve dairesel kurp teğet ise, ya dairesel kurp "içeriye doğru hareket ettirilmeli" ya da aynı nedenle doğru "dışarıya doğru hareket ettirilmelidir", yani bir geçiş eğrisinin eklenmesi, doğru ile dairesel kurp arasında bir kaydırma olmasını gerektirir. Böylece, kaydırma, doğru ile, aralarında bir klotoid olduğunda dairesel kurba teğet olan doğruya paralel çizgi arasındaki mesafe olarak tanımlanır:<br />
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 560px; height: 200px;" alt="" src="Imagenes/retranqueo.png" /><br />
+      </div>
+
+      <br />
+       İki dairesel kurp durumunda, kaydırma, büyük yarıçaplı daire ile küçük yarıçaplıya teğet olan eş merkezli daire arasındaki mesafedir.<br />
+      <br />
+      <br /><span class="Titulo_2"><a name="calculo">Geçiş Eğrilerinin Tanımlanması ve Hesaplanması</a></span><br />
+      <br />
+
+İki ana güzergah elemanının <a href="OL_planta_alineaciones.html#libertad">serbestlik dereceleri</a>, <a href="#retranqueo">kaydırmayı</a> sağlamak için birinin hareketine izin vermelidir.<br />
+      <br />
+Eğer iki eleman arasında <a href="#trans_sin_GL"><span style="font-weight: bold;">serbestlik derecesi yoksa</span></a> (örneğin, ardışık iki sabit veya sabit+geriye döner), teğetlik sorununu çözen klotoid tektir ve program tarafından hesaplanır, böylece kullanıcı tarafından bildirilen klotoid parametreleri göz ardı edilir.<br /><br />
+Buna karşılık, iki ana eleman arasında <a href="#trans_con_GL"><span style="font-weight: bold;">bir serbestlik derecesi</span></a> varsa, geçiş eğrisinin eklenmesi, kullanıcı tarafından bildirilen teğet spiralin eklenebilmesi için o serbestlik derecesine sahip elemanın kaydırılmasıyla yapılır.<br /><br />
+      <a name="signo">İki çözümün olduğu bazı özel durumlarda</a> (örneğin, <a href="#clotoide_vertice_fijas">iki sabit doğru arasında some klotoidi</a>), <span style="font-weight: bold;">dönüş yönünü işaretle belirtmek gerekir</span>; sağa kurplar için pozitif ve sola kurplar için negatif.<br />
+<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="trans_sin_GL">Serbestlik Derecesi Olmayan Elemanlar Arası Geçiş</a></span><br />
+
+      <br />SABİT DOĞRU VE DAİRESEL KURP<br />
+      <br />
+Varsa, çözüm klotoidi tektir ve parametre program tarafından hesaplanır. Aşağıdaki örnek, ilki doğru ve ikincisi 100 yarıçaplı olmak üzere iki <a href="OL_planta_alineaciones.html#fija_2P">iki nokta ile sabit güzergah elemanından</a> oluşur. Hesaplamadan sonra, program süreklilik ve teğetlik çözümü olarak A parametresi 126'ya yakın bir klotoid eğrisi bulur (etiketleme bu parametreyi en yakın tam sayıya yuvarlanmış olarak gösterir):<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 383px; height: 362px;" alt="" src="Imagenes/trans_recta_circ_fijas.png" /><br />
+      </div>
+<br /><br /><a name="clotoide_vertice_fijas">
+İKİ SABİT DOĞRU</a><br />
+      <br />
+      <span style="font-weight: bold;">Some klotoidinin</span> parametresinin her değeri için bir çözüm vardır ve somedeki yarıçap program tarafından hesaplanır. Aşağıdaki örnek, iki <a href="OL_planta_alineaciones.html#fija_2P">iki nokta ile sabit doğru elemanından</a> oluşur:<br />
+<br />
+      <div style="text-align: center;"><img style="width: 462px; height: 199px;" alt="" src="Imagenes/trans_recta_recta_fijas.png" /><br />
+      </div>
+
+      <br />
+      <img style="width: 166px; height: 49px; margin-left: 7px;" alt="" src="Imagenes/clotoide_vert.png" align="right" />İki sabit doğru durumunda, bir some klotoidi ile birleştirmek için, somede sahip olacağı yarıçapı girmeye olanak tanıyan bir alan etkinleştirilir (<span style="font-weight: bold;">Rsome</span>). Ayrıca, <span style="font-weight: bold;">[R]</span> düğmesini sırasıyla <span style="font-weight: bold;">[A]</span> veya <span style="font-weight: bold;">[L]</span>'ye değiştirerek, her iki klotoid kolunun iki parametresini veya her kolun uzunluğunu belirtmek de mümkündür. Dolayısıyla, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, some klotoidlerini üç farklı şekilde tanımlamayı sağlar.<br />
+
+      <br />
+Bu durumda, iki geometrik çözümün varlığı nedeniyle dönüş yönünü belirtmek için <a href="#signo">işareti</a> kullanmak anlamlı olabilir.<br />
+<br />
+      <br />
+AYNI YÖNE DÖNEN İKİ SABİT DAİRESEL KURP<br />
+      <br />
+Programın hesapladığı (geometrik çözüm varsa) ve aşağıdaki örnekte olduğu gibi ekranda gösterdiği tek bir klotoid çözümü (<span style="font-weight: bold;">C kurpu</span>) vardır. Bu örnek, aynı işaretli yarıçaplara sahip iki <a href="OL_planta_alineaciones.html#fija_2P">iki nokta ile sabit güzergah elemanından</a> oluşur:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 466px; height: 179px;" alt="" src="Imagenes/trans_circ_circ_fijas_mismo_lado.png" /><br />
+      </div>
+      <br />
+Bu durumun bir çözümü olması için, daireler birbirinin içinde olmalıdır.<br />
+      <br />
+      <br />
+TERS YÖNDE DÖNEN İKİ SABİT DAİRESEL KURP<br />
+      <br />
+Çözüm bir <span style="font-weight: bold;">S klotoididir</span>. Bu durumda, iki kolun parametreleri arasındaki ilişki bildirilebilir, öyle ki <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">hesaplayıcı aralarındaki ilişkiye uyar ancak mutlak değere değil. Daireler dışta olmalıdır.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <br />
+Aşağıdaki örnek, ilki -150 yarıçaplı ve ikincisi 100 yarıçaplı olmak üzere iki <a href="OL_planta_alineaciones.html#fija_2P">iki nokta ile sabit güzergah elemanından</a> oluşur. Her iki klotoid kolu için A=0 parametresi bırakılmıştır, böylece her biri için aynı parametre elde edilir:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 458px; height: 260px;" alt="" src="Imagenes/trans_circ_circ_fijas_distinto_lado.png" /><br />
+      </div>
+
+    <span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+</span></span></span><img style="width: 252px; height: 72px; margin-left: 7px;" alt="" src="Imagenes/relac_param_A.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><a name="relacion_param">Ancak, örneğin, birinci kol için A=20 ve ikinci için A=33 belirtilmiş olsaydı, o zaman birinci kol için hesaplanan parametre, ikinci için hesaplanan parametreden 20/33 kat daha küçük olurdu.<br />
+      <br />
+Eğer elemanlar iki nokta yerine <a href="OL_planta_alineaciones.html#fija_centro_radio">merkez ve yarıçap ile sabit dairesel</a> olsaydı, çözüm benzer olurdu ve bu durumda da klotoid kolları arasında bir ilişki belirtilebilirdi:<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><img style="width: 457px; height: 279px;" alt="" src="Imagenes/trans_fijaCR_fijaCR.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="trans_con_GL">Bir Serbestlik Derecesine Sahip Elemanlar Arası Geçiş</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>Bu durumda, geçiş eğrisini tanımlayan parametreyi kullanıcının bildirmesi gerekir.<br />
+      <br />
+
+      <img style="width: 221px; height: 107px; margin-left: 7px;" alt="" src="Imagenes/clotoide_L_A.png" align="right" />Klotoidleri tanımlamak için değerler, A parametreleri veya L uzunlukları olabilir ve ayrıca, some klotoidleri durumunda, R somesi de olabilir. A ve L arasında geçiş yapıldığında, gösterilen değer sırasıyla klotoid parametresi veya uzunluğudur.<br />
+
+
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Uzunlukla tanımlanmış bir klotoidden sonra başka bir güzergah elemanı eklenirse, ondan önceki klotoidin alanı otomatik olarak <span style="font-weight: bold;">[L]</span>'ye ayarlanır.<br />
+      <br />
+Bir klotoid uzunlukla tanımlandığında, <a href="OL_planta_normativa.html#tecla_T">[T] yönetmelik düğmelerinin</a> önerdiği değerler uzunluk olacaktır. Eğer A parametresi, ana elemanın yarıçapının 5 katından büyükse, hesaplayıcı hassasiyet hatalarını önlemek için klotoidi iptal eder.<br />
+      <br />
+      <br />
+<br />
+      </span></span></span></span></span></span></span><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+<br />
+
+</body></html>

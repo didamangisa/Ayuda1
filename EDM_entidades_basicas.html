@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Temel Objeler</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TEMEL OBJELER<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün haritacılık CAD modülü temel olarak dört tür obje ile çalışır:<br />
+      <ul>
+        
+        <li><a href="#lineas">Çizgiler veya Çoklu Doğrular</a></li>
+
+        <li><a href="#simbolos">Semboller veya Noktalar</a></li>
+        <li><a href="#textos">Yazılar veya Etiketler</a></li>
+        <li><a href="#celulas">Hücreler</a></li>
+      </ul>
+<br /><span class="Titulo_2"><a name="lineas">Çizgiler veya Çoklu Doğrular</a></span><br /><br />
+Her çizgi, düz segmentlerle veya kübik parabollerle (yumuşatılmış çizgiler) enterpole edilmiş eğrilerle birbirine bağlanan bir dizi köşe noktasından oluşur. Çizgiler haritada basit, çift vb. çizgilerle ve/veya sembol dizileriyle (sembollerle süslenmiş çizgiler durumunda) temsil edilebilir. Bir çizgiyi oluşturan köşe noktalarının (ve varsa sembollerin) her biri, üç uzaysal X,Y,Z koordinatıyla tanımlanır.<br />&nbsp;<br />Bu
+elemanların birleşimi, haritada özel bir anlama sahip süslü çizgiler oluşturur. Bu alt bölümde, çizgi kütüphanesinden bir elemanın oluşturulması ayrıntılı olarak açıklanmaktadır.<br /><br /><br /><span style="font-weight: bold; font-style: italic;">Bir çizgi çizme</span><br /><br />Ekranda bir çizgi oluşturmak için, ana menüden <span style="font-weight: bold;">Çiz</span> alt menüsünü açmak ve <span style="font-weight: bold;">Çizgi Oluştur</span>'u seçmek (veya çizgiler <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>&nbsp;<img style="width: 12px; height: 12px;" alt="" src="Imagenes/icono_toolBarLineas_crear.png" /> simgesine tıklamak) yeterlidir.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><img style="width: 349px; height: 243px; margin-left: 7px;" alt="" src="Imagenes/ejem_linea.png" align="right" />Hemen
+ardından, farenin sol tuşuyla çizgiyi oluşturacak ardışık köşe noktaları oluşturulur ve çizgi çalışma alanı üzerinde çizilir. Köşe noktası eklemeyi durdurmak için &lt;Esc&gt; tuşuna basmak veya farenin sağ tuşuna basıldığında açılan bağlam menüsünden <span style="font-weight: bold;">Çıkış</span>'ı seçmek yeterlidir.<br /><br />Elbette, her köşe noktasının <a href="EDM_coordenadas_enganches.html#coordenadas">koordinatlarının girilmesi</a> mevcut yöntemlerden herhangi biriyle yapılabilir.<br /><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="lineas8D">8D Çizgiler</a></span><br />
+      <br />
+      Bu çizgilerin her köşe noktasında 8 parametre bulunur:<br />
+      <ul>
+        <li>X Koordinatı</li>
+        <li>Y Koordinatı</li>
+        <li>Z Koordinatı</li>
+        <li>KM, GÜZERGAH PROJESİ'nde eksenleri çizerken çok kullanışlıdır</li>
+        <li>Yarıçap</li>
+        <li>Semt Açısı (Azimut)</li>
+        <li>Diğer dahili kullanım parametreleri<br />
+        </li>
+      </ul>
+Bu nedenle bellekte çok daha 'ağır' çizgilerdir, ancak karşılığında bir daire yayı gibi doğrusal olmayan segmentlerin gerçekten olduğu gibi ele alınmasını sağlarlar. Bunu dikkate alarak:<br />
+      <ul>
+        <li>Bir yay, sadece iki nokta ile oluşturulur; biri başlangıçta, diğeri sonda, her ikisi de aynı yarıçapa ve karşılık gelen semt açısına sahiptir.</li>
+        <li>Yarıçapı sıfır olan iki ardışık nokta, bir doğru segmentidir.</li>
+        <li>Yarıçapı farklı ve sıfırdan farklı olan iki ardışık nokta, her birinde belirtilen semt açısıyla noktalara teğet bir kübik parabol ile çizilir.</li>
+        <li>Daireler dört yay ile oluşturulur.</li>
+        <li>Bir doğruyu takip eden bir yayın, teğetlik koordinatlarında tekrarlanan bir noktası vardır; biri sıfır yarıçaplı, diğeri yayın yarıçapına sahip.</li>
+      </ul>
+
+<br /><span class="Titulo_2"><a name="simbolos">Semboller veya Noktalar</a></span><br /><br />
+Bir <span style="font-weight: bold;">sembol</span> veya <span style="font-weight: bold;">tekil nokta</span>,
+düzlemdeki bir noktayla ilişkilendirilmiş, o noktayı veya çevresini nitelemeye yarayan ve bu nitelemenin görsel olarak tanınmasını sağlayan şematik bir grafiktir. Geometrik tanımı, farklı renklerde, boyutlarda vb. birleştirilmiş <a href="#lineas">çizgiler</a>, diğer semboller ve <a href="#textos">yazılar</a>
+içerebilir ve karmaşıklığı bir kaligrafi noktasından, bir
+pafta anteti, bir amblem veya arma kadar eksiksiz bir şeye kadar değişebilir.<br /><br />Bir sembol, <span style="font-weight: bold;">geometriye</span> ek olarak, bir <span style="font-weight: bold;">ekleme noktası</span>, üç <span style="font-weight: bold;">uzay koordinatı</span> (ekleme noktasına göre) ve bir <span style="font-weight: bold;">öznitelik</span> ile ilişkilidir.<br /><br /><span style="font-weight: bold;">Öznitelik</span>, <a href="#etiquetas">metinsel sembollerin</a> etiketlemek için kullanabileceği ek bir veridir. Örneğin, bir KM <a href="#etiquetas">etiketi</a>, öznitelik olarak KM değerini taşıyacaktır.<br /><br /><span style="font-weight: bold;">Otomatik ölçeklenen</span> olarak adlandırılan ve boyutu kotuna bağlı olan bir sembol türü vardır. Böylece, kotu 1 olan otomatik ölçeklenen bir sembol orijinal boyutunda olacak, kotu 2 ise bu boyutun iki katı olacak ve kotu 0 ise görünmez olacaktır. Bu tür semboller, <a href="OL_planos_transversales.html">enkesitlerin gösteriminde</a> çok kullanışlıdır,
+çünkü kullanıcının müdahalesine gerek kalmadan enkesitin ölçeğine otomatik olarak uyum sağlarlar. Aslında, programın enkesitlerde kullanılmak üzere kullandığı tüm semboller otomatik ölçeklenir.<br /><br />Yukarıdakileri göz önünde bulundurarak, kullanıcıya her sembolün boyutunun dört katsayıdan etkilendiğini açıklamakta fayda var:<br />
+      <ul>
+        <li>Sembolün tek bir obje olarak kendi ölçek faktörü. Bu, sembol seçildikten sonra açılır menüden erişilebilen sembol özellikleri tablosundan değiştirilebilir. Bu ölçek, ayrıca, deformasyonlara izin veren X ve Y eksenine göre farklı olabilir.</li>
+      </ul>
+      <ul>
+        <li>Eğer sembol otomatik ölçekleniyorsa, sembolün kot değeriyle çakışan katsayı. Eğer otomatik ölçeklenmiyorsa, bu katsayı her zaman 1'dir.</li>
+      </ul>
+      <ul>
+        <li>Tipine göre karşılık gelen ölçek faktörü. Bu katsayı, o tipteki tüm sembolleri etkiler ve değeri <span style="font-weight: bold;">Ayarlar</span> &#8594; <a href="EDM_definicion_tipos.html"><span style="font-weight: bold;">Tip Tanımları</span></a> &#8594; <a href="EDM_definicion_tipos.html#definir_simbolo"><span style="font-weight: bold;">Sembol Tipi Tanımla</span></a> menüsünden yapılandırılabilir. Buradan, tip seçildikten sonra, ölçek faktörüne karşılık gelen değer (<span style="font-weight: bold;">Ölçek F.</span>) değiştirilebilir.</li>
+      </ul>
+      <ul>
+        <li>Haritadaki tüm sembolleri, tipi ne olursa olsun etkileyen genel ölçek faktörü. Değeri <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Durum Bilgisi</span> &#8594; <span style="font-weight: bold;">SFAC</span> menüsünden değiştirilebilir (varsayılan değeri 1'dir).</li>
+      </ul>
+Haritanın içsel ölçeğinin, sembollerin boyutunu DEĞİŞTİRMEDİĞİNİ unutmayın, çünkü onlar bundan bağımsızdır. Bu nedenle, örneğin 1:1000 ölçeğinden 1:2000 ölçeğine geçilirse, görünen etki, sembollerin boyutlarının iki katına çıkmasıdır, oysa gerçekte haritanın geri kalanı küçülmüştür. <br /><br /><br /><span style="font-weight: bold; font-style: italic;">Bir sembol çizme</span><br /><br /><img style="width: 204px; height: 185px; margin-left: 7px;" alt="" src="Imagenes/ejem_simbolos.png" align="right" />Ekranda bir sembol oluşturmak için, ana menüden <span style="font-weight: bold;">Çiz</span> alt menüsünü açmak ve <span style="font-weight: bold;">Sembol Oluştur</span>'u seçmek (veya semboller <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>&nbsp;<img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_crear.png" /> simgesine tıklamak) yeterlidir.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br />Hemen
+ardından, farenin sol tuşuyla eklenecek ardışık semboller oluşturulur ve bunlar çalışma alanı üzerinde çizilir.
+Nokta eklemeyi durdurmak için &lt;Esc&gt; tuşuna basmak veya
+farenin sağ tuşuna basıldığında açılan bağlam menüsünden <span style="font-weight: bold;">Çıkış</span>'ı seçmek yeterlidir.<br /><br />Elbette, her noktanın <a href="EDM_coordenadas_enganches.html#coordenadas">koordinatlarının girilmesi</a> mevcut yöntemlerden herhangi biriyle yapılabilir.<br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="etiquetas">Etiketler veya metinsel semboller</a></span><br /><br />
+      <img style="width: 324px; height: 203px; margin-left: 7px;" alt="" src="Imagenes/ejem_etiquetas.png" align="right" />Tekil noktalar grubuna ait olmalarına rağmen, etiketler özel bir anılmayı hak eder.<br /><br />Tekil nokta <a href="#simbolos">sembolleriyle</a> her açıdan aynıdırlar, ancak gösterimleri sırasında özniteliklerini (kot, KM, vb.) etiketlerler.<br /><br />Eş yükselti eğrisi kot etiketleri, kilometre noktası etiketleri vb. bu gruba aittir. <a href="#textos">Yazılar veya etiketlerle</a> karıştırılmamalıdır.<br />&nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><span class="Titulo_2"><a name="textos">Yazılar veya Etiketler</a></span><br /><br />
+Bir <span style="font-weight: bold;">yazı</span> veya <span style="font-weight: bold;">etiket</span>,
+bir noktayla ilişkilendirilmiş bir kelime veya kelime grubundan oluşan alfanümerik bir metin satırıdır. Pafta üzerine serbestçe yazılmış metinlere karşılık gelirler. Bir nehir adı veya bir topografik nirengi adı örnek olarak verilebilir. Aynı şekilde <span style="font-weight: bold;">tiplere</span> göre sınıflandırılırlar.<br /><br />Bir etiketi tanımlayan özellikler şunlardır:<br />
+      <ul>
+        <li>İçerdiği metin</li>
+        <li>Harflerin boyutu (mevcut ölçekte milimetre cinsinden yükseklik)</li>
+        <li>İlişkili noktanın göreli konumu (tutma noktası)</li>
+        <li>Yönelim</li>
+        <li>Yazı stili</li>
+      </ul>
+Yazıların da Z koordinatı vardır, ancak <a href="#etiquetas">etiket</a> tipi <a href="#simbolos">semboller</a> kadar dinamik değillerdir.
+Bu nedenle, kotları, KM'leri vb. etiketlemek için yazılar yerine semboller kullanmak her zaman tercih edilir. Kullanıcının bu iki obje türü arasındaki farkı dikkate alması ve bunları karıştırmaması önemlidir.<br /><br /><br /><span style="font-weight: bold; font-style: italic;">Bir yazı çizme</span><br /><br />Ekranda bir yazı oluşturmak için, ana menüden <span style="font-weight: bold;">Çiz</span> alt menüsünü açmak ve <span style="font-weight: bold;">Yazı Oluştur</span>'u seçmek (veya yazılar <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>&nbsp;<img style="width: 16px; height: 8px;" alt="" src="Imagenes/icono_toolBarTextos_crear.png" /> simgesine tıklamak) yeterlidir.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><img style="width: 436px; height: 163px; margin-left: 7px;" alt="" src="Imagenes/ejem_texto.png" align="right" />Hemen
+ardından, yazı stilini, boyutunu, ekleme noktasını (tutma noktası) ve açısını belirtebileceğiniz bir yüzer menü açılır. Farenin sol tuşuna yazının ekleneceği yere tıklanır ve etiket yazılır. Yazıyı onaylamak için &lt;Enter&gt; tuşuna veya mesajlar alanındaki <span style="font-weight: bold;">[TAMAM]</span> düğmesine basılır.<br /><br />Yazının ekleme noktasının <a href="EDM_coordenadas_enganches.html#coordenadas">koordinatlarının girilmesi</a> mevcut yöntemlerden herhangi biriyle yapılabilir.<br /><br /><br /><span class="Titulo_2"><a name="celulas">Hücreler</a></span><br /><br />
+<span style="font-weight: bold;">Hücreler</span>, <a href="#simbolos">sembollere</a> çok benzer, temel farklar şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Çoklu ekleme noktaları</span>:
+Ana ekleme noktasına ek olarak, hücreler bağımsız olarak hareket ettirilebilen ve kendi açı ve ölçeklerine (dikey ve yatay) sahip olabilen ikincil ekleme noktalarına sahip olabilirler. Bu, aynı tip hücrenin farklı eklemelerine farklı şekiller verebilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Değişken metinler</span>: Aynı tip hücrenin farklı eklemeleri farklı metinler içerebilir.</li>
+      </ul>
+Kesin anlamda, hücreler önceki üç obje türünden oluşan bir objedir. Program, bu tür objeleri bazı araçlarda ve araçlarda (örneğin, ölçülendirme) kullanır.<br /><br /><br /><span style="font-weight: bold; font-style: italic;">Bir hücre çizme</span><br /><br />Ekranda bir hücre oluşturmak için, ana menüden <span style="font-weight: bold;">Çiz</span> alt menüsünü açmak ve <span style="font-weight: bold;">Hücre Oluştur</span>'u seçmek (veya hücreler <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_crear.png" /> simgesine tıklamak) yeterlidir. &nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><img style="width: 181px; height: 116px; margin-left: 7px;" alt="" src="Imagenes/ejem_celula.png" align="right" />Hücre
+objesi çok dinamiktir, bu da seçilen hücre tipine göre farklı davranışlar sergilemesini sağlar. Örnekte,
+4. tip bir hücrenin eklenmesi gösterilmektedir. Bu
+tip seçildikten ve <span style="font-weight: bold;">Hücre Oluştur</span> seçeneğine tıklandıktan sonra, program hücrenin ekleme noktasını ve ardından iki ilişkili noktanın koordinatlarını ister.<br /><br />Hücre eklemeyi durdurmak için &lt;Esc&gt; tuşuna basmak veya farenin sağ tuşuna basıldığında açılan bağlam menüsünden <span style="font-weight: bold;">Çıkış</span>'ı seçmek yeterlidir.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br />Elbette, her ekleme noktasının <a href="EDM_coordenadas_enganches.html#coordenadas">koordinatlarının girilmesi</a> mevcut yöntemlerden herhangi biriyle yapılabilir.<br /><br />
+
+      <span class="Parrafo"><span class="Titulo_2" /></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

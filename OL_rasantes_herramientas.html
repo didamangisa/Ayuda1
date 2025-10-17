@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Kırmızı Kot: Düzenleme ve Analiz Araçları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>KIRMIZI KOT: DÜZENLEME VE ANALİZ ARAÇLARI</strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><img src="Imagenes/menu_utiles_rasantes.png" style="width: 250px; height: 474px; float: right;" alt="" align="right" hspace="4" /><span class="Parrafo"><span style="font-weight: bold;">[ARAÇLAR]</span> alt menüsünde gruplandırılmış olarak, kırmızı kot tanım verilerini işlemeye, dönüştürmeye, analiz etmeye ve oluşturmaya olanak tanıyan bir dizi araç sunulmaktadır. Bunlar aşağıdaki bölümlere ayrılmıştır:</span>
+      <ul>
+        <li><span class="Parrafo"><a href="#herramientas_generales">Genel araçlar</a></span></li>
+        <ul>
+          <li><a href="#ver_perfiles"><span class="Parrafo">Enkesitleri gör</span></a></li>
+          <li><a href="#invertir_eje"><span class="Parrafo">Ekseni ters çevir</span></a></li>
+          <li><a href="#copiar"><span class="Parrafo">Kopyala</span></a></li>
+          <li><a href="#rasante_lon"><span class="Parrafo">Kırmızı Kotu .lon'a</span></a></li>
+          <li><a href="#pendiente_minima"><span class="Parrafo">Minimum eğim</span></a></li>
+          <li><a href="#filtrar"><span class="Parrafo">Filtrele</span></a></li>
+          <li><a href="#proyectar_vol"><span class="Parrafo">.vol Yansıt</span></a></li>
+          <li><a href="#tablas_de_puntos"><span class="Parrafo">Nokta tabloları</span></a></li>
+          <li><span class="Parrafo"><a href="#ajustar">Uydur</a></span></li>
+          <li><span class="Parrafo"><a href="#punto_por_pendiente">Eğime göre nokta</a></span></li>
+          <li><span class="Parrafo"><a href="#Sobre_Otro_Eje">Diğer Eksen Üzerinde</a><br />
+            </span></li>
+          <li><span class="Parrafo"><a href="#ajustar_ras">Bir kırmızı kotu araziye uydur</a><br />
+            </span></li>
+        </ul>
+        <li><span class="Parrafo"><a href="#analisis">Kırmızı kot analizi</a></span></li>
+        <ul>
+          <li><a href="#comparar_rasantes"><span class="Parrafo">Kırmızı kotları karşılaştır</span></a></li>
+          <li><a href="#cota_pk"><span class="Parrafo">KM'ye göre kot</span></a></li>
+          <li><a href="#cota_roja"><span class="Parrafo">Kırmızı Kot</span></a></li>
+          <li><a href="#generar_pkz"><span class="Parrafo">.pkz Oluştur</span></a></li>
+        </ul>
+        <li><a href="#modificar_pk_cota"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kırmızı kot verilerini KM veya kot olarak değiştir</span></span></span></span></a></li>
+        <ul>
+          <li><a href="#sumar_PK"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">KM Ekle</span></span></span></span></a></li>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#sumar_Z">Z Ekle</a><br />
+            </span></span></span></span></li>
+        </ul>
+        <li><a href="#obtencion_rasantes"><span class="Parrafo">Kırmızı kotların elde edilmesi</span></a></li>
+        <ul>
+          <li><span class="Parrafo"><a href="#sobre_terreno">Arazi üzerinde</a><br />
+            </span></li>
+        </ul>
+        <ul>
+          <li><span class="Parrafo"><a href="#cotas_minimas">Minimum kotlar</a><br />
+            </span></li>
+        </ul>
+        <ul>
+          <li><span class="Parrafo"><a href="#codigoporlongi">Boykesite göre kod</a><br />
+            </span></li>
+        </ul>
+        <li><a href="OL_rasantes_glorieta_catenaria.html#glorieta"><span class="Parrafo">Dönel Kavşak</span></a></li>
+        <li><span class="Parrafo"><a href="OL_rasantes_glorieta_catenaria.html#catenaria">Katener</a></span></li>
+        <li><span class="Parrafo"><a href="#rasante_desviada">Sapmalı kırmızı kot (DD)</a></span></li>
+        <li><span class="Parrafo"><a href="#ffcc_ras_per_desv">DD: Sapmalı Kırmızı Kot ve Deverler</a><br />
+          </span></li>
+      </ul>
+      <span class="Parrafo"> <br />
+      </span><span class="Titulo_2"><a name="herramientas_generales">Genel araçlar</a></span><br />
+      <span class="Parrafo"> <br />
+Bunlar şunlardır:</span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="ver_perfiles">Enkesitleri gör</a></span>:
+Yüklenmiş olan dosyanın enkesitlerini ekranda gösterir. Yeterli veri varsa, platformu da birlikte gösterir. Program, enkesit ilerlemek için onay ister. &lt;Esc&gt; tuşu, işlem tamamlanmadan önce seçeneği iptal eder.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="invertir_eje">Ekseni ters çevir</a></span><span class="Parrafo">:
+Kırmızı kotların gidiş yönünü tersine çevirir ve her zaman ilk noktaya KM=0 atar; bu daha sonra <a href="#sumar_PK"><span style="font-weight: bold;">KM Ekle</span></a> seçeneğiyle değiştirilebilir. Kırmızı kot verilerinin yatay güzergah verileriyle (ve dolayısıyla çıkarılan enkesit veya boykesitlerle) uyumlu olması gerektiği unutulmamalıdır.</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="copiar">Kopyala</a></span><span class="Parrafo">:
+Bir kırmızı kot tanımını, kaynak ve hedef olarak olası herhangi birinden diğerine kopyalamayı sağlar: sağ ve sol platformlar ve hendekler, orta refüj ve yardımcı. Yani, sağ kırmızı kot, daha sonra gerekli değişiklikleri yapmak ve böylece hızlı bir tanım elde etmek amacıyla sağ hendek üzerine kopyalanabilir.</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="rasante_lon">Kırmızı Kotu .lon'a</a></span><span class="Parrafo">:
+Mevcut kırmızı kottan, boykesitteki eksen noktaları listesinde oluşturulan aynı noktaları kullanarak bir <span class="Archivo">.lon</span> boykesit dosyası oluşturur: bir değerin katları, düşey kurplara giriş ve çıkış teğetleri ve yüksek ile alçak noktalar.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo">Bu araç, başlangıç KM'sini, bitiş KM'sini ve aralığı (liste için kullanılan değerlerden bağımsız olarak) tanımlamayı sağlar.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/rasante_a_lon.png" style="width: 291px; height: 95px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"> </span><br />
+      <span class="Parrafo">Oluşturulan noktanın türü (some, rampa, yüksek veya alçak nokta) saklanır, böylece bu boykesit 'işaret' olarak yüklenebilir.</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"> </span> </span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="pendiente_minima">Minimum eğim</a></span>:
+Bu seçenek, aynı anda iki minimum dever ve eğim değerinin altında olan bir kesim olup olmadığını kontrol etmeyi sağlar. Fonksiyon, drenajın zor olabileceği kesimleri kontrol etmeyi sağlar ve proje mühendisine gözden geçirilmesi gereken dever kesiminin KM cinsinden konumunu bildirir.</li>
+      </ul>
+      </span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/rasantes_pend_min.png" style="width: 309px; height: 94px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <ul>
+        <li><span style="font-weight: bold;"><a name="filtrar">Filtrele</a></span>:
+Bu seçenek, çok sayıda noktadan oluşan poligonal bir kırmızı kot kesimini filtrelemeyi sağlar. Ayrıca, başka poligonal olmayan bölgelere (düşey kurplar,...) sahip olabilecek kırmızı kotlar içindeki poligonal kesimleri de filtrelemeyi sağlar. Filtreleme uygulandığında, daha az sayıda eleman elde edilir ancak istenen kırmızı kot korunur.</li>
+      </ul>
+      </span>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/rasantes_filtrar.png" style="width: 346px; height: 117px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><br />
+      <div style="margin-left: 40px;">Uygulanan filtreleme derecesini değerlendirmeyi sağlayan kontrol parametreleri, her iki nokta arasındaki maksimum mesafe ve filtrelenen some ile sonuçtaki kırmızı kot arasındaki kot farkı ile tanımlanır.</div>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="proyectar_vol">.vol Yansıt</a></span>:
+Bu araç, herhangi bir kırmızı kota (sağ hat, sol hat, sağ hendek,...) başka bir eksenden türetilen bir kırmızı kot atamayı sağlar. Sonucu iyileştirmek için, düşey kurplar KM ve kot ile belirlenir, birleşimin geçiş noktası olarak orijinal birleşimin somesindeki KM'ye karşılık gelen nokta kullanılır.</li>
+      </ul>
+      </span>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/rasantes_proyectar_vol.png" style="width: 309px; height: 289px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span style="font-weight: bold;">Ekleme</span> imkanı vardır; mevcut kırmızı kot tanımları içine, tamamen belirli bir KM aralığına düşen başka bir eksenin yansıtılmış kırmızı kotlarını ekleyebilirsiniz. Yansıtılan kırmızı kotlar ile mevcut olan arasında <span style="font-weight: bold;">geçiş</span> yapmak için bir <span style="font-weight: bold;">uzunluk</span> da verilebilir.</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo">Ayrıca, verilerini yansıtan eksendeki başlangıç ve bitiş KM'sini sınırlayabilirsiniz.</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;"><a name="tablas_de_puntos">Nokta tabloları</a></span>: <a href="OL_planos_longitudinales.html">Boykesit paftaları oluşturmaya</a> adanmış menü içindeki <a href="OL_planos_longitudinales.html#tablas_puntos">Nokta Tabloları</a> iletişim kutusuna erişir. O iletişim kutusunda tanımlanan semboller, ilişkili metinler, KM ve kot, <a href="OL_gui_tablas_de_puntos.html">boykesitte</a> ya profil üzerinde ya da pota üzerinde çizilebilir ve ayrıca kırmızı kot menüsünde de görüntülenebilir.</span></span></span></span></li>
+      </ul>
+      </span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="ajustar">Uydur</a></span><span class="Parrafo">:
+Bu araç, poligonal kırmızı kot bölgelerini parabollerle otomatik olarak uydurmayı sağlar. Değiştirilen noktalar ile parabol arasındaki maksimum kot farkı ve iki nokta arasındaki maksimum mesafe verilir, böylece bir kırmızı kotun P1 ve P2 noktaları bu değeri aşarsa, değiştirilmezler. Ayrıca, bir doğru kırmızı kot kesimindeki ara noktaları ortadan kaldırmak için bir filtreleme de içerir.<br />
+          </span></li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/rasantes_ajustar.png" style="width: 346px; height: 117px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><img src="Imagenes/rasa_punto_por_pend.png" style="width: 230px; height: 36px;" alt="" align="right" hspace="6" /><span style="font-weight: bold;"><a name="punto_por_pendiente">Eğime göre nokta</a></span>:
+Mevcut düşey kurp için, önceden belirlenmiş bir eğime sahip olan noktayı hesaplar ve KM,Z değerlerini, düşey kurbun geçiş noktası olarak iletişim kutusuna yerleştirir.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"> </span></span>
+      <div style="margin-left: 40px;">Eğim, giriş ve çıkış teğetleri arasındaki bölgenin dışına çıktığında, nokta hesaplanır, ekranda gösterilir ve <a href="OL_planos_longitudinales.html#tablas_puntos">nokta tablosunun</a> son konumuna eklenir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/pend_def_punt_paso.png" style="width: 505px; height: 263px;" alt="" /><br />
+      </div>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"> <span class="Parrafo"> </span></span></span>
+      <ul>
+        <li><a name="Sobre_Otro_Eje"><span style="font-weight: bold;">Diğer Eksen Üzerinde</span><br />
+          </a></li>
+      </ul>
+      <div style="margin-left: 40px;">Diğer Eksen Üzerinde aracı, Arazi üzerinde aracına benzer, ancak bu, kırmızı kotun Diğer Eksenin platformundan veya bir kısmından geçmesini sağlar. Mevcut eksenin, Diğer Eksenin analitik platformunun bir kısmını kesmiş olmasını gerektirir. Arazi üzerinde gibi, sabit bir kot artışı veya güçlendirme tablosu tarafından belirlenen bir artış vermeyi sağlar. Ayrıca, mevcut eksenin önceden tanımlanmış kırmızı kotu ile Diğer Eksen tarafından türetilen kısım arasında geçiş yapmak için bir mesafe de verilebilir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ol_ras_sobre_otro%20eje.png" style="width: 300px; height: 165px;" alt="" /><br />
+      </div>
+      </div>
+      <ul style="font-weight: bold;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="ajustar_ras">Bir kırmızı kotu araziye uydur</a></span></span></span></li>
+      </ul>
+      <div style="margin-left: 40px;">Bu araç, araziye uydurulmuş bir kırmızı kotu şu şekilde oluşturmaya yarar:<br />
+      <ul>
+        <li>Arama mesafesi ve ağırlık katsayısı parametreleriyle, arazinin bir yumuşatması olarak ilk bir poligonal kırmızı kot oluşturulur. (Daha büyük arama mesafesi daha fazla yumuşatma sağlar. Ve daha fazla yumuşatma ile daha büyük KV'ler elde ederiz)<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Minimum ve maksimum kırmızı kot parametreleri, yeni kırmızı kotun merkezlenmeye çalışılacağı bir bant oluşturur. (Her ikisi de negatifse kırmızı kot yarmada, pozitifse dolguda olma eğilimindedir.)<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Oluştur</span> seçeneği, yeni kırmızı kotu şu şekilde oluşturur:</li>
+      </ul>
+      <ol>
+        <li>Minimum mesafenin altındaki çok yakın noktaları kaldırır.</li>
+      </ol>
+      <ol start="2">
+        <li>Poligonal kırmızı kotun noktalarının filtrelenmesi.</li>
+      </ol>
+      <ol start="3">
+        <li>Parabollerle bir kırmızı kotun ayarlanması.</li>
+      </ol>
+      <ol start="4">
+        <li>Kv'lerin yuvarlanması ve çakışmaların giderilmesi.</li>
+      </ol>
+      <ol start="5">
+        <li>Çok güçlü bir yumuşatma yapıldığında, ayarda KV konulmayan çok hizalı kırmızı kotlar kalabilir, bu durumda minimum KV kullanılır.</li>
+      </ol>
+Minimum bir KV tanımı, minimum bir Ldk (düşey kurp uzunluğu) ile değiştirilebilir.<br /><br />Minimum Kv'yi karşılamak için otomatik olarak artır: bu seçenek etkinleştirildiğinde, tanımlanan minimum KV'yi karşılamak için arama mesafesi otomatik olarak artırılır.<br /><br />
+      </div>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 384px; height: 357px;" alt="" src="Imagenes/ras_ajust.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><a name="analisis"><span class="Titulo_2">Kırmızı kot analizi</span></a><br />
+      <span class="Parrafo"><br />
+Bu bölümde aşağıdaki araçlar yer almaktadır:</span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="comparar_rasantes">Kırmızı kotları karşılaştır</a></span>:
+Bir kırmızı kotu (sağ, sol, hendekler,...) başka herhangi biriyle, bir <span class="Archivo">.ras</span> dosyasından veya başka bir kırmızı kot <a href="OL_rasantes_diseno.html#alternativas">alternatifinden</a> okunan bir kırmızı kot dahil olmak üzere karşılaştırmayı sağlar. Liste, bir <a target="_blank" href="OL_ficheros_pkd_pks_pkz.html#pks"><span class="Archivo">.pks</span></a> dosyasına göre, bir aralık ve bir eşit aralığa göre, arazi enkesitlerine göre veya interaktif olarak olabilir.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_comparar_rasantes.png" style="width: 358px; height: 200px;" alt="" /></span> </div>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><span style="font-weight: bold;"><a name="cota_pk">KM'ye göre kot</a></span><span class="Parrafo">:
+Kırmızı kotun tanım aralığındaki her KM için kırmızı kot, eğim, kırmızı kot, deverler, yarıçap ve eksen koordinatlarını döndürür. Bu bilgilerin istendiği KM'leri belirtmek için bir <a target="_blank" href="OL_ficheros_pkd_pks_pkz.html#pks"><span class="Archivo">.pks</span></a> dosyasına başvurulabilir, klavyeden doğrudan değerler girilebilir (interaktif olarak), bir aralık ve bir eşit aralığa göre ve hatta arazi enkesitlerine göre. Ayrıca kullanıcı KM'sini de bildirir.</span></li>
+      </ul>
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/rasante_cota_por_pk.png" style="width: 384px; height: 229px;" alt="" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span>
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">Kırmızı kot-arazi kesişimleri</span> seçeneği ile program, bu kesişimlerin olduğu KM'lerdeki verileri bize verir.<br />
+      <br />
+<span style="font-weight: bold;">İki KM arasındaki eğim</span> seçeneği ile programa iki KM belirtebiliriz, böylece program tanımladığımız eşit aralık veya katlar değerinden başlayarak o kesimdeki ardışık eğimleri hesaplar. Eğimler, tanımlanan kesimin ardışık noktaları (KM'ler) arasındaki kot farkının KM farkına bölünmesiyle % olarak hesaplanır.<br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/cota_por_PK.png" style="width: 358px; height: 88px;" alt="" /></span> </div>
+      </div>
+      <span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"> </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span style="font-weight: normal;" class="Parrafo"><br />
+Sorgulamanın sonucu ekranda gösterilir. Bu bilgi, örneğin bir yakınlaştırma yapıldığında veya fare ile bir kaydırma yapıldığında ekran yeniden çizildiğinde veya yenilendiğinde kaybolur, ancak bir liste (<span class="Archivo">sorgulama.res</span>) de oluşturulur.</span></span></span></span></span></span></span></span><br />
+      <span style="font-weight: normal;" class="Parrafo"></span></div>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="cota_roja"> Kırmızı Kot</a></span><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">: <a href="#cota_pk">KM'ye göre kot</a> listesiyle aynı bilgiyi döndürür, ancak sadece listeyi oluşturur, ekranda bilgi vermez.</span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="generar_pkz"><span class="Parrafo">.pkz Oluştur</span></a></span><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">:
+Bu seçenek, arazi profilinden bir <a target="_blank" href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a> dosyası oluşturmayı sağlar. Bir ASCII dosyası olduğu için, tamamen serbestçe düzenlenebilir ve değiştirilebilir.</span></span></span></span></span></span></span></li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="modificar_pk_cota">Kırmızı kot verilerini KM veya kot olarak değiştir</a></span><br />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span class="Parrafo"><br />
+      <span style="font-weight: normal;"> Bunun için şu iki araç mevcuttur:</span><br />
+      <ul style="font-weight: normal;">
+        <li><img src="Imagenes/rasantes_sumarPK.png" style="width: 219px; height: 109px; margin-left: 7px;" alt="" align="right" /><a style="font-weight: bold;" name="sumar_PK">KM Ekle</a><span class="Parrafo">:
+Tanım verilerine sabit bir değer eklemeyi veya çıkarmayı sağlar. Yatay güzergahtaki bir elemanın değiştirilmesi nedeniyle eksen kısaldığında veya uzadığında, bu araç kullanılabilir ve böylece kırmızı kot tanımını yeniden yapmak gerekmez. Örneğin, bir kurbun yarıçapının değiştirilmesi uzunluğunu 43 m artırmışsa, önceki bitiş KM'sini bilerek kırmızı kot tanımını başlangıçtaki güzergaha uyması için dönüştürmek kolaydır.</span></li>
+      </ul>
+      </span></span></span></span></span></span><span class="Parrafo"> </span>
+      <table style="text-align: left; height: 103px; width: 656px; margin-left: 34px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 2px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" />
+            </td>
+            <td style="vertical-align: top; width: 614px; text-align: justify; font-weight: normal;"><span class="Info">BOYKESİT menüsündeki .vol Yansıt seçeneği daha kapsamlıdır; bu seçenek, iki eksenin (eski ve yeni) yatay güzergah verilerini kullanarak, kırmızı kot ve enkesit tanımının tüm verilerini eskiden yeniye yansıtır.<br />
+            <br />
+Her durumda, program yatay güzergah kesimlemesinde bir değişiklik tespit ettiğinde, tüm verilerini yeni KM gerçekliğine uyarlamak için .vol dosyasını otomatik olarak yeniden yapma imkanı sunar, bu da kırmızı kotun kendisini de içerir.</span> </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul style="font-weight: normal;">
+        <li><img src="Imagenes/rasantes_sumarZ.png" style="width: 219px; height: 147px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;"><a name="sumar_Z">Z Ekle</a></span>:
+Tüm tanım noktalarına sabit bir değer ekler veya çıkarır. Veriler ayrıca bir <a target="_blank" href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a> dosyası aracılığıyla da sağlanabilir.</li>
+      </ul>
+      <div style="margin-left: 40px;">Program, kırmızı kotların veri noktalarının kotunu, KM'lerine göre yükseltir/alçaltır ve gerekirse ilgili kot artışı değerini enterpole eder.<br />
+      <span class="Parrafo"></span></div>
+      <br />
+      <br />
+      <br />
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;"><br />
+      </span><a name="obtencion_rasantes"><span class="Titulo_2">Kırmızı kotların elde edilmesi</span><br />
+      <br />
+Kırmızı kotları otomatik olarak elde etmek için aşağıdaki araçlara sahibiz:<br />
+      </a>
+      <ul>
+        <li><a name="sobre_terreno"><span style="font-weight: bold;">Arazi üzerinde</span>: <span style="font-weight: normal;">Mevcut kırmızı kotu, poligonal şeklinde, birleşimsiz bir dizi kırmızı kot kesimiyle değiştirir.</span></a></li>
+      </ul>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/dialogo_sobreTerreno.png" style="width: 271px; height: 147px; margin-right: 7px;" alt="" align="left" />Uygulama, mevcut tanıma (başlangıç ve bitiş KM'si kullanarak) mevcut araziden elde edilen ve bir <span style="font-weight: bold;">kot artışı</span> (sabit veya güçlendirme tablosuna göre) uygulanan verileri ekler. Kırmızı kotlar bu şekilde otomatik olarak oluşturulduktan sonra, her zaman yeni kesimler ve düşey kurplar eklemek, silmek veya araya eklemek mümkündür.<br />
+
+      <br />
+
+<span style="font-weight: bold;">Köşeler arası minimum mesafe</span> kullanılarak, yeni kırmızı kotun köşelerinin uyması gereken minimum bir mesafe garanti edilebilir. Böylece, arazinin çok yoğun köşeleri varsa, düzenlenmesi için çok fazla köşeye sahip bir kırmızı kot oluşturulması önlenebilir.<br />
+
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <br />
+      <table style="text-align: left; width: 691px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;">
+            <div style="margin-left: 40px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 625px; text-align: justify;"><span style="font-weight: normal;" class="Info"><a href="OL_EyM.html">Genişletme ve iyileştirme</a> projeleri için, <a href="OL_EyM.html#tabla_refuerzo">GÜÇLENDİRME TABLOSU</a>'nda veri varsa, kot artışı, eylem türüne göre buradan çıkarılır: GÜÇLENDİRME durumunda dz=Güçlendirme Kalınlığı, KAZIMA+GÜÇLENDİRME durumunda dz=Güçlendirme Kalınlığı - Kazıma Kalınlığı ve Yeniden Yapılandırma durumunda dz=Yükselt.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">Geçiş uzunluğu</span> değeri, yeni verileri önceki tanımla 'birleştirmek' için kullanılır (eğer bu yoksa, açıkçası hiçbir geçiş yapılmaz).<br />
+      <br />
+Arazinin son yüklenen olduğunu hatırlamak gerekir, bu nedenle geçici olarak belirli bir boykesit yüklenebilir, gerekli işlemler yapılabilir ve ardından orijinal arazi yeniden yüklenebilir.<br />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+Ayrıca, <a href="OL_EyM.html">genişletme ve iyileştirme</a> projeleri için daha özel bir seçenek de vardır, bu seçenek yeni platform için tanımlanan deverleri dikkate alır: <a href="#cotas_minimas">Tüm platformda minimum kot farklarına sahip kırmızı kot</a>.<br />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <br />
+
+      <br />
+
+      
+      <ul>
+
+        <li><a name="cotas_minimas"><span style="font-weight: bold;">Minimum kotlar</span>: <span style="font-weight: bold;">Minimum kotlar</span> aracı sadece <a href="OL_EyM.html">üstyapı güçlendirme projelerine</a> uygulanabilir (ve en az iki enkesitte mevcut platform bulunmadığında bir uyarı gösterir). Araç, minimum güçlendirme kalınlığını sorar ve her enkesitte, tasarlanan platformun herhangi bir noktası ile korunacak platform arasındaki kot farkının kazıma gerektirmeyeceği şekilde bir kırmızı kot oluşturur.</li>
+      
+      </ul>
+
+      
+      
+      <div style="margin-left: 40px;"><img src="Imagenes/cotas_minimas_esquema.png" style="width: 224px; height: 90px; margin-left: 7px;" alt="" align="right" />Bu, <a style="font-weight: bold;" href="#sobre_terreno">arazi üzerinde</a> seçeneğinden çok daha titiz bir çözümdür, çünkü her zaman en elverişsiz nokta dikkate alınır ve kullanıcı tarafından girilen kot artışı her zaman o noktanın üzerinde tutulur.<span style="font-weight: normal;"> Bu nedenle, her KM'deki en elverişsiz noktayı belirleyebilmek için yeni platformun <a href="OL_anchos.html">genişlikleri</a> ve <a href="OL_peraltes.html">deverleri</a> önceden tanımlanmalıdır.<br />
+      <span style="font-weight: normal;"> </span><br />
+      <br />
+      <span style="font-weight: normal;">Sürecin başarılı olması için, yüklenen arazide <a href="OL_EyM.html#extrac_perf">mevcut veya önceki platformun</a> (platform kenar çizgileriyle) tanımlanmış olması ve açıkçası, programın ortaya konan sorunu çözebilmesi için projelendirilecek platform genişlikleri ve deverlerin bir tanımının olması gerekir. </span><span style="font-weight: normal;">Çift platform durumunda, algoritma mevcut orta refüj bölgesini dikkate almayacak şekilde hazırlanmıştır.</span><br />
+      </span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"> <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 518px; height: 130px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 288px;"><img src="Imagenes/dialogo_cotas_minimas.png" style="width: 271px; height: 118px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 210px; text-align: center;"><img src="Imagenes/cotas_minimas.png" style="width: 211px; height: 27px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 691px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 625px; text-align: justify;"><span style="font-weight: normal;" class="Info"><a href="OL_EyM.html">Genişletme ve iyileştirme</a> projeleri için, <a href="OL_EyM.html#tabla_refuerzo">GÜÇLENDİRME TABLOSU</a>'nda veri varsa, kot artışı, eylem türüne göre buradan çıkarılır: GÜÇLENDİRME durumunda dz=Güçlendirme Kalınlığı, KAZIMA+GÜÇLENDİRME durumunda dz=Güçlendirme Kalınlığı - Kazıma Kalınlığı ve Yeniden Yapılandırma durumunda dz=Yükselt.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </span></span></span></span></span></span></span><br />
+
+      
+      <ul>
+
+        <li><a name="codigoporlongi"><span style="font-weight: bold;">Boykesite göre kod</span><span style="font-weight: normal;">: Bir kırmızı kot tanımlar (<a href="#cotas_minimas">minimum kotlar</a> aracı tarzında), yüzey, kod ve taraf ile tanımlanan bir kesit noktasına kot veren başka bir boykesit kullanarak. Örnek olarak, bir 3D çizgiden başlandığını ve platform kenarına kot vermesi istendiğini varsayalım. Bunun için, bu çizgi eksen üzerine yansıtılır ve boykesiti yüklenir (<a href="OL_rasantes_otros_longitudinales.html#cargar_longit">Boykesiti poligon hat olarak yükle</a> kullanarak). Ardından, bu araçla, bu boykesitin 67 yüzeyine 100 kodunda kot verecek şekilde bir kırmızı kot oluşturulur.</li>
+      
+      </ul>
+
+      <br />
+
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><img src="Imagenes/rasantes_long_codigo.png" style="width: 312px; height: 222px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"></span></span></span></div>
+
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><br />
+      <br />
+      </span></span></span><a name="rasante_desviada"><span class="Titulo_2">Sapmalı kırmızı kot (DD)</span><br />
+      <br />
+Bu araç, sapmalı hattın kırmızı kotunu hesaplar. Bunun için, sapmalı hatlarda, makasların başlangıcında ve sonunda eksenlerin kırmızı kotlarını ekler, makasın bir düzlemde olduğunu ve ana hattın maksimum eğimi takip ettiğini varsayarak. İki kırmızı kot ve bir birleşim eğrisi hesaplaması gerekir, bunun için:<br />
+      </a>
+      
+      <ul>
+
+        <li>Dil ucu birleşim yerinde, ana hattın kotunu ve eğimini alır.</li>
+        <li>Sapmalı hattın topuğunda, bu noktayı ana hat üzerine yansıtır ve kotunu alır, ardından eğimini, ana hat eğiminin teorik açının kosinüsüyle çarpımı olarak hesaplar.<br />
+        </li>
+      
+      </ul>
+
+Bu iki noktayı KM, kot ve eğimle bildiğimizde, sapmalı kırmızı kotu ve ana kırmızı kota ulaşmak için bir geçiş uzunluğunu hesaplayabiliriz.<br />
+
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"><a name="ffcc_ras_per_desv"><span class="Titulo_2">DD: Sapmalı Kırmızı Kot ve Deverler</span><br />
+      <br />
+Bu&nbsp;araç, ana hattın kurpta, deverli ve boyuna eğimli olabileceğini dikkate alarak makasların neden olduğu sapmalı bir hattın kırmızı kotlarını ve deverlerini belirler.<br />
+&nbsp;Aracın aşağıdaki parametreleri vardır:<br />
+      </a></span></span>
+      
+      <ol>
+
+        <li><span class="Parrafo"><span class="Parrafo">&nbsp;Maksimum eşit aralık: makas boyunca ara noktaları analiz etmek için.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Geçiş uzunluğu: makasın sonundan</span></span><span class="Parrafo"><span class="Parrafo"> önceden tanımlanmış kırmızı kota geri dönmek için bir geçiş yapmak üzere.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Kırmızı kotu ayarla, incelenen noktalarda kırmızı kotları ve parabolleri, maksimum bir kot farkı ve noktalar arasında maksimum bir mesafe vererek ayarlamayı sağlar.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Elde edilen deverlerin değeri için yuvarlama.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Aynı değere sahip ardışık ikiden fazla veri olduğunda deverleri filtrele.</span></span></li>
+      
+      </ol>
+
+      
+      <div style="text-align: center;"><a name="ffcc_ras_per_desv"><img src="Imagenes/rasa_ffcc_rasayper_desv.png" style="width: 250px; height: 170px;" alt="" /></a></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="ffcc_ras_per_desv"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><br />
+      </span></span></span></span></span></a></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

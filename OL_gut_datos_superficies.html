@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><title>Şablonlar .gut: Yüzey Verileri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ENKESİT PAFTALARI İÇİN ŞABLONLAR: YÜZEY VERİLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+      </span><img src="Imagenes/gut_datos_superficies.png" style="width: 288px; height: 246px;" alt="" align="right" hspace="6" /><span class="Parrafo">Buradan, uygulamanın enkesit dosyasından alabileceği farklı verilerin nasıl dağıtılacağı tanımlanır.<br />
+      <br />
+Program, farklı bölümlerde hangi tür özniteliğin çıkarılacağını, hangi yüzeyden, bir etiket mi, bir sembol mü yoksa her ikisini birden mi kullanacağını vb. tanımlamaya olanak tanır.<br />
+<br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo">
+      </span><a href="#atrib_superf">Yüzeyler Üzerindeki Öznitelikler</a><br />
+      <a href="#atrib_guitarra">Bilgi Bandındaki (Gitardaki) Öznitelikler</a><br />
+      <a href="#rotul_2_superf">İki Yüzeyi İçeren Öznitelikler</a><br />
+      <a href="#talud_superf">Yüzeylerin Şevi</a><br />
+      <a href="#peraltes">Deverler</a><br />
+      <a href="#peraltes_cod">Koda Göre Deverler</a><br />
+      <a href="#acota_dist">Mesafe Ölçülendirmesi</a><br />
+      <a href="#anota_superf_cod">Yüzey ve Koda Göre Notasyonlar</a><br />
+      <a href="#cotas_caract">Karakteristik Kotlar</a><br />
+      <a href="#pendiente">Eğim</a><br />
+      <a href="#acota_superf_cod">Yüzeylere ve Kodlara Göre Ölçülendirme (Üstyapı Astarları)</a><br />
+      <a href="#pend_V_H">Yüzeylere ve Kodlara Göre D:Y Eğim</a><br />
+      </div>
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="atrib_superf">Yüzeyler Üzerindeki Öznitelikler</a></span><br />
+      <br />
+Burada, doğrudan enkesit üzerine etiketlenmesi istenen tüm veriler, bir yüzeyin bir tarafına ve bu yüzey içinde belirli kodlara referans verilerek belirtilir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_supef.png" style="width: 461px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+Etiketleme olanakları şunlardır:<br />
+      <ul>
+        <li>Kot.</li>
+        <li>Geometrik eksene olan mesafe.</li>
+        <li>Plandaki eksene (veya matematiksel eksene) olan mesafe.</li>
+        <li>Kırmızı kot farkı.</li>
+        <li>Şev. <br />
+</li></ul>
+      <div style="margin-left: 40px;">Şevi 1.00:1 tipi bir sembolle etiketlemek istendiğinde, bir ondalık basamaklı veya ondalıksız şev değerleri için T0.0:1 ve T0:1 olmak üzere iki yeni sembol tanımlanmasına izin verilir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_superf_talud.png" style="width: 450px; height: 69px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_superf_talud_simb.png" style="width: 295px; height: 97px;" alt="" /><br />
+      </div>
+      </div>
+      <ul>
+
+        <li>Geometrik eksene olan mesafe, ancak sol taraf söz konusu olduğunda negatif işaretli.</li>
+        <li>Plandaki eksene olan mesafe, ancak sol taraf söz konusu olduğunda negatif işaretli.</li>
+        <li>Mevcut eksene olan mesafe (<a href="OL_EyM.html">genişletme ve iyileştirme projeleri</a> için).<br />
+</li>
+        <ul>
+          <li>Mevcut eksenin konumu, 196 sembolü ile tanımlanan olarak kabul edilir.</li>
+          <li>Bu, enkesitlere <a href="OL_perf_transv.html">enkesit oluşturma menüsünden</a> (Demiryolları için <span style="font-weight: bold; font-style: italic;">Gen. ve iyileştirme (tümü)</span> seçeneği, mevcut eksen için çizgi tipi belirtilerek) veya ENKESİT (ALZADO) menüsünün <a href="OL_anadir_linea.html"><span style="font-weight: bold;">[Çizgi Ekle]</span></a> seçeneği aracılığıyla dahil edilebilir.</li>
+        </ul>
+
+        <li>Belirtilen yüzeyin ve tanımlanan aralığa göre kodları.</li>
+        <li>Eksendeki arazi kotu ile kot farkı (<span style="font-style: italic;">Z - Zt0</span>).</li><li>Genişlik: Dolgu altı iyileştirme basamakları gibi yarı-yatay segmentlerin genişliği.</li><li>DüşeyFark: Dolgu altı iyileştirme basamakları gibi yarı-dikey segmentlerin kot farkı.</li>
+
+      
+      </ul>
+
+Daha önce belirtildiği gibi, eksenin tarafını (sağ veya sol) ve etiketlenecek yüzeyi belirtmek gerekir. Bu yapıldıktan sonra, etiketlenecek kod aralığı (<span style="font-weight: bold;">Baş. Kod</span>'dan <span style="font-weight: bold;">Bit. Kod</span>'a kadar), etiket olarak kullanılacak sembol tipi, etiketlerin yerleştirme noktalarının kodlara göre yatay ve dikey ötelemeleri ve gerekirse bir açı belirtilir.<br />
+      <br />
+Bu seçenek, kodsuz yüzeylerle de kullanılabilir (örn. sağlam zemin çizgisi 66, bitkisel toprak çizgisi 104,...), bu nedenle, mantıksal olarak, bu durumlarda minimum ve maksimum kod dikkate alınmaz.<br />
+      <br />
+Ayrıca, programın bilgi bandındaki etiketlerden bazılarını aralarındaki mesafe bu değerden daha az olduğunda kaldırarak çakışmalarını önlemesi için bir <span style="font-weight: bold;">etiketler arası minimum mesafe</span> (kağıt mm cinsinden) belirlenebilir.<br />
+      <br /><span class="Parf_negrita">[] Kopyalarla kullan</span> kutucuğu etkinleştirildiğinde, bu menünün tanımları kopyalar üzerinde de çalışır.<br />
+      <br />
+      <span class="Titulo_2"><a name="atrib_guitarra">Bilgi Bandındaki (Gitardaki) Öznitelikler</a></span><br />
+      <br />
+Bu menü, enkesitin belirli yüzeylerine (<span style="font-weight: bold;">Yüzey</span>) ait verilerin bilgi bandı alanında etiketlenmesini sağlar:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_guitarra.png" style="width: 611px; height: 204px;" alt="" /><br />
+      </div>
+      <br />
+Etiketleme olanakları şunlardır:<br />
+      <ul>
+        <li>Kot.</li>
+        <li>Geometrik eksene olan mesafe.</li>
+        <li>Plandaki eksene (veya matematiksel eksene) olan mesafe.</li>
+        <li>Yüzeyin some noktası numarası, sıfır atanan eksenden kenara doğru artan şekilde.</li>
+        <li>Yüzeyin yatay genişliği, eksenden kenara kadar.</li>
+        <li>Bir some noktası ile bir önceki arasındaki ara mesafe.</li>
+        <li>Geometrik eksene olan mesafe, ancak sol taraf söz konusu olduğunda negatif işaretli.</li>
+        <li>Plandaki eksene olan mesafe, ancak sol taraf söz konusu olduğunda negatif işaretli.</li>
+        <li>Mevcut eksene olan mesafe (<a href="OL_EyM.html">genişletme ve iyileştirme projeleri</a> için). Mevcut eksenin konumu, 196 sembolü ile tanımlanan olarak kabul edilir. Bu, enkesitlere <a href="OL_perf_transv.html">enkesit oluşturma menüsünden</a> (Demiryolları için <span style="font-weight: bold; font-style: italic;">Gen. ve iyileştirme (tümü)</span> seçeneği, mevcut eksen için çizgi tipi belirtilerek) veya ENKESİT (ALZADO) menüsünün<span style="font-weight: bold;"> <a href="OL_anadir_linea.html">[Çizgi Ekle]</a></span> seçeneği aracılığıyla dahil edilebilir.</li>
+        <li>Yüzeyin kodları (varsa).</li>
+        <li>Sabit mesafe, bir mesafe, kot vb. verisini, yüzeyin some noktaları yerine sabit bir mesafeye göre etiketlemeyi sağlar.</li>
+        <li>Eğim diyagramı. Bilgi bandında, seçilen iki kod arasında, noktalar arasındaki eğimle aynı yönde bir eğime sahip bir çizgi çizer.</li>
+        <li>Hücre (C55). Kütüphanede, bilgi bandındaki öznitelik noktaları için referans olarak üç noktalı bir hücre (C55) kullanan celula.gut dosyası bulunmaktadır:<br />
+          <ul>
+            <li>Taban noktası yüzey üzerindedir.</li>
+            <li>İlk yerleştirme noktası, K.D.'den tanımlanan kottadır.</li>
+            <li>İkinci yerleştirme noktası, ilkine göreli kotunu korur ancak noktalar arasındaki minimum ayrımı sağlamak için yana kaydırılır. Bu noktayı grafiksel olarak hareket ettirirsek, hücreden sonra tanımlanan sembolleri (eksene olan mesafe, kot...) sürükler.</li>
+          </ul>
+        </li>
+        <li>Eğim.&nbsp;</li><li>Uç Ara Mesafe. Ara mesafeyi iki noktanın merkezi yerine dıştaki noktaya göre yazar.</li>
+
+      </ul>
+Etiketlenecek veri belirtildikten sonra, hangi noktaların etiketleneceği belirtilir. Seçenekler şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tümü</span> yüzeyin some noktaları.</li>
+        <li><span style="font-weight: bold;">Min.Mes</span>: Minimum mesafe. Yatay olarak en az belirtilen değeri (kağıt mm cinsinden) aralıklı olan some noktaları. Bu değeri girebilmek için <span style="font-style: italic;">Min.Mes</span> kutucuğu etkinleştirilir. Çakışmaları veya yüksek veri yoğunluğunu önlemek için kullanılır.</li>
+        <li><span style="font-weight: bold;">DZ.min</span>: Minimum kot artışı. Yine kağıt mm cinsinden ölçülür, bu durumda hem <span style="font-style: italic;">Min.Mes</span> hem de <span style="font-style: italic;">DMin90</span> kutucukları etkin kalır. Yatay olarak <span style="font-style: italic;">Min.Mes</span>'den daha az aralıklı olan yüzeyin some noktaları için (daha fazla aralıklıysa her zaman etiketlenir), gösterilmeleri için dikey olarak en az <span style="font-style: italic;">DMin90</span>'da belirtilen kadar aralıklı oldukları kontrol edilir. Minimum mesafe seçeneğinden daha kapsamlı bir seçenektir, çünkü dikey artışları da dikkate alır ve amacı aynıdır, yani çakışmaları ve yüksek etiket yoğunluğunu önlemek.</li>
+        <li><span style="font-weight: bold;">Aralık</span>: İlgili some noktaları, kodları <span style="font-style: italic;">Baş. Kod</span> ve <span style="font-style: italic;">Bit. Kod</span> arasında kalan tüm noktalardır.</li>
+        <li><span style="font-weight: bold;">7 nokta</span>: 7 nokta. Sadece 67 yüzeyi için geçerlidir, uçların (kod 100), dış taşıt yolu kenarlarının (kod 2), içlerin (çift taşıt yolu durumu, kod 1) ve eksenin some noktalarını dikkate alır.</li>
+        <li><span style="font-weight: bold;">F ve S</span>: Frezeleme ve söküm. <a href="OL_EyM.html">Genişletme ve iyileştirme</a> kesitleriyle ilişkili karakteristik noktalar dikkate alınır (bunlar, <a href="OL_listados_mediciones.html#fresa"><span class="Archivo">fresa.res</span></a> <a href="OL_EyM.html">genişletme ve iyileştirme projeleri</a> listesinde referans verilen aynı noktalardır).</li>
+        <li><span style="font-weight: bold;">Sabit Mes.</span>: Eksene sabit mesafedeki noktalar. <span style="font-style: italic;">Min.Mes</span> sütununda belirtilen belirli bir mesafe aralığında noktalar alır.<br />
+</li>
+        <li><span style="font-weight: bold;">Liste</span>: Numara listelendiğinde, son numaranın belirli bir numara olması sağlanabilir ve yüzey üzerindeki referansa bir açı verilebilir.<br />
+        </li>
+        <li><span style="font-weight: bold;">Liste SĞ</span>: Sağdan listele<br />
+        </li>
+        <li><span style="font-weight: bold;">Liste SL</span>: Soldan listele<br />
+        </li>
+        <li><span style="font-weight: bold;">Liste
+-SL</span>: Liste SL'ye benzer, ancak ötelemeler, eksenden sola doğru sıralanması için ters uygulanır. Yatay referans pafta kenarı değil, her enkesitin eksen çizgisidir. Ekteki şekilde bir örnek gösterilmektedir:<br />
+</li>
+
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_guitarra_lista_iz.png" style="width: 606px; height: 68px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_guitarra_lista_iz_dibujo.png" style="width: 355px; height: 263px;" alt="" /><br />
+      </div>
+      
+      <ul>
+        <li><span style="font-weight: bold;">Kod SL-SĞ</span>: <span style="font-style: italic;">Baş. Kod</span> ve <span style="font-style: italic;">Bit. Kod</span> sütunlarında işaretlenen kodlara karşılık gelen noktaları, enkesitin sol-sağ her iki tarafında birer tane olmak üzere dikkate alır.<br />
+</li>
+        <li><span style="font-weight: bold;">1 Sabit Mes.</span>: Eksene sabit mesafedeki noktalar. Eksenin her iki tarafında birer tane olmak üzere sadece iki nokta.<br />
+        </li>
+
+      </ul>
+
+
+<span style="font-weight: bold;">Yüzey</span> ile ilgili olarak, -1 belirtilirse, o zaman mevcut taşıt yolu yüzeyi (106) kullanılır ve bitkisel toprak (104) veya sağlam zemin (66) ile tamamlanır. Belirtilen değer -2 ise, taşıt yolu yüzeyi (67) kazı (68) ve uygun olmayan arazideki yarma (69) ile tamamlanır.<br />
+      <br />
+Tüm etiketler için ayrıca referans aldıkları some noktalarına göre bir <span style="font-weight: bold;">yatay öteleme</span>, bir <span style="font-weight: bold;">karşılaştırma düzlemine olan mesafe</span> ve bir <span style="font-weight: bold;">dönüş açısı</span> da belirlenebilir.<br />
+      <br />
+Ayrıca, programın çakışmaları önlemek için aralarındaki mesafe bu değerden daha az olduğunda bilgi bandındaki etiketleri yeniden konumlandırması için bir <span style="font-weight: bold;">etiketler arası minimum mesafe</span> (kağıt mm cinsinden) belirtmek de mümkündür.<br />
+      <br />
+Eğer <span style="font-weight: bold; font-style: italic;">Eksenden ayır</span> kutucuğu etkinleştirilirse ve <span style="font-weight: bold;">etiketler arası minimum ayırma mesafesi</span> girilmişse, bu, eksenden itibaren hem sola hem de sağa uygulanır.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="rotul_2_superf">İki Yüzeyi İçeren Öznitelikler</a></span><br />
+      <br />
+Çoğu zaman iki yüzeye atıfta bulunan verileri göstermek ilgi çekicidir.<br />
+      <br />
+Bu menüde şunları göstermek mümkündür:&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      <ul>
+        <li>Yüzey 2'nin kotu: İkinci yüzeyin (<span style="font-weight: bold;">Yüzey2</span>) kotu, yüzey 1'in (<span style="font-weight: bold;">Yüzey1</span>) some noktalarına göre etiketlenir, yani birinci yüzeyin her some noktası için ikinci yüzeyin aynı dikeyde sahip olduğu kot etiketlenir.</li>
+      </ul>
+      <ul>
+        <li>Kırmızı kot farkı: Yüzey 1 (<span style="font-weight: bold;">Yüzey1</span>) ile yüzey 2 (<span style="font-weight: bold;">Yüzey2</span>) arasındaki kot farkı, birincisinin some noktalarına göre etiketlenir.</li>
+      </ul>
+      <ul>
+        <li>Kırmızı kot farkı Sabit Mesafe: minimum bir mesafe uygulamamız gerekecektir.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>İki yüzey arasındaki kesişim noktalarının kotu.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>-1 ile çarpılmış kırmızı kot farkı<br />
+          <br />
+</li>
+        <li>Sadece yarmadaki kırmızı kot farkı.<br />
+          <br />
+        </li>
+        <li>Sadece dolgudaki kırmızı kot farkı.<br />
+        </li>
+
+      </ul>
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_2_superf.png" style="width: 573px; height: 204px;" alt="" /><br />
+      </div>
+      <br /><span style="font-weight: bold;">Yer</span>: Etiketleme, yüzey 1'e (<span style="font-weight: bold;">Yüzey1</span>), yüzey 2'ye (<span style="font-weight: bold;">Yüzey2</span>) veya <span style="font-weight: bold;">bilgi bandına</span> göre olabilir.<br />
+      <br />
+Tüm etiketler için ayrıca referans aldıkları some noktalarına göre bir yatay öteleme, bir karşılaştırma düzlemine olan mesafe, bir dönüş açısı ve çakışmaları veya yüksek veri yoğunluğunu önlemek için etiketler arası minimum ayırma mesafesi (kağıt mm cinsinden) de belirlenebilir.<br />
+      <br />
+<span style="font-weight: bold;">Baş. Kod</span> ve <span style="font-weight: bold;">Bit. Kod</span> sütunlarından, işlemi gerçekleştirmek için birinci yüzeyin minimum ve maksimum bir kodunu tanımlamaya izin verilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="talud_superf">Yüzeylerin Şevi</a></span><br />
+      <br />
+Belirtilen yüzeyin (<span style="font-weight: bold;">Yüzey1</span>) <span style="font-weight: bold;">Maks. Şev</span> değerinden (yatay/dikey oranı) daha düşük eşit şevlerini etiketlemeyi sağlar. Şevin yönüne göre, <span style="font-weight: bold;">Smb-</span> ve <span style="font-weight: bold;">Smb+</span> sembolleri (varsayılan olarak sırasıyla 173 ve 174) kullanılacaktır.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_talud_superf.png" style="width: 461px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+Ayrıca, bir etiketleme için yatay ve dikey <span style="font-weight: bold;">öteleme</span> (şevin ortasından ölçülür) ve bir <span style="font-weight: bold;">açı</span> (varsayılan semboller olan 173 ve 174 için, istisnalar dışında sıfır olmalıdır) da belirtilebilir. Ayrıca çakışmaları önlemek için <span style="font-weight: bold;">semboller arası minimum ayırma mesafesi</span> (kağıt mm cinsinden) de belirlenebilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="peraltes">Deverler</a></span><br />
+      <br />
+Her bir enkesitteki deverlerin etiketlenmesi bu menüden ayarlanabilir:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_peraltes.png" style="width: 500px; height: 204px;" alt="" /><br />
+      </div>
+      <br />
+Bu etiketleme şu şekilde olabilir:<br />
+      <ul>
+        <li>Ana taşıt yolunun ortasında.</li>
+        <li>Demiryollarına özel.</li>
+        <li>Bilgi bandı alanında. <span style="font-weight: bold;">Güney</span>, <span style="font-weight: bold;">GB</span> ve <span style="font-weight: bold;">KB</span>'ye referans verilebilir.<br />
+</li>
+      </ul>
+Tüm durumlarda, etiketleme için sembol tiplerini ve eksenin sağına ve soluna <span style="font-weight: bold;">ötelemeleri</span> belirlemek mümkündür. Dikey öteleme ile ilgili olarak, bilgi bandı durumunda karşılaştırma düzlemine göre olurken, diğer iki durumda kırmızı kota göre olacaktır. Sağ ve sol dever için dikey mesafe bağımsızlaştırılmıştır. Ayrıca, bir dönüş <span style="font-weight: bold;">açısı</span> da belirtmek mümkündür. Sıfır değerli bir açı, 594 ve 595 gibi devere özel sembollerin, devere bağlı olarak çizilirken otomatik olarak dönmesine neden olur. Ana taşıt yolunun ortasındaki dever etiketlemesi için, <span style="font-weight: bold;">işaretle</span> birlikte etiketlenmesi de seçilebilir.<br /><br /><span style="font-weight: bold;">derece</span> seçeneği, çeşitli alanlarda mevcuttur ve etiketleme değerini derece cinsine çevirir.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Metin bilgi bandında</span> kutucuğu işaretlendiğinde, B.I.= -2.00&nbsp;&nbsp; B.D. = 2.00 şeklinde iki etiket, belirtilen stil ve yerleştirme noktası (<span style="font-weight: bold;">yatay</span> ve dikey bağlantılar) ile temsil edilir. Etiketleme formatı, <span style="font-weight: bold;">format</span> kutucukları aracılığıyla değiştirilebilir. Ayrıca, eksene ve karşılaştırma düzlemine bir <span style="font-weight: bold;">mesafe</span> belirtilmelidir. <span style="font-weight: bold;">DX</span> değeri ile ilgili olarak, bu, sağ ve sol (B.I. ve B.D.) etiketler arasındaki mesafeyi temsil eder. <span style="font-weight: bold;">DY</span> değerinden, sol ve sağ deverlerin göreli Y koordinatını değiştirebiliriz.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="peraltes_cod">Koda Göre Deverler</a></span><br />
+      <br />
+      <img src="Imagenes/gut_peraltes_cod.png" style="width: 391px; height: 174px; float: right;" alt="" hspace="5" />Bu seçenek, dever etiketlerinin kırmızı kot üzerine yerleştirilmesini daha da özelleştirmeyi sağlar. Bu durumda, kırmızı kotun (yüzey 67) bir <span style="font-weight: bold;">koduna</span> özgüdür ve program, o kod ile bir sonraki arasındaki mevcut deveri hesaplar ve segmentin ortasına etiketler.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Ayrıca, etiketin eksenin sağ veya sol tarafına mı ait olduğu belirtilir, sağa ve sola dever için bir sembol ve belirtilen kod ile bir üstteki arasındaki segmentin noktasına göre bir yatay ve dikey <span style="font-weight: bold;">öteleme</span> belirtilir.<br />
+      <br />
+Ayrıca, bir dönüş <span style="font-weight: bold;">açısı</span> da belirtmek mümkündür. Sıfır değerli bir açı, 594 ve 595 gibi devere özel sembollerin, devere bağlı olarak çizilirken otomatik olarak dönmesine neden olur.<br />
+      <br /><span style="font-weight: bold;">Değer</span> açılır menüsü, deverin Yüzde, Birim Başına veya Derece Cinsinden temsil edilip edilmeyeceğini seçmeyi sağlar.<br /><br /><span class="Parf_negrita">[] Kopyalarla kullan</span> kutucuğu etkinleştirildiğinde, bu menünün tanımları kopyalar üzerinde de çalışır.<br />
+      <br />
+      <span class="Titulo_2"><a name="acota_dist">Mesafe Ölçülendirmesi</a></span><br />
+      <br />
+      <img src="Imagenes/gut_acota_dist.png" style="width: 309px; height: 174px;" alt="" align="right" hspace="6" />Bir yüzeyin iki kodu arasındaki gerçek mesafeyi etiketler. Bunun için, mesafeyi etiketlemek için kullanılacak sembol tipini, yüzeyi ve eksene göre <span style="font-weight: bold;">tarafını</span> (sağ veya sol) ve bu mesafenin hangi <span style="font-weight: bold;">kodlardan</span> ölçüleceğini belirtmek yeterlidir.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Sembolün belirtilen segmente paralel gösterileceği, dolayısıyla dönüş açısının otomatik ve kodların sırasına uygun olduğu dikkate alınmalıdır. Eğer sembol ters görünüyorsa, <span style="font-weight: bold;">Kod 1</span> ve <span style="font-weight: bold;">Kod 2</span>'yi değiştirmek yeterlidir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="anota_superf_cod">Yüzey ve Koda Göre Notasyonlar</a></span><br />
+      <br />
+Bu menü, <a href="#atrib_superf">YÜZEYLER ÜZERİNDEKİ ÖZNİTELİKLER</a> menüsüne çok benzer. Bu durumda, etiketlenecek bir özellik, eksene göre <span style="font-weight: bold;">taraf</span> (sağ veya sol), <span style="font-weight: bold;">yüzey</span> ve belirtilecek sembol tipiyle bir verinin temsil edilmek istendiği <span style="font-weight: bold;">kod</span> belirtilir.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_anota_superf_cod.png" style="width: 461px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+Etiketleme olanakları şunlardır:<br />
+      <ul>
+        <li>Kot.</li>
+        <li>Geometrik eksene olan mesafe.</li>
+        <li>Plandaki eksene (veya matematiksel eksene) olan mesafe.</li>
+        <li>Geometrik eksene olan mesafe, ancak sol taraf söz konusu olduğunda negatif işaretli.</li>
+        <li>Plandaki eksene olan mesafe, ancak sol taraf söz konusu olduğunda negatif işaretli.</li>
+        <li>Mevcut eksene olan mesafe (<a href="OL_EyM.html">genişletme ve iyileştirme projeleri</a> için). Mevcut eksenin konumu, 196 sembolü ile tanımlanan olarak kabul edilir. Bu, enkesitlere <a href="OL_perf_transv.html">enkesit oluşturma menüsünden</a> (Demiryolları için <span style="font-weight: bold; font-style: italic;">Gen. ve İyileştirme (Tümü)</span> seçeneği, mevcut eksen için çizgi tipi belirtilerek) veya ENKESİT (ALZADO) menüsünün <a href="OL_anadir_linea.html"><span style="font-weight: bold;">[Çizgi Ekle]</span></a> seçeneği aracılığıyla dahil edilebilir.</li>
+        <li>X, Y veya Z koordinatları.</li>
+      </ul>
+Veri, enkesitte, belirtilen <span style="font-weight: bold;">konuma</span> (kod, sol üst köşe, sol alt köşe veya alt orta) göre ölçülen yatay (<span style="font-weight: bold;">Yatay Mes.</span>) ve dikey (<span style="font-weight: bold;">Dikey Mes.</span>) <span style="font-weight: bold;">mesafede</span> temsil edilir.<br />
+      <br />
+Kodlanmamış yüzeyler için, <span style="font-weight: bold;">kod 0</span> koyarsak ilgili tarafın ilk noktasını kullanır ve <span style="font-weight: bold;">99999</span> veya daha yüksek bir değer koyarsak son noktayı kullanır.<br />
+      <br />
+      <span class="Titulo_2"><a name="cotas_caract">Karakteristik Kotlar</a></span><br />
+      <br />
+Bu diyalog kutusundan aşağıdaki karakteristik kotlar etiketlenebilir:<br />
+      <ul>
+        <li>Dever ekseninde etiketlenen kırmızı kot. Kullanıcı, kırmızı kotun HER ZAMAN dever ekseniyle çakıştığını ve dolayısıyla platformun ona göre herhangi bir ötelenmesinin (<a href="OL_ejes_de_giro.html">DEVER EKSENLERİ</a> menüsünde belirtilir) bu etiketin enkesitte “havada” kalmasına neden olacağını açıkça bilmelidir.</li>
+      </ul>
+      <ul>
+        <li>Bilgi bandında etiketlenen kırmızı kot. Kot değeri, her enkesit için bilgi bandı alanında (yani sabit bir alanda) etiketlenir. Kullanıcı, konumun alt ortada (Güney), sol altta (GB) veya sol üstte (KB) olmasını isteyip istemediğini seçebilir.<br />
+</li>
+      </ul>
+      <ul>
+        <li>Profilde etiketlenen kırmızı kot. İlk seçenekten farklı olarak, bu durumda kırmızı kotun kotu, 67 yüzeyinin 1 kodu üzerine etiketlenir. Daha önce açıklandığı gibi, dever ekseni ötelenmeleri varsa, bu kot kırmızı kotunkiyle çakışmayacaktır. Dolayısıyla, bu ötelenmeler varsa hataya yol açabilecek bir etiketlemedir.</li>
+      </ul>
+      <ul>
+        <li>Bilgi bandında etiketlenen arazi kotu. Kullanıcı, konumun alt ortada (Güney), sol altta (GB) veya sol üstte (KB) olmasını isteyip istemediğini seçebilir.</li>
+      </ul>
+      <ul>
+        <li>Profilde etiketlenen arazi kotu.</li>
+      </ul>
+      <ul>
+        <li>Eksene göre profil üzerinde etiketlenen kazı tabanı kotu.<br />
+          <br />
+</li>
+        <li>Bilgi bandında etiketlenen kazı tabanı kotu. Kullanıcı, konumun alt ortada (Güney), sol altta (GB) veya sol üstte (KB) olmasını isteyip istemediğini seçebilir.</li>
+
+      </ul>
+      <ul>
+        <li>Enkesit dosyasındaki mevcut ilk yüzeyin kotu. Bu, örneğin, LİNEER PROJE modülünden oluşturulmamış veya bir yöntemle değiştirilmiş ve dosyanın okunan ilk yüzeyinin herhangi bir türde bir çizgi olabileceği bir dosya durumunda kullanışlıdır. Eğer kullanıcı o yüzeyin neyi temsil ettiğini biliyorsa ve kotunu görmek istiyorsa, bu seçenek bunu başarmanın yoludur.</li>
+      </ul>
+      <ul>
+        <li>Dever ekseninde etiketlenen kırmızı kot farkı, yani dever ekseni/eksenleri ile arazi arasındaki kot farkı. Yine, kullanıcının ENKESİT (ALZADO) menüsünün <a href="OL_ejes_de_giro.html">DEVER EKSENLERİ</a> bölümünde belirtilen platformun dever eksenine göre ötelenmeleri olup olmadığını dikkate alması gerekecektir.</li>
+      </ul>
+      <ul>
+        <li>Dever ekseni konumunun altındaki arazi kotu.<br />
+          <br />
+</li>
+        <li>Kesit ekseninin altındaki arazi kotu. Kullanıcı, konumun alt ortada (Güney), sol altta (GB) veya sol üstte (KB) olmasını isteyip istemediğini seçebilir.</li>
+
+      </ul>
+      <ul>
+        <li>Raydaki alçak rayın kotu. Çift hatta, sol hattaki etiketleme için farklı bir sembol tanımlanabilir.</li>
+      </ul><ul><li>Yüksek ray üzerine yazılan deveri (mm) etiketleme imkanı.</li></ul>
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/gut_cotas_caract.png" style="width: 450px; height: 341px;" alt="" /><br />
+      </div>
+&nbsp;<br />
+Tüm durumlarda, etiketleme yapmak için bir sembol tipi atanmalıdır ve ayrıca yatay ve dikey <span style="font-weight: bold;">ötelemeler</span> ile bir dönüş <span style="font-weight: bold;">açısı</span> da belirtmek mümkündür. <span style="font-weight: bold; font-style: italic;">Dever eksenindeki Z kırmızı kot</span> ve <span style="font-weight: bold; font-style: italic;">Dever eksenindeki Z kırmızı kot farkı</span> durumunda, sembol tipi ve yatay <span style="font-weight: bold;">öteleme</span> için sağ ve sol arasında ayrım yapılır. Dikey öteleme ile ilgili olarak, bu, bilgi bandı alanında etiketleme yapıldığında karşılaştırma düzlemine göre olacaktır.<br />
+      <br />
+Ek bir tamamlayıcı olarak, karakteristik kotları temsil eden semboller, sembolün kotu olarak KM değeri ve paftalarda etiketlenmesi için öznitelik olarak karakteristik kot değeri geçirilerek paftaya eklenir. Bu şekilde, <span style="font-weight: bold;">Değiştir</span> &#8594; <span style="font-weight: bold;">Sembol</span> &#8594; <span style="font-weight: bold;">Sayısal düzenleme (MD)</span> seçeneğinden bir sembol listesi yapılırsa, şu şekilde bir liste elde edilebilir:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-style: italic;">X&nbsp;&nbsp; Y&nbsp;&nbsp; KM&nbsp;&nbsp; Karakteristik_Kot</span><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="pendiente">Eğim</a></span><br />
+      <br />
+Şevlerin etiketlenmesi durumuna benzer şekilde, <span style="font-weight: bold;">Min.Eğim</span> - <span style="font-weight: bold;">Maks.Eğim</span> (%) aralığında olduğu sürece enine eğimlerin etiketlenmesidir. Bir aralık kullanmak, eğim aralığına bağlı olarak farklı semboller kullanmayı sağlar.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_pendiente.png" style="width: 536px; height: 174px;" alt="" /><br />
+      </div>
+      <br /><img src="Imagenes/gut_pendiente_donde.png" style="width: 136px; height: 93px;" alt="" align="right" hspace="6" />
+Program, bu eğimleri belirtilen yüzeye (<span style="font-weight: bold;">Yüzey</span>) göre, ya yüzeyin kendisinde ya da bilgi bandı alanında, <span style="font-weight: bold;">Nereye</span> sütununda belirtilene bağlı olarak etiketleyecektir.<br />
+      Eğimlerin yerleşimi için bir <span style="font-weight: bold;">Yüzey</span>'den, <span style="font-weight: bold;">Bilgi Bandı</span>'ndan veya <span style="font-weight: bold;">Bilgi Bandı Kod</span>'dan başlama imkanım olacak, bu sayede veri, segmentin orta noktası yerine kodun altındaki bilgi bandında etiketlenir.<br />
+<br />
+Ayrıca her veri için bir <span style="font-weight: bold;">kod</span> tanımlamak da mümkündür. Kod sıfırdan farklı ise, sadece o kodda biten kesim etiketlenir.<br />
+      <br />
+Doğal olarak, kullanılacak sembol tipini belirtmek gerekecektir (sağ ve sol için farklı sembol). Ayrıca, bir etiketleme için yatay ve dikey <span style="font-weight: bold;">öteleme</span> (her segmentin ortasından ölçülür) ve bir <span style="font-weight: bold;">açı</span> (varsayılan semboller olan 358 ve 359 için, istisnalar dışında sıfır olmalıdır) da belirtilebilir. Ayrıca çakışmaları önlemek için <span style="font-weight: bold;">semboller arası minimum ayırma mesafesi</span> (kağıt mm cinsinden) de belirlenebilir.<br />
+      <br />
+Son olarak, her satırın başındaki kutucuk, eğimin yüzde yerine birim başına etiketlenmesini sağlayacaktır.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="acota_superf_cod">Yüzeylere ve Kodlara Göre Ölçülendirme (Üstyapı Astarları)</a></span><br />
+      <br />
+Aşağıdaki alt menü, enkesitlerde iki kod arasındaki mesafeyi ölçülendirmeyi sağlar:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_acota_superf_cod.png" style="width: 609px; height: 189px;" alt="" /><br />
+      </div>
+      <br />
+Bir ölçülendirme çizmek için, sol ve sağ uçlara karşılık gelen <span style="font-weight: bold;">yüzeyi</span>, <span style="font-weight: bold;">kodu</span> ve eksenin <span style="font-weight: bold;">tarafını</span> belirtmek gerekir. Dikey ölçülendirme çizgileri o yüzeylere göre referans alınır ve belirtilen <span style="font-weight: bold;">dy</span> mesafesinden başlar. Ölçülendirme oku, belirtilen referans yüzeyinin (sağ veya sol) kodundan dikey bir <span style="font-weight: bold;">dy</span> mesafesine yerleştirilecektir. Bu, aynı yatayda ardışık ölçülendirmeler göstermeyi sağlar. <span style="font-weight: bold;">Taraf </span>sütununda, sol/sağ yerine, ucun plandaki eksen olmasını seçebiliriz (bu durumda yüzey veya kod belirtmeye gerek kalmaz).<br />
+      <br />
+<span style="font-weight: bold;">Kod</span> sütunundaki kutucuğu etkinleştirerek, program belirtilen değerin hemen altındaki kodu arayacaktır. <br />
+      <br />
+Pencerenin üst kısmında, <span style="font-weight: bold;">ok</span> ve <span style="font-weight: bold;">değer</span> etiketlemesi için sembol tiplerini ve ölçü <span style="font-weight: bold;">çizgisinin</span> tipini belirterek ölçülendirmenin görünümünü yapılandırabiliriz.<br />
+<br />
+Aşağıdaki örnek, Romanya'ya karşılık gelen program kütüphanesindeki <span class="Archivo">ROM_003.gut</span> şablonuna aittir ve yukarıdakileri göstermektedir:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_acota_superf_cod_ej.png" style="width: 410px; height: 237px;" alt="" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">Üstyapı astarları</span> için bu tür ölçülendirmeleri yapmak için ek bir menü vardır. Normal menüyle aynı şekilde kullanılır, <span style="text-decoration: underline;">Y</span>atay, <span style="text-decoration: underline;">D</span>ikey veya <span style="text-decoration: underline;">Ü</span>styapı astarları arasında seçim yapmak için ek bir <span style="font-style: italic;">Y/D/Ü</span> sütunu bulunur. Bu menü, genişletme ve/veya takviye bölgelerini ölçülendirmek için de yararlı olabilir.<br /><br /><span class="Parf_negrita">Bilgi bandına yaz</span>: ölçülen mesafenin bir notasyonunu bilgi bandına ekleyebilirsiniz.<br />
+      <br />
+      <span class="Titulo_2"><a name="pend_V_H">Yüzeylere ve Kodlara Göre D:Y Eğim</a></span><br />
+      <br />
+Bu alt menü, belirtilen yüzeyin eğimlerini D:Y şeklinde etiketlemeyi sağlar:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_pend_V_H.png" style="width: 609px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+Etiketlenmek istenen eğim, yüzey <span style="font-weight: bold;">kodu</span> ve <span style="font-weight: bold;">taraf</span> (sağ veya sol) aracılığıyla referans alınır, böylece program o some noktası ile bir önceki arasındaki segmenti etiketler.<br />
+      <br />
+Aşağıdaki veri sütunları, kullanılacak sembol tiplerinden başka bir şey değildir; öyle ki, 1810 1:1 eğimleri, 1811 1:2 eğimleri, 1812 1:3 eğimleri vb. etiketler. Diğer durumlar için, 1, 2, 3, 4 ve 5'ten farklı bir gerçek sayı olan x için x:1 tipi eğimleri etiketlemeyi sağlayan 1809 sembolü kullanılır.<br />
+      <br />
+Sembol, belirtilen dx ve dy mesafeleriyle segmentin merkezine göre <span style="font-weight: bold;">ötelenmiş</span> olacaktır. Ayrıca sıfırdan farklı bir <span style="font-weight: bold;">açı</span> girilirse, o açı kullanılacaktır, aksi takdirde sembol segmente paralel gösterilecektir.<br />
+      <br />
+Kütüphanede yer alan <span class="Archivo">ROM_002.gut</span> ve <span class="Archivo">ROM_003.gut</span> şablonları bu seçenekleri kullanır.<br />
+      <br />
+<span class="Parrafo">
+      </span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

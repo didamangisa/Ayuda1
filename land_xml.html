@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>LandXML Formatı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>LandXML FORMATI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><br />
+      <span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><a href="#importacion">İçe Aktarma</a><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#selec_dir"><span class="Parrafo">İçe aktarma klasörünün veya dizininin seçimi</span></a><br />
+      <a href="#imp_ejes_planta">Plan Güzergahlarının İçe Aktarılması</a><br />
+
+      <a href="#imp_rasantes">Profil ve Deverlerin İçe Aktarılması</a><br />
+      <a href="#imp_perf_transv">Enkesitlerin İçe Aktarılması</a><br />
+      <a href="#imp_carto_sup">Harita ve Yüzeylerin İçe Aktarılması</a><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><a href="#exportacion">Dışa Aktarma</a></span><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><img style="width: 311px; height: 179px; margin-left: 7px;" alt="" src="Imagenes/ejemplo_landxml.png" align="right" /><span class="Parrafo">LandXML, inşaat mühendisliği ve yüzey modelleme yazılım endüstrisinin ihtiyaçlarına uyarlanmış, <span style="font-weight: bold;">tescilli olmayan bir</span> XML dosya formatıdır.<br />
+      <br />
+
+Bu format, geniş bir şirketler konsorsiyumu tarafından geliştirilmiştir ve geliştirilmektedir ve dünya çapında yaygın olarak kullanılmaktadır. Amacı, farklı yazılım şirketlerinin programları arasında veya aynı programın farklı sürümleri arasında bilgi alışverişini mümkün olduğunca kolaylaştırmaktır.<br />
+      <br />Kullanıcılar için gerekli tüm bilgileri ve geliştiriciler için özellikleri içeren birkaç web sitesi bulunmaktadır.<br />
+      </span>
+      
+      <br />
+Istram, LandXML dosya okuyucusu içinde, bir güzergahtaki deverleri temsil edecek olan <span style="font-weight: bold;">Cant</span> elemanlarını analiz edebilir. Bunlar, onları içeren her eksende çiftler halinde okunur ve onlardan her eksen için deverlerin <a href="OL_peraltes.html">.prl</a> dosyası oluşturulur.<br />
+<br />
+      <span class="Titulo_2"><a name="importacion">İçe Aktarma</a></span><br />
+
+      <br />
+LandXML içe aktarma kutusuna, hem <span style="font-weight: bold;">Dosya</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">LandXML İçe Aktar</span> menüsünden hem de GÜZERGAH PROJESİ modülünün PLAN <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">İçe Aktar</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; </span></span></span></span></span></span><span style="font-weight: bold;">LandXML (xml)</span> menüsünden erişilebilir.<br />
+
+      <br />
+      <div style="text-align: center;"><img style="width: 358px; height: 327px;" alt="" src="Imagenes/dialogo_imp_landxml_general.png" /><br />
+      </div>
+      <br />
+Bu iletişim kutusu iki bölüme ayrılmıştır. Sol taraf, kullanıcının içe aktarılacak nesne veya nesnelerin türünü seçebileceği bir ağaç yapısından oluşurken, sağ tarafta seçilen nesne türüyle ilgili farklı içe aktarma seçenekleri gösterilir.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="selec_dir">İçe aktarma klasörünün veya dizininin seçimi</a></span><br />
+
+      <br />
+Ağacın <span style="font-weight: bold;">Genel</span> düğümünden kullanıcı, içe aktarma işlemi sonucunda oluşacak dosyaların kaydedileceği klasörü seçebilir. Varsayılan olarak mevcut klasör seçilir, ancak <span style="font-weight: bold;">[...]</span> butonuna basarak kullanıcı başka bir konum seçebilir.<br />
+      <br />Oluşturulan dosyaların adı, LandXML dosyasındaki nesnelerin dahili adlarına göre olacaktır.<br /><br />
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="imp_ejes_planta">Plan Güzergahlarının İçe Aktarılması</a></span><br />
+      <br />
+      Plan güzergahlarının içe aktarılması için program, &nbsp;<span class="Archivo">.xml</span> dosyasında bulunan her bir güzergah için bir &nbsp;<span class="Archivo">.cej</span> dosyası oluşturma veya hepsini içerecek tek bir &nbsp;<span class="Archivo">.cej</span> oluşturma seçeneği sunar.<br />
+
+      <br />
+Ardından, oluşturulacak <a href="OL_planta_alineaciones.html">aliyman tipi</a> belirlenir ve aşağıdaki olanaklar sunulur:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tümü Sabit</span>: Tüm aliymanlar <a href="OL_planta_alineaciones.html#fija_2p">sabit</a> olacak ve varsa <a href="OL_planta_curvas_transicion.html">geçiş eğrileriyle</a> birbirine bağlanacaktır.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sabit + Döner</span>: Her eksenin ilk aliymanı <a href="OL_planta_alineaciones.html#fija_2p">sabit</a> olacak ve geri kalanı, ilgili <a href="OL_planta_curvas_transicion.html">geçiş eğrileriyle</a> birlikte bir dizi <a href="OL_planta_alineaciones.html#giratoria">döner</a> aliymandan oluşacaktır.</li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Standart (sabit + serbest)</span>: Güzergahlar, ilgili <a href="OL_planta_curvas_transicion.html">geçiş eğrileriyle</a> birlikte <a href="OL_planta_alineaciones.html#fija_2p">sabit</a> ve <a href="OL_planta_alineaciones.html#flotante">serbest</a> aliyman dizileri olarak tanımlanacaktır.</li>
+      </ul>
+      
+      <div style="margin-left: 40px;">Plan verilerinin girilmesinde belirli sınırlamalara sahip programlardan gelen bazı güzergahlar, örneğin ardışık iki klotoid kolunu içerebilmek için çok küçük düz aliymanlar içerir.<br />
+
+      <br />
+Bu metodoloji belirsizlikler getirebilir, bu nedenle içe aktarıcı bu <a href="OL_planta_alineaciones.html#fija_2p">sabit</a> aliymanları <a href="OL_planta_alineaciones.html#enlace">bağlantı</a> aliymanlarına dönüştürür ve önceki serbest aliymanı bir döner aliymanla değiştirir. Bu durumda, <span style="font-weight: bold;">Sabit -> bağlantı değişim uzunluğu</span> parametresi, bir <a href="OL_planta_alineaciones.html#fija_2p">sabit</a> aliymanın <a href="OL_planta_alineaciones.html#enlace">bağlantıya</a> dönüştürülmemesi için sahip olması gereken minimum uzunluğu belirtir.<br />
+
+      </div>
+
+      <br />
+Klotoidlere gelince, &nbsp;<span class="Archivo">.cej</span>'de <span style="font-weight: bold;">uzunluklarına</span> mı yoksa <span style="font-weight: bold;">parametrelerine</span> mi göre tanımlanacağına karar vermek mümkündür.<br />
+      <br /><div style="text-align: center;"><img style="width: 400px; height: 365px;" alt="" src="Imagenes/dialogo_imp_landxml_planta.png" /><br /></div><br /><ul class="Parf_negrita"><li>-5 tipi aliymanlar için ayarlama</li></ul><div style="margin-left: 40px;">Aşağıdakiler, aliyman dizisi olarak "Tümü sabit" seçildiğinde geçerlidir. Güzergah teğet olmayan aliymanlarla geldiğinde, içe aktarıcı kırık noktalarını kabul eder.<br /><br />Bir klotoid teğet olmadığında veya yarıçapları teğet olduğu ana aliymanlarla uyuşmadığında, içe aktarıcı klotoidi kilitlemek için Tip = 5 (nokta ve azimut ile doğru) veya Tip = -5 (nokta ve azimut ile dairesel) bir aliyman ekler.<br /><br />"-5 tipi aliymanlar için Ayarlama = 0.001" parametresi, "tam tur dönen" aliyman döngülerini önlemek için yarıçapları biraz değiştirir.<br /><br />Bu her zaman başarılamaz, çünkü klotoidin yarıçapı ile bitişik dairesel yayın yarıçapı arasındaki uyumsuzluğun büyüklüğüne bağlıdır, bu nedenle PLAN menüsünde güzergahı gözden geçirmek gerekir.<br /><br />Bir liste, güzergahın analizini ve uyumsuzlukları içerir.<br /></div><ul><li><span style="font-weight: bold;">.pol yaz</span></li></ul><div style="margin-left: 40px;">Bir <span class="Archivo">.pol</span> dosyası yazılır. Bu dosyayı yazmak için, "Tümü tek bir dosyaya" ve "Dosya tipi.vol" seçili olmalıdır. Bu son seçenek, ağacın <span style="font-weight: bold;">Profiller ve Deverler</span> Düğümünde bulunur.<br /></div><br />
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="imp_rasantes">Profil ve Deverlerin İçe Aktarılması</a></span><br />
+      <br />
+      Ondalık basamak sayısı ve hassasiyet belirtilir ve elde edilecek dosya türü seçilir:<br /><ul><li>Sadece içe aktarılan profil verisini içerecek bir &nbsp;<span class="Archivo">.vol</span>.</li></ul><ul><li><a href="OL_rasantes_diseno.html">PROFİLLER</a> menüsünden yüklenecek bir &nbsp;<span class="Archivo">.ras</span>.</li></ul>Ayrıca deverleri içeren "Superelevation" bölümü de içe aktarılacaktır. Çatı eğimi değeri, <span class="Parf_negrita">Çatı Eğimi</span> kutucuğunda değiştirilebilir.&nbsp;<br /><br /><div style="text-align: center;"><img style="width: 350px; height: 319px;" alt="" src="Imagenes/dialogo_imp_landxml_rasantes.png" /><br /></div><br /><br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="imp_perf_transv">Enkesitlerin İçe Aktarılması</a></span><br />
+      <br />
+Eğer içe aktarılacak LandXML dosyası enkesitler içeriyorsa, bunlardan ilgili &nbsp;<span class="Archivo">.per</span> dosyalarını oluşturmak mümkündür. <br /><br />Bunun için bir <span style="font-weight: bold;">temel çizgi tipi</span> (varsayılan olarak L66) belirtmek yeterlidir; öyle ki, bir enkesitin farklı çizgileri içe aktarılırken, programın &nbsp;<span class="Archivo">.xml</span>'de bulduğu ilk çizgiye o temel çizgi tipi atanır, bir sonrakine öncekinin tipi bir artırılarak atanır ve bu şekilde devam eder. Örneğin, içe aktarılacak enkesitler her biri 4 çizgi içeriyorsa ve temel tip olarak 66 bırakılırsa, oluşturulan &nbsp;<span class="Archivo">.per</span>'de 66, 67, 68 ve 69 tipi çizgiler elde edilir.<br /><br />
+      <div style="text-align: center;"><img style="width: 350px; height: 319px;" alt="" src="Imagenes/dialogo_imp_landxml_per.png" /><br /></div>
+<br />Enkesitleri içe aktarmanın başka bir yolu da bir <span style="font-weight: bold;">dönüşüm tablosu</span> kullanmaktır. Bu seçenek seçildiğinde, LandXML dosyalarının enkesitlerinde bulunan farklı yüzeylere, temel bir çizgi tipinden otomatik olarak atanmak yerine, çizgi tiplerini atama imkanı vardır. Bu şekilde ve <span style="font-weight: bold;">İçe Aktar</span> butonuna basıldıktan sonra, kullanıcının dönüşüm tablosunu oluşturabileceği aşağıdaki iletişim kutusu gösterilir:<br /><br />
+<br /><div style="text-align: center;"><img style="width: 428px; height: 375px;" alt="" src="Imagenes/dialogo_imp_landxml_tablaTrad.png" /><br /></div><br />Bu kutuda, &nbsp;<span class="Archivo">.xml</span>'de bulunan farklı yüzeyler gösterilir ve kullanıcı her birine atamak istediği tipi belirtebilir. <span style="font-weight: bold;">Tüm yüzeyler için çizgi tipi</span> seçeneği, bu alanda belirtilen aynı çizgi tipinin bulunan tüm yüzeylere atanmasına neden olur. <img style="width: 16px; height: 14px;" alt="" src="Imagenes/icono_abrir.png" /> ve <img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_guardar.png" /> butonları, farklı çalışma oturumlarında kullanılabilmeleri için dönüşüm tablolarını &nbsp;<span class="Archivo">.txt</span> dosyalarına sırasıyla <span style="font-weight: bold;">yüklemeyi</span> ve <span style="font-weight: bold;">kaydetmeyi</span> sağlar.<br /><br /><span style="font-weight: bold;">Gereksiz yüzeyleri sil</span> seçeneği ile, program enkesitlerin yüzeylerini oluştururken diğerlerinin içinde bulunan yüzeyleri siler. Bu seçenek, içe aktardığımız dosyanın tekrar eden noktaları olan çeşitli yüzeylere sahip olduğunda kullanılır.<br />
+      <br />
+Enkesitleri içe aktarırken, program çizgileri eksene göre 'böler' ve böylece her çizginin köşe noktalarının sırasını değiştirir. Bazı durumlarda bu etki istenmez. Bunu önlemek için, <span style="font-weight: bold; font-style: italic;">Noktaların sırasını koru</span> seçeneğini etkinleştirmek gerekir.<br />
+      <br />
+      <img style="width: 275px; height: 358px; margin-left: 7px;" alt="" src="Imagenes/dialogo_imp_landxml_tablaTradCod.png" align="right" />LandXML dosyaları içe aktarıcısı, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün LandXML dosyalarına yazdığı enkesitlerin kodlarını dikkate alır, yani enkesit dosyaları LandXML dosyasının kodları dikkate alınarak oluşturulur.<br /><br />
+Profillerle ilişkili kodlar başka bir program tarafından oluşturulduğunda ve kullanılanlarla bir karşılığı olmadığında, ilgili seçeneği işaretleyerek bir <span style="font-weight: bold;">kod dönüşüm tablosu</span> oluşturmak mümkündür. Bu durumda, içe aktarma işlemi sırasında kodlar arasında karşılık oluşturulabilen bir iletişim kutusu gösterilir.<br /><br />
+<span style="font-weight: bold;">Kodları 0 mesafesinden artan şekilde numaralandır</span> kutucuğu etkinleştirildiğinde, kodlara 0 mesafesindeki nokta için kod değeri 1'den başlayarak artan değerler verilir.<br />
+<br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="imp_carto_sup">Harita ve Yüzeylerin İçe Aktarılması</a></span><br />
+      <br />
+LandXML dosyaları içe aktarıcısı, &nbsp;<span class="Archivo">.xml</span> dosyasında bulunan yüzeylerden ve tekil noktalardan &nbsp;<span class="Archivo">.edm</span> dosyaları da oluşturabilir. <span style="font-weight: bold; font-style: italic;">Her yüzey için bir .edm dosyası oluştur</span> seçeneği etkinken, &nbsp;<span class="Archivo">.xml</span>'de bulunan her yüzey için o yüzeyle ilişkili bir &nbsp;<span class="Archivo">.edm</span> oluşturulur.<br />
+      <br />
+Önceki seçenek etkin değilse, her yüzeyin belirli bir modele (0,1,2,...) yazıldığı tek bir &nbsp;<span class="Archivo">.edm</span> dosyası oluşturulur.<br />
+      <br />
+İçe aktarmaya eklenen başka bir olasılık da, <span style="font-weight: bold;">DataPoints</span> elemanlarını <span style="font-weight: bold;">tekil noktalar</span> veya <span style="font-weight: bold;">polilineler</span> olarak çevirme imkanını seçmemizdir. Varsayılan olarak tekil noktalar olarak çevrilirler.<br />
+      <br />
+Ayrıca, <span style="font-weight: bold;">Breaklines</span>, <span style="font-weight: bold;">Contours</span>, <span style="font-weight: bold;">Boundarys</span>,&nbsp;<span style="font-weight: bold;">Parcels veya PlanFeatures</span>'ı bir çizgi tipi ve bir modelle ve <span style="font-weight: bold;">DataPoints</span> ile <span style="font-weight: bold;">CgPoints</span>'i bir sembol tipi ve bir Istram modeliyle tanımlayabilirsiniz. İçe aktarmada bir harita &nbsp;<span class="Archivo">.edm</span> dosyası oluşturulacaktır.<br /><br /><span class="Parf_negrita">Parcel</span> elemanlarına gelince: Her Parcel elemanı kapalı bir poliline oluşturur. Sadece çizgilerden ve eğrilerden oluşan Parcel elemanları çevrilecektir.<br /><br /><span class="Parf_negrita">CgPoint</span> elemanlarına gelince, bu elemanların "code" özelliği metin olarak oluşturulabilir. [<span class="Parf_negrita">CgPoint</span>] butonunda, name ve code özniteliklerinin oluşturulması için yapılandırma seçenekleri bulunur.<br /><br />
+      <div style="text-align: center;"><img style="width: 555px; height: 506px;" alt="" src="Imagenes/landxml_imp_carto.png" /><br />
+      </div>
+
+<br />Ayrıca, LandXML'in Definition bölümlerinden TTP dosyaları da oluşturulabilir. LandXML dosyasının içerdiği her Definition bölümü için bir TTP dosyası oluşturulur. TTP dosyalarının adı, <span class="Parf_negrita">TTP temel adı</span> kutucuğunda belirtilir.<br /><br class="Parf_negrita" /><span class="Parf_negrita">BreakLines için dönüşüm tablosu kullan</span>: Eğer bu kutucuk etkinse, her bir BreakLine türü için çizgi tipi ve modeli detaylandırılabilir.<br /><br />
+      <br />
+      <span class="Titulo_2"><a name="exportacion">Dışa Aktarma</a></span><br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ile LandXML formatına dosya dışa aktarma veya oluşturma, programın çeşitli bölümlerinden mümkündür:<br />
+      <ul>
+        
+        <li><img style="width: 326px; height: 179px; margin-left: 7px;" alt="" src="Imagenes/exportar_landxml.png" align="right" />SAYISAL HARİTACILIK <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">Dosya</span> </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">Dışa Aktar</span>. Bu seçenekle, çizimi (çizgiler ve noktalar) LandXML formatına dışa aktarmak mümkündür.</span></span></span></span></span></span></li>
+
+      </ul>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Tekil noktalar &nbsp;<span class="Archivo">&lt;CgPoint&gt;</span> elemanları olarak, eşyükselti eğrileri &nbsp;<span class="Archivo">&lt;Contour&gt;</span> elemanları olarak ve geri kalan çizgiler &nbsp;<span class="Archivo">&lt;BreakLine&gt;</span> elemanları olarak yazılır.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></div>
+
+      <ul>
+        <li><a href="EDM_topografia.html">TOPOGRAFYA</a>'dan, üçgenlemeleri LandXML formatında <a href="EDM_topografia.html#guardado">kaydetmek</a> mümkündür.</li>
+      </ul>
+
+      <ul>
+        <li>GÜZERGAH PROJESİ'nin çeşitli listelerinden:</li></ul>
+      <ul>
+        <ul>
+          <li><a href="OL_listados_exportacion.html">DIŞA AKTARMA</a> listelerinde, <a href="OL_listados_exportacion.html#landXML">LandXML'e dışa aktarma</a> için özel bir menü bulunur.</li>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <li><a href="OL_listados_replanteos.html">APLİKASYON</a> listelerinde, LandXML dosyaları oluşturmayı sağlayan birkaç menü bulunur: <a href="OL_listados_replanteos.html#rep_firmes">üstyapı aplikasyonu</a>, <a href="OL_listados_replanteos.html#cotas_refino">ince tesviye kotları</a> ve <a href="OL_listados_replanteos.html#sobreexc">fazla kazı</a>.<br />
+          </li>
+        </ul>
+
+      
+      </ul>
+
+
+      
+      <span class="Parrafo"><span class="Parrafo"> </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>```

@@ -1,0 +1,897 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Raster Görüntüler</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>RASTER GÖRÜNTÜLER<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo">
+      <a href="#carga">Görüntü Yükleme</a></span><br />
+      <span class="Parrafo">
+      <a href="#arbol">Görüntü Ağacı veya Kataloğu</a></span><a href="#edic_ajust_zoom"><span class="Parrafo"></span></a><br />
+      <span class="Parrafo"><a href="#ascii_grid_geotiff_cota">Kotlu ASCII-Grid ve GeoTIFF Görüntüleri</a><br />
+      <a href="#filtros">Filtreler ve Gölgelendirme</a><br />
+</span>
+      <span class="Parrafo">
+      <a href="#conversion">Görüntülerin Dönüştürülmesi ve Kaydedilmesi</a></span><br />
+      <span class="Parrafo">
+      </span><a href="#organizacion"><span class="Parrafo"><span class="Parrafo">Görüntülerin Düzenlenmesi</span></span></a><br />
+      <a href="#propiedades_opacidad">Görüntü Özellikleri</a><br />
+      <a href="EDM_imagenes.html#edic_ajust_zoom"><span class="Parrafo">Görüntü Düzenleme, Ayarlar ve Yakınlaştırma</a><br />
+      <span class="Parrafo"><a href="#recintos">Kırpma Alanları</a></span><br />
+      <span class="Parrafo"><a href="#imagenes_remotas">Uzak Sunuculardan Görüntü Alma</a><br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#wms">WMS Servisleri</a><br />
+</span>
+      <a href="EDM_imagenes.html#wfs"><span class="Parrafo">WFS Servisi</span></a><br />
+<span class="Parrafo"><a href="#google">Google Servisleri</a><br />
+      <a href="#servicios_bing">Bing ve OpenStreetMap Servisleri</a><br />
+      <a href="#srtm">SRTM Dosyalarını İndirme</a><br />
+</span>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><a href="#utilidades">Yardımcı Araçlar</a><br />
+      </span><span class="Parrafo"></span></div>
+
+      
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+      ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>,
+coğrafi referanslı olsun ya da olmasın ve her boyutta, mevcut formatların çoğundaki görüntüleri yüklemeye izin verir. Görüntüler,
+görüntülerin coğrafi konumlandırılması veya raster görüntüler içeren paftaların kompozisyonu için
+bireysel olarak konumlandırılabilir ve işlenebilir ve hem fiziksel olarak hem de
+PostScript, PDF, DWG/DXF,... dillerinde yazdırılabilir.<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 691px; height: 36px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px; text-align: left;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 647px; text-align: justify;"><span class="Info">Kullanıcının
+bir koordinat dönüşümü veya hatta bir C.R.S. değişikliği yapması durumunda,
+yüklenen görüntüler de bu dönüşümde dikkate alınır ve ilgili deformasyon
+onlara uygulanır.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Programın okuyabildiği formatlar arasında şunlar bulunmaktadır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">JPG veya JPEG, BMP, ECW, TIF veya TIFF
+(kotlu veya kotsuz GeoTIFF dahil), PNG, GIF, SID, PPM ve <a href="ascii_grid.html">ASCII-Grid</a>
+(bu son format, dolayısıyla, bir görüntü olarak da işlenebilir).</span></li>
+      </ul>
+      <ul>
+        <li>Bu teknolojiyle uyumlu kameralarla oluşturulmuş,
+GPS konum bilgisine sahip fotoğrafların yüklenmesine izin verilir.
+Yüklendikten sonra, belirtilen konuma yerleştirileceklerdir.&nbsp; </li>
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo">Coğrafi referansların
+harici dosyalarda gelmesi durumunda, bu dosyaların görüntüyle aynı ada
+sahip olması ve şu uzantılardan birine sahip olması gerekir:&nbsp;<span class="Archivo">.jpw</span>,&nbsp;<span class="Archivo">.jg2</span>,&nbsp;<span class="Archivo">.jp2</span>,&nbsp;<span class="Archivo">.eww</span>,&nbsp;<span class="Archivo">.sdw</span> veya&nbsp;<span class="Archivo">.wld</span>.</span></li>
+      </ul>
+      <span class="Parrafo">Farklı türdeki
+coğrafi referans dosyalarının içeriği genellikle benzerdir ve görüntünün konumunu
+(ofset), ölçeğini ve dönüşünü ve bazı durumlarda C.R.S.'yi bile
+içerir (&nbsp;<span class="Archivo">.prj</span> formatında olduğu gibi).<br />
+      <br />
+      </span><img style="width: 265px; height: 46px;" alt="" src="Imagenes/toolbar_img.png" align="right" hspace="6" /><span class="Parrafo">Görüntülerin
+genel yönetimi, düzenlenmesi de dahil olmak üzere,
+standart araç çubuğundaki &nbsp;<img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarEstandar_imag.png" /> simgesiyle veya <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Araç Çubuklarını Göster</span> &#8594; <span style="font-weight: bold;">Raster Görüntüler</span> menüsünden açılabilen
+görüntü araç çubuğundan yapılır.<br />
+      <br />
+Bu araç çubuğu aşağıdaki simgelerden oluşur:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 80px; width: 627px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_archivo.png" /><br />
+            </td>
+            <td style="font-weight: bold; font-style: italic; width: 63px;">Dosya<br />
+            </td>
+            <td style="width: 32px; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_zoom.png" /><br />
+            </td>
+            <td style="width: 69px; font-weight: bold; font-style: italic;">Yakınlaştır<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarImagenes_filtros.png" /><br />
+            </td>
+            <td style="width: 107px; font-weight: bold; font-style: italic;">Filtreler<br />
+            </td>
+            <td style="width: 31px; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_google.png" /><br />
+            </td>
+            <td style="font-weight: bold; font-style: italic; width: 107px;">Google Servisleri<br />
+            </td>
+            <td style="width: 21px; text-align: center;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarImagenes_recintos.png" /><br />
+            </td>
+            <td style="font-weight: bold; font-style: italic; width: 56px;">Kırpma Alanları<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_edicion.png" /><br />
+            </td>
+            <td style="font-weight: bold; font-style: italic; width: 63px;">Düzenle<br />
+            </td>
+            <td style="width: 32px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarImagenes_organizar.png" /><br />
+            </td>
+            <td style="width: 69px; font-weight: bold; font-style: italic;">Sırala<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 23px; height: 23px;" alt="" src="Imagenes/icono_imagenes_descarga.png" /><br />
+            </td>
+            <td style="width: 107px; font-weight: bold; font-style: italic;">Görüntü İndirme Servisleri<br />
+            </td>
+            <td style="width: 31px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarImagenes_util.png" /><br />
+            </td>
+            <td style="font-weight: bold; font-style: italic; width: 107px;">Yardımcı Araçlar<br />
+            </td>
+            <td style="width: 21px; text-align: center;"><img style="width: 13px; height: 12px;" alt="" src="Imagenes/icono_toolBarImagenes_arbol.png" /><br />
+            </td>
+            <td style="font-weight: bold; font-style: italic; width: 56px;">Ağacı Gör<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="carga">Görüntü Yükleme</a></span><br />
+      <span class="Parrafo"><br />
+Görüntü yüklemenin birkaç yolu vardır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Ekle</span> &#8594; <span style="font-weight: bold;">Görüntü</span> menüsünden.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Görüntü araç çubuğundaki <span style="font-weight: bold;">Dosya&nbsp;<img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarImagenes_archivo.png" align="top" /></span> simgesine tıklayıp <span style="font-weight: bold;">Aç</span>'ı seçerek.</span></li></ul>
+      <ul>
+
+        <li><span class="Parrafo">Fare ile program penceresine sürükleyerek.</span></li>
+      
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Dosya</span> </span><span class="Parrafo"><span style="font-weight: bold;"><img src="Imagenes/icono_toolBarImagenes_archivo.png" alt="" style="width: 19px; height: 19px;" align="top" /></span></span><span class="Parrafo"><span class="Parrafo"> menüsündeki <span style="font-weight: bold;">Klasör Aç</span> seçeneği ile görüntü içeren bir klasör seçerek.</span><span class="Parrafo">
+Bu durumda, o klasördeki mevcut çalışma alanının sınırları içinde bulunan tüm görüntüler aynı anda yüklenir.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">WMS servisleri veya Google servisleri aracılığıyla <a href="#imagenes_remotas">uzaktan</a> indirerek.</span></li>
+      </ul>
+      <ul>
+        <li>Farklı yükleme formatları şunlardır:</li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 107px; height: 222px;" alt="" src="Imagenes/imagenes_formatos.png" /><br />
+      </div>
+      <br />
+
+      
+      <table style="text-align: left; width: 691px; height: 39px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 37px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+</td>
+<td style="vertical-align: middle; width: 636px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Bir görüntünün yükleme işlemi, &lt;Esc&gt; tuşuna basılarak herhangi bir anda kesilebilir. </span></span></span></span></td>
+</tr></tbody>
+      </table>
+      <br />
+      <img style="width: 247px; height: 240px;" alt="" src="Imagenes/img_menu_archivo.png" align="right" hspace="6" /><span class="Parrafo">İlk
+üç yolla, program kullanıcıdan yüklenecek görüntüyü ister ve eğer bu görüntü coğrafi referanslı değilse, görüntünün sol alt köşesine göreli ekleme noktasını da ister. Eğer yüklenecek görüntü coğrafi referanslı ve zaten yüklenmişse, bir uyarı mesajı gösterilir.<br />
+      <br />Ayrıca,
+yüklenecek görüntünün, EDM ile ilişkilendirilmiş olandan farklı bir <a href="EDM_georreferenciacion.html#crs">CRS</a>'ye (koordinat referans sistemi) sahip olması durumunda da bir uyarı gösterilir, böylece kullanıcı ilgili dönüşümü yapma veya bu dönüşümü yok sayma arasında seçim yapabilir. Bir dönüşüm yapmayı seçme durumunda, dönüşüm türünü ve hatta NTV2 formatında bir <span style="font-weight: bold;">grid</span> dosyasını belirtmek mümkündür.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 358px; height: 309px;" alt="" src="Imagenes/img_cargar_distCRS.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Eğer EDM boşsa ve yüklenecek görüntünün bir <a href="EDM_georreferenciacion.html#crs">CRS</a>'si varsa, o zaman bu <a href="EDM_georreferenciacion.html#crs">CRS</a> mevcut olarak ayarlanır.<br />
+      <br />
+Görüntü yüklendikten sonra, seçili veya aktif hale gelir, görüntünün köşelerinde tutma noktaları ve kenarı camgöbeği renginde gösterilir. Bu kenar, seçili olmayan görüntüler için gri renkte gösterilir. &nbsp; <a href="#utilidades"><span style="font-weight: bold;">Yardımcı Araçlar</span></a> </span><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_util.png" align="top" /><span class="Parrafo"> menüsünde, bu görüntü kenarlarının görüntülenip görüntülenmeyeceğini belirlemeyi sağlayan <a href="#ocultar_mostrar_bordes"><span style="font-weight: bold;">Kenarları Göster/Gizle</span></a> seçeneği bulunur.<br />
+      <br />
+En az bir görüntü yüklendiğinde, programın bağlam menüsü, görüntülerle yapılabilecek farklı işlemlere uyum sağlar. Bir görüntüyü seçmek için, üzerine tıklamak veya daha sonra açıklanacak olan görüntü ağacından seçmek yeterlidir.<br />
+      <br />
+Eğer birden fazla görüntü yüklenmişse, <span style="font-weight: bold;">Dosya</span> </span><span class="Parrafo"><span style="font-weight: bold;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarImagenes_archivo.png" align="top" /></span></span><span class="Parrafo"> açılır menüsündeki <span style="font-weight: bold;">Birleştir</span> seçeneği çok kullanışlı olabilir, çünkü tüm bu görüntüleri tek bir görüntüde birleştirmeyi sağlar.<br /><br /><a name="opc_carga">
+Program yeni bir görüntü yüklediğinde</a>, hemen proje klasöründe, aynı adla ancak &nbsp;<span class="Archivo">.ovr</span> uzantısıyla bir kopyasını oluşturur. Bu format, gelecekteki çalışma oturumlarında yüklemeyi ve görüntülerin işlenmesini önemli ölçüde hızlandırır.<br />
+      <br /></span><img style="width: 197px; height: 137px; margin-left: 7px;" alt="" src="Imagenes/img_opc_carga.png" align="right" /><span class="Parrafo"> Ancak, bu davranışın istenmeyen bir yan etkisi olabilir. Örneğin, daha önce yüklenmiş bir başkasıyla aynı ada sahip yeni bir görüntü yüklemek istenirse, program ikincisiyle çakışacak olan &nbsp;<span class="Archivo">.ovr</span> dosyasını yükleyecektir ve dolayısıyla beklenen yükleme gerçekleşmeyecektir.<br />
+      <br />Bu davranışı önlemek için, <span style="font-weight: bold;">Dosya</span> </span><span class="Parrafo"><span style="font-weight: bold;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarImagenes_archivo.png" align="top" /></span></span><span class="Parrafo"> simgesine tıklandığında açılan menüden <span style="font-weight: bold;">Seçenekler</span>'den <span style="font-weight: bold; font-style: italic;">Görüntüyü yeniden işle</span> seçeneğini etkinleştirmek gerekecektir. Aynı iletişim kutusunda, &nbsp;<span class="Archivo">.ovr</span> dosyalarının oluşturulmasını önleme imkanı da sunulur.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="arbol">Görüntü Ağacı veya Kataloğu</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img style="width: 201px; height: 309px; margin-left: 7px;" alt="" src="Imagenes/img_arbol.png" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Görüntü ağacı</span>, görüntü araç çubuğundaki </span><img style="width: 13px; height: 12px;" alt="" src="Imagenes/icono_toolBarImagenes_arbol.png" /><span class="Parrafo"> düğmesi aracılığıyla açılır ve görüntüleri <span style="font-weight: bold;">yerel</span> (bilgisayardan veya yerel çalışma ağından erişilebilir) ve <a style="font-weight: bold;" href="#imagenes_remotas">uzak</a> (WMS veya Google sunucularından gelen) olarak sınıflandırır.<br />
+      <br />Yüklenen görüntülerin daha iyi yönetimi için, görüntü ağacının <span class="Parf_negrita">Yerel</span> düğümü içinde kullanıcı klasörleri oluşturulmasına izin verilir.
+Bunun için, <span class="Parf_negrita">Yerel</span> düğümüne sağ fare tuşuyla tıklandığında, adını değiştirebileceğimiz yeni bir klasör oluşturma seçeneği sunulacaktır. Bir görüntü yüklendiğinde, seçili olan klasör düğümüne dahil edilecektir.<br /><br />
+Ağaçtaki görüntülerden birine farenin ikincil düğmesiyle basılırsa, görüntülerin yönetimi ve düzenlenmesiyle ilgili <a href="#edic_ajust_recint">seçeneklere</a> uyarlanmış bağlam menüsü de açılır. Bir görüntüyü ağaçtan (ve dolayısıyla projeden) silmek için, bu menüden <span style="font-weight: bold;">Kaldır</span> seçeneğini seçmek veya fareyle görüntüyü seçip klavyedeki &lt;Del&gt; tuşuna basmak yeterlidir.<br />
+      <br />
+Ağaçtaki her görüntü, <span style="font-weight: bold;">etkinleştirilmesine</span> veya <span style="font-weight: bold;">devre dışı bırakılmasına</span> olanak tanıyan bir onay kutusuyla birlikte gösterilir.
+Devre dışı bırakılmış bir görüntünün sadece kenarlığı ve adı gösterilir. Bu,
+çok sayıda ve/veya büyük boyutlu görüntüye sahip olunması durumunda harita üzerinde gezinmeyi önemli ölçüde hızlandırır.<br />
+      <br />
+Görüntü ağacındaki görüntünün adını değiştirmek de mümkündür (bu ad değişikliği sadece ağacı etkiler, görüntü dosyasının adını etkilemez). <br />
+      <br />
+Raster görüntü seti konumlandırıldıktan sonra, projeyle ilişkilendirilen ağacı kaydetmek mümkündür, böylece sadece ağacı yükleyerek, ona bağlı tüm görüntüler de yüklenir (<span style="font-weight: bold;">Dosya</span> </span><span class="Parrafo"><span style="font-weight: bold;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarImagenes_archivo.png" align="top" /></span></span><span class="Parrafo"> simgesine tıklandığında gösterilen açılır menüden <span style="font-weight: bold;">Ağacı Kaydet</span> seçeneği).<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 691px; height: 31px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 632px; text-align: justify;">Program, otomatik olarak, <span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> dosyasıyla aynı ada ve &nbsp;<span class="Archivo">.fmi</span> uzantısına sahip bir dosya oluşturur, bu dosya görüntü ağacını kaydeder. Bir &nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> dosyası yüklendiğinde, bu dosyada yer alan görüntü ağacı da aynı anda yüklenecektir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="ascii_grid_geotiff_cota">Kotlu ASCII-Grid ve GeoTIFF Görüntüleri</a></span><br />
+      <span class="Parrafo"><br />
+Bu tür görüntüler, özelliklerinden dolayı özel bir değerlendirmeyi hak eder. Bir yandan, <a href="ascii_grid.html">ASCII-Grid formatı</a>,&nbsp;</span><span class="Parrafo">
+      ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span><span class="Parrafo"> tarafından <a href="EDM_topografia.html">TOPOGRAFYA</a>'dan
+bir nokta bulutu olarak okunabilir, YÜZEY MODELLEME modülünden oluşturulabilir vb., ancak aynı zamanda
+kotlu bir görüntü olarak da işlenebilir.<br />
+      <br />
+Öte yandan, GeoTIFF formatı (&nbsp;<span class="Archivo">.tif</span>
+coğrafi referanslı dosyalar), görüntünün kendisine ek olarak, her pikseline bir
+kot değeri atanmış bir varyanta sahiptir, bu da onu gerçek bir 3B görüntü haline getirir.<br />
+      <br />
+Her iki durumda da, diğer formatlarla yapılan değerlendirmelere ek olarak, şunlar dikkate alınmalıdır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Yüzeye yakalama, bu formatlarda yüklenen görüntüleri dikkate alır, bu da beraberinde getirdiği tüm avantajlarla birlikte.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">GÜZERGAH PROJESİ modülünde, bu tür görüntülerden hem boykesitler hem de <a href="OL_perf_transv.html#modos_extrac">enkesitler</a> elde etmek mümkündür. Bu enkesitleri oluştururken görüntülerin yüklenmiş olması gerekir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Kota bağlı olarak <a href="#color_sombreado">gölgelendirme ve renklendirme</a> uygulamak mümkündür.</span><span class="Parrafo"><span class="Parrafo"></span></span></li>
+      </ul>
+      
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo"><a href="#utilidades"><span style="font-weight: bold;">Yardımcı Araçlar</span></a> </span></span><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_util.png" /><span class="Parrafo"><span class="Parrafo"> menüsünden, </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="ascii_grid.html">ASCII-Grid</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">GeoTIFF</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> ile yüklü kotlu görüntülerle çeşitli işlemler yapmak mümkündür, örneğin doğrudan eş yükselti eğrileri oluşturmak, gridi çizmek vb.<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><span class="Titulo_2"><a name="filtros">Filtreler ve Gölgelendirme</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span><img style="width: 175px; height: 126px;" alt="" src="Imagenes/img_filtros.png" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Filtreler</span> </span></span></span></span><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_filtros.png" /></span></span><span class="Parrafo">
+menüsü altında, düzeltmeler uygulamak veya görünümünü değiştirmek için bir
+görüntüde değişiklik yapmayı sağlayan bir dizi seçenek toplanmıştır.<br />
+      <br />
+<span style="font-weight: bold;">Kanallar</span> açılır menüsü altında, görüntünün 3 renk bileşeninden her birini etkinleştirmek veya devre dışı bırakmak mümkündür: kırmızı (R), yeşil (G) ve mavi (B).<br />
+      <br />
+<span style="font-weight: bold;">Ters Çevir</span> seçeneği, görüntünün renk bileşenlerini tersine çevirerek değiştirir.<br />
+<br /><a name="corregir_bordes"><span style="font-weight: bold;">Kenarları Düzelt</span> seçeneği</a>,
+kullanıcı tarafından tanımlanan beyaz/siyah veya
+başka herhangi bir renkteki görüntü kenarlıklarını, geri kalan
+iç pikselleri etkilemeden kaldırmayı sağlar. Bu, <a href="#transparencia">şeffaflık</a> özelliğine benzer bir seçenektir, ancak yalnızca görüntünün kenarlıklarını etkiler.<br /><br /></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 218px; height: 165px;" alt="" src="Imagenes/img_corregir_bordes.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+
+      <span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><a name="color_sombreado">Renkler ve Gölgelendirme</a></span>
+	  <br />
+	  <br /></span><img style="width: 230px; height: 485px; float: right;" alt="" src="Imagenes/img_sombreados.png" hspace="5" /><span class="Parrafo"><span style="font-weight: bold;">Filtreler</span> </span><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_filtros.png" /><span class="Parrafo"> menüsünü açtığınızda gösterilen seçenekler arasında <span style="font-weight: bold;">Gölgelendirme</span> seçeneği bulunur.
+Bu seçenek, sayısal arazi modeli formatındaki (kot bilgisi) görüntülerin gölgelendirmesini etkinleştirmeyi/devre dışı bırakmayı ve</span><span class="Parrafo"><span class="Parrafo"> bu kot bilgisini temsil etmek için farklı renkler seçmeyi, hatta
+gölgelendirme filtresini uygulamanın sonucunda ortaya çıkan <span style="font-weight: bold;">görüntüyü bir dosyaya oluşturma</span> imkanı sunar, &nbsp;<span class="Archivo">.tif</span> formatında. İletişim kutusunun <span style="font-weight: bold;">kota göre renk</span> açısından sunduğu seçenekler şunlardır:</span></span><br />
+      <ul style="list-style-type: disc;">
+<li><span style="font-weight: bold;">Z
+minimum</span> ve <span style="font-weight: bold;">Z maksimum</span>: Bu değerler, yalnızca bu iki veri arasında kapalı alanlar oluşturabilmek amacıyla değiştirilebilir.</li>
+      </ul>
+
+      
+      <ul style="list-style-type: disc;">
+<li><span style="font-weight: bold;">Aralık / Aralık Sayısı</span>: Belirtilen değerin katları olan kot verileri arasında kapalı alanlar oluşturmak için bir değer girilebilir. Değiştirildiğinde,
+program yeni aralıkları otomatik olarak analiz eder.</li>
+      </ul>
+
+      
+      <ul style="list-style-type: disc;">
+<li><span style="font-weight: bold;">Renk rampasında</span>, kullanılan paletteki <span style="font-weight: bold;">başlangıç renk indeksi</span> belirtilir ve bu, en
+düşük kota (rampanın başlangıcı) ile ilişkilendirilir. Bu renk indeksinden başlayarak,
+sonraki renkler alınır (<span style="font-weight: bold;">Renk Sayısı</span>'nda belirtildiği kadar), böylece renk rampası ayarlanmış olur.</li>
+      </ul>
+
+      
+      <div style="margin-left: 40px;">
+<span style="font-weight: bold; font-style: italic;">Rampayı Ayarla (%)</span> seçeneği,
+renk gradyanını ayarlamayı sağlar, öyle ki %100,
+rampadaki tüm renklerin kullanılmasını sağlar. Örneğin, renk rampası
+350'den 361'e kadar olan renk indekslerini içeriyorsa, %50'lik bir ayar
+352, 354,... indekslerinin kullanılmasını sağlar, %25 ise 350, 354,...
+indekslerini kullanır ve
+böyle devam eder.<br />
+      <br />
+Renk rampasında bir değişiklik şu seçeneklerden birini gerektirir:<br />
+
+
+      
+      <ul style="list-style-type: circle;">
+<li><span style="font-weight: bold;">Aralığı koruyarak renk paletini tekrarla</span>, bu,
+renk rampası bittiğinde yeniden başlamasına neden olur, böylece farklı kotlar aynı renkle temsil edilir.</li>
+      </ul>
+
+
+      
+      <ul style="list-style-type: circle;">
+<li><span style="font-weight: bold;">Aralığı koruyarak paleti uzat</span>, bu, tüm
+rampanın kullanılmasını ancak sadece bir kez kullanılmasını sağlar. Sonuç olarak,
+ardışık aralıkların alt grupları aynı rengi paylaşacaktır.</li>
+      </ul>
+
+
+      
+      <ul style="list-style-type: circle;">
+<li><span style="font-weight: bold;">
+Aralığı yeniden hesapla</span>, böylece program rampaya uyacak şekilde tüm aralıkları yeniden oluşturur.</li>
+      </ul>
+
+      </div>
+      <div style="margin-left: 40px;">
+      <div style="margin-left: 40px;">
+      </div>
+
+      </div>
+      <ul style="list-style-type: disc;">
+<li>Eğer <span style="font-weight: bold; font-style: italic;">Lejant oluştur/göster</span> seçeneği etkinleştirilirse,
+o zaman belirtilen aralıklara göre bir lejant oluşturmayı sağlayan bir dizi seçenek gösterilir. Bu seçenekler, lejdantta kullanılacak metin tipi, oluşturulacağı model,
+başlık ve bir raster görüntü olarak oluşturulup oluşturulmayacağıdır.</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Gölgelendirme</span> seçeneğiyle ilgili olarak, bu seçenek kotlu görüntülerin gölgelendirmesini, belirtilen <span style="font-weight: bold;">zenit </span>ve<span style="font-weight: bold;"> azimut açılarıyla</span> gelen bir ışığa göre etkinleştirir:</span></span><br />
+      </div>
+
+
+      <br />
+
+
+      <span class="Parrafo">
+      <table style="text-align: left; width: 605px; height: 208px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 291px; text-align: center;"><img style="width: 286px; height: 181px;" alt="" src="Imagenes/img_ascii_grid_sin_sombrear.png" /><br />
+            <br />
+            <span class="Info">Kotlu ve gölgelendirmesiz görüntü</span><br />
+            </td>
+            <td style="vertical-align: top; width: 312px; text-align: center;"><img style="width: 288px; height: 182px;" alt="" src="Imagenes/img_ascii_grid_sombreada.png" /><br />
+            <br />
+            <span class="Info">Kotlu ve gölgelendirmeli görüntü</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo">
+      </span></span>
+      <span class="Parrafo"><span class="Parrafo">
+</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span></span></span></span>Bu menünün seçeneklerini Yükleme/Kaydetme imkanı.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span><span class="Titulo_2"><a name="conversion">Görüntülerin Dönüştürülmesi ve Kaydedilmesi</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img style="width: 197px; height: 158px; margin-left: 7px;" alt="" src="Imagenes/img_guardar_como.png" align="right" /><span class="Parrafo"><span class="Parrafo">Seçilen görüntüler başka bir formatta kaydedilebilir. Bağlam menüsünden veya <span style="font-weight: bold;">Dosya</span> </span></span><span class="Parrafo"><span style="font-weight: bold;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarImagenes_archivo.png" align="top" /></span></span><span class="Parrafo"><span class="Parrafo"> açılır menüsünden <span style="font-weight: bold;">Farklı Kaydet…</span> seçeneğini seçmek ve hedef formatı ile kaydedilecek dosya adını seçmek yeterlidir.<br />
+      <br />
+Genellikle, kullanıcının sadece hedef görüntünün kalitesini, coğrafi referans dosyasının oluşturulup oluşturulmayacağını ve hedef formata bağlı olarak, onunla ilgili bir konuyu belirtmesi gereken küçük bir iletişim kutusu belirir.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Bir şeffaflık katmanına (alfa kanalı) sahip bir görüntüyü, bu katmana izin vermeyen bir formata (JPEG gibi) kaydetmeye çalışırken, bu işlemin yapılamayacağını belirtmek için kullanıcıya bir uyarı gösterilir.<br />
+      <br />
+</span></span></span></span><img style="width: 213px; height: 119px; margin-left: 7px;" alt="" src="Imagenes/img_guardar_selec.png" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Seçimi Kaydet</span> seçeneği, <span style="font-weight: bold;">Dosya </span><span style="font-weight: bold;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarImagenes_archivo.png" align="top" /></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> açılır menüsünden de erişilebilir ve ekranda seçilen görüntü parçasını kaydetmeyi sağlar. Bu seçim, seçenek seçildikten sonra yapılır.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span>
+      <table style="text-align: left; width: 473px; height: 54px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 403px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Bir &nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> dosyası kaydedildiğinde,
+yüklenen raster görüntülerin yolu da içine kaydedilir, böylece
+dosya yeniden açıldığında, ilişkili görüntüler de
+otomatik olarak yeniden yüklenir.&nbsp; </span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Ayrıca, <span style="font-weight: bold;">Dosya </span><span style="font-weight: bold;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarImagenes_archivo.png" align="top" /></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> açılır menüsündeki <span style="font-weight: bold;">Coğrafi Referans Dosyası Oluştur</span> seçeneğini kullanarak, seçilen görüntülerin yalnızca coğrafi referans dosyalarını (<span class="Archivo">.jpw</span>,&nbsp;<span class="Archivo">.tfw</span>, vb.) oluşturmak da mümkündür.</span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Herhangi bir RGB görüntüsünü, &nbsp;<span class="Parf_negrita">Farklı Kaydet...</span> seçeneği ile ASC formatına dönüştürmek mümkündür.
+Görüntünün RGB bileşenlerine bağlı olarak bir kot değeri hesaplanacak olan minimum ve maksimum kot değeri istenecektir.<br />
+<br />
+      </span></span><span class="Titulo_2"><a name="organizacion">Görüntülerin Düzenlenmesi</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Eğer iki veya daha fazla görüntü tamamen veya kısmen üst üste biniyorsa, hangi sırada olduklarını belirtmek gerekir.<br />
+      <br />
+</span></span></span><img style="width: 219px; height: 124px;" alt="" src="Imagenes/img_organizar.png" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Varsayılan
+olarak, bu sıra yükleme sırasıdır ve eğer değiştirilmek istenirse, hem
+<span style="font-weight: bold;">Sırala</span> </span></span></span><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarImagenes_organizar.png" align="middle" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> seçeneğinden hem de bağlam menüsünden erişilebilen aşağıdaki seçenekleri kullanmak gerekecektir:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">En Öne Getir</span>: Seçilen görüntüyü en başa yerleştirir, böylece diğerlerini örter.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">En Alta Gönder</span>: Seçilen görüntüyü en sona yerleştirir, böylece diğerleri tarafından örtülür.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Öne Getir</span>: Seçilen görüntüyü mevcut konumundan bir pozisyon öne yerleştirir.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Arkaya Gönder</span>: Seçilen görüntüyü mevcut konumundan bir pozisyon arkaya yerleştirir.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="propiedades_opacidad">Görüntü Özellikleri</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bir görüntünün özelliklerini göstermek için, </span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sağ tuşa basıp bağlam menüsünden <span style="font-weight: bold;">Özellikler</span>
+seçeneğini seçmek yeterlidir. Bu, görüntünün
+özelliklerini içeren bir pencere gösterecektir: format, genişlik ve yükseklik, koordinat başlangıcı,
+ölçek,...</span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">Opaklık</span>
+seçeneği, üst üste binen birden fazla görüntüyü
+görüntüleyebilmek için bir görüntüyle ilişkili katmanın sahip olacağı şeffaflık derecesini belirtmeyi sağlar.<br />
+      <br />
+<span style="font-weight: bold;">Gama</span> seçeneği, bir görüntünün <span style="font-weight: bold;">parlaklığını</span> değiştirmeyi sağlar.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+<br />
+      </span></span></span></span>
+      <div style="text-align: center;"><img src="Imagenes/img_propiedades.png" alt="" style="width: 218px; height: 291px;" /><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Bu
+pencereden ayrıca, görüntünün
+haritanın altına mı, haritanın üstüne mi yoksa
+dolgulu çizgilerin üstüne ama haritanın geri kalanının altına mı
+çizileceğini belirtmek de mümkündür.<br />
+<br />
+<br />
+      </span><span class="Titulo_2"><a name="edic_ajust_zoom">Görüntü Düzenleme, Ayarlar ve Yakınlaştırma</a></span><br />
+      <span class="Parrafo"><br /></span></span></span></span><span class="Parrafo"><span class="Parrafo"><img style="width: 110px; height: 296px; float: right;" alt="" src="Imagenes/img_contextual.png" hspace="5" /></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün
+görüntüleri düzenlerken sunduğu olanaklar, hem
+farenin ikincil düğmesinin açtığı bağlam menüsünden hem de <span style="font-weight: bold;">Düzenle</span> </span></span></span><img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarImagenes_edicion.png" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> açılır menüsünden erişilebilen aşağıdaki işlemlerdir:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Taşı</span>:
+Bu seçenek, görüntü üzerinde bir nokta (kaynak) ve ardından taşınacağı fiziksel nokta (hedef) seçerek görüntüyü konumlandırmayı sağlar.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Konumlandır</span>: <span style="font-weight: bold;">Taşı</span> seçeneğine benzer şekilde, seçilen görüntünün başlangıç noktasının (sol alt konum) X ve Y koordinatlarını sayısal olarak belirtmeyi sağlar.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Döndür</span>:
+Bu seçenek, görüntüyü kullanıcı tarafından verilen bir açıyla, ya
+fareyle ya da klavyeden girilen bir açıya göre döndürür. Bu son
+durumda, açı altmışlık derece cinsinden ve saat yönünün tersine pozitif olarak belirtilir.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="escalar">Ölçekle</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">:
+Görüntünün ölçeği, pikselin boyutunu hem yükseklik hem de genişlik (X ve Y) olarak metre cinsinden ayarlamayı sağlayan bu seçenekle ayarlanır. Örneğin,
+3,2 m/piksel, pikselin görüntü üzerinde 3,2 fiziksel metre kaplayacağı anlamına gelir. Program ayrıca, görüntünün herhangi bir köşesi veya merkezi olabilen
+ölçekleme başlangıç noktasını da ister.</span></span></span></li>
+      </ul></span></span></span></span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 190px; height: 172px;" alt="" src="Imagenes/img_escalar.png" /></span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu değerler, programın mevcut ölçek faktörünü otomatik olarak dikkate alır. </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer <span style="font-weight: bold;">Oranı koru</span> seçeneği işaretlenirse,
+genişlik veya yükseklik değeri değiştirildiğinde, diğer değer
+en-boy oranının veya oranın korunacağı şekilde otomatik olarak
+hesaplanır.</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><ul>
+        
+        <li><span style="font-weight: bold;"><a name="redimensionar">Yeniden Boyutlandır</a></span>:
+Bir görüntünün boyutunu piksel veya metre cinsinden değiştirmeyi sağlar. Ayrıca
+görüntünün en-boy oranının (<span style="font-weight: bold;">oran</span>) korunup korunmayacağı da belirtilebilir.<br />
+</li>
+</ul></span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 190px; height: 158px;" alt="" src="Imagenes/img_redimensionar.png" /></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Görüntüyü Oturt</span>:
+Bu seçenekle, mevcut görüntü iki veya
+daha fazla noktayla coğrafi olarak konumlandırılabilir. Bu dönüşüm, yalnızca
+raster görüntünün 90 dereceden daha az döndürülmesini gerektiriyorsa gerçekleştirilebilir. Görüntünün
+nihai konumuna göre çok fazla döndürülmüş olması durumunda, daha
+uygun bir yönelime gelene kadar daha önce açıklanan döndürme seçenekleriyle
+önceden döndürülmelidir.</span></span></span></li>
+
+      
+      </ul>
+
+      </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yöntem,
+biri görüntüden diğeri haritadan olmak üzere nokta çiftlerini işaretlemekten ibarettir.
+Bunun ardından, raster görüntünün sağlanan noktalarının
+vektör bilgi noktaları üzerine konumlandırılması için gerekli öteleme,
+döndürme ve ölçekleme işlemleri otomatik olarak gerçekleştirilecektir.<br /><br />Raster
+görüntüler için parlaklık, kontrast,
+gama, HSL (ton, doygunluk, aydınlık) ayarları eklenir, ayrıca
+konvolüsyon filtreleri (gauss, kabartma, keskinleştirme, kenarlar,...) de eklenir.<br /></span></span></span></span></span></span><span style="text-decoration: underline;" class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Aynala</span>: Mevcut görüntüyü iki eksenden birine göre (seçilen seçeneğe göre X veya Y) ters çevirmeyi sağlar.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kaldır/Tümünü Kaldır</span>: İlki, seçilen görüntüyü projeden
+kaldırırken, ikincisi durumda projeden
+yüklenen tüm görüntüler kaldırılır.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><img style="width: 218px; height: 165px; margin-left: 7px;" alt="" src="Imagenes/img_transp.png" align="right" /><span style="font-weight: bold;"><a name="transparencia">Şeffaflık</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">: Görüntünün
+hangi renginin şeffaf olacağını belirtmeyi sağlar. Bu, örneğin, arka planı
+beyaz olan ve programın ekran modunda (siyah arka plan) yapılandırıldığı bir görüntüde kullanışlıdır.
+Beyazı şeffaf renk olarak etkinleştirdiğinizde, bu
+beyaz arka plan görünmeyecek ve görüntüyü doğru bir şekilde
+görüntüleyebileceksiniz.</span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kutucuğa tıklandığında açılan ölçekten herhangi bir renk uygulanabilir, varsayılan olarak siyahtır.</span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br /></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Ayrıca, birbirine çok yakın renklerin de şeffaf olması için bir tolerans belirtmek de mümkündür.&nbsp;&nbsp;&nbsp;
+&nbsp;</span></span></span></span></span><br style="font-weight: bold;" />
+      <span style="font-weight: bold;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span style="font-weight: bold;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Opaklık</span>: seçilen görüntülerin opaklık değerini değiştirmeye olanak tanır.<br />
+        </li>
+      </ul>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 196px; height: 177px;" alt="" src="Imagenes/ima_opa.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><ul><li><span class="Parf_negrita">Mozaik</span>: Bir görüntüyü kullanıcı tarafından belirlenen boyutta bloklara bölmeyi sağlar.</li></ul><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 200px; height: 164px;" alt="" src="Imagenes/img_mosaico.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br />
+      <img style="width: 171px; height: 114px;" alt="" src="Imagenes/img_zoom.png" align="right" hspace="6" /><span style="font-weight: bold;">Yakınlaştırma</span> açılır menüsünden de erişilebilen <span style="font-weight: bold;">ekran boyutu</span> ayarlarına gelince, programın sunduğu olanaklar şunlardır:<br />
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Yakınlaştır</span>: Bu seçenekle, program yakınlaştırma seviyesini, seçilen görüntünün ekranın tüm görüş alanını kaplayacak şekilde ayarlar.</span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Ölçeğe Yakınlaştır</span>: Seçilen görüntünün maksimum çözünürlüğüne bir yakınlaştırma yapar.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Tümüne Yakınlaştır</span>: Yakınlaştırma seviyesini, tüm görüntülerin toplamının ekranın görüş alanına sığacak şekilde ayarlamayı sağlar.</span></span></span></span></span></li>
+      </ul>      
+      <br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><a name="recintos">Kırpma Alanları</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span><img style="width: 147px; height: 90px; margin-left: 7px;" alt="" src="Imagenes/img_recintos.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Kırpma Alanları</span> </span></span></span></span></span><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_recintos.png" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> seçeneği içinde <span style="font-weight: bold;">Kaydet</span> ve <span style="font-weight: bold;">Sil</span> komutları bulunabilir.<br />
+      <br />
+İlkiyle, önceden oluşturulmuş kapalı bir çoklu doğrudan bir alan oluşturulabilir ve sadece bu alanın içindeki görüntü korunur.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+<span style="font-weight: bold;">Sil</span> komutu, silinmek istenen bir veya daha fazla alanı silmeyi sağlar, bu değişiklikle görüntünün kullanıcı onayıyla otomatik olarak kaydedileceğini unutmayın. Bu nedenle, nihai sonuç beklenildiği gibi olmazsa diye görüntünün bir yedeğini almakta fayda vardır.<br />
+      <br />
+<br />
+      </span><span class="Titulo_2"><a name="imagenes_remotas">Uzak Sunuculardan Görüntü Alma</a></span><br />
+      <span class="Parrafo"><br />
+</span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="wms">WMS Servisleri</a></span><br />
+      <span class="Parrafo"><br /><img style="width: 168px; height: 146px;" alt="" src="Imagenes/imagenes_otros_serv.png" align="right" hspace="6" />
+WMS (Web Harita Servisi) hizmeti, coğrafi bilgilerden dinamik olarak coğrafi referanslı veri haritaları oluşturmak için OGC (Açık Coğrafi Konsorsiyum) tarafından tanımlanmış uluslararası bir standarttır.<br />
+      <br />
+WMS tarafından üretilen haritalar genellikle &nbsp;<span class="Archivo">.png</span>,&nbsp;<span class="Archivo">.gif</span> veya &nbsp;<span class="Archivo">.jpg</span> gibi bir raster görüntü formatında oluşturulur.
+Bu hizmeti sunan çok sayıda sunucu bulunmaktadır, bu nedenle kullanıcının internet üzerinden sunucu listelerini araştırması önerilir.<br />
+      <br />
+      </span><span class="Parrafo">
+      ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span><span class="Parrafo">
+ayrıca coğrafi referanslı görüntüler elde etmek için WMS harita sunucularına bağlantı imkanı da sunar. Bunun için, indirilecek haritanın koordinatlarını sağlayan bir &nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> dosyası yüklenmiş olmalıdır.<br />
+      <br />
+Harita yüklendikten sonra, <span style="font-weight: bold;">WMS Servisleri</span> seçeneğine (görüntü araç çubuğundaki </span><img style="width: 21px; height: 20px;" alt="" src="Imagenes/icono_toolBarImagenes_wms.png" /><span class="Parrafo">
+simgesi) gidilmeli ve iletişim kutusunda bağlantı kurulmak istenen sunucu seçilmelidir.<br />
+      <br />
+</span></span></span></span></span><img style="width: 358px; height: 357px; margin-left: 7px;" alt="" src="Imagenes/img_wms_1.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir proxy üzerinden WMS sunucularına bağlanmak mümkündür. WMS servisleriyle bağlantı penceresinde, <span style="font-weight: bold;">ISTRAM Yapılandırması</span> sekmesi içinde,
+bağlantı parametreleri otomatik veya manuel olarak ayarlanabilir (proxy türü, sunucu, port, kullanıcı, şifre,…).<br />
+      <br />
+Aynı sekmede, gelecekteki oturumlarda aynı görüntü talep edilirse, yüklemesinin anında ve herhangi bir bağlantı kurmaya gerek kalmadan yapılması için bir klasörün <span style="font-weight: bold;">önbellek</span>
+olarak kullanılıp kullanılmayacağı da belirtilebilir.<br />
+      <br />
+<span style="font-weight: bold;">Yerel dosya</span> adı, bir görüntü indirildikten sonra oluşturulan ve
+onun hakkında bilgi içeren &nbsp;<span class="Archivo">.xml</span> dosyasına referans verir.
+Böylece, bir görüntü yüklenirken/eklenirken bu dosya sağlanırsa, program kullanıcının
+bağlantıyı zorlamasına gerek kalmadan onu otomatik olarak indirir. Bu dosya, proje dizinindeki &nbsp;<span class="Archivo">\tmp</span> klasörüne kaydedilir.<br />
+<br />
+      <span style="font-weight: bold;">Bilgi</span> sekmesinden,
+program varsayılan olarak bir dizi hizmet sunar. Kullanıcı, bu hizmetleri listeye yeni sunucular ekleyerek genişletebilir,
+ayrıca artık kullanışlı olmayan diğerlerini silebilir. Örneğin,
+      <a href="http://www.idee.es">http://www.idee.es</a> sitesinden, Hizmetler Dizini bölümü altında, <span style="font-weight: bold;">[Yeni]</span> seçeneği ile bir tanımlayıcı ad ve ilgili URL'ye göre eklenebilecek onlarca WMS hizmeti belirtilir:<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 569px; height: 357px;" alt="" src="Imagenes/img_wms_2.png" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      Servis seçildikten sonra, programın
+seçilen sunucuyla bağlantı kurması için <span style="font-weight: bold;">[Bağlan]</span>
+düğmesine basmak yeterlidir. Bağlantı başarıyla kurulursa,
+seçilen servis hakkında bilgi gösterilir.<br />
+      <br />
+Örneğin, seçilen sunucunun PNOA olduğunu varsayalım.
+Bağlantı kurulduktan sonra, resimde gösterilen bilgiler belirir.<br />
+      <br />
+      </span></span></span></span></span><img style="width: 358px; height: 357px; margin-right: 7px;" alt="" src="Imagenes/img_wms_3.png" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Katmanlar</span> sekmesinden, mevcut katmanlar arasından indirilmek istenenler seçilebilir.<br />
+      <br />
+Örnekte, PNOA ortofotolarına karşılık gelen katman seçilmiştir.<br />
+      <br />
+</span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 326px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 223px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">Servisin
+sunduğu bazı katmanların bilgi içermeyebileceği ve ayrıca diğer
+katmanları gizleyerek doğru görüntülenmelerini engelleyebileceği
+dikkate alınmalıdır.<br />
+            </span></span></span></span></span></span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Daha önce açıklandığı gibi, program indirilen her görüntünün bir kopyasını <span style="font-weight: bold;">önbellek</span>
+olarak oluşturur, böylece gelecekteki oturumlarda tekrar indirilmesi istendiğinde,
+işlemi hızlandırmak için doğrudan bu önbellekten yüklenir. Eğer
+kullanıcı yine de sunucudan yeniden indirmek ve bu yerel kopyayı yok saymak isterse,
+o zaman <span style="font-weight: bold; font-style: italic;">Önbelleği Yenile</span> kutucuğunu işaretlemek gerekecektir.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span></span></span></span></span><img style="width: 358px; height: 357px; margin-left: 7px;" alt="" src="Imagenes/img_wms_4.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Formatlar-CRS</span> sekmesinde,
+sunucuya istekte bulunmak için kullanılacak SRS/CRS'nin yanı sıra, elde edilmek istenen görüntünün
+metre/piksel cinsinden çözünürlüğü de dikkate alınmalıdır.<br />
+      <br />
+Projenin kapsadığı tüm alanı indirmek yerine, bir WMS görüntüsünün belirli bir indirme alanını belirtmek mümkündür.
+Bunun için, çalışma alanını sınırlayan <span style="font-weight: bold;">(X1,Y1)</span> ve <span style="font-weight: bold;">(X2,Y2)</span> koordinatlarını belirtmek yeterlidir. Bu koordinatlar, <img style="width: 9px; height: 13px;" alt="" src="Imagenes/icono_cursor_flecha.png" /> düğmesine basıldıktan sonra grafiksel olarak verilebilir.<br />
+      <br />
+Son olarak, <span style="font-weight: bold;">[İndir]</span> düğmesine basılacaktır,
+böylece sunucudan harita isteme süreci başlayacaktır.
+Görüntünün indirme durumu,
+görüntü ağacındaki görüntü simgesinin solundaki renkli bir daire ile gösterilir.
+Eğer daire sarı ise, görüntünün indirildiğini gösterir. Yeşil olduğunda, görüntünün zaten
+indirildiğini ve kırmızı ise, indirmede bir hata olduğunu gösterir.
+İndirme işlemi sırasında bir uzak görüntüyü silmek ve böylece bu işlemi iptal etmek
+mümkündür.<br />
+      <br />
+Bundan sonra WMS Servisleri penceresini kapatmak mümkündür ve
+WMS sunucusuna bağlı olarak bir süre sonra, istenen görüntü
+ekranda belirecektir. Ayrıca, o görüntüye kaynak sunucunun adıyla ilişkili bir ad verilecektir.<br />
+      <br />
+Örnekte, 29. dilimde çalışıldığı için CRS olarak EPSG-23029 kullanılmıştır:<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 533px; height: 338px;" alt="" src="Imagenes/img_wms_ejemplo.png" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><a style="font-weight: bold; font-style: italic;" name="wfs">WFS Servisi</a><br /><br />Web
+Feature Service veya WFS, <a href="../../../COMPARTIDO/Ayuda/EDM_imagenes.html#wms">WMS</a> standardı tarafından sunulan haritalarla etkileşime girmeyi sağlayan
+Open Geospatial Consortium (OGC) tarafından belirlenmiş standart bir hizmettir.<br />
+      <br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, <span style="font-weight: bold;">WMS Servisleri</span> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarImagenes_wms.png" /><span class="Parrafo"> alt menüsü aracılığıyla WFS sunucularından vektör bilgisi indirme seçeneği sunar.</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br />
+Bu menünün işleyişi, genel <a href="../../../COMPARTIDO/Ayuda/EDM_imagenes.html#wms">WMS</a> servisleri durumuna benzer:<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 358px; height: 357px;" alt="" src="Imagenes/img_wfs_1.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span><span style="font-weight: bold; font-style: italic;"><a name="google">
+Google Servisleri</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span></span></span></span></span><img style="width: 253px; height: 417px; margin-left: 7px;" alt="" src="Imagenes/img_servicios_google.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Google Servisleri</span> </span></span></span></span></span></span></span></span></span></span><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarImagenes_google.png" /> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">açılır menüsünden, hem Google Maps'ten raster görüntüleri hem de Google Earth<sup>®</sup>'ten kotlu görüntüleri doğrudan </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">'den indirmek mümkündür.<br />
+      <br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 429px; height: 64px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 403px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Eğer
+Google sunucularından çok yüksek çözünürlüklü görüntüler
+veya aynı bilgisayardan kısa sürede çok sayıda görüntü isteği talep edilirse,
+istenen bilgi alınamayabilir ve/veya
+Google tarafından bu sunuculara erişim geçici olarak
+engellenebilir. </span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+İletişim kutusunun alt kısmında, görüntülerin kaydedileceği <span style="font-weight: bold;">klasör</span> ve görüntünün <span style="font-weight: bold;">alanı</span> belirtilebilir. Bu, sol alt ve sağ üst köşenin koordinatlarını belirterek veya <img style="width: 9px; height: 13px;" alt="" src="Imagenes/icono_cursor_flecha.png" /> düğmesine basarak grafiksel olarak yapılabilir.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> ya da</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> EDM'de <img style="width: 13px; height: 17px;" alt="" src="Imagenes/icono_selecRecinto.png" /> düğmesi aracılığıyla bir kapalı alan seçerek.<br />
+      <br />
+Hem görüntüler hem de arazi, <span style="font-weight: bold;">mozaik</span> kutucuğu etkinleştirilerek bloklar halinde indirilebilir.
+Bloklar halinde indirme, geniş alanları indirirken çok kullanışlıdır, çünkü tek bir görüntü indirmek yerine, belirtilen boyutta bir görüntü mozaiği indirilir. <br />
+Bu menünün en önemli parametresi, verdiğimiz <span style="font-weight: bold;">Çözünürlük (m/piksel)</span>'dir, çünkü bu değere bağlı olarak daha iyi bir görüntü veya arazi kalitesi elde ederiz. Ne kadar düşük çözünürlük (m/piksel) değeri verirsek, o kadar yüksek görüntü/arazi kalitesi elde edebiliriz. <br />
+<br /></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span><a name="google_maps">
+      <span style="font-weight: bold; font-style: italic;">Google Maps</span><sup style="font-weight: bold; font-style: italic;">®</sup></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br /></span></span><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo">Eğer seçilen seçenek <span style="font-weight: bold;">Görüntü</span> ise,
+o zaman Google Maps<sup>®</sup> hizmetine erişilir ve belirtilmesi gereken seçenekler, indirilecek <span style="font-weight: bold;">harita türü</span>
+(uydu, harita, hibrit veya kabartma), m/piksel cinsinden <span style="font-weight: bold;">çözünürlük</span>
+ve <span style="font-weight: bold;">görüntü adı</span>'dır.<br />
+      <br />
+Sadece güzergah bölgesinde bir görüntü mozaiği oluşturmak için eksen güzergahı boyunca kapalı bir çizgi seçmek ilginç olabilir. <br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 262px; height: 142px;" alt="" src="Imagenes/imagen_mosaico.png" /><br />
+            <br />
+            <div style="text-align: left;">Bu örnekte, görüntüde daha fazla hassasiyet elde etmek için çözünürlüğü düşürdüm ve Mozaik kutucuğunu etkinleştirdim. Program, oluşturulan blok sayısını optimize etmeye çalışır. Bu durumda 2 blok, bu yüzden iki coğrafi referanslı .tif görüntüsü oluşturacaktır.<br />
+            </div>
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 202px; height: 285px;" alt="" src="Imagenes/imagen_dos.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 540px; height: 258px;" alt="" src="Imagenes/imagen_resultado_dos.png" /><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: left;"><span class="Parrafo">Bu, görüntü çalışma ağacında devre dışı bırakabileceğim iki görüntünün sonucudur.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+<br />
+      </span>      
+      <a name="google_earth">Google Earth<sup>®</sup></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br /></span><span class="Parrafo">Eğer <span style="font-weight: bold;">Arazi</span> seçilirse, o zaman </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo">Google Earth<sup>®</sup> hizmetine erişilir ve</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> belirtilecek seçenekler </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><a href="#google_maps">Google Maps<sup>®</sup></a> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">hizmetindekilere benzerdir, tek farkla ki, bu durumda elde edilecek olan, <a href="#ascii_grid_geotiff_cota">kotlu bir görüntü</a> dosyası olarak işlenebilen bir <a href="ascii_grid.html">ASCII-Grid</a> dosyası olacaktır.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 56px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 31px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /></span></span></span></span></td>
+            <td style="vertical-align: middle; width: 641px; text-align: justify;"><span class="Parrafo Info">Bu aracın doğru çalışması için Google Earth<sup>®</sup> eklentisinin yüklü olması gerekir.
+Eğer yüklü değilse, indirme ve kurulumunu gerçekleştirmek için bir bağlantı gösterilecektir.
+Eğer sistemde </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Google Earth<sup>®</sup> programı yüklüyse, o zaman bu eklenti zaten yüklü olacaktır.<br />
+  </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>&nbsp;<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="servicios_bing">Bing ve OpenStreetMap Servisleri</a></span><a name="servicios_bing"><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Bu araçlarla Bing Maps veya OpenStreetMap'ten raster görüntüler indirebiliriz. Görüntü indirme prosedürü,
+daha önce bahsedilen Google Maps ile aynıdır.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+<a name="servicios_bing">      </a><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="servicios_bing"><img style="width: 542px; height: 327px;" alt="" src="Imagenes/imagen_dialogo_bing.png" /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="servicios_bing"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></div>
+<a name="servicios_bing">      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a><a style="font-weight: bold; font-style: italic;" name="srtm">SRTM Dosyalarını İndirme</a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu seçenek </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, SRTM (Shuttle Radar Topography Mission) dosyalarını kot bilgisiyle birlikte </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><a href="ascii_grid.html">ASCII-Grid</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> formatında indirmemizi sağlar. <br />
+<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 346px; height: 244px;" alt="" src="Imagenes/img_dialogo_srtm.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">SRTM dosyaları bir &nbsp;<span class="Archivo">.zip</span> arşivinde sıkıştırılmış olarak gelir, bu nedenle yüklenmeden önce ya kullanıcının kendisi tarafından manuel olarak ya da otomatik olarak</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> SRTM dosyalarını indirme iletişim kutusundaki <span style="font-weight: bold; font-style: italic;">Bitince aç</span> seçeneğini işaretleyerek açılmalıdır.<br />
+      <br />
+Asciigrid dosyalarını indirmek için sunduğumuz dört sunucudan birini seçebiliriz:<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>30 m ve 90 m çözünürlükte CGIAR-CSI (ABD).<br />
+</li>
+        <li>HarvestChoice (ABD)</li>
+        <li>JRC (İtalya)</li>
+        
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      
+Yukarıdakilere rağmen, bir <a href="#recintos">kırpma alanını</a> doğrudan ZIP formatında sıkıştırılmış bir SRTM dosyasından, önceden açmaya gerek kalmadan kaydetmek veya silmek mümkündür. <br />
+<br />
+<br />
+      </span></span></span></span></span><span class="Titulo_2"><a name="utilidades">Yardımcı Araçlar</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span><img style="width: 175px; height: 153px;" alt="" src="Imagenes/img_utiles.png" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Yardımcı Araçlar&nbsp;</span></span></span></span></span></span></span></span></span></span><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarImagenes_util.png" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> açılır menüsü altında, ilgi çekebilecek bazı yardımcı araçlar bir araya getirilmiştir:<br />
+      </span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">IMG Dönüştürücü</span>: &nbsp;</span></span></span></span></span></span></span></span></span><span class="Parrafo">
+      ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">'ün eski sürümlerinden gelen &nbsp;<span class="Archivo">.img</span> formatındaki dosyaları içe aktarmayı sağlar.</span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kenarları Aktar</span>:
+Yüklenen görüntülerin kenarlarını çoklu doğrulara dönüştürür ve ayrıca
+her görüntüyü içeren dosyanın adını bir etiketle gösterir.</span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="ocultar_mostrar_bordes">Kenarları Gizle/Göster</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">: Daha önce açıklandığı gibi, buradan görüntülerin kenar çizgilerinin görüntülenip görüntülenmeyeceği belirtilebilir.</span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="curvas_nivel">Eş Yükselti Eğrileri</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">: Daha önce de bahsedilen bu seçenek, <a href="#ascii_grid_geotiff_cota">kotlu görüntülerden</a> (GeoTIFF ve <a href="ascii_grid.html">ASCII-Grid</a>) eş yükselti eğrileri elde etmeyi sağlar. Normal ve ana eş yükselti eğrileri arasındaki düşey mesafeyi belirttikten sonra, <span style="font-weight: bold;">[Oluştur]</span> düğmesine basıldığında, EDM'de L26 ve L27 tipleriyle eş yükselti eğrileri oluşturulur.<br />
+          </span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><span style="font-weight: bold;"><img style="width: 218px; height: 165px;" alt="" src="Imagenes/img_curvas_nivel_dialog.png" align="middle" /></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span style="text-decoration: underline;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">SRTM dosyalarını indir</span>: Daha önce bahsedilen ve <a href="../../../COMPARTIDO/Ayuda/EDM_imagenes.html#srtm">SRTM dosyalarını indirmeyi</a> sağlayan araç (</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Shuttle Radar Topography Mission).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="generar_rejilla">Grid Oluştur</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">: Görüntünün grid çizgilerini </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="ascii_grid.html">ASCII-Grid</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">GeoTIFF</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> formatında, o anda seçili olan kotlu olarak oluşturur. </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+        </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="generar_xyz">XYZ Oluştur</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">: <span style="font-weight: bold;">Tüm</span> yüklü görüntülerin noktalarının koordinatlarını içeren bir XYZ formatında dosya oluşturur. </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="ascii_grid.html">ASCII-Grid</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">GeoTIFF</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">.&nbsp; </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="text-decoration: underline;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

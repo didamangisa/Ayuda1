@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Yardımcı Platformlar</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YARDIMCI PLATFORMLAR<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><a href="#pendientes">
+Enine Eğimlerin Davranışı ve Sınırlandırılması</a></span><br />
+      <span class="Parrafo"><a href="#a2_linea">
+Çizgiye Göre Genişlikler</a></span><br />
+      <span class="Parrafo"><a href="#tabla">Tabloya Göre Genişlik Kuralı</a><br />
+      <a href="#a4a3_en_terraplen">Dolguda A4/A3</a><br />
+      <a href="#Peraltes_independientes">Bağımsız Deverler</a><br />
+</span>
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+ISTRAM<sup>®</sup>/BIM, bağımsız ve farklı genişlik ve dever kurallarına sahip sekiz adede kadar yardımcı platformun tasarımına olanak tanır.<br /><br /></span>
+      <div style="text-align: center;"><span class="Parrafo">&nbsp;<img src="Imagenes/dialogo_calz_aux.png" style="width: 600px; height: 301px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />Bu platformlar sağ ve sol olmak üzere her iki taraf için <strong>1</strong>'den <strong>4</strong>'e kadar numaralandırılır.<br /><br /><strong>1</strong> numaralı platform sadece bölünmüş yollarda bulunur, çünkü bir iç platformdur. <strong>2</strong> numaralı platform, ana platforma (banket) en yakın dış yardımcı platformdur. <strong>3</strong> ve <strong>4</strong> numaralı platformlar genellikle bisiklet yolları, park cepleri vb. için ayrılmıştır.<br /><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/modelo_calz_aux.png" style="width: 442px; height: 312px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"><br />
+Tanımlama, eksenin farklı noktalarında çeşitli yardımcı platformların genişlik ve deverlerine değerler verilerek yapılır. Bir veri iki ardışık nokta arasında değişirse, aralarında doğrusal bir değişim olduğu varsayılır. Gerekirse veriler dışa doğru uzatılır (ekstrapolasyon yapılır), bu nedenle tek bir veri yeterlidir.<br />
+      <br />
+      <img src="Imagenes/calzadas_aux_interpolar.png" style="width: 146px; height: 46px;" alt="" align="right" hspace="6" />Ara verilerde, Ai ve Pi değerlerini, yani genişlikleri ve eğimleri, ara kilometrenin önceki ve sonraki verileri arasında enterpole edebiliriz.<br />
+<br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span><span class="Parrafo">Grafik pencerede, mevcut bir veri noktasındaki 8 platformun her birinin genişlik <strong>A</strong> ve enine eğim <strong>P</strong> değerleri görünür. <strong>[+] [Veri] [-]</strong> düğmeleri, <strong>[Ekle]</strong> ve <strong>[Tekrarla]</strong> düğmeleriyle oluşturulabilen veya <strong>[Sil]</strong> tuşuyla silinebilen herhangi bir başka veri noktasına gitmeyi sağlar.<br /><br />
+Ana platform ile A2 banketi arasında dikey bir <strong>basamak</strong> (<strong>Esc</strong>) oluşturmak mümkündür. Basamağın yüksekliği, A2 banketinin eğiminin altına girilir: <strong>A2</strong>/<strong>P2</strong>/<strong>Esc</strong>.
+Basamağın altına (kod 2 kaplama kenarının altındaki veya üstündeki nokta) kod 10 verilir. Bu basamağa <strong>Basamak Şevi</strong> kutucuğu aracılığıyla bir şev verilebilir.<br /><br /><strong>[Otomatik]</strong> düğmesi, eksenin başlangıcına ve sonuna karşılık gelen iki veri oluşturur; A1 platformları için 1 metre, A2 platformları için 2,5 metre genişlik değerleri ile.<br /><br />Yardımcı platformların tanım kuralı, menünün üst kısmında yer alan ikonlarla, .aux uzantılı dosyalara <strong>[Kaydet]</strong>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> ve <strong>[Yükle]</strong>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> komutlarıyla kaydedilebilir ve geri yüklenebilir.<br /><br /><strong>Kullanıcı KM'leri</strong> seçeneği, kilometrelerin kullanıcı tanımlı değerlerle girilmesine olanak tanır. Bu seçenek etkinleştirilip devre dışı bırakılabilir ve durumu .vol dosyasına kaydedilir.<br />
+      <br />
+      <img src="Imagenes/calz_aux_guarda_pk.png" style="width: 141px; height: 59px;" alt="" align="right" hspace="7" />Yardımcı platformların ve <a href="OL_aceras.html">trotuarların</a> tanım kilometreleri, bağımsız .pk dosyalarına <strong>kaydedilebilir</strong> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya <strong>yüklenebilir</strong> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">. Böylece kilometre tanımı bir taraftan diğerine, trotuarlardan yardımcı platformlara ve tersi yönde aktarılabilir.<br />
+İlk sütunda kilometreyi içeren herhangi bir .pk* dosyasından yüklenebilirler. Bir kilometre dosyası yüklendiğinde, geri kalan değerler (genişlikler, eğimler, yükseklikler vb.) ilk veriden kopyalanır. <a href="OL_aceras.html">Trotuarlar</a> durumunda, hiç veri yoksa sıfırdan başlatılır.<br /><br /></span><span class="Titulo_2"><a name="pendientes">Enine Eğimlerin Davranışı ve Sınırlandırılması</a></span><br />
+      <br />
+      <span class="Parrafo">
+      </span><span class="Parrafo">Her bir yardımcı platformun <strong>A</strong> genişliğinin altında, o platform için bir <strong>P</strong> eğimi (%) belirtilebilir. Bu eğim, o yardımcı platform ile bitişiğindeki platform arasında izin verilen maksimum eğim <strong>farkına</strong> bağlı olacaktır.<br />
+      </span><span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diferen_max.png" style="width: 622px; height: 67px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />Diyalog kutusunun alt kısmında yer alan <strong>MAKSİMUM FARKLAR (%)</strong> tablosu, bitişik platformların enine eğimleri arasında izin verilen bu maksimum farkı tanımlamayı sağlar. Özellikle, iki platform arasındaki izin verilen maksimum değer 0 ise, daha düşük öncelikli olan her zaman diğerinin uzantısında görünür ve onun dever kuralını takip eder.</span><span class="Parrafo"> Bu nedenle, bir platform önceki platformun deverini takip ediyorsa, dever kuralını tekrarlamak gerekmez, sadece genişliğini ve maksimum fark kutucuğuna 0 girmek yeterlidir.</span><br />
+      <span class="Parrafo"><br />
+Bir yardımcı platform izin verilen <strong>maksimum eğim farkını</strong> aştığında, <strong>düzeltme modu</strong> devreye girer. Bu mod şunlar olabilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><strong>Uzantısında</strong>: Bir yardımcı platformun deveri izin verilen farkı aşarsa, onu bir öncekinin uzantısı olarak ayarlar.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><strong>Kırılma</strong>: İzin verilen değer aşılırsa, bu durumda, dever farkı izin verilen maksimum değere eşit olacak şekilde yerleştirilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><strong>Kırılma + Minimum Eğim</strong>: Bitişik platformla olan dever farkına uyulur, ancak hiçbir zaman minimum eğimin altına düşemez.</li>
+      </ul></span></span>
+      <div style="margin-left: 40px;">Bitişik platformla olan dever farkına uyulur, ancak hiçbir zaman minimum eğimin altına düşemez.<br />
+Örnek: Nominal %5 eğimli banketler.<br />
+Düzeltme modu&nbsp;<strong>[KIRILMA + MİNİMUM EĞİM]</strong>&nbsp;<strong>[İÇBÜKEY OLMAYAN]</strong> <br />
+Minimum eğim %1, Maksimum fark %7<br />
+      <ol>
+        <li>Deveri %8 olan kurp -> sağ banket %8&nbsp; (İçbükey Değil).</li>
+        <li>Deveri %5 olan kurp -> sağ banket %5&nbsp; (Nominal).</li>
+        <li>Deveri -%2 olan kurp -> sağ banket %5&nbsp; (Nominal).</li>
+        <li>Deveri -%6 olan kurp -> sağ banket %1&nbsp; (Kırılma %7).</li>
+        <li>Deveri -%8 olan kurp -> sağ banket %1&nbsp; (Minimum eğim).<br />
+        </li>
+      </ol>
+      </div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+
+      <span class="Parrafo">Yardımcı platformların genişlik ve eğim kuralı belirlendikten sonra, belirli bir kesimde, bir yardımcı platform ile bitişiğindeki arasında bir <strong>içbükeylik</strong> oluşabilir ve bu durum o bölgede bir drenaj sistemi öngörülmemişse <strong>su birikmesi</strong> sorununa yol açabilir. Bunu önlemek için, program varsayılan olarak <strong>[İÇBÜKEY OLMAYAN]</strong> düzeltme modunu ayarlar. Bu mod, bir platformun bir öncekiyle oluşturduğu açının içbükey olmasını engeller ve eğer böyle bir durum oluşursa, onu uzantı olarak yerleştirir.</span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Her bir veri için ilgili <i>Maks. fark yok</i> onay kutucuğunu etkinleştirerek, enine eğim ve içbükeylik farkları tarafından dayatılan sınırlamaları <strong>atlamak</strong> mümkündür. Bu seçenek, kullanıcının belirli bir bölgede yardımcı platformların genel davranışını değiştirmesine olanak tanır ve yardımcı platformlar <strong>2</strong>, <strong>3</strong> ve 4 için özel bir kontrol ile bölünmüş yol eksenleri durumunda yardımcı platform <strong>1</strong> (iç banket) için bağımsız bir kontrol bulunur.</span><span class="Parrafo"><br />
+      <br />
+<strong>P2min</strong> değeri, yukarıdakilerin tümünden bağımsız olarak, banket 2 için minimum bir eğim sağlar.<br /><br /><br /><i>Örnek</i>:<br /><br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo">Dış banketin dışa doğru %4 eğime sahip olması, ana platformla maksimum %4 eğim farkı olması, eğim değişiminin içbükey olmaması ve düzeltme modunun uzantıda olması istenmektedir. Ayrıca, eğimin her zaman dışa doğru olması (ana platform içe doğru aksa bile) ve minimum %2 değerinde olması gerekmektedir. Yani:</span><br />
+      <ul>
+        <li><span class="Parrafo">Dever %4'ten büyükse, P2 devere eşit olacaktır.</span></li>
+        <li><span class="Parrafo">Dever %4 ile %0 arasındaysa, P2 %4'e eşit olacaktır.</span></li>
+        <li><span class="Parrafo">Dever %0 ile -%2 arasındaysa, P2 %4'ten %2'ye değişecektir.</span></li>
+        <li><span class="Parrafo">Dever -%2'den küçükse, P2 %2'ye eşit olacaktır.</span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Bu durumda girilecek değerler şunlar olacaktır:</span><br />
+      <span class="Parrafo" /></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; height: 65px; margin-left: 40px; width: 517px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 56px; text-align: center; font-weight: bold;">P2<br />
+            </td>
+            <td style="vertical-align: top; width: 75px; text-align: center; font-weight: bold;">P2min<br />
+            </td>
+            <td style="vertical-align: top; width: 75px; text-align: center; font-weight: bold;">AP-P2<br />
+            </td>
+            <td style="vertical-align: top; width: 261px; text-align: center; font-weight: bold;">Düzeltme Modu<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 56px; font-style: italic; text-align: center;"><span class="Parrafo">4.000</span></td>
+            <td style="vertical-align: top; width: 75px; font-style: italic; text-align: center;"><span class="Parrafo">2.000</span></td>
+            <td style="vertical-align: top; width: 75px; font-style: italic; text-align: center;"><span class="Parrafo">4.000</span></td>
+            <td style="vertical-align: top; width: 261px; font-style: italic; text-align: center;"><span class="Parrafo">UZANTISINDA ve İÇBÜKEY OLMAYAN</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Bitişik platformlar arasındaki maksimum enine eğim farkı değeri, platformların aynı yöne akıp akmadığına bağlı olarak iki farklı değere ayrılır: <br />
+</span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Pa x Pb >= 0. <br />
+          </span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">veya zıt yönlere akıp akmadıklarına göre:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Pa x Pb &lt; 0.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br /></span><span class="Titulo_2"><a name="a2_linea">Çizgiye Göre Genişlikler</a></span><br />
+      <span class="Parrafo"><br /></span><img src="Imagenes/a2_por_linea.png" style="width: 232px; height: 220px; float: right;" alt="" hspace="5" /><span class="Parrafo"><strong>[A2 Çizgiye Göre]</strong> düğmesi, kenarlarını temsil eden plan çizgilerinden yola çıkarak ilk dış banket <strong>2</strong>'nin genişliklerini aynı anda hesaplamayı sağlar. Bu seçenek, <a href="OL_anchos.html#por_linea">ana platform genişlikleri</a> durumunda olduğu gibi çalışır ve seçilen çizginin her bir tepe noktası için bir veri oluşturur.<br /><br />
+Bu seçenek, sonuçta elde edilen <strong>mesafeye bir artış</strong> eklemeye de olanak tanır (pozitif değer çizginin sağına, negatif değer soluna bir artış anlamına gelir).<br />
+      <br />
+</span><span class="Parrafo"><strong>3</strong> ve <strong>4</strong> numaralı platformlarda önceden bulunan veriler değerlerini korur, program bu seçenekle türetilen yeni kilometrelerde enterpolasyon yapar.</span><br />
+      <span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check_enabled" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><strong> Deverleri Türet</strong> seçeneğini etkinleştirirsek, bu yardımcı program çizginin kotunu kullanarak deverleri de hesaplayacaktır. Bu seçeneğin etkili olması için, AP-P2 veya P2-AP değerlerini 1000 olarak ayarlamak ve içbükey modunu etkinleştirmek gerekir.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+&nbsp;<img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check_enabled" /><strong> <i>Değerleri geri yükle</i></strong> seçeneği, eklenen çizginin ilk ve son noktasından itibaren belirli bir mesafede önceden var olan genişlik değerlerini geri yüklemeyi sağlar.<br />
+      <br />
+<strong>Arama mesafesi</strong> seçeneği, daha uzaktaki noktaların göz ardı edileceği belirli bir mesafeyi tanımlamaya olanak tanır.<br />
+      <br />
+<strong>Filtreleme toleransı</strong> seçeneği, genişlik değerini bu toleransla yuvarlamaya olanak tanır ve bir kesimde aynı genişlik değerine sahip ardışık ikiden fazla veri olmasını önleyerek her kesimin sadece ilk ve son verisini bırakır.<br /><br /><strong>Seçilen tipteki tüm çizgileri</strong> aynı anda kullanma imkanı.<br /><br />
+Benzer şekilde, banket genişliğini haritada mevcut bir çizgiye göre tanımlamak için <strong>[A3 Çizgiye Göre]</strong> ve bölünmüş yol eksenleri durumunda, banket genişliğini haritada mevcut bir çizgiye göre tanımlamak için <strong>[A1 Çizgiye Göre]</strong> seçeneği de mevcuttur (bu çizgi kod 1'den geçecektir).<br />
+<br /><br />
+      </span><span class="Titulo_2"><a name="tabla">Tabloya Göre Genişlik Kuralı</a></span><br />
+      <span class="Parrafo"><br /><strong>[A2 Tabloya Göre]</strong> ve <strong>[A3 Tabloya Göre]</strong> düğmeleri, sırasıyla <strong>2</strong> ve <strong>3</strong> numaralı yardımcı platformlar için, <a href="OL_anchos.html#tabla">ana platformlar</a> durumunda olduğu gibi bir&nbsp;<span class="Archivo">.tsa</span> genişletme tablosu kullanarak otomatik olarak genişletmeleri belirlemeyi sağlar.<br />
+      <br />
+Bu seçeneğin tipik bir kullanımı, bu yardımcı platformlardan birinin aslında ana platform görevi gördüğü, ancak çeşitli nedenlerle bu şekilde beyan edilemediği durumlardır.<br />
+      <br />
+Diğer yardımcı platformların genişlik değerleri ve eğimler ilk veriden kopyalanır.<br /></span><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="a4a3_en_terraplen">Dolguda A4/A3</a></span><br />
+
+      <br />
+
+      <img src="Imagenes/calzadas_aux_a3a4.png" style="width: 234px; height: 143px;" alt="" align="right" hspace="6" />Aşağıdaki parametrelere göre, sadece dolgu bölgelerinde yeni bir yardımcı platform (A3 veya A4) eklemeyi sağlar:<br />
+
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">A3 veya A4 yardımcı platformu için genişlik.<br />
+
+          </span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Bu platformu oluşturmak için minimum dolgu yüksekliği.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Bu platform ortaya çıktığında veya kaybolduğunda geçiş uzunluğu.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Belirli bir değerin katları olan kilometreleri analiz et.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Yardımcı platform verilerinde enkesit enterpolasyonunu etkinleştir veya devre dışı bırak.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><a name="Peraltes_independientes"><span class="Titulo_2">Bağımsız Deverler</span><br />
+      <br />
+Her bir platform için aşağıdaki iki araca sahibiz:<br />
+</a></span></span></span></span>
+<a name="Peraltes_independientes">      </a><ul>
+<a name="Peraltes_independientes">        </a><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Peraltes_independientes">ANA PLT. DEVERLERİ => KM: Kilometreleri Ana Platform Deverleri tablosundan kopyalar.</a></span></span></span></span></li>
+<a name="Peraltes_independientes">      </a></ul>
+<a name="Peraltes_independientes">      </a><ul>
+<a name="Peraltes_independientes">        </a><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Peraltes_independientes">YARD. PLATFORMLAR => KM,P: Kilometreleri ve Deverleri orijinal Yardımcı Platformlar tablosundan kopyalar.</a></span></span></span></span></li>
+<a name="Peraltes_independientes">      </a></ul>
+<a name="Peraltes_independientes">      </a><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Peraltes_independientes"><img src="Imagenes/ol_ca_pi.png" style="width: 600px; height: 301px;" alt="" /></a></span></span></span></span><a name="Peraltes_independientes"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></a></div>
+<a name="Peraltes_independientes">      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+</span></span></span></span><span class="Parrafo">Deverleri uyguladığımız noktanın görüntülenmesi için ekranda her iki tarafın mevcut verilerinin kilometresiyle çakışan vurgulanmış bir çizgi gösterilir:<br />
+      <br />
+      </span></a>
+      <div style="text-align: center;"><a name="Peraltes_independientes" /><span class="Parrafo"><img style="width: 672px; height: 194px;" alt="" src="Imagenes/caux_destacada.png" /></span><a name="Peraltes_independientes"><span class="Parrafo" /></a><br />
+      <a name="Peraltes_independientes"><span class="Parrafo" /></a></div>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,659 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Demiryolu Raporları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>DEMİRYOLU RAPORLARI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />&nbsp; <span class="Parrafo">Demiryolu projelerine özgü raporlar şunlardır:<br />
+      </span>
+      <br />
+      <div style="margin-left: 40px;"><a href="#apavia"><span class="Parrafo">Makaslar ve Gabari Dışı Noktalar</span></a><br /><a href="#traza_ffcc">Güzergah Kontrolü</a><br />
+      <a href="#ejevia"><span class="Parrafo">Hat Ekseni</span></a><br />
+      <a href="#replanteo"><span class="Parrafo">Uzun Kiriş Yöntemiyle Hat Aplikasyonu</span></a><br />
+      <a href="#replanteo"><span class="Parrafo">
+      </span></a><a href="#carril"><span class="Parrafo">Ray Aplikasyonu ve Kontrolü</span></a><br />
+      <a href="#cotas_y_pendientes">Rayların Kotları ve Eğimleri</a><br />
+      <a href="#cotas_rojas_de_carriles">Rayların Kırmızı Kot Farkları</a><br />
+      <span class="Parrafo"><a href="#ripado">Hat Ripajı</a></span><br />
+      <span class="Parrafo"><a href="#plasser">Plasser Buraj Makinesi</a><br /><a href="#Formato_GEO"><span style="color: rgb(0, 79, 175);">GEO Formatı</span></a><br /><br /></span>
+      <span class="Parrafo">
+      </span></div>
+
+<ul>
+        
+        
+        
+        
+        
+        
+
+
+      </ul>
+      <span class="Parrafo"> <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 533px; height: 335px;" alt="" src="Imagenes/dialogo_listados_ferrocarriles.png" /><br />
+      </div>
+      <br />
+<br />
+      </span><span class="Titulo_2"><a name="apavia">Makaslar ve Gabari Dışı Noktalar</a></span><br />
+      <span class="Parrafo"><br /><span style="font-weight: bold;">MAKASLAR</span> raporu (<span class="Archivo">apavia.res</span>) her bir makas için şunları gösterir:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Sapma ve ana güzergahlar.</span></li>
+        <li><span class="Parrafo">Makas tipi.</span></li>
+        <li><span class="Parrafo">Ana güzergah üzerindeki noktalar: yaslanma rayı başlangıç eklemi (JCA), matematiksel merkez ve topuk.</span></li>
+        <li><span class="Parrafo">Sapma güzergahı üzerindeki noktalar: topuk (ve kesişim durumunda, makasın başlangıcı).</span></li>
+        <li><span class="Parrafo">Gabari dışı noktalar (ayrıca her birinin konumunda harita üzerine bir sembol oluşturulur).</span></li>
+        
+        <li><span class="Parrafo">Kurptaki makaslar için J.C.A. ve topuktaki teğetlerin kesişiminin (Xv,Yv) koordinatları.</span></li>
+        <li><span class="Parrafo">Tam plaka numarası.</span></li>
+        <li><span class="Parrafo">Matematiksel merkezlerin ve topukların genel güzergah üzerindeki izdüşümü.</span></li>
+        <li><span class="Parrafo">Yaslanma rayı başlangıç eklemi, matematiksel merkez, ana hat topuğu ve sapma hattı topuğundaki Kot ve Eğim.</span></li>
+        <li><span class="Parrafo">Yaslanma rayı başlangıç eklemi ve her iki topuktaki Azimut.</span></li>
+        <li><span class="Parrafo">Yaslanma rayı başlangıç eklemi ve sapma topuğunun sapma güzergahı üzerindeki KM'si.</span></li>
+        <li><span class="Parrafo">JCA, TP ve TD'deki rayların işleyen yüzünün koordinatları. (Ayrıca kesişimlerde IT). Güzergahlar için hat genişliği, kırmızı kot ve deverler içeren .vol dosyasının tanımlanmış olması gerekir.</span></li><li><span class="Parrafo">Ana (doğru) güzergahtaki ve sapma güzergahındaki hattın işleyen yüzüne olan KM ve mesafeler.<br /></span></li>
+
+
+
+
+
+      </ul>
+      
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_listados_ferrocarriles_apavia.png" style="width: 540px; height: 199px;" alt="" /></span><br />
+      </div><br />Programın, gabari dışı noktaların hesaplanması için <span style="font-weight: bold;">güvenlik mesafesi</span> olarak girilen değeri kullanımı şu şekildedir: Önce işleyen yüzeylere tanımlanan mesafede bir nokta hesaplanır ve ardından her bir güzergah boyunca tanımlanan güvenlik mesafesi kadar ötelenir. Nihai gabari dışı nokta, bu son KM'de her bir güzergaha yansıtılan bir noktadır. <br />
+      <br />
+Hatların işleyen kenarına olan mesafe farklı şekillerde verilebilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Sabit</span>, kullanıcı tarafından girilen bir değere göre.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Bir <span class="Archivo">.gal</span> dosyası aracılığıyla (kütüphanelerde bulunan <span class="Archivo">turquia.gal</span> gibi) ve farklı yarıçaplar için dış ve iç yanal <span style="font-weight: bold;">gabari tablosu</span> içeren:</li>
+      </ul>
+
+      
+      <div style="margin-left: 80px;"><span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+# turquia.gal</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+# Yanal gabari tablosu.</span><br />
+      <span class="Archivo">
+# İşleyen yüze olan mesafeler, gabari dışı noktaları yerleştirmek için</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+# Enterpolasyon: 1:enterpole et&nbsp; 0:En kısıtlayıcı değeri al</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+&nbsp;I&nbsp;&nbsp; 1</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+# Tablo Yarıçap, dış gabari, iç gabari</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 150&nbsp;&nbsp;&nbsp; 2.222 2.219&nbsp; # Daha küçük yarıçaplar için bu değer kullanılır.</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 160&nbsp;&nbsp;&nbsp; 2.208 2.205</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 170&nbsp;&nbsp;&nbsp; 2.196 2.193</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 180&nbsp;&nbsp;&nbsp; 2.185 2.182</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 190&nbsp;&nbsp;&nbsp; 2.175 2.173</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 200&nbsp;&nbsp;&nbsp; 2.167 2.164</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 210&nbsp;&nbsp;&nbsp; 2.159 2.156</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 220&nbsp;&nbsp;&nbsp; 2.151 2.149</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 230&nbsp;&nbsp;&nbsp; 2.145 2.143</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 240&nbsp;&nbsp;&nbsp; 2.139 2.137</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 250&nbsp;&nbsp;&nbsp; 2.133 2.131</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 251&nbsp;&nbsp;&nbsp; 2.000 2.000&nbsp; # Daha büyük yarıçaplar ve aliymanlar için.</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+&nbsp;Son</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      </div>
+      
+      
+      <ul>
+        <li>Bir <span class="Archivo">.jca</span> dosyasında bulunan bir <span style="font-weight: bold;">yaslanma rayı başlangıç eklemleri tablosu</span> aracılığıyla. Program, genel değeri kullanarak bir tablo oluşturur ve bu tablo, değerleri özelleştirmek için düzenlenebilir.</li>
+      </ul>
+Programın varsayılan olarak sunduğu değerler RENFE'nin NRV 10.1.1 normuna uygundur ve şunlardır:<br />
+
+
+      
+      
+      <ul>
+<li>Güvenlik mesafesi 4.00 m</li><li>Hattın işleyen kenarına olan mesafe 1.05 m</li>
+      </ul>
+Gabari dışı hat uzunlukları:<br />
+      <br />
+Trenin yerleştirilmesi için gabari dışı hat uzunluklarını listelemeyi sağlar. Yaslanma rayı başlangıç eklemine bir güvenlik mesafesi ve minimum bir hat uzunluğu tanımlanır. Gabari dışı hat uzunlukları listelendiğinde, her bir güzergahın toplam uzunluğu, makaslar tarafından işgal edilen uzunluk ve fark, yani makassız hat uzunluğu da listelenir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/apavia_long_via_libre.png" style="width: 345px; height: 52px;" alt="" /><br />
+      </div>
+
+
+      <br /><span class="Parf_negrita">[] Gruplara göre sırala</span> kutucuğu etkinleştirildiğinde, makaslar, sapma güzergahının ait olduğu gruba göre sıralanmış olarak listelenir. Eğer grup devre dışı bırakılmışsa, makasları listelenmez.<br /><br /><span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Sonuçlar klasöründe, xlsx formatında seçim.</span><br /><br />Bu raporda Yaslanma Rayı Başlangıç Eklemleri, karakterler artı numaradan oluşan bileşik adla gösterilir.<br /><br /><a name="traza_ffcc"><span class="Titulo_2">Demiryolu Güzergahının Kontrolü</span><br /><br />Plan ve boykesit güzergahının kontrol raporu, .xlsx formatında mevcuttur. Kontrolü gerçekleştirmek için gerekli tüm parametreleri içeren FFCC_ADIF_2021.dip tablosuyla kullanılmalıdır.<br /><br />Eğer tasarım tablosu [Referans] modunu içeriyorsa, bu kontrol [Normal] ve [İstisnai] modlarının önüne eklenir.<br /><br /></a><div style="text-align: center;"><a name="traza_ffcc"><img style="width: 600px; height: 68px;" alt="" src="Imagenes/list_ffcc_comp_trazado.png" /><br /></a></div><a name="traza_ffcc"><br /><span class="Archivo"><br />
+      </span><span class="Titulo_2"></span></a><a name="ejevia">Hat Ekseni</a><br />
+      <span class="Parrafo"><br />
+</span><span class="Parrafo"><span style="font-weight: bold;">HAT EKSENİ</span> raporu (<span class="Archivo">ejevia.res</span>), <span class="Archivo">ejevia#x.res</span> dosyasında oluşturulur; burada # güzergah numarasıdır ve x, <span style="font-style: italic;">u</span> (tek hat), <span style="font-style: italic;">d</span> (sağ hat) veya <span style="font-style: italic;">i</span> (sol hat) değerini alır. İstenen kesim için, plandaki eksene olan mesafeyi, (X,Y) koordinatlarını, KIRMIZI KOT, ALÇAK RAY ve ALÇAK RAY KOTU (deverin hesaplandığı kot) kotlarını ve mm cinsinden deveri listeler.<br />
+      <br />
+Kot örnekleri:<br />
+Alçak ray kotu: 1435 nominal genişliğe ve 1500 hesap genişliğine sahip bir hat için tanımlanır, 65mm'lik bir ray başının merkeziyle çakışır.<br />
+Kırmızı kot, [HAT VE TRAVERS]'de seçilen seçeneğe bağlı olarak [ALÇAK RAY] veya [ALÇAK RAY KOTU] ile çakışabilir.<br />
+Alçak ray kotu, rayın işleyen yüzüne karşılık gelen kot olacaktır.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_ferrocarriles_ejevia.png" style="width: 450px; height: 93px; margin-left: 7px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><br />
+Bu rapor, ilgili seçeneği işaretleyerek plandaki güzergahın karakteristik noktalarında bir veri yazdırma imkanı sunar.<br />
+      <br />
+Eğer <span style="font-weight: bold;">otomatik</span> rapor seçilirse, çift hatlı demiryollarında ve EKSANTRİKLİK VE HAT ARALIĞI menüsünden herhangi bir taraf iptal edilmişse, rapor kalan tarafın hattının verilerini veya her ikisi de kalıyorsa sağ tarafın verilerini yazdırır.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+</span></span><span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Sonuçlar klasöründe, xlsx formatında seçim.<br />
+
+      <span class="Parrafo">Rapor başlıklarının metinlerini dosyalarda düzenleme ve kaydetme imkanı <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /><br />
+      <br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span style="font-weight: normal;"><span class="Parrafo"><img src="Imagenes/listados_ejevia.png" style="border: 1px solid ; width: 600px; height: 294px;" alt="listados_ejevia" /></span></span><br />
+      <span style="font-weight: normal;"><span class="Parrafo"></span></span></div>
+      <span style="font-weight: normal;"><span class="Parrafo"><br />
+      </span></span><a name="traza_ffcc"><span class="Titulo_2">Travers Sayısı</span><br /><br />traviesas0.xlsx raporu, makaslar hariç, her bir (aktif) güzergahın travers sayısını içerir.<br />BIM geometrisi oluşturulduğunda geçici klasörde her bir güzergah için oluşturulan traviesa_x.txt dosyalarından bilgi çıkarır.<br /></a><div style="text-align: center;"><a name="traza_ffcc"></a><img style="width: 484px; height: 273px;" alt="listados_FFCC_numtraviesas" src="Imagenes/listados_FFCC_numtraviesas.png" /><a name="traza_ffcc"></a><br /><a name="traza_ffcc"></a></div><span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="replanteo">Uzun Kiriş Yöntemiyle Hat Aplikasyonu</a></span><br />
+      <span class="Parrafo"><br /></span></span><img src="Imagenes/dialogo_listados_ferrocarriles_replanteo.png" style="width: 450px; height: 223px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">HAT APLİKASYONU</span> raporu (<span class="Archivo">repvia.res</span>), RENFE'nin N.R.V. 7-1-0.2 normuna göre hazırlanmıştır.<br />
+      <br />
+İşaretleme noktaları, <span class="Archivo">.top</span> formatındaki dosyalardan yüklenebilir/kaydedilebilir.<br />
+      <br />
+Rapor, güzergahı ve hattı (<span style="font-weight: bold;">tek</span>, <span style="font-weight: bold;">sağ</span> veya <span style="font-weight: bold;">sol</span>) seçmeyi sağlar.<br />&nbsp;<br />
+      <br />
+
+      <br />
+      </span></span><span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Sonuçlar klasöründe, xlsx formatında seçim.<br />
+      <br />
+
+      <span class="Parrafo">Rapor başlıklarının metinlerini dosyalarda düzenleme ve kaydetme imkanı <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="carril">Ray Aplikasyonu ve Kontrolü</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">RAY APLİKASYONU</span> raporu (<span class="Archivo">carril.res</span>), rayların aplikasyonu ve yerleştirilmesinin kontrolü için bir rapordur. Kiriş uzunluğu, bir mesafe ve rayın işleyen yüzüne göre bir kot artışı girilebilir.<br />
+      <span style="font-weight: bold;">Her iki rayı da listele</span>: Bu durumda, alçak rayı taşıyan ray bir * ile işaretlenir.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_ferrocarriles_carril.png" style="width: 561px; height: 149px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold; font-style: italic;">Sehimi katına yuvarla</span> seçeneği, sehim değerini milimetre kesirleriyle vermeyi sağlar. Ayrıca, deveri belirttiğimiz ondalık basamak sayısını da seçme seçeneğimiz vardır: dever milimetre cinsindense 0'dan 2'ye, inç cinsindense 2'den 4'e kadar.<br />
+      <br />
+      <span style="font-style: italic; font-weight: bold;">Ray referans noktası:</span> Bu nokta, eksene olan mesafe, X, Y, Z ve Dever hesaplaması için kullanılır. Her durumda her iki genişlik de listelenir. (örneğin: 1.435 ve 1.500)<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">İşleyen yüz</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Dever hesaplama noktası.</span></span></li>
+      </ul>
+      <span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Sonuçlar klasöründe, xlsx formatında seçim.<br />
+
+      <span class="Parrafo">Rapor başlıklarının metinlerini dosyalarda düzenleme ve kaydetme imkanı <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Oluşturulan dosyanın adı <span class="Archivo">carril#x.res</span>'tir; burada # güzergah numarasıdır ve x, tek hat durumunda <span style="font-style: italic;">u</span>, sağ hat için <span style="font-style: italic;">d</span> ve sol hat için <span style="font-style: italic;">i</span> değerini alır.<br />
+      <br />
+Eğer <span class="Parf_negrita">[] Her iki rayı da listele (ve 3.'yü)</span> seçilirse, rapora üçüncü rayın verileri de dahil edilir.<br />
+      <br />
+      </span></span><a name="cotas_y_pendientes"><span class="Titulo_2">Rayların Kotları ve Eğimleri</span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Bu rapor, her bir ray için kotu ve boyuna eğimi yazdırır. Kotlar, dever nedeniyle kırmızı kottan farklıdır ve boyuna eğim, devere geçiş nedeniyle kırmızı kottan farklıdır.<br />
+      <br />
+Rayın referans noktası seçilebilir:<br />
+</span></span></a>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li>İşleyen yüz</li>
+        <li><span class="Parrafo"><span class="Parrafo">Dever hesaplama noktası<br />
+        </span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>&nbsp;<img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Sonuçlar klasöründe, xlsx formatında seçim.<br />
+&nbsp;
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/cota_carril.png" style="width: 384px; height: 64px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><span class="Parrafo">Rapor başlıklarının metinlerini dosyalarda düzenleme ve kaydetme imkanı <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" />.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo">&nbsp;<img src="Imagenes/listado_zcarril.png" style="border: 1px solid ; width: 600px; height: 225px;" alt="listado_zcarril" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">&nbsp; </span><br />
+      <br />
+
+      <a style="font-weight: normal;" name="cotas_rojas_de_carriles"><span class="Titulo_2">Rayların Kırmızı Kot Farkları</span><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+KM'ler, rayların eksene olan mesafesi, ray kotu, rayın dikeyindeki arazi kotu, rayın Kırmızı Kot Farkı ve dever sütunlarını elde edeceğiniz rapor.<br />
+      <br />
+Rayın referans noktasını, dever hesaplama noktası veya işleyen yüz arasından seçebilirsiniz. İşleyen yüz durumunda, eğer kırmızı kot farkını ray başının merkezinden hesaplamak isteniyorsa, ray başının yarı genişliğini girmeye izin verilir, rayın kotunu işleyen yüzünden tanımlayan nokta yerine.<br />
+      <br />
+</span></span><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Sonuçlar klasöründe, xlsx formatında seçim.<br />
+      <span class="Parrafo">Rapor başlıklarının metinlerini dosyalarda düzenleme ve kaydetme imkanı <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></a>
+      
+      <div style="text-align: center; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/list_cota_roja_carril.png" style="width: 546px; height: 134px;" alt="" /><br />
+      <br />
+      <img src="Imagenes/listado_roja_carril.png" style="border: 1px solid ; width: 600px; height: 212px;" alt="listado_roja_carril" /><br />
+      <br />
+</span></span>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span><a style="font-weight: normal;" name="ripado"><span class="Titulo_2">Hat Ripajı</span></a><br style="font-weight: normal;" />
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+HAT RİPAJI (.top) raporu (<span class="Archivo">ripvia.res</span>) için hat verilerinin girişi aşağıdaki şekillerde yapılabilir:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Hattın koordinatlarını (X,Y,Z) içeren bir dosya aracılığıyla. Bu dosya bir <span class="Archivo">.top</span> veya bir <span class="Archivo">.toc</span> olabilir.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Kazıkların koordinatlarını (X,Y,Z) içeren bir dosya (<span class="Archivo">.top</span> veya <span class="Archivo">.toc</span> formatında) artı bir <span class="Archivo">.pkd</span> mesafe dosyası ve artı hattın geometrik kotlarını içeren bir <span class="Archivo">.pkz</span> dosyası aracılığıyla.</span></span></li>
+      
+      </ul>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Her iki durumda da hattın kotu, hattın geometrik kotlarını içeren bir <span class="Archivo">.pkz</span> dosyası aracılığıyla girilebilir. Hem kaldırma hem de ripaj en yakın raydan verilir.<br />
+      <br />
+Ayrıca şunlar da belirtilmelidir:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Güzergah.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Hat: tek, sağ veya sol.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Başlangıç KM ve Bitiş KM.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">İsteğe bağlı olarak, plan ve/veya boykesit ve/veya deverlerin ana noktalarını ekleme imkanı sunulur.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">HAT YARI GENİŞLİĞİ:</span></span></li>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo">&nbsp;belirtilen bir değerle SABİT olabilir</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo">İşleyen yüzler arası (rayların işleyen yüzleri arasındaki mesafe)</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo">Dever hesaplama noktaları arası<br />
+            </span></span></li>
+        </ul>
+
+        <li><span class="Parrafo"><span class="Parrafo">Minimum ve maksimum ripaj değeri. Varsayılan olarak minimum ripaj -3000 mm ve maksimum ripaj 3000 mm.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">RAY KOTU:</span></span></li>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo">Rayın işleyen yüzü</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo">Dever hesaplama noktası<br />
+            </span></span></li>
+        </ul>
+
+      
+      </ul>
+
+      
+      <div style="text-align: center; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_ferrocarriles_ripado.png" style="width: 535px; height: 208px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+Rapor her nokta için şunları yazdırır:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">KM</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Kullanıcı KM'si (km eşitliklerinden türetilmiş)<br />
+          </span></span></li>
+
+        <li><span class="Parrafo"><span class="Parrafo">Nokta (<span class="Archivo">.top</span> numarası veya <span class="Archivo">plan</span>, <span class="Archivo">boykesit</span> veya <span class="Archivo">dever</span>)</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">PLAN-BOYKESİT Tipi (örneğin, ALİYMAN KV -1000)</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Yarıçap</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Kırmızı kot</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">mm cinsinden dever</span></span></li>
+      
+      </ul>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+Ve .top dosyasından gelen noktalar durumunda:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Noktanın kotu</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Kaldırma (alçak ray kotu - nokta kotu) mm cinsinden</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">mm cinsinden ripaj (noktanın raya olan mesafesi). Seçilen hat içindeki en yakın ray otomatik olarak seçilir</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Seçilen ray</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Her iki rayda da çok yakın noktalar alındığında, mm cinsinden mevcut dever.<br />
+          </span></span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo"><br />Raporda, alçak ray ile aynı olabilir veya olmayabilir olan teorik ray kotu gösterilir. Alçak ray kotu, deverlerin tanım tablosunda <span style="font-style: italic;">Ağırlık merkezini koru</span> seçeneği etkinleştirilmişse "S" kurplarında kırmızı kottan farklı olabilir.<br />
+      <br />
+      </span><span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Sonuçlar klasöründe, xlsx formatında seçim.<br />
+
+      <span class="Parrafo">Rapor başlıklarının metinlerini dosyalarda düzenleme ve kaydetme imkanı <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><br />
+      <span class="Parrafo">
+Bu rapor ayrıca, alçak raya (kurpların içi) karşılık gelen noktalardan geçen boykesiti içeren bir <span class="Archivo">hilobajo.lon</span> dosyası da oluşturur. Aliymanlarda çok yakın birkaç nokta varsa (dkm ≤ </span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">5cm), en düşük kotlu olanı tutulur.<br />
+Kurplarda da iç rayda çok yakın noktalar olabilir ve yine en düşük olanı tutulur.<br />
+      <br />
+      <img src="Imagenes/listados_ferrocarril_ripado.png" style="width: 700px; height: 333px;" alt="listado_ferrocarril_ripado" /><br />
+<br />
+      <br /></span></span><a name="plasser"><span class="Titulo_2">PLASSER Buraj Makinesi</span></a><br style="font-weight: normal;" />
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">
+      <br />
+PLASSER BURAJ MAKİNESİ raporu (<span class="Archivo">plasser.res</span>), CGV5 veya benzeri bir yazılımla donatılmış bu tip buraj makinesi için geçerlidir.<br />
+      <br />
+      </span></span>
+      
+      <div style="text-align: center; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_ferrocarriles_plasser.png" style="width: 421px; height: 327px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+Sekmelerle ayrılmış ve sütunların aşağıdaki verileri içerdiği bir rapor oluşturur:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Karakteristik noktanın KM'si.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Senkronizasyon işareti (S), verisiz olmalıdır.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Yarıçap: Sağa doğru pozitif (+), sola doğru negatif (-). Aliymanlarla teğet noktaları 0 ile işaretlenir. Dairesel kurbun başlangıcı ve sonu yarıçapla işaretlenir.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Kurbun yönü: Yarıçap sağa doğru pozitif (D), yarıçap sola doğru negatif (I). Sadece dairesel kurbun başlangıç ve bitiş KM'lerinde gösterilir.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Geçiş eğrisi (0 veya boş</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Klotoid, 1</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Geçişsiz, 2</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Klein). Geçişsiz kurplar durumunda, aliymanla teğet noktası yarıçapla işaretlenir ve bu sütuna bir yazılır. Klotoidli geçiş varsa boş bırakılır.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Deverler: Sağa doğru pozitif (+), sola doğru negatif (-). İşaret yarıçapınkiyle aynıdır. Deveri 0 olan noktaları işaretlemek gerekir; bu noktalar plandaki karakteristik noktalarla çakışabilir veya çakışmayabilir.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Dever yönü: Pozitif dever &#8594; sağ (D), negatif dever &#8594; sol (I) (sadece sabit deverin başlangıcında ve sonunda).</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Deverde enine nivelman birleşimi (0 veya boş</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Klotoid, 1</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Geçişsiz, 2</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Klein).</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Düşey kurplar: Giriş teğeti KV ile ve çıkış teğeti 0 ile işaretlenir; KV tepe noktasında pozitif ve çukur noktasında negatiftir. Bir düşey kurbun sonu bir sonrakinin başlangıcıyla çakıştığında, KM tekrarlanır; ilki sıfırla (kurp sonu) ve ikincisi bir sonraki kurbun KM'siyle.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Kurbun yönü: Pozitif KV &#8594; T (tepe), negatif KV &#8594; Ç (çukur).</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo">Veri girişi, kaldırma ve ripajın hesaplandığı bir <span class="Archivo"><a href="EDM_topografia.html#ficheros_top">.top</a></span>/<span class="Archivo"><a href="EDM_topografia.html#ficheros_toc">.toc</a></span> nokta dosyası aracılığıyla yapılabilir. Negatif kaldırmalar sıfıra ayarlanır (sütununda "-" işareti korunarak) ve bu durumda ayrıca bir uyarı gösterilir.</span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Eğer bir nivelman dosyası<a href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a> verilirse ve rayların <a href="EDM_topografia.html#ficheros_top"><span class="Archivo">.top</span></a>/<a href="EDM_topografia.html#ficheros_toc"><span class="Archivo">.toc</span></a> dosyası tanımlanmazsa,</span></span><span class="Parrafo"> nivelman dosyasının KM'lerinde "kaldırmalar" ve ripaj=0 olan bir rapor oluşturulur.</span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Negatif kaldırmaları sıfıra ayarlama veya ayarlamama ve pozisyon listeleme veya ripaj listeleme (yönleri tersine çevirmek için) imkanı vardır.</span></span></li>
+      
+      </ul>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-style: italic; font-weight: bold;">Noktalar ve geometrik kot</span><br />
+      <br />
+Veri girişi ayrıca şunlar kullanılarak da yapılabilir:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo">Kazıkların koordinatlarını içeren bir <a href="EDM_topografia.html#ficheros_top"><span class="Archivo">.top</span></a>/<a href="EDM_topografia.html#ficheros_toc"><span class="Archivo">.toc</span></a> dosyası.</span></li>
+        <li><span class="Parrafo">İşleyen yüzden kazığa ölçülen KM'ler ve mesafeleri içeren bir <a href="OL_ficheros_pkd_pks_pkz.html#pkd"><span class="Archivo">.pkd</span></a> dosyası.</span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Hattın nivelmanını içeren bir </span></span><a href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a><span class="Parrafo"><span class="Parrafo"> dosyası.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Bir .job dosyasından: Bu, bir dizi km için hesaplanmış yönetici ripajı ve yönetici kaldırmanın zaten çerçevelendiği bir ascii dosyasıdır. 3 başlık satırı ve her nokta için bir satır daha içerir, bu veri satırlarından şunlar kullanılır:<br />
+          </span></span>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">Sütun 3 : KM</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">Sütun 30 : YÖNETİCİ RİPAJI</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">Sütun 33 : YÖNETİCİ KALDIRMA.</span></span></li>
+          </ul>
+        </li>
+
+      
+      </ul>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Topografik olarak bir nokta bulutu alındığı ( <span class="Archivo">.top</span> dosyası) ve daha sonra bir nivelman yapıldığı durumda, trigonometrik kot, bir <a href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a> dosyası da tanımlanarak nivelmanın geometrik kotuyla değiştirilebilir.</span><span class="Parrafo"><br />
+      <br />
+      <span style="font-style: italic;">Tolerans</span><br />
+      <br />
+Alınan nokta zincirlerinde bir çakışma olması durumunda şunlar girilebilir:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Noktanın tekrarlandığını düşünmek için KM cinsinden tolerans. Tekrarlanan noktalar için tolerans, ayrıca bir <span class="Archivo">.top</span> verisinin, KM farkı toleransın altındaysa bir karakteristik noktayla ilişkilendirilmesine neden olur.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Hata dağıtım modu:</span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span style="font-weight: normal;" class="Parrafo">
+      <div style="margin-left: 40px;">
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo">Dağıtma: Sadece tekrarlanan noktadaki ripajın ortalaması hesaplanır.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Uzunluğa göre: Hata, maksimum bir mesafeye kadar mesafeye bağlı olarak dağıtılır.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Noktalara göre: Her noktada, tüm hata emilene kadar hata değeri önceden belirlenmiş bir değerde azaltılarak düzeltilir.</span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <table style="text-align: left; width: 692px; height: 202px; font-weight: normal;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">Kırmızı kotu düşür (mm)<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Kot farkının önemli değerlere sahip olduğu durumlarda rayın kademeli bir "kaldırılmasını" gerçekleştirmek için raporlar oluşturmayı sağlar.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">Maksimum ripaj<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Bu değer aşılırsa, maksimum ripaj yazdırılır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">Maksimum kaldırma<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Maksimum kaldırmayı sınırlamayı sağlar (varsayılan olarak 70 mm).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">KM'leri yuvarla<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Sonuçtaki KM'leri belirtilen değere yuvarlar (varsayılan olarak 1). KM'lerin yuvarlanması, plan, boykesit ve deverlerin karakteristik noktalarını da etkiler.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">Boşluksuz raporlar<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Verileri ayırmak için sadece sekme kullanılır. Bu seçenek etkinleştirildiğinde, ondalıkların sıfırları ve tam sayılar durumunda nokta kaldırılır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">0-KV-KV-0<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 521px;">Düşey kurplarda, her bir kurbun öncesinde ve sonrasında önceden belirlenmiş bir mesafede KV=0 olan bir veri koyma imkanı kabul edilir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+      <br />
+      <span style="font-style: italic; font-weight: bold;">Hat yarı genişliği</span><br />
+      </span></span></span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">SABİT: Her zaman aynı değer uygulanır. Bu, varsayılan olarak işaretlenen seçenektir ve HAT VE TRAVERS'te belirtilen değerle görünür.</span></span></span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">.vol'a GÖRE: Bu durumda <span class="Archivo">.vol</span> dosyasındaki değerleri okur. Bu seçenekle ayrıca, dever nedeniyle genişlik değişiminin dikkate alınmaması imkanı da sunulur.</span></span></span></li>
+      </ul><br /><span class="Titulo_2"><a name="Formato_GEO">GEO Formatı</a></span><a name="Formato_GEO"><br /><br />.geo formatında bir rapor oluşturmak mümkündür: GüzergahX.geo.<br /><br /><img style="width: 420px; height: 358px;" alt="" src="Imagenes/listados_ffcc_geo.png" /><br /><br /><br /><span class="Titulo_2">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></a></span></td>
+    </tr>
+  <tr><td style="width: 692px;" class="obsolete Parrafo"></td></tr></tbody>
+</table>
+
+</body></html>

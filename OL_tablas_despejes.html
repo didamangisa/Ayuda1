@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><title>Görüş Mesafesi Tablosu</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GÖRÜŞ MESAFESİ TABLOSU<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Rüzgar santrallerine erişim yollarında genişletme ve görüş mesafesi hesaplama aracı.<br /></span><span class="Parrafo" /><span class="Parrafo"><br />
+Demo/Despejes klasöründeki kurulumla birlikte, bize yardımcı olabilecek bir Despejes.isa örneği bulunmaktadır.<br />
+      <br />
+<a href="OL_anchos.html">Genişlikler</a> menüsünde, NordexN133_4,5.tsa genişletme tablosu kullanılarak <span style="font-weight: bold;">Tabloya Göre Genişlikler</span> hesaplanmıştır. Bu tablo, kurp yarıçapına ve gelişimine bağlı olarak iç ve dış genişlik ve genişletme tablosu içerir. Ayrıca genişletmeye geçişler için bir tablo da içerir.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_anchos_tabla.png" style="width: 600px; height: 232px;" alt="" /><br />
+      <span class="Parrafo" /></span></div>
+      <span class="Parrafo"><br />
+Boykesit > Yardımcı Programlar > <span style="font-weight: bold;">GÖRÜŞ MESAFESİ TABLOSU</span> menüsünde bulunan diyalog kutusuna giriyoruz. <br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_menu.png" style="width: 600px; height: 274px;" alt="" /><br />
+      <span class="Parrafo" /></span></div>
+      <br />
+
+Görüş mesafeleri, <span style="font-weight: bold;">KM</span>, <span style="font-weight: bold;">Kenara Mesafe</span>, <span style="font-weight: bold;">Kot Farkı</span> ve <span style="font-weight: bold;">kurp numarası</span> listeleridir. Herhangi bir KM için, platformun son noktasına olan bir mesafeyi ve yarma şevi veya arazi ile kesişmemesi gereken bir yüzeyi tanımlayan bir kot farkını belirtirler.<br />
+
+      <br />
+
+Bu kutuda, görüş mesafelerini, kurp yarıçapına ve gelişimine bağlı olarak hesaplamak için özel olarak tasarlanmış ikinci bir genişletme tablosu olan&nbsp;<span class="Archivo">NordexN133_4,5M_Desp.tsa</span>&nbsp;kullanılarak <span style="font-weight: bold;">Tabloya Göre</span> aracı kullanılmıştır. Ayrıca, kurpların iç veya dış tarafı için farklı görüş mesafesi yüksekliği ekler.<br />
+
+      <br />
+
+Kütüphanede, sırasıyla Tabloya Göre Genişletmeler ve Tabloya Göre Görüş Mesafeleri hesaplamasında kullanılmak üzere&nbsp;<span class="Archivo">DesarrSG155.tsa</span> ve&nbsp;<span class="Archivo">DesarrSG155_Desp.tsa</span> tabloları bulunmaktadır. Bunlar, kurbun sağa (pozitif yarıçaplar) veya sola (negatif yarıçaplar) olmasına bağlı olarak farklı genişletme değerleri tanımlama özelliğine sahiptir.<br />
+
+Böylece her genişletme değeri şunlara bağlıdır:<br />
+
+
+      <ul>
+        <li><span class="Parrafo">Kurp yarıçapı.<br />
+          </span></li>
+        <li><span class="Parrafo">Kurp gelişimi.</span></li>
+        <li><span class="Parrafo">Kurbun iç veya dış tarafında olması.</span></li>
+        <li><span class="Parrafo">Kurp işareti.</span></li>
+      </ul>
+      <span class="Parrafo"><img src="Imagenes/tabla_despejes_por_linea.png" style="width: 300px; height: 114px; float: right;" alt="" hspace="7" /><span style="font-weight: bold;">Çizgiye Göre</span>, 2D çizgileri (bu durumda kot farkı verilmelidir) veya tabloyu doldurmak için 3D çizgileri seçmeye olanak tanır. Seçilen tipteki tüm çizgileri aynı anda kullanmak mümkündür.<br /><br /><span style="font-weight: bold;">Görüş mesafesi yüzeyi</span> seçeneği, hesaplandığında enkesite, arazi veya yarma şevleriyle kesişmemesi gereken sanal görüş mesafesi yüzeyini ekler.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/Tabla_despejes_perfil.png" style="width: 600px; height: 188px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Kütüphanede, bu yüzeyi 3D olarak da çizen bir <a href="OL_ficheros_lil.html">Despeje.lil</a> dosyası bulunmaktadır. <br />
+      <br />
+<span style="font-weight: bold;">Görüş Mesafesi Sağla</span> aracı, tüm görüş mesafesi tablosunu analiz eder ve yarma ile kesişmeyi önlemek için gerekli <a href="OL_bermas_despeje.html">görüş mesafesi palyesini</a> ekler.<br />
+Görüş mesafesi tablosunda zaten veri varsa ve görüş mesafesi palyeleri tanımlanmışsa ( <span style="font-weight: bold;">Görüş Mesafesi Sağla</span> komutuyla), görüş mesafesi palyesi araziye çıksa ve ardından son noktası tekrar arazinin altına düşse bile kesit kesintiye uğramaz.<br />
+      <br />
+Bu komut ayrıca, dolgu bölgelerinde görüş mesafesi yüzeyinin araziyle kesişimini analiz eder ve gerekirse bu bölgeleri, araziyi gerektiği kadar kazan <a href="OL_cuneta_guarda_caballon.html">koruma hendekleri</a> kullanarak temizler. &nbsp;<span class="Archivo">Demo\Despejes</span> klasöründe bulunan &nbsp;<span class="Archivo">despejes.isa</span> örneğinde bu durum gösterilmektedir: 1077-1099 KM'leri arasında, kurbun sağ tarafında azaltılmış bir dolgu vardır, arazi dolgu şev dibinden dik bir eğimle çıkar ve görüş mesafesi yüzeyini keser.<br />
+      <br />
+Burada, temizleme sırasında oluşturulabilecek koruma hendekleri için <span style="font-weight: bold;">yarma şevleri</span> ve <span style="font-weight: bold;">dolgu şevleri</span> tanımlanabilir.<br />
+      <br />
+Görüş Mesafesi Sağla aracı, bu bölgeleri temizlemek için sağ dolguda birkaç kesimi Koruma Hendekleri tablosuna dahil etmiştir.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_cun_guarda.png" style="width: 600px; height: 238px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">Görüş mesafesi palyesi</span> veya <span style="font-weight: bold;">Koruma Hendeği palyesi</span> için iki eğim tanımlama imkanı.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_pendientes.png" style="width: 600px; height: 71px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">Görüş mesafeleri için koruma hendeğini yarma görüş mesafesi palyeleri gibi yeniden kodla</span> kutucuğu işaretlenerek, bir görüş mesafesi palyesinden bir koruma hendeğine ardışık iki enkesit arasında bir sıçrama olduğunda şevlerde süreklilik sağlanabilir.<br />
+<br />
+&nbsp;<img src="Imagenes/icono_trayectorias.png" style="width: 25px; height: 25px;" alt="" /> simgesi aracılığıyla, bir <a href="OL_planta_trayectorias.html">sürüş simülasyonu</a> yaparak görüş mesafesi tablosu oluşturma imkanımız vardır. Araç, önceden tanımlanmış şablonlardan herhangi biri veya bir .try dosyasında kaydedilmiş değiştirilmiş bir şablon olabilir. Sürüş simülasyonu, aracın burnunu kurpların dış tarafındaki platform kenarına yaklaştırarak yapılır. </span><span class="Parrafo">
+Sürüş Simülasyonları ile görüş mesafesi hesaplamasında, kurbun iç veya dış tarafında olmamıza bağlı olarak görüş mesafesi için iki farklı değer girilebilir.</span><span class="Parrafo">
+Ayrıca, sürüş simülasyonu zarfı üzerinde görüş mesafesi için bir pay tanımlanır. Kurbun iç ve dış tarafındaki görüş mesafesi yükseklikleri verileri şu değerle tamamlanabilir: İç taraf için yüksekliği kullanarak maksimum görüş mesafesi genişliği. Bir kurbun içinde bu değerden daha büyük bir görüş mesafesi genişliği ortaya çıkarsa, dış taraf için kullanılan yükseklik değerine değiştirilir.<br />
+Sürüş simülasyonu hesaplaması ve görüş mesafesi tablosunun aralıkları için kutucuklara veri girebiliriz.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_trayectoria_menu.png" style="width: 300px; height: 352px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      
+      <br />
+Güzergah yönünü seçme imkanı: <span style="font-weight: bold;">İleri</span> veya <span style="font-weight: bold;">Geri</span>.&nbsp;&nbsp; <br /><br /></span><span class="Parrafo" /><span class="Parrafo"><span style="font-weight: bold;">Dinamik Görüş Mesafesi Yöntemi</span>: Demo/Despejes klasöründeki kurulumla birlikte, bize yardımcı olabilecek bir Despejes_Dinamico.isa örneği bulunmaktadır.<br /><br />Bu yöntem, <span style="font-style: italic;"><span style="font-weight: bold;">Hesaplarken Görüş Mesafesi Sağla </span></span>seçeneğini kullanır; bu seçenek, Görüş Mesafesi Palyelerinde veya Koruma Hendeklerinde veri oluşturmayı gerektirmez. Bu tablolarda veri varsa, bunları silmeniz önerilir; görüş mesafeleri dinamik olarak hesaplanır.<br />Bir enkesit hesaplandığında veya gerçek kesitte görüntülendiğinde, görüş mesafesini karşılamak için kesit değiştirilir.<br />Görüş mesafesi yüzeyi yarma şevini kestiğinde, bu yüzeyin yüksekliğinde temizlenir.<br />Kesitin son noktasının arkasında araziyi kestiğinde, arazi boyunca ara noktalar eklenmez, bunun yerine hesaplanan görüş mesafesi palyesiyle doğrudan nokta eklenir.<br /><br /></span><div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_dinamico.png" style="width: 600px; height: 274px;" alt="" /><br />
+      <span class="Parrafo" /></span></div><br /><span class="Parrafo"><br /></span><span class="Parrafo">
+<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

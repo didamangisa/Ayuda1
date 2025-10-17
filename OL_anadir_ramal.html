@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W-3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Katılım Kolu Ekle</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>KATILIM KOLU EKLE<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Bu araç, bir <span class="Archivo">ISPOLa.per</span> dosyasına, diğer <span class="Archivo">ISPOL#.per</span> dosyalarında tanımlanmış yüzeyleri eklemeyi sağlar. Böylece, <i>a</i> ekseninin enkesitlerinde, <i>#</i> eksenlerine ait yüzeyler de görüntülenir. Ortak alanların üst üste binmesini önlemek için, bu işlemin <i>a</i> ekseni ile diğer eksenler arasındaki birleşim (entronque) geometrisi tanımlandıktan sonra yapılması önerilir.<br />
+      <br />
+Bu araç; katılım kolu ekseninde bulunabilecek istinat duvarı temel yüzeylerini, temel kazısını, döşemeyi (duvar+döşeme) tanımlayan yüzeyleri, kafa hendeklerini, köprü tabliyelerini, kirişleri ve eklenen eksenlerde mevcut olan her türlü sembolü (raylar ve traversler dahil) dikkate alır. Eklenen semboller için, ana eksene göre boyuna eğim ve şevk (esviaje) açıları dikkate alınarak uygun yatay ve düşey deformasyon katsayıları uygulanır.<br />
+<br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo" /><img style="width: 600px; height: 256px;" alt="" src="Imagenes/dialogo_anadir_ramal.png" /><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      
+      </span><span class="Parrafo"><br />
+Diyalog kutusu aşağıdaki seçenekleri sunar:<br />
+<br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr><td><span style="font-weight: bold;">Sanat Yapısı Eksenleri</span></td><td>Etkinleştirilirse, sanat yapısı eksenleri ile olan kesişimleri, sanat yapısı numarasını belirten bir sembol ile gösterir. Bu gösterim hem anlık enkesit görüntüleyicide hem de sonuç .per dosyasına dahil edilir.</td></tr><tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">Kesişimler</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;">Bu onay kutusu etkinleştirilirse, mevcut eksenin ana eksen veya kesen eksen olarak dahil olduğu kesişimlerin (kavşak) birleşim geometrileri ve eklenecek eksenler listesindeki aktif eksenlerin kesişimleri de eklenir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">[Tümünü Ekle]</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;">Tüm eksenleri mevcut eksene ekler.<br />
+            <br />
+            </td>
+          </tr>
+          <tr><td><span style="font-weight: bold;">[Aktif Olanları Ekle]</span></td><td>Aktif gruplarda veya modellerde bulunan eksenleri ekler.</td></tr><tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold;">[Ekle]<br />
+[Araya Ekle]<br />
+[Sil]</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify;"><img style="width: 75px; height: 96px;" alt="" src="Imagenes/anadir_ramal_normal_especial.png" align="right" hspace="5" />Kesilecek katılım kollarını tanımlar. Katılım kolu alanına eksen numarası ve <strong>tip</strong> girilir. <strong>Özel</strong> tip, ana eksenin bir enkesitinin aynı şevi farklı bölgelerde kesebileceği küçük yarıçaplı veya dar kurplu eksenler için kullanılmalıdır (bu durumda kesişimler enkesit üzerindeki mesafeye göre sıralanır). <strong>Kesişimler</strong> kutusu etkinleştirildiğinde, diğer eklenen katılım kollarında olduğu gibi <strong>normal</strong> veya <strong>özel</strong> tip seçimi yapılabilir.<br />
+            <br />
+            <strong>67 Genişlet</strong> seçeneği, <i>Mevcut yüzeyleri genişlet</i> seçeneği ile birlikte kullanılır. Tüm platformun ana eksen ile tanımlandığı demiryolu hat gruplarında (playa de vías), balast yüzeyini (S67) eklenen eksenlerin balast yüzeyleri ile tamamlamayı sağlar. Katılım kolundan sadece 67 numaralı yüzey ve tüm semboller (hatlar, traversler, eksenler, ...) alınır.<br />
+            <br />
+Her katılım kolu için, ekleneceği bir kilometre aralığı tanımlanır.<br />
+<br />
+            </td>
+          </tr><tr><td><span style="font-weight: bold;">Yeniden Sırala</span></td><td>Eksen numarasına göre yeniden sıralar. <i>Mevcut yüzeyleri genişlet</i> seçeneği aktifse dikkatli olunmalıdır, çünkü bu seçenek sonucu değiştirebilir.</td></tr><tr><td><img style="width: 8px; height: 12px;" alt="" src="Imagenes/icono_cursor_flecha.png" /></td><td>Bu seçenekle katılım kolları ekrandan tıklanarak seçilebilir.</td></tr><tr><td><span class="Parf_negrita">N Eksenini tüm aktif eksenlere ekle</span></td><td>Bu seçenek, tüm aktif eksenlerin .vol dosyalarını açar ve mevcut ekseni (eğer listede değilse) her birinin Katılım Kolu Ekle listesine yerleştirir.</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">Oluştur<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Tanımlanan tüm katılım kollarını ekler.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Enkesitte Göster</span><br />
+            </td>
+            <td style="vertical-align: top;">Eğer katılım kolları önceden hesaplanmışsa, ANLIK ENKESİT penceresinde ana eksene göre konumları ve katılım kollarının arazi yüzeyleri görüntülenecektir.<br />
+            </td>
+          </tr>
+<tr><td><span style="font-weight: bold;">Renk</span></td><td>Bu kutu etkinleştirilirse, Anlık Enkesit penceresinde eklenen katılım kollarının yüzeyleri, kendi grupları için tanımlanmış renkte gösterilir.</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">Çıktı dosyası seç</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Bu kutu etkinleştirilirse, kullanıcı, oluşturulan enkesitleri ana eksenin <span class="Archivo">ispol#.per</span> (# eksen numarasıdır) dosyasının üzerine yazmak yerine, kendi seçeceği yeni bir dosyaya kaydetme seçeneğine sahip olur.</span></td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">Yarı Arama Genişliği<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Mevcut eksenden katılım kolu/kollarına olan ve bu kolların dikkate alınacağı maksimum mesafe. Bir katılım kolu ekseni bu yarı genişliğin dışına çıktığı anda, o eksen artık dikkate alınmaz.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Yatay Boşluk<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bir eksen eklendiğinde, belirli bir enkesitte kazı hattının (L68) ilk noktası ile ana gövdenin son noktası arasındaki mesafe bu alanda belirtilen değerden büyükse, bu hatlar doğrudan birleştirilmez, arazi yüzeyi üzerinden devam ettirilir. Kesiti oluşturan diğer hatlar (kaplama L67, seçme malzeme L107 vb.) ise aradaki boşlukta kazı hattını (L68) takip eder.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Eksen numarası için sembol<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Eksen numarasını etiketlemek için kullanılan sembol. Katılım kolunun enkesitine eklenir.<br />
+Katılım Kolu Ekle ile oluşturulmuş enkesitlerin gösterildiği Anlık Enkesit penceresinde, katılım kollarının üzerinde eksen numarası, kot ve kilometre bilgisi gösterilir. (Anlık Enkesit penceresindeki kot, Katılım Kolu Ekle komutuyla oluşturulan kottan biraz farklı olabilir, çünkü burada hız kazanmak için kot, katılım kolu kesilirken enterpole edilirken, Katılım Kolu Ekle komutunda belirtilen kilometredeki analitik kot yeniden hesaplanır).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Kot sembolü<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Kot bilgisini etiketleyen sembol. Katılım kolunun enkesitine eklenir. Eğer <a href="OL_planos_transversales.html">enkesit çizim pafta şablonunda</a> (örneğin <span class="Archivo">ARAMAL.gut</span>) katılım kolunun kotunun etiketlenmesi tanımlanmışsa, mükerrerliği önlemek için S317 sembolü yerine şablonda tanımlı olan sembol çizilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">KM sembolü<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Eksenin kilometresini etiketlemek için sembol tipi. Katılım kolunun enkesitine eklenir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">mm cinsinden dever sembolü</span><br />
+            </td>
+            <td style="vertical-align: top;">Demiryolu katılım kolları için dever bilgisini mm cinsinden ekleme imkanı. (örn. S986 h=120mm)<br />
+            </td>
+          </tr>
+<tr><td><span class="Parf_negrita">Deverler</span></td><td style="text-align: justify;">Karayolu veya otoyol katılım kolları için, bu 2 kutucuk kullanılarak dever etiketlemesi eklenebilir. Bu etiketleme için kullanılan S1025 ve S1026 sembolleri kütüphaneye dahildir. Bu etiketleme enkesit editöründe ve enkesit çizimlerinde görülebilir, ancak Anlık Enkesit penceresinde görünmez. Önceki bir sürümden bir .vol dosyası yüklendiğinde, bu etiketleme devre dışı olarak gelir, ancak yeni bir .vol dosyası oluşturulduğunda veya sıfırlandığında varsayılan olarak etkinleştirilir. Etiketlenen deverler, katılım kolunun belirtilen kilometresindeki gerçek deverlerdir ve bu nedenle, katılım kolunun azimutu ana ekseninkinden farklıysa, enkesitte görünen zahiri deverden farklı olabilirler.</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold;"><i>Kırmızı kotu kullan</i><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bu seçenek etkinleştirildiğinde, etiketlenen kot ve eksen, KM, kot sembollerinin konumu, enkesit modelinden kesit alınarak elde edilen kot yerine, o kilometredeki katılım kolunun analitik kırmızı kotunu kullanır. <br />
+Programa, katılım kolunun 1 numaralı kodunun kotunu etiketlemesini söyleyebilirim.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br /><strong>Arazi genişletmesi</strong>, jeoteknik yüzeyleri uzatmak için gerekli bilginin nereden alınacağını belirtir ve iki seçenek sunar:<br />
+<br />
+      <table style="text-align: left; width: 692px; height: 127px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 139px;">KATILIM KOLUNUN ISPOLx.per'i</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 533px;">Program, ana gövdenin <span class="Archivo">ISPOL#.per</span> dosyasındaki bitkisel toprak, zayıf zemin, sağlam zemin ve kaya yüzeylerini, katılım kollarının dosyalarındaki verileri kullanarak tamamlar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 139px;">ANA GÖVDENİN PERFx.per'i</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 533px;">Ana gövde ile katılım kolu arasında arazi bilgisi eksik olan bir boşluk olması durumunda, program bu bilgiyi ana gövdenin arazi enkesit dosyası olarak kullanılan dosyadan çıkarmaya çalışır. Bu dosya, kamulaştırma sınırları ile kesilmediği için daha geniş bir alanı kapsayabilir.<br />
+            </td>
+          </tr>
+          
+          
+          
+          
+          
+        </tbody>
+      </table>
+      <span class="Parrafo">
+      <table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 590px;"><span class="Parrafo"><span class="Parrafo"><span class="Info">Ana gövde tünel kesitindeyse, katılım kolundan gelen tüm arazi katmanları alınır.</span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+<strong>Yüzeyler</strong> bölümünde, programa katılım kollarının hangi tip yüzeyle temsil edileceği iki seçenek arasından belirtilir:<br />
+      <br />
+      </span></span><span class="Parrafo"><table style="text-align: left; width: 692px; height: 127px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 139px;">Yeni oluştur</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 533px;">Yüzeyler çizim amacıyla eklenir ve <i>a</i> ekseninin daha sonraki hacim hesaplamalarını etkilemez, çünkü eklenen yüzeyler hacim hesaplayıcısı tarafından dikkate alınmayan tiplerde oluşturulur.<br />
+            <br />
+İşlem, <i>a</i> ekseni enkesitlerinin konumuna ve yönüne göre diğer eksenin yüzeyleri üzerinden enkesitler alınarak ve bu eksenin 67, 68, 107 vb. yüzeyleri analiz edilerek gerçekleştirilir (demiryollarında balast altı ve koruyucu tabaka da dahil edilir).<br />
+            <br />
+Bu seçenek işaretliyken katılım kolu eklendiğinde, tüm katılım kolları orijinal yüzeylerin aynı kopyalarıyla (ilk kopya grubu) oluşturulur. Enkesit editöründe bunlar tekrarlanan yüzeyler olarak görünmez, çünkü temsil ettikleri eksen numarasıyla (düzenlenebilir çizgilerdeki model) ayırt edilirler.<br />
+            <br />
+Bu seçenekle program, güzergah projelerinde kullanılan çizgi tiplerinin kopyalarını kullanır.<br />
+            <br />
+Yeni yüzeyler oluşturularak (kopyalar kullanılarak) eklenmiş katılım kolları olan enkesitlerde, Alanlar ikonu ile ana eksendeki alanları veya katılım kollarından birindeki alanları ölçmek mümkündür.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 139px;">Mevcutları genişlet</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 533px;">Katılım kolunun kazı, kaplama, seçme malzeme, balast altı ve koruyucu tabaka yüzeyleri, yeni yüzeyler oluşturmak yerine, ana gövdedeki karşılık gelen yüzeyleri genişletir ve sonraki bir hacim hesaplamasını etkiler. Bu, yüzeyler arasında boşluk olmadığında geçerlidir.<br />
+            <br />
+Mevcut yüzeyler genişletildiğinde, eklenen yüzeylerin noktaları (arazi hariç) 4000 kodundan başlayarak ardışık olarak kodlanır.<br />
+            <br />
+Bu seçenekle, ardışık katılım kollarının numaralarının tanımlandığı sıranın, bitişikliklerine göre (örneğin bir demiryolu hat grubunda) olması önemlidir. Eğer katılım kolunda, ana gövdede olmayan bir yüzey (örneğin bir drenaj tabakası) varsa, yeni yüzeyler eklenir. Ancak, arazi yüzeyleri (bitkisel, zayıf, sağlam, kaya, kaya2,...) için, ana gövdenin enkesitinde görünmüyorlarsa, katılım kolunda görünseler bile eklenmezler.<br />
+            <br />
+Katılım kolu ile ana gövde arasındaki bir yüzeyin ayrımı, önceden belirlenmiş yatay boşluktan büyükse, bu yüzey gizli segmentler kullanılarak birleştirilir.<br />
+            <br />
+Ayrıca iki seçenek daha mevcuttur:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Doğrusal birleştir</span>: Kesilmiş yüzeyleri düz bir çizgi parçasıyla birleştirir.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Buda</span>: Önceden bir budama işlemi yapmadan bir enkesit dosyası eklemeyi sağlar. Bu seçenek, farklı yüzeylerin kesişimini belirler ve birini diğerine eklemeden önce her iki enkesiti de budar.</li>
+            </ul>Birleştirilecek iki eksenin tesviye yüzeylerinin bir basamak oluşturduğu durumlarda, <strong>Tesviye yüzeyi basamağını önle</strong> kutucuğunu tıklayabiliriz. Bu komutla, düzeltilecek maksimum bir basamak <strong>yüksekliği</strong> ve iki tesviye yüzeyinden birinin diğerini kesmeden önce uzayabileceği maksimum bir <strong>mesafe</strong> belirtmemiz gerekir. Basamağı düzeltebilmek için tesviye yüzeyleri paralel olmamalıdır.<br />
+Bu araç, bir demiryolu projesinde tesviye yüzeyinin yanı sıra balast altı ve <a href="OL_ffcc_capa_forma.html">koruyucu tabaka</a> yüzeylerindeki olası basamakları da önler.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 300px; height: 52px;" alt="" src="Imagenes/anadir_ramal_escalon.png" /><br />
+            </div>
+            <br />
+Mevcut eksenimiz bir tünel ekseni ve katılım kolu değilse, tünel arazi ve kaya yüzeyleri (197 ve 397), normal arazi ve kaya yüzeyleri (66 ve 103) ile tamamlanır.<br />
+
+
+            </td>
+          </tr>
+          
+          
+          
+          
+          
+        </tbody>
+      </table></span><br />
+      <span class="Parrafo"><span class="Parrafo">Birden fazla eksen içeren bir dosya elde etmek isteniyorsa, tüm eksenler elde edilene kadar işlem tekrarlanmalıdır. Bu durumlarda, bu seçenekle daha önce oluşturulmuş semboller yeni dosyaya aktarılmaz.<br />
+<br /></span></span><img src="Imagenes/acceso_anadir_ramal_completo.png" style="width: 352px; height: 139px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Bu işlemi, her eksenin kendi tanımlı verilerine göre tüm aktif eksenlere <strong>eş zamanlı olarak uygulama</strong> imkanı vardır. Bu seçeneğe KOT </span></span><span class="Parrafo">&#8594; <strong>MENÜLER VE SEÇENEKLER</strong> </span><span class="Parrafo">&#8594; <strong>[TÜMÜ]</strong> </span><span class="Parrafo">&#8594; <strong>[Katılım Kolu Ekle]</strong> yolundan ulaşılır. </span><span class="Parrafo"><span class="Parrafo">Kesişimler, her bir <span class="Archivo">.vol</span> dosyasında kayıtlı bilgiden bağımsız olarak etkinleştirilebilir veya devre dışı bırakılabilir.</span></span><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo">Bu menüde yapılan tanımlama, otomatik olarak mevcut eksenin <span class="Archivo">.vol</span> dosyasına kaydedilmesine rağmen, bağımsız olarak <span class="Archivo">.anr</span> dosyalarına <strong>[Kaydet]</strong> / <strong>[Yükle]</strong> yapılabilir.<br />
+      <br />
+Mevcut eksenin kendisinin de eklenmesine izin verilir. Bu sayede, 180 dereceye yakın veya benzeri kurplara sahip dağ yolları gibi eksenler bu menü aracılığıyla görüntülenebilir.<br />
+      <br /></span></span></span></span>
+      <div style="text-align: center;"><img src="Imagenes/anadir_ramal_mismo_eje_dibujo.png" style="width: 330px; height: 155px;" alt="" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

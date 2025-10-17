@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Sabit Geometri Vektörleri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SABİT GEOMETRİ VEKTÖRLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">5 tip sabit vektör uygulamak mümkündür, yani kesitin yarma veya dolgu olmasına bakılmaksızın uygulanan ve ayrıca araziyle kesişirlerse kırpılmayan <a href="definicion_vectorial.html">vektörler</a>.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 600px; height: 217px;" alt="" src="Imagenes/dialogo_vectores.png" /><br />
+      </div>
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#plataforma_fija">Sabit Platform</a></span><br />
+      <span class="Parrafo"><a href="#mediana_fija">Sabit Refüj</a></span><br />
+      <span class="Parrafo"><a href="#desmonte_inadecuado">Uygun Olmayan Zeminde Yarma</a></span><br />
+      <span class="Parrafo"><a href="#cuneta_mediana">Refüj Hendeği</a></span><br />
+      <span class="Parrafo"><a href="#subrasante_fija">Sabit Terasman</a></span><br />
+      <span class="Parrafo"><a href="#tramificacion_indep_vectores">Vektörlerin Bağımsız Bölümlendirilmesi</a></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /></span><span class="Parrafo"><br />
+</span><span class="Titulo_2"><a name="plataforma_fija">Sabit Platform</a></span><br />
+      <span class="Parrafo"><br />
+Bu menü, her tip kesit için ve dever kanunlarından bağımsız olarak platformu sabit elemanlarla tamamlamaya olanak tanır. Bu elemanlar bordürler, yaya kaldırımları, yan basamaklar, duvarcıklar vb. olabilir.<br />
+      <br />
+SABİT PLATFORM tipi elemanlar varsa, program bunları palyeden önce son yardımcı platformun arkasına yerleştirir (yarma/dolgu kararını vermeden önce).<br />
+      <br />
+Platformun sabit kısmının tanımı, o kesit bölümünün <a href="definicion_vectorial.html">vektörel tasarımını</a> gerektirir. Sabit platformun kırmızı kotu, kırmızı kotun ucundan ve sabit platformun terasman tanımı (kazı) terasmandan başlar.<br />
+      <br />
+<a href="OL_punto_control_y_arranque_cuneta.html">Kontrol noktası/hendek</a>'i, hendeğin terasman drenajından veya bir seçme malzeme katmanından sarktığı kesitler için <span style="font-weight: bold;">100 kodundan itibaren</span> kutucuğundan başlayarak, dX, dY ile tanımlanan bu vektörel platform, hem yarma hem de dolgu kesitlerinde bu noktadan (kod 100) oluşturulur ve kontrol noktasını veya hendek başlangıcını veya dolgu kesitinin başlangıcını vektörün son noktasına taşır.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 482px; height: 207px;" alt="" src="Imagenes/vec_plat_cod100_ej.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+<a href="definicion_vectorial.html">Vektörel tanım</a> içine girdikten sonra, <span style="font-weight: bold;">dYalt</span> sütununun, sabit platformun altındaki terasman (kazı) profilini oluşturan segmentleri tanımlamaya olanak tanıdığını unutmamak gerekir. Her durumda, terasman, <a href="#subrasante_fija">sabit terasman</a> şeklinde vektörel olarak da tanımlanabilir).<br />
+      <br />
+Eğer <span style="font-weight: bold;">dYalt</span> değeri, terasmanın kırmızı kotu aşması için yeterince büyük yapılırsa, program uygulandığında onu kırmızı kot yüksekliğinde durdurur ve böylece o noktada üstyapı katman paketinin kalınlığını ortadan kaldırır.<br />
+      <br />
+Eğer <span style="font-weight: bold;">dYalt</span>=-1000 yapılırsa, terasman, son yardımcı platformun altındaki terasmanın getirdiği eğimle uzatılır.<br />
+      <br />
+      </span><div style="text-align: center;"><span class="Parrafo"></span><img style="width: 600px; height: 314px;" alt="" src="Imagenes/dialogo_plataforma_fija.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Sabit platformda, dever dışa doğru aktığında oluşturulan segmentler, dY(alt) sütununa -1001 değeri konularak ve dışa doğru akmadığında oluşturulan segmentler, dY(alt) sütununa -1002 değeri konularak tanımlanabilir.<br />
+Bir örnek görelim:<br />
+Dever dışa doğru aktığında platformun kenarına bir hendek koymak ve aksi takdirde bir metrelik bir palye yerleştirmek istiyoruz. O zaman aşağıdaki parametreleri tanımlarız:<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 647px; height: 254px;" alt="" src="Imagenes/vectores_ejem_cun_berma.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+dYalt sütunu için diğer tamamlayıcı kodlar <span style="font-weight: bold;">-2001</span>, <span style="font-weight: bold;">-2002 </span>ve<span style="font-weight: bold;"> -2003</span>'tür. Sabit platformda, yalnızca dever dışa doğru aktığında (dYalt= -2001) veya o tarafta yarma olduğunda oluşturulacak segmentler tanımlanabilir. <br />
+Segmentler yalnızca dışa doğru akmadığında (dYalt= -2002) ve o tarafta yarma olmadığında oluşturulacaktır. <br />
+Bir örnek görelim:<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 656px; height: 265px;" alt="" src="Imagenes/vect_2001_ej.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Platform <span style="font-weight: bold;">100 kodundan itibaren</span> (daha önce bahsedilen) durumlar için, <span style="font-weight: bold;">dYalt</span> sütununun segmentine <span style="font-weight: bold;">-3000</span> değeri uygulandığında, söz konusu segment, araziyle kesişirse arazi tarafından kesilecektir. Ardından başka segmentler eklenebilir. Bir örnek görelim:<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 526px; height: 205px;" alt="" src="Imagenes/vec_plat_cod3000_ej.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Bu vektör ayrıca aşağıdaki seçenekleri de içerir:<br />
+      <br />
+<table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 129px;">Deverli</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 543px;"><img style="width: 152px; height: 98px;" alt="" src="Imagenes/vec_plat_peraltada.png" align="right" hspace="4" />Dever onay kutusu tanımlanmış olan segmentler platformun deveriyle (L67) ve Terasman'da onay kutusu tanımlanmış olanlar terasman eğimiyle (L68) dönecektir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 129px;">Ardışık kodlar<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 543px;">Yaya kaldırımı 25 koduyla başlar, ancak bu seçenek etkinleştirilerek ardışık kodlama korunabilir; bu, sabit platformda tanımlanan 11,12,13,14 veya 15 kodlarına referans veren üstyapı katmanları tanımlamaya olanak tanır.</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <br />Eğer <span style="font-weight: bold;">-4000</span> kodu atanırsa, bu noktanın yardımcı boykesitin kotunu alması gerektiğini belirtir (eğer <span style="font-style: italic;">dY</span>=0 ise).<br />Aynı şekilde, alt kot vektöründe, bir noktaya aynı anahtar <span style="font-weight: bold;">-4000</span> ile, bu noktaya yardımcı boykesite uygulanmış olan aynı kot artışının uygulanacağını belirtilebilir.<br /><br /><img style="width: 520px; height: 219px;" alt="" src="Imagenes/vec_plat_cod4000_ej.png" /><br />Örneğin, basamaklı trapez kanalların tasarımında uygulanabilir.<br /><br />
+      </span><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="mediana_fija">Sabit Refüj</a></span><br />
+
+      <span class="Parrafo"><br />
+Otoyol durumunda, refüjün bir kısmını vektörel olarak tanımlama imkanı da vardır: Bu, SABİT REFÜJ olarak adlandırılır. Bu durumda vektör, yardımcı platformun iç kenarından ve her iki platformun iç kaplama palyesinden önce asılıdır.<br /><br /><img style="width: 600px; height: 244px;" alt="" src="Imagenes/dialogo_mediana_fija.png" /><br /><br />
+      <br />
+Refüjün toplam genişliği korunur, bu nedenle sabit refüjü tanımlayan her bir vektörün genişlikleri, <a href="OL_excentricidad_mediana.html"><span style="font-weight: bold;">[EKSANTRİKLİK VE REFÜJ]</span></a> menüsünde tanımlanan yarı refüjden daha küçük bir değere sahip olmalıdır. Vektörün son noktasından sonra, refüj, refüjün tepe noktasına kadar bir segmentle otomatik olarak tamamlanır.<br />
+      <br />
+Sabit refüjlerden birinin yarı refüjde verilen genişlikten daha büyük bir genişliğe sahip olmasına ve geometrik ekseni geçmesine de izin verilir; bu durumda, iki vektörün uçları veya geçen vektörün ucu karşı tarafın palyesiyle doğrudan birleştirilir.<br />
+      <br />Vektörün segmentleri deverli olabilir.<br /><br />
+Eğer <a href="definicion_vectorial.html">vektörel tanımın</a> <span style="font-weight: bold;">dY (alt)</span> sütunundaki tüm veriler bir değere sahipse, o zaman terasman otomatik davranışına devam eder. Eğer veriler tanımlanırsa, bunlar terasmanın ucundan itibaren uygulanır. Bu sütun ayrıca iki özel değeri de kabul eder:<br />
+      <br />
+</span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">1000</span>: bu değere sahip segmentler, o tarafın platform deveri dışarıya doğru akıyorsa oluşturulmaz.<br />
+<span style="font-weight: bold;">1001</span>: bu değere sahip segmentler yalnızca iç banket kenarı daha alçak olan taraf için oluşturulur.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="desmonte_inadecuado">Uygun Olmayan Zeminde Yarma</a></span><br />
+      <span class="Parrafo"><br />
+Eğer burada tanımlanmış bir <a href="OL_vectores.html">vektör</a> varsa ve ilişkili kesimde bitkisel toprak ve/veya uygun olmayan zemin varsa, program yarma ve dolgu geometrisini sağlam zemin jeolojik katmanına kadar götürür ve o noktadan itibaren burada tanımlanan geometriyi kullanarak yüzeye kadar çıkar. Yarma durumunda profil yüzeye kadar devam eder; dolgu durumunda, dolgu şevi bitkisel veya uygun olmayan zeminin tabanına kadar iner ve bu vektörün geometrisiyle yüzeye geri döner.<br />
+      <br />
+<br />
+      </span><span class="Titulo_2"><a name="cuneta_mediana">Refüj Hendeği</a></span><br />
+
+      <span class="Parrafo"><br />
+<a href="#mediana_fija">SABİT REFÜJ</a>'e benzer şekilde, REFÜJ HENDEĞİ, refüjün sabit bir kısmını tanımlamaya olanak tanır, ancak bu durumda <a href="definicion_vectorial.html">vektörler</a> refüjün tepe noktasından dışarıya doğru asılıdır. Bu tepe noktası, derinlikle tanımlanan refüjlerde ve merkezlenmiş maksimum şevli ve merkezlenmiş minimum şevli refüjlerde geometrik eksenle çakışır; buna karşılık, şev ve maksimum şevle tanımlananlar için tepe noktasının konumu, tanımlanan şevlere, refüj hendeğinin geometrisine ve devere bağlı olacaktır.<br />
+      <br />
+Bazı segmentlerinin deverli olmasına izin verir.<br /><br />
+Bu menüden tanımlanan refüj için bir kaplama tanımlanabilir.<br />
+<br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 245px;" alt="" src="Imagenes/cun_med_revest.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+</span></span><span class="Parrafo"><span class="Parrafo">Ayrıca, belirli hendek segmentlerine birkaç anahtar da tanımlanabilir:<br />
+<br />
+<span style="font-weight: bold;">1000</span>: bu anahtara sahip segmentler, o tarafın platform deveri dışarıya doğru akıyorsa oluşturulmaz. Bu şekilde, bu segmentlerle, daha yüksek platformun kurplarının içinde drenaj için hendekler tanımlanabilir.<br />
+<span style="font-weight: bold;">1001</span>: bu anahtara sahip segmentler yalnızca iç banket kenarı daha alçak olan taraf için oluşturulur.<br />
+      </span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+<br />
+      </span><span class="Titulo_2"><a name="subrasante_fija">Sabit Terasman</a></span><br />
+
+      <span class="Parrafo"><br />
+      </span>Sabit platformun terasmanı için, <a href="#plataforma_fija">sabit platform</a> vektörü için tanımlananlardan bağımsız eksen mesafeleri ve kotları ile bir <a href="definicion_vectorial.html">vektör</a> tanımlamaya olanak tanır. Sabit terasman vektörü, her nokta için bir anahtar tanımlama imkanına sahiptir. Anahtar değeri 1 olan noktalar için, program noktanın kotunu ilgili tarafın hendek boykesitinin kotuyla değiştirir.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Deverli</span> kutucuğu etkinleştirilmiş olan segmentler deverle birlikte dönecektir. Böylece, örneğin, yarı-yatay segmentlerin dönmesi ve yarı-dikey segmentlerin dönmemesi sağlanabilir.<br />
+      <br />
+Dolgu kesitlerinde, banket kenarı/palye kenarı kontrolü ile, dolgu şevinin altında, zemini kesene kadar eşlik eden bir terasman vektörü tanımlanabilir ve ardından dolgu şev dibine kadar zemin boyunca kapanabilir. Bu terasman vektörünün zemini kesebilecek segmentlerine <span style="font-weight: bold;">-3000</span> anahtarı atanacaktır.<br />
+<br />
+      <span class="Parrafo"><br />
+</span></span><span class="Titulo_2"><a name="tramificacion_indep_vectores">Vektörlerin Bağımsız Bölümlendirilmesi</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img style="width: 219px; height: 85px; margin-left: 7px;" alt="" src="Imagenes/acceso_tramific_vectores.png" align="right" /><span class="Parrafo"><span class="Parrafo">Program, hendekler, yarmalar ve dolgular için alt bölümlendirmeye benzer şekilde (<span style="font-weight: bold;">[H]</span>, <span style="font-weight: bold;">[Y]</span> ve <span style="font-weight: bold;">[D]</span> düğmeleri) VEKTÖRLERİN (<a href="#plataforma_fija">sabit platform</a>, <a href="#mediana_fija">sabit refüj</a>, <a href="#desmonte_inadecuado">uygun olmayan zeminde yarma</a>, <a href="#cuneta_mediana">refüj hendeği</a> ve <a href="#subrasante_fija">sabit terasman</a>) ayrı bir bölümlendirilmesine olanak tanır. Bu bölümlendirmeye erişmek için <span style="font-weight: bold;">[V]</span> tuşuna basılır.<br />
+      <br />
+Vektörlerin bağımsız bölümlendirilmesi için aşağıdaki davranış izlenir: Eğer bir bölüm, bir sonrakinin başladığı aynı KM'de biterse ve o arazi enkesiti mevcutsa veya hesaplama bölümlerinin KM'lerinde enkesit enterpolasyonu etkinleştirilmişse, o zaman enkesit, genel HESAP BÖLGELERİ'nin KM'leriyle yapıldığı gibi, iki bölüme karşılık gelen veriler kullanılarak tekrarlanır.<br />
+<span class="Parrafo"><br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

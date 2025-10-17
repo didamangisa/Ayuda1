@@ -1,0 +1,822 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Demiryolu: Plan Tasarımı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>DEMİRYOLU: PLAN EKSENİ TASARIMI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />Bir demiryolu projesinde PLAN menüsünün kullanımı, bir <a href="OL_planta_diseno.html">karayolu güzergahı</a> durumuna benzer, bu bölümde mevcut farklılıklar anlatılmaktadır.<br /><br />
+      <div style="margin-left: 40px;"><a href="#conectores_apavia">Bağlayıcılar ve makaslar</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#ficheros_apv">Makas dosyaları (.apv)</a><br />
+      <a href="#isapavia">Makas yöneticisi</a><br />
+      <a href="#cal_geom_apavia">Makasların geometrik hesabı. S makaslar</a><br />
+      <a href="#origen_PKs">Makaslar ve KM başlangıcı</a><br />
+      <a href="#cambiadores_de_mano">El değiştiriciler ve derayman aletleri</a><br /><a href="#Ajustar_por_los_talones">Topuklara göre ayarla</a><br /><a href="#Desvios_ramal_talon_ppal">Kavşak kolunun ana topuktan çıktığı makaslar</a><br /><a href="#via_poligonales">Poligonal makaslar</a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#normativa">Demiryolları için yönetmelik ve tasarım tabloları</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#singularidad_norma_ffcc">Demiryolu güzergahlarında yönetmeliğin özellikleri</a><br />
+      <a href="#tablas_dip">Demiryolları için .dip tablolarının kullanımı</a><br />
+      <a href="#peralte_velocidad_obligados">Zorunlu dever ve hız</a><br />
+      </div>
+<br /><br /><span class="Titulo_2"><a name="conectores_apavia">Bağlayıcılar ve makaslar</a></span><br /><br />Demiryolları için plan güzergahındaki temel fark, <a href="OL_planta_conexiones.html">eksenler arası bağlantılarda</a> makas kullanma imkanıdır. Demiryolu makaslarının ve kesişimlerinin geometrik tanımı, <a href="OL_planta_conexiones.html#conectores">bağlayıcılar</a> kullanılarak yapılmalıdır.<br /><br />
+      <img style="width: 243px; height: 105px; float: left;" alt="" src="Imagenes/ffcc_conector.png" hspace="6" />Demiryollarında
+bağlayıcı kullanımının temel farkı, programın kütüphaneden bir makası <span style="font-weight: bold;">AV</span> alanına yüklemeye izin vermesidir. Bu durumda <span style="font-weight: bold;">Tg</span>
+değeri makas tarafından zorunlu kılınır ve değiştirilemez. Eğer
+herhangi bir makas beyan edilmezse, o zaman serbest açılı bir bağlayıcı
+tanımlanmaktadır, bu da karayollarında olduğu gibi, referans eksenine
+göre kavşak kolunun azimutunu kontrol etmek için <span style="font-weight: bold;">Tg</span> alanını kullanmayı mümkün kılar.<br />
+      <br /><span style="font-weight: bold;">J.C.A.</span>'nın
+isimlendirilmesi için 2 kutucuk bulunur, sağdaki kutucukta her bir
+makasa bir numara atanır. Eğer her zaman 0 bırakılırsa, otomatik olarak
+numaralandırılırlar. Bu <span style="font-weight: bold;">J.C.A.</span>
+numaralandırmasına, en fazla dört karakterlik bir alfanümerik önek
+(soldaki kutucuk) eklenebilir. Örneğin, yolcu hatlarını (V0n) yük
+hatlarından (M0n) ayırmak için. Kütüphaneye, bu metni hem plan üzerinde
+makasın üstünde hem de koordinat tablosunda etiketlemeye olanak tanıyan
+bir APV2.ali çizim modu eklenmiştir.<br /><br />
+Makas kutucuğunun diyalog penceresinde, .apv dosyasının adı ve makasın sicil numarası ile bir ipucu belirir.<br />
+      <br />
+      <img style="width: 249px; height: 108px;" alt="" src="Imagenes/hint_apavia.png" /><br />
+      <br /><br />Kendi geometrisine sahip veya iç yarıçapı hesaplanan makaslar için,
+dairesel kurpun teğetinden sapan hattın topuğuna kadar olan artık
+aliyman uzunluğu, eksen hesaplandığında elde edilir ve diyalog
+penceresinde aliyman uzunluğu olarak yeniden atanır. Bu şekilde, eğer
+eksen sadece bu makastan oluşuyorsa veya ardından bir bağlantı aliymanı
+eklenirse, sapan hattın topuğunda bir tekil nokta belirir.<br /><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="ficheros_apv">Makas dosyaları (.apv)</a></span><br />
+      <br />
+Her makas, kütüphanede, ASCII formatında ve .apv&nbsp;<span class="Archivo">uzantılı</span> bir dosyada tanımlanmıştır. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+en yaygın olanları içerir ve diğerlerini tanımlamak için örnek olarak
+kullanılabilir. Her dosyanın adı, onu tanımlamaya yardımcı olan
+geometrik özelliklerinin bir kısaltmasıdır.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 661px; height: 243px;" alt="" src="Imagenes/esquema_apavia.png" /><br />
+      </div>
+      <br />
+Aşağıda bir makas dosyası örneği, DS09D54.apv&nbsp;<span class="Archivo">dosyası</span>, ve bu makasın farklı kısımlarını görebileceğiniz bir resimle birlikte gösterilmektedir:<br />
+      <br />
+      <table style="text-align: left; width: 530px; height: 430px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 250px;"><img style="width: 235px; height: 418px;" alt="" src="Imagenes/ejem_apavia.png" /><br />
+            </td>
+            <td class="Archivo" style="vertical-align: top; width: 260px;"><br />
+            <br />
+            <br />
+#####################################<br />
+#&nbsp;&nbsp; makas&nbsp; 1668-UIC54&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+#####################################<br />
+#&nbsp; Nominal tanjant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+#-----------------------------------#<br />&nbsp;
+TG&nbsp;&nbsp;
+0.09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp; Radyan cinsinden açı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+#-----------------------------------#<br />
+&nbsp; RD&nbsp;&nbsp;
+0.0897582&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp; toplam
+uzunluk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#-----------------------------------#<br />
+&nbsp; L&nbsp;&nbsp;
+36.0060&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp; merkez-topuk uzunluğu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+# ----------------------------------#<br />
+&nbsp; C&nbsp;&nbsp;
+21.32659&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp;
+sicil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#-----------------------------------#<br />
+&nbsp; M&nbsp; DS-A-54-320/400-0.09-CR-D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+#&nbsp;
+son&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+&nbsp;
+FIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#####################################<br />
+            <br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Programın .apv&nbsp;<span class="Archivo">dosyalarında</span> yorumladığı komutlar şunlardır:<br />
+      <br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 650px; height: 188px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">TG<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Nominal Tanjant<br />
+            </td>
+            <td colspan="1" rowspan="2" style="vertical-align: top; width: 387px;">
+            <table style="text-align: left; width: 391px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+                  </td>
+                  <td class="Info" style="vertical-align: top; width: 309px; text-align: justify;">Eğer nominal tanjant (<span style="font-weight: bold;">TG</span>) ve radyan cinsinden açı (<span style="font-weight: bold;">RD</span>) komutları aynı anda kullanılırsa, dosyada en son okunan kullanılır.</td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">RD<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Radyan cinsinden açı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">L<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Doğru hattın toplam uzunluğu<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">LD<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Sapan hattın toplam uzunluğu<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">C=A<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Merkez-topuk uzunluğu<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">CD=AD<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Sapan hattın merkez-topuk uzunluğu<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">M<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Sicil Numarası<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">#<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Yorum<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr><tr><td><span style="font-weight: bold;">GD</span></td><td>JCA-Başlangıç Mesafesi</td><td></td></tr><tr><td><span style="font-weight: bold;">GRR</span></td><td>İç yarıçap</td><td></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+<span style="font-weight: bold;">Eğrisel göbekli</span> makaslarda iki tanjant olduğunu ve bu açının topukta ölçülüp sapan hat için uygulandığını unutmamak gerekir. Kesişimler de, ikinci hattın kesişimden sonra sağa mı yoksa sola mı çıktığına göre sağa ve sola tanımlanmalıdır.<br />
+      <br />
+Sapan hattın uzunluğu (<span style="font-weight: bold;">LD</span>),
+sadece kesişimler durumunda ikinci kolun toplam uzunluğunu tanımlamak
+için kullanılır. Eğer verilmezse, doğru hattın uzunluğu (<span style="font-weight: bold;">L</span>) kullanılır.<br />
+      <br />
+Merkez-topuk uzunluğu, literatüre göre bir kısaltma veya diğeri
+kullanıldığı için, <span style="font-weight: bold;">A</span> veya <span style="font-weight: bold;">C</span> olarak farksız bir şekilde tanımlanır.<br />
+      <br />
+Eğer farklıysa, sapan hattın merkez-topuk uzunluğu için <span style="font-weight: bold;">AD</span> veya <span style="font-weight: bold;">CD</span> komutu verilmelidir. Eğer verilmezse, sapan hattın topuk uzunluğu olarak da <span style="font-weight: bold;">A</span> veya <span style="font-weight: bold;">C</span> kullanılır.<br />
+      <br />
+<span style="font-weight: bold;">M</span> sicil numarası, tüm
+makasların tanımına eşlik eden alfanümerik bir anahtardır ve
+geometrisinin bir kısaltmasıdır. Hesaplayıcı, esas olarak şematik
+grafik gösterimi için sicil numarasının ilk harflerini kullanır. Sicil
+numarasının ilk harfleri için izin verilen tek değerler şunlardır: <span style="font-weight: bold;">DS</span>, <span style="font-weight: bold;">DH</span>, <span style="font-weight: bold;">DR</span>, <span style="font-weight: bold;">DI</span>, <span style="font-weight: bold;">DM</span>, <span style="font-weight: bold;">EW</span>, <span style="font-weight: bold;">TS</span>, <span style="font-weight: bold;">TM</span>, <span style="font-weight: bold;">TU</span> ve <span style="font-weight: bold;">TUD</span>.<br />
+      <br />
+Program kütüphanesinde mevcut olan makaslar arasında, aşağıdaki makas tiplerinin varlığını vurgulamaktayız:&nbsp;<span class="Archivo">T1668-1435D11.apv</span> ve&nbsp;<span class="Archivo">T1668-1435I11.apv</span>. Farklı genişlikteki ve ana hat ile sapan hatta farklı uzunluktaki iki hat arasındaki geçişleri tanımlarlar.<br />
+      <ul>
+        <li><span class="Archivo">T1668-1435D11.apv</span>: Ana hat genişliği 1668, kesişen hat genişliği 1435 ve 0.11 tanjantla sağa çıkar.</li>
+        <li><span class="Archivo">T1668-1435I11.apv</span>: Ana hat genişliği 1668, kesişen hat genişliği 1435 ve 0.11 tanjantla sola çıkar.</li>
+      </ul>
+Makasın iç geometrisinde, kesişim bölgesinde, iç yarıçaptan sonra, uzunluğuyla verilen bir klotoide izin verilir. Kütüphaneye, 1200 iç yarıçaplı ve 18 metrelik bir klotoidli DS_184_1200_18_d.apv ve DS_184_1200_18_i.apv makasları dahil edilmiştir.<br />
+      <br />
+      <div style="text-align: left;">İç geometrisinde JCA:Aliyman-Klotoid-Daire-Klotoid bulunan makasları kullanma imkanımız vardır.<br />
+İlk klotoid bir yarıçapla başlayabilir (Sonsuzdan küçük ve daire yarıçapından büyük).<br />
+Kütüphane içinde, bu seçeneği içeren DS_ARA_d.apv ve DS_ARA_i.apv makaslarını ayırt ediyoruz.<br />
+      </div>
+
+
+
+      <br /><br />*.apv makas tanımlama dosyalarına, bazı makaslardaki sapan hattın ekseninin iç geometrisini tanımlamak için üç yeni parametre eklenmesine izin verilir:<br /><ul><li>Dil ucu birleşim yerinin eksen başlangıcına olan mesafesi (bazı makasların dışında başlayan eksenler için negatif).</li><li>Sekant diller için başlangıçtaki açı (radyan cinsinden).</li><li>Makas içindeki eksen yarıçapı.</li></ul>Bu üç parametrenin örneği olarak kütüphaneye aşağıdaki dosyalar dahil edilmiştir:<br /><ul><li><span class="Archivo">DS_SCT_08_d.apv</span> ve <span class="Archivo">DS_SCT_08_i.apv</span>: Negatif bir mesafe ve bir yarıçap kullanırlar.</li><li><span class="Archivo">DS_CONRAIL_10_d.apv</span> ve <span class="Archivo">DS_CONRAIL_10_i.apv</span>: Başlangıçta açı ve yarıçap.</li><li><span class="Archivo">DI11CDC5.apv</span> ve <span class="Archivo">DI11CIC5.apv</span>. Sadece bir iç yarıçap tanımlar.</li></ul>Eğer makasın iç geometrisinde iç yarıçap için <span style="font-weight: bold;">GR </span>yerine <span style="font-weight: bold;">GRR</span> komutu kullanılırsa, bu, tanımlanan yarıçapın sadece ana hattın aliymanda olduğu durumlar için geçerli olduğunu gösterir; eğer makas bir kurp üzerine yerleştirilirse, iç yarıçap ADIF formülasyonu kullanılarak otomatik olarak yeniden hesaplanır. <br />Kütüphaneye, <span style="font-weight: bold;">GRR </span>komutunu kullanan *.apv dosyaları dahil edilmiştir:<br /><ul><li><span style="font-style: italic;">DC-C-54-318-0.09-CR-D.apv</span></li><li><span style="font-style: italic;">DC-C-54-318-0.09-CR-I.apv<br /></span></li></ul><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="isapavia">Makas yöneticisi</a></span><br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> kurulumunda, makasları (dosyalar&nbsp;<span class="Archivo">.apv</span>) yönetmek (düzenlemek ve görüntülemek) için basit bir araç mevcuttur. <span style="font-weight: bold;">AparatosVia</span> adlı uygulama, kütüphane aramaları yapmanın yanı sıra, aynı anda birkaç kütüphaneyi yönetebilir:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 416px;" alt="" src="Imagenes/isApavia.png" /><br />
+      </div>
+      <br />
+<div style="text-align: center;"><img style="width: 600px; height: 495px;" alt="" src="Imagenes/ol_editor_apv.png" /><br />
+      </div>
+
+      <br />
+Makas tanımlama dosyaları (*.apv) düzenleyicisinde yer alan bazı gelişmiş parametreler:<br />
+      <ul>
+<li>Dil ucu birleşim yerinden başlangıca olan mesafe.</li><li>Başlangıçtaki açı.</li><li>İç yarıçap.</li>
+        <li>Makasın başlangıç ve bitiş klotoidlerinin parametreleri.</li>
+        <li>Dil ucu birleşim yerinden önceki yarıçapın başlangıcına olan mesafe.</li>
+        <li>Makasın çizileceği çizgi tipi ve makası temsil edecek sembol.</li>
+        <li>Makasın çizileceği poligon bölümlerinin sayısı ve uzunluğu.</li>
+        <li>Makastan sonraki "uzun" traverslerin sayısı.</li>
+      </ul>Eğer <span style="font-weight: bold;">Kurptaki APV ise NAV 0-2-2.1 uygula </span>bayrağı etkinleştirilirse ve makasın iç geometrisinde iç yarıçap için GR yerine GRR komutu kullanırsak: bu, tanımlanan yarıçapın sadece ana hat aliymanda olduğunda geçerli olduğunu gösterir, o zaman makası bir kurp üzerine yerleştirirsek, iç yarıçap ADIF formülasyonu kullanılarak otomatik olarak yeniden hesaplanır. Kurulumla birlikte gelen kütüphaneye, bu komutu kullanan <span style="font-style: italic;">DS-C-54-318-0.09-CR-D.apv </span>ve <span style="font-style: italic;">DS-C-54-318-0.09-CR-I.apv</span> dosyaları eklenmiştir.<br /><br />Bu yönetici içinde, ana ve sapan topuklardan sonra bazı traverslerin göreceli konumu da tanımlanabilir (her durumda 100'e kadar) ve sapan topuktakiler için bir vinoluk da tanımlanabilir (grad cinsinden ve mutlak değer olarak). Bununla, topuktan sonra ana ve sapan eksenin travers uçlarının çakışması önlenmek istenir.<br />
+
+Istram ile kurulan&nbsp;<span class="Archivo">Demo/Aparatos</span> klasöründe bu traversleri kullanan&nbsp;<span class="Archivo">FFCC_BIM.isa</span> örneği mevcuttur. Traverslerin gerçekten bu bilgilere göre yerleştirilmesi için, <a href="OL_ffcc_via_traviesa.html#carril">Hat ve Travers/Ray</a> menüsünde, <span style="font-weight: bold;">Teorik kaynakları oluştur</span> aracını kullanmak, <span style="font-weight: bold;">Makaslar</span>'da ray başlatma olaylarını etkinleştirmiş olmak ve ayrıca şu seçenekleri etkinleştirmek gerekir:<br />
+
+      
+      <ul>
+<li>Kaynak tablosuna göre rayları kes.</li><li>BIM'de kaynak nesnesi oluştur.</li><li>Traversleri ayır.</li>
+      </ul>
+
+      <div style="text-align: center;"><img style="width: 500px; height: 291px;" alt="" src="Imagenes/ol_editor_tr.png" /><br />
+      </div>
+<br /><br />Kütüphanede aşağıdaki makaslar mevcuttur:<br /><ul><li><span class="Archivo">DS-AMV-300-0x11-CC-D.apv</span>: iç geometrisi bir dairesel aliyman ve bir yarıçapta biten eksik bir klotoidden oluşur.</li><li><span class="Archivo">AD_FM.apv</span> ve <span class="Archivo">AD_MF.apv</span>, aşağıdaki parametrelerle genleşme derzlerini temsil etmek için:</li><ul><li>F:
+Sabit parçanın ilk traversinin ekseni ile derz arasındaki mesafe.</li><li>A: Derzin ayrılması.</li><li>M: Derz ile hareketli parçanın ilk traversinin ekseni arasındaki mesafe.</li><li>RF:
+Sabit parçanın ray uzunluğu, sabit parçanın ilk traversinin ekseninden ölçülür.</li><li>TF:
+Sabit parçanın travers uzunluğu, sabit parçanın ilk traversinin ekseninden ölçülür.</li><li>RM: Hareketli parçanın ray uzunluğu, hareketli parçanın ilk traversinin ekseninden ölçülür.</li><li>TF:
+Hareketli parçanın travers uzunluğu, hareketli parçanın ilk traversinin ekseninden ölçülür.</li><li>DA: Sabit parçanın ilk traversinin ekseninden dile olan mesafe.<br /><br />Bu makaslar, el değiştiriciler gibi, plan diyalog kutusundaki EKSENLER sekmesindeki makas tablosuna eklenecektir.</li></ul><li>Ana
+ve sapan topuktan sonra travers tanımlanmış makaslarda (TTP ve TTD), bu
+traverslerden kaçının [Uzun Travers] olduğu da tanımlanabilir (TTNL
+komutu). Kütüphanede örnek olarak, her topuktan sonra 30 traversi olan
+ve bunlardan ilk 6'sı uzun olan <span class="Archivo">DH11CD5_TR30_6L.apv</span> dosyası mevcuttur. [Uzun Travers], ana hattın rayları ile sapan hattın raylarının aynı anda üzerine oturduğu tek bir travers olarak adlandırılır.</li></ul><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="cal_geom_apavia">Makasların geometrik hesabı. S Makaslar</a></span><br />
+      <br />
+Eğer iki makas ardı ardına tanımlanırsa (tanjant açılı eksen bağlayıcıları da geçerlidir), program ikincisini, tanjant açısını koruyarak, birinci makasın sapan-topuğuyla hizalanana kadar ana ekseni üzerinde kaydırır (birinci makasın tanjant açısı gereksiz bir veridir) ve iki sapan-topuk arasında bir aliyman oluşturur.<br />
+      <br />
+İlk eksen, makas bölgesinde herhangi bir geometri türüne (aliyman, kurp veya klotoid) sahip olabilir. Hesaplayıcı, bir ana kurp üzerine yerleştirilmiş makasların durumunu çözer.<br />
+
+      <br />
+
+İkincisi şu olabilir:<br />
+
+      <ul>
+<li>Birinci makasın bulunduğu noktada birinciye paralel aliyman.</li><li>Birinciye paralel olmayan aliyman (bu durumda makasların açılarına özel dikkat gösterilmelidir).</li><li>Yarıçapı
+oldukça geniş ancak konveksliği birinci eksene doğru dönen daire
+veya klotoid (yani, ikinci eksen kendi kurp merkezini birinci eksenden
+ayırır). Programla birlikte kurulan DEMO projesinde örnek olarak&nbsp;<span class="Archivo">2aparato.cej</span> dosyası bulunur.<br />
+</li>
+      </ul>
+
+
+
+
+
+
+
+      <p class="MsoNormal"><span style="" lang="ES-TRAD">Kontrol</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">olarak şunlar yapılabilir:<o:p> </o:p>Eğer</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">hesaplandıktan</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">sonra, birinci</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">makası</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">tanımlayan</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">noktayı</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">hareket ettirmek</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">için</span><span style="" lang="ES-TRAD"> tutamaçlar kullanılırsa,</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">ikincisinin</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">ekseni</span><span style="" lang="ES-TRAD"> </span><span style="font-weight: bold;">boyunca kaydığı</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">gözlemlenecektir.</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">Eğer</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">hareket ettirilen,</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">ikinci</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">makası</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">tanımlayan</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">nokta</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">ise,</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">o zaman</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">çözümün</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">değişmeden</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">kaldığı</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">gözlemlenecektir.</span></span></p>
+
+
+
+
+      <p class="MsoNormal"><span style="" lang="ES-TRAD"><o:p>Program,</o:p></span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">eğer</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">algoritma</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">kendisine sunulan geometrik koşullarla ıraksarsa,</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">çözüm</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">bulamayabilir.<o:p></o:p></span></p>
+
+
+      Bir eksende, biri için ana eksen diğeri için sapan eksen olan iki makas arasında, topuklardan bir çakışmaya izin verilir.<br /><br />
+S MAKASLAR<br />
+      <br />
+      <img style="width: 204px; height: 106px;" alt="" src="Imagenes/ffcc_tolerancia_escapes.png" align="right" hspace="6" />Eğer iki makas aynı tanjanta sahipse, referans eksenleri paralel olmalı veya aşağıda açıklandığı gibi s makaslar için toleranstan daha az bir sapmaya sahip olmalıdır.<br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, <span style="font-weight: bold;">s makasların</span> (iki paralel eksene dayanan iki makastan oluşan iki aliymanlı eksenler) tasarımı için bir tolerans açısıyla (grad cinsinden) çalışır.<br />
+      <br />
+Paralel olmayan iki eksen arasında veya farklı tanjantlı makaslarla
+bir s makas tanımlandığında, azimutta belirli bir toleransa izin
+verilir. Program,
+ikinci makasın konumunu otomatik olarak arar ve iki makas tarafından
+indüklenen eksenin azimutunu belirler. Eğer azimut farkı tolerans
+değerini aşarsa, listede, mesaj satırında ve TASARIM <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> HATALAR seçeneği kullanıldığında HATALAR ızgarasında bir mesaj yazdırır.<br />
+      <br />
+Bu toleransın değeri, <span style="font-weight: bold;">Yapılandırma</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Tercihler</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Seçenekler</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Lineer Proje</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <a href="OL_planta_opciones_visualizacion.html"><span style="font-weight: bold;">Plan</span></a> menüsünden yapılandırılabilir.<br />
+      <br />S MAKASLARIN OPENBIM'E TEK BİR BLOK OLARAK AKTARILMASI<br /><br />Demiryolu plan eksenlerinde, yeni seçenek etkinleştirilebilir: [] <span class="Parf_negrita">S Makas</span>.
+S makas olarak nitelendirilen bir eksenin tüm traversleri ve rayları,
+ayrıca makasları (genellikle biri başta diğeri sonda) <a href="OL_BIM.html">BIM</a>'e tek bir blok olarak aktarılabilir.<br /><br /><div style="text-align: center;"><img style="width: 550px; height: 202px;" alt="" src="Imagenes/ffcc_planta_escape.png" /><br /></div>
+      <br /><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="origen_PKs">Makaslar ve KM Başlangıcı</a></span><br />
+      <br />
+      <img style="width: 125px; height: 95px;" alt="" src="Imagenes/apavia_orig_PKs.png" align="right" hspace="7" />PLAN <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> EKSENLER penceresinde, bir FFCC değişkeni, sapan hattın KM başlangıcının <span style="font-weight: bold;">topuk</span>, <span style="font-weight: bold;">matematiksel merkez</span> veya <span style="font-weight: bold;">dil ucu birleşim yeri</span> (varsayılan) olup olmadığını tanımlamaya olanak tanır.<br />
+      <br />Varsayılan olarak, bir sapan eksenin başlangıç KM'si Dil Ucu Birleşim Yerinde (J.C.A.) ayarlanır.<br />
+      <br />
+Bir makasta başlayan veya biten eksenlerde, eğer dil ucu birleşim yerinde <span style="font-weight: bold;">J.C.A.</span>'da başlayıp bitmeleri seçilirse, ayrıca &nbsp;<img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_topo_tic.png" />
+seçeneği ile sapan hattın ekseninin makas içinde bir dairesel yay
+aracılığıyla oluşturulması da seçilebilir. Bu yay, JCA-CM ve CM-TD
+doğrularına teğettir. JCA-CM segmentinin CM-TD'den daha kısa olduğu
+durumda, yay JCA'da başlar ve tersi durumda yay, J.C.A. ve C.M.
+(matematiksel merkez) tarafından oluşturulan doğruda başlangıç teğetliği
+aranarak TD'de (sapan hattın topuğu) biter.<br />
+<a href="OL_desvios_ferrocarril.html#aguja">Dil</a>, <a href="OL_desvios_ferrocarril.html#desvio">makas</a> ve
+      <a href="OL_desvios_ferrocarril.html#cruzamiento">göbeğin</a> gerçek yarıçapları ve uzunlukları bilinmediğinde; bu eksen boyunca km gelişimi, JCA-CM-TD doğrularını kullanmaktan daha hassastır.<br /><br />Ana yoldaki Makasın yerleştirme noktası, Matematiksel Merkez yerine Dil Ucu Birleşim Yeri olabilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 413px; height: 233px;" alt="" src="Imagenes/ffcc_jca_tic.png" /><br />
+      <br />
+      <div style="text-align: left;">Eğer son aliymanda bir makas
+tanımlanmışsa ve önceki bir aliyman ise (2 nokta ile veya etiketle veya
+bağlantıyla), o zaman ana eksen üzerindeki CM, bu aliymanın bu eksenle
+kesişimiyle hesaplanır, ancak bu noktada ana ve sapan eksen arasındaki
+azimut farkının makasın açısıyla çakışacağı garanti edilemez. <br />
+      </div>
+
+      </div>
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="cambiadores_de_mano">El değiştiriciler ve derayman aletleri</a></span><br />
+
+      <br />
+
+      <img style="width: 165px; height: 61px;" alt="" src="Imagenes/ffcc_cambiador.png" align="right" hspace="6" />Buraya (<span style="font-weight: bold;">Makaslar</span>), üç raylı hatlardaki el değiştiriciler gibi sadece mevcut eksene bağlı bir makas listesi eklenebilir. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> kütüphanesinde örnek olarak &nbsp;<span class="Archivo">CM_1668.apv</span> dosyası bulunmaktadır. Hesaplama yapıldığında, &nbsp;<a href="OL_ficheros_ali.html#aparatos_de_via"><span class="Archivo">.ali</span></a> dosyasının yapılandırmasına göre planla birlikte çizilir.<br />
+      <br />
+Bu tür makaslara <span style="font-weight: bold;">Mesafe</span> sütununda yanal bir kaydırma girilebilir.<br />
+<br />
+Ayrıca konumları <a href="OL_listados_ferrocarriles.html#apavia">apavia.res</a> listelerinde de yazdırılır.<br />
+      <br />
+Aynı şekilde, bir düşey kurp ile çakışıp çakışmadığının kontrol edildiği kırmızı kot tasarım menüsünde de gösterilir.<br />
+      <br />
+Ayrıca, geçişler ve makaslarla birlikte <a href="OL_gui_aparatos_de_via.html">boykesit</a> çiziminde de gösterilir.<br /><br /><span class="Parf_negrita">Derayman aletleri</span>:
+Kütüphanede, bir eksenin bir KM'si üzerine yerleştirilen bir makas
+tipine karşılık gelen dosyalarımız mevcuttur: Derayman aletleri, 2'si
+pozitif yarıçaplı ve 2'si negatif yarıçaplı, ileri ve geri hareket yönü
+için:
+SW_B3368R+211A.APV, SW_B3368R+211R.APV, SW_B3368R-211A.APV,
+SW_B3368R-211R.APV.<br /><br /><span style="font-weight: bold;"><a name="Ajustar_por_los_talones">Topuklara göre ayarla</a></span><a name="Ajustar_por_los_talones"><br /><br />Plan->Aliymanlar->Tipler-></a><a href="OL_planta_conexiones.html">Eksenler arası bağlantı</a>
+diyalog kutusunda, kavşak kolunun ilk aliymanı sabitlendiğinde, makasın
+konumunu şu şekilde arayabiliriz:<br /><ul><li>Tip 1003 (Eksen + X,Y + KM) bir bağlantı kullanırız.</li><li>Ana ekseni ve makası seçeriz.</li><li>Ayrıca yaklaşık bir nokta seçeriz.</li></ul>O zaman kutuda [<span class="Parf_negrita">Topuklara göre ayarla</span>]
+yardımcı programı belirir; buna basıldığında, ana eksen üzerinde,
+makasın topuklardaki eksenler arası mesafeyi karşılayacak şekilde
+yerleştirildiği bir nokta arar ve küçük bir azimut farkı olabileceğini
+varsayar.<br /><br /><div style="text-align: center;"><img style="width: 400px; height: 166px;" alt="" src="Imagenes/ffcc_planta_ajust_x_talones.png" /><br /></div><br /><br /><span style="font-weight: bold;"><a name="Desvios_ramal_talon_ppal">Kavşak kolunun Ana Topuktan çıktığı makaslar.</a></span><a name="Desvios_ramal_talon_ppal"><br /><br />Bir hatlar grubunun dış hattı boyunca düz devam eden kavşak kollarındaki makasları yerleştirmek için [] <span class="Parf_negrita">xTP</span> seçeneği eklenir:<br /></a><ul><li><a name="Desvios_ramal_talon_ppal">Kavşak kolu, JCA'dan Ana Topuğa kadar düz geçer.</a></li><li><a name="Desvios_ramal_talon_ppal">Makasın dayandığı eksen (önceki kavşak kolu) Sapan Topuktan çıkar.</a></li><li><a name="Desvios_ramal_talon_ppal">Makas,
+bu önceki eksenin ana yola paralel hale gelmek için oluşturduğu kurp
+üzerine yerleştirilir. Istram, bu kurbun tepe noktasını arar ve makasın
+Matematiksel Merkezini oraya yerleştirir. (Bu kurbun yarıçapı, makasın
+iç yarıçapıyla ve sapma açısı makasın Tg'siyle çakışmalıdır).</a></li><li><a name="Desvios_ramal_talon_ppal">Bir makası bu şekilde yerleştirmek için, eğer kavşak
+kolu sola çıkıyorsa, makas sağa bir makas olmalı ve tersi durumda tam
+tersi.</a></li></ul><a name="Desvios_ramal_talon_ppal"><br /></a><div style="text-align: center;"><a name="Desvios_ramal_talon_ppal"><img style="width: 400px; height: 168px;" alt="" src="Imagenes/ffcc_planta_desv_ramal_t_ppal.png" /><br /></a></div><a name="Desvios_ramal_talon_ppal"><br /></a><a name="via_poligonales"><span class="Titulo_2 Apartados">Poligonal makaslar</span><br /><br />Poligonal
+makaslarla çalışma imkanı. Bu makaslarda sapan hat, eşit uzunlukta
+(örneğin 5.5) ve aralarında aynı açıyı oluşturan bir dizi aliymandan
+(4, 5 veya 6) oluşur. Birincisi, ana hatla bu açının yarısını oluşturur.
+Sonuncusunun ana hatla yaptığı açı, makasın tanjantını tanımlar.
+Makasın uzunluğu, bölüm sayısı ile her bölümün uzunluğunun çarpımına
+eşittir.<br /><br />Kütüphaneye iki örnek dahil edilmiştir: <span class="Archivo">DS_Poligonal_4x55_019D.apv</span> ve <span class="Archivo">DS_Poligonal_4x55_019I.apv</span><br /><br /></a><div style="text-align: center;"><a name="via_poligonales"><img style="width: 600px; height: 416px;" alt="" src="Imagenes/via_poligonales.png" /><br /></a></div><a name="via_poligonales"><br /><br />
+      </a><a name="normativa"><span class="Titulo_2">Demiryolları için yönetmelik ve tasarım tabloları</span></a><br />
+<br />
+      Demiryolu
+kuruluşları tarafından yayınlanan demiryolu güzergah yönetmelikleri,
+bir dairesel aliymanın <span style="font-weight: bold;">minimum yarıçapını</span>, her bir daireye karşılık gelen <a href="OL_ffcc_peraltes_via.html"><span style="font-weight: bold;">deveri</span></a> ve <span style="font-weight: bold;"><a href="OL_planta_curvas_transicion.html">geçiş eğrisinin</a> uzunluğunu</span> belirlerken uygulanacak bir dizi geometrik ve dinamik parametreyi tanımlar. <br />
+      <br />
+Genellikle, bu kuruluşlar verileri demiryolu taşıtlarına, konforlu
+(normal) veya zorunlu koşullardaki seyir türüne göre düzenler ve ayrıca
+özelliklerini yıldan yıla değiştirebilirler. Bu özellik, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'un
+çalışma felsefesinde yer alır ve kullanıcıya farklı seyir modları veya
+senaryoları seçme imkanı sunan tasarım tablolarının kullanılmasına
+olanak tanır ve böylece farklı alternatifleri doğru ve hızlı bir
+şekilde değerlendirmeyi sağlar.&nbsp; <br />
+      <br />
+Her bir dairesel aliymanda uygulanan deverlerin belirlenmesi, demiryolu
+dolaşım dinamiğiyle ilişkili fiziksel formüller kullanılarak elde
+edilir ve uluslararası uygulamaya sahiptir. İspanya'da bu formülasyon
+ADIF, Madrid Metrosu, UNE-ENV 13803-1 EX normu vb.'de bulunabilir.<br />
+      <br />
+Planın sağ tarafındaki sabit menüden, Tasarım'a tıklayarak, <span style="font-weight: bold;">Yönetmeliği Gözden Geçir</span> seçeneği, &nbsp;<span class="Archivo">geovia.res</span> listesini oluşturur; bu liste, son sütunda, ilişkili tasarım tablolarında belirtilen aralıklara göre farklı tasarım parametrelerinin olası sapmalarını gösterir. Bu liste, C ve S şeklindeki kurplar arasında mevcut aliymanların minimum uzunluklarının uygunluğunu kontrol eder.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 615px; height: 174px;" alt="" src="Imagenes/geovia_listado_repnorm.png" /><br />
+      </div>
+
+      <br />
+Kütüphaneye FFCC_ADIF_2021.dip tasarım tablosu eklenmiştir.<br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="singularidad_norma_ffcc">Demiryolu güzergahlarında yönetmeliğin özellikleri</a></span><br />
+      <br />
+Belirli bir <span style="font-weight: bold;">seyir hızı</span> için ve formülasyona bağlı olarak <span style="font-weight: bold;">minimum yarıçap</span> elde edilir. Buna, izin verilen <span style="font-weight: bold;">maksimum dever</span> değeri karşılık gelir.<br />
+      <br />
+Ancak, mantıksal olarak, daha düşük bir <a href="OL_ffcc_peraltes_via.html"><span style="font-weight: bold;">dever</span></a> ve daha düşük bir <span style="font-weight: bold;">dever noksanlığı</span> (ve daha düşük bir <span style="font-weight: bold;">kompanse edilmemiş ivme</span>) gerektiren daha büyük yarıçaplar kullanılmalıdır. Uygulanan noksanlıkları kabul etmek proje mühendisinin sorumluluğundadır.<br />
+      <br />
+Minimumdan büyük bu yarıçaplar için, uygulanacak <a href="OL_ffcc_peraltes_via.html">deverlerin</a>
+belirlenmesi, oransal bir kanun veya güvenlik tarafında bir artış
+sabiti uygulamasından oluşabilen tasarım özelliklerine göre hesaplanır.
+Her durumda, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, bir dever tablosu kullanmaya gerek kalmadan bunları otomatik olarak hesaplar (çünkü formülasyonla elde edilirler).<br />
+      <br />
+Ayrıca ‘yavaş trenlerin’ hızı da dikkate alınmalıdır.
+Uyumlu minimum hız, hattın kabul edebileceği maksimum <a href="OL_ffcc_peraltes_via.html">dever</a> fazlalığı ile belirlenir (devrilmeyi ve rayların aşırı aşınmasını önlemek için).<br />
+      <br />
+Demiryolu güzergahındaki <a href="OL_planta_curvas_transicion.html">geçiş eğrilerinin</a> işlevi, aliyman ile dairesel aliyman arasında uygun bir <a href="OL_ffcc_peraltes_via.html">dever</a> geçişi sağlamaktır ve <a href="OL_ffcc_peraltes_via.html">devere</a> ve seyir hızına bağlı belirli formüllere göre belirlenir. <br />
+      <br />
+Kesin bir yarıçap-dever ilişkisi olmasına rağmen, başka bir <a href="OL_ffcc_peraltes_via.html">dever</a>
+kullanma imkanı vardır, bu da farklı bir <a href="OL_planta_curvas_transicion.html">geçiş eğrisi</a> uzunluğu anlamına gelir. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, dever noksanlığı ve kompanse edilmemiş enine ivme için izin verilen sınırlar içinde olduğu sürece formülasyonla elde edilenden farklı bir <a href="OL_ffcc_peraltes_via.html">dever</a>
+uygulama imkanı sunar. Gerekenden daha düşük bir <a href="OL_ffcc_peraltes_via.html">dever</a> uygulamak, <a href="OL_planta_curvas_transicion.html">geçiş eğrilerinin</a> boyutunu azaltmaya olanak tanır, çünkü bunların işlevi <a href="OL_ffcc_peraltes_via.html">deveri</a> sıfır değerinden kurbun değerine geliştirmektir (karayolu projelerinde olduğu gibi başka parametreler yoktur).<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="tablas_dip">Demiryolları için .dip tablolarının kullanımı</a></span><br />
+      <br />
+Bu tablolar, tek bir <span style="font-weight: bold;">seyir hızı</span> için veya birkaç <span style="font-weight: bold;">kategori</span>, <span style="font-weight: bold;">mod</span> ve ilişkili seyir hızı <span style="font-weight: bold;">aralığı</span> için tasarım sabitlerini içerebilir (birçok yönetmeliğin ruhunu yansıttığı gibi).<br />
+      <br />
+Bu tablolarla, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> aşağıdaki işlemleri otomatik olarak gerçekleştirir: <br />
+      <ul>
+        <li>Minimum yarıçapın ve yarıçap – dever – dever noksanlığı ilişkilerinin belirlenmesi.</li>
+        <li><a href="OL_planta_curvas_transicion.html">Geçiş eğrisi</a> uzunluğunun otomatik olarak hesaplanması.</li>
+        <li><a href="OL_ffcc_peraltes_via.html">Deverlerin</a> tam tekil noktalarda otomatik olarak uygulanması.</li>
+        <li>Demiryoluna özgü plan güzergahı geometrisi listesi.</li>
+      </ul>
+Aşağıda, programın ilgili diyalog kutuları aracılığıyla kullanımı,
+İspanya'da kullanılan ve kategoriler, modlar kullanmaya olanak tanıyan
+ve seyir hızı aralıkları içeren (ADIF yönetmeliğini yansıtan) &nbsp;<a href="OL_FFCC_ADIF_dip.html" target="_blank"><span class="Archivo">FFCC_ADIF.dip</span></a>
+tasarım tablosu örnek olarak kullanılarak ayrıntılı olarak
+açıklanmaktadır. Bu tablo, IGP-2008/2011 Yönetmeliğinin yanı sıra 2004
+ve 2006'yı da içerir ve 2006 ile olan farklılıklar belirtilir.<br />
+      <br />
+<a href="OL_FFCC_ADIF_dip.html" target="_blank"><span class="Archivo">FFCC_ADIF.dip</span></a> tablosu, ayrıca <a href="OL_rasantes_diseno.html">KIRMIZI KOTLAR</a> menüsünde yönetmeliğin gözden geçirilmesi için kullanılan aşağıdaki parametreleri kontrol etmeye olanak tanır:<br />
+      <ul>
+        <li>Maksimum boyuna eğim (yolcu ve karma). </li>
+        <li>Tünellerde minimum boyuna eğim.</li>
+        <li>Belirli bir düşey kurbun minimum Kv'sini önermek için kullanılan minimum düşey kurp uzunluğu.</li>
+        <li>Düşey kurplar arasında minimum düz kırmızı kot uzunluğu.</li>
+        <li>Maksimum eğimli kırmızı kotun maksimum uzunluğu.</li>
+      </ul>
+<a href="OL_general.html">GENEL</a> sekmesinden demiryolları için bir &nbsp;<span class="Archivo">.dip</span> tablosu yüklendiğinde, menü <span style="font-weight: bold;">kategori</span> ve <span style="font-weight: bold;">seyir modunu</span> seçmeye olanak tanır. Projenin genel hızı ve bölümlere göre belirtilen hız da burada tanımlanır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 569px; height: 88px;" alt="" src="Imagenes/tabla_dip_ffcc.png" /><br />
+      </div>
+<br />
+Tasarım tablolarında birkaç <span style="font-weight: bold;">seyir modu</span>
+belirtilebilir. Normalde normal ve istisnai modlar tanımlanır, ancak
+yük trenleriyle seyre, karma trafiğe vb. ilişkin modlar tanımlamak da
+mümkündür. Seyir modları ayrıca bölümlere göre ( <a href="#velocidad_proyecto">proje hızının</a> bölümlendirilmesine bağlı olarak) ve her aliyman için de (<a href="#peralte_velocidad_obligados">zorunlu dever/hız</a> tablosunda) beyan edilebilir.<br />
+      <br />
+.dip&nbsp;<span class="Archivo">tablosunda</span>, her hız
+aralığı, bir hız kapsamıyla ilişkili bir dizi blok veya alt tablo ile
+tanımlanır ve her moda ilişkin parametreleri içerir. Örneğin, ADIF
+istisnai veya zorunlu mod için daha yüksek deverler tanımlar, bu da
+prensipte normal moddakilerden daha küçük yarıçaplar kullanmaya olanak
+tanır. Bu parametrelerin kullanımı proje mühendisinin takdirindedir.<br />
+      <br />
+Kütüphanede, Katalonya Demiryolları yönetmeliğine göre yarıçapların,
+klotoidlerin ve deverlerin hesaplanması için bir .dip tablomuz
+bulunmaktadır (FFCC_CAT_a.dip).<br />
+      <br />
+      <a name="velocidad_proyecto">PROJE HIZI</a><br />
+      <br />
+      <img style="width: 316px; height: 130px; float: right;" alt="" src="Imagenes/tramos_vp_ffcc.png" hspace="6" /> <span style="font-weight: bold;">Seyir veya proje hızı</span>
+çeşitli şekillerde belirtilebilir. Başlangıçta ve karayolu projelerinde
+olduğu gibi, <a href="OL_general.html">GENEL</a> sekmesinde, <span style="font-weight: bold;">Vp</span> alanında tanımlanabilir.
+Belirli bir bölüme başka bir hız uygulamak gerekirse, o zaman <span style="font-weight: bold;">[Vp Bölümleri]</span> düğmesine basıldığında gösterilen diyalog kutusu kullanılmalıdır. <br />
+      <br />
+Bu durumda, bir karayolu projesinden farklı olarak, her bir KM bölümü için ayrıca farklı bir <span style="font-weight: bold;">seyir modu</span> da ilişkilendirmek mümkündür.<br />
+      <br />
+Bu şekilde, istasyonlardan geçiş, zorlu arazi koşulları veya hassas
+şehir içi güzergahlar tarafından dayatılan seyir kısıtlamaları getirme
+olasılığı veya gerekliliğiyle kullanıcının basitçe başa çıkmasına
+olanak tanıyan genel bir bölümlendirme oluşturmak mümkündür.<br />
+      <br />
+Hem bir karayolu hem de bir demiryolu projesinde, her eksen için proje hızı bölümlerinin tanımını <span style="font-weight: bold;">Listeleyebiliriz</span>.<br />
+      <br />
+      <br />
+KULLANILAN YÖNETMELİK HAKKINDA BİLGİ KUTUSU<br />
+<br />
+      <img style="width: 282px; height: 65px; margin-left: 7px;" alt="" src="Imagenes/cuadro_datos_normativa_ffcc.png" align="right" />Çalışma
+ekseni ve mevcut aliymanla ilişkili veriler, PLAN ekranının sol alt
+köşesinde görüntülenir. Burada şunlar gösterilir:<br />
+      <ul>
+        <li>Eksen numarası, aliyman numarası, ortalama KM'si ve seyir hızı.</li>
+      </ul>
+      <ul>
+        <li>Çalışma hızı (proje hızı, bölüm hızı veya aliyman hızı olabilir) ve tasarım tablosunda belirtilenler arasından kullanılan bölüm. Her zaman bu hızın kaynağı hakkında bilgi verilir. Prensipte proje hızı uygulanır, sonra varsa bölüm hızı ve son olarak her aliymanın tanımlı olabileceği hız kullanılır.</li>
+      </ul>
+      <ul>
+        <li>Seçilen kategori (tablo içinde birkaç kategori olabilir, &nbsp;<a href="OL_FFCC_ADIF_dip.html" target="_blank"><span class="Archivo">FFCC_ADIF.dip</span></a> tablosunda birkaç ADIF 2004, ADIF 2006, ADIF 2008 ve ADIF 2011 kategorisi bulunur).</li>
+      </ul>
+      <ul>
+        <li>Mod: normal, zorunlu, istisnai veya tasarım tablosunda tanımlanan başka bir mod.</li>
+      </ul>
+Eğer belirli bir aliymana bir <a href="#peralte_velocidad_obligados">zorunlu dever</a> veya bir <a href="#peralte_velocidad_obligados">zorunlu hız</a>
+tanımlanırsa, kullanıcının çalıştığı verileri tanımlamasını
+kolaylaştırmak için mesaj kırmızı renkte görüntülenir.<br />
+      <br />
+      <br />
+.dip TABLOSU TARAFINDAN ÖNERİLEN YARIÇAPLARIN VE GEÇİŞ UZUNLUKLARININ KULLANIMI<br />
+      <br />
+Her bir çalışma parametresi alt tablosu için (hız, kategori ve mod),
+genel olarak (tüm eksen için) veya özel olarak (bölüm veya aliyman
+başına), program tarafından hesaplanan ve veri seçim pencerelerinde
+sunulan sayısal değerlerden faydalanmak mümkündür. Demiryolu güzergahı
+durumunda ve karayolu projelerinden farklı olarak, bu pencereler, dever
+noksanlıkları, kompanse edilmemiş ivme, geometrik, dinamik veya konfor
+sınırlamalarına bağlı olarak <a href="OL_planta_curvas_transicion.html">geçiş eğrisi</a> uzunlukları gibi kullanıcı için ilgi çekici olabilecek çeşitli parametrelerin farklı özetlerini gösterir.<br />
+      <br />
+Tasarım tablolarını kullanmanın ilk faydalarından biri, en uygun
+yarıçapı kullanabilmek ve ilişkili parametrelerini bilmektir. <a href="OL_general.html">GENEL</a> sekmesinde, tasarlanan demiryolu &nbsp;<span class="Archivo">.dip</span> tablosunun yüklenmiş olması ve proje modu ve hızının beyan edilmiş olması gerekir. <span style="font-weight: bold;">[R]</span>
+düğmesine basıldığında, 10 mm'lik bir deverden başlayıp izin verilen
+maksimuma kadar giden bir seriye ilişkin kombinasyonların bir listesi
+açılır. Ayrıca, maksimum hız ve çalışma hızıyla ilişkili minimum
+yarıçaplar, seyir modu ve mevcut yarıçap ile dever (<span style="font-weight: bold;">hp</span>), dever noksanlığı (<span style="font-weight: bold;">hi</span>) ve kompanse edilmemiş ivme (<span style="font-weight: bold;">anc</span>) verileri gösterilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 338px; height: 450px;" alt="" src="Imagenes/ffcc_dip_R_T.png" /><br />
+      </div>
+      <br />
+Bu pencerenin alt kısmında ayrıca, kullanılabilecek olası modların
+minimum yarıçapları gösterilir ( &nbsp;<a href="OL_FFCC_ADIF_dip.html"><span class="Archivo">FFCC_ADIF.dip</span></a> tablosu durumunda <span style="font-style: italic;">Normal</span> ve <span style="font-style: italic;">İstisnai</span>'dir, ancak daha fazla mod tanımlamak mümkündür).<br />
+      <br />
+Demiryolu güzergahında <a href="OL_planta_curvas_transicion.html">geçiş eğrileri</a>, doğru bir dever geçişi gerçekleştirmekle görevlidir. Bu uzunluk, <a href="OL_ffcc_peraltes_via.html">devere</a>, kullanılan yarıçapa ve seyir hızına bağlı olarak hesaplanır. Demiryolu güzergahında A (parametre) yerine L (uzunluk) kullanmak daha yaygındır.<br />
+      <br />
+Dever, hız ve sınırlayıcı değerleri kullanarak:<br />
+      <ul>
+        <li>Maksimum dever değişimi veya dinamik sınırlama</li>
+        <li>Maksimum dever noksanlığı değişimi veya konfor sınırı<br />
+        </li>
+        <li>Maksimum dever rampası veya geometrik sınırlama</li>
+      </ul>
+karşılık gelen minimum geçiş uzunluklarının değerleri formülasyonla elde edilir.<br />
+      <br />
+Ayrıca, eğer &nbsp;<span class="Archivo">.dip</span> tablosu bir dizi
+tablolanmış değer içeriyorsa (genellikle demiryolu kuruluşları
+tarafından yayınlanan tabloları yeniden üretir), bu değer de alınır ve
+önceki üçüyle karşılaştırılır ve hepsinden en büyüğü seçilir.<br />
+      <br />
+<span style="font-weight: bold;">[T]</span> düğmesine basıldığında,
+minimum L değerini ve ardından kullanılan verilerin bir özetini ve
+faydalı olabilecek birkaç parametrenin sonuçlarını sunan bir pencere
+açılır.<br />
+      <br />
+Gösterilen teorik dever şu formüle karşılık gelir:<br />
+      <br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 533px; height: 57px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 125px;"><img style="width: 98px; height: 35px;" alt="" src="Imagenes/ffcc_formula_ht.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 388px;"><span style="font-weight: bold; font-style: italic;">s</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> Tekerlek-ray temas noktaları arasındaki mesafe (mm)<br /><span style="font-weight: bold; font-style: italic;">V</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; </span></span></span></span></span></span>Hız (km/s)<br /><span style="font-weight: bold; font-style: italic;">g</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> &#8594;</span></span></span></span></span></span> Yerçekimi ivmesi (m/s<sup>2</sup>)<br /><span style="font-weight: bold; font-style: italic;">R</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> &#8594; </span></span></span></span></span></span>Kurp yarıçapı (m)<br /></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+Ancak, gösterilen gerçek dever (<span style="font-weight: bold;">hr</span>), önceki değer ile izin verilen maksimum dever (<span style="font-weight: bold;">hmaks</span>) arasındaki en küçük değere karşılık gelir.<br />
+      <br />
+Pencerenin ikinci bölümünde, mevcut <a href="OL_planta_curvas_transicion.html">geçiş eğrisiyle</a> ilişkili değerlerin bir özeti gösterilir (eğer tanımlıysa).<br />
+      <br />
+Hem yarıçap seçim penceresi hem de <a href="OL_planta_curvas_transicion.html">geçiş eğrilerinin</a> uzunlukları veya parametreleri penceresi, alt kısımda aliymanda kullanılan seyir hızını ve modu hakkında bilgi verir.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /></td>
+            <td class="Info" style="vertical-align: top; width: 633px; text-align: justify;">Çoğu
+kuruluş, yarıçaplar ve klotoid uzunlukları gibi belirli elemanlara
+yuvarlamalar uygulayan normlar yayınlar. <br /><br />Uygulanan
+formülasyon, daha sonra yuvarlanan tam yarıçaplar için tam deverler
+sunar. Mantıksal olarak, daha sonra formülleri uygularken yuvarlanmış
+bir yarıçap, veri penceresinde görüntülenenden daha düşük bir dever
+döndürür. <br /><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, bu
+sorunu, minimum yarıçapa maksimum deveri uygulayarak çözer ve bu
+durumda .dip&nbsp;<span class="Archivo">dosyasında</span> bulunan ‘sabit’ tabloda tanımlanan değeri hatırlar.<br /><br />Diğer
+yarıçaplar için, eğer bir yuvarlama uygulanmışsa, uygulanan dever
+başlangıçta sunulandan biraz daha düşük olacaktır. Bu yönetmelik
+yorumlaması size doğru gelmiyorsa, .dip tablosunu düzenleyebilir ve
+hesaplanan dairesel aliymanların yarıçapının yuvarlama değerini 1 (bir
+birim) olarak değiştirebilirsiniz.<br /><br />
+<a href="OL_planta_curvas_transicion.html">Geçiş eğrileri</a>
+durumunda da aynı şey olur, bu nedenle daha sonra kullanılırsa,
+sınırlama değerleri hesaplandıkları minimum değerlerden daha düşük
+olacaktır. <br /></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="peralte_velocidad_obligados">Zorunlu dever ve hız</a></span><br />
+      <br />Bu
+grafiksel dever hesaplayıcısı, her aliyman için yarıçapını, o aliyman
+için proje hızını veya maksimum hızı ve deveri değiştirmeye olanak
+tanır. Klotoidleri aynı anda hesaplamaya ve değiştirmeye izin verir.
+Dever arttığında veya azaldığında, noksanlık azalır veya artar.
+Grafikte, izin verilen sınırların dışına çıkılırsa bir uyarı gösterilir.
+Klotoid öneri tablolarında, eğer tanımlıysa, zorunlu dever kullanılır.<br />
+      <br />
+Tanımlanan
+dairesel kurp için özel koşullar kullanılabilir (yarıçapı düşürüp
+deveri artırmak, deveri düşürüp noksanlığı artırmak, kurptaki hızı
+düşürmek,...). <br />
+      <br />
+Genellikle, belirli bir trafiğe izin vermek, çevresel bir dayatma, çok
+fazla alternatif sunmayan bir şehir içi güzergah gibi belirli
+durumlarda kullanılırlar.<br />
+      <br /><img style="width: 180px; height: 96px;" alt="" src="Imagenes/modo_peralte_obl.png" align="right" hspace="6" />
+<span style="font-weight: bold;">[P(%)]</span> düğmesine basıldığında, belirli bir kurp için özel bir <span style="font-weight: bold;">seyir modu</span>
+seçmek ve yarıçap, hız veya dever değerlerini değiştirmek mümkündür; bu
+sırada hesaplayıcı <a href="OL_ffcc_peraltes_via.html">dever</a>, dever noksanlığı, <a href="OL_planta_curvas_transicion.html">geçiş eğrisi</a> uzunluğu vb. değerleri günceller.<br />
+      <br />
+<span style="font-weight: bold;">Normal</span> (M1) veya <span style="font-weight: bold;">istisnai</span> (M2) bir mod uygulamak, yüklenen .dip&nbsp;<span class="Archivo">yönetmelik tablosunda</span> (örneğin <a href="OL_FFCC_ADIF_dip.html">FFCC_ADIF.dip</a>) tanımlanan parametrelerle ilgilidir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 625px; height: 474px;" alt="" src="Imagenes/peralte_obligado_ffcc.png" /><br />
+      </div>
+      <br />
+      <img style="width: 123px; height: 51px;" alt="" src="Imagenes/escala_radios_per.png" align="right" hspace="6" />Bu tabloda, grafik için üç farklı yatay ölçek seçilebilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Değer 0</span>: yarıçap bölümleri 0, 2500, 5000, 7500...</li>
+        <li><span style="font-weight: bold;">Değer 1</span>: yarıçap bölümleri 0, 500, 1000, 1500...</li>
+        <li><span style="font-weight: bold;">Değer 2</span>: yarıçap bölümleri 0, 100, 200, 300...<br />
+        </li>
+      </ul>
+
+Resimde incelenen yarıçap (8000 m) ve aşağıdaki sınır değerlerine sahip iki sütun görülebilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Vmaks</span>: Kullanımdaki tasarım alt tablosu için maksimum hız.</li>
+        <li><span style="font-weight: bold;">Vp</span>: Mevcut kurp için
+proje hızı; sol sütunda <a href="OL_general.html">GENEL</a> sekmesinde beyan edilene eşittir.</li>
+        <li><span style="font-weight: bold;">Rmin</span>: <span style="font-weight: bold;">Vp</span> için hesaplanan minimum yarıçap.</li>
+        <li><span style="font-weight: bold;">hmaks</span>: Bu mod için maksimum dever.</li>
+        <li><span style="font-weight: bold;">himaks</span>: Maksimum dever
+noksanlığı.</li>
+      </ul>
+Aşağıdaki değerler, analiz edilen deverler, noksanlık vb. için hesaplanan değerlerdir.<br />
+      <br /><span style="font-weight: bold;">[Vp(hp)]</span>
+düğmesinden yola çıkarak, Proje Hızını hesaplar, böylece hp deveri
+zorunlu deverle çakışır. Fonksiyon, tasarım tablosunun hız
+aralıklarının değişiminde sürekli olmadığından, eğer zorunlu dever, alt
+aralığın bu aralığın maksimum hızı için olan deveri ile üst aralığın
+aynı hız için olan deveri arasında ise, o zaman üst aralık için bu hız
+atanır ve buna zorunludan daha yüksek bir dever karşılık gelir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 300px; height: 297px;" alt="" src="Imagenes/peralte_obl_velocidad.png" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">[Vp(R)]</span>&nbsp; düğmesinden yola çıkarak, minimum yarıçapın kurbun yarıçapına eşit olmasını sağlayan maksimum <span style="font-weight: bold;">Vp</span> hızı
+hesaplanır. Fonksiyon, tasarım tablosunun hız aralıklarının
+değişiminde sürekli olmadığından, alt aralığın mümkün olan en yüksek
+hızı alınır, bu da yarıçapın minimum yarıçaptan büyük olmasını sağlar.<br />
+      <br />
+Zorunlu dever ve zorunlu hız tanımı için diyalog kutusu içinde, iki ana
+veri sütunu ayırt edilebilir. Bunlardan ilki, kurbun zorunlu hızını
+dikkate almadan, bölümün hızıyla hesaplanan tüm verileri korur.<br />
+<br />
+Sağdaki grafikte, dever ve dever noksanlığı kurplarının gösterimi ve
+tabloda bulunan <span style="font-weight: bold;">hp</span> ve <span style="font-weight: bold;">hi</span> değerlerini temsil eden renkli noktalar gösterilir:<br />
+      <ul>
+        <li>Gri renkli kurp, <span style="font-weight: bold;">Vp</span> için hesaplanan <span style="font-weight: bold;">ht</span>'nin (teorik veya kinematik dever) yarıçapa göre değişimini temsil eder.</li>
+      </ul>
+      <ul>
+        <li>Camgöbeği, gerçek dever <span style="font-weight: bold;">hr</span>'yi (teorik eksi maksimum noksanlık, <span style="font-weight: bold;">ht</span>-<span style="font-weight: bold;">himaks</span>) temsil eder.</li>
+      </ul>
+      <ul>
+        <li>Sarı, <span style="font-weight: bold;">hp</span> deverini (dever kanunu olarak <span style="font-weight: bold;">hp</span> = <span style="font-weight: bold;">hmaks</span>*<span style="font-weight: bold;">Rmin</span>/<span style="font-weight: bold;">R</span> olarak hesaplanan) temsil eder. Zorunlu deverin değeri yanında, bunun bir Karşı Dever (negatif dever) kurpu için olduğu belirtilebilir.<br />
+</li>
+      </ul>
+      <ul>
+        <li>Kırmızı, dever noksanlığı <span style="font-weight: bold;">hi</span>'yi (fark <span style="font-weight: bold;">hr</span>-<span style="font-weight: bold;">hp</span>) temsil eder.</li>
+      </ul>
+      <ul>
+        <li>Sarı nokta (kontrol edilen <span style="font-weight: bold;">hp</span> dever değeri), yarıçap apsisinde, sarı çizgi üzerinde ve kırmızı nokta (noksanlık <span style="font-weight: bold;">hi</span>) kırmızı çizgi üzerinde olacaktır. Eğer <span style="font-weight: bold;">hp</span> deveri düşürülürse, grafikte sarı nokta inerken kırmızı nokta <span style="font-weight: bold;">hi</span>
+yükselir; ancak sarı nokta camgöbeği çizgisinin altına indirilmemelidir,
+çünkü kırmızı nokta mavi çizginin üzerine çıkarak noksanlığın
+maksimumu aştığını gösterir ve "Dever yetersiz!" mesajı görüntülenir.
+Ancak program, norm dışı olsa bile o dever değerini kabul edecektir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Vmin</span>: Kurbun
+minimum hızını tanımlayabilirsiniz (ve program size dever fazlalığını
+hesaplar). Ayrıca dever fazlalığı için bir değer girebilirsiniz ve
+program size kurp için minimum hızı hesaplar. Minimum hız verisi .cej
+dosyasıyla kaydedilir. <br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;">Vmin'in hemen sağındaki kutucukla
+bunu etkinleştirebiliriz ve program bize, daha yavaş trafikleri
+paylaşan hatları denemek için Rmin ve Hmax'ı yeniden hesaplama seçeneği
+sunar. Proje Hızı (Vp) ve yavaş trafikler için hız (Vmin) bir değer
+girildiğinde, her iki trafiğin de sınırlar içinde olduğundan emin olmak
+için Minimum Yarıçapı artırmak (ve Maksimum Deveri azaltmak) gerekip
+gerekmediğini belirlemek için maksimum noksanlık ve maksimum fazlalık
+kullanılır.<br />
+      </div>
+      <br />
+
+Bu zorunlu değerler, her kurp için çalışma oturumu boyunca bellekte
+kalır. Kaydedilmeleri için, oturumu terk etmeden önce onları depolayan
+plan eksenleri &nbsp;<span class="Archivo">.cej</span> dosyasının kaydedilmesi gerekir.<br />
+      <br />
+<a href="OL_ffcc_peraltes_via.html">Deverlerin</a> hesaplanması için otomatizmlerden herhangi biri kullanılırsa ve zorunlu bir dever varsa, bu, dever diyagramında gri renkte görüntülenir. Ayrıca pencerede ‘DİKKAT: ZORUNLU DEVER’ mesajı gösterilir.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 503px; height: 280px;" alt="" src="Imagenes/peralte_obligado_ffcc_ejemplo.png" /><br />
+      </div>
+
+<br /><span class="Parrafo"><span class="Parrafo"></span></span></td>
+    </tr><tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body></html>

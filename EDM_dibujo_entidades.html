@@ -1,0 +1,2763 @@
+﻿Emredersiniz. Görev, belirttiğiniz tüm referanslar ve metodolojiye sadık kalınarak, en yüksek teknik hassasiyetle tamamlanmıştır.
+
+Orijinal HTML dosyasının yapısı, linkleri ve formatı %100 korunarak, içeriği Türkiye mühendislik pratiklerine ve terminolojisine uygun şekilde lokalize edilmiştir.
+
+Aşağıda, talep ettiğiniz çevrilmiş HTML içeriği sunulmaktadır.
+
+---
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Obje Çizimi ve Düzenlenmesi</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>OBJE ÇİZİMİ VE DÜZENLENMESİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br style="font-weight: bold; font-style: italic;" />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#lineas">Çizgiler</a><br />
+      </div>
+
+      
+      <div style="margin-left: 80px;"><a href="#arcos">Yaylar</a><br />
+      <a href="#circunferencias">Daireler</a><br />
+      <a href="#poligonos_regulares">Düzgün Çokgenler</a><br />
+      <a href="#linea_media">Orta Çizgi</a><br />
+      <a href="#Partir_8D">8D Objesini Parçala (Doğru/Daire/Klotoid)</a><br />
+      </div>
+
+      
+      <div style="margin-left: 40px;"><a href="#simbolos">Semboller</a><br />
+      <a href="#textos">Yazılar</a><br />
+      <a href="#celulas">Hücreler</a><br />
+      </div>
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+Harita düzenleme, çizimdeki grafik objelerin (<a href="EDM_entidades_basicas.html#lineas">çizgiler</a>, <a href="EDM_entidades_basicas.html#simbolos">semboller veya noktalar</a>, <a href="EDM_entidades_basicas.html#textos">yazılar veya etiketler</a> ve <a href="EDM_entidades_basicas.html#celulas">hücreler</a>) oluşturulmasını ve yönetilmesini içerir. Bu işlemler genellikle belirli geometrik koşullar altında ve çizimdeki diğer nesnelere dayanarak yapılır.<br />
+
+      <br />
+      <img style="width: 320px; height: 297px; margin-right: 7px;" alt="" src="Imagenes/dibujo_modif_entidades.png" align="left" />İmleç
+bir grafik obje üzerinde bekletildiğinde, ekranda o objenin bazı özellikleri hakkında bilgi veren
+bir etiket belirir: ait olduğu tip ve model, aktif köşe noktasının kotu, renk, koordinatlar,
+içerik vb. Bu bilgiler, objenin bir <a href="EDM_entidades_basicas.html#lineas">çizgi</a>, <a href="EDM_entidades_basicas.html#simbolos">sembol</a>, <a href="EDM_entidades_basicas.html#textos">yazı</a> veya <a href="EDM_entidades_basicas.html#celulas">hücre</a> olmasına göre değişir.<br />
+      <br />
+Eğer obje bir çizgi ise ve bu çizgi 26 veya 27 (eş yükselti eğrileri),
+34 veya 36 (yardımcı eş yükselti eğrileri) ya da 40 veya 41 tipindeyse,
+o zaman aynı kottaki diğer çizgiler de yeşil renkte vurgulanır (haritadaki diğer çizgilerle olan ilişkisini görmek için). Eğer bu tiplerden
+hiçbiri değilse, o zaman aynı tipteki çizgiler yeşil renkte gösterilir.<br />
+
+      <br />
+Bu davranışı, <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>&nbsp;<img style="width: 12px; height: 14px;" alt="" src="Imagenes/icono_toolBarEstandar_info.png" /> simgesine tıklayarak veya <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Görünüm</span> menüsü aracılığıyla devre dışı bırakmak mümkündür.
+Burada ayrıca etiketin görüntülenmesi için gecikme süresini ve
+benzer çizgileri tanımlama davranışının aktif tutulup tutulmayacağını da belirtebilirsiniz.<br />
+      <br />
+
+      <br />
+Bu bölümde, temel harita düzenlemesi ile ilgili tüm detaylar ele alınmakta
+ve her obje sınıfı için ayrı bir alt bölüm ayrılmaktadır.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="lineas">Çizgiler</a></span><br />
+      <br />
+Düzenleme işlemleri çizim elemanları üzerinde etki gösterir. <a href="EDM_entidades_basicas.html#lineas">Çizgiler</a> üzerinde işlem yapan
+seçeneklerin neredeyse tamamı, öncesinde veya sonrasında bir çizginin ve daha spesifik olarak
+onun bir veya iki köşe noktasının seçilmesini gerektirir.<br />
+
+      <br />
+      <img style="width: 242px; height: 240px; margin-left: 7px;" alt="" src="Imagenes/dibujar_linea.png" align="right" />Bir
+<a href="EDM_entidades_basicas.html#lineas">çizgi</a> seçildiğinde, aynı çizginin köşe noktaları (tutma noktaları)
+tanımlanır ve üzerinde işlem yapmak için erişilebilir hale gelir. En yakın köşe noktası
+yeşil renkte vurgulanır (aktif köşe noktası). Ayrıca, üzerine tıklanan segment (aktif segment)
+kırmızı (artan yönde) veya macenta (azalan yönde) renkte vurgulanır. <br />
+      <br />
+Bazı işlemler iki köşe noktası arasında yapılır (örneğin, başka bir köşe noktasının eklenmesi aktif segmentin uçları arasında yapılır). <br />
+      <br />
+Bir <a href="EDM_entidades_basicas.html#lineas">çizginin</a> sonuna gelindiğinde, aktif segment mevcut değildir ve
+aktif köşe noktası, alt uç ise kırmızı, üst uç ise camgöbeği renginde gösterilir.
+Bu durumda, iki köşe noktasını içeren işlemler sonuncudan sonra yapılır (örneğin, bir çizginin sonuna köşe noktası eklemek, onu uzatmak anlamına gelir).&nbsp;&nbsp;&nbsp; &nbsp;<br />
+
+      <br />
+Bir <a href="EDM_entidades_basicas.html#lineas">çizginin</a> rengi, varsayılan olarak, tipiyle ilişkilendirilmiş olan renktir (<span style="font-weight: bold;">tipe göre renk</span>). Ancak bu özelliği tipten bağımsız hale getirmek mümkündür (<span style="font-weight: bold;">özel renk</span>). Bu durum genellikle, içe aktarılan çizgilerin farklı tiplere ait olmalarına rağmen orijinal renklerini korumaları istendiğinde, &nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> formatındaki haritalarda görülür. Bu özellik, çizginin özellikler penceresi açılarak değiştirilebilir.<br />
+      <br />
+
+Aşağıda <a href="EDM_entidades_basicas.html#lineas">çizgiler</a> üzerindeki temel düzenleme işlemleri açıklanmaktadır. Bir işlemi sonlandırmak için &lt;Esc&gt; tuşuna basmak (veya bağlam menüsünden <span style="font-weight: bold;">Çıkış</span> seçmek) gerekecektir. Bu işlevlere şuradan erişilebilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Çiz</span>, <span style="font-weight: bold;">Düzenle</span> ve <span style="font-weight: bold;">Araçlar</span> menüleri (her durumda belirtilir).</li>
+
+        <li><a href="EDM_barras_herramientas.html">Araç çubukları</a>.</li>
+        <li>Bağlam menüsü (en sık kullanılan işlevler).</li>
+      </ul>Sağ
+farenin çift tıklamasıyla harita editörünün son kullanılan işlemi tekrarlanır.
+Bu, bir kez tıklayıp bağlam menüsünden "X'i Tekrarla" seçeneğini seçmekle aynı sonuçtur.<br />
+      <br />
+
+
+
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+
+    <tr>
+      <td style="vertical-align: top; width: 173px; text-align: center; font-weight: bold;">İşlem<br />
+      </td>
+      <td style="vertical-align: top; width: 28px; text-align: center; font-weight: bold;">Simge<br />
+      </td>
+      <td style="vertical-align: top; width: 215px; text-align: center; font-weight: bold;">Açıklama<br />
+      </td>
+
+      <td style="vertical-align: top; width: 2px;"><br />
+      </td>
+      <td style="vertical-align: top; width: 238px; text-align: center; font-weight: bold;">Kullanım<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="crear_linea">Çizgi Oluştur</a><br />
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 12px; height: 12px;" alt="" src="Imagenes/icono_toolBarLineas_crear.png" /></td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Haritaya yeni çizgiler çizer.<br />
+            <br />
+Her köşe noktasına atanan kot, klavyeden koordinatlar girilip kot belirtilmedikçe veya kotu dikkate alan bir yakalama modu aktif olmadıkça, mevcut kot olacaktır.<br />
+            <br />
+Çizginin aldığı tip, mevcut çizgi tipidir.<br />
+            <br />
+Son oluşturulan çizgi, tek seçili eleman olarak kalır.<br />
+
+            <br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">Kullanıcı işlemi sonlandırana kadar çizginin köşe noktalarının ardışık olarak eklenmesi.<br />
+            <br />
+Bir çizgi bittikten sonra, program çizgi oluşturma modunda devam eder.<br />
+            <br />
+Bir çizginin ikiden az köşe noktası olamaz, bu yüzden bir tane oluşturduktan sonra daha fazla nokta eklenmezse program onu yok sayar.<br />
+
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="insertar_vertice">Köşe Noktası Ekle</a><br />
+(<span style="font-weight: bold;">Düzenle</span> Menüsü)<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarLineas_insertVert.png" /></td>
+
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Aktif
+segmente, yani iki aktif nokta arasına veya çizginin sonuna (veya uçlarından birindeyseniz çizginin uzantısı olarak)
+bir köşe noktası ekler.<br />
+            <br />
+Bir yakalama modu aktifse, eklenen köşe noktası yakalanan elemanın X ve Y koordinatlarını ve kotunu alacaktır.<br />
+            <br />
+Aktif bir yakalama modu yoksa, çizgiye eklenen noktanın kotu, aktif segmentin uçlarının kotlarının (doğrusal olarak ağırlıklandırılmış) bir ortalaması olacaktır.<br />
+            <br />
+Çizginin bir ucunda bulunulması durumunda, eklenen noktanın kotu uç noktanınkiyle aynıdır.<br />
+            <br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">Köşe noktası eklendikten sonra çizginin alacağı şekil her an yansıtılır.<br />
+            <br />
+Aktif segment, seçilen çizginin tamamına ardışık olarak köşe noktaları ekleyebilmek için yönlendirildiği yönde hareket eder.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+
+      <td style="vertical-align: top; width: 173px;"><a name="borrar_vertice">Köşe Noktası Sil</a><br />
+(<span style="font-weight: bold;">Düzenle</span> Menüsü)<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarLineas_borrarVert.png" /></td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Aktif köşe noktasını siler (çizgiye ait olmaktan çıkar).<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+
+      <td style="vertical-align: top; width: 238px; text-align: justify;">Simgeye tıklandığında, işlem doğrudan yürütülür.<br />
+            <br />
+Çizgide sadece iki köşe noktası kaldığında, birini kaldırmak çizgiyi de siler.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="mover_vertice">Köşe Noktası Taşı</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> Menüsü)<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarLineas_moverVert.png" /></td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Çizgilerin
+trazesini düzeltmek için o an seçili olan çizginin ana aktif köşe noktasını
+başka konumlara taşımaya izin verir. <br />
+            <br />
+Bir yakalama modu aktifse, yakalanan elemanın X ve Y
+koordinatları alınır, ancak orijinal noktanın kotu korunur.<br />
+            <br />
+</td>
+
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">Köşe noktası taşındıktan sonra çizginin alacağı şekil her an yansıtılır.<br />
+            <br />
+Aktif segment, aktif çizginin tüm köşe noktalarını ardışık olarak taşıyabilmek için yönlendirildiği yönde hareket eder.<br />
+            <br />
+Bu işlem, çizginin tutma noktaları üzerinde fare ile doğrudan yapılabilir.<br />
+            <br />
+</td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;">Çizgi üzerinde gezinme<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_avanVert.png" /><br />
+            <br />
+            <img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_retrocVert.png" /><br />
+</td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Aktif
+köşe noktasını çizgi boyunca, artan yönde (aktif segment kırmızıdır) veya azalan yönde (aktif segment
+macentadır) hareket ettirir. <br />
+
+            <br />
+Seçilecek nokta görüntülenen alanın dışına düşerse, ekran o noktanın olduğu alana kaydırılır.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">İşlem, simgeye tıklandığında anında gerçekleşir.<br />
+            <br />
+Bir çizginin köşe noktaları arasında gezinmek, &lt;Home&gt;, &lt;End&gt;, &lt;PageUp&gt; ve
+
+&lt;PageDown&gt; tuşları ile de mümkündür (sırasıyla başlangıç köşesi, bitiş köşesi, ileri ve geri gitme). <br />
+            <br />
+Çizgi kapalı olduğunda, gezinme döngüseldir.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="unir_lineas">Çizgileri Birleştir</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 19px; height: 5px;" alt="" src="Imagenes/icono_toolBarLineas_empalmar.png" /></td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Daha sonra seçilecek iki çizgiyi en yakın uçlarından birleştirerek eklemeyi sağlar.<br />
+            <br />
+Aynı çizgi seçilirse, kendi üzerine kapanır. Eğer çizgiler farklı kotlara veya diğer özniteliklere sahipse, sonuçtaki çizginin genel kotu ve öznitelikleri ilk belirtilenin olur, ancak sonuçtaki çizginin köşe noktaları orijinallerindeki kotlarını korur.<br />
+
+            <br />
+Çizgilerden herhangi biri kapalıysa işlem çalışmaz.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">İlgili iki çizgi ardışık olarak seçilir.<br />
+            <br />
+Seçilen iki çizginin tipi farklıysa, program durumu bildirir ve onay ister.<br />
+
+            <br />
+Eğer eş yükselti eğrileri (L26, L27, L34 veya L36) ise ve farklı kotlara sahiplerse, program bu konuda da uyarır ve onay ister.<br />
+            <br />
+Seçenek aktif kalır ve kullanıcı işlemi sonlandırana kadar ardışık olarak birleştirilecek birinci ve ikinci çizgiyi seçmesini ister.<br />
+            <br />
+Bu işlem, birleştirilecek ucun tutma noktasını diğer çizginin ucuna sürükleyerek de doğrudan yapılabilir.<br />
+            <br />
+</td>
+    </tr><tr>
+
+      <td style="vertical-align: top; width: 173px;"><a name="abrir_linea">Çizgiyi Aç/Böl</a><br />
+            <br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 19px; height: 4px;" alt="" src="Imagenes/icono_toolBarLineas_abrir.png" /></td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Bir
+çizgiyi ikiye böler veya kapalı bir çizgiyi açar, aktif segmentteki birleşimi ortadan kaldırır. Bu seçenek anında gerçekleşir ve önceden seçilmiş olan çizgi üzerinde yürütülür.<br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Seçilen
+segment üzerinde anında işlem yapılır. Eğer önceden seçilmiş bir segment yoksa,
+kullanıcı seçenekten çıkana kadar döngüsel olarak bir segment istenir.<br />
+</td>
+    </tr>
+    <tr>
+            <td style="vertical-align: top;">Bant ile Çoklu Doğruları Aç/Böl<br />
+            <br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 16px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_abrirbanda.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Bir veya daha fazla çoklu doğruyu, onları kesen bir çizgi ile iki parçaya böler.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Araç başlatıldığında, program kesme çizgisinin (bantın) başlangıç ve bitiş noktalarını isteyecektir. Bunları seçtikten sonra, program bant tarafından kesilen tüm çoklu doğrulardaki çakışan segmenti silecektir.<br />
+            </td>
+          </tr>
+<tr>
+      <td style="vertical-align: top; width: 173px;"><a name="cortar_linea">Çizgiyi Kes</a><br />
+            <br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span> &#8594; <span style="font-weight: bold;">Çizgiyi Kes</span>)<br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_cortarLinea.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Bir çizginin aktif köşe noktasından ikiye bölünmesini sağlar.<br />
+
+            <br />
+<span style="font-weight: bold;">Çizgiyi Aç/Böl</span>'den farklı olarak,
+bu seçenek iki çizgi arasında silinen aktif segmentin boşluğunu bırakmaz,
+kesme köşe noktasını çoğaltarak her ikisinin de ucu olarak bırakır ve çizgileri birbirine temas halinde tutar.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Aktif
+köşe noktası üzerinde anında işlem yapılır. Eğer önceden seçilmiş bir köşe noktası yoksa,
+seçenek döngüseldir ve kullanıcı seçenekten çıkana kadar köşe noktaları seçer.<br />
+</td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="cortar_2_lineas">2 Çizgiyi Kes</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span> &#8594; <span style="font-weight: bold;">Çizgiyi Kes</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_cortar2.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">İki
+çizginin kesişim noktasında kesilmesini sağlar ve sonuç olarak 4 çizgi oluşur.
+Diğer hususlar önceki durumla benzerdir.<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Eğer
+önceden iki çizgi seçilmişse, onlara işlem yapar; eğer bir tane seçilmişse sadece ikincisi istenir ve diğer durumlarda
+kullanıcıdan ardışık olarak iki çizgiyi seçmesi istenir.
+Ardından, çizgiler birden fazla kez kesişebileceği için yaklaşık kesişim noktasını ister.<br />
+            <br />
+
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="cortar_n_lineas">N Çizgiyi Kes</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span> &#8594; <span style="font-weight: bold;">Çizgiyi Kes</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 17px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_cortar_n.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Tüm çizgileri, seçilen başka bir çizgi ile kesişim noktalarında keser.<br />
+            <br />
+Kesim noktası her çizgiye eklenir ve bu nokta tarafından ikiye bölünür.
+Kesim noktasının kotu, ikiye bölünen orijinal segment üzerindeki interpolasyonla kesilen çizgilerin kendisinden elde edilir.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Eğer önceden bir çizgi seçilmemişse, program bir tane seçilmesini ister ve işlemi yürütür.<br />
+            <br />
+Eğer önceden bir çizgi seçilmişse, onay isteyen bir uyarı mesajı gösterir.<br />
+            <br />
+</td>
+    </tr>
+    <tr><td style="vertical-align: top;"><a name="Cortar_N_a_N">N'e N Kesim (<span class="Parf_negrita">Düzenle Menüsü&nbsp;</span><span class="Parf_negrita">&#8594;</span> Çizgi&nbsp;<span class="Parf_negrita">&#8594; Çizgiyi Kes</span>)</a></td><td style="vertical-align: top; text-align: center;"><img style="width: 17px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_cortar_n.png" /></td><td style="vertical-align: top;">Birden fazla çizgi seçip bunları başka bir çizgi seçimine göre kesmek.<br /><br /><span class="Parf_negrita">N Çizgiyi Kes </span>seçeneğine benzer, ancak referans olarak tek bir çizgi yerine bir çizgi seçimi kullanılır.&nbsp;</td><td><br />
+</td><td style="vertical-align: top;"><span class="Parf_negrita">N Çizgiyi Kes </span>seçeneğine benzer, ancak referans olarak tek bir çizgi yerine bir çizgi seçimi kullanılır.&nbsp;</td></tr><tr>
+      <td style="vertical-align: top; width: 173px;"><a name="cortar_por_clic">Tıklayarak Kes</a><br />
+
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span> &#8594; <span style="font-weight: bold;">Çizgiyi Kes</span>)</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 18px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_cortarClic.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Bir çizgiyi fare imleci ile belirtilen noktada keser.<br />
+
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Seçenek seçildiğinde, kullanıcıdan çizginin kesileceği bir ekran noktası belirtmesi istenir.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="linea_paralela">Paralel Çizgi</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 8px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_paralela.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Başka bir çizgiye (referans çizgi) paralel bir çizgi oluşturur.<br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Eğer
+önceden bir çizgi seçilmemişse, program bir tane seçilmesini ister.
+Ardından, paralelinin oluşturulacağı mesafeyi belirtmek gerekir
+(sağa doğru pozitif, sola doğru negatif).<br />
+            <br />
+Seçenek döngüseldir ve kullanıcı işlemi sonlandırana kadar devam eder.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="copiar_linea">Çizgiyi Kopyala</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_copiar.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Bir çizginin kopyasını oluşturur.<br />
+            <br />
+Ötelenmiş kopyalar yapmayı sağlar (paralel değil, sadece tek bir segmenti varsa veya çok özel durumlarda tam olarak paralel olurlar).<br />
+
+            <br />
+Yeni çizgiye mevcut çizgi tipi atanır.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Eğer
+önceden bir (ve sadece bir) çizgi seçilmemişse, program bir tane seçilmesini ister.
+Ardından, kopyasının oluşturulacağı mesafeyi koordinat artışları olarak belirtmek gerekir.<br />
+            <br />
+Bağlam menüsünden girilen mesafe değerlerini değiştirmek mümkündür (<span style="font-weight: bold;">Mesafeleri Değiştir</span> seçeneği).<br />
+
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="invertir_linea">Çizgiyi Ters Çevir</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_invertir.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Bir çizginin gidiş yönünü, yani köşe noktalarının sırasını tersine çevirir.<br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Seçili çizgiler üzerinde doğrudan işlem yapar.<br />
+            <br />
+
+Eğer önceden seçili çizgi yoksa, program kullanıcı işlemi sonlandırana kadar ters çevrilecek çizgileri döngüsel olarak ister.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="longitud_linea">Çizgi Uzunluğu</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Seçilen
+bir çizginin uzunluğunu değiştirir. Bunun için ya bir
+artış, ya artırılacak uzunluğun yüzdesi ya da
+çizginin yeni toplam uzunluğu belirtilir.<br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Bu
+işlev etkinleştirildiğinde, program uzunluğu değiştirilmek istenen çizgiyi seçmesini ister.
+Bir çizgiye tıklandığında, o çizgi seçilir ve mevcut uzunluğu mesaj alanında gösterilir.<br />
+            <br />
+
+Başka bir çizgiye tıklanırsa, önceki yok sayılır ve yeni çizgi seçilir;
+onun da uzunluğu gösterilir. Bu işlem, kullanıcı uzunluğu değiştirme modunu
+(artış, yüzde veya toplam) seçene kadar döngüseldir, ardından veri girilir.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="alargar_lineas">Çizgileri Uzat</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarLineas_alargar.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Bir çizginin ucunu, başka bir çizgi veya başka bir çizginin uzantısı üzerinde tanımlanan sınıra kadar uzatır.<br />
+            <br />
+Uzatılacak çizgi ile sınır çizgisi aynı olabilir.<br />
+            <br />
+Uzatılacak çizgi bir tane (doğrudan seçim) veya birden fazla (bant ile seçim) olabilir.<br />
+
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">İki çalışma seçeneği vardır:<br />
+            <ul>
+              <li>Tek Sınır: Sınır çizgisi seçilir ve ardından döngüsel olarak uzatılacak çizgi/çizgiler seçilir.</li>
+            </ul>
+            <ul>
+
+              <li>Farklı Sınır: Sınır çizgisi ve ardından uzatılacak çizgi/çizgiler döngüsel olarak ve çiftler halinde seçilir.</li>
+              <li>Tek Sınır - 3B: Tek sınır gibi, ancak köşe noktasını sınır çizgisine taşımak yerine, sınır çizgisi üzerinde ilgili kota sahip yeni bir köşe noktası oluşturur. <br />
+              </li>
+              <li>Farklı Sınır - 3B: Farklı sınır gibi, ancak köşe noktasını sınır çizgisine taşımak yerine, sınır çizgisi üzerinde ilgili kota sahip yeni bir köşe noktası oluşturur.</li>
+
+            </ul>
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="recortar_lineas">Çizgileri Kırp</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_recortar.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Bir çizginin ucunu, başka bir çizgi üzerinde tanımlanan sınıra göre kırpar.<br />
+            <br />
+Kırpılacak çizgi ile sınır çizgisi aynı olabilir.<br />
+            <br />
+Kırpılacak çizgi bir tane (doğrudan seçim) veya birden fazla (bant ile seçim) olabilir.<br />
+
+            <br />
+Sınır çizgisi de bir tane (doğrudan seçim) veya birden fazla (<span style="font-weight: bold;">Çoklu Sınırlar</span> seçeneği ve bant ile seçim) olabilir.<br />
+            <br />
+Bu son durumda, kırpılacak çizgi parçasını tanımlamak için,
+kırpılacak çizginin seçilen köşe noktasının her iki tarafına en yakın
+olan sınır çizgileriyle kesişim noktaları aranacaktır.<br />
+            <br />
+Sınırların hiçbiriyle kesişim noktası bulunmazsa,
+çizginin tamamen sınırlar arasında olduğu kabul edilecek ve
+silinecektir.<br />
+            <br />
+
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Üç çalışma seçeneği vardır:<br />
+            <ul>
+              <li>Tek Sınır: Sınır çizgisi seçilir ve ardından döngüsel olarak kırpılacak çizgi/çizgiler seçilir.</li>
+            </ul>
+            <ul>
+              <li>Farklı Sınır: Sınır çizgisi ve ardından kırpılacak çizgi/çizgiler döngüsel olarak ve çiftler halinde seçilir.</li>
+
+            </ul>
+            <ul>
+              <li>Çoklu Sınırlar: Bir çizginin birden fazla sınırın içindeki parçasını siler. Önce sınırlar seçilir ve <span style="font-weight: bold;">[Tamam]</span>'a tıklanır, ardından kırpılacak çizgi/çizgiler, sınırların iç kısmından seçilir.</li>
+            </ul>
+            <br />
+</td>
+    </tr>
+    <tr>
+
+      <td style="vertical-align: top; width: 173px;"><a name="mover_linea">Çizgiyi Taşı</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_mover.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Bir çizgiyi taşır.<br />
+
+            <br />
+Eğer hedef nokta klavyeden girilir ve kot değiştirilirse,
+program çizginin köşe noktalarının Z koordinatını artırma onayını soran bir mesaj görüntüler.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Eğer
+önceden bir (ve sadece bir) çizgi seçilmemişse, program bir tane seçilmesini ister.
+Ardından, çizginin hedef noktasını belirtmek gerekir.<br />
+            <br />
+Seçenek döngüseldir ve kullanıcı işlemi sonlandırana kadar devam eder.<br />
+
+            <br />
+</td>
+    </tr><tr>
+            <td style="vertical-align: top; width: 173px;"><a name="desplazar_segmento">Segmenti Ötele</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)</td>
+            <td style="vertical-align: top; width: 28px;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_despSegm.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; width: 215px;">Bir çoklu doğrunun segmentini taşımayı sağlar (kendine paralel öteleme).<br />
+            <br />
+Öteleme tek bir segment (tekli) veya birden fazla (çoklu) olabilir.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+
+            <td style="vertical-align: top;">Seçilen
+segment üzerinde işlem yapar ve eğer seçili değilse, bir tane istenir.
+Segment ötelendikten sonra çizginin alacağı şekil her an yansıtılır.<br />
+            <br />
+Çoklu öteleme durumunda, bir segmentin ötelenmesi yapılır ve ardından,
+kullanıcı işlemi sonlandırana kadar döngüsel olarak, ilk segmentin
+ötelenmesinin uygulanacağı daha fazla segment istenir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 173px;"><a name="cota_linea">Çizgiye Kot Ata</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> Menüsü)<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_cota.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Bir çizginin tüm köşe noktalarına yeni bir kot atar.<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Eğer önceden bir çizgi seçimi yapılmışsa, program her biri için yeni kotu ister.<br />
+            <br />
+Eğer önceden bir seçim yapılmamışsa, program işlem sonlandırılana kadar kotunu değiştirmek için döngüsel olarak bir çizgi ister.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 173px;"><a name="cota_vertice">Köşe Noktasına Kot Ata</a><br />
+(<span style="font-weight: bold;">Düzenle</span> Menüsü)<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_cotaVert.png" /><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Herhangi bir çizginin köşe noktalarının kotunu değiştirmeyi sağlar.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bu işlem,
+seçilen çizgi üzerinde çalışan bir iletişim kutusu aracılığıyla yapılır (eğer seçili değilse, bir tane istenir). Kullanıcı her an
+herhangi bir çizginin köşe noktasını seçebilir veya <span style="font-weight: bold;">[Önceki]</span> ve <span style="font-weight: bold;">[Sonraki]</span> düğmeleriyle çizgi boyunca hareket edebilir.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 173px;"><a name="cota_superficie">Yüzey Kotuna Getir</a><br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_cotaSup.png" /><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Seçilen çizgilerin köşe noktalarını mevcut bir yüzeyin kotuna getirir.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Eğer
+çizgiler seçilmemişse, program onları seçmenizi ister. Ardından
+köşe noktalarına uygulanacak interpolasyon türünü sorar, iki olası seçenek vardır:<br />
+            <ul>
+              <li>Doğrusal interpolasyon: Seçilen her çizgi için,
+program yüzey üzerinde bir boykesit hesaplar ve onu tanımlayan çizgilerle
+kesişimleri arar. Ardından her köşe noktasının kotu, hesaplanan kesişimlere
+olan mesafeye göre ağırlıklandırılır.</li>
+
+            </ul>
+            <ul>
+              <li>Kesitlerle interpolasyon: Bu durumda, her
+köşe noktası için biri K-G yönünde diğeri D-B yönünde olmak üzere iki kesit hesaplanır ve
+her biri en yakın yüzey çizgileriyle kesişimleri arar.
+Hesaplandıktan sonra, her köşe noktasına, o köşe noktasından kesişimlere olan
+mesafeler ağırlıklandırılarak kot uygulanır. Genel olarak, bu algoritma
+öncekinden daha hassastır.</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="cota_segun_plano">Bir Düzleme Göre Seçimi Kotlandır<br />
+            </a></td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Seçilen elemanları (çizgiler, noktalar ve yazılar) üç nokta ile tanımlanan bir düzlemin kotuna getirir.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Eğer
+elemanlar seçilmemişse, program onları seçmenizi ister.
+Ardından, elemanların yerleştirileceği kotu elde edeceği düzlemi tanımlamak için üç nokta ister.
+Bunları elde etmek için en uygun yakalama modunu kullanmanız önerilir.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 173px;"><a name="explotar_vertices">Köşe Noktalarına Patlat</a><br />
+
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Patlat)</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_expVert.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Seçilen çizgilerin köşe noktalarında mevcut tipte semboller oluşturur.<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Program, çizgilerin korunup korunmayacağını sorar ve seçim üzerinde işlem yapar. Eğer önceden bir seçim yoksa, bir seçim ister.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 173px;"><a name="explotar_segmentos">Segmentlere Patlat</a><br />
+
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Patlat</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_expSegm.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Bu seçenek, bir çoklu doğruyu onu oluşturan tüm segmentlere ayırmayı sağlar.<br />
+
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki seçim üzerinde işlem yapar ve eğer yoksa, bir seçim ister.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Sembolleri Patlat<br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Patlat</span>)</td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 25px; height: 22px;" alt="" src="Imagenes/icono_explotar_simbolos.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Bu seçenek, seçtiğimiz sembolleri, patlatılacak sembole bağlı olarak yazılara veya çizgilere ayırmayı sağlar.<br />
+Semboller seçildikten sonra program, seçilen sembol sayısını içeren bir pencere gösterir.<br />
+            <br />
+Patlatıldıktan sonra sembollerin hangi modele gideceğini belirtmeme izin verir.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Eğer önceden bir sembol seçimi yapılmışsa, program sadece o seçimdeki sembolleri patlatır.<br />
+
+            <br />
+
+Eğer önceden bir seçim yapılmamışsa, patlatılacak sembolleri seçmemizi ister.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Yazıları Patlat<br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Patlat</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 30px; height: 29px;" alt="" src="Imagenes/icono_explotar_textos.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Bu araç,
+yazıları çoklu doğrulara dönüştürmeye yarar. Seçilen metnin veya metinlerin her harfi
+bir çoklu doğruya dönüşecektir.<br />
+            <br />
+Patlatıldıktan sonra metinlerin hangi modele gideceğini belirtmeme izin verir.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Seçilen farklı metinleri çoklu doğrulara dönüştürürken kullanılacak çizgi tiplerini belirtmek için bir iletişim kutusu sunulur.<br />
+Metinler çoklu doğrulara dönüştürüldükten sonra silinir.<br />
+            </td>
+          </tr>
+<tr>
+
+            <td style="vertical-align: top; width: 173px;">Çizgiyi Sil<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_borrar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Sadece çizgi sınıfındaki objeleri siler.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Eğer önceden bir obje seçimi yapılmışsa, program sadece o seçimdeki çizgileri siler.<br />
+            <br />
+Eğer önceden bir seçim yapılmamışsa, doğrudan seçimle silinecek çizgileri döngüsel olarak ister.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="chaflan">Pah Kır</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_chaflan.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Farklı çizgilerin iki segmenti arasında veya aynı çizginin iki ardışık segmenti arasında bir pah oluşturur.<br />
+            <br />
+
+Program, segmentleri düz bir çizgiyle birleştirir. Bu çizginin iki köşe noktasını,
+kullanıcı, segmentlerin tanımladığı doğruların kesişim noktasından, her bir segmentin
+uzatılacağı veya kırpılacağı noktaya olan mesafeyi vererek seçer. Eğer
+segmentler farklı çizgilere aitse, pah çizgisi yeni bir çizgi olacaktır.
+Aksine, eğer segmentler aynı çizgide ardışıksa, pah çizgisi aynı çizginin bir parçası olacaktır.
+Mesafelerden herhangi biri sıfır olduğunda, segmentler sadece kesişim noktalarına kadar kırpılır veya
+uzatılır.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Program mesafeleri ve segmentleri ister.<br />
+            <br />
+            <br />
+
+Pah kırma seçeneği döngüseldir, böylece kullanıcı seçenekten çıkana kadar tekrar tekrar yürütülebilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Çizgiyi Döndür<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_girar.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Seçilen çizgiyi, istenen bir noktadan (dönme merkezi) belirli bir açıyla döndürür. Sadece bir çizgi üzerinde işlem yapar.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceden seçilmiş çizgi üzerinde işlem yapar ve eğer seçili değilse veya birden fazla seçiliyse, bir tane seçilmesini ister.<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="cerrar_linea">Çizgiyi Kapat</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 19px;" alt="" src="Imagenes/icono_toolBarLineas_cerrar.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Seçilen çizgileri kapatır.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki çizgi seçimi üzerinde işlem yapar ve eğer yoksa, bir seçim ister.<br />
+            <br />
+Bu seçenek bağlam menüsünde de mevcuttur.<br />
+
+            <br />
+Bir çizgi, bir ucunun tutma noktasını diğerinin üzerine taşıyarak da kapatılabilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="tomar_punto">Noktayı Yakala</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_tomarPto.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Aktif
+segmente (veya aktif köşe noktası sonuncusu ise çizginin sonuna) bir sembol
+ekler. Seçenek, ardışık bir grup nokta almak için aktif kalır.<br />
+            <br />
+Noktanın tek bir eleman olarak sahip olduğu kot, çizgide korunur.<br />
+            <br />
+            </td>
+
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Aktif segment üzerinde işlem yapar ve eğer önceden seçili bir çizgi yoksa, bir tane seçilmesini ister.<br />
+            <br />
+Semboller seçildikçe kaybolur.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top;"><a name="soltar_punto">Noktayı Bırak</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_soltarVert.png" /><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Aktif köşe noktasını bırakır ve ait olduğu çizgi, onsuz, önceki ve sonraki (varsa) ile yeniden oluşturulur.<br />
+            <br />
+Yeni bırakılan noktanın kotu, çizgideki kotuyla aynıdır.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Aktif köşe noktası üzerinde işlem yapar ve eğer önceden seçili bir çizgi yoksa, bir tane seçilmesini ister.<br />
+
+            <br />
+Bırakılan köşe noktası, mevcut tipte bir sembole dönüşür.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="iniciar_linea">Çizgiyi Başlat</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_iniciar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Seçilen sembolü başlangıç köşesi olarak alarak bir çizgi başlatmayı sağlar.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Aktif sembol üzerinde işlem yapar ve eğer hiçbiri veya birden fazlası seçili değilse, bir tane seçilmesini ister.<br />
+
+            <br />
+Bir dizi sembolden bir çizgi oluşturabilmek için <span style="font-weight: bold;">Noktayı Yakala</span> seçeneğini aktif bırakır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="int_sin_corte_2_lin">İki çizginin kesişimi</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span> &#8594; <span style="font-weight: bold;">Kesmeden Kesişim</span>)<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarLineas_inters2L.png" /><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Kesişen iki çizginin mantıksal kesişimini gerçekleştirir ve her birine tam kesişim noktasında bir köşe noktası ekler.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">İşlev,
+iki çizgi önceden seçilmişse çalışır; değilse, onları seçmenizi ister.
+Ardından, kullanıcı yaklaşık kesişim noktasını belirtmelidir (çizgiler
+birden fazla noktada kesişebilir).<br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top;"><a name="int_sin_corte_n_lin">N çizginin kesişimi</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span> &#8594; <span style="font-weight: bold;">Kesmeden Kesişim</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 19px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_inters_nL.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bir çizginin onu kesen tüm çizgilerle mantıksal kesişimini gerçekleştirir.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceden seçilmiş çizgi üzerinde işlem yapar ve eğer seçili değilse veya birden fazla seçiliyse, bir tane seçilmesini ister.<br />
+            <br />
+Kendisi bozulmadan kalır ve bir çizginin kendisiyle kesişimi olmaz.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr><td><a name="Intersección_de_n_líneas_a_n_líneas">N çizginin N çizgiyle kesişimi (<span class="Parf_negrita">Düzenle Menüsü&nbsp;</span><span class="Parf_negrita">&#8594;</span> Çizgi&nbsp;<span class="Parf_negrita">&#8594; Kesmeden Kesişim</span>)</a></td><td style="text-align: center; vertical-align: top;"><img style="width: 19px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_inters_nL.png" /></td><td style="vertical-align: top;">Birden fazla çizgi seçip başka bir çizgi seçimiyle kesişimlerinde noktalar oluşturmak.</td><td><br />
+</td><td>N
+çizginin kesişimi'ne benzer, ancak referans olarak tek bir
+çizgi yerine bir çizgi kümesiyle işlem yapar.</td></tr>
+          
+          <tr>
+            <td style="vertical-align: top;"><a name="suavizar_linea">Çizgiyi Yumuşat</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_suavizar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bu
+seçenek, seçilen çizgilere, eğri yumuşatma parametrelerine göre hesaplanmış belirli sayıda
+köşe noktasını fiziksel olarak ekler, sonuçtaki çizginin köşe noktası sayısını önemli ölçüde
+artırır. <br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki çizgi seçimi üzerinde işlem yapar ve eğer yoksa, bir seçim ister.<br />
+            <br />
+Bu işlevi yürütürken, program orijinal çizgilerin korunup korunmayacağını sorar.<br />
+            <br />
+Eğer sonuçtaki çizginin nokta sayısı bir çizgi için fazlaysa, program otomatik olarak iki veya daha fazla çizgi oluşturacaktır.<br />
+
+            <br />
+Yumuşatma parametreleri <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Eğri Yumuşatma</span> menüsünden kontrol edilebilir.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top;">Çizgiyi Düzleştir<br />
+
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)</td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bu seçenek, kullanılan çoklu doğrulardaki "sivrilikleri" gidermek için <span style="font-weight: bold;">Çizgiyi Yumuşat</span>'a bir alternatif sunar.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Önceki çizgi seçimi üzerinde işlem yapar ve eğer yoksa, bir seçim ister.<br />
+
+            <br />
+
+Bu işlevi yürütürken, program orijinal çizgilerin korunup korunmayacağını sorar.<br />
+
+            <br />
+
+Eğer sonuçtaki çizginin nokta sayısı bir çizgi için fazlaysa, program otomatik olarak iki veya daha fazla çizgi oluşturacaktır.<br />
+
+
+            <br />
+
+Yumuşatma parametreleri, bu seçenek yürütüldüğünde görünen küçük bir iletişim kutusunda kontrol edilebilir.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;">Çizgi Bilgisi<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_info.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Kullanıcının
+seçtiği çizgilerin her bir köşe noktasının kotu, çizginin seçildiği noktaya
+en yakın köşe noktasının tipi ve koordinatları ile ait olduğu model
+hakkında bilgi gösterir.<br />
+            <br />
+Bilgiler, grafik penceresinde gösterilen kot hariç, mesaj alanında gösterilir.<br />
+
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki
+seçim üzerinde işlem yapmaz. Kullanıcı, bilgi almak istediği
+çizgileri fare ile tek tek belirtmelidir.<br />
+            <br />
+Grafik alanında gösterilen bilgiler geçicidir ve bir yeniden çizimden sonra kaybolur.<br />
+            <br />
+
+<span style="font-style: italic;">il</span> klavye kısayolu ile de kullanılabilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Bant ile Çizgileri Sil<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: center;"><img style="width: 19px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_borrarBanda.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Kullanıcının bant ile seçtiği çizgileri çizimden siler.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Seçenek seçildikten sonra, kullanıcı silinecek çizgileri bant ile seçmelidir.<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">8D çizgileri 4D'ye dönüştür<br />
+            </td>
+            <td style="vertical-align: top;"><img style="width: 24px; height: 24px;" alt="icono_modificar8d" src="Imagenes/icono_modificar8d4d.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Her daire yayını ve diğer eğri segmentlerini küçük düz segmentlerin bir dizisine ayırır. (ayarlar / tercihler bölümündeki eğri yumuşatma parametrelerini kullanır)<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Eğri segmentli çizgilerde (8D çizgiler) çoklu doğruların köşe noktalarını ayrıklaştırmak ve elde etmek için<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 173px;"><a name="reordenar_lineas">Yeniden Sırala</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_reordenar.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">İki
+çizginin saklanma sırasını değiştirir. Bu, fare imlecinin altında her ikisi de varken
+hangisinin seçileceğini, üst üste binen bir kısımları olduğunda hangisinin
+çizilmiş görüneceğini ve bu kılavuzda uygun şekilde açıklanan diğer program
+seçeneklerini etkiler.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Eğer
+önceden iki çizgi seçilmişse, onlara işlem yapar; eğer bir tane seçilmişse sadece ikincisi istenir ve diğer durumlarda
+kullanıcıdan ardışık olarak iki çizgiyi seçmesi istenir.<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="pto_arco">Nokta + Yay</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 21px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_ptoArco.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bir noktadan bir yaya teğet bir segment oluşturmayı sağlar.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki seçim üzerinde işlem yapmaz. Kullanıcı önce noktayı, sonra yayı belirtmelidir.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="empalmar_arco">Yay ile Birleştir</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Çizgi</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_empalArco.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">İki çizgi segmentini, kullanıcı tarafından sağlanan bir yarıçapa sahip bir yay ile birleştirir.<br />
+            <br />
+Her iki segment de yay ile ilgili teğet noktalarına kadar uzatılacak veya kırpılacaktır.<br />
+            <br />
+Eğer segmentler farklı çizgilere aitse, yay yeni bir
+çizgi olacaktır. Aksine, eğer segmentler aynı çizgide ardışıksa,
+yay aynı çizgiye köşe noktaları eklenerek oluşturulacaktır.<br />
+            <br />
+Sıfır yarıçap belirtildiğinde, segmentler sadece kesişim noktalarına kadar kırpılır veya uzatılır.<br />
+
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki seçim üzerinde işlem yapmaz. Kullanıcı önce yarıçapı, sonra birleştirilecek segmentleri belirtmelidir.<br />
+            <br />
+Bu işlev döngüseldir, böylece seçenekten çıkılana kadar tekrar tekrar yürütülebilir.<br />
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="linea_tg_2_arcos">İki Yaya Teğet</a><br />
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+            </td>
+            <td style="vertical-align: top;"><img style="width: 22px; height: 8px;" alt="" src="Imagenes/icono_toolBarLineas_tg2Arcos.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">İki
+yaya teğet bir çizgi oluşturmayı sağlar. Son çözüm, yayların
+seçildiği noktalara en yakın olan olacaktır.<br />
+<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki seçim üzerinde işlem yapmaz. Kullanıcı, fare ile iki yayı ardışık olarak belirtmelidir.<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="dividir_lin_n_seg">Çizgiyi Böl (N segmente)</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; Çizgi)<br />
+<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bir çoklu doğru üzerine, eşit aralıklarla semboller veya köşe noktaları ekler.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki çizgi seçimi üzerinde işlem yapar ve eğer yoksa, bir seçim ister.<br />
+            <br />
+Program, yapılacak bölme sayısını ve çizgiye sembol mü yoksa köşe noktası mı ekleneceğini sorar. Köşe noktaları seçilmesi durumunda, çizgi segmentlere ayrılacaktır.<br />
+
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="regla">Cetvel (mesafeye göre)</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; Çizgi)<br />
+<br />
+            </td>
+
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Kullanıcı tarafından belirtilen mesafede, bir çoklu doğru üzerine semboller veya köşe noktaları ekler.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki çizgi seçimi üzerinde işlem yapar ve eğer yoksa, bir seçim ister.<br />
+            <br />
+
+Program, yapılacak bölme sayısını ve çizgiye sembol mü yoksa köşe noktası mı ekleneceğini sorar. Köşe noktaları seçilmesi durumunda, çizgi segmentlere ayrılacaktır.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="partir_seg_ocultos">Gizli Segmentlere Göre Böl</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; Çizgi)<br />
+
+<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Seçilen her çoklu doğruyu, gizli segmentlerine göre birden fazla çoklu doğruya böler.<br />
+<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">İşlem bittiğinde orijinal çoklu doğru silinir.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><a name="propiedades_linea">Çizgi Özellikleri</a><br /></td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_propiedades.png" /><br />
+            </td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; text-align: justify;">Seçilen
+çizginin özelliklerinin (tüm köşe noktalarının koordinatları dahil) değiştirilebileceği
+iletişim kutusunu açar. Ayrıca <span style="font-weight: bold;">[LİSTELE]</span> düğmesine basarak köşe noktalarının ASCII formatında bir listesini almak da mümkündür. Eğer <span style="font-weight: bold; font-style: italic;">Kırmızı Kot</span> seçeneği de aktifse, bu liste iki ek sütun içerecektir: biri mevcut <a href="EDM_control_entidades.html#control_superficie">yüzeyin</a> kotunu, diğeri ise her köşe noktası ile mevcut <a href="EDM_control_entidades.html#control_superficie">yüzey</a> arasındaki kot farkını içerir.<br />
+            <br />
+Eğer birden fazla çizgi seçilmişse, köşe noktalarının
+koordinatları gösterilmez ve gösterilen özellikler
+seçimdeki ilk çizgiye aittir. Bu durumda, herhangi bir özellik
+değiştirilirse, seçilen tüm çizgiler etkilenecektir.<br />
+            <br />
+<a href="OL_planta_opciones_visualizacion.html#lineas_8D">8D çizgiler</a> durumunda, çizgi özellikleri listesi KM, Yarıçap ve Azimut değerleriyle genişletilecektir.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 406px; height: 353px;" alt="" src="Imagenes/propiedades_linea.png" /><br />
+            <br />
+            <div style="text-align: left;"><span style="font-weight: bold;">+</span> kutucuğuna tıklayarak çoklu doğrunun gelişmiş özelliklerini görebiliriz.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 405px; height: 336px;" alt="" src="Imagenes/propiedades_avanzadas_polilinea.png" /><br />
+            </div><br /><br />Kapalı bir çoklu doğru ise <span style="font-weight: bold;">Alan</span>, toplam <span style="font-weight: bold;">2B Uzunluk</span>, <span style="font-weight: bold;">toplam 3B Uzunluk</span>, <span style="font-weight: bold;">Segment Açısı</span>, <span style="font-weight: bold;">2B Segment Uzunluğu</span>, <span style="font-weight: bold;">3B Segment Uzunluğu</span>, <span style="font-weight: bold;">X Artışı</span>, <span style="font-weight: bold;">Y Artışı</span>, <span style="font-weight: bold;">Z Artışı</span> ve önceki ve sonraki köşe noktasının <span style="font-weight: bold;">Eğimi</span> hakkında bilgi verir (dört ondalık basamakla ve % olarak gösterilir).<br />
+            <br />
+Eğer köşe noktaları listesinin üst kısmındaki kutucuk işaretliyse, çizimdeki her birini numarasıyla tanımlayacaktır.<br />
+
+            <br />
+
+            <div style="text-align: center;"><img style="width: 180px; height: 79px;" alt="" src="Imagenes/propiedades_linea_checkbox.png" /></div>
+<br />
+Bu özellikler kutusundan kaynağı değiştirebilir&nbsp;<img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%20base%20datos%20completa.png" /> veya temizleyebilirsiniz <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_limpiar.png" />. Ayrıca özellikleri bu çoklu doğrudan<br />
+başka birine kopyalayabilir <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_poli_copiara.png" /> veya tam tersi, başka bir çoklu doğrudan buraya kopyalayabilirsiniz <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_poli_copiarde.png" />.<br /><br />Çoklu çoklu doğru seçim iletişim kutusundan kaynağı temizlemek&nbsp;<img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_limpiar.png" /> mümkündür.
+Kaynağına ilişkin bilgiler ve bu alan için başka bir değer seçme imkanı eklenir.<br /><br /><img style="width: 300px; height: 237px;" alt="" src="Imagenes/limpiar_proced_multiple.png" hspace="20" /><br />
+<br />Özellikleri kopyala&nbsp;<img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_poli_copiarde.png" /> ve diğer çoklu doğrulara&nbsp;<img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_poli_copiara.png" /> düğmelerine basıldığında, dikkate alınacak özellikleri seçmek için aşağıdaki menü gösterilir.<br /><br /><div style="text-align: center;"><img style="width: 150px; height: 160px;" alt="" src="Imagenes/cotas_tomar_poner_pasar.png" />&nbsp;<br /></div><br /><br />Özellikler menüsünden köşe noktaları eklemek, taşımak ve silmek için düğmeler mevcuttur <img style="width: 53px; height: 22px;" alt="" src="Imagenes/icono_prop_line_ins_mov_bor.png" />.<br /><br /><span class="Parf_negrita">Genel Kot</span> kutucuğu, seçilen çizgi/çizgilerin tüm köşe noktalarının Z'sine bu değeri atamak için kullanılabilir. <br /><br /><span class="Parf_negrita">Genel Kot</span>'un sağında,
+çoklu doğruyu oluşturan tüm noktaların minimum ve maksimum kotunu içeren iki alan gösterilir.
+Bu alanların yanında bulunan&nbsp;<span class="Parf_negrita">G</span> düğmesi, bu değeri çoklu doğrunun tüm noktalarına iletilen&nbsp;<span class="Parf_negrita">Genel Kot</span>'a atamaya yarar.<br /><br /> 
+            </div>
+
+            </div>
+            </td>
+          </tr>
+
+
+
+  </tbody>
+      </table>
+
+
+      <br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="arcos">Yaylar</a></span><br />
+      <br />
+
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 187px; text-align: center; font-weight: bold;">İşlem<br />
+      </td>
+      <td style="vertical-align: top; width: 29px; text-align: center; font-weight: bold;">Simge<br />
+      </td>
+      <td style="vertical-align: top; width: 221px; text-align: center; font-weight: bold;">Açıklama<br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+      </td>
+      <td style="vertical-align: top; width: 210px; text-align: center; font-weight: bold;">Kullanım<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_pto_fin">Başlangıç-Nokta-Bitiş</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Yay</span>)<br />
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_3puntos.png" /></td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Üç noktadan geçen bir yay oluşturur: başlangıç noktası, yayın herhangi bir noktası ve bitiş noktası.<br />
+</td>
+      <td style="vertical-align: top; text-align: justify;"><br />
+
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Üç
+nokta da fare veya klavye ile verilebilir. Eğer Z koordinatı belirtilmezse,
+mevcut kot varsayılır. Eğer Z koordinatları farklıysa, program çizginin tüm
+ara köşe noktaları için kotu enterpole eder.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_fin_radio">Başlangıç-Bitiş-Yarıçap</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Yay</span>)<br />
+
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_fin_r.png" /></td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Başlangıç noktası, bitiş noktası ve yarıçapı ile tanımlanan bir yay oluşturur.<br />
+</td>
+      <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Başlangıç
+ve bitiş noktaları ile yarıçap, fare veya
+klavye ile verilebilir. Eğer Z koordinatı belirtilmezse,
+mevcut kot varsayılır. Eğer Z koordinatları farklıysa, program çizginin tüm
+ara köşe noktaları için kotu enterpole eder.<br />
+            <br />
+</td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_fin_direccion">Başlangıç-Bitiş-Yön</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Yay</span>)<span style="font-weight: bold;"><br />
+      </span></td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 14px;" alt="" src="Imagenes/icono_toolBarArcos_2puntos_dir.png" /></td>
+
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Başlangıç
+noktası, bitiş noktası ve başlangıç noktasından itibaren yön, yani yayın başlangıç
+noktasındaki teğeti ile tanımlanan bir yay oluşturur.<br />
+</td>
+      <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Başlangıç
+ve bitiş noktaları ile yön, fare veya
+klavye ile verilebilir. Eğer Z koordinatı belirtilmezse,
+mevcut kot varsayılır. Eğer Z koordinatları farklıysa, program çizginin tüm
+ara köşe noktaları için kotu enterpole eder.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_centro_fin">Başlangıç-Merkez-Bitiş</a><br /><a name="centro_inicio_fin">
+Merkez-Başlangıç-Bitiş</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Yay</span>)<br />
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_cen_fin.png" /><br />
+            <br />
+
+            <img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_cen_ini_fin.png" /><br />
+</td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Başlangıç noktası, merkezi ve bitiş noktası ile tanımlanan bir yay çizer.<br />
+            <br />
+Her ikisi de benzerdir, sadece veri giriş sırası farklıdır.<br />
+            <br />
+</td>
+      <td style="vertical-align: top;"><br />
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Üç
+nokta da fare veya klavye ile verilebilir. Bitiş
+noktası, başlangıç noktası ve merkezin oluşturduğu daire üzerine yansıtılır ve böylece yayın sonunu işaretler. Eğer Z koordinatı belirtilmezse,
+mevcut kot varsayılır. Eğer Z koordinatları farklıysa, program çizginin tüm
+ara köşe noktaları için kotu enterpole eder.<br />
+
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_centro_longitud">Başlangıç-Merkez-Uzunluk</a><br /><a name="centro_inicio_longitud">
+Merkez-Başlangıç-Uzunluk</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Yay</span>)<br />
+
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_cen_long.png" /><br />
+            <br />
+            <img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_cen_ini_long.png" /><br />
+</td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Başlangıç noktası, merkezi ve uzunluğu ile tanımlanan bir yay oluşturur.<br />
+            <br />
+Her ikisi de benzerdir, sadece veri giriş sırası farklıdır.<br />
+            <br />
+
+</td>
+      <td style="vertical-align: top;"><br />
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Başlangıç
+noktası, merkez ve uzunluk, fare veya
+klavye ile verilebilir. Uzunluk grafiksel olarak verilirse,
+farenin temsil ettiği düz segmentin uzunluğuyla çakışacaktır.
+Eğer başlangıç noktası için kot belirtilirse, çizginin tüm köşe noktaları
+o kotu alacaktır. Aksi takdirde, mevcut Z'yi alacaklardır.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="radio_2_tangentes">Yarıçap-2 Teğet</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Yay</span>)<br />
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 17px;" alt="" src="Imagenes/icono_toolBarArcos_r_2tang.png" /></td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">İki
+çizgiye teğet bir yay oluşturmayı sağlar. Birden fazla çözüm varsa,
+program her birinin merkezini sunar, böylece kullanıcı en uygun olanı
+seçebilir.<br />
+</td>
+      <td style="vertical-align: top;"><br />
+
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Önce
+yay yarıçapı girilir ve ardından çizgiler fare ile
+tek tek seçilir. Yayın köşe noktaları, çizgilerin kotuna göre
+kotlarını ağırlıklandırır.<br />
+</td>
+    </tr><tr>
+            <td style="vertical-align: top; width: 187px;"><a name="inicio_fin_angulo">Başlangıç-Bitiş-Açı</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Yay</span>)<br />
+
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_fin_ang.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Başlangıç noktası, bitiş noktası ve açısıyla tanımlanan bir yay oluşturur.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Noktalar
+ve açı, fare veya klavye ile verilebilir. Eğer Z koordinatı belirtilmezse,
+mevcut kot varsayılır. Eğer Z koordinatları farklıysa, program çizginin tüm
+ara köşe noktaları için kotu enterpole eder.<br />
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="inicio_centro_angulo">Başlangıç-Merkez-Açı</a><br /><a name="centro_inicio_angulo">
+Merkez-Başlangıç-Açı</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Yay</span>)<br />
+
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_cen_ang.png" /><br />
+            <br />
+            <img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_cen_ini_ang.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Başlangıç noktası, merkezi ve açısıyla tanımlanan bir yay çizer.<br />
+            <br />
+Her ikisi de benzerdir, sadece veri giriş sırası farklıdır.<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Başlangıç
+noktası, merkez ve açı, fare veya
+klavye ile verilebilir. Eğer başlangıç noktası için kot belirtilirse, çizginin tüm köşe noktaları
+o kotu alacaktır. Aksi takdirde, mevcut Z
+değerini alacaklardır.<br />
+            <br />
+            </td>
+          </tr>
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+  </tbody>
+      </table>
+
+      <br />
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="circunferencias">Daireler</a></span><br />
+      <br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 187px; text-align: center; font-weight: bold;">İşlem<br />
+      </td>
+      <td style="vertical-align: top; width: 29px; text-align: center; font-weight: bold;">Simge<br />
+      </td>
+      <td style="vertical-align: top; width: 221px; text-align: center; font-weight: bold;">Açıklama<br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+      </td>
+      <td style="vertical-align: top; width: 210px; text-align: center; font-weight: bold;">Kullanım<br />
+      </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+          
+          <tr>
+
+            <td style="vertical-align: top; width: 187px;"><a name="centro_punto">Merkez-Nokta</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_CP.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Merkezi ve üzerindeki bir nokta ile tanımlanan bir daire oluşturur.<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Merkez
+ve nokta, fare veya klavye ile verilebilir. Eğer nokta için kot belirtilirse,
+çizginin tüm köşe noktaları o kotu alacaktır. Aksi takdirde, mevcut Z
+değerini alacaklardır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="centro_radio">Merkez ve Yarıçap</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_CR.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Merkezi ve yarıçapına göre bir daire çizer.<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Merkez
+ve yarıçap, fare veya klavye ile verilebilir. Eğer merkez için kot belirtilirse,
+çizginin tüm köşe noktaları o kotu alacaktır. Aksi takdirde, mevcut Z
+değerini alacaklardır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="diametro">Çap</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_diam.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Çapı oluşturacak iki noktaya göre bir daire oluşturur.<br />
+            </td>
+
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Her
+iki nokta da fare veya klavye ile girilebilir. Oluşturulan çizginin
+köşe noktaları, noktalar için belirtilen son kotu alacaktır; eğer hiçbiri belirtilmemişse,
+mevcut kotu alacaklardır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="3_puntos">3 Nokta</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarCircunferencias_3P.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Üç noktadan geçen bir daire çizer.<br />
+            </td>
+
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Noktalar
+fare veya klavye ile girilebilir. Oluşturulan çizginin
+köşe noktaları, noktalar için belirtilen son kotu alacaktır; eğer hiçbiri belirtilmemişse,
+mevcut kotu alacaklardır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="concentrica">Eş Merkezli</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_concent.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Eş merkezli olacak bir daire oluşturur.<br />
+            <br />
+
+Merkezi belirlemek için, program seçilen çoklu doğrunun ardışık üç noktasını kullanır ve bu nedenle bir daire olmak zorunda değildir.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Program
+önce eş merkezli olacağı çizgiyi, ardından da
+üzerindeki bir noktayı ister. Bu nokta grafiksel veya sayısal olarak girilebilir.
+Eğer bu nokta için kot belirtilirse, çizginin tüm köşe noktaları
+o kotu alacaktır. Aksi takdirde, mevcut Z değerini alacaklardır.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="radio_2_puntos">Yarıçap ve 2 Nokta</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_R2P.png" /></td>
+
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Belirtilen
+yarıçapta ve iki noktadan geçen bir daire oluşturur. Eğer
+iki nokta arasındaki mesafe çaptan büyükse, merkezi iki
+noktayı birleştiren segmentin orta noktası olan bir
+daire oluşur.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">İki
+nokta ve yarıçap, fare veya klavye ile girilebilir. Oluşturulan çizginin
+köşe noktaları, noktalar için belirtilen son kotu alacaktır; eğer hiçbiri belirtilmemişse,
+mevcut kotu alacaklardır.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="radio_2_tg">Yarıçap ve 2 Teğet</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarCircunferencias_R2tang.png" /></td>
+
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Belirtilen yarıçapta ve iki çizgi elemanına teğet bir daire oluşturur.<br />
+            <br />
+Birden fazla çözüm varsa, program her birinin merkezini sunar, böylece kullanıcı en uygun olanı seçebilir.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Program, yarıçapı sayısal olarak ve ardından her bir çizginin grafiksel seçimini ister.<br />
+
+            <br />
+Dairesel çizginin köşe noktaları, mevcut kotu Z olarak alır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="3_tg">3 Teğete Göre</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarCircunferencias_3tang.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Üç çizgi segmentine teğet bir daire oluşturur.<br />
+            <br />
+Birden fazla çözüm varsa, program her birinin merkezini sunar, böylece kullanıcı en uygun olanı seçebilir.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Program, her bir çizgi segmentinin grafiksel seçimini ister.<br />
+
+            <br />
+
+Dairesel çizginin köşe noktaları, son seçilen çizginin teğet noktasındaki kotunu alır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 187px;"><a name="marca_centro">Merkez İşareti</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_marcaC.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Bir
+çizgi seçmenizi ister ve seçilen segmentin en yakın üç noktasından
+geçen dairenin merkezine mevcut tipte bir sembol oluşturur.<br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Seçeneği seçtikten sonra, çizgiyi seçmek yeterlidir.<br />
+            <br />
+Oluşturulan sembolün kotu, çizgiyi seçerken etkinleşen köşe noktasınınkiyle aynı olacaktır.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="centro_3_puntos">3 Noktaya Göre Merkez</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Daire</span>)<br />
+            <br />
+            </td>
+
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_marcaC3P.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Bu seçenek, üç nokta ile tanımlanan bir dairenin merkezine bir nokta oluşturmayı sağlar.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Seçeneği seçtikten sonra, üç noktayı grafiksel veya sayısal olarak belirtmek yeterlidir.<br />
+            <br />
+Oluşturulan sembolün kotu, kotu belirtilen son noktanınkiyle aynı olacaktır veya belirtilmemişse mevcut kot olacaktır.<br />
+
+            </td>
+          </tr>
+
+  </tbody>
+      
+      </table>
+
+
+      <br />
+
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="poligonos_regulares">Düzgün Çokgenler</a></span><br />
+
+      <br />
+
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ayrıca, yarıçapı başlangıçta istenen bir daireye içten veya dıştan teğet ya da bir kenara dayalı düzgün çokgenlerin oluşturulmasına da olanak tanır. Seçenekler şunlardır:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+
+            <td style="vertical-align: top; width: 195px; text-align: center; font-weight: bold;">İşlem<br />
+            </td>
+            <td style="vertical-align: top; width: 33px; text-align: center; font-weight: bold;">Simge<br />
+            </td>
+            <td style="vertical-align: top; width: 214px; text-align: center; font-weight: bold;">Açıklama<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: center; font-weight: bold;">Kullanım<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 195px;"><a name="polig_triangulo">Üçgen</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Düzgün Çokgen</span>)<br />
+
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 12px; height: 14px;" alt="" src="Imagenes/icono_toolBarPoligonos_triang.png" /></td>
+            <td style="vertical-align: top; width: 214px;">Bir üçgen oluşturur.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Üçgenin üç köşe noktası ardışık olarak girilir.<br />
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 195px;"><a name="polig_cuadrado">Kare</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Düzgün Çokgen</span>)<br />
+            </td>
+
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_toolBarPoligonos_cuad.png" /></td>
+            <td style="vertical-align: top; width: 214px;">Bir kare oluşturur.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Karenin bir kenarının iki noktası ardışık olarak girilir.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 195px;"><a name="polig_rectangulo">Dikdörtgen</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Düzgün Çokgen</span>)<br />
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 13px; height: 10px;" alt="" src="Imagenes/icono_toolBarPoligonos_rect.png" /></td>
+
+            <td style="vertical-align: top; width: 214px;">Bir dikdörtgen oluşturur.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Bir kenarının iki noktası ve ardından dikdörtgeni boyutlandırmak için kullanılacak üçüncü bir nokta ardışık olarak girilir.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 195px;"><a name="polig_reg_inscrito">Bir Daireye İçten Teğet</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Düzgün Çokgen</span>)<br />
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 18px;" alt="" src="Imagenes/icono_toolBarPoligonos_inscrito.png" /></td>
+            <td style="vertical-align: top; width: 214px; text-align: justify;">Belirtilen kenar sayısına sahip ve merkezi ile yarıçapı verilen bir daireye içten teğet bir çokgen oluşturur.<br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Kenar
+sayısı belirtilir ve ardından dairenin merkezi ve yarıçapı sayısal veya
+grafiksel olarak, ayrıca çokgenin yönelimi de belirtilir.
+Çokgenin her köşe noktası mevcut kotu alacaktır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 195px;"><a name="polig_reg_circunscrito">Bir Daireye Dıştan Teğet</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Düzgün Çokgen</span>)<br />
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 20px;" alt="" src="Imagenes/icono_toolBarPoligonos_circunscrito.png" /></td>
+            <td style="vertical-align: top; width: 214px; text-align: justify;">Belirtilen kenar sayısına sahip ve merkezi ile yarıçapı verilen bir daireye dıştan teğet bir çokgen oluşturur.<br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Kenar
+sayısı belirtilir ve ardından dairenin merkezi ve yarıçapı sayısal veya
+grafiksel olarak, ayrıca çokgenin yönelimi de belirtilir.
+Çokgenin her köşe noktası mevcut kotu alacaktır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 195px;"><a name="polig_reg_lado">Bir Kenara Dayalı</a><br />
+(<span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Düzgün Çokgen</span>)<br />
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 19px;" alt="" src="Imagenes/icono_toolBarPoligonos_lado.png" /></td>
+            <td style="vertical-align: top; width: 214px; text-align: justify;">Belirtilen kenar sayısına sahip bir çokgeni bir kenarından başlayarak oluşturur.<br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Kenar
+sayısı belirtilir ve ardından, grafiksel veya sayısal olarak, çokgenin bir kenarını
+tanımlayan iki nokta belirtilir. Eğer ikinci nokta için kot belirtilirse,
+her köşe noktası o kotu alacaktır, aksi takdirde tüm köşe noktaları mevcut Z
+değerini alacaktır.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="linea_media">Orta Çizgi</a></span><br />
+      <br /><div style="text-align: center;"><img style="width: 325px; height: 161px;" alt="" src="Imagenes/dialogo_linea_media.png" /><br /></div><br /><span style="font-weight: bold;">Orta çizgi</span> seçeneği, <span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Orta Çizgi</span> menüsünden erişilebilen çok kullanışlı bir seçenek olabilir.
+Bu, düz ve düzenli olmasalar bile diğer iki çizgi arasında bir orta çizgi oluşturabilen bir algoritmadır.
+Orta çizginin sadece birbirini KESMEYEN iki çizgi arasında oluşturulduğu unutulmamalıdır.<br />
+
+      <br />
+      <table style="text-align: left; width: 671px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 320px;"><img style="width: 302px; height: 237px;" alt="" src="Imagenes/linea_media_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 331px; text-align: right;"><img style="width: 298px; height: 237px;" alt="" src="Imagenes/linea_media_2.png" /><br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 320px; text-align: center;"><span class="Info">Paralel veya düz olmayan iki çizgi</span><br />
+            </td>
+            <td style="vertical-align: top; width: 331px; text-align: center;"><span class="Info">Orijinal iki çizgiden oluşturulan orta çizgi</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+Bu şekilde oluşturulan çizgi (ilk seçilenin tipinde olacaktır),
+kısa segmentlerin bir araya gelmesiyle oluşan sürekli ve orijinalleri kadar
+karmaşık bir çizgidir. Ayrıca, her ikisinin de kotunu dikkate alacaktır.<br /><br />Orta çizginin noktaları için <span class="Parf_negrita">Kot</span>
+seçeneği: alt ray kotu, ortalama kot, üst ray kotu arasından seçilebilir. Bu seçenek, elimizdeki çizgiler bir Demiryolunun raylarını temsil ettiğinde kullanışlıdır.<br /><br /><br /><span class="Parf_negrita">İki çizginin noktalarına maksimum mesafe</span> parametresi:&nbsp;Son
+çizginin noktaları, her bir çizgiden en az bir noktaya tanımlanandan
+eşit veya daha az bir mesafede olmalıdır. Örneğin, eğer
+iki veri çizgisi karşı karşıya noktalara sahipse, sonuçtaki çizginin sadece bu konumlarda noktalara sahip olması kontrol edilebilir.<br /><br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 635px; text-align: justify;">Orta
+çizginin hesaplanmasına geçmeden önce, program seçilen iki çizgi üzerinde, <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Harita Temizliği</span> &#8594; <span style="font-weight: bold;">Filtrele/Seyrelt</span>
+menüsünde belirlenen parametrelere göre geçici bir filtreleme
+uygular. Bu nedenle, elde edilen orta çizginin köşe noktaları birbirinden çok
+uzaksa, istenen sonuca ulaşmak için toleransları düşürmek yeterlidir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a name="Partir_8D"><span style="font-weight: bold;">8D Objesini Parçala (Doğru/Daire/Klotoid)</span><br />
+      <br />
+Bu araç, kaynağı "Plan Ekseni"
+olan ve 53 tipindeki çoklu doğruları doğrulara, dairelere ve klotoidlere böler. Eğer Güzergah Projesi
+tercihlerinde "Renk Doğru/Daire/Klotoid" onay kutusu aktifse,</a><a href="file:///C:/Ispol/util/Ayuda/EDM_dibujo_entidades.html">file:///C:/Ispol/util/Ayuda/EDM_dibujo_entidades.html</a><a name="Partir_8D"> bu
+renkler oluşturulan elemanlara uygulanır.
+Ayrıca orijinal çoklu doğruları silme seçeneği de sunulur.<br />
+      <br />
+      </a><a name="simbolos"><span class="Titulo_2">Semboller</span></a><br />
+      <br />
+Aşağıda <a href="EDM_entidades_basicas.html#simbolos">semboller</a> üzerindeki temel düzenleme işlemleri açıklanmaktadır. Bir işlemi sonlandırmak için &lt;Esc&gt; tuşuna basmak (veya bağlam menüsünden <span style="font-weight: bold;">Çıkış</span> seçmek) gerekecektir.<br />
+
+      <br />
+Bu işlevlere şuradan erişilebilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Çiz</span>, <span style="font-weight: bold;">Düzenle</span> ve <span style="font-weight: bold;">Araçlar</span> menüleri (her durumda belirtilir).</li>
+
+        <li><a href="EDM_barras_herramientas.html">Araç çubukları</a>.</li>
+        <li>Bağlam menüsü (en sık kullanılan işlevler).</li>
+      </ul>
+      <br />
+
+      
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px; text-align: center; font-weight: bold;">İşlem<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center; font-weight: bold;">Simge<br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: center; font-weight: bold;">Açıklama<br />
+            </td>
+
+            
+            <td style="vertical-align: top; width: 252px; text-align: center; font-weight: bold;">Kullanım<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_simbolo">Sembol Oluştur</a><br />
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_crear.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Haritaya yeni semboller çizer.<br />
+            <br />
+Sembole atanan kot, klavyeden koordinatlar girilip kot belirtilmedikçe veya kotu dikkate alan bir yakalama modu aktif olmadıkça, mevcut kot olacaktır. Eğer dördüncü bir koordinat belirtilirse, bu öznitelik olarak kullanılacaktır (örneğin, klavyeden <span style="font-style: italic;">100 50 600 1000</span> girilirse, program (100,50) koordinatlarında, 600 kotu ve 1000 özniteliği ile sembolü oluşturur).<br />
+            <br />
+Haritaya eklenen sembolün tipi, mevcut tiptir.<br />
+            <br />
+
+Son oluşturulan çizgi, tek seçili eleman olarak kalır.<br />
+            <br />
+</td>
+            
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Kullanıcı
+işlemi sonlandırana kadar aynı tipteki sembollerin, fare veya
+koordinatlarla ardışık olarak eklenmesi. <br />
+            <br />
+Semboller oluşturulurken, sağ fare düğmesiyle açılan bağlam menüsünü kullanarak hem mevcut kotun hem de mevcut özniteliğin değerini değiştirmek mümkündür. Bu, istenen kot ve öznitelikle grafiksel olarak semboller oluşturmayı ve bu değerleri sonrakiler için değiştirmeyi sağlar.<br />
+            <br />
+
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_simbolo_direccion">Yönlü Sembol Oluştur</a><br />
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarSimbolos_crearDir.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;"><span style="font-weight: bold;">Sembol Oluştur</span> seçeneğine benzer, ancak bir dönme açısı belirtme imkanı sunar.<br />
+
+</td>
+            
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Kullanıcı
+işlemi sonlandırana kadar aynı tipteki sembollerin, fare veya
+koordinatlarla ardışık olarak eklenmesi. Her sembol eklendiğinde,
+grafiksel olarak veya klavyeden açı değerini (grad cinsinden)
+girerek sembolün dönme açısını belirtmek gerekir.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Sembolü Taşı<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_mover.png" /></td>
+
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Bir sembolün ekran üzerinde serbestçe hareket etmesini sağlar.<br />
+</td>
+            
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Önceden
+seçilmiş sembol üzerinde işlem yapar ve eğer seçili değilse veya birden fazla seçiliyse,
+taşınacak sembolü seçmenizi ister. Seçildikten sonra,
+kullanıcı onu grafiksel olarak taşıyabilir.<br />
+            <br />
+Bu işlem, sembolün tutma noktası üzerinde fare ile doğrudan yapılabilir.<br />
+            <br />
+</td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Sembolü Döndür<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 13px;" alt="" src="Imagenes/icono_toolBarSimbolos_rotar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Sembolün ekleme noktası etrafında dönmesini sağlar.<br />
+</td>
+            
+
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Önceden
+seçilmiş sembol üzerinde işlem yapar ve eğer seçili değilse veya birden fazla seçiliyse,
+döndürülecek sembolü seçmenizi ister. Seçildikten sonra,
+kullanıcı onu grafiksel olarak veya klavyeden açı değerini girerek
+döndürebilir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="modif_cota_simb">Kot Değiştir</a><br /><br />
+
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarSimbolos_cambiarZ.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Sembollerin kotunu ve özniteliğini grafiksel olarak değiştirmeyi sağlar.<br />
+</td>
+            
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Önceden
+yapılan sembol seçimi üzerinde işlem yapar. Program, seçimdeki her sembol için yeni
+kot ve özniteliği ister. Üzerinde işlem yapılan sembol,
+üzerindeki kırmızı bir okla gösterilir.<br />
+            <br />
+Önceden bir sembol seçimi yoksa, program kullanıcıdan değiştirilecek sembolü seçmesini ister.<br />
+
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="edic_num_simbolos">Sayısal Düzenleme</a><br />
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Sembol</span>)<br />
+
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_edicNum.png" /></td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 216px; text-align: justify;">Seçilen
+tipteki sembollerin tüm verilerini içeren bir iletişim kutusu açar.
+Bu kutudan her birinin koordinatlarını ve özniteliğini değiştirmek ve
+hepsinin bir listesini almak mümkündür.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 344px; height: 235px;" alt="" src="Imagenes/edic_num_simbolos.png" /><br />
+            </div>
+            <br />
+İlk satıra karşılık gelen sembol, görsel olarak tanımlanmasını sağlamak için haritada vurgulanır.<br />
+<br />
+
+
+</td>
+            
+            
+          </tr><tr>
+            <td style="vertical-align: top;">Metin Ara 
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Sembol</span>)</td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 19px;" alt="" src="Imagenes/icono_toolBarTextos_buscar.png" /></td>
+            <td style="vertical-align: top;">EDM'de mevcut tüm sembollerde bir metin dizesi aramayı sağlar.</td>
+            <td style="vertical-align: top;">Program,
+komut alanında aranacak metin dizesini sorar.
+Arama yapıldıktan sonra, o dizeyi içeren tüm semboller bir okla
+vurgulanır ve mesaj alanında bulunan sembol sayısı belirtilir.</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 167px;">Kotları Göster<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_verZ.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Her sembolün altında kotunu gösterir/gizler.<br />
+            </td>
+            
+            <td style="vertical-align: top; text-align: justify;">Gösterilen kot bilgilendirme amaçlıdır ve çizimin (EDM) bir parçası değildir.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Noktaları Yüzey Kotuna Getir<br />
+            </td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarSimbolos_cotaSup.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Seçilen sembolleri mevcut yüzeyin kotuna getirir.<br />
+            </td>
+            
+            <td style="vertical-align: top; text-align: justify;">Önceden
+yapılan sembol seçimi üzerinde işlem yapar ve eğer yoksa,
+haritadaki tüm sembollerin mevcut yüzeyin kotuna getirilip getirilmeyeceğini
+sorar.<br /><br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Sembol Bilgisi<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarSimbolos_info.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Kullanıcının
+seçtiği sembollerin kotu, tipi, koordinatları ve ait oldukları model
+hakkında bilgi gösterir.<br /><br />Bilgiler, grafik penceresinde gösterilen kot hariç, mesaj alanında gösterilir.<br /><br />
+            </td>
+            
+            <td style="vertical-align: top; text-align: justify;">Önceki
+seçim üzerinde işlem yapmaz. Kullanıcı, bilgi almak istediği
+sembolleri fare ile tek tek belirtmelidir.<br /><br />Grafik alanında gösterilen bilgiler geçicidir ve bir yeniden çizimden sonra kaybolur.<br /><br />`is` klavye kısayolu ile de kullanılabilir.<br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Sembol Sil<br />
+            </td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_borrar.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Sadece sembol sınıfındaki objeleri siler.<br />
+            </td>
+            
+            <td style="vertical-align: top; text-align: justify;">Eğer önceden bir obje seçimi yapılmışsa, program sadece o seçimdeki sembolleri siler.<br /><br />Eğer önceden bir seçim yapılmamışsa, doğrudan seçimle silinecek sembolleri döngüsel olarak ister.<br /><br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="propiedades_simbolo">Sembol Özellikleri</a><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarSimbolos_propiedades.png" /><br />
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; text-align: justify;"><img style="width: 219px; height: 237px;" alt="" src="Imagenes/propiedades_simbolo.png" align="right" hspace="5" />Seçilen
+sembollerin özelliklerini (model, tip, dönme açısı, ölçekler,
+ekleme koordinatları, öznitelik ve bağlı olduğu hücre numarası) değiştirmeyi sağlayan
+iletişim kutusunu açar.<br />
+            <br />
+Eğer sembol serbest ise, herhangi bir hücreye bağlı olmayacaktır ve
+bu alan -1 değerine sahip olacaktır (genellikle durum budur). Bir sembolü bir hücreye
+bağlamak, <a href="OL_ficheros_ali.html#elsal2_cel.ali"><span class="Archivo">ELSAL2_CEL.ali</span></a> gibi belirli <a href="OL_ficheros_ali.html">plan güzergah etiketleme modlarını</a> kullanmayı sağlar.<br /><br />Eğer
+birden fazla sembol seçilmişse, ekleme noktalarının koordinatları
+gösterilmez ve gösterilen özellikler
+seçimdeki ilk sembole aittir. Bu durumda, herhangi bir özellik
+değiştirilirse, seçilen tüm semboller etkilenecektir.<br />
+            <br />
+Bu özellikler kutusundan kaynağı değiştirebilir&nbsp;<img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%20base%20datos%20completa.png" /> veya temizleyebilirsiniz <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_limpiar.png" />.<br />
+
+            </td>
+            
+            
+          </tr>
+
+        </tbody>
+      
+      </table>
+
+      <br />
+      <br /><span class="Titulo_2"><a name="textos">Yazılar</a></span><br /><br />Bir <a href="EDM_entidades_basicas.html#textos">yazı veya etiket</a>, bir ekleme noktasıyla ilişkilendirilmiş bir kelime veya kelime grubundan oluşan alfanümerik bir metin satırıdır. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, çizime yeni <a href="EDM_entidades_basicas.html#textos">yazılar</a> eklemeye, mevcut bir etiketi silmeye, o an paftada bulunan tümünü görüntülemeye ve bunları değiştirmeye olanak tanır.<br />
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Bir yazı oluşturma</span><br />
+      <br />
+Bir yazı oluşturma seçeneği, <span style="font-weight: bold;">Çiz</span> &#8594; <span style="font-weight: bold;">Yazı Oluştur</span> menüsünden veya doğrudan <a href="EDM_barras_herramientas.html">yazı araç çubuğundaki</a>&nbsp;<img style="width: 16px; height: 8px;" alt="" src="Imagenes/icono_toolBarTextos_crear.png" /> düğmesinden kullanılabilir. Bu işlev, oluşturulacak <a href="EDM_entidades_basicas.html#textos">yazının</a> boyutu, açısı ve <a href="EDM_entidades_basicas.html#textos">etiketin</a> çizileceği hizalama gibi özellikleri hakkında çeşitli seçenekler sunan bir iletişim kutusu sunar. Bu tercihler programda mevcut olarak kalacak ve <a href="EDM_entidades_basicas.html#textos">yazı</a> oluşturma işlemi bu iletişim kutusu kapatılana kadar aktif kalacaktır.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 582px; height: 39px;" alt="" src="Imagenes/creando_texto.png" /><br />
+      </div>
+      <br />
+<a href="EDM_entidades_basicas.html#textos">Yazıyı</a> oluşturmak için, <a href="EDM_entidades_basicas.html#textos">yazının</a> oluşturulacağı alana tıklayıp yazmak yeterlidir. Eklenen <a href="EDM_entidades_basicas.html#textos">etiket</a>, iletişim kutusunda belirtilen <span style="font-weight: bold;">tipte</span>
+(stilde) olacaktır. Bu, açılır menüden seçilebilir veya doğrudan ilgili tipin numarası girilebilir.<br />
+      <br />
+Ardından, çizim ölçeğine göre gerçek metre cinsinden <span style="font-weight: bold;">yazı boyutu</span> belirtilir. Yazı boyutu kontrolünün her iki yanında, mevcut boyutu ikiye bölmek veya ikiyle çarpmak için birer düğme bulunur, bu da hızlı değişiklikler yapmayı sağlar.<br />
+      <br />
+<span style="font-weight: bold;">Hizalama</span>, <a href="EDM_entidades_basicas.html#textos">yazının</a>
+ekleme noktasına göre konumudur ve yatay ve dikey hizalamanın birleşimiyle elde edilir. Bir etiket, "yazı hücresinin" soluna, ortasına veya sağına hizalanabilir. Dikey olarak, yazı hücresinin üst kenarına, karakterlerin üst kenarına, ortaya, yazının alt kenarına ve hücrenin alt kenarına hizalanabilir.<br />
+      <br />
+      <img style="width: 54px; height: 84px; margin-left: 7px;" alt="" src="Imagenes/justifi_textos.png" align="right" />Yazı
+hücresi, 0, 2, 4, 6 ve 8 numaralı fontlar için karakterlerin kendisinden iki kat daha yüksektir ve diğer fontlar için yazı tipine göre farklı değerlere sahip olabilir.<br />
+      <br />
+İlgili düğme grubunda olası hizalamalar ve o an basılı olan gösterilir. Mevcut olanı değiştirmek için istenen düğmeye basmak yeterlidir. <br />
+      <br />
+Son olarak, eklenecek metin satırına yataya göre, saat yönünün tersine ve grad cinsinden bir <span style="font-weight: bold;">açı</span> atamak mümkündür.<br />
+      <br />
+Oluşturulan metin mevcut kota eklenecektir (örneğin, ekleme noktasını SAM'a veya bir çizgi köşe noktasına yakalama ile işaretlersek, bu elemanların kotlarını alacaktır).<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Yazı Düzenleme</span><br />
+      <br />
+Bir <a href="EDM_entidades_basicas.html#textos">yazıyı</a> taşımak,
+tutma noktasını hareket ettirmek kadar basittir ve içeriğini değiştirmek için,
+üzerine çift tıklayıp klavyeden yeni karakter dizisini girmek yeterlidir.<br />
+      <br />
+Aşağıda yazılar üzerindeki diğer temel düzenleme işlemleri açıklanmaktadır. Bir işlemi sonlandırmak için &lt;Esc&gt; tuşuna basmak (veya bağlam menüsünden <span style="font-weight: bold;">Çıkış</span> seçmek) gerekecektir.<br />
+      <br />
+Bu işlevlere şuradan erişilebilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Çiz</span>, <span style="font-weight: bold;">Düzenle</span> ve <span style="font-weight: bold;">Araçlar</span> menüleri (her durumda belirtilir).</li>
+        <li><a href="EDM_barras_herramientas.html">Araç çubukları</a>.</li>
+        <li>Bağlam menüsü (en sık kullanılan işlevler).</li>
+      </ul>
+
+
+      
+      
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px; text-align: center; font-weight: bold;">İşlem<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center; font-weight: bold;">Simge<br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: center; font-weight: bold;">Açıklama<br />
+            </td>
+
+            <td style="vertical-align: top; width: 0px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 252px; text-align: center; font-weight: bold;">Kullanım<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_texto">Yazı Oluştur</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 8px;" alt="" src="Imagenes/icono_toolBarTextos_crear.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">ASCII formatındaki bir metin dosyasının tüm içeriğini tek bir işlemde eklemeyi sağlar.<br />
+            <br />
+Kullanılan boyut, stil ve hizalama mevcut olanlardır ve seçenek satırlar arası boşluğu sorar.<br />
+            <br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Seçildiğinde, kullanıcının içeriğini çizime eklemek istediği dosyayı seçmesi için dosya seçici açılır.<br />
+            <br />
+Dosyadaki satır sayısı kadar metin oluşturulur.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_texto_direccion">Yönlü Yazı Oluştur</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 14px;" alt="" src="Imagenes/icono_toolBarTextos_crearDir.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Bir metni herhangi bir yönde yerleştirmeyi sağlar.<br />
+            <br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Bunun için düzlemde iki nokta seçilecektir, ilki tutma noktası olarak kalacak ve ikincisi yönelimi tanımlayacaktır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Yazıyı Taşı<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarTextos_mover.png" /></td>
+
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Bir yazının ekran üzerinde serbestçe hareket etmesini sağlar.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Önceden
+seçilmiş yazılar üzerinde işlem yapar ve eğer hiçbiri seçili değilse,
+taşınacak yazıyı seçmenizi ister. Seçildikten sonra, kullanıcı
+onu grafiksel olarak taşıyabilir. Eğer önceden birden fazla yazı seçilmişse,
+taşıma işlemi, mevcut olanı kırmızı bir okla göstererek, tek tek yapılır.<br />
+            <br />
+Bu işlem, sembolün tutma noktası üzerinde fare ile doğrudan yapılabilir.<br />
+            <br />
+</td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Yazıyı Döndür<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 12px;" alt="" src="Imagenes/icono_toolBarTextos_rotar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Seçilen yazıyı ekleme noktası etrafında döndürür.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Önceden
+seçilmiş yazılar üzerinde işlem yapar ve eğer hiçbiri seçili değilse,
+döndürülecek yazıyı seçmenizi ister. Seçildikten sonra, kullanıcı
+onu grafiksel olarak veya klavyeden açı değerini girerek
+döndürebilir. Eğer önceden birden fazla yazı seçilmişse,
+döndürme işlemi tek tek yapılır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_texto_sobre_linea">Çizgi Üzerine Yazı Oluştur</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolBarTextos_crearLin.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Mevcut bir çizgi üzerine bir etiket çizmeyi sağlar.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Eğer önceden aktif bir segment varsa, onu kullanır, aksi takdirde kullanıcıdan bir tane seçmesini ister.<br />
+            <br />
+Eğri metin, karakter sayısı kadar parçaya ayrılır, böylece
+her karakter bir etikettir. Seçenek, metni olacağı gibi çizer ve kullanıcıdan onay ister.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="texto_desde_fichero">Dosyadan Yazı Al</a><br />
+
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+</td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarTextos_fichero.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">ASCII formatındaki bir metin dosyasının tüm içeriğini tek bir işlemde eklemeyi sağlar.<br />
+            <br />
+Kullanılan boyut, stil ve hizalama mevcut olanlardır ve seçenek satırlar arası boşluğu sorar.<br />
+            <br />
+</td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Seçildiğinde, kullanıcının içeriğini çizime eklemek istediği dosyayı seçmesi için dosya seçici açılır.<br />
+            <br />
+Dosyadaki satır sayısı kadar metin oluşturulur.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Yazıları Kotlandır (<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarTextos_textoacota.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Seçilen yazıları, mevcut yüzeydeki konumlarına (X, Y) göre verilen kota yerleştirir.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 167px;">Yazı Bilgisi<br />
+</td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarTextos_info.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Kullanıcının
+seçtiği etiketlerin tipi, boyutu, düzlem koordinatları ve ait oldukları model
+hakkında bilgi gösterir.<br />
+            <br />
+Bilgiler mesaj alanında gösterilir.<br />
+            <br />
+</td>
+            <td style="vertical-align: top;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Önceki
+seçim üzerinde işlem yapmaz. Kullanıcı, bilgi almak istediği
+yazıları fare ile tek tek belirtmelidir.<br />
+            <br />
+`ir` klavye komutu ile de kullanılabilir.<br />
+            <br />
+</td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Yazıyı Sil<br />
+</td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 21px; height: 20px;" alt="" src="Imagenes/icono_toolBarTextos_borrar.png" /><br />
+</td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Sadece yazı sınıfındaki objeleri siler.<br />
+</td>
+            <td style="vertical-align: top;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Eğer önceden bir obje seçimi yapılmışsa, program sadece o seçimdeki yazıları siler.<br />
+            <br />
+Eğer önceden bir seçim yapılmamışsa, doğrudan seçimle silinecek yazıları döngüsel olarak ister.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="propiedades_texto">Yazı Özellikleri</a><br /></td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarTextos_propiedades.png" /></td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; width: 216px; text-align: justify;"><img style="width: 234px; height: 244px;" alt="" src="Imagenes/propiedades_texto.png" align="right" hspace="5" />Etiketlerin
+özelliklerini (ait olduğu model, ilişkili metin, stil veya tip,
+boyut, metin satırının açısı, hizalama, ekleme noktasının düzlem
+koordinatları ve kotu) değiştirmeyi sağlayan iletişim kutusunu
+açar.<br />
+            <br />
+Önceki seçim üzerinde işlem yapar. Eğer birden fazla etiket
+seçilmişse, ortak OLMAYAN özellikler "ÇEŞİTLİ" olarak gösterilir ve
+seçimdeki tüm etiketlere aynı özelliği atamak için değiştirilebilir. Stiller
+söz konusu olduğunda, açıldıklarında, kırmızı bir çizgi seçimdeki farklı
+etiketlerde kullanılan stilleri diğer stillerden ayırır.<br />
+            <br />
+<a href="#propiedades_simbolo">Semboller</a> gibi,
+yazılar da bir hücre numarasına bağlanabilir. Eğer yazı
+serbest ise, herhangi bir hücreye bağlı olmayacaktır ve bu alan
+-1 değerine sahip olacaktır (genellikle durum budur). Bir yazıyı bir hücreye
+bağlamak, &nbsp;<a href="OL_ficheros_ali.html#elsal2c_cel.ali"><span class="Archivo">ELSAL2C_CEL.ali</span></a> gibi belirli plan güzergah etiketleme modlarını kullanmayı sağlar.<br />
+            <br />
+Bu özellikler kutusundan kaynağı değiştirebilir&nbsp;<img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%20base%20datos%20completa.png" /> veya temizleyebilirsiniz <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_limpiar.png" />.<br />
+</td>
+            
+            
+          </tr><tr>
+            <td style="vertical-align: top;"><a name="editar_texto">Yazıyı Düzenle</a><br />
+
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Yazı</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 22px; height: 23px;" alt="" src="Imagenes/icono_toolBarTextos_editar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Yazının içeriğini değiştirmeyi sağlar.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Yazı, arayüzün alt kısmındaki komut satırı alanında düzenlenir.<br />
+            <br />
+Bu seçenek, yazıya çift tıklandığında da etkinleşir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="modif_tam_texto">Boyut Değiştir</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Yazı</span>)<br /></td>
+            <td style="vertical-align: top; text-align: center;"><br />
+            </td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; text-align: justify;"><img style="width: 170px; height: 158px; margin-left: 7px;" alt="" src="Imagenes/modif_tam_texto.png" align="right" />Bu
+seçenek, bağlam menüsü aracılığıyla da kullanılabilir ve
+seçilen yazıların boyutunu artırmamızı, çarpmamızı, bölmemizi,
+azaltmamızı ve belirli bir değere değiştirmemizi sağlayan bir
+iletişim kutusu gösterir.<br />
+            <br />
+Eğer önceden seçili yazı yoksa, program bu seçimi ister.<br />
+            <br />
+            <br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="buscar_texto">Metin Ara</a><br />
+
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Yazı</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 19px;" alt="" src="Imagenes/icono_toolBarTextos_buscar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">EDM'de mevcut tüm metinlerde bir metin dizesi aramayı sağlar.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Program,
+komut alanında aranacak metin dizesini sorar.
+Arama yapıldıktan sonra, o dizeyi içeren tüm metinler bir okla
+vurgulanır ve mesaj alanında bulunan metin sayısı belirtilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="reemp_texto">Metin Değiştir</a><br />
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Yazı</span>)<br /></td>
+            <td style="vertical-align: top; text-align: center;"><br />
+            </td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; text-align: justify;"><img style="width: 271px; height: 176px; margin-left: 7px;" alt="" src="Imagenes/reemp_texto.png" align="right" />EDM'de bulunan etiketlerdeki metin dizelerini değiştirmeyi sağlar.<br />
+            <br />
+İşlem, aranacak metin dizesinin ve değiştirilecek metin dizesinin
+belirtildiği bir iletişim kutusu aracılığıyla gerçekleştirilir.
+Kullanıcı, metin metin dizeyi değiştirmeyi veya <span style="font-weight: bold;">tüm</span> metinleri tek seferde değiştirmeyi seçebilir.<br />
+            <br />
+Karakter dizeleri arama ve değiştirme seçenekleri arasında, bir düzenli ifade belirtmeye izin verilir.<br />
+            <br />
+Bulunan metinler bir okla vurgulanır. Seçenek, ilgili seçenek etkinleştirilirse <span style="font-weight: bold;">sadece önceden seçilmiş metinler üzerinde</span> işlem yapabilir.<br />
+            </td>
+          </tr>
+
+          
+
+        </tbody>
+      
+      
+      </table>
+
+
+      <br />
+<br />
+
+      <span style="font-weight: bold; font-style: italic;">Grafik Klavye</span><br />
+      <br />
+Bir metin oluşturulurken, mesajlar alanında ve alışılmış <span style="font-weight: bold;">[TAMAM]</span> ve <span style="font-weight: bold;">[İPTAL]</span> düğmelerinin yanında, <span style="font-weight: bold;">[GRAF.]</span> düğmesi de belirir. Bu seçenek, mevcut metin stiliyle bir <span style="font-weight: bold;">grafik klavye</span>
+açar ve karakterler normal klavyeden veya bu grafik klavyeden girilebilir. Bu,
+normal klavyede bulunmayan nadir karakterleri (özel karakterler, Kiril alfabesi vb.)
+seçmeyi sağlar. Bu seçeneğe, mesajlar penceresinde klavyeden herhangi bir değer veya komut girilirken de erişilebilir.<br />
+<br />
+      
+      <div style="text-align: center;"><img style="width: 534px; height: 234px;" alt="" src="Imagenes/teclado_grafico.png" /><br />
+      </div>
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="celulas">Hücreler</a></span><br />
+      <br />
+<a href="EDM_dibujo_entidades.html#celulas">Hücreler</a>,
+sembollere benzeyen ancak değiştirilebilir metinler kabul eden
+elemanlardır. Birden fazla ekleme noktasından oluşabilirler,
+çünkü ana ekleme noktasına ek olarak, <a href="EDM_dibujo_entidades.html#celulas">hücreler</a>
+bağımsız olarak hareket ettirilebilen ve kendi açı ve ölçeklerine (dikey ve yatay)
+sahip olabilen ikincil ekleme noktalarına sahip olabilirler. Bu, aynı tip <a href="EDM_dibujo_entidades.html#celulas">hücrenin</a> farklı eklemelerine farklı şekiller verebilir. Değişken metinler içerirler, yani aynı tip <a href="EDM_dibujo_entidades.html#celulas">hücrenin</a> farklı eklemeleri farklı metinler içerebilir.<br />
+      <br />
+<a href="EDM_dibujo_entidades.html#celulas">Hücrelerin</a> özel bir türü vardır, <a style="font-weight: bold;" href="EDM_definicion_tipos.html#celulas_enlazadas">bağlantılı hücreler</a> olarak adlandırılırlar ve bir sonraki <a href="EDM_dibujo_entidades.html#celulas">hücrelere</a> göre konumlarını referans alan bir ekleme noktası içerirler. Bu şekilde oluşturulan <a href="EDM_dibujo_entidades.html#celulas">hücreler</a>,
+sanki tek bir bütünmüş gibi blok halinde hareket etme özelliğine sahip olacaktır.
+Bloktaki herhangi bir hücre silindiğinde veya kurtarıldığında,
+diğerleri&nbsp; kompakt bir blok oluşturmaya devam etmek için yeniden konumlanacaktır.<br />
+      <br />
+Aşağıda <a href="EDM_dibujo_entidades.html#celulas">hücreler</a> üzerindeki temel düzenleme işlemleri açıklanmaktadır. Bir işlemi sonlandırmak için &lt;Esc&gt; tuşuna basmak (veya bağlam menüsünden <span style="font-weight: bold;">Çıkış</span> seçmek) gerekecektir.<br />
+      <br />
+Bu işlevlere şuradan erişilebilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Çiz</span>, <span style="font-weight: bold;">Düzenle</span> ve <span style="font-weight: bold;">Araçlar</span> menüleri (her durumda belirtilir).</li>
+        <li><a href="EDM_barras_herramientas.html">Araç çubukları</a>.</li>
+        <li>Bağlam menüsü (en sık kullanılan işlevler).</li>
+      </ul>
+
+
+
+      
+      
+      
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px; text-align: center; font-weight: bold;">İşlem<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center; font-weight: bold;">Simge<br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: center; font-weight: bold;">Açıklama<br />
+            </td>
+
+            <td style="vertical-align: top; width: 0px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 252px; text-align: center; font-weight: bold;">Kullanım<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_celula">Hücre Oluştur</a><br />
+
+
+(<span style="font-weight: bold;">Çiz</span> Menüsü)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_crear.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Bir hücre oluşturur.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Kullanıcı,
+ekleme noktaları için ekrana tıklayarak veya her birinin koordinatlarını
+klavyeden girerek hücreyi grafiksel olarak oluşturur.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Yazılarla Oluşturma<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 20px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_conTexto2.png" /><br />
+            <br />
+            <img style="width: 17px; height: 13px;" alt="" src="Imagenes/icono_toolBarCelulas_conTexto.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Eğer bu işlev etkinse, bir hücre eklenirken program içereceği metni sorar.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Bir
+durum düğmesi gibi çalışır, öyle ki eğer etkinse (kalemli simge),
+program hücrenin içereceği metni sorar.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Yönlü Hücre Oluştur<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 11px; height: 19px;" alt="" src="Imagenes/icono_toolBarCelulas_crearDir.png" /></td>
+
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Ana ekleme noktasını ve bir dönme açısını belirttikten sonra bir hücre oluşturur.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Kullanıcı,
+ana ekleme noktası için ekrana tıklayarak veya varsayılan koordinatlarını
+girerek hücreyi grafiksel olarak oluşturur.<br />
+            <br />
+İkincil ekleme noktaları olarak varsayılanlar kullanılır.<br />
+            <br />
+</td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Hücre Sil<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_borrar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Sadece hücre sınıfındaki objeleri siler.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Eğer önceden bir obje seçimi yapılmışsa, program sadece o seçimdeki hücreleri siler.<br />
+            <br />
+Eğer önceden bir seçim yapılmamışsa, doğrudan seçimle silinecek hücreleri döngüsel olarak ister.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Hücreyi Taşı<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarCelulas_mover.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Bir hücrenin ekran üzerinde serbestçe hareket etmesini sağlar.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Önceden
+seçilmiş hücreler üzerinde işlem yapar ve eğer hiçbiri seçili değilse,
+taşınacak hücreyi seçmenizi ister. Seçildikten sonra, kullanıcı
+onu grafiksel olarak taşıyabilir. Eğer önceden birden fazla hücre seçilmişse,
+taşıma işlemi tek tek yapılır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="mover_pto_celula">Hücre Noktasını Taşı</a><br />
+
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Hücre</span>)<br />
+</td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarCelulas_moverPto.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Hücrenin ekleme noktalarından birini taşır.<br />
+</td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Bu işlem, hücrenin tutma noktaları veya ekleme noktaları üzerinde fare ile doğrudan yapılabilir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Hücreyi Döndür<br />
+</td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 16px; height: 15px;" alt="" src="Imagenes/icono_toolBarCelulas_girar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Bir hücreyi ana ekleme noktası etrafında döndürür.<br />
+</td>
+            <td style="vertical-align: top;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Önceden
+seçilmiş hücreler üzerinde işlem yapar ve eğer hiçbiri seçili değilse,
+döndürülecek hücreyi seçmenizi ister. Seçildikten sonra, kullanıcı
+onu grafiksel olarak veya klavyeden açı değerini girerek
+döndürebilir. Eğer önceden birden fazla hücre seçilmişse,
+döndürme işlemi tek tek yapılır.<br />
+            <br />
+</td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="rotar_pto_celula">Hücre Noktasını Döndür</a><br />
+
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Hücre</span>)<br />
+</td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_rotar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Hücrenin ekleme noktalarından birine bağlı elemanların bir rotasyonunu gerçekleştirir.<br />
+</td>
+            <td style="vertical-align: top;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Program,
+tutma noktasının seçimini ister ve ardından, grafiksel olarak,
+ona bağlı objelerin rotasyonunu gerçekleştirmek mümkündür,
+hücrenin geri kalanı hareketsiz kalır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="explotar_sim_cel">Sembol veya Hücreyi Patlat</a><br />
+
+
+(<span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Patlat</span>)<br />
+</td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_exp.png" /></td>
+            <td style="vertical-align: top; text-align: justify;">Bir sembolü veya bir hücreyi bileşenlerine ayırır.<br />
+</td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">O
+anda aktif olan sembol ve hücre seçimi üzerinde işlem yapar ve eğer
+hiçbiri yoksa, bir seçim ister.<br />
+            <br />
+</td>
+          </tr>
+          
+          <tr>
+            <td style="vertical-align: top;"><a name="propiedades_celula">Hücre Özellikleri</a><br /></td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarCelulas_propiedades.png" /><br />
+</td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; text-align: justify;">Seçilen
+hücrenin özelliklerini (model, açı, tip, ekleme noktalarının koordinatları,
+ölçekler ve metinler) değiştirmeyi, ayrıca onu döndürmeyi ve ekleme noktalarını
+taşımayı sağlayan iletişim kutusunu açar.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 325px; height: 324px;" alt="" src="Imagenes/propiedades_celula.png" /><br />
+            </div>
+            <br />
+Bu seçenek yalnızca önceki seçim sadece bir hücreden oluştuğunda çalışır.<br />
+Eğim ve dever: Bu iki alan, bir hücrenin özellikleri gösterildiğinde erişilebilir ve değerler, Doğu orijinli ve Saat Yönünün Tersi yönde Altmışlık açılarla ifade edilir. <br /><span style="font-style: italic;">Kaynak</span> alanının sağında, başka bir kaynak seçmek veya değerini temizlemek için düğmeler bulunur.<br />
+</td>
+            
+            
+          </tr>
+          
+
+          
+
+        </tbody>
+      
+      
+      
+      </table>
+
+
+
+      <br />
+      <span class="Parrafo"><span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Sahne</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SAHNE<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+
+       <a href="#generalidades">Genel Bilgiler</a><br />
+
+
+      
+      <div style="margin-left: 40px;"><a href="#guardar_obj_3D">3B Nesneleri Kaydetme</a><br />
+
+      <a href="#cargar_obj_3D">3B Nesneleri Yükleme</a><br />
+      </div>
+
+      
+      </div>
+      <br />
+
+      <br />
+
+      <a name="generalidades"><span class="Titulo_2">Genel Bilgiler</span></a><br />
+      <br />
+
+      SANAL 3B sahnesi, bu modülde yönetilen tüm verilerin bağlı olduğu temel unsurdur; kütüphane elemanları (malzemeler, billboard'lar ve arka planlar) ve projeden bağımsız olan yapılandırma ayarları hariç.<br />
+
+      <br />
+
+Bir sahnede kaydedilen bilgiler, oluşturulduğu bilgisayardan farklı bir bilgisayarda sahnenin yeniden oluşturulmasına olanak tanır.<br />
+      <br />
+Istram ağacında, "Sanal 3B" düğümünde sahneyi bir dosyaya kaydetme ve yükleme seçenekleri mevcuttur. Bu dosyada kameraların, ışıkların, ortamın, animasyonların, render ayarlarının, 3B nesnelerin vb. yapılandırması kaydedilir... <br />
+
+      <br />
+
+
+      <div style="text-align: center;"><img style="width: 300px; height: 365px;" alt="" src="Imagenes/virtual3d_arbolvirtual3d.png" /><br />
+      </div>
+      <br />
+Bir sahneyi kaydedebilmek için BIM ağacı içinde Sanal 3B düğümüne gelip sağ fare tuşu ile bir .e3db dosyası kaydetmeniz gerekir:<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 467px; height: 55px;" alt="" src="Imagenes/virtual3D_guardar_escenario.png" /><br />
+      </div>
+      <br />
+
+Sahnede bulunan herhangi bir eleman (kökeni ve karmaşıklığı ne olursa olsun) harici bir dosyada saklanabilir ve daha sonra kullanılabilir. Bu dosyaların uzantısı&nbsp;.3do'dur.<br />
+      <br />
+Sanal 3B düğümünden sağ fare tuşuna basmak, kaydedilmiş bir sahneyi <span style="font-weight: bold;">Açma</span> imkanı verir.<br />
+
+
+      <br />
+
+Bir sahne kaydedildiğinde, bir yandan tüm 3B geometri ve özellikleri, diğer yandan tanımlanmış 'sahne düzeninin' kendi elemanları saklanır: kameralar, ışıklar, ortamlar, render sistemleri ve animasyonlar. Ayrıca, sahnenin tüm düğümlerinin görünürlük durumu ve uygun durumlarda aktif eleman (kameralar, ortam veya render) da saklanır.<br />
+
+      <br />
+
+      <a name="guardar_obj_3D"><span class="Titulo_2">3B Nesneleri Kaydetme</span></a><br />
+
+      <br />
+
+      Sanal 3B'nin açılır menüsü içinde, daha sonra gerekirse 3B nesneler olarak kaydedilebilecek basit geometriler oluşturulabilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 473px; height: 256px;" alt="" src="Imagenes/virtual3d_creargeometriassencillas.png" /><br />
+      </div>
+      <br />
+Bir nesneyi dışa aktarmak için, nesnenin ya <a href="V3D_organizador_jerarquico.html">Düzenleyici Ağacı'nda</a> ya da sahnenin kendisinde seçilmesi ve ardından sağ fare tuşuna basılarak özelliklerinin görülmesi veya diğer seçenekler arasından dışa aktarılması gerekir. <br />
+
+      <br />
+      <div style="text-align: center;"><img style="width: 350px; height: 426px;" alt="" src="Imagenes/V3D_guardar_geometria.png" /><br />
+      </div>
+      <br />
+Oluşturulan elemanın üzerine sağ fare tuşu ile tıklandığında, onu sahnede değiştirmek için bir dizi özelliğe sahip olacağız:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 350px; height: 505px;" alt="" src="Imagenes/virtual3d_caja_botonderecho.png" /><br />
+      </div>
+      <br />
+Nesne diğer kullanıcılarla paylaşılmak isteniyorsa, kullanılan isimlerin anlaşılır olması gerektiği unutulmamalıdır, bu nedenle yorum alanını da kullanmak uygun olabilir.<br />
+
+      <br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td>
+            <td style="vertical-align: middle; text-align: justify;">Bu .3do dosyaları \ispol\LIBSOL\Objetos\ klasörlerinden birine kaydedildiğinde, nesne kütüphanesi genişletilmiş olur.</td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      &nbsp;<br />
+
+      <br />
+
+      <a name="cargar_obj_3D"><span class="Titulo_2">3B Nesneleri Yükleme</span></a><br />
+
+      <br />
+
+      Bu elemanların daha sonra yüklenmesi, nesne oluşturma panelinden, orijinal koordinatlarda veya kullanıcı tanımlı bir konumda yerleştirme simgeleriyle gerçekleştirilir.<br />
+
+      <br />
+Eğer kütüphaneye herhangi bir nesne kaydettiyseniz, bu nesne Kütüphaneden 3B Nesne Ekle seçeneğinde mevcut olacaktır; bu seçeneğe resimde belirtilen üçüncü simge aracılığıyla erişilebilir. <br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img style="width: 474px; height: 259px;" alt="" src="Imagenes/V3D_cargar_geometria_2.png" /><br />
+      </div>
+
+      <br />
+      <div style="text-align: center;"><img style="width: 340px; height: 286px;" alt="" src="Imagenes/V3D_guardar_geometria.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 212px;" alt="" src="Imagenes/virtual3d_caja.png" /><br />
+      </div>
+
+      <br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 639px; text-align: justify;">Bir sahne kaydederken, harita ile (çizgileri, sembolleri ve hücreleri parametrik katı modeller ve billboard'lar ile değiştirilmiş olan), üçgenlenmiş sayısal modeller ve bir doğrusal proje eksenleri ile mevcut olan 'senkronizasyon' modunu hatırlamak önemlidir. Bu elemanlar, sanal ortamdan çıkıldığında kaybolan bir 3B geometri oluşturularak 3B ortamda görselleştirilir. Bu nedenle dikkatli olmak ve uygun olduğunda sayısal harita dosyasını kaydetmek önemlidir.</td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <br />
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

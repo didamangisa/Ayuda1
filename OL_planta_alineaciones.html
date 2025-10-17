@@ -1,0 +1,646 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Yatay Güzergah Eleman Tipleri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table style="width: 700px; height: 1px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YATAY GÜZERGAH: ELEMAN TİPLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="height: 1510px; width: 700px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 690px;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <div style="margin-left: 40px;"><a href="#convenio_radio">Yarıçapta kullanılan işaret kuralı</a><br /><a href="#sol_corta_larga">
+Kısa çözüm ve uzun çözüm</a><br /><a href="#reajuste_geometrico">
+Geometrinin otomatik olarak yeniden ayarlanması</a><br />
+      </div>
+
+      <a href="#frecuentes">Sık kullanılan güzergah elemanları</a><br />
+      <div style="margin-left: 40px;"><a href="#fija_2P">İki nokta ve yarıçap ile sabit (tip 0)</a><br />
+      <a href="#flotante">Serbest (tipler 8 ve -8)</a><br />
+      <a href="#giratoria">Döner veya 2. nokta sabit (tipler 8 ve -8)</a><br />
+      <a href="#retrogiratoria">Geriye döner veya 1. nokta sabit (tipler 8 ve -8)</a><br />
+      <a href="#enlace">Bağlantı veya ileriye doğru uzatma (tip 0)</a><br />
+      <a href="#preenlace">Ön-bağlantı veya geriye doğru uzatma (tip 4)</a><br />
+      <a href="#punto_azimut">Nokta ve azimut ile sabit (tip 5)</a><br />
+<a href="#fija_centro_radio">Merkez ve yarıçap ile sabit: dairesel dönel kavşak (tip 5)</a><br />
+      <a href="OL_planta_alineaciones.html#fija_punto_radio_azimut">Nokta, yarıçap ve azimut ile sabit (tip -5)</a><br />
+      <a href="#fija_3P">Üç nokta ile sabit (tip 6)</a><br />
+      <a href="#tabla_resumen">En sık kullanılan güzergah elemanlarının özet tablosu</a><br />
+      </div>
+      <a href="#menos_frecuentes">Daha az kullanılan güzergah elemanları</a><br />
+      <div style="margin-left: 40px;"><a href="#acoplada">Birleşik ve ön-birleşik (tip 7)</a><br /><a href="#flotante_giratoria_retranqueo">
+Kaydırma ile verilen klotoidli serbest/döner/geriye döner (tipler 1 ve -1)</a><br /><a href="#flot_girat_antigua">
+Eski serbest/döner/geriye döner (tipler 2 ve -2)</a><br /><a href="#grupos_enlace">
+Bağlantı grupları veya trenleri (tipler 3 ve 4)</a><br />
+      </div>
+      <a href="#convertir_fijos">Hesaplanan verileri sabite dönüştür</a><br />
+<a href="#conexiones">Eksenler arası bağlantılar</a><br />
+<a href="#libertad">Yatay güzergah tasarımında serbestlik dereceleri ve sık yapılan hatalar</a><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+Bir eksen güzergahının temel mantığı, teğet geometrik elemanların oluşturulmasına dayanır. Bunlar ana elemanlar (doğrular ve dairesel kurplar) ve genellikle bunların arasında yer alan <a href="OL_planta_curvas_transicion.html">birleşim veya geçiş eğrilerinden</a> (normalde klotoidler) oluşur.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td><td style="vertical-align: top; width: 636px; text-align: justify;"><span class="Info">Programın işleyişi açısından, <a href="OL_planta_curvas_transicion.html">geçiş eğrilerinin</a> ana güzergah elemanları OLMADIĞINI, bunun yerine iki güzergah elemanı arasında bir birleşim eğrisi olduğunu çok net bir şekilde anlamak gerekir.<br />
+            </span></td></tr></tbody>
+      </table>
+<br />&nbsp; <img style="width: 145px; height: 201px; margin-left: 7px;" alt="" src="Imagenes/tipos_ali.png" align="right" />İki büyük güzergah elemanı grubu vardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;"><a name="fijas">Sabit</a></span>: Planda, programın komşu elemanlarla herhangi bir hesaplama yapmasına gerek kalmadan tam olarak tanımlanabilmeleri için yeterli veriyi içeren elemanlardır (örneğin, iki nokta ile verilen bir doğru). Bu tür elemanların dolayısıyla <span style="font-weight: bold;"><a href="#libertad">serbestlik derecesi yoktur</a></span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sabit Olmayan</span>: Bir veya daha fazla veri içeren, ancak programın komşu eleman(lar) ile bir hesaplama yapmadan planda gösterilemeyecek kadar yetersiz sayıda olan elemanlardır (örneğin, sadece bitiş noktası bilinen bir elemanın başlangıç noktasını program, bir önceki elemana teğet olacak şekilde hesaplayacaktır). Bu tür elemanların <span style="font-weight: bold;">bir veya iki <a href="#libertad">serbestlik derecesi vardır</a></span>.<br />
+        </li>
+      </ul>
+      <img style="width: 110px; height: 89px; margin-right: 7px;" alt="" src="Imagenes/planta_tipo_ali.png" align="left" />Her grup içinde çeşitli tipler bulunur. Bu tipler ayrıca, birden fazla olası çözüm olduğunda programı bir çözüm seçmeye zorlayan bir numara ile ilişkilidir. Bu, bir güzergah elemanının davranışını anında değiştirme imkanı sunarak programa büyük bir çok yönlülük kazandırır.<br />
+<br />
+      <table style="text-align: left; width: 574px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 636px; text-align: justify;">Program kullanıcıları arasında bu numaraya da "tip" demek yaygın bir uygulamadır, bu nedenle bu terimin kullanımı ayırt edilmeksizin yapılır ve kullanıcının kullanıldığı bağlamı ayırt etmesi gerekir.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Bu bölümde, bir doğrusal yapı projesinin yatay güzergah tasarım aşamasında ortaya çıkabilecek geometrik kombinasyon yelpazesini çözmek için programın sunduğu tüm olasılıklar, <a href="#frecuentes">sık kullanılan</a> ve <a href="#menos_frecuentes">daha az kullanılan</a> güzergah elemanları arasında ayrım yapılarak açıklanmaktadır.<br />
+      <br /><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="convenio_radio">Yarıçapta kullanılan işaret kuralı</a></span><br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, yarıçap kullanımında aşağıdaki kriterleri uygular:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Pozitif yarıçap</span> değeri, saat yönünde dönüşle, yani eksenin KM artış yönüne göre "<span style="font-weight: bold;">sağa kurp</span>" ile ilişkilidir. Buna karşılık, <span style="font-weight: bold;">negatif bir değer</span>, saat yönünün tersine veya KM artışına göre "<span style="font-weight: bold;">sola kurp</span>" anlamına gelir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sıfır yarıçap</span> değeri (R=0), programa güzergah elemanının bir <span style="font-weight: bold;">doğru</span> (aliyman) olduğunu belirtir.<br />
+        </li>
+      </ul>
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="sol_corta_larga">Kısa çözüm ve uzun çözüm</a></span><br />
+      <br />
+Negatif tipleri destekleyen güzergah elemanları, iki teğetlik çözümü olması durumunda, programın en kısa çözümü (tip 8) veya birinci çeyrekteki çözümü (tipler 1 ve 2) seçeceğini belirtir. Eğer özel bir durumda tamamlayıcı çözüm isteniyorsa, o zaman bu negatif tip kullanılmalıdır.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="reajuste_geometrico">Geometrinin otomatik olarak yeniden ayarlanması</a></span><br />
+      <br />
+Plan her hesaplandığında, program teğetlik ve eksen sürekliliği çözümünü ararken her bir güzergah elemanını uygun şekilde kırpar veya uzatır, bu nedenle kullanıcının bu konuda endişelenmesine gerek yoktur.<br />
+      <br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="frecuentes">Sık kullanılan güzergah elemanları</a></span><br />
+      <br />
+Burada, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> kullanıcıları arasında en yaygın kullanılan ve en sık karşılaşılan yatay güzergah geometrik problemlerini çözen elemanlar yer almaktadır.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td><td style="vertical-align: top; width: 636px; text-align: justify;"><span class="Info">En azından en sık kullanılan güzergah elemanı tiplerini bilmek ve rahatça kullanmak, projenin sonraki aşamalarında sorunlara yol açabilecek geometrik hatalardan arınmış bir yatay güzergah tasarımı yapabilmenin anahtarıdır.</span></td></tr></tbody>
+      </table>
+<br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="fija_2P">İki nokta ve yarıçap ile sabit (tip 0)</a></span><br />
+      <br />Bu, var olan en temel güzergah elemanıdır. İki nokta, P1 (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) ve P2 (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>) ve ilgili <a href="#convenio_radio">işaret kuralına</a> sahip yarıçap (<span style="font-weight: bold;">R</span>) ile tanımlanır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_fija2P.png" /><br />
+      <br />
+      <img style="width: 468px; height: 223px;" alt="" src="Imagenes/ejemplo_fija2P.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="flotante">Serbest (tipler 8 ve -8)</a></span><br />
+      <p class="TUTnormal">Tanımlanması için ilgili <a href="OL_planta_alineaciones.html#convenio_radio">işaret kuralına</a> sahip yarıçap (<span style="font-weight: bold;">R</span>) gereklidir:</p>
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_flotante.png" /><br />
+      <br />
+      <img style="width: 404px; height: 240px;" alt="" src="Imagenes/ejemplo_flotante.png" /><br />
+      </div>
+      <br />Sadece yarıçapla ve onu sabitleyen koordinatlı bir nokta olmadan tanımlandığı için, hesaplayıcı komşu güzergah elemanlarıyla uygun teğetlikleri arayacaktır, bu nedenle asla bir eksenin başında veya sonunda yer alamaz.<br />
+      <br />
+Bu güzergah elemanı, teğetlik için <a href="#sol_corta_larga">uzun çözümü</a> (negatif tip) destekler.<br />
+      <br />
+Eğer bu tür bir elemana koordinatlar (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) ve (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>) atanırsa, o zaman bir <a href="#fija_2P">iki nokta ve yarıçap ile sabit</a> gibi davranır.<br />
+<br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="giratoria">Döner veya 2. nokta sabit (tipler 8 ve -8)</a></span><br />
+      <p class="TUTnormal">İlgili <a href="OL_planta_alineaciones.html#convenio_radio">işaret kuralına</a> sahip <span class="CTCourierNEW"><span style="">(<span style="font-weight: bold;">R</span>)</span></span> yarıçapı ve bir geçiş noktası P2 (<span class="CTCourierNEW"><span style=""><span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span></span></span>) ile tanımlanır:</p>
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_giratoria.png" /><br />
+      <br />
+      <img style="width: 442px; height: 216px;" alt="" src="Imagenes/ejemplo_giratoria.png" /><br />
+      </div>
+      <br />Genellikle <span style="font-style: italic;">2. nokta sabit</span> olarak da adlandırılır, çünkü hesaplayıcı giriş teğetini bulana kadar onu bu nokta etrafında döndürür.<br />
+      <br />
+Bu güzergah elemanı, teğetlik için <a href="OL_planta_alineaciones.html#sol_corta_larga">uzun çözümü</a> (negatif tip) destekler.<br />
+      <br />
+Eğer bu tür bir elemana koordinatlar (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) ve (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>) atanırsa, o zaman bir <a href="#fija_2P">iki nokta ve yarıçap ile sabit</a> gibi davranır.<br />
+<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="retrogiratoria">Geriye döner veya 1. nokta sabit (tipler 8 ve -8)</a></span><br />
+      <br />
+İlgili <a href="OL_planta_alineaciones.html#convenio_radio">işaret kuralına</a> sahip yarıçap (<span style="font-weight: bold;">R</span>) ve bir geçiş noktası P1 (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) ile tanımlanır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_retrogiratoria.png" /><br />
+      <br />
+      <img style="width: 433px; height: 187px;" alt="" src="Imagenes/ejemplo_retrogiratoria.png" /><br />
+      </div>
+      <br /><a href="#giratoria">Döner</a> elemanla benzerdir, farkı güzergah elemanının program tarafından hesaplanan teğetlikte başlamak yerine bitmesidir.<br />
+      <br />
+Bu güzergah elemanı, teğetlik için <a href="OL_planta_alineaciones.html#sol_corta_larga">uzun çözümü</a> (negatif tip) destekler.<br />
+      <br />
+Eğer bu tür bir elemana koordinatlar (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) ve (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>) atanırsa, o zaman bir <a href="#fija_2P">iki nokta ve yarıçap ile sabit</a> gibi davranır.<br />
+<br /><span class="Parf_negrita">Uzunluğu Sabitle, yarıçap hesaplansın</span><br /><br />İki sabit doğru arasındaki serbest dairesel elemanlar için ve klotoidsiz ise, eğer UZUNLUK'a sıfırdan büyük bir değer verilirse, bu değer öncelikli olur ve yarıçap hesaplanır (değişken) ve değiştirilemez.<br /><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="enlace">Bağlantı veya ileriye doğru uzatma (tip 0)</a></span><br />
+      <br />
+İlgili <a href="OL_planta_alineaciones.html#convenio_radio">işaret kuralına</a> sahip yarıçap (<span style="font-weight: bold;">R</span>) ve bir uzunluk (<span style="font-weight: bold;">L</span>) ile tanımlanırlar:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_enlace.png" /><br />
+      <br />
+      <img style="width: 455px; height: 137px;" alt="" src="Imagenes/ejemplo_enlace.png" /><br />
+      </div>
+      <br />
+      Bir sabit elemanın veya bir bütün olarak sabit gibi davranan bir eleman grubunun (<a href="#grupos_enlace">bağlantı trenleri</a>) arkasında istenildiği kadar bağlantı elemanı olabilir. Birincisi sabitin bitiş noktasına teğettir ve sonrakiler kendilerinden öncekine teğettir. Bu elemanları hesaplayıcı tek bir taraftan, sabitin veya önceki bağlantının uzantısı olarak çözer.<br />
+<br />Bir <span class="Parf_negrita">yanal sıçrama</span><span class="Texto_cursiva Parf_negrita"></span> plan ekseninde şu şekilde tanımlanabilir: bir SABİT elemanın arkasına, sabit ile aynı veya farklı yarıçaplı ve 0'dan farklı bir ötelemeye sahip, klotoidsiz tip 0 bir BAĞLANTI tanımlanır.<br /><br /><br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="preenlace">Ön-bağlantı veya geriye doğru uzatma (tip 4)</a></span><br />
+      <br />
+
+İlgili <a href="OL_planta_alineaciones.html#convenio_radio">işaret kuralına</a> sahip yarıçap (<span style="font-weight: bold;">R</span>) ve bir uzunluk (<span style="font-weight: bold;">L</span>) ile tanımlanırlar:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_preenlace.png" /><br />
+      <br />
+      <img style="width: 501px; height: 100px;" alt="" src="Imagenes/ejemplo_preenlace.png" /><br />
+      </div>
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="punto_azimut">Nokta ve azimut ile sabit (tip 5)</a></span><br />
+      <br />
+Bir P1 noktası (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>), azimut (<span style="font-weight: bold;">Az</span>) ve isteğe bağlı olarak uzunluk (<span style="font-weight: bold;">L</span>) tanımlanır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_pto_azimut.png" /><br />
+      <br />
+      <img style="width: 393px; height: 112px;" alt="" src="Imagenes/ejemplo_pto_azimut.png" /><br />
+      </div>
+      <br />
+Nokta ve azimutla verilen bir doğru eleman, ayrıca uzunluğu belirtildiğinde planda tam olarak tanımlanmış olur. Eğer bu elemanın arkasında başka elemanlar varsa, teğetlik çözümünü bulmak için program bu uzunluğu uygun şekilde hesaplayacağından, bu uzunluğu belirtmek gerekmez.<br />
+      <br />
+<br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="fija_centro_radio">Merkez ve yarıçap ile sabit: dairesel dönel kavşak (tip 5)</a></span><br />
+      <br />
+Dairenin merkezi P1 (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>), ilgili <a href="OL_planta_alineaciones.html#convenio_radio">işaret kuralına</a> sahip yarıçap (<span style="font-weight: bold;">R</span>) ve uzunluk (<span style="font-weight: bold;">L</span>) tanımlanır. Azimut (<span style="font-weight: bold;">Az</span>), dönel kavşağın başlangıç KM'sini belirtmek için kullanılır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_centro_radio.png" /><br />
+      <br />
+      <img style="width: 189px; height: 195px;" alt="" src="Imagenes/ejemplo_centro_radio.png" /><br />
+      </div>
+      <br />
+
+Bu durumda yarıçapın işaretine özellikle dikkat edilmelidir, çünkü KM'lerin artış yönünü belirler, öyle ki negatif bir yarıçap, dünyanın çoğu ülkesinde kullanılan araçların dolaşım yönüyle tutarlı hale getirir.<br />
+
+      <br />
+
+Uzunluğun ise PI cinsinden girilmesi tavsiye edilir, çünkü böylece kullanıcı sadece yarıçapı iki kez belirtmek zorunda kalır.<br />
+      <br />
+      <table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 629px; text-align: justify;"><span class="Info">Dairesel bir dönel kavşak genellikle programda, bu türden tek bir güzergah elemanından oluşan BAĞIMSIZ bir eksen olarak tanımlanır.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Merkez ve yarıçap ile sabit bir elemanın sadece dönel kavşaklarda kullanılması gerekmez ve herhangi bir eksende bir eleman daha olabilir. Bu durumda, azimut ve uzunluğun kullanımı, elemanın eksendeki yerleşimine bağlıdır:<br />
+      <ul>
+        <li>Eğer bir eksen içinde önünde ve arkasında elemanlar varsa, teğetlik koşulu öncelikli olduğu için <span style="font-weight: bold;">L</span> veya <span style="font-weight: bold;">Az</span> kullanılmaz.</li>
+      </ul>
+      <ul>
+        <li>Eğer bir eksenin ilkiyse, eksenin başlangıcını tanımlamak için <span style="font-weight: bold;">Az</span> kullanılır.</li>
+      </ul>
+      <ul>
+        <li>Eğer bir eksenin sonuncusuysa, bitiş noktasını vermek için <span style="font-weight: bold;">Az</span> kullanılır. Eğer ayrıca <span style="font-weight: bold;">L</span>'de bir değer bildirilmişse, o zaman eleman <span style="font-weight: bold;">Az</span> ile verilen noktadan itibaren uzatılır.<br />
+        </li>
+      </ul>
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="fija_punto_radio_azimut">
+Nokta, yarıçap ve azimut ile sabit (tip -5)</a></span><br />
+
+
+      <br />
+
+<a href="#fija_centro_radio">Merkez ve yarıçap ile sabit</a> gibidir, ancak bu durumda P1 noktasının koordinatları, azimutun önceden belirlendiği dairesel elemanın bir geçiş noktasıdır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_fija_punto_radio_azimut.png" /><br />
+      <br />
+      <img style="width: 445px; height: 232px;" alt="" src="Imagenes/ejemplo_punto_radio_azimut.png" /><br />
+      </div>
+      <br />
+Eğer eksenin ilk elemanı ise, bu nokta eksenin başlangıç noktasıdır. Eğer eksenin son elemanı ise, bitiş noktası P1 noktasından itibaren verilen uzunluk dikkate alınarak hesaplanır, bu nokta elemanın teğetlik noktası olmasa bile.<br />
+<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="fija_3P">Üç nokta ile sabit (tip 6)</a></span><br />
+      <br />
+3 nokta ile tanımlanırlar: P1 (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>), P2 (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>) ve P3 (<span style="font-weight: bold;">X3</span>,<span style="font-weight: bold;">Y3</span>). Üç nokta artan KM'ler sırasında olmalıdır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_fija3P.png" /><br />
+      <br />
+      <img style="width: 288px; height: 160px;" alt="" src="Imagenes/ejemplo_fija3P.png" /><br />
+      </div>
+      <br />
+      Hesaplanan yarıçap, güzergah elemanının <span style="font-weight: bold;">YARIÇAP</span> alanında bilgi amaçlı olarak görünür ve kullanıcının girdiği herhangi bir yarıçap değeri göz ardı edilir ve hesaplayıcı tarafından hemen üzerine yazılır.<br />
+      <br />
+Veri elemanlarının çiziminde P1-P2-P3 yayları çizilir, ancak eksen sadece bu elemanla hesaplanırsa, bitiş noktası P2 olarak kalır.<br />
+      <br />Gösterim: P1-P2 bölümü normal renkte vurgulanır ve P2-P3 bölümü soluk gösterilir, böylece özellikle p3'ün p1'den önce verildiği durumlarda hesaplanan eksenin bu elemanlarla karıştırılması önlenir.<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="tabla_resumen">En sık kullanılan güzergah elemanlarının özet tablosu</a></span><br />
+      <br />
+      <table style="text-align: left; height: 73px; margin-right: auto; margin-left: auto; width: 582px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 190px; text-align: center;"><span style="font-weight: bold; font-style: italic;">İsim</span><br />
+            </td>
+            <td style="vertical-align: top; width: 43px; font-weight: bold; font-style: italic; text-align: center;">Tip<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic; text-align: center; width: 80px;">Parametreler<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic; text-align: center; width: 113px;">Serbestlik Derecesi<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 190px;">İki nokta ve yarıçap ile sabit<br />
+Serbest<br />
+Döner veya 2. nokta sabit<br />
+Geriye döner veya 1. nokta sabit<br />
+Bağlantı veya ileriye doğru uzatma<br />
+Ön-bağlantı veya geriye doğru uzatma<br />
+Nokta ve azimut ile sabit<br />
+Merkez ve yarıçap ile sabit<br />
+Nokta, yarıçap ve azimut ile sabit<br />
+Üç nokta ile sabit<br />
+            </td>
+            <td style="vertical-align: top; width: 43px; text-align: center;">0<br />
+8 / -8<br />
+8 / -8<br />
+8 / -8<br />
+0<br />
+4<br />
+5<br />
+5<br />
+-5<br />
+6<br />
+            </td>
+            <td style="vertical-align: top; width: 80px; text-align: center;">P1, P2, R<br />
+R<br />
+P2, R<br />
+P1, R<br />
+L, R<br />
+L, R<br />
+P1, Az, (L)<br />
+P1, Az, R, (L)<br />
+P1, Az, R, (L)<br />
+P1, P2, P3<br />
+            </td>
+            <td style="vertical-align: top; width: 113px; text-align: center;">0<br />
+2<br />
+1<br />
+1<br />
+1<br />
+1<br />
+0<br />
+0<br />
+0<br />
+0<br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" rowspan="1" style="vertical-align: top; width: 190px;"><br />
+            <img style="width: 32px; height: 32px; margin-right: 7px;" alt="" src="Imagenes/icono_aviso.png" align="left" /><span class="Info">Eğer 8 / -8 tipi güzergah elemanlarının P1 ve P2'de verileri varsa, o zaman iki nokta ve yarıçap ile sabit gibi davranırlar.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="menos_frecuentes">Daha az kullanılan güzergah elemanları</a></span><br />
+      <br />
+Bunlar, yukarıdakiler kadar yaygın olmayan, çünkü çok özel geometrik sorunları çözen veya çok daha çok yönlü olanlarla değiştirilmiş ve dolayısıyla kullanımdan kalkmış olan elemanlardır.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="acoplada">Birleşik ve ön-birleşik</a></span><br />
+      <br />
+Bu tür elemanlarda, normalde <span style="font-weight: bold;">X1</span>, <span style="font-weight: bold;">Y1</span> ve <span style="font-weight: bold;">X2</span>, <span style="font-weight: bold;">Y2</span> koordinatlarını içeren alanlar sırasıyla <span style="font-weight: bold;">Lönce</span>, <span style="font-weight: bold;">dL</span> ve <span style="font-weight: bold;">Lsonra</span>, <span style="font-weight: bold;">dL</span> olarak değişir.<br />
+      <br />
+Eğer eleman bir sabitten sonra <span style="font-weight: bold;">birleşik</span> ise, sabitin uzunluğu, birleşiğin <span style="font-weight: bold;">Lönce</span> alanı sıfırdan farklıysa, değerin sabitin toplam uzunluğu olarak uygulanacak şekilde değiştirilir. Eğer <span style="font-weight: bold;">dL</span> alanı sıfırdan farklıysa, değeri sabitin doğal uzunluğunu değiştirmek için kullanılır. <span style="font-weight: bold;">dL</span> değeri negatif olabilir ve sabitin bitiş noktasını kısaltabilir. Sabit bittiğinde, eksen birleşiğin kendisiyle, uzunluğunu (<span style="font-weight: bold;">L</span>) ve yarıçapını (<span style="font-weight: bold;">R</span>) kullanarak devam eder ve varsa ara klotoidi ekler.<br />
+      <br />
+Aşağıdaki örnek, arkasına bir birleşik eleman eklenmiş, iki nokta ile verilen bir sabit elemandan oluşmaktadır. 60 m uzunluğunda ve -100 yarıçapındaki bu eleman, daha önce önceki sabit elemanın 60 m uzatılmasına neden olur:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_acoplada.png" /><br />
+      <br />
+      <img style="width: 420px; height: 326px;" alt="" src="Imagenes/ejemplo_acoplada.png" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">Ön-birleşik</span> elemanlar için (veya bir sabitten önceki birleşikler), <span style="font-weight: bold;">Lsonra</span> veya <span style="font-weight: bold;">dL</span> değerleri sırasıyla <span style="font-weight: bold;">X2</span> ve <span style="font-weight: bold;">Y2</span> alanlarının yerini alacaktır. Bunların takip eden sabite göre işleyişi, birleşik olanlarla aynıdır.<br />
+      <br />
+      <table style="text-align: left; width: 690px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 637px; text-align: justify;"><span class="Info">Eğer sabitin uzunluğuna uyulmak isteniyorsa (<span style="font-weight: bold;">L</span> ve <span style="font-weight: bold;">dL</span> değeri 0), o zaman birleşikler için <a href="#enlace">bağlantı</a> veya ön-birleşikler için <a href="#preenlace">ön-bağlantı</a> elemanları durumu söz konusudur ve bu durumda kullanılması gereken tipler bunlardır.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="flotante_giratoria_retranqueo">Kaydırma ile verilen klotoidli serbest/döner/geriye döner (tipler 1 ve -1)</a></span><br />
+      <br />
+Bu tip, birleşimi <span style="font-weight: bold;">minimum mesafelere kaydırma</span> ile yapılan serbest ve döner elemanlar oluşturmayı sağlar.<br />
+      <br />
+      <img style="width: 314px; height: 122px; margin-left: 7px;" alt="" src="Imagenes/dist_retranqueo.png" align="right" />Bu durumlarda, A tuşuna girilen değer klotoidin parametresi değil, <span style="font-weight: bold;">kaydırma mesafesidir</span>. P1 ve P2 için koordinat yoksa, bu bir <a href="#flotante">serbest</a> elemandır. Hesaplayıcının bunları çözmesi için, önceki ve sonraki elemanların sabit veya tek bir taraftan hesaplanabilir olması gerekir (örneğin, sabit – bağlantı – bağlantı – serbest – sabit).<br />
+      <br />
+Eğer P2 verileri varsa, bu eleman, önceki bir sabit veya o taraftan hesaplanmış olduğunda çözülebilir. Bu bir <a href="#giratoria">döner</a> elemandır ve çözüm, öncekiyle teğetlik ile belirlenir. Ondan sonra, eksen sanki sabitmiş gibi, başka bir döner, bağlantı, sabit veya hatta serbest elemanla devam edebilir. Eğer onu takip eden sabitse, birleşim serbestlik derecesine sahip değildir ve ikisi arasındaki klotoid sistem tarafından hesaplanır.<br />
+      <br />
+Eğer P1 verileri varsa (ancak P2 yoksa), eleman <a href="#retrogiratoria">geriye dönerdir</a>, çözüm, bir sonraki elemanla teğetlik aranarak bulunur, bu nedenle bir sonraki eleman sabit veya eksenin sonundan başına doğru çözülmüş olmalıdır. Eğer önceki sabitse, sabit ile bu geriye döner arasındaki uygulanacak klotoid sistem tarafından belirlenir.<br />
+      <br />
+Eğer bu tür bir elemana P1 ve P2'ye koordinatlar atanırsa, o zaman bir <a href="#fija_2P">iki nokta ve yarıçap ile sabit</a> gibi davranır.<br />
+<br />
+Bazı durumlarda, serbest elemanın yerleştirilmesi sorunu iki çözüme sahiptir. Bu durumda, program tarafından sunulan çözüm, <a href="#sol_corta_larga">negatif tip</a> belirtilmedikçe her zaman birinci çeyreğe karşılık gelir; bu durumda diğer çözüm uygulanır.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="flot_girat_antigua">Eski serbest/döner/geriye döner (tipler 2 ve -2)</a></span><br />
+      <br />
+Bunlar, sırasıyla 8 ve -8 tipleriyle değiştirildikleri ve serbest, döner ve geriye döner elemanlarda kullanıldıkları için kullanımdan kalkmış tiplerdir.<br />
+      <br />Eğer bu tür bir elemana koordinatlar (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) ve (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>) atanırsa, o zaman bir <a href="#fija_2P">iki nokta ve yarıçap ile sabit</a> gibi davranır.<br />
+      <br />
+İşleyişi çoğu durumda benzerdir, fark, iki teğetlik çözümü olduğunda ortaya çıkar. Bu durumlarda, tip 2 birinci çeyrek çözümünü hesaplarken, tip 8 en kısa çözümü oluşturur. Eğer birinci çeyrek yerine tamamlayıcı çözüm isteniyorsa, o zaman <a href="#sol_corta_larga">negatif tip</a> belirtilmelidir.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="grupos_enlace">Bağlantı grupları veya trenleri (tipler 3 ve 4)</a></span><br />
+      <br />BASİT BAĞLANTI TRENİ<br />
+      <br />
+Basit bağlantı treni, bir sabit elemanın (veya bir bütün olarak sabit gibi davranan birkaç elemanın) ardından gelen bir dizi bağlantı elemanıdır.<br />
+      <br />
+      <br />
+TİP 3 GÜZERGAH ELEMANLARININ KULLANIMI<br />
+      <br />
+Bu tip, bir serbest elemanda biten bir <span style="font-weight: bold;">bağlantı elemanları grubuna</span> ait ilk elemana, yani sabit elemandan çıkan elemana belirtilecektir. Bu, şöyle bir durumdur:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 478px; height: 16px;" alt="" src="Imagenes/grupo_enlace_1.png" /><br />
+      </div>
+      <br />
+Yani:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 478px; height: 16px;" alt="" src="Imagenes/grupo_enlace_2.png" /><br />
+      </div>
+      <br />
+Dolayısıyla:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 478px; height: 16px;" alt="" src="Imagenes/grupo_enlace_3.png" /><br />
+      </div>
+      <br />
+Eğer ilk bağlantı elemanı da tip 0 ise, grup önceki sabitin bitiş noktasına teğet olarak başlar ve 8'den önceki tüm grup, sadece başlangıçtaki sabite bağlı olarak eksenin sonuna doğru hesaplanır. Son bağlantı elemanının uzunluğu, sonraki serbest elemanın takip eden sabitle teğetliği çözmesi için uyulamaz.<br />
+      <br />
+Eğer bağlantı grubunun ilk elemanı <span style="font-weight: bold;">tip 3</span> olarak bildirilirse, grup, grubun tüm bağlantı elemanlarının (sonuncusu dahil) uzunluğuna uymak için kendisinden önceki sabit üzerinde "kayan" hale gelir. Sorunu çözen, uzunluğunu uyarlayan ilk sabit elemandır. Görüldüğü gibi, iki sabit arasındaki geçiş, basit bir klotoid, bir serbest eleman ve bir serbest elemanda biten bir bağlantı elemanları grubu ile yapılabilir. Bütün, o zaman şu tiplerle bildirilirdi:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 478px; height: 16px;" alt="" src="Imagenes/grupo_enlace_4.png" /><br />
+      </div>
+      <br />
+Sadece bağlantı grubunun ilkine tip 3 bildirilir. Varsa, sonrakiler tip 0 olmalıdır. Her zaman olduğu gibi, birleşim klotoidlerinin olup olmaması sorunu değiştirmez.<br />
+      <br />
+      <br />
+TİP 4 GÜZERGAH ELEMANLARININ KULLANIMI<br />
+      <br />
+      Bu tip, bir <span style="font-weight: bold;">varış grubunun ilk elemanına</span> atanacaktır. Eğer bir sabit elemandan önce ona dayanan bir veya daha fazla bağlantı elemanı varsa, grubun ilki tip 4 ile işaretlenmelidir, varsa diğerleri tip 0 ve son olarak sorunu tamamlayan sabit.<br />
+      <br />
+Hesaplayıcı, bu elemanı çözmeye başlayamayacağı konusunda tip 4 tarafından uyarılır, bu nedenle bunu ve varsa koordinatsız tip 0 elemanları (bağlantı elemanları) atlayarak bir sabit bulana kadar devam eder; o zaman bu sabit çözülür ve ona dayanarak, önceki bağlantı elemanları başa doğru çözülür.<br />
+      <br />
+      <br />
+TİP 3 VE 4 ELEMANLARIN KOMBİNASYONLARI<br />
+      <br />
+Aşağıdaki gibi karmaşık durumlar ortaya çıkabilir:<br />
+<br />
+      
+      <div style="text-align: center;"><img style="width: 372px; height: 16px;" alt="" src="Imagenes/grupo_enlace_5.png" /><br />
+      </div>
+
+      <br />
+      3'ten 8'e kadar olan sorun, ilk sabit üzerinde kayan bir bağlantı grubudur ve ilk sabit ile tip 4 arasında çözülmelidir. Ancak bu çözülmediği için, çözüm son sabite kadar tüm sorunu atlayarak ertelenmelidir. O zaman ikinci bağlantı grubu sondan başa doğru çözülmeye başlar, tip 4'ün çözümüne ulaşana kadar; 3, 0, 0,..., 8 grubu, ilk sabitin bitiş noktasını, tip 4'ün başlangıç noktasını (o zaman sabit gibi davranır) ve bu ikisinin ve serbestin uzunluğunu ayarlayarak ilk sabit ile tip 4 arasında çözülür.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="convertir_fijos">Hesaplanan verileri sabite dönüştür</a></span><br />
+      <br />
+      <img style="width: 105px; height: 88px; margin-left: 7px;" alt="" src="Imagenes/conv_fijas.png" align="right" />İki tuştan birine basıldığında, bir sonraki eksen hesaplamasında, mevcut güzergah elemanı için (başlangıç noktası, bitiş noktası veya her ikisi için), başlangıç verileri yerine uygulama tarafından hesaplanan eleman verilerinin (tam teğetlikler) kullanılacağı belirlenir.<br />
+      <br />
+Menüde x1,y1 veya x2,y2'ye basıldığına bağlı olarak, <span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span> veya <span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span> (büyük harflerle) görünecektir<span style="font-weight: bold;">.</span> Tekrar basıldığında devre dışı bırakılır ve <span style="font-weight: bold;">x1</span>,<span style="font-weight: bold;">y1</span> veya <span style="font-weight: bold;">x2</span>,<span style="font-weight: bold;">y2</span> (küçük harflerle) olarak görünür.<br />
+      <br />
+Bir sonraki hesaplamada, hesaplanan giriş veya çıkış teğetlik noktasının koordinatları sırasıyla <span style="font-weight: bold;">X1</span>, <span style="font-weight: bold;">Y1</span>, <span style="font-weight: bold;">X2</span> ve <span style="font-weight: bold;">Y2</span> alanlarına aktarılacaktır. Sadece bir kez çalışır ve <span style="font-weight: bold;">[Hesapla]</span> komutu, koordinatları kopyalamanın yanı sıra bu iki komutu da devre dışı bırakır.<br />
+      <br />
+Eğer her iki seçenek de basılırsa, hesaplamadan sonra elemanın TİPİNİ 0'a değiştirmek mümkündür, bu da <a href="#flotante">serbest</a> elemanları sabitlemeyi sağlar.<br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="conexiones">Eksenler arası bağlantılar</a></span><br />
+      <br />
+Genellikle bir projede birkaç eksen arasında bağımlılıklar bulunur (kavşaklar, kesişimler,...). ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, aslında özel bir tür sabit güzergah elemanı olan <a href="OL_planta_conexiones.html">bağlantılar</a> aracılığıyla bu bağımlılıkları bildirmeye izin verir.<br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="libertad">Yatay güzergah tasarımında serbestlik dereceleri ve sık yapılan hatalar</a></span><br />
+      <br />
+
+Kullanıcı, programa girilen verilerin, güzergahın süreklilik ve teğetlik koşullarını herhangi bir belirsizlik olmaksızın garanti eden bir geometrik çözüm üretmesi gerektiğini, yani programın güzergah elemanı tiplerinin yanlış kullanımından kaçınması gerektiğini unutmamalıdır.<br />
+      <br />
+Eksen hesaplama algoritmasının ardışık iki eleman arasındaki teğetliği çözebilmesi için, belirli serbestlik derecelerine sahip olması gerekir, böylece ikisinden birini "hareket ettirebilir". Bu, boru hattı projeleri, kanallar veya diğer özel durumlar hariç, ardışık sabit elemanlarla bir eksen planlanmaması gerektiği anlamına gelir. Örneğin, bir <a href="#flotante">serbest eleman</a>, hesaplayıcı tarafından önceki ve sonraki elemana teğet olana kadar "hareket ettirilebilir".<br />
+      <br />
+Ardışık elemanlar arasındaki serbestlik dereceleri sorunu aşağıdaki ilkeye özetlenebilir:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-style: italic; font-weight: bold;">"Ardışık iki güzergah elemanı arasındaki teğetlik noktasında, ikisinden sadece ve sadece biri konumu sabitler (koordinatları belirler)."</span><br />
+      </div>
+      <br />
+Bu ilkeye dayanarak, aşağıdaki çözümler doğrudur:<br />
+      <br />
+      <table style="text-align: left; width: 640px; height: 174px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 30px; height: 32px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" />
+            </td>
+            <td style="width: 590px; text-align: justify; height: 32px;">Bir <a href="#fijas">sabit</a> eleman, ardından bir <a href="#flotante">serbest</a> ve başka bir <a href="#fijas">sabit</a>. Birinci ile ikinci arasında, konumu birinci sabitler ve ikinci ile üçüncü arasında, üçüncü konumu sabitler.<br />
+
+            </td>
+          </tr><tr>
+            <td style="vertical-align: middle; height: 27px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /><br />
+            </td>
+            <td style="height: 27px; width: 590px;">Bir <a href="OL_planta_alineaciones.html#fijas">sabit</a> eleman, ardından iki <a href="OL_planta_alineaciones.html#giratoria">döner</a>.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; height: 17px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+            <td style="height: 17px; width: 590px;">Bir <a href="OL_planta_alineaciones.html#retrogiratoria">geriye döner</a> eleman, ardından bir <a href="OL_planta_alineaciones.html#fijas">sabit</a>.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; height: 37px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+            <td style="height: 37px; width: 590px;">Bir <a href="OL_planta_alineaciones.html#fijas">sabit</a>, ardından bir <a href="OL_planta_alineaciones.html#enlace">bağlantı</a>, çünkü sabit ikinciye koordinat sağlar, böylece bütün, önceki veya sonraki elemanlar tarafından sabit olarak görülür.<br />
+</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br />
+Buna karşılık, yanlış çözümler (ve sık yapılan hatalar) şunlardır:<br />
+
+      <br />
+
+      
+      <table style="text-align: left; width: 640px; height: 174px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 30px; height: 32px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /><br />
+
+            </td>
+            <td style="width: 590px; text-align: justify; height: 32px;">Penültim elemanı bir <a href="OL_planta_alineaciones.html#fijas">sabit</a> ve sonuncusu <a href="OL_planta_alineaciones.html#flotante">serbest</a> olan bir eksen. Bu durumda sorun belirsizdir (sonsuz çözümü vardır). Eğer <a href="OL_planta_alineaciones.html#flotante">serbest</a> elemana bir geçiş noktası (P2) tanımlanırsa, o zaman <a href="OL_planta_alineaciones.html#giratoria">döner</a> olur ve sorun çözülür.
+
+            </td>
+          </tr><tr>
+      <td style="vertical-align: middle; height: 27px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" />
+      </td>
+      <td style="height: 27px; width: 590px;">Ardışık iki <a href="OL_planta_alineaciones.html#enlace">serbest</a> eleman, çünkü hiçbiri koordinat sağlamaz.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; height: 17px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+      <td style="height: 17px; width: 590px; text-align: justify;">Ardışık iki <a href="OL_planta_alineaciones.html#fijas">sabit</a> eleman, çünkü her ikisi de koordinat sağlar, aralarında bir <a href="OL_planta_curvas_transicion.html">birleşim eğrisi</a> bildirilmedikçe.<br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; height: 37px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+      <td style="height: 37px; width: 590px;">Bir <a href="OL_planta_alineaciones.html#retrogiratoria">geriye döner</a>, ardından bir <a href="OL_planta_alineaciones.html#flotante">serbest</a>.</td>
+    </tr>
+
+        </tbody>
+      
+      </table>
+
+      <br />Şematik olarak, eğer <span style="font-weight: bold;">X</span> bilinen koordinatlara sahip bir noktayı ve <span style="font-weight: bold;">O</span> bilinen koordinatları olmayan bir noktayı temsil ediyorsa, aşağıdaki kombinasyonlar ortaya çıkabilir:<br />
+      <br />
+      
+      <table style="text-align: left; height: 219px; width: 400px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="text-align: center; width: 172px;"><span style="font-weight: bold; font-style: italic;">Şema</span><br />
+            </td>
+            <td style="width: 143px; text-align: center;"><span style="font-weight: bold; font-style: italic;">Yorum</span><br />
+            </td>
+            <td style="width: 60px; text-align: center;"><span style="font-weight: bold; font-style: italic;">Geçerlilik</span><br />
+            </td>
+          </tr>
+<tr>
+            <td style="width: 172px; height: 17px; font-weight: bold;">X - - - - X&nbsp; O - - - - O X - - - - X<br />
+
+            </td>
+            <td style="width: 143px; text-align: justify; height: 17px;">Sabit, serbest, sabit<br />
+</td><td style="width: 60px; height: 17px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+
+          </tr><tr>
+      <td style="height: 14px; width: 172px; font-weight: bold;">X - - - - X&nbsp; O - - - - X O - - - - X
+      </td>
+      <td style="height: 14px; width: 143px;">Sabit, döner, döner<br />
+</td><td style="width: 60px; height: 14px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+
+    </tr>
+    <tr>
+      <td style="height: 16px; width: 172px; font-weight: bold;">X - - - - O X - - - - X</td>
+      <td style="height: 16px; width: 143px;">Geriye döner, sabit<br />
+</td><td style="width: 60px; height: 16px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+
+    </tr>
+    <tr>
+      <td style="height: 16px; width: 172px; font-weight: bold;">X - - - - X&nbsp; X - - - - X</td>
+      <td style="height: 16px; width: 143px;">Sabit, sabit<br />
+</td><td style="width: 60px; height: 16px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+
+    </tr><tr>
+            <td style="height: 25px; font-weight: bold; width: 172px;">X - - - - X&nbsp; O - - - - O O - - - - X</td>
+            <td style="height: 25px; width: 143px;">Sabit, serbest, döner<br />
+            </td>
+            <td style="height: 25px; width: 60px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+          </tr>
+          <tr>
+            <td style="height: 23px; font-weight: bold; width: 172px;">X - - - - X&nbsp; O - - - - O</td>
+            <td style="height: 23px; width: 143px;">Sabit, serbest (eksen sonu)<br />
+            </td>
+            <td style="height: 23px; width: 60px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+          </tr>
+
+
+        </tbody>
+      
+      </table>
+<br />
+      Yani, iki güzergah elemanı arasındaki teğetlik noktasında <span style="font-weight: bold;">XO</span> ve <span style="font-weight: bold;">OX</span> kombinasyonları geçerlidir, ancak sırasıyla veri eksikliği veya fazlalığı nedeniyle <span style="font-weight: bold;">OO</span> veya <span style="font-weight: bold;">XX</span> geçerli değildir.<br />
+      <br />
+      <table style="text-align: left; width: 691px; height: 33px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 606px;">XX kombinasyonu, her sabit eleman arasına, parametresi o zaman program tarafından hesaplanan bir <a href="OL_planta_curvas_transicion.html">birleşim eğrisi</a> (klotoid) bildirilirse serbestlik dereceleri açısından dengelenir, çünkü çözümü tektir.</td>
+          </tr>
+        </tbody>
+      </table>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+<br />
+
+</body></html>

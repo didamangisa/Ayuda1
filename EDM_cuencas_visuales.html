@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Görsel Etki Alanı Analizi. Görüş Konisi</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="Ana Sayfa" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GÖRSEL ETKİ ALANI ANALİZİ. GÖRÜŞ KONİSİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br /><span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Görsel Etki Alanı</span> menüsünden erişilebilen bu seçenek, belirli bir kotta bulunan bir noktadan (örneğin bir elektrik direği, kontrol veya gözetleme kulesi vb.) bir yüzeyin görülebilen alanlarının sınırlarını elde etmeye olanak tanır.<br />
+      <br />
+      <img style="margin-left: 7px; width: 350px; height: 206px; float: right;" alt="Görsel Etki Alanı Diyalog Kutusu" src="Imagenes/dialogo_cuenca_visual.png" />İletişim kutusu üç farklı analiz yapmaya olanak tanır: <span style="font-weight: bold;">noktasal görsel etki alanı</span>,&nbsp;<span style="font-weight: bold;">görüş konisi</span> ve <span class="Parf_negrita">hatsal görsel etki alanı</span>.<br />
+      <br />Bu analizde kullanılan çizgiler için tipler (<span class="Parf_negrita">Dış Sınır</span>, <span class="Parf_negrita">Işınsal</span>, <span class="Parf_negrita">Kontur</span> ve <span class="Parf_negrita">Zarf</span>) tanımlanabilir.<br /><br /><span class="Parf_negrita">Noktasal görsel etki alanı</span> için, kontur çizgisi için dolgulu bir çizgi tipi kullanılması durumunda kapalı alanların içindeki adacıklar da dahil edilir.<br /><br />
+Analizi gerçekleştirmek için kullanılacak olan <span style="font-weight: bold;">mevcut yüzey</span>, mümkün olan en iyi şekilde tanımlanmış olmalıdır. Sadece bu şekilde hesaplama ve gösterim hatalarından kaçınılabilir. <br />
+      <br />
+      <span style="font-weight: bold;">Yüzey</span> (mevcut) ve <span style="font-weight: bold;">gözlem noktası</span> (<span style="font-weight: bold;">[Hesapla]</span> butonuna basıldıktan sonra kullanıcıdan istenir) dışında, aşağıdaki verilere de ihtiyaç duyulur:&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      <ul>
+        <li><span style="font-weight: bold;">İç Kırpma Yarıçapı</span>: Görsel etki alanı konturlarının kapanma noktasından ölçülen yarıçap; bu yarıçapın içindeki noktalar hesaplamada dikkate alınmaz (varsayılan 0,0).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Dış Kırpma Yarıçapı</span>: Gözlem noktasına olan maksimum mesafe ve görsel etki alanı konturunun kapanacağı mesafe.</li>
+      </ul>
+      <ul>
+        <li><img style="width: 372px; height: 159px; margin-left: 7px;" alt="Görsel Etki Alanı Örneği" src="Imagenes/ejem_cuenca_visual.png" align="right" /><span style="font-weight: bold;">Örnekleme Yarıçapı</span>:
+Kaynak yüzeyden veri alma maksimum yarıçapı. Sınıra kadar enterpolasyon yapabilmek için dış kırpma yarıçapından biraz daha büyük olması tavsiye edilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Örnekleme veya Tarama Açısı</span>:
+İki radyal örnekleme kesiti arasındaki açı (derece cinsinden). Bu açı ne kadar küçük olursa, elde edilen konturun çözünürlüğü o kadar yüksek ve hesaplama süresi de o kadar uzun olur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Çizgiler için İlk Model Numarası</span>:
+Görsel etki alanlarının hesaplanması için kullanılan yardımcı çizgiler (radyal kesitler) belirtilen modele (i) ve görsel etki alanlarının konturları bir sonraki modele (i+1) oluşturulur.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Gözlemci Yüksekliği</span>.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Nesne Yüksekliği</span>.</li>
+      </ul>
+      <ul>
+
+      
+      </ul>
+      <span class="Parrafo"><br />
+Bir <span style="font-weight: bold;">hatsal görsel etki alanı</span> hesaplaması için, her bir köşe noktasında ve eğer köşeler <span style="font-weight: bold;">tanımlanan maksimum mesafeden</span> daha uzaktaysa ara noktalarda görsel etki alanı hesaplanır. Ayrıca her bir noktanın görsel etki alanının dış zarfı da oluşturulur.</span><br />
+      <br />
+      <span style="font-weight: bold;">Görüş konisi</span>, yine mevcut yüzeyle çalışır ve arazide belirli bir yüksekliğe sahip nesneleri ( <span style="font-weight: bold;">görselleştirme yüksekliği</span> olarak adlandırılır) dikkate almaya olanak tanır, yani x metre yüksekliğindeki nesnelerin görülebildiği alanı hesaplamayı sağlar:<br /><span class="Parrafo"><br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 521px; height: 400px;" alt="Görüş Konisi Örneği" src="Imagenes/cono_vision.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+<span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

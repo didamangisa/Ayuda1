@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Geliştirilmiş Eksenleri Ekle</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GELİŞTİRİLMİŞ EKSENLERİ EKLE<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="height: 53px; width: 700px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Bu menü aracılığıyla, bağlı eksenlere aşağıdaki bilgileri içeren semboller ekleyebiliriz:<br />
+</span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 309px; height: 222px;" alt="" src="Imagenes/dialogo_anadir_ed.png" align="right" /><strong>Eksen</strong> numarası.</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><strong>Kilometre (PK)</strong>.</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kırmızı <strong>Kot</strong>.</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><strong>Azimut</strong>.</span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu bilgilerle, her bir eksenin kendi kilometre ve azimut değerlerine göre sağladığı metraj, ana eksene (gövdeye) eklenebilir.<br />
+      <br />
+Ayrıca bir kod tanımlanabilir; bu sayede eklenen eksen daha yüksek öncelikli bir kod tarafından kesiliyorsa (sonlandırılıyorsa), bu enkesitler sadece gösterim amacıyla eklenir, ancak ana eksen ile ortak metraj hesabına dahil edilmez.<br />
+      <br />
+Ekseni sonlandıran kod, tanımlanan koda eşit veya daha düşük öncelikli ise yüzeyler L4000-L4199 katman aralığında bir <strong>canlı kopya (live replica)</strong> olarak; eğer daha yüksek öncelikli ise L4200-L4299 aralığında bir <strong>ölü kopya (dead replica)</strong> olarak oluşturulur.&nbsp; <br />
+      <br />
+</span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 674px; height: 446px;" alt="" src="Imagenes/unir_ejes_rm.png" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<strong>Hacim Hesapla (Cubicar)</strong> onay kutusu etkinleştirildiğinde, program eksenin hacim hesabını yeniden yapar. Sınırdaki kodlar önceden tanımlanmış koda eşit veya daha düşük olduğunda, eklenen eksenlerin metrajları bu hesaba dahil edilir. Sonuç raporunu, Eksen kutusunda belirtilen eksene ait `cvoln.res` dosyasında bulabiliriz.<br />
+4000 ile 4199 arasındaki katmanlarda bulunan <strong>canlı kopyalara</strong> sahip enkesitlerin metrajları toplama dahil edilirken, 4200 ile 4299 arasındaki <strong>ölü kopyalara</strong> sahip enkesitlerin metrajları ana eksen hesabına eklenmez.<br />
+<strong>Kopya (replica)</strong>, ikincil bir eksene ait yüzeyin, ana eksenin enkesitine eklenmesiyle oluşturulan bir yapıdır.<br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 579px; height: 414px;" alt="" src="Imagenes/unir_ejes_rv.png" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br /></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir eksenin, başka bir eksenle olan bir sınır çizgisi tarafından sonlandırıldığı bölgelerde program, sınır çizgisi üzerindeki noktayı diğer eksen üzerine projekte eder ve bu kilometre için hesaplanan enkesiti, tüm yüzeyleri ve arazi katmanları ile birlikte ana eksenin enkesitine ekler (yapıştırır).<br /><br />Bu işlem için Güzergah (Obra Lineal) modülünde kullanılan yüzeylerin L4000 ve L5000 katmanları arasındaki kopyaları kullanılır; orijinal yarı-enkesitler ve kodlar korunur. Oluşturulan kesit, katılım koluna dik olduğu için, üzerinde gerçek genişlikler ve deverler ölçülebilir.<br /><br />Sağ tarafta kalan katılım kolları için L4000-L4150, sol tarafta kalanlar için ise L4200-L4350 katman aralığı kullanılır.<br />Enkesit Editöründe, uygun bir yakınlaştırma yapıldığında, kodlar tıpkı ana eksende olduğu gibi görüntülenir. (Bu komutun, enkesitin ana eksene dik bir kesit olduğu <strong>Katılım Kolu Ekle</strong> komutundan farkı; burada kesitin, enkesitte gösterilen her bir eksene kendi doğrultusunda dik olması ve bu nedenle kesit hattının ortak sınırlarda kırılarak ilerlemesidir).</span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

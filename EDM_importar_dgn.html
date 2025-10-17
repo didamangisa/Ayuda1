@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>.dgn İçe Aktarma</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>.dgn DOSYALARINI İÇE AKTARMA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#rel_conversion">DGN – EDM Dönüşüm İlişkilerinin Tanımlanması </a><br />
+      <a href="#diccionarios">Sözlükler</a><br />
+      </div>
+
+      
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+&nbsp;<span class="Archivo">.dgn</span> formatındaki dosyaların içe aktarımı,
+<span style="font-weight: bold;">Dosya</span>
+&#8594; <span style="font-weight: bold;">İçe Aktar</span> &#8594; <span style="font-weight: bold;">DGN</span> seçeneği aracılığıyla yapılır. Uygulama, hem sürüm 7 hem de sürüm 8'deki dosyaları içe aktarmaya izin verir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 248px; height: 293px;" alt="" src="Imagenes/imp_dgn_acceso.png" /><br />
+      </div>
+      <br />
+
+      <img style="width: 103px; height: 358px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_menu.png" align="right" />Bu
+seçenek seçildikten sonra, bir veya daha fazla &nbsp;<span class="Archivo">.dgn</span>
+formatındaki dosyayı içe aktarırken gereken her şeyi yönetmeyi sağlayan menü görüntülenir.<br />
+      <br />
+<span style="font-weight: bold;">[BİTİR]</span> düğmesi,
+içe aktarmayı sonlandırmak için kullanılır ve üzerine tıklandığında menü kapanır.
+<span style="font-weight: bold;">[Pan]</span>, <span style="font-weight: bold;">[Yakınlaş]</span>, <span style="font-weight: bold;">[Önceki]</span>, <span style="font-weight: bold;">[Detaylı]</span>, <span style="font-weight: bold;">[Yeniden Çiz]</span> ve <span style="font-weight: bold;">[Basit]</span> düğmeleri, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün diğer menülerindekiyle aynı işlevselliğe sahiptir.<br />
+
+      <br />
+      <a name="opciones"><span style="font-weight: bold;">[SEÇENEKLER]</span> düğmesine tıklandığında</a>, içe aktarılmak istenen &nbsp;<span class="Archivo">.dgn</span>
+dosyalarını işlerken temel ayarları gösteren bir yüzer menü
+açılır.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 234px; height: 180px;" alt="" src="Imagenes/imp_dgn_opciones.png" /><br />
+      </div>
+
+      <br />
+Bu ayarlar şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Ölçek Faktörü</span>:
+&nbsp;<span class="Archivo">.dgn</span> dosyasını oluşturan elemanlara uygulanan ölçek. Varsayılan değeri 1'dir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yaydaki Noktalar</span>:
+Dairesel elemanların çoklu doğrularla simüle edildiği nokta sayısı.
+Bu sayı ne kadar yüksek olursa, &nbsp;<span class="Archivo">.dgn</span> dosyasındaki
+dairesel elemanlar, dönüşümde oluşturulan çoklu doğrulara o kadar çok benzeyecektir.
+Varsayılan değeri 50'dir.</li>
+      </ul>
+      <ul>
+        <li>Eğer bu bir &nbsp;<span class="Archivo">.dgn</span>
+sürüm 8 ise, hücreler (CELL / SHARED CELL elemanları) burada
+kullanıcı tarafından belirtilen tipte <a href="EDM_entidades_basicas.html#lineas">çizgilere</a> ve <a href="EDM_entidades_basicas.html#textos">yazılara</a> patlatılacaktır. Eğer <span style="font-weight: bold; font-style: italic;">Çizgilerin rengini
+koru</span> seçeneği etkinleştirilirse, o zaman hücreleri patlatmaktan gelen bu çizgiler
+özel renge sahip olur ve onlara orijinaline benzer bir renk atanır.<br />
+
+        </li>
+      </ul>
+      <img style="width: 256px; height: 188px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_selec_archivos.png" align="right" />İçe
+aktarma <a href="#opciones">seçenekleri</a> ayarlandıktan sonra,
+içe aktarılmak istenen &nbsp;<span class="Archivo">.dgn</span>
+dosyalarını seçmeye hazırsınız demektir. Bunun için <span style="font-weight: bold;">[DGN YÜKLE]</span> düğmesine basılır ve ardından
+içe aktarılmak istenen &nbsp;<span class="Archivo">.dgn</span> dosyalarını seçmeyi sağlayan bir dosya seçici belirir (aynı anda
+birden fazla dosya seçmek mümkündür).<br />
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="rel_conversion">DGN – EDM Dönüşüm
+İlişkilerinin Tanımlanması</a></span> <br />
+      <br />
+Dosyaların dönüşüm süreci bittiğinde,
+yani çizim ekranda göründüğünde, geriye kalan tek adım,
+içe aktarma sonrası oluşturulan yeni objeleri kişiselleştirmektir.
+Bu, her objeyi (çizgiler, semboller ve yazılar) manuel olarak değiştirerek veya önceden oluşturulmuş bir sözlük aracılığıyla otomatik olarak yapılabilir.<br />
+      <br />
+İçe aktarma menüsü aktifken, program fare imlecinin üzerinde bulunduğu çizgiyle aynı seviyedeki tüm
+çizgileri vurgular.<br />
+      <br />
+
+      <img style="width: 94px; height: 96px; margin-right: 7px;" alt="" src="Imagenes/imp_dgn_modos.png" align="left" />Çizgileri, metinleri ve sembolleri manuel olarak dönüştürmek için iki
+seçenek vardır: sırasıyla çizgiler,
+semboller ve metin dosyalarında bulunan tüm eleman
+kombinasyonlarını gösteren bir <span style="font-weight: bold;">temel seçim</span> diyaloğu aracılığıyla veya karmaşık eleman
+kombinasyonlarıyla dönüşümler yapmayı sağlayan bir
+      <span style="font-weight: bold;">gelişmiş seçim</span> diyaloğu aracılığıyla.<br />
+      <br />
+Temel seçim diyaloğu aracılığıyla çizgileri manuel olarak dönüştürmek için <span style="font-weight: bold;">[ÇİZGİLER]</span> düğmesine basılır, ardından aşağıda gösterilen gibi bir
+yüzer menü belirir:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 589px; height: 205px;" alt="" src="Imagenes/imp_dgn_lineas.png" /><br />
+      </div>
+      <br />Her veri satırı bir <span style="font-weight: bold;">DGN kombinasyonuna</span> (seviye, renk, stil, kalınlık, dolgu gibi <span style="font-weight: bold;">DGN özellikleri</span>'nden oluşur) ve buna karşılık gelen EDM hedefine (tip ve model) karşılık gelir. Son bir sütun, her kombinasyonda bulunan DGN nesnelerinin sayısını gösterir. Varsayılan olarak, her DGN kombinasyonuna EDM tipi olarak seviye ve EDM modeli olarak renk atanır.<br />
+      <br />
+<span style="font-weight: bold;">Seviye</span> sütunu, &nbsp;<span class="Archivo">.dgn</span>'de mevcut her seviyenin <span style="font-weight: bold;">seviye adını</span> ve numarasını gösterir.
+Eğer ad uzunluğu nedeniyle eksik gösteriliyorsa, tam adı içeren bir ipucu görünmesi için fare imlecini üzerinde bekletmek yeterlidir. <br />
+      <br />
+Bir satıra tıklandığında, DGN kombinasyonu (<span style="font-weight: bold;">seviye</span>, <span style="font-weight: bold;">renk</span>, <span style="font-weight: bold;">stil</span>, <span style="font-weight: bold;">kalınlık</span> ve <span style="font-weight: bold;">dolgu</span>)
+dosyada bulunanlar arasından seçili olarak görünür. Eğer
+birden fazla satıra tıklanırsa, tüm DGN kombinasyonları
+diyalogda seçili olarak görünecektir. Ayrıca her DGN kombinasyonunun (seviye, renk, stil, genişlik ve
+dolgu) solundaki kutucuğu işaretleyerek de satırlar seçilebilir. Diğer seçim seçenekleri şunlardır:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 140px;">[Tümü] / [Hiçbiri]</td>
+            <td style="vertical-align: top; width: 532px; text-align: justify;">Tüm çizgi kombinasyonlarını seçer/seçimini kaldırır.</td>
+
+          </tr>
+          <tr><td style="vertical-align: top; width: 140px;"><span style="font-weight: bold;">[Ters Çevir]</span><br /></td><td style="vertical-align: top; width: 532px; text-align: justify;">Mevcut seçimi tersine çevirir.<br /></td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold; width: 140px;">[Çevrilmemiş]</td>
+            <td style="vertical-align: top; width: 532px; text-align: justify;">Çevrilmemiş tüm çizgileri, yani tipleri 0 olarak kalanları seçer.</td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 140px;"><span style="font-weight: bold; font-style: italic;">Seçilenleri Vurgula</span><br />
+            </td>
+            <td style="vertical-align: top; width: 532px; text-align: justify;">Seçilen kombinasyonlar çizimde vurgulanır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 140px;"><span style="font-weight: bold; font-style: italic;">Değiştirirken Çiz</span><br />
+            </td>
+            <td style="vertical-align: top; width: 532px; text-align: justify;">Eğer
+kutucuk etkinleştirilirse, farklı
+DGN kombinasyonlarına tipler atandıkça çizim yenilenir. Eğer içe
+aktarılacak çizim büyük boyutluysa, bu seçeneğin
+devre dışı bırakılması tavsiye edilir.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> çizgi tiplerini ve modellerini bu iletişim kutusu aracılığıyla dosya dönüşümü sırasında oluşturulan çizgilere atamak için iki olası yol vardır:<br />
+      <ol>
+        <li><img style="width: 80px; height: 82px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_asignar_tipo.png" align="right" />Menünün sol tarafında bir DGN kombinasyonuna (<span style="font-weight: bold;">seviye</span>, <span style="font-weight: bold;">renk</span>, <span style="font-weight: bold;">stil</span>, <span style="font-weight: bold;">kalınlık</span> ve <span style="font-weight: bold;">dolgu</span>) istenen ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> çizgi tipi ve modelini atayarak.</li>
+      </ol>
+      <ol start="2">
+        <li>Menünün sol tarafında birden fazla çizgi kombinasyonu seçerek ve onlara menünün sağ tarafında ortak bir değer (<span style="font-weight: bold;">tip</span> ve/veya <span style="font-weight: bold;">model</span>) atayarak:</li>
+      </ol>
+
+      
+      <div style="text-align: center;"><img style="width: 638px; height: 222px;" alt="" src="Imagenes/imp_dgn_selec_multiple.png" /><br />
+      </div>
+
+      <br />
+      <span class="Parrafo">Her durumda, eğer belirlenen ilişkilerden memnun değilseniz, <span style="font-weight: bold;">[İptal]</span> düğmesine basarak önceki dönüşüm verilerini geri alabilirsiniz.<br />
+      <br /></span><span class="Parrafo">
+Dönüşüm ilişkileri belirlendikten sonra</span><span class="Parrafo"> <span style="font-weight: bold;">[Tamam]</span> düğmesine tıklanır
+ve değişiklikler kaydedilirken iletişim kutusu kapanır.
+Diyalogdan çıkmak istemiyorsanız, <span style="font-weight: bold;">[Uygula]</span> düğmesine basarak yapılan değişikliklerin kaybolma riski kalmaz ve diyalog gösterilmeye devam eder.<br />
+      <br />
+      </span><img style="width: 100px; height: 109px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_tipo_modelo.png" align="right" /><span class="Parrafo"><span style="font-weight: bold;">tip</span> ve <span style="font-weight: bold;">model</span> alanlarının altındaki açılır menüler, <span style="font-weight: bold;">seviye</span>, <span style="font-weight: bold;">renk</span>, <span style="font-weight: bold;">stil</span>, <span style="font-weight: bold;">kalınlık</span> ve <span style="font-weight: bold;">0</span> seçenekleriyle, seçilen elemanlara otomatik olarak dönüşüm değerleri atamayı sağlar.<br />
+      <br />
+      </span><img style="width: 135px; height: 51px; margin-right: 7px;" alt="" src="Imagenes/imp_dgn_botones_cambiar.png" align="left" /><span class="Parrafo">Her
+seviyenin sağında görünen düğmeler, eğer varsa, aynı seviyeye sahip objeler için bu diyalog ile etiket ve
+sembol temel seçim diyalogları arasında geçiş yapmak için kullanılır.
+Hem <span style="font-weight: bold;">[Yazılar]</span> sekmesinde hem de <span style="font-weight: bold;">[Semboller]</span> sekmesinde benzer düğmeler bulunur.<br />
+      <br />
+Daha karmaşık eleman kombinasyonlarından bir dönüşüm gerçekleştirmek için, <span style="font-weight: bold;">[ÇİZGİLER GELİŞMİŞ]</span> düğmesine veya metinler ve semboller için benzerlerine basılarak erişilebilen başka bir yüzer menü bulunmaktadır:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 406px; height: 234px;" alt="" src="Imagenes/imp_dgn_selec_avanzada.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Bu durumda diyaloğun işlevselliği şöyledir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Bir çizgiye tıklandığında, DGN kombinasyonu (<span style="font-weight: bold;">seviye</span>, <span style="font-weight: bold;">renk</span>, <span style="font-weight: bold;">stil</span>, <span style="font-weight: bold;">kalınlık</span> ve <span style="font-weight: bold;">dolgu</span>) menünün sol tarafındaki açılır menülerde görünür.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Çizgi düğmesiyle veya
+açılır menülerle, dönüştürülmek istenen DGN kombinasyonu (seviye,
+renk, stil, genişlik ve dolgu) seçilir ve sağ tarafa
+dönüşüm için </span>ISTRAM<sup>®</sup>/ISPOL<sup>®</sup><span class="Parrafo"> çizgi ve model değeri girilir.</span><span class="Parrafo"><span class="Parrafo"> Örneğin, 623 seviyesinden elde edilen tüm çizgileri </span>ISTRAM<sup>®</sup>/ISPOL<sup>®</sup><span class="Parrafo">'ün L38 çizgi tipine dönüştürmek isteniyorsa,
+seçilmesi gereken kombinasyon aşağıdaki iletişim kutusunda gösterilen olacaktır. Burada sağ tarafa
+38 tipi girilmiştir, bu nedenle 623 seviyesinden (<span style="font-style: italic;">Su çeşitli şeyler</span> adıyla) elde edilen tüm çizgiler bu tipe sahip olacaktır.<br />
+</span></span></li>
+      </ul></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 379px; height: 218px;" alt="" src="Imagenes/imp_dgn_ejem_selec_avanzada.png" /></span><br />
+      </div>
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><br /></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Dönüşüm tamamlandığında, <span style="font-weight: bold;">[Tamam]</span> düğmesine basılarak değişiklikler uygulanır. Temel seçim menüsünde olduğu gibi, yapılan dönüşümlerden memnun değilseniz, <span style="font-weight: bold;">[İptal]</span> düğmesine basarak önceki
+dönüşüm verilerini geri alabilirsiniz.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Sembollerin ve metinlerin dönüştürülmesi için izlenecek süreç,
+çizgiler için kullanılanla aynıdır, ancak bu durumlarda düğmeler <span style="font-weight: bold;">[METİNLER]</span>, <span style="font-weight: bold;">[METİNLER GELİŞMİŞ]</span>, <span style="font-weight: bold;">[SEMBOLLER]</span> ve <span style="font-weight: bold;">[SEMBOLLER GELİŞMİŞ]</span>'dir </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ve semboller durumunda, ek bir kutucuk DGN hücrelerini patlatma seçeneği sunar </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">(bu özellik sadece &nbsp;<span class="Archivo">.dgn</span> sürüm 8 dosyaları için mevcuttur).</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="diccionarios">Sözlükler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir sözlük, temel olarak her DGN kombinasyonunun ve buna karşılık gelen EDM dönüşümünün sütunlu bilgilerini saklayan &nbsp;<span class="Archivo">.cod</span>
+uzantılı bir ASCII dosyasıdır, bu da içe aktarma sürecini otomatikleştirmeyi sağlar.<br />
+      <br />
+Bir ASCII dosyası olduğu için, dosyanın sözdizimine titizlikle uyulduğu sürece herhangi bir metin düzenleyiciyle manuel olarak oluşturmak ve düzenlemek mümkündür. Aslında, programın kendisinden oluşturulan sözlükler, dosyanın başlığına her bir sütunun açıklayıcı bir şekilde bir dizi yorum ekler. <span style="font-weight: bold;">[SÖZLÜĞÜ DÜZENLE]</span> düğmesi,
+sözlükleri not defteri ile açmaya yarar.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Her durumda, bir dönüşüm sözlüğü oluşturmanın en hızlı yolu, içe aktarma kutusunda farklı DGN kombinasyonlarının EDM atamaları belirlendikten sonra programın kendisinden yapmaktır. Bunun için, <span style="font-weight: bold;">[SÖZLÜĞÜ KAYDET]</span> düğmesine basmak yeterlidir, ardından kaydedilecek sözlük sürümünü seçmeniz gereken bir iletişim kutusu belirir:</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 428px; height: 116px;" alt="" src="Imagenes/imp_dgn_version_dicc.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sunulan olanaklar şunlardır:<br />
+      </span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Sürüm 1</span>: DGN'nin seviye numarası, renk indeksi, stil, çizgi kalınlığı, dolgu tipi (eğer bir çizgi ise), yazı tipi (eğer bir metin ise) veya hücresi ve EDM'deki karşılığı kaydedilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sürüm 2</span>: Sürüm 1'e benzer, ancak seviye adını da ekler.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sürüm 3</span>: Sürüm 2'ye benzer, ancak DGN hücreleri içe aktarma sırasında patlatılır, böylece görüntülenebilirler (sadece DGN sürüm 8 için geçerlidir).<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ardından,
+sözlükte bulunan ancak kutuda bulunmayan kombinasyonların dönüşüm kutusuna eklenip eklenmeyeceği sorulur
+ve son olarak, dönüşüm sözlüğünün saklanacağı &nbsp;<span class="Archivo">.cod</span>
+uzantılı dosyanın adının girilmesi gereken bir dosya seçici belirir.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo" /></span><img style="width: 181px; height: 192px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_cargar_dicc.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sözlük
+dosyası elde edildikten sonra, gelecekteki içe aktarmalarda kullanımı
+dönüşüm sürecini büyük ölçüde otomatikleştirir. Yüklemek için</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">[SÖZLÜĞÜ YÜKLE]</span>
+düğmesine basılır ve yüklenmek istenen sözlüğün adı seçilir.
+Düğmeye basıldıktan sonra, sözlükte bulunan tüm kombinasyonların mı yükleneceği yoksa her
+DGN kombinasyonunun yalnızca belirli özelliklerinin mi dikkate alınacağı belirtilmesi gereken bir iletişim kutusu gösterilir.
+Örneğin, seçici yükleme belirtilir ve <span style="font-style: italic;">Seviye (numara)</span> ile <span style="font-style: italic;">Renk</span>
+işaretlenirse, program sözlükte belirtilen aynı EDM hedefini, bu
+özellikleri ortak olan kutudaki tüm DGN kombinasyonlarına atayacaktır.<br />
+<br />
+      <span style="font-weight: bold;">[GİRİŞ&lt;-&gt;ÇIKIŞ]</span> düğmesi, hem DGN içe aktarma hem de
+dışa aktarma için geçerli bir seçeneğe karşılık gelir. Bu düğmeye basıldığında,
+bir dosya seçici aracılığıyla mevcut bir sözlüğü seçmeniz istenir ve
+ardından aşağıdaki bilgilerin kaydedileceği ikinci bir dosya seçmeniz istenir:<br /></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer seçilen ilk sözlük EDM'den DGN'ye dönüşüm içinse, o zaman ikinci sözlükte ters yöndeki eşdeğer dönüşüm verileri, yani DGN'den EDM'ye saklanacaktır.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer seçilen ilk sözlük DGN'den EDM'ye dönüşüm içinse, o zaman ikinci sözlükte ters yöndeki eşdeğer dönüşüm verileri, yani EDM'den DGN'ye saklanacaktır.</span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold; font-style: italic;">Eski sözlükleri içe aktarma</span><br />
+<br />
+</span></span><span class="Parrafo"><span class="Parrafo">Açıklanandan
+farklı bir formata sahip ve programın eski sürümlerine karşılık gelen
+başka bir dönüşüm sözlüğünden sözlük elde etmek mümkündür.
+Bunun için <span style="font-weight: bold;">[SÖZLÜĞÜ DÖNÜŞTÜR]</span> seçeneği kullanılır, ardından dosya seçici aracılığıyla
+dönüştürülmek istenen dosya ve hedef dosya sırasıyla seçilmelidir.<br />
+</span></span><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2" /></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

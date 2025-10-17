@@ -1,0 +1,980 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Topografik Karne</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TOPOGRAFİK KARNE<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br /></span>
+Bu araç, arazi takeometrik karnelerinden gelen dosyaları yüklemek için yardımcı programlar içeren bir veri menüsünü ekranda görüntüler. Bu dosyalar aplikasyon için nirengi noktaları, karne tarafından zaten hesaplanmış noktalar veya kutupsal alım ve bir topografik/jeodezik poligon güzergahı hesaplamak için yatay açı, düşey açı ve mesafe ölçümlerini içerebilir. Sistem sadece düz dürbün (I. dürbün durumu) ölçümlerini veya hem düz hem de ters dürbün (I. ve II. dürbün durumu) ölçümlerini kabul eder. Hesaplama sırasında, nirengi noktaları ve diğer noktalar, hata tespitine yardımcı olmak için harita üzerinde veya harita olmadan konumlarında ekranda görülebilir.<br />
+
+      
+      <ul>
+
+        <li><a href="#general">Genel</a></li>
+        <li><a href="#ficheros">Dosyalar</a></li>
+        <li><a href="#ver">Görünüm</a></li>
+        <li><a href="#buscar">Bul</a></li>
+        <li><a href="#calcular">Hesapla</a></li>
+        <li><a href="#itinerarios">Güzergahlar</a></li>
+        <li><a href="#salidas">Çıktılar</a></li>
+        <li><a href="#calculo">Topografik karne ile bir poligon güzergahı hesaplama</a></li>
+        <li><a href="#red">Topografik karne ile bir poligon ağı hesaplama</a><br />
+        </li>
+
+
+      
+      </ul>
+
+      <a name="general"><span class="Titulo_2">Genel</span><br />
+
+      <br />
+
+       
+      
+      </a><div style="text-align: center;"><img style="width: 512px; height: 258px;" alt="" src="Imagenes/edm_libreta_general.png" /><br />
+
+
+      </div>
+
+      <br />
+
+
+C1, C2, C3 kutucukları aracılığıyla işin tanımına yönelik farklı gözlemler yazabiliriz ve bunlar sonuç listelerinde yansıtılacaktır. Herhangi bir metin yazılmaması durumunda ISTRAM/ISPOL bu alanları sırasıyla "PROJE", "İŞ" ve "GÜZERGAH" ile dolduracaktır.<br />
+
+
+      <br />
+
+
+EKSEN kutucuğu aracılığıyla eksen numarasını belirtiriz; eğer kutupsal alım enkesitleri temsil ediyorsa, hangi eksene ait olduklarını bilmek için.<br />
+
+
+      <br />
+
+
+Tip: <br />
+
+
+
+      <ul>
+        <li>Eğik Mesafe içeren veri dosyası</li>
+        <li>Yatay Mesafe içeren veri dosyası</li>
+      </ul>
+      
+      Kullanıcı, giriş verilerinin eğik mesafeyi mi yoksa yatay mesafeyi mi içerdiğini seçebilir.<br />
+
+
+      <br />
+
+
+Sistem, kendi formatını ve farklı karnelerden ve programlardan gelen bazı diğer formatları tanır:<br />
+
+
+      
+      
+      <ul>
+
+        <li>ISPOL</li>
+        <li>PSION. (OBD) (2 farklı format)</li>
+        <li>WILD/LEICA-GRExx-GIF-10 (müşteriler için özelleştirilmiş 5 farklı format)</li>
+        <li>SOKKISHA. /</li>
+        <li>ZAS</li>
+        <li>DYC-PSI</li>
+        <li>SDR-set3000</li>
+        <li>SDR5</li>
+        <li>SDR20</li>
+        <li>GEODIMETER. JOB ve AREA tipi dosyalar</li>
+        <li>GOPLAN.</li>
+        <li>TOPTC</li>
+        <li>TAQUIMETRICO</li>
+        <li>OBS</li>
+        <li>LEA</li>
+        <li>TOPCON Karneleri GTS-600, GTS-700, GTS-800, GPT-7000</li>
+        <li>GSI</li>
+        <li>Trimble</li>
+        <li>Promapa (Portekiz)</li>
+        <li>Aşağıdaki formatta başlıksız, sütunlu dosyalar:</li>
+      
+      </ul>
+
+      
+      <div style="margin-left: 40px;">İstasyon&nbsp;&nbsp; Gözlenen Nokta&nbsp;&nbsp;&nbsp; Yatay Açı&nbsp;&nbsp;&nbsp; Düşey Açı&nbsp;&nbsp;&nbsp; Eğik Mesafe&nbsp;&nbsp;&nbsp; Reflektör Yüksekliği&nbsp;&nbsp;&nbsp; Alet Yüksekliği<br />
+
+      </div>
+
+      <br />
+
+
+      Giriş dosyaları, formatlarından bağımsız olarak .ltp uzantısına sahip olmalıdır.<br />
+
+
+      
+      
+      <ul>
+
+        <li>AZSAGRE.ltp (Asturiana de Zinc tarafından Gre3 için kullanılan karne)</li>
+        <li>COPGRE.ltp (Asturias Prensliği Bayındırlık Bakanlığı formatı)</li>
+        <li>DYC.ltp (Dragados y Construcciones'da kullanılan format)</li>
+        <li>FCC01.ltp (FCC GEOPLAN formatı)</li>
+        <li>FCCGRE01.ltp (FCC formatı)</li>
+        <li>ISPOL.ltp (Kendi formatı)</li>
+        <li>MSPQ2.ltp (Madencilikte kullanılan format)</li>
+        <li>NECSOGRE.ltp (NECSO tarafından Gre3 için kullanılan karne)</li>
+        <li>TECNIGRE.ltp (Tecnia formatı)</li>
+        <li>ZAS1.ltp</li>
+      
+      </ul>
+
+GSI karne formatı:<br />
+
+
+      <br />
+
+
+Orijinal dosya, Leica programları aracılığıyla .lea formatına dönüştürülen bir .gsi dosyasıdır. Bu aşamada uzantısı .ltp olarak yeniden adlandırılır ve artık Istram'dan yüklenebilir.<br />
+
+
+      <br />
+
+
+Kabul edilen formatın bir örneği aşağıdadır:<br />
+
+
+      <br />
+
+
+
+      
+      <div style="text-align: center;"><img src="Imagenes/edm_libreta_gsi.png" style="width: 627px; height: 116px;" alt="" /><br />
+
+      </div>
+
+      
+      <br />
+
+
+Bu format türünde, *11 ile başlayan satır istasyon kurulumudur: devamında 87 reflektör yüksekliği ve 88 alet yüksekliği gelir.<br />
+
+
+      <br />
+
+
+Geri kalanı *41 ve *11 satır çiftleridir: ilki gözlenen noktanın kodunu verir ve *11 ölçümü verir; eğer kod BR ise ölçüm yöneltme içindir ve dürbün durumu değiştirilerek ve birden fazla farklı nirengiye tekrarlar olabilir. Diğer gözlemler kutupsal alım noktalarıdır.<br />
+
+
+      <br />
+
+
+Bir istasyondan yapılan ölçümlerin sonunda, aletin hareket etmediğini kontrol etmek için nirengilere yeni gözlemler olabilir.<br />
+
+
+      <br />
+
+
+Eğer önünde *41 olmadan bir *11 bulunursa, bu bir istasyon değişikliğidir ve yeni bir döngü başlar.<br />
+
+
+      <br />
+
+
+Trimble karne formatı (total station Trimble 5603dr standard):<br />
+
+
+      <br />
+
+
+.dc uzantılıdır ve .ltp uzantısına yeniden adlandırılması gerekecektir. .dc formatının bir örneği aşağıdadır:<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/edm_libreta_trimble.png" style="width: 656px; height: 318px;" alt="" /><br />
+
+      </div>
+
+      <br />
+<img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolbarEstandar_nuevo.png" /> kutucuğu aracılığıyla veriler sıfırlanır.<br />
+      <br />
+
+
+      <a name="ficheros"><span class="Titulo_2">Dosyalar</span><br />
+
+      <br />
+
+Topografik karne ekran menüsü sekmelerle ve üç bölgeye ayrılmıştır. Üstte işin başlık ve tanım verileri ile en önemli işlem tuşları bulunur. Altında ise iki tane daha: biri nirengiler için, üzerinde işlem yapılmadığında gizlenir ve diğeri ölçümler ve hesaplama sonuçları için. Menünün üst kısmı, her an seçili olan sekmeye göre değişir.<br />
+
+      <br />
+
+      
+      
+      </a><div style="text-align: center;"><img style="width: 512px; height: 258px;" alt="" src="Imagenes/edm_libreta_ficheros.png" /><br />
+
+      
+
+      </div>
+
+      <br />
+
+
+<span style="font-weight: bold;">S.T.</span>, <span style="font-weight: bold;">İST</span>, <span style="font-weight: bold;">NOKTA</span> kutucuklarına tıklayarak karnemizde bulunan belirli bir veriyi bulabiliriz.<br />
+
+
+      <br />
+
+
+Nirengi tablosu, her nirengi için bir satırdan oluşur ve şunları içerir:<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img style="width: 352px; height: 105px;" alt="" src="Imagenes/edm_libreta_base.png" /><br />
+
+
+      </div>
+
+      <br />
+
+
+Nirengi Tipi <span style="font-weight: bold;">N.T.</span> Aşağıdaki anlamlara gelen tek bir karakter belirteceğiz:<br />
+
+
+      
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">N</span>: Koordinatları belirli bir nirengidir.</li>
+        <li><span style="font-weight: bold;">H</span>: Hesaplanan nokta, koordinatları işlem sırasında hesaplanır veya güncellenir.</li>
+        <li><span style="font-weight: bold;">K</span>: Kilitli nirengi, nirengi dosyasından çıkarmak istemediğimiz; ancak hesaplama sırasında kullanılmayan ve güncellenmeyen nirengi.</li>
+        
+        <li><span style="font-weight: bold;">İ</span>: İstasyon, koordinatları işlem sırasında hesaplanır veya güncellenir.</li>
+        <li><span style="font-weight: bold;">G</span>: Geriden kestirme ile hesaplanacak nirengi.</li>
+
+
+      
+      </ul>
+      
+
+      <span style="font-weight: bold;">      Nirengi</span>: nirenginin adı. Harf ve rakamları birleştiren, en fazla 8 karakterli bir kelime (boşluksuz).<br />
+
+
+      <br />
+      <span style="font-weight: bold;">
+
+      X Y Z</span>: Nirenginin üç koordinatı, metre cinsinden.<br />
+
+
+      <br />
+      <span style="font-weight: bold;">
+
+      KOD</span>: Tanımlama veya sınıflandırma için en fazla 4 karakterli bir kod.<br />
+
+
+      <br />
+      <span style="font-weight: bold;">
+
+      AÇIKLAMA</span>: Gözlemler, en fazla 15 karakterli bir cümle.<br />
+
+
+      <br />
+
+
+      .bas ve .ltp dosyalarını <span style="font-weight: bold;">Dosyalar</span>-&gt;<span style="font-weight: bold;">Ağlar</span>&nbsp;<img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" /> sekmesinden yüklediğimizde, bir istasyonun koordinatlarını geriden kestirme ile hesaplamak ve ardından oradan kutupsal alım yapmak için <a href="EDM_libreta_topografica.html#itinerarios">Güzergahlar</a> sekmesine erişim imkanı aktif hale gelir.<br />
+
+
+
+İstasyon ölçümü "<span style="font-weight: bold;">N</span>" olarak kodlanmalı ve yaklaşık koordinatlara sahip olmalıdır. (Nirengiler arasında yer almamalıdır).<br />
+
+
+
+Bilinen nirengilere yapılan ölçümler "<span style="font-weight: bold;">O</span>" olarak kodlanmalıdır, en az iki tane gereklidir.<br />
+
+
+      <br />
+
+
+      <img style="width: 210px; height: 51px;" alt="" src="Imagenes/edm_ficheros_redes_lea.png" align="right" hspace="6" />&nbsp;<span class="Archivo">.ltp</span> veya&nbsp;<span class="Archivo">.lea</span> uzantılı ölçüm dosyalarını yüklemeye izin verilir ve bu dosyalarda boş satırlara izin verilir.<br />
+
+
+Nirengi dosyası ile istasyon ve gözlenen nokta adları arasında hiçbir eşleşme bulunmazsa, bir uyarı mesajı görüntülenir.<br />
+
+      <br />
+
+<span style="font-weight: bold;">Ortalama Al</span> kutucuğu etkinleştirildiğinde, bir nirengi ile aynı nokta arasındaki çoklu ölçümlerin ortalaması alınır. Ortalama alınırken herhangi bir değer izin verilen maksimum hata sınırlarını aşarsa, ortalama hesaplamasının tam bir raporu gösterilir. Ağı bu şekilde hesaplarken, hesaplamalar çok daha hızlıdır, ancak ağ dengeleme sürecini iptal etmeye olanak tanıyan bir ilerleme çubuğu eklenir.<br />
+
+
+      <br />
+
+
+      <a name="ver"><span class="Titulo_2">Görünüm</span><br />
+
+      <br />
+
+Nirengi listesini görüntüleyebilmek için <span style="font-weight: bold;">Görünüm</span> sekmesindeki Nirengiler kutucuğunun işaretli olması gerekir.<br />
+
+      <br />
+
+      
+      </a><div style="text-align: center;"><img style="width: 512px; height: 363px;" alt="" src="Imagenes/edm_libreta_ver.png" /><br />
+
+
+      </div>
+      <br />
+
+
+      <img style="width: 195px; height: 51px;" alt="" src="Imagenes/edm_libreta_bases_operar.png" align="left" hspace="6" /><a href="EDM_libreta_topografica.html#ficheros">Dosyalar</a> sekmesinden nirengilerle işlem yapabiliriz.<br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <br />
+
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Ekle</span>: Yeni bir nirengi ile elle doldurmak için listenin sonuna yeni bir satır ekler.</li>
+        <li><span style="font-weight: bold;">Araya Ekle</span>: Tabloda görünen ilk satırın önüne bir satır ekler.</li>
+        <li><span style="font-weight: bold;">Sil</span>: Tablonun ilk satırındaki nirengiyi siler.</li>
+        <li><span style="font-weight: bold;">Yükle</span> <img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />: Şu anda yüklü olan nirengileri siler ve üzerinde çalışmak için mevcut .bas uzantılı nirengi dosyalarından birini yükler.</li>
+        <li><span style="font-weight: bold;">Kaydet</span> <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" />: Şu anda yüklü olan nirengileri .bas uzantılı bir dosyaya yazar. Eğer hesaplamadan sonra tabloya S (İstasyon) tipi nirengiler eklendiyse, kaydederken bunları N (Nirengi) tipine dönüştürüp dönüştürmeyeceğini veya S olarak mı kaydedeceğini sorar.</li>
+        <li><span style="font-weight: bold;">Dosya Ekle</span>: Şu anda yüklü olan nirengileri, seçilen bir .bas dosyasındaki nirengilerle birleştirir.</li>
+        <li><span style="font-weight: bold;">Kontrol Et</span>: "Nirengileri Kontrol Et", istasyonlar ve yöneltmeler için bildirilen nirengi adlarını, nirengi tablosundakilerle karşılaştırır ve bildirilmemiş bir tane varsa bir mesaj verir. Hesaplanan noktalar da, eğer henüz hiç hesaplanmamışlarsa ve dolayısıyla nirengi tablosuna geçmemişlerse, görünecektir.</li>
+      </ul>
+      <img style="width: 135px; height: 51px;" alt="" src="Imagenes/edm_libreta_ltp.png" align="left" hspace="6" />Nirengi tablosu için bu işlevlere eşdeğer olanları, ölçüm ve hesaplama tablosunun yönetimi için de sahibiz. Aşağıdaki seçenekler daha önce açıklananlara benzer.<br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <img style="width: 144px; height: 24px;" alt="" src="Imagenes/edm_libreta_teclas_activas.png" align="middle" hspace="8" />Ölçümler için dört aktif tuşumuz var.<br />
+
+
+      
+      <ul>
+        <li>S.T.: Veri Satırı Tipi. Veri satırlarını, aynı sütunda bildirilen Tipe göre bulmayı sağlar. Tipler şunlardır:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li><span style="font-weight: bold;">N</span>: Nirengi, koordinatları nirengi tablosunda yer alacak bir nirengide istasyon kurulur. Veri olarak adını içerir: boşluksuz, en fazla 8 karakterli bir kelime. X, Y ve Z koordinatları nirengi tablosunun ilgili satırından atanacaktır.</li>
+          <li><span style="font-weight: bold;">İ</span>:&nbsp;İstasyon, bir nirengiye eşdeğerdir, ancak koordinatlarını burada taşır, nirengi dosyasından okunmaz.</li>
+          <li><span style="font-weight: bold;">Y</span>: Alet yüksekliği ve reflektör veya prizma yüksekliği. İki veriyi (m cinsinden) takip eder. Yeni bir değişikliğe kadar hesaplamalarda uygulanacaktır.</li>
+          <li><span style="font-weight: bold;">O</span>: Yöneltme, yöneltme için başka bir istasyonun adını ve o ölçümün yatay açı, düşey açı ve eğik mesafe ölçümlerini içerir. Sadece yatay açı ölçümü kullanılacaktır ve zorunludur. Yatay açı ölçümü 0.0 olabilir. Eğer istasyonu Kuzey'e 0.0 ile yönelterek kurarsak, böylece yatay açı ölçümleri mutlak olur, bir N veya İ'den sonra ve kutupsal alım noktalarını vermeye başlamadan önce bu O ölçümünü dahil etmeye gerek yoktur.</li>
+          <li><span style="font-weight: bold;">A</span>:&nbsp;Açısal sapma: aletin bilinen yöneltme yatay açısı. Bilinen nirengiye yapılan O ölçüm satırının yerini alır. Sadece yatay açıyı içerir.</li>
+          <li><span style="font-weight: bold;">R</span>:&nbsp;Reflektör yüksekliği. Aleti değiştirmeden reflektör veya prizma yüksekliğinin değiştirilmesi. Yeni bir değişikliğe kadar bu yükseklik hesaplamalarda uygulanacaktır.</li>
+          <li><span style="font-weight: bold;">T</span>:&nbsp;Sadece bir sonraki ölçüm için reflektör yüksekliği. Sonrasında önceki yüksekliğe geri dönülür.</li>
+          <li><span style="font-weight: bold;">C</span>: Bir poligonun kapanış ölçümünü belirtir; eğer bu açısal kapanma ile gözlemlenmişse, referans nirengisine yapılan açısal ölçümü not ederiz.</li>
+          <li><span style="font-weight: bold;">(boş)</span>: Bu pozisyonda hiçbir şey veya boş karakter, bir noktaya yapılan ölçümü bildirir. Veri olarak noktanın adını (boşluksuz 8 karakter) ve yatay açı, düşey açı ve eğik mesafe ölçümlerini içerir.</li>
+          <li><span style="font-weight: bold;">H</span>: Hesaplanan nokta, veriler önceki kutupsal alım noktası durumuyla aynıdır ve aynı şekilde hesaplanır, ancak hesaplayıcı üzerinden geçtiğinde, sonuç koordinatları nirengi tablosuna eklenir veya değiştirilir ve bunları kullanan istasyon veya yöneltme noktalarına da atanır (sonraki satırlarda). Eğer nirengi tablosunda aynı adda bir N (Nirengi) olsaydı, koordinatları değiştirilmez ve bir uyarı mesajı oluşturulurdu.</li>
+          <li><span style="font-weight: bold;">E</span>:&nbsp;Yeni enkesit. Takip eden noktalar, Km'si veya kilometre noktası bir sonraki alanda verilen bir enkesite aittir. Yeni bir E komutu herhangi bir zamanda enkesiti değiştirir.</li>
+          <li><span style="font-weight: bold;">L</span>: Yeni çizgi (poliline). Çoğu arazi çalışması için, bir anlamı olan arazi çizgileri (mülkiyet sınırı, bir binanın çevresi, kazı kenarı, şev başı veya eteği vb.) boyunca bir dizi ardışık nokta almak ilginçtir. Sistem, yeni bir L veya E komutu yeni bir seriye geçene kadar noktaları sırayla zincirler. Temsil edilen çizgi tipini normalde tanımlayan, boşluksuz en fazla 4 karakterli bir kodu takip eder. Eğer kod 0 ile 999 arasında bir tamsayı ise, harita için Çizgi Tipi (L*) olarak kullanılabilir ve haritada ve .top dosyasında dışa aktarılır. Eğer kod negatif bir sayı ise, o andan itibaren komutu değiştirene kadar hesaplanan tüm noktalar, üçgen ağının hesaplanmasına katılacak ancak bir poliline oluşturmayacak olan tekil dolgu noktaları olarak oluşturulur. Eğer topografik karnenin Çiz komutunu kullanırsak, bu noktalar negatif işareti kaldırılarak kod kutucuğunda belirtilen nokta tipiyle somutlaştırılır.</li>
+          <li><span style="font-weight: bold;">V</span>:&nbsp;Bir sondajın tabanının X, Y ve Z koordinatlarının, doğrultusunun (grad) ve eğiminin (ondalık derece) hesaplanması. Veriler, V bildiriminden hemen önce verilen iki noktanın adıdır; biri sondajın ağzı, diğeri sondaja sokulan bir çubuğun ucu; üçüncü veri sondajın uzunluğudur.</li>
+          <li class="Parrafo"><span style="font-weight: bold;">G</span>: Geriden kestirme ile hesaplanacak nirengi. Ondan sonra bilinen nirengilere birkaç O ölçümü olmalıdır. Hesaplayıcı, geriden kestirmeyi hesaplamak için ilk üçünü, tekrarları varsa, kullanacaktır. Çözülen nirengi, nirengi tablosuna ve geriden kestirmeler listesine (Çıktılar sekmesi içinde) eklenir.</li>
+
+        </ul>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img style="width: 513px; height: 125px;" alt="" src="Imagenes/lib_top_inversa.png" /><br />
+
+      </div>
+<ul>
+        <li><span style="font-weight: bold;">İST</span>:&nbsp;Bu tuşla, sistem tüm veri listesinde, adını vereceğimiz bir noktadaki bir istasyonu arar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">NOKTA</span>:&nbsp;Tabloda, adlarına göre arayarak, noktalara yapılan tüm ölçümleri bulmayı sağlar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">+</span>:&nbsp;&nbsp;İçinde bulunduğumuz satırdan başlayarak, ölçüm tiplerine (S.T.), istasyona (İST) veya gözlenen noktaya (NOKTA) göre yapılan son aramayı tekrarlar.</li>
+      </ul>
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">Tüm bu satırlara, karnenin yorumlanmasına yardımcı olmak veya yorum olarak en fazla 4 karakterli bir kod ve en fazla 15 karakterli bir gözlem alanı eşlik edebilir.</p>
+
+
+Bu sekme içinde şunları ayırt edeceğiz:<br />
+
+
+      <br />
+
+
+      <div style="text-align: center;"><img style="width: 540px; height: 96px;" alt="" src="Imagenes/edm_libreta_ver_dialogo.png" /><br />
+
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Ölçümler</span> / <span style="font-weight: bold;">Koordinatlar</span>: Ölçüm tablosunun alanları, ölçüm verileri veya koordinat verileri arasında geçiş yapabilir, yani hesaplandıktan sonra kutupsal alım noktalarının X, Y ve Z koordinatlarını, yatay açı, düşey açı ve eğik mesafe ölçümleri yerine sunar. Yöneltme O satırlarında, yöneltme için nirenginin koordinatları ile yöneltme ölçümü arasında geçiş yapar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Nirengiler</span>:&nbsp;Nirengi tablosunu göstermeyi veya göstermemeyi sağlar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Harita</span>: Nirengilerin ve hesaplanan noktaların çizimi bu tuşla etkinleştirilir ve devre dışı bırakılır. Ancak ekranın yenilenmesine neden olmaz. Bu menü tarafından kaplanan ekran alanını görmek için &lt;F3&gt; fonksiyon tuşunu kullanabileceğimizi hatırlatırız. Eğer arka planda bir harita yüklü değilse, sistem çizim tarafından kaplanan alanın koordinatlarını hesaplayarak ekranı ortalar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yazı Yük.</span>: Çizim üzerinde sunulan karakterlerin yüksekliği. Noktaların boyutuna ve yoğunluğuna bağlı olarak, çizimi mümkün olduğunca net görebilmek için uygun bir tane seçmek istenir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ondalık</span>: 0 ile 4 arasında ondalık basamak sayısı. Düşey ve yatay açı ölçümleri için bir ondalık basamak daha kullanılır. <br />
+
+
+        </li>
+      </ul>
+Nirengi veri dosyaları&nbsp;<span class="Archivo">.bas</span> ve ölçüm dosyaları&nbsp;<span class="Archivo">.ltp</span>&nbsp; koordinatları dört ondalık basamakla kaydeder. <br />
+
+
+      <br />
+
+
+      <a name="buscar"><span class="Titulo_2">Bul </span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 538px; height: 94px;" alt="" src="Imagenes/edm_libreta_buscar.png" /><br />
+
+
+      </div>
+      <br />
+
+
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">Bu sekme, aşağıdaki arama kriterlerinden birini belirterek tabloda bir ölçümü aramayı sağlar:</p>
+      <p class="MsoNormal" style="text-align: left;" align="left"><img style="width: 317px; height: 200px;" alt="" src="Imagenes/edm_libreta_buscar_poligono.png" align="right" hspace="6" /><br />
+
+
+      </p>
+
+
+      <ul>
+        <li><span style="font-weight: bold;">Ölçüm Tipi</span>:&nbsp;ölçüm komutu "N", "Y", "R", "O", "H", "İ", vb.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">İstasyon Noktası</span>:&nbsp;bir konumlandırmanın yapıldığı nirengi.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ada Göre Nokta</span>:&nbsp;gözlenen bir noktanın adı.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Grafik Seçerek Nokta</span>:&nbsp;Ekran menüsünü kaldırır ve çizimdeki noktalardan birini seçmenizi ister. Tanımlandıktan sonra menüye geri döner ve söz konusu noktanın bildirildiği veya hesaplandığı veri satırını tablonun başına yerleştirir. Çizim sırasında nirengiler, hesaplanan noktalar ve ölçümler farklı renklerle, ölçüm görselleri, yöneltme görselleri veya nokta zincirleri ile sunulur.</li>
+      </ul>
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">Tablonun başındaki nokta, üzerinde bulunduğumuz verinin çizimdeki yerini belirtmek için çizimde sabit boyutlu yeşil bir poligonla işaretlenir.</p>
+
+
+      <a name="calcular"><span class="Titulo_2">Hesapla</span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 419px; height: 73px;" alt="" src="Imagenes/edm_libreta_calcular.png" /><br />
+
+
+      </div>
+      <br />
+
+
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">Yapılandırma &#8594; <a href="EDM_georreferenciacion.html">Koordinat Referans Sistemi</a> menüsünden eriştiğimiz <a href="EDM_georreferenciacion.html">U.T.M.</a> menüsünde, hesaplamalarda kullanılacak dengelemeler tanımlanır, ayrıca Yapılandır aracılığıyla da erişilebilir. Sadece UTM'de hesaplamayı seçmek için UTM kutucuğu işaretlenebilir.</p>
+
+
+      <ul>
+        <li><img style="width: 218px; height: 165px;" alt="" src="Imagenes/edm_libreta_calcular_utm.png" align="right" hspace="6" /><span style="font-weight: bold;">Poligon</span>: Poligonu hesaplama komutu verir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kutupsal Alım</span>: Kutupsal alım karnesini hesaplama komutu verir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Hesapla</span>: Poligon veya kutupsal alım hesaplamasına geçer.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">İstasyonları Ters Çevir</span>: Poligon hesaplamaları için ölçümlerdeki istasyonların sırasını tersine çevirir.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Otomatik</span>: Karnenin otomatik hesaplanmasını etkinleştirir veya devre dışı bırakır. Etkinleştirilirse, veri değişikliğini her bitirdiğimizde, "Kutupsal Alım" komutunu çalıştırmaya gerek kalmadan karne tamamen yeniden hesaplanır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Geriden Kestirme</span>: &nbsp;<span class="Parf_negrita">G</span> ile tanımlanan istasyonlar geriden kestirme ile hesaplanır. Koordinatları nirengi listesine yüklenir ve karneye yüklenir. Çıktı sekmesinde, geriden kestirmeyi listele komutuyla görülebilen bir liste oluşturulur.</li></ul>
+      <div style="margin-left: 40px;">Hesaplayıcı, triseksiyonu hesaplamak için &nbsp;<span class="Parf_negrita">G</span>'den sonraki ilk üç bilinen nirengi ölçümünü &nbsp;<span class="Parf_negrita">O</span> kullanacaktır. Tekrar varsa ortalamasını alacaktır. Poligon ve kutupsal alım hesaplaması, G geriden kestirmelerinin olup olmadığını kontrol ederek başlar ve poligonu veya kutupsal alımı elde etmeden önce bunları çözer.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 415px; height: 182px;" alt="" src="Imagenes/lib_top_cal_inv.png" /><br />
+      <br />
+      <div style="text-align: left;"><a href="EDM_libreta_topografica.html#salidas">Çıktılar</a> sekmesinde geriden kestirme listesini elde edebilirim:&nbsp;<span class="Archivo">int_inversa.res</span><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 609px; height: 346px;" alt="" src="Imagenes/lib_top_list_inv.png" /><br />
+      </div>
+      </div>
+      </div>
+      </div>
+      <ul>
+        <li>Ardından "<span style="font-weight: bold;">Kutupsal Alım</span>" komutuna tıklayabiliriz ve istasyonun koordinatları olarak önceki adımda hesaplananları kullanarak kutupsal alımı hesaplayacaktır.&nbsp; <br />
+        </li>
+
+      
+      </ul>
+
+      <img style="width: 109px; height: 47px;" alt="" src="Imagenes/edm_libreta_calcular_desviacion.png" align="left" hspace="6" />Düşey ve yatay açı ölçümlerinin ve mesafenin ortalamadan sapması için maksimum değerler tanımlanabilir. Eğer ölçümlerden herhangi biri bu değerlere uymuyorsa, hesaplama yapıldığında tüm ölçümlerin sapmalarını içeren bir liste gösterilir ve toleransı aşanlar vurgulanır.<br />
+      <br />
+      <a name="itinerarios"><span class="Titulo_2">Güzergahlar</span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 541px; height: 93px;" alt="" src="Imagenes/edm_libreta_itinerarios.png" /><br />
+
+
+      </div>
+      <br />
+
+
+      <ul>
+        <li><span style="font-weight: bold;">Başlangıç</span>: İlgili nirengiyi grafik olarak tıklayarak hesaplanacak güzergahın başlangıcının seçimi.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Bitiş</span>: İlgili nirengiyi grafik olarak tıklayarak hesaplanacak güzergahın bitişinin seçimi.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Güzergah</span>: Seçilen başlangıçtan başlayıp seçilen bitişe ulaşan poligonu oluşturmak için başlangıçtaki ölçüm setinden uygun olanları seçer. Birden fazla çözüm olması durumunda, program poligonun hesaplanması için izlenecek yolu bize soracaktır. <br />
+
+
+          </li>
+      </ul>
+      <ul>
+        <li class="Parrafo"><span style="font-weight: bold;">Hesapla</span>: "Güzergah" seçeneğine basıldıktan sonra, seçilen her bir güzergahın deneme amaçlı hesaplamaları yapılır. Program sonuç olarak poligo.res adlı bir liste sunar.</li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 450px; height: 156px;" alt="" src="Imagenes/edm_libreta_itinerarios_calculo.png" /><br />
+
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Kabul Et</span>: O güzergah için yapılan hesabın onayı, nirengiler nirengi dosyasının bir parçası haline gelir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kutupsal Alım Yap</span>: Tüm nirengilerden giriş dosyasında (<span class="Archivo">.ltp</span>) bulunan tüm noktalara kutupsal alımı hesaplar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Geriden Kestirme</span>: Kullanıcının seçtiği bir noktanın koordinatlarını en küçük kareler yöntemiyle hesaplar.</li>
+      </ul>
+      <a name="salidas"><span class="Titulo_2">Çıktılar</span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 541px; height: 93px;" alt="" src="Imagenes/edm_libreta_salidas.png" /><br />
+
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Çizime Aktar</span>: Hesaplama sırasında gördüğümüz grafik görüntüler, gerçekten haritada bulunan grafik öğeler değildir, sadece sunum için üzerine bindirilirler. Bu oturumu Fin tuşuyla terk etmek veya Ver / Harita tuşuyla çizimi devre dışı bırakmak, grafiğin ekrandan kaybolması için yeterlidir. Çiz tuşunu kullanırsak, poligon zincirlerini ve 3 boyutlu profilleri haritaya aktarırız. Hesaplanan noktalar da, Mevcut Nokta Tipi olarak seçilen nokta tipini kullanarak aktarılır. Noktaların kimlik etiketleri, şimdiye kadar görüntülediğimiz aynı boyut ve konumda metinler oluşturur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sil</span> <img style="width: 23px; height: 23px;" alt="" src="Imagenes/icono_basura.png" />: Son "Çizime Aktar" komutuyla üretilen çizimi siler.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Dışa Aktar</span>: Bu tuş, topografik karnenin dışa aktarma formatını seçmeyi sağlayan bir açılır menüye geçiş yapar. Veriler, enkesit dosyaları (<span class="Archivo">.per</span>) olarak veya hesaplanan nokta bulutu ile &nbsp;<span class="Archivo">.top</span> ve &nbsp;<span class="Archivo">.toc</span> formatlarında dosyalar olarak dışa aktarılabilir.</li>
+      </ul>
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">.per</span>: Nokta bulutundan veya enkesitlere atanan nokta serilerinden bir enkesit dosyası elde etme.</div>
+      <div style="margin-left: 40px;">
+
+      <p class="MsoNormal" style="text-align: left;" align="left"><img style="width: 89px; height: 71px;" alt="" src="Imagenes/edm_libreta_salidas_exportacion.png" align="right" hspace="6" />Bunu oluşturmak için, sistem bir eksen boyunca (tipik olarak her 20 m'de bir) bir dizi nokta hesapladığımızda oluşturulan .TRC formatındaki dosyalardan birini seçmenizi isteyecektir. O .TRC dosyasından her enkesitin merkezinin koordinatlarını ve o noktadaki eksenin azimutunu alır. Bir enkesit toleransı ve bir boyuna tolerans ister ve her tolerans dikdörtgeni içindeki noktaları inceleyerek, seçilen noktaları enkesit üzerine yansıtarak, eksene olan mesafe ve kot cinsinden bir enkesit oluşturur. Veri noktalarının enkesitlerde gruplandırılmasını yoksaymayı (Tekil Noktalar) veya bunu sıkı bir şekilde dikkate almayı seçebilirsiniz. Bu enkesitler daha sonra işin inşası sırasında ölçüm veya takip için kullanılabilir.</p>
+
+
+      </div>
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">.top</span>: Hesaplanan nokta bulutu ile, arazi karnesinde veya burada işlem sırasında bildirilen zincirler ve profiller dahil olmak üzere .top dosyalarının oluşturulması; daha sonra üçgenleme ve eşyükselti eğrileri oluşturma veya genel olarak bir topografik harita için işlenmek üzere. Bu topografik harita, eşyükselti eğrileri dahil, ISTRAM®/ISPOL®'ün diğer alanlarında istediğimiz noktalarda yüzey profillerini elde etmek için ikinci bir yol olabilir.
+
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">&nbsp;Bu seçenekten bir .top dosyası kaydedildiğinde, karnenin KOD. (kodlar) ve Gözlemler sütunları, dosyanın yorumlar sütununa eklenir.</p>
+
+
+      </div>
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">.toc</span>: Hesaplanan nokta bulutu ile, önceki paragrafta açıklanana paralel olarak .toc dosyalarının oluşturulması. Bu seçenekten bir .toc dosyası kaydedildiğinde, karnenin KOD (kodlar) ve Gözlemler sütunları, dosyanın yorumlar sütununa eklenir.<br />
+
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Listele</span> <img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_notepad.png" />/ <span style="font-weight: bold;">Yazdır</span> <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_impresion.png" />/ <span style="font-weight: bold;">Kaydet <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" /></span>: Bu üç tuş, dört dosyadan birini seçmek için bir menü açar: ltop.res (kutupsal alım hesaplaması), poligo.res (poligon hesaplaması). Bu liste, bilgilerin sunulduğu birkaç bölümden oluşur.</li>
+        <ul>
+          <li>DÜZELTİLMİŞ ARAZİ GÖZLEMLERİ sayfasında, ilk istasyondan yöneltme noktasına yapılan gözlem yer alır.</li>
+          <li>Eğer hiçbir dengeleme uygulanmazsa (veya sadece küresellik ve kırılma), KOORDİNATLAR LİSTESİ sayfasında anamorfoz katsayısı gösterilmez ve başlıkta DÜZLEM KOORDİNATLARI yazar.</li>
+          <li>Sayfaların başlıklarına C1, C2 ve C3 yorumları eklenir.</li>
+          <li>Hesaplanan koordinatların dört ondalık basamağı.<br />
+
+
+</li>
+
+        </ul>
+      </ul>
+      <div style="margin-left: 40px;">poli.res. Poligon hesaplamasının ara verileri.</div>
+      <br />
+
+
+      <div style="margin-left: 40px;">Listele: Bu listeyi yazıcıya göndermek için ISIMPRIM adlı kütüphane dosyasında not edilen bir komutu kullanır.
+
+      </div>
+      <br />
+
+
+      <div style="margin-left: 40px;">Yazdır: Bu listeyi yazıcıya göndermek için ISIMPRIM adlı kütüphane dosyasında not edilen bir komutu kullanır.
+
+      </div>
+      <br />
+
+
+      <div style="margin-left: 40px;">Kaydet: Bir dosya adı sorar, .lst önerir ancak herhangi bir dosya olabilir, ltop.res dosyasının otomatik olarak üzerine yazılmasını önlemek için yeniden adlandırmak üzere.<br />
+
+
+      </div>
+      <ul>
+        <li><img style="width: 86px; height: 44px;" alt="" src="Imagenes/edm_libreta_salidas_reiniciar.png" align="right" hspace="6" /><span style="font-weight: bold;">Sıfırla</span>: Yeni bir işe başlamak için tüm nirengileri ve ölçümleri bellekten silerek tüm tabloyu sıfırlar. Değişiklik ve hesaplama işlemi bittikten ve verilerin yeniden işlenmesi gerekebileceği ihtimaline karşı nirengi tablosunu ve ölçüm tablosunu kaydettikten sonra, pencereyi X tuşuyla kapatmadan önce belleği boşaltmak için Sıfırla'ya basmak uygundur. Eğer bilgi silinmezse, bellekte ve gizli kalır, böylece topografik karne yeniden başlatıldığında işine devam etmek için hazır bulunur.<br />
+
+
+        </li>
+      </ul>
+      <a name="calculo"><span class="Titulo_2">Topografik karne ile bir poligon güzergahı hesaplama</span><br />
+
+      <br />
+
+      
+      </a><div style="text-align: center;"><img style="width: 419px; height: 73px;" alt="" src="Imagenes/edm_libreta_calcular.png" /><br />
+
+      </div>
+
+      <br />
+      <span style="font-weight: bold;">
+      Poligon artı Hesapla</span>: Topografik karnede yansıtılan bir poligonun hesaplanmasını emreder. Bir poligonun hesaplanması için karnenin hazırlanma metodolojisi aşağıdaki gibidir:<br />
+      <br />
+Öncelikle, bilinen nirengilere yapılan ölçümlere sahip istasyonları çözer ve bunları [G] anahtarıyla, geriden kestirme ile hesaplanmış olarak nirengi listesine geçirir.<br />
+
+      <br />
+
+      Karnenin ilk satırı, poligonun ilk istasyon nirengisidir, koordinatları bilinir ve nirengi dosyasında olması tavsiye edilir. Sonraki satırlar, ya açısal sapma ya da referans nirengilerine yapılan ölçüm olabilir (bir poligon iki nirengiye yönelterek başlayabilir), böylece program başlangıçtaki açısal sapmayı hesaplar. Eğer CD (Düz Dürbün) ve CI (Ters Dürbün) ölçümlerimiz varsa, program ortalama ölçümü hesaplayacaktır.<br />
+
+      <br />
+
+
+
+      <p class="MsoNormal">Dürbünün sağa ve sola çevrilerek veya tek bir pozisyonda birden fazla ölçüm yapılabilir. Program, her daire pozisyonundaki ölçümleri önceden ortalamasını alır. Eğer bir ölçüm sadece Yatay Açıya sahipse ve diğerleri tam ise (Yatay, Düşey, Eğik Mesafe), sadece tam ölçümler kullanılır.</p>
+
+
+      Ardından, ilgili kutucuklara alet yüksekliğini ve prizma yüksekliğini yansıtırız. Başlangıç özellikleri dikkate alındıktan sonra, poligonun ikinci istasyonuna ve koordinatlarını elde edeceğimiz ilk istasyona yapılan ölçümü not etmek için bir "H" (hesaplanan) tipi satır ekleriz. Bu şekilde, tüm başlangıç notlarını tamamlamış oluruz.<br />
+
+      <br />
+
+      Ardından, ikinci istasyonu belirtmek için bir "İ" tipi satır ekleriz (normalde önceki ölçümlerde verilen "hesaplanan" olacaktır). İstasyon, alet ve reflektör yükseklikleri, önceki istasyona yöneltme (O) ve poligonun bir sonraki istasyonuna hesaplanan nokta (H) ile tamamlanır.<br />
+
+      <br />
+
+      Eğer poligonun bir noktasındaki bir istasyon kurulumu bir sonraki noktaya yapılan ölçümle tamamlanmaz ve aynı noktada yeniden istasyon kurulursa, eksik istasyon kurulumu atılır.<br />
+
+      <br />
+
+      Bu şekilde, kapanış istasyonuna ulaşana kadar karnede notlar almaya devam ederiz. Buradan itibaren iki şekilde çalışılabilir. Eğer poligon, açısal kapanma hatası dikkate alınarak gözlemlenmişse, yani son bilinen koordinatlı nirengiden, koordinatları yine bilinen başka bir nirengiye gözlem yaptığımızı varsayarsak, işimizin açısal kapanma hatasını hesaplayabiliriz ve dolayısıyla bu ölçümler bir "C" tipi satırda yansıtılmalıdır. Eğer açısal kapanma hatasını elde etmemiz gerekmiyorsa, bu son gözlemi yapmaya gerek yoktur ve dolayısıyla karnede gerekli olan son notlar, koordinatlarını hesaplamak istediğimiz poligonun sondan bir önceki nirengisi ile poligonun kapanışını yapacağımız, ancak istasyon kurmanın gerekli olmayacağı, koordinatları bilinen son nirengi arasındaki ölçümler olacaktır. Eğer son gözlem, koordinatları bilinmeyen bir noktaya veya nirengiye yapılırsa, poligonu kapatamayız ve dengeleyemeyiz, bu da poligonun açık kalmasına ve bir hesaplanan noktalar zinciri olarak hesaplanmasına neden olur.<br />
+
+      <br />
+
+      Program, bir "C" okuduktan sonra bir "N" veya "İ" ile karşılaşırsa, poligon veri girişinin bittiğini varsayar. Bu şekilde, bir dosyada birden fazla poligon verisi gelirse, her zaman ilkini hesaplar.<br />
+
+      <br />
+
+      Kapalı poligonlarda, son noktanın Kapanış görselleri poligonun başladığı nirengiye doğruysa, program bu nirengiden son noktaya yapılan karşılıklı görselleri arar, bu görseller o ilk istasyon kurulumunda yapılmıştır ve hiçbir kod taşımamalıdır.<br />
+
+
+      <br />
+
+Yapılacak hesaplama modu, Yapılandırma &gt; Koordinat referans sistemi menüsünden, <span style="font-weight: bold;">U.T.M.</span> seçeneğinde yapılandırılır; burada programa düzlem koordinatlarında mı yoksa U.T.M. koordinatlarında mı hesaplama yapmak istediğimizi ve kullanılacak dengeleme yöntemini söyleriz. Bu yapılandırmaya Yapılandır butonundan da erişilebilir. U.T.M. kutucuğu, yalnızca U.T.M. koordinatlarında hesaplamayı işaretlemek için bir kısayoldur.<br />
+
+      <br />
+
+      Program, poli.res ve poligo.res adında hesaplama listeleri oluşturur; burada arazi verileri ve dengelemeye kadar tüm hesaplamalar ve U.T.M. projeksiyonunda hesaplama istenmesi durumunda anamorfoz katsayıları yansıtılır.<br />
+
+      <br />
+
+Aşağıda, bir poligonun hesaplanması için tipik bir topografik karne örneği detaylandırılmıştır.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 484px; height: 446px;" alt="" src="Imagenes/edm_libreta_listado_poligonal.png" /><br />
+
+      </div>
+
+      <br />
+
+İstasyonlarda kutupsal alımları olan bir poligonumuz varsa, hesaplama yöntemi önce Poligon seçeneği seçiliyken Hesapla'ya basmak ve ardından <span style="font-weight: bold;">Kutupsal Alım</span> seçeneği seçiliyken Hesapla'ya basmaktan oluşur. N adet poligon hesaplamak mümkündür.<br />
+
+      <br />
+
+"DEMO" dizininde örnek olarak çeşitli formatlarda topografik karne örnekleri bulunmaktadır.<br />
+
+      <br />
+
+      <a name="red"><span class="Titulo_2">Topografik karne ile bir poligon ağı hesaplama</span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 537px; height: 91px;" alt="" src="Imagenes/edm_libreta_redes.png" /><br />
+
+
+      </div>
+      <br />
+      <span style="font-weight: bold;">
+
+      Ağın yüklenmesi</span> :<br />
+
+
+      <br />
+
+
+Öncelikle, Yapılandırma &gt; Koordinat referans sistemi menüsünden, U.T.M. seçeneğinde hesaplama seçeneklerini seçmeyi unutmamalısınız; burada programa düzlem koordinatlarında mı yoksa U.T.M. koordinatlarında mı hesaplama yapmak istediğimizi ve kullanılacak dengeleme yöntemini söyleriz.<br />
+
+
+      <br />
+
+
+      <span style="font-weight: bold;">Yükle</span> <img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />: Şu anda yüklü olan nirengileri ve ölçümleri siler ve nirengi dosyası&nbsp;<span class="Archivo">.bas</span> ile ölçüm dosyası&nbsp;<span class="Archivo">.ltp</span>'yi ister. Ölçüm dosyasının formatı .lea formatı olmalıdır, ancak uzantısı&nbsp;<span class="Archivo">.ltp</span>'ye yeniden adlandırılmış olmalıdır.<br />
+
+
+
+
+      <p class="MsoNormal">Veriler yüklendikten sonra, başlangıçta hesaplanan yaklaşık koordinatlarla ağın bir şeması gösterilir. Bu anda sadece sabit nirengiler etiketlenir ve görseller çizilir, böylece başlangıçta görsel bir kontrol yapılabilir.</p>
+
+
+
+
+      <p class="MsoNormal">Ağın yüklenmesi sürecinde aşağıdaki filtreleme gerçekleşir:</p>
+
+
+      <ul>
+        <li>Düz ve ters dürbün durumlarının ortalamaları.</li>
+        <li>Eğik mesafesi sıfıra eşit olan ölçümlerin kaldırılması.</li>
+        <li>Ortalamadan toleranslardan daha büyük bir miktarda sapan ölçümler.</li>
+      </ul>
+
+
+
+
+      Bu anda karnede ağın ölçümleri gösterilir ve verileri düzenleme veya silme imkanı sunulur.<br />
+
+
+      
+
+      <br />
+
+
+      Kodları basitleştir:
+
+Eğer bu kutucuk işaretlenirse:<br />
+
+
+      
+      
+      <ul>
+
+        <li>"N" ve "İ" istasyon kurulumları hepsi "N" olur.</li>
+        <li>"O" yöneltme, "H" hesaplanan ve "C" kapanış ölçümleri hepsi "O" olur.</li>
+        <li>" " kutupsal alım ölçümleri yok sayılır.</li>
+      
+      </ul>
+
+      Ağın hesaplanması:<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 542px; height: 94px;" alt="" src="Imagenes/edm_libreta_calculo_redes.png" /><br />
+
+      </div>
+
+      <br />
+
+
+      Ağlarla çalışmak için komutlar:<br />
+
+
+      
+
+      
+      <p class="MsoNormal">Bir poligon veya güzergah ağı, En Küçük Kareler Yöntemi ile bütünüyle dengelenir. Önce planimetrik bir dengeleme, sonra da altimetrik bir dengeleme yapılır. Süreç, dengeleme sonucunu içeren listenin gösterilmesiyle sona erer.</p>
+
+
+
+      <span style="font-weight: bold;">      Hesapla</span>: 
+
+      
+      <p class="MsoNormal">Poligon veya güzergah ağı, En Küçük Kareler Yöntemi ile dengelenir.&nbsp;</p>
+
+
+
+      
+      <p class="MsoNormal Parrafo">En Küçük Kareler algoritmasının başlangıç noktası olarak hizmet edecek olan her noktanın başlangıçtaki yaklaşık koordinatlarını elde etmek için, bilinen koordinatlı nirengilere dayalı ve referanslı poligonlar elde etmek amacıyla hiyerarşik kriterleri izleyerek otomatik olarak poligonlar oluşturulur.</p>
+
+
+
+      Öncelikle, sabit bir nirengiden başlayan, başka bir sabit nirengiye yönelen; ve sabit bir nirengide istasyon kurarak ve başka bir sabit nirengiye kapanarak biten tüm poligonlar oluşturulur.<br />
+
+
+      <br />
+
+
+Önceki seviyeden daha fazla poligon bulunamadığında, sabit bir nirengide başlayan, önceki bir poligonla koordinatları olan bir noktaya yönelen ve başka bir sabit nirengiye kapanarak biten poligonlar oluşturulur.<br />
+
+
+      <br />
+
+
+Eğer önceki kategori biterse, sabit nirengide başlayan, önceki bir poligonla hesaplanmış koordinatları olan bir noktaya yönelen ve sabit bir nirengide istasyon kurarak ve başka bir sabite kapanarak biten poligonlar oluşturulmaya çalışılır.<br />
+
+
+      
+
+      
+      <p class="MsoNormal Parrafo">Bu anda karne, ağın ölçümleri yerine otomatik olarak oluşturulan ISTRAM®/ISPOL® poligonlarını içerir. Bu poligonlar da otomatik olarak hesaplanır.</p>
+
+
+
+      Çalışma dizininde, karnede bulunan ve zaten hesaplanmış olan poligon sayısı kadar redpolig&lt;sayı&gt;.res dosyası oluşturulmuştur. Bu dosyalar, poligonun tüm hesaplamalarını içeren bir liste sağlar.<br />
+
+
+      
+
+      
+      <p class="MsoNormal Parrafo">Poligonlar aracılığıyla hesaplanan yaklaşık koordinatlarla, ağın En Küçük Kareler yöntemiyle hesaplanmasına geçilir; önce planimetrik bir dengeleme ve ardından altimetrik bir dengeleme yapılır.</p>
+
+
+
+      Ağ hesaplama süreci bittiğinde, algoritmanın genel yapılandırma verilerini içeren bir özet; kullanılan düzeltmeler, elipsoid ve zon; orijinal ve düzeltilmiş mesafe, azimut ve açı gözlemleri; orijinal ve düzeltilmiş kot farkı gözlemleri; algoritmanın yakınsaması hakkında bilgi ve nihai koordinatların listesini içeren ayrıntılı bir rapor (<span class="Archivo">mmcc.txt</span>) gösterilir.<br />
+
+
+      <br />
+
+
+      Ağın grafik gösterimi, istasyonlardan ve aralarındaki ölçümlerden oluşur. Ölçümlerin uçlarında, yönü belirtmek için bir ok ucu çizilir ve rengi ölçüm türünü belirtir; kırmızı gidiş ölçümü, sarı ise gidiş ve dönüş ölçümüdür.<br />
+
+
+      
+
+      
+      <p class="MsoNormal">Bir poligon kesişimine yakınlaştırma yapıldığında, koordinatları birden fazla poligon tarafından hesaplanmış olan noktaların, her bir poligon tarafından elde edilen sonuçlarla birlikte eflatun işaretler gösterdiği görülebilir. Ayrıca, başlangıçta hesaplanan yaklaşık koordinatlara karşılık gelen koyu mavi bir işaret de çizilir.</p>
+
+
+
+      Ölçüm tablosunun başındaki nokta, üzerinde bulunduğumuz verinin çizimdeki yerini belirtmek için çizimde sabit boyutlu yeşil bir poligonla işaretlenir.<br />
+
+
+      <br />
+Ağ hesaplaması yapıldıktan sonra her noktadan geçebilecek maksimum güzergah (poligon) sayısı 500'dür.<br />
+      <br />
+Karşılıklı istasyon kurulumu olmadan kutupsal alımla ölçülen hesaplanan noktalara yapılan ölçümlerle ağların hesaplanması dahil edilmiştir. Hesaplama aşağıdaki sırayla yapılır:<br />
+      <br />
+1) Yüklemede ve isteğe bağlı olarak, tekrarlanan ve düz ile ters dürbün durumlarıyla yapılan ölçümlerin ortalaması alınabilir.<br />
+2) Tüm noktaların yaklaşık koordinatlarının kutupsal alımla ilk hesaplaması yapılır.<br />
+3) Bağımsız poligonlar oluşturan güzergahlar aranır.<br />
+4) Bu poligonlar dengelenir, böylece aynı nokta için birkaç farklı koordinat seti elde edilebilir.<br />
+5) Tüm ağ, en küçük kareler yöntemiyle küresel olarak dengelenir.<br />
+6) Hesaplanan noktalar, zaten dengelenmiş istasyonlardan hesaplanır.<br />
+7) Bu noktalar dahil olmak üzere tüm ağ, tekrar küresel olarak dengelenir.&nbsp; <br />
+      <br />
+
+
+      Sonuçlar:<br />
+
+
+      
+      
+      <ul class="Parrafo">
+
+        <li><span style="font-weight: bold;">MMCC</span>.txt: Yapılan son dengelemenin sonucunu içeren &nbsp;<span class="Archivo">MMCC.txt</span> listesini göstermeye olanak tanır. Bu liste, algoritmanın genel yapılandırma verilerini içeren bir özet; kullanılan düzeltmeler, elipsoid ve zon; orijinal ve düzeltilmiş mesafe, azimut ve açı gözlemleri; orijinal ve düzeltilmiş kot farkı gözlemleri; algoritmanın yakınsaması hakkında bilgi ve nihai koordinatların listesini içerir. <br />
+
+</li>
+      
+      </ul>
+
+      
+      <div style="margin-left: 40px;">Bu liste dört ondalık basamakla elde edilir.<br />
+
+      </div>
+
+      
+      <ul class="Parrafo">
+
+        <li><span style="font-weight: bold;">puntos.toc</span>: Dengelemede elde edilen nihai koordinatları .toc formatında içeren puntosC.toc dosyasını görüntülemeyi sağlar.<br />
+
+        </li>
+      
+      </ul>
+
+      Manuel hesaplama:<br />
+
+
+      <br />
+      <span style="font-weight: bold;">
+
+      PoligM</span>, <span style="font-weight: bold;">HesapM</span>, <span style="font-weight: bold;">SilP</span>, (manuel poligon, manuel hesaplama, poligonu sil) başlangıç ve bitiş istasyonlarına tıklayarak manuel olarak poligonlar oluşturmaya, bu poligonları hesaplamaya veya silmeye olanak tanır.<span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><span class="Parrafo"><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+      <br />
+      <br />
+      </span><span class="Parrafo"><span style="font-weight: bold;"><br />
+
+
+</span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

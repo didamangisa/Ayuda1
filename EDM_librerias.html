@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Kütüphaneler</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>KÜTÜPHANELER<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün grafik nesneleri (çizgiler, semboller, metinler ve hücreler) <span class="Archivo">.edm</span> dosyalarında ilişkili tiplerini tanımlı olarak bulundurur, ancak karşılık gelen gösterimi içermez. Bu gösterim, her biri bir tipi tanımlayan bir dizi dosya içeren bir klasör olan KÜTÜPHANE'de yer alır.<br /><br />Böylece, çizgileri temsil etmek için <span style="font-style: italic;">L#</span> serisi, noktalar için <span style="font-style: italic;">S#</span>, metinler için <span style="font-style: italic;">R#</span> ve hücreler için <span style="font-style: italic;">C#</span> serisi bulunur; burada <span style="font-style: italic;">#</span>, metinler hariç (numarası 999 ile sınırlıdır) 0'dan 9999'a kadar bir sayıdır.<br /><br />Bu dosyalar, bir sembole, bir çizgiye veya bir metne bağlı olarak yürütülmesi gereken özellikleri ve komutları tanımlar ve kendi tipindeki bir nesne çizimde mevcut olduğunda yürütülecek tüm grafik gösterimi içerir.<br /><br />Kütüphanede, yukarıdakilere ek olarak, normatif tablolar, güzergah projesi eksenlerinin çizim modları, yapılandırma dosyaları gibi çeşitli işlemlerde ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün durumunu veya davranışını etkileyen yapılandırma dosyaları da bulunur.<br /><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, "dağıtılmış" bir kütüphane veya istenirse, <span style="font-weight: bold;">hiyerarşik</span> bir arama sırasına göre birden fazla kütüphane kullanımını destekler. Böylece, başlatma sırasında her kütüphane için varsayılan olarak aşağıdaki yollar veya "path"ler ayarlanır:<br /><br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; height: 27px; width: 422px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td class="Archivo" style="vertical-align: top; width: 121px;">./lib/<br />
+/ISPOL/libuser/<br />
+/ISPOL/lib/<br />
+            </td>
+            <td style="vertical-align: top; width: 283px; font-weight: bold;">Birincil, yerel veya proje kütüphanesi<br />
+İkincil, genel veya kullanıcı kütüphanesi<br />
+Üçüncül, temel veya program kütüphanesi</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+<br />Sonuncusu temel kütüphanedir. Her yeni ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> revizyonuyla birlikte gelir ve programın otomatik olarak yönettiği tüm semboloji taleplerini karşılar.<br /><br />İkincisi genel kullanıcı kütüphanesidir ve birincisi her projenin özel kütüphanesidir, çünkü her çalışma klasöründe bir tane olabilir (<span class="Archivo">./lib/</span> çalışma klasörünün bir alt klasörüne atıfta bulunur).<br /><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, ihtiyaç duyduğu kütüphane nesnelerini önce birincil kütüphane olan <span class="Archivo">./lib</span>'de arar, orada bulamadığını ikincil veya genel kullanıcı kütüphanesi olan <span class="Archivo">/ISPOL/libuser/</span>'da arar ve son olarak <span class="Archivo">/ISPOL/lib</span>'de (üçüncül veya temel kütüphane) arar.<br /><br />Yerel ve kullanıcı kütüphanesi boş klasörler olabilir veya hiç var olmayabilir. Bununla birlikte, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ü en azından bir ikincil veya kullanıcı kütüphanesi olmadan kullanmak tavsiye edilmez; böylece kendi değişikliklerini temel kütüphaneyi etkilemeden toplayabilir. Daha da iyisi, istenen kütüphane nesnelerini diğer projeleri etkilemeden yerel olarak değiştirmeye olanak tanıyan bir yerel proje kütüphanesine sahip olmaktır.<br /><br />
+      <table style="text-align: left; width: 692px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 588px; text-align: justify;"><span class="Info">Birincil ve ikincil kütüphaneler, kullanıcı değişikliklerini toplamak için öngörülmüştür, çünkü birincil kütüphanede görünen bir kütüphane dosyası, ikincildekileri ve her ikisi de temeldekileri gizler veya değiştirir. Bu nedenle, 5000'den itibaren çizgi, sembol ve hücre tipleri ile 700'den itibaren yazı tipleri kullanıcıların kullanımına ayrılmıştır.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<span style="font-weight: bold;">Dosya</span> &#8594; <span style="font-weight: bold;">Dosya Gezgini</span> menüsünden, Windows<sup>®</sup> Dosya Gezgini aracılığıyla farklı kütüphanelere ve mevcut çalışma klasörüne doğrudan erişim sağlanır.<br /><br />
+      <div style="text-align: center;"><img style="width: 277px; height: 252px;" alt="" src="Imagenes/acceso_libreria.png" /></div>
+<br /><br />
+      <span class="Titulo_2">Kütüphane Yapılandırması</span><br /><br />Kütüphanelerin varsayılan işleyişini <span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Kütüphaneler</span> menüsü aracılığıyla değiştirmek mümkündür, bu menü aşağıdaki iletişim kutusunu açar:<br /><br />
+      <div style="text-align: center;"><img style="width: 533px; height: 360px;" alt="" src="Imagenes/config_libreria.png" /><br />
+      </div>
+<br />Buradan kütüphanelerin hiyerarşisini değiştirebilir, başkalarını seçebilir vb. işlemler yapabilir, ayrıca <span style="font-weight: bold;">[Nesneleri Listele]</span> butonu ile tüm grafik nesnelerin bir listesini alabilirsiniz.<br />
+      <br />
+Yapılandırma dosyalarında başka bir şey tanımlanmadığı sürece, ISTRAM varsayılan olarak yerel kütüphane olarak çalışma klasörünün altında bulunan lib alt klasörünü kullanır. Eğer bu klasör mevcut değilse, ISTRAM başlatılırken oluşturur.<br />
+<br /><span style="font-weight: bold;">[V]</span> butonu, her durumda programın varsayılan olarak kabul ettiği kütüphaneyi yeniden atar. Eğer o kütüphanenin varsayılan konumu mevcut değilse, butona basıldıktan sonra program başka bir konum sorar.<br /><br /><span style="font-weight: bold;">ISSOL kütüphanesi</span> (varsayılan olarak <span class="Archivo">\ispol\libsol\</span>), VIRTUAL 3D modülü tarafından kullanılır ve <span style="font-weight: bold;">Yardımcı Programlar</span> yolu ile ilgili olarak, program tarafından dosya içe/dışa aktarma için kullanılan çeşitli format dönüştürücülerinin nerede saklandığı belirtilir.<br /><br />Özetle:<br />
+      <ul>
+        <li>Her çalışma klasöründe birincil veya yerel kütüphaneyi içerecek bir <span class="Archivo">.\lib</span> alt dizini bulunabilir (ve bulunması tavsiye edilir).</li>
+      </ul>
+      <ul>
+        <li>Bahsedilen üç kütüphanenin adları ve yolları, her çalışma klasöründe değiştirilebilir ve özelleştirilebilir (yapılandırma kaydedildiği sürece).</li>
+      </ul>
+      <ul>
+        <li>Temel veya program kütüphanesi değiştirilmemelidir, çünkü bir güncelleme üzerine yazacaktır.</li>
+      </ul>
+      <ul>
+        <li>Üç kütüphanenin adları ve adresleri, programın çalışması sırasında da değiştirilebilir.</li>
+      </ul>
+
+      <span class="Parrafo"><span class="Titulo_2"> </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

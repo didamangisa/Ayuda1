@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>KM - Mesafe</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte.@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>KM - Mesafe<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#interactivo">İnteraktif Mod</a><br />
+      <a href="#por_fichero">Dosyadan Modu</a><br />
+      <div style="margin-left: 40px;"><a href="#fich_top">.top dosyasından</a><br />
+      <a href="#fich_pkdis">.pkd dosyasından</a><br />
+      <a href="#fich_txt">.txt dosyasından</a><br />
+      <a href="#fich_pkaux">Başka bir eksenin .pk dosyasından</a><br />
+      </div>
+      <a href="#por_linea">Çizgiden Modu</a><br />
+      </div>
+      <span class="Parrafo"><br />
+Bu araç, hem PLAN hem de BOYKESİT menülerinden çağrılabilir ve kullanıcının tanımladığı bir dizi noktanın bir eksen üzerindeki KM'sini ve o eksene olan mesafesini öğrenmeyi sağlar. Bu, binaların, kazıkların, aydınlatma direklerinin veya diğer herhangi bir elemanın eksenlere göre konumlarını elde etmek için çok kullanışlıdır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/acceso_PK_dist.png" style="width: 351px; height: 295px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span><img src="Imagenes/ejemplo_pk_dist.png" style="width: 373px; height: 186px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> KM-Mesafe kullanımıyla aşağıdaki bilgiler elde edilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Noktanın X,Y,Z koordinatları.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eksen numarası, eksene dik mesafe (ofset) ve eksen üzerindeki izdüşüm KM'si.</span></li>
+      </ul>
+      <ul>
+        <li>
+Köşeler Arası 3D Mesafe (d.3D Köşeler), seçilen çizgilerin köşeleri arasında veya interaktif ya da dosyadan mod için noktalar arasındaki gerçek mesafeleri gösterir.</li></ul><ul><li><span class="Parrafo">Eksen üzerindeki izdüşüm noktasındaki azimut, yarıçap ve koordinatlar.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eksenin kırmızı kotu (Z<sub>kırmızı kot</sub>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eksenden devere göre yansıtılan kot (Z<sub>yansıtılan</sub>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Platform kenarı kotu (Z<sub>Plat.Kenarı</sub>):
+Karayollarında geometrik eksenin (kod 1 noktası) ve otoyollarda platformun iç şerit kenarının (yine kod 1) kotu. Bu değer, dönme ekseninde kaymalar olduğunda bir öncekinden farklı olacaktır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Noktanın bulunduğu eksen tarafındaki dever.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eksendeki boyuna eğim.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Seçilen noktanın, eksenden devere göre yansıtılan kota (Z-Z<sub>yansıtılan</sub>) ve kırmızı kota (Z-Z<sub>kırmızı kot</sub>) göre kot farkları.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eğer seçilen nokta platformun (yüzey 67) içindeyse platformdaki kot. Dışındaysa sıfır verir.</span></li>
+      </ul></span></span></span></span></span><ul><li>Noktanın yansıtıldığı KM'deki eksende arazi kotu (Z <sub>Arazi Eksen</sub>).</li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Eğer bu menüye PLAN'dan erişilirse, enkesit veya kırmızı kot verileri mevcut olmadığından, bu veriler listelerde görünmez (deverler, kotlar,...).<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 35px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 633px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">Demiryolları durumunda, platform kenarı kotu ve yansıtılan kot yerine, kırmızı kot ve bununla olan kot farkı listelenir. Ayrıca, deverler milimetre olarak listelenir.</span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">LİSTELE</span> bölümünde kullanıcı şunları seçebilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Hiçbir şey listeleme: Bu şekilde sadece ekranda bilgi içeren bir <a href="rejilla_datos.html">veri tablosu</a> görünür.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">İstenen tüm bilgileri içeren <span class="Archivo">SORGULAMA.res</span> listesini al.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Mevcut çalışma klasörünün içindeki tmp klasöründe oluşturulacak ve bir hesap tablosuyla işlenebilecek <span class="Archivo">pkdis.res</span> adlı sekmeyle ayrılmış bir dosya al.</span></li>
+      </ul>
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Eğer <span style="font-weight: bold; font-style: italic;">Kısa</span> kutucuğu işaretlenirse veya iletişim kutusuna bu modda girilmişse, listeler bilgiyi daha özetlenmiş bir şekilde gösterir ve sadece aşağıdaki verileri sunar:<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Noktanın X,Y,Z koordinatları.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eksen numarası.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eksene dik mesafe.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eksen üzerindeki izdüşüm KM'si.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo">Eksenin kırmızı kotu (Z<sub>kırmızı kot</sub>)</span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Noktanın bulunduğu eksen tarafındaki dever.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Eğer <span style="font-weight: bold; font-style: italic;">Geçiş noktaları oluştur</span> kutucuğu işaretlenirse, program, hesaplanan noktalardan yola çıkarak ilgili eksenlerin geçiş noktalarını da oluşturur.<br /><br />Eğer <span style="font-weight: bold; font-style: italic;">İzdüşüm çizgileri oluştur</span> kutucuğu işaretlenirse, her noktanın eksene dik izdüşüm çizgileri haritaya çizilir (mevcut çizgi tipiyle oluşturulur).<br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 35px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 633px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">Mevcut eksen için KM,Mesafe hesaplanırken ve verileri değiştirilirken, .vol dosyasını önceden kaydetmek gerekir, çünkü fonksiyon bu dosyada bulunan veriler üzerinde çalışır ve yüklü veriler üzerinde değil, çünkü mevcut eksen olmasa bile projenin herhangi bir ekseni için kullanılabilir.<br />
+Eğer nokta eksen sınırlarının veya (sağ tıklayarak ekseni seçerken seçilen) KM aralığının dışına yansıtılırsa, nokta çıktı listesine dahil <span style="font-weight: bold;">EDİLMEZ</span>.<br />
+            </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <br />
+
+
+      <br />
+
+
+      <span class="Titulo_2"><a name="interactivo">İnteraktif Mod</a></span><br />
+
+
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Grafiksel veya klavye ile veri girilmesi döngüsel olarak istenir. Fonksiyon, &lt;Esc&gt; tuşuna basılana kadar aktif kalır.<br />
+      <br />
+      </span>
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/pk_dist_interactivo.png" style="width: 288px; height: 242px;" alt="" /><br />
+      </div>
+
+
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span style="font-weight: bold;">VERİLER</span> bölümünde, noktanın <span style="font-weight: bold;">veri giriş modunu</span> seçme imkanı verilir, bunlar şunlar olabilir:<br />
+      </span>
+      
+      
+      <ul>
+
+
+        <li><span class="Parrafo">X,Y koordinatlarında.</span></li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li><span class="Parrafo">KM,Mesafe şeklinde: Bu durumda, noktaların koordinatlarıyla bir <span class="Archivo">.top</span> dosyası da oluşturulabilir, bu da bir eksene göre KM,Mesafe ile noktalar tanımlamayı ve daha sonra koordinatlarından yola çıkarak farklı bir eksene göre aplikasyonunu yapmayı sağlar. Bu dosyada, her noktanın kotu yansıtılan kot olacaktır (kırmızı kot + Mesafe × Dever).</span></li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li><span class="Parrafo">Başlangıç<sub>KM</sub>,Mesafe'den Bitiş<sub>KM</sub>,Mesafe'ye kadar bir kesim ve bir eşit aralığa göre tanımlama.</span></li>
+      
+      
+      </ul>
+
+
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="por_fichero">Dosyadan Modu</a></span><br />
+
+
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Bu durumda, <span style="font-weight: bold;">VERİLERİN</span> girişi bir nokta dosyası aracılığıyla yapılır ve aşağıdaki olasılıklar mevcuttur:<br />
+      </span><span class="Parrafo">
+      <ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/pk_dist_fichero_top.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="6" /></span></span><span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><a name="fich_top" />Topografik dosyalar (</span><span style="font-weight: bold; font-style: italic;" class="Archivo">.top</span><span style="font-weight: bold; font-style: italic;">/</span><span style="font-weight: bold; font-style: italic;" class="Archivo">.toc</span><span style="font-weight: bold; font-style: italic;">):</span>
+Nokta bulutundaki her noktanın koordinatları okunur ve her biri için sonuçlar gösterilir. [ ] Üçüncü sütunda eksen numarası seçeneği işaretlenerek, her bir noktanın yansıtılacağı eksen numarası, .top dosyasının üçüncü sütunundan okunur. (n&nbsp; i2 i3 x y z metin:&nbsp; eksen = i3)<br />
+
+          </span></span></li>
+
+      </ul>
+      </span><br />
+
+
+      <span class="Parrafo"> <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span><br />
+
+
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/pk_dist_fichero_pkd.png" style="width: 288px; height: 242px; float: right;" alt="dialogo_pkdist_pkd" hspace="6" /></span></span></span></span></span></span></span></span><span class="Parrafo" /><span style="font-weight: bold; font-style: italic;">KM-mesafe dosyaları (</span><span style="font-weight: bold; font-style: italic;" class="Archivo">.pkd</span><span style="font-weight: bold; font-style: italic;">)</span><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">:</span>
+          </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /><span class="Parrafo">Program X,Y koordinatlarını hesaplar.</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#interactivo">KM-Mesafe'ye göre interaktif mod</a> gibi, noktaların koordinatlarıyla bir <span class="Archivo">.top</span> dosyası elde etmek de mümkündür.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+Ayrıca üç sütunlu (KM, mesafe ve kot) <span class="Archivo">.pkd</span> dosyaları da sağlanabilir. </span></span><span class="Parrafo"><span class="Parrafo">Bu durumda ve bir <span class="Archivo">.top</span> dosyası oluşturulursa, yazılan kot yansıtılan kot yerine <span class="Archivo">.pkd</span> dosyasının kotudur.</span></span><span class="Parrafo"><br />
+      <span class="Parrafo"> </span></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><img src="Imagenes/pk_dist_fichero_txt.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="10" /><span class="Parrafo"><span style="font-style: italic; font-weight: bold;">.txt</span><span style="font-style: italic; font-weight: bold;"> dosyaları,</span>
+içeriği: Numara, X, Y, Z ve KOD, virgülle ayrılmış. Bu durumda listelenecek kod sorulur ve sadece o koda sahip veya girilen kodla aynı harflerle başlayan noktalarla hesaplama yapılır.</span></li>
+      </ul>
+      <span class="Parrafo"> </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer veriler bir topografik dosyadan veya <span class="Archivo">.txt</span>'den geliyorsa, noktanın numarası da listelenir. Eğer noktalar ekranda tıklanırsa, bunlar ardışık olarak numaralandırılır.<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><img src="Imagenes/pk_dist_fichero_pk_aux.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="10" /><span style="font-style: italic; font-weight: bold;">Başka bir yardımcı eksen üzerindeki KM dosyasıyla (</span><span style="font-style: italic; font-weight: bold;" class="Archivo">.pk</span><span style="font-style: italic; font-weight: bold;">)</span>.
+Program, yardımcı eksendeki noktaların koordinatlarını hesaplar ve ardından seçilen eksen üzerindeki km,mesafe verilerini hesaplar.<br />
+
+
+Metin sütununda, yardımcı eksenin numarası ve orijinal KM saklanır, örn. E7_KM125.000</li>
+         
+      </ul>
+      </span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Örnek: İki eksen 1 ve 2 ve eksen 2'nin KM verilerini içeren bir .pk dosyası.
+Eksen 1 üzerindeki mesafeleri ve izdüşüm KM'lerini elde etmek istiyoruz.</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Diğer eksen</span> kutusunda eksen 2'yi seçin ve programın KM dosyasını (<span class="Archivo">.pk</span>) istemesi için <span style="font-weight: bold;">Kabul Et</span>'e basın.</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Program, ekseni seçmenizi veya numarasını yazmanızı isteyecek ve 1 numaralı ekseni seçeceğim.</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></div>
+        <br />
+
+      <big><span style="font-weight: bold;" /></big><br />
+
+&nbsp;<br />
+
+<span class="Archivo">.pk</span> dosyasında seçilen KM'lerle birlikte bir <span style="font-weight: bold;">Metin</span> sütunu görünecektir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/pkdis_texto.png" style="width: 520px; height: 169px;" alt="" /><br />
+
+      </div>
+       <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Archivo">.epd</span> dosyaları,
+içeriği: eksen, KM, mesafe</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/pk_dist_fichero_epd.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="6" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo">a, kot, metin.</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <span class="Parrafo"> <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <br />
+      </span><span class="Parrafo"><br />
+      </span></span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="por_linea"><span class="Titulo_2">Çizgiden Modu</span></a><span class="Titulo_2"><br /></span>
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/pk_dist_linea.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="6" vspace="10" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Köşeleri hesaplama noktaları olacak bir poligon hat ister.<br />
+      <br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;">Kot ayarla (Z-Zpr=0)</span> seçeneği, bir çizginin kotunu eksenin yansıtılan kotuna göre ayarlamayı sağlar.<br />
+
+      <br />
+
+<span style="font-style: italic;">Her çizgiye bir kod ekle <span style="font-style: italic;"><span style="font-weight: bold;">&nbsp;(çizgi tipi adını kullanmıyorsa)</span></span></span> seçeneği, çizginin noktalarını tanımlamak için klavyeden bir kod (alfanümerik metin) eklemeyi sağlar. Bu seçenek etkinleştirilmezse, seçilen çizgi tipinin adı kod olarak alınır.<br />
+
+      <br />
+
+<span style="font-weight: bold;">Birden fazla çizgi seç</span> seçeneği, birden fazla çizgi seçmeyi sağlar (eksen ilk çizgiden sonra seçilir). Daha fazla çizgi seçmek istenmediğinde, boş bir yere tıklanabilir veya [esc] tuşuna basılabilir.<br />
+
+      <br />
+
+Geçerli bir CRS ilişkilendirilmişse, tüm modlar için noktanın coğrafi koordinatları mevcut CRS'de ve WGS84'te veri tablosuna eklenir.<br />
+
+      <br />
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      </span><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+</body></html>

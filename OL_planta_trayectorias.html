@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Dönüş Güzergahı Analizi</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YATAY GÜZERGAH: DÜŞÜK HIZLI ARAÇLARIN DÖNÜŞ GÜZERGAHI ANALİZİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px; height: 2040px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <img src="Imagenes/acceso_trayectorias.png" style="width: 194px; height: 134px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">YATAY GÜZERGAH dikey menüsünden &#8594; <span style="font-weight: bold;">[PLAN ÇİZİMİ]</span> &#8594; <span style="font-weight: bold;">[DÖNÜŞ GÜZERGAHLARI]</span>'ndan erişilebilen bu menü, düşük hızlı araçların dönüş güzergahlarının hesaplanmasını sağlar (ön ve arka tekerleklerin yanı sıra aracın köşelerinin yörüngelerinin hesaplanması).<br />
+      <br />
+      </span><img src="Imagenes/trayectorias.png" style="width: 263px; height: 189px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">On ikiye kadar mafsallı birime sahip bir araç tanımlanabilir (örneğin, havaalanlarındaki bagaj arabası trenlerinin yörüngelerinin incelenmesi için kullanışlıdır).<br />
+      <br />
+      </span><span class="Parrafo">Uygulama tarafından oluşturulan çizim, iletişim kutusunda görülebileceği gibi, her bir elemanla ilişkili çizgi tipleri değiştirilirse değiştirilebilir.<br />
+<br />
+      <span style="font-weight: bold;">Otomatik</span> kutucuğu işaretlenirse, yatay güzergahta sıcak noktalarından birini sürükleyerek veya bir parametreyi değiştirerek ekseni değiştirirsek, <span style="font-weight: bold;">Oluştur</span> (dönüş güzergahı) simgesine basmaya gerek kalmaz ve eksen yeniden hesaplandığında bu otomatik olarak yeniden hesaplanır.<br /><br />Çeşitli araç türleri (karayolları, demiryolları) kullanılabilir ve bu nedenle hesaplama için birkaç mod olabilir:<br /><br /></span><div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/trayectorias_modos_carre_ffcc_tranv.png" style="width: 250px; height: 89px;" alt="" /></span><br /><span class="Parrafo" /></div><span class="Parrafo"><br />1) Karayolları.<br />2) Demiryolları.<br />3) Asılı vagonlu tramvaylar: Tek sayıda birimden oluşurlar (örn: 5)<br /></span><ul><li><span class="Parrafo">Tek sayılılar (1,3 ve 5) vagonla birlikte tek bir rijit boji üzerinde hareket eder.</span></li><li><span class="Parrafo">Çift sayılılar (2 ve 4) önceki ve sonraki vagon arasına asılıdır.</span></li><li><span class="Parrafo">Bu mod seçildiğinde, gerekli parametrelerle yeni bir model gösterilir. İletişim kutusunda, sadece her birimin konumuna göre tanımını yapan veriler düzenlenebilir olarak görünür.</span></li></ul>Birinci birimin ön aksının orta noktasının (varsayılan yapılandırma) izleyeceği yörüngeyi tanımlamak için aşağıdaki veriler sağlanır:<br />
+
+      
+      
+      <ul>
+
+        <li><span class="Parrafo">Her bir entegrasyon adımı için bir eşit aralık, yani her bir hesaplamanın ne sıklıkla yapıldığı (<span style="font-weight: bold;">Eşit Aralık</span>).</span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo">Aracın kaç entegrasyon adımında bir çizileceği. Örneğin, <span style="font-weight: bold;">Eşit Aralık</span> değerinde <span style="font-style: italic;">0.1</span> metre ve <span style="font-weight: bold;">Her ..'de Çiz</span>'de <span style="font-style: italic;">100</span> tanımlanmışsa, araç her 10 metrede bir çizilecektir.</span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo">Eksen numarası (<span style="font-weight: bold;">EKSEN</span>), eksene mesafe (<span style="font-weight: bold;">Mes</span>), <span style="font-weight: bold;">Başlangıç KM</span> ve <span style="font-weight: bold;">Bitiş KM</span>. Eğer başlangıç KM'si bitiş KM'sinden büyük belirtilirse, analiz ekseni <span style="font-weight: bold;">ters yönde</span> giderek gerçekleştirilir.<br />
+          </span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><div style="text-align: center;"><img src="Imagenes/dialogo_trayectorias.png" style="width: 620px; height: 259px;" alt="" /><span class="Parrafo">&nbsp;</span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/modelo_trayectorias.png" style="width: 412px; height: 259px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">İlk birim şunlarla tanımlanır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Genişlik.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Ön aks ile arka aks arasındaki mesafe.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Ön aks ile tampon arasındaki konsol mesafesi.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Arka akstan bir sonraki birim için bağlayıcının konumu.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Arka tekerleklerin arkasında bir konsol mesafesi.</span></li>
+      </ul>
+      <span class="Parrafo"><br />
+Sonraki birimler şunlarla tanımlanır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Önceki birimle bağlantı noktası ile arka aksı arasındaki eşdeğer uzunluk.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Arka akstan bir sonraki birim için bağlayıcının konumu.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Bağlantı noktasının önünde bir konsol mesafesi.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Arka tekerleklerin arkasında bir konsol mesafesi.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Bağımsız bir genişlik.</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/trayectorias_radiominimo.png" style="width: 225px; height: 204px;" alt="" align="right" hspace="5" /></span></span></span></span></span></li>
+      </ul></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<span style="font-weight: bold; font-style: italic;">Azimut</span> seçeneği, her birim için kullanıcı tarafından tanımlanan sabit bir azimutla hesaplamayı başlatmayı sağlar. Devre dışı bırakılırsa, tüm birimler başlangıç azimutuyla hizalanmış olarak başlar. Azimut değerleri, her birimin son hesaplanan konumuyla otomatik olarak doldurulur, bu da ardışık yörünge hesaplamalarını <span style="font-weight: bold;">zincirlemeyi</span> kolaylaştırır.</span></span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo">Her birimin arka tekerlekleri için maksimum dönüş açısı ve bu tekerleklerin metre başına derece cinsinden maksimum dönüş hızı (<span style="font-weight: bold;">dD/m</span>).</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></li>
+      </ul></span></span>
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Minimum yarıçap</span>:
+aracın minimum dönüş yarıçapını tanımlama imkanı. Minimum dönüş yarıçapı, yörünge merkezinden yönlendirici aksının merkezine (genellikle ön aks) kadar tanımlanır.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+        </span></span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo">
+
+      <span class="Parrafo" /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span style="color: black;">Aracın yörüngesini aşağıdaki resimde gösterilen çeşitli modlarda tanımlamak mümkündür:</span><br /><br /></span></span></span>
+      <div style="text-align: left;"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/trayectorias_modos.png" style="width: 245px; height: 163px;" alt="" /></span></span></span><br /></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo" /></span><span class="Parrafo"><span class="Parrafo" /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="color: black;"><br /><br />Aracın <span style="font-weight: bold;">İnteraktif Sürüş</span> modu vardır. &nbsp;Eksen ve KM aralığı, boyutlarına göre veya şablondan araç ve süpürme alanının oluşturulup oluşturulmayacağı seçildikten sonra; interaktif sürüş modunu seçip <span style="font-weight: bold;">Oluştur</span>'a basıyoruz. Klavyeyle ilişkili işlevleri içeren bir yardım iletişim kutusu açılır:<br /><br /></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/trayectorias_cond_interac.png" style="width: 350px; height: 268px;" alt="" /></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Otomatik pilot sürüş modu seçilebilir:<br /></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eksene mesafe.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Platform kenarına mesafe.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Burunun platform kenarına mesafesi.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Burunun eksene mesafesi.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sağ kenara mesafe.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sol kenara mesafe.<br /></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Eğer aracın yönlendirilebilir arka tekerlekli bir birimi varsa, bunlar Otomatik Pilot tarafından yönlendirilecektir. <span style="font-weight: bold;">Tamam</span>'a basıldığında simülasyon başlar. Hareketi başlatmak için gaza basın. Eğer <span style="font-weight: bold;">Süpürme Alanı Oluştur</span>'u etkinleştirdiyseniz, bu, çalışma bittiğinde oluşturulacaktır.<br /><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Aktif eksenler</span>:
+tüm aktif eksenler için aynı anda dönüş güzergahı çalışmasını oluşturur. Ayrıca, bir eksen veya tüm aktif eksenler için yörünge hesaplamasında oluşturulan çizgiler kendi eksen modelinde oluşturulur.</span></span></span><span class="Parrafo"><br />
+
+      <br />
+
+      <img src="Imagenes/marcha_atras.png" style="width: 225px; height: 56px;" alt="" align="right" hspace="5" /><span style="font-weight: bold;">Geri geri gitme</span> imkanı sunulmuştur. Bu durumda, son birimin arka aksının orta noktası ekseni (veya paraleli) takip etmeye çalışır ve bu son birim o noktada yörüngeye teğet kalır. Birinci birimin ön tekerlekleri hariç, tekerleklerin dönüşleri dikkate alınmaz.<br />
+
+
+      <br />
+
+
+Her birim için, kullanıcı tarafından belirtilen <span style="font-weight: bold;">çizgi tipleriyle</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">aşağıdaki çizgiler çizilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Dört köşenin ve birimlerin ilgi noktalarının yörüngeleri.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Birinci birimin ön tekerlekleri.</span></li>
+      </ul>
+
+      
+      <ul>
+<li><span class="Parrafo">Tüm birimlerin arka tekerlekleri.</span></li>
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo">Dört tekerleğin (birinci birim) veya arka tekerlekler ile bağlantının (birimler 2, 3, 4,..., 12) konumunu kapsayan bir alan.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Arka ve ön konsolları dikkate alarak her birimin dört köşesini kapsayan başka bir alan.</span></li>
+      </ul>
+      
+      <ul>
+        <li><span class="Parrafo">Li uzunluğunun yarısında her iki tarafta bir nokta yörüngesiyle bir çizgi (varsayılan olarak -1 çizgi tipi kullanılır, bu da çizilmeyecekleri anlamına gelir).<br />
+          </span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eğer <span style="font-weight: bold; font-style: italic;">Süpürme Alanı Oluştur</span> seçeneği etkinleştirilirse, çizilen tüm çizgilerin bir zarf eğrisi de oluşturulur. Zarf, sadece çizilen çizgileri değil, aynı zamanda aracın tüm birimlerini tüm uzantısıyla kapsar.<br />
+</span></li>
+      </ul></span></span>
+      
+      <div style="margin-left: 40px;">Yörünge zarfı için çizgi tipini değiştirme ve kaydetme imkanı. Varsayılan olarak zarfı kapsayan çizgi L74'tür.<br />
+      </div>
+
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo">Eğer <span style="font-weight: bold; font-style: italic;">Boykesit Süpürme Alanı</span> seçeneği etkinleştirilirse, her birim için yerden aracın karın boşluğuna kadar bir yükseklik (<span style="font-weight: bold;">Hi</span>) tanımlama imkanı vardır. Bu durumda boykesit süpürme alanı, <a href="OL_rasantes_diseno.html">KIRMIZI KOTLAR</a>'a yüklenebilen bir boykesit (<span class="Archivo">tray#.lon</span>, # numara olmak üzere) olarak hesaplanır ve her KM'de herhangi bir birimin karın boşluğunun herhangi bir yerinde ulaşılan yere en yakın noktayı içerir.<br />
+</span></li>
+      </ul><span style="font-weight: bold;">Demiryolları</span> kutucuğu etkinleştirildiğinde, program şu şekilde davranır:<br />
+      </span></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo">Arka tekerlekler, hat üzerindeki ön tekerleklerin yörüngesini takip ederek serbestçe dönebilir, bunun için aşağıdaki parametreler sabitlenir:<br /></span></span>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+Arka tekerleklerin maksimum dönüş değerleri Gi=90 olarak ayarlanır.</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+Bu tekerleklerin maksimum dönüş hızı dD/m=90 olarak sabitlenir.</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+Minimum dönüş yarıçapı = 0.;</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+Gidiş modu sadece eksen üzerinden veya eksene bir mesafede olabilir.</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+Geri geri gitme algoritması uygulanamaz. (Rijit arka tekerlekler anlamına gelir).</span></span></li>
+          </ul>
+        </li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo">
+</span></span></span>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold; font-style: italic;">Şablonlar</span> komutuyla, ilgili parametreleriyle yedi tür araca sahip bir iletişim kutusuna erişebiliriz:<br />
+            <ul>
+              <li>Otomobil</li>
+              <li>Kamyonet</li>
+              <li>Tek Parça Otobüs</li>
+              <li>Körüklü Otobüs</li>
+              <li>Hafif Kamyon</li>
+              <li>Mafsallı Araç</li>
+              <li>Yol Treni (TIR)</li><li>Tren</li><li>Kanat Taşıyıcı</li><li>Maden Kamyonu</li>
+            </ul>
+<span style="font-weight: bold;">Kabul Et</span> kutucuğuna basarak araç verilerini DÖNÜŞ GÜZERGAHLARI iletişim kutusuna yükleriz.<br />
+Bir şablon yüklendiğinde, seçilen aracın türü ana iletişim kutusunda yansıtılır.<br />
+<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/dialogo_trayectorias_plantillas.png" style="width: 225px; height: 135px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 566px; height: 345px;" alt="" src="Imagenes/dialogo_trayectorias_turismo.png" /><br />
+      <br />
+</span></span></span>
+      
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br />
+      <span class="Titulo_2">Kısıtlı bölgeler</span><br />
+      <br />
+<span style="font-weight: bold;">[KISITLI BÖLGELER]</span> sekmesi, aracın çekici ünitesinin dolaşımı için zorunlu kesimler tanımlamayı sağlar, bu da örneğin aracın bir köprü gibi mevcut bir yapıdan geçmesi gerektiğinde çok kullanışlıdır. Zorunlu kesimler, başlangıç ve bitiş KM'leri ile bu KM'lerdeki eksene olan mesafe ile verilir.<br />
+      <br />
+Arka tekerleklerin maksimum dönüş açısı <span style="font-weight: bold;">Gi</span>, bölgelere göre maksimum bir değer verilerek sınırlandırılabilir.<br />
+      <br />
+</span></span></span>
+      
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/zonas_rest.png" style="width: 669px; height: 282px;" alt="" /></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      <span class="Titulo_2">Serbest geometri</span><br />
+      <br />
+</span></span></span><img src="Imagenes/trayectorias_geometria_libre.png" style="width: 337px; height: 130px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Program, her birim için varsayılan olarak kullanılan dikdörtgenler yerine, kapalı bir alanla tanımlanan bir <span style="font-weight: bold;">serbest geometri</span> kullanmaya izin verir.<br />
+      <br />
+<span style="font-weight: bold;">[Kutuyu Kopyala]</span> seçeneği, A genişliğinde ve ön konsol (V), akslar arası uzunluk (L) ve arka konsol (T) toplamı uzunluğunda bu dikdörtgen alanı döker.<br />
+      <br />
+Bu poligon, X ekseni olarak aracın simetri eksenini (başlangıç ön aksta) ve Y ekseni olarak ön aksı kullanarak sayısal veya grafiksel olarak <span style="font-weight: bold;">düzenlenebilir</span>. Bu poligon şunlar için kullanılır:<br />
+      </span></span></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aracı farklı konumlarda çizmek için.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yörüngenin yataydaki süpürme alanını hesaplamak için.<br />
+</span></span></span></li>
+      
+      </ul>
+      <span class="Titulo_2">Serbest Geometri Boykesit</span><br />
+
+      <br />
+
+Boykesit süpürme alanını daha hassas bir şekilde oluşturmak için, her birimin alt kısmının (tekerlekler hariç) boykesitte serbest bir geometrisini tanımlama imkanı.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/geo_lib_alzado.png" style="width: 669px; height: 282px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      <span class="Titulo_2">Notlar</span><br />
+
+      <br />
+
+Eğer bu iletişim kutusuna bir yörünge hesaplaması için veri girilmişse:<br />
+
+      
+      <ul>
+
+        <li>Geçerli eksen</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Başlangıç KM'si Bitiş KM'sinden farklı</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Sıfırdan büyük eşit aralık.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>En az bir Birim.</li>
+      
+      </ul>
+
+O zaman yatay güzergah eksen hesaplama tuşlarının yanında, eksenlerde herhangi bir değişiklik yapıldıktan sonra yörüngeyi anında oluşturmayı sağlayan bir simge ve bunun yanında yörünge çizimlerini silebilmek için başka bir simge belirir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/try_vehi.png" style="width: 624px; height: 147px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      <br />
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

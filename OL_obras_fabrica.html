@@ -1,0 +1,817 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Menfez</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>MENFEZLER<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#obra">YAPI Sütunu</a><br />
+      <a href="#nombre">İSİM Sütunu</a><br />
+      <a href="#embocadura">GİRİŞ AĞZI(MEMBA) / ÇIKIŞ AĞZI(MANSAP) Sütunu</a><br />
+      <a href="#pendiente">EĞİM / UZUNLUK Sütunu</a><br />
+      <a href="#esviajes">VEREV AÇILARI Sütunu</a><br />
+      <a href="#otros">Diğer Kontroller</a><br />
+      </div>
+      <span class="Parrafo"><a href="#editor_def_avanzada">Menfez düzenleyicisi ve gelişmiş tanım</a><br />
+      </span><span class="Parrafo">
+      <div style="margin-left: 40px;"><a href="#marco">Menfez Gövdesi</a><br />
+      <a href="#imposta">Parapet</a><br />
+      <a href="#aletas">Kanat Duvarları</a><br />
+      <a href="#simbolos">Semboller</a><br />
+      <a href="#textos">Metinler</a><br />
+      <a href="#Lineas">Çizgiler</a><br />
+      <a href="#Celulas">Hücreler</a><br />
+      <a href="#11P">11N</a><br />
+      </div>
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"> <br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+Enine drenaj menfezleri ve projeyle ilişkili diğer boru hatları, bu iletişim kutusundaki araçlarla tanımlanabilir ve gösterilebilir:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_obras_fabrica.png" style="width: 640px; height: 233px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+Burada, tüm menfezleri tek bir <span class="Archivo">.dof</span> uzantılı dosyada yükleyebilir <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="aç ikonu" /> ve kaydedebilirsiniz&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="kaydet ikonu" />. Bu dosyanın adı projenin <span class="Archivo">.pol</span> dosyasına da eklenir (menfezler birden fazla ekseni etkileyebilir ve hiçbirinin <span class="Archivo">.vol</span> dosyasında arşivlenmez). Eğer mevcut projenin tanım <span class="Archivo">.pol</span> dosyasında bir <span class="Archivo">.dof</span> dosyasının adı zaten belirtilmişse, menüye girildiğinde bu dosya otomatik olarak yüklenir.<span style="font-weight: bold;"><br />
+      <br />
+      </span>Menfezler beş farklı sekmede sınıflandırılabilir.<span style="font-weight: bold;"><br />
+      <br />
+      <span style="font-weight: bold;">[.dof Ekle]:</span>
+      </span>Bir Menfez dosyası ekler ve herhangi birinin koordinatlarının tekrar edip etmediğini kontrol eder; eğer tekrar ediyorsa, devre dışı olarak yükler.<br />
+      <br />
+<span style="font-weight: bold;">[Sıfırla]</span>&nbsp;<img src="Imagenes/icono_toolbarEstandar_nuevo.png" style="width: 16px; height: 17px;" alt="" /> simgesi, iletişim kutusundaki verileri siler ve .dof dosyasını proje tablosundan kaldırır.</span><br />
+      <span class="Parrafo"> <br />
+      </span><img src="Imagenes/disquette.png" style="width: 30px; height: 28px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Öte yandan, disket simgesine tıklandığında ve tanımlanmış menfezler varsa, aşağıdaki adla bir dosya kaydedilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><a href="OL_proyecto.html">PROJE tablosunda</a> tanımlanan ad ile.</span></li>
+        <li><span class="Parrafo">Eğer tanımlanmış bir ad yoksa, <a href="OL_general.html">GENEL sekmesinde</a> belirtilen temel ad kullanılır.</span></li>
+        <li><span class="Parrafo">Eğer temel ad yoksa, <span class="Archivo">ispol.dof</span> olarak adlandırılır.</span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parf_negrita">[Taşı]</span> aracı, bir grup menfezi bir sekmeden diğerine taşımayı sağlar.<br />
+      <br />
+<span style="font-weight: bold;">[Uzunluğu Ayarla]</span> aracı, bulunduğumuz sekmedeki tüm menfezlerin uzunluğunu aynı anda otomatik olarak ayarlamayı sağlar.<br />
+      <span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="obra">YAPI Sütunu</a></span><br />
+      <br />
+<span style="font-weight: bold;">YAPI</span> sütununda, projeye eklediğimiz her bir menfez hakkında bazı genel verileri tanımlayabiliriz.<br />
+      <br />
+      </span><span class="Parrafo"> Bu sütunun kutucuğuna yazdığımız numara, menfezin kimlik numarasıdır. Eğer art arda iki bölüm aynı numarayı taşıyorsa, bunların aynı menfezin birbirini takip eden iki bölümü olduğu anlaşılır: birincinin çıkış ağzı ikincinin giriş ağzına bağlanır. <span style="font-style: italic;">i</span> numaralı bölüm tanımlandıktan sonra bir sonrakinin tanımına aynı numara ile başlanırsa, önceki bölümün çıkış ağzı koordinatları bu bölüme giriş ağzı olarak kopyalanır.<br />
+      <br />
+Aynı satırda üç simge bulunur, bunlarla şunları yapabiliriz:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><img src="Imagenes/icono_of_visualizar.png" style="width: 17px; height: 17px;" alt="" />Mevcut menfezi proje bağlamında (dolgu/yarma, platform vb. de göstererek) 3D olarak görüntüle.</span></li>
+        <li><span class="Parrafo"><img src="Imagenes/icono_of_dibujar.png" style="width: 17px; height: 17px;" alt="" /></span><span class="Parrafo"><span class="Parrafo"> Menfezi planda çiz.</span></span></li>
+        <li><span class="Parrafo"><img src="Imagenes/icono_of_editar.png" style="width: 17px; height: 17px;" alt="" /> <a href="#editor_def_avanzada">Menfezi düzenle</a>.<br />
+          </span></li>
+      </ul>
+      <span class="Parrafo">Hemen altında, menfez tanımı olarak hangi <span class="Archivo">.obf</span> dosyasını kullanacağımızı seçebiliriz. İletişim kutusunda, bazı menfezlerin bir tipi tanımlanmamışsa (.OBF dosyası), kırmızı kot menüsünde veya Boykesit çiziminde, kütüphanede yer alan OBF_Por_Defecto.OBF dosyası kullanılır. Farklı bir gösterim kullanılmak isteniyorsa, bu dosya yerel kütüphaneye kopyalanabilir ve isteğe göre değiştirilebilir.<br />
+      <br />
+Simgelere tıklayarak tüm Menfezleri devre dışı bırakabilir ve etkinleştirebilirsiniz: &nbsp;<img src="Imagenes/OF_act_desact_todas.png" style="width: 33px; height: 17px;" alt="" /><br />
+      <br />
+      <br />
+      <br />
+      </span><span class="Parrafo"><span class="Titulo_2"><a name="nombre">İSİM Sütunu</a></span></span><br />
+      <span class="Parrafo"><br />
+Bu sütunda ismi ve diğer bazı seçenekleri tanımlayacağız.<br />
+      <br />
+Her <span class="Archivo">.obf</span> dosyası, bu menfez türüyle ilişkili bir isim taşır ve bu isim varsayılan olarak kullanılır, ancak kullanıcı daha sonra bunu bireysel olarak değiştirebilir. Bu isim, hem planda çizimde hem de boykesitte gösterim için kullanılacaktır. Bu kutucuğun içindeki onay kutusunu etkinleştirmek, .obf dosyası değiştirilse bile ismin korunmasını sağlar.<br />
+      <br />
+      </span><span class="Parrafo"><span style="font-weight: bold;">Yükseklik</span> kutucuğu, her menfez için bir yükseklik değeri tanımlamayı sağlar. Yanındaki kutucuk etkinleştirilirse, bu yükseklik menfez ekseninin boyuna eğimine dik olacaktır.</span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span style="font-weight: bold;">[&lt;&gt;]</span> düğmesi, yanındaki sütunda giriş ağzı ve çıkış ağzı koordinatlarını değiştirir.</span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span style="font-weight: bold;">[DİK KES->]</span> seçeneği, menfez ekseninin güzergah eksenine dik olacak şekilde çıkış ağzını tanımlamayı sağlar. Tıklandığında, program dik olarak kesmesi gereken güzergah eksenini seçmenizi ister (sayısal olarak verilebilir veya o eksenin plan çizimindeki herhangi bir çizgi seçilebilir) ve çıkış ağzının hesaplanacağı bir çizgi (örneğin, dolgu şev eteği çizgisi) seçmenizi ister.</span><br />
+      <span class="Parrafo"><br />
+      <br />
+      <span class="Titulo_2"><a name="embocadura"><span class="Titulo_2">GİRİŞ AĞZI(MEMBA) / ÇIKIŞ AĞZI(MANSAP) Sütunu</span></a></span><br />
+      <br />
+Her yapı, her biri uç noktalarının 3 koordinatı ile verilen bir veya daha fazla düz bölümle tanımlanır: <span style="font-weight: bold;">giriş ağzı(memba)</span> ve <span style="font-weight: bold;">çıkış ağzı(mansap)</span>. Koordinatlar, ekranın üst kısmındaki <span style="font-weight: bold;">[Tıkla / Sayısal]</span> anahtarının durumuna bağlı olarak fare ile grafiksel olarak veya sayısal olarak verilebilir.<br />
+      <br />
+Eksenlerin plan gösteriminde, grafik ekranda, her menfez için üç anahtar nokta (giriş ağzı, çıkış ağzı ve orta nokta) görülebilir. Bu noktalar seçilip sürüklenerek konumları grafiksel olarak değiştirilebilir.<br />
+      <br />
+      <span class="Parrafo">Hem giriş ağzı hem de çıkış ağzı için, alın duvarının (veya bacanın) paralel olacağı bir <span style="font-weight: bold;">[eksen]</span> ve menfez tanımında otomatik uzatma kullanımı belirtilmişse kanat duvarlarının sonunun nerede kalacağını işaretlemek için bir <span style="font-weight: bold;">[Çizgi]</span> seçilebilir. Eğer öyleyse, program geçerli bir kesişim olmaması veya sonuçta ortaya çıkan kanat duvarı uzunluğunun menfezde tanımlanan minimumdan daha az olması durumu hariç, kanat duvarlarını belirtilen çizgiyle kesişene kadar götürür. Bu durumda, program dolgu şev eteği ile kesişimi arar.<br />
+      <br />
+      <br />
+      </span><span class="Parrafo"><span class="Titulo_2"><a name="pendiente"><span class="Titulo_2">EĞİM / UZUNLUK Sütunu<br />
+      <br />
+      </a></span></span>Bu sütunda her menfez için iki düğme bulunur:<br />
+      <ul>
+        <li>Birincisi, menfezin boyuna eğim değerini yüzde olarak gösterir. Buna tıklayarak bu değeri değiştirebilir ve hangi kotun korunacağını seçebiliriz: giriş ağzının mı yoksa çıkış ağzının mı.<br />
+          <br />
+        </li>
+        <li>İkincisi, menfezin uzunluğunu gösterir. Bu menü 2 bölüme ayrılmıştır:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Üst kısımda, menfezin dolgunun parapetin iç yüzünden geçecek şekilde otomatik olarak ayarlanmasını sağlayabiliriz (2 modda: <span style="font-weight: bold;">Parapetin üst kısmını dolguya ayarla</span> veya <span style="font-weight: bold;">Parapetin alt kısmını dolguya ayarla</span>). Parapet ana eksene paralel değilse, parapetin en elverişsiz köşesi, yani ana eksene en yakın köşe kullanılır. <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Doğru bir ayarlama için ilgili ekseni önceden hesaplamalıyız, böylece tam dolgusu oluşur. (Önceki konumundaki Menfez sınır çizgisi tarafından kırpılmış olabilir.)</span></span></span> Uzunluğun otomatik ayarlanmasını dolgu dış kaplama yüzeyini kullanarak gerçekleştirmek için <span style="font-weight: bold;">Dolgu Kaplamasını Kullan</span> seçeneğini etkinleştirmek mümkündür.</li>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <li>Alt kısımda menfez gövdesi uzunluğu için bir değer belirleyebiliriz. 3 mod vardır (<span style="font-weight: bold;">Giriş Ağzı Konumunu Koru</span>, <span style="font-weight: bold;">Çıkış Ağzı Konumunu Koru</span> veya <span style="font-weight: bold;">Dağıt</span>). Her durumda, Menfez tabanı aynı düzlemde kalır ve dolayısıyla eğimini korur.&nbsp; </li>
+        </ul>
+      </ul>
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/OF_Longitud.png" style="width: 300px; height: 267px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><br />
+      <span class="Parrafo"><span class="Titulo_2"><a name="esviajes"><span class="Titulo_2">VEREV AÇILARI Sütunu<br />
+      <span class="Parrafo"><span class="Titulo_2"><span style="font-weight: normal;" class="Parrafo"><br />
+<span style="font-weight: bold;">[VEREV AÇILARI]</span> düğmesine tıklandığında, çeşitli menfez bölümlerinin kestiği eksenler, bunlara göre verev açıları ve kesişim noktasının KM'si hesaplanır. Kullanıcı eksen numarasını manuel olarak belirtirse, yapı onu kesmese bile verev açısı ve KM bu eksene göre hesaplanır. İlişkili bir ana ekseni olmayan menfezler için, verev açısı hesaplanırken, devre dışı bırakılmış veya devre dışı bırakılmış gruplara ait eksenlerle ilişkilendirilmezler.<br />
+      <br />
+Verev açısının sayısal değerini değiştirirsek, program tüm menfezi, verev açısının ölçüldüğü ana ekseni kestiği nokta etrafında döndürerek giriş ağzı ve çıkış ağzının yeni konumunu hesaplar.<br />
+      <br />
+Kırmızı Kot menüsünde sadece mevcut ekseni kesen menfezler gösterilecektir. Verev açısı hesaplaması için burada belirtilmiş olsalar bile, ekseni kesmeyenler gösterilmez. Buna karşılık, belirttikleri ekseni kesmeseler bile, bu eksenin azimutu, bu şekilde tanımlanmış elemanlar (menfez gövdesi, kanat duvarları...) için açıların başlangıcı olarak kullanılacaktır.<br />
+      <br />
+Eğer menfezin verev açıları için bir ekseni tanımlanmışsa, enkesitleri oluşturulurken, yapıyı tanımlayan çizgi ile platform (yüzey 67) arasındaki başlangıca olan mesafe ve kot farkı aşağıdaki üç noktada hesaplanır:<br />
+      </span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Palyelerin veya palye yoksa banketin iki kenarı (kod 50 veya 11).</span></li>
+        <li><span class="Parrafo">Geometrik eksen (otoyollarda kod -100 veya karayollarında 1).</span></li>
+      </ul>
+      <span style="font-weight: normal;" class="Parrafo"><img src="Imagenes/of_secc.png" style="width: 120px; height: 111px;" alt="" align="right" hspace="5" />Verev açıları sütununda, eksen numarasının altındaki enkesit simgesine tıklayarak, bir menfezin enkesitini kesen eksenle birlikte kesit penceresinde görebilirsiniz. Enkesit oluşturma parametreleri, menfezlerin enkesitlerini oluşturma iletişim kutusunda değiştirilebilir.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <span style="font-weight: bold;">Verev Açısı Etiketlemesi</span><br />
+      <br />
+Bazı ülkelerde kullanılan açı kriterine uymak için verev açısını etiketlerken aşağıdaki seçenekler eklenmiştir:<br />
+      <br />
+      <ul>
+        <li>Planda Etiketleme, .OBF Tanımla / Semboller Sekmesi / Verev Açısı'na gidin:</li>
+        <ul>
+          <li>Grad veya derece seçilebilir.</li>
+        </ul>
+        <ul>
+          <li>[] +200 (+180) etkinleştirme seçeneği eklenir.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Boykesit Çizimi, .gui Düzenle / Menfezler / Verev Açısı'na gidin:</li>
+        <ul>
+          <li>Grad veya derece seçilebilir.</li>
+        </ul>
+        <ul>
+          <li>[] +200 (+180) etkinleştirme seçeneği eklenir.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Enkesit Çizimi, .gut Düzenle / Menfezler / Verev Açısı'na gidin:</li>
+        <ul>
+          <li>Grad veya derece seçilebilir.</li>
+        </ul>
+        <ul>
+          <li>[] +200 (+180) etkinleştirme seçeneği eklenir.</li>
+        </ul>
+      </ul>
+      <br />
+      <br />
+      </span></span></span><span class="Parrafo"><span class="Titulo_2"></span></span></a><a name="otros"><span class="Titulo_2">Diğer Kontroller</span><br />
+      <br />
+      </a></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[Ekle]</span>, <span style="font-weight: bold;">[Araya Ekle]</span> ve <span style="font-weight: bold;">[Sil]</span> düğmeleri, menfez bölümlerini tanımlayan komut satırları üzerinde işlem yapar; sona bir tane ekler, mevcut olanın (tablonun ilk satırında gösterilen) önüne bir tane ekler veya mevcut bölümü siler.<br />
+      <br />
+Ekle açılır menüsünden şunları seçebiliriz:<br />
+      <ul>
+        <li>Çizgiden:
+Eğer birbirine bağlı bir dizi menfezi temsil eden bir 3D çizgi varsa, bu seçenek çizginin köşe noktalarının X, Y, Z koordinatlarını kullanarak bu diziyi otomatik olarak oluşturur.</li>
+      </ul>
+      <div style="margin-left: 40px;">Giriş ağzı ve çıkış ağzı koordinatları verildikçe, program girilen bölümün eğimini ve 3D uzunluğunu hesaplar ve gösterir.<a name="otros"><br />
+      </a></div>
+      <ul>
+        <li>Çizgi tipinden: bir çizgi seçilir ve projedeki aynı tipteki her çizgi için bir menfez oluşturulur.</li>
+      </ul>
+      <ul>
+        <li>Enkesitlerden (Giriş ağzı sağda / solda):
+Bu seçenek, seçeceğimiz enkesit dosyasının sağ ve sol uçlarından giriş ağzı ve çıkış ağzını çıkarır. Her enkesitte merkez noktasının koordinatlarının ve azimutunun dahil olduğunu varsayar.</li>
+      </ul>
+      <div style="margin-left: 40px;">.per dosyasından menfezler eklenirken, eğer kesit tanımlıysa giriş ağzı ve çıkış ağzı dolgu şev etekleriyle sınırlanır. Ayrıca .per dosyasının ilk yüzeyi, her menfeze arazi profili olarak atanır, böylece menfezler için enkesitler çıkarılırken bu profil kullanılır ve arazi yüzeyinden kesilmez.<br />
+İletişim kutusunda, bir menfezin ilişkili bir arazi profili olup olmadığını bir bakışta anlamak için menfez adının yanında bir simge belirir. Bu simgenin yanında, bu ilişkili profili silme imkanı eklenir.<br />
+      <br />
+      <img src="Imagenes/of_per.png" style="width: 353px; height: 87px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"> <br />
+      </span><span class="Parrafo"><span style="font-weight: bold;">[Plan]</span> düğmesine tıklandığında, tüm menfezler her <span class="Archivo">.obf</span> dosyasının sakladığı talimatlara göre EDM üzerine çizilir. <span style="font-weight: bold;"><img src="Imagenes/icono_basura.png" style="width: 23px; height: 23px;" alt="" /> </span>ile, kullanıcı yeniden çizmeden önce tanımlardan herhangi birini değiştirebilsin diye yapılmış olan çizim silinir.<span style="font-weight: bold;"><br />
+      </span></span><span class="Parrafo"><br />
+<span style="font-weight: bold;">Kotları güncelle</span> kutucuğu ile, tüm menfezlerin giriş ağzı ve çıkış ağzı koordinatlarının kotları, mevcut SAM yüzeyi referans alınarak değiştirilir. <a href="EDM_control_entidades.html#control_superficies">SAM yüzeyleri kontrolü</a> menüsüne doğrudan yanındaki <img src="Imagenes/icono_toolBarEstandar_superf.png" style="width: 20px; height: 20px;" alt="" /> simgesinden erişilebilir.<br />
+      <br />
+      <span class="Parrafo"><span class="Titulo_2"><span style="font-weight: normal;" class="Parrafo"><br />
+<span style="font-weight: bold;">[Plan]</span> düğmesine basarak menfezler çizildiğinde, her biri için L386 çizgi tipinde küçük bir alan oluşturulur. Bu alan, ana eksenin dolgusunun menfez gövdesinin üzerine oturabileceği bir yüzeyi tanımlar.<br />
+Bir eksen boykesitte hesaplandığında, menfezlerin planı çizildikten sonra veya proje <span style="font-weight: bold;">Menfezleri Çiz</span> seçeneği etkinken hesaplandığında, <span class="Archivo">ISPOLn.per</span> enkesitlerine bu yüzeylerle olan kesişimler eklenir.<br />
+Kütüphaneye, menfezin kapladığı alanı dolgu metrajından düşen, değiştirilmiş bir <span class="Archivo">ISPOL4.dar</span> eklenir.<br />
+      <br />
+      </span><img src="Imagenes/ejemplo_obFab_1.png" style="width: 376px; height: 237px; margin-left: 7px; font-weight: normal;" alt="" align="right" /><span style="font-weight: normal;" class="Parrafo">Enkesitler oluşturulurken, sıfırdan farklı bir yükseklik tanımlanmışsa, menfez eksenine paralel bir çizgi oluşturulur.<br />
+      <br />
+Ayrıca, çizimde tanımlanan çizgiler menfez yüksekliği ile kopyalanır ve uçlarda kapatılır, böylece 3D bir görünümde dikdörtgen kesitli borunun geometrisi görülebilir.<br />
+      <br />
+<span style="font-weight: bold;">[Sırala]</span> düğmesi ile iki kriter ayırt edilir:<br />
+      </span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Eksenlere göre ve her eksen için KM'ye göre sıralar (her iki değer için de verev açısı verilerinde görünen değerler alınır).</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Her menfezin orta noktasının, tanımlanan aynı eksen üzerindeki izdüşüm KM'sine göre sıralar.</span></li>
+      </ul>
+      <div style="text-align: center; font-weight: normal;"><img src="Imagenes/of_ordenar.png" style="width: 234px; height: 147px;" alt="" /><br />
+      </div>
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;" class="Parrafo"><span style="font-weight: bold;">[Enkesitler]</span> düğmesi, her menfezin açılım profilini içeren <span class="Archivo">OF.per</span> adında bir <span class="Archivo">.per</span> formatında dosya oluşturur (pafta çıkarmak için Boykesit -> <a href="OL_planos_transversales.html" target="_blank">ENKESİT PAFTALARI</a>'ndan yapılır). Enkesitleri doğru bir şekilde elde etmek için, bu komutu çalıştırmadan önce:<br />
+      </span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Mevcut arazi yüzeyi, enkesitlerde gösterilmesi için düzgün bir şekilde tanımlanmalıdır. Ayrıca, <a href="OL_perf_transv.html">enkesit elde etme menüsünde</a>, <a href="OL_perf_transv.html#modos_extrac"><span style="font-style: italic;">Üçgenle</span> seçeneği</a> etkinse, bu seçenek menfezlerin enkesitlerini keserken de uygulanır.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Yapının tüm geometrisinin mevcut olması için eksenler tamamen tanımlanmış ve hesaplanmış olmalıdır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: normal;">Grubu veya modeli devre dışı olan eksenlerin enkesitlerinin kesilmediğini unutmayın.</span><br />
+          </span></li>
+      </ul>
+      </span></span>Seçim yapılabilir:<br />
+      <ul>
+        <li>Tek bir <span class="Archivo">OF.per</span> dosyası oluştur.</li>
+      </ul>
+      <ul>
+        <li>Her eksen için bir <span class="Archivo">OFn.per</span> dosyası oluştur (<span style="font-style: italic;">n</span>, verev açıları sütununda belirtilen eksendir).</li>
+      </ul>
+Üstyapı katmanları <span class="Archivo">ISPOLn.per</span> dosyasına dahil edilmişse, kesişimler de dahil edilir. Her enkesite, <a href="EDM_editor_perfiles.html">enkesit düzenleyicide</a> gösterilmesi için menfezlerin adı da eklenir.<br />
+      <br />
+İki pay değeri girilmelidir: arama payı ve kırpma payı. Bu, menfezin başına ve sonuna eklenen arazi uzunluğunun tam bir değere sahip olmasını sağlar.<br />
+      <br />
+Bu enkesitlerdeki eksen mesafe başlangıcının, ana eksenle (üzerinde verev açısı hesaplanan) çakışması sağlanabilir. Enkesitlerdeki mesafe başlangıcı olarak Plandaki veya Kesitteki ana eksen seçilebilir (eksen dışmerkezliği olan eksenler için farklıdır).<br />
+      <br />
+      <span style="font-weight: bold;">Çizgi ekle</span>:
+Bu seçenek, menfezlerin enkesitlerine o çizgilerle olan kesişimleri eklemek için [<a href="OL_anadir_linea.html">Enkesitlere çizgi ekle</a>] iletişim kutusunun tanımını kullanır.<br />
+      <br />
+      <span style="font-weight: bold;">Menfezi çiz</span>:
+Bu seçenek etkinleştirildiğinde, enkesitte menfez gövdesi (kalınlığıyla), parapet (kalınlığıyla), alın duvarı, giriş ağzındaki bacalar, radye ve kanat duvarları gösterilir.<br />
+      <br />
+      <span style="font-weight: bold;">Araziyi ...'da Kes</span>:
+Bu seçenek etkinleştirildiğinde, Menfez ekseninin her iki tarafında sabit bir mesafede arazi yüzeyi ile olan kesişim eklenir.<br />
+      <br />
+      <span style="font-weight: bold;">Kullanıcı KM</span>: Bu seçenek etkinleştirildiğinde, enkesitlerde saklanan Menfezin eksenlerle kesişim KM'si, KM Eşitliklerinden elde edilen KM'dir. Enkesitler çizilirken etiketlenen KM'ler bu kullanıcı KM'leridir.<br />
+      <br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/of_perfiles.png" style="width: 309px; height: 260px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><span class="Titulo_2"><span style="font-weight: normal;" class="Parrafo"><br />
+Menfezlerin enkesitleri kesilirken, arazi yüzeyi profili haritadan çıkarılır ve bitkisel toprak tipi (L104) atanır. Sağlam zemin (L66) de haritadan çıkarılır ve özellikle arazi ile kesişime paralel ve <span class="Archivo">ISPOL#.per</span> dosyasından okunan derinlikte bir çizgi ile elde edilir (<span class="Archivo">#</span> eksen numarasıdır).<br />
+      <br />
+      </span><img src="Imagenes/edit_perf_obFab.png" style="width: 274px; height: 257px;" alt="" align="left" hspace="8" /><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: bold;">[OF.per Düzenle]</span> seçeneği ile doğrudan enkesit düzenleyiciye erişilebilir ve <span class="Archivo">OF.per</span> dosyası düzenlenebilir.<br />
+      <br />
+Enkesit düzenleyicide, uygulama bir menfez verilerini içeren bir dosyayı düzenlediğini algılar, böylece onu temsil eden poligon hattının bir değişikliği (üzerine çift tıklandığında görünen özellikler kutusu) ve ardından [Menfezi güncelle] tuşuna basılması, kullanıcının tasarım değişikliklerini basit ve hızlı bir şekilde yapmasını sağlar. Birbirine bağlı iki bölüm olduğunda bu seçenek çalışmaz, bu nedenle bunları önceden bağımsız bölümler olarak ele almak, düzenledikten sonra yeniden numaralandırmak ve son olarak enkesitleri yeniden oluşturmak önerilir.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+Her enkesitte birkaç çizgi veya yüzey gösterilir:<br />
+      </span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Menfezin ekseni.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Arazi veya araziler, eğer çıkarılacakları yüzeyler tanımlanmışsa.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Menfezin kestiği eksenlerin terasman, yarma ve dolgu dahil olmak üzere toprak işleri platformu. Eğer arazi yüzeyi varsa, her iki yüzeyin çakışması otomatik olarak aranır.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Genişletme ve iyileştirme projelerinde, mevcut kaplamayı tanımlayan yüzeyler.<br />
+          </span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Kaplama yüzeyi.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Projede tanımlanmışsa, otomatik <a href="OL_cruces.html">hemzemin kavşakların</a> ve <a href="OL_entronque_glorieta.html">dönel kavşaklı bağlantıların</a> kavşak kolları (<a href="OL_proyecto.html">PROJE tablosunda</a> <span style="font-style: italic;">Kavşaklar</span> kutucuğunun bu kavşak kollarının gösterilmesi için etkin olması gerekir).</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Demiryolu projelerinde hatlar ve traversler dahil edilir.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Projede belirtilmişse, duvar pabucu ve duvar pabucu kazı yüzeyleri.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo"><a href="OL_desmonte_tierra.html#muro_losa">Duvar + döşeme</a> yarma modunda döşeme.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo"><a href="OL_tuberias.html">Boru hattı projeleri</a> için borular.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Varsa <a href="OL_tuneles.html">tünellerin</a> iç ve dış yüzeyi.</span></li>
+      </ul>
+      <span class="Parrafo"><br style="font-weight: normal;" />
+      <span style="font-weight: normal;">Boykesit paftaları</span><a style="font-weight: normal;" href="OL_planos_longitudinales.html"></a><span style="font-weight: normal;"> çizdirilirken, kullanılan boykesit şablonu</span><a style="font-weight: normal;" href="OL_gui.html"></a><span style="font-weight: normal;"> dosyası (<span class="Archivo">.gui</span>) buna uygunsa, menfezlerin eksenle kesişimi aranır ve bunlar boykesitte gösterilir. <span class="Archivo">isp18.gui</span>, <span class="Archivo">isof1.gui</span> ve <span class="Archivo">isof2.gui</span> şablonları, menfezlerin gösterimini içeren şablon örnekleridir.</span><br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">Tüm gösterim, menfez türünün <span class="Archivo">.obf</span> dosyasında tanımlananlara bağlıdır. Bu dosyalar, Boykesit'in yan menüsündeki [TABLOLARI DÜZENLE] &#8594; .obf seçeneği ile doğrudan düzenlenebilir ve bunlarda kullanılacak çizgi tipleri ve semboller açıklanır, ancak <span style="font-weight: bold;">[.OBF TANIMLA]</span> düğmesine tıklandığında açılan <a style="font-weight: normal;" href="#editor_def_avanzada">iletişim kutusu</a> aracılığıyla değiştirilmesi daha kolaydır.</span></span></span></span><span class="Parrafo"><span class="Parrafo"><br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;"><span class="Archivo">C4.obf</span> dosyası örneği:</span><br />
+      <br />
+      </span>
+      <div style="margin-left: 40px; font-weight: normal;"><span class="Parrafo"><span class="Archivo"># DENEME MENFEZİ C4.obf</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp; isim</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp; N&nbsp; 1 m BORU</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># planda çizim için</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp; PL&nbsp; 64&nbsp;&nbsp; .5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; menfez eksenine paralel çizgi</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp; PL&nbsp; 64&nbsp; -.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; menfez eksenine paralel çizgi</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; PSE 90&nbsp;&nbsp;&nbsp; 2.&nbsp; 1 giriş ağzında sembol Boyut 2 kesişimde ana eksen açısı</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; PSD 91&nbsp;&nbsp;&nbsp; 2.&nbsp; 1 çıkış ağzında sembol Boyut 2 kesişimde ana eksen açısı</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp; Paralel Çizgi&nbsp; Gir.Ağzı.Mes.&nbsp; Çık.Ağzı.Mes. Gir.Yön&nbsp; Çık.Yön</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#----------------- ---------- -------- -------- -------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; PL2 0&nbsp; .5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; PL2 0 -.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># İsmi planda etiketle</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stil Boyut YB&nbsp; DB&nbsp;&nbsp; Çık.Ağzı.Mes.&nbsp; Göreceli_Açı</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># -------&nbsp; ------ --- ---- ---- ------------- ---------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; PN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24&nbsp;&nbsp;&nbsp; 2.&nbsp;&nbsp; 0&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># eksenlerin boykesitinde çizim için</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp; LSC 309&nbsp; 1.&nbsp; 0&nbsp;&nbsp;&nbsp; Eksenle kesişimde sembol,boyut,...</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp; SON</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span style="font-weight: normal;" class="Parrafo">
+      <br />
+Örneğin, <span class="Archivo">C7.obf</span> dosyası, <a href="OL_planos_longitudinales.html">boykesitte</a> gösterilen (ölçeklenebilir) sembolü tanımlayan komutlar içerir, ancak aşağıdaki unsurların neden olduğu deformasyonu dikkate alır:<br />
+      </span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Yatay ölçek ve verev açısına göre X ekseninde.</span></li>
+        <li><span class="Parrafo">Düşey ölçek ve eğime göre Y ekseninde.</span></li>
+      </ul>
+      <span style="font-weight: normal;" class="Parrafo">
+LİSTELER menüsünden, menfezler ile bir liste (<span class="Archivo">obras.res</span>) oluşturmak mümkündür. Bu liste, yapıyı tanımlayan çizgi ile platform (yüzey 67) arasındaki başlangıca olan mesafeyi ve kot farkını aşağıdaki üç noktada içerir:<br />
+      </span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Palyelerin veya palye yoksa banketin iki kenarı (kod 50 veya 11).</span></li>
+        <li><span class="Parrafo">Geometrik eksen (otoyollarda kod -100 veya karayollarında 1).</span></li>
+      </ul>Bu <a href="./OL_listados_datos_control.html#obrasFab">listeler</a> hakkında daha fazla bilgiye yardımın ilgili bölümünden erişebilirsiniz.<br /><br />
+      <img src="Imagenes/ejemplo_obFab_2.png" style="margin-left: 7px; font-weight: normal; width: 347px; height: 231px; float: right;" alt="" /><span class="Parrafo"><span style="font-weight: normal;">Ayrıca, enkesit çizim</span><a style="font-weight: normal;" href="OL_planos_transversales.html"></a><span style="font-weight: normal;"> menüsünde, otomatik olarak <span class="Archivo">OF.per</span> dosyasını seçen <span style="font-weight: bold;">[Menfezler]</span> seçeneği belirir.</span><br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">Kullanıcı, bu enkesitleri göstermek için, menfezlerin parametrelerini etiketlemeye olanak tanıyan bir dizi komut içeren <span class="Archivo">OBFA1.gut</span> enkesit şablonunu da kütüphanede bulabilir.&nbsp;&nbsp;&nbsp; &nbsp;</span><br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <br />
+      <br />
+      <span class="Parf_negrita">Yüzeyler</span><br />
+      <br />
+<span class="Parf_negrita">Yüzeyler</span> düğmesine tıklandığında aşağıdaki menü belirir:<br />
+      <br />
+      </span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/OF_generar_sup.png" style="width: 400px; height: 262px;" alt="" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu seçenek, menfezleri oluşturan yüzeyleri, belirli bir çizgi tipine (varsayılan 517) sahip yeni bir harita yüzeyi olarak oluşturmayı sağlar. Ayrıca, [<span class="Parf_negrita">Konsollar</span>] seçeneğiyle <a href="EDM_control_entidades.html#control_sup_cartograficas">harita yüzeyi</a> ve <a href="EDM_control_entidades.html#control_superficies">SAM yüzeyi</a> oluşturulur. Bu, Menfezin tüm elemanlarının kesitleriyle enkesitler oluşturmayı mümkün kılar: Menfez Gövdesi, Parapet, Kanat Duvarları, Radye, Bacalar ve dirsekler. Böylece, bir eksen veya proje hesaplandığında, <span class="Archivo">ISPOLn.per</span> dosyalarına bu 517 yüzeyiyle (menfez gövdesi, parapet, radye, kanat duvarları, bacalar ve dirsekler yüzeyleri) olan kesişimler dahil edilir.<br />
+      <br />
+      <br />
+      <span style="font-weight: normal;" class="Titulo_2"><a name="editor_def_avanzada"><span class="Titulo_2">Menfez düzenleyicisi ve gelişmiş tanım</span></a></span><br style="font-weight: normal;" />
+      <span style="font-weight: normal;">&nbsp; </span><span style="font-weight: normal;" class="Parrafo"><br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, enine drenaj menfezlerinin daha gelişmiş geometrik tanımlarını destekler. Bunun için, şimdiye kadar açıklanan özelliklere ek olarak kanat duvarları, parapet vb. ile ilgili bazı diğer özellikleri de içeren <span class="Archivo">.obf</span> dosyalarını düzenlemeye olanak tanıyan küçük bir araç sunar. Ayrıca, menfez geometrisinin küçük bir önizlemesini sunan bir 3D görüntüleyici de bulunur. Bu araca <span style="font-weight: bold;">[.OBF TANIMLA]</span> düğmesi ile erişebiliriz. O zaman aşağıdaki iletişim kutusu açılır:<br />
+      <br />
+      </span>
+      <div style="text-align: center; font-weight: normal;"><span class="Parrafo"></span><img style="width: 600px; height: 332px;" alt="" src="Imagenes/dialogo_editor_obFab.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span style="font-weight: normal;" class="Parrafo">&nbsp;<br />
+<span style="font-weight: bold;">Dosya</span> bölümünde, kütüphaneye kaydedilecek <span class="Archivo">.obf</span> dosyasının adı belirtilmelidir, ancak mevcut bir dosyayı yüklemek de mümkündür. Menfezin ilişkili bir adı olacaktır. <span style="font-weight: bold;">[...]</span> düğmesi ile farklı kütüphanelere kaydetmeye izin verilir.<br />
+      <br />
+Eğer <span style="font-weight: bold;">Sınır çizgileri oluştur</span> kutucuğu etkin bırakılırsa, proje hesaplamasında dolguları menfezlerin kanat duvarlarına göre kırpmak için işlenen bir <span class="Archivo">obf.lfr</span> sınır çizgileri dosyası oluşturulur. Kullanımı hesaplama sırasında otomatik olduğu için yüklenmesi gerekmez.<br />
+Sınır çizgilerine, dağlık arazilerdeki virajlı eksenlerin diğer bölgelerini etkilemesini önlemek için uygulama aralığı eklenir.<br />
+      <br />
+Ancak tavsiye edilenler şunlardır:<br />
+      </span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Menfezleri olan her eksen için, sınır çizgilerinin noktalarında <a href="OL_interpolar_perfiles.html">enkesit enterpolasyonunu</a> etkinleştirin (Boykesit'in <span style="font-weight: bold;">[T Enterpole Et]</span> seçeneği).</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><img src="Imagenes/obFab_proyecto.png" style="width: 182px; height: 80px;" alt="" align="right" hspace="8" /><span class="Parrafo"><a href="OL_proyecto.html">PROJE iletişim kutusunda</a> menfezleri çizme seçeneğini etkinleştirin. Bu, eksenleri hesaplamadan önce menfezleri çizer ve <span class="Archivo">obf.lfr</span> dosyasını oluşturur.</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Ayrıca, <a href="OL_proyecto.html">proje tablosunda</a>, her eksen için kırpılmalarına izin vermek üzere <span style="font-weight: bold;">[BAĞ]</span> seçeneğini etkinleştirin.
+&nbsp;</span></li>
+      </ul>
+      <span style="font-weight: normal;" class="Parrafo">
+Not: Kütüphane içinde menfezlere ilişkin aşağıdaki gibi semboller bulunabilir:<br />
+      </span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Üç adet 3x2 gözlü menfez (sembol 467)</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">İki adet 3x2 gözlü menfez (sembol 468)</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">Üç adet 2m çaplı boru (sembol 267)</span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo">İki adet 2m çaplı boru (sembol 268)</span></li>
+      </ul>
+      <span style="font-weight: normal;" class="Parrafo">Her menfez dosyasında farklı bölümler yapılandırılabilir:<br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><a name="marco"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Titulo_2">Menfez Gövdesi</span></span></span></span></a><a name="marco"><br />
+      </a></span> </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 332px;" alt="" src="Imagenes/dialogo_editor_obFab.png" /><br />
+      </span></span></span> </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Her menfez gövdesi için iki özellik tanımlanabilir: <span style="font-style: italic;">Özellik 1</span> ve <span style="font-style: italic;">Özellik 2</span>. Bu özellikleri menfez .obf dosyasını yüklediğinde miras alır, ancak bu özel menfez için değiştirilebilir.<br /><br />Menfez gövdesinde, başlangıç olarak, çizileceği <span style="font-style: italic;">çizgi tipi</span> seçilebilir. Sonra tanım yöntemini seçmeliyiz:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Dikdörtgen Kesit</span>, burada <span style="font-style: italic;">yarı genişlik</span>, <span style="font-style: italic;">kalınlık</span> ve <span style="font-style: italic;">yükseklik</span> tanımlanır.
+          </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="marco"><br />
+          <br />
+          </a></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sembole Göre Kesit</span>:</span></span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"> menfezler herhangi bir enkesit ile bir sembol kullanılarak tanımlanabilir. Sembol, boykesit ve kırmızı kot menüsü için kullanılanla aynı veya farklı olabilir.<br />
+          <img src="Imagenes/editor_obFab_simbolos_464.png" style="width: 341px; height: 124px;" alt="" align="right" hspace="6" /><a href="EDM_definicion_tipos.html#definir_simbolo">Sembol</a> ölçeklenebilir olmalı ve tipe göre çizgi çizme komutu içermelidir (örneğin S464). Bu çizgi, menfezin kesitini temsil eder ve tip, haritada gösterimi için kullanılır. Bu şekilde tanımlanan kesit, 3B Görselleştirme'de gösterim için de kullanılır.<br />
+Örnek olarak, standart kütüphanede bu tür sembolle kesit tanımını kullanan <span class="Archivo">Tubo2m.OBF</span> dosyası bulunmaktadır.</span></span></span></span></span><br />
+          <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+          </span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Vektörel Kesit</span>:
+bu seçenekle, <a href="definicion_vectorial.html">vektörel tanım</a> aracını kullanarak menfez gövdemizin geometrisini grafiksel olarak tanımlayabiliriz.
+Burada, gövdemizi önce dış alanı ve sonra boşlukları tanımlayan bir poligon hat ile tanımlamalıyız, her alanı gizli bölümlerle ayırarak. Örnek olarak, standart kütüphanede <span class="Archivo">Marco_PasoFauna.OBF</span> dosyamız bulunmaktadır.</span></span></span></li>
+      </ul>
+Kütüphanede, Vektörel Gövde tanımlama olanaklarını gösteren DobleTubo.OBF dosyası bulunmaktadır. Birkaç dış alan (boruların dış yüzeyleri) ve her dış alandan sonra, boşluklarını (borunun iç yüzeyi) tanımlayan iç alanlar tanımlanabilir. Her dış alan birden fazla iç alana sahip olabilir.<br />
+Sonunda, tüm dış alanları çevreleyen ancak sadece giriş ağzı ve çıkış ağzında (Alın Duvarı) inşa edilen bir dikdörtgen tanımlanır.<br />
+Grafik düzenleyicide alanlar oluşturulursa, sıra önemli değildir, çünkü vektör tanım iletişim kutusuna geri dönüldüğünde otomatik olarak yeniden sıralanırlar.<br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/OF_dostubos.png" style="width: 600px; height: 303px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+Ayrıca, menfezi oluşturacak prekast <span style="font-weight: bold;">modüllerin uzunluğunu</span> ve aralarındaki <span style="font-weight: bold;">derz boşluğunu</span> da tanımlamalıyız. Program, menfezi otomatik olarak gereken sayıda modüle bölecektir.<br /><br />Eğer <span style="font-weight: bold;">Modülü kes</span> seçeneği devre dışı bırakılırsa, belirlenen modül uzunluğuna uymak için çıkış ağzının konumu otomatik olarak ayarlanır.<br /><br />Eğer <span style="font-weight: bold;">Dik</span> seçeneği etkinleştirilirse, her modülün uçları menfezin tabanına dik olacaktır.<br />&nbsp;<span style="font-weight: bold;"><br />
+      </span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/OF_cortar_modulo.png" style="width: 300px; height: 60px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+Ayrıca, menfez gövdesinin başlangıcı ve sonunun giriş ağzı ve çıkış ağzı noktalarına olan <span style="font-weight: bold;">mesafesini</span> tanımlamalıyız. Bu mesafeler, menfezler iletişim kutusunda, listede ve boykesitte menfez gövdesinin gerçek uzunluğunu vermek için düşülür. Menünün aynı bölümünde, <span style="font-weight: bold;">açı başlangıcımızın</span> ana eksen mi yoksa menfez ekseni mi olacağını ve menfez gövdesinin bu açı başlangıcına göre göreceli dönüş açısını seçeceğiz.<br />
+      <br />
+Ayrıca, <span style="font-weight: bold;">Kaplama</span>, <span style="font-weight: bold;">Fazla Kazı</span> ve <span style="font-weight: bold;">Baca Kazısı</span> yüzeylerinin oluşturulması için kutucukları işaretleyebiliriz (bir örnek <span class="Archivo">Demo\Estructuras\Estructura_Doble.isa</span> örneğindeki 10 numaralı Menfezde görülebilir). Kaplama yüzeyi kalınlık, pay, şev ve şev payı parametrelerini kullanır. <span style="font-style: italic;">Fazla Kazı</span> yüzeyi derinlik, pay, şev, şev payı ve tavan derinliği parametrelerini kullanır. <span style="font-style: italic;">Baca</span> <span style="font-style: italic;">Kazısı</span> yüzeyi derinlik, pay, şev ve kapak derinliği parametrelerini kullanır. <span style="font-style: italic;">Kaplama</span> ve <span style="font-style: italic;">Fazla Kazı</span> için, yapı verev olsa ve parapetler ana eksen yönünde yerleştirilse bile, ana eksene dik olmaları için <span style="font-weight: bold;">Ana eksene dik</span> kutucukları işaretlenebilir. Bunlar içinde Pay ve şev, Menfez eksenine dik olacak şekilde özelleştirilebilir.<br />
+      <br />
+<span style="font-weight: bold;">Kaplanan hacmi dolgudan düş</span> seçeneği, metrajda menfezin kapladığı hacmi dolgudan düşer.<br />
+      <br />
+Son olarak, menfez gövdesinin 3D gösterimi istenmiyorsa, <span style="font-weight: bold;">Menfez gövdesini çiz</span> kutucuğu devre dışı bırakılmalıdır. Eğer etkin değilse, 3D gösterim yerine boykesit için tanımlanan sembol kullanılır.<br />
+      <span style="font-weight: bold;"><br />
+      </span>Kurulumun <span class="Archivo">Demo\Estructuras</span> klasöründe yer alan <span class="Archivo">Estructura_Doble.isa</span> örneğinde, eksen 2'de, km 126 üzerine 7 numaralı bir Menfez eklenmiştir.<br />
+Giriş ağzı orta refüj altındaki bir bacadadır ve çıkış ağzı dolgu şevinde, dolgu eteğinden belirli bir yükseklikte çıkar. Bu menfezde, şev payı parametresi kullanılarak dolgu eteğine doğru yüzeyleri uzatan kazı ve dolgu yüzeyleri tanımlanmıştır.<br />
+BIM modelinde aşağıdaki gövdeler gözlemlenebilir:<span style="font-weight: bold;"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">MENFEZ KAZI DOLGUSU: Bu malzeme, Menfez altında dolguyu tamamlayarak Menfezin üzerine oturduğu bir platform oluşturur.</span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Menfezi oluşturan çeşitli elemanlar: Menfez Gövdesi, Parapet, Kanat Duvarları, Radye,...</span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">MENFEZE GEÇİŞ MALZEMESİ. Menfezi örter ve Dolguyu tamamlar.</span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">DOLGU.</span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/OF_sobreanchotalud.png" style="width: 550px; height: 281px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Menfez Geçiş Malzemesinin tabanı (Kapak yüzeyi), menfez gövdesinin üst kısmına oturur ve verev kesim uçlu gövdelerde olduğu gibi geometrisine uyum sağlar. <span class="Archivo">Estructura_Doble.isa</span> örneğinde, hesaplandığında, örneğin eksen 2'nin 560. enkesitinde, içinden bir boru gövdeli Menfez geçen bir kesitte gözlemlenebilir.<br />
+      <br />
+Menfez gövdesinin alt kısmının oturduğu taban, verev kesim uçlu gövdelerde olduğu gibi (ve kapak yüzeyi gibi) menfez gövdesinin geometrisine uyum sağlar. <span class="Archivo">Estructura_Doble.isa</span> örneğinde, hesaplandığında, örneğin eksen 2'nin 560. enkesitinde, içinden bir boru gövdeli Menfez geçen bir kesitte gözlemlenebilir.<br /><br />Aynı anda dolgu iyileştirmesi ve menfez kazı ve dolgusu olduğunda, kazı, Menfez geçiş malzemesi ve iyileştirme kazı ve dolgusu malzemelerinin yayılımı, şu iki nokta arasında en uzakta olanla sınırlanır: Menfez kaplama şevinin sağlam zeminle kesişimi veya Menfez kazı şevinin iyileştirme kazı yüzeyi ile kesişimi:<br /><br /><img style="width: 599px; height: 231px;" alt="" src="Imagenes/mat_trans_OF_con_saneos.png" /><br /><br /><img style="width: 600px; height: 241px;" alt="" src="Imagenes/excava_saneo_OF.png" /><br />
+      <br />
+Liste&nbsp;(<span style="font-style: italic;">matobras.res</span>):
+Proje hesaplandığında, yeniden metrajlandırılan eksenler Menfezlerin kazı ve dolgu malzemelerinin bilgilerini saklar ve sonunda bu bilgilerle her Menfez için ayrı bir <span style="font-style: italic;">matobras.res</span> listesi oluşturulur. Bu dosya sonuçlar klasöründe (proje klasörümüzün içindeki "res" adlı klasör) bulunur. Aşağıdaki resimde bu <span style="font-style: italic;">matobras.res</span> listesinden bir örnek gösterilmektedir.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/OF_listado_matobras.png" style="width: 500px; height: 108px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+BIM oluşturmada:<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/OF_OF07.png" style="width: 550px; height: 188px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold;"><a name="excyrec">Kazı ve Kaplama</a></span><a name="excyrec">:<br />
+      <br />
+Ana eksenlerin <span class="Archivo">ISPOLn.per</span> enkesitlerinde, menfezlerin geçtiği yerlerde dört yüzey oluşturulur:<br />
+      </a></span></span></span></span></span></span></span></span></span></span></span></span>
+<a name="excyrec">      </a><ul>
+<a name="excyrec">        </a><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="excyrec">Menfez için Kazı (L384). Eğer bir iyileştirme varsa bu yüzey iyileştirmenin yerini alır. Bu yüzey bir metraja yol açar: Menfez için kazı.</a></span></span></span></span></span></span></span></span></span></span></span></span></li>
+<a name="excyrec">      </a></ul>
+<a name="excyrec">      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Menfez için taban. (L399). Menfez Gövdesinin oturacağı bir yüzeyi tanımlar. Kazı yüzeyi ile taban arasında şu metraj gerçekleştirilir: Menfez için kazı dolgusu.</span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Menfez için kapak. (L379). Taban ile kapak arasında metrajlarda, Menfez Gövdesi tarafından işgal edilecek bir boşluk oluşturulur.</span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Menfez için kaplama yüzeyi. (L386). Bu yüzey ile kapak arasında (ve menfez gövdesinin yanlarında taban) şu metraj oluşturulur: Menfez için geçiş malzemesi.</span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Hesaplamada güncellenmiş ISPOL4.dar tablosunu kullanmak için programın güncel sürümüne sahip olmak önemlidir.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/OF_excva_y_recub.png" style="width: 550px; height: 466px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Vektörel olarak tanımlanmış menfez gövdeleri için, kanat duvarları ve parapet, giriş ağzı ve çıkış ağzında bir başlangıç yüksekliği ve bu yükseklikten itibaren bir şev ile tanımlanan verev kesim uçlu bir bitiş ile değiştirilebilir. Örnek olarak: Kurulumun <span class="Archivo">Demo\Estructuras</span> klasöründe yer alan <span class="Archivo">Estructura_Doble.isa</span> örneğinde bu tipolojiye sahip 8 numaralı bir Menfez eklenmiştir.<br />
+      <br />
+      <div style="text-align: center; font-weight: normal;"><img src="Imagenes/OF_flauta_silbato.png" style="width: 542px; height: 277px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+Açık bir menfez gövdesi tanımlamak için, kütüphaneye örnek olarak altı açık olan <span class="Archivo">Marco_Abierto.OBF</span> dosyası eklenmiştir. Bu bir vektörel gövdedir ve iki çizgi ile tanımlanır: Birincisi dış kontur, ikincisi iç konturdur. İki çizgi ilk ve son noktada çakışmalıdır. İlk ve son nokta, Menfezin giriş ve çıkış ağzı kotuna sahip olması için sıfır kotunda olmalıdır. Dış kontur, bu kotun altında bir pabuç konturu çizerek başlayabilir ve bitebilir.<br />
+      <br />
+      <div style="text-align: center; font-weight: normal;"><img src="Imagenes/OF_marco_abierto.png" style="width: 542px; height: 277px;" alt="" /><br />
+      </div>
+      <br />
+      <span class="Titulo_2"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a><a class="Titulo_2" style="font-weight: bold;" name="imposta">Parapet</a></span><a name="imposta"><br />
+      <br style="font-weight: normal;" />
+      </a>
+      <div style="text-align: center; font-weight: normal;"><img src="Imagenes/of_marco.png" style="width: 600px; height: 303px;" alt="" /><br />
+      </div>
+      </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu sekmede önce parapet ve kanat duvarlarının kretinin, parapet tabanının, radyenin ve düşey çizgilerin çizgi tipini tanımlayacağız. Sonra giriş ve çıkış ağzındaki parapetlerin parametrelerini tanımlayacağız: <span style="font-weight: bold;">kalınlık</span><span style="font-style: italic;">, </span><span style="font-weight: bold;">radye kalınlığı</span><span style="font-style: italic;">, </span><span style="font-weight: bold;">radye kot farkı</span><span style="font-style: italic;">, </span><span style="font-weight: bold;">yükseklik</span><span style="font-style: italic;">, </span><span style="font-weight: bold;">yarı genişlik</span> ve giriş ve çıkış ağzı noktalarına <span style="font-weight: bold;">mesafe</span>, ayrıca tercih ettiğimiz <span style="font-weight: bold;">açı başlangıcı</span> ve buna göre göreceli dönüş açısı. Parapet yüksekliği simetrik olmak zorunda değildir: eğer parapet eksene paralel değilse ve <span style="font-weight: bold;">Asimetrik</span> kutucuğunu işaretlersek, dolgunun daha yüksek bölgesinde olan tarafın yüksekliği artırılacaktır.<br />
+      <br />
+      <span style="font-weight: bold;">Radye kot farkı</span>:
+      </span></span></span>kanat duvarı başlangıcındaki kot farkını parapet tavanına göre tanımlar. Bu değerin kullanımı, <span class="Archivo">Demo\Estructuras</span> klasöründe kurulan <span class="Archivo">Estructura_Doble.isa</span> örneğinin ikinci Menfezinde gösterilmektedir.<br />
+      <br />
+      <span style="font-weight: bold;">Radye eğimi</span>,
+hem giriş ağzında hem de çıkış ağzında. Bunun için menfez düzenleyicisinde bir bayrak etkinleştirilir, bu da istenen değeri yüzde olarak girmek için bir kutucuğu aktif hale getirir.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span style="font-weight: bold;">Diş</span>:
+giriş ve çıkış ağzı radyelerine, radye altındaki derinlik ve genişlikle tanımlanan bir diş ekleme imkanı.<br />
+      <br />
+      <span style="font-weight: bold;">Alın Duvarı Sırt Şevi</span>:
+Alın duvarlarının sırtı için bir şev tanımlanabilir. Kurulumla birlikte gelen kütüphaneye, bazı ülkelerde çok yaygın olan ve bu özelliği kullanan, giriş ve çıkış ağzında bir duvardan geçen bir boruyu simüle eden Tubo+Muro.OBF dosyası eklenmiştir.<br />
+      <br />
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_obFab_6.png" style="width: 600px; height: 303px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold;">Konsol Yüksekliği</span>:
+Parapetin bir kısmını, genişlik ve konsol yüksekliği ile verilen konsol olarak tanımlamak mümkündür. Kütüphaneye bu seçeneği kullanan Marco_abierto3.OBF dosyası eklenmiştir. (Parapet, menfez gövdesinden daha uzundur çünkü bu Menfez, belirli bir verev açısıyla yerleştirilmesi öngörülmüştür, bu da bu uzunluğun eksene paralel bir düzlemle kesildiğinde menfez gövdesinin görünür genişliğiyle çakışmasını sağlar).<br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><a name="aletas"><span class="Titulo_2">Kanat Duvarları</span><br />
+      <br />
+      </a></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><img src="Imagenes/of_aleta.png" style="width: 550px; height: 281px;" alt="" /><br />
+      </span></span></span> </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Kanat duvarlarının tanımı, parapet tanımına çok benzer: önce parapet ve kanat duvarlarının kretinin, parapet tabanının, radyenin ve düşey çizgilerin çizgi tiplerini tanımlarız; sonra geometriyi tanımlamaya başlarız. Hem giriş ağzı hem de çıkış ağzı iki türü destekler: <span style="font-style: italic;">Kanat Duvarları</span>
+veya <span style="font-style: italic;">baca / rögar</span>.<br />
+      <br />
+Baca şu parametrelerle tanımlanır: <span style="font-style: italic;">Uzunluk, genişlik, duvar kalınlığı, radye ve kum tutucu</span> (bacanın su seviyesinden iç derinliği). Baca tabanının kotu (radye üzerinde), menfezin giriş ağzı için tanımlanan kottur. Baca kretinin kotu, kesitin bu noktanın düşeyindeki kotudur (örneğin, giriş ağzını hendek tabanının altında işaretlersek, baca kretinin kotu hendek tabanının kotuyla aynı olacaktır).<br />
+      <br />
+Eğer baca, Menfez giriş ağzının referans ekseninin kesiti dışındaysa, baca kapağının kotlarını belirlemek için arazi yüzeyi kullanılır. Her durumda, bacanın yüksekliği tanımlanabilir ve sıfırdan büyük bir değer verilirse, bu değer kullanılır ve kesit veya arazi ile kesişimler aranmaz.<br />
+      <br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Her kanat duvarı da <span style="font-style: italic;">açı</span>, <span style="font-style: italic;">uzunluk</span> ve <span style="font-style: italic;">kalınlık</span> ile tanımlanır. Kanat duvarının üst kotu, parapet kenarları tarafından belirlenir. Alt kot, kanat duvarının iki ucunun dolgu düzleminden aynı miktarda çıkacak şekilde belirlenir. Kanat duvarlarına ayrıca, aşağıdaki gibi bir dizi ek geometrik özellik tanımlanabilir:<br />
+
+      </span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Bir <span style="font-style: italic;">pabuç</span>. Ve kanat duvarı sonundan itibaren pabucun bir kaplama veya uzatma mesafesi.&nbsp;</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Yatay bir <span style="font-style: italic;">tavan</span> uzunluğu ve bu tavan için pozitif veya negatif bir <span style="font-style: italic;">düşey açı</span> (360 = yatay tavan, 0 = otomatik, dolgu şevine paralel).</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Yatay bölüm: Kanat duvarının ucuna yatay bir tavan bölümü ekler.<br />
+
+          </span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Kanat duvarının <span style="font-style: italic;">sırtında bir şev</span>.</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">5 farklı bölüme kadar teleskopik kanat duvarları (kütüphanede Aleta_T5.obf, Aleta_T4.obf vb. gibi birkaç örnek görülebilir)<span style="font-style: italic;">. Her bölümde farklı bir genişlik, yükseklik ve paylar tanımlanabilir</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">. Ayrıca her pabuç ile bir önceki arasında bir kot farkı tanımlanabilir. Teleskopik kanat duvarlarını tanımlamak için, oluşturulmak istenen ek bölüm sayısı belirtilmelidir ve yalnızca bunların tanımı için kesinlikle gerekli olan parametreler gösterilecektir. &nbsp;</span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Kanat Duvarı Ucunun Nihai Yüksekliği: Bu yükseklik arazi yüzeyinden ölçülür. Seçenek işaretli değilse, nihai yükseklik radye yüzeyinden ölçülür. Her iki durumda da yüksekliğe bir değer verilmelidir, 0 bırakılırsa çalışmaz.</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Kanat duvarı pabucunun derinliği. Pabucun Menfez eğimini takip etmek yerine yatay olması için bir seçenek eklenir.</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Pabuç Eğimi (%): </span></span></span></span></span></span></span>Menfezlerdeki kanat duvarı pabuçlarının eğimini değiştirmeye izin verilir, eğim kutucuğunu etkinleştirmek veya devre dışı bırakmak için bir bayrak etkinleştirilir. Bayrak etkinleştirildiğinde, hem giriş hem de çıkış ağzında her pabuç için istenen eğimin (yüzde olarak) tanımlandığı yeni bir kutucuk açılır.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+          </span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Ayar Kenarı: İç/Dış. Kanat duvarı başlangıcının hangi noktasının menfez gövdesi/parapet üzerinde ayarlamak için referans olarak kullanılacağını belirtmek için. Kütüphanedeki Marco_Abierto3.OBF dosyasında bir örnek görülebilir.</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Parapet Mesafesi:&nbsp;İki değer verilir: <span style="font-style: italic;">Parapet ucuna olan mesafe</span>, parapet yönünde ölçülür. Ve <span style="font-style: italic;">Parapete olan mesafe</span>, parapete dik yönde ölçülür. </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Kütüphanedeki Marco_Abierto3.OBF dosyasında bir örnek görülebilir.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"> </span></span></span></span></span>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo">Her kanat duvarının uzunluğu <span style="font-style: italic;">otomatik</span> yapılabilir, böylece program kanat duvarının dolgu eteğinde veya ana iletişim kutusunda tanımlanan çizgide bitmesi için uzunluğunu hesaplar. Otomatik uzunluğu etkinleştirirsek, her kanat duvarı için bir <span style="font-style: italic;">minimum uzunluk</span> da tanımlamalıyız. Ayrıca, bir <span style="font-style: italic;">artık uzunluk</span> da tanımlayarak uzunluğunu <span style="font-style: italic;">kırpma</span> seçeneği de vardır. Otomatik uzunluklu bir menfez dolgunun orta yüksekliğinde yer alıyorsa, uzunluk dolgu eteği yerine şevle kesişim ile hesaplanır.<br /><br /><span style="font-weight: bold;">V-Kesim</span> <span style="font-weight: bold;">ve Kapak:</span><br />
+
+      <br />Baca Tipi Giriş Ağızları için, üst ağız, platformun (orta refüj, hendek veya hendek kaplaması) merkez, dış ve iç uçlarındaki kotları alarak V şeklinde kesilebilir.<br />
+
+Baca, modeli kırpan, yüzeye kadar bir boşluk açan kapalı bir sınır çizgisi oluşturur. Araziden açılan boşluk, menfez için kazı metrajına dahil edilir.<br />
+
+Bacalar bir ızgara ile kapatılır. Kurulumla birlikte gelen <span class="Archivo">Estructura_Doble.isa</span> örneğinde gözlemlenebilir: Menfez_7 (Eksen 2) ve Menfez_2 (Eksen 1).<br /><br />Baca merkezi iki Mesafe değeri ile kaydırılabilir: birincisi, giriş ağzının tanım noktasına dik olarak ölçülen bir mesafedir ve ikincisi, paralel olarak ölçülen bir mesafedir, her ikisi de menfez gövdesinin açık yüzüne göre referans alınır.<br />
+
+      <br />
+
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo">.<br />
+
+      <br />
+
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><img src="Imagenes/OF_corte_en_V.png" style="width: 550px; height: 281px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><br />
+
+Kapak, V-Kesim, Düz Kapak, V ile düz ızgara gibi çeşitli modlarda yapılandırılabilir. Eğer V bitişliyse, yüksekliğini eklemeye izin verilir.<br />
+
+      <br />
+
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><img src="Imagenes/OF_tapa.png" style="width: 550px; height: 277px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><br />
+      <br />
+Ayrıca kanat duvarının radye üzerindeki <span style="font-weight: bold;">nihai yüksekliği</span> de tanımlanabilir. (Toplam yükseklik bu yükseklik + pabuç derinliği olacaktır).<br />
+Unutmamalıyız:<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo">Eğer Düşey Açı veya Nihai Yükseklik tanımlanmazsa, açı otomatik olarak dolgu şevine paralel olarak hesaplanır.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo">Eğer Açı veya Yükseklik tanımlanırsa, geometri bu değerlerle oluşturulur.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo">Eğer her ikisi de tanımlanırsa, Nihai Yükseklik kullanılır.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"> <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><img src="Imagenes/OF_ALETA_alturafinal.png" style="width: 300px; height: 205px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><br />
+      <br />
+Birbirine bağlı Menfezlerde, Menfezin giriş ağzında, bir önceki Menfez ile birleştirmek için yarıçap vererek bir <span style="font-weight: bold;">dirsek</span> tanımlanabilir. Kurulumla birlikte gelen Damo/Estructuras klasöründeki EstructuraDoble.isa örneğinde Menfez 11'de bir örnek görülebilir (Marco2M_a.obf + Marco2M_B.obf, ikincisinde dirsek tanımlanmıştır).<br />
+      <br />
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/OF_codo.png" style="width: 550px; height: 280px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      <span class="Titulo_2"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="simbolos"><span class="Titulo_2">Semboller</span></a></span><a name="simbolos"><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_editor_obFab_simbolos.png" style="width: 550px; height: 281px;" alt="" /><br />
+      </span></span></span></span></span></span></span></span></span></span></span>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu sekmede, menfezin planda ve <a href="OL_gui_obras_de_fabrica.html">boykesit paftasında</a> gösterimi için sembolleri tanımlarız. Eğer menfezin yalnızca 2D bir gösterimi isteniyorsa (yani menfez gövdesi, parapet ve kanat duvarlarının gösterimi olmadan), hem giriş ağzı hem de çıkış ağzı için planda sembol oluşturma kutucukları etkinleştirilmelidir. Varsayılan olarak, program sırasıyla S90 ve S91 sembollerini ayarlar ve her durumda boyutları değiştirilebilir ve gösterimleri için açı başlangıcı (menfez ekseni veya ana eksen) belirtilebilir.</span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Menfezin çeşitli noktalarını ve verilerini etiketlemek için semboller eklenebilir: KM, menfez azimutu, kanat duvarı azimutları, iç ve dış çaplar/genişlikler, uzunluk vb.</span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">
+Ayrıca çıkış ağzına ilişkin etiketler de ekleyebiliriz: eksenle kesişim KM'si, verev açısı vb. Kütüphanede örnek olarak bu seçenekleri kullanan <span class="Archivo">M_PruebaA.OBF</span> dosyası bulunmaktadır.</span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_gui_obras_de_fabrica.html">Boykesitteki</a> gösterime gelince, bu varsayılan olarak etkindir ve program S463, S464 sembollerini önerir. Seçilen sembolün boyutu da özelleştirilebilir.<br />
+      <br />
+Hem <span class="Parf_negrita">KM</span> hem de <span class="Parf_negrita">Çıkış Ağzına Göre KM</span> için, <a href="OL_ecuaciones_de_PK.html">KM Eşitliklerinden</a> elde edilen KM, <span class="Parf_negrita">Kullanıcı KM</span> kutucuğu etkinleştirilerek etiketlenebilir.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Titulo_2"><a name="textos">Metinler<br />
+      </a></span></span></span></span></span></span></span></span></span></span>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Her menfez için, planda ismi ve yapı numarasını göstermek üzere çeşitli <span style="font-weight: bold;">etiketler</span> tanımlayabiliriz. Her durumda bir etiket <span style="font-style: italic;">stili</span>, <span style="font-style: italic;">boyutu</span>, <span style="font-style: italic;">yatay ve düşey bağlantı noktası</span>, <span style="font-style: italic;">mesafe</span> ve <span style="font-style: italic;">açı</span> belirtilebilir.<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+      
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_editor_obFab_textos.png" style="width: 550px; height: 280px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+
+      <br />
+
+Ayrıca bir <span style="font-style: italic;">koordinat tablosu</span> da çizebiliriz. Bu tablo on bir noktaya kadar içerir: her kanat duvarı için iki, giriş ağzı, çıkış ağzı ve ana eksenle kesişim noktası için bir tane daha. <span style="font-weight: bold;">Koordinat tablosu çiz</span> kutucuğu etkinleştirilmeli ve ilgili parametreler yapılandırılmalıdır. Varsayılan olarak, kanat duvarlarının iç noktalarını etiketler, <span style="font-weight: bold;">Dış noktalar</span> kutucuğunu işaretleyerek kanat duvarlarının dış noktalarını etiketleyebiliriz.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="font-weight: bold;"></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo">.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_obFab_5.png" style="width: 550px; height: 150px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+
+      <span class="Parrafo"><br />
+Eğer sütun başına bir tablo çizilmesi istenirse (1 satır), tablonun konumu Menfez numarasına bağlıdır ve aktif olmayan veya bu çizim moduna sahip olmayan yapılar tarafından bırakılan boşluklar doldurulmaz. Bu, Profil-Plan-Tablo-Şema gibi birleşik paftaların otomatik alt paftalanmasına olanak tanır. Bu tür paftalar hakkında daha fazla bilgi için Boykesit -> ENKESİT PAFTALARI -> <a href="OL_planos_transversales.html" target="_blank">Menfezler</a>'e gidin.<br />
+      <br />
+      <a name="Lineas"><span class="Titulo_2">Çizgiler</span><br />
+      <span style="color: red;"><br /></span></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+Plandaki gösterim için kullanılacak <span style="font-weight: bold;">çizgileri</span> belirtmeyi sağlar. Belirli bir <span style="font-style: italic;">tipte</span>, menfez eksenine <span style="font-style: italic;">paralel</span> ve giriş ile çıkış ağzından belirli bir <span style="font-style: italic;">mesafede</span> iki çizgi (genellikle her iki tarafta birer tane) çizebiliriz.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_editor_obFab_lineas.png" style="width: 550px; height: 280px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+Menfezin basit bir gösterimi yapılıyorsa (menfez gövdesi, kanat duvarları ve parapet çizilmeden), bu çizgiler menfezin genişliğini taklit edecektir. Eğer menfez gövdesi çizilecekse, genellikle bu çizgiler etkinleştirilmez.</span>&nbsp;<span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">
+Programın kütüphanesinde, kullanıcı basit menfez gösterimlerine (2D) sahip <span class="Archivo">C1.obf</span>, <span class="Archivo">C2.obf</span>, <span class="Archivo">C3.obf</span>, <span class="Archivo">C4.obf</span>, <span class="Archivo">C5.obf</span>, <span class="Archivo">C7.obf</span>, <span class="Archivo">C9.obf</span> ve <span class="Archivo">C10.obf</span> dosyalarını bulabilir.</span><span style="font-weight: normal;"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_obFab_3.png" style="width: 550px; height: 280px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span><br />
+      <br />
+Ayrıca, menfezi dolgu çizgileri kullanarak tarama yöntemiyle çizme imkanı da bulunmaktadır.
+Bunun için <span style="font-weight: bold;">Planı dolgu çizgileri kullanarak çiz</span> kutucuğu etkinleştirilir
+ve her bir eleman (Menfez Gövdesinin Dışı, Menfez Gövdesinin İçi, Alın Duvarı, .. .. ) için çizgi tipleri tanımlanır. Aşağıdaki resimde bir örnek gösterilmektedir.<br />
+      <br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_obFab_4.png" style="width: 550px; height: 168px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="Celulas"><span class="Titulo_2" style="font-weight: bold;">Hücreler</span><br />
+      <span style="color: red;"><br /></span></a></span>
+Burada, Menfezin verilerini içeren bir tablo çizme imkanı eklenmiştir: İsim, Eje, KM, Eğim ve Giriş Ağzı(Memba) ile Çıkış Ağzı(Mansap) koordinatları, Kanat Duvarlarının uzunluğu ve giriş ile çıkış ağzının eksene olan mesafeleri.<span class="Parrafo"><a name="Celulas"><span style="color: red;"><br />
+      <br />
+      <br />
+      </span>
+      </a>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_editor_obFab_celulas.png" style="width: 500px; height: 250px;" alt="" /><br />
+
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+
+Kurulumla birlikte gelen <span class="Archivo">DEMO\Estructuras</span> klasöründeki <span class="Archivo">Estructura_doble.isa</span> örneğinde, 10 numaralı Menfez için bu etiketleme modu kullanılmıştır.<br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_obFab_7.png" style="width: 300px; height: 307px;" alt="" /><br />
+
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita">KM</span> için, <a href="OL_ecuaciones_de_PK.html">KM Eşitliklerinden</a> elde edilen KM, <span class="Parf_negrita">Kullanıcı KM</span> kutucuğu etkinleştirilerek kullanılabilir.<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <a name="11P"><span class="Titulo_2" style="font-weight: bold;">11N</span><br />
+      <span style="color: red;"><br />
+      </span>
+      </a>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_editor_obFab_11P.png" style="width: 550px; height: 280px;" alt="" /><br />
+
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu sekmede, Menfezin 11 karakteristik noktasının koordinatlarının, her biri için bir hücre kullanılarak etiketlenmesi tanımlanabilir. Bu hücrelerde X(D), Y(K), Z koordinatları etiketlenebilir.<br />
+
+      <br />
+
+      <br />
+
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_obFab_8.png" style="width: 450px; height: 277px;" alt="" /><br />
+
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+
+      <br />
+
+      <br />
+
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>

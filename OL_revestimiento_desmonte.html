@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Yarma Kaplaması</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YARMA KAPLAMASI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, yarma kaplamalarını çeşitli varyantlarda tanımlamaya olanak tanır, geometriye ek olarak ilgili metrajları da oluşturur</span><span class="Parrafo"> ve <span style="font-weight: bold;">[SAĞ</span> / <span style="font-weight: bold;">SOL]</span> tarafta farklı geometriye sahip <span style="font-weight: bold;">BAŞLANGIÇ KM</span>'si ve <span style="font-weight: bold;">BİTİŞ KM</span>'si ile farklı kesimler tanımlanabilir.</span><br />
+      <span class="Parrafo"> <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 577px; height: 190px;" alt="" src="Imagenes/dialogo_revestimiento_desmonte.png" /><br />
+      </div>
+      <br />
+      </span><span class="Parrafo">Yarma kaplaması verileri <span class="Archivo">.vol</span> dosyasında saklanır, ancak <span style="font-weight: bold;">[Kaydet]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> ve <span style="font-weight: bold;">[Yükle]</span> <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> düğmeleri aracılığıyla <span class="Archivo">.tr3</span> uzantılı dosyalarda da arşivlenebilir veya bu dosyalardan geri yüklenebilir.<br /><br />Hesap Bölgeleri menüsündeki kesimleri <span style="font-weight: bold;">Hesap Bölgelerini Kopyala</span> düğmesinden kopyalamak mümkündür, ayrıca verileri sağdan sola <span style="font-weight: bold;">Sağ->Sol</span> veya tam tersi <span style="font-weight: bold;">Sol->Sağ</span> kopyalama imkanı da sunar.<br /><br /><span class="Parf_negrita">Kullanıcı KM'leri</span> seçeneği, KM'lerin kullanıcı değerleriyle girilmesine olanak tanır. Bu seçenek etkinleştirilebilir/devre dışı bırakılabilir ve aktivasyon durumu .vol dosyasında saklanır.<br /><br /><span style="font-weight: bold;">Yarma Yük.</span> kutucuğu etkinleştirilerek, bir maksimum ve bir minimum yükseklik tanımlayarak kaplamanın uygulanması yarma yüksekliğine göre kontrol edilebilir.<br /></span>
+      <span class="Parrafo"><br />
+Program, yarma kaplamasını uygulamak için farklı olasılıkları ayırt eder:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><a href="OL_revestimiento_desmonte.html#seccion_tipo">Tip kesitlere</a> göre</span></li>
+        <li><span class="Parrafo"><a href="OL_revestimiento_desmonte.html#filtro_muro">Duvar arkası filtresi</a></span></li>
+        <li><span class="Parrafo"><a href="#paralelo">Paralel</a></span></li>
+        <li><span class="Parrafo"><a href="#Seccion_Tipo_mas_codigo">Tip kesit artı bir koda</a> göre</span></li>
+        <li><span class="Parrafo"><a href="#Paralela_TIERRA">Paralel TOPRAK</a></span></li>
+        <li><span class="Parrafo"><a href="#paralela_codigo">Paralel kod</a><br />
+</span></li>
+
+
+        
+        
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><span class="Titulo_2"><a name="seccion_tipo">Tip kesitlere göre</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/modelo_revestimiento_desmonte.png" style="width: 225px; height: 203px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Kaplama için kullanılan tip kesitler, yarma kesiti geometrisinin hesap bölgelerinde kullanılandan farklı olması ve bu geometriyi tanımlayan çizginin, hendek sonundan uygulandığında hesap bölgelerininkinin içinde kalması gerekir.<br />
+      <br />
+Kaplamanın dış yüzü, bir başlangıç ve bitiş tip kesitinin yarma geometrisi kullanılarak tanımlanır. Eğer bitiş tip kesiti olarak 0 bildirilirse, geometri tüm kesim boyunca sabittir, aksi takdirde başlangıç ve bitiş tip kesiti arasında bir geçiş yapılır.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="filtro_muro">Duvar arkası filtresi</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/filtro_muro_desmonte.png" style="width: 280px; height: 220px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Bu menüden bir duvar filtresi de tanımlanabilir. Bu durumda, bir genişlik değeri belirtilerek tanımlanır. Duvar filtresinin metrajı <span class="Archivo">YARMA_KAPLAMA</span> olarak görünür.<br />
+      <br />
+Eğer yarma kesiti bir duvarla başlıyorsa, yarma kaplaması kesitinin çizgisi 1290 koduna, yani duvarın iç yüzünün üst noktasına bağlanır.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+</span><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="paralelo">Paralel</a></span><br />
+
+      <span class="Parrafo"><br />Kaplama, yatay, dik veya kesite gerçek olarak ölçülebilen belirli bir mesafeye göre paraleldir. Gerçek paralel, palyelerin şevlerle aynı kalınlıkta kaplandığı durumlarda kullanılır. </span><span class="Parrafo"><span class="Parrafo">Dik veya gerçek mesafe arasındaki fark, ekteki şekilde gördüğümüz gibi palyeli şevlerde fark edilebilir. Dik veya gerçek mesafe, daha sonra göreceğimiz Paralel veya Paralel toprak kaplama durumlarında kullanılabilir.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/revest_desm_real.png" style="width: 449px; height: 316px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Nota">Gerçek Mesafede Yarma Kaplaması</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/revest_desm_normal.png" style="width: 471px; height: 323px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Nota">Dik Mesafede Yarma Kaplaması</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Kaplamanın başlangıcının dayanması için yarma kesitine bir palye ile başlamak veya bir görüş palyesi kullanmak ya da hendeği yarı yatay bir segmentle bitirmek tavsiye edilir.<br />
+<br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/revestimiento_desmonte_paralela.png" style="width: 493px; height: 147px;" alt="" align="middle" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Paralel kaplama türleri için, kaplama belirli bir koda kadar yapılabilir. Hatta yarmanın sonunda bir **toprak set** varsa, arazinin üzerinden onun üzerine çıkabilir. Eğer bitiş kodu sıfır bırakılırsa, kaplama araziye kadar devam eder.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/revest_desmont_cod_final_casilla.png" style="width: 347px; height: 64px;" alt="" />&nbsp;  </span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/revest_desmont_cod_final.png" style="width: 529px; height: 332px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+100 kodundan (kırmızı kot-terasman kesişimi) başlayan yarma kaplamaları için, program kaplamayı kırmızı kot çizgisinin (L67) son segmentine dayandırmaya çalışır.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/rev_desm_apoyar.png" style="width: 459px; height: 247px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="Seccion_Tipo_mas_codigo">Tip Kesit artı kod<br />
+      <br />
+      </a></span></span><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Kaplamanın tip kesitini, 68 nolu yüzeyin belirtilen kodundan başlatır.<br />
+      <br style="font-weight: normal;" />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/revestimiento_desmonte_seccion_tipo_mas_codigo.png" style="width: 620px; height: 204px;" alt="" /></span></span></span></span><br style="font-weight: normal;" />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><br style="font-weight: normal;" />
+      <span style="font-weight: normal;"><span class="Titulo_2"><a name="Paralela_TIERRA">Paralel TOPRAK</a></span></span><a name="Paralela_TIERRA"><br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">Paralel gibidir, ancak kaya yarmasını kaplamaz.<br />
+      </span></a></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><img src="Imagenes/revestimiento_desmonte_paralela_tierra.png" style="width: 587px; height: 222px;" alt="" align="middle" vspace="2" /></span></span></span></span></span><a name="Paralela_TIERRA"><br />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></a></div>
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+      <a name="paralela_codigo"><span class="Titulo_2">Paralel kod</span><br />
+      <br />
+Bir koddan paralel bir kaplama tanımlamayı sağlar. Bu seçenek, bir dolgu kesitinde bir kafa hendeğinin yarma tarafındaki dış bölgesini kaplama imkanı sunar.<br />
+      <br />
+</a></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><img src="Imagenes/revest_desmont_paral_cod.png" style="width: 620px; height: 204px;" alt="" /></span></span></span></span></span></span><a name="paralela_codigo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+Yarma Kaplaması menüsü içinde, aynı KM'lerde birkaç veri satırı tanımlama imkanı vardır. Program, sondan başlayarak öngörülen koşulları sağlayan ilkini kullanacaktır.<br style="font-weight: normal;" />
+      </span><br />
+      </span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

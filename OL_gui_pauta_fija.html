@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Şablonlar .gui: Sabit Kılavuz Çizgileri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BOYKESİT PAFTALARI İÇİN ŞABLONLAR: SABİT KILAVUZ ÇİZGİLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br /></span><span class="Parrafo">Bu menüden, her paftada KM'lerden, kotlardan veya her projenin kendi elemanlarından bağımsız olan farklı sabit elemanları tanımlamak mümkündür.<br />
+<br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#simb_cabecera">
+      Başlık için Semboller</a></span><br />
+      <span class="Parrafo">
+      <a href="#lineas_horiz_sueltas">Tekil Yatay Çizgiler</a></span><br />
+      <span class="Parrafo">
+      </span><a href="#lineas_horiz_equidist"><span class="Parrafo">Eşit Aralıklı Yatay Çizgiler</span></a><br />
+      <span class="Parrafo"><a href="#lineas_vert_equidist">Eşit Aralıklı Dikey Çizgiler</a></span><br />
+      <span class="Parrafo"><a href="#rotul_pks_equidist">Eşit Aralıklı KM'lerin Etiketlenmesi</a></span><br />
+      <span class="Parrafo"><a href="#rotul_nombre_eje"><span class="Parrafo">Güzergah Adının Etiketlenmesi</span></a><br />
+      <a href="#simb_escalas"><span class="Parrafo">Ölçekler için Semboller</span></a><br />
+      <a href="#rotul_multiplos"><span class="Parrafo">Katların Etiketlenmesi (km, hm, 20 m)</span></a><br />
+      <a href="#datos_cajetin"><span class="Parrafo">Antet için Veriler</span></a><br />
+      <a href="#geopak">Geopak</a><br />
+      </span></div>
+      <span class="Parrafo">
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 290px; height: 248px;" alt="" src="Imagenes/gui_pauta_fija.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+<br />
+<span style="font-weight: bold;">Uçlarda KM Boşluğu</span> seçeneği ile bilgi bandımızın (gitarın) başlangıcını ve sonunu yatay bir miktar ayırabiliriz.<br />
+<br />
+      </span><span class="Titulo_2"><a name="simb_cabecera">Başlık için Semboller</a></span>
+	  <span class="Parrafo"><br /><br />
+      Burada, bilgi bandı (gitar) için hangi başlıkların kullanılacağı belirtilir. Başlık, her satırda gösterilecek veri türünü bildiren etiketli tablosal sembollerden, metin tipi bir değeri (güzergah adı gibi) ve sayısal bir değeri (KM, kırmızı kot, azimut,...) belirtmek için kullanılan etiketlere ve sayısal etiketlere kadar her şeyi kapsar:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 450px; height: 107px;" alt="" src="Imagenes/gui_simb_cabecera.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      </span><br /><img src="Imagenes/gui_cabecera.png" style="width: 127px; height: 473px; margin-left: 7px;" alt="" align="right" />
+      <table style="text-align: left; height: 142px; width: 552px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;"><span class="Parrafo">S/E</span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Burada, başlık elemanı olarak hangi sembol tipinin (veya güzergah adını yazmak isteniyorsa etiketin) kullanılacağı belirtilir. Örneğin, sağda ISTRAM®/ISPOL® kütüphanesindeki <span class="Archivo">ISP03.gui</span> bilgi bandında kullanılan 111 tipi sembol gösterilmektedir. Negatif bir değer, hiçbir sembol veya etiket kullanılmayacağı anlamına gelir.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;"><span class="Parrafo">Karş.Düz.Mes.</span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Sembolün bağlantı noktasının karşılaştırma düzlemine dikey mesafesi.<br />
+            <br />
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;"><span class="Parrafo">Yatay Mesafe.<br />
+            </span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Sembolün bağlantı noktasının yatay mesafesi.<br />
+            <br />
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;"><span class="Parrafo">Konum<br />
+            </span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Başlık sembolünün yerleştirileceği yer. Aşağıdaki seçenekleri sunar:</span><span class="Parrafo"><br /></span>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">
+Başlangıç / Bitiş</span>: Sembol her sayfanın başında ve sonunda tekrarlanır.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">
+Başlangıç Z / Bitiş Z</span>: Önceki durumla aynıdır, ancak bu durumda <span style="font-weight: bold;">Karş.Düz.Mes.</span>'de belirtilen değer karşılaştırma düzlemine göre değil, arazi ve kırmızı kot arasındaki en yüksek kota göredir. <span class="Archivo">ISP02.gui</span> bilgi bandı bu özelliği kullanır.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">
+Başlangıç KM / Bitiş KM</span>: Sembol, her sayfada tekrarlanmadan yalnızca başlangıç veya bitiş kilometresine yerleştirilir.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">
+Başlangıç KM Z / Bitiş KM Z</span>: Güzergahın başlangıç veya bitiş kilometresi, kırmızı kot veya arazi arasındaki en yüksek kotun konumunda<br />
+              </li>
+            </ul>
+
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;">Etiketle<br />
+            </td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo"><span style="font-weight: bold;">S/E</span>'de bir etiket tipi sembolü veya bir etiket belirtilmesi durumunda hangi değerin gösterileceğini belirtir.<br />
+            <br />
+Aşağıdaki olasılıkları sunar: KM, X koordinatı, Y koordinatı, kırmızı kot, azimut, yarıçap, yüzde ve binde olarak eğim, ad ve KM, X koordinatı ve Y koordinatı hem güzergahın başlangıcı hem de sonu için, paftanın başlangıç ve bitiş KM'si (herhangi bir konuma göre etiketlenebilir).<br />
+            <br />
+<span class="Archivo">ISP08b.gui</span> ve <span class="Archivo">ISP08C.gui</span> bilgi bantları, bu özelliğin kullanımına dair iki iyi örnektir.<br />
+            <br />
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;">Açı<br />
+            </td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Kullanılan sembolün veya etiketin derece cinsinden dönüş açısı.<br />
+            <br />
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 66px;"><span class="Parrafo">Yatay Bağ. / Dikey Bağ.</span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Etiketler durumunda yerleştirme (bağlantı) noktası.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+<br />
+      </span><span class="Titulo_2"><a name="lineas_horiz_sueltas">Tekil Yatay Çizgiler</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Burada, bilgi bandının gridinin yatay çizgileri herhangi bir konumda tanımlanır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><img style="width: 290px; height: 109px;" alt="" src="Imagenes/gui_lineas_horiz_sueltas.png" /><br />
+      </div>
+      <span class="Parrafo"><br />
+Her tekil çizgi için tipini ve karşılaştırma düzlemine olan mesafesini belirtmek gerekir. Tipin negatif bir değerle belirtilmesi, bu çizgilerin gösterilmemesine neden olur.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="lineas_horiz_equidist">Eşit Aralıklı Yatay Çizgiler</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Bilgi bandının gridinin yatay çizgileri arasındaki tip ve eşit aralık belirtilir (bu şekilde sistematik hale getirilebilen çizgiler için). Tipin negatif bir değerle belirtilmesi, bu çizgilerin gösterilmemesine neden olur.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 290px; height: 109px;" alt="" src="Imagenes/gui_lineas_horiz_equidist.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Ayrıca, her bir eşit aralık koşulunu sağlaması gereken çizgi sayısı, karşılaştırma düzleminden başlayarak, ve bu çizgilerin sadece arazi altında mı yoksa tüm boykesit alanında mı gösterileceği belirtilir.<br />
+      <br />
+Çizgi sayısı artık otomatik olabilir ve otomatik eşit aralıklı dikey çizgilerin yüksekliği gibi, karşılaştırma düzlemi, kırmızı kot ve arazi kotlarına ve tanımlanmış olan parametrelere bağlı olarak hesaplanacaktır.<br />
+      <br />
+      Eğer birden fazla eşit aralıklı yatay çizgi verisi oluşturulursa, kot sadece tanımlanan son seriye etiketlenir.<br />
+      <br /><span class="Parf_negrita">Bölge</span>'nin <span class="Parf_negrita">Segment</span> modunda, dikey eksenin her iki tarafına o mesafeye kadar yatay bir segment çizmek için mm cinsinden bir mesafe de tanımlanır. Böylece örneğin: Her 5'te bir segment ve her 25'te bir Tam çizgi olabilir. Listenin sonuncusu kot etiketlerinin eklendiği olduğu için, sıraya bağlı olarak tüm segmentler veya sadece tam olanlar etiketlenebilir.<br /><br />Segment seçeneğine benzer şekilde, bilgi bandının son kısmında bir segment çizme imkanı (<span class="Parf_negrita">Son Segment</span>).<br />
+      <br />
+      </span><span class="Titulo_2"><a name="lineas_vert_equidist">Eşit Aralıklı Dikey Çizgiler</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Bilgi bandının gridinin dikey çizgileri arasındaki tip ve eşit aralık belirtilir (bu şekilde sistematik hale getirilebilen çizgiler için). <span style="font-weight: bold;">Baş./Bit. Karş. Düz. Mes.</span> ile bu çizgilerin hangi dikey yükseklikte başlayıp bittiği belirtilebilir, her pafta için kırmızı kot ve arazi maksimum kotlarına göre otomatik olarak hesaplanması etkinleştirilebilir. Tipte negatif bir değer, bu çizgilerin gösterilmemesine neden olur. KM Eşitliklerinden türetilen kullanıcı KM'lerinin katlarının alınmasını seçme imkanı vardır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><img style="width: 290px; height: 109px;" alt="" src="Imagenes/gui_lineas_vert_equidist.png" /><br />
+      </div>
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="rotul_pks_equidist">Eşit Aralıklı KM'lerin Etiketlenmesi</a></span><br />
+      <span class="Parrafo">
+      <br />
+Burada, bir sembol tipiyle KM'lerin etiketlenmesi için bir düzen belirlenebilir. Aşağıdaki seçenekler kullanılabilir:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 491px; height: 183px;" alt="" src="Imagenes/gui_rotul_pks_equidist.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <span class="Parrafo">
+      <br /></span></span>
+      <table style="text-align: left; height: 218px; width: 668px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">Sembol</span></td>
+            <td style="vertical-align: top;"><span class="Parrafo">KM'leri etiketlemek için kullanılacak sembol tipi.</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Karş. Düz. Mes.</span><br />
+            </td>
+            <td style="vertical-align: top;">Karşılaştırma düzlemine dikey mesafe.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Yatay Öteleme</span><br />
+            </td>
+            <td style="vertical-align: top;">Başlangıç noktasına yatay mesafe.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Açı</span><br />
+            </td>
+            <td style="vertical-align: top;">Sembolün gösterileceği açı.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Eşit Aralık</span><br />
+            </td>
+            <td style="vertical-align: top;">Sembollerin gösterileceği eşit aralık.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Baş./Bit. KM Smb.</span><br />
+            </td>
+            <td style="vertical-align: top;">İlk/son KM'de kullanılacak sembol tipi.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Min. Mesafe</span><br />
+            </td>
+            <td style="vertical-align: top;">Semboller arası minimum mesafe. İki sembol bu mesafeden daha yakın olduğunda, ikisinden biri çizilmez.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Etiketle</span><br />
+            </td>
+            <td style="vertical-align: top;">Burada belirtilen veriyi sembolde etiketler: KM, X, Y, Z, kazık no veya E.KM (<a href="OL_ecuaciones_de_PK.html">KM Eşitliklerine</a> göre KM). Etiketlenen değer (KM, Kazık No, E.KM) gerçek KM'nin katları, eşit aralık olarak yapılabilir ve KM Eşitliklerinin kullanıcı KM'lerinin Katlarına eklenebilir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Katlar/Eşit Aralık</span><br />
+            </td>
+            <td style="vertical-align: top;">Katlar seçeneği, Eşit Aralık'ta belirtilen değerin katı olan KM'leri etiketler (20 kullanarak 20, 40, 60, 80, ... KM'lerini etiketler).<br />
+Eşit Aralık seçeneği, bilgi bandının başlangıç KM'sinden itibaren her Eşit Aralık'ta bir KM etiketler (20 kullanarak, eğer bilgi bandı 1.57 KM'sinde başlıyorsa 1.57, 21.57, 41.57, 61.57, ... etiketler).<br />
+            </td>
+          </tr>
+</tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><span class="Titulo_2"><a name="rotul_nombre_eje">Güzergah Adının Etiketlenmesi</a></span><br />
+      <span class="Parrafo"><br />Güzergah adını (ve numarasını, takma adını vb.) boykesitin her sayfasında belirtilen etiket veya sembol stiliyle etiketlemeyi sağlar. Etiketin sayfa başlangıcından yatay ve dikey konumu, boyutu ve açısı ile kullanılacak bağlantı noktası belirtilebilir.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 490px; height: 106px;" alt="" src="Imagenes/gui_rotul_nombre_eje.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="simb_escalas">Ölçekler için Semboller</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Buradan programa, yatay ve/veya dikey ölçekleri, belirtilen sembolle ve karşılaştırma düzleminden belirli bir mesafede etiketlemesi söylenebilir. Ayrıca bir yatay öteleme ve bir açı da belirtilebilir.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 300px; height: 68px;" alt="" src="Imagenes/gui_simb_escalas.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Varsayılan olarak, program yatay ölçek için 677 ve dikey ölçek için 678 sembol tipini sunar. Tipin negatif olarak belirtilmesi, bu sembollerin gösterilmemesine neden olur.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="rotul_multiplos">Katların Etiketlenmesi (km, hm, 20 m)</a></span><br />
+      <span class="Parrafo"><br />
+Her kilometre, hektometre, 50, 25, 20 veya 10 metrede bir sayısal etiketleri, belirtilen sembolle, karşılaştırma düzleminden belirli bir mesafede ve verilen bir yatay öteleme ve açıyla etiketlemeyi sağlar. &nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 390px; height: 87px;" alt="" src="Imagenes/gui_rotul_multiplos.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Ayrıca, belirtilen çizgi tipiyle ve karşılaştırma düzlemine olan mesafelerle belirlenen uzunlukta işaretler de etiketler. Tipin negatif olarak belirtilmesi, sembollerin ve/veya çizgilerin gösterilmemesine neden olur.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 372px; height: 101px;" alt="" src="Imagenes/gui_rotul_multiplos_ejemplo.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+      </span><span class="Titulo_2"><a name="datos_cajetin">Antet için Veriler</a></span><br />
+      <span class="Parrafo"><br />
+Burada, her paftanın başlangıç ve bitiş KM'leri, antetin belirli bir değişken metin alanında ve belirli bir formatta etiketlenebilir.<br />Antete yazdırılan KM'lerin, KM Eşitliklerinden türetilen kullanıcı KM'lerine karşılık gelmesi mümkündür.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"></span><img style="width: 450px; height: 122px;" alt="" src="Imagenes/gui_datos_cajetin.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="geopak">Geopak</a></span><br />
+
+      <br />
+
+Geopak tarzı bilgi bandı (gitar) tasarımı.<br />
+
+      <br />
+
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 450px; height: 73px;" alt="" src="Imagenes/gui_geopak.png" /><br />
+
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,1772 @@
+<!DOCTYPE html PUBLIC "-//W-C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Tip Tanımları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TİP TANIMLARI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#definir_linea">Çizgi Tipi Tanımlama</a><br />
+      <div style="margin-left: 40px;"><a href="#comandos_def_linea">Tanımlama Komutları</a><br />
+      <a href="#def_rellenos">Tarama Tiplerinin Tanımlanması</a><br />
+      </div><a href="#definir_simbolo">
+
+Sembol Tipi Tanımlama</a><br />
+      <div style="margin-left: 40px;"><a href="#comandos_def_simbolo">Tanımlama Komutları</a><br /><a href="#editor_grafico_simbolos">
+Grafik Sembol Editörü</a><br /><a href="#cajetines">
+Pafta Antetlerinin Oluşturulması</a><br />
+      </div>
+      <a href="#definir_texto">
+Yazı Stili Tanımlama</a><br /><a href="#definir_celula">
+Hücre Tipi Tanımlama</a><br />
+      <div style="margin-left: 40px;"><a href="#comandos_def_celula">Tanımlama Komutları</a><br />
+      <a href="#celulas_enlazadas">Bağlantılı Hücreler</a><br />
+      <a href="#celulas_import3D">3B İçe Aktarım Hücreleri Ekleme</a><br /><a href="#editor_grafico_celulas">
+Grafik Hücre Editörü</a><br />
+      </div>
+
+      </div>
+      
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+      <img src="Imagenes/acceso_definicion_tipos.png" style="width: 336px; height: 332px; margin-left: 7px;" alt="" align="right" />Her
+obje tipi, aşağıda açıklanan özel menüler aracılığıyla değiştirilebilir veya oluşturulabilir. Bu sayede
+kullanıcı, ihtiyaçlarına göre özel bir kütüphane yapılandırabilir.<br />
+      <br />
+      <table style="text-align: left; width: 352px; height: 94px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 636px; text-align: justify;"><span class="Info">Kullanıcı
+yeni bir obje tipi oluşturduğunda, türü ne olursa olsun, yüksek tip numaraları kullanması tavsiye edilir. Çizgiler, semboller ve hücreler için 5000'den, yazılar için ise 500'den büyük numaralar kullanılmalıdır. Bunun nedeni, program kütüphanesine yeni versiyonlarla birlikte sürekli yeni tipler eklenmesi ve bu tiplere belirtilen numaralardan daha düşük numaralar atanmasıdır.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Yeni tipleri değiştirmeye veya oluşturmaya olanak tanıyan menülere <span style="font-weight: bold;">Ayarlar</span> menüsünden erişilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="definir_linea">Çizgi Tipi Tanımlama</a></span><br />
+<br />
+      Yeni bir çizgi tipi oluşturmak veya mevcut birini değiştirmek için <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tip Tanımları</span> &#8594; <span style="font-weight: bold;">Çizgi Tipi Tanımla</span> menüsüne gidilmelidir.<br />
+      <br />
+Bu seçenek, kütüphanedeki çizgi tiplerini interaktif olarak tanımlamayı sağlayan ÇİZGİ STİLİ EDİTÖRÜ menüsünü açar:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_def_tipo_linea.png" style="width: 435px; height: 333px;" alt="" /><br />
+      </div>
+      <br />
+      <img src="Imagenes/represent_tipo_linea.png" style="width: 81px; height: 29px; margin-left: 7px;" alt="" align="right" />Bir
+gezgin (navigator), tanımlı farklı çizgi tiplerini veya stillerini görselleştirmeyi sağlar. Bu tipler,
+iletişim kutusunun sol alt kısmında gösterilir. Üst kısmın çizginin <a href="EDM_modo_decoracion_pantalla.html#modo_dec"> <span style="font-style: italic;">Detaylı Gösterim</span> modundaki</a> temsiline, alt kısmın ise <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Basit Gösterim</span> modundaki</a> temsiline karşılık geldiğini unutmayın. Gezgin aşağıdaki kontrollere sahiptir:<br />
+      <br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 119px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_doble_menos.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Tiplerin başına git (tip 0)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_anterior.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Önceki tipe git<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_siguiente.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Sonraki tipe git<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_doble_mas.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Tiplerin sonuna git (tip 9999)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_prismaticos.png" style="width: 14px; height: 15px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Belirtilen adı içeren tipleri aramayı sağlar<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+Eğer <span style="font-weight: bold; font-style: italic;">Sadece tanımlı olanlarda ilerle</span> seçeneği işaretlenirse, yukarıdaki kontroller sadece mevcut tipler üzerinde çalışır, böylece boş veya tanımlanmamış tipleri atlar.<br />
+      <br />
+Bir çizgi stilini düzenlemeyi sağlayan diğer seçenekler şunlardır:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 60px; font-weight: bold;">Ad<br />
+            </td>
+            <td style="vertical-align: top; width: 612px; text-align: justify;">Bu,
+stil adıdır. Boşluk içermeyen bir veya daha fazla karakterden oluşan bir kelime olup, tip seçim menülerinde
+tanımlayıcı ad olarak kullanılır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px; font-weight: bold;">Renk<br />
+            </td>
+            <td style="vertical-align: top; width: 612px; text-align: justify;">Kullanılan
+renk paletine göre çizginin renk numarası ve kalınlığı.
+Renk numarasının sağındaki kutucuğa tıklandığında,
+o an yüklü olan renk paleti açılır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px; font-weight: bold;">Çizim Kalemi<br />
+            </td>
+            <td style="vertical-align: top; width: 612px; text-align: justify;"><a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Yazdırma</span> modunda</a> veya <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Kalemler</span> modunda</a> mevcut paletle gösterim için aynı işlem geçerlidir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px; font-weight: bold;">Basit Göst. Tipi<br />
+            </td>
+            <td style="vertical-align: top; width: 612px; text-align: justify;"><a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Basit Gösterim</span> modunda</a> sunum için tiplerden birinin seçimi. İzin verilen tipler 0 ile 7 arasında bir sayıdır. <span style="font-weight: bold;">[T]</span> düğmesine basıldığında bir seçim menüsü açılır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px; font-weight: bold;">Tarama Tipi<br />
+            </td>
+            <td style="vertical-align: top; width: 612px; text-align: justify;">Eğer
+çizgi, içini dolduran tiplerden biriyse, burada
+benzer şekilde uygulanacak <a href="#def_rellenos">tarama tipi</a> seçilir. Varsayılan olarak,
+bir çizginin tarama tipi 0'dır (taramasız). Diğerleri: 1 düz dolgu, 2 yatay tarama 1 mm, vb.<br />
+            <br />
+"Maskeleyici düz dolgu" (-1) adında bir <a href="#def_rellenos">tarama tipi</a> mevcuttur. Bu durumda,
+çizgilerin taramaları her zaman çizgilerin kendisinden önce çizilir,
+böylece taramalar birbirini örtebilir ama asla çizgileri örtemez. Bu <a href="#def_rellenos">tarama tipi</a>, tüm
+çizgiler çizildikten sonra işleme girer, bu yüzden onları örter, ancak sembolleri ve yazıları
+örtmez. Örneğin, bir <a href="OL_gui.html">boykesit şablonunda</a> sanat yapılarını çizmek için kullanılabilir, böylece şablon çizgilerini örter.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px; font-weight: bold;"><a name="color_relleno">Tarama Kalemi 1<br />
+Tarama Kalemi 2<br /></a>
+            </td>
+            <td style="vertical-align: top; width: 612px; text-align: justify;">Tarama yapmak için kullanılacak renk/kalem indeksi. İki
+kalem tanımlanır çünkü bazı taramalar çifttir: bir kalemle düz dolgu artı farklı bir kalemle tarama. Basit taramalar
+sadece 1 numaralı tarama kalemini kullanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 60px;"><a name="solido">3B Katı Model</a><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 612px;">Bu değer, Virtual 3D<sup>®</sup> modülünün
+katı model görüntüleri oluştururken otomatik olarak işlediği çizgileri (örneğin otokorkuluklar,
+yol çizgi işaretleri, korkuluklar vb.) tanımlamak için kullanılan bir indekstir. Değer, o çizgiyle ilişkilendirilmiş katı modelin numarasıdır.<br /><br />Bir
+çizgi tipine, kendi boyunca çizilecek bir katı model atandığında,
+farklı geometri, aralık ve
+renge sahip 2 profil tanımlanabilir. Ayrıca herhangi bir parametre ile 2 adet direk de tanımlanabilir.<br /><br />
+<span style="font-weight: bold;">[Düzenle]</span> ile, tanımlanmakta
+olan çizgilere atanan parametrik katı modeli düzenlemeye izin verilir.
+Düğmeye basıldıktan sonra, parametrik katı modelin bir profili ve bir OpenGL penceresinde 3B gösterimi görüntülenir:<br />
+            <br />
+            <table style="text-align: left; width: 603px; height: 27px;" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; width: 337px;"><img src="Imagenes/def_linea_solido.png" style="width: 698px; height: 272px;" alt="" /><br />
+                  </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+<br />
+            <div style="text-align: center;"><img src="Imagenes/ejem_def_linea_solido.png" style="width: 244px; height: 152px;" alt="" /><br />
+            <div style="text-align: left;"><br />
+            <span class="Parf_negrita">[Çizgi profilini düzenle]</span>:<br />
+Çizgi boyunca süpürülecek (extrude) profili çizmek için Istram vektör menüsüne erişim.
+Değerler Mesafe ve Kot ile verilir.
+Üçüncü sütunda, çizgi segmentinin
+çizilip çizilmeyeceğini belirtmek için bir M/D alanı sunulur. M/D = 0 ise segment
+çizilmez. 1'e eşitse, segment çizilir. Bu etki,
+yan menüdeki GRAFİK'e erişerek grafiksel olarak da elde edilebilir.<br />
+            <br />
+&nbsp;<img src="Imagenes/dialogo_vector_perfilQA.png" style="width: 600px; height: 182px;" alt="dialogo_vector_perfilQA" /><br />
+            <ul>
+              <li><span class="Parf_negrita">Segment Aralığı:</span>&nbsp;Profilin süpürülmesi sırasında bırakılan boyuna boşluk mesafesi.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Segment Uzunluğu: </span>Sürekli süpürme işleminin boyuna mesafesi.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Kot Farkı:</span>&nbsp;Çizgi kotuna göre düşey öteleme mesafesi.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Renk</span>: Çizgi profilinin süpürülmesiyle oluşturulan yüzeyin rengi.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Ölçek: </span>Çizgi profilinin süpürülmesine uygulanan ölçek.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Direkli:</span>&nbsp;Çizgi boyunca tekrarlanan tekil elemanların olup olmadığını belirtir.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Mesafe ile yerleşim / Köşe noktalarına yerleşim:</span>&nbsp;Direklerin
+yerleşiminin boyuna mesafe ile mi yoksa çizimdeki çoklu doğruyu tanımlayan her köşe noktasına
+yerleştirilerek mi yapılacağını belirtir.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Prizma tanımı / Hücre tanımı</span>: Tekil elemanın basit bir prizma ile mi yoksa bir hücrede saklanan 3B bir geometri ile mi tanımlandığını belirtir.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Enine mesafe</span>: Direğin çizgiden yanal veya dik ayrılma mesafesi.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">İlk Eleman Mes.:</span>&nbsp;İlk direğin çizginin başlangıcından boyuna mesafesi (sadece mesafe ile yerleşimde geçerli).</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Aralık:</span>&nbsp;Direkler arası boyuna mesafe (sadece mesafe ile yerleşimde geçerli).</li>
+            </ul><ul><li><span style="font-weight: bold;">Çizgiyi direğe kadar uzat</span>:
+&nbsp;Bu çizgi tiplerini Yol Çizgilerinde kullanırken,
+çizginin bir sonraki direğe kadar uzatılıp uzatılmayacağını, böylece orada sonlanmasını
+isteyip istemediğinizi belirtir.</li></ul><ul>
+              <li><span class="Parf_negrita">Renk:</span>&nbsp;Oluşturulan prizmanın rengi.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Boyut (Eksen Yönünde):</span>&nbsp;Direğin boyuna boyutu.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Enine boyut:</span>&nbsp;Direğin enine boyutu.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Yükseklik: </span>Direğin yüksekliği.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Derinlik: </span>Direğin çizgi kotuna göre derinliği.</li>
+            </ul>
+            <ul>
+              <li><span class="Parf_negrita">Hücre tipi:</span>&nbsp;Hücrenin kimlik numarası (sadece hücre ile tanımda geçerli).</li>
+            </ul>
+            <br />
+            <br />
+            </div>
+
+            </div>
+</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 47px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 36px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td style="vertical-align: middle; width: 636px; text-align: justify;"><span class="Info">Bir çizginin <span style="font-weight: bold;">Renk</span>
+özelliği (hem Ekran modunda hem de Yazdırma modunda),
+tipinden bağımsız olabilen tek özelliktir. Yani bir çizgi,
+ait olduğu tipten bağımsız bir renk gösterebilir. Bu durumda,
+'tipe göre renk' yerine 'özel renk' atanmış olduğu söylenir ve bu nitelik, çizginin özellikler
+penceresi aracılığıyla ayarlanır.<br />
+            <br />
+Bu, örneğin <a href="EDM_importar_dwg_dxf.html">DXF veya DWG formatında bir dosya içe aktarıldığında</a> ve belirli bir katmandaki çizgilerin belirli bir EDM tipine geçmesi ancak orijinal rengini koruması istendiğinde kullanışlıdır.<br />
+</span></td>
+    </tr>
+  </tbody>
+      
+      </table>
+
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="comandos_def_linea">Tanımlama Komutları</a></span><br />
+      <br />
+İletişim kutusunun ÇİZGİ DETAYLARI başlıklı orta bölümünde, o çizginin o an tanımlı olan oluşturma ve gösterim <span style="font-weight: bold;">komutlarının</span> bir özeti sunulur.<br />
+      <br />
+Bir çizgi stilini tanımlayan <span style="font-weight: bold;">komutlarda</span>
+kullanılan boyutlar, çalışma ölçeğinden
+bağımsız olarak çizim milimetresi cinsindendir. <span style="font-weight: bold;">Ölçek</span>
+alanında belirtilen ve varsayılan olarak 1.0000 olan değer, hepsine uygulanan ölçeği belirler.<br />
+      <br />
+<span style="font-weight: bold;">[Ekle]</span> düğmesi, çizginin
+tanımı için yeni bir <span style="font-weight: bold;">komut</span>
+oluşturur ve mevcut komutları içeren bir seçim tablosu açar.
+Bu komutlar, tanımlandıktan sonra orta tabloya eklenir.
+İçlerinden birini içeren düğmeye tıklandığında, o alt pencerenin <span style="font-weight: bold;">[Bitir]</span>
+tuşuna basılana kadar sahip olduğu parametreler değiştirilebilir. Üst kısımda bulunan iki düğme ayrıca düzenlenmekte olan komutu <span style="font-weight: bold;">silmeye</span> veya mevcut komutun önüne bir komut <span style="font-weight: bold;">eklemeye</span> olanak tanır.<br />
+      <br />
+Bir çizgi tipinin tanımı için olası komutlar şunlardır:<br />
+      <br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 326px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Çizgi Çiz<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Çoklu doğrunun çizimini emreder.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Çizgiyi Yumuşat<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Çoklu doğruyu, kübik bir interpolanta göre yumuşatılmış bir eğriyle değiştirir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Paralel Tanımla<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Mevcut
+çoklu doğruyu bir paralele kopyalar. Sağdaki tabloda
+paralelin mesafesini (sağa doğru pozitif) girmek için bir düğme açar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Renk Değiştir<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Değişiklikten sonraki çizgi komutları için yeni renk ve çizim kalemi seçer.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Paralel Çiz<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Daha önce tanımlanan paralel çizgiyi çizer.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Çizgi Üzerine Semboller<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Orijinal
+çizgiyi (veya bu komuttan önce yumuşatma komutu varsa yumuşatılmış çizgiyi) bir
+sembol dizisi olarak gösterir. Sağda açılan tabloda şunlar tanımlanır:<br />
+            <ul>
+              <li>Kullanılacak sembol tipi (kütüphanedeki S0 ila S9999 serisinden).</li>
+              <li>İlk sembolün çizginin başlangıcına olan mesafesi.</li>
+              <li>Ardışık semboller arasındaki boşluk.</li>
+              <li>Sembolü kendi boyutundan farklı bir boyutta göstermek için uygulanacak ölçek.</li>
+              <li>Çizim sırasında kullanılacak renk. 0 rengi, sembolün kendi tanımlı renginin kullanılacağını belirtir.</li>
+              <li>Çizim Kalemi. Yazdırma modunda gösterim için kalem numarası.</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Paralel Üzerine Semboller<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Son tanımlanan paraleli bir sembol dizisi olarak gösterir. Parametre tablosu, <span style="font-weight: bold;">Çizgi Üzerine Semboller</span> için açıklananla aynıdır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Çizgi Üzerine Segmentler<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Ana çizgiyi, segment ve boşlukların bir dizisi olarak gösterir. Tanımlama parametreleri şunlardır:<br />
+            <ul>
+              <li>Başlangıç mesafesi: Çizginin başlangıcından ilk segmentin başlangıcına olan mesafe.</li>
+              <li>Segment uzunluğu.</li>
+              <li>Ardışık segmentler arasındaki boşluk.</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Paralel Üzerine Segmentler<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Önceki durumun aynısı, ancak son tanımlanan paralele uygulanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Çizgiyi Noktala<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Çizginin içini düzenli bir nokta ağına göre doldurur.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Paraleli Noktala<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Aynı işlem, ancak son tanımlanan paralelin içini doldurur.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Alan İçine Sembol Serpiştir<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Kapalı bir çizginin oluşturduğu alanı sembollerle doldurmayı sağlar. Aşağıdaki parametreleri kabul eder:<br />
+            <ul>
+              <li>Sembol tipi.</li>
+              <li>Semboller arası ortalama mesafe.</li>
+              <li>Konum varyasyonu (semboller bu mesafe ile belirlenen bir maksimuma kadar rastgele hareket ettirilecektir).</li>
+              <li>Açısal varyasyon (semboller bu mesafe ile belirlenen bir maksimuma kadar rastgele döndürülecektir).</li>
+              <li>Ölçek.</li>
+              <li>Renk.</li>
+              <li>Çizim Kalemi.</li>
+              <li>Mod, şu olabilir:</li>
+            </ul>
+            <div style="margin-left: 40px;">
+            <table style="text-align: left; width: 479px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; width: 355px; text-align: justify;">0: BÜTÜN. Ekleme noktası içerideyse, sembol çizgiyi kesse bile bütünüyle çizilir.<br />
+                  </td>
+                  <td style="vertical-align: top; width: 104px;"><img src="Imagenes/sembrar_enteros.png" style="width: 121px; height: 80px;" alt="" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 355px; text-align: justify;">1: KIRPILMIŞ. Ekleme noktası dışarıda olsa bile, sembolün çizgi içinde kalan kısmı çizilir.<br />
+                  </td>
+                  <td style="vertical-align: top; width: 104px;"><img src="Imagenes/sembrar_truncados.png" style="width: 120px; height: 88px;" alt="" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 355px; text-align: justify;">2: TAMAMI İÇERİDE. Sadece tamamen çizginin içinde kalan semboller çizilir.<br />
+                  </td>
+                  <td style="vertical-align: top; width: 104px;"><img src="Imagenes/sembrar_todo_dentro.png" style="width: 118px; height: 87px;" alt="" /><br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px; font-weight: bold;">Paralel Alana Sembol Serpiştir<br />
+            </td>
+            <td style="vertical-align: top; width: 509px; text-align: justify;">Aynı işlem, ancak son tanımlanan paralelin içini doldurur.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+<img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesi, düzenlenmekte olan çizgi tipinin durumunu <a href="EDM_librerias.html">kütüphanedeki</a>&nbsp;<span class="Archivo">L#</span> dosyasına (burada&nbsp;<span class="Archivo">#</span> stil veya tipin numarasıdır) kaydeder. Eğer dosya zaten
+mevcutsa, üzerine yazmak için onay ister. Ana
+kütüphanenin kazara değiştirilmesine karşı bir koruma olarak, üzerinde çalışılan çalışma dizininin bir alt dizini olan ve yerel <a href="EDM_librerias.html">kütüphaneyi</a> içeren bir&nbsp;<span class="Archivo">\LIB</span> klasörünün bulunması önerilir.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 51px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 621px; text-align: justify;">Eğer bu pencere, bir çizginin
+tanımında değişiklikler yapıldıktan sonra kaydedilmeden kapatılırsa, bu değişiklikler
+mevcut program oturumu boyunca geçerli kalır; ancak
+program durdurulup yeni bir oturum başlatıldığında, kütüphanelerdeki
+tanımlara geri dönülür ve bu değişiklikler kaybolur. Bu, bir çizginin
+görünümünü sadece ekranda görmek veya geçici olarak değiştirmek amacıyla bir paftayı
+yazıcıya göndermek için kullanılan yöntemdir.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<img src="Imagenes/icono_copiar_de.png" style="width: 20px; height: 18px;" alt="" /> düğmesi, numarası belirtilen
+tipin özelliklerini mevcut tipin üzerine kopyalar. Kopyalama bellekte yapılır, bu yüzden
+kalıcı hale getirmek için daha sonra&nbsp; <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesine basmak gerekir.<br />
+      <br />
+<img src="Imagenes/icono_copiar_a.png" style="width: 20px; height: 18px;" alt="" /> düğmesi ile, mevcut
+tipin özelliklerini belirtilen numaranın üzerine kopyalamak mümkündür ve ayrıca bu
+yeni numarayı bellekteki düzenlemelerde mevcut numara olarak ayarlar, bu yüzden
+kalıcı hale getirmek için daha sonra <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesine basmak gerekir.<br /><br /><img src="Imagenes/icono_guardar_linea_lib.png" style="width: 20px; height: 20px;" alt="" /> &nbsp;simgesi ile, düzenlenmekte olan çizgi tipini ikinci veya üçüncü kütüphaneye kaydetmek mümkündür.<br />
+      <br />
+      <br />
+      <a name="def_rellenos"><span style="font-weight: bold; font-style: italic;">Tarama Tiplerinin Tanımlanması</span></a><br />
+      <br /><img src="Imagenes/def_rellenos.png" style="width: 309px; height: 228px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tip Tanımları</span> &#8594; <span style="font-weight: bold;">Tarama Tipi Tanımla</span> seçeneği, içini dolduran herhangi bir çizgi tipine atanabilen tarama tiplerini (düz ve
+çizgili) tanımlamak için bir menü açar.<br />
+      <br />0 (taramasız) ve 1 (düz dolgu) tipleri
+değiştirilemez. Diğerleri, toplamda 40'a kadar,
+tip, çizgiler arası boşluk ve çizgilerin yönelim açısı seçilerek
+tanımlanabilir. Tablodaki ilk 10 değer
+programda önceden tanımlanmıştır. <br />
+      <br /><span style="font-weight: bold;">[Kaydet]</span> düğmesi, kütüphanede&nbsp;<span class="Archivo">ISPOL.hat</span> adında bir dosya oluşturur veya günceller. Bu dosyanın içeriği ASCII formatında bir dosya olduğu için manuel olarak da düzenlenebilir.<br />
+      <br />
+      Temel tarama tipleri şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">DÜZ DOLGU</span>: Tamamen dolu (kalemli çiziciler için tavsiye edilmez).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">ÇİZGİLİ</span>: Boşluk ve açısı belirtilecek paralel çizgiler.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">ÇİFT ÇİZGİLİ</span>: Yataydan ölçülen açıyla çift çizgili tarama.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">DİK AÇILI</span>: Boşluk ve açısı tanımlanabilen dik açılı tarama.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">D_ÇİZGİLİ</span>, <span style="font-weight: bold;">D_ÇİFT</span> ve <span style="font-weight: bold;">D_DİK</span>: Düz bir
+arka plana sahip ve üzerine daha önce tanımlanan taramalardan birinin eklendiği dolgulardır.</li>
+      </ul>
+
+      Taramanın <a href="#color_relleno">rengi</a>, çizgi tipi oluşturulurken tanımlanır (düz dolgu artı çizgili tarama durumunda her iki renk de).<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="definir_simbolo">Sembol Tipi Tanımlama</a></span><br />
+      <br />
+Yeni bir çizgi tipi oluşturma veya mevcut birini değiştirme yollarından biri, <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tip Tanımları</span> &#8594; <span style="font-weight: bold;">Sembol Tipi Tanımla</span> menüsünü kullanmaktır. Diğer bir yol ise <a href="#editor_grafico_simbolos">grafik sembol editörü</a> aracılığıyladır.<br />
+
+      <br />
+
+İlk seçenek, <a href="#definir_linea">çizgi stili tanımına</a> benzer olan ve kütüphanedeki sembol tiplerini interaktif olarak tanımlamayı sağlayan SEMBOL STİLİ EDİTÖRÜ menüsünü açar:<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_def_tipo_simbolo.png" style="width: 435px; height: 258px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      Bir
+gezgin, tanımlı farklı sembol tiplerini veya stillerini görselleştirmeyi sağlar. Bu tipler,
+iletişim kutusunun sol alt kısmında gösterilir. Gezgin aşağıdaki kontrollere sahiptir:<br />
+
+      <br />
+
+      
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 119px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_doble_menos.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Tiplerin başına git (tip 0)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_anterior.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Önceki tipe git<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_siguiente.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Sonraki tipe git<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_doble_mas.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Tiplerin sonuna git (tip 9999)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_prismaticos.png" style="width: 14px; height: 15px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Belirtilen adı içeren tipleri aramayı sağlar<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <br />HÜCRE STİLİ EDİTÖRÜNE GEÇİŞ: <span class="Parf_negrita">C</span> düğmesine (pencerenin sağ üst kısmında) tıklandığında, aynı tipteki "HÜCRE STİLİ EDİTÖRÜNE" geçilir.<br />GRAFİK SEMBOL / HÜCRE EDİTÖRÜNE GEÇİŞ: <span style="font-weight: bold;">E</span> düğmesine (pencerenin sağ üst kısmında) tıklandığında, &nbsp;"GRAFİK SEMBOL / HÜCRE EDİTÖRÜNE" geçilir.<br /><br />Eğer <span style="font-weight: bold; font-style: italic;">Sadece tanımlı olanlarda ilerle</span> seçeneği işaretlenirse, yukarıdaki kontroller sadece mevcut tipler üzerinde çalışır, böylece boş veya tanımlanmamış tipleri atlar.<br />
+
+      <br />
+
+Bir sembol stilini düzenlemeyi sağlayan diğer seçenekler şunlardır:<br />
+
+      <br />
+
+      
+      <table style="text-align: left; width: 692px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">Ad<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+<td style="vertical-align: top; width: 601px; text-align: justify;">Bu,
+sembol tipinin adıdır. Boşluk içermeyen bir veya daha fazla karakterden oluşmalı ve tip seçim menülerinde
+tanımlayıcı ad olarak kullanılacaktır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">Renk<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+<td style="vertical-align: top; width: 601px; text-align: justify;">Aktif renk paletine göre renk indeksi ve kalınlık.
+Renk numarasının sağındaki kutucuğa tıklandığında,
+o an yüklü olan renk paleti açılır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">Çizim Kalemi<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+<td style="vertical-align: top; width: 601px; text-align: justify;"><a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Yazdırma</span> modunda</a> veya <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Kalemler</span> modunda</a> mevcut paletle gösterim için aynı işlem geçerlidir.<br />
+            <br />
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Ölçek F.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+<td style="vertical-align: top; text-align: justify;">Bu tipteki tüm sembolleri etkileyecek ölçek faktörü.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><span style="font-style: italic;">SFAC etkilemez</span><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+<td style="vertical-align: top; text-align: justify;">Eğer
+bu seçenek etkinleştirilmişse, sembolün <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Durum Bilgisi</span> menüsünde
+belirlenen genel sembol boyutu ölçek faktöründen (SFAC) etkilenmediğini
+gösterir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">3B Görüntü (billboard)<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+<td style="vertical-align: top; text-align: justify;">Virtual 3D<sup>®</sup> modülü ile ilgilidir, bu sembolün bir billboard gösterimiyle ilişkilendirilip ilişkilendirilmediğini belirtir.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">Test değeri</span><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Varsayılan olarak 1 değerini alır,
+ancak sembolün sahip olduğu öznitelik değerine bağlı olarak
+gösteriminin nasıl değiştiğini görmek için başka değerler verilebilir.<br />
+Bu değer sadece mevcut sembol tipini
+editörde göstermek için kullanılır, çizimdeki sembol örneklerini etkilemez ve
+kütüphanedeki sembol tanımında saklanmaz,
+sadece sembol tanımı için bir yardım alanıdır.<br />
+            </td>
+          </tr>
+
+
+          
+          
+        </tbody>
+      
+      </table>
+
+      <br />
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="comandos_def_simbolo">Tanımlama Komutları</a></span><br />
+
+      <br />
+
+İletişim kutusunun SEMBOL KOMUTLARI başlıklı orta bölümünde, o sembolün o an tanımlı olan oluşturma ve gösterim <span style="font-weight: bold;">komutlarının</span> sayısı ve bir özeti sunulur.<br />
+
+      <br />
+
+<span style="font-weight: bold;">[Ekle]</span> düğmesi, sembolün
+tanımı için yeni bir <span style="font-weight: bold;">komut</span>
+oluşturur ve mevcut komutları içeren bir seçim tablosu açar.
+Bu komutlar, tanımlandıktan sonra orta tabloya eklenir.
+İçlerinden birini içeren düğmeye tıklandığında, o alt pencerenin <span style="font-weight: bold;">[Bitir]</span>
+tuşuna basılana kadar sahip olduğu parametreler değiştirilebilir. Üst kısımda bulunan iki düğme ayrıca düzenlenmekte olan komutu <span style="font-weight: bold;">silmeye</span> veya mevcut komutun önüne bir komut <span style="font-weight: bold;">eklemeye</span> olanak tanır.<br />
+
+      <br />
+
+Bir sembol tipinin tanımı için olası komutlar şunlardır:<br />
+
+      <br />
+
+      
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 326px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Antet<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bunun bir <a href="#cajetines">antet</a> olduğunu belirten bir komut ekler.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Renk Değiştir<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Sonraki komutların rengini ve çizim kalemini değiştirir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px;"><span style="font-weight: bold;">Değişken Metin</span><br />
+            </td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Sabit olmayan, interaktif olarak değişen parametrik metin.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Metin Çiz<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bir metin çizer.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Metin Satırı<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bir metin satırı çizer. Konum, açı ve ölçekli boyut koordinatları burada tanımlanır.<br />
+Hizalama için metnin tutma noktalarını gösteren bir panel görüntülenir.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Sembol<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bunun üzerine bindirmek için başka bir sembolü çağırır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Sayısal Etiket<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Sembolün öznitelik değerini yazar. Genellikle kot, mesafe, açı vb. etiketlemek için kullanılır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Yay<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bir yay oluşturur.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Renge Göre Doldur<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Kırmızı, yeşil ve mavi renkleri belirterek doldurulmuş poligon.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Ölçek Faktörü<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bu ölçek faktörü, sonrasındaki komutları etkileyecektir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Özel Etiket<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;"><a href="OL_planta_opciones_visualizacion.html">Plan görünüm seçeneklerinde</a> belirlenen <a href="OL_planta_opciones_visualizacion.html#divisor_PKs">kilometre ayıracını</a> kullanarak, sembolün öznitelik değerini yazan ve kilometre etiketlemesi için kullanılan komut.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Mutlak Değer Etiketi<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Mutlak değerde sayısal etiket. <span style="font-weight: bold;">Sayısal Etiket</span> komutuyla aynıdır, ancak varsa eksi işareti yok sayılır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Etiket º ' "<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Değeri altmışlık sisteme göre derece, dakika ve saniyeye ayırır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">Etiket º ' " stil ile</span><br />
+            </td>
+            <td class="Parrafo" style="vertical-align: top;">Etiket º ' " ile aynıdır, ancak yazı fontları yerine yazı stillerini kullanır.<br />
+            </td>
+          </tr>
+<tr><td><span class="Parf_negrita">Etiket º ' " dakika yuvarlamalı</span></td><td><span class="Parf_negrita">Yuvarla</span> kutusundaki dakikaya yuvarlar.</td></tr><tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Özel Etiket Stil ile<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;"><span style="font-weight: bold;">Özel Etiket</span> komutu gibidir, ancak yazı stilini seçmeye olanak tanır.<br />
+            <br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold; width: 143px;">Mutlak Değer Etiketi İşaretli<br />
+            </td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;"><span style="font-weight: bold;">Mutlak Değer Etiketi</span> komutu gibidir, ancak eksi işaretiyle birlikte.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 143px;">Çizgi Tipine Göre Doldur<br />
+            </td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Kullanılacak çizgi tipini belirterek doldurulmuş poligon.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 143px;">Çizgi<br />
+            </td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bir çizgi çizer.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 143px;">Tipe Göre Çizgi<br />
+            </td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Çizgileri sembollerin çizimine entegre etmeyi sağlar, böylece
+programın bir çizgi tipine göre <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Detaylı Gösterim</span> modunda</a>
+gösterilirler. Bir sembolün tanımında bu komutun her eklenmesi için şunlar gereklidir:<br />
+
+            <ul>
+<li><a href="EDM_librerias.html">Kütüphanedeki</a> çizgi tipi.</li><li>Çizgiyi belirleyen köşe noktaları kümesi.&nbsp; </li>
+            </ul>
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 143px;">Köşe Anteti<br />
+            </td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bunun bir köşe <a href="EDM_definicion_tipos.html#cajetines">anteti</a> olduğunu belirten bir komut ekler.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 143px;">Görüntü<br />
+            </td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Doğrudan
+dosyayı belirterek bir sembole bir görüntü gömer. Ayrıca
+seçilen görüntüye beyaz, siyah veya her ikisi için şeffaflık sağlar. Bu,
+sembollere görüntü eklemeyi ve bu görüntülerin dışının şeffaf olmasını
+sağlar.<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Sayısal Etiket +</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">özel etiket</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span style="font-weight: bold;">Sayısal Etiket</span> ve <span style="font-weight: bold;">Özel Etiket</span> komutlarını birleştiren bir komuttur. GÜZERGAH PROJELERİ modülünün (<a href="OL_ficheros_ali.html">.ali dosyaları</a>) bazı plan etiketleme modları tarafından kullanılan S940 ve S947 sembolleri tarafından kullanılır.
+S940'ın bir kullanım örneği, özniteliğinde 4002 (eksen 4, kurp 2) değeri ve Z koordinatında 915220.272 (KM) değeri kayıtlı bir nokta için olabilir; bu sembolle planda <span style="font-style: italic;">TE 4001 KM.915+220.272</span> zinciri etiketlenirdi.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Sayısal Etiket +</span><br style="font-weight: bold;" />
+
+            <span style="font-weight: bold;">özel etiket stil ile<br />
+            </span></td>
+            <td style="vertical-align: top;">Sayısal Etiket + özel etiket ile aynıdır, ancak yazı fontları yerine yazı stillerini kullanmaya izin verir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">Etiket tam kısmı ayırır</span><br />
+            </td>
+            <td style="vertical-align: top;">Bir sayının tam kısımlarını bölen komut.<br />
+Örneğin kilometre kısımlarını bölmek için kullanılır:<br />
+Örnekler:<br />
+[+] -&gt; çıktı: 15+618.123<br />
+[/] -&gt; çıktı: 15/0<br />
+Eğer + işareti öne konulursa, her zaman işaret konulmaya zorlanır.<br />
+Eğer - işareti öne konulursa, sadece öznitelik negatifse işaret konulur.<br />
+Eğer komutun önüne "q" harfi konulursa, tam kısmı ondalık kısımdan ayıran nokta çizilmez.<br />
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      </div>
+
+      <br /><img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesi, düzenlenmekte olan sembol tipinin durumunu <a href="EDM_librerias.html">kütüphanedeki</a> <span class="Archivo">S#</span> dosyasına (burada&nbsp;<span class="Archivo">#</span> stil veya tipin numarasıdır) kaydeder. Eğer dosya zaten
+mevcutsa, üzerine yazmak için onay ister. Ana
+kütüphanenin kazara değiştirilmesine karşı bir koruma olarak, üzerinde çalışılan çalışma dizininin bir alt dizini olan ve yerel <a href="EDM_librerias.html">kütüphaneyi</a> içeren bir&nbsp;<span class="Archivo">\LIB</span> klasörünün bulunması önerilir.<br />
+
+      <br />
+
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 51px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td class="Info" style="vertical-align: middle; width: 621px; text-align: justify;">Eğer bu pencere, bir sembolün
+tanımında değişiklikler yapıldıktan sonra kaydedilmeden kapatılırsa, bu değişiklikler
+mevcut program oturumu boyunca geçerli kalır; ancak
+program durdurulup yeni bir oturum başlatıldığında, kütüphanelerdeki
+tanımlara geri dönülür ve bu değişiklikler kaybolur. Bu, bir sembolün
+görünümünü sadece ekranda görmek veya geçici olarak değiştirmek amacıyla bir paftayı
+yazıcıya göndermek için kullanılan yöntemdir.</td>
+    </tr>
+  </tbody>
+      </table>
+
+      <br />
+
+<img src="Imagenes/icono_copiar_de.png" style="width: 20px; height: 18px;" alt="" /> düğmesi, numarası belirtilen
+tipin özelliklerini mevcut tipin üzerine kopyalar. Kopyalama bellekte yapılır, bu yüzden
+kalıcı hale getirmek için daha sonra&nbsp; <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesine basmak gerekir.<br />
+
+      <br />
+
+<img src="Imagenes/icono_copiar_a.png" style="width: 20px; height: 18px;" alt="" /> düğmesi ile, mevcut
+tipin özelliklerini belirtilen numaranın üzerine kopyalamak mümkündür ve ayrıca bu
+yeni numarayı bellekteki düzenlemelerde mevcut numara olarak ayarlar, bu yüzden
+kalıcı hale getirmek için daha sonra <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesine basmak gerekir.<br /><br /><img src="Imagenes/icono_guardar_linea_lib.png" style="width: 20px; height: 20px;" alt="" /> &nbsp;düğmesi ile, düzenlenmekte olan sembol tipini ikinci veya üçüncü kütüphaneye kaydetmek mümkündür.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="editor_grafico_simbolos">Grafik Sembol Editörü</a></span><br />
+      <br />
+      <img src="Imagenes/edit_graf_simbolos.png" style="width: 312px; height: 281px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tip Tanımları</span> &#8594; <span style="font-weight: bold;">Grafik Sembol Editörü</span> menüsünden
+sembollerin interaktif oluşturma faaliyetleri ve bunların çalışma kütüphanesine
+yüklenmesi ve indirilmesi kontrol edilir.&nbsp; <br />
+      <br />
+Bu seçeneğe erişildiğinde, başlangıçta veri olmadan yeni bir düzenleme ortamı açılır,
+böylece interaktif olarak bir sembol oluşturulabilir.
+Bunun için açılır menülerden ve ilgili araç çubuklarından
+tüm grafik düzenleme araçları erişilebilirdir.<br />
+      <br />
+<span style="font-weight: bold;">[Kütüphaneyi Yapılandır]</span> seçeneği, kütüphanenin yeniden okunmasını sağlar ve genellikle mevcut ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> oturumu sırasında kütüphanedeki bir nesne değiştirildiğinde kullanılır.<br />
+<br />
+      <span style="font-weight: bold;">[Sembol Oluştur]</span> seçeneği, daha sonra açıklanacağı gibi, ilgili kütüphanede yeni sembolü oluşturmayı sağlar.<br />
+      <br />
+<span style="font-weight: bold;">[Sembolü Patlat]</span> işlevi, bir bakıma öncekinin tersidir, çünkü bir sembolden EDM objeleri oluşturur. Bunun için şunlar belirtilmelidir:<br />
+      <ul>
+        <li>Bir sembol dosyasının <span style="font-weight: bold;">adı</span>, örneğin&nbsp;<span class="Archivo">S25</span>,&nbsp;<span class="Archivo">S101BASE</span>, vb.</li>
+        <li><span style="font-weight: bold;">Kot</span> (eğer ölçeklenebilir bir sembol ise, boyut olarak kullanılır).</li>
+        <li>Sembol tarafından çağrılan diğer semboller de <span style="font-weight: bold;">patlatılabilir</span> veya sembol olarak eklenebilir.</li>
+      </ul>
+      <br />
+BİR SEMBOLÜN GRAFİKSEL OLUŞTURMA ÖRNEĞİ<br />
+      <br />
+Basit bir örnek olarak, içinde bir metin bulunan bir daireden oluşan bir sembol tasarlanacaktır.
+Bunun için merkezi ve bir noktası verilen bir daire oluşturulur. Menüden bu seçenek seçildikten sonra,
+merkezini (0,0) noktasına yazmak (koordinatlar X ve Y arasında boşluk bırakılarak, virgül olmadan verilir) ve çevre üzerindeki bir noktayı belirlemek yeterlidir:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejem_crear_simb_1.png" style="width: 474px; height: 356px;" alt="" /><br />
+      </div>
+      <br />
+Ardından, metin araç çubuğu kullanılarak,
+merkezi (dairenin merkezi) belirtilerek yazı eklenir ve böylece
+sembol çizilmiş olur:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejem_crear_simb_2.png" style="width: 452px; height: 237px;" alt="" /><br />
+      </div>
+      <br />
+Yapılan çizimi program tarafından tanınabilir bir sembol olarak bildirmek için, <span style="font-weight: bold;">[Sembol Oluştur]</span> seçeneği kullanılmalıdır. Bu seçenek aşağıdaki iletişim kutusunu açar:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejem_crear_simb_3.png" style="width: 410px; height: 125px;" alt="" /><br />
+      </div>
+      <br />
+İletişim kutusunda şunlar belirtilmelidir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Yeni sembolün adı</span>, örneğin <span style="font-weight: bold;">S5001</span> (5000 veya daha yüksek tip değerleri kullanmanın şiddetle tavsiye edildiğini unutmayın).</li>
+      </ul>
+      <ul>
+        <li>Diğer menülerde tanımlamak için bir <span style="font-weight: bold;">sembol adı</span> (boşluksuz).</li>
+      </ul>
+      <ul>
+        <li>Sembol için bir <span style="font-weight: bold;">ölçek faktörü</span>.</li>
+      </ul>
+      <ul>
+        <li>Bunun bir <span style="font-weight: bold;">normal sembol</span> (bu durumda olduğu gibi) mi yoksa bir <span style="font-weight: bold;">pafta anteti</span> (<a href="#cajetines">antet</a>) mi olduğu.</li>
+      </ul>
+      <ul>
+        <li>Ve son olarak, bunun <span style="font-weight: bold;">sabit boyutlu</span> (bu örnekte olduğu gibi) bir sembol mü yoksa <span style="font-weight: bold;">ölçeklenebilir bir sembol</span> mü olduğu.
+Ölçeklenebilir semboller, çizim ölçeğine bağlı olarak boyutlarını otomatik olarak değiştirir, bu da onları örneğin <a href="OL_planos_longitudinales.html">boykesit paftalarında</a> ve <a href="OL_planos_transversales.html">enkesit paftalarında</a> kullanım için çok kullanışlı hale getirir.</li>
+      </ul>
+Kutuyu onayladıktan sonra, kullanıcıdan sembol için, ekleme noktasını belirleyecek olan <span style="font-weight: bold;">baz noktası</span> istenir. Bu nokta hem grafiksel hem de sayısal olarak girilebilir.<br />
+      <br />
+Sembol çizilip oluşturulduktan sonra, kütüphaneyi yenilemek uygundur; bu işlem sadece <span style="font-weight: bold;">[Kütüphaneyi Yapılandır]</span> düğmesine basılarak gerçekleştirilir. Ayrıca sembol paletinde görünmesi isteniyorsa, <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Palet Ayarları</span> &#8594; <span style="font-weight: bold;">Sembol Paleti</span> menüsüne gidilmelidir.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="cajetines">Pafta Antetlerinin Oluşturulması</a></span><br />
+      <br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>,
+projenin tamamen bitmiş paftalarını, başka bir ara yazılıma gerek duymadan, çiziciye ve diğer formatlara çıktı vermeyi sağlar.
+Bu işi gerçekleştirmek için en önemli ön adımlardan biri,
+kişiselleştirilmiş bir antet ile pafta çerçevesi tasarlamaktır.
+Aşağıda, bir DIN-A1 pafta çerçevesi örnek olarak alınacaktır.<br />
+      <br />
+
+<a href="EDM_definicion_tipos.html#definir_simbolo">Sembol tipi tanım penceresi</a> kullanılarak da oluşturulabilmelerine rağmen, bir antet oluşturmanın en rahat yolu <a href="EDM_definicion_tipos.html#editor_grafico_simbolos">grafik sembol editörü</a> aracılığıyladır.<br />
+      <br />
+Pencerenin merkezini merkez alan koordinatlar,
+milimetre cinsinden ifade edilir. Bu nedenle, pencere görünümünü
+yaklaşık çalışma marjlarına (bir DIN-A1 için 594 mm × 840 mm) F2 tuşuyla veya fare tekerleğiyle yakınlaştırarak açmak faydalıdır.<br />
+      <br />
+Çizici cihazımızın baskı marjlarını ayarlamak için uygun bir referansa sahip olmak amacıyla,
+hem kağıdın hem de baskı alanının kenarlarının milimetrik koordinatlarını belirlemek faydalı olabilir.
+Bu verilerle kağıt alanını belirlemeye başlanır.<br />
+      <br />
+Doğal olarak, bir pafta çerçevesini geometrik olarak oluşturmak için, kullanıcının seçtiği ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> araçlarına göre çok sayıda yöntem mevcuttur. Bunlardan biri bir çizgi oluşturmaktır:<br />
+      <br />
+      <img src="Imagenes/crear_cajetin_1.png" style="width: 284px; height: 200px; margin-left: 7px;" alt="" align="right" />Seçilen
+ilk noktadan (örneğin sol alt köşe) başlayarak,
+<span style="font-style: italic;">@840 0</span> yazarak artışlar (göreli koordinatlar) verilebilir ve böylece sağ alt nokta elde edilir (X'in 840 mm artması, Y'nin ise sabit kalması).<br />
+      <br />
+Başka bir olası yol, kenarlara paralel ve dik çizgiler kullanmak ve çerçeve çizgisini kapatmak için kendisiyle birleştirmektir.<br />
+      <br />
+Ardından, kağıdın yazdırılabilir alanı (ciltleme için 2 cm kenar boşluğu ile) aynı yöntemle veya eşdeğer bir yöntemle tanımlanır.<br />
+      <br />
+      <img src="Imagenes/crear_cajetin_2.png" style="width: 284px; height: 200px; margin-right: 7px;" alt="" align="left" /><br />
+      <br />
+Sayfanın alt kısmına 3 cm genişliğinde bir antet yerleştirilir.<br />
+      <br />
+Antetin dört kutucuğu, antetin kenarlarına tutturulmuş dikey segmentler kullanılarak kolayca çizilebilir.<br />
+      <br />
+Antet çizgilerinin çizimi bittikten sonra, içine sembol ve metinlerin eklenmesi zamanı gelir.<br />
+      <br />
+Metinler söz konusu olduğunda, basılı çizimlerde olduğu gibi görünecek olanlar ile
+paftaya göre değişenler (sayfa numarası, proje yazarının adı veya
+proje başlığı gibi) arasında ayrım yapılmalıdır.<br />
+      <br />
+      <img src="Imagenes/crear_cajetin_3.png" style="width: 318px; height: 204px; margin-left: 7px;" alt="" align="right" />Metin araç çubuğu ile, ilgili yazılar oluşturulur ve antete eklenir. Tüm paftalarda tekrarlanacak olan <span style="font-weight: bold;">sabit metin</span> örneği olarak, ikinci kutucuktaki "Proje" başlığı kullanılacaktır.<br />
+      <br />
+<span style="font-weight: bold;">Değişken metinler</span>,
+sabit metinlerle aynı şekilde girilir, tek farkları # sembolü ile başlamalarıdır.
+Değişken olarak tanımlanan her metin, SAYFALAMA menüsünde, YAZDIRMA bölümünde açıklandığı gibi
+değiştirilebilir. Projenin "Başlığı" bu duruma bir örnektir.<br />
+      <br />
+Tüm yazılar ve semboller antete eklendikten ve
+pafta çerçevesi oluşturulduktan sonra, geriye sadece <span style="font-weight: bold;">[Sembol Oluştur]</span> düğmesine basıldığında açılan iletişim kutusuna girilen
+son özellikleri tanımlamak kalır:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/crear_cajetin_4.png" style="width: 410px; height: 147px;" alt="" />&nbsp;<br />
+      </div>
+      <br />
+Girilecek veriler şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Yeni sembolün adı</span>,
+burada genellikle kullanılan kağıt boyutuna özgü bir ad verilir.
+Standart boyutlar için karakteristik adlar benzerdir (DIN-A2 için 102, DIN-A3 için 103, vb.), 105 ise
+standart dışı boyutlardaki kağıtlar için ayrılmıştır.</li>
+      </ul>
+      <ul>
+        <li>Diğer menülerde tanımlamak için bir <span style="font-weight: bold;">sembol adı</span> (boşluksuz).</li>
+      </ul>
+      <ul>
+        <li>Gerçek boyutlarından oluşturulduğu için bu pafta çerçevesi için 1 olacak olan sembol için bir <span style="font-weight: bold;">ölçek faktörü</span>.</li>
+      </ul>
+      <ul>
+        <li>Bu durumda, bunun bir <span style="font-weight: bold;">pafta anteti</span> (antet) olduğu belirtilmelidir ve iki seçenek sunulur:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ul style="list-style-type: circle;">
+        <li>Eğer antet <span style="font-weight: bold;">merkezden tutturuluyorsa</span>, bu şekilde belirtilmelidir (en yaygın durum budur). Aksi takdirde, program <span style="font-weight: bold;">baz noktasını</span> isteyecektir.</li>
+      </ul>
+      <ul style="list-style-type: circle;">
+        <li>Ayrıca, bunun bir <span style="font-weight: bold;">köşe anteti</span> olduğunu belirtme imkanı da verilir.
+Enkesit veya boykesit çizimi için köşe antetli bir format kullanıldığında,
+program bu alanı dikkate alır ve profillerin çizimi için kullanmaz. Eğer aynı formatı
+plan harita çizimleri için de kullanmak isteniyorsa,
+anteti oluştururken, L35 gibi bir çizgiyle antetin dış çevresi de tanımlanmalıdır. Bu çizginin dolgusu (siyah/beyaz) altındaki herhangi bir
+harita bilgisini örter. Sol alt veya sağ alt köşede antetler kabul edilir.
+Kütüphaneye temel örnekler olarak&nbsp;<span class="Archivo">S101esq</span> ve&nbsp;<span class="Archivo">S101esqD</span> dosyaları dahil edilmiştir.</li>
+      </ul>
+      </div>
+Önceki iletişim kutusunu onayladıktan sonra, kullanıcıdan <span style="font-weight: bold;">kağıt köşeleri</span> ve <span style="font-weight: bold;">çizilebilir alan</span> için karşılık gelen noktalar istenir. Bu noktaların tam hassasiyetle tanımlanması için köşe noktası yakalama modunun kullanılması tavsiye edilir.<br />
+      <br />
+Sembol bu şekilde oluşturulmuş olur. Sistem, ilgili kütüphanede iki dosya oluşturur: sembolü içeren&nbsp;<span class="Archivo">S101texto</span> ve çizimi EDM formatında saklayan&nbsp;<span class="Archivo">101texto.edm</span> (başındaki&nbsp;<span class="Archivo">S</span> olmadan), bu dosya daha sonra diğer antetlerin düzenlenmesinde yeniden kullanılabilir.<br />
+      <br />
+Bu, bir pafta çerçevesi oluşturmanın birçok yolundan biridir.
+Bir sembol olarak, önceden hazırlanmış grafikleri
+EDM formatına dönüştürerek ve daha sonra grafik editör penceresine
+blok olarak yükleyerek içe aktarmak mümkündür.<br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="definir_texto">Yazı Stili Tanımlama</a></span><br />
+      <br />
+
+      Yeni bir yazı tipi (yazı stili olarak da adlandırılır) oluşturmak veya mevcut birini değiştirmek için <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tip Tanımları</span> &#8594; <span style="font-weight: bold;">Yazı Stili Tanımla</span> menüsüne gidilmelidir.<br />
+
+      <br />
+
+Bu seçenek, kütüphanedeki yazı tiplerini interaktif olarak tanımlamayı sağlayan YAZI STİLİ EDİTÖRÜ menüsünü açar:<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_def_tipo_texto.png" style="width: 358px; height: 354px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      Bir
+gezgin, tanımlı farklı yazı tiplerini veya stillerini görselleştirmeyi sağlar. Bu tipler,
+iletişim kutusunun sol alt kısmında gösterilir. Gezgin aşağıdaki kontrollere sahiptir:<br />
+
+      <br />
+
+      
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 119px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_doble_menos.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Tiplerin başına git (tip 0)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_anterior.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Önceki tipe git<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_siguiente.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Sonraki tipe git<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_doble_mas.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Tiplerin sonuna git (tip 9999)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_prismaticos.png" style="width: 14px; height: 15px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Belirtilen adı içeren tipleri aramayı sağlar<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <br />
+
+Eğer <span style="font-weight: bold; font-style: italic;">Sadece tanımlı olanlarda ilerle</span> seçeneği işaretlenirse, yukarıdaki kontroller sadece mevcut tipler üzerinde çalışır, böylece boş veya tanımlanmamış tipleri atlar.<br />
+
+      <br />
+
+Bir yazı stilini düzenlemeyi sağlayan diğer seçenekler şunlardır:<br />
+
+      <br />
+
+      
+      <table style="text-align: left; width: 692px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 104px; font-weight: bold;">Stil Adı<br />
+            </td>
+            <td style="vertical-align: top; width: 568px; text-align: justify;">Bu,
+yazı tipinin adıdır: boşluk içermeyen bir veya daha fazla karakterden oluşan bir kelime,
+tip seçim menülerinde tanımlayıcı ad olarak kullanılır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 104px; font-weight: bold;">Yazı Tipi Türü<br />
+            </td>
+            <td style="vertical-align: top; width: 568px; text-align: justify;">3 olası yazı tipi türü vardır:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Istram</span>: Programın
+varsayılan olarak program kütüphanesine yüklediği yazı tiplerini
+kullanır. 0, 1, 2,... stilleri bu yazı tiplerini kullanır.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">True Type</span>: Program,
+başlatıldığında, kullanıcının bilgisayarında yüklü olan bu türdeki tüm yazı tiplerini
+okur, böylece burada kullanılabilir olurlar. Bu sayede,
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'den oluşturulan paftalar,
+bir PC'de yaygın olarak yüklü olan yazı tiplerini kullanabildikleri için daha iyi bir görünüme
+sahip olabilir. 11, 50, 51,... stilleri bu tür yazı tiplerini kullanır.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">PostScript</span>: PostScript tipi yazı tiplerini kullanır. 110, 113,.. stilleri bu tür yazı tiplerinin kullanım örnekleridir.</li>
+            </ul>
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 104px; font-weight: bold;">Yazı Tipi<br />
+            </td>
+            <td style="vertical-align: top; width: 568px; text-align: justify;">Daha önce belirtilen türdeki tüm mevcut yazı tiplerini gösteren bir açılır menüdür.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 104px; font-weight: bold;">Tan (eğim)<br />
+</td>
+            <td style="vertical-align: top; width: 568px; text-align: justify;">Karakterlerin
+eğim açısının tanjantı, doğal dikey konumlarından ölçülür.
+Tüm yazı tipleri bu parametre ile "italik" hale getirilebilir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 104px; font-weight: bold;">Genişlik/Yükseklik<br />
+</td>
+            <td style="vertical-align: top; width: 568px; text-align: justify;">Karakterlerin
+genişlik-yükseklik oranı. Varsayılan değer 1.0'dır. 2 değeriyle,
+örneğin, karakterler iki kat daha geniş olur ve 0.5 ile
+yarıya kadar daralırlar.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 104px; font-weight: bold;">Karakter Aralığı (%)<br />
+</td>
+            <td style="vertical-align: top; width: 568px; text-align: justify;">Karakterler
+arası boşluk. 0.0 değeriyle (varsayılan) boşluk normaldir.
+0.2 değeri onları birbirinden ayırır ve -0.1 değeri onları
+neredeyse birbirine değecek kadar yaklaştırır.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 104px;">Varsayılan Boyut<br />
+</td>
+            <td style="vertical-align: top; width: 568px; text-align: justify;">Otomatik
+olarak metin oluşturan bazı uygulamalar tarafından kullanılacak varsayılan
+boyut. Metinlerin boyutu, çizim ölçeğine göre gerçek metre cinsindendir.<br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Ölçek</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Söz konusu stille oluşturulan tüm metinlere uygulanacak ölçek faktörü.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      
+      </table>
+
+      <br />
+Sağdaki alt tabloda, metinlerin çizimi sırasında uygulanacak renk ve çizim kalemi indeksleri tanımlanır.
+İlk sütunda tanımlanan her bir <span style="font-weight: bold;">boyut</span> için bu indeksleri tanımlayan beş satır tuş bulunur.
+Son 6 sütun, karakterlerin çizimi için <span style="font-weight: bold;">renk</span> ve <span style="font-weight: bold;">kalem</span> indeksini; <span style="font-weight: bold;">D.Renk</span> ve <span style="font-weight: bold;">D.Kalem</span>, yazı tipi <span style="font-style: italic;">kalın (bold)</span> ise dolgu için renk ve kalemi; ve <span style="font-weight: bold;">A.Renk</span> ve <span style="font-weight: bold;">A.Kalem</span>, <span style="font-weight: bold; font-style: italic;">Arka planı renklendir</span> seçeneği etkinse arka planı renklendirmek için kullanılır.<br />
+      <br />
+Tablo şu şekilde yorumlanır: belirtilen <span style="font-weight: bold;">boyuta</span>
+kadar (milimetre cinsinden) belirtilen renk, kalem, dolgu rengi ve
+dolgu kalemi ile arka plan rengi ve arka plan kalemi uygulanır. Bu şekilde,
+aynı yazı stili için artan boyutta metinler oluşturulduğunda,
+kullanılacak renk veya kalem numarası atlanır.
+Böylece, metnin boyutuyla artan çizgi kalınlığına sahip kalemler veya değişen renkler
+seçilebilir. Metne sabit renk indeksleri atamak istendiğinde, en pratik yol,
+örneğin renk komutlarının ilk satırına 5000 mm gibi çok
+büyük bir boyut bildirmektir; bu şekilde program boyut tablosunu analiz ederek zaman kaybetmez,
+çünkü ilk boyut karşılaştırmasında indeksi belirler ve bu da çizmeyi hızlandırır.<br />
+      <br />
+<img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesi, düzenlenmekte olan yazı tipinin durumunu <a href="EDM_librerias.html">kütüphanedeki</a> <span class="Archivo">R#</span> dosyasına (burada&nbsp;<span class="Archivo">#</span> stil veya tipin numarasıdır) kaydeder. Eğer dosya zaten
+mevcutsa, üzerine yazmak için onay ister. Ana
+kütüphanenin kazara değiştirilmesine karşı bir koruma olarak, üzerinde çalışılan çalışma dizininin bir alt dizini olan ve yerel <a href="EDM_librerias.html">kütüphaneyi</a> içeren bir&nbsp;<span class="Archivo">\LIB</span> klasörünün bulunması önerilir.<br />
+
+
+      <br />
+
+
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 51px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td class="Info" style="vertical-align: middle; width: 621px; text-align: justify;">Eğer bu pencere, bir metin veya yazının
+tanımında değişiklikler yapıldıktan sonra kaydedilmeden kapatılırsa, bu değişiklikler
+mevcut program oturumu boyunca geçerli kalır; ancak
+program durdurulup yeni bir oturum başlatıldığında, kütüphanelerdeki
+tanımlara geri dönülür ve bu değişiklikler kaybolur. Bu, bir metnin
+görünümünü sadece ekranda görmek veya geçici olarak değiştirmek amacıyla bir paftayı
+yazıcıya göndermek için kullanılan yöntemdir.</td>
+    </tr>
+  </tbody>
+      </table>
+
+
+      <br />
+
+
+<img src="Imagenes/icono_copiar_de.png" style="width: 20px; height: 18px;" alt="" /> düğmesi, numarası belirtilen
+tipin özelliklerini mevcut tipin üzerine kopyalar. Kopyalama bellekte yapılır, bu yüzden
+kalıcı hale getirmek için daha sonra&nbsp; <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesine basmak gerekir.<br />
+
+
+      <br />
+
+
+<img src="Imagenes/icono_copiar_a.png" style="width: 20px; height: 18px;" alt="" /> düğmesi ile, mevcut
+tipin özelliklerini belirtilen numaranın üzerine kopyalamak mümkündür ve ayrıca bu
+yeni numarayı bellekteki düzenlemelerde mevcut numara olarak ayarlar, bu yüzden
+kalıcı hale getirmek için daha sonra <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesine basmak gerekir.<br /><br /><img src="Imagenes/icono_guardar_linea_lib.png" style="width: 20px; height: 20px;" alt="" /> düğmesi ile, düzenlenmekte olan yazı tipini ikinci veya üçüncü kütüphaneye kaydetmek mümkündür.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="definir_celula">Hücre Tipi Tanımlama</a></span><br />
+      <br />
+Yeni bir hücre tipi oluşturma veya mevcut birini değiştirme yollarından biri, <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tip Tanımları</span> &#8594; <span style="font-weight: bold;">Hücre Tipi Tanımla</span> menüsünü kullanmaktır. Diğer bir yol ise <a href="#editor_grafico_celulas">grafik hücre editörü</a> aracılığıyladır.<br />
+
+
+      <br />
+
+
+İlk seçenek, <a href="#definir_simbolo">sembol stili tanımına</a> benzer olan ve kütüphanedeki hücre tiplerini interaktif olarak tanımlamayı sağlayan HÜCRE STİLİ EDİTÖRÜ menüsünü açar:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_def_tipo_celula.png" style="width: 435px; height: 258px;" alt="" /><br />
+      </div>
+      <br />
+Bir
+gezgin, tanımlı farklı hücre tiplerini veya stillerini görselleştirmeyi sağlar. Bu tipler,
+iletişim kutusunun sol alt kısmında gösterilir. Gezgin aşağıdaki kontrollere sahiptir:<br />
+
+
+      <br />
+
+
+      
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 119px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_doble_menos.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Tiplerin başına git (tip 0)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_anterior.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Önceki tipe git<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_siguiente.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Sonraki tipe git<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_doble_mas.png" style="width: 16px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Tiplerin sonuna git (tip 9999)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 20px;"><img src="Imagenes/icono_prismaticos.png" style="width: 14px; height: 15px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 612px;">Belirtilen adı içeren tipleri aramayı sağlar<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+
+      <br />SEMBOL STİLİ EDİTÖRÜNE GEÇİŞ: <span class="Parf_negrita">S</span> düğmesine (pencerenin sağ üstünde) tıklandığında, aynı tipteki "SEMBOL STİLİ EDİTÖRÜNE" geçilir.<br /><br />Eğer <span style="font-weight: bold; font-style: italic;">Sadece tanımlı olanlarda ilerle</span> seçeneği işaretlenirse, yukarıdaki kontroller sadece mevcut tipler üzerinde çalışır, böylece boş veya tanımlanmamış tipleri atlar.<br />
+
+
+      <br />
+
+
+Bir hücre stilini düzenlemeyi sağlayan diğer seçenekler şunlardır:<br />
+
+
+      <br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">Ad<br />
+            </td>
+            <td style="vertical-align: top; width: 601px; text-align: justify;">Bu,
+hücre tipinin adıdır. Boşluk içermeyen bir veya daha fazla karakterden oluşmalı ve tip seçim menülerinde
+tanımlayıcı ad olarak kullanılacaktır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">Renk<br />
+            </td>
+            <td style="vertical-align: top; width: 601px; text-align: justify;">Aktif renk paletine göre renk indeksi ve kalınlık.
+Renk indeksinin sağındaki kutucuğa tıklandığında,
+o an yüklü olan renk paleti açılır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">Çizim Kalemi<br />
+            </td>
+            <td style="vertical-align: top; width: 601px; text-align: justify;"><a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Yazdırma</span> modunda</a> veya <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Kalemler</span> modunda</a> mevcut paletle gösterim için aynı işlem geçerlidir.<br />
+            <br />
+            </td>
+          </tr>
+          
+          <tr>
+      <td style="vertical-align: top; font-weight: bold;">Ölçek F.<br />
+      </td>
+      <td style="vertical-align: top; text-align: justify;">Bu tipteki tüm hücreleri etkileyecek ölçek faktörü.<br />
+      <br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;"><span style="font-style: italic;">CFAC etkilemez</span><br />
+      </td>
+      <td style="vertical-align: top; text-align: justify;">Eğer bu
+seçenek etkinleştirilmişse, hücrenin
+<span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Durum Bilgisi</span> menüsünde belirlenen genel hücre boyutu ölçek faktöründen (CFAC) etkilenmeyeceğini
+gösterir.<br />
+      <br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;">3B Görüntü (billboard)<br />
+      </td>
+      <td style="vertical-align: top; text-align: justify;">Virtual 3D<sup>®</sup> modülü ile ilgilidir, bu hücrenin bir billboard gösterimiyle ilişkilendirilip ilişkilendirilmediğini belirtir.<br />
+      </td>
+    </tr>
+
+          
+          
+        </tbody>
+      
+      </table>
+
+
+      <br />
+      <br />
+
+
+      <span style="font-weight: bold; font-style: italic;"><a name="comandos_def_celula">Tanımlama Komutları</a></span><br />
+
+
+      <br />
+
+
+İletişim kutusunun HÜCRE KOMUTLARI başlıklı orta bölümünde, o hücrenin o an tanımlı olan oluşturma ve gösterim <span style="font-weight: bold;">komutlarının</span> sayısı ve bir özeti sunulur.<br />
+
+
+      <br />
+
+
+<span style="font-weight: bold;">[Ekle]</span> düğmesi, hücrenin
+tanımı için yeni bir <span style="font-weight: bold;">komut</span>
+oluşturur ve mevcut komutları içeren bir seçim tablosu açar.
+Bu komutlar, tanımlandıktan sonra orta tabloya eklenir.
+İçlerinden birini içeren düğmeye tıklandığında, o alt pencerenin <span style="font-weight: bold;">[Bitir]</span>
+tuşuna basılana kadar sahip olduğu parametreler değiştirilebilir. Üst kısımda bulunan iki düğme ayrıca düzenlenmekte olan komutu <span style="font-weight: bold;">silmeye</span> veya mevcut komutun önüne bir komut <span style="font-weight: bold;">eklemeye</span> olanak tanır.<br />
+
+
+      <br />
+
+
+Bir hücre tipinin tanımı için olası komutlar şunlardır:<br />
+
+
+      <br />
+
+
+      
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 326px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;"><a name="def_cel_pto_ins">Ekleme Noktası</a><br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Ekleme noktasının X, Y, Z koordinatlarını işaretler. Ayrıca ekleme noktasının <span style="font-weight: bold;">tipi</span> de belirtilmelidir: <span style="font-weight: bold;">serbest</span>, <span style="font-weight: bold;">başlangıç</span>, <span style="font-weight: bold;">bağlantı</span> veya <span style="font-weight: bold;">nokta başlangıcı</span> (bu son tip, &nbsp;<a href="OL_ficheros_ali.html#elsal2_cel.ali"><span class="Archivo">ELSAL2_CEL.ali</span></a> gibi bazı <a href="OL_ficheros_ali.html">plan güzergah etiketleme modlarında</a> kullanılır).<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Ufuk<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bu komut aşağıdaki parametreleri alır:<br />
+            <ul>
+              <li>Daha önce tanımlanmış olması gereken bir çift hücre ekleme noktası.</li>
+            </ul>
+            <ul>
+              <li>Altmışlık derece cinsinden ek bir öteleme.</li>
+            </ul>
+Hücrenin çizimi için, komutta belirtilen iki
+ekleme noktasının oluşturduğu açı hesaplanır ve buna ek olarak belirtilen
+öteleme eklenir. Sonuçtaki açı,
+bundan sonraki tüm çizim komutlarına uygulanır. Bu şekilde, hücrenin ekleme noktaları
+hareket ettirildiğinde, çizimi ilgili noktaların göreceli
+yönelimine göre uyum sağlar.&nbsp; <br />
+            <br />
+</td>
+          </tr>
+          <tr>
+      <td style="vertical-align: top; width: 143px;"><span style="font-weight: bold;">Öteleme</span><br />
+</td>
+      <td style="vertical-align: top; width: 489px; text-align: justify;">Bu komut çağrıldığı andan itibaren eksenlerde X ve Y yönünde bir
+öteleme oluşturur (bundan sonraki çizgiler ve metinler, orijinal
+koordinatlarına kullanıcının belirttiği X ve Y kadar ötelenmiş olacaktır).<br />
+            <br />
+</td>
+    </tr>
+<tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Sembol<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Hücreye belirtilen tipte bir sembol eklemeyi sağlar.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Çizgi<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Koordinatları belirtilen ekleme noktasına göreceli olan bir çizgi eklemeyi sağlar.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Tipe Göre Çizgi<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Çizgileri hücrelerin çizimine entegre etmeyi sağlar, böylece
+programın bir çizgi tipine göre <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Detaylı Gösterim</span> modunda</a>
+gösterilirler. Bir hücrenin tanımında bu komutun her eklenmesi için şunlar gereklidir:<br />
+            <ul>
+              <li><a href="EDM_librerias.html">Kütüphanedeki</a> çizgi tipi.</li>
+              <li>Çizgiyi belirleyen köşe noktaları kümesi.&nbsp; </li>
+            </ul>
+</td>
+          </tr>
+          <tr><td><span class="Parf_negrita">3B Çoklu Doğru</span></td><td>Bir 3B Çoklu Doğru eklemeyi sağlar.</td></tr><tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Sabit Metin<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Sabit bir metin oluşturur. Bu seçenek, asla değiştirilmeyecek bir değişken metinden daha kullanışlıdır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Değişken Metin<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Sabit olmayan, interaktif olarak değişen parametrik metin.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Göreceli Metin<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Önceki metne göreceli bir konumda oluşturulan metin.<br />
+<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Baz Metin<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Her
+zaman tekrarlanacak bir metindir, bu nedenle genellikle
+ön ek veya son ek görevi görür. Örneğin, harita üzerinde bir dizi nokta alarak bir
+veri tablosu oluşturulurken, noktaları birbirinden ayırmak için
+her zaman nokta numarasından önce görünen bir metin, bir ön ek olabilir.<br />
+<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Sıralı Numara<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Artan bir tam sayıya karşılık gelen otomatik metin. Örneğin, bir haritadaki noktaları numaralandırmak için kullanılır.<br />
+<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">X Koordinatı<br />
+Y Koordinatı<br />
+Z Koordinatı<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;"><span style="font-weight: bold;">Hassasiyet</span>'te belirtilen ondalık basamak sayısıyla, hücrenin ekleme noktasının sırasıyla X, Y ve Z koordinatlarını etiketlemeyi sağlar. Bu koordinatlar gerçek zamanlı olarak güncellenir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Ölçek Faktörü<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Bu ölçek faktörü, sonrasındaki komutları etkileyecektir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 143px; font-weight: bold;">Renk Değiştir<br />
+</td>
+            <td style="vertical-align: top; width: 489px; text-align: justify;">Değişiklikten sonraki hücre komutları için yeni renk ve çizim kalemi seçer.<br />
+            <br />
+
+            </td>
+          </tr><tr>
+      <td style="vertical-align: top; font-weight: bold; width: 143px;">Renge Göre Doldur<br />
+</td>
+      <td style="vertical-align: top; width: 489px; text-align: justify;">Kırmızı, yeşil ve mavi renkleri belirterek doldurulmuş poligon.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 143px;">Çizgi Tipine Göre Doldur<br />
+</td>
+      <td style="vertical-align: top; width: 489px; text-align: justify;">Kullanılacak çizgi tipini belirterek doldurulmuş poligon.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 143px;">Sembol Deseni<br />
+</td>
+      <td style="vertical-align: top; width: 489px; text-align: justify;">Desen olarak kullanılan bir sembolü, bir ana çizgiye göre ve başka bir kırpma çizgisi kullanarak tekrarlamayı sağlar.<br />
+</td>
+    </tr>
+    
+    
+    
+
+        </tbody>
+      </table>
+      </div>
+
+
+      <br />3B gösterim, adının yanında <span style="font-weight: bold;">3D</span> yazan hücre komutları için mümkündür.<br /><br /><img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesi, düzenlenmekte olan hücre tipinin durumunu <a href="EDM_librerias.html">kütüphanedeki</a> <span class="Archivo">C#</span> dosyasına (burada&nbsp;<span class="Archivo">#</span> stil veya tipin numarasıdır) kaydeder. Eğer dosya zaten
+mevcutsa, üzerine yazmak için onay ister. Ana
+kütüphanenin kazara değiştirilmesine karşı bir koruma olarak, üzerinde çalışılan çalışma dizininin bir alt dizini olan ve yerel <a href="EDM_librerias.html">kütüphaneyi</a> içeren bir&nbsp;<span class="Archivo">\LIB</span> klasörünün bulunması önerilir.<br />
+
+
+      <br />
+
+
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 51px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td class="Info" style="vertical-align: middle; width: 621px; text-align: justify;">Eğer bu pencere, bir hücrenin
+tanımında değişiklikler yapıldıktan sonra kaydedilmeden kapatılırsa, bu değişiklikler
+mevcut program oturumu boyunca geçerli kalır; ancak
+program durdurulup yeni bir oturum başlatıldığında, kütüphanelerdeki
+tanımlara geri dönülür ve bu değişiklikler kaybolur. Bu, bir hücrenin
+görünümünü sadece ekranda görmek veya geçici olarak değiştirmek amacıyla bir paftayı
+yazıcıya göndermek için kullanılan yöntemdir.</td>
+    </tr>
+  </tbody>
+      </table>
+
+
+      <br />
+
+
+<img src="Imagenes/icono_copiar_de.png" style="width: 20px; height: 18px;" alt="" /> düğmesi, numarası belirtilen
+tipin özelliklerini mevcut tipin üzerine kopyalar. Kopyalama bellekte yapılır, bu yüzden
+kalıcı hale getirmek için daha sonra&nbsp; <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesine basmak gerekir.<br />
+
+
+      <br />
+
+
+<img src="Imagenes/icono_copiar_a.png" style="width: 20px; height: 18px;" alt="" /> düğmesi ile, mevcut
+tipin özelliklerini belirtilen numaranın üzerine kopyalamak mümkündür ve ayrıca bu
+yeni numarayı bellekteki düzenlemelerde mevcut numara olarak ayarlar, bu yüzden
+kalıcı hale getirmek için daha sonra <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> düğmesine basmak gerekir.<br /><br /><img src="Imagenes/icono_guardar_linea_lib.png" style="width: 20px; height: 20px;" alt="" /> düğmesi ile, düzenlenmekte olan hücre tipini ikinci veya üçüncü kütüphaneye kaydetmek mümkündür.<br />
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="celulas_enlazadas">Bağlantılı Hücreler</a></span><br />
+      <br />
+<span style="font-weight: bold;">Bağlantılı hücreler</span> olarak adlandırılan özel bir hücre türü vardır.
+Bu hücrelerin özelliği, bir sonraki hücrelere göre konumlarını referans alan bir ekleme noktası içermeleridir. Bu şekilde oluşturulan hücreler,
+sanki tek bir bütünmüş gibi blok halinde hareket etme özelliğine sahip olacaktır. Bloktaki herhangi bir hücre silindiğinde veya kurtarıldığında,
+diğerleri kompakt bir blok oluşturmaya devam etmek için yeniden konumlanacaktır.<br />
+      <br />
+C12 ve C13 hücre tipleri, bağlantılı hücrelere iki örnektir.<br />
+      <br />
+      <span class="Apartados"><a name="celulas_import3D">3B Geometri İçe Aktarım Hücresi Oluştur</a></span><a name="celulas_import3D"><br />
+Hücrelere entegre edilmiş 3B sembolleri görüntülemek için bir erişim yolu,
+3B Geometri İçe Aktarım Hücresi Oluştur aracıdır.<br />
+Erişim:&nbsp;<span class="Parf_negrita">Ekle &#8594; 3B Geometri İçe Aktarım Hücresi Oluştur</span><br />
+<br />
+      <img src="Imagenes/acceso_crear_celula3d.png" style="width: 255px; height: 133px;" alt="acceso_crear_celula3d" /><br />
+      <br />
+Geometrileri içe aktarmak için bir görüntüleyici içeren bir iletişim kutusu belirir.<br />
+      <br />
+&nbsp;<img src="Imagenes/insertar_celula3d.png" style="width: 455px; height: 411px;" alt="insertar_celula" /><br />
+      <span class="Parf_negrita">Z ekseninde döndür:</span>&nbsp;nesneyi Z ekseninde 90 derece döndürür.<br />
+      <span class="Parf_negrita">X ekseninde döndür:</span>&nbsp;nesneyi X ekseninde 90 derece döndürür (güzergah projeleri için, eksen yönüne dik).<br />
+      <span class="Parf_negrita">Y ekseninde döndür: </span>nesneyi Y ekseninde 90 derece döndürür (güzergah projeleri için, eksenin ilerleme yönü ve doğrultusu).<br />
+      <span class="Parf_negrita">Ölçekle</span>: seçilen geometriye, sembole istenen boyutları uygulamak için bir ölçek faktörü uygular.<br />
+      <span style="font-weight: bold;">Görüntü için Konum</span>: Bu düğmeye tıklayarak 3B nesnemizin farklı dik görünümleri arasında geçiş yaparız. Eğer <span style="font-weight: bold;">[ ] Görüntü ile sembol ekle</span> seçeneğini seçersek,
+bu dik görünüm, nesnenin boyutlarıyla ve ekleme noktası Xo
+Yo Zo ile çakışacak şekilde haritadaki sembole eklenecektir.<br />
+      <span class="Parf_negrita">Sembol tipine ekle</span>: Geometri,
+alandaki numaraya göre Sxxxx olarak kütüphaneye kaydedilir. Eğer sembol yoksa oluşturulur, varsa,
+3B nesne mevcut sembole eklenir.<br />
+      <span style="font-weight: bold;"><span class="Parf_negrita">Ekleme için hücre tipi oluştur: </span></span>Önceki alanda oluşturulan veya belirtilen sembolü içeren hücre oluşturulur.<span style="font-weight: bold;"><br />
+      <br /></span>Nesne
+Xo,Yo,Zo değerleri değiştirilerek taşındığında, geometri
+.3DO formatında saklanır. Özelliklere sahip IFC dosyaları içe aktarıldığında,
+.3DO dosyası bu özellikleri koruyacaktır.<span style="font-weight: bold;"><br />
+<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"></span></span></a><a name="editor_grafico_celulas">Grafik Hücre Editörü</a><br />
+      <br />
+Sembollere benzer şekilde, yeni hücreleri grafiksel olarak oluşturmak veya değiştirmek de mümkündür.
+Bu durumda kullanılacak seçenek <span style="font-weight: bold;">Ayarlar</span> &#8594; <span style="font-weight: bold;">Tip Tanımları</span> &#8594; <span style="font-weight: bold;">Grafik Hücre Editörü</span>'dür ve <a href="#editor_grafico_simbolos">grafik sembol editörüne</a> benzer şekilde çalışır:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/edit_graf_celulas.png" style="width: 396px; height: 395px;" alt="" /><br />
+      </div>
+
+<br />
+      <span class="Parrafo"><span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

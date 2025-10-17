@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Eksantrisite ve Hat Aralığı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>EKSANTRİSİTE VE HAT ARALIĞI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />
+Bu menüde, geometrik eksenin plan eksenine göre <span style="font-weight: bold;">eksantrisitesini</span> (<span style="font-weight: bold;">Eksant.</span> alanı) ve hat merkezleri arasındaki mesafe olarak <span style="font-weight: bold;">hat aralığını</span> tanımlayan veriler girilir; bu mesafe sol hattın merkezinden (<span style="font-weight: bold;">Genişlik sol</span>) ve sağ hattın merkezinden (<span style="font-weight: bold;">Genişlik sağ</span>) geometrik merkeze olan mesafedir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 516px; height: 324px;" alt="" src="Imagenes/modelo_exc_entrevia.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img style="width: 661px; height: 204px;" alt="" src="Imagenes/dialogo_exc_entrevia.png" /><br />
+      </div>
+      <br />
+Hat aralığını tanımlamak için program çeşitli geometri tiplerini ayırt eder:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tip P = 0</span>: İç omuzdan, subbalastı açıkta bırakan iki ayrı balast platformu oluşturulur. <span style="font-weight: bold;">DX S</span>, <span style="font-weight: bold;">DX D</span> ve <span style="font-weight: bold;">T</span> parametreleri kullanılarak modelde gösterildiği gibi subbalast ve koruyucu tabaka katmanlarını keserek hat aralığında bir hendek oluşturmak mümkündür.<br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;">Hendek,
+tanımlandığı tip kesit numarasıyla veya hendek yoksa 0 değeriyle
+belirtilir. İki hendek arasındaki iç bölgede koruyucu tabaka korunur.<br />
+      <br />
+      <img style="width: 141px; height: 111px;" alt="" src="Imagenes/capa_forma_interna.png" align="right" hspace="6" />Hatlar <span style="font-weight: bold;">çok ayrık</span> olduğunda
+(istasyon bölgeleri vb.), subbalast + koruyucu tabaka paketinin ayağından terasmana başlayan ve aynı parametrelerle tanımlanan, her iç tarafta birer hendek oluşturmak mümkündür. Bu durumda, ayrıca iç koruyucu tabaka için hatların altındaki genel koruyucu tabakadan farklı bir kalınlık tanımlamak da mümkündür. Bunun için <span style="font-weight: bold;">[İç K.T. &gt;&gt;]</span> düğmesine basılır ve diyalog kutusu iç koruyucu tabaka için değerler girilebilecek şekilde değişir. Eğer negatif bir değer girilirse, iç koruyucu tabakaya genel koruyucu tabaka ile aynı kalınlık atanır. Eğer iki KM'de farklı bir değer verilirse, ara değerler enterpole edilir.<br />
+      <br />
+Ayrıca, menünün bu kısmında iç bölge için aşağıdaki tanımlama olanakları belirlenir:<br />
+      <br />
+      <table style="text-align: left; width: 440px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 72px;">[2 taraf]<br />
+            </td>
+            <td style="vertical-align: top; width: 348px;">Kesitin iki tarafı da oluşturulur.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 72px;">[Sağı İptal Et]<br />
+            </td>
+            <td style="vertical-align: top; width: 348px;">Kesitin sağ tarafını iptal eder.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 72px;">[Solu İptal Et]<br />
+            </td>
+            <td style="vertical-align: top; width: 348px;">Kesitin sol tarafını iptal eder.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 72px;">[2'sini İptal Et]
+            </td>
+            <td style="vertical-align: top; width: 348px;">Kesitin tamamını iptal eder.</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <ul>
+<li><span style="font-weight: bold;">
+Tip P = 1</span>: En alçak balast gövdesinin omzu, diğer tarafın iç şevini kesene kadar uzatılır.</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">
+Tip P = 2</span>: Hat aralığı, iki iç balast omuzunu birleştiren çizgiye kadar balast ile doldurulur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tip P = 3</span>: Bu
+tip, açık hat aralığına sahip çift hat kesitlerinin, yani karışık
+kesitlerin (açık-açık, açık-aç-kapa tünel, açık-tünel, aç-kapa
+tünel-aç-kapa tünel, aç-kapa tünel-tünel ve tünel-tünel) tanımlanmasına
+izin verir. Karayollarındaki <a href="OL_excentricidad_mediana.html#mediana_abierta">açık refüje</a> benzer. 
+Çift hatlı demiryolları için <span style="font-weight: bold;">[Sağı İptal Et]</span> veya <span style="font-weight: bold;">[Solu İptal Et]</span> kullanıldığında, oluşturulan kesiti içten tamamlamak için açık hat aralığı tip kesiti kullanılabilir.
+        </li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">
+Tip P = 4</span>: Tip 0 gibidir, ancak subbalast ve koruyucu tabakanın iç şevi, iki taraf kesişene kadar uzatılır ve bir refüj oluşturur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tip P = 5</span>: Tip 4 gibidir, ancak refüj şev kullanmak yerine, refüjün boykesitinden alınan kottan oluşturulur. Bu tip için, T sütununa, hendeğin düz tabanının genişliğini tanımlayan bir A değeri girilebilir.<br />
+        </li>
+      </ul>
+
+
+      Diyalog kutusunda ayrıca, haritada bulunan çizgileri kullanarak bu değerleri belirlemek için hızlı bir yöntem sunan <span style="font-weight: bold;">[ANC çizgiye göre]</span> ve <span style="font-weight: bold;">[Eksant. çizgiye göre]</span> düğmeleri de ayırt edilir.<br />
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;">
+Gabari nedeniyle hat aralığı ek genişlikleri</span><br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> kütüphanesinde, <span class="Archivo">galiboTB.tsa</span> ve <span class="Archivo">galiboTM.tsa</span> tabloları mevcuttur ve <span style="font-weight: bold;">[ANC x Tablo]</span> seçeneği ile hat aralığına tabloya göre ek genişlikler vermek için kullanılabilir. 
+<span class="Archivo">galiboTM.tsa</span> tablosu, Murcia tramvayı için hesaplanmıştır ve Bilbao tramvayına karşılık gelen <span class="Archivo">galiboTB.tsa</span>'ya benzerdir. Ayrıca, geçişin başlangıç ve bitiş noktalarında bir geri çekilme ile ek genişlikleri uygulayan bir tablo da mevcuttur. Bu tablonun adı <span class="Archivo">GaliboRT.tsa</span>'dır ve <a href="OL_ffcc_plataforma.html">Platform</a> menüsünde daha önce bahsedilmiştir.<br />
+      <br />
+Sağa kurplarda, dış ek genişlik sağ hat aralığına ve iç ek genişlik sol hat aralığına uygulanır; sola kurplar için ise iç ek genişlik sağ hat aralığına ve dış ek genişlik sol hat aralığına uygulanır. Her iki tabloda da, <span style="font-style: italic;">Exc</span> komutu kullanılır, bu da her hattın gerçek yarıçapını, plan eksenine göre eksantrisiteyi ve hat aralığı genişliklerini dikkate alarak kullanmaya olanak tanır.<br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> kütüphanesinde bulunan bir diğer tablo da <span class="Archivo">Galibo_Peralte.tsa</span>'dır ve hat aralığı genişliklerinde ve <a href="OL_ffcc_plataforma.html">Platform</a> menüsündeki tabloya göre A2 genişliği için kullanılır.<br />
+Bu tablodan yola çıkarak iç ve dış ek genişlikler, yarıçap yerine mm cinsinden devere bağlı olarak uygulanır. Sağa kurplarda, devere bağlı ek genişlik hattın sol yarı genişliğine uygulanır ve tersi durumda tam tersi.<br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

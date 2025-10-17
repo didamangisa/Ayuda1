@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Platform</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLATFORM<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br /><img style="width: 336px; height: 280px; margin-left: 7px;" alt="" src="Imagenes/modelo_plataforma.png" align="right" />Bu menü, demiryolu platformunu uygulama bölümlerine göre tanımlamaya odaklanır. Balast omuzunun <span style="font-weight: bold;">A2</span> genişliği ve <span style="font-weight: bold;">P2</span> eğimi ile balastın dış şevi <span style="font-weight: bold;">T3</span>, bu menünün <span style="font-weight: bold;">[Otomatik]</span> seçeneğiyle oradan alınmak üzere <a href="OL_ffcc_via_traviesa.html">HAT ve TRAVERS</a> menüsünde bir başlangıç değeriyle tanımlanır.<br />
+      <br />
+Diyalog kutusunda, haritada bulunan çizgileri kullanarak balast genişliğini otomatik olarak tanımlama imkanı sunulur (<a href="OL_calzadas_aux.html#a2_linea"><span style="font-weight: bold;">[A2 çizgiye göre]</span></a> düğmesi).<br />
+      <br />
+<span style="font-weight: bold;">[A2 tabloya göre]</span> seçeneği kullanılarak, iç ve dış taraf için farklı ek genişliğe sahip tablolar tanımlanabilir (tablolar&nbsp;<span class="Archivo">galiboTB.tsa</span> ve&nbsp;<span class="Archivo">galiboTM.tsa</span>). Bu tabloların <span style="font-style: italic;">Exc</span>
+parametresi, plan eksenine göre eksantrisiteyi ve hat aralığı
+genişliklerini dikkate alarak her bir hattın ekseninin gerçek yarıçapını
+kullanmaya olanak tanır.<br />
+Program kütüphanesinde bulunan bir diğer tablo da &nbsp;<span class="Archivo">GaliboRT.tsa</span>'dır.
+Bu tablo, kurpların dış ve iç bölgeleri için tabloda tanımlanan
+değerleri dikkate alarak, geçiş bölgelerinin (aliyman, kurp, klotoid)
+başlangıç ve bitiş noktalarında bir geri çekilme uygular.<br />
+Bu tablo, hat aralığı ek genişliklerini bu geri çekilmeler aracılığıyla tanımlamak için <a href="OL_ffcc_exc_entrevia.html">Eksantrisite ve Hat Aralığı</a> menüsünde de uygulanabilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 608px; height: 438px;" alt="" src="Imagenes/galiboRT_ejemplo.png" /><br />
+      </div>
+
+      
+      <div style="text-align: center;"><span class="Info">GaliboRT.tsa Tablosu</span><br />
+      </div>
+<br />
+PLATFORM menüsünde ayrıca <span style="font-weight: bold;">koridorlar</span> veya <span style="font-weight: bold;">yürüme yolları</span> da tanımlanır. Yürüme yolunun enine eğimi (<span style="font-weight: bold;">P4</span>) bağımsız olabilir veya <span style="font-weight: bold;">H3</span> &lt; 0 yapılarak subbalastın devamında görünebilir. Bu durumda, eğer tanımlıysa, dış çatı kırım noktası ile tanımlanan eğimi alır.<br />
+Bu A4 yürüme yolu genişliği, haritadaki bir çizgiden de verilebilir (<a href="OL_calzadas_aux.html#a2_linea"><span style="font-weight: bold;">[A4 çizgiye göre]</span></a> Düğmesi).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 631px; height: 316px;" alt="" src="Imagenes/menu_plataforma.png" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">Veriler arasında geçiş yapma</span> seçeneğini kullanmak mümkündür. Böylece bir KM için girilen değerler bir sonraki KM'ye kadar korunur.<br />
+<br />
+Ayrıca aşağıdaki parametreler de tanımlanır:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 124px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">A1<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Çift hat durumunda, iç balast omuzuna kadar olan genişliği tanımlar.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">P1<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Çift hat durumunda, iç balast omuzuna kadar olan eğimi tanımlar (mutlak veya devere göreceli).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">T1<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Çift hat durumunda, hat aralığı bölgesindeki balast için iç şevi tanımlar.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">A2<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Dış balast omuzuna kadar olan genişliği tanımlar.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px;"><span style="font-weight: bold;">P2</span><br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Dış balast omuzuna kadar olan eğimi tanımlar (mutlak veya devere göreceli).<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Eksen</span><br />
+            </td>
+            <td style="vertical-align: top;">Paralel seyreden iki eksende yer alan iki hat için, balast omuzunu (kod 11) diğer eksenin omuzu üzerine kapatma (kod 11.5 ile bir nokta eklenir) ve balast şevini bu noktaya taşıma imkanımız vardır. Aynı anda, diğer eksenin balast omuzu da bu eksen üzerine kapatılabilir. Ve eğer diğer eksenin 3 kodu, kendi yürüme yolunun (kod 13) sonundan önce girerse, onu da 11.6 koduyla ekler.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 62px;"><span style="font-weight: bold;">T3</span><br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Balastın dış şevi. Eğer negatif bir değer verilirse, girilen değer o şevin plan projeksiyonunu, yani omuz ile balast eteği arasındaki yatay mesafeyi temsil edecektir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">H3<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Ray ile yürüme yolu arasındaki kot farkını tanımlar. Eğer negatif bir değer verilirse, yürüme yolu, kalınlığı <a href="OL_ffcc_exc_entrevia.html">EKSANTRİSİTE VE HAT ARALIĞI</a> menüsünde tanımlanan subbalast yüzeyinin devamına yerleştirilir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">A4<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Hat merkezi ile yürüme yolu ucu arasındaki mesafe.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">P4<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Yürüme yolunun enine eğimidir. Ancak H3 &lt; 0 ise, o zaman subbalast yüzeyinin sahip olduğu eğimi alacaktır.
+            </td>
+          </tr>
+          <tr><td><span style="font-weight: bold;">min</span></td><td>Balast eteğinden sonraki yürüme yolu genişliği için minimum değer.</td></tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Bombe (%)</span><br />
+            </td>
+            <td style="vertical-align: top;">Raylar arasındaki balast için bir bombe eğimi (pozitif veya negatif) tanımlama imkanı.
+Bu eğimi balast omuzuna kadar uzatmak istenirse, eğimlerin başlangıç noktası olarak: Travers seçilmelidir.<br />
+Balast bombesi değeri KM'lere göre tanımlanabilir.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 62px;"><span style="font-weight: bold;"><a name="origen_de_pendientes">Eğimlerin başlangıcı</a></span><a name="origen_de_pendientes"><br />
+            </a></td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Bu seçenek, traversin sonundan omuza kadar ve tip 1 hat aralığı durumunda diğer balast gövdesine kadar olan balast geometrisi için olası iki modu kontrol eder:<br />
+            <ul>
+              <li><span style="font-weight: bold;">
+Yatay (Bağım.)</span>: Balast omuzunu ve hat aralığını yatay olarak tanımlar.</li>
+              <li><span style="font-weight: bold;">
+Travers (Altparalel)</span>: Dever ile aynı enine eğimle ekstrapolasyon yapar.</li>
+            </ul>
+Balast omuzunun eğimi için P2 değeri, duruma göre travers düzleminden veya yataydan uygulanacaktır.
+      
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic;">3 ve 4 olmadan</td>
+            <td style="vertical-align: top; text-align: justify;">Bu seçenek etkinleştirildiğinde, platformun 3 ve 4 numaralı noktaları (balast şevi ve yürüme yolu) kaldırılır, böylece sabit platform, palye, hendek veya dolgu kesiti teorik balast omuzundan başlar. Bu sayede örneğin <a href="OL_tuneles.html">tünel</a> veya yüksekliği o teorik balast omuzundan ölçülen peronlu açık kesitler tanımlanabilir.<br />
+Bu kutucuğu ilk veride işaretlersek, bu davranış tanımlanan tüm veriler için geçerli olur.<br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[ ] Balast Omuzu ve H3 kırmızı kot kotundan sabit</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bu
+kutucuk etkinleştirildiğinde, balast omuzunun kotu traversin ucunda,
+kırmızı kota göreceli bir kota kadar yükselir/alçalır&nbsp; Zh = Zkırmızı_kot -
+Ray_yüksekliği - sth (sth, traversin balastın üzerinde ne kadar
+çıktığıdır). Ve H3, yüksek rayın tarafından bile kırmızı kot kotundan
+uygulanır. Çift hatta iç bölge Zh ile korunur.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <br />
+      <img style="width: 261px; height: 54px;" alt="" src="Imagenes/plat_ffcc_cambio_eje.png" align="right" hspace="6" />Bu menüden çıkmaya gerek kalmadan eksen değiştirebiliriz.<br />
+      <br />
+<br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

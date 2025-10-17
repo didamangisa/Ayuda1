@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Taşkın Sahaları</title>
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" />
+
+</head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TAŞKIN SAHALARI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"> <br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#formato_csv">.csv Formatı</a><br />
+      <a href="#formato_sdf">.sdf Formatı</a><br />
+      <a href="#opc_generales">Genel Seçenekler</a><br />
+      <a href="#leeves">Sedde (Leeves)</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#calc_perfiles">Enkesitlerle Hesaplama</a><br />
+      <a href="#calc_triang">Üçgenleme ile Hesaplama</a><br />
+      <a href="#calc_rejilla">Grid (Izgara) ile Hesaplama</a><br />
+      </div>
+<br /><br /><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br /><br /><span class="Parrafo">
+      </span><span class="Parrafo">Bu seçenekle, HEC-RAS<sup>®</sup>'dan gelen &nbsp;<span class="Archivo">.sdf</span> veya bir hesap tablosundan gelen &nbsp;<span class="Archivo">.csv</span> dosyalarından yola çıkarak, nehirlerin ve belirli bir kottaki noktasal elemanların oluşturduğu taşkın sahalarını harita üzerinde hesaplamak ve çizmek mümkündür. Program hem su basan alanları hem de adacıkları gösterir.<br />
+      <br />
+
+      </span><div style="text-align: center;"><span class="Parrafo"><img style="width: 636px; height: 241px;" alt="" src="Imagenes/diagrama_llanuras_inund.png" /></span><br /></div><br /><span style="font-weight: bold;">[Taşkın Sahaları]</span> butonuna tıklandığında aşağıdaki iletişim kutusu açılır:<br /><br /><div style="text-align: center;"><img style="width: 547px; height: 256px;" alt="" src="Imagenes/dialogo_llanuras_inundacion.png" /><br /></div><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="formato_csv">.csv Formatı</a></span><br /><br />Bu formatta, en azından &nbsp;<span class="Archivo">Akarsu/Nehir</span>,&nbsp;<span class="Archivo">X</span>,&nbsp;<span class="Archivo">Y</span>,&nbsp;<span class="Archivo">AZİMUT</span> ve &nbsp;<span class="Archivo">Profil</span> sütunlarını içeren bir başlık olacaktır ve ardından gerektiği kadar kot olacaktır. Tüm bu sütunlar noktalı virgül &lt;;&gt; ile ayrılmalıdır. &nbsp;<span class="Archivo">METİN</span> adlı son sütun, profillere bir metin eklemek için kullanılır. Diğer sütunlar istenen ada sahip olabilir, ancak metin sütunu zorunlu olarak &nbsp;<span class="Archivo">METİN</span> olarak adlandırılmalıdır ve 100 karaktere kadar etiketler kabul edilir. Aşağıda bir örnek gösterilmektedir:<br /><br /><div class="Archivo" style="margin-left: 40px;">AKARSU/NEHİR;X;Y;AZİMUT;Profil;Kot (T_50);Kot (T_100);Kot (T_500);METİN<br />GUADARRANQUE;281744.03;4017552.41;225.05;62;11.12;12.57;14.73;<br />GUADARRANQUE;281631.09;4017280.38;235.38;61;10.85;12.24;14.22; Profil 61<br /></div><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="formato_sdf">.sdf Formatı</a></span><br /><br /><img style="width: 391px; height: 339px; margin-left: 7px;" alt="" src="Imagenes/hec-ras_export.png" align="right" />Bu format, HEC-RAS<sup>®</sup> programına özgüdür ve tek bir dosyada birden fazla nehri kabul eder. Ayrıca, program PROFILE (PROFILE NAMES) adlarını dikkate alarak bunları iletişim kutusunda, kotlar bölümünde gösterir. Eğer &nbsp;<span class="Archivo">.sdf</span> dosyası çalışma için birden fazla kotla gelirse, bunlar da taşkın sahasının oluşturulması için dikkate alınır.<br /><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün doğru okuması için gerekli tüm bilgileri içeren bir &nbsp;<span class="Archivo">.sdf</span> dosyası elde etmek için, HEC-RAS<sup>®</sup> programı içinde <span style="font-weight: bold;">File</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Export GIS Data</span> menüsüne gidilmeli ve iletişim kutusu resimde gösterildiği gibi yapılandırılmalıdır (kutu sürüme göre değişebilir).<br /><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <table style="text-align: left; width: 690px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 629px; text-align: justify;">HEC-RAS<sup>®</sup> programı US Army Corps of Engineers tarafından geliştirilmiştir ve <a href="http://www.hec.usace.army.mil/software/hec-ras">http://www.hec.usace.army.mil/software/hec-ras</a> adresinden ücretsiz olarak indirilebilir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br /><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="opc_generales">Genel Seçenekler</a></span><br />
+      <br />
+      <table style="text-align: left; width: 691px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[NEHİR] / [NOKTA]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Bu değiştirilebilir düğme, bir nehrin veya belirli bir kottaki noktasal bir elemanın neden olduğu bir taşkın sahasının hesaplanmasını seçmeyi sağlar. İkinci durumda sadece şunlar gereklidir:<br />
+            <ul>
+              <li>Taşkının başlangıç noktası.</li>
+              <li>Analiz için sınır konturu.</li>
+              <li>Taşkını sınırlayacak çizgi tipi.</li>
+              <li>Hesaplama yöntemi (profillere göre izin verilmez).</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[CSV] / [SDF]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Düğmenin gösterdiği dosya türünü seçmeyi sağlar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Etiketleri Göster] [Etiketleri Gizle]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Her bir profile metin ekleyebileceğiniz ve bunları farklı stiller ve boyutlarla etiketleyebileceğiniz bir kutu açmayı sağlar. Bu metin doğrudan .csv dosyasında oluşturulabilir. .csv'den etiket verilerini alması için, son sütununun METİN olarak adlandırılması gerekir. 100 karaktere kadar etiketler kabul edilir. Bir örnek şöyle olabilir:<br />
+            <br />
+            <div class="Archivo">AKARSU/NEHİR;X;Y;AZİMUT;PROFİL;KOT_MNN;METİN<br />
+COLLADO;262260.561;4004940.600;384.136;1;100.089;KM -0.000 // 02/01/2003&nbsp;&nbsp;&nbsp;
+COLLADO;262244.430;4005035.329;14.178;2;88.099;KM -100.000 // 03/01/2003<br />
+            </div>
+            <br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Yükle]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">&nbsp;<a href="#formato_sdf"><span class="Archivo">.sdf</span></a> veya &nbsp;<a href="#formato_csv"><span class="Archivo">.csv</span></a> formatında bir dosya yükler.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Kaydet]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Önceden yüklenmiş verileri bir <a href="MS_llanuras_inundacion.html#formato_csv"><span class="Archivo">.csv</span></a> dosyasına kaydeder.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Taslak]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;"><a href="MS_llanuras_inundacion.html#formato_sdf"><span class="Archivo">.sdf</span></a> dosyaları için, HEC-RAS<sup>®</sup>'ın oluşturduğu taşkın çizgisini ekranda gösterebilmek için sadece WATER SURFACE EXTENTS alanının bilgileri yüklenecektir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Oluştur]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Seçilen kot tiplerinin ve seçilen çizgi tiplerinin taşkın yüzeylerini oluşturur. Taşkın sahaları oluşturulduğunda, ISTRAM <sup>®</sup>/ISPOL<sup>®</sup> profillerinin oluşturulup oluşturulmayacağı sorulur. Yanıt evet ise, araziye ve su yüzeyine karşı profiller oluşturulur.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Geri Al]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Su yüzeyleri için oluşturulan çizgileri siler.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[P Ekle]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Bu düğme bir profil eklemeyi sağlar. Üzerine bastıktan sonra, yeni profilin eklenmesini istediğiniz segmenti (mevcut 2 profil arasında) seçmelisiniz. Bundan sonra, yerleştirmek istediğiniz noktaya tıklamalı ve ayrıca azimutu grafiksel olarak belirtmelisiniz.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[P Değiştir]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Bir profili değiştirmek için, onu etiketleyen numaraya tıklamak yeterlidir. Seçildikten sonra, nokta değiştirilebilir ve son olarak azimut ayarlanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[P Sil]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Bu düğmeye bastıktan sonra bir profilin numarasına tıklarsanız, otomatik olarak silinir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+
+      <span style="font-style: italic;"><span style="font-weight: bold;">Hesaplama Parametreleri</span></span><br />
+
+      <br />
+
+      <table style="text-align: left; width: 691px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold; font-style: italic;"><a name="incluir_islas">Adacıkları Dahil Et</a></span></td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Adacıkların hesaplanmasını etkinleştirir.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">Çözünürlük<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Profilleri hesaplamak için aralığı ayarlamayı sağlar.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">Yarı Bant Genişliği<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Profillere göre yöntem için kullanılır. Program değişken bir yarı bant genişliğini kabul eder, böylece her profile bir yarı bant genişliği atanır ve dolayısıyla yarı bant genişliği olarak belirlenen değer göz ardı edilir. Bu değişken yarı bant genişlikleri, alt kısımdaki <span style="font-weight: bold;">[Yükle]</span> ve <span style="font-weight: bold;">[Kaydet]</span> butonları aracılığıyla &nbsp;<span class="Archivo">.sma</span> dosyaları ile kaydedilebilir ve geri yüklenebilir.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">Arazi Yüzeyi<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Bu alanda referans yüzeyi belirtilir.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">ÇİZGİ TİPLERİ<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Menünün bu bölümündeki üç etkinleştirme kutucuğu, genellikle tekrarlama periyotlarına karşılık gelen, en fazla temsil edilebilecek üç kot tipinin gösterimini etkinleştirmeyi sağlar. Varsayılan olarak kullanılan çizgiler, içlerini dolduran, su yüzeylerini temsil etmeye uygun çizgilerdir.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">YÖNTEM<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Taşkın sahaları sorununu ele almak için 3 yöntem vardır:<br />
+            <ul>
+              <li><a href="#calc_perfiles">Profillere Göre</a>.</li>
+              <li><a href="#calc_triang">Üçgenleme ile</a>.</li>
+              <li><a href="#calc_rejilla">Grid (Izgara) ile</a>.</li>
+            </ul>
+Hepsi benzer sonuçlar gösterir; bazıları hızlı hesaplamalar için uygunken, diğerleri daha hassas ancak daha yavaş hesaplamalar içindir.<br />
+</td>
+    </tr>
+    
+    
+    
+    
+    
+  </tbody>
+      </table>
+
+      <br />
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="leeves">Sedde (Leeves)</a></span><br />
+<br /><a href="#formato_sdf">.sdf</a> dosyalarını HEC-RAS<sup>®</sup>'dan içe aktarırken, içinde tanımlanmış olan <span style="font-style: italic;">levees</span> (seddeler), yani suyun GEÇMEDİĞİ çizgiler içe aktarılır. Kullanıcı içe aktarma modunu seçebilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Sembol</span>: Her seddenin konumunda, kotuyla birlikte bir sembol oluşturacaktır. Bu seçenek yalnızca gösterim olarak kullanışlıdır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Çizgi</span>: Sağ taraftaki <span style="font-style: italic;">levees</span>'leri birleştiren bir çizgi ve sol taraftaki <span style="font-style: italic;">levees</span>'leri birleştiren başka bir çizgi oluşturacaktır. Bu seçenek, grid ve üçgenleme yöntemlerinin kullanımı için bir kapalı alan oluşturmak için çok kullanışlıdır. Kullanıcının kapalı alanın iki kenarı olur ve geri kalanını, her iki <span style="font-style: italic;">levees</span> çizgisini birleştirerek veya yeni noktalar ekleyerek tamamlaması gerekir.</li>
+      </ul>
+<br /><span class="Titulo_2"><a name="calc_perfiles">Enkesitlerle Hesaplama</a></span><br />
+      <br />
+Bu yöntem, çok fazla kıvrımı olan nehirler için uygun DEĞİLDİR, çünkü bu durumda profiller kesişir ve sonuçlar hatalı olabilir. Bu menüde, bu ilk yöntem için girilmesi gereken veriler şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">[Yükle]</span> butonu aracılığıyla taşkın kotları dosyası seçilecektir. Dosya (<a href="#formato_csv"><span class="Archivo">.csv</span></a> veya &nbsp;<a href="#formato_sdf"><span class="Archivo">.sdf</span></a>) yüklendikten sonra, menünün orta kısmında okunan her kot tipi için bir çizgi tipi yüklenecektir.</li>
+      </ul>
+      <ul>
+        <li>Yapılandırılacak diğer veriler çözünürlük, yarı bant genişliği ve arazi yüzeyidir. Varsayılan olarak, tüm profiller için <span style="font-weight: bold;">Yarı Bant Genişliği</span> alanında belirlenen yarı bant genişliği dikkate alınacaktır; ancak istenirse, her profil için menünün sağ tarafında (<span style="font-weight: bold;">değişken yarı bant genişliği</span>) değiştirilebilir.</li>
+      </ul>
+      <ul>
+        <li>Profilleri eklemek, değiştirmek ve silmek mümkündür. Bu, yüklenen dosyanın yeterli detaya sahip olmaması durumunda ilginç olabilir.</li>
+      </ul>
+      <ul>
+        <li>Bir profil "yapay" olduğunda, yani kullanıcı tarafından eklendiğinde veya değiştirildiğinde, kırmızı renkte gösterilir. Eğer <a href="MS_llanuras_inundacion.html#formato_csv"><span class="Archivo">.csv</span></a> dosyasından olduğu gibi okunan bir profil ise, mavi renkte gösterilir.</li>
+      </ul>
+      <ul>
+        <li>Adacıkları oluştururken, ilgili kotun onay kutucuğu aracılığıyla istenen kot seçilebilir. Eğer <a href="#incluir_islas"><span style="font-weight: bold; font-style: italic;">Adacıkları Dahil Et</span></a> seçeneği devre dışı bırakılmışsa, adacıkların konturları pembe renkte oluşturulur. Etkinleştirilmişse, adacıklar o kotun konturu içinde oluşturulur.</li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="calc_triang">Üçgenleme ile Hesaplama</a></span><br />
+      <br />
+Bu ikinci yöntem, adacık oluşturmada en yüksek detay seviyesine ulaşan yöntemdir, ancak aynı zamanda en yavaşıdır. İşleyişi, taşkın sahalarını elde etmek için seçilen kontur içindeki araziyi üçgenlemeye dayanır.<br />
+      <br />
+Bu yöntemin uygulanması için izlenecek metodoloji şöyledir:<br />
+      <ol>
+        <li><a href="MS_llanuras_inundacion.html#formato_csv"><span class="Archivo">.csv</span></a> veya <a href="MS_llanuras_inundacion.html#formato_sdf"><span class="Archivo">.sdf</span></a> dosyasını yükleyin.</li>
+        <li>Kotları seçin. </li>
+        <li><span style="font-weight: bold; font-style: italic;">Üçgenler</span> seçeneğini etkinleştirin.</li>
+        <li>Haritada bulunmayan bir çizgi tipinde bir çevre çizgisi çizin.</li>
+        <li>Çalışma alanını sınırlayacak konturu seçin.</li>
+        <li>Nehrin teorik genişliğinin değerini belirleyin. Bu alan 0 değeriyle bırakılabilir, ancak nehrin ortalama genişlik değerini doldurarak daha iyi sonuçlar elde edilir.</li>
+        <li>Eğer taşkın sahalarının kenarlarına yüzeyin kotunu vermek isteniyorsa, <span style="font-weight: bold; font-style: italic;">Kotları Ver</span> seçeneğini etkinleştirin.</li>
+        <li><span style="font-weight: bold;">[Oluştur]</span> butonuna basın.</li>
+      </ol>
+      <br />
+      <span class="Titulo_2"><a name="calc_rejilla">Grid (Izgara) ile Hesaplama</a></span><br /><br />
+Bu yöntemin prosedürü üçgenlerinkine benzer, ancak üçgenleme için tüm noktaları kullanmak yerine, hayali bir grid kullanır. Bu yöntem, profillere göre yöntemden daha yüksek bir hassasiyet seviyesine ulaşır, ancak üçgenleme yönteminden daha düşük bir hassasiyete sahiptir. Grid yöntemi, oldukça iyi bir sonuç elde ederek üçgenleme yöntemini hız açısından geride bırakır.<br />
+      <br />
+Bu yöntemin uygulanması için izlenecek metodoloji şöyledir:<br />
+      <ol>
+        <li><a href="MS_llanuras_inundacion.html#formato_csv"><span class="Archivo">.csv</span></a> veya <a href="MS_llanuras_inundacion.html#formato_sdf"><span class="Archivo">.sdf</span></a> dosyasını yükleyin.</li>
+        <li>Kotları seçin.</li>
+        <li><span style="font-weight: bold; font-style: italic;">Grid</span> seçeneğini etkinleştirin.</li>
+        <li>Haritada bulunmayan bir çizgi tipinde bir çevre çizgisi çizin.</li>
+        <li>Çalışma alanını sınırlayacak konturu seçin.</li>
+        <li>Grid alanı değerini belirleyin. Bu alanda, üçgenleme için kullanılacak gridin her bir kare hücresinin boyutu belirlenir. Ne kadar küçük olursa sonuç o kadar hassas olur, ancak elde edilmesi de o kadar yavaş olur.</li>
+        <li>Nehrin teorik genişliğinin değerini belirleyin. Bu alan 0 değeriyle bırakılabilir, ancak nehrin ortalama genişlik değerini doldurarak daha iyi sonuçlar elde edilir.</li>
+        <li>Eğer taşkın sahalarının kenarlarına yüzeyin kotunu vermek isteniyorsa, <span style="font-weight: bold; font-style: italic;">Kotları Ver</span> kutucuğunu etkinleştirin.</li>
+        <li><span style="font-weight: bold;">[Oluştur]</span> butonuna basın.</li>
+      </ol>
+      <div class="Info" style="text-align: center;"><img style="width: 525px; height: 306px;" alt="" src="Imagenes/ejem_llanura_inundacion.png" /><br />
+      <br />
+Taşkın sahası örneği<br />
+      </div>
+      <br />
+<span class="Parrafo"><span class="Parrafo" /></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

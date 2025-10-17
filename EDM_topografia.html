@@ -1,0 +1,2711 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Topografya</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TOPOGRAFYA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br /><a href="#generalidades">
+      Genel Bilgiler</a><br /><a href="#tipos_fichero">
+Topografik Dosya Türleri</a><br />
+      <div style="margin-left: 40px;"><a href="#ficheros_top">.top Dosyaları</a><br /><a href="#ficheros_toc">
+.toc Dosyaları</a><br /><a href="#ficheros_de_cartografia">
+Harita Dosyaları .edm/.edb</a><br /><a href="#ficheros_temporales">
+Geçici Dosyalar .ttp</a><br /><a href="#ficheros_rejilla">
+Grid Dosyaları (LIDAR), LandXML Dosyaları ve Diğer Dosya Türleri</a><br />
+      </div><a href="#conversiones">
+Harita ve Topografya Arası Dönüşümler</a><br /><a href="#gestion">
+      Topografik Dosya Yönetimi</a><br />
+      <div style="margin-left: 40px;"><a href="#insertar_ttp">Üçgenleme Ekle</a><br />
+<a href="#carga">Dosya Yükleme</a><br /><a href="#visualizacion">
+Veri Görüntüleme</a><br /><a href="#guardado_top">
+Topografik Dosyaları Kaydetme</a><br />
+      <a href="#Guardar_seleccion_en_TTP">Seçimi TTP Olarak Kaydet</a><br />
+      <a href="#ttg">TTP/TTG Ekle/İlave Et</a><br /><a href="#InsertarExpresTTPs"><span style="color: rgb(0, 79, 175);">Hızlı TTP Ekle</span></a><br /><a href="#guardado">
+Hızlı Veri Kaydetme ve Geri Yükleme</a><br /><a href="#importacion">
+Topografik Dosyaları İçe Aktarma</a><br /><a href="#previsualizacion">
+Önizleme ve Manuel Düzenleme</a><br /><a href="#generar">
+.top/.toc Dosyaları Oluştur</a><br />
+      </div><a href="#cargar_gen">Topografya Verileri İçeren Genel Dosya Yükle</a><br />
+<a href="#opciones">Topografya Seçenekleri</a><br /><a href="#puntos">
+Topografik Noktaların Düzenlenmesi</a><br />
+      <table style="text-align: left; width: 692px; height: 117px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 261px;">
+            <div style="margin-left: 40px;"><a href="EDM_topografia.html#anadir_punto">Nokta Ekle</a><br />
+            <a href="EDM_topografia.html#borrar_punto">Nokta Sil</a><br />
+            <a href="EDM_topografia.html#editar_buscar_p">Bul/Düzenle</a><br />
+            <a href="#buscarpc">Yakın Noktaları Bul</a><br />
+            <a href="EDM_topografia.html#moverp">Nokta Taşı</a><br />
+            <a href="EDM_topografia.html#insertarenmalla">Ağa Ekle</a><br />
+            <a href="EDM_topografia.html#renumerar">Yeniden Numaralandır</a><br />
+            <a href="EDM_topografia.html#deformar">Deforme Et</a></div>
+
+
+
+
+
+
+            </td>
+            <td style="vertical-align: top; width: 411px;">
+            <div style="margin-left: 40px;"><a href="EDM_topografia.html#activar">Aktif Et</a><br />
+            <a href="EDM_topografia.html#raiz">Kök</a><br />
+            <a href="EDM_topografia.html#seleccion_prop">Özelliklere Göre Seçim</a><br />
+            <a href="EDM_topografia.html#incrementarz">Seçime Göre Z Artır</a><br />
+            <a href="EDM_topografia.html#informacion">Maksimum ve Minimum Bilgileri</a><br />
+            <a href="EDM_topografia.html#listar_p">Noktaları Listele</a></div>
+
+
+
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#premallado">Ön-Ağların Düzenlenmesi</a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 263px;">
+            <div style="margin-left: 40px;"><a href="EDM_topografia.html#generar_pre">Dönüşümü Yeniden Yükle</a><br />
+            <a href="EDM_topografia.html#crear_x_pol">Polilineden Oluştur</a><br />
+            <a href="EDM_topografia.html#borrar_pre">Tümünü Sil</a><br />
+            <a href="#borrar_vent">Pencere İle Sil</a><br />
+</div>
+
+
+            </td>
+            <td style="vertical-align: top; width: 409px;">
+            <div style="margin-left: 40px;"><a href="EDM_topografia.html#copiar_lin_pre">Çizgileri Kopyala</a><br />
+            <a href="EDM_topografia.html#dicc_codigos">Kodlar ve Komutlar</a><br />
+            <a href="EDM_topografia.html#cambiar_tipo_pre">Tipi Değiştir</a><br />
+            <a href="#pasar_atributos">Öznitelikleri Aktar</a><br />
+            <a href="#pasar_atributos_a_varias_mallas">Öznitelikleri Birden Fazla Ağa Aktar</a><br />
+</div>
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#usuario">Kullanıcı Ağlarının Düzenlenmesi</a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 258px;">
+            <div style="margin-left: 40px; width: 224px;"><a href="EDM_topografia.html#anadir_mall">Ekle</a><br />
+            <a href="EDM_topografia.html#encadenar_mall">Zincirle</a><br />
+            <a href="EDM_topografia.html#borrar_banda">Tümünü Sil</a><br />
+            <a href="#borrar_vent_m">Pencere İle Sil</a><br />
+</div>
+
+
+            </td>
+            <td style="vertical-align: top; width: 414px;">
+            <div style="margin-left: 40px;"><a href="#cortar_long_mall">Uzunluğa Göre Kes</a><br />
+            <a href="#cambiar_tipo_mall">
+Tipi Değiştir</a><br />
+            <a href="EDM_topografia.html#pasar_atributos_m">Öznitelikleri Aktar</a><br />
+
+            <a href="EDM_topografia.html#pasar_atributos_a_varias_mallas_m">Öznitelikleri Birden Fazla Ağa Aktar</a><br />
+</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#contornos">Kontur, Kapalı Sınır ve Adacıkların Düzenlenmesi</a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 261px;"><a href="#crear_ci">Kapalı Sınır veya Adacık Oluştur</a>:<br />
+            <div style="margin-left: 40px;"><a href="#crear_ci_puntos">Noktalardan</a><br />
+            <a href="#crear_ci_lin_cerr">
+Kapalı Çizgiden</a><br />
+            <a href="#crear_ci_tipo">
+Çizgi Tipinden</a><br />
+            <a href="#crear_ci_mod">
+Modelden</a><br />
+            <a href="#crear_ci_mall">
+Ön-Ağdan</a><br />
+            <a href="#crear_ci_tri">
+Üçgen Kenarından</a><br />
+            <a href="#crear_ci_conv">
+Dışbükey</a><br />
+            </div>
+            <br />
+            </td>
+            <td style="vertical-align: top; width: 411px;">
+            <div style="margin-left: 40px;"><a href="#ci_borrar">Sil</a><br />
+            <a href="#ci_modificar">
+Değiştir</a><br />
+            <a href="#ci_limpiar">
+Adacıkları Temizle</a><br />
+
+            <a href="#ci_volcar">Konturları EDM'ye Aktar</a></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#automatica">Otomatik Ağların Düzenlenmesi. Üçgenleme</a><br />
+      <table style="text-align: left; width: 692px; height: 100px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px; width: 222px;"><a href="#triangulacion">Üçgenleme</a><br />
+            <a href="#completar_tri">Üçgenlemeyi Tamamla</a><br />
+            <a href="#un_triang">Bir Üçgen Oluştur</a><br />
+            <a href="#borrar_triang">Sil</a><br />
+            </div>
+            </td>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 26px; width: 346px;"><a href="#limpiar_tri">Temizle</a><br />
+            <a href="#cambiar_tri">Değiştir</a><br />
+            <a href="#medida_tri">Ölçüm</a><br />
+            <a href="#Informacion_de_pendiente">Eğim Bilgisi</a><br />
+            <a href="#vaciar_tri">Boşalt</a><br />
+            <a href="#guardar_tri">Kapalı Alanlara Göre Kaydet</a><br />
+            <a href="#fitrar_tri">Filtrele</a><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#isolineas">Eşyükselti Eğrileri Oluşturma. Tesviye Eğrileri</a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px; width: 232px;"><a href="#crear_iso">Oluştur</a><br />
+            <a href="#borrar_iso">Sil</a><br />
+            </div>
+            </td>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 28px; width: 369px;"><a href="#redondear_iso">Yuvarla</a><br />
+            <a href="#interpolar_iso">Enterpole Et</a><br />
+            <a href="#suavizar_terreno">Araziyi Yumuşat</a><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#herramientas">Diğer Araçlar</a><br />
+<br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+
+      <br />
+
+Programın bu alanı, tekil noktalardan oluşan bir nokta bulutundan (arazi topografik çalışmalarından elde edildiği gibi) bir sayısal arazi modeli oluşturmaya ve bunu üçgen ağ modeline dönüştürmeye, ayrıca bunları temsil eden 3D çizgi ve eşyükselti eğrileri haritasını elde etmeye adanmıştır.<br />
+
+      <br />
+
+&nbsp;TOPOGRAFYA menüsüne hem programın araç çubuğundaki &nbsp;<img src="Imagenes/icono_toolBarEstandar_topo.png" style="width: 14px; height: 16px;" alt="" /> simgesi aracılığıyla hem de <span style="font-weight: bold;">Araçlar &#8594; Topografya</span> menüsünden erişilebilir.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">[Bitir]</span>: İşlevi menüden çıkmaktır. Bu çalışma ortamından ayrıldığınızda, düğüm noktaları, ağlar ve üçgenler verileri bellekten silinmese de kaybolur. Yine de, verileri kaydetmiş veya EDM'ye dönüştürmüş olmanız tavsiye edilir, bu nedenle program ekranda çıkışı onaylamanızı isteyen bir uyarı gösterir.<br />
+
+      <br />
+
+&nbsp;TOPOGRAFYA menüsünden çıkıldığında, düğüm noktaları, ağlar ve üçgenler bellekten kaldırılmaz. Bu bilgi, örneğin <a href="OL_perf_transv.html"><span style="font-weight: bold;">ENKESİTLER</span> menüsünde</a> (GÜZERGAH PROJESİ modülü), arazi enkesitlerini (<a href="EDM_control_entidades.html#control_ttps">SAM seçeneği</a>) çıkarmak için kullanılabilecek bir sayısal arazi modeli oluşturur.<br />
+
+      <br />
+
+&nbsp;<a href="EDM_preferencias.html#visualizacion"><span style="font-weight: bold;">Yapılandırma &#8594; Tercihler &#8594; Görselleştirme</span> menüsündeki</a> SAM'ı Göster seçeneği, bu ağların TOPOGRAFYA menüsü dışında görüntülenmesini etkinleştirmeyi/devre dışı bırakmayı sağlar. Açıkçası, TOPOGRAFYA'ya geri dönüldüğünde bu bilgi kullanıcı için hala mevcuttur.<br />
+
+      &nbsp;
+      <br />
+
+      <span class="Titulo_2"><a name="tipos_fichero">Topografik Dosya Türleri</a></span><br />
+
+
+      <br />
+
+
+Giriş verileri <a href="EDM_topografia.html#ficheros_top">.top</a>, <a href="EDM_topografia.html#ficheros_toc">.toc</a> (daha yaygın olan), harita dosyaları .edm, .ttp dosyaları, grid dosyaları (ASCII GRID tipi) vb. dosyalardan gelebilir. Aşağıda en yaygın olanlar açıklanmaktadır, ancak bu, programın <span style="font-weight: bold;">Araçlar &#8594; Dönüştürücüler</span>'den erişilebilen daha fazla dosya türünü kabul etmediği anlamına gelmez.<br />
+
+
+&nbsp;Soru işareti (?) kutucuğuna tıklandığında, bir .top veya .toc dosyasına dönüştürmek için yükleyeceğimiz dosyaya benzer olması gereken bir giriş dosyası örneği gösterir.<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img style="width: 594px; height: 327px;" alt="" src="Imagenes/conversores_topo.png" /><br />
+
+
+      </div>
+
+
+      <br />
+
+
+
+
+      <a name="ficheros_top"><span class="Apartados">.top Dosyaları</span><br />
+      <br />
+&nbsp;Bunlar, her nokta için 6 sayısal veri içeren (boşluklarla ayrılmış) ASCII kodlu dosyalardır ve şu formattadır:<br />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I&nbsp;&nbsp;&nbsp; J&nbsp;&nbsp;&nbsp; K&nbsp;&nbsp;&nbsp;
+X&nbsp;&nbsp;&nbsp; Y&nbsp;&nbsp;&nbsp; Z&nbsp;&nbsp;&nbsp; TXT<br />
+      <br />
+&nbsp;burada:<br />
+      <br />
+      </a>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 50px; font-weight: bold; text-align: center;">I</td>
+            <td style="vertical-align: top;">Noktanın kimlik numarasıdır.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">J</td>
+            <td style="vertical-align: top;">Eğer belirli bir poligona aitse (şev başı veya eteği, yol kenarı, nehir kenarı vb.), noktanın sıra numarasını temsil eder. Dosyadaki birkaç ardışık nokta, sıra numaraları artan düzende ise bir poligon tanımlar. Örneğin, bir .top dosyasındaki 5 ardışık nokta, sıra numaraları 0 1 2 3 4 5, 1 2 3 4 5, 1 4 5 7 8 ise bir poligon tanımlar; yani, bir nokta, sıra numarası önceki noktanınkinden büyükse, önceki noktayla bir poligon oluşturur. Öncekinden küçük veya eşit bir kod, diziyi bozar.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">K</td>
+            <td style="vertical-align: top;">Noktanın ait olduğu çizgi tipini belirtir. Eğer tek noktalı diziler söz konusuysa, bunlar tekil noktalar olarak yorumlanabilir, böylece bu kodu nokta tipi olarak kullanarak haritaya aktarılabilirler. Bu değere aynı zamanda nokta kodu da denir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">X Y Z</td>
+            <td style="vertical-align: top;">Noktanın koordinatlarıdır (genellikle metre cinsinden, gerekirse ondalık nokta ile).<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">TXT</td>
+            <td style="vertical-align: top;">Bir metin kabul edebilen isteğe bağlı bir son sütundur. Bu metinler, topografya noktaları düzenleme menüsünden düzenlenebilir.</td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+&nbsp;&nbsp;<br />
+
+
+&nbsp;Örnek:<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;">&nbsp;<img src="Imagenes/ejemplo_top_1.png" style="width: 354px; height: 143px;" alt="" /><br />
+
+      </div>
+
+
+      <br />
+
+
+Ayrıca, ikinci sütunun örnekte görüldüğü gibi tek bir sabit değer olduğu, tek bir çizgiyi (örneğin, belirli bir aralıkta noktaları olan bir güzergah projesi ekseni) temsil eden .top dosyaları da olabilir:<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_top_2.png" style="width: 354px; height: 144px;" alt="" /><br />
+
+      </div>
+
+
+      <br />
+
+
+&nbsp;Bu tür topografik dosyalar, .toc formatındaki dosyalar lehine kullanımdan kalkmıştır.<br />
+
+
+      <br />
+
+
+      <a name="ficheros_toc"><span class="Apartados">.toc Dosyaları</span><br />
+      <br />
+&nbsp;.toc formatı, klasik .top'tan daha kullanışlı ve yaygın olan, tekil veya düz kenarlı ve tek başına veya karışık dairesel yaylarla poligonlar oluşturan nokta zincirlerini, araziden kodlanmış olarak getirmek için bir arazi topografyası formatıdır.<br />
+      <br />
+&nbsp;Topografın arazide aynı anda birkaç zinciri bitirmeden alıp tamamlamasına olanak tanır; öyle ki, örneğin, bir sokak kenarı çizgisi, bir kaldırım bordürü ve bir bina çizgisi, sokakta ilerlerken bir o çizgide bir bu çizgide olmak üzere dönüşümlü olarak noktalar alarak alınabilir; birini bitirip diğerine geçmeden önce bitirme zorunluluğu yoktur, araya tekil noktalar serpiştirilebilir.<br />
+      <br />
+&nbsp;Bir noktanın birden fazla kodu olabilir, çünkü bir parsel sınırı ile bir yolun kesişimi olabilir (virgülle (,) ayrılmış birkaç kod-komut çifti, toplamda en fazla 15 karakter olacak şekilde bildirilir). Bir kaldırım kenarı düz bölümlerden oluşabilir ve köşeye geldiğinde, bir başlangıç noktası, eğriyi tanımlamak için gereken kadar ara nokta (minimum bir nokta) ve bir bitiş noktası ile temsil edilen bir daire yayı ile devam edebilir, ardından düz segmentli poliline devam edebilir veya istenirse bitirilebilir. Bir döner kavşak, sadece üç nokta veya onu temsil etmek için gereken kadar ara nokta ile alınabilir (plan veya kot nedenleriyle).<br />
+      <br />
+&nbsp;Çizgi tipini ve zincirlemeyi bildiren kodlar kullanıcı tarafından tanımlanabilir, ancak programın varsayılanları vardır.<br />
+      <br />
+&nbsp;.toc dosyaları, her nokta için 4 sayısal veri (boşluklarla ayrılmış) ve isteğe bağlı bir karakter dizisi içeren ASCII kodlu dosyalardır ve şu formattadır:<br />
+      <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I&nbsp;&nbsp;&nbsp; X&nbsp;&nbsp;&nbsp; Y&nbsp;&nbsp;&nbsp;
+Z&nbsp;&nbsp;&nbsp; TXT<br />
+      <br />
+burada:<br />
+      <br />
+      </a>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 50px; font-weight: bold; text-align: center;">I</td>
+            <td style="vertical-align: top;">Noktanın kimlik numarasıdır.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">X Y Z</td>
+            <td style="vertical-align: top;">Noktanın koordinatlarıdır (genellikle metre cinsinden, gerekirse ondalık nokta ile).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">TXT</td>
+            <td style="vertical-align: top;">Bir metin kabul edebilen isteğe bağlı bir son sütundur. Bu metinler, daha sonra göreceğimiz topografik nokta düzenlemesinden düzenlenebilir.<br />
+
+            <br />
+
+&nbsp;Her metin XXX YY #yorum formatında olabilir; burada XXX üç karakterli bir koddur ve YY bir komuttur.<br />
+
+            <br />
+
+YY, bir veya iki karakterden oluşabilir (komuta bağlı olarak) ve örneğin bir poliline veya bir daire tanımlamak için farklı değerler alabilir:<br />
+
+            <br />
+&nbsp;&nbsp;&nbsp;
+B&nbsp; &#8594; Zincir Başlangıcı.<br />
+&nbsp;&nbsp;&nbsp;
+S &#8594; Zincir Sonu.<br />
+&nbsp;&nbsp;&nbsp;
+K &#8594; Polilini, bu noktadan zincirin ilk noktasına bir segment ile kapatır.<br />
+
+            <br />
+
+&nbsp;Aynı noktada birkaç komutla birkaç kod yorumlamak da mümkündür, örneğin, EDF B,BAC S dizisi bina başlangıcını ve kaldırım kenarı sonunu belirtebilir.</td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+
+ Komutları yorumlarken, zikzak şeklinde okunan iki zincir üzerindeki verilerle bir .toc dosyasından yola çıkmak mümkündür ve o zaman, aynı koda sahip olanları komutları takip ederek zincirleyecektir: <br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_toc.png" style="width: 213px; height: 97px;" alt="" /><br />
+
+      </div>
+
+
+            <br />
+.toc dosyalarının yüklenmesi sırasında, alışılmış zincirleme komutlarından sonra, orijinal zincire bir paralel oluşturan H0.20 V-0.50 gibi iki komut yerleştirilebilir. Demo çalışma klasöründeki NUBE.toc örneğine bakın.<br />
+<br />
+
+
+&nbsp;Ayrıca, ilk alanı sayısal bir değer yerine bir dize olan .toc dosyalarının yüklenmesine de izin verilir. Örneğin, bir noktanın ilk alanı BR001A olabilir. Program, bu alanı yüklerken, her sayısal olmayan karakteri bir 1 ile değiştirerek ve sayısal değerleri olduğu gibi koruyarak 110011 ile değiştirecektir.<br />
+
+
+      <br />
+
+
+      <a name="ficheros_de_cartografia"><span class="Apartados">Harita Dosyaları .edm/.edb</span><br />
+      <br />
+      </a><img style="width: 323px; height: 270px;" alt="" src="Imagenes/topo_conv_edm_top.png" align="right" hspace="8" />TOPOGRAFYA aracı, üçüncü bir giriş dosyası türü olan .edm /.edb harita dosyalarını kabul eder; bu dosyalar, topografik noktalar (veya düğüm noktaları) ve ağlar içerecek olan .top/.toc tipi dosyalara <span style="font-weight: bold;">dönüştürülebilir</span>.<br />
+
+      <br />
+
+&nbsp;Bu noktalar, üçgenleme ağları ve üçgenlerin kendisi, EDM ortamının grafik nesneleri değildir, yani haritaya ait değildirler ve sadece bu menünün seçenekleriyle işlenebilirler. Buradan çıkıldığında erişilemezler ve bu nedenle, karşılık gelen grafik nesneleri (noktalar ve çizgiler) topografik elemanlardan (düğüm noktaları ve ağlar) elde etmeyi sağlayan bir dönüşüm gerektirirler. Bu dönüşümün nasıl yapılacağı daha sonra açıklanacaktır.<br />
+
+      <br />
+
+&nbsp;Noktalar veya düğüm noktaları, bu ortam için temel sayısal arazi modelini oluşturur. Düğüm noktaları, üç olası türden birinin ağlarıyla ikişer ikişer zincirlenir: programın oluşturdukları (otomatik veya üçgenleme), giriş veri dosyasında tanımlananlar (ön-ağ) veya kullanıcının interaktif olarak ekledikleri (manuel veya kullanıcı). Birinciler eflatun renkte, ikinciler camgöbeği renkte ve sonuncular mevcut çizgi tipinin renginde sunulur.<br />
+
+      <br />
+
+&nbsp;Üçgenler, üçlü ağlar arasındaki mantıksal ilişkiyle oluşur. Ağlar modeli, paftalar, kesitler vb. elde etmek için programın başka bir alanında kullanılmak istenirse, daha önce belirtildiği gibi uygun dönüşümü yapması gereken bir sayısal arazi modeli oluşturur.<br />
+
+      <br />
+
+      <span class="Apartados"><a name="ficheros_temporales">Geçici Topografya Dosyaları .ttp</a></span><br />
+
+
+      <br />
+
+
+&nbsp;.ttp dosyaları, bir topografik düzenlemenin ara durumunu (düğüm noktaları, ağlar, üçgenler, kapalı sınırlar ve adacıklar,...) içeren topografya dosyalarıdır; bu da işe farklı oturumlarda ve bırakıldığı aynı durumdan devam etmeyi sağlar.<br />
+
+
+      <br />
+
+
+&nbsp;Bu dosyalar aynı zamanda üçgenlemeler ve dolayısıyla yüzeyler de içerebildiğinden, VIRTUAL 3D, GÜZERGAH PROJESİ modüllerinde ve YÜZEY MODELLEME modülünün belirli hacim hesaplama seçeneklerinde, .dxf formatında "3D yüzeyler" (3D faces) tipi dosyalar oluşturmak için vb. programın farklı bölümlerinde kullanılırlar.<br />
+
+
+      <br />
+
+
+&nbsp;Bellekte birden fazla üçgenleme yüklü olması mümkündür. Program, <span style="font-weight: bold;">Kontrol &#8594; </span><a href="EDM_control_entidades.html#control_ttps">SAM Kontrolü</a>'nden erişilebilen bir .ttp dosyası yöneticisine sahiptir.<br />
+
+      <br />
+
+      <a name="ficheros_rejilla"><span class="Apartados">Grid Dosyaları (LIDAR), LandXML Dosyaları ve Diğer Dosya Türleri</span><br />
+      <br />
+&nbsp;Grid dosyaları, belirli bir yoğunluğa göre eşit aralıklı nokta bulutlarıdır. Çok kullanılan uluslararası bir formattır. ASCII-GRID durumunda, .txt, .grd veya .asc uzantısına ve aşağıdaki gibi bir formata sahip olmalıdır:<br />
+      <br />
+      </a>
+      
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_asciiGrid.png" style="width: 444px; height: 110px;" alt="" /><br />
+
+      </div>
+
+
+            <br />
+
+
+&nbsp;<a href="land_xml.html">LandXML</a> dosyaları, bu standart ve .xml uzantılı bir dosyaya göre kaydedilmiş üçgenlemelere karşılık gelir.<br />
+
+
+      <br />
+
+
+&nbsp;.xyz uzantılı dosyalar, her noktanın sadece X,Y,Z koordinatlarını içeren, boşluklarla veya sekmelerle ayrılmış 3 sütunlu ASCII dosyalarıdır.<br />
+
+
+      <br />
+
+
+&nbsp;.3d dosyaları, TOPOGRAFYA'nın kendisi de dahil olmak üzere, program tarafından farklı menülerde oluşturulan üçgenleme dosyalarıdır. Kullanıcıya, burada yüklenebilmelerinin yanı sıra, <span style="font-weight: bold;">Dosya &#8594; Dışa Aktar</span> menüsünden doğrudan .dxf 3D-yüzeyler (3D-faces) formatına da dışa aktarılabilecekleri hatırlatılır.<br />
+
+
+      <br />
+
+
+&nbsp;.asc uzantılı dosyalar, her noktanın sadece X,Y,Z koordinatlarını içeren, virgülle ayrılmış 3 sütunlu ASCII dosyalarıdır.<br />
+
+
+      <br />
+
+
+      <a name="conversiones"><span class="Titulo_2">Harita ve Topografya Arası Dönüşümler</span><br />
+      <br />
+      </a><img style="width: 209px; height: 82px;" alt="" src="Imagenes/convers_edm_top.png" align="right" hspace="5" /><span style="font-weight: bold;">Topografya &gt; Dönüşüm</span> açılır menüsünden, EDM'nin çizgilerini, sembollerini ve metinlerini topografik ağlara ve noktalara dönüştürmeyi sağlayan seçeneklere ve tersine erişim sağlanır.<br />
+      <br />
+Ayrıca, bir nesne seçimini topografyaya/haritaya dönüştürme imkanı da mevcuttur. <br />
+
+      <br />
+
+<span style="font-weight: bold;">[Topografya] &#8594; [Dönüşüm] &#8594; [Topografyaya Dönüştür (EDM -> TOP)]</span> seçeneği çalıştırıldığında, program EDM nesnelerini silmenize olanak tanıyan bir pencere açar.<br />
+
+      <br />
+
+<span style="font-weight: bold;">Sembol özniteliğini nokta no'ya ata</span> kutucuğu etkinleştirildiğinde, program, eğer varsa, kaynak sembolün özniteliğinin tamsayı kısmını topografik nokta numarası olarak atar. Bu kutucuk işaretlenmezse, her şey bir topografya dosyasına dönüştürüldükten sonra tüm noktalar yeniden numaralandırılır.<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/topo_edm_top_dialogo.png" style="width: 256px; height: 192px;" alt="" /><br />
+
+      </div>
+
+
+            <br />
+
+
+      <span style="font-weight: bold;">Kodlarla .toc oluştur</span>. Bu araç sayesinde, metinlerin kod şeklinde sembollerle ilişkilendirildiği bir haritadan bir .toc dosyası oluşturulabilir.<br />
+
+
+      <br /><a name="top_edm">
+
+
+Ters <span style="font-weight: bold;">dönüşüm</span>, <span style="font-weight: bold;">[Topografya] &#8594; [Dosyalar] &#8594; [Haritaya Dönüştür (TOP -> EDM)]</span> seçeneği ile yapılır; bu seçenek, topografya noktalarını ve/veya ağlarını EDM sembollerine ve çizgilerine dönüştürmekten sorumlu olan ve iki bölüme ayrılan bir iletişim kutusu açar. Dönüştür kutucuğundan, aşağıda göreceğimiz farklı seçeneklere bağlı olarak dönüşümü gerçekleştireceğiz (ayrıca <span style="font-weight: bold;">nesne seçimiyle haritaya dönüştürme (TOP -> EDM)</span> de yapılabilir):<br />
+
+
+      <br />
+
+
+      
+      
+      </a><div style="text-align: center;"><img src="Imagenes/dialogo_convers_top_edm.png" style="width: 633px; height: 493px;" alt="" /><br />
+
+
+      </div>
+
+
+            <br />
+
+
+
+&nbsp;<span style="font-weight: bold;">1. Ağlar</span>: Eğer topografik ağlardan EDM polilineleri oluşturulmak isteniyorsa, <span style="font-weight: bold;">Ağları Çizgilere Dönüştür</span> kutucuğunu işaretlemek gerekir. Eğer üçgenleri dört noktalı kapalı polilinlere dönüştürmek isteniyorsa, <span style="font-weight: bold;">Üçgenleri Polilinlere Dönüştür</span>'ü işaretlemeli ve polilinelerin hangi çizgi tipiyle oluşturulacağını seçmeliyiz.<br />
+
+
+
+&nbsp;<br />
+
+
+
+Ağlar şunlar olabilir:<br />
+
+
+
+      
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Kullanıcı (K)</span>: Topografik düğüm noktalarını interaktif olarak birleştirerek oluşturulanlardır.</li>
+        <li><span style="font-weight: bold;">Ön-Ağ (Ö)</span>: Giriş veri dosyasında tanımlanmış olanlardır; ya bir .top/.toc dosyası (anahtarlar ve kodlar), bir .ttp dosyası (geçici topografya) aracılığıyla ya da EDM'den dönüşümden geldiği ve her orijinal köşe noktasına ve sembole, anahtarı geldiği tip olacak olan bir topografik düğüm noktası atandığı için.</li>
+        <li><span style="font-weight: bold;">Otomatik (O)</span>: Programın üçgenleme algoritmasıyla oluşturduklarıdır.</li>
+        <li><span style="font-weight: bold;">Ağ Tipi (K-XX, Ö-XX, O-XX</span>, XX poliline numarasıdır): Ağa belirli bir çizgi tipi atanabilir. Bu daha sonra Ağ Editörü'nde görülecektir.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      
+      <div style="text-align: center;"><img style="width: 660px; height: 464px;" alt="" src="Imagenes/ejemplo_tipo_malla_UAP.png" /><br />
+      </div>
+      <br />
+
+
+
+
+Bu resimde, Ağ Tipi kutucuğu etkinleştirildiğinde, tanımladığımız ağları tanımlayan metinler ekranda dinamik olarak gösterilir.<br />
+
+
+
+      <br />
+
+
+
+Ardından dönüşümü nasıl yapacağımızı belirteceğiz:<br />
+
+
+
+      <br />
+
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/topo_mallas_lineas_tipos.png" style="width: 441px; height: 192px;" alt="" />&nbsp;<br />
+
+
+      </div>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Ağlara atanan tipleri kullan</span>: Program, kullanıcı, ön-ağ ve otomatik ağları, sırasıyla <span style="font-weight: bold;">Kullanıcı ağları</span>, <span style="font-weight: bold;">Ön-ağlar</span> ve <span style="font-weight: bold;">Otomatik ağlar</span> kutucuklarında belirttiğimiz çizgi tiplerine göre dönüştürecektir. Tipe göre ağlar (K-XX, Ö-XX, O-XX) durumunda, ağın kendi sahip olduğu çizgi tipini alacaktır. <br />
+
+
+
+          <br />
+
+
+
+Bu seçenek seçildiğinde anahtar dikkate alınmaz.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Ağın bir parçası olan topografik noktaların kodunu tip olarak kullan</span>: Bu kutucuk aracılığıyla program, her bir topografik düğüm noktasının koduna göre çizgiye dönüştürecektir. Kullanıcı ağları, Ön-ağlar ve Otomatik ağlar kutucuklarında tanımladığımız değerleri dikkate almayacaktır.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <div style="text-align: center;"><img style="width: 500px; height: 360px;" alt="" src="Imagenes/topo_conv_clave.png" /><br />
+
+
+      </div>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Yalnızca varsayılan çizgi tiplerini kullan</span>: Bu seçenek ilkiyle aynıdır, ancak bu durumda, tiplerine göre tanımlanmış olan ağlar, kullanıcı, ön-ağ veya otomatik kutucuklarında tanımlanan çizgi tipine dönüştürülür ve ağın kendi sahip olduğu çizgi tipine dönüştürülür.</li>
+      
+      
+      </ul>
+
+
+      Aynı ağın tüm noktalarının aynı koda sahip olması gerektiği konusunda uyarmak gerekir, aksi takdirde tekil nokta olarak kabul edilir. <br />
+
+
+
+      <br />
+
+
+
+Eğer <span style="font-weight: bold;">Sadece Kontur</span> onay kutusu etkinleştirilirse, yalnızca iki tarafından birine üçgen bağlı olmayan kullanıcı ağları kaydedilecektir. Eğer konturda otomatik ağlar varsa, ilgili seçenek de etkinleştirilmelidir.<br />
+
+
+
+      <br />
+
+
+
+<span style="font-weight: bold;">Otomatik olanları da kaydet</span> seçeneği (varsayılan olarak etkindir), üçgenlemeden gelen ağların da aktarılmasına neden olur; aksi takdirde, sadece ön-ağ ve kullanıcı ağları dönüştürülür.<br />
+
+
+
+      <br />
+
+
+
+Program, bir ağdan gelen her çizgiyi, onu oluşturan noktalara atanan modele uygun olarak aktarır; ancak, her çizginin mevcut modelde oluşturulmasını sağlayan <span style="font-weight: bold;">Mevcut modele kaydet</span> kutucuğu etkinleştirilirse bu durum değişir.<br />
+
+
+
+      <br />
+
+
+
+&nbsp;<span style="font-weight: bold;">2. Topografik noktalar</span>: İletişim kutusunun bu ikinci bölümünde, topografik noktaların EDM sembollerine dönüştürülmesiyle ilgili çeşitli konular belirtilir; öncelikle böyle bir dönüşümün yapılıp yapılmayacağı belirtilerek başlanır, bu nedenle, evet ise, <span style="font-weight: bold;">Noktaları Sembollere Dönüştür</span> kutucuğunu işaretlemek gerekecektir.<br />
+
+
+
+&nbsp;<br />
+
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/topo_dialogo_puntos_a_simb.png" style="width: 624px; height: 232px;" alt="" /><br />
+
+
+      </div>
+
+
+            <br />
+
+
+
+Ağlarda olduğu gibi, her topografik nokta, belirtilen tipte bir EDM sembolüne (<span style="font-weight: bold;">Aşağıdaki tipi kullan</span> seçeneği, varsayılan olarak tip 1) veya koduna uygun olarak (<span style="font-weight: bold;">Topografik noktanın kodunu tip olarak kullan</span> seçeneği) dönüştürülür. Ayrıca, <span style="font-weight: bold;">Mevcut modele kaydet</span> kutucuğu etkinleştirilerek, tüm noktaların atanan modele saygı duymak yerine mevcut modele geçmesi zorlanabilir.<br />
+
+
+
+      <br />
+
+
+
+<span style="font-weight: bold;">Numarayı özniteliğe kaydet</span> seçeneği, oluşturulan EDM sembolünün özniteliğinin, geldiği topografik noktanın numarasına karşılık gelmesini sağlar. Bu şekilde, özniteliği etiketleyen bir sembol kullanılırsa, numarası temsil edilir.<br />
+
+
+
+      <br />
+
+
+
+Dönüşüm yapılırken ve ek olarak, her topografik noktayla ilgili diğer bilgiler de EDM'ye aktarılabilir. Bu bilgi, EDM'de sembol veya yazı şeklinde (değiştirilebilir düğmenin <span style="font-weight: bold;">[S]</span> veya <span style="font-weight: bold;">[Y]</span> göstermesine bağlı olarak), belirtilen noktaya olan mesafede (<span style="font-weight: bold;">Ö.x</span> ve <span style="font-weight: bold;">Ö.y</span>'de ifade edilen değerlere göre) oluşturulabilir ve şunlar olabilir:<br />
+
+
+
+      
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Kot</span></li>
+        <li><span style="font-weight: bold;">Kod</span></li>
+        <li><span style="font-weight: bold;">Nokta numarası</span></li>
+        <li>Noktayla ilişkili <span style="font-weight: bold;">metin</span>. Bu durumda sadece yazı şeklinde EDM'ye aktarılacaktır.</li>
+      
+      
+      </ul>
+
+
+      Yazı şeklinde oluşturulan bilgilere, boyut ve ona göreli yerleştirme noktası (yatay ve dikey yakalama) belirtilebilir.<br />
+
+
+
+      <br />
+
+
+
+&nbsp;Bu iletişim kutusu dönüşüm tercihleriyle doldurulduktan sonra, sadece <span style="font-weight: bold;">tekil</span> (herhangi bir ağa ait olmayan) topografik noktaların mı yoksa <span style="font-weight: bold;">tümünün</span> mü aktarılacağı belirtilmelidir. Genellikle, bir topografyayı EDM'ye aktarırken, her ağ için bir yandan köşe noktalarıyla EDM çizgileri oluşturması ve diğer yandan bu köşe noktalarıyla çakışan topografik noktalardan semboller oluşturması istenmez, bu nedenle Tekil seçeneği işaretlenir.<br />
+
+
+
+      <br />
+
+
+
+&nbsp;<span style="font-weight: bold;">Pasifleri Dönüştür</span> kutucuğu aracılığıyla, topografyada aktif olmayan topografik noktalardan vazgeçilip geçilmeyeceği belirtilir.<br />
+
+
+
+      <br />
+
+
+
+&nbsp;Son olarak, EDM'yi oluşturmak için, iletişim kutusunun alt kısmında bulunan <span style="font-weight: bold;">[Dönüştür]</span> butonuna basmak yeterli olacaktır. Eğer bu dönüşüm seçeneği tekrar tekrar ve her zaman aynı yapılandırmayla kullanılıyorsa, sonraki oturumlarda yüklemek ve dönüşümü hızlı bir şekilde gerçekleştirmek için kaydetmek ilginç olacaktır. Alt kısımda bulunan <span style="font-weight: bold;">[Kaydet]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> ve <span style="font-weight: bold;">[Yükle]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> butonları bu görevi .cnv uzantılı dosyalar aracılığıyla gerçekleştirir.<br />
+
+
+
+      <br />
+
+
+
+      <a name="gestion"><span class="Titulo_2">Topografik Dosya Yönetimi</span><br />
+      <br />
+      </a><img style="width: 109px; height: 249px;" alt="" src="Imagenes/topo_menu_ficheros.png" align="right" hspace="7" /><span style="font-weight: bold;">[Topografya] &#8594; [Dosyalar]</span> menüsü, bu modülü programın geri kalanıyla ve hem okuma hem de yazma düzeyinde harici dosyalarla iletişim kurmayı da sağlar. Bu şekilde, kullanıcı sayısal arazi modelinin hazırlanması için gerekli bilgileri yükleyebilir. <br />
+
+      <br />
+
+&nbsp;Tüm ara adımlar .ttp dosyalarına (geçici topografya dosyaları) kaydedilebilir ve bu dosyalar elbette herhangi bir zamanda yüklenebilir. Bu işlevsellik, büyük veri setleri için sürecin belirli aşamalarının hesaplama sürelerinin çok uzun olduğu düşünüldüğünde çok önemlidir, böylece süreçleri kaydetme fırsatı sunar.<br />
+
+      <br />
+
+&nbsp;Son adım olarak, nihai verileri, ya doğrudan uygun seçenekleri kullanarak verileri almaya hazır olan uygulamanın kendisine göndererek ya da daha sonra yüklenebilmeleri için dosyalara kaydederek kaydetmek mümkündür. <br />
+
+      <br />
+
+      <a name="insertar_ttp">ISTRAM®/ISPOL®, <span style="font-weight: bold;">Dosyalar &#8594; TTP/TTG Ekle</span> seçeneği aracılığıyla iki üçgenlenmiş modeli otomatik olarak birleştirmeye olanak tanır.<br />
+
+
+      <br />
+
+
+Bu seçenek, bir .ttp veya .ttg dosyasını zaten üçgenlenmiş bir alana ekler ve bu alandaki orijinal üçgenleri .ttp/.ttg'ninkilerle değiştirir. Bu seçeneği kullanırken şunlar dikkate alınmalıdır:<br />
+
+      
+      
+      </a><ul>
+
+
+        <li>Ön-ağ (camgöbeği rengi) ve kullanıcı ağları her zaman korunur.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li>Delaunay koşulu sağlandığında yakındaki otomatik ağlar bazı değişikliklere uğrayabilir.</li>
+      
+      
+      </ul>Bu seçenek bir kenar boşluğu vermeyi sağlar, böylece orijinal ttp'den, eklenen ttp'nin konturu içinde kalan ve tanımlanan kenar boşluğuna kadar genişletilmiş tüm noktalar silinir.<br />
+
+      <br />
+
+
+Bellekte birden fazla üçgenleme yüklü olması mümkündür. Program, <span style="font-weight: bold;">Kontrol &#8594; SAM Kontrolü</span>'nden erişilebilen bir .ttp dosyası yöneticisine sahiptir.<br />
+
+
+
+      <br />
+
+
+
+      <a name="carga"><span class="Apartados">Topografik Dosyaları Yükleme</span><br />
+      <br />
+      </a><img style="width: 187px; height: 319px; float: right;" alt="" src="Imagenes/topo_cargar.png" hspace="5" /><img style="width: 105px; height: 109px;" alt="" src="Imagenes/topo_car_guar.png" align="left" hspace="5" /><span style="font-weight: bold;">[Topografya] &#8594; [Dosyalar] &#8594; Yükle</span> menüsünden, üzerinde çalışmak üzere bir veya daha fazla topografik dosya okumak mümkündür.<br />
+
+      <br />
+
+&nbsp;Dosya seçiciden önce, yüklenecek dosya türünü filtrelemeyi ve belirli yükleme seçeneklerini belirtmeyi sağlayan küçük bir iletişim kutusu belirir. Farklı formatlarda olsalar bile aynı anda birden fazla dosya yüklemek mümkündür.<br />
+
+      <br />
+
+&nbsp;Yüklenecek dosya(lar) seçildikten sonra, program, kullanıcının yüklenecek alanı kısıtlamak için değiştirebileceği X, Y, Z minimum ve maksimumlarını içeren bir iletişim kutusu gösterir.<br />
+
+      <br />
+
+&nbsp;Yükleme sırasında nokta tekrarları kontrol edilebilir, bu nedenle kotları farklı olsa bile aynı düzlem koordinatlarına sahip iki nokta olamaz. Program, aralarındaki mesafe Topografya seçeneklerindeki <span style="font-weight: bold;">tolerans</span> parametresinde belirtilenden daha az olan iki noktayı tekrar eden nokta olarak kabul eder.<br />
+
+      <br />
+
+&nbsp;Bir .top/.toc dosyası yüklenirken noktalar okunur ve gerekirse, belirtilen tercihlere uygun olarak ilgili ön-ağ oluşturulur. <br />
+
+      <br />
+
+&nbsp;Bazen, bir .top/.toc dosyası, bir grid oluşturan eşit aralıklı bir nokta bulutuna karşılık gelir. Bu tür dosyalar genellikle çok yüksek sayıda nokta (yüzbinlerce veya milyonlarca) ve birbirine çok yakın aralıklı (yoğun bulutlar) içerir, bu nedenle işlenmesi biraz yavaş olabilir. <span style="font-weight: bold;">Her x noktadan birini oku</span> (.top/.toc) seçeneği, tüm noktaların mı okunacağını yoksa belirtilen aralıkla noktaların mı atlanacağını belirtmeye yarar, bu da çok yoğun verileri filtrelemeyi sağlar. Varsayılan olarak 1'dir ve böylece tüm noktalar okunur. Örneğin, her üç noktadan birini okumak istenirse, kullanıcı o alana 3 değerini girmelidir. Çok yüksek bir nokta ağı olması durumunda, bunu bir lazer veritabanı olarak ele almak daha iyi olabilir.<br />
+
+      <br />
+
+&nbsp;Eğer bellekte zaten bir .ttp dosyası varsa ve ardından başka bir dosya yüklenirse, kesişmedikleri sürece adacıklar ve kapalı sınırlar korunur. Adacıklar veya kapalı sınırlar arasında kesişmeler varsa, bir hata mesajı gösterilir ve yüklenmezler.<br />
+      <br />
+      <span style="font-weight: bold;">LandXML Yükle</span>: Topografyada CgPoints içeren LandXML dosyalarının okunmasına izin verilir. Eğer "code" özniteliğine sahiplerse, bu noktanın kodu olarak yorumlanır. Eğer "name" özniteliğine sahiplerse, bir sayı olabilir, bu durumda noktanın numarasına atanır veya olmayabilir, o zaman noktaya başka bir kod olarak eklenir ve nokta numarası olarak 0 atanır. Böylece, LandXML dosyasından numarası atanamayan tüm noktalar 0 nokta numarasına sahip olur.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">Tekrarlı .toc yükle</span>. Varsayılan olarak devre dışıdır. Bazen, yorumlanması istenen komutlar geldiğinde veya harita olarak ele alınacağında, tekrarlı noktalar içeren bir .toc dosyası yüklemek ilginç olabilir. Bu seçenek etkinleştirilir ve tekrarlı noktalar içerebilecek bir .toc yüklenirse, üçgenlemeden önce, tekrarlıları ortadan kaldırmak için bir nokta kontrolü yapılmalıdır.<br />
+      <br />
+      <span style="font-weight: bold;">DWG/DXF öznitelikli bloklar</span>: Bu kutucuk, DWG/DXF dosyaları içe aktarıcısına bir kısayoldur. Topografya içinde DWG/DXF dosyaları içe aktarıldığında, içe aktarılacak dosya(lar)ın analiz edilip edilmeyeceğini soran bir soru görüntülenir. Bunların blok içerip içermediği kontrol edilir ve bu durumda dosyalardan elde edilen bloklarla bir ekran gösterilir. Bu ekranda, hangi blokların topografyada nokta oluşturacağı belirtilebilir. 3D katıların okunması mümkündür.<br />
+
+      <br />
+
+      <a name="visualizacion"><span class="Apartados">Veri Görüntüleme</span><br />
+      <br />
+      </a><img style="width: 106px; height: 108px;" alt="" src="Imagenes/visualizacion_datos_topo.png" align="right" hspace="5" />Bilgi amaçlı olarak, her topografik noktayla ilişkili farklı veriler ekranda görüntülenebilir. Bunun için ekteki şekilde gördüğümüz <span style="font-weight: bold;">Nokta</span>, <span style="font-weight: bold;">Kot</span>, <span style="font-weight: bold;">Metin</span> ve <span style="font-weight: bold;">Kod</span> kutucukları kullanılır:<br />
+
+      
+      
+      <ul>
+
+
+        <li>Nokta numarası.</li>
+        <li>Kot: Temsil edildiği ondalık basamak sayısı Topografya seçeneklerinden yapılandırılabilir.</li>
+        <li>Noktayla ilişkili metin.</li>
+        <li>Noktayla ilişkili kod (tip).</li>
+      
+      
+      </ul>Renklendirme ile ilgili olarak:<br />
+      <ul>
+        <li>Üçgen Rengi</li>
+        <li>Üçgen Konturu: Sadece üçgenlerin kenarını görüntülemek için etkinleştirilebilir. Bu seçenek "Üçgen Rengi" ile karşılıklı olarak dışlayıcıdır.<br />
+        </li>
+        <li>Ağ Rengi</li>
+      </ul>
+Nesne Türü:<br />
+      <ul>
+        <li>Ağ Tipi</li>
+        <li>Ağ<br />
+        </li>
+      </ul>
+
+
+
+            <a name="guardado_top"><span class="Apartados">Topografik Dosyaları Kaydetme</span><br />
+      <br />&nbsp;
+</a><img style="width: 181px; height: 326px;" alt="" src="Imagenes/topo_guardar.png" align="right" hspace="8" /><span style="font-weight: bold;">[Topografya] &#8594; [Dosyalar] &#8594; Farklı Kaydet</span> menüsünden, aşağıda gördüğümüz gibi çeşitli formatlarda topografik dosyalar elde etmek mümkündür. Ayrıca, <span style="font-weight: bold;">Kaydet</span> seçeneği, açık olan ttp'nin değişikliklerini, onay sormadan daha önce yüklenmiş olan aynı dosyanın üzerine kaydeder. Açık bir dosya olmadığında, "Topografia.ttp" olarak kaydedilir. <br />
+
+      
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">TTP</span>: Düğüm noktaları, ağlar, üçgenler, kapalı sınırlar ve adacıkların mevcut düzenleme durumunu içeren .ttp uzantılı bir dosya oluşturur. Geçici dosyalarda, her kullanıcı ağının oluşturulduğu çizgi tipi de kaydedilir. Bu tür dosyalar, mevcut topografik düzenleme durumuna başka bir zamanda devam etmeyi sağlar.</li>
+      
+      
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">TTG</span>: Sadece noktaların koordinatlarını ve her üçgeni oluşturan noktaları içeren basitleştirilmiş bir .ttp gibi bir *.ttg dosyası kaydedilir. SAM Kontrolü'nden de yüklenebilir.<br />
+        </li>
+      </ul>
+
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">TOP / TOC</span>: Bu seçenekle, ekran noktaları seçilen formata bağlı olarak bir .top/.toc dosyasına kaydedilir.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">XYZ</span>: Her noktanın üç koordinatına karşılık gelen üç sütundan oluşan .xyz uzantılı bir dosya oluşturur.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">NXYZ</span>: Ayrıca .xyz uzantılı bir dosya oluşturur, ancak bu durumda dört sütunludur: nokta numarası, X koordinatı, Y koordinatı ve Z koordinatı. Topografik noktayla ilişkili Metni, NXYZT seçeneği ile bir .xyz dosyasına kaydetmeye izin verilir. Seçeneği görmek için, topografya kaydetme diyaloğunda "Diğer formatları göster"e tıklamak gerekir.<br />
+</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">NXYZC</span>: Benzer şekilde, öncekiyle benzer bir .xyz uzantılı dosya oluşturur, ancak buna kod'a karşılık gelen beşinci bir sütun ekler.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Yüzeyler .3d</span>: Üçgenlerle bir .3d dosyası oluşturmayı sağlar; bu dosya, örneğin, görünürlük analizinin güzergah kayıpları çalışmasında kullanılmak üzere .dxf formatında bir "3D yüzeyler" (3D faces) dosyasına dönüştürülebilir, vb.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Yüzeyler .3do</span>: Virtual 3D® modülünde katıların gösterimi için kullanışlı bir 3D yüzeyler .3do dosyası oluşturur.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">3D-Yüzeyler .dxf</span>: Üçgenlemeyi, farklı GPS ekipmanları ve modelleme programları tarafından doğrudan okunabilen .dxf formatında kaydetmeyi sağlar.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">LandXML</span>: Uluslararası LandXML standardıyla uyumlu .xml uzantılı bir dosya oluşturmayı sağlar; dışa aktarılacak dosyanın yazılacağı sürümü seçmeye izin verilir.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">DGN</span>: Üçgenlemeyi bir Microstation dosyasına (.dgn) kaydetmeyi sağlar.</li>
+      
+      
+      </ul>
+      <ul style="font-weight: bold;">
+        <li>STL (3D baskı)</li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li>OBJ</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Civil Estudio</span>: Civil Estudio formatına kaydetme seçeneği. Ayrıca, Civil Estudio'ya dışa aktarma şu yerlerde de mevcuttur: <br />
+        </li>
+        <ul style="text-align: left;">
+          <li>Güzergah Projesi-&gt;BOYKESİT-&gt;ARAÇLAR-&gt;Yüzeyi Üçgenle</li>
+          <li>Güzergah Projesi-&gt;BOYKESİT-&gt;ARAÇLAR-&gt;Görünümdeki Yüzeyi Üçgenle</li>
+          <li>Enkesit Düzenleme-&gt;YARDIMCI PROGRAMLAR-&gt;Yüzeyi Üçgenle</li>
+        </ul>
+      </ul>
+      <a name="Guardar_seleccion_en_TTP"><span style="font-weight: bold;">Seçimi TTP Olarak Kaydet</span><br />
+      <br />
+Bir topografik nokta seçimini, tüm noktaları seçilmişse ilgili ağlar ve üçgenlerle birlikte bir ttp olarak kaydetme seçeneği. Bu seçenek üst menüde, "Topografya", "Seçimi TTP Olarak Kaydet" içinde bulunur.<br />
+      <br />
+      </a><div style="text-align: center;"><a name="Guardar_seleccion_en_TTP"><img style="width: 350px; height: 289px;" alt="" src="Imagenes/ttp_guardar_seleccion.png" /><br /></a><a name="Guardar_seleccion_en_TTP">
+      </a></div>
+<a name="Guardar_seleccion_en_TTP">      <br />
+      </a><a name="ttg"><span style="font-weight: bold;">TTP/TTG Ekle/İlave Et</span><br />
+      <br />
+Bu algoritma, noktaları/üçgenleri zaten veri olan bölgelerde, olmayan bölgelerde veya kısmen çakışan ve kısmen çakışmayan bölgelerde bulunan bir TTP/TTG dosyasının bilgilerini eklemeyi sağlar. Ardışık olarak eklenecek/ilave edilecek en fazla 10 dosya seçmek mümkündür.<br /><br /><br /></a><a style="font-weight: bold;" name="InsertarExpresTTPs"><span style="font-weight: bold;">Hızlı TTP Ekle</span><br /><br />Bu araç, kontrol edilmiş ve en az bir kapalı sınıra sahip bir .TTP'den, yine önceden temizlenmiş ve kapalı sınırlarla belirlenmiş bir veya daha fazla .TTP'yi eklemeyi sağlar. Bu TTP'lerin sadece orijinal kapalı sınırlar içinde kalan kısmı eklenir. Bu algoritma, TTP/TTG Ekle/İlave Et algoritmasını önemli ölçüde hızlandırır.<br /><br /><br /><br />
+      <br />
+
+
+
+
+            </a><a name="guardado"><span class="Apartados">Hızlı Veri Kaydetme ve Geri Yükleme</span><br />
+      <br />
+      <img src="Imagenes/topo_guardar_temp.png" style="width: 309px; height: 139px;" alt="" align="right" hspace="6" /><span style="font-weight: bold;">[Topografya] &#8594; [Dosyalar] &#8594;[Geçici Kaydet]</span> seçeneği ile, topografik verilerin mevcut durumunu, <span style="font-weight: bold;">[Topografya] &#8594; [Dosyalar] &#8594; [Geçici Geri Yükle]</span> seçeneği ile herhangi bir zamanda geri yüklenebilmesi için kaydedebilirsiniz.<br />
+      <br />
+&nbsp;Bu süreçte, program varsayılan olarak topografik verileri is#temp.ttp dosyasına (bu, <span style="font-weight: bold;">Geri Yükle</span> seçeneği ile yüklenen dosyadır) ve ayrıca haritayı is#temp.edb dosyasına kaydeder. İkincisi, diğer herhangi bir .edm/.edb dosyası gibi normal şekilde yüklenebilir.<br />
+      <br />
+&nbsp;Ancak, program bu geçici dosyaların adını değiştirmeye olanak tanır.<br />
+      <br />
+Sağdaki menüde, topografyayı geçici bir dosyaya kaydetmeyi ve yüklemeyi sağlayan butonlara hızlı bir erişimimiz var. <br />
+      <br />
+</a>
+      <div style="text-align: center;"><img style="width: 148px; height: 320px;" alt="" src="Imagenes/ttp_guarda_temp.png" /><br />
+      </div>
+
+      <br />
+
+      <a name="importacion"><span class="Apartados">Topografik Dosyaları İçe Aktarma</span><br />
+      <br />
+      <img src="Imagenes/importar_topo.png" style="width: 189px; height: 154px;" alt="" align="right" hspace="6" /><span style="font-weight: bold;">Araçlar &#8594; Dönüştürücüler</span> menüsünden kullanıcı, çeşitli topografik veri dosyası içe aktarıcılarına erişebilir. Bunlardan bazıları, aşağıda açıklandığı gibi, <span style="font-weight: bold;">[Topografya] &#8594; [Dosyalar] &#8594; İçe Aktar</span> menüsünden de doğrudan erişilebilir.<br />
+      </a>
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">ODB -&gt; TOP</span>: Bu seçenek, kullanıcının belirleyeceği .odb ve .cod dosyalarından bir .top dosyası oluşturacaktır. .top dosyalarının metin alanı, .odb dosyasından okunan koda ve komuta göre oluşturulacaktır.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">TOP -&gt; EDM</span>: .top dosyasının üçüncü sütununda tanımlanan tiplerle ve ağ kesişimlerini kontrol etmeden, .top dosyasının bilgilerini doğrudan EDM çizgileri ve noktaları olarak yükler.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">XYZ -&gt; EDM Çizgileri</span>: Bu seçenek, X eksenine paralel sıralar halinde düzenlenmiş .xyz dosyalarını yükler ve her sıra için bir EDM çizgisi oluşturur. Kullanılacak filtreleme mesafesini (Y yönündeki sıralar arasındaki mesafe) ister.</li>
+      
+      
+      </ul>
+
+
+      &nbsp;<a name="previsualizacion"><span class="Apartados">Önizleme ve Manuel Düzenleme</span><br />
+      <br />
+&nbsp;<span style="font-weight: bold;">[Topografya] &#8594; [Dosyalar] &#8594; Düzenle</span> menüsünden, kullanıcının seçeceği dosyayı bir tablo aracılığıyla değiştirmek mümkündür. Düzenlenebilir dosya türleri .toc, .top ve .ttp'dir.<br />
+      <br />
+      </a>
+      
+      <div style="text-align: center;"><img style="width: 600px; height: 351px;" alt="" src="Imagenes/topo_editar_fichero.png" /><br />
+
+      </div>
+
+
+            <br />
+
+&nbsp;<span style="font-weight: bold;">[Topografya] &#8594; [Dosyalar] &#8594; Görüntüle</span> seçeneği, .top ve .ttp dosyalarının bir önizlemesini yapmayı sağlar.<br />
+
+      <br />
+
+      <a name="generar"><span class="Apartados">.top/.toc Dosyası Oluştur</span><br />
+      <br />
+      <img src="Imagenes/topo_generar_dialogo.png" style="width: 201px; height: 180px;" alt="" align="right" hspace="6" />&nbsp;Çizgileri ve sembolleri ön-ağ düğüm noktalarına ve ağlarına dönüştürerek bir topografya dosyası (.top veya .toc) kaydetmeyi sağlar. Metinleri kaydetmez.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </a><a name="cargar_gen"><span class="Titulo_2">Topografya Verileri İçeren Genel Dosya Yükle</span></a><br />
+      <br />
+<span style="font-weight: bold;">Topografya &#8594; Dosyalar &#8594; Topografya verileri içeren genel dosya yükle </span> açılır menüsünden, aşağıda açıklayacağımız bir süreç aracılığıyla diğer formatlardaki dosyaları (örneğin .txt dosyaları) yükleyebiliriz.<br />
+      <br />
+Yüklenecek dosyayı seçtikten sonra, içe aktarma sihirbazı dosyanın okunmasına başlamak için bize iki seçenek sunacaktır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Sınırlanmış</span>: Alanlar virgül veya sekme gibi karakterlerle ayrılmıştır.</li>
+        <li><span style="font-weight: bold;">Sabit genişlikli</span>: Alanlar belirli bir genişlikteki sütunlarda hizalanmıştır.<br />
+        </li>
+      </ul>
+Bu ilk adımda, programa dosyanın hangi satırından <span style="font-weight: bold;">içe aktarmaya başlamak</span> istediğinizi belirtebilirsiniz.<br />
+      <br />
+Son olarak, <span style="font-weight: bold;">İleri</span> kutucuğuna tıklayarak içe aktarmanın bir sonraki adımına geçeceğiz.<br style="font-weight: bold;" />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 402px;" alt="" src="Imagenes/topo_imp_paso1.png" /><br />
+      </div>
+      <br />
+Sihirbazın <span style="font-weight: bold;">yapılandırmasını yükleyerek</span>, topografyada genel veri dosyalarını açmak için, birden fazla aynı veri dosyasını yüklemeyi kolaylaştırabilirsiniz. <br />
+      <br />
+İkinci adımda sütunlar arasındaki ayrımı belirleyebiliriz:<br />
+      <ul>
+        <li style="font-weight: bold;">Sekme</li>
+        <li><span style="font-weight: bold;">Diğer</span>: bir <span style="font-weight: bold;">,</span> veya bir<span style="font-weight: bold;"> . </span>vb. olabilir...</li>
+      </ul>
+Bu adımı tamamladıktan sonra <span style="font-weight: bold;">İleri</span> kutucuğuna tıklayacağız.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 372px;" alt="" src="Imagenes/topo_imp_paso2.png" /><br />
+      </div>
+      <br />
+Bu son adımda, her sütuna noktanın <span style="font-weight: bold;">numarasını</span>, <span style="font-weight: bold;">X</span>, <span style="font-weight: bold;">Y</span> koordinatını, Z'yi (<span style="font-weight: bold;">kot</span>), <span style="font-weight: bold;">kodu</span>, <span style="font-weight: bold;">metni</span> veya <span style="font-weight: bold;">modeli</span> atayacağız.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 432px;" alt="" src="Imagenes/topo_imp_paso3.png" /><br />
+      </div>
+      <br />Sihirbazın <span style="font-weight: bold;">yapılandırması kaydedilebilir</span>.<br />
+      <br />
+İçe aktarmayı bitirmek için, ekranımızda yüklenen topografik noktaları görmek üzere <span style="font-weight: bold;">Bitir</span> kutucuğuna tıklamamız gerekecektir.<br />
+      <br />
+
+      <a name="opciones"><span class="Titulo_2">Topografya Seçenekleri</span><br />
+      <br />
+&nbsp;<span style="font-weight: bold;">Yapılandırma &#8594; Tercihler &#8594; Seçenekler &#8594; Topografya</span> menüsünden, <span style="font-weight: bold;">[Topografya] &#8594; [Seçenekler]</span> menüsü aracılığıyla da doğrudan erişilebilen, yüklemeyle ilgili aşağıdaki konuları yapılandırmak mümkündür:<br />
+      <br />
+Mevcut SAM (Sayısal Arazi Modeli) modellerinin ekranda yeniden çizimlerini hızlandırmayı sağlayan bir yapılandırma parametremiz var. Yapılandırma-&gt;Tercihler-&gt;Görselleştirme: <span style="font-weight: bold;">Ekrandaki maksimum SAM noktası</span>.<br />
+Mevcut Yakınlaştırma seviyesi için SAM'ın kaç noktasının ekrana sığdığı yaklaşık olarak tahmin edilir:<br />
+</a>
+      <ul>
+        <li>Eğer sayı yapılandırılandan küçükse, tüm model çizilir.</li>
+        <li>Eğer yapılandırılanı aşarsa: Kenarlar ve kullanıcı veya ön-ağ ağları çizilir ve bitişik üçgen kenarlarının otomatik ağları atlanır. Kapalı Sınır ve Adacık konturları çizilir ancak noktalar vurgulanmaz.</li>
+        <li>Eğer yapılandırılan sayı 25 kat aşılırsa, sadece kenar ağları ve adacık ile kapalı sınır konturları vurgulanmadan çizilir.</li>
+      </ul>
+Topografyada: Tahmin edilen nokta sayısı yapılandırılanı aşarsa:<br />
+      <ul>
+        <li>Artık Nokta, Kot, Kod, İlişkili Metin değerleri etiketlenmez. Ve gösterilen nokta sayısı azaltılır.</li>
+        <li>Kenar ağları hariç otomatik ağlar çizilmez. Kullanıcı ve ön-ağ ağları çizilir. Eğer yapılandırılan sayı 25 kat aşılırsa, artık hiçbir ağ çizilmez.</li>
+        <li>Üçgenler veya konturları yeniden çizilmez.</li>
+        <li>Kapalı Sınır ve Adacık konturları çizilir, ancak noktaları vurgulanmaz.</li>
+      </ul>
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img style="width: 450px; height: 381px;" alt="" src="Imagenes/opciones_topo.png" /><br />
+
+      </div>
+
+
+            <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 120px; font-weight: bold; text-align: left;">.top/.toc Koordinatları</td>
+            <td style="vertical-align: top;">.top ve .toc dosyalarının yüklenmesi için, dosyanın XYZ mi yoksa YXZ formatında mı geldiğini seçmeye izin verilir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Tolerans</td>
+            <td style="vertical-align: top;">Aralarındaki mesafe bu değerden küçük olan iki nokta için, program bunları tekrar eden nokta olarak kabul eder.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Tekrar Edenler Dosyasını Kaydet</td>
+            <td style="vertical-align: top;">Bu kutucuk etkinleştirilirse, bir .ttp, .top veya .toc dosyası yüklenirken tekrar eden noktalar bulunduğunda, bunların listesini içeren bir repetidos.res dosyası oluşturulur.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Tekrar eden noktaları .toc'da kaydetme</span><br />
+            </td>
+            <td style="vertical-align: top;">Bu kutucuk etkinken, programı .toc dosyalarında tekrar eden noktaları kaydetmemeye zorlar. Bu aynı zamanda ağların dosyada kaydedilmeyeceği anlamına da gelir.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">Tekrarlı .ttp yükle</td>
+            <td style="vertical-align: top;">Bu kutucuk etkinleştirilmişse, tekrar eden noktalar içeren .ttp dosyalarını yüklemek mümkün olacaktır, ancak daha sonra uygulama bunu üçgenlemeye izin vermeyecektir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Tekrarlı .toc yükle</td>
+            <td style="vertical-align: top;">Varsayılan olarak devre dışı. Bazen, yorumlanması istenen komutlar geldiğinde veya harita olarak ele alınacağında, tekrar eden noktalar içeren bir .toc dosyası yüklemek ilginç olabilir. Bu seçenek etkinleştirilir ve tekrar eden noktalar içerebilecek bir .toc yüklenirse, üçgenlemeden önce, tekrar edenleri ortadan kaldırmak için bir nokta kontrolü yapılmalıdır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">.ttp'yi kontrol et</td>
+            <td style="vertical-align: top;">Bir .ttp dosyası yüklerken ağların tutarlılığının kontrol edilip edilmeyeceğini belirtir (kesişen ağları aramak,...). Seçenek etkinleştirildiğinde, bu tür dosyaların yükleme süreci daha yavaştır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Her x noktadan birini oku (.top/.toc)</td>
+            <td style="vertical-align: top;">Bitişik kutucukta belirtilen x değeri başına bir topografik düğüm noktası yükler.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Kapalı sınırları düzenlerken ağları kontrol et</td>
+            <td style="vertical-align: top;">Kapalı sınırlara nokta ekleme veya çıkarma işlevlerinde ağlarla kesişim kontrolünü devre dışı bırakmayı sağlar. Bu, kapalı sınırları daha özgürce düzenlemeyi ve tamamlamayı sağlar (geçici olarak kapalı sınırlar ve ağlar kesişebilir), ancak düzenlemenin sonunda seçeneği yeniden etkinleştirmek ve ağlar ile kapalı sınırların bir kontrolünü yapmak tavsiye edilir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Kottaki Ondalıklar</td>
+            <td style="vertical-align: top;">Programın göstermesi istendiğinde (düğme [co/CO]), topografik noktaların kotlarının temsil edileceği ondalık basamak sayısı.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Kesim noktası ekle</td>
+            <td style="vertical-align: top;">Bu kutucuk etkinleştirildiğinde, yükleme sırasında ön-ağ ağları kesişirse, bunları silmek yerine kesim noktasında bir nokta oluşturur. Bu şekilde, kesişen iki ağ, ortak bir noktaya sahip dört ağ haline gelir. Kullanıcı, bu kesim noktası için istediği kotu belirleyebilir: birinci ağın kotu, ikincinin kotu veya her ikisinin ortalaması. Oluşturulan noktalar, metin alanında bir "+" işareti taşıdıkları için tanımlanabilir. Bu işlev sadece EDM'den TOP'a dönüşümde veya bir .top dosyası yüklenirken etkinleştirilir.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Ağların Soluklaştırılması</span><br />
+            </td>
+            <td style="vertical-align: top;">Kullanıcı, ön-ağ ve otomatik ağları soluklaştırmayı sağlar.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 369px; height: 133px;" alt="" src="Imagenes/topo_aten.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">Tekrarlıların İşlenmesi</td>
+            <td style="vertical-align: top;">Burada, tekrar eden noktalar içeren bir dosya yüklenirken programın davranışı belirtilir (artı/eksi tolerans): ilkini mi tutacağı yoksa eşit noktaların koordinatlarının ortalamasını mı alacağı. İkinci durum, sadece tekrar eden noktaların koordinatları eşit (artı/eksi tolerans) olmasının yanı sıra, aynı nokta numarasına sahip olmaları durumunda çalışır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Çıkarken .ttp'yi kaldır</td>
+            <td style="vertical-align: top;">Bu seçenek etkinleştirilirse, TOPOGRAFYA menüsünden çıkıldığında program, bellekteki tüm ilgili verileri kaldırır.</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Yolu .ctp ve .csm'de Kaydet</span><br />
+            </td>
+            <td style="vertical-align: top;">Bu dosyalardan, çalışma klasöründen veya ./ttp'den farklı klasörlerden yüklenen ttp veya ttg dosyalarını geri yüklemeyi sağlar. Veriler .isa dosyaları aracılığıyla dışa aktarılacaksa bu seçenek önerilmez.<br />
+            </td>
+          </tr><tr><td><span style="font-weight: bold;">Y.N.B. Yolunu .cnd ve .csm'de Kaydet</span></td><td>Öncekine benzer şekilde, Yoğun Nokta Bulutları veritabanlarını çalışma klasöründen farklı klasörlere kaydetmeyi sağlar. Bu durumda, .isa üzerinde bir etkisi yoktur.</td></tr>
+
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+Tüm bu seçenekler program yapılandırmasıyla kaydedilir.<br />
+
+      <br />
+
+      <a name="puntos"><span class="Titulo_2">Topografik Noktaların Düzenlenmesi</span><br />
+      <br />
+      </a><img style="width: 339px; height: 57px;" alt="" src="Imagenes/topo_puntos_dialogo.png" align="right" hspace="7" />Düzenleme seçeneklerini açıklamadan önce, TOPOGRAFYA ortamındayken, <span style="font-weight: bold;">topografik noktalara yakalama</span> imkanının etkinleştirildiğini belirtmek gerekir; bu da tanımlanacak ağların topografya noktalarıyla doğru bir şekilde ilişkilendirilmesini sağlar.<br />
+
+<span style="font-weight: bold;">Serbest Yakalama</span> kutucuğuna tıklayabilir ve topografik noktalara yakalamayı seçebiliriz (ekranın sol alt köşesi).<br />
+
+      <br />
+
+      <img src="Imagenes/desplegable_puntos.png" alt="" style="width: 176px; height: 276px;" align="left" hspace="6" /><span style="font-weight: bold;">[Topografya] &#8594; [Noktalar]</span> açılır menüsünden, topografik nokta düzenleme seçenekleriyle ilgili bir dizi seçeneğe erişilir:<br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><img src="Imagenes/icono_topo_anad_p.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="anadir_punto">Nokta Ekle</a></span></td>
+            <td style="vertical-align: top;">Aşağıdaki seçeneklere sahibiz:<br />
+            <br />
+            <img src="Imagenes/icono_topo_anad_p.png" style="width: 26px; height: 25px;" alt="" /> <span style="font-weight: bold;">Nokta Ekle</span>: Grafiksel veya sayısal olarak yeni bir nokta ekler.<br />
+            <br />
+            <img src="Imagenes/icono_topo_anad_p2.png" style="width: 26px; height: 25px;" alt="" /> <span style="font-weight: bold;">Kot Girerek Nokta Ekle</span>: Önceki seçenekle aynı şekilde, grafiksel veya sayısal olarak yeni bir nokta ekler, ancak daha sonra noktanın yerleştirilmesini istediğimiz kot girilir.<br />
+<br />
+
+            <br />
+
+Eğer üçgenleme zaten yapılmışsa ve bir nokta eklemesi mevcut bir üçgenin içine yapılırsa, atanan kot, üç köşe noktasının ortalamasıdır. Orijinal üçgen yok edilir ve yeni noktada köşe noktası olan üç tane oluşturulur.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_triang_punt.png" style="width: 459px; height: 331px;" alt="" /><br />
+            </div>
+            <br />
+Eğer üçgenleme yoksa, klavyeden başka bir değer belirtilmedikçe, kot olarak mevcut kot kullanılır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><a name="borrar_punto">Sil</a></td>
+            <td style="vertical-align: top;">Aşağıdaki seçeneklere sahibiz:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topografia_borrar_opciones.png" style="width: 81px; height: 60px;" alt="" align="middle" /><br />
+            </div>
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_borrar_punt.png" style="width: 26px; height: 25px;" alt="" />&nbsp;Noktaları Sil</span>: Üzerlerine tıklayarak topografik düğüm noktalarını siler. Bu araçtan, pencere içindeki tüm topografik noktaları silmek için bir pencere de oluşturulabilir.<br />
+            <br />
+            <img src="Imagenes/icono_topo_borrar_recinto.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;">Kapalı Alanı Sil</span>: Kapalı bir alanın içindeki topografik düğüm noktalarını siler. Aşağıdakileri seçebileceğimiz bir iletişim kutusu görünecektir:<br />
+            <ul>
+              <li>Kapalı bir çizgi</li>
+              <li>Belirli bir tipteki tüm kapalı çizgiler</li>
+              <li>Belirli bir modeldeki tüm kapalı çizgiler</li>
+            </ul>
+
+
+
+            <div style="text-align: center;"><img src="Imagenes/dialogo_borrar_recinto_topo.png" style="width: 177px; height: 162px;" alt="" /><br />
+            </div>
+            <br />
+            <img style="width: 28px; height: 28px;" alt="" src="Imagenes/icono_topo_borrar_ext_recinto.png" />&nbsp;<span style="font-weight: bold;">Dış Kapalı Alana Göre Sil</span>: bir kapalı alanın dışındaki topografik noktaları silme seçeneği.<br />
+<br />
+            <img src="Imagenes/icono_topo_borrar_cod.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;">Koda Göre Sil</span>: Etkinleştirdiğimiz koda bağlı olarak belirli bir koda sahip tüm topografik düğüm noktalarını silmeyi sağlar.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_borr_cod.png" style="width: 309px; height: 222px;" alt="" /><br />
+            </div>
+            <br />
+            <img src="Imagenes/topo_recuper_pto_b.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;">Silinen Noktayı Geri Getir</span>: Silinmiş olan bir veya daha fazla noktayı kurtarmayı sağlar.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_editar_busc.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="editar_buscar_p">Düzenle/Bul</a></span> </td>
+            <td style="vertical-align: top;">Noktanın koordinatlarını, numarasını, kodunu (tip), metnini ve modelini değiştirmeyi sağlar. Bir topografik nokta değiştirildikten sonra, program gerekirse üçgenlemeyi yeniden yapar. Kullanıcı, topografyanın farklı noktalarını interaktif olarak seçebilir, çünkü iletişim kutusu içeriğini son seçilen noktaya göre günceller.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/editar_punto_topo.png" style="width: 506px; height: 170px;" alt="" /><br />
+            </div>
+            <br />
+Model özelliği, EDM'ye dönüştürüldükten sonra noktanın geçeceği modele atıfta bulunur. Üçgenlemede sadece aktif modellere atanmış noktaların kullanılacağı dikkate alınmalıdır.<br />
+
+            <br />
+
+Bu iletişim kutusu, ayrıca, o kritere uyan noktaları bulmak için bir alan seçmeyi de sağlar. Bu, <img src="Imagenes/icono_topo_buscar.png" style="width: 17px; height: 20px;" alt="" /> butonu ile gerçekleştirilir. Bir nokta bulunduğunda, üzerine bir yakınlaştırma yapar ve onu diğer noktalardan ayırır. Eğer aynı değere sahip daha fazla nokta varsa, bu butona art arda basılarak sırayla vurgulanır.<br /><br /><span style="font-weight: bold;">Görünümü Koru</span>, mevcut noktayı sildikten sonra bir sonraki noktaya olan çerçeveyi korumayı sağlar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 26px; height: 25px;" alt="" src="Imagenes/icono_topo_bptos_cer.png" />&nbsp;<span style="font-weight: bold;"><a name="buscarpc">Yakın Noktaları Bul</a></span><a name="buscarpc"><br />
+            </a></td>
+            <td style="vertical-align: top;">Bu araç, belirli bir değerden daha küçük, çok yakın bir <span style="font-weight: bold;">noktalar arası mesafeye</span> sahip ve belirlediğimiz bir <span style="font-weight: bold;">kot farkı</span> olan topografik noktaları bulmayı ve değiştirmeyi sağlar.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 286px; height: 244px;" alt="" src="Imagenes/dialogo_bpc.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_mov_punt.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<a name="moverp"><span style="font-weight: bold;">Taşı</span></a></td>
+            <td style="vertical-align: top;">Bu seçenek, bir noktayı üçgenlemeden önce veya sonra grafiksel olarak taşımayı sağlar. Eğer üçgenlenmemişse, program yeni konumda noktayla ilişkili ön-ağ ağlarının diğer ağlarla kesişmediğini kontrol eder. Eğer üçgenlenmişse, noktadan çıkan üçgenlerin ağlarının mevcut diğer ağlarla kesişmediği kontrol edilir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 125px;"><img src="Imagenes/icono_topo_insertar_malla.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="insertarenmalla">Ağa Ekle</a></span></td>
+            <td style="vertical-align: top;">Bu seçenek, fare ile mevcut ağlara nokta eklemeyi sağlar. Nokta, ağı oluşturan iki noktanın kotuna göre kot alır. Ağ, iki yeni ağ ile değiştirilir. Seçenek döngüsel olarak etkin kalır.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_renumerar.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="renumerar">Yeniden Numaralandır</a></span></td>
+            <td style="vertical-align: top;"><img src="Imagenes/renumerar_puntos_topo.png" style="width: 183px; height: 165px;" alt="" align="right" hspace="6" />Bu seçenek, kullanıcı tarafından belirlenen bir başlangıç değerinden başlayarak noktaların numaralandırmasını değiştirmeyi sağlar. Bu yeniden numaralandırma, tümüne veya bir nokta aralığına uygulanabilir. İkinci durumda, aralık sayısal veya grafiksel olarak belirlenir.<br />
+            <br />
+<span style="font-weight: bold;">Aralıkları Koru</span> seçeneği etkinleştirildiğinde, başlangıç değeri eklenirken noktaların numaralandırma atlamalarına uyulup uyulmayacağı seçilebilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_deformar.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="deformar">Deformasyon</a></span></td>
+            <td style="vertical-align: top;">&nbsp;Bu seçenek, deformasyon mesafesinde belirlenen bir yarıçap içinde ve kullanıcının dikey kaydırıcılarla değiştirebileceği bir Gauss eğrisini takip ederek kotları değiştirmeyi sağlar. Ayrıca <span style="font-weight: bold;">kot artışı</span> (pozitif veya negatif) ve <span style="font-weight: bold;">deformasyon katsayısı</span> da belirtilmelidir. Formülün hangi noktadan uygulanacağı da istenir. Sonuç olarak, deformasyon mesafesi içindeki bir mesafedeki noktaların kotları, formülü ve kot artışını takip ederek değiştirilir.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/deformacion_topo.png" style="width: 527px; height: 172px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_activar.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="activar">Aktivasyon</a></span></td>
+            <td style="vertical-align: top;"><img src="Imagenes/activacion_topo.png" style="width: 183px; height: 256px;" alt="" align="right" hspace="6" />Kodlarına veya anahtarlarına göre noktaları etkinleştirmeyi/devre dışı bırakmayı sağlar.<br />
+
+            <br />
+
+&nbsp;Bu seçenekte, yüklenen noktalardaki farklı anahtarlar gösterilir. Kullanıcı, uygun gördüğü anahtarları etkinleştirebilir/devre dışı bırakabilir, böylece bir üçgenleme yapıldığında, bu sadece etkin anahtarlara sahip noktaları dikkate alır.<br />
+
+            <br />
+
+&nbsp;Aktivasyonlar için kullanılan kod, .toc dosyalarından gelen noktaların taşıdığı koddur.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_raiz.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="raiz">Kök</a></span></td>
+            <td style="vertical-align: top;">Bu işlev bir kök ister ve o köke sahip noktaların metinlerini, metnin geri kalanını bir yorum gibi koyarak değiştirir. Örneğin, kök olarak BKM girilirse ve BKM25, BKM4,... metinlerine sahip noktalar varsa, bunları BKM #25, BKM #4,... olarak dönüştürür.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_propiedades.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<a name="seleccion_prop">Özelliklere Göre Seçim</a></td>
+            <td style="vertical-align: top;"><img style="width: 211px; height: 144px;" alt="" src="Imagenes/seleccion_puntos_topo.png" align="right" hspace="7" />Bu seçenek, ortak bir <span style="font-weight: bold;">özelliğe</span> sahip olan nokta bulutundan birkaç nokta seçmeye yarar. Bu amaçla, kullanıcıdan filtrelemek istediği özelliği, hangi <span style="font-weight: bold;">operatörü</span> ve <span style="font-weight: bold;">değeri</span> girmesi istenir. Noktaları seçimden çıkarmak için &lt;Esc&gt; tuşuna basılabilir veya bu iletişim kutusundan operatör olarak Hiçbiri seçilebilir.<br />
+
+            <br />
+
+<span style="font-weight: bold;">Önceki seçimle birleştir</span> kutucuğu işaretlenirse, önceden seçilmiş noktalara yeni seçimden gelenler eklenir.<br />
+
+            <br />
+
+Etkin bir nokta seçimi olduğunda, Sil ve Kapalı Alanı Sil seçenekleri sadece seçili noktaları etkiler.
+            <br />
+            <br />
+Topografik nokta seçimi yapıldıktan sonra, <span style="font-weight: bold;">Uygula</span>'ya tıklayarak önceki seçimi kaybetmeden başka seçimler yapabiliriz. Seçimi tamamladığımızda <span style="font-weight: bold;">Kabul Et</span>'e basarız ve aşağıdaki iletişim kutusu aracılığıyla tüm seçili noktaların kotunu, nokta numarasını, kodunu, metnini ve modelini aynı anda değiştirebiliriz.<br />
+Ayrıca seçili nesneleri <span style="font-weight: bold;">silebiliriz</span>.<br />
+            <br />
+            
+            <div style="text-align: center;"><img style="width: 181px; height: 154px;" alt="" src="Imagenes/topo_dialogo_modif.png" /><br />
+            </div>
+
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><a name="incrementarz">Z Artır<br />
+</a></td>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_incrementarz.png" style="width: 26px; height: 25px;" alt="" /> <span style="font-weight: bold;">Seçime Göre Z Artışı</span>: İnteraktif olarak veya farenin sol tuşuna basılı tutarak bir pencere aracılığıyla seçeceğimiz noktaların kotunu artırmayı sağlar. Pencere içinde kalan tüm noktalar seçilecektir.<br />
+            <br />
+            <img src="Imagenes/icono_topo_increz_rec.png" style="width: 26px; height: 25px;" alt="" /> <span style="font-weight: bold;">Kapalı Alana Göre Z Artışı</span>: Kapalı bir alan (önceden ekranda kapalı olma özelliğiyle çizilmiş olması gereken bir çizgi) içindeki kotu artırmayı sağlar, bu da önceden seçmeye gerek kalmadan bir dizi noktayı ayırmayı mümkün kılar.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_max_min.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<a name="informacion">Maksimum ve Minimum Bilgileri<br />
+</a></td>
+            <td style="vertical-align: top;">Topografya menüsünde yüklenen verilerin bilgilerini ve aynı zamanda minimum ve maksimum koordinatlarını içeren bir kutu gösterir.<br />
+&nbsp;<img src="Imagenes/icono_topo_ojo.png" style="width: 20px; height: 13px;" alt="" /> simgesine tıklandığında, sizi seçilen noktaya ve onun düzenleme menüsüne götürür.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_informacion.png" style="width: 253px; height: 266px;" alt="" /><br />
+            </div>
+            <br />
+</td>
+          </tr>
+          
+          
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_list_p.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<a name="listar_p">Noktaları Listele<br />
+</a></td>
+            <td style="vertical-align: top;">Yüklenen noktaların bilgilerini görmeyi ve bir veri gridinden düzenlemeyi sağlar. Gridin herhangi bir hücresine tıklandığında, program sizi o hücreye karşılık gelen topografik noktaya konumlandırır.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_rejilla_datos_listar.png" style="width: 486px; height: 214px;" alt="" /><br />
+            </div>
+            <br />
+</td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+        <a name="premallado"><span class="Titulo_2">Ön-Ağların Düzenlenmesi</span><br />
+      <br />
+      </a><img style="width: 338px; height: 51px;" alt="" src="Imagenes/dialogo_topo_premallado.png" /><br />
+
+      <br />
+
+&nbsp;TOPOGRAFYA ortamı üç tür ağ arasında ayrım yapar:<br />
+
+      
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Ön-ağlar</span>: Giriş veri dosyasında tanımlanmış olanlardır; ya bir .top/.toc dosyası (anahtarlar ve kodlar), bir .ttp dosyası (geçici topografya) aracılığıyla ya da EDM'den dönüşümden geldiği ve her orijinal köşe noktasına ve sembole, anahtarı geldiği tip olacak olan bir topografik düğüm noktası atandığı için. Camgöbeği renginde temsil edilirler.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Kullanıcı veya manuel ağlar</span>: Kullanıcının interaktif olarak ekledikleridir ve mevcut çizgi tipine karşılık gelen renkle temsil edilirler.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Otomatik veya üçgenleme ağları</span>: Programın üçgenleme algoritmasıyla oluşturduklarıdır ve eflatun renktedirler.<br />
+
+
+Ön-ağların düzenlenmesi, <span style="font-weight: bold;">[Topografya] &#8594; [Ön-Ağ]</span> menüsünde gruplandırılmış aşağıdaki seçeneklerden oluşur:</li>
+      
+      
+      </ul>
+
+
+       <img style="width: 150px; height: 168px;" alt="" src="Imagenes/menu_premallado.png" align="right" /><br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+      <br />
+      <br />
+<br />
+
+&nbsp;<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><img src="Imagenes/icono_topo_generar.png" style="width: 26px; height: 26px;" alt="" /> <a name="generar_pre"><span style="font-weight: bold;">Dönüşümü Yeniden Yükle<br />
+</span></a></td>
+            <td style="vertical-align: top;">&nbsp;Ön-ağ ağlarını yeniden oluşturur, ancak bunları kullanıcı ağlarına dönüştürür. Bu oluşturma, yüklemeden yapılan kadar mükemmel olmayabilir, çünkü filtrelenmiş tekrar eden noktalar nedeniyle bilgilerin bir kısmı kaybolmuş olabilir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_crear_polilinea.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="crear_x_pol">Polilineden Oluştur</a></td>
+            <td style="vertical-align: top;">Bir polilineden yola çıkarak ve çizgi ile topografya noktaları arasında izin verilen bir tolerans olan bir mesafe belirterek bir ön-ağ yapmayı sağlar.<br />
+
+            <br />
+
+&nbsp;Süreç, noktaların çizgiye olan izdüşümlerini ve mesafelerini hesaplar, nokta vektörünü sıralar ve bu noktaları birleştirir.<br />
+
+            <br />
+
+&nbsp;Bu prosedür, kodları olmayan noktalarla ön-ağ yapılması gerektiğinde kullanışlı olurdu, bu şekilde çizginin izini takip ederek belirtilen mesafeden daha yakın olan noktaları birleştirir.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_premall_polilinea.png" style="width: 384px; height: 267px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_borrar_prem.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="borrar_pre">Tümünü Sil<br />
+</a></td>
+            <td style="vertical-align: top;">Tüm ön-ağ ağlarını siler.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 26px; height: 26px;" alt="" src="Imagenes/topo_icono_borrar_vent.png" /> <span style="font-weight: bold;"><a name="borrar_vent">Pencere İle Sil</a></span><a name="borrar_vent"><br />
+            </a></td>
+            <td style="vertical-align: top;">Yaptığımız pencerenin içinde veya kısmen içinde olan tüm ağları siler. Farenin sol tuşuna tıklayarak. <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_copiar_lin.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="copiar_lin_pre">Çizgileri Kopyala</a></td>
+            <td style="vertical-align: top;">Veri dosyasında önceden tanımlanmış çizgileri, veri noktalarının sahip olduğu sıra ve çizgi tipi kodlarını kullanarak grafik düzenleme sistemine kopyalar.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_cod_y_com.png" style="width: 26px; height: 26px;" alt="" /> <a name="dicc_codigos">Kodlar ve Komutlar<br />
+</a></td>
+            <td style="vertical-align: top;">Bu seçeneğe tıklandığında, .toc dosyalarından gelen noktalarla ilişkili metinlerin işlenmesi için bir pencere açılır. Tüm bu seçenekler, <span style="font-weight: bold;">[Kaydet]</span> ve <span style="font-weight: bold;">[Yükle]</span> seçenekleriyle kaydedilebilen veya yüklenebilen bir kod sözlüğü oluşturur. Kod sözlüğü dosyalarının da .cod uzantısı vardır (dolayısıyla, .dxf/.dwg ve .dgn dosyalarını içe aktarma sözlükleriyle karıştırılmamalıdır).<br />
+            <br />
+Bu .cod dosyaları projemizin kütüphanesine veya varsayılan olarak ISPOL klasörünün kütüphanesine kaydedilebilir veya yüklenebilir.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_dicc_cod_topo.png" style="width: 543px; height: 264px;" alt="" /><br />
+            </div>
+            <br />
+Bu ekranda, topografik düğüm noktalarının sahip olduğu farklı metin <span style="font-weight: bold;">kodları</span> görünür ve her metin kodu için kullanıcı, bunun bir <span style="font-weight: bold;">çizgi</span> mi yoksa tekil bir nokta mı olduğunu <img src="Imagenes/linea_punto.png" style="width: 80px; height: 20px;" alt="" /> belirleyebilir. <br />
+            <br />
+Eğer yüklenen dosya bir &nbsp;<span class="Archivo">.toc</span> ise, bu ekran dosyanın içerdiği kodlarla görünür. Bir kod, çizgi başlangıç ve bitiş komutlarıyla görünürse çizgi olarak kabul edilir, aksi takdirde nokta olarak kabul edilir.<br />
+            <br />
+<span style="font-weight: bold;">Kodlar</span>, &nbsp;<img src="Imagenes/icono_topo_ord_alfab.png" style="width: 18px; height: 19px;" alt="" /> [<span style="font-weight: bold;">Alfabetik Sırala</span>] butonu ile alfabetik olarak listelenebilir. &nbsp;<img src="Imagenes/icono_topo_buscar.png" style="width: 17px; height: 20px;" alt="" /> <span style="font-weight: bold;">[Bul]</span> butonu, sözlükte bir kodu hızlıca bulmayı sağlar. Ayrıca, her kod, yanında görünen &nbsp;<img src="Imagenes/icono_topo_tic.png" style="width: 20px; height: 20px;" alt="" /> kutucuğunun işaretli olup olmamasına bağlı olarak etkin veya değil olabilir. Tüm kodları etkinleştirmek ve devre dışı bırakmak mümkündür. Devre dışı bırakılan kodlar, zincirleme veya yorumlama işlemlerine katılmaz.<br />
+            <br />
+Daha sonra &nbsp;<span class="Archivo">.cod</span> dosyası olarak kaydedebileceğimiz &nbsp;<img src="Imagenes/icono_anadir_codigos.png" style="width: 15px; height: 15px;" alt="" /> komutundan veri ekleyerek kendi sözlüğümüzü oluşturabiliriz.<br />
+            <br />
+<img src="Imagenes/icono_topo_borrar_codigos.png" style="width: 15px; height: 15px;" alt="" /> simgesinden, yüklü olan sözlüğün verileri silinebilir.<br />
+<br />
+Sözlük yapılandırıldıktan sonra, onu kullanan belirli işlemleri yapma zamanı gelmiştir; bunlar arasından şunlar bulunur:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Kodları Yeniden Yükle</span>: Program, daha sonra eklenmiş olabilecek yeni topografik nokta kodlarını kod listesine eklemeyi sağlar.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Hızlı Doldurma</span>: Kod sözlüğünde aynı nesne türünü ilişkilendirmeyi sağlar. Ön ek ve tip belirtildiğinde, o tip sözlüğün o ön ekle başlayan tüm girişlerine doldurulur. Bu, arazide aynı nesneyi temsil eden ve örneğin ARB01, ARB02,..., ARB0n şeklinde kodlanmış noktalar alındığında kullanışlı olur; öyle ki, hepsinin ortak ön eki (ARB) ve temsil edilmek istenen sembol tipi (örneğin 9) belirtildiğinde, o koda sahip tüm noktaları o sembol tipiyle temsil eder.</li>
+            </ul>
+
+
+            <br />
+
+            <div style="text-align: center;"><img src="Imagenes/topo_rell_rapido_dialogo.png" style="width: 159px; height: 197px;" alt="" /></div>
+            <ul>
+<li><span style="font-weight: bold;">Kodu Koda Dönüştür</span>: Yüklenen noktaların kodunu, sözlükte tanımladığımız çizgi veya sembol tipine göre değiştirir. Noktaların metin alanında sözlüğün kodunu taşıması gerekir.</li>
+            </ul>
+
+
+            <ul>
+<ul><li><span style="font-weight: bold;">Tüm Kodlardan</span>: Her topografik düğüm noktasının kodunu, sözlüğümüzde atanan tipe, Çizgi veya Nokta olmasına bakılmaksızın dönüştürür.</li><li><span style="font-weight: bold;">Sadece "Nokta" Olarak Tanımlanan Kodlardan</span>: Her topografik düğüm noktasının kodunu, sözlüğümüzde atanan tipe dönüştürür, ancak sadece Nokta olarak tanımlanmış olanları.<br />
+    </li></ul>
+            </ul>
+
+
+            <div style="text-align: center;"><img src="Imagenes/topo_codigo_aclave_dialogo.png" style="width: 200px; height: 109px;" alt="" /></div>
+
+            <ul>
+              </ul>
+            <ul>
+              <li><span style="font-weight: bold;">EDM Oluştur</span>: Zincirlenmiş ağları çizgilere ve tekil düğüm noktalarını veya noktaları, sözlükte belirlediğimiz ağ ve düğüm noktası tipiyle sembollere dönüştürür. Ayrıca, zincirlenmiş ağlarda semboller de oluşturur; eğer ilgimizi çekmezse, bunları <a href="EDM_control_entidades.html#control_simbolos">sembol tipleri kontrolü</a> menüsünden devre dışı bırakabiliriz.</li>
+            </ul>
+            <div style="margin-left: 40px;">Ağlardan ve düğüm noktalarından çizgilere ve sembollere geçmenin başka bir yolu da Topografya &gt; Dönüşüm &gt; <a href="EDM_topografia.html#conversiones">Haritaya Dönüştür (TOP -> EDM)</a> açılır menüsüne gitmektir.<br />
+            </div>
+            <ul>
+              <li><span style="font-weight: bold;">Zincirle</span>: Aynı koda sahip noktaları birleştirir. Program, sadece belirli bir koda sahip noktaları mı birleştirmek istediğinizi, tüm kodları mı dikkate almak istediğinizi veya bir kodu hariç tutmak mı istediğinizi seçmenize olanak tanır.</li>
+
+            
+            </ul>
+
+
+
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_encadenar.png" style="width: 166px; height: 109px;" alt="" /><br />
+            </div>
+
+            <ul>
+              </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Sil</span>: Tüm ağları silmeyi sağlar.<br />
+              </li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Yorumla</span>: Aynı koda sahip noktaları birleştirir, önceden ağları kontrol eder ve komutları (Zincir Başlangıcı B, Zincir Sonu S, Kurp Başlangıcı KB...) yorumlar.<br />
+
+
+                <br />
+
+
+Hem <span style="font-weight: bold;">zincirleme</span> hem de <span style="font-weight: bold;">yorumla</span> işleminde, tekil noktalar söz konusu olduğunda program bunları zincirlemeye çalışmaz. Çizgi durumunda, zincirlemeye çalışır ve eğer topografya kayan menüsündeki ağları kendi renkleriyle çizme seçeneği etkinse, ağlarını o çizgi tipinde gösterir.<br />
+
+
+              </li>
+
+            
+            </ul>
+
+
+
+            <div style="text-align: center;"><img src="Imagenes/topo_interpretar_col_mall.png" style="width: 329px; height: 60px;" alt="" /><br />
+            </div><br />
+<ul>
+              <li><span style="font-weight: bold;">Hayali Noktaları Sil</span>: Programın yayları ayrıklaştırmak için oluşturduğu ancak veri topografik noktaları olmayan hayali noktaları siler.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Maksimum Yay-Kiriş Mesafesi</span>: Yayların ne kadar hassasiyetle ayrıklaştırılacağına atıfta bulunur.</li>
+            </ul>
+
+
+
+Ayrıca, <span style="font-weight: bold;">Kesişimlere İzin Ver (üçgenleme yapma)</span> seçeneği işaretlenmişse, program .toc dosyasını yorumlarken kesişen ağları silmez. Bu seçenek, .toc'tan elde edilen verilerin üçgenlenmeyeceği, doğrudan bir .edm/.edb dosyasına aktarılacağı durumlarda kullanışlıdır.<br />
+
+            <br /><span style="font-weight: bold; font-style: italic;">TOC Komutlarını Yapılandır</span> <span style="font-weight: bold; font-style: italic;"></span>:<br />
+            <br />
+            <img src="Imagenes/comandos_toc.png" style="width: 142px; height: 256px;" alt="" align="right" hspace="6" />.toc dosyaları aşağıdaki komutları içerebilir:<br />
+
+            <br />
+
+B: Bir zincirin Başlangıç Noktası.<br />
+
+            <br />
+
+S: Bir zincirin Son Noktası. <br />
+            <br />
+
+K: Düz Kapanış.<br />
+&nbsp;
+            <br />
+
+KB: Bir kurbun Başlangıç Noktası.<br />
+
+            <br />
+
+KO: Bir kurp üzerindeki Ara Nokta.<br />
+&nbsp;
+            <br />
+
+KS: Bir kurbun Son Noktası.<br />
+&nbsp;
+            <br />
+
+KK: Bir zincirin ilk noktasında kapanış noktası. Yayın oluşturulması için program KK komutunun noktasını (ör. i), i'ye en yakın önceki aynı koda sahip noktayı ve zincirin başlangıç noktasını kullanır. Yayın oluşturulmasında, yayların ayrıklaştırılması için hassasiyet değerine göre gerekli olan hayali noktaları oluşturur.<br />
+
+            <br />
+
+HN: Hayali Nokta (program tarafından bir kurp çizmek için oluşturulur).<br />
+&nbsp;
+            <br />
+
+D: Dikdörtgen.<br />
+            <br />
+Kullanıcı, çeşitli seçeneklere (zincir başlangıcı, zincir sonu,...) karşılık gelen komutları belirleyebilir veya programın önerdiklerini kabul edebilir.<br />
+
+            <br />
+
+&nbsp;Bu komutlar, programın diğer oturumlarında kullanılmak üzere kütüphaneye ( .cmn uzantılı bir dosyada) kaydedilebilir.<br />
+            <br />
+Not: Noktaların, ağların numaralandırmasını dinamik olarak görmenize veya bir harita dosyasına (<span class="Archivo">.edm</span>) dönüştürmenize yardımcı olmak için farenin sağ tuşunu kullanmak oldukça kullanışlıdır.<br />
+            <br />
+Bu dönüşümü yaparken, eğer topografya düğüm noktalarının kod sözlüğünde belirlenen sembolle noktalara geçmesini istiyorsak, ekteki şekilde görüldüğü gibi <span style="font-weight: bold;">Topografik noktanın kodunu tip olarak kullan</span> kutucuğunu etkinleştirmemiz gerektiğini belirtmek isteriz:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_aclaracion_cod.png" style="width: 546px; height: 203px;" alt="" /><br />
+            </div>
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_cambiar_tipo.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="cambiar_tipo_pre">Ağ Sınıfını Değiştir<br />
+            </a></td>
+            <td style="vertical-align: top;">Bu araç sayesinde ön-ağ, kullanıcı veya otomatik ağların tiplerini değiştirebiliriz.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 384px; height: 330px;" alt="" src="Imagenes/topo_dialogo_camb_tipo.png" /><br />
+            </div>
+            <br />
+Seçilen ağlar, <span style="font-weight: bold;">Ağları Sil</span> kutucuğuna basılarak silinebilir.<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><img style="width: 27px; height: 25px;" alt="" src="Imagenes/icono_topo_pas_atr.png" /><span style="font-weight: bold;"><a name="pasar_atributos">Öznitelikleri Aktar</a></span><a name="pasar_atributos"><br />
+            </a></td>
+            <td style="vertical-align: top;">Sınıfını ve tipini almak için bir ağ ve bu sınıf ve tipi ona koymak için başka bir ağ olmak üzere tekrar tekrar iki ağ ister.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 28px; height: 26px;" alt="" src="Imagenes/pasar_atributos_v.png" /><span style="font-weight: bold;"><a name="pasar_atributos_a_varias_mallas">Öznitelikleri Birden Fazla Ağa Aktar</a></span><a name="pasar_atributos_a_varias_mallas"><br />
+            </a></td>
+            <td style="vertical-align: top;">Sınıfını ve tipini almak için bir ağ ve daha sonra bu öznitelikleri ona koymak için ardışık ağlar ister.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img style="width: 34px; height: 32px;" alt="" src="Imagenes/icono_corte.png" /> Kesit</span><br />
+            </td>
+            <td style="vertical-align: top;"><span style="color: rgb(0, 0, 0); font-family: Arial,Helvetica,sans-serif; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Bu seçenek, kesiti yapmak için kullanıcıdan bir bant ister ve ilgili profili grafik penceresinin sağ alt kısmında gösterir.</span></td>
+          </tr>
+
+
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+   <a name="usuario"><span class="Titulo_2">Kullanıcı Ağlarının Düzenlenmesi</span><br />
+      <br />
+      </a><img style="width: 340px; height: 56px;" alt="" src="Imagenes/dialogo_topo_mallas_us.png" /><br />
+
+      <br />
+
+      <img style="width: 156px; height: 204px;" alt="" src="Imagenes/menu_mallas_usuario.png" align="right" hspace="5" />Kullanıcı ağları özel bir renkle temsil edilebilir. Bunun için, mevcut çizgi tipini istenen renge sahip bir tiple değiştirmek ve <span style="font-weight: bold;">Ağ Rengi</span>'ni etkin bırakmak yeterlidir. Bu düğme devre dışı bırakılırsa, kullanıcı ağları sarı renkte çizilir.<br />
+
+      <br />
+
+Kullanıcı ağlarıyla ilgili olanaklara gelince, ISTRAM®/ISPOL® AĞLAR menüsünde gruplandırılmış aşağıdaki seçenekleri sunar:<br />
+
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <br />
+<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 110px; font-weight: bold;"><img src="Imagenes/icono_topo_mallas_anad.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="anadir_mall">Ekle</a></td>
+            <td style="vertical-align: top;">Ön-ağ ağlarına, mevcut diğer ön-ağ veya kullanıcı ağlarıyla kesişmedikleri sürece istenildiği kadar manuel olarak eklenebilir. Eğer zaten bir üçgenleme varsa ve dolayısıyla otomatik ağlar (eflatun renkli) mevcutsa, hala ağlar eklenebilir ve bunlar otomatik olanları kesebilir, ancak ön-ağ veya kullanıcı ağlarını kesemez. Zaten mevcut bir otomatik ağla çakışan bir kullanıcı ağı eklemek, sadece onun kullanıcı tipine dönüştürülmesi anlamına gelir.<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><a name="encadenar_mall">Zincirle</a></td>
+            <td style="vertical-align: top;">Üç seçenek:<br />
+            <ul>
+              <li><img src="Imagenes/icono_topo_enc_uno_a_uno.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<span style="font-weight: bold;">Tek Tek Zincirle</span>: Ekle seçeneğine benzer, ancak zincirlenmiş ağlar oluşturma avantajına sahiptir. Bu seçenekle, topografik nokta olmayan bir yere tıklanırsa, ağı oluşturabilmek için onu oluşturur.<br />
+</li>
+            </ul>
+            <ul>
+              <li><img src="Imagenes/icono_topo_enc_edm.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<span style="font-weight: bold;">EDM Çizgileri Oluşturarak Zincirle</span>: Bu seçenek Zincirle seçeneğine benzer, ancak ayrıca ağların altına mevcut tipte bir EDM çizgisi oluşturur.<br />
+              </li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;"><img src="Imagenes/icono_topo_encad.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Zincirle</span>: Aşağıdaki seçeneklerle zincirleme yapabileceğim bir iletişim kutusu belirir:</li>
+            </ul>
+            <ul>
+              <ul>
+                <li><span style="font-weight: bold;">Tümü</span>: Nokta numarasına göre ağlarla birleştirir.</li>
+                <li><span style="font-weight: bold;">Çizgi Koduna Göre Birleştir</span>: Koda göre ağları zincirler; belirli bir <span style="font-weight: bold;">kod</span>, <span style="font-weight: bold;">tüm</span> kodlar veya <span style="font-weight: bold;">hariç tutulacak bir kod</span> seçilebilir.</li>
+                <li><span style="font-weight: bold;">Klavyeden Birleştir</span>: Programın hangi düğüm noktasından hangi düğüm noktasına numaralarını kullanarak zincirleme yapmak istediğinizi belirtmenizi sağlar.</li>
+                <li><span style="font-weight: bold;">Aralık</span>: İletişim kutusunda belirttiğimiz değere göre zincirleme yapılır. Her düğüm noktası, her 2 düğüm noktası, vb...<br />
+                </li>
+              </ul>
+            </ul>
+            <div style="text-align: center;"><img src="Imagenes/topo_dialogo_encad.png" style="width: 234px; height: 117px;" alt="" /><br />
+            </div>
+            <br />
+Bu seçenekleri kullanırken <span style="font-weight: bold;">[ESC]</span> tuşuna basıldığında, mevcut zincir kesilir, ancak seçenekten çıkılmaz ve yeni bir zincir başlatılabilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_borr_banda.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="borrar_banda">Bant ile Sil</a></td>
+            <td style="vertical-align: top;">Herhangi bir türdeki ağları ve onlara dayanan üçgenleri (varsa) bant ile silmeyi sağlar. Bu alan üçgenlerden boş kalır ve oluşturulan boşluk yeniden üçgenlenemez. Boşlukta eşyükselti eğrileri oluşturulmaz.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 26px; height: 26px;" alt="" src="Imagenes/topo_icono_borrar_vent.png" /> <a name="borrar_vent_m"><span style="font-weight: bold;">Pencere İle Sil</span><br />
+            </a></td>
+            <td style="vertical-align: top;">Yaptığımız pencerenin içinde veya kısmen içinde olan tüm ağları siler. Farenin sol tuşuna tıklayarak.</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_cort_long.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="cortar_long_mall">Uzunluğa Göre Kes</a></td>
+            <td style="vertical-align: top;">Bu seçenek, verilen değerden daha büyük bir uzunluğa sahip olan ağlara nokta enterpole eder. Oluşturulan noktalar için üç X, Y, Z koordinatı da enterpole edilir ve bir ağda oluşturulan noktalar, verilen uzunluğa eşit veya daha küçük bir mesafede eşit aralıklı olur.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_cambiar_tipo_malla.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="cambiar_tipo_mall">Ağ Sınıfını Değiştir</a></span><a name="cambiar_tipo_mall"><br />
+            </a></td>
+            <td style="vertical-align: top;">Bu araç sayesinde ön-ağ, kullanıcı veya otomatik ağların tiplerini değiştirebiliriz.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 384px; height: 330px;" alt="" src="Imagenes/topo_dialogo_camb_tipo.png" /><br />
+            </div>
+            <br />
+Seçilen ağlar, <span style="font-weight: bold;">Ağları Sil</span> kutucuğuna basılarak silinebilir.<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><img style="width: 27px; height: 25px;" alt="" src="Imagenes/icono_topo_pas_atr.png" /><span style="font-weight: bold;"><a name="pasar_atributos_m">Öznitelikleri Aktar</a></span></td>
+            <td style="vertical-align: top;">Sınıfını ve tipini almak için bir ağ ve bu sınıf ve tipi ona koymak için başka bir ağ olmak üzere tekrar tekrar iki ağ ister.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 28px; height: 26px;" alt="" src="Imagenes/pasar_atributos_v.png" /><span style="font-weight: bold;"><a name="pasar_atributos_a_varias_mallas_m">Öznitelikleri Birden Fazla Ağa Aktar</a></span></td>
+            <td style="vertical-align: top;">Sınıfını ve tipini almak için bir ağ ve daha sonra bu öznitelikleri ona koymak için ardışık ağlar ister.</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img style="width: 34px; height: 32px;" alt="" src="Imagenes/icono_corte.png" /> Kesit</span><br />
+            </td>
+            <td style="vertical-align: top;"><span style="color: rgb(0, 0, 0); font-family: Arial,Helvetica,sans-serif; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Bu seçenek, kesiti yapmak için kullanıcıdan bir bant ister ve ilgili profili grafik penceresinin sağ alt kısmında gösterir.</span></td>
+          </tr>
+
+
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+      <a name="contornos"><span class="Titulo_2">Kontur, Kapalı Sınır ve Adacıkların Düzenlenmesi </span><br />
+      <br />
+      </a><img style="width: 339px; height: 57px;" alt="" src="Imagenes/dialogo_topo_contornos.png" /><br />
+
+      <br />
+
+Hem kapalı sınırlar hem de adacıklar, içlerinde topografik noktalar içerebilen veya içermeyen kapalı alanlardır. Fark, üçgenleme yaparken programın sadece kapalı sınırların içindeki noktaları dikkate alması, adacıkların içindeki noktaları ise göz ardı etmesidir.<br />
+
+      <br />
+
+      <img src="Imagenes/ejemplo_cierres_islas.png" style="width: 265px; height: 208px;" alt="" align="right" hspace="6" />Burada bahsedilen kapalı alanların harita ortamına özgü olduğunu, dolayısıyla EDM kapalı alanlarıyla karıştırılmaması gerektiğini belirtmek gerekir; ancak, elbette, bunlardan topografik kapalı alanlar elde etmek mümkündür. Üçgenleme yaparken, program aşağıdaki adımları gerçekleştirir:<br />
+
+      
+      
+      <ol>
+
+
+        <li>Eğer aktif kapalı sınır veya adacık yoksa, mevcut ön-ağ ve kullanıcı ağlarına saygı duyarak tüm nokta bulutunu üçgenler.</li>
+        <li>Eğer sadece aktif kapalı sınırlar varsa, o zaman sadece kapalı sınırların içinde üçgenleme yapar.</li>
+        <li>Eğer sadece aktif adacıklar varsa, o zaman adacıkların içi hariç her yeri üçgenler.</li>
+        <li>Eğer hem aktif adacıklar hem de kapalı sınırlar varsa, o zaman kapalı sınırlara ve kapalı sınırların içindeki adacıklara saygı duyar (resimde gösterildiği gibi).</li>
+      
+      
+      </ol>
+
+
+            <br />
+
+      <img src="Imagenes/cierres_islas_activar.png" style="width: 179px; height: 32px;" alt="" align="left" hspace="6" />Kapalı sınırların ve adacıkların etkinleştirilmesi ve devre dışı bırakılması menüde belirtilir; öyle ki, değiştirilebilir butonlara basılarak kapalı sınırların ve adacıkların etkinleştirilip etkinleştirilmediği belirtilir. Açıkçası, hem kapalı sınırlar hem de adacıklar, oluşturulduktan sonra üçgenlemeye dahil edilir ve ayrıca .ttp dosyalarına kaydedilir.<br />
+
+      <br />
+
+Kapalı sınırlar ve adacıklarla çalışmak, örneğin bir işin ilerlemesine göre bir üçgenlemeyi güncellemeye olanak tanıdığı için, üçgenlemelerle çalışırken çok fazla esneklik sağlar.<br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Kapalı Sınır ve Adacık Oluşturma ve Düzenleme</span><br />
+
+      <br />
+
+Kapalı sınırlar ve adacıklar oluşturmak ve onlarla çalışmak için seçenekler şunlardır:<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 110px; font-weight: bold;"><a name="crear_ci">Oluştur</a></td>
+            <td style="vertical-align: top;">Daha önce gördüğümüz gibi aktif olan seçeneğe bağlı olarak kapalı sınırları veya adacıkları oluşturmak için aşağıdaki seçenekleri ayırt ederiz:<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierre_crear_ppuntos.png" style="width: 26px; height: 26px;" alt="" /> /&nbsp;<img src="Imagenes/icono_topo_isla_puntos.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;"><a name="crear_ci_puntos">Noktalardan Kapalı Sınır / Adacık Oluştur</a></span><a name="crear_ci_puntos">: Ekrandaki topografik noktalardan her birine tıklayarak kapalı sınırı oluşturur.<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierres_linea_cerr.png" style="width: 26px; height: 26px;" alt="" /> /&nbsp;<img src="Imagenes/icono_topo_isla_lcerrada.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;"></span></a><a name="crear_ci_lin_cerr"><span style="font-weight: bold;">Kapalı Çizgiden Kapalı Sınır / Adacık Oluştur</span>: Bu seçenek, bir EDM haritasındaki kapalı bir çizgiye dayanarak bir kapalı sınır/adacık oluşturur. Bu seçeneği kullanırken, program EDM çizgisini seçmenizi ve topografik noktaların aranacağı bir tolerans aralığı belirtmenizi ister (algoritma toleranstan bağımsız olarak en yakın noktayı kullandığı için, fazla büyük bir değer kullanmak tavsiye edilir). Ayrıca, çizginin köşe noktası olmasalar bile, çizginin segmentleri üzerinde bulunan tüm topografya noktaları da kapalı sınırın köşe noktaları olarak eklenir.<br />
+
+            <br />
+
+Referans olarak kullanılan EDM çizgisi, kapalı sınır/adacığın sahip olması amaçlanan nokta sayısından daha fazla veya eşit sayıda noktaya sahip olmalıdır (her topografya noktasının yakınında bir köşe noktası). Örneğin, bir güzergah projesini üçgenlemek için, projenin kamulaştırma sınırı çizgisi ve 5 metreden fazla bir tolerans kullanılabilir.<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierre_por_tipol.png" style="width: 26px; height: 26px;" alt="" /> /&nbsp;<img src="Imagenes/icono_topo_isla_tipol.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;"></span></a><a name="crear_ci_tipo"><span style="font-weight: bold;">Çizgi Tipinden Kapalı Sınır / Adacık Oluştur</span>: Bu seçenekle bir çizgi tipi seçilir ve program otomatik olarak o tipteki tüm çizgileri arar ve bulunan her bir çizgiyle bir kapalı sınır/adacık oluşturur. Çok sayıda kapalı sınır veya adacık oluşturulması gerektiğinde çok uygundur.<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierres_modelo.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;">/&nbsp;<img src="Imagenes/icono_topo_isla_modelo.png" style="width: 26px; height: 26px;" alt="" /> </span></a><a name="crear_ci_mod"><span style="font-weight: bold;">Modelden Kapalı Sınır / Adacık Oluştur</span>: Bu seçenek, kullanıcıdan kapalı sınırlara veya adacıklara dönüştürülmesini istediği kapalı çizgilerin bulunduğu modeli ister. Program, o modeldeki tüm kapalı çizgileri arar ve ilgili kapalı sınırları/adacıkları oluşturur. Bu seçenek, aynı anda çok sayıda kapalı sınır veya adacık oluşturmak için de çok kullanışlıdır.<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierres_malla.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;">/&nbsp;<img src="Imagenes/icono_topo_isla_malla.png" style="width: 26px; height: 26px;" alt="" /> </span></a><a name="crear_ci_mall"><span style="font-weight: bold;">Ağdan Kapalı Sınır / Adacık Oluştur</span>: Program bir ağ seçer, bunu dahili olarak bir çizgiye dönüştürür ve verilen bir toleransla en yakın topografik noktayı arayarak bu noktalardan bir kapalı sınır oluşturur. Bu ağ, gelecekteki kapalı sınırın veya adacığın kapatılabilmesi için en az iki ardışık ağ segmentinden oluşan aynı tipte olmalıdır.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_cierres_borde_triang.png" style="width: 26px; height: 26px;" alt="" />&nbsp;</span></a><a name="crear_ci_tri"><span style="font-weight: bold;">Üçgen Kenarından Oluştur</span>: Zaten tanımlanmış olan üçgenlemenin kenarından kapalı sınırı oluşturur.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_cierres_convexo.png" style="width: 26px; height: 26px;" alt="" />&nbsp;</span></a><a name="crear_ci_conv"><span style="font-weight: bold;">Dışbükey Oluştur</span>: Nokta bulutunun dışbükey kapalı sınırını oluşturur (normal bir üçgenleme yapıldığında oluşacak kenara eşdeğer olurdu). Bu seçenek sadece kapalı sınırlara özeldir.<br />
+            <br />
+            </a></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><a name="ci_borrar">Sil</a></td>
+            <td style="vertical-align: top;">Aşağıdaki seçenekleri ayırt ederiz:<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_borrar_cierre.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Sil</span>: Kullanıcı tarafından seçilen bir kapalı sınırı/adacığı siler.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_borrartod_cierre.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Tümünü Sil</span>: Tüm kapalı sınırları/adacıkları siler.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="ci_modificar">Değiştir / Tipi Değiştir</a></span><a name="ci_modificar"><br />
+            </a></td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_modif_cierre.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Değiştir</span>: Zaten oluşturulmuş bir kapalı sınırı veya adacığı, yeni noktalar ekleyerek, noktaları silerek veya ona nokta ekleyerek değiştirebileceğim.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_notificacion_modif_cierre.png" style="width: 338px; height: 51px;" alt="" /><br />
+            </div>
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_cambiar_tipo_cierre.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Tipi Değiştir</span>: Bir kapalı sınırı bir adacığa ve tersini geçirmeyi sağlar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_limpiar_islas.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="ci_limpiar">Adacıkları Temizle</a></span><a name="ci_limpiar"><br />
+            </a></td>
+            <td style="vertical-align: top;">Üçgenleme yapıldıktan sonra, adacıkların iç üçgenlerini temizler. Üçgenleme sırasında, Adacıklar seçeneği açıkça etkinleştirilmedikçe, adacıkların temizlenmesi otomatik olarak yapılmaz. Bu seçenek sadece adacıklara özeldir.<br />
+Doğru bir temizlik için adacıkların ilgili ağlardan geçmesi gerekir, mevcut ağları kesemezler. Adacıkları temizlemeden önce, adacığı kesebilecek ağları silebilmek için noktaların, ağların, üçgenlerin, adacıkların ve kapalı sınırların bir <a href="EDM_topografia.html#herramientas">kontrolünü</a> yapmanız önerilir.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_volcar_contor.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="ci_volcar">Konturları EDM'ye Aktar</a></span><a name="ci_volcar"><br />
+            </a></td>
+            <td style="vertical-align: top;">Kapalı sınırları/adacıkları EDM çizgilerine dönüştürür. </td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+<span style="font-weight: bold;">Düzenlerken ağları kontrol et</span> kutucuğu aracılığıyla kapalı sınırlar/adacıklar, kapalı sınırlara nokta ekleme veya çıkarma işlevlerinde ağlarla kesişim kontrolünü devre dışı bırakmayı sağlar. Bu, kapalı sınırları daha özgürce düzenlemeyi ve tamamlamayı sağlar (geçici olarak kapalı sınırlar ve ağlar kesişebilir), ancak düzenlemenin sonunda seçeneği yeniden etkinleştirmek ve ağlar ile kapalı sınırların bir kontrolünü yapmak tavsiye edilir.<br />
+
+      <br />
+
+      <a name="automatica"><span class="Titulo_2">Otomatik Ağların Düzenlenmesi. Üçgenleme</span><br />
+      <br />
+Aşağıda, programın üçgenlemeler oluşturma ve düzenleme konusundaki olanakları açıklanmaktadır. Hepsi <span style="font-weight: bold;">[Topografya] &#8594; [Üçgenler]</span> açılır menüsü altında gruplandırılmıştır:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img style="width: 346px; height: 57px;" alt="" src="Imagenes/topo_triang_dialogo.png" /><br />
+      </div>
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Üçgenleme</td>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_triangulacion.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="triangulacion"><span style="font-weight: bold;">Üçgenleme</span>: Mevcut ön-ağ ve kullanıcı ağlarını dikkate alarak üçgenleme yapan çok verimli bir algoritmadır. Program, dikkate alınacak maksimum nokta sayısı konusunda herhangi bir engel koymaz, sadece üçgenlemenin yürütüldüğü makine ile sınırlıdır. Bu nedenle, milyonlarca nokta söz konusu olduğunda bilgisayarın RAM belleğini maksimum düzeyde boşaltmak tavsiye edilir.<br />
+            <br />
+            </a><div style="text-align: center;"><img src="Imagenes/topo_dialogo_triang.png" style="width: 177px; height: 147px;" alt="" /><br />
+
+            </div>
+            <br />
+
+&nbsp;Program, kot farklılıklarını görsel olarak ayırt etmek için farklı renklerde dolgular kullanarak üçgenlemeyi oluşturur. Program, düşük kotlar için sıcak renkler ve yüksek kotlar için soğuk renkler kullanır. Bu görselleştirmeyi devre dışı bırakmak için, <span style="font-weight: bold;">Üçgen Rengi</span> kutucuğunu devre dışı bırakmak ve bu dolguların kaybolması için yeniden çizmek yeterlidir. Üzerine yeniden bir aktivasyon yapılması, tekrar görünmelerine neden olacaktır.<br />
+
+            <br />
+
+            <div style="text-align: center;"><img src="Imagenes/ejemplo_triang.png" style="width: 320px; height: 304px;" alt="" /><br />
+
+            </div>
+            <br />
+
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_completar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;</span><a name="completar_tri">Tamamla: Bu seçenek, örneğin başka bir dosyadan gelen yeni noktaların eklendiği, daha önce yapılmış bir üçgenlemeye dayanarak yeniden bir üçgenleme yapmayı sağlar.<br />
+            <br />
+            <img src="Imagenes/icono_topo_un_triang.png" style="width: 26px; height: 26px;" alt="" /> </a><a name="un_triang"><span style="font-weight: bold;">Bir Üçgen Oluştur</span>: Üçgenin üç noktasını seçerek bir üçgen oluşturmayı sağlar.<br />
+<br />
+            </a></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="borrar_triang">Üçgenleri Sil</a></span><a name="borrar_triang"><br />
+            </a></td>
+            <td style="vertical-align: top;">Aşağıdaki seçenekleri ayırt ederiz:<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_borrar_uno_triang.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Tek Tek Sil</span>: Fare ile zaten oluşturulmuş üçgenleri tek tek silmeyi sağlar. Bir kullanıcı veya ön-ağ ağını silmeyi gerektirecekse üçgenleri silmez (bu durumlar için Ağlar menüsündeki Ağları Sil veya Bant ile Sil seçeneğini kullanın).<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_borr_mallas.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Ağları Sil</span>: Ağlar alt menüsünde bulunanla aynı seçenektir.<br />
+            <br />
+            <img style="width: 26px; height: 26px;" alt="" src="Imagenes/topo_icono_borrar_vent.png" /> <span style="font-weight: bold;">Pencere İle Sil</span>: Yaptığımız pencerenin içinde veya kısmen içinde olan tüm ağları siler. Farenin sol tuşuna tıklayarak.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_borr_long.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Uzunluğa Göre Sil</span>:&nbsp; Uzunluğu, isteğine yanıt olarak verilen değerden büyük olan otomatik ağları siler. Ayrıca sadece çevreden mi yapacağını sorar, bu durumda sadece dış kenarla veya bir "delik" ile bitişik olan otomatik ağları siler.<br />
+
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_borr_long.png" style="width: 169px; height: 132px;" alt="" /><br />
+            </div>
+            <br /><span style="font-weight: bold;">Minimum üçgen yüksekliği</span>: Bir otomatik ağ analiz edildiğinde (ön-ağ veya kullanıcı tarafından tanımlanmamış) ve bu ağ üçgeni silmek için maksimum uzunluğa sahip değilse, o zaman o ağ ile karşı köşe arasındaki üçgenin yüksekliği de kontrol edilir. Eğer yükseklik tanımlanan minimumu karşılamıyorsa, üçgen silinir.<br />
+Bu, üçgenlemenin çevresinde oluşan bazı sivri üçgenleri de ortadan kaldırmayı sağlar.<br />
+            <br />
+
+
+Ön-ağ ve kullanıcı ağları silinmez, bu nedenle kontrol uzunluğundan daha uzun ağlardan oluşan bir çevre, ön-ağ veya kullanıcı ağlarıyla tamamlanmış ve kapalı bir çevre oluşturan bir çevre, silinmeyecek korumalı bir alan oluşturur.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_borrar_tod.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Tümünü Sil</span>: Tüm otomatik ağları ve tüm üçgenleri yok ederek daha sonra yeniden üçgenleme yapmaya olanak tanır. Ön-ağ ve kullanıcı ağları kalır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="limpiar_tri">Temizle</a></span><a name="limpiar_tri"><br />
+            </a></td>
+            <td style="vertical-align: top;">Aşağıdaki seçenekleri ayırt ederiz:<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_limpiar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Temizle</span>: Eğer üçgenleme yapıldıktan sonra kesişen kullanıcı ağları eklenmişse, bu seçenek oluşturulan ağlarla uyumsuz olan üçgenleri yok etmek için kullanılabilir.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_limpiar_islas.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Adacıkları Temizle</span>: Üçgenleme yapıldıktan sonra, adacıkların iç üçgenlerini siler (dolayısıyla, Konturlar menüsündeki Temizle ile aynı eylemi gerçekleştirir).<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_limp_planos.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Düzlemleri Temizle</span>: Aynı ön-ağ zincirinin içbükey bölgelerinde üç köşe noktasını da aynı zincir üzerine dayayarak oluşabilecek üçgenleri değiştirir. Bu, ön-ağlar eşyükselti eğrilerinden geldiğinde tipiktir; iki farklı zincire dayanmak yerine aynı zincirin noktalarıyla üçgenler oluşur.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_triang_cambiar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="cambiar_tri">Değiştir</a></td>
+            <td style="vertical-align: top;">Ortak bir kenara sahip iki üçgeni, ortak kenarı bu üçgenlerin tanımladığı dörtgenin diğer köşegeni olacak şekilde diğer ikisiyle interaktif olarak değiştirmeyi sağlar.<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_triang_medida.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="medida_tri"><span style="font-weight: bold;">Ölçüm</span></a></td>
+            <td style="vertical-align: top;">Bu seçenek bir karşılaştırma düzleminin kotunu ister ve şunları döndürür:<br />
+            <ul>
+              <li>Üçgenlerin plan projeksiyonunun 2D alanı.</li>
+              <li>Üçgenlerin gerçek yüzeyine karşılık gelen 3D alanı.</li>
+              <li>Üçgenlenmiş yüzey ile karşılaştırma düzlemi arasında kalan prizmanın hacmi.</li>
+              <li>Yüzde ve altmışlık derece cinsinden hesaplanan minimum, maksimum ve ağırlıklı ortalama eğimler.<br />
+              </li>
+
+            </ul>
+İki yüzey arasındaki hacmi hesaplamak istenirse şunlar dikkate alınmalıdır:<br />
+            <ul>
+              <li>İki yüzeyin de aynı kontura sahip olması gerekir.</li>
+              <li>Yarma ile dolgu dengeleneceği için yüzeyler kesişmemelidir.</li>
+              <li>Ayrı ayrı üçgenlenmeli ve aynı karşılaştırma düzlemi kullanılarak ölçülmelidirler.</li>
+              <li>Nihai hacim, iki kısmi hacmin farkıdır.</li>
+            </ul>
+
+
+
+
+
+Bu seçenek ayrıca çalışma klasöründe aşağıdaki formatta topomed.res adında bir dosya oluşturur:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/ejemplo_triang_medida.png" style="width: 509px; height: 280px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="Informacion_de_pendiente"><span style="font-weight: bold;">Eğim Bilgisi</span><br />
+            </a></td>
+            <td style="vertical-align: top;">Eğimi kullanıcı tarafından verilen iki veri arasında olan üçgenlerin alanını, ağırlıklı ortalama eğimini, minimum eğimini ve maksimum eğimini ölçmek için bir yardımcı program. Bilgilerle bir liste oluşturulmasına izin verilir.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 337px; height: 356px;" alt="" src="Imagenes/ttp_informacion_pendiente.png" /><br />
+            </div>
+            <br />
+Maksimum ve/veya minimum eğim kriterleri ile üçgenlerin seçimini seçmeye ve değiştirmeye, ayrıca seçime grafik olarak üçgen eklemeye veya çıkarmaya izin verilir.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="vaciar_tri">Boşalt</a></span><a name="vaciar_tri"><br />
+            </a></td>
+            <td style="vertical-align: top;">İki seçenek:<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_vaciar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Boşalt</span>: Bu seçenek, veriler zaten üçgenlendiğinde çalışır ve seçilen kapalı alanın içindeki/dışındaki tüm noktaları, ağları ve üçgenleri siler.<br />
+            <br />
+Kapalı alanın kenarını kesen üçgenler, kapalı alanın kendi kenarı üzerinde gerekli ağları ve noktaları oluşturarak parçalanır, ancak kullanıcı kenarlar için kapalı alan çizgisinin kotunu mu yoksa üçgenlerin kotunu mu istediğini seçebilir (Sınır Z'sini kullan seçeneğinin işaretli olup olmamasına göre).<br />
+            <br />
+<span style="font-weight: bold;">Ağların orijinal tiplerini koru</span> kutucuğu mevcuttur. Bu seçenek etkinleştirildiğinde, seçilen kapalı alanın dışındaki ağlar tanımlarını değiştirmez ve kullanıcı, ön-ağ veya otomatik ağ olsun, verilen stillerini korur.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 234px; height: 184px;" alt="" src="Imagenes/topo_vaciar.png" /><br />
+            </div>
+<span style="font-weight: bold;">
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_vaciarttp.png" style="width: 26px; height: 26px;" alt="" />&nbsp;SAM'a Göre Boşalt</span>:
+            </span>Mevcut üçgenlemeden, bir .ttp dosyasının kapladığı alanı siler. Bu, Virtual 3D için çakışmayan modeller elde etmeyi sağlar.<span style="font-weight: bold;"><br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_triang_guard_rec.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="guardar_tri">Kapalı Alanlara Göre Kaydet</a></td>
+            <td style="vertical-align: top;">Her seçilen kapalı alan için, içinde bulunan nokta, ağ ve üçgen modeliyle bir .ttp, .dwg/.dxf veya bir .dgn dosyası oluşturmayı sağlar.<br />
+Tüm kapalı alanlar tek bir .dgn dosyasında veya her kapalı alan bir .dgn dosyasında kaydedilebilir.<br />
+.dgn dosyasında oluşturulan nesneler: Shape.<br />
+            <br />
+Kapalı kapalı alanların seçimi, tek tek çizgilere veya çizgi tipine göre olabilir. Oluşturulan dosyaların adı, belirlenen temel ada göre değişir.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_triang_guardar_rec.png" style="width: 384px; height: 267px;" alt="" /><br />
+            </div>
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_triang_filtrar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="fitrar_tri">Filtrele</a></td>
+            <td style="vertical-align: top;">Bir üçgenlemeyi önemli ölçüde 'hafifletmeyi' sağlar, çünkü bu algoritma, üçgenlemenin kenarında olmayan ve bir ön-ağ veya kullanıcı ağına ait olmayan ve kotu ile bu nokta olmadan oluşturulan modeldeki koordinatlarına karşılık gelen kot arasındaki farkın önceden belirlenmiş bir toleransın altında olduğu üçgenleme noktalarını siler. <br />
+            <br />
+İki tür filtrelemeye izin verilir:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Düzlemler</span>: Kotu, kaldırılırsa oluşan yüzeye göreceli olarak önceden belirlenmiş bir değerin altında olan noktaları siler.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Zirveler</span>: Kotu, kaldırılırsa oluşan yüzeye göreceli olarak önceden belirlenmiş bir değerin üzerinde olan noktaları siler.</li>
+            </ul>
+Her iki durumda da, üçgen oluşturan en yakın noktaya olan mesafe verilen bir değerden büyükse nokta silinmez.<br />
+            <ul>
+              <li><span style="font-weight: bold;">Her ikisi</span>: İki filtrelemeyi aynı anda gerçekleştirir.</li>
+            </ul>
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_triang_filtrar.png" style="width: 249px; height: 148px;" alt="" /><br />
+            </div>
+            <br />
+</td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />Topografyadan 3D tel kafes görünümünde topografik noktalar ve ağlar (üçgenlerinkiler dahil) gösterilir.<br /><br />
+
+  <a name="isolineas"><span class="Titulo_2">Eşyükselti Eğrileri Oluşturma. Tesviye Eğrileri</span><br />
+      <br />
+      </a><img style="width: 346px; height: 57px;" alt="" src="Imagenes/dialogo_topo_isolineas.png" /><br />
+
+      <br />
+
+Eşyükselti eğrileri, bir araziyi tanımanın en yaygın yoludur. Ancak, profil hesaplarken ve rölyefin türüne bağlı olarak, bir tür veya başka bir eşyükselti eğrisi oluşturma aralığı belirlemek tavsiye edilebilir. <span style="font-weight: bold;">[Topografya] &#8594; [Eşyükselti Eğrileri]</span> açılır menüsünden aşağıdaki seçenekler mevcuttur:<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_crear_isol.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="crear_iso">Eşyükselti Eğrileri Oluştur</a></span><a name="crear_iso"><br />
+            </a></td>
+            <td style="vertical-align: top;">Üçgen model üzerinde seçilen mesafede eşyükselti eğrileri ve ana eğriler oluşturur.<br />
+            <br />
+Programa eşyükselti eğrileri arasındaki <span style="font-weight: bold;">eğri aralığını</span> belirtmemiz gerekecektir.&nbsp; Otomatik olarak L26 (<span style="font-weight: bold;">Normal</span> çizgiler) ve L27 (<span style="font-weight: bold;">Ana</span> çizgiler) tiplerini atar ve bunları mevcut modele ekler.<br />
+            <br />
+Eşyükselti eğrileri oluşturma sürecinin ilerlemesi sırasında, bu süreç &lt;<span style="font-weight: bold;">Esc</span>&gt; tuşu ile kesilebilir. O ana kadar oluşturulmuş olanlar kaybolur.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_crear_cn.png" style="width: 361px; height: 244px;" alt="" /><br />
+            </div>
+            <br />
+Eğer <span style="font-weight: bold;">Tek bir kot eğrisi</span> kutucuğu etkinleştirilirse, eşit aralıklı bir dizi yerine istenen kotta tek bir çizgi oluşturur.<br />
+            <br />
+Eşyükselti eğrileri hesaplandıktan ve en yaygın işlemler (topografik nokta ve ağ ekleme ve silme, nokta düzenleme,...) yapıldıktan sonra, program bunları otomatik olarak yeniden hesaplar.<br />
+            <br />
+Eşyükselti eğrileri istenildiği kadar oluşturulabilir, bu nedenle harita çizgilerini çoğaltmamak için dikkatli olmak gerekir.<br />
+            <br />
+            <span style="font-weight: bold;">Eşyükselti Eğrilerini Etiketleme</span>: Bu kutucuğu etkinleştirerek, program ekranda görünen iletişim kutusu aracılığıyla normal eşyükselti eğrilerini (L26) ve ana eğrileri (L27) bir sembolle (S34 veya S42) etiketleme imkanı sunar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_borrar_isol.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="borrar_iso">Eşyükselti Eğrilerini Sil</a></span><a name="borrar_iso"><br />
+            </a></td>
+            <td style="vertical-align: top;">Oluştur seçeneği ile oluşturulan son eşyükselti eğrilerini reddetmeyi sağlar.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_redond_cotas.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="redondear_iso">Kotları Yuvarla</a></span><a name="redondear_iso"><br />
+            </a></td>
+            <td style="vertical-align: top;">Bu işlev, eşyükselti eğrisi olmayan çizgileri devre dışı bırakır, tam değerlere sahip olmayan eşyükselti eğrilerinin kotlarını yuvarlar ve belirtilen toleransları kullanarak aynı kottaki çizgileri birleştirmeye çalışır.<br />
+Bu komutla eşyükselti eğrilerinin kotları (Z) değiştirilir. Eğer bir üçgenleme dosyası (<span class="Archivo">.ttp</span>) getirilirse ve yeni kotlar çıkarılmak istenirse, yeni eşyükselti eğrileri oluşturulmalıdır.<br />
+            <br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_interp_isol.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="interpolar_iso">Eşyükselti Eğrilerini Enterpole Et</a></span><a name="interpolar_iso"><br />
+            </a></td>
+            <td style="vertical-align: top;">Eşyükselti eğrileri arasına yeni eğriler eklemeyi sağlar. Bunun için kullanıcı şunları belirtmelidir:<br />
+            <ul>
+              <li>Başlangıç ve bitiş kotları.</li>
+            </ul>
+            <ul>
+              <li>Eşyükselti eğrileri arasındaki aralık.</li>
+            </ul>
+            <ul>
+              <li>Kısmi üçgenleme için dikkate alınacak maksimum ağ uzunluğu.</li>
+            </ul>
+            <ul>
+              <li>
+Eğer o tipteki tüm sembollerin kotları dikkate alınmak isteniyorsa, kotlu bir sembol (hiçbiri dikkate alınmak istenmiyorsa, ekranın herhangi bir başka bölgesine tıklamak yeterlidir).</li>
+            </ul>
+&nbsp;
+
+
+Bu verilerle program, eşyükselti eğrilerinin köşe noktalarından ve seçilen tipteki noktalardan dahili olarak bir üçgenleme oluşturur. Ardından, belirtilen uzunluktan daha büyük olan ağları atar ve son olarak, belirtilen aralığa göre ve başlangıç ile bitiş kotları arasında eşyükselti eğrilerini oluşturur.</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img style="width: 29px; height: 24px;" alt="" src="Imagenes/icono_topo_suav.png" /><a name="suavizar_terreno">Araziyi Yumuşat</a></span><a name="suavizar_terreno"><br />
+            </a></td>
+            <td style="vertical-align: top;">Bu araç, topografik nokta modelini yumuşatarak elde edilen bir arazi modeli üzerinde, <a href="EDM_datos_laser.html#utiles">Yoğun nokta bulutları</a> yardımcı programlarındaki yumuşatılmış eşyükselti eğrileri oluşturma aracına benzer bir şekilde, eşyükselti eğrileri oluşturur.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+&nbsp;<a name="herramientas"><span class="Titulo_2">Diğer Araçlar:</span><br />
+      <br />
+      <span style="font-weight: bold;">Tümünü Sil</span>: <br />
+      <br />
+<span style="font-weight: bold;">Topografya</span> açılır menüsünden, <span style="font-weight: bold;">Tümünü Sil</span> komutu ile tüm topografik öğeleri (ve isteğe bağlı olarak haritayı) bellekten kalıcı olarak silebilirsiniz.<br />
+Ekranın sağ tarafındaki sabit menüde de, bahsettiğimiz aynı seçeneği gerçekleştireceğiniz Tümünü Sil kutucuğu bulunmaktadır.<br />
+      <br />
+      </a>
+      
+      <div style="text-align: center;"><img src="Imagenes/topo_borrar_todo.png" style="width: 148px; height: 123px;" alt="" /><br />
+
+      </div>
+
+
+
+            <br />
+
+      <span style="font-weight: bold;">Kontrol Et</span>:<br />
+
+      <br />
+
+Tekrar eden noktaların, kesişen ağların olup olmadığını kontrol etmeyi ve mevcut ağlara ve noktalara atıfta bulunan üçgenleri kontrol etmeyi sağlar. Herhangi bir tutarsızlık bulunursa, üçgen silinir ve bu durum errortopog.res dosyasında yansıtılır.<br /><br />
+<span style="font-weight: bold;">Adacıklar ve kapalı sınırlar</span> etkinleştirildiğinde, kesişen ağları tespit etmesi durumunda bunların kontrolünü gerçekleştirir.<br />
+      <br />
+<span style="font-weight: bold;">Boşluklarda üçgen oluştur</span> etkinleştirildiğinde, bir üçgen oluşturan ve dış tarafından bir üçgen yapışık olan ancak iç tarafından olmayan üçlü ağ grupları aranır, daha sonra bu iç üçgenler oluşturulur.<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_topo_chequear.png" style="width: 219px; height: 120px;" alt="" /><br />
+
+      </div>
+
+
+       <br />
+
+      Yüzey olarak kullanabileceğimiz .ttp dosyaları için önceden bir kontrol yapmak önemlidir.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">Yardımcı Programlar</span>:<br />
+
+      <br />
+
+&nbsp;<span style="font-weight: bold;">[Topografya] &#8594; [Yardımcı Programlar]</span> butonundan aşağıdaki seçenekleri içeren bir kutu açılır:<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold;">Otomatik</td>
+            <td style="vertical-align: top;">Ön-Ağ – Üçgenleme – Düz üçgenleri silme – Eşyükselti eğrileri oluşturma dizisini otomatik olarak gerçekleştirir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="sondeos">Sondajlar</a></span><a name="sondeos"><br />
+            </a></td>
+            <td style="vertical-align: top;"><img src="Imagenes/sondeos_topo_esquema.png" style="width: 280px; height: 220px;" alt="" align="right" hspace="6" />Sondaj verileriyle yüzeylerin tanımı<br />
+
+            <br />
+
+Bir sondajdan toplanan bilgiler, geçilen yüzeylerin sayısal modellerini elde etmeyi sağlar. Verileri, her bölümün düşey açısını ve uzunluğunu ifade ederek sondaj ağzına göre referanslandırılmıştır.<br />
+
+            <br />
+
+Burada gösterilen örnekte 76, 77 ve 78 sayılarıyla kodlanmış farklı malzeme katmanlarıyla her bir temas noktası, o noktaya kadar olan sondaj bölümünün azimutu (AZ) ve düşey açısı (AV) cinsinden verilir ve üçüncü bir sütunda bunun uzunluğu belirtilir.<br />
+
+            <br />
+
+Ayrıca her sondaja ve sondajın her noktasına (malzeme) bir ad vermek de mümkündür.<br />
+
+            <br />
+
+&nbsp;<span style="font-weight: bold;">[Yardımcı Programlar] &#8594; SONDAJLAR</span> seçeneği, tüm bu bilgileri ve sondajları işlemek için çeşitli seçenekleri içeren bir iletişim kutusu açar:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_sondeos_topo.png" style="width: 592px; height: 133px;" alt="" /><br />
+            </div>
+            <br />
+Görüldüğü gibi, <span style="font-weight: bold;">[Sil]</span>, <span style="font-weight: bold;">[Araya Ekle]</span>, <span style="font-weight: bold;">[Ekle]</span>, <span style="font-weight: bold;">[Başlat]</span> vb. seçenekler aracılığıyla yeni bir sondaj dosyası interaktif olarak oluşturulabilir veya mevcut bir dosya (örneğin veri ekleyerek) değiştirilebilir. Böylece, <span style="font-weight: bold;">[Ekle]</span> (sona yeni bir veri oluşturur) veya [Araya Ekle] (mevcut konuma oluşturur) butonu ile yeni sondaj verileri girilir.<br />
+
+            <br />
+
+&nbsp;Eğer girilen veri bir sondaj ağzıysa (arazi yüzeyinin bir noktası), o zaman satır <span style="font-weight: bold;">[S]</span> (Sondaj başlangıcı) ile başlamalıdır ve eğer yeni bir malzeme ile temas noktası ise, o zaman değiştirilebilir düğmenin <span style="font-weight: bold;">[B]</span> (Sondaj Bölümü) göstermesi gerekir.<br />
+
+            <br />
+
+&nbsp;İletişim kutusunun resminde görülebileceği gibi, bir sondaj ağzı söz konusu olduğunda girilen veriler onun koordinatlarıdır ve bir bölüm söz konusu olduğunda, azimut, düşey açı, uzunluk ve kod (yani, malzemeyi tanımlayan sayı).<br />
+
+            <br />
+
+&nbsp;3D görünümde, yüzeyin altında temsil edilen sondaj kolonları görülebilir:<br />
+            <br />
+            <img src="Imagenes/ejemplo_sondeos_planta.png" style="width: 327px; height: 229px;" alt="" /><br />
+            <br />
+            <img src="Imagenes/ejemplo_sondeos_3D.png" style="width: 334px; height: 221px;" alt="" align="right" /><br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+Bu araç, her bir temas yüzeyinin üçgenlemesini elde etmeyi ve bunu kullanıcının seçtiği çizgi tipiyle temsil etmeyi sağlar. Örneğin, <span style="font-weight: bold;">Kod</span> alanına 76 ve <span style="font-weight: bold;">Tip</span>'e 23 belirtilirse ve ardından:<br />
+            <ul>
+              <li>Her bir sondajın 76 koduyla kodlanmış malzeme tabakasıyla kesişimlerine karşılık gelen topografik nokta bulutunu oluşturmak için <span style="font-weight: bold;">[Nokta bulutu oluştur]</span> butonuna basılır. Mantıksal olarak, bu nokta bulutu <span style="font-weight: bold;">[DOSYALAR] &#8594; Kaydet</span>'ten mevcut herhangi bir topografik dosya formatında kaydedilebilir.</li>
+            </ul>
+            <ul>
+              <li>Önceki adımda oluşturulan bulutun üçgenlemesini elde etmek için <span style="font-weight: bold;">[Üçgenle]</span> seçeneği kullanılır. Bu üçgenleme, nokta bulutuyla birlikte, <span style="font-weight: bold;">[DOSYALAR] &#8594; Kaydet</span> aracılığıyla bir .ttp dosyası olarak da kaydedilebilir.</li>
+            </ul>
+            <ul>
+              <li>Artık sadece önceki adımda elde edilen otomatik ağları <span style="font-weight: bold;">[Üçgenleri Aktar]</span> seçeneği ile EDM'ye aktarmak kalır; bu, üçgenlemeden gelen her ağ için belirtilen tipte (örnekte, tip 23) çizgiler oluşturur.<br />
+
+
+Bu işlemin sonucu resimde gösterilmektedir:</li>
+            </ul>
+
+
+            <div style="text-align: center;"><img src="Imagenes/ejemplo_sondeos_triang.png" style="width: 463px; height: 274px;" alt="" /><br />
+            </div>
+            <br />
+Üçgenlemeyi silmek için, <span style="font-weight: bold;">[Üçgenleri Sil]</span> butonuna basmak yeterlidir. Böylece, bu durumda 23 numaralı çizgi tipiyle oluşturulan, bir yeraltı tanımlayıcı nokta bulutundan başka bir şey olmayan bir tabaka sınırlayıcı yüzeyi (tavan veya taban) oluşturulmuş oldu.<br />
+
+            <br />
+
+Eğer bu süreç, farklı çizgi tipleri kullanarak her bir malzeme tabakası için tekrarlanırsa, sonunda hepsini içeren bir EDM elde edilir. <br />
+
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/ejemplo_sondeos_triangl_varios.png" style="width: 286px; height: 172px;" alt="" /><br />
+            </div>
+            <br />
+
+&nbsp;Dolayısıyla, her tabaka için bir yüzey tanımlamak ve hepsinin göründüğü profiller elde etmek mümkündür; böylece tüm malzemeler mükemmel bir şekilde ayırt edilebilir ve dolayısıyla, sondaj ağının izin verdiği kadar hassas bir stratigrafiye göre bir güzergah projesinde, kazıda vb. hacim hesabı yapılabilir.<br />
+
+            <br />
+<span style="font-weight: bold;">Kopyala</span> aracı aracılığıyla:<br />
+            <br />
+Bir sondajın başını ve yeni konumu grafiksel olarak seçerek bir sondajı kopyalamaya izin verilir. Eğer herhangi bir yakalama etkinse, yeni sondajın başının kotu yakalanan kotu alır.<br />
+            <br />
+ Sondaj verileri, daha sonra sırasıyla <span style="font-weight: bold;">[Kaydet]</span> ve <span style="font-weight: bold;">[Yükle]</span> butonları aracılığıyla yüklenebilmesi için .sdo dosyalarına kaydedilebilir.<br />
+            <br />
+[<span style="font-weight: bold;">.txt Yükle]</span> aracı aracılığıyla:<br />
+
+            <br />
+
+Aşağıdaki formattaki dosyaları yüklemeyi sağlar:<br />
+
+            <br />
+
+**JEOTEKNİK BİRİM<br />
+
+NoktaID,X,Y,Z,Kalınlık,Jeoteknik birim<br />
+
+S- 1,508298.606,4788528.829,53.6,16.5,QRV<br />
+
+S- 1,508298.606,4788528.829,53.6,2.5,QA<br />
+
+S- 1,508298.606,4788528.829,53.6,0.5,C<br />
+
+S- 2 (DP),508385.835,4788591.354,43.8,14.3,QRV<br />
+
+S- 2 (DP),508385.835,4788591.354,43.8,7.7,QA<br />
+
+S- 2 (DP),508385.835,4788591.354,43.8,1.2,QE<br />
+
+S- 2 (DP),508385.835,4788591.354,43.8,0.9,C<br />
+            <br />
+ENKESİT EDİTÖRÜ'nde, ayrıca, bunları bir dizi enkesit üzerine yansıtmayı sağlayan [Sondajlar] seçeneği de bulunmaktadır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Aplikasyon</span><br />
+            </td>
+            <td style="vertical-align: top;">Güzergah Projesi menüsü tarzında bir aplikasyon yapmamızı sağlar.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Bilgi</td>
+            <td style="vertical-align: top;">Bu seçenek, her an mevcut olan nokta, ağ ve üçgen sayısını gösterir.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_inf.png" style="width: 267px; height: 245px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Kesit</td>
+            <td style="vertical-align: top;">Bu seçenek, kesiti yapmak için kullanıcıdan bir bant ister ve ilgili profili grafik penceresinin sağ alt kısmında gösterir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Duvarcık</td>
+            <td style="vertical-align: top;">Programın, örneğin arazide bir duvarın eteği alındığında o duvarın başının ağlarını oluşturması için, mevcut iki ağa paralel ağları otomatik olarak oluşturmasına yarar.<br />
+            <br />
+Yatay artışı, dikey artışı ve duvarcığın yapılacağı iki ağı ister. Sonuç, seçilen her bir ağa paralel bir ağ oluşturmasıdır. Paralel ağlar, yatay artışa göre verilen mesafede konumlandırılır ve kotları, referans ağının kotu artı verilen dikey artış olur.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Basamak</td>
+            <td style="vertical-align: top;">Bu seçenek, kullanıcıdan bir yatay artış, bir dikey artış ve bir referans ağı ister. Sonuç, yatay artışa göre referans ağına paralel ve referans ağının kotu artı dikey artış kadar bir kota sahip bir ağın oluşturulmasıdır. <br />
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">XYZ -&gt; EDM</td>
+            <td style="vertical-align: top;">Bu seçenekle, XYZ, aXYZ, abXYZ, abcXYZ, abcdXYZ, abcdeXYZ veya YXZ formatlarındaki çeşitli topografya nokta dosyalarını EDM'deki noktalara dönüştürmek mümkündür.<br />
+
+            <br />
+
+Bu noktaların ekranda otomatik olarak yüklenmesini (Noktaları Yükle seçeneği) ve/veya noktalarla doğrudan .edb dosyaları oluşturulmasını (edb'ler oluştur seçeneği) belirtmek mümkündür.<br />
+
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/puntos_a_edm.png" style="width: 288px; height: 123px;" alt="" /><br />
+            </div>
+            <br />
+
+Birden fazla nokta dosyasını tek seferde içe aktarmayı kolaylaştırmak için, kullanıcının belirttiği uzantıdaki dosyaların listeleneceği bir liste oluşturulur ve listedeki tüm dosyaların dönüşümü otomatik olarak yapılır. Dönüşümden sonra ekranda her dosyanın kapsadığı alanlar ve verilerinin kısa bir özeti gösterilir. Aynı özet, dönüşümde oluşturulan .ls2 uzantılı dosyada da listelenir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Madencilik Küt.</span><br />
+            </td>
+            <td style="vertical-align: top;">Topografik Karne<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Çizgi ile Kes</td>
+            <td style="vertical-align: top;">Üçgenleme ağlarına, kullanıcı tarafından seçilen bir çizgi ile kesişimlerini ekler ve yeni köşe noktalarını kullanarak üçgenleri alt bölümlere ayırır.<br />
+
+            <br />
+
+Bu şekilde, entegre edilecek kapalı alanın sınır noktalarını kesilecek üçgenlenmiş model içinde bulundurma imkanına sahip olarak, bir üçgenlenmiş modelin diğerine entegrasyonu daha basit hale gelir.<br />
+
+            <br />
+
+Bu işlevin [Noktalar] &#8594; Kapalı Alanı Sil işleviyle birleşimi, .ttp modellerini karıştırırken veya güncellerken çok kullanışlıdır.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Yoğun Nokta Bulutları</span><br />
+            </td>
+            <td style="vertical-align: top;"><a href="EDM_datos_laser.html">Yoğun Nokta Bulutları</a> Menüsü<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Eğim ile Nokta Oluştur</span><br />
+            </td>
+            <td style="vertical-align: top;">Araçtaki araca benzer bir yardımcı program: <a href="MS_pendiente_ttp.html">SAM Dosyasına Göre Eğimler</a>.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 309px; height: 109px;" alt="" src="Imagenes/topo_gen_pend.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Orijinal .toc Koordinatları</span><br />
+            </td>
+            <td style="vertical-align: top;">Bu yardımcı program, Boykesit-&gt;Araçlar-&gt;<a href="OL_desarrollar_toc.html">.toc Açılımı</a>'nı tamamlar.<br />
+Örnek: Bir tünelin iç duvarlarına yerleştirilen kaplama levhalarının yüzey alanını ölçmek amaçlanmaktadır. <br />
+Levhaların konturları ve iç noktaları alınmış ve laminas.toc dosyasına kaydedilmiştir (Bu dosya, üst üste binen noktalar ve şakülden sapmalar olabileceğinden doğrudan üçgenlenemez).<br />
+Boykesit-&gt;Araçlar-&gt;.toc Açılımı aracı ile, topografyada yüklenebilen bir des#lamina.toc dosyası elde edilir (koordinat sistemi farklı olduğu için önceden yüklenmiş diğer tüm bilgileri siliyoruz). Bu dosya, topografya menüsünden üçgenlenebilir ve temizlenebilir.<br />
+Ekranda temizlenmiş üçgenleme ile: Topografya-&gt;Yardımcı Programlar-&gt;Orijinal .toc Koordinatları'nı çalıştırırız ve orijinal laminas.toc dosyasını seçeriz, bu da ağların ve üçgenlerin topolojisini koruyarak noktaların koordinatlarını değiştirir.<br />
+O zaman levhaların yüzey alanını şununla ölçebiliriz: Topografya-&gt;Üçgenler-&gt;Ölçüm.<br />
+Ayrıca, geometriyi içeren bir .ttp arşivleyebiliriz, ancak yeniden yüklemek için tüm kontrolleri devre dışı bırakmamız ve tekrar eden noktalara izin vermemiz gerektiğini unutmamalıyız, çünkü planda kesişen üçgenler olabilir.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      
+      
+      </table>
+
+
+      &nbsp;<br />
+
+      <span style="font-weight: bold;">Topografik Karne</span>: <br />
+
+      <br />
+
+<a href="EDM_libreta_topografica.html">Topografik Karne</a> açıklama menüsü.<br />
+
+      <br />
+
+      <span class="Parrafo"><span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

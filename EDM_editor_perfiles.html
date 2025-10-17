@@ -1,0 +1,3745 @@
+﻿Emredersiniz. Görev, belirttiğiniz tüm referanslar ve metodolojiye sadık kalınarak, en yüksek teknik hassasiyetle tamamlanmıştır.
+
+Orijinal HTML dosyasının yapısı, linkleri ve formatı %100 korunarak, içeriği Türkiye mühendislik pratiklerine ve terminolojisine uygun şekilde lokalize edilmiştir.
+
+Aşağıda, talep ettiğiniz çevrilmiş HTML içeriği sunulmaktadır.
+
+---
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Enkesit Editörü</title>
+
+<link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a>
+<a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a> <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a> <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span> </td>
+</tr>
+</tbody>
+</table>
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td class="Titulo_2">
+<div align="center"><strong>ENKESİT DÜZENLEME<br />
+</strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+</span>
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span><br />
+<span class="Parrafo"> <a href="#formato_per">Enkesit Dosyalarının Formatı (.per)</a></span><br />
+<a href="#descripcion">Enkesit Editörü. Açıklama ve Temel İşlemler</a><br />
+<a href="#utiles">Yardımcı Araçlar</a><br />
+<span class="Parrafo"> <a href="#submenus_modif">Enkesit Dosyalarında Değişiklik Yapmak için Alt Menüler</a></span><br />
+<span class="Parrafo"> </span></div>
+<div style="margin-left: 80px;"><span class="Parrafo"><a href="#modificar">Düzenle</a></span><br />
+<span class="Parrafo"><a href="#modificar_2">Düzenle
+2</a></span><br />
+<span class="Parrafo"></span></div>
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#sondeos">Sondajların Enkesitlere Projeksiyonu</a><br />
+<a href="#tablas_cubic">Kübaj Tabloları (.dar)</a><br />
+</span>
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#def_tabla_cubic">Kübaj Tablolarının Tanımlanması</a></span><br />
+<span class="Parrafo"><a href="#opciones_dar_menu_vert">Dikey Menü Seçenekleri</a></span><br />
+<span class="Parrafo"><a href="#ejemplo">Basit bir Maden Ocağı Kübaj Örneği</a></span><br />
+</div>
+<span class="Parrafo"></span></div>
+<span class="Parrafo"><br />
+<br />
+</span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+<span class="Parrafo"><br />
+Arazi, güzergah projesi, kazı vb. enkesitlerin düzenlenmesi, herhangi bir projedeki teknisyenlerin en çok zaman harcadığı görevlerden biridir.<br />
+<br />
+Ön bilgi olarak, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> enkesit dosyalarının formatının özellikleri açıklanmaktadır; böylece isteyen kullanıcılar bu dosyaları manuel olarak düzenleyebilir veya bu formatı değiştirmek ve/veya başka formatlara aktarmak için bir tür uygulama geliştirebilirler.<br />
+<br />
+Diğer bölümlerde, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün bu görevi hızlandırmak için kullanıcıya sunduğu tüm araçlar anlatılmaktadır. Bu araçlardan bazıları çok basit işlemler gerçekleştirir ancak bir dosyadaki tüm enkesitlere sistematik olarak uygulanması gerekir. Diğerleri ise karmaşık sorunlara hızlı çözümler sunar. Çoğu zaman bir çözüme ulaşmanın, bu menüdeki iki veya daha fazla farklı aracı ardışık olarak uygulamaktan geçtiğini unutmamak gerekir.<br />
+<br />
+Son olarak, programın kullandığı kübaj tabloları açıklanmaktadır: nasıl çalıştıkları, nasıl değiştirilecekleri ve nasıl yenilerinin oluşturulacağı.<br />
+<br />
+GÜZERGAH PROJESİ modülünde yoğun olarak kullanılan bu kübaj tabloları, programa büyük bir esneklik kazandırır, çünkü kullanıcıya diğer uygulamalarla hesaplanması imkansız olan metraj kalemlerini hesaplama imkanı tanır.<br />
+      <br />
+Bir enkesit yüzeyini tanımlayan çizgi, alan ölçümünde kullanılmayan gizli segmentler içerebilir.<br />
+<br />
+Bu tür tabloların kullanımının anlaşılmasını kolaylaştırmak için, bölümün sonunda basit bir maden ocağı örneği sunulmaktadır.<br />
+<br />
+<br />
+</span><span class="Titulo_2"><a name="formato_per">Enkesit Dosyalarının Formatı (.per)</a></span><br />
+<span class="Parrafo"><br />
+Bu bölüm yalnızca, bu formatı manuel olarak düzenlemek veya değiştirmek ve/veya başka formatlara aktarmak için bir uygulama geliştirmek isteyen program kullanıcıları için ilgi çekici olacaktır.<br />
+<br />
+Bir enkesit dosyası, bir dizi enkesitten oluşur. Her enkesit, dosyadaki bir önceki enkesitten büyük veya ona eşit olması gereken KM'si ile karakterize edilir. Her bir enkesitin formatı değişkendir ve bilgi miktarına bağlıdır. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> her zaman en eksiksiz formatı çıktı olarak üretir, ancak aşağıda açıklananlardan herhangi birini girdi olarak okuyabilir.<br />
+<br />
+<br />
+<span style="font-weight: bold; font-style: italic;">Bir enkesitin açıklaması</span><br />
+<br />
+Şu anda program tarafından tanınabilen ve 0, 1, 2, 3 ve 4 olarak adlandırılan beş format türü bulunmaktadır. Her enkesit aşağıdaki başlığı taşır:<br />
+<br />
+</span>
+<table style="text-align: left; height: 119px; width: 527px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 118px; font-weight: bold; text-align: center;">FORMAT TÜRÜ<br />
+</td>
+<td colspan="9" rowspan="1" style="vertical-align: top; width: 37px; font-weight: bold; text-align: center;">BAŞLIK<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 118px; text-align: center;">0<br />
+</td>
+<td style="vertical-align: top; width: 36px; text-align: center; font-style: italic;">0<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;">1<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 40px; font-style: italic;">KM<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 44px; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 54px; font-style: italic;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 118px; text-align: center;">1<br />
+</td>
+<td style="vertical-align: top; width: 36px; text-align: center; font-style: italic;">1<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;">ys<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">X<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">Y<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 40px; font-style: italic;">KM<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 44px; font-style: italic;">Az<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 54px; font-style: italic;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 118px; text-align: center;">2<br />
+</td>
+<td style="vertical-align: top; width: 36px; text-align: center; font-style: italic;">2<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;">ys<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">X<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">Y<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 40px; font-style: italic;">KM<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 44px; font-style: italic;">Az<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;">SÖS<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 54px; font-style: italic;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 118px; text-align: center;">3<br />
+</td>
+<td style="vertical-align: top; width: 36px; text-align: center; font-style: italic;">3<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;">ys<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">X<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">Y<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 40px; font-style: italic;">KM<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 44px; font-style: italic;">Az<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;">SÖS<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">AÖS<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 54px; font-style: italic;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 118px; text-align: center;">4<br />
+</td>
+<td style="vertical-align: top; width: 36px; text-align: center; font-style: italic;">4<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;">ys<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">X<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">Y<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 40px; font-style: italic;">KM<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 44px; font-style: italic;">Az<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 51px; font-style: italic;">SÖS<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 37px; font-style: italic;">AÖS<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 54px; font-style: italic;">SS<br />
+</td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><br />
+Açıklamalar:<br />
+<br />
+</span>
+<table style="text-align: left; width: 490px; height: 142px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 44px; font-style: italic;">ys<br />
+</td>
+<td style="vertical-align: top; width: 440px;"><span class="Parrafo">Enkesitteki yüzey sayısı. Tip 0 sadece bir yüzeye sahip olabilir.</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 44px; font-style: italic;">X,Y<br />
+</td>
+<td style="vertical-align: top; width: 440px;"><span class="Parrafo">Eksen noktasının koordinatları, enkesitin başlangıcı.</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 44px; font-style: italic;">Az<br />
+</td>
+<td style="vertical-align: top; width: 440px;"><span class="Parrafo">Eksendeki semt açısı (Azimut). Enkesitin yönelimi bu semt açısına diktir.</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 44px; font-style: italic;">SÖS<br />
+</td>
+<td style="vertical-align: top; width: 440px;"><span class="Parrafo">Enkesitle ilişkili sayısal özniteliklere sahip satır sayısı.</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 44px; font-style: italic;">AÖS<br />
+</td>
+<td style="vertical-align: top; width: 440px;"><span class="Parrafo">Enkesitle ilişkili alfanümerik öznitelik sayısı.</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 44px; font-style: italic;">SS<br />
+</td>
+<td style="vertical-align: top; width: 440px;"><span class="Parrafo">Enkesitle ilişkili noktasal sembol sayısı.</span></td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><br />
+<br />
+<span style="font-style: italic; font-weight: bold;">Öznitelikler</span><br />
+<br />
+2, 3 ve 4 tiplerinin başlığının ardından aşağıda açıklanan bir dizi öznitelik gelebilir:<br />
+</span>
+<ul>
+<li><span class="Parrafo"><span style="font-weight: bold;">Sayısal Öznitelikler</span>:
+Her enkesit <span style="font-style: italic;">SÖS</span>
+adet sayısal öznitelik satırı içerebilir (<span style="font-style: italic;">SÖS</span>
+0 olabilir) ve bu satırların her biri de değişken sayıda sayısal öznitelik içerebilir:</span></li>
+</ul>
+<div style="margin-left: 80px;"><span class="Archivo">
+Natri1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+a[1][1]&nbsp; a[1][2]&nbsp; ..........&nbsp; a[1][Natri1]</span><br />
+<span class="Archivo">
+Natri2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+a[2][1]&nbsp; a[2][2]&nbsp; ..........&nbsp; a[2][Natri2]</span><br />
+<span class="Archivo">&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.</span><br />
+<span class="Archivo">&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.</span><br />
+<span class="Archivo"> &nbsp;.</span><br />
+<span class="Archivo"> NatriSÖS&nbsp;
+a[SÖS][1] a[SÖS][2] ...... a[SÖS][NatriSÖS]</span><br />
+</div>
+<br />
+<div style="margin-left: 40px;"><span class="Parrafo">Örneğin,
+&nbsp;<span class="Archivo">ISPOL#.per</span> dosyaları
+4. tiptedir (<span style="font-style: italic;">SÖS</span>
+4'e eşittir).
+İlk öznitelik satırında bir dizi değer saklanır:
+toprak dengelemesi, kırmızı kotlar, tip kesit numarası,
+kırpma mesafeleri vb. İkincisinde, enkesitte yapılan
+farklı ölçümlerin alan değerleri saklanır,
+üçüncüsünde ilk
+enkesitten itibaren birikmiş hacimler saklanır ve dördüncüsünde alanların ağırlık merkezleri saklanır,
+bu da daha
+hassas bir kübaj hesabı için (isteğe bağlı) indirgenmiş mesafelerin hesaplanmasını sağlar.<br />
+<br />
+</span><span class="Parrafo">Olası sayısal
+öznitelikler şunlardır:<br />
+<br />
+</span>
+<table style="text-align: left; height: 682px; width: 569px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 75px; font-weight: bold; text-align: center;">ÖZNİTELİK<br />
+</td>
+<td style="vertical-align: top; width: 490px; font-weight: bold; text-align: center;">ANLAMI<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">1<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">KM'deki kütleler diyagramı değeri</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">2<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sağ kırmızı kot</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">3<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Tip kesit numarası</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">4<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Plan ekseni ile enkesitin
+geometrik ekseni arasındaki dışmerkezlik</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">5<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sağlam zemin derinliği (sağ
+taraf)</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">6<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sağdan kırpma mesafesi</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">7<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Soldan kırpma mesafesi</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">8<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sağ platformdaki üstyapı katmanlarının minimum kalınlığı</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">9<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sol kırmızı kot</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">10<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sağdan oturma yüzeyi (0 &#8801;
+Doğal Zemin, 1 &#8801; Sağlam Zemin)</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">11<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Soldan oturma yüzeyi (0 &#8801;
+Doğal Zemin, 1 &#8801; Sağlam Zemin)</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">12<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sol platformdaki üstyapı katmanlarının minimum kalınlığı</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">13<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sanat yapısı bölgesi göstergesi</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">14<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sağdan dönme ekseni (kırmızı kot
+ekseninden kod 1'e olan mesafe)</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">15<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Soldan dönme ekseni (kırmızı kot
+ekseninden kod 1'e olan mesafe)</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">16<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Eksendeki arazi kotu</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">17<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sağlam zemin derinliği (sol
+taraf)</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">18<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Enkesit için numara</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">19<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sağ tarafa bitişik eksen</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">20<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Sol tarafa bitişik eksen</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">21<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Viyüklü sanat yapısı (1 &#8801; Sağdan, 2 &#8801;
+Soldan)</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">22<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Viyüklü sanat yapısı kısmının başladığı mesafe</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">23<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Viyüklü sanat yapısı için, tam yapı bölgesinde bir referans KM'si</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">24<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Tünel bölgesi göstergesi</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">25<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Yapının başlangıcındaki cephe şevi</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">26<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Yapı numarası</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">27<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">Yapının sonundaki cephe şevi</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">28<br />
+</td>
+<td style="vertical-align: top; width: 490px;"><span class="Parrafo">KM denklemlerinin KM'si</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">29<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Başlangıçtaki döküntü konileri için anahtarlar<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">30<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Sondaki döküntü konileri için anahtarlar<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">31<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Bir
+köşe noktasının açıortayındaki enkesit semti<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">32<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Yapı
+viyük göstergesi<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">33<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Başlangıçtaki sağ döküntü konisinin başlangıcının referans kodu<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">34<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Sondaki sağ döküntü konisinin başlangıcının referans kodu<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">35<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Sağ Y/D kontrol noktasındaki kırmızı kot<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">36<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Sol Y/D kontrol noktasındaki kırmızı kot<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">37<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Başlangıçtaki sağ döküntü konisinin geri çekilme uzunluğu<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">38<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Sondaki sağ döküntü konisinin geri çekilme uzunluğu<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 75px; text-align: center; font-style: italic;">39<br />
+</td>
+<td style="vertical-align: top; width: 490px;">Başlangıçtaki sağ döküntü konisinin tepe koduna olan mesafe<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center; font-style: italic;">40<br />
+</td>
+<td style="vertical-align: top;">Sondaki sağ döküntü konisinin tepe koduna olan mesafe</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center; font-style: italic;">41<br />
+</td>
+<td style="vertical-align: top;">Başlangıçtaki sol döküntü konisinin başlangıcının referans kodu</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center; font-style: italic;">42<br />
+</td>
+<td style="vertical-align: top;">Sondaki sol döküntü konisinin başlangıcının referans kodu</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center; font-style: italic;">43<br />
+</td>
+<td style="vertical-align: top;">Başlangıçtaki sol döküntü konisinin geri çekilme uzunluğu</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center; font-style: italic;">44<br />
+</td>
+<td style="vertical-align: top;">Sondaki sol döküntü konisinin geri çekilme uzunluğu</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center; font-style: italic;">45<br />
+</td>
+<td style="vertical-align: top;">Başlangıçtaki sol döküntü konisinin tepe koduna olan mesafe</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center; font-style: italic;">46<br />
+</td>
+<td style="vertical-align: top;">Sondaki sol döküntü konisinin tepe koduna olan mesafe</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center; font-style: italic;">47<br />
+</td>
+<td style="vertical-align: top;">Geoteknik verilerin ölçülmeyeceği enkesit<br />
+</td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><br />
+</span><span class="Parrafo"></span></div>
+<span class="Parrafo">
+<ul>
+<li><span class="Parrafo"><span style="font-weight: bold;">Alfanümerik Öznitelikler</span>:
+3. ve 4. tipler bir dizi
+alfanümerik öznitelik taşıyabilir. Örneğin &nbsp;<span class="Archivo">ISPOL#.per</span> dosyalarında,
+enkesitte gerçekleştirilen farklı ölçümlere listelerde ve paftalarda verilecek adlar
+burada görünür:</span></li>
+</ul>
+<div style="margin-left: 80px;"><span class="Parrafo"><span class="Archivo">Dolgu
+Toprak Kaya Üstyapı .... Metin[AÖS]</span></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo"><br />
+<br />
+<span style="font-weight: bold; font-style: italic;">İlişkili
+Semboller</span><br />
+<br />
+4.
+tip enkesitler ayrıca enkesitle birlikte gösterilecek ve aşağıdaki formata sahip noktasal semboller de
+içerebilir:<br />
+<br />
+</span></span>
+<div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">l1&nbsp;&nbsp;&nbsp;&nbsp;
+x1&nbsp;&nbsp;&nbsp;&nbsp;
+y1&nbsp;&nbsp;&nbsp;&nbsp;
+z1&nbsp;&nbsp;&nbsp;&nbsp;
+ang1&nbsp;&nbsp;&nbsp; tip1</span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Archivo">l2&nbsp;&nbsp;&nbsp;&nbsp;
+x2&nbsp;&nbsp;&nbsp;&nbsp;
+y2&nbsp;&nbsp;&nbsp;&nbsp;
+z2&nbsp;&nbsp;&nbsp;&nbsp;
+ang2&nbsp;&nbsp;&nbsp; tip2</span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Archivo">.&nbsp; </span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Archivo">.</span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Archivo">.</span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Archivo">lSS&nbsp;
+xn&nbsp;&nbsp;&nbsp;&nbsp;
+yn&nbsp;&nbsp;&nbsp;&nbsp;
+zn&nbsp;&nbsp;&nbsp;&nbsp;
+angn&nbsp;&nbsp;&nbsp; tipn</span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Archivo"></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Archivo"><br />
+</span><span class="Parrafo">Açıklamalar:<br />
+<br />
+</span></span></span>
+<table style="text-align: left; width: 632px; height: 102px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 49px;"><span class="Archivo">li</span><br />
+</td>
+<td style="vertical-align: top; width: 526px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Herhangi bir tamsayı değeri.</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 49px;"><span class="Archivo">xi,yi</span><br />
+</td>
+<td style="vertical-align: top; width: 526px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Enkesitteki sembolün koordinatları.</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 49px;"><span class="Archivo">zi</span><br />
+</td>
+<td style="vertical-align: top; width: 526px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kot (veya boyut; bu durumda sembolün
+birim boyutta oluşturulmuş olması ve 13 nolu komutu içermesi gerekir).</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 49px;"><span class="Archivo">angi</span><br />
+</td>
+<td style="vertical-align: top; width: 526px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Açı.</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 49px;"><span class="Archivo">tipi</span><br />
+</td>
+<td style="vertical-align: top; width: 526px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kütüphanedeki nokta tipi.</span></span></span></td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Örneğin,
+demiryolu tip kesiti ile oluşturulan&nbsp;<span class="Archivo">ISPOL#.per</span>
+dosyaları, ray ve traverslere karşılık gelen sembol serilerini içerir.<br />
+<br />
+<br />
+<span style="font-weight: bold; font-style: italic;">Yüzeyler</span><br />
+<br />
+Tip
+0 hariç, diğerleri her enkesitte
+çoklu
+yüzeyler içerebilir (bir enkesitteki maksimum yüzey sayısı 170'tir). Her
+biri aşağıdaki formata sahip olacaktır:<br />
+<br />
+</span></span></span>
+<table style="text-align: left; height: 104px; width: 432px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 127px; text-align: center;"><span style="font-weight: bold;">FORMAT TÜRÜ</span><br />
+</td>
+<td colspan="5" rowspan="1" style="vertical-align: top; width: 52px; text-align: center;"><span style="font-weight: bold;">YÜZEY BAŞLIĞI</span><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 127px; text-align: center;">0<br />
+</td>
+<td style="vertical-align: top; width: 55px; text-align: center; font-style: italic;">Ns<br />
+</td>
+<td style="vertical-align: top; width: 43px; text-align: center; font-style: italic;">Nsl<br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; width: 51px; text-align: center; font-style: italic;"><br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 127px; text-align: center;">1<br />
+</td>
+<td style="vertical-align: top; width: 55px; text-align: center; font-style: italic;">I<br />
+</td>
+<td style="vertical-align: top; width: 43px; text-align: center; font-style: italic;">Eksen<br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;">ÇizgiTipi<br />
+</td>
+<td style="vertical-align: top; width: 51px; text-align: center; font-style: italic;">Ns<br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;">Nsl<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 127px; text-align: center;">2<br />
+</td>
+<td style="vertical-align: top; width: 55px; text-align: center; font-style: italic;">I<br />
+</td>
+<td style="vertical-align: top; width: 43px; text-align: center; font-style: italic;">Eksen<br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;">ÇizgiTipi<br />
+</td>
+<td style="vertical-align: top; width: 51px; text-align: center; font-style: italic;">Ns<br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;">Nsl<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 127px; text-align: center;">3<br />
+</td>
+<td style="vertical-align: top; width: 55px; text-align: center; font-style: italic;">I<br />
+</td>
+<td style="vertical-align: top; width: 43px; text-align: center; font-style: italic;">Eksen<br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;">ÇizgiTipi<br />
+</td>
+<td style="vertical-align: top; width: 51px; text-align: center; font-style: italic;">Ns<br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;">Nsl<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 127px; text-align: center;">4<br />
+</td>
+<td style="vertical-align: top; width: 55px; text-align: center; font-style: italic;">I<br />
+</td>
+<td style="vertical-align: top; width: 43px; text-align: center; font-style: italic;">Eksen<br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;">ÇizgiTipi<br />
+</td>
+<td style="vertical-align: top; width: 51px; text-align: center; font-style: italic;">Ns<br />
+</td>
+<td style="vertical-align: top; width: 52px; text-align: center; font-style: italic;">Nsl<br />
+</td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Açıklamalar:<br />
+<br />
+</span></span></span>
+<table style="text-align: left; width: 472px; height: 132px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 47px; font-style: italic;">I<br />
+</td>
+<td style="vertical-align: top; width: 419px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> 1 ise her nokta eksene olan mesafe ve kot ile tanımlanır.<br />
+2 ise her nokta eksene olan mesafe, kot ve kod ile tanımlanır.</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 47px; font-style: italic;">Eksen<br />
+</td>
+<td style="vertical-align: top; width: 419px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eksen numarası (tüm dosya için sabit).&nbsp;&nbsp; </span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 47px; font-style: italic;">ÇizgiTipi<br />
+</td>
+<td style="vertical-align: top; width: 419px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">0 tipi formatlar için I=1 varsayılır.</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 47px; font-style: italic;">Ns<br />
+</td>
+<td style="vertical-align: top; width: 419px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eksenin sağındaki nokta sayısı.</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 47px; font-style: italic;">Nsl<br />
+</td>
+<td style="vertical-align: top; width: 419px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eksenin solundaki nokta sayısı.</span></span></span></td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Eksen noktası her iki taraf için de tekrarlanır. Ardından yüzeyin
+geometrik tanımı gelir:<br />
+<br />
+<span style="font-style: italic;">I</span>=1 için:<br />
+<span class="Archivo"><br />
+</span></span></span></span>
+<div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">ME[1]
+Z[1]&nbsp;&nbsp;&nbsp; ME[2] Z[2]&nbsp; ... ME[Ns] Z[Ns]</span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">ME[1]
+Z[1]&nbsp;&nbsp;&nbsp; ME[2] Z[2]&nbsp; ... ME[Nsl] Z[Nsl]</span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"></span></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-style: italic;">I</span>=2 için:<br />
+<span class="Archivo"><br />
+</span></span></span></span>
+<div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">ME[1]
+Z[1] C[1]&nbsp; ME[2] Z[2] C[2] ... ME[Ns] Z[Ns] C[Ns]</span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">ME[1]
+Z[1] C[1]&nbsp; ME[2] Z[2] C[2] ... ME[Nsl] Z[Nsl] C[Nsl]</span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"></span></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+<span style="font-style: italic; font-weight: bold;">Örnekler</span><br />
+</span></span></span>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">0, 20 ve 40 KM'lerinde ve 0 tipinde üç enkesit içeren dosya:</span></span></span></li>
+</ul>
+<div style="margin-left: 40px;"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp; 1&nbsp;&nbsp; 0.000</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4&nbsp; 3</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.23&nbsp;&nbsp;&nbsp;&nbsp; 2.35
+15.98&nbsp;&nbsp;&nbsp;
+7.12&nbsp; 16.57&nbsp;&nbsp; 18.0 15.33</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.23&nbsp;&nbsp;&nbsp;&nbsp; 3.22
+13.78&nbsp;&nbsp;&nbsp; 6.52&nbsp; 13.51</span><br />
+<span class="Archivo"><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp; 1&nbsp;&nbsp; 20.000</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3&nbsp; 3</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.43&nbsp;&nbsp;&nbsp;&nbsp; 2.15
+15.48&nbsp;&nbsp;&nbsp; 7.32&nbsp; 19.34</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.43&nbsp;&nbsp;&nbsp;&nbsp; 3.22
+13.78&nbsp;&nbsp;&nbsp; 6.32&nbsp; 13.51</span><br />
+<span class="Archivo"><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp; 1&nbsp;&nbsp; 40.000</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4&nbsp; 3</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.53&nbsp;&nbsp;&nbsp;&nbsp; 2.35
+16.98&nbsp;&nbsp;&nbsp;
+8.12&nbsp; 15.54&nbsp;&nbsp; 16.0 18.43</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.53&nbsp;&nbsp;&nbsp;&nbsp; 3.22
+13.78&nbsp;&nbsp;&nbsp; 7.32&nbsp; 13.41</span><br />
+<span class="Archivo"></span></span></span></div>
+<span class="Archivo"><br />
+</span>
+<ul>
+<li><span class="Parrafo">0, 20 KM'lerinde, 4 tipinde, enkesit başına 2 yüzeyli ve sembolsüz iki enkesit içeren dosya:</span></li>
+</ul>
+<div style="margin-left: 40px;"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+4&nbsp; 2&nbsp;&nbsp; 728563.345&nbsp;
+4875342.234&nbsp;
+0.000&nbsp;&nbsp; 11.24&nbsp;&nbsp; 3&nbsp;
+2&nbsp; 0</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp; 0.0</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp; 2.345&nbsp; 3.456</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp; 0.0&nbsp;&nbsp;&nbsp; 0.0</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Yarma&nbsp; Dolgu</span><br />
+<span class="Archivo"><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;
+68&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp; 3</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.23&nbsp;&nbsp;&nbsp;&nbsp; 2.25
+15.98&nbsp;&nbsp;&nbsp;
+7.12&nbsp; 16.54&nbsp;&nbsp; 15.0 18.33</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.23&nbsp;&nbsp;&nbsp;&nbsp; 3.22
+13.78&nbsp;&nbsp;&nbsp; 6.32&nbsp; 13.51</span><br />
+<span class="Archivo"><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp; 3</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.43&nbsp; 1.&nbsp;&nbsp; 2.25 15.98
+2.&nbsp;&nbsp; 7.12&nbsp; 16.54 100.</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.43&nbsp; 1.&nbsp;&nbsp; 3.22 13.78
+2.&nbsp;&nbsp; 6.32&nbsp; 13.51 100.</span><br />
+<span class="Archivo"><br />
+<span class="Archivo"><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+4&nbsp; 2&nbsp;&nbsp; 728553.445&nbsp; 4875332.264
+20.000&nbsp;&nbsp;
+13.54&nbsp;&nbsp; 3&nbsp; 2&nbsp; 0</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp; 9.80</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp; 2.345&nbsp; 3.456</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp; 24.34&nbsp; 45.09</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Yarma&nbsp; Dolgu</span><br />
+<span class="Archivo"><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;
+68&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp; 3</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.23&nbsp;&nbsp;&nbsp;&nbsp; 2.25
+15.98&nbsp;&nbsp;&nbsp;
+7.12&nbsp; 16.54&nbsp;&nbsp; 15.0 18.33</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.23&nbsp;&nbsp;&nbsp;&nbsp; 3.22
+13.78&nbsp;&nbsp;&nbsp; 6.32&nbsp; 13.51</span><br />
+<span class="Archivo"><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp; 3</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.43&nbsp; 1.&nbsp;&nbsp; 2.25 15.98
+2.&nbsp;&nbsp; 7.12&nbsp; 16.54 100.</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 15.43&nbsp; 1.&nbsp;&nbsp; 3.22 13.78
+2.&nbsp;&nbsp; 6.32&nbsp; 13.51 100.</span><br />
+<span class="Archivo"></span></span></span></span></span></span></span></div>
+<span class="Archivo"><br />
+</span>
+<ul>
+<li><span class="Parrafo">4. tip formatında ve 3 yüzeyli dosya:</span></li>
+</ul>
+<div style="margin-left: 40px;"><span class="Archivo">&nbsp;&nbsp; &nbsp; 4 3
+719376.950 4756578.024 160.000 69.489000 4 145
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><br />
+<span class="Archivo">&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+30&nbsp;&nbsp;&nbsp; 0.000000 1031.485564 1.000000
+0.000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;
+144&nbsp;&nbsp; 0.000000 0.000000 10.841091
+0.000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;
+144&nbsp;&nbsp; 0.000000 0.000000 0.000000
+0.000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp;
+144&nbsp;&nbsp; 0.000000 0.000000 -4.623628
+0.000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;parc_rev_ter&gt;&nbsp;&nbsp;&nbsp;
+&lt;s&gt;&nbsp;&nbsp;&nbsp;
+&lt;parc_terr_1&gt;&nbsp;&nbsp;&nbsp;
+&lt;D_ROCA&gt;&nbsp;&nbsp; ...</span><br />
+<span class="Archivo">&nbsp; &nbsp;
+&nbsp; &nbsp;&nbsp; 1 1 66 9 4</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp; 0.0000 1030.8993 4.4901
+1032.5391 6.5007 1033.3647 ...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp; 8.5992 1034.3062 9.5140
+1035.0000 11.9713 1035.8358...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; 13.0331 1036.1855</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; 0.0000 1030.8993 1.9723 1030.1791
+2.4687 1030.000&nbsp; ...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2 1 68 8 5</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; 0.0000 1031.0656 1.000 3.5000
+1030.8206 2.000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; 5.7517 1030.1840 600.000 6.0517
+1030.1840 1102.000 ...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0000 1031.0656 1.000 3.5000 1031.3105
+2.000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.8052 1028.4902 601.000</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2 1 67 4 5</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0000 1031.4856 1.000 3.5000 1031.2406
+2.000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0000 1031.4856 1.000 3.5000 1031.7306
+2.000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</span><br />
+<span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.9850 1031.3105 100.000</span><br />
+</div>
+<br />
+<span class="Parrafo">Bu
+son örnekte, X<sub>eksen</sub> = 719376.950, Y<sub>eksen</sub>
+= 4756578.024, KM =
+160.000, Semt = 69.489000, 4 adet sayısal öznitelik satırı, 145
+alfanümerik öznitelik ve 0 sembol bulunmaktadır.<br />
+<br />
+<br />
+<span class="Titulo_2"><a name="descripcion">Enkesit
+Editörü. Açıklama ve Temel İşlemler</a></span><br />
+<br />
+<img style="width: 136px; height: 21px;" alt="" src="Imagenes/acceso_editor_perfiles_icono.png" align="right" hspace="6" />Bu güçlü araca <span style="font-weight: bold;">Araçlar</span>
+&#8594; <span style="font-weight: bold;">Enkesit Düzenleme</span> alt menüsünden
+veya araç çubuğundaki ilgili simgeden erişilebilir.<br />
+<br />
+<img style="width: 103px; height: 408px; margin-right: 7px;" alt="" src="Imagenes/menu_editor_perfiles.png" align="left" />Ayrıca,
+GÜZERGAH PROJESİ ve YÜZEY MODELLEME modüllerinde, ENKESİT EDİTÖRÜ'ne
+erişmenin faydalı olduğu birçok noktadan çağrı yapılabilir. Ayrıca <span style="font-style: italic;">P</span> komutu (büyük harfle) ile de erişilebilir.<br />
+<br />
+Enkesit editörü, enkesit dosyalarının
+yönetilmesine ve içeriklerinin düzenlenmesine olanak tanıyan bir çalışma ortamı sunar.<br />
+<br />
+Bu menüye girildiğinde, harita geçici olarak "park edilir" ve
+mutlaka enkesit olmak zorunda olmayan özel bir düzenleme yapılır, çünkü enkesitler menüsü içinde,
+açılır menüler aracılığıyla, bir enkesiti düzenlemek veya bir
+sembol oluşturmak gibi başka herhangi bir kullanım için tüm düzenleme araçlarına
+erişilebilir.<br />
+<br />
+<div style="text-align: center;"><img style="width: 555px; height: 360px;" alt="" src="Imagenes/entorno_editor_perfiles.png" /><br />
+</div>
+<br />
+Bir enkesit dosyası kullanıcı tarafından veya ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> tarafından otomatik olarak oluşturulabilir.
+Bu tür bir dosya &nbsp;<span class="Archivo">.per</span> uzantısına sahiptir ve bir
+eksen boyunca enkesit bilgilerini içerir, her enkesiti KM değeriyle
+tanımlar. Her KM için içerdiği bilgi, dosyanın nerede
+oluşturulduğuna bağlı olarak değişebilir, bu nedenle bir <a href="#formato_per">enkesit dosyasının formatı</a> her durumda farklı olabilir.<br />
+<br />
+Bir enkesit dosyası örneği, bir güzergah projesi ekseninin
+tüm modelini içeren &nbsp;<span class="Archivo">ISPOL#.per</span> dosyalarıdır.
+Genel olarak, bu tür bir dosya her KM için şunları içerir:<br />
+<ul>
+<li>Her enkesitte temsil edilen yüzey sayısı
+(doğal zemin, kaya, bitkisel toprak, kazı, platform,...).</li>
+</ul>
+<ul>
+<li>Enkesitin alındığı noktadaki eksenin X, Y koordinatları ve semt açısı.</li>
+</ul>
+<ul>
+<li>Sayısal ve alfanümerik öznitelik satırları
+(enkesitler
+üzerindeki ölçümler, alanlar, hacimler, kullanılan kübaj tablosu,...) eğer varsa.
+Örneğin, GÜZERGAH PROJESİ'nden gelen &nbsp;<span class="Archivo">ISPOL#.per</span>,&nbsp;<span class="Archivo">ISFIR#.per</span> ve&nbsp;<span class="Archivo">CONTL#.per</span> (burada #
+eksen numarasıdır) enkesit dosyaları bu tür bilgileri içerir.</li>
+</ul>
+<ul>
+<li>Her bir yüzeyin enkesitlerinin
+tanımı.
+Bu tanım, her bir noktasının eksene olan mesafeleri ve kotu ile yapılır ve ayrıca her noktaya,
+örneğin konumunu veya türünü (eksen, hendek dibi,...) belirtmek için bir
+kod eklenebilir.</li>
+</ul>
+</span>
+<ul>
+<li>Kesit tipi öznitelik olarak dahil edilir. Kesit
+tanımının nereden geldiği gösterilir:</li>
+</ul>
+<ul>
+<ul>
+<li>Karayolları: Tek Platform</li>
+<li>Otoyollar ve Ekspres Yollar</li>
+<li>Demiryolları: Tek Hat</li>
+<li>Demiryolları: Çift Hat</li>
+<li>Boru Hatları: Gömülü</li>
+<li>Boru Hatları: Mesnetli</li>
+<li>Limanlar: Dalgakıran</li>
+<li>vb...<br />
+</li>
+</ul>
+</ul>
+<span class="Parrafo">Her bir yüzey,
+enkesitin gösterileceği çizgi tipine
+karşılık gelen bir numara ile tanımlanır.
+Gerçek Kesitin enkesit çizgilerini vurgulamak
+için açılır menüden <span style="font-weight: bold;">Görünüm</span>
+&gt; <a href="EDM_visualizacion.html#destacar_lineas"><span style="font-weight: bold;">Çizgileri Vurgula</span></a> seçeneğine gidebiliriz.<br />
+<br />
+Ekran sunumu sırasında, eksantrik enkesitler
+durumunda konumunu daha iyi kontrol etmek için eksen konumunda dikey bir çizgi çizilir.<br />
+<br />
+<img style="width: 169px; height: 116px; margin-left: 7px;" alt="" src="Imagenes/cerrar_perfil.png" align="right" />Bir
+enkesit dosyası açıkken, <a name="cerrar"><span style="font-weight: bold;">[Kapat]</span></a> düğmesine basıldığında,
+enkesit dosyası düzenlemesini sonlandırmak için üç seçenek sunan bir iletişim kutusu
+açılır:&nbsp;&nbsp;&nbsp; <br />
+<ul>
+<li><span style="font-weight: bold;">Burada
+Kapat</span>: Mevcut
+KM'yi çıktı dosyasına yazar ve düzenlemeyi burada sonlandırır,
+bu KM'ye kadar olan tüm enkesitler o dosyada saklanır ve geri kalanı
+yok sayılır.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Sonunda
+Kapat</span>:
+Düzenlemeyi sonlandırır ve çıktı dosyası, bu durumda,
+mevcut KM'den bağımsız olarak hiçbirini silmeden tüm enkesitleri
+içerir.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Kaydetmeden
+Kapat</span>: Enkesit dosyasında herhangi bir değişiklik kaydetmeden editörden çıkar.
+Bu varsayılan seçenektir.</li>
+</ul>
+<br />
+<span style="font-weight: bold; font-style: italic;">Temel
+İşlemler</span><br />
+<br />
+<table style="text-align: left; width: 691px; height: 246px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 71px; font-weight: bold;"><a name="recortar">[Kırp]</a><br />
+</td>
+<td style="vertical-align: top; width: 599px; text-align: justify;"><img style="width: 312px; height: 312px; margin-left: 7px;" alt="" src="Imagenes/dialogo_recortar.png" align="right" />Bu
+düğmeye basıldığında, KIRPMA işleminin yapılacağı KM aralığını
+ve işlemde yer alacak yüzey tiplerini soran bir iletişim kutusu
+açılır.<br />
+<br />
+A yüzeyini (ilk yüzey) B yüzeyi (ikinci yüzey) ile kırpmanın sonuç yüzeyi,
+B'nin bulunduğu alanlarda A yüzeyi ile çakışan yeni bir C yüzeyidir (sonuç yüzeyi).<br />
+Sonuç yüzeyi, enkesitte zaten mevcut bir yüzey olabilir, hatta işlemde yer alan iki yüzeyden biri bile olabilir.
+Bu durumlarda sonuç yüzeyi mevcut yüzeyin yerini alır ve yüzey sayısı artmaz.<br />
+<br />
+Örnekler:<br />
+<ul>
+<li>Kazı çizgisi (yarma,
+dolgu, tesviye yüzeyi) kırmızı kot çizgisi ile kırpılırsa, kazı çizgisinin tesviye yüzeyine karşılık gelen kısmı elde edilir.</li>
+</ul>
+<ul>
+<li>Arazi çizgisi kazı
+çizgisi (yarma, dolgu, tesviye yüzeyi) ile kırpılırsa, işten etkilenen arazi yüzeyi elde edilir. DÜZENLE alt menüsünde, belirli bir mesafeye göre kırpmak için benzer bir işlem vardır.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 71px; font-weight: bold;"><a name="completar">[Tamamla]</a><br />
+</td>
+<td style="vertical-align: top; width: 599px; text-align: justify;"><img style="width: 312px; height: 312px; margin-left: 7px;" alt="" src="Imagenes/dialogo_completar.png" align="right" />Bu
+düğmeye basıldığında, TAMAMLAMA işleminin yapılacağı KM aralığını
+ve işlemde yer alacak yüzey tiplerini soran bir iletişim kutusu
+açılır.<br />
+<br />
+A yüzeyini (ilk yüzey) B yüzeyi (ikinci yüzey) ile tamamlamanın sonuç yüzeyi,
+A'nın bulunduğu tüm alanlarda A yüzeyi ile ve A'nın bulunmadığı ve B'nin bulunduğu alanlarda B ile çakışan yeni bir C yüzeyidir (sonuç yüzeyi).<br />
+<span class="Parrafo">Sonuç yüzeyi,
+enkesitte zaten mevcut bir yüzey olabilir, hatta işlemde yer alan iki yüzeyden biri bile olabilir.
+Bu durumlarda sonuç yüzeyi mevcut yüzeyin yerini alır ve yüzey sayısı artmaz.</span><br />
+<br />
+Örnekler:<br />
+<ul>
+<li>Kırmızı kot çizgisi kazı
+çizgisi (yarma, dolgu, tesviye yüzeyi) ile tamamlanırsa, işten sonraki son yüzeyin çizgisi elde edilir.</li>
+</ul>
+<ul>
+<li>Mevcut yol çizgisi,
+sağlam zemin çizgisi ile tamamlandığında, yeni bir iş için oturma yüzeyinin çizgisi elde edilecektir.</li>
+</ul>
+Kodlu bir yüzeyi kodsuz bir yüzeyle
+tamamlarken, ikinci yüzey önceden 5001'den başlayan veya ilk yüzeyin en büyük kodu 5001'den büyükse o koddan başlayan kodlarla yeniden kodlanır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 71px; font-weight: bold;"><a name="mas_baja">[En Düşük]</a><br />
+</td>
+<td style="vertical-align: top; width: 599px; text-align: justify;"><img style="width: 312px; height: 312px;" alt="" src="Imagenes/dialogo_mas_baja.png" align="right" hspace="6" />Bu düğmeye basıldığında, yine öncekilere benzer bir
+iletişim kutusu açılır.<br />
+<br />
+Bu durumda, A ve B yüzeyleri arasındaki en düşük yüzey, A ve B'nin aynı anda var olduğu yerlerde veriye sahip olan ve bu durumda en düşük olanla çakışan yeni bir C yüzeyidir.<br />
+<br />
+<span style="font-weight: bold;">x Altında</span> kutucuğu etkinleştirilirse, sonuç yüzeyi yalnızca ilk yüzeyin ikinci yüzeyin altında kalan kısmıdır.<br />
+<br />
+<span class="Parrafo">Sonuç yüzeyi,
+enkesitte zaten mevcut bir yüzey olabilir, hatta işlemde yer alan iki yüzeyden biri bile olabilir.
+Bu durumlarda sonuç yüzeyi mevcut yüzeyin yerini alır ve yüzey sayısı artmaz.</span><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 71px; font-weight: bold;"><a name="mas_alta">[En Yüksek]</a><br />
+</td>
+<td style="vertical-align: top; width: 599px; text-align: justify;"><img style="width: 312px; height: 312px;" alt="" src="Imagenes/dialogo_mas_alta.png" align="right" hspace="6" />Yine aynı yapıya sahip bir iletişim kutusu açılır.<br />
+<br />
+A ve B yüzeyleri arasındaki en yüksek yüzey, sadece A ve B'nin aynı anda var olduğu yerlerde veriye sahip olan ve en yüksek olanla çakışan yeni bir
+yüzey C'dir.<br />
+<br />
+<a href="OL_tuneles.html">Tüneller</a> üzerindeki yüzeyler için
+<span style="font-weight: bold; font-style: italic;">+ Dış (Tüneller)</span> seçeneği etkinleştirilebilir.
+Bu durumda en yüksek yüzey, açı-yarıçap alanında belirlenir, böylece sonuç yüzeyi (daha büyük yarıçap) ikisinin dış zarf yüzeyi olur (açı ve
+yarıçap değerleri, iki yüzeyin çevreleyen dikdörtgeninin merkezi olarak hesaplanan bir iç noktadan belirlenir).<br />
+<br />
+<span style="font-weight: bold;">x Üstünde</span> kutucuğu etkinleştirilirse, sonuç yüzeyi yalnızca
+ilk yüzeyin ikinci yüzeyin üzerinde kalan kısmıdır.<br />
+<br />
+<br />
+<span class="Parrafo">Sonuç yüzeyi,
+enkesitte zaten mevcut bir yüzey olabilir, hatta işlemde yer alan iki yüzeyden biri bile olabilir.
+Bu durumlarda sonuç yüzeyi mevcut yüzeyin yerini alır ve yüzey sayısı artmaz.</span><br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;"><a name="editar">[Düzenle]</a></span>
+</td>
+<td style="vertical-align: top; text-align: justify;">Bir&nbsp;<span class="Archivo">.per</span>
+dosyasından her KM'de bulunan tüm yüzeyleri
+çıkarmayı ve bunları grafiksel ve interaktif olarak değiştirmeyi, ardından değiştirilmiş
+enkesitlerle aynı formatta yeni bir çıktı dosyası oluşturmayı sağlar. Bu çıktı dosyası,
+girdi dosyasıyla aynı ada veya farklı bir ada sahip olabilir.<br />
+            <br />
+&nbsp;<img style="width: 304px; height: 236px;" alt="dialogo_editar_per" src="Imagenes/dialogo_editar_perfiles.png" /><br />
+<br />
+<br />
+<img style="width: 316px; height: 39px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_barra_herramientas.png" align="right" />Bir
+enkesit dosyası yüklendikten sonra ve kullanıcının belirlediği yapılandırmaya bağlı olarak,
+kullanıcının enkesitleri
+istediği gibi değiştirebilmesi için çizgi düzenleme <a href="EDM_barras_herramientas.html">araç
+çubuğu</a> da görünebilir. Ayrıca, aşağıdaki işlevlere sahip enkesit
+düzenleme <a href="EDM_barras_herramientas.html">araç çubuğu</a>
+da görünür:<br />
+<br />
+<table style="text-align: left; width: 590px; height: 104px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img src="Imagenes/icono_toolBarEditPerfil_anterior.png" alt="" style="width: 18px; height: 12px;" /><br />
+</td>
+<td style="vertical-align: top; width: 541px; text-align: justify;"><span style="font-weight: bold;">Önceki enkesite (KM) git</span>.
+Bu seçenek mevcut enkesitten çıkar, onu çıktı dosyasına
+yazar ve bir öncekini düzenlemeye geçer. Mevcut KM, dosyanın ilk
+KM'si veya önceden ayarlanmış başlangıç KM'si olduğunda, editör o
+enkesitte kalır. Klavyedeki &lt;PageUp&gt; tuşu aynı
+etkiyi yaratır.<br />
+Dizüstü bilgisayarlarda kullanımı kolaylaştırmak için, bazı klavye düzenleri nedeniyle, &nbsp;<span class="Parf_negrita">PageUp</span>'a eşdeğer olarak&nbsp;<span class="Parf_negrita">Ctrl + &lt;-</span> kombinasyonuna sahibiz. <br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 18px; height: 17px;" alt="" src="Imagenes/icono_toolBarEditPerfil_ir.png" /><br />
+</td>
+<td style="vertical-align: top; width: 541px; text-align: justify;"><img style="width: 218px; height: 120px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_ultimo.png" align="right" /><span style="font-weight: bold;"><a name="terminar_edicion">Belirli
+bir enkesite (KM) git</a></span>.
+Bu seçenek mevcut enkesitten çıkar, onu çıktı dosyasına
+yazar ve düzenlenmek istenen enkesitin KM'sini sorar. Girilen KM,
+dosyadaki son KM'den büyük olduğunda, enkesit düzenlemesini sonlandırmak isteyip istemediğinizi
+soran bir iletişim kutusu açılır. Eğer küçükse, editör en başa yerleşir.<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 18px; height: 12px;" alt="" src="Imagenes/icono_toolBarEditPerfil_siguiente.png" /><br />
+</td>
+<td style="vertical-align: top; width: 541px; text-align: justify;"><span style="font-weight: bold;">Sonraki enkesite (KM) git</span>.
+Bu seçenek mevcut enkesitten çıkar, onu çıktı dosyasına
+yazar ve bir sonrakini düzenlemeye geçer. Mevcut KM, dosyanın son
+KM'si veya önceden ayarlanmış bitiş KM'si olduğunda, seçenek
+otomatik olarak önceki iletişim kutusunu gösterir. Klavyedeki
+&lt;PageDown&gt; tuşu
+aynı etkiyi yaratır.<br />
+Dizüstü bilgisayarlarda kullanımı kolaylaştırmak için, bazı klavye düzenleri nedeniyle, &nbsp;<span class="Parf_negrita">PageDown</span>'a eşdeğer olarak <span class="Parf_negrita">Ctrl + -&gt;</span> kombinasyonuna sahibiz.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEditPerfil_area.png" /><br />
+</td>
+<td style="vertical-align: top; width: 541px; text-align: justify;"><span style="font-weight: bold;">Alanı Göster</span>. Bu
+seçenek, düzenlenmekte olan enkesit dosyası bir <a href="#tablas_cubic">.dar&nbsp;<span class="Archivo">tablosu</span></a> ile kübajı yapıldığında çok kullanışlıdır,
+çünkü mevcut enkesitteki farklı ölçümleri bir düğme şeklinde
+gösterir, böylece birine tıklandığında ilgili alan taranır. Ayrıca, o
+pencerenin başlığında kullanılan ölçüm tablosu gösterilir.<br />
+"Enkesit alanları" aracıyla bir alan vurgulandığında ve önceki veya sonraki enkesite geçildiğinde,&nbsp; seçilen alan vurgulanmış olarak kalır.<br />
+<br />
+<div style="text-align: center;"><img style="width: 426px; height: 185px;" alt="" src="Imagenes/edit_perf_mostrar_area.png" /><br />
+</div>
+<br />
+Bu düğmeye basıldığında, enkesit belirtilen tabloyla yeniden ölçülür.
+Belirtilen bir tablo yoksa, &nbsp;<span class="Archivo">ISPOL4.dar</span> ile ölçülür.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEditPerfil_resaltLin.png" /><br />
+</td>
+<td style="vertical-align: top; width: 541px; text-align: justify;"><span style="font-weight: bold;">Bir çizgiyi vurgula</span>.
+Bu araç, enkesitin belirli bir yüzeyini vurgulamayı sağlar.
+Etkinleştirildiğinde, projede kullanılan tüm çizgi tiplerini gösteren bir iletişim kutusu belirir ve ayrıca mevcut enkesitte her tipten kaç çizgi olduğunu gösterir.<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 13px; height: 12px;" alt="" src="Imagenes/icono_toolBarEditPerfil_relacion.png" /><br />
+</td>
+<td style="vertical-align: top; width: 541px; text-align: justify;"><span style="font-weight: bold;">Dikey/Yatay ölçek oranını değiştir</span>. Bu oran, <span style="font-style: italic;">Sescav</span> klavye komutuyla da değiştirilebilir.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 18px; height: 16px;" alt="" src="Imagenes/icono_toolBarEditPerfil_dar.png" /><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 541px;"><span style="font-weight: bold;"><a name="crear_perfil_modelo_dar">.dar tablolarının oluşturulması/değiştirilmesi sırasında kullanılacak model enkesiti oluştur</a></span>. Bu seçenek,
+çalışma kütüphanesinde, mevcut enkesiti içeren bir&nbsp;<span class="Archivo">defArea.per</span> dosyası
+oluşturur. Bu enkesit, <a href="#tablas_cubic"><span style="font-weight: bold;">[KÜBAJ TABLOLARI]</span></a> menüsünden,
+kübaj tablosunun satırlarından (verilerinden) birinin yürüttüğü ölçümü görmek istendiğinde, programın kütüphanesinde bulunan standart dosya yerine
+kullanılacaktır.<br />
+Kübaj tablosunun tasarımını kontrol etmek için on farklı defArea.per arasında gezinmeye izin verilir.
+defArea.per dosyaları, Enkesit Düzenleme araç çubuğundaki bu düğme aracılığıyla ardışık olarak kaydedilir.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 17px; height: 19px;" alt="" src="Imagenes/icono_toolBarEditPerfil_gut.png" /><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 541px;"><span style="font-weight: bold;"><a href="OL_planos_transversales.html">Enkesit paftaları</a> için </span><a style="font-weight: bold;" href="OL_gut.html">.gut&nbsp;<span class="Archivo">şablonlarının</span></a> oluşturulması/değiştirilmesi sırasında kullanılacak model enkesiti oluştur. Bu seçenek, mevcut enkesiti, enkesitler için gitar oluşturma ve düzenleme menüsünde model olarak kullanılan &nbsp;<span class="Archivo">ISPOL.per</span>
+kütüphane dosyasına kaydeder.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarEditPerfil_recortar.png" /><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 541px;"><span style="font-weight: bold;">Enkesiti Kırp</span>. Bu,
+<a href="#recortar">kırpma</a> işlemidir,
+ancak enkesit dosyası düzenlenirken mevcut enkesite interaktif olarak uygulanır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEditPerfil_completar.png" /><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 541px;"><span style="font-weight: bold;">Enkesiti Tamamla</span>. Bu,
+<a href="#completar">tamamlama</a> işlemidir,
+ancak enkesit dosyası düzenlenirken mevcut enkesite interaktif olarak uygulanır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="width: 43px; vertical-align: top;"><img style="width: 19px; height: 18px;" alt="" src="Imagenes/icono_toolBarEditPerfil_mezclar.png" /><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 541px;"><span style="font-weight: bold;">Enkesiti Birleştir</span>.
+Bu araç, belirli bir KM'de, aynı eksenin başka bir enkesit dosyasından gelen bir veya daha fazla
+yüzeyi birleştirmeyi sağlar. Program, bu ikinci dosyada bulunan
+yüzeyleri gösterir, tekrarlanıp tekrarlanmadıklarını belirtir ve birleştirmeyi yapmadan önce
+tiplerini değiştirme imkanı sunar. Eğer birleştirilen yüzey zaten mevcutsa,
+orijinalin üzerine yazılır ve kopyalanmaz.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEditPerfil_planta.png" /><br />
+</td>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Enkesitin <a href="#vista_planta">plan görünümünü</a> göster/gizle</span>.<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEditPerfil_diagrama.png" /><br />
+</td>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Enkesit dosyasının <a href="#diagrama">yüzey diyagramını</a> göster/gizle</span>.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /><br />
+</td>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Mevcut enkesiti sil</span>.
+Bir enkesit silindiğinde, editör bir sonraki enkesite atlar.<br />
+&nbsp;<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarEditPerfil_guardar.png" /><br />
+</td>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Mevcut KM'ye kadar kaydet</span>.
+Yapılan değişiklikleri mevcut KM'ye kadar yeni bir <span class="Parrafo">dosyaya</span> kaydeder.<br />
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<img style="width: 275px; height: 357px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_prop_linea.png" align="right" />Eğer
+bir enkesit çizgisi, üzerine çift tıklayarak veya
+sağ fare düğmesiyle açılan bağlam menüsündeki <span style="font-weight: bold;">Özellikler</span>
+seçeneği aracılığıyla düzenlenirse, tipik çizgi özellikleri kutusuna ek olarak,
+seçilen çizgiyi bir "üretici vektör" tipi dosyasına kaydeden <span style="font-weight: bold;">[.vec Kaydet]</span> seçeneği de belirir.<br />
+<br />
+Enkesit düzenleme işlemlerinde,
+ekranda görünen koordinat sistemi şöyledir:<br />
+<br />
+<div style="margin-left: 40px;">X &#8594; Eksene olan
+mesafeler<br />
+Y &#8594; Kotlar<br />
+Z &#8594; Nokta kodu<br />
+</div>
+<br />
+<a name="diagrama">Bir enkesit dosyasıyla
+belirli işlemleri düzenlerken veya gerçekleştirirken, <span style="font-weight: bold;">yüzeyler
+diyagramının</span> gösterimi etkinleştirilebilir.</a> Diyagram
+etkinleştirildiğinde, diyagramın başlangıç KM'sini sayısal olarak veya ilgili
+kaydırıcıyı kullanarak düzenleyerek enkesitler arasında ileri/geri gidilebilir.<br />
+<br />
+<div style="text-align: center;"><img style="width: 246px; height: 172px;" alt="" src="Imagenes/edit_perf_diagrama_planta.png" /><br />
+</div>
+<br />
+Bu diyagram, enkesit dosyasında bulunan
+farklı çizgi tiplerinin hangi KM'lerde mevcut olduğunu gösterme işlevine sahiptir, bu da
+örneğin güzergah projesi takip dosyalarında özellikle kullanışlıdır:<br />
+<br />
+<div style="text-align: center;"><img style="width: 535px; height: 165px;" alt="" src="Imagenes/edit_perf_diagrama.png" /><br />
+</div>
+<br />
+<img style="width: 339px; height: 210px; margin-right: 7px;" alt="" src="Imagenes/edit_perf_vista_planta.png" align="left" />Ayrıca
+<span style="font-weight: bold;"><a name="vista_planta">plan görünümünü</a></span> etkinleştirmek de mümkündür,
+bu da enkesitin harita üzerindeki konumunun gösterilmesini sağlar.<br />
+<br />
+Bu plan görünümüne farenin ana düğmesiyle tıklandığında,
+program belirtilen KM'ye en yakın enkesite gider (yakınlaştırma veya kaydırma simgesi basılı olmadığı sürece). <br />
+<br />
+İmleç enkesit üzerinde hareket ettirildiğinde,
+plan penceresinde imlecin gerçek konumunun bir yansıması gösterilir.&nbsp; <br />
+<br />
+<br />
+<img style="width: 139px; height: 59px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_modo_auto.png" align="right" />Bir
+veya bir çift enkesit dosyası üzerinde iki <span style="font-weight: bold;">çalışma modu</span>
+vardır:<br />
+<ul>
+<li><span style="font-weight: bold;">İnteraktif</span>:
+Bu modda, çoğu işlemde varsayılan olarak ayarlanmıştır,
+dosya veya dosyalardaki her enkesitte bulunan farklı yüzeylerin grafik bilgileri ekrana
+yansıtılır, böylece kullanıcı bir sonraki KM'ye geçmeden önce bunları grafiksel olarak
+değiştirebilir.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Otomatik</span>:
+Bu seçenek etkinleştirilirse, program dosya veya dosyalardaki
+tüm KM'leri tek tek dolaşır ve önceden ayarlanmış işlemi
+durmadan uygular, ancak her bir
+enkesit ekranda çok hızlı bir şekilde gösterilir.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<span style="font-weight: bold;">[Düzenle]</span>,
+<span style="font-weight: bold;">[Kırp]</span>,
+<span style="font-weight: bold;">[Tamamla]</span>,
+<span style="font-weight: bold;">[En Düşük]</span>
+ve <span style="font-weight: bold;">[En Yüksek]</span> seçeneklerine girildiğinde,
+çıktı dosyası, girdi dosyasının yalnızca bazı yüzeylerini veya interaktif olarak
+ya da burada açıklanan işlemlerle oluşturulmuş yeni yüzeyleri içerebilir. Örneğin,
+<span style="font-weight: bold;">[Düzenle]</span> seçeneği seçildiğinde,
+program aşağıdaki iletişim kutusunu açacaktır:<br />
+<br />
+<table style="text-align: left; height: 104px; width: 684px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: middle; width: 321px; text-align: center;"><img src="Imagenes/se_conservan_tipos_salida.png" alt="" style="width: 312px; height: 244px; margin-right: 7px;" /></td>
+<td style="vertical-align: top; width: 26px;"><br />
+</td>
+<td style="vertical-align: top; width: 329px; text-align: center;"><img style="width: 312px; height: 342px; margin-left: 7px;" alt="" src="Imagenes/definir_tipos_salida.png" /></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 321px; text-align: justify;"><br />
+Eğer <span style="font-weight: bold; font-style: italic;">Çıktıda tipler korunur</span> seçeneği aktif bırakılırsa, mevcut tüm yüzeyler
+dosya kaydedilirken korunacaktır.<br />
+<br />
+</td>
+<td style="vertical-align: top; width: 26px;"><br />
+</td>
+<td style="vertical-align: top; width: 329px; text-align: justify;"><br />
+Eğer <span style="font-weight: bold; font-style: italic;">Çıktı tiplerini tanımla</span> seçeneği aktif bırakılırsa, mevcut yüzeyler
+üzerinde işlem yapma imkanıyla birlikte gösterilir.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 321px; text-align: center;"><img style="width: 312px; height: 342px;" alt="" src="Imagenes/especificar_nuevos_tipos_salida.png" /><br />
+</td>
+<td style="vertical-align: top; width: 26px;"><br />
+</td>
+<td style="vertical-align: middle; width: 329px; text-align: center;"><img style="width: 312px; height: 244px;" alt="" src="Imagenes/anadir_todos_nuevos_tipos.png" /><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 321px; text-align: justify;"><br />
+Eğer <span style="font-weight: bold; font-style: italic;">Yeni çıktı tiplerini belirt</span> seçeneği aktif bırakılırsa,
+mevcut ve KM'den KM'ye değişebilen yüzeyler hakkında endişelenmeden,
+enkesitlere yeni yüzeyler eklemeye olanak tanır.<br />
+<br />
+Eklenecek yeni yüzeylerin sayısını belirtmek ve
+ardından tiplerini belirtmek yeterlidir. Değiştirilmiş dosyada sadece
+düzenleme sırasında oluşturulmuş YENİ tiplerdeki eklenen çizgiler ve
+zaten mevcut olan bilgiler kaydedilecektir.
+Yani, bir enkesit dosyasında örneğin 60 numaralı çizgi tipi varsa ama tüm enkesitlerde yoksa, bu tiple bir çizgi oluşturulursa, var olmadığı bir enkesitte, bu çizgi KAYDEDİLMEZ.<br />
+</td>
+<td style="vertical-align: top; width: 26px;"><br />
+</td>
+<td style="vertical-align: top; width: 329px;"><br />
+<div style="text-align: justify;">Eğer
+seçilen seçenek <span style="font-weight: bold;">Enkesitte oluşturulan tüm yeni tipleri ekle</span> ise,
+o zaman editör, üzerine çizilen çizgilerden enkesit için yeni yüzeyleri otomatik olarak tanıyacaktır.
+Öncekinden farklı olarak, hangi tiplerin yeni olacağını belirtmek gerekmez ve ayrıca,
+yeni bir tip olup olmadığına bakılmaksızın, enkesitlere eklenen tüm yeni çizgiler
+kaydedilecektir.<br />
+</div>
+</td>
+</tr>
+</tbody>
+</table><br />
+</span>
+      <div style="margin-left: 40px;"><span class="Parrafo">&nbsp;<img style="width: 12px; height: 12px;" alt="Icono_check" src="Imagenes/checkbox_enabled.png" />&nbsp;<span class="Parf_negrita">PER&gt;VOL Asistanı:</span></span><br />
+      <span class="Parrafo">.per dosyasını .vol boykesit dosyalarına dönüştürme seçenekleriyle .per dosyasına erişim sağlar.
+Bununla, boykesitin genişlikler, deverler, yardımcı platformlar gibi belirli menülerine değerler verilebilir.</span><br />
+      <span class="Parrafo"><br />
+      <span class="Parrafo">&nbsp;<img style="width: 426px; height: 368px;" alt="acceso_pervol" src="Imagenes/acceso_Pervol.png" /></span><br />
+      <span class="Parrafo"><br />
+      <span class="Parrafo"><br />
+      <span class="Parrafo">&nbsp;<span class="Parf_negrita">KM'ye Göre Yarma Vektörleri Sekmesi:</span>
+İletişim kutusunda, yarma vektörlerini elde etmek ve bir .vdp dosyası oluşturmak için gerekli parametreler bulunur.
+Sadece bir yüzey ve yarma vektörünün elde edileceği kodları seçmek yeterlidir.</span><br />
+      <span class="Parrafo">. <img style="width: 359px; height: 425px;" alt="dialogo_pervol_desmonte" src="Imagenes/dialogo_pervol_vdesmonte.png" align="middle" /></span><br />
+      </span></span></span></div>
+      <br />
+      <span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+
+Ayrıca, <span style="font-weight: bold; font-style: italic;">Sembolleri kaldır</span>
+ve <span style="font-weight: bold; font-style: italic;">Öznitelikleri kaldır</span> kutucuklarını işaretleyerek dosyadaki tüm sembollerin ve
+sayısal ve alfanümerik özniteliklerin silinmesi de belirtilebilir.<br />
+<br />
+<table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: middle; width: 52px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+</td>
+<td style="vertical-align: middle; width: 583px; text-align: justify;"><span class="Info">Enkesit
+düzenlemesi sırasında, enkesitte bulunan çizgi veya sembol tiplerinden herhangi biri devre dışı bırakılmışsa bir uyarı gösterilir.</span></td>
+</tr>
+</tbody>
+</table>
+<br />
+Enkesit dosyalarıyla diğer temel işlemler şunlardır:<br />
+<br />
+<table style="text-align: left; width: 691px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 64px; font-weight: bold;"><a name="mezclar">[Birleştir]</a><br />
+</td>
+<td style="vertical-align: top; width: 546px; text-align: justify;"><img style="width: 312px; height: 177px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_mezclar.png" align="right" />Her
+KM için, birleştirilen iki <span class="Archivo">.per
+</span> dosyasında bulunan yüzeyleri içeren yeni bir enkesit dosyası
+oluşturmayı sağlar.<br />
+<br />
+Aşağıda görünen iletişim kutusunda <span style="font-weight: bold; font-style: italic;">Tam birleştirme</span> kutucuğu
+etkinleştirilmezse, çıktı dosyasında yalnızca her iki girdi dosyasının (A ve B) da veri
+içerdiği enkesitler oluşturulur.<br />
+<br />
+Aksine, bu kutucuk etkinleştirilirse program aşağıdaki gibi davranır:<br />
+<ul>
+<li>A ve B enkesitlerinin bulunduğu KM'lerde,
+A yüzeyleri artı B yüzeyleri ile bir enkesit
+oluşturur (temel BİRLEŞTİRME seçeneği gibi).</li>
+</ul>
+<ul>
+<li>Sadece A'nın bulunduğu KM'lerde, A yüzeyleri ile bir enkesit
+oluşturur.</li>
+</ul>
+<ul>
+<li>Sadece B'nin bulunduğu KM'lerde, B yüzeyleri ile bir enkesit
+oluşturur.</li>
+</ul>
+Çıktı dosyasının yüzey sayısı, girdi dosyalarının yüzeylerinin toplamıdır.<br />
+<br />
+Bu seçenek, semboller, alfanümerik öznitelikler, ölçümler vb. içeren enkesit dosyalarını da destekler, ancak özniteliklerin hangi iki dosyadan alınacağını kullanıcının belirtmesi gerekir (<span style="font-weight: bold; font-style: italic;">Öznitelikleri
+al</span> seçeneği).<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 64px; font-weight: bold;"><a name="actualizar">[Güncelle]</a><br />
+</td>
+<td style="vertical-align: top; width: 546px; text-align: justify;"><img style="width: 312px; height: 177px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_actualizar.png" align="right" />Aynı
+sayıda yüzey içerdiği varsayılan iki girdi dosyasından güncellenmiş
+bir enkesit dosyası oluşturur.<br />
+<br />
+Bu seçeneğe tıklandığında, her iki dosya da istenir ve işlemi aralıklara bölmenin mümkün olduğu bir iletişim kutusu açılır.<br />
+<br />
+Eğer seçilen ilk dosya A ve ikincisi B ise, çıktıda
+aşağıdaki enkesitler elde edilecektir:<br />
+<ul>
+<li>Sadece A verilerinin bulunduğu KM'lerde, A'nın enkesitleri
+kaydedilecektir<span class="Archivo">.</span></li>
+</ul>
+<ul>
+<li>Sadece B verilerinin bulunduğu KM'lerde, B'nin enkesitleri
+kaydedilecektir<span class="Archivo">.</span></li>
+</ul>
+<ul>
+<li>Her iki dosyanın da veri içerdiği KM'lerde, B'nin enkesitleri
+kaydedilecektir.</li>
+</ul>
+Bu seçenek, semboller, alfanümerik öznitelikler, ölçümler vb. içeren enkesit dosyalarını da destekler.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 64px; font-weight: bold;"><a name="cubicar">[Kübaj Hesabı]</a><br />
+</td>
+<td style="vertical-align: top; width: 546px; text-align: justify;">En
+az iki yüzey içeren bir dosya yüklemeyi ve herhangi
+iki yüzey arasında bir kübaj hesabı yapmayı sağlar, yarma ve dolgudaki alanların,
+kısmi ve birikimli hacimlerin bir listesini (<span class="Archivo">cubica.res/cubica.xlsx</span>) oluşturur.<br />
+<br />
+<img style="width: 312px; height: 229px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_cubicar.png" align="right" />Bu
+sefer açılan iletişim kutusu, kübajı yapılacak dosyayı belirttikten sonra,
+işlemi aralıklara bölmeye olanak tanır ve ayrıca kübajın hangi yüzeyler arasında
+yapılacağını sorar.<br />
+<br />
+Eğer enkesit dosyası interaktif olarak düzenlenmişse,
+kübaj, yapılmış olan tüm grafiksel değişiklikleri
+dikkate alır.<br />
+<br />
+Kübaj yapıldıktan sonra liste otomatik olarak gösterilecektir.<br />
+<br />
+Kübaj işlemi bittiğinde, &nbsp;<span class="Archivo">cubicar.dar</span>
+adında bir kübaj tablosu oluşturulmuş olacaktır. Bu tablo aracılığıyla enkesitlerdeki ölçümler kontrol edilebilir.<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">ENKESİTLERİ ÇİZ</span><br />
+</td>
+<td style="vertical-align: top; text-align: justify;"><a href="OL_planos_transversales.html">Enkesit
+çizim</a> menüsüne erişim sağlar.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold;"><a name="generar_dxf">DWG/DXF Oluştur</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify;"><img style="width: 312px; height: 244px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_generar_dxf.png" align="right" />Her
+biri bir
+enkesit içeren bir dizi &nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> formatında dosya
+dışa aktarır.<br />
+<br />
+&nbsp;<span class="Archivo">.gdx</span> uzantılı bir dosyayla ilişkilendirilmiş bir liste, listenin oluşturulmasını ve
+içe aktarılmasını koordine eder.<br />
+<br />
+Bu seçenek artık kullanılmamaktadır.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold;"><a name="recuperar_edm">.edm Geri Yükle</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify;"><img style="width: 312px; height: 244px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_recuperar_edm.png" align="right" />DWG/DXF
+formatındaki, düzenlenmiş veya düzenlenmemiş dosya serisi, harici format dönüştürücü <span style="font-style: italic;">dxfedm</span> kullanılarak EDM formatına dönüştürülmelidir.
+&nbsp;<span class="Archivo">dxf.bat</span> adında döngüsel bir otomatik yürütme betiği kullanılması
+tavsiye edilir.
+Dönüşüm sırasında ilgili yüzey anahtarlarını atayan bir &nbsp;<span class="Archivo">dxf.cod</span> sözlük dosyasının bulunması
+gereklidir.<br />
+<br />
+İşlem, bir kılavuz enkesit dosyası (genellikle önceki seçenekle dışa aktarılan orijinal dosya) ve
+daha önce oluşturulan &nbsp;<span class="Archivo">.gdx</span> dosyasının
+adını sorar. Bu ikisini ve kök adı &nbsp;<span class="Archivo">.gdx</span> dosyasında
+listelenen &nbsp;<span class="Archivo">.edm</span> dosya serisini
+kullanarak,
+tüm seriyi içeren yeni bir enkesit dosyası elde edilerek içe aktarma
+gerçekleştirilir. Bu dosyalar, 67 ve 68 numaralı yüzeylerin noktalarında kodların olmaması dışında orijinallere benzer.<br />
+<br />
+Bu seçenek artık kullanılmamaktadır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold;">SAYISALLAŞTIR<br />
+</td>
+<td style="vertical-align: top; text-align: justify;">Herhangi
+bir KM'de, ilgili enkesitlerin sayısallaştırıcı tablet veya masa üzerinde
+sayısallaştırılması yoluyla yüzeylere yeni veriler girmeyi sağlar.<br />
+<br />
+Burada pafta ayarı ve sayısallaştırma için koordinatların şunlar olduğu dikkate alınmalıdır:<br />
+<br />
+<div style="margin-left: 40px;">X &#8594; Eksene olan
+mesafe<br />
+Y &#8594; Kot<br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold;"><a name="por_teclado">KLAVYEDEN GİRİŞ</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify;">Arazi
+enkesitlerinin klavyeden manuel olarak girilmesine olanak tanır.
+Bu seçenek seçildiğinde, program mevcut bir dosyayla devam etmek mi yoksa yeni bir tane oluşturmak mı istendiğini sorar.
+Mevcut bir dosyayla devam etmek istenirse, program girilen son enkesitten sonraki
+KM'ye yerleşir. Yeni bir tane seçilirse,
+program eksen numarasını sorar ve eğer bu eksene ait bir &nbsp;<span class="Archivo">cpun.res</span> dosyası varsa,
+eksen noktalarının koordinatlarını ve semt açısını, KM'lerin eşit aralığını koruyarak
+enkesit dosyasına ekler.<br />
+<br />
+<div style="text-align: center;"><img style="width: 540px; height: 239px;" alt="" src="Imagenes/edit_perf_por_teclado.png" /><br />
+</div>
+<br />
+Eksen boyunca ilerlerken enkesitleri doldurmayı sağlayan iletişim kutusu, aşağıdaki seçenekleri sunar:<br />
+<ul>
+<li><span style="font-weight: bold;">Çiz</span>:
+Düzenlenmekte olan enkesiti ekranda gösterir.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Sonraki</span>:
+Mevcut enkesiti depolayarak bir sonraki enkesite geçer.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Son</span>:
+Mevcut enkesitin son olduğunu belirtir, mevcut enkesitin oluşturulmasını tamamlar ve enkesit dosyasını kapatır.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Enkesiti
+Ters Çevir (</span><span style="font-weight: bold;">
+[SOL &lt;x&gt; SAĞ])</span> düğmesi, sağdaki verileri soldakilerle ve tam tersi şekilde değiştirir.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Eksende
+Kes</span>:
+Bir sonraki enkesite geçmeden önce kullanılır, verileri
+negatif mesafelerle yeniden düzenler ve gerekirse orta noktayı enterpole ederek enkesiti eksende keser.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">KM</span>:
+Mevcut enkesitin KM'sini değiştirir, <span style="font-weight: bold;">XP</span>, <span style="font-weight: bold;">YP</span> ve <span style="font-weight: bold;">AZ</span>
+değerlerini yeni noktaya göre yeniden hesaplar. Eğer bir önceki enkesitten daha küçük bir KM verilirse,
+mevcut enkesit eklenmez, bunun yerine <span style="font-weight: bold;">[Sonraki]</span> veya <span style="font-weight: bold;">[Son]</span> komutları yürütüldüğünde KM'sine göre uygun pozisyona eklenir. Eğer
+yazılan KM zaten bir önceki enkesitte mevcutsa, o enkesit
+yeni verilerle güncellenir.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Ekle</span>:
+İlgili yarı-enkesite bir veri ekler.</li>
+</ul>
+Enkesitler daha sonra <a href="#editar"><span style="font-weight: bold;">[Düzenle]</span></a> seçeneği ile yüklenerek düzenlenebilir.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold;">İnterpolasyon<br />
+</td>
+<td style="vertical-align: top; text-align: justify;">Seçilen
+enkesit dosyasının enterpole edilmiş bir enkesitini hesaplar ve bunu
+orijinal enkesit dosyasının ilgili KM'sine ekler. Veriler,
+istenenin önceki ve sonraki enkesitidir. Bu aynı işlem, GÜZERGAH PROJESİ modülündeki BOYKESİT menüsünün hesaplamalarından otomatik olarak yürütülür.<br />
+</td>
+</tr>
+</tbody>
+</table>
+      <br />
+Boykesit menüsünden enkesitlerin dinamik düzenlemesinde, &nbsp;<span class="Parf_negrita">[ST.per]</span> seçeneğinin yanında bir simge bulunur. Bu simge, bu dosyayı anında oluşturup düzenlemeyi sağlar. Yani, kesit penceresindeki mevcut enkesiti düzenlemeye olanak tanır.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 268px;" alt="" src="Imagenes/EDM_perf_STPER.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+<br />
+<span class="Titulo_2"><a name="utiles">Yardımcı Araçlar</a></span><br />
+<br />
+<img style="width: 203px; height: 151px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_utiles.png" align="right" /><span style="font-weight: bold;">[YARDIMCI ARAÇLAR]</span>
+menüsü altında aşağıdaki araçlar gruplandırılmıştır:<br />
+<ul>
+<li><span style="font-weight: bold;">Enkesit
+Çizgileri (T Çizgileri)</span>: Bir &nbsp;<span class="Archivo">.per</span> dosyasında bulunan bir yüzeyin enkesitlerini,
+gerçek konumlarında (X,Y,Z) plan üzerine yerleştirir.
+Planda düz çizgilerdir, ancak çoklu doğrunun kabartması vardır.
+Kullanılan çizgi tipi, geldikleri yüzeyin tipiyle aynıdır (ayrıca <span class="Parf_negrita">Tümü</span>
+kutucuğu etkinleştirilirse, enkesitin tüm yüzeyleri için aynı anda işlem yapılır).
+Bu enkesit grubunu içeren harita, bir &nbsp;<span class="Archivo">.edm</span>
+dosyasına kaydedilebilir,
+böylece daha sonra plan üzerinde düzenlenebilir, örneğin,
+üçgenlemek ve eş yükselti eğrileri, yeni enkesitler vb. çıkarmak için.&nbsp;</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;"><a name="lineas_L">Boykesit Çizgileri (L Çizgileri)</a></span>:
+Belirli bir yüzeyin her bir enkesitinin eşdeğer noktalarını (köşe noktalarını) bir aralıkta
+birleştirerek oluşturulan boykesit çizgilerini plan haritasına aktarır. Bu işlem aşağıdaki
+kriterlerden birine göre yapılır:</li>
+</ul>
+<ul style="margin-left: 40px; list-style-type: circle;">
+<li><img style="width: 288px; height: 214px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_lineasL.png" align="right" />Eksenden
+itibaren her iki taraftaki ilk <span style="font-style: italic;">i</span>
+adet köşe noktası, burada <span style="font-style: italic;">i</span> dikkate alınacak
+köşe noktası sayısıdır.</li>
+</ul>
+<ul style="margin-left: 40px; list-style-type: circle;">
+<li>Yüzeyin tüm köşe noktaları.</li>
+</ul>
+<ul style="margin-left: 40px; list-style-type: circle;">
+<li>Dikkate alınan yüzeyin her iki tarafındaki
+uç (son) köşe noktası.</li>
+</ul>
+<ul style="margin-left: 40px; list-style-type: circle;">
+<li>Kullanıcı
+tarafından belirtilen bir koda karşılık gelenler.
+Örneğin, GÜZERGAH PROJESİ'nden gelen bir enkesit dosyasında kod 2 belirtilirse,
+ana platform kenarlarına (çift platform durumunda dış kenarlar) karşılık gelen iki
+3B çizgi içeren bir plan elde edilir.</li>
+</ul>
+<ul style="margin-left: 40px; list-style-type: circle;">
+<li>Belirtilenden
+büyük veya ona eşit bulduğu ilk kod
+(yani, örneğin kod 99'u bulamazsa 100 veya 600 ile birleştirebilir).<br />
+<br />
+</li>
+<li>Her enkesitte aynı sayıda
+bölümleme yaparak bir regle yüzey.<br />
+<br />
+</li>
+<li>Dikkate alınan yüzeyin her iki tarafındaki sondan bir önceki köşe noktası.<br />
+</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Yüzeyi
+Üçgenle</span>: Bu seçenek, GÜZERGAH PROJESİ modülünden B<a href="OL_triangular_superficie.html">OYKESİT &#8594; Araçlar &#8594;
+Yüzeyi Üçgenle</a> menüsünden sunulan seçeneğe benzer.<br />
+</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">DİYAGRAM</span>:
+Bu araç, seçilen enkesit dosyasında bulunan
+<a href="#diagrama">yüzeylerin diyagramını</a> oluşturur.&nbsp; </li>
+</ul>
+      </span>
+<ul>
+<li><span class="Parrafo"><span style="font-weight: bold;">Sabit kotta boykesit çizgileri</span>:
+Arazi yüzeyleri hariç, &nbsp;<span class="Archivo">ISPOL.per</span> tipi
+bir enkesit dizisiyle tanımlanan yüzeylerden sabit bir kotta bir kesit
+çıkarır.</span></li>
+</ul>
+<span class="Parrafo"><br />
+<span class="Titulo_2"><a name="submenus_modif">Enkesit
+dosyalarında değişiklik yapmak için alt menüler</a></span><br />
+<span class="Parrafo"><br />
+</span><img style="width: 105px; height: 78px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_submenus_modif.png" align="right" /><span class="Parrafo"><span style="font-weight: bold;">[DÜZENLE]</span> ve <span style="font-weight: bold;">[DÜZENLE 2]</span> alt menüleri,
+enkesit dosyalarında saklanan öznitelikler üzerinde bir dizi işlem yapmayı sağlar.
+Sonuç, bir KM aralığıyla sınırlandırılabilir ve aynı girdi dosyasında veya farklı bir dosyada saklanabilir.<br />
+<br />
+<br />
+</span><span style="font-weight: bold; font-style: italic;"><a name="modificar">Düzenle</a></span><br />
+<span class="Parrafo"> <br />
+</span>
+<table style="text-align: left; width: 691px; height: 200px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="tipo_sup">Yüzey Tipi</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;">Seçilen
+enkesit dosyasının mevcut yüzeylerinden herhangi birinin tipini
+değiştirmeyi sağlar.<br />
+<br />
+<div style="text-align: center;"><img style="width: 312px; height: 146px;" alt="" src="Imagenes/edit_perf_tipo_sup.png" /><br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="cota_sup">Yüzey Kotu</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;">Bir
+yüzeyin tüm noktalarının kotlarına sabit bir miktar
+ekler.<br />
+<br />
+Eğer kotu değiştirilmek istenen yüzey, mevcut bir platformun
+tesviye yüzeyi (L102) ise, program mevcut platformun yüzeylerinin
+uçlarını ve iyileştirme kenarlarını da değiştirmek isteyip istemediğinizi sorar.<br />
+<br />
+Aralıklara göre filtreleme yapabilir ve birden fazla yüzey seçebilirsiniz.
+Herhangi bir aralık eklenmezse, dosyadaki tüm enkesitler işlenir.<br />
+<br />
+<img style="width: 400px; height: 325px;" alt="" src="Imagenes/edit_perf_cota_sup.png" /><br /><br />İletişim kutusunda tanımlanan aralıkları kaydetmek ve yüklemek mümkündür.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="anadir_paral">Paralel Ekle</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;">Belirli
+bir tipte ve mevcut bir yüzeye paralel bir yüzey oluşturur.
+Üç olası mod vardır:<br />
+<ul>
+<li><span style="font-weight: bold;">Dikey
+öteleme</span>: Paralel, kaynak yüzeyin her köşe noktasının
+kot artışından oluşturulur.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Gerçek
+paralel</span>:
+Kaynak yüzeyin her segmentine belirtilen mesafede bir paralel
+oluşturur ve bu segmentleri birbirleriyle kesişene kadar uzatır.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Radyal</span>:
+Bir tünel kazısı gibi, enkesit eksenine merkezlenmiş
+kapalı yüzeyler için kullanışlıdır. Bu modda, enkesit ekseninde,
+her yarı-enkesitin ilk ve son noktası arasındaki ortalama kotla bir nokta belirlenir.
+Bu merkezle, yüzeyin her bir noktasına yarıçaplar çizilir ve konumu bu yarıçap boyunca
+belirtilen mesafede kaydırılır.</li>
+</ul>
+<div style="text-align: center;"><img style="width: 264px; height: 153px;" alt="" src="Imagenes/edit_perf_anadir_paral.png" /><br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="borrar_sup">Yüzey Sil</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 226px; height: 168px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_borrar_sup.png" align="right" />Bir
+enkesit dosyasından bir yüzeyi siler ve eksenin hangi tarafının
+silineceğini seçme imkanı sunar.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="num_eje">Eksen Numarası</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 219px; height: 108px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_num_eje.png" align="right" />Bir&nbsp;<span class="Archivo">.per</span> dosyasının ait olduğu eksen numarasını
+değiştirir.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="proyectar_eje">Ekseni Projelendir</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;">Bir
+eksenin enkesit dosyasını başka bir eksene yansıtır. Bu,
+bir eksene referansla alınmış arazi enkesitleri dosyası olduğunda ve proje sırasında
+planda küçük değişiklikler (bir kurp yarıçapını artırmak,
+bir doğruyu yanal olarak kaydırmak vb.) yaparak güzergahı değiştirmek istendiğinde kullanışlıdır.
+Enkesitlerin konumu değişir ve değişiklik bölgesinden sonraki her enkesitin KM ataması
+değiştirilmelidir. Değişiklikler "küçük" semt açısı değişiklikleri içerdiğinde de aynı
+enkesitler kabul edilebilir.<br />
+<br />
+<img style="width: 252px; height: 123px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_proyectar_eje.png" align="right" />Bu
+seçenek, her enkesiti yeni eksene yansıtır, yeni KM'yi ve
+yeni enkesit merkezini hesaplar ve ona yeni eksen üzerindeki semt açısını atar.
+Kullanıcı, bu yansıtmanın "makul ölçüde" hassas enkesitlere
+yol açması için değişikliklerin yeterince
+"küçük" olup olmadığını kontrol etmelidir.<br />
+<br />
+Ayrıca, enkesitleri yanal olarak kaydırma, eksene olan mesafe ve
+kotun sayısal değerlerini koruyarak merkezlerini başka bir konuma taşıma
+imkanı da sunulur. Bu işlem, her enkesitin merkezinin koordinatlarının yakalanmasında,
+örneğin UTM projeksiyonunu dikkate almamak, daha az hassas bir alet kullanmak gibi küçük bir hata olduğunda
+gereklidir.<br />
+<br />
+Seçenek, sembollü enkesitlere izin verir. Ayrıca, KM'leri ters yönde ilerleyen bir eksenin enkesitlerini başka bir eksene yansıtmak da mümkündür.
+Bu durumda, program önce enkesitlerin sırasını tersine çevirir,
+sağ tarafı solla değiştirir, semt açısını döndürür ve
+KM'leri işaretlerini değiştirerek yeniden numaralandırır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="anadir_simb">Sembol Ekle</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 222px; height: 216px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_anadir_simb.png" align="right" />Enkesitleri
+sembollerle süslemeyi sağlar. Enkesitler,
+daha sonra onlarla çizilmek üzere, enkesitin belirli elemanlarına referansla
+yerleştirilen sembol serilerini kabul eder; hendek altı drenleri, güvenlik bariyerleri, direkler vb. gibi.
+Enkesitler demiryollarına ait olduğunda, zaten travers ve raylara
+karşılık gelen sembol serileri içerirler. Burada katener için
+direkler eklenebilir,...<br />
+<br />
+Benzer bir seçenek, GÜZERGAH PROJESİ modülü içinde BOYKESİT <span class="Parrafo">&#8594;</span>
+ENKESİTLER <span class="Parrafo">&#8594;</span>&nbsp; <span style="font-weight: bold;">[ENKESİT SEMBOLLERİ]</span>
+menüsünde komut tablosu şeklinde de mevcuttur.<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="cortar_por_eje">Eksene Göre Kes</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 250px; height: 124px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_cortar_por_eje.png" align="right" />Enkesitlerle
+yapılan bazı işlemler, yanal olarak kaydırılmış, birleştirilmiş veya "elle" taşınmış enkesitlere yol açar, bu da
+hassas hacim hesaplamaları veya <span style="font-weight: bold;">[Tamamla]</span> gibi işlemlerin uygulanması için uygun olmaz.
+Bu işlem, bir enkesitin birkaç parçasını birleştirir ve kesimi eksen üzerine yerleştirir.<br />
+<br />
+Bu araç, yarı-enkesitlerden birinin veya her ikisinin
+verilerinin ters çevrilip çevrilmediğini önceden analiz eder ve bu durumu düzeltir.
+Yarı-enkesitlerin yüzeyleri, eksenden
+dışarıya doğru bir yöne sahip olmalıdır.<br />
+<br />
+Eğer <span style="font-weight: bold;">[
+] Ekseni kesmezse uzat</span> seçeneği etkinleştirilirse, enkesiti
+eksenin diğer tarafından uzatacaktır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="alargar_recortar">Uzat / Kırp</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><span class="Parrafo"><img style="width: 251px; height: 330px; float: right;" alt="" src="Imagenes/edit_perf_alargar_recortar.png" hspace="6" /></span>Bir yüzeyi, başka birini referans olarak kullanarak otomatik olarak
+uzatır veya kırpar.<br />
+<br />
+Bu seçenek, belirli arazi enkesitleriyle yapılmış bir projenin,
+değişikliğinin başlangıçtakilere göre küçük farklılıklar içeren
+başkalarının aplikasyonunu gerektirdiği durumlar için tasarlanmıştır. Eski yüzey
+yeniyle değiştirilir ve bu işlemle şevler yeni duruma
+ayarlanır.<br />
+<br />
+Benzer bir durum, maden ocaklarının takibi sırasında,
+kısmi aplikasyonların kenarlarda tam olarak uyuşmadığında ortaya çıkar.
+Algoritmanın düzgün çalışması için farklılıkların küçük olması gerekir,
+çünkü sadece enkesitin son segmenti üzerinde işlem yapılır.
+Yarı-enkesitlerin her birinin ilk noktası eksenle çakışmazsa,
+bir uzatma/kırpma da yapılır.<br />
+<br />
+<br />
+<img style="width: 251px; height: 330px; float: left;" alt="" src="Imagenes/edit_perf_alargar_pend.png" hspace="6" /><span style="font-weight: bold;">Eğimle uzat</span>
+(kendi eğimi, eğim veya şev) seçeneği için, eğer enkesitin
+gerekli tarafta noktası yoksa, diğer tarafın ilk iç segmentinden
+ekstrapolasyon yapılır.<br />
+<br />
+<span class="Parrafo"><span class="Parrafo">Yüzeyi
+kırpma durumunda, sadece yüzeyin
+son segmentinin mi dikkate alınacağı yoksa
+birden fazla segmentin silinmesine izin verilip verilmeyeceği belirtilmelidir.<br />
+<br />
+Eğer referans yüzey olarak uzatılmak/kırpılmak istenen yüzeyin
+kendisi verilirse ve ayrıca sadece son
+segment dikkate alınırsa,
+o zaman program yüzeyin
+her iki tarafından son segmenti siler.<br />
+<br />
+İletişim kutusu ayrıca, yüzeyi son bölümün
+<span style="font-weight: bold;">eğimine göre</span> ve belirli bir
+eksen mesafesine kadar uzatma imkanı da sunar.</span></span><br />
+<br />
+<br />
+<img style="width: 251px; height: 330px; float: right;" alt="" src="Imagenes/edit_perf_alargar_pendiente_sube_baja.png" hspace="6" /><span class="Parrafo">Kendi
+eğimiyle veya önceden tanımlanmış
+bir eğim veya şevle uzatılabilir. Bu durumlarda,
+referans yüzeyin
+değiştirilecek yüzeye göre konumuna bağlı olarak
+yükselen, alçalan veya otomatik işaretli bir
+eğim veya şev sabitlenebilir.<br />
+<br />
+</span></td>
+</tr>
+<tr><td><br />
+</td><td><img style="width: 251px; height: 330px; float: left;" alt="" src="Imagenes/edit_perf_alargar_recortar_extremos_talud_min.png" hspace="6" /><span style="font-weight: bold;">Uçları minimum şeve göre kırp</span>:
+enkesitin uçlarından, yarmada seçilen zeminin kapanışı gibi çok dik şevleri
+kaldırmaya olanak tanır, böylece bu yüzeylerin bu segmentler olmadan
+daha sonra işlenmesi sağlanır,</td></tr><tr><td><br />
+</td><td>Şev alanı, yarma ve dolgu şevi olarak ayrılmıştır.<br /><br /><div style="text-align: center;"><img style="width: 250px; height: 69px;" alt="" src="Imagenes/alar_rec_talud.png" /><br /></div></td></tr><tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="desplazar">Ötele/Kaydır</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 275px; height: 123px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_desplazar.png" align="right" />Bir
+dosyanın enkesitlerini bir aralıkta (KM ile verilen) sağa veya
+sola ve kot olarak kaydırır.<br />
+<br />
+Seçenek, aralıktaki tüm enkesitler için aynı ötelemeyi (yanal ve
+kot olarak) uygulama veya sadece bir <a href="OL_ficheros_pkd_pks_pkz.html#pkd">.pkd&nbsp;<span class="Archivo">dosyasına</span></a> göre değişken bir yanal öteleme uygulama arasında seçim yapma imkanı sunar.<br />
+<br />
+Bu araç, sembol içeren enkesit dosyalarıyla da çalışır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 121px;"><span style="font-weight: bold;"><a name="EyM_cod">Koda Göre G/İ</a></span> </td>
+<td style="vertical-align: top; width: 550px; text-align: justify;"><img style="width: 228px; height: 129px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_EyM_codigo.png" align="right" />Bir
+arazi enkesit dosyasını bir <a href="OL_EyM.html">genişletme ve iyileştirme</a> enkesit dosyasına
+dönüştürür.
+Bunun için orijinal yüzeyin, mevcut platformun kenar işaretleri olarak
+kullanılabilecek kodlarla işaretlenmiş olması gerekir. Belirli bir
+durum, genişletme ve iyileştirme için işaretleri olan diğer
+programlardan arazi enkesitlerinin içe aktarılmasıdır.<br />
+<br />
+Bu komut seçildiğinde, program platform kenarı kodunu,
+iyileştirme kenarı kodunu, bu kodlara bir mesafeyi ve mevcut
+üstyapı katmanının kalınlığını sorar, ardından mevcut olanı kopyalayarak oluşturulan tüm yüzeylerle yeni bir enkesit dosyası oluşturur.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 121px; font-weight: bold;"><a name="regularizar">Düzenlileştir</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;"><img style="width: 237px; height: 93px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_regularizar.png" align="right" />Herhangi
+bir KM'de alınmış bir enkesit dosyasını, KM'leri
+belirli bir değerin katları olan enkesitlere sahip başka bir dosyaya
+dönüştürmeyi sağlar.<br />
+<br />
+Yeni enkesitler, en yakın iki enkesit arasında ve <a href="#dist_max_interp">enterpolasyon için
+maksimum mesafeyi</a> dikkate alarak enterpole edilir.<br />
+<br />
+Seçeneğin doğru çalışması için, her yeni KM'ye karşılık gelen koordinatları ve semt açısını bilmek amacıyla enkesitlerin plan ekseninin hesaplanmış olması gerekir.<br />
+<br />
+Çıktı dosyası, ilk enkesiti, sonuncusunu ve arada
+verilen değerin veya eşit aralığın tüm katlarını içerir.
+Aşağıda 20'nin katlarına göre bir düzenlileştirme örneği gösterilmektedir:<br />
+<br />
+<table style="text-align: left; height: 50px; width: 475px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 55px;"><span style="font-style: italic;">Orijinal</span>:<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 45px;">12.35</td>
+<td style="vertical-align: top; text-align: center; width: 50px;">18.3</td>
+<td style="vertical-align: top; text-align: center;">44.2</td>
+<td style="vertical-align: top; text-align: center;">89.3</td>
+<td style="vertical-align: top; text-align: center;">111.0</td>
+<td style="vertical-align: top; text-align: center; width: 49px;">147.85</td>
+<td style="vertical-align: top; text-align: center; width: 49px;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 42px;"><br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 49px;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 55px;"><span style="font-style: italic;">Sonuç</span>:<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 45px;">12.35<br />
+</td>
+<td style="vertical-align: top; text-align: center; width: 50px;">20.0</td>
+<td style="vertical-align: top; text-align: center;">40.0</td>
+<td style="vertical-align: top; text-align: center;">60.0</td>
+<td style="vertical-align: top; text-align: center;">80.0</td>
+<td style="vertical-align: top; text-align: center; width: 49px;">100.0</td>
+<td style="vertical-align: top; text-align: center; width: 49px;">120.0</td>
+<td style="vertical-align: top; text-align: center; width: 42px;">140.0</td>
+<td style="vertical-align: top; text-align: center; width: 49px;">147.85</td>
+</tr>
+</tbody>
+</table>
+<br />
+Bu seçenek, öznitelikleri, bu KM'ler
+orijinal dosyada mevcutsa, düzenlileştirilmiş KM'lere aktarır (enterpole edilmiş KM'ler için
+öznitelikler silinir).<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="recortar_sup">Yüzeyi Kırp</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;">Bir
+yüzeyi (veya hepsini birden), başka birini veya ekseni
+referans alarak kırpar. Kesim,
+referans yüzeyin genişliği üzerinde bir kenar boşluğu ile
+veya referans olarak eksen seçilmişse belirtilen eksen mesafesine kadar
+gerçekleşir. Ayrıca, hem bir taraftan hem de
+her iki taraftan da yapılabilir.<br />
+<br />
+<div style="text-align: center;"><img style="width: 309px; height: 177px;" alt="" src="Imagenes/edit_perf_recortar_sup.png" /><br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="separar_D_T">Yarma/Dolgu Ayır</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;">Bir
+veri yüzeyi S ve bir referans yüzeyi R'den yola çıkarak iki yeni yüzey D ve T oluşturur, öyle ki:<br />
+<br />
+<div style="margin-left: 40px;">D: S yüzeyinin R'ye göre Yarmada olan kısmıdır.<br />
+T: S yüzeyinin R'ye göre Dolguda olan kısmıdır.<br />
+</div>
+<br />
+<div style="text-align: center;"><img style="width: 267px; height: 153px;" alt="" src="Imagenes/edit_perf_separar_D_T.png" /><br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="eje_X_Y_Az">Eksen, X, Y, Semt</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;"><img src="Imagenes/edit_perf_eje_X_Y_Az.png" alt="" style="width: 234px; height: 108px; margin-left: 7px;" align="right" />Bir
+enkesit dosyasına EKSEN numarasını ve her enkesitteki
+X, Y koordinatlarını ve semt açısını değiştirmeyi veya eklemeyi sağlar, bu da
+plan ekseninin hesaplanmış olmasını gerektirir.<br />
+<br />
+Bu seçenek genellikle, araziden veya diğer programlardan gelen enkesit dosyalarını
+üç boyutlu bilgiye dönüştürmek için kullanılır.<br />
+<br />
+<span class="Parrafo">Birden
+fazla enkesit
+dosyası seçilerek hepsi aynı anda değiştirilebilir. Bu durumda, program
+bir hedef dosya adı sormayacak, doğrudan
+orijinallerin üzerine yazacaktır.</span><br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="eje_planta">Plan Ekseni</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;"><img style="width: 181px; height: 93px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_eje_planta.png" align="right" />Dışmerkezliğe
+sahip eksenler için, mesafelerin başlangıcını eksenden
+plan eksenine taşır.<br />
+<br />
+Bu seçenek, sembol içeren enkesit dosyalarıyla da çalışır.<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="adaptar_cota">Kot Uyarla</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;"><img style="width: 276px; height: 184px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_adaptar_cota.png" align="right" />Bir
+veya tüm yüzeyleri, her enkesit için yeni kotu veya
+eksende bir kot artışını vererek yükseltmeyi veya alçaltmayı sağlar.<br />
+<br />
+Veriler, enkesit enkesit interaktif olarak veya
+her satırda iki veri (KM ve kot veya KM ve kot artışı) içeren, artan KM'lerle bir <a href="OL_ficheros_pkd_pks_pkz.html#pkz">.pkz&nbsp;<span class="Archivo">dosyası</span></a> aracılığıyla girilebilir.<br />
+<br />
+Bu seçenek, haritadan çıkarılan bir enkesit dosyasını
+eksenin bir nivelmanıyla ayarlayarak sahada kullanmayı sağlar.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="interpolar">İnterpolasyon</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;">Çoklu
+yüzeyli bir enkesit dosyasında, belirli bir aralıkta ve aralıkta yeni
+enkesitler enterpole etmeyi sağlar. Bu seçenek üç
+olasılık sunar:<br />
+<ol>
+<li>İnteraktif, tekil KM'ler.<br />
+</li>
+<li>Başlangıç ve bitiş KM'leri ve belirli bir değerin
+katları.</li>
+<li>.pk Dosyası ile. Bu dosya,
+her satırın ilk sütununda KM'leri içermelidir.<br />
+</li>
+</ol>
+<span style="font-style: italic;">İnteraktif</span> seçilirse,
+oluşturulmaları için farklı (artan sırada) değerler girmek mümkündür.<br />
+<br />
+<div style="text-align: center;"><img style="width: 384px; height: 139px;" alt="" src="Imagenes/edit_perf_interpolar.png" /><br />
+</div>
+<br />
+<a name="dist_max_interp">Önceki
+durumlarda ve <span style="font-weight: bold;">Düzenlileştir</span> seçeneğinde olduğu gibi</a>,
+bir <span style="font-weight: bold;">enterpolasyon için
+maksimum mesafe</span> istenir.
+Eğer enterpole edilmek istenen enkesit, orijinal dosyanın önceki veya sonraki enkesitine
+göre bu mesafeden daha uzaktaysa,
+o zaman enkesit enterpole edilerek değil, en yakınına eşit olarak oluşturulur.
+Ancak, yukarıdaki durum hem önceki hem de
+sonraki enkesit için geçerliyse, o zaman oluşturulan enkesit ikisi arasında
+enterpole edilir ve dolayısıyla etki, maksimum
+enterpolasyon mesafesinin mevcut olandan büyük veya ona eşit olmasıyla aynıdır. Örneğin,
+0, 100, 200, 300 enkesitlerini içeren bir dosyanız varsa ve
+maksimum enterpolasyon mesafesi olarak 40 verirseniz, 120 enkesitini enterpole ettiğinizde,
+bu 100'e eşit olacaktır ve benzer şekilde, 180 enkesitini enterpole etmek isterseniz,
+200'e eşit olacaktır. Ancak, 155 enkesitini enterpole etmek isterseniz,
+aynı maksimum mesafeyle, 100 ile 200 arasında enterpole edilmiş bir enkesit oluşturulacaktır.<br />
+<br />
+Bu araç, <span style="font-weight: bold;">Düzenlileştir</span> ile birlikte,
+negatif şevli arazi yüzeyleri arasında, örneğin <a href="OL_seg_tun.html">Tünel
+Takibi</a> enkesitleri gibi, enkesitleri enterpole edebilir.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="insertar_cod">Kod Ekle</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;"><img style="width: 288px; height: 347px;" alt="" src="Imagenes/edit_perf_insertar_cod.png" align="right" hspace="6" />Bu
+seçenek, bir enkesit dosyasının bir yüzeyine, belirli bir
+koda sahip başka bir noktadan başlayarak, tanımlanmış bir kodla yeni bir nokta eklemeyi sağlar.<br />
+<br />
+Bir kod eklemek için öncelikle referansın <span style="font-weight: bold;">Eksenden
+Mutlak</span> mı, belirli bir <span style="font-weight: bold;">Referans Kodu</span> ile mi
+yoksa belirli bir <span style="font-weight: bold;">yüzeyin</span>
+<span style="font-weight: bold;">kodlarını Kopyala</span>yarak mı olduğunu belirtmemiz gerekir.<br />
+<br />
+Program, bir referansın <span style="font-weight: bold;">sağında</span>,
+<span style="font-weight: bold;">solunda</span>
+veya <span style="font-weight: bold;">her iki</span>
+tarafında da arama yapmaya izin verir.<br />
+<br />
+Mesafeler <span style="font-weight: bold;">interaktif olarak</span>,
+enkesit enkesit, bir <a href="OL_ficheros_pkd_pks_pkz.html#pkd"><span style="font-weight: bold;">.pkd</span>&nbsp;<span class="Archivo">dosyası</span></a> aracılığıyla KM'ler ve belirli noktalardaki <span style="font-weight: bold;">mesafeler</span> ile girilebilir.<br />
+<br />
+Kodlar oluşturulduğunda, atanan yüzeye <span style="font-weight: bold;">Eklenebilir</span> veya <span style="font-weight: bold;">en
+yakına kod atanabilir</span>.<br />
+<br />
+Program, diğer KM'ler için göreceli mesafeleri enterpole eder.
+İşlenecek yüzeyin kodları yoksa (arazi enkesitleri),
+program referans mesafesi olarak enkesit eksenini alır
+(mesafe sıfıra eşit). Ayrıca, sonunda yüzey
+kodlarla birlikte&nbsp;<span class="Archivo">.per</span> dosyasına kaydedilir.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="completar_adaptar">Tamamla + Uyarla</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;"><img style="width: 267px; height: 123px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_comp_adapt.png" align="right" />İlk
+yüzeyi ikinciyle tamamlar, ancak ikinciyi her yarı-enkesitte
+dikey olarak kaydırarak birincinin arkasında kesintisiz devam etmesini sağlar.
+Daha sonra ikinci yüzeyi siler.<br />
+<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="listar_Za_Zb">Za-Zb Listele</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;"><img style="width: 234px; height: 313px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_Za_Zb.png" align="right" />Bu
+seçenek, her KM için eksene olan mesafeleri ve seçilen iki yüzey arasındaki kot farklarını,
+ayrıca farkların mutlak değerlerinin ağırlıklı ve birikimli ortalamasını
+yazdıran bir liste (<span class="Archivo">difcotas.res</span>)
+oluşturur.<br />
+<br />
+Ayrıca, iki yüzeyden birinin veri içerdiği veya her ikisinin kesişim noktalarında bir nokta listelenir. Bu liste
+ayrıca iki yüzey arasındaki birikmiş hacimleri de yazdırır.<br />
+<br />
+Tek bir tarafı veya her ikisini de seçmek ve ayrıca KM'lere göre verilebilen birinci yüzeyden bir derinlik girmek mümkündür.
+Ayrıca, birinci yüzeyin belirli bir koda sahip noktalarını da listelemek mümkündür.<br />
+<br />
+Tam veya kısa liste istenip istenmediği sorulur. Kısa listede
+alanlar yazdırılmaz. Tam listede, birinci yüzeyin kotu eksi derinlik ve
+ikincinin kotu (hata hacimlerine ek olarak) ek olarak yazdırılır. İsteğe bağlı
+olarak <span class="Archivo">difcotastab.res</span> adında sekmeli bir liste oluşturulabilir.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="invertir_izq_dec">Sol-Sağ Yön Değiştir</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;">Bir
+enkesit dosyasının bir KM aralığında sağ tarafı solla değiştirmeyi sağlar.
+Enkesitin sembolleri de ters çevrilir.<br />
+</td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><br />
+<br />
+</span><span style="font-style: italic; font-weight: bold;"><a name="modificar_2">Düzenle 2</a></span><br />
+<span class="Parrafo"><br />
+</span>
+<table style="text-align: left; width: 691px; height: 200px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="EyM_ampliar">G/İ, genişlet</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 279px; height: 146px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_EyM_ampliar.png" align="right" /><a href="OL_EyM.html#extrac_perf">Genişletme ve iyileştirme için arazi
+enkesitlerinde</a> kullanılır ve şunları sağlar:<br />
+<ul>
+<li>Mevcut tesviye yüzeyini, <span style="font-weight: bold;">maksimum arama mesafesinden</span> önce keserse, araziyle kesişene (drenaj) kadar genişletmek.</li>
+</ul>
+<ul>
+<li>Eğer kesişim yoksa, <span style="font-weight: bold;">tesviye yüzeyinin teorik
+drenaj mesafesine</span> eşit bir mesafe kadar genişletilir.</li>
+</ul>
+<ul>
+<li>Mevcut platform, üstyapının yanal şevini simüle ederek arazi boyunca, tesviye yüzeyini bulana kadar (eğer kesişim varsa) veya tesviye yüzeyinin ucunun dikeyine kadar uzatılır.</li>
+</ul>
+<ul>
+<li>Ayrıca, eğer başlangıçta mevcut platformun tamamını kaplıyorsa, <span style="font-weight: bold;">iyileştirme çizgisini genişletmeye</span> de olanak tanır.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="quitar_vacios">Boş Olanları Kaldır</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;">Bu
+seçenek, bir enkesit dosyasından, hiçbir yüzeyin veri içermediği
+KM'leri kaldırmayı sağlar. Bu, örneğin <span style="font-weight: bold;">[Güncelle]</span> seçeneği için bir ön işlem olarak kullanışlıdır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="quitar_sup_vacias">Boş Yüzeyleri Kaldır</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;">Bir
+enkesit dosyasından, enkesit dosyasında tanımlanan her KM için veri içermeyen
+yüzeyleri siler.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="redondear_PK">KM'yi Yuvarla</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 273px; height: 116px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_redondear_PK.png" align="right" />Bu
+seçenek, belirli bir değerin katlarına yakın olan KM'leri,
+bir toleransın dışında kalan tekil KM'leri koruyarak
+yuvarlamayı sağlar.<br />
+<br />
+Eğer enkesitler ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'de tanımlanmış bir eksene karşılık geliyorsa,
+seçenek her enkesitin yeni X, Y ve semt açısını belirlemeye olanak tanır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="quitar_atrib">Öznitelikleri Kaldır</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;">Enkesit
+dosyasının sayısal ve alfanümerik özniteliklerini siler.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="quitar_simb">Sembolleri Kaldır</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 211px; height: 109px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_quitar_simb.png" align="right" />Belirli
+bir sembolü veya tip olarak -1 değeri belirtilirse tüm sembolleri, <span class="Parrafo">belirtilen KM aralığında
+ve tarafta,</span> siler.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="anadir_perfil">Enkesit Ekle</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 303px; height: 120px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_anadir_perfil.png" align="right" />Bu
+seçenek, bir enkesit dosyasına, başka bir dosyada bulunan bir yüzeyi,
+hatta o dosya farklı bir eksene ait olsa bile eklemeyi sağlar.
+Seçenek, GÜZERGAH PROJESİ'nin tünel kemerleri için <span style="font-weight: bold;">Dal Ekle</span>
+aracı gibi çalışır, bu nedenle eklenecek yüzey negatif şevlere sahip olabilir.<br />
+<br />
+Bir kullanım örneği, bir eksenle tasarlanmış bir metro tüneli durumudur,
+farklı eksenlerle tanımlanmış farklı iç hatlara sahiptir.
+Bu seçenekle, hatların enkesitlerine tünel kemerinin
+konumunu eklemek mümkündür.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="alargar_perfil">Enkesiti Uzat</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;">Bkz.
+<a href="#alargar_recortar">Düzenle -
+Uzat / Kırp</a>.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="numerar_perf">Enkesitleri Numaralandır</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 234px; height: 125px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_numerar_perf.png" align="right" />Bu
+seçenek, enkesitleri ardışık olarak veya sabit bir artışla numaralandırır.
+Hem arazi enkesitleri hem de
+&nbsp;<span class="Archivo">ISPOL#.per</span> enkesitleri
+(burada # eksen numarasıdır) için kullanılabilir. Arazi enkesitlerini
+numaralandırma durumunda, numara daha sonra eksen hesaplamasından sonra
+&nbsp;<span class="Archivo">ISPOL#.per</span> dosyasında
+kalacaktır
+ve hesaplama ile enterpole edilen enkesitler numarasız kalacaktır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 121px;"><a name="codif_sup">Yüzeyi Kodla</a><br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 550px;"><img style="width: 260px; height: 153px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_codif_sup.png" align="right" />Bu
+seçenek, bir enkesit dosyasının bir yüzeyini,
+bir noktadan (0 eksen) başlayarak belirli bir kodla ve ardışık
+noktalar için bir kod değeri artışıyla kodlamayı sağlar.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 121px; font-weight: bold;"><a name="editar_datos">Verileri Düzenle</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;">Bu
+aracın en basit kullanımı, her enkesitin KM'sini değiştirmektir,
+ancak bu seçenek ayrıca, <a href="rejilla_datos.html">veri
+tablosu</a> ile, bir enkesit dosyasına eklenmiş bilgileri düzenlemek için tasarlanmıştır.<br />
+<br />
+<div style="text-align: center;"><img style="width: 490px; height: 218px;" alt="" src="Imagenes/edit_perf_editar_datos_rejilla.png" /><br />
+</div>
+<br />
+Bu bilgi, enkesitlerde hücreler olarak bulunur. Her
+hücre bir başlık ve bir değer içerir (örneğin, C31).<br />
+<br />
+<img style="width: 187px; height: 49px; margin-right: 7px;" alt="" src="Imagenes/seg_tuneles_anadir_datos.png" align="left" /><a href="OL_seg_tun.html#perfilometro">TÜNEL TAKİBİ</a>
+modülünün <a href="OL_seg_tun.html#opciones_anadir_datos"><span style="font-weight: bold; font-style: italic;">Veri Ekle</span></a>
+seçeneği, enkesitlere bu tür verileri eklemeyi sağlar. <br />
+<br />
+Enkesit verilerini gösteren tablo için değişiklikler içeren bir csv dosyası yükleme seçeneğimiz var.
+Dosyanın, alanları ; ile ayrılmış bir csv olması zorunludur.
+Ayrıca, csv dosyasında birinci sütunda saklanan verinin (enkesitin KM'si),
+gerekli olması durumunda tam sayı kısmını ondalık kısımdan ayırmak için yalnızca bir . içerebilir,
+yani KM'yi biçimlendirmek için virgül veya nokta kabul edilmez,
+sadece tam sayı kısmını ondalık kısımdan ayırmak gerektiğinde bir . kabul edilir.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 121px; font-weight: bold;"><a name="borrar">KM'ye Göre Sil</a><br />
+</td>
+<td style="vertical-align: top; width: 550px; text-align: justify;"><img style="width: 288px; height: 102px;" alt="" src="Imagenes/edit_perf_borrar.png" align="right" hspace="7" />Bir enkesit dosyasından bir
+veya daha fazla KM aralığını silmeyi sağlar.<br />
+<br />
+<span style="font-weight: bold;">Dosyaya
+Göre&nbsp;</span><span style="font-weight: bold;" class="Archivo">.pk</span>
+kutucuğunu etkinleştirerek, enkesitleri bu uzantıya sahip bir dosya aracılığıyla silmeye olanak tanır.
+Bu dosyada, ilk sütunda KM'ler görünmelidir. Bunlar sıralı olmayabilir.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold;"><a name="filtrar_todo">Filtrele<br />
+</a>
+</td>
+<td style="vertical-align: top;"><img style="width: 249px; height: 139px;" alt="" src="Imagenes/edit_perf_filtrar.png" align="left" hspace="4" />Bir kot toleransına göre tüm enkesitlerin tüm yüzeylerindeki
+hizalanmış noktaları siler.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;"><a name="multiplos">Katlar</a></span></td>
+<td style="vertical-align: top; text-align: justify;"><img style="width: 234px; height: 93px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_multiplos.png" align="right" />Bu
+seçenek, bir enkesit dosyasından belirli bir değerin katlarını
+(ayrıca ilk ve sonuncuyu) çıkarmayı sağlar.<br />
+<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;"><a name="encima_debajo">Üstündekiler /</a></span><br style="font-weight: bold;" />
+<span style="font-weight: bold;">Altındakiler</span><br />
+</td>
+<td style="vertical-align: top; text-align: justify;"><img style="width: 234px; height: 158px; margin-left: 7px;" alt="" src="Imagenes/dialogo_encima_debajo.png" align="right" />Bir
+yüzeyden, başka bir referans yüzeyin üstünde veya altında kalan
+noktaları silmeyi sağlar.<br />
+<br />
+Aşağıdaki örnekte, yatay bir çizgi bir <a href="OL_seg_tun.html">tünel takibi</a> enkesitlerinde
+bir karşılaştırma düzlemi işaretler. <span style="font-weight: bold;">Üstündekiler</span>
+işlemi, şekilde görülebileceği gibi tünelin üst kısmını siler:<br />
+<br />
+<div style="text-align: center;"><img style="width: 510px; height: 197px;" alt="" src="Imagenes/edit_perf_eliminar_encima.png" /><br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;"><a name="inters_superf">Yüzeylerin
+Kesişimi</a></span> </td>
+<td style="vertical-align: top; text-align: justify;"><img style="width: 234px; height: 132px; margin-left: 7px;" alt="" src="Imagenes/dialogo_inters_superf_perf.png" align="right" />Bu
+araç, ilgili bir veya iki yüzeyde, ikisi arasındaki
+kesişim noktalarını oluşturmayı ve her yüzeyde onlara önceden belirlenmiş bir
+kod atamayı sağlar.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Tekrarlanan Yüzeyleri Birleştir</span><br />
+</td>
+<td style="vertical-align: top;">Bu
+araç, aynı
+yüzeyleri içeren iki enkesit dosyası birleştirildiğinde ve her KM'de yüzey ve onun tekrarı, eksene olan mesafe aralığında farklı bir alanı
+kapsayabildiğinde kullanışlıdır. O zaman
+program her KM'de her yüzeyi, tekrarlarıyla tamamlar.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;"><a name="completar__pendiente">Tamamla
++ Eğim</a></span><a name="completar__pendiente"><br />
+</a></td>
+<td style="vertical-align: top;"><img style="width: 267px; height: 146px;" alt="" src="Imagenes/edp_completa_pend.png" align="right" hspace="4" />İki
+yüzey, birincisini ikinciyle tamamlayarak elde edilen yeni bir yüzeyle
+değiştirilir, ancak birincinin uçlarından, ikinciye ulaşana kadar
+tanımlanmış eğimle yükselir/alçalır.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<img style="width: 362px; height: 231px;" alt="" src="Imagenes/edp_completa_pend_ejem.png" /><br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><a name="comp_tun"><span style="font-weight: bold;">Tüneli
+Tamamla</span><br />
+</a></td>
+<td style="vertical-align: top;">Bu
+aracı,
+doğal zeminde kazı veya bir püskürtme beton yüzeyi gibi açık bir tünel takip yüzeyini,
+taban olarak alınmış başka bir yüzeye karşı tamamlamak için
+kullanabiliriz.<br />
+Eğer her iki yüzey kesişmezse, ucundan kendi eğimiyle uzatılır.<br />
+<br />
+<div style="text-align: center;"><img style="width: 484px; height: 464px;" alt="" src="Imagenes/edit_perf_compl_tun.png" /><br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">.xyz'den Sembol Ekle</span><br />
+</td>
+<td style="vertical-align: top;">&nbsp;<span class="Archivo">ISPOL.per</span>
+tipi bir dosyaya (veya bir eksen içeren başka bir dosyaya), bir &nbsp;<span class="Archivo">.xyz</span> dosyasında tanımlanmış noktaları,
+iki arama mesafesi vererek eklemeyi sağlar: biri enkesitin KM'sine, diğeri eksene.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">İki Yüzeyi Kapat</span><br />
+</td><td>Bu seçenek, her enkesitte daha kısa olan yüzeyin ucunu, daha uzun olanın ucunda kapatacak şekilde uzatır.<br />
+&nbsp;Bu seçenek içinde ayrıca [ ] Kapalı yüzey oluştur seçeneği de vardır.
+Bu seçenek, şevli olarak oluşturulmuş olabilecek iki
+açık yüzeyden yeni bir kapalı yüzey oluşturur.<br />
+<br />
+<br />
+<div style="text-align: center;"><img style="width: 200px; height: 115px;" alt="" src="Imagenes/edit_perf_cerrar_2_sup.png" /><br />
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Yüzeylerle İşlemler</span><br />
+</td>
+<td style="vertical-align: top;">Kübaj
+Tablolarının Fonksiyon 1'indeki tüm işlemleri,
+yeni yüzeyler oluşturmak veya mevcut birini değiştirmek için kullanma
+imkanı.<br />
+<br />
+<div style="text-align: center;"><img style="width: 400px; height: 106px;" alt="" src="Imagenes/tablas_cubicacion_operaciones_sup.png" /><br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span class="Parf_negrita">Kapalı
+Yüzeyi Ayrıştır</span> </td>
+<td>Bu
+işlev, kapalı yüzeyleri (örneğin, kapalı üçgenlenmiş cisimler üzerinde şevli enkesitleri kesme algoritması tarafından oluşturulanlar), taban ve kapak olmak üzere iki yüzeye ayırmayı sağlar.<br />
+<br />
+<div style="text-align: center;"><img style="width: 400px; height: 105px;" alt="" src="Imagenes/edit_perf_descomp_sup_cerrada.png" /><br />
+<br />
+</div>
+</td>
+</tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Parapet/Korkuluk Bul</span><br />
+            </td>
+            <td style="vertical-align: top;">Bu araç, bir enkesit dosyasındaki parapetleri/korkulukları tanımlamayı ve bunları belirli sembollerle etiketlemeyi sağlar.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/edit_perf_obtener_pretil.png" alt="" style="width: 204px; height: 300px;" /><br />
+            </div>
+            <br />
+İçinde, sembolleri doğrudan .per dosyasına çizmek veya parapetlerin/korkulukların uçlarını birleştiren çizgiler oluşturarak <span style="font-weight: bold;">Kübaj Hesabı</span> aracını kullanabilmek gibi belirli seçenekler bulunur.<br />
+            </td>
+          </tr>
+
+</tbody>
+</table>
+<br />
+<span class="Parrafo"><br />
+</span><span class="Titulo_2"><a name="sondeos">Sondajların Enkesitlere
+Projeksiyonu</a></span><br />
+<br />
+<img style="width: 312px; height: 177px; margin-left: 7px;" alt="" src="Imagenes/edit_perf_sondeos.png" align="right" /><span style="font-weight: bold;">[Sondajlar]</span>
+düğmesine tıklandığında, &nbsp;<span class="Archivo">.per</span> dosyasının adı,
+<a href="EDM_topografia.html#sondeos">sondaj
+dosyasının</a>&nbsp;<span class="Archivo">.sdo</span> adı istenir
+ve aralıklara bölmeye ve enkesite arama mesafesini (varsayılan olarak 10 m) belirtmeye olanak tanıyan bir iletişim kutusu açılır.
+Böylece, <a href="EDM_topografia.html#sondeos">sondajların</a> enkesitler
+üzerindeki projeksiyonlarını içeren yeni bir enkesit dosyası elde edilir.<br />
+<br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 207px; height: 137px;" alt="" src="Imagenes/proyec_sondeo_perfil.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo"><br />
+</span><img style="width: 118px; height: 135px; margin-right: 7px; margin-bottom: 7px;" alt="" src="Imagenes/sondeos_perfiles.png" align="left" /><span class="Parrafo">Mesafe,
+ilerleme yönünde düzlemin arkasındaki noktalar için pozitif ve
+düzlemin önündeki mesafeler için negatif olarak her nokta için yansıtılır.
+Bu mesafeleri etiketlemek için etiketler kullanılır.<br />
+<br />
+<a href="EDM_topografia.html#sondeos">Sondajın</a> noktalarından birinin
+arama yarıçapı içine düşmesi, hepsinin enkesit
+düzlemine yansıtılması için yeterlidir.<br />
+<br />
+</span><span class="Parrafo">Aynı <a href="EDM_topografia.html#sondeos">sondajın</a>
+noktaları,
+enkesitten ilk kez geçildiğinde L100 tipi bir çizgiyle birleştirilmiş olarak
+sunulur. Bir sonraki seferde çizgi artık görünmez, çünkü <a href="EDM_topografia.html#sondeos">sondajı</a> yansıtan işlev tarafından oluşturulur.<br />
+<br />
+<span style="font-style: italic;">3B Görünüm</span> modunda,
+sondajlar, enkesite olan mesafelerine göre gerçek konumlarında çizilmiş olarak
+görünür. <a href="EDM_topografia.html#sondeos">Sondajın</a> ağzı için sembol
+S75'tir, geri kalanı
+&nbsp;<span class="Archivo">.sdo</span> dosyasının kodlarına
+bağlıdır.
+Kütüphaneye S76, S77, S78 ve S79 sembolleri ve &nbsp;<span class="Archivo">\TRABAJO\DEMO</span> klasöründe bir &nbsp;<span class="Archivo">.sdo</span> örnek dosyası
+dahil edilmiştir.<br />
+<br />
+Düzenleme ekranında, jeolojik kontaklar, katmanlar, faylar ve kesitte
+ilgi çeken tüm yüzeyler, <a href="EDM_topografia.html#sondeos">sondajların</a> izi görüntülenirken interaktif olarak düzenlenebilir.<br />
+<br />
+<span class="Parrafo"><br />
+</span><span class="Titulo_2"><a name="tablas_cubic">Kübaj Tabloları (.dar)</a></span><br />
+<span class="Parrafo"> <br />
+</span><img style="width: 104px; height: 48px;" alt="" src="Imagenes/acceso_tablas_dar.png" align="right" hspace="6" /><span class="Parrafo">Bu
+araca erişmek için enkesit editörünün <span style="font-weight: bold;">[KÜBAJ
+TABLOLARI]</span> alt menüsü kullanılır. Bu, kübaj tabloları tanımlamayı ve
+bu tablolara göre enkesitler üzerinde ölçümler yapmayı sağlar.<br />
+<br />
+</span>
+<table style="text-align: left; width: 579px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+</td>
+<td style="vertical-align: middle; width: 523px; text-align: justify;"><span class="Info">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün
+GÜZERGAH PROJESİ projelerinde yaptığı ölçümler, varsayılan olarak &nbsp;<span class="Archivo">lib</span>
+klasöründe bulunan ve &nbsp;<span class="Archivo">ISPOL4.dar</span> olarak adlandırılan bir tabloyu
+takip eder.
+Alan tanım tablolarının diğer örnekleri
+aynı kütüphanede bulunur.</span></td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo">
+<table style="text-align: left; width: 579px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+</td>
+<td style="vertical-align: middle; width: 523px; text-align: justify;"><span class="Info">Hesaplamadaki öncelik sırası
+şöyledir:<br />
+- Eğer projenin tanımlanmış bir kübaj tablosu varsa, bu tüm eksenler için geçerlidir.<br />
+- Eğer proje için bir kübaj tablosu yoksa ama grup için varsa, bu grubun tüm eksenleri için geçerlidir.<br />
+- Üçüncü olarak, her eksen için özel olarak BOYKESİT menüsünde tanımlanan kullanılır.<br />
+- Üçünden hiçbiri yoksa, varsayılan tablolar kullanılır (ISPOL4.dar, ...)<br />
+</span></td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo">
+<br />
+</span><span style="font-weight: bold; font-style: italic;"><a name="def_tabla_cubic">Kübaj Tablolarının Tanımlanması</a></span><br />
+<span class="Parrafo"><br />
+Bir kübaj tablosu, ölçülecek bir dizi alanı ve her bir alanın nasıl hesaplanacağına dair adımları tanımlar. Her alan, iki A ve B yüzeyi arasındaki yarma veya dolgu olabilir. A ve B yüzeyleri doğrudan dosyadan çıkarılabilir veya sırayla, başka iki yüzeyin işlenmesiyle elde edilen sonuç olabilir, öyle ki:<br />
+<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="font-weight: bold; font-style: italic;">A =
+f(A1,A2),&nbsp; B = f(B1,B2)</span><br />
+<br />
+burada A1, A2, B1 ve B2, kübajı yapılacak dosyada bulunan yüzeylerdir. Ayrıca, bu şekilde ölçülen alana, önceden hesaplanmış başka bir alanın değeri eklenebilir veya çıkarılabilir.<br /><br />Sağ üst kısımda şu simgeler bulunur:<br />Yeni .dar tablosu &nbsp;<img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_tabla_dar_nuevo.png" /><br />.dar tablosu yükle &nbsp;<img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_tabla_dar_cargar.png" /><br />.dar tablosu kaydet <img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_tabla_dar_guardar.png" /><br />.dar tablosunu ikinci veya üçüncü kütüphaneye kaydet <img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_tabla_dar_guardar_lib_seg.png" /><br /><br /></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Bu tablolardan birinin tipik yapısı, <span style="font-weight: bold;">Alanları
+Tanımla</span> bölümünde birkaç sütundan oluşur:</span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 650px; height: 257px;" alt="" src="Imagenes/dialogo_tablas_cubic.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<ul>
+<li><span class="Parrafo"><a name="dato">İlk
+sütun, tablonun <span style="font-weight: bold;">satır veya veri
+numarasıdır</span></a>.
+Bir düğme şeklinde gösterilir, öyle ki üzerine tıklandığında, o verinin bir model enkesitte ölçtüğü alan grafiksel olarak gösterilir (vurgulanır).</span></li>
+</ul>
+</span>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo">İkinci sütun, enkesit üzerinde ölçülen <span style="font-weight: bold;">alanın adını</span>
+belirler ve 20 karaktere kadar içerebilir. Bu, listelerde ve
+enkesit paftalarında kullanılan addır. </span></span><span class="Parrafo"><span class="Parrafo">Eğer
+&#8220;&lt;&#8221; ve &#8220;&gt;&#8221; karakterleri
+arasına yazılırsa, alan hesaplanır ancak
+listelerde veya enkesitlerde görünmez.</span></span><span class="Parrafo"><span class="Parrafo"></span></span></li>
+</ul>
+<div style="margin-left: 40px;"><span class="Parrafo"><a name="s">Eğer ad olarak
+&#8220;<span style="font-weight: bold;">&lt;s&gt;</span>&#8221; yazılırsa</a>,
+o zaman yapılan şey, tipi B1'de belirtilecek olan yeni bir geçici yüzey
+oluşturmaktır (zaten tanımlı bir tipi kullanmamak için yüksek
+değerler koymak tavsiye edilir). Oluşturulacak yüzey tipi olarak, numarasını yeniden kullanmak için daha önce oluşturulmuş bir yüzey verilebilir.
+Ayrıca, orijinal dosyada mevcut bir yüzey belirtilirse, bu son dosyada değiştirilecektir, bu da
+&nbsp;<span class="Archivo">.dar</span> tablolarını enkesit
+dosyalarını değiştirmek için komut dosyaları olarak kullanmayı sağlar.
+Eğer B2'de bir yüzey belirtilirse, ayrıca
+program, mevcut enkesitte A1 yoksa, bu yeni yüzeyi oluşturmak için
+alternatif olarak B2'yi kullanmasını belirtir.<br />
+&lt;s&gt; ile tanımlanan bu tür yüzeyler
+&nbsp;<span class="Archivo">.dar</span> dosyasında saklanır.<br />
+Eğer yardımcı yüzeyimizi <span style="font-weight: bold;">&lt;S&gt;</span>
+komutlarıyla tanımlarsak, program bu yardımcı yüzeyi oluşturacak ve biz bunu
+bu komutu içeren kübaj tablosuyla enkesit dosyasını kübajladıktan sonra
+enkesit editöründe kontrol edebileceğiz.<br />
+</span> </div>
+<span class="Parrafo"><span class="Parrafo">
+</span></span>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">YDTK</span>
+aşağıdaki değerleri alabilir:</span></span></li>
+</ul>
+<div style="margin-left: 80px;">
+<table style="text-align: left; width: 612px; height: 102px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 23px; font-weight: bold;">Y<br />
+</td>
+<td style="vertical-align: top; width: 583px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">Yarma
+alanı dikkate alınır.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 23px; font-weight: bold;">D<br />
+</td>
+<td style="vertical-align: top; width: 583px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">Dolgu
+alanı dikkate alınır.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 23px; font-weight: bold;">K<br />
+</td>
+<td style="vertical-align: top; width: 583px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">Kapalı
+bir çizginin alanını ölçmek için (genellikle tünel kesitleri için kullanılır).</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 23px; font-weight: bold;">A<br />
+</td>
+<td style="vertical-align: top; width: 583px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">Önceki
+alanların toplamı (A1+A2+B1+B2). +/- A sütunu da kullanılırsa, 5 alana kadar toplam bir alan elde edilebilir.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 23px; font-weight: bold;">R<br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 583px;"><span class="Parrafo"><span class="Parrafo">(A1+A2)
+/ (B1+B2) oranını hesaplar.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">I</span><br />
+</td>
+<td style="vertical-align: top;">Bir
+yüzeyin alanını
+başka birinin içinden ölçmeyi sağlar (I). Programın bir <a href="OL_seg_tun.html">tünel takibi</a> hesaplaması yaparken oluşturduğu
+tabloda görülebilir.
+İki A ve B yüzeyi, aynı veri satırında veya daha önceki satırlarda Ufuk
+fonksiyonu ile kapatılabilir, bunu aşağıda açıklayacağız.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">L</span><br />
+</td>
+<td style="vertical-align: top;"><img style="width: 200px; height: 61px;" alt="" src="Imagenes/tabla_cubic_sup_desm.png" align="right" hspace="8" /><a href="OL_BIM.html">BIM</a> modelinde,
+.dar tablosunda enkesitte uzunluk olarak (L) tanımlanan ölçümler
+yüzeyler (cisimler değil) olarak oluşturulur. Örnek: ISPOL4.dar tablosundaki SUP_DESMONTE.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">di</span><br />
+</td>
+<td style="vertical-align: top;">Alan:
+A alanının dışı / B alanının içi. di, id, ii, dd modları, örneğin
+bir trenin gabari hattı ile tünelin havalandırma, peronlar, personel,
+kaplama gibi diğer elemanları arasındaki etkileşimi analiz etmek için kullanışlıdır.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">id</span><br />
+</td>
+<td style="vertical-align: top;">Alan:
+A alanının içi / B alanının dışı.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">ii</span><br />
+</td>
+<td style="vertical-align: top;">Alan:
+A alanının içi / B alanının içi.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">dd</span><br />
+</td>
+<td style="vertical-align: top;">Alan:
+A ve B alanlarının zarfı.<br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<span class="Parrafo"><span class="Parrafo">
+<ul>
+</ul>
+</span></span></span>
+
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Fonksiyon</span>,
+sırasıyla A yüzeyini ve B yüzeyini elde etmek için yapılacak işlemdir.
+Bu değişken aşağıdaki değerleri alabilir:</span></span></li>
+</ul>
+<span class="Parrafo"><span class="Parrafo">
+</span></span>
+<div style="margin-left: 80px;">
+<table style="text-align: left; width: 612px; height: 104px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 81px; font-weight: bold;">1
+Yüzey<br />
+</td>
+<td style="vertical-align: top; width: 525px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">A, A1
+yüzeyidir.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 81px; font-weight: bold;">+
+Düşük<br />
+</td>
+<td style="vertical-align: top; width: 525px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">A, A1 ve A2 arasındaki <a href="#mas_baja">en düşük</a> olandır.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 81px; font-weight: bold;">+
+Yüksek<br />
+</td>
+<td style="vertical-align: top; width: 525px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">A, A1 ve A2 arasındaki <a href="#mas_alta">en yüksek</a> olandır.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 81px; font-weight: bold;">Kırp<br />
+</td>
+<td style="vertical-align: top; width: 525px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">A, A2 ile <a href="#recortar">kırpılmış</a> A1'dir.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 81px; font-weight: bold;">Tamamla<br />
+</td>
+<td style="vertical-align: top; width: 525px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">A, A2 ile <a href="#completar">tamamlanmış</a> A1'dir.<br />
+</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 81px; font-weight: bold;">.per
+Numarası<br />
+</td>
+<td style="vertical-align: top; width: 525px; text-align: justify;"><span class="Parrafo"><span class="Parrafo">O yüzeyin enkesit dosyasındaki sıra numarası.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 81px;">Kod.
+Kırp<br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 525px;"><span class="Parrafo"><span class="Parrafo">A1
+yüzeyini, A2'de belirtilen koddan içe doğru
+kübajlamayı sağlar.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 81px;">Kod.
+Kırp 2<br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 525px;"><span class="Parrafo"><span class="Parrafo">A1
+yüzeyini, A2'de belirtilen koddan dışa doğru
+kübajlamayı sağlar.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 81px;">Önceki<br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 525px;"><span class="Parrafo"><span class="Parrafo">Sadece
+ikinci işlev için geçerlidir,
+B yüzeyinin, enkesit dosyasında
+A1 yüzeyinin hemen önündeki yüzey olmasını sağlar.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 81px;">Alanlar<br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 525px;"><span class="Parrafo"><span class="Parrafo">YDTK,
+A veya R olduğunda, tablonun önceki bir satırında hesaplanmış bir alan
+<a href="#dato">verisine</a> referans verir.<br />
+</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 81px;">Uzat<br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 525px;"><span class="Parrafo"><span class="Parrafo">A1'i
+A2 ile uzatır, A1 yüzeyinin uçlarını yatay olarak A2'nin
+kenarlarına kadar uzatır.</span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Ufuk</span><br />
+</td>
+<td style="vertical-align: top;">Bu seçenek,
+tünel takip yüzeylerini karşılaştırma düzlemi yüzeyine göre
+kırpmak veya uzatmak için kullanılır. <a href="OL_seg_tun.html">Tünel takibi</a> menüsünde bir hesaplama yapıldığında oluşturulan
+&nbsp;<span class="Archivo">seg_tun.dar</span>
+tablosunda görülebilir.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">x Altında</span><br />
+</td>
+<td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sonuç yüzeyi, <span style="font-style: italic;">sadece</span>
+birinci yüzeyin ikinci yüzeyin altında kalan kısmıdır. <br />
+</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">x Üstünde</span><br />
+</td>
+<td style="vertical-align: top;">Sonuç yüzeyi,
+<span style="font-style: italic;">sadece</span>
+birinci yüzeyin ikinci yüzeyin üzerinde kalan kısmıdır.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Uzat/Kırp</span><br />
+</td>
+<td style="vertical-align: top;">A1
+(B1) yüzeyini, A2 (B2) yüzeyini referans olarak kullanarak,
+kendi eğimiyle, her iki taraftan ve birkaç
+segmenti analiz ederek uzatır veya kırpar. <br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Filtrele A2/10000 veya Filtrele
+B2/10000</span><br />
+</td>
+<td style="vertical-align: top;">A1
+(B1) yüzeyini, eksene olan mesafesi ve kotu, A2 (B2) cinsinden milimetrenin onda biri olarak ifade edilen bir
+mesafeden daha az olan noktaları silerek filtreler.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Tipi Değiştir</span><br />
+</td>
+<td style="vertical-align: top;">Yüzeyin
+tipini
+değiştirmeyi sağlar. A1'e değiştirilecek yüzeyi ve A2'ye A1'in yerine geçecek yeni
+yüzeyi yerleştiririz.<br />
+Örn: 67 numaralı yüzeyin tipini 1067'ye değiştirme:<br />
+Ad [&lt;s&gt;], FonksiyonA [Tipi Değiştir], A1 [67] ve A2
+[1067].<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Sil</span><br />
+</td>
+<td style="vertical-align: top;">A1 sütununa yerleştirilen
+yüzeyi siler.<br />
+Örn: 68 numaralı yüzeyi silme:<br />
+Ad [&lt;s&gt;], FonksiyonA [Sil], A1 [68].<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Kazılmış</span><br />
+</td>
+<td style="vertical-align: top;">Kapalı
+A1 yüzeyinin, A2 yüzeyinin altında kalan kısmıdır.
+Örn.&nbsp; F1= Kazılmış , A1=390, A2=66<br />
+Kütüphanemizde, son satırlardaki bazı ölçümlerde kazılmış işlevini kullanan ISPOL4_ZM.dar tablosu bulunmaktadır: Önce
+duvarların topraktaki kazısı ölçülür. Sonra bu
+ölçüm topraktaki yarma kazısından çıkarılır ve
+duvar temellerinin kazısına eklenir.<br />
+</td>
+</tr>
+<tr><td><span style="font-weight: bold;">Yatay+YarıGenişlik</span></td><td>Kırmızı kot'a göre dikey bir mesafeden başlayarak,<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span> belirttiğimiz&nbsp;<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">yarı genişlikte</span></span></span></span></span> yeni bir yatay yüzey oluşturur.</span></span></span></span></td></tr><tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">En Düşük Tamamlanmış</span><br />
+</td>
+<td style="vertical-align: top;">İki yüzeyin en
+düşüğü, daha sonra her iki yüzeyle tamamlanmıştır.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">En Yüksek Tamamlanmış</span><br />
+</td>
+<td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İki yüzeyin en yükseği, daha sonra her iki yüzeyle tamamlanmıştır.</span></span></span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Çıkar</span><br />
+</td>
+<td style="vertical-align: top;">Çıkar(A1,A2):
+A2 yüzeyinin tüm noktaları A1 üzerinde olmalıdır. A1'den, A2 ile çakıştığı bölge silinir.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Deverli+YarıGenişlik</span><br />
+</td>
+<td style="vertical-align: top;">Yatay+YarıGenişlik'e
+benzer, ancak oluşturulan çizgi, her iki taraftaki 1 ve 2 kodları arasında mevcut olan deveri devralır.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Sulama(Kapak,Taban)</span><br />
+</td>
+<td style="vertical-align: top;">Tapa
+yüzeyinin, Taban yüzeyi üzerinde kalınlığı olan kısmını,
+8:1'den daha düşük bir şeve (eğim %12.5'ten büyük) sahip bölgeler hariç olmak üzere,
+döndürür.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">x Altında veya Eşit</span><br />
+</td>
+<td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sonuç
+yüzeyi, <span style="font-style: italic;">
+birinci yüzeyin ikinci yüzeyin altında kalan kısmıdır.<br />
+</span></span></span></span></span></span></span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">x Üstünde veya Eşit</span><br />
+</td>
+<td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sonuç yüzeyi, <span style="font-style: italic;">birinci
+yüzeyin ikinci yüzeyin üzerinde kalan kısmıdır.</span></span></span></span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Bölgeyi Hariç Tut</span><br />
+</td>
+<td style="vertical-align: top;">Yüzey
+1'in, yüzey 2'nin bulunmadığı kısmını döndürür.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Tamamla veya Hiçbir Şey</span><br />
+</td>
+<td style="vertical-align: top;">Eğer
+her iki yüzey de varsa, Tamamla gibidir. Eğer yüzeylerden biri yoksa,
+hiçbir şey yapmaz.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">En Düşük veya A1</span><br />
+</td>
+<td style="vertical-align: top;">A1 ve A2 yüzeylerinin en
+düşüğünü döndürür. A2'nin bulunmadığı bölgelerde, A1
+yüzeyini döndürür. <br />
+Yüzey kapalı olduğunda: eğer her iki yüzey de varsa, +Düşük gibi çalışır.
+Eğer sadece birincisi
+kapalı olarak varsa, bu yüzeyi döndürür, eğer sadece ikincisi varsa,
+hiçbir şey döndürmez.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">En Yüksek veya A1</span><br />
+</td>
+<td style="vertical-align: top;">A1 ve A2 yüzeylerinin en
+yükseğini döndürür. A2'nin bulunmadığı bölgelerde, A1
+yüzeyini döndürür.<br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Yüzey kapalı olduğunda: eğer her iki yüzey de varsa, +Yüksek gibi çalışır.
+Eğer sadece birincisi
+kapalı olarak varsa, bu yüzeyi döndürür, eğer sadece ikincisi varsa,
+hiçbir şey döndürmez.</span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span><br />
+</span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Katı Kod Kırpma</span><br />
+</td>
+<td style="vertical-align: top;">Tüm
+noktaların kodlanmış olmasını veya kodların sıralı olmasını
+gerektirmez, hatta tanımlanan kod her yarı-enkesitte birkaç kez
+tekrarlanabilir. Katı_kod_kırpma, kod görünene kadar noktaları kopyalamaya
+başlar, sonraki noktalar kod tekrar görünene kadar dahil edilmez...<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Katı Kod2 Kırpma</span><br />
+</td>
+<td style="vertical-align: top;">Tüm
+noktaların kodlanmış olmasını veya kodların sıralı olmasını
+gerektirmez, hatta tanımlanan kod her yarı-enkesitte birkaç kez
+tekrarlanabilir. Katı_Kod2_kırpma, kod görünene kadar noktaları dahil etmeden
+başlar, sonra onları eklemeye başlar ve kod tekrar görünene kadar devam eder,...<br />
+</td>
+</tr><tr><td><span style="font-weight: bold;">Kodla</span></td><td>Birinci yüzeyin (A1 veya B1) noktalarına, ikinci yüzeyden (A2 veya B2) türetilen kodları koyar.</td></tr><tr><td><span style="font-weight: bold;">di / id / ii / dd</span></td><td>Dış-iç,
+iç-dış, iç-iç,
+zarf değerleri de yüzeyler arasında F1/F2 fonksiyonları olarak kullanılabilir.</td></tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Kapalı Alan Ekseni</span><br />
+            </td>
+            <td style="vertical-align: top;">A1 verisi olarak kapalı bir
+alan verildiğinde, alanın bir uç noktasından ağırlık merkezine ve oradan diğer uç noktasına giden bir yay oluşturur.
+Bu fonksiyonun amacı, bir
+tüneldeki bir oyuğun teorik yüzeyini temsil etmektir.<br />
+            </td>
+          </tr>
+
+</tbody>
+</table>
+</div>
+<span class="Parrafo"><span class="Parrafo">
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">A1</span>,
+<span style="font-weight: bold;">A2</span>,
+<span style="font-weight: bold;">B1</span>
+ve <span style="font-weight: bold;">B2</span>,
+onları temsil eden çizgi tipiyle tanımlanan yüzeylerdir. Fareyi bu kutucukların üzerine getirdiğimizde,
+onları hızlıca tanımak için enkesitteki çizgiler (veya
+alanlar) vurgulanacaktır.<br />
+</span></span></li>
+</ul>
+<span class="Parrafo"><span class="Parrafo">
+</span></span></span>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">+/- A</span>,
+daha önce tanımlanmış ve hesaplanmış bir alanı
+eklemeyi veya çıkarmayı mümkün kılar. Örneğin, -5 değeri, tablonun 5. verisinde elde edilen alanın çıkarılacağını gösterir.
+Açıkçası, bu değer sadece tablonun 5. verisinden sonraki verilerde görünebilir.</span></span></span></li>
+</ul>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> ELDE EDİLEN ALANLARA UYGULANACAK FAKTÖRLER<br />
+</span></span></span>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Oran (Ratio)</span>: Bu
+değeri, hesaplandıktan hemen sonra alana
+çarpar, bu nedenle bu alan daha sonraki bir alanda yer alıyorsa,
+zaten bu orandan etkilenmiş olur.</span></span></span></li>
+</ul>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Katsayı</span>:
+Bu değeri, tüm alanlar hesaplandıktan
+sonra alana çarpar, bu nedenle alan daha sonraki bir alanda yer alıyorsa,
+bu katsayıdan ETKİLENMEZ. Hem bu değer hem de önceki,
+&nbsp;<span class="Archivo">cvol.res</span>
+ve&nbsp;<span class="Archivo">cv.res</span> listelerinin sonuçlarını değiştirir.</span></span></span></li>
+</ul>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kütleler Diyagramı</span>:
+Bir kütleler diyagramı elde etmek için bir
+sıkışma veya kabarma değeri tanımlamayı sağlar. Bu seçeneği tanımlamak için dört ondalık basamağa izin verilir.
+0'dan farklı bir değere sahip olan yüzeyler
+KÜTLELER DİYAGRAMINDA kübajı yapılacaktır. Bu değer,
+cvol.res ve cv.res dosyalarında elde edilen sonuçları DEĞİŞTİRMEZ.</span></span></span></li>
+</ul>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span>
+<div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;">Örnek</span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aşağıdaki ölçümler verildiğinde:</span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span><br />
+<table style="text-align: left; width: 249px; height: 36px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 51px; text-align: center; font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ALAN A</span></span></span></td>
+<td style="vertical-align: top; width: 51px; text-align: center; font-style: italic;">A<br />
+</td>
+<td style="vertical-align: top; width: 66px; text-align: center; font-style: italic;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">OranA</span></span></span></td>
+<td style="vertical-align: top; width: 71px; text-align: center; font-style: italic;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">KatsayıA</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 51px; text-align: center; font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ALAN B</span></span></span></td>
+<td style="vertical-align: top; width: 51px; text-align: center; font-style: italic;">B<br />
+</td>
+<td style="vertical-align: top; width: 66px; text-align: center; font-style: italic;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">OranB</span></span></span></td>
+<td style="vertical-align: top; width: 71px; text-align: center; font-style: italic;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">KatsayıB</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center; font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ALAN C</span></span></span></td>
+<td style="vertical-align: top; width: 51px; text-align: center; font-style: italic;">A
++ B<br />
+</td>
+<td style="vertical-align: top; width: 66px; text-align: center; font-style: italic;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">OranC</span></span></span></td>
+<td style="vertical-align: top; width: 71px; text-align: center; font-style: italic;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">KatsayıC</span></span></span></td>
+</tr>
+</tbody>
+</table>
+<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Elde edilen ölçümler şöyle olacaktır:</span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span><br />
+<div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">A = <span style="font-style: italic;">A</span>
+× <span style="font-style: italic;">OranA</span> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">×</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-style: italic;">KatsayıA</span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">B = <span style="font-style: italic;">B</span>
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">×</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-style: italic;">OranB</span>
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">×</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-style: italic;">KatsayıB</span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">C = [(<span style="font-style: italic;">A</span>
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">×</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-style: italic;">OranA</span>)
++ (<span style="font-style: italic;">B</span> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">×</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-style: italic;">OranB</span>)]
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">×</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-style: italic;">OranC</span>
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">×</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-style: italic;">KatsayıC</span></span></span></span><br />
+</div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sanat Yapısı (Ypı)</span>:
+Aşağıdaki değerleri alabilir:</span></span></span></li>
+</ul>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span>
+<ul style="margin-left: 40px; list-style-type: circle;">
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Evet</span>: Sanat yapıları veya yarı-yapılar durumunda, sadece
+bu özelliğe sahip bileşenler ölçülür (örneğin, yapıların üstyapı katmanları için uygundur). </span></span></span></li>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Hayır</span>: Bu ölçüm, sanat yapıları veya yarı-yapılar durumunda asla yapılmaz.</span></span></span></li>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sadece</span>: Ölçüm, yalnızca sanat yapıları durumunda gerçekleştirilecektir.</span></span></span></li>
+</ul>
+</span></span></span></span>
+<ul>
+<li><span style="font-weight: bold;">Boru Hatları</span>:
+Karayolları, demiryolları veya boru hatları gibi her türlü proje için tek bir tablo oluşturmayı sağlar (ISPOL4.dar) ve aşağıdaki değerleri kabul eder:</li>
+</ul>
+<ul>
+<ul>
+<li><span style="font-weight: bold;">Hayır</span>:
+Bu ölçüm bir boru hattı kesitinde ölçülmeyecektir. Örneğin ÜSTYAPI.</li>
+<li><span style="font-weight: bold;">Evet</span>:
+Bu ölçüm bir boru hattı kesitinde ölçülür. Örneğin DOLGU.</li>
+<li><span style="font-weight: bold;">Sadece
+gömülü</span>: Ölçüm sadece gömülü boru hatları durumunda, mesnetli olmayanlarda. Örneğin Koruma dolguları.</li>
+<li><span style="font-weight: bold;">Sadece</span>:
+Ölçüm sadece boru hattı kesitlerine uygulanabilir. Örneğin BORU ölçümü.<br />
+</li>
+</ul>
+</ul>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span>
+<ul>
+<li><img style="width: 102px; height: 95px;" alt="" src="Imagenes/no_geotecnia.png" align="right" hspace="6" /><a name="G"><span style="font-weight: bold;">Geoteknik Malzeme</span></a>:
+Eğer bu kutucukta <span style="font-weight: bold;">Evet</span> seçeneği tanımlanırsa, bu ölçümün
+bir geoteknik malzemeye (örneğin, uygun olmayan zemin, bitkisel toprak, toprak veya kaya yarması,...) karşılık geldiği belirtilir. Bu, programın diğer bölümlerinde, örneğin
+GÜZERGAH PROJESİ'nin <a href="OL_zonas_calculo.html#no_geotecnia">HESAP BÖLGELERİ</a>'nde,
+toprak işleri ölçümlerinde dikkate alınıp alınmayacağını ayırt etmeyi sağlar. <span style="font-weight: bold;">Isdim</span> seçeneği
+sondaj tablosunu etkilemez, ancak <a href="OL_Isdim.html">Isdim</a> tarafından dikkate alınacak kazılmış malzemelerdir:
+tünel kazısı, iyileştirme kazısı, duvar temeli kazısı, ...<br />
+</li>
+</ul>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Veri menüsünün diğer seçenekleri şunlardır:<br />
+<br />
+</span></span></span>
+<table style="text-align: left; width: 692px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">[Ekle]</span></span></span></td>
+<td style="vertical-align: top; width: 568px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yeni bir kübaj komut satırı ekler.<br />
+<br />
+</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">[Tekrarla]</span></span></span></td>
+<td style="vertical-align: top; width: 568px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İlk satırda görünenin önüne, aynı verilerle tanımlanmış bir alan ekler.<br />
+<br />
+</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">[Sil]</span></span></span></td>
+<td style="vertical-align: top; width: 568px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İlk satırda tanımlanan alanı siler.<br />
+<br />
+</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;">KM'ye
+göre kübaj</span> / <span style="font-style: italic;">Ağırlık merkezine göre
+kübaj</span></span></span></span></td>
+<td style="vertical-align: top; width: 568px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İki
+olası kübaj modu arasında geçiş yapar: alanların ortalamasının enkesitler arasındaki mesafe ile çarpılması veya bu mesafenin, ağırlık merkezlerinin plan eksenine göre dışmerkezliği kullanılarak ağırlıklandırılması.<br />
+<br />
+</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Ortalama Alanlar Yöntemiyle / Prizmatoid Yöntemiyle Kübaj</span><br />
+</td>
+<td style="vertical-align: top;">Kısmi hacimler için iki kübaj yöntemi arasında geçiş yapar: alanların ortalaması veya prizmatoidler.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold; font-style: italic;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">.dar'a Kaydet</span></span></span></td>
+<td style="vertical-align: top; width: 568px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu kutucuk, <span style="font-weight: bold; font-style: italic;">Ağırlık merkezine
+göre kübaj</span> seçeneği de
+etkinleştirilmişken etkinleştirilirse, bu tercih tablonun
+kendisine kaydedilir.<br />
+<br />
+</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;">Sadece
+pozitifleri topla</span> / <span style="font-style: italic;">Hepsini
+topla</span></span></span></span></td>
+<td style="vertical-align: top; width: 568px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İlgili
+kutucuğu etkinleştirerek, sadece
+pozitif değerlere sahip alanlar (<span style="font-weight: bold; font-style: italic;">Sadece pozitifleri
+topla</span>), gerçek
+fiziksel anlamda dikkate alınabilir veya tüm sonuçlar -negatifler dahil- (<span style="font-weight: bold; font-style: italic;">Hepsini topla</span>) seçeneğiyle dikkate alınabilir.<br />
+<br />
+</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 104px; font-style: italic;"><span class="Parrafo"><a name="cubicar_tramos">
+Aralıklara göre kübaj</a></span></td>
+<td style="vertical-align: top; text-align: justify; width: 568px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kutucuk etkinleştirildiğinde,
+pencerenin alt kısmında, kübajı yapılacak KM'lerle tanımlanmış
+<a href="#tramos">aralıkları</a> eklemek, araya eklemek veya silmek için bir alan
+açılır:<br />
+<br />
+</span></span></span>
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 650px; height: 364px;" alt="" src="Imagenes/tablas_cubic_tramos.png" /></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Aralıklara göre kübaj yapılması durumunda, cvol.res dosyasının sonuna
+aralıklara göre ölçümlerin bir özet tablosu eklenir.<br />
+<br />
+</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Hacimlere göre kübaj</span><br />
+</td>
+<td style="vertical-align: top;">Bu seçenek,
+kot ve eksen mesafesi için ayrık aralıklar tanımlamayı sağlar. Her
+kot ve mesafe aralığı için, kullanıcının tanımladığı bir alt klasörde bir çift liste (biri cvol.res tarzında, diğeri cv.res tarzında) oluşturulur.
+Dosyaların adı aralığa referans verir. Örneğin: cv-0025+0020.res, tabanı -25m kotunda ve sol kenarı eksenin 20m sağında olan hacimlerin cv.res tarzı dosyasıdır. Hesaplama, sağ menüdeki Kübaj komutu ile yapılır.<br />
+<br />
+<div style="text-align: center;"><img style="width: 650px; height: 364px;" alt="" src="Imagenes/tablas_cubic_cubos.png" /><br /></div>
+<br />
+Kullanıcının seçtiği klasörde toplam hacimlerin bir özetini içeren bir cvoltot.res listesi oluşturulur.
+Listeler klasörüne bir erişimimiz var. <br />
+<br />
+Hacimlere göre kübaj raporunu Excel formatında dışa aktarmak mümkündür.
+Bunun için alan tanım penceresinde hangi ölçümlerin listeleneceğini işaretleriz, seviye ve
+mesafe aralıklarını belirleriz ve Excel dosyası oluşturma bayrağını etkinleştiririz.
+Kübaj yürütüldüğünde, kübaj listeleri için tanımlanan klasörde cubicacion.xlsx dosyası oluşturulur. <br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Seviyelere göre kübaj</span><br />
+</td>
+<td style="vertical-align: top;">Seviyelere
+göre kübajda,
+maksimum ve minimum kot arasında bir aralık tanımlanmasına izin verilir.
+Sonunda her seviye için özetler ve bir toplam özet içeren bir liste oluşturulur ve gösterilir.<br />
+<br />
+<div style="text-align: center;"><img style="width: 650px; height: 364px;" alt="" src="Imagenes/tablascubica_niveles.png" /><br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Enkesitteki daha küçük alanları iptal et</span><br />
+<br />
+</td>
+<td style="vertical-align: top; text-align: justify;">Burada
+belirtilenden daha küçük değerli alanlar ölçümde dikkate alınmayacaktır.
+<a href="#dar_cubicar">Kübaj</a> sırasında kullanılır,
+ancak <span style="font-weight: bold;">tabloya kaydedilmez</span>.<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Minimum aralık mesafesi</span><br />
+</td>
+<td style="vertical-align: top; text-align: justify;">Bu
+seçenek etkinleştirildiğinde, mesafesi girilen minimum
+ayrımdan daha büyük olan iki enkesit arasındaki kısmi hacimler iptal edilir.
+Eğer seçenek etkinse, bu değer
+<span class="Archivo">.dar</span> dosyasına kaydedilir ve
+tabloyla birlikte kullanılır.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 104px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">.dar dosyası,&nbsp; <span style="font-style: italic;">Kütüphaneye kopyala</span></span></span></span></td>
+<td style="vertical-align: top; text-align: justify; width: 568px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer bu kutucuk etkinleştirilirse, bir
+&nbsp;<span class="Archivo">.dar</span> dosyasını
+belirli bir adla kaydederken, program aynı
+adla birincil kütüphaneye bir kopya oluşturur.<br />
+<br />
+</span></span></span></td>
+</tr><tr><td style="vertical-align: top;"><span style="font-weight: bold;">İçe Aktar</span></td><td>"İçe Aktar" düğmesi, belirtilen sütuna (Ad, A1, A2, B1, B2) metin dosyalarını (.txt) yükleme işlevine sahiptir.<br />Bu dosyaların .txt uzantısına sahip olması ve tüm değerlerinin tek bir sütunda olması gerekir.<br />Örneğin, A1 sütunu için bir .txt dosyasının içeriği şöyle olabilir:<br />4001<br />4005<br />4006<br />4007<br />4008</td></tr><tr>
+<td style="vertical-align: top; font-weight: bold; width: 104px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">[Yorum]</span></span></span></td>
+<td style="vertical-align: top; text-align: justify; width: 568px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Alan
+tanım tablosuna üç satıra kadar yorum
+eklemeyi sağlar. Bu yorumlar, örneğin, güzergah projesi takip aracında bir tablo seçildiğinde
+gösterilir.<br />
+<br />
+</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 104px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yüzeyler &lt;s&gt;,&nbsp; <span style="font-style: italic;">Oluştur</span></span></span></span></td>
+<td style="vertical-align: top; text-align: justify; width: 568px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu seçenek etkin bırakıldığında, <a href="#s">&lt;s&gt; ile oluşturulan geçici yüzeyler</a>
+&nbsp;<span class="Archivo">.per</span> dosyasının enkesitlerinde
+oluşturulur ve çizilir.</span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Ekseni Kontrol Et</span><br />
+</td>
+<td style="vertical-align: top;"><img style="width: 105px; height: 62px;" alt="" src="Imagenes/controlar_eje.png" align="right" hspace="6" />Enkesitlerin
+yüzeyleri için eksen numarasını kontrol edebiliriz. Varsayılan olarak
+kontrol edilir ve sadece ana eksene ait yüzeyler ve arazi yüzeyleri ile alanlar ölçülür,
+çünkü bir enkesitte aynı yüzey birden fazla farklı eksen için tekrarlanabilir.<br />
+Bu kutucuğu devre dışı bırakarak, eksen numaralarını dikkate almayan bir kübaj tablosu yapılabilir.<br />
+</td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">Çizgi Tipleri</span><br />
+<br />
+Bu sekmede, her ölçüme bir çizgi tipi atamaya izin verilir.
+Bu çizgi tipi 0'dan farklıysa, <a href="OL_gut_mediciones.html">Ölçümlerde Alanları Çiz</a> seçeneği etkinleştirildiğinde enkesitlerin çiziminde gösterilecektir.
+Eğer değer 0 ise, o zaman şunlar gösterilecektir: - L1305 Yarmalar. (Dönüşüm Faktörü &gt; 0) - L1304 Bitkisel Toprak.&nbsp; (D.F.=0 olan
+geoteknik malzemeler) - L1302 Dolgular (Dönüşüm Faktörü &lt; 0) -
+L1301
+Kalan.<br />
+Her ölçüm için, enkesitlerde gösterimi
+ve <a href="OL_BIM.html">BIM</a> nesnelerine renk vermek için bir çizgi tipimiz var.
+Enkesitlerin çiziminde, Ölçümlerde: Alanları çiz'i etkinleştirdiğinizde,
+bu çizgi tipleri kullanılır ve mevcut eksenin modelinde çizilir.<br />
+<br />
+</span></span></span></span></span></span></span></span></span>
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 650px; height: 257px;" alt="" src="Imagenes/tablascubicacion_tipolinea.png" /></span></span></span></span></span></span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">Sadece BIM</span>:
+</span></span></span></span></span></span></span></span></span>Sadece
+BIM'i işaretleyerek, bu ölçümün sadece BIM modeli için oluşturulduğunu ve örneğin cvol listeleri vb. için oluşturulmadığını belirtiriz.<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kübaj
+tablolarındaki parametre (çizgi tipinden sonra), o
+ölçümün sadece <a href="OL_BIM.html">BIM</a> modeli için oluşturulduğunu, ancak cvol listeleri vb. için oluşturulmadığını belirtmek için kullanılır.<br />
+ISPOL4.dar tablosundaki SUP_DESMONTE örneği.<br />
+<br />
+</span></span></span></span></span></span></span></span></span>
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 400px; height: 76px;" alt="" src="Imagenes/tabla_cubic_tipo_lin_sup_desmonte.png" /></span></span></span></span></span></span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+</span></span></span></span></span></span></span></span></span>
+<ul>
+<li><span style="font-weight: bold;">Malzeme Klasörü</span> ve <span style="font-weight: bold;">Malzeme</span>'de,
+ölçümün hangi malzemeden yapıldığı belirtilebilir.<br />
+<br />
+</li>
+<li>Malzeme'den sonraki sayı, BIM modelindeki çizgilerin sahip olacağı <span style="font-weight: bold;">görünüm</span> tipini
+tanımlar:</li>
+<ul>
+<li><span style="font-weight: bold;">0</span>:
+Köşe noktasına göre normal (yumuşatılmış), malzemeye göre doku.</li>
+<li><span style="font-weight: bold;">1</span>:
+Köşe noktasına göre normal (yumuşatılmış), duvar tipi doku.</li>
+<li><span style="font-weight: bold;">2</span>:
+Yüze göre normal, malzemeye göre doku.</li>
+<li><span style="font-weight: bold;">3</span>:
+Yüze göre normal, duvar tipi doku.<br />
+<br />
+</li>
+</ul>
+<li><span style="font-weight: bold;">Disiplin</span>
+sütununda, ölçüm için bir sınıflandırma seçebiliriz (Kazı,
+dolgu, üstyapı, boru, menfez vb.). Disiplinlerin adları,
+iletişim kutusunun üst kısmındaki <span style="font-weight: bold;">[Disiplinler]</span>
+düğmesine basılarak düzenlenebilir.<br />
+<br />
+</li>
+<li><span style="font-weight: bold;">Özellikler</span>,
+her ölçüme özel özellikler atamamızı sağlar:</li>
+<ul>
+<li><span style="font-weight: bold;">Borular ve Dirsekler</span> olarak işaretlenmiş elemanlar,
+boru ve dirsek uzunluklarına göre kesilir.</li>
+<li><span style="font-weight: bold;">Üstyapı Katmanı</span> olarak işaretlenmiş elemanlar,
+üstyapı hesaplama aralıklarına göre kesilir.</li>
+<li><span style="font-weight: bold;">Tarafları
+Ayır</span>:
+ISPOL4.dar tablosunda, bazı elemanları bulundukları
+platform tarafına göre ayırmayı sağlayan bir özelliğimiz var.
+Revizyonda yer alan ISPOL4.dar tablosunda bu özellik bazı malzemelerde mevcuttur: Duvarlar, Duvar Filtresi, Anroşmanlar,
+Duvar Temelleri, Kafa Hendekleri, Hendek Kaplamaları,
+Yarma Kaplaması, Dolgu Kaplaması, Bordürler vb.
+<br />
+<br />
+</li>
+</ul>
+<li><span style="font-weight: bold;">Kübaj</span>,
+ölçümü sadece eksenin bir tarafında veya her ikisinde de yapma
+imkanı sunar.</li>
+</ul>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span><span style="font-style: italic; font-weight: bold;"><a name="opciones_dar_menu_vert">Dikey menü seçenekleri</a></span><br />
+<span class="Parrafo"><br />
+</span></span></span><img style="width: 103px; height: 308px; margin-left: 7px;" alt="" src="Imagenes/tablas_cubic_menu_vert.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Dikey menüde aşağıdaki seçenekler belirir:<br />
+<br />
+</span></span></span>
+<table style="text-align: left; width: 580px; height: 174px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold;"><a name="tramos">[ARALIKLAR]</a><br />
+</td>
+<td style="vertical-align: top; width: 568px; text-align: justify;">Başlangıç
+KM'si ve bitiş KM'si ile bir dizi aralık tanımlamayı ve bu verileri bir &nbsp;<span class="Archivo">.tdc</span> dosyasına yüklemeyi veya kaydetmeyi sağlar.
+Bir aralığın başlangıç KM'si, bir öncekinin sonuyla çakışabilir veya çakışmayabilir.<br />
+<br />
+&nbsp;<span class="Archivo">.dar</span> tanım menüsünde,
+aynı işlevi yerine getiren <a href="#cubicar_tramos"><span style="font-weight: bold; font-style: italic;">Aralıklara göre
+kübaj</span></a> seçeneği bulunur.
+Bu seçenek etkinleştirildiğinde, enkesit dosyası her aralık için değerleri biriktirerek kübajı yapılır.<br />
+<br />
+&nbsp;<span class="Archivo">cvol.res</span> listesinde,
+her aralığın ölçümlerinin sonunda, o aralığın bir özeti ve dosyanın
+sonunda tüm aralıkların toplamı yer alır. Herhangi bir aralığa ait olmayan enkesitler,
+sahip oldukları ölçüm değerlerini değiştirmeden seçilen enkesit dosyasına
+yeniden kaydedilir.<br />
+<br />
+<div style="text-align: center;"><img style="width: 316px; height: 234px;" alt="" src="Imagenes/edit_perf_tramos.png" /><br />
+</div>
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold;"><span class="EstiloNegrita"><span style="font-size: 10pt; color: black;"><span class="Parrafo">[Seviyeler HAYIR] / [Seviyeler EVET]</span></span></span></td>
+<td style="vertical-align: top; width: 568px; text-align: justify;">Minimum
+ve maksimum kübaj kotu arasında, söz konusu cismin <span style="font-weight: bold;">seviyelere göre kübajını yapma</span>
+imkanı sunar.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold;">[Alanı
+Gör]<br />
+</td>
+<td style="vertical-align: top; width: 568px; text-align: justify;">Ölçülen
+alanı görselleştirmeyi sağlayan kapalı bir alan oluşturur. Bunun
+için, görüntülenmek istenen tablonun alan numarası istenir ve
+eğer enkesit düzenleme araç çubuğundaki <a href="#crear_perfil_modelo_dar"><img style="border: 0px solid ; width: 18px; height: 16px;" alt="" src="Imagenes/icono_toolBarEditPerfil_dar.png" align="middle" /></a>
+seçeneği ile oluşturulmuşsa, çalışma kütüphanesinde bulunan&nbsp;<span class="Archivo">defArea.per</span>
+dosyası açılır veya ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> kütüphanesinde bulunan aynı adlı varsayılan dosya açılır.<br />
+<br />
+Eğer istenen ölçüm numarası,
+&nbsp;<span class="Archivo">.dar</span> tablosunda <a href="#s">&lt;s&gt;</a>
+komutu ile tanımlanmış bir <a href="#s">geçici yüzeyin</a>
+tanımına karşılık geliyorsa,
+bu yüzey vurgulanmış olarak gösterilecektir. Eğer bu, diğer alanların
+toplamları ve farklarından oluşan bir alansa, eklenenler mavi, çıkarılanlar ise gri renkte gösterilir.<br />
+<br />
+Aynı etki, tablonun veri numarasına doğrudan tıklandığında da ortaya çıkar, bu da daha pratiktir.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 104px; font-weight: bold;"><a name="dar_cubicar">[Kübaj Hesabı]</a><br />
+</td>
+<td style="vertical-align: top; width: 568px; text-align: justify;">Bir
+&nbsp;<span class="Archivo">.per</span> enkesit dosyası
+seçmeyi ve mevcut tabloyu takip ederek bir kübaj hesabı yapmayı sağlar. Ölçümler
+çıktı dosyasına yazılır ve bir
+&nbsp;<span class="Archivo">cvol.res</span> ölçüm listesi
+ve bir hesap tablosuyla açılmaya uygun sekmeli bir &nbsp;<span class="Archivo">cv.res</span>
+listesi oluşturulur. <span style="font-weight: bold;">[List]</span> düğmeleri
+bu dosyaları görüntülemeyi sağlar.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 104px;">[Kaydet]<br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 568px;">Oluşturulan
+tabloyu &nbsp;<span class="Archivo">.dar</span>
+uzantılı bir dosyaya kaydetmeyi sağlar.<br />
+<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold; width: 104px;">[Yükle]<br />
+</td>
+<td style="vertical-align: top; text-align: justify; width: 568px;">Daha
+önce tanımlanmış bir tabloyu, &nbsp;<span class="Archivo">.dar</span>
+uzantılı bir dosyadan geri yüklemeyi sağlar.<br />
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span><span style="font-style: italic; font-weight: bold;"><a name="ejemplo">Basit bir Maden Ocağı Kübaj Örneği</a></span><br />
+<span class="Parrafo"><br />
+</span></span></span></span></span><img style="width: 259px; height: 144px; margin-left: 7px;" alt="" src="Imagenes/ejemplo_corta_minera_0.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Şekilde
+gösterilen durumda, orijinal arazi çizgisi
+her enkesitte 0 tipi çizgi (L0) ile temsil edilir,
+kazı&nbsp; 40 numaralı çizgi (L40) ile, cevher tabakasının tavanı veya üst sınırı 107 (L107) ve tabanı veya alt sınırı 67
+(L67) olarak temsil edilir.<br />
+<br />
+0 yüzeyi üzerinde 40 yüzeyinin neden olduğu enkesitteki yarma alanını, yani
+gerçekten kaldırılan malzeme miktarını hesaplamak için, ilgili çizginin tabloya eklenmesi gerekir
+(yüzeyler hem klavyeden hem de fare ile eklenebilir):<br />
+<br />
+</span></span></span></span></span>
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 678px; height: 87px;" alt="" src="Imagenes/ejemplo_corta_minera_0d.png" /></span></span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+</span><span class="Parrafo"> </span><span class="Parrafo">Cevhere karşılık gelen alan
+iki farklı aşamada hesaplanır:<br />
+<br />
+</span></span></span></span></span>
+<table style="text-align: left; width: 692px; height: 53px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: middle; width: 352px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İlk
+olarak, 107 numaralı çizgiyi 0 ile tamamlayarak tavanı tanımlanır.
+Bu komut, 107'nin bulunduğu yerlerdeki noktaları alır ve bulunmadığı yerlerde
+onu 0 ile tamamlar, sonuçta ortaya çıkan yüzey şekilde kalın çizgiyle gösterilir.</span></span></span></span></span></span></span></span></span></span></td>
+<td style="vertical-align: top; width: 334px; text-align: right;"><img style="width: 259px; height: 136px; margin-left: 7px;" alt="" src="Imagenes/ejemplo_corta_minera_1.png" /></td>
+</tr>
+<tr>
+<td style="vertical-align: top; width: 352px;"><img style="width: 259px; height: 136px; margin-right: 7px;" alt="" src="Imagenes/ejemplo_corta_minera_2.png" /></td>
+<td style="vertical-align: middle; width: 334px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cevher
+tabakasının tabanı için, 67 ile 40 arasındaki en yüksek değer alınır,
+sonuç olarak her iki çizgi tipi bir arada bulunduğunda (ve sadece bu durumda) en yüksek kotlar elde edilir.</span></span></span></span></span></td>
+</tr>
+<tr>
+<td style="vertical-align: middle; width: 352px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Öncekinin
+birinci üzerinde neden olduğu yarma (çizimde taranmış) aranan alan olacaktır ve bu nedenle eklenecek satır şudur:</span></span></span></span></span></span></span></span></span></span></td>
+<td style="vertical-align: top; width: 334px; text-align: right;"><img style="width: 259px; height: 136px; margin-left: 7px;" alt="" src="Imagenes/ejemplo_corta_minera_3.png" /></td>
+</tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span>
+</span>
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 669px; height: 60px;" alt="" src="Imagenes/ejemplo_corta_minera_3d.png" /></span></span></span></span></span></span><br />
+</div>
+<span class="Parrafo"><br />
+Pasa veya gang alanını hesaplamak için,
+tabloda toplam kazıdan (ilk
+satırda tanımlanmış) her enkesitteki cevher alanının (ikinci satır) çıkarılacağını belirtmek yeterlidir. Bu,
+önceden hesaplanmış alanların toplama/çıkarma (+/-) sütununda belirtilir.
+Bu durumda, ikinci sütunda alanlar komutunu (<span style="font-style: italic;">A</span>)
+seçerken, işlem yapılacak alanlar girilir; biri satırın herhangi bir kutucuğuna, ikincisi ise
+toplama/çıkarma sütununa "&#8211;" işaretiyle girilir:<br />
+<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span>
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 673px; height: 78px;" alt="" src="Imagenes/ejemplo_corta_minera_4d.png" /></span></span></span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Son tablo &nbsp;<span class="Archivo">ornek.dar</span>
+olarak kaydedilecek ve sonraki kübaj hesaplamalarında, her bir
+objeyi temsil eden aynı çizgi tiplerine sahip enkesit serilerine uygulanarak
+kullanılabilecektir.<br />
+<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+</body></html>

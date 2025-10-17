@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W-TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Enkesit Enterpolasyonu</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ENKESİT ENTERPOLASYONU<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">ENKESİT (ALZADO) menüsünün bu alt menüsünden, bulunulan güzergahın enkesitine yeni enkesitler enterpole etme komutu verilebilir. Bunun için, aşağıda gördüğümüz diyalog kutusunun sol tarafındaki </span></span>olaylardan<span class="Parrafo"><span class="Parrafo"> bazılarını etkinleştirmek veya hangi başlangıç KM'si ile hangi bitiş KM'si arasında belirli bir eşit aralıkla enkesit enterpole edilmek istendiğini belirten veriler eklemek gerekir.<br />
+      <span class="Parrafo"><br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 468px; height: 382px;" alt="" src="Imagenes/alzado_perfiles_interpolar_dialogo.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Eklenen bu eşit aralıkların etkili olması için <span style="font-weight: bold;">Eşit Aralıklar</span> kutucuğunun etkinleştirilmiş olması gerekir.<br />
+<span style="font-weight: bold;">.vol'a kaydet</span> kutucuğunun etkinleştirilmiş olması ve bu menüden çıkıldıktan sonra tüm bu yapılandırmanın bulunulan güzergahın .vol dosyasına kaydedilmesi önemlidir.<br />
+      <br />
+      <span style="font-weight: bold;">Hiçbir enkesiti enterpole etme. (Otomatik olanlar da dahil)</span>: <a href="OL_proyecto.html">Proje</a> tablosundaki Enkesit enterpolasyonu yapma ile eşdeğerdir, ancak boykesit hesaplamasında etki eder ve güzergahın .vol dosyasıyla kaydedilir.<br />
+      <br />
+</span></span></span><span style="font-weight: bold;">Sınır çizgileri</span>: çok ayrık olan iki çizgi noktası arasına ara enterpolasyon KM'leri eklemeyi sağlar. Bu, iki güzergahın birleşim bölgelerindeki modelleri hassaslaştırmayı sağlar. Bu seçeneğin yanındaki kutucuğu etkinleştirerek, bu seçeneğin kesişim ve kavşakları hesaplarken kullanılmasını engellemek mümkündür (ancak normal hesaplamada çalışacaktır).<br /><br /><span style="font-weight: bold;">Ayak KM'leri, Kenarayaklar</span>: <span style="font-weight: bold;">Kesin KM'ler</span> seçeneği, ayakların yarı genişliği, kenarayak dayanakları, tabliyelerin ve kirişlerin S ve Smin'i, değişken yükseklikteki tabliyelerin ayrıklaştırılması vb. nedenli km'leri hariç tutar.<br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Bir güzergaha otomatik olarak enterpole edilen enkesitler:<br />
+      </span></span></span>
+      <ul>
+        <li><a href="OL_cruces.html">Kesişimlerin</a> ve <a href="OL_entronque_glorieta.html">dönel kavşakların</a> karakteristik kilometreleri. Her bir birleşimin karakteristik KM'lerini elde ettiğimiz bir eN.pki dosyası (N güzergah numarasıdır) oluşturulur.</li>
+        <li><a href="OL_cunas_transicion.html">Geçiş Dolguları</a> (.vol) tanımından kaynaklanan KM'ler.</li>
+        <li><a href="OL_muro_desmonte.html#cota_base_muro">Duvar Taban Kotu</a> (.vol) tanımından kaynaklanan KM'ler.</li>
+        <li><a href="OL_desmonte_tierra.html#alto_muro_tabla">Duvar Üst Kotu</a> (.vol) tanımından kaynaklanan KM'ler.</li>
+        <li><a href="OL_marcas_viales.html">Yol Çizgileri</a> (.vol) KM'leri. T Enterpole Et sütunundaki kutucuk etkinleştirildiğinde, program, o menüde belirttiğimiz başlangıç ve bitiş KM'leri arasında kullanıcı tarafından tanımlanan eşit aralıklarda enkesitleri enterpole edecektir.<br />
+        </li>
+        <li>&nbsp;<a href="OL_estructuras.html">Sanat Yapıları</a> menüsündeki kenarayakların ve Dökülme Konilerinin (.vol) tanımından kaynaklanan KM'ler.</li>
+        <li><a href="OL_obras_fabrica.html">Sanat Yapıları</a> (.dof) tanımından kaynaklanan KM'ler. Her Sanat Yapısı en fazla üç enkesit ekleyebilir: Biri Sanat Yapısının ana eksenle kesişiminde ve diğer ikisi giriş ve çıkış ağzının bu eksen üzerindeki izdüşüm KM'lerinde.</li>
+        <li><a href="OL_barreras_seguridad.html">Motosiklet Koruma Sistemleri</a> (.vol) tanımından kaynaklanan KM'ler.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span style="font-weight: bold;">Kırpılan enkesite semboller: </span>Hem Enkesit Enterpolasyonu'nda hem de arazi enkesitlerinin kesilmesinde, Kırpılan enkesite semboller olayında mevcuttur. Enkesite semboller tablosunun her verisi dört KM ekler. BaşKM-0.01, BaşKM,&nbsp; BitKM, BitKM+0.01.<br /><br /><span style="font-weight: bold;">Hat ve Travers</span>: <a href="OL_ffcc_via_traviesa.html"><span style="font-weight: bold;">Hat ve Travers</span></a> menüsünün veri aralıklarında tanımlanan KM'lerde enkesitleri enterpole eder.<br />
+      <br />
+<br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

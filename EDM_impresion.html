@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html PUBLIC "-//WC//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Pafta Çıktısı Alma ve Yazdırma</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PAFTA YAZDIRMA VE YAYINLAMA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#formato_planos">Pafta Formatları</a><br />
+      <a href="#modos">Yazdırma Modları</a>
+      <br />
+      <a href="#paginado">Paftalama Tanımı</a><br />
+      <a href="#procesado">Yazdırma İşlemi</a><br />
+      <a href="#opciones">Yazdırma Seçenekleri</a><br />
+      </div>
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+<br />
+      ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'de pafta yazdırma ile ilgili tüm unsurlar, YAZDIRMA menüsünde gruplandırılarak sürecin tüm aşamalarını kapsayan hızlı ve pratik bir çözüm sunulmaya çalışılmıştır.<br />
+      <br />
+<span style="font-weight: bold;">Dosya</span> &#8594; <span style="font-weight: bold;">Yazdır...</span> menüsünden veya standart <a href="EDM_barras_herramientas.html">araç çubuğundaki</a> <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_impresion.png" /> simgesine tıklanarak erişilen bu menüde, yazdırma işlemi için izlenmesi gereken üç adım, sekmeli bir iletişim kutusu şeklinde ayırt edilebilir:<br />
+
+      <ol>
+<li>Yazdırma <a href="#modos">modu</a> veya profilinin seçilmesi.<br />
+  </li><li><a href="#paginado">Paftalama</a> düzeninin yüklenmesi veya oluşturulması.<br />
+  </li><li>Yazdırma işleminin <a href="#procesado">gerçekleştirilmesi</a> veya yürütülmesi. <br />
+  </li>
+      </ol>
+
+Bu adımlara, ilgili iletişim kutusundaki farklı sekmelere tıklanarak erişilir. Ayrıca, <span style="font-weight: bold;">[Seçenekler]</span> sekmesinde, diğer genel yazdırma yardımcı programlarına erişilebilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 526px; height: 217px;" alt="" src="Imagenes/dialogo_impresion.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="formato_planos">Pafta Formatları</a></span><br />
+      <br />
+Pafta, yazıcıda veya çizicide ölçeğinde ve istendiği zaman antet içeren bir dış çerçeve ile çizdirilebilir. Bu çerçeve veya antet, S100* ila S105* arası izole nokta sembolleri ile tanımlanır; burada * bir karakter setini temsil eder ve S100* A0 formatları için, S101* A1 için,... ve S105* A5 ve diğer standart dışı boyutlar içindir.<br />
+      <br />
+S100* ila S105* sembolleri, diğer herhangi bir sembol gibi haritaya yerleştirilebilir. Bu durumda çizimin bir parçası olurlar ve harita ile birlikte <span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> dosyalarına kaydedilirler. Ancak, YAZDIRMA menüsünden kullanıldıklarında farklı davranırlar, çünkü kütüphanedeki diğerlerinden iki açıdan ayrılırlar:<br />
+      <ul>
+        <li>Bir paftanın kağıt boyutlarını ve çizilebilir alanını, yani antet ve çerçevenin kaplamadığı alanı tanımlarlar.</li>
+      </ul>
+      <ul>
+        <li>Değişken içerikli metinler içerebilirler.</li>
+      </ul>
+Formatlar, kullanım anında çalışma kütüphanesinde tanımlanmış ve bu şekilde tanınabilir bir isme sahip olan tüm formatlar arasından seçilir. Yazdırma menüsünde, hangi çerçevenin kullanılacağına karar vermek ve çizici tarafından yorumlanmak üzere anında yazdırma komut dosyaları elde etmek için harita üzerine yerleştirmek mümkündür.<br />
+      <br />
+Ekranda bir harita üzerine bir çerçeve konulup bir yazdırma işlemi başlatıldığında, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> haritayı sayfa kenarlarından keser ve sadece içinde bulunan çizim parçasını, ekranda göründüğü gibi, çerçeve çizimiyle çevrili olarak gönderir. Eğer haritanın bir kısmı antetin üzerine gelirse, bu şekilde elde edilir, dolayısıyla sadece çerçeveden daha küçük boyutlu bir harita düzgün bir şekilde çizilecektir.<br />
+      <br />
+Eğer bir harita bir sayfadan daha büyükse ve çiziciden birden fazla sayfa veya pafta elde edilmek isteniyorsa, paftalama düzenleme menüsüne başvurulabilir.<br />
+      <br />
+Bir paftanın ölçekli olabilmesi için, boyutlarını milimetre cinsinden kağıt üzerinde tanımlayan bir format veya çerçeve içinde yer alması gerekir. Bununla birlikte, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, ekranda o an bulunan harita parçasının serbest ölçekli paftalarını elde etmeye de olanak tanır.<br />
+      <br />
+<br /><span class="Titulo_2"><a name="modos">Yazdırma Modları</a></span><br /><br />
+Bir ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> <span style="font-weight: bold;">yazdırma modu veya profili</span>, olası bir yazdırma sürecini yapılandırmaya yönelik bir parametreler setidir ve tanımı YAZDIRMA menüsü iletişim kutusunun <span style="font-weight: bold;">[Mod]</span> sekmesi aracılığıyla yapılır. Bir yazdırma modunda yer alan parametreler aşağıda detaylandırılmıştır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 526px; height: 217px;" alt="" src="Imagenes/dialogo_impresion.png" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">Seçim</span> açılır listesinden kullanılacak <span style="font-weight: bold;">yazdırma modu</span> (bir isimle ilişkilidir) seçilir ve ardından tüm iletişim kutusu o modla ilişkili tercihlerle doldurulur. Eğer hiç yazdırma modu yoksa, <span style="font-weight: bold;">[Yeni]</span> butonuna basarak bir tane oluşturmak ve uygun tercihleri seçtikten sonra, yeni modun gelecekteki çalışma oturumlarında kullanılabilir olması için <span style="font-weight: bold;">[Kaydet]</span>'e basmak mümkündür. Ayrıca, yazdırma modu başka projelerde veya başka kullanıcılar tarafından kullanılmak üzere <span style="font-weight: bold;">[Dışa Aktar]</span>ılabilir ve <span style="font-weight: bold;">[İçe Aktar]</span>ılabilir.<br />
+      <br />
+Mevcut yazdırma modunu varsayılan mod olarak ayarlamak istenirse, <span style="font-weight: bold;">[Varsayılan]</span> butonuna basılır. Böylece, her çalışma oturumunda yazdırma menüsüne ilk kez erişildiğinde varsayılan yazdırma modu yüklenir, ancak aynı oturum içinde menüye sonraki erişimlerde son kullanılan mod yüklenir.<br />
+      <br />
+<span style="font-weight: bold;">[Sil]</span> butonu mevcut yazdırma modunu siler. Eğer zaten kaydedilmiş bir mod ise, kütüphaneden silinir; eğer <span style="font-weight: bold;">[Yeni]</span> butonuna basıldıktan sonra yapılandırılan bir mod ise, işlem iptal edilir. Bir yazdırma modu silindiğinde, varsayılan mod yüklenir.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 633px; text-align: justify;">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'de tanımlanan yazdırma modları arasında her zaman özel <span style="font-style: italic;">Hiçbiri</span> modu seçilebilir. Bu mod ile hiçbir format yüklenmez ve o anda ekranda bulunan harita parçasından paftalar elde etmek için kullanılabilir.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <img style="width: 105px; height: 225px; margin-left: 7px;" alt="" src="Imagenes/lenguajes_impresion.png" align="right" /><span style="font-weight: bold;">ÇIKTI DİLİ</span> açılır listesinden, paftaların yazdırılacağı dil seçilebilir. Yazdırma hem doğrudan kağıda hem de dijital formata olabilir. Mevcut en yaygın diller şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">PDF</span>: Bu formatta dosyalar oluşturur. Bu dosyalar kompakt, çok platformlu ve görüntülenebilir veya yazdırılabilir. Belgelerin elektronik dağıtımı için kullanışlı bir formattır.</li>
+      </ul>
+      <div style="margin-left: 40px;">Oluşturulan <span class="Archivo">.pdf</span> dosyası, her sayfa birden çok alt sayfadan oluşsa veya şeffaflık içeren resimler veya resim içeren semboller olsa bile, resimleri PDF dilinde içerecektir. Bu formatta yazdırırken, program tüm sayfaları tek bir dosyada veya ayrı ayrı yazdırma imkanı ve ayrıca dosyanın açılmasını bir şifre ile koruma seçeneği sunar.<br />
+      <br />
+Bu dil, ekranda uygulanabildiği gibi <a href="EDM_visualizacion.html#atenuacion">modellere göre soluklaştırma</a> olasılığını da içerir.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">DWG/DXF</span>: Pafta çizimi, her paftanın açabilen başka bir CAD programında düzenlenmesi için DWG/DXF formatında da oluşturulabilir. Her sayfa sadece kesilmiş grafik verileri ve karşılık gelen çerçeve (antet) konturunu taşır. Paftalar oluşturulurken, <a href="EDM_exportar_dwg_dxf.html">DWG/DXF'e dışa aktarma</a> iletişim kutusu açılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Windows</span>: Yüklü sürücü aracılığıyla doğrudan Windows tarafından kontrol edilen herhangi bir yazıcı veya çizici için geçerlidir. Sürücünün doğru bir şekilde yüklenmiş olması ve yazıcı için uygun olması önemlidir. Bu dil seçilirse, ilişkili resimler de yazdırılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">PostScript</span>: Bu sayfa tanımlama dilinde dosyalar oluşturmak için kullanılır. Bu dil, çizimle ilişkili resimleri dikkate alır.</li>
+      </ul>
+      <br />
+Geri kalan diller eski çizicilere karşılık gelir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">HP-GL (seri)</span>: HP-GL dilini anlayan ve çizim dosyasını (<span class="Archivo">.plt</span>) bir seri port üzerinden alacak olan çiziciler için.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HP-GL (paralel)</span>: HP-GL dilini anlayan ve iletimin seri port üzerinden OLMAYACAĞI çiziciler için.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HP-GL/2</span>: HP-GL/2 dilini anlayan çiziciler için. Kalem paleti ayrıdır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">SGL</span>: Raster dili (bkz. CONFIG SGL).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">OCE-G9800</span>: Aynı adlı çizici için dil.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2 mono</span>: Yalnızca bir kalem için belleği olan yazıcılar tarafından taklit edilen HPGL/2 dili.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2+pal</span>: Kalem paletini <span class="Archivo">.plt</span> dosyasının kendisinde içeren HPGL/2 dili.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2 yazıcı</span>: Bu seçenek, alternatif bir dil olarak HPGL/2'yi destekleyen yazıcılar için dahil edilmiştir. HPGL2+pal'a eşdeğerdir, ancak <span class="Archivo">.plt</span> dosyasına yazıcının yerel dilden HPGL/2'ye geçmesini ve tersini belirtmek için gerekli olan bir başlık ve son eklemesiyle farklılaşır. Bu bilgi, ISTRAM <sup>®</sup>/ISPOL<sup>®</sup> kütüphanesinin bir klasöründe saklanması gereken ve adları, bu dil seçildiğinde iletişim kutusunun sağ tarafında görünen <span style="font-weight: bold;">Başlangıç</span> ve <span style="font-weight: bold;">Bitiş</span> alanlarında belirtilecek olan iki dosyada bulunmalıdır. Örnek olarak, standart kütüphanede <span class="Archivo">cabplt</span> ve <span class="Archivo">finplt</span> dosyaları bulunur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL mono</span>: HP-GL (paralel) gibidir, ancak bir renk paleti kullanmak yerine, her zaman 1 numaralı kalemi kullanır ve kullanmadan önce gerekli renk ve kalınlığı atar.</li>
+      </ul>
+      <br />
+Ek olarak, HPGL/2 dili için bu menüde aşağıdaki seçenekler ayarlanabilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2 0º'de</span>: Program, çerçeve veya antet yatay ise (yatay boyut dikey boyuttan büyükse) "RO;" komutunu yazar. Buna karşılık, çerçeve dikey ise (yatay boyut dikey boyuttan küçükse) "RO90;" komutunu yazar. Amaç, paftanın kağıt sınırlarını aşarak kesilmeyecek şekilde yönlendirilerek yazdırılmasıdır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2 90º'de</span>: Paftanın önceki seçeneğe göre 90 derece döndürülerek yazdırılması için yatay ve dikey boyutlar değiştirilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Donanım ile Döndürme</span>: Program "RO;" komutunu yazmaz ve hiçbir durumda boyutları değiştirmez (ilkel çizim modu).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">PG'li HPGL2 / PG'siz HPGL2</span>: HPGL/2 komut dosyalarına "PG" sayfa atlama komutunu dahil etmek veya etmemek için.</li>
+      </ul>
+      <br />
+<span style="font-weight: bold;">FORMAT</span>'tan, mevcut yazdırma modu için kullanılacak antet veya çerçeve tipi belirtilir ve kütüphanelerde saklanan herhangi biri seçilebilir.<br />
+      <br />
+<span style="font-weight: bold;">BOYUTLANDIRMA</span>, çizim dosyalarını önceden belirtilen formattan farklı bir boyutta elde etmeyi sağlar. Örneğin, A1 boyutunda bir antet kullanılırsa, çizim dosyaları doğrudan A1'de veya bu seçeneği kullanarak farklı boyutlarda (örneğin, A3'e bir küçültme belirtilirse boyutları %50 oranında küçültülür) oluşturulabilir. Bu açılır listede sunulan seçenekler şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">A0/A1/A2/A3/A4 Formatı</span>: Belirtilen boyuta büyütür veya küçültür.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Hiçbiri</span>: Antet formatına göre herhangi bir dönüşüm yapılmaz.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Katsayı</span>: Mevcut boyut üzerine bir ölçek katsayısı girmeyi sağlar. Bu, herhangi bir formattaki (A0,..., A4 olmasa bile) paftaları herhangi bir ölçekte elde etmeyi mümkün kılar.</li>
+      </ul>
+Özel S105* formatları için sadece <span style="font-style: italic;">Hiçbiri</span> veya <span style="font-style: italic;">Katsayı</span> seçenekleri uygulanabilir.<br />
+      <br />
+<span style="font-weight: bold;">Renk</span>/<span style="font-weight: bold;">Kalem</span> seçeneği, çizim dosyalarının oluşturulacağı renk setini belirtmeyi sağlar. İki alternatiften biri seçildiğinde, çizim ekranda yazdırılacağı renklerle aynı şekilde görüntülenir. Bu seçenek doğrudan <a href="EDM_modo_decoracion_pantalla.html#modo_pan">ekran/kağıt görüntüleme modları</a> ile ilişkilidir.<br />
+      <br />
+<span style="font-weight: bold;">KENAR BOŞLUKLARI</span>, kağıdın kenarına kadar çizebilen çiziciler için oluşturulmuş formatları, kenara kadar çizemeyen tek yapraklı yazıcılarda kullanmayı mümkün kılar. Yazıcının çizebildiği, sayfanın fiziksel kenarına olan mesafeleri, formatın Kuzey, Güney, Batı ve Doğu'suna göre milimetre cinsinden tanımlamayı sağlar.<br />
+      <br />
+Son olarak, <span style="font-weight: bold;">RESİM KALİTESİ</span>'ni dpi (inç başına nokta) cinsinden belirtmek gerekecektir. Bu işlevsellik, projenin ilk aşamalarında düşük boyutlu <span class="Archivo">.pdf</span> dosyaları elde etmeyi sağlar, bu da beraberinde getirdiği tüm avantajlarla birlikte: daha küçük dosya boyutu ve daha hızlı e-posta gönderimleri, ayrıca daha hızlı açılma hızı.&nbsp; <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="paginado">Paftalama Tanımı</a></span><br />
+      <br />
+<a href="#modos">Yazdırma modları</a> sekmesinden bir format yüklemek ve her seferinde tek bir sayfa çerçevelemek mümkündür. <span style="font-weight: bold;">[Paftalama]</span> sekmesi aracılığıyla birden fazla sayfa veya pafta elde etmek mümkün olacaktır. Bu sekme, "Hiçbiri" dışında bir yazdırma modu seçilmediği sürece devre dışı kalacaktır, çünkü aksi takdirde yüklenmiş bir format olmayacaktır. Burada bir paftalama şablonu, yani tek bir işlemde çizici dosyalarına gönderilecek tam bir sayfa (pafta) setinin dağılımını ve konumunu içeren bir dosya (<span class="Archivo">.pag</span>) oluşturulabilir.<br />
+      <br />
+Her bir pafta, sırayla ekranın farklı bölgelerinden alınmış bir dizi <span style="font-weight: bold;">alt sayfadan</span> oluşabilir (örneğin, bir boyuna kesit ve ilgili plan). Bunu alt sayfalar aracılığıyla yapmak, planın bölümlerini boyuna kesit üzerine kopyalama zorunluluğunu ortadan kaldırır.<br />
+      <br />
+Bir <span class="Archivo">.pag</span> paftalama dosyası şu tanımları içerir:<br />
+      <ul>
+        <li>Kütüphanelerdeki S100*, ..., S105* setinden kullanılacak format (kağıt boyutu ve antet).</li>
+      </ul>
+      <ul>
+        <li>Tanımladığı her sayfanın konum koordinatları, boyutları ve dönme açısı.</li>
+      </ul>
+      <ul>
+        <li>Her sayfanın ayrılabileceği her bir alt sayfanın konum koordinatları, boyutları ve dönme açısı.</li>
+      </ul>
+      <ul>
+        <li>Formatta bulunan değişken metinlerin her sayfadaki içeriği.</li>
+      </ul>
+      <ul>
+        <li>Sayfalara veya alt sayfalara bağlı diğer çizim parametreleri (çizim modları).</li>
+      </ul>
+Tüm bu yapı bu menüden interaktif olarak oluşturulabilir. Ayrıca, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> modüllerinden biri tarafından otomatik olarak oluşturulan paftalamalardan birini değiştirmek için de yüklenebilir (örneğin, GÜZERGAH PROJESİ modülü, <a href="OL_planos_longitudinales.html">boyuna kesit paftaları</a> ve <a href="OL_planos_transversales.html">enkesit paftaları</a> için paftalamalar oluşturur).<br />
+      <br />
+Sayfalar, paftalama yazdırılırken her sayfa için bir tane olmak üzere çizici dosyaları oluşturmak için kesilecektir. Her sayfa veya alt sayfa her zaman dikdörtgen şeklinde harita parçalarıdır. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> her paftayı sonunda çizilmiş çerçeve ile oluşturur. Bu, çerçevede haritanın dahil edileceği alanın bir parçasını "kapatan" doldurulmuş dikdörtgenler olmasını sağlar. Bu kapatılmış alanlara lejantlar, özet haritalar vb. yerleştirilebilir. Haritanın bir parçasını çerçeve sembolündeki bir dolgu ile kapatma olanakları eski kalemli çizicilerde etkili değildir.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Sayfa Seçenekleri</span><br />
+      <br />
+Bu sekmeden pafta yönetimıyla ilgili tüm seçenekler kontrol edilir:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 210px;" alt="" src="Imagenes/dialogo_impresion_paginado.png" /><br />
+      </div>
+      <br />
+Otomatik olarak oluşturulmuş bir <span class="Archivo">.pag</span> paftalama dosyası kullanılmak isteniyorsa, <span style="font-weight: bold;">[Aç]</span> butonuna basıp dosyayı seçmek yeterlidir. Bir paftalama dosyasının, tüm nitelikleriyle birlikte alt sayfaları da içerdiği unutulmamalıdır.<br />
+      <br />
+Sayfa olarak kapalı dikdörtgenler içeren bir <span class="Archivo">.edm</span> dosyası varsa, bu dosyayı doğrudan <span style="font-weight: bold;">[EDM]</span> seçeneği ile paftalama dosyası olarak yüklemek mümkündür.<br />
+      <br />
+Bir paftalama dosyasını <span style="font-weight: bold;">Düzenle</span> seçeneği, sayfaların verilerini (konum, açı, ...), sayfa eklemeyi veya silmeyi kolayca değiştirmemizi ve bu değişiklikleri paftalama dosyasına kaydetmemizi sağlar.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 297px;" alt="" src="Imagenes/edm_impresion_editar_pag.png" /><br />
+      </div>
+
+      <br />
+Önceki seçenekler, düzenlemedeki paftalamayı yüklenecek olanla değiştirir. Eğer paftalamanın sonuna eklemek isteniyorsa, <span style="font-weight: bold;">[Ekle]</span> seçeneği kullanılmalıdır.<br />
+      <br />
+<span style="font-weight: bold;">[Kaydet]</span> seçeneği, düzenlenmekte olan paftalamadan <span class="Archivo">.pag</span> dosyaları oluşturur.<br />
+      <br />
+      <br />
+PAFTALAMA SEÇENEKLERİ<br />
+      <br />
+      Sayfa yönetimi ile ilgili olarak, aşağıdaki seçenekler mevcuttur:<br />
+      <br />
+<ul>
+        <li><span style="font-weight: bold;">Başlat</span>: Düzenlemedeki tüm sayfaları siler.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ekle</span>: Kullanıcının paftalamanın sonuna eklemek için manuel olarak sayfalar oluşturmasını sağlar. Bu işlem &lt;Esc&gt; tuşuna, farenin sağ tuşuna veya başka bir seçeneğe basılarak sonlandırılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Araya Ekle</span>: Mevcut sayfanın hemen öncesine manuel olarak bir sayfa oluşturmayı sağlar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sil</span>: Mevcut sayfayı siler.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Taşı ve Döndür</span>: Bu seçenekler grafiksel olarak çalışır ve bir sayfanın yer değiştirmesini ve döndürülmesini sağlar (alt sayfalar bağımsız olarak taşınabilir ve döndürülebilir). Dönme değeri klavyeden ondalık derece olarak girilebilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Boyutlandır</span>: Zaten oluşturulmuş olanların ardına eklenecek sayfaların çizilebilir alanının boyutunu (genişlik ve yükseklik) önceden seçer. Sayfalar ilk kez eklendiğinde boyutlar otomatik olarak alınır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Çizime Aktar</span>: Sayfaların konturunu çizime ekler ve eğer bir sayfanın alt sayfaları varsa, sayfanın konturunu değil, alt sayfalarınkini aktarır. Bunları düzenlenebilir polilinler olarak oluşturur, bu da paftalama kılavuz planlarının yürütülmesine veya oluşturulan poligonlarla <a href="EDM_recintos.html">kapalı alan</a> seçeneklerinin yürütülmesine olanak tanır; bu poligonlar sayfa kesim poligonları olacaktır.</li>
+      </ul>
+      <div style="margin-left: 40px;">Bu seçenek ayrıca, <a href="EDM_impresion.html#opciones">yazdırma seçeneklerinde</a> tanımlanan metin tipini kullanarak her sayfaya/alt sayfaya numaralarını yazdırmayı da sağlar<span style="font-weight: bold;">.<br />
+      </span></div>
+      <ul>
+        <li><span style="font-weight: bold;">Alt--&gt;&gt;</span>: Mevcut sayfanın alt sayfa tanımını sonraki tüm sayfalara kopyalar.</li>
+      </ul>
+      <ul>
+        <li><img style="width: 92px; height: 84px; margin-left: 7px;" alt="" src="Imagenes/toolbar_paginas.png" align="right" /><span style="font-weight: bold;">Gezin</span>: Bu buton ile yüklenen sayfaları ve alt sayfaları takip ederek gezinmek mümkündür. Bu gezinmeyi yapmak için, sayfalar <a href="EDM_barras_herramientas.html">araç çubuğu</a> gösterilir.&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sayfayı Önizle</span>: Üzerinde bulunduğunuz mevcut sayfanın bir önizlemesini yapmanızı sağlar, bu da size o sayfanın yazdırıldığında nasıl görüneceğini gösterir.<br />
+        </li>
+      </ul>
+
+      <br />
+Alt paftalama seçenekleri ile ilgili olarak:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Başlat</span>: Mevcut sayfanın tüm alt sayfalarını siler.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ekle</span>: Sayfa ile aynı konum ve boyutta bir alt sayfa oluşturur (daha kalın çizgilerle ayırt edilir). Daha sonra alt sayfa <span style="font-weight: bold;">[Boyut.]</span> seçeneği ile yeniden boyutlandırılabilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Araya Ekle</span>: Mevcut alt sayfanın hemen öncesine manuel olarak bir alt sayfa oluşturmayı sağlar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sil</span>: Mevcut alt sayfayı siler.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Taşı</span> ve <span style="font-weight: bold;">döndür</span>: Bu seçenekler grafiksel olarak çalışır ve bir alt sayfanın yer değiştirmesini ve döndürülmesini sağlar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Boyutlandır</span>: Alt sayfaları dört köşesinden herhangi birinden yeniden boyutlandırmayı sağlar. Aynı alt sayfanın karşı kenarlarının kesişmesine izin vermez (başlangıç boyutuna döner) veya sayfa kenarlarının dışına çıkmasına izin vermez (sayfa kenarına kırpar).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Konum--&gt;&gt;</span>: Mevcut alt sayfanın konumunu ve açısını sonraki sayfalardaki aynı sıradaki alt sayfaya iletmeyi sağlar, bu da çizimin bir parçasının tüm sayfalar için ortak olması isteniyorsa çok kullanışlıdır. İstisna olarak, bu seçenek alt sayfa 1 numara ise uygulanamaz, çünkü genellikle koordinat referansı olarak kullanılır ve çoğaltılması anlamsız olur.</li>
+      </ul>
+      <br /><a name="modos_dibujo">ÇİZİM MODLARI</a><br />
+      <br />
+Mevcut sayfada alt sayfalar olduğunda, çizim modları mevcut alt sayfaya atıfta bulunur. Alt sayfa yoksa, mevcut sayfaya atıfta bulunurlar.<br />
+      <br />
+<a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-weight: bold; font-style: italic;">Detaylı Gösterim</span></a> kutucuğu işaretlendiğinde, oluşturulan paftalar bu modda elde edilir. Aksi takdirde, paftalar <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Basit Gösterim</span></a> moduna özgü basitleştirilmiş grafik gösterime sahip olur.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Kenarlık</span> seçeneği, paftayı paftalama sırasında kesildiği çizgi boyunca çevreleyen dikdörtgen bir çerçeve oluşturur. Bu seçenek etkinleştirilirse, bu çizgi haritanın sahip olduğu çizime, paftalama yapılan antete ek olarak eklenir. Kullanılan çizgi tipi, <a href="#opciones">yazdırma seçeneklerinde</a> yapılandırılan tip olacaktır.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Koordinat Grid'i</span> etkinleştirildiğinde, plan paftalarına bir koordinat grid'i eklenir. Bunun için, haritanın her 100 milimetresinde, tam sayıya yuvarlanmış katlı koordinatlarda S30 sembolü (veya <a href="EDM_impresion.html#opciones">yazdırma seçeneklerinde</a> belirlenen sembol) kullanılır.<br />
+      <br />
+Eğer <span style="font-weight: bold; font-style: italic;">Koord.</span> seçeneği işaretlenirse, paftalama işlemi sayfanın kesim dikdörtgenini, <a href="EDM_impresion.html#opciones">yazdırma seçeneklerinde</a> belirlenen stile göre (varsayılan olarak R27, ancak metinler yerine etiketlerin kullanılması da belirtilebilir) yazılmış koordinat etiketleriyle çevreler. Bu koordinatlar, kenarlara değil, çevresel grid sembollerine karşılık gelir. Paftalama yapılandırma menüsünde, grid sembolleri ile koordinat metinleri arasındaki kenar boşluğu değerleri de ayarlanır.<br />
+      <br />
+Alt sayfa olmadığında, modları iletme seçeneği <span style="font-weight: bold;">[S--&gt;&gt;]</span>'dir, bu da mevcut sayfanın çizim modunu sonraki tüm sayfalara uygular. Alt sayfalar olduğunda, buton <span style="font-weight: bold;">[A--&gt;&gt;]</span> olarak değişir ve modları mevcut olanla aynı sıradaki alt sayfaya (eğer varsa) sonraki sayfalarda iletmekle görevlidir.<br />
+      <br />
+Bir <span class="Archivo">.pag</span> dosyası çizim modları hakkında bilgi içermiyorsa, varsayılan değerler dikkate alınır (<a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-weight: bold; font-style: italic;">Detaylı Gösterim</span></a> seçeneği etkin ve <span style="font-weight: bold; font-style: italic;">Kenarlık</span>, <span style="font-weight: bold; font-style: italic;">Grid</span> ve <span style="font-weight: bold; font-style: italic;">Koord.</span> devre dışı).<br />
+      <br />
+      <br />
+      <a name="campos_texto">METİN ALANLARI</a><br />
+      <br />
+<span style="font-weight: bold;">METİN.NO.</span> bölümü, istenen metin alanını sayfa numarasından elde edilen sayısal bir değerle doldurmayı sağlar; belirtilen alanı <span style="font-style: italic;">N = N0 + Sayfa x N1</span> formülüyle doldurur, burada <span style="font-style: italic;">Sayfa</span> sayfa numarasıdır. <span style="font-weight: bold;">[Oluştur]</span> butonuna basıldığında, mevcut ve sonraki sayfalara etki eder.<br />
+      <br />
+Sağdaki tabloda, her sayfa için "değişken içerikli" metin <span style="font-weight: bold;">alanları</span> tamamen serbestçe düzenlenebilir.<br />
+&nbsp;<br />
+Her alanın sağında bulunan <span style="font-weight: bold;">[&lt;-]</span> ve <span style="font-weight: bold;">[-&gt;]</span> tuşları, mevcut sayfanın metnini sırasıyla önceki veya sonraki tüm sayfalara kopyalamakla görevlidir. Ayrıca, değişken metinlerin düzenleme alanlarının altında, çok sayıda alan olması ve hepsinin kopyalanması istenmesi durumunda, tüm metinleri tek seferde kopyalamak için iki buton bulunur.<br />
+      <br />
+Bir yeniden çizim yapıldığında, mevcut sayfa (veya onun 1 numaralı alt sayfası) değişken metinlerinin içeriği dahil olmak üzere tam antet ile çizilir.<br />
+      <br />
+Kullanıcıya, değişken metinlerin, antetin <span class="Archivo">#</span> (diyez) karakteriyle başlayan yazıları olduğu hatırlatılır.<br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="procesado">Yazdırma İşlemi</a></span><br /><br />
+<span style="font-weight: bold;">[İŞLEME]</span> sekmesi aracılığıyla erişilen menü, belirli bir formattaki dosyalara veya bir yazıcıya ya da çiziciye herhangi bir yazdırma sürecini başlatmak için gerekli işlevselliği kapsar. Bu menüyü oluşturan seçenekler şunlardır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 236px;" alt="" src="Imagenes/dialogo_impresion_procesado.png" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">[Yazdır]</span> seçeneği ile, ilgili çizici dosyalarını oluşturmak için bir <a href="#paginado">paftalama</a> kullanılır. Genellikle o anda düzenlenmekte olan paftalama kullanılır. Aksine, sadece bir format yüklenmiş ancak düzenlemede bir paftalama yoksa, program işlemi gerçekleştirmek için mevcut bir paftalama dosyası (<span class="Archivo">.pag</span>) ister. Ardından, paftalama dosyasıyla ilişkili antet, yazdırma modunda belirtilenden farklıysa veya hiçbiri bildirilmemişse, bu anteti yükleme veya aksine yazdırma modundakini koruma imkanı sunan bir mesaj görüntülenir.<br />
+      <br />
+Eğer <span style="font-weight: bold; font-style: italic;">Sadece RAM bellekteki bilgiyi yazdır</span> kutucuğu devre dışı bırakılırsa, program RAM'deki tüm bilgiyi boşaltır ve her sayfayı yazdırırken diskteki yedek kopyadan o sayfaya karşılık gelen bölgeyi yeniden yükler, sonunda RAM bellekte son sayfaya karşılık gelen bölge kalır. Belirli bilgisayarlarda ve büyük hacimli harita ve sayfa için, bu seçeneği devre dışı bırakmak daha verimli olabilir.<br />
+      <br />
+Ardından, yazdırma bir formata yapılacaksa oluşturulacak dosyanın adı veya eğer <a href="#modos">yazdırma dili</a> olarak bu seçilmişse Windows yazdırma kontrol penceresi istenir. İkinci durumda, bu pencere her sayfa için bir kez görünür ve dosya oluşturma durumunda, her sayfa için bir dosya oluşturulacağından (isteğe bağlı olan <span class="Archivo">.pdf</span> dosyaları hariç), girilen ad tüm dosyalar için ortak olan adın bir parçası olacaktır. Dosyaların adının değişken kısmı, bu menünün <span style="font-weight: bold;">Oluşturulan dosyaların adı</span> bölümünde belirtilenlere göre aşağıdaki kurallara göre oluşturulur:<br />
+      <ul>
+        <li>Eğer <span style="font-weight: bold; font-style: italic;">Temel ad + sayfa no.</span> seçeneği seçilirse, çizim dosyaları <span class="Archivo">ad001.*</span>, <span class="Archivo">ad002.*</span> vb. gibi adlar alır, burada <span class="Archivo">*</span> seçilen formata göre dosya uzantısına karşılık gelir. Yani, ad ortak kısımdan ve ardından sayfa numarasından oluşur.</li>
+      </ul>
+      <ul>
+        <li>Eğer <span style="font-weight: bold; font-style: italic;">Temel ad + metin alanı</span> seçilirse, ortak kısma kullanılan antet için belirtilen metin alanının içeriği eklenir. Bu, bu metin alanının içeriği her sayfa için farklı ve sayfanın içeriğini tanımlayıcı ise çok kullanışlı olacaktır, çünkü oluşturulan her çizim dosyasının içeriğini adından tahmin etmeyi sağlar.</li>
+      </ul>
+<a href="#modos">Yazdırma dili</a> olarak Windows veya eski çizicilere atıfta bulunan bir dil seçilmişse, oluşturulan dosyaların uzantısı <span class="Archivo">.plt</span> olur ve önceki dosyalara ek olarak, <span class="Archivo">&lt;ad&gt;.plt</span> dosyası (sadece temel ad veya ortak kısım) da oluşturulur; bu dosya çizici için kalem yapılandırmasını içerir ve ayrıca sistemin yanlışlıkla üzerine yazılabilecek <span class="Archivo">&lt;ad&gt;.plt</span> serisi dosyaların olup olmadığını tanıması için bir kontrol tanığı olarak hizmet eder.<br />
+      <br />
+Dosyaların oluşturulacağı sayfa setini kısıtlamak istenirse, menünün <span style="font-weight: bold;">Sayfa Aralığı</span> bölümüne başvurulabilir, bu bölüm aşağıdaki seçenekleri içerir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tümü</span>: Varsayılan seçenektir ve tüm sayfalar için dosyaları yazdırır veya oluşturur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Mevcut sayfa</span>: Sadece işlemi başlatma anında seçili olan ve parantez içinde belirtilen sayfaya karşılık gelen bir dosya yazdırılır veya oluşturulur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sayfalar</span>: Yazdırılacak toplam sayfanın bir alt kümesini belirtmeyi sağlar; tek sayfaları veya virgül ve tirelerin alışılmış formatıyla sayfa aralıklarını belirtir (örneğin, "1, 5, 8-12" metni, 1. sayfa, 5. sayfa ve 8 ila 12 aralığındaki sayfalar için dosyaların oluşturulacağını belirtir).</li>
+      </ul>
+<span style="font-weight: bold;">[Çizimi Dosyaya Yazdır]</span> seçeneği, istenildiği zaman çiziciye veya yazıcıya gönderilebilecek bir çizici komut dosyası (<span class="Archivo">.plt</span>) yazar. Aşağıdaki durumlar olabilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Yüklü format yok</span>: Bu, <span style="font-style: italic;">Hiçbiri</span> yazdırma modu seçildiğinde olur. Bu durumda, çizimin çizileceği yazdırma dilini seçmek gerekir ve elde edilecek olan, o anda ekranda bulunan harita parçasıdır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yüklü format var ve düzenlemede paftalama yok</span>: Formatlı bir yazdırma modu seçilmiş ancak bir paftalama düzenlenmiyorsa, yüklenen format ekranda çizilir ve dikey menüdeki <span style="font-weight: bold;">[Formatı Taşı]</span> seçeneği ile konumu değiştirilebilir. Bu durumda, antetin dış kenarları içinde kalan harita parçası elde edilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yüklü format var ve paftalama düzenleniyor</span>: Bu durumda elde edilecek olan, mevcut sayfanın dış kenarları içinde kalan harita parçasıdır.</li>
+      </ul>
+Dosyaya çıktı sırasında, etkin olan ana çizim seçeneklerine uyulur; yani, ekran dekorasyonsuz ise çizicide de öyle çıkar, devre dışı bırakılmış katmanlar temsil edilmez, vb.<br />
+      <br />
+<span style="font-weight: bold;">[Dosyayı Çiziciye Gönder]</span> seçeneği, bir çizici komut dosyasını doğrudan çiziciye veya yazıcıya göndermeyi sağlar. Ardından, yüklü yazıcıların bir listesiyle bir diyalog sunulur. Bunlardan birini seçerek, yazdırma komut dosyaları, yerel, ağ vb. bir yazıcı olmasına bakılmaksızın ona gönderilir.<br />
+      <br />
+<span style="font-weight: bold;">[Paftaları EDM'ye Aktar]</span> ile, her biri şunları içeren bir dizi <span class="Archivo">.edm</span> dosyası oluşturulabilir:<br />
+      <ul>
+        <li>Her sayfanın içeriği kendi çizim alanı içinde.</li>
+      </ul>
+      <ul>
+        <li>Kullanılan formata eşdeğer olması gereken ancak değişken metinler olmadan bir sembol. Kütüphanede, S101base'e eşit ancak <a href="#campos_texto">değişken metinler</a> olmadan S901 bulunur.</li>
+      </ul>
+      <ul>
+        <li>Her sayfanın özelleştirilmiş <a href="#campos_texto">değişken metinleri</a>, düzenlenebilir EDM metinleri olarak.</li>
+      </ul>
+Her <span class="Archivo">.edm</span> dosyasının içeriği, her sayfa için tanımlanan tüm alt sayfalardan oluşacaktır. Bu, boyuna kesitlerin yazdırılması veya daha sonraki işlemleri için kullanışlıdır.<br />
+      <br />
+Referans olarak alınan alt sayfa, <span style="font-weight: bold; font-style: italic;">Grid</span> veya <span style="font-weight: bold; font-style: italic;">Koord.</span> seçeneğinin etkin olduğu ilk alt sayfadır (genellikle harita). Bu nedenle, geri kalan alt sayfalar gerçek koordinatlarını kaybeder. Hiçbir alt sayfanın belirtilen iki seçenekten herhangi biri etkin değilse, referans olarak alt sayfa 1 alınır.<br />
+      <br />
+<span style="font-weight: bold;">[Yazdır]</span> seçeneğinde olduğu gibi, oluşturulan dosyaların seti ve adları sırasıyla <span style="font-weight: bold;">Sayfa Aralığı</span> ve <span style="font-weight: bold;">Oluşturulan Dosyaların Adı</span> bölümlerinden kontrol edilebilir.<br />
+      <br />
+<span style="font-weight: bold;">[Paftaları DWG/DXF'e Aktar]</span> işlevi, daha önce açıklanan <span style="font-weight: bold;">[Paftaları EDM'ye Aktar]</span> işlevine benzerdir ve sonuç olarak her biri şunları içeren bir dizi <span class="Archivo">.dxf</span>/<span class="Archivo">.dwg</span> dosyası elde edilir:<br />
+      <ul>
+        <li>Her sayfanın içeriği kendi çizim alanı içinde.</li>
+      </ul>
+      <ul>
+        <li>Kullanılan antet sembolünü ve her sayfanın veya paftanın özelleştirilmiş değişken metinlerini içeren bir blok.</li>
+      </ul>
+
+      <img style="width: 196px; height: 113px; margin-left: 7px;" alt="" src="Imagenes/dialogo_impresion_subpag_ref.png" align="right" />Seçilen dil DWG/DXF ise veya yazdırma <span style="font-weight: bold;">[Paftaları DWG/DXF'e Aktar]</span> butonu ile yapılıyorsa, paftalama birden çok alt sayfadan oluştuğunda, hangi alt sayfanın referans veya temel olacağı seçilebilir (varsayılan olarak, sayfa 1).<br />
+      <br />
+Bunun dışında, alt sayfaların dahil edilmesi ve sonuç dosyalarının oluşturulması seçenekleri açısından, işleyiş önceki seçenekle aynıdır.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+<span style="font-weight: bold;">[Paftaları DGN'e Aktar]</span> ile, önceki seçeneklere benzer şekilde bir dizi <span class="Archivo">.dgn</span> dosyası oluşturulur. Her dosya şunları içerir:<br />
+      <ul>
+        <li>Sayfanın içeriği kendi çizim alanı içinde.</li>
+      </ul>
+      <ul>
+        <li>Kullanılan formata eşdeğer olması gereken ancak değişken metinler olmadan bir paylaşılan DGN hücresi (shared cell).</li>
+      </ul>
+      <ul>
+        <li>Her sayfanın değişken metinleri.</li>
+      </ul>
+<span style="font-weight: bold;">[Antet Oluştur]</span> aracı, S10* tipi antetlerden değişken metinler olmadan semboller oluşturmaya yarar. Bir antet seçmek (varsayılan olarak yazdırma formatı olarak kullanılan seçilidir) ve oluşturulacak sembol için bir tip belirtmek yeterlidir. Bu sembol oluşturulduktan sonra, <span style="font-weight: bold;">[Paftaları EDM'ye Aktar]</span>, <span style="font-weight: bold;">[Paftaları DWG/DXF'e Aktar]</span> ve <span style="font-weight: bold;">[Paftaları DGN'e Aktar]</span> seçenekleriyle değişken metinler olmadan antet olarak kullanılabilir.<br />
+      <br />
+      <span style="font-weight: bold;">Antetleri Patlat</span>: Antet sembolünde (S10...) bulunan çizgileri ve sembolleri, ekranda detaylı gösterim modunda görüntülenen bireysel nesneler olarak oluşturur. Bunlar, harita nesneleri olduğu için <span class="Archivo">.edm</span> olarak kaydedilebilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="opciones">Yazdırma Seçenekleri</a></span><br />
+      <br />
+<span style="font-weight: bold;">Seçenekler</span> sekmesi, <a href="#modos_dibujo">paftalama çizim modunda</a> kullanılacak yapılandırmayı içerir. Ayrıca EDM'de koordinat grid'i oluşturmaya, kuzey okunu yerleştirmeye, sembolleri ve yazıları yönlendirmeye vb. olanak tanır.<br />
+<br />
+      <div style="text-align: center;"><img style="width: 600px; height: 430px;" alt="" src="Imagenes/dialogo_impresion_opciones.png" /><br />
+      </div>
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Kenarlık Çizgisi</span><br />
+
+      <br />
+Burada, çizilebilir alanın kenarlığını çizmek için kullanılacak <a href="EDM_entidades_basicas.html#lineas">çizgi tipi</a> beyan edilir (varsayılan L0). Bu çizgi, <a href="EDM_impresion.html#modos_dibujo">paftalama çizim modlarında</a> <span style="font-weight: bold; font-style: italic;">Kenarlık</span> seçeneği etkinleştirildiğinde çizilir.<br />
+
+      <br />
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Grid ve Koordinatlar</span><br />
+
+      <br />
+Burada aşağıdaki seçenekler yapılandırılır:<br />
+      <ul>
+        
+        <li><span style="font-weight: bold;">Koordinat grid'ini oluşturmak için </span><a style="font-weight: bold;" href="EDM_entidades_basicas.html#simbolos">sembol</a><span style="font-weight: bold;"> tipi</span> (varsayılan S30). Bu grid, <a href="EDM_impresion.html#modos_dibujo">paftalama çizim modlarında</a> <span style="font-weight: bold; font-style: italic;">Grid</span> seçeneği işaretlendiğinde oluşturulur. Koordinat grid'i (<span style="font-weight: bold;">semboller</span>) bir <span style="font-weight: bold;">ızgara</span> (çizgiler) ile değiştirilebilir. Semboller seçeneğini veya ızgara seçeneğini seçmemiz gerekecektir.<br />
+        </li>
+</ul>
+      <ul>
+        <li><span style="font-weight: bold;">Grid aralığı</span>, yani grid'i oluşturan semboller arasındaki mesafe.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Koordinat grid'i çevresel koordinat yazılarıyla oluşturulduğunda, bazı noktalarda metinler ile grid sembolleri arasında bir çakışma sorunu ortaya çıkabilir.<br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">Grid sembolleri ile koordinat metni arasındaki kenar boşluğu</span> seçeneği, haç kollarının uzunluğu artı koordinat metninin kaplayabileceği uzunluktan büyük veya eşit olmalıdır, çünkü bu şekilde koordinat metinlerinin çakışması düzeltilir. Varsayılan olarak, bu değer 25 olarak ayarlanmıştır.<br />
+      <br />
+Son olarak, <span style="font-weight: bold;">metin kesişmelerini önlemek için kenar boşluğu</span> seçeneği, grid sembolü ile koordinat metinleri arasındaki mesafeyi ayarlar, böylece düzeltme tamamlanır. Varsayılan olarak bu kenar boşluğu 5 değerini alır.<br />
+      </div>
+      <br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 552px; height: 88px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 96px; height: 76px;" alt="" src="Imagenes/impresion_solape_texto.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 151px; height: 95px;" alt="" src="Imagenes/impresion_margen_texto.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 148px; height: 117px;" alt="" src="Imagenes/impresion_margen_cruz_malla.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">Metin ve sembol çakışması</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">Metin çakışmasının düzeltilmesi</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">Metinler ve grid arasındaki çakışmanın düzeltilmesi</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      
+      <ul>
+        <li>
+Koordinat grid'inin <span style="font-weight: bold;">çevresel koordinat yazıları</span>, <a href="EDM_entidades_basicas.html#textos">metinler</a> (varsayılan olarak tip 27) veya grid sınırları etrafında yerleştirilecek, Kuzey, Güney, Batı veya Doğu'daki konumlarına göre dört farklı tip kullanan <a href="EDM_entidades_basicas.html#simbolos">semboller</a> aracılığıyla oluşturulabilir. Bu yazılandırma, <a href="EDM_impresion.html#modos_dibujo">paftalama çizim modlarında</a> <span style="font-weight: bold; font-style: italic;">Koord.</span> seçeneği etkinleştirildiğinde oluşturulur.</li>
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Koordinatlar için dikey öteleme</span>: koordinatların çizgilerle üst üste gelmesini önler.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Grid ve koordinatları oluştur</span>: grid'i ve koordinatları yazdırılan paftalara ek olarak EDM'nin kendisinde de çizer.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Model = Sayfa No.</span>: önceki seçenek tarafından oluşturulan grid ve koordinatlar, ait oldukları sayfanın numarasını model numarası olarak alır.<br />
+        </li>
+
+      
+      </ul>
+<br />
+<span style="font-weight: bold; font-style: italic;">Kuzey Oku Yerleştir</span><br />
+
+      <br />
+      <img style="width: 41px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/simb_norte.png" align="right" /><span style="font-weight: bold;">[Kuzey Oku Yerleştir]</span> butonuna basıldığında, harita içeren sayfaların/alt sayfaların belirtilen <span style="font-weight: bold;">köşesinde</span> (<span style="font-weight: bold;">KB</span>, <span style="font-weight: bold;">GB</span>, <span style="font-weight: bold;">KD</span>, <span style="font-weight: bold;">GD</span> ve <span style="font-weight: bold;">öteleme</span> dikkate alınarak) belirtilen sembol (varsayılan olarak S28) oluşturulur.<br />
+Sembole, belirtilen referans köşesine göre bir <span style="font-weight: bold;">X Yönünde Öteleme</span> ve bir de <span style="font-weight: bold;">Y Yönünde Öteleme</span> uygulanabilir.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;">Sembolleri ve Yazıları Yönlendir</span><br />
+      <br />
+<span style="font-weight: bold;">[Yönlendir]</span> butonuna basıldığında, aktif <a href="EDM_control_entidades.html#tipos">tiplere</a> ve <a href="EDM_control_entidades.html#control_modelos">modellere</a> ait tüm <a href="EDM_entidades_basicas.html#simbolos">semboller</a> ve <a href="EDM_entidades_basicas.html#textos">yazılar</a>, içinde bulundukları sayfa veya alt sayfanın yönelimine artı burada belirtilen <span style="font-weight: bold;">açı artışı</span>na göre yönlendirilir.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Diğer Seçenekler</span><br />
+      <br />
+Burada, çizgilerin <span style="font-weight: bold;">kalınlıkları</span> dikkate alınarak yazdırma etkinleştirilebilir.<br />
+<br />
+<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

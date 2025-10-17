@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html PUBLIC "-//W-3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Boykesitler</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BOYKESİT ALIMI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#longit_directo">Haritadan Doğrudan Alım</a><br />
+      <a href="#formato_lon">.lon Dosya Formatı</a><br />
+      <a href="#longit_carto">Haritadan Alım</a><br />
+      <a href="#generacion_optima">Optimal Boykesit Oluşturma</a><br />
+      </div>
+
+      
+      
+      
+      
+      <br />
+      <br />
+
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+Boykesit çıkarmanın birkaç amacı vardır. Bunlardan ilki, <a href="OL_rasantes_diseno.html">kırmızı kotu tasarlayabilmek</a> için eksenin geçtiği arazi veya yüzey hakkında bir referans elde etmektir. Diğer durumlarda, örneğin incelenmesi gereken bir hendek olduğu için eksenden 5 metre uzakta ne olduğunu öğrenmek istenebilir.<br />
+      <br />
+      <img style="width: 282px; height: 188px; margin-right: 7px;" alt="" src="Imagenes/ejem_perf_longit.png" align="left" />Boykesit elde etmenin diğer yolları, arazinin enkesitlerinden eksendeki kotu çıkarmak veya güzergah alternatiflerini değerlendirmek için haritadaki herhangi bir mevcut çizgiyi yansıtmaktır. Örneğin, ekseni kesen bir elektrik hattı veya başka bir karayolu ile farklı seviyeli bir geçiş (BOYKESİT <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; LİSTELER </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <a href="OL_listados_geometria.html">GEOMETRİ</a> </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <a href="OL_listados_geometria.html@proyec_linea"><span style="font-weight: bold;">[BİR ÇİZGİNİN İZDÜŞÜMÜ]</span></a> seçeneği kullanılarak).</span></span></span></span></span></span><br />
+      <br />
+Topografik bilginin kalitesi ve yoğunluğu, üretilen sonuçlarla yakından ilişkilidir, bu nedenle sayısal harita verisinin kalitesini kontrol etmek için zaman ayırma genel tavsiyesi geçerlidir.<br />
+
+      <br />
+Boykesit dosyalarının uzantısı <a href="#formato_lon"><span class="Archivo">.lon</span></a>'dur.<br />
+      <br />
+      <table style="text-align: left; width: 690px; height: 33px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+
+            <td style="vertical-align: middle; width: 632px; text-align: justify;"><span class="Info">Boykesitlerin proje kesitini hesaplamak için KULLANILMADIĞINI, sadece destekleyici (grafik ve alfanümerik) bilgi sağlayan unsurlar olduğunu unutmayın.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="formato_lon">.lon Dosya Formatı</a></span><br />
+      <br />
+
+Bu ASCII dosyalarının formatı çok basittir. Aşağıdaki şemada, kullanıcının diğer uygulamalardan gelen bilgileri dönüştürebilmesi veya oluşturabilmesi için yapısı açıklanmaktadır:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 494px; height: 150px;" alt="" src="Imagenes/formato_lon.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="longit_carto">Haritadan Alım</a></span><br />
+      <br />
+
+      <img style="width: 324px; height: 255px; margin-left: 7px;" alt="" src="Imagenes/acceso_longit.png" align="right" />Bu işlevsellik, <a href="OL_perf_transv.html">enkesit</a> oluşturmayı sağlayanla aynı yerde, yani hem PLAN hem de BOYKESİT dikey menüsünden erişilebilen <span style="font-weight: bold;">[APL. ve PROFİL]</span> menüsünde bulunur. Bilginin alınacağı <a href="EDM_control_entidades.html#control_superficies">yüzeyin</a> doğru bir şekilde tanımlanması zorunludur.<br />
+      <br />
+İletişim kutusu varsayılan olarak temel ad olarak <span style="font-style: italic;">LONG</span> sunar, bu ad değiştirilebilir. Daha sonra kolayca tanımlanabilecek adlar kullanılması önerilir, örneğin elektrik için <span style="font-style: italic;">ELEC</span>, kanalizasyon için <span style="font-style: italic;">KANAL</span>, sağ hendek için <span style="font-style: italic;">HEN_S</span> vb.<br />
+
+      <br />
+Eksene olan mesafe, eksene paralel bir çizgi çizilerek elde edilecek 'kesiti' almak için kullanılır; sol için negatif, sağ için pozitif.<br />
+      <br />
+Enkesitte kullanılan çizgi tipi, yüzeyi tanımlayan ilk çizgi tipi olacaktır. Ayrıca, her eksen için boykesiti çıkarmak üzere başlangıç ve bitiş KM'si belirtilebilir.<br />
+      <br />
+Boykesit şu şekillerde elde edilebilir:<br />
+      <ul>
+        <li>Doğrudan haritaya göre (seçenek <span style="font-weight: bold; font-style: italic;">Harita</span>).</li>
+
+      </ul>
+      <ul>
+        <li>Önceden bir üçgenleme ile (seçenek <span style="font-weight: bold; font-style: italic;">Üçgenle</span>).<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Grid formatında bir sayısal arazi modeline göre. <span style="font-weight: bold; font-style: italic;">Grid SAM</span> seçeneği, bir <a href="ascii_grid.html">ASCII-GRID dosyasına</a> veya kot bilgisi içeren bir <a href="EDM_imagenes.html#ascii_grid_geotiff_cota">GeoTIFF görüntüsüne</a> dayanarak boykesitler oluşturmayı sağlar. Her iki dosya türü de görüntü olarak yüklenebildiğinden, program iki olasılık sunar.</li>
+
+      </ul>
+      <div style="margin-left: 40px;">
+      <ol>
+        <li><a href="EDM_imagenes.html">Görüntü</a> olarak yüklenmiş ve dolayısıyla <a href="EDM_imagenes.html#arbol">görüntü ağacında</a> aktif olan dosyaları kullan.</li>
+      </ol>
+      <ol start="2">
+
+        <li>Görüntüleri kullanma, doğrudan dosyayı seç. Bu ikinci seçenek yalnızca <a href="ascii_grid.html">ASCII-GRID formatındaki</a> dosyalar için geçerlidir.</li>
+      </ol>
+      </div>
+      <ul>
+<li><a href="EDM_topografia.html">TOPOGRAFYA</a> menüsünden belleğe yüklenmiş bir üçgenleme (<a href="EDM_topografia.html#ficheros_ttp"><span style="font-weight: bold;">TTP</span></a> seçeneği). </li>
+      </ul>
+
+      
+      <ul>
+<li>Bir <a href="EDM_datos_laser.html"><span style="font-weight: bold;">lazer veri</span></a> tabanı.</li>
+      </ul>
+Bu veriler, <a href="OL_rasantes_diseno.html">kırmızı kot tasarım</a> penceresinde görüntülendiğinde, plan ekseninde bulunan 'görüş' düzlemine yatay olarak yansıtılır, bu nedenle bu referanslar kullanılacaksa tasarlanan platformun deverinin yaratacağı etki göz önünde bulundurulmalıdır.<br />
+      <br />
+Eğer EKSEN 0'dan EKSEN 0'a girilirse, program otomatik sistemi 'terk eder' ve <span style="font-weight: bold;">[OLUŞTUR]</span>'a basıldığında, komut satırında aşağıdaki veriler istenir:<br />
+
+      <ul>
+        <li>Fareyi kullanarak grafiksel olarak seçilecek eksen.</li>
+        <li>Verilerin saklanacağı <a href="#formato_lon"><span class="Archivo">.lon</span></a> dosyası için isim.</li>
+        <li>Ait olduğu herhangi bir çizgiye tıklanarak seçilecek yüzey.</li>
+        <li>Sayısal olarak yazılacak eksene olan mesafe.</li>
+
+      </ul>
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Diğer Araçlar</span><br />
+      <br />
+      <table style="text-align: left; width: 690px; height: 185px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 84px;"><span style="font-weight: bold;">[Çizgi -> .lon]</span> </td>
+
+            <td style="vertical-align: top; width: 586px; text-align: justify;">Bir çizgi seçmeyi ve onunla bir boykesit oluşturmayı sağlar, verileri <a href="OL_perf_longit.html#formato_lon"><span class="Archivo">.lon</span></a> uzantılı bir dosyaya kaydeder.&nbsp; Analiz, eksenlerin geometrisinden bağımsızdır; çizginin her noktası için bir önceki köşeye olan mesafe hesaplanır ve böylece bir KM belirlenir, ardından bir sonraki köşe ile devam edilir ve bu şekilde sonuncusuna kadar gidilir.<br />
+            <br />
+Uygulama bir başlangıç KM'si ister, bu KM (işaretiyle birlikte) tüm noktalara uygulanır. Örneğin, bir çizginin noktaları birbirinden 10, 20 ve 30 m (2D'de) uzaktaysa ve belirtilen başlangıç KM'si 1000 ise, KM 1010, 1030 ve 1060'taki noktalarla bir boykesit elde edilir.<br />
+            <br />
+            <table style="text-align: left; width: 588px; height: 61px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+
+                <tr>
+                  <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+                  </td>
+                  <td style="vertical-align: top; width: 529px; text-align: justify;"><span class="Info">Bu verileri herhangi bir eksene yüklemek mümkündür, ancak bu boykesiti kırmızı kot tasarımında kullanmaya çalışırken ortaya çıkacak hatalar göz önünde bulundurulmalıdır. Eğer çizgi tam olarak eksen üzerinden geçiyorsa her şey doğru olacaktır, ancak değilse, bir çizgiyi yansıtma aracı kullanılmalıdır, aksi takdirde veriler eksene değil çizgiye göre olduğundan 'hatalı' bilgi görüntüleniyor olacaktır.</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 84px; font-weight: bold;"><a name="lon_per">[.lon->.per]</a></td>
+            <td style="vertical-align: top; width: 586px; text-align: justify;"><img style="width: 235px; height: 165px; margin-left: 7px;" alt="" src="Imagenes/lon_per.png" align="right" /><a href="OL_perf_transv.html#lon_per">ENKESİTLER menüsündeki</a> mevcut seçeneğe benzer bir seçenek. Bir boykesit dosyasından (<a href="#formato_lon"><span class="Archivo">.lon</span></a>) bir enkesit dosyası (<span class="Archivo">.per</span>) oluşturur, bir verinin bulunduğu her KM'de, önceden tanımlanmış bir yarı genişliğe ve o noktadaki boykesit kotuna eşit sabit bir kota sahip bir enkesit oluşturur.<br />
+
+
+            <br />
+Bu seçenek, resimde gösterilen durumda olduğu gibi basit bir platform oluşturulması gereken durumlarda faydalı olabilir. Bir boykesitten (<a href="#formato_lon"><span class="Archivo">.lon</span> dosyası</a>) başlayarak, bir enkesit dosyasında saklanan yatay enkesitler oluşturulur. Bu dosya, örneğin araziye göre durumu görselleştirmek gibi çeşitli amaçlar için kullanılabilir.<br />
+            <br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="per_lon">[.per->.lon]</a></span></td>
+            <td style="vertical-align: top; text-align: justify;"><a href="OL_perf_transv.html#per_lon">ENKESİTLER menüsündeki</a> mevcut seçeneğe benzer bir seçenek. Bir enkesit dosyasının <span class="Archivo">.per</span> ilk yüzeyinin geometrik eksenindeki kotu kullanarak bir boykesit dosyası <a href="OL_perf_longit.html#formato_lon"><span class="Archivo">.lon</span></a> oluşturur.</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br /><br /><span class="Titulo_2"><a name="generacion_optima">Optimal Boykesit Oluşturma</a></span><br /><br />Enkesit verilerinin 'yorumlanmasıyla' oluşturulan boykesit, aşağıda gösterilen grafik örneklerde görülebileceği gibi araziye sadık değildir.<br />
+
+      <br />
+Açıklama oldukça basittir. Noktalar düzenli aralıklarla, varsayılan olarak aliymanlarda her 20 metrede ve kurplarda biraz daha az aralıkla elde edilir. Bu nedenle, bu noktalardan herhangi birinin topografik yüzey çizgileriyle kesişmesi neredeyse imkansız veya tesadüfidir. Öte yandan, klasik bir boykesitten elde edilen bilgi de sadık değildir, çünkü sadece bir çizgiyle kesişim olan yerlerde noktalar oluşturur.<br />
+      <br /><img style="width: 138px; height: 275px; margin-right: 7px;" alt="" src="Imagenes/longit_vaguada.png" align="left" /> Soldaki çizimde, eşyükselti eğrilerinin enkesitlerden çıkarılan boykesitle 'görünmez' olacak bir dere yatağı tanımladığı bir bölge görülmektedir. Ancak, klasik boykesit araziye mükemmel bir şekilde uyum sağlar (işaretli noktalar her 20 m'deki KM'lerdir, kırmızı renkteki boykesittir).<br />
+<br /><div style="text-align: center;"><img style="width: 338px; height: 84px;" alt="" src="Imagenes/longit_vaguada_2.png" /><br /></div><br />
+Amaç, ikisinin bir 'karışımını' elde etmektir. Bu, enkesitleri yükledikten sonra boykesiti arazi olarak yükleyerek basitçe elde edilir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 338px; height: 84px;" alt="" src="Imagenes/longit_vaguada_3.png" /><br /></div>&nbsp;
+<br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, boykesitin 'iyi' noktalarını araya ekler, dairelerle belirtilen başlangıç noktalarını ve özellikle okla işaretleneni korur (mavi çizgi nihai boykesittir).<br />
+      <br />
+      Topografik yüzeyi sadakatle temsil eden hassas bir çizgi elde etmek isteniyorsa, şu tavsiyelere uyulmalıdır:&nbsp; <br />
+      <ul>
+        <li>
+Yüzeyi en fazla bilgiyle tanımlayın (eşyükselti eğrileri yetersiz olabilir). Yüzeye, yol kenarları, hendek çizgileri, dereler vb. gibi bir eğim değişikliğini tanımlayabilecek her türlü çizgi dahil edilmelidir.</li>
+      </ul>
+      <ul>
+        <li>
+Poligon hatlarının kotlarının doğru olduğu doğrulanmalıdır, çünkü bazen sayısallaştırma varsayıldığı kadar hassas olmamıştır ve süreç hatalar üretecektir.</li>
+      </ul>
+      <ul>
+        <li>
+Üçgenlenmiş bir sayısal arazi modeli kullanın, çünkü bu en eksiksiz tanımdır ve ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'un boykesit oluşturmak için en iyi şekilde kullanabileceği tanımdır.</li>
+      </ul>
+
+
+      
+      
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Sonuçlar</span><br />
+      <br />
+Enkesit çıkarımı için elde edilebilecek özel nokta sayısı, bir boykesit elde etmek için uygulanandan çok daha fazladır; bunun nedeni, ilk yöntemle enkesit tanımında kullanılan herhangi bir KM'nin kullanılabilmesidir.<br />
+
+      <br />
+Boykesitler, tasarıma destekleyici bilgi sağlar, güzergahla 'kesişen' ve tanımlanması gereken unsurları temsil eder. Ayrıca, yorumlanmış boykesitle birleştirildiğinde, profili yumuşatır ve düzeltir, topografik yüzeye uyum sağlar.<br />
+<span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

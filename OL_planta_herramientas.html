@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Yatay Güzergah: Düzenleme ve Analiz Araçları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YATAY GÜZERGAH: DÜZENLEME VE ANALİZ ARAÇLARI</strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL</span><span class="Parrafo"><sup>®</sup></span><span class="Parrafo"><span class="Parrafo">, yatay güzergahtaki eksenlerin analizine ve düzenlenmesine yönelik çok sayıda araca sahiptir.<br />
+      <br /></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><a href="#utilidades">
+ARAÇLAR menüsü altındaki araçlar</a><br />
+      <a href="#invertir">Mevcut ekseni ters çevir</a><br />
+      <a href="#borrar_insertar">Eksen sil</a><br />
+Eksen ekle<br />
+      <a href="#unir_ejes">Eksenleri birleştir</a><br />
+      <a href="#transf_coord">Koordinat dönüşümü</a><br />
+      <a href="#eje_tubo">Ekseni boruya dönüştür</a><br />
+      <a href="#sumar_PK">KM Ekle</a><br />
+      <a href="#dividir">Mevcut ekseni böl</a><br />
+      <a href="#anadir_eje_paral">Mevcut eksene paralel eksen ekle</a><br />
+      <a href="#conv">Çizgiyi mevcut eksene dönüştür</a><br />
+      <a href="#renumerar">Yeniden numaralandır</a><br />
+      <a href="#reducir">Bir KM aralığına indirge</a><br />
+      <a href="#unificar">İki Projeyi Birleştir (Birini Yeniden Adlandır)</a><br />
+      <a href="#compactar">Projeyi Sıkıştır (Aktif eksenler)</a><br />
+      <a href="#etiquetas_no_usadas">Kullanılmayan etiketleri sil</a><br /><a href="#parametros">
+Parametreler</a><br />
+      <a href="#tipos">Tipler</a><br />
+<a href="#Camino">Yol</a><br /><a href="#Convertir_Lineas_a_Proy">Çizgileri Projeye Dönüştür</a><br /><a href="#Convertir_L%EDneas_a_Proyecto"></a><a href="#Vuelca_Aparatos">./lib içine Makasları Dök</a><br />
+</span></span>
+      <span class="Parrafo"><span class="Parrafo"><a href="#pk_dist">
+KM ve mesafe hesaplamaları</a><br />
+</span></span><span class="Parrafo"><span class="Parrafo"><a href="OL_planta_herramientas.html#Selecciona_libera_linea_para_ajustar">
+Ayarlamak için çizgiyi Seç/Bırak</a><br /><a href="#Recarga">Makasları Yeniden Yükle</a><br />
+
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="utilidades">ARAÇLAR menüsü altındaki araçlar</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">[ARAÇLAR]</span> alt menüsünde gruplandırılmış olarak, yatay güzergah eksen tanım verilerini işlemeye, dönüştürmeye, analiz etmeye ve oluşturmaya olanak tanıyan bir dizi araç sunulmaktadır.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/util_planta.png" style="width: 341px; height: 441px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Parrafo">
+      <table style="text-align: left; width: 690px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-weight: bold;"><a name="invertir">Mevcut ekseni ters çevir<br />
+            </a></td>
+            <td style="vertical-align: top; width: 554px; text-align: justify;">Bir eksenin gidiş yönünü, güzergah elemanlarının sırasını ve yönünü değiştirerek tersine çevirmeyi sağlar. Daha sonra, ters çevrilen eksene bağımlı elemanları olan başka eksenler olup olmadığı gözlemlenmelidir, çünkü bazı çözümler değişebilir.<br />
+            <br />
+            <img src="Imagenes/inv_eje.png" style="width: 234px; height: 117px;" alt="" align="right" hspace="4" />Mevcut ekseni ters çevirirken şunları yapma imkanımız vardır:<br />
+            <ul>
+              <li>Ters çevrilmiş eksen için enkesitleri yeniden oluştur</li>
+            </ul>
+            <ul>
+              <li>.vol dosyasının verilerini ters çevir:</li>
+            </ul>
+Ters çevirme, KM'leri yeniden sıralamayı ve sağ tarafı sol tarafla değiştirmeyi içerir. Şunlar ters çevrilir:<br />
+            <ul>
+              <li>Kırmızı Kotlar, Diğer Eksenler ve Diğer Çizgiler, Geçiş Noktaları, Bacalar ve Borular.</li>
+            </ul>
+            <ul>
+              <li>Hat ve Travers Kesimleri.</li>
+            </ul>
+            <ul>
+              <li>Genişlikler</li>
+            </ul>
+            <ul>
+              <li>Deverler</li>
+            </ul>
+            <ul>
+              <li>Dönme Ekseni</li>
+            </ul>
+            <ul>
+              <li>Yardımcı Platformlar</li>
+            </ul>
+            <ul>
+              <li>Orta Refüj ve Dışmerkezlik</li>
+            </ul>
+            <ul>
+              <li>Formasyon Tabakası.</li>
+            </ul>
+            <ul>
+              <li>Bağımsız Terasman</li>
+            </ul>
+            <ul>
+              <li>Yarma Şev Tacı.</li>
+            </ul>
+            <ul>
+              <li>Görüş Palyeleri.</li>
+            </ul>
+            <ul>
+              <li>Seçilmiş Zemin.</li>
+            </ul>
+            <ul>
+              <li>Üstyapı Katman Paketleri.</li>
+            </ul>
+            <ul>
+              <li>Hesap Bölgeleri</li>
+            </ul>
+            <ul>
+              <li>Hendekler, Yarma, Dolgu ve Vektörlerin ayrı hesaplama kesimleri.</li>
+            </ul>
+            <ul>
+              <li>Duvar Taban Kotu</li>
+            </ul>
+            <ul>
+              <li>Duvar Kret Kotu</li>
+            </ul>
+            <ul>
+              <li>Kodlara Göre Kırpma.</li>
+            </ul>
+            <ul>
+              <li>Dolgu Kaplaması.</li>
+            </ul>
+            <ul>
+              <li>Yarma Kaplaması.</li>
+            </ul>
+            <ul>
+              <li>Eksenler Arası Duvar.</li>
+            </ul>
+            <ul>
+              <li>Tip kesitler (Sağ ve sol taraflar değiştirilir).</li>
+            </ul>
+            <ul>
+              <li>Yapılar.</li>
+            </ul>
+            <ul>
+              <li>Enkesit için semboller tablosu.</li>
+            </ul>
+            <ul>
+              <li>Kafa hendekleri.</li>
+            </ul>
+            <ul>
+              <li>Kamulaştırma sınırları.</li>
+            </ul>
+            <ul>
+              <li>Yol Çizgileri.</li>
+            </ul>
+            <ul>
+              <li>Genişletme ve İyileştirme.</li>
+            </ul>
+            <ul>
+              <li>Enkesitleri enterpole etmek için eşit aralıklar.</li>
+            </ul>
+            <ul>
+              <li>Tüneller.</li>
+            </ul>
+            <ul>
+              <li>Vektörel borular.</li>
+            </ul>
+            <ul>
+              <li>Dolgu iyileştirmeleri.</li>
+            </ul>
+            <ul>
+              <li>Demiryollarında Platform Kullanımı.</li>
+            </ul>
+            <ul>
+              <li>Hız diyagramı.</li>
+            </ul>
+            <ul>
+              <li>Deverler için hız kesimleri.</li>
+            </ul>
+            <ul>
+              <li>Yaya kaldırımları.</li>
+            </ul>
+            <ul>
+              <li>Hemzemin Kavşaklar.</li>
+            </ul>
+            <ul>
+              <li>Dönel Kavşaklar.</li>
+            </ul>
+            <ul>
+              <li>Kavşaklar.</li>
+            </ul>
+            <ul>
+              <li>Platform Uyumu.</li>
+            </ul>
+            <ul>
+              <li>Güçlendirme tabloları.</li>
+            </ul>
+            <ul>
+              <li>Boykesit için metin tabloları</li>
+            </ul>
+            <ul>
+              <li>Kırmızı kot ve boykesit için nokta tabloları.</li>
+            </ul>
+            <ul>
+              <li>Bağımsız sondajlar.</li>
+            </ul>
+            <ul>
+              <li>Jeoteknik malzemeleri ayrıştır.</li>
+            </ul>
+            <ul>
+              <li>Oto korkuluklar</li>
+            </ul>
+            <ul>
+              <li>Geçiş Dolguları.</li>
+            </ul>
+            <ul>
+              <li>Bağlantılı eksenler.</li>
+            </ul>
+            <ul>
+              <li>KM eşitlikleri silinir.</li>
+            </ul>
+            <ul>
+              <li>Duvar+Döşeme'deki döşeme yükseklikleri.</li>
+            </ul>
+            <ul>
+              <li>Türetilmiş dever tabloları.</li>
+            </ul>
+            <ul>
+              <li>Diğer Genişlikler.</li>
+            </ul>
+
+
+
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-weight: bold;"><a name="borrar_insertar">Eksen Sil /<br />Eksen Ekle</a><br /></td>
+            <td style="vertical-align: top; width: 554px; text-align: justify;">Projenin bir veya bir dizi eksenini silmeyi veya eklemeyi sağlar, şu hususlar dikkate alınarak:<br />
+            <ul>
+              <li>Yatay güzergahtaki eksenler ve bağlayıcıların diğer eksenlere referansları yeniden numaralandırılır. Yeni bir <span class="Archivo">.cej</span> dosyası oluşturulur.</li>
+            </ul>
+            <ul>
+              <li>Eksen numaralarını <span class="Archivo">.vol</span> dosyalarıyla (boykesit verileri için) yeniden ilişkilendirmek gerektiğinden, uygulama, başlangıçta mevcut adın ilk dört harfi artı <span class="Archivo">_b</span> sonekinden oluşan 6 karakterlik bir temel ad ister.</li>
+            </ul>
+            <div style="text-align: center;"><img src="Imagenes/planta_borrar_insertar_eje.png" style="width: 291px; height: 168px;" alt="" /><br />
+            </div>
+            <br />
+Silme veya ekleme işlemi bittiğinde, sistem, arazi dosyaları, kavşakların genişletmeleri, hemzemin kavşak dosyaları ve işlem sırasında hesaplanmışsa diğer elemanlar dahil olmak üzere, eksenler arasındaki tüm referansları yeniden numaralandırarak ve ayarlayarak yeni bir proje oluşturmuştur.<br />
+            <br />
+Bu seçenek, varsa hemzemin kavşakların <span class="Archivo">CRZ</span> klasöründeki eksenleri de dikkate alır.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-weight: bold;"><a name="unir_ejes">Eksenleri birleştir</a><br />
+            </td>
+            <td style="vertical-align: top; width: 554px; text-align: justify;"><img src="Imagenes/planta_unir_ejes.png" style="width: 234px; height: 109px; margin-left: 7px;" alt="" align="right" />Bu seçenek, iki ekseni birleştirmeyi sağlar. Tamamlanacak eksen herhangi biri olabilir ve kullanıcının belirttiği eksenin güzergah elemanları ona eklenecektir. Daha sonra, <span style="font-weight: bold; font-style: italic;">İkinci ekseni koru</span> seçeneği etkinleştirilmedikçe bu ikinci eksen silinir.<br />
+            <br />
+Eğer birleştirilecek eksenler farklı dosyalardaysa, önceden YATAY GÜZERGAH dikey menüsündeki <span style="font-weight: bold;">[DOSYALAR]</span> &#8594; <span style="font-weight: bold;">.cej Ekle</span> seçeneği kullanılmalıdır.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-weight: bold;"><a name="transf_coord">Koordinat dönüşümü</a><br /></td>
+            <td style="vertical-align: top; width: 554px; text-align: justify;">Bu seçenek, bir öteleme (bir referans noktası) veya öteleme ve döndürme (2 referans noktası) tanımlamayı sağlayan bir veri menüsü açar.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/planta_transf_coord.png" style="width: 462px; height: 131px;" alt="" /><br />
+            </div>
+            <br />
+<span style="font-weight: bold;">[Dönüştür]</span>'e basıldığında mevcut veriler <span class="Archivo">IS#tc.cej</span> dosyasına kaydedilir ve dönüşüm gerçekleştirilir. <span style="font-weight: bold;">[Geri Al]</span> seçeneği, önceki dosyadan verileri geri yüklemeyi sağlar.<br />
+            <br />
+Dönüşüm, güzergah elemanlarında tanımlanan tüm sıfır olmayan koordinatları ve elemanlarda tanımlanan sıfır olmayan azimutları etkiler.<br />
+            <br />
+Orijinal ve nihai referans koordinatları hem grafiksel olarak hem de klavye ile girilebilir <span style="font-weight: bold;">(mod</span> Tıkla/Klavye).<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-weight: bold;"><a name="eje_tubo">Ekseni boruya dönüştür<br />
+            </a></td>
+            <td style="vertical-align: top; width: 554px; text-align: justify;">Yatay güzergahtaki eksenleri <a href="OL_tuberias.html">BORU HATLARI projelerinin</a> <a href="OL_tuberias.html#planta_espec"><span style="font-style: italic;">Boru</span> moduna</a> dönüştürme aracı.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-weight: bold;"><a name="sumar_PK">KM Ekle</a><br /></td>
+            <td style="vertical-align: top; width: 554px; text-align: justify;">Bu iletişim kutusu, bir eksenin başlangıç KM'sini şu verilerden birini belirterek değiştirmeyi sağlar:<br />
+            <ul>
+              <li>Bir KM artışı.</li>
+              <li>Yeni başlangıç KM'si.</li>
+              <li>Bir noktanın izdüşümüne karşılık gelmesi gereken KM.</li>
+            </ul>
+KM değişikliği şunlara uygulanabilir:<br />
+
+            
+            <ul>
+
+<li>Sadece yatay güzergahtaki eksen verilerine (<span class="Archivo">.cej</span>). Ayrıca şunlar da değiştirilecektir:<br />
+</li>
+              <ul>
+                <li><a href="OL_general.html">Genel</a> sekmesindeki <a href="OL_ffcc_planta.html#velocidad_proyecto">Proje Hızları</a> Tablosunun KM'leri.</li>
+                <li><a href="OL_general.html">Genel</a> sekmesindeki Şerit Genişliği Tablosunun KM'leri.</li>
+                <li><a href="OL_planta_diseno.html">Yatay Güzergah</a>'taki Makaslar Tablosunun KM'leri.<br />
+                </li>
+              </ul>
+<li>Yatay güzergaha ve eksenin boykesit verilerine (<span class="Archivo">.vol</span>).</li><li>Yatay güzergaha, boykesite ve eksenin arazi enkesitlerine (<span class="Archivo">.per</span>).</li>
+            
+            </ul>
+
+
+            <div style="text-align: center;"><img src="Imagenes/planta_sumarPK.png" style="width: 428px; height: 158px;" alt="" /><br />
+<br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 116px;"><a name="dividir">Mevcut ekseni böl<br />
+            </a></td>
+            <td style="vertical-align: top; text-align: justify; width: 554px;">Mevcut ekseni iki eksene böler. <img src="Imagenes/divide_eje_actual.png" style="width: 217px; height: 77px; float: right;" alt="" hspace="5" vspace="5" />Yeni eksen, mevcut güzergah elemanında başlar ve sonraki eksenler yeniden numaralandırılır. Yeni ekseni mevcut eksenin arkasına eklemek veya yeni ekseni sona eklemek arasında seçim yapılabilir, böylece eksenler yeniden numaralandırılmaz.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 116px;"><a name="anadir_eje_paral">Mevcut eksene paralel eksen ekle</a><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 554px;"><img src="Imagenes/planta_anadir_eje_paral.png" style="margin-left: 7px; width: 218px; height: 74px; float: right;" alt="" vspace="5" />Bu seçenek, mevcut eksene paralel bir eksen oluşturur. Bunun için doğru ve dairesel elemanlara bir öteleme, dairesel elemanlara bir yarıçap değişikliği ekler ve serbest elemanların istenen mesafede kalması için klotoidlerin parametrelerini yeniden hesaplar.<br />
+            <br />
+Dairesel ve doğru elemanlar istenen mesafede kalır, ancak klotoidler kalmaz, çünkü bir klotoide paralel olan başka bir klotoid değildir).<br /><br />Bu araç, boru hattı eksenleri olarak tanımlanan eksenler için etkinleştirilmiştir.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 116px;"><a name="conv">Çizgiyi mevcut eksene dönüştür<br />
+            </a></td>
+            <td style="vertical-align: top; text-align: justify; width: 554px;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/planta_linea_eje_actual.png" style="width: 250px; height: 116px; margin-left: 7px;" alt="" align="right" /></span></span>Bir EDM çizgisini mevcut eksene dönüştürmeyi sağlar. Bu aracın başarılı olması için, çizginin çizilmiş bir eksenden veya sahada belirli bir hassasiyetle alınmış verilerden gelmesi gerekir. Program, güzergah elemanlarını tanımaya ve onlarla mantıklı bir eksen oluşturmaya çalışır, yarıçapları ve klotoidleri uygun şekilde tespit eder.<br />
+            <br />
+Eğer çizgi bir daire tanımlıyorsa, eksen merkez, yarıçap, uzunluk ve başlangıç noktasının azimutu ile bir dönel kavşak olarak oluşturulur (<a href="OL_planta_alineaciones.html#fija_centro_radio">merkez ve yarıçap ile sabit</a>).<br />
+            <br />
+Dahili bir tablo veya kullanıcı tarafından değiştirilebilen parametreler tablosu içeren bir <span class="Archivo">.ple</span> dosyası kullanabiliriz.<br />
+            <br />
+Eğer <span style="font-weight: bold;">[ ] Noktaları atma</span> seçeneğini etkinleştirirsek, programı aralarındaki izin verilen minimum mesafenin altındaki noktaları atmamaya zorlarız.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 116px;"><a name="renumerar">Yeniden numaralandır</a><br /></td>
+            <td style="vertical-align: top; text-align: justify; width: 554px;">Yatay güzergahtaki eksenleri yeniden numaralandırmayı sağlar.<br />
+            <br />
+Bu seçenek, projenin tüm eksenlerini yeniden numaralandırmayı da sağlar, yani sadece yatay güzergahta değil, aynı zamanda enkesit, arazi enkesitleri, sınır çizgileri, menfezler,... ile ilişkili dosyalar için de değişiklikleri dikkate alır.<br />
+            <br />
+Bu durumda yeni dosyalar için bir temel ad istenir:
+(<span class="Archivo">.cej</span>, <span class="Archivo">.vol</span>, <span class="Archivo">.per</span>, <span class="Archivo">.dof</span>, <span class="Archivo">.lfr</span> ve <span class="Archivo">.pol</span>) bu ad her farklı dosya için farklı olabilir. Ayrıca, projede bildirilmiş olan otomatik hemzemin kavşaklar ve dönel kavşaklı bağlantılara karşılık gelen <span class="Archivo">CRZ</span> klasöründeki tüm dosyalar da yeniden numaralandırılır.<br />
+            <span class="Parrafo"><br />
+            <div style="text-align: center;"><img src="Imagenes/renumerar_ejes.png" style="width: 291px; height: 301px;" alt="" /></div></span><br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;"><a name="reducir">Bir KM aralığına indirge</a><br /></td>
+            <td style="vertical-align: top;">
+            <div style="text-align: justify;"><img src="Imagenes/planta_reducir_intervalo_pks.png" style="width: 218px; height: 81px; margin-left: 7px;" alt="" align="right" />Ekseni belirtilen KM'lere göre kesmeyi sağlar, böylece elde edilen nihai eksen orijinaliyle aynı olur ancak sadece belirtilen KM aralığına indirgenmiş olur.<br />
+            </div>
+            <br />
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="unificar">İki Projeyi Birleştir (Birini Yeniden Adlandır)</a></span><a name="unificar"><br />
+            </a></td>
+            <td style="vertical-align: top;">Ortak bir ekseni olan (veya olması gerekmeyen) iki projeyi birleştirmeyi sağlar.<br /><br /><span class="Parrafo"><span class="Parrafo">İki birleştirme modu vardır: <span style="font-weight: bold;">Tamamlayıcı projeler</span> ve <span style="font-weight: bold;">Aynı proje. </span>Mod, ikinci projeyi yüklemeden önce seçilmelidir.<br /><span style="font-weight: bold;"><br /></span></span></span>
+Tüm dosyaları yeni bir temel adla yeniden adlandırmaya veya .pol, .cej, .per, .vol, .dof, .lfr ve .oli dosyaları için farklı bir temel ad kullanmaya olanak tanır. Eğer başlangıçtaki projelerin aynı ada sahip bir dosyası varsa (örn. PERF37.per), bunları çalışma klasöründe karıştırmadan önce, bu aynı seçeneği kullanarak ancak sadece ilk projeyi seçerek ve farklı bir temel ad vererek yeniden adlandırmak uygundur.<br /><br />İletişim kutusunda ilk projenin eksenleri de gösterilir.<br /><span style="font-weight: bold;"><br />
+            <span style="font-weight: bold;">Tamamlayıcı projeler</span> birleştirme modu:<br />
+Her bir eksen için üç eylem seçeneği sunar: Yeni projeye dahil et, sil veya iki projenin ortak bir ekseni olduğunu ve sadece birini dahil etmenin yeterli olduğunu düşün. Her birinde seçilen seçenekler arasında veya birleştirilmeyen dosyalar arasında (örneğin her ikisinin de farklı bir harita dosyası tanımlamış olması durumunda) bir uyuşmazlık olması durumunda hangi projenin tercih edildiğini seçmek mümkündür.<br /><br /><span style="font-weight: bold;">Aynı proje</span> birleştirme modu:<span style="font-weight: bold;"> <br /></span>
+Her iki projedeki eksenlerin aynı numaralandırmaya sahip olduğu, ancak projelerden birinde boş eksenler olabileceği (yatay güzergah elemanları tanımlanmamış) veya iki projeden birinin sonunda daha fazla eksen olabileceği durumlar için kullanılır. Bu modda eksenler yeniden numaralandırılmaz.<br />Varsayılan olarak, bir projede boş bir eksen varsa ve diğerinde yoksa, boş olmayan projedeki dahil edilir.<br />Eğer eksen her iki projede de varsa, varsayılan olarak tercihli olarak işaretlenmiş projedeki dahil edilir.<br />Her durumda, her eksenin hangi projeden dahil edileceğini değiştirmek mümkündür.<br /><span style="font-weight: bold;">.vol ve .per adlarını koru</span> seçeneği bu dosyaları yeniden adlandırmaz, nihai projede değiştirilebilecek diğer dosyalara (örn: sınır çizgileri) uygulanmaz.<br />
+            <br />
+<span style="font-weight: bold;">Orijinal Referanslar</span>&nbsp;sütunları, bağlayıcıların olduğu eksenlerin numaralarını belirtir. <span style="font-weight: bold;">Nihai Referanslar</span> sütunları, bu referansların nihai numaralarını gösterir.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 500px; height: 346px;" alt="" src="Imagenes/Utiles_planta_unificar.png" /><br />
+<br /><div style="text-align: left;">Eğer orijinal projelerin çizgisel obje (.oli), sınır çizgileri (.lfr) veya menfez (.dof) dosyaları varsa, bu dosyalar nihai proje için birleştirilir.</div>
+            </div>
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="compactar">Projeyi Sıkıştır. (aktif eksenler)</a></span><a name="compactar"><br />
+            </a></td>
+            <td style="vertical-align: top;">Pasif gruplardaki eksenleri silerek yeni bir proje oluşturmayı sağlar.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/util_planta_compactar.png" alt="" style="width: 288px; height: 172px;" /><br />
+            </div>
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="etiquetas_no_usadas">Kullanılmayan etiketleri sil</a></span><a name="etiquetas_no_usadas"><br />
+            </a></td>
+            <td style="vertical-align: top;">Güzergah elemanlarında tanımlanmış ancak kullanılmayan etiketleri siler.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="parametros">Parametreler</a></span><a name="parametros"><br />
+            </a></td>
+            <td style="vertical-align: top;">Yatay güzergah tasarımının bazı parametrelerini düzenler (hata mesajlarında bekleme süresi ve hızlı boykesit için veri arası mesafe).<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="tipos">Tipler</a></span><a name="tipos"><br />
+            </a></td>
+            <td style="vertical-align: top;">Kullanılabilecek <a href="OL_planta_alineaciones.html">güzergah elemanı tiplerinin</a> küçük bir listesini gösterir.<br />
+            <br />
+            </td>
+          </tr><tr><td><a name="Camino"><span style="font-weight: bold;">Yol</span></a></td><td>Yüzey Modelleme'nin <a href="MS_operaciones_basicas.html#camino">Yol</a> aracına erişim sağlar.</td></tr><tr><td style="vertical-align: top;"><span style="font-weight: bold;"><a name="Convertir_Lineas_a_Proy">Çizgileri Projeye Dönüştür</a></span></td><td>Bireysel veya tiplere göre bir dizi çizgi seçmeyi sağlar.<br /><br /><div style="text-align: center;"><img src="Imagenes/util_planta_conv_lin_a_proy.png" style="width: 300px; height: 193px;" alt="" /><br /></div><br />Her çizgi, [<span style="font-weight: bold;">Aplikasyon/Araçlar/Çizgileri eksenlere</span>] bölümündeki gibi bir eksene dönüştürülür. Her biri için iki kırmızı kot oluşturulur:<br /><ul><li>Alternatif 1: Tüm köşe noktalarının kotlarıyla.</li><li>Alternatif 2: İlk noktanın kotunu sonuncusuyla birleştirir.</li></ul>Kütüphanedeki <span class="Archivo">*.vol</span> dosyalarından birinde tanımlanmış bir kesit atanır.<br />Bu eksenlerin tümünün arazi enkesitleri kesilebilir, yüzeyin tanımlanmış olması gerekir.<br />Bir <span class="Archivo">*.pol</span> projesi, <span class="Archivo">*.cej</span> dosyası, <span class="Archivo">*.per</span> ve <span class="Archivo">*.vol</span> dosyalarıyla oluşturulur.<br /><br /><span style="font-weight: bold;">Daireleri ve klotoidleri ara</span>: Çizgileri, Çizgileri mevcut eksene dönüştür aracının tarzında işler.</td></tr><tr><td><span style="font-weight: bold;"><a name="Vuelca_Aparatos">./lib içine Makasları Dök</a></span></td><td>Bu araç, yerel kütüphanede, yatay güzergah eksenlerinin tanım dosyası olan <span class="Archivo">*.cej</span>'de kullanılan makasların tanım dosyaları olan <span class="Archivo">*.apv</span> dosyalarını oluşturur.</td></tr><tr>
+            <td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;"><a name="Selecciona_libera_linea_para_ajustar">Ayarlamak için Çizgiyi Seç/Bırak<br />
+</a></span></span></span></td>
+            <td style="vertical-align: top;">Haritadan bir ekseni ayarlamak istediğimiz herhangi bir çizgiyi seçmeyi sağlar. Araç, mevcut güzergah elemanı üzerinde çalışır. Sağ fare tuşuna basıldığında iki ayar seçeneği gösterilir: İki noktayla sabit veya iki nokta ve yarıçapla dairesel.<br />
+Araç, eleman üzerine yansıtılan çizginin noktaları üzerinde P1 ve P2 noktalarının koordinatlarını ve Yarıçapı hesaplar.<br />
+Doğrular ve kurplar sabit olarak ayarlanırsa, ISTRAM konuma bağlı olarak klotoidleri hesaplar.<br />
+            </td>
+          </tr><tr><td><span style="font-weight: bold;"><a name="Recarga"></a>Makasları Yeniden Yükle</span></td><td>Bu araç, tüm eksenlerin tüm güzergah elemanlarını gezer ve bir APV bildirilmiş olanlarda, eğer kütüphanelerde bulursa, verilerini elemana yeniden yükler.</td></tr>
+
+
+
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+</span></span></span><span class="Titulo_2"><a name="pk_dist">KM ve mesafe hesaplamaları</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/pk_dist_planta.png" style="width: 104px; height: 75px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_PK_dist.html">KM-mesafe</a> aracı, BOYKESİT'te de mevcuttur, ancak YATAY GÜZERGAH'tan çağrıldığında, enkesit veya kırmızı kot verileri mevcut olmadığından, bu veriler listelerde (deverler, kotlar,...) görünmez.</span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

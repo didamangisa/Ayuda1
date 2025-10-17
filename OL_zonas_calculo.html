@@ -1,0 +1,566 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Hesap Bölgeleri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>HESAP BÖLGELERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+</span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo">
+      </span><span class="Parrafo"><a href="#tramificacion">Tip kesitlerin bölümlendirilmesi</a></span><br />
+      <span class="Parrafo">
+      </span><span class="Parrafo"><a href="#geotecnia">Hesap bölgeleriyle ilişkili jeoteknik. Yapılar</a></span><br />
+      <span class="Parrafo">
+      </span></div>
+
+      
+      <div style="margin-left: 80px;"><span class="Parrafo"><a href="#geotecnia_predefinida">Arazi enkesit dosyasında tanımlanan yüzeyler</a><br /><a href="#estructura">
+Yapı ve eğik yapıda bölgelerin tanımı</a><br />
+</span>
+      <span class="Parrafo"></span></div>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo">
+      <a href="#sondeos_indep">Bağımsız sondajlar</a><br />
+      <a href="#descomponer">Malzemeleri ayrıştır</a><br />
+Yardımcı Programlar<br />
+</span>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#cota_roja">Kırmızı kot değerlerine göre tanımlanan bölümler</a><br />
+      <a href="#modificar_sondeos">Eksenlere göre sondajları değiştir</a><br />
+      <a href="#tramos_por_pendientes">Eğimlere göre bölümler</a><br /><a href="#tramo_por_tubos">
+Borulara göre bölümler</a><br /><a href="#copiar_tramos_de_firme">
+Üstyapı bölümlerini kopyala</a><br />
+      <a href="#viaductos_zc">Viyadükleri Hesap Bölgelerine Aktar</a><br />
+      </span></div>
+
+      </div>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#tramif_indep">Hesap bölgesinden bağımsız kesitlerin bölümlendirilmesi</a></span><br />
+      </div>
+      <div style="margin-left: 40px;">
+      <span class="Parrafo"></span></div>
+
+      <span class="Parrafo"><br />
+<br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+Bu menü, eksenin tam boykesit hesaplamasının hangi bölümlerde oluşturulacağını, her bölümde hangi tip kesitin kullanılacağını ve arazi tipi, kalınlıklar vb. gibi diğer verileri tanımlamaya olanak tanır. Dolayısıyla, hesap bölgelerinin tanımı, tüm hesaplamaları kontrol eden unsurdur.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_zonas_calculo.png" style="width: 600px; height: 198px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 692px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 619px; text-align: justify;"><span class="Parrafo"><span class="Info">Kırmızı kotların ve arazi enkesitlerinin tanımının olmadığı bölgelerin dışındaki KM'lerde bölümlerin hesaplanması istenmemelidir. Bu durumda algoritmalar, verilerin olduğu son enkesitte kesilecek ve sonuç dosyaları eksik kalabilir. Kırmızı kot ekstrapole edilir.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">[Kaydet]</span>&nbsp;<img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> ve <span style="font-weight: bold;">[Yükle]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> düğmeleri, bir hesaplama bölümleri tanımını &nbsp;<span class="Archivo">.trm</span> uzantılı dosyalara kaydetmeye ve/veya geri yüklemeye olanak tanır.<br />
+&nbsp;<span class="Archivo">.trm</span> dosyası, hesaplama bölgelerinin tanımını, ayrı bölümlendirme <a href="OL_zonas_calculo.html#tramif_indep">H</a>, <a href="OL_zonas_calculo.html#tramif_indep">Y</a>, <a href="OL_zonas_calculo.html#tramif_indep">D</a>, <a href="OL_zonas_calculo.html#tramif_indep">V</a>, <a href="OL_muro_desmonte.html#cota_base_muro">taban kotları</a> ve <a href="OL_desmonte_tierra.html#alto_muro_tabla">duvar tepesi</a> ve <a href="EDM_editor_perfiles.html#tablas_cubic">.dar tablolarını</a> içerir.<br />
+<a href="OL_revestimiento_terraplen.html">Dolgu kaplaması</a> menüsünde, &nbsp;<span class="Archivo">.tr2</span> uzantılı dosyalar kaydedilebilir.<br />
+<a href="OL_revestimiento_desmonte.html">Yarma kaplaması</a>&nbsp; menüsünde, &nbsp;<span class="Archivo">.tr3</span> uzantılı dosyalar kaydedilebilir.<br />
+<a href="OL_muro_entre_ejes.html">Eksenler arası duvar</a> menüsünde, &nbsp;<span class="Archivo">.tr4</span> uzantılı dosyalar kaydedilebilir.<br />
+<br /><span class="Parf_negrita">Kullanıcı KM'leri</span> seçeneği, KM'leri kullanıcı değerleriyle girmeye olanak tanır. Seçenek etkinleştirilebilir/devre dışı bırakılabilir ve etkinleştirme durumu .vol dosyasına kaydedilir.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="tramificacion">Tip Kesitlerin Bölümlendirilmesi</a></span><br />
+      <span class="Parrafo"><br />
+      Her bir bölümün ilk sütununda başlangıç tip kesiti (<span style="font-weight: bold;">TK_b</span>) ve bitiş tip kesiti (<span style="font-weight: bold;">TK_s</span>) belirtilmelidir, öyle ki birincisi bölümde kullanılacak tip kesitin numarasını tanımlar. Eğer başlangıç tip kesitine 0 değeri belirtilirse, program bunun bir yapı olduğunu varsayar ve yalnızca üstyapıya karşılık gelen kısmı hesaplar, bir önceki bölümün üstyapı kesitini uygular.<br />
+      <br />
+Eğer başlangıç tip kesiti sıfırdan farklı bir değere sahipse ve bitiş değeri sıfırsa, <span style="font-weight: bold;">TK_b</span> tüm bölüme uygulanacaktır.<br />
+      <br />
+Eğer başlangıç ve bitiş tip kesitleri farklı değerlere sahipse (ve sıfırdan farklıysa), program, bölümün başlangıç KM'sinde <span style="font-weight: bold;">TK_b</span>'yi ve bitiş KM'sinde <span style="font-weight: bold;">TK_s</span>'yi uygulayarak, her iki tip kesitin geometrileri arasında bir <span style="font-weight: bold;">doğrusal geçiş</span> gerçekleştirecektir. Geçişlerin tutarlı olması için, başlangıç ve bitiş kesitlerinin her yüzeyde aynı sayıda köşe noktasına sahip olduğunu kontrol etmek gerekir. Aksi takdirde, program bir ve diğer kesitin noktalarını sırayla kullanarak ilerler.<br />
+      <br />
+Tip kesitlerin numaraları burada sırasız kullanılabilir ve gerektiği kadar tekrarlanabilir; yani, bir tip kesit bir eksen boyunca istenildiği kadar uygulanabilir.<br />
+      <br />
+</span><img src="Imagenes/zonas_calc_nombres_ST.png" style="width: 309px; height: 109px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span style="font-weight: bold;"><a name="nombres_ST">[?]</a></span> düğmesi, kullanıcının bunları daha iyi tanımlamasına ve hatta adını değiştirmesine olanak tanıyan <span style="font-weight: bold;">tip kesit adlarını</span> içeren bir diyalog kutusu açar; aynı işlem BOYKESİT </span><span class="Parrafo">→</span><span class="Parrafo"> <a href="OL_subrasante.html#nombres_ST"><span style="font-weight: bold;">[TİP KES., TERASMAN]</span></a>'dan da yapılabilir.<br />
+      <br />
+Bölümün başlangıç ve bitiş KM'leri ile ilgili olarak, aşağıdaki hususlar göz önünde bulundurulmalıdır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Mevcut arazi enkesitleriyle çakışmalıdırlar, aksi takdirde ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, bölümü, içinde bulunan ilk ve son arazi enkesiti arasında hacimlendirecektir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eğer bir bölümün bitiş KM'si ile bir sonrakinin başlangıç KM'si bir veri enkesiti üzerinde çakışırsa, o KM'de iki sonuç enkesiti oluşturulur; biri gelen tip kesitle, diğeri ise çıkanla, böylece ani bir kesit geçişi oluşturulur.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eğer bir bölümün bitiş KM'si ile bir sonrakinin başlangıç KM'si iki veri enkesiti arasına düşerse, hesaplayıcı giriş tip kesitini önceki veri enkesitine kadar uygular, oraya kadar hacimlendirir ve bir sonraki veri enkesitinde bir sonraki tip kesitle devam eder. İki enkesit arasındaki bölüm, ilk etapta hacimlendirilmeden kalır. Oluşturulan &nbsp;<span class="Archivo">ISPOL#.per</span> (burada # eksen numarasıdır) üzerinde daha sonra yapılacak bir yeniden hacimlendirme, iki enkesit arasındaki geçiş bölümünü de hacimlendirecektir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Tanımlanan farklı bölümler, sırasız, çakışık veya iç içe olabilir. Program, hesaplamadan önce bir sıralama yapar ve çakışma durumunda her zaman sonraki veri baskın gelir.</span></li>
+      </ul>
+      <span class="Parrafo">Eğer kullanıcı, bölüm tanımını ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün hesaplamada kullanacağı tanımla eşleştirmek isterse, <span style="font-weight: bold;">[Yeniden Sırala]</span> seçeneğini kullanabilir, ancak bu hesaplama için gerekli değildir. Bu düğme, kullanıcının tanımını, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün hesaplamadan önce yaptığı bölümlendirmeye göre yeniden sıralar. Bölümlendirmeyi kontrol etmeye olanak tanır, ancak belirtildiği gibi, program kullanılmasa da aynı şekilde hesaplama yapar.<br /><br /><span style="font-style: italic;">Örnek</span>:<br /><br />
+      </span>
+      <table style="text-align: left; width: 446px; height: 50px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Veri</span></td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Başlangıç TK <br />
+            </span></td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Bitiş TK</span></td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Başlangıç KM</span></td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Bitiş KM</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">3<br />
+0<br />
+1<br />
+2<br />
+1<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">0<br />
+0<br />
+3<br />
+3<br />
+3<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">0.000<br />
+200.000<br />
+275.000<br />
+1100.000<br />
+800.000<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">200.000<br />
+280.000<br />
+390.000<br />
+1500.000<br />
+1300.000<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-left: 40px;"><span class="Parrafo"><br />
+      <span class="Parrafo">3. bölümde, KM 275'te tip kesit 1 ile başlanır ve KM 390'da tip kesit 3 ile bitirilir; her iki tip kesit arasında doğrusal bir geçiş yapılır. </span><span class="Parrafo">Program, bu nedenle, hesaplamadan önce veya <span style="font-weight: bold;">[Yeniden Sırala]</span> fonksiyonuyla yeniden sıralayacaktır:</span><br />
+      <span class="Parrafo"><br />
+      <span class="Parrafo"></span></span></span></div>
+      <table style="text-align: left; width: 446px; height: 50px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Veri</span></td>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Başlangıç TK <br />
+      </span></td>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Bitiş TK</span></td>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Başlangıç KM</span></td>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Bitiş KM</span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+6<br />
+      </td>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">3<br />
+0<br />
+1<br />
+3<br />
+1<br />
+2<br />
+      </td>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">0<br />
+0<br />
+3<br />
+0<br />
+3<br />
+3<br />
+      </td>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">0.000<br />
+200.000<br />
+275.000<br />
+390.00<br />
+800.000<br />
+1300.000<br />
+      </td>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">200.000<br />
+275.000<br />
+390.000<br />
+800.000<br />
+1300.000<br />
+1500.000<br />
+      </td>
+    </tr>
+  </tbody>
+      </table>
+
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">Kısıtlı Hesaplama</span> seçeneği, hesaplamayı iki KM arasında kısıtlamamızı sağlar. Eğer hesaplamanın bu KM'ler arasında tam olarak başlamasını ve bitmesini istiyorsak ve arazi enkesitleriyle kesişmemişse, <a href="OL_interpolar_perfiles.html">Enkesit Enterpolasyonu</a> aracında (<span style="font-weight: bold;">T Enterpolasyonu</span>) <span style="font-style: italic;">Hesap bölgeleri</span> seçeneği etkinleştirilmelidir. Kısıtlı bölgeyi tanımlamak için KM'ler, KM Seçimi moduna uyar: Sayısal/Enkesit_tıklama/Enterpolasyon.<br />
+<br />Her bir hesaplama bölümü için, kesitin hangi <span style="font-weight: bold;">tarafının</span> inşa edileceği belirtilebilir:<br /></span>
+      <ul>
+        <li><span class="Parrafo">İki taraf (varsayılan).</span></li>
+        <li><span class="Parrafo">Sağ tarafı iptal et.</span></li>
+        <li><span class="Parrafo">Sol tarafı iptal et.</span></li>
+        
+        <li><span class="Parrafo">İki tarafı da iptal et.</span></li>
+
+      </ul>
+      <span class="Parrafo">Etkisi, BOYKESİT menüsündeki <a href="OL_excentricidad_mediana.html#truncar"><span style="font-weight: bold;">[EKSANTRİKLİK VE REFÜJ]</span></a> diyalog kutusundan tanımlandığındakiyle aynıdır. Eğer her iki menüde de farklı değerler tanımlanırsa, etkileri iptal açısından birikimlidir.<br />
+      <br />
+<span style="font-weight: bold;">Demiryolu eksenleri</span> durumunda, çift hat için, ayrıca şu seçenekler de mevcuttur:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Sağ hattı iptal et.</span></li>
+        <li><span class="Parrafo">Sol hattı iptal et.</span></li>
+        <li><span class="Parrafo">2 hattı iptal et.</span></li><li><span class="Parrafo">Sadece hat ve travers.<br /></span></li>
+      </ul>
+      <span class="Parrafo">Hatlardan birini veya her ikisini iptal etmek, belirtilen taraftaki balastı, rayları ve traversleri kaldırır. <br /><br />İki hattan biri iptal edildiğinde, inşa edilen hattın balastının iç şevi, alt balastın tavanına değene kadar tamamlanır. <br /><br />Sadece hat ve travers, rayları ve traversleri tanımlayan elemanlar hariç tüm platformu kaldırır.<br /><br />
+      </span><img src="Imagenes/no_geotecnia.png" style="width: 91px; height: 106px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><a name="no_geotecnia">Jeoteknik Yok</a></span> olarak işaretlenen bölümlerde, bu malzemelerin metrajları yapılmayacak ve dolayısıyla kütleler diyagramına da bir değer katmayacaktır. Bu seçeneğin etkili olması için, kullanılan <a href="EDM_editor_perfiles.html#tablas_cubic">metraj tablosunda</a> o metrajın <a href="EDM_editor_perfiles.html#G">G kutucuğunun</a> işaretli olması gerekir.<br />
+      <br />
+<br />
+
+
+      <br /></span><span class="Titulo_2"><a name="geotecnia">Hesap Bölgeleriyle İlişkili Jeoteknik. Yapılar</a></span><br />
+      <span class="Parrafo"><br />
+Her bir hesaplama bölümü veya aralığı, projenin her bir bölgesine uygulanan bir dizi parametre ve tip kesitle ilişkilidir. Güzergah boyunca, aralıklara göre uygulanan bir jeoteknik gerçeklik de bulunur:<br /></span>
+      <ul>
+        <li><img src="Imagenes/modelo_geotecnia.png" alt="" style="width: 240px; height: 225px; margin-left: 7px;" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Bitkisel (B)</span>: Bölümdeki bitkisel toprak örtüsünün kalınlığıdır. Eğer <span style="font-weight: bold;">B </span>= 0 ise, bitkisel toprak örtüsü yoktur.<br />
+</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+      <span style="font-weight: bold;">Bitkisel ve uygun olmayan (B+U)</span>: Platformun oturabileceği sağlam zeminin bulunduğu derinliktir, yani bitkisel toprak örtüsü ile uygun olmayan zemin tabakasının kalınlıkları toplamıdır. Eğer <span style="font-weight: bold;">B+U</span> = 0 veya&nbsp; <span style="font-weight: bold;">B+U </span>≤ <span style="font-weight: bold;">B</span> beyan edilirse, uygun olmayan zemin olmadığı ve sağlam zeminin <span style="font-weight: bold;">B</span> derinliğinde bulunduğu varsayılır.</span></li></ul>
+      <ul>
+
+        <li><span class="Parrafo"><span style="font-weight: bold;">Kaya derinliği (K)</span>: Eğer <span style="font-weight: bold;">K </span>= 0 veya <span style="font-weight: bold;">K</span> ≤ <span style="font-weight: bold;">B+U</span> veya <span style="font-weight: bold;">K</span> ≤ <span style="font-weight: bold;">B</span> ise, kayanın var olmadığı veya çok derinde olduğu ve projenin yarmalarını etkilemeyeceği kabul edilir. Eğer <span style="font-weight: bold;">K</span> &lt; 0 değeri verilirse, sağlam zemin olmadığı ve kayanın yüzeyde veya bitkisel toprak örtüsünün altında veya uygun olmayan zeminin altında başladığı kabul edilir.</span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo"><span style="font-weight: bold;">Daha fazla kaya türü (K2, K3, K4 ... K20)</span>: Ayrı metraj için, benzer davranışa sahip 20'ye kadar kaya seviyesi tanımlamaya olanak tanır. İki ardışık yüzey aynı derinliğe sahip olduğunda, her ikisi de oluşturulur. Birincisine sıfır alan ve ikincisine karşılık gelen alan atanır. Yirmi kaya seviyesinden herhangi birine negatif bir değer konulabilir, bu da yüzeyin altındaki veya <span style="font-weight: bold;">B+U</span>'nun altındaki tüm malzemenin o kayadan oluştuğu anlamına gelir.</span></li><li><span class="Parrafo"><span style="font-weight: bold;">Sıyırma Merkezi ve Kod</span>: R20 son kaya seviyesinden sonra bulunan bu seçenekler, platformun (yüzey 67) kodları arasında sınırlanan bölgede sıyırmayı (B+U) artırmaya olanak tanır.<br /></span></li>
+      
+      </ul>
+
+      <span class="Parrafo">
+      <br />
+Normalde, <span style="font-weight: bold;">B</span>, <span style="font-weight: bold;">B+U</span> ve <span style="font-weight: bold;">K</span> için aynı değer verilirse, bitkisel toprak örtüsünden kayaya geçildiği kabul edilir ve program üç çizgi oluşturur:<br /></span>
+      <ol>
+        <li><span class="Parrafo">Bitkisel toprak yüzeyi.</span></li>
+        <li><span class="Parrafo">Sağlam zemin jeolojik katmanı.</span></li>
+        <li><span class="Parrafo">Öncekiyle çakışan kaya jeolojik katmanı.</span></li>
+      </ol>
+      <span class="Parrafo">
+      Uygun olmayan zemin olmadığı için, bitkisel ve uygun olmayan zemini ayıran çizgi oluşturulmaz.<br />
+      <br />
+Toprak işleri hesaplamalarında, <span style="font-weight: bold;">B</span> ve <span style="font-weight: bold;">U</span> seviyeleri, yarma veya dolgu olmasına bakılmaksızın her zaman kazılır. Kazılan toprak ve kaya hacimleri, toplam yarmadan bitkisel ve uygun olmayan zemin çıkarılarak elde edilir. Dolguda, hesaplanan doldurulacak hacim, mevcut arazi yüzeyine kadar olan hacim artı bitkisel ve uygun olmayan zemin hacmidir, çünkü bunlar dolgu yapılmadan önce kazılır.<br />
+      <br /></span><img src="Imagenes/sondeos_simetricos.png" style="width: 330px; height: 36px;" alt="" align="right" hspace="8" /><span class="Parrafo">&nbsp;Sondaj verileri <span style="font-weight: bold;">simetrik</span> (varsayılan) veya
+      <span style="font-weight: bold;">asimetrik</span> olabilir. İkinci durumda, eksenin sağına ve soluna farklı kalınlıklar tanımlamak mümkündür. <span style="font-weight: bold;">Simetrik</span> sondajlar durumunda, sağ için tanımlanan veriler alınacaktır.<br />
+      <br />
+<span style="font-weight: bold;">[Sağ->Sol]</span> düğmesi, sağ taraf için tanımlanan tüm verileri sol tarafa kopyalar.<br />
+      <br />
+Asimetrik sondajlar kullanıldığında, eğer kaya verileri yalnızca iki taraftan biri için tanımlanırsa, Istram diğer tarafa Tamamlayıcılar/Parametreler'de konulan <a href="OL_parametros.html#maxProfRoca">kaya olarak kabul edilecek maksimum derinlik</a> değerini atayacaktır.<br /><br />
+      <br style="font-weight: bold; font-style: italic;" />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="geotecnia_predefinida">Arazi Enkesit Dosyasında Tanımlanan Yüzeyler</a></span><br />
+      <span class="Parrafo">
+      </span><span class="Parrafo"><span class="Parrafo">
+      <p class="MsoBodyText" style="margin-bottom: 0.0001pt;"><span style="" lang="ES-TRAD">Eğer arazi enkesitinde birden fazla yüzey görünürse, birincisi bilinmeyen tipte ve ardından sağlam zemin tipi (66) gelirse, program birinci yüzeyin bitkisel toprak örtüsü olduğunu varsayar. Örneğin:<o:p></o:p></span></p>
+
+
+      <span class="Parrafo"><br />
+      <span style="font-style: italic;">Örnek</span>:<br />
+
+      <br />
+
+      </span>
+      
+      <table style="text-align: left; width: 540px; height: 86px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr>
+
+            <td style="vertical-align: top; width: 152px;"><span class="Parrafo">
+<span style="font-weight: bold;">Şöyle bir enkesit ile:</span></span></td>
+            <td colspan="1" rowspan="2" style="vertical-align: middle; width: 99px; text-align: center;"><img src="Imagenes/flecha_derecha.png" style="width: 102px; height: 67px;" alt="" /><br />
+
+            </td>
+
+            <td style="vertical-align: top; width: 249px; font-weight: bold;"><span class="Parrafo">Program bunları şu şekilde alır:</span></td>
+          </tr>
+
+          <tr>
+
+            <td style="vertical-align: top; width: 152px;"><span class="Parrafo"><span style="font-style: italic;">
+Yüzey 1, çizgi 26</span><br style="font-style: italic;" />
+<span style="font-style: italic;">
+Yüzey 2, çizgi 66</span><br style="font-style: italic;" />
+<span style="font-style: italic;">
+Yüzey 3, çizgi 103&nbsp;&nbsp;&nbsp;</span> </span></td>
+
+            <td style="vertical-align: top; width: 249px; font-style: italic;"><span class="Parrafo">
+Yüzey 1 çizgi 104 (bitkisel, doğal)<br />
+
+Yüzey 2 çizgi 66 (sağlam zemin)<br />
+
+Yüzey 3 çizgi 103 (kaya 1)</span></td>
+
+          </tr>
+
+        
+        </tbody>
+      
+      </table>
+
+      <span class="Parrafo"><br />
+
+      </span><span class="Parrafo">Eğer arazi enkesitleri dosyasında bitkisel toprak örtüsü, uygun olmayan veya kaya için kullanılan tiplere sahip yüzeyler varsa, bu SONDAJ VERİLERİ menüsüne girilen veri dikkate ALINMAZ; dolayısıyla dosyada gelen veriler önceliklidir.<br />
+
+      <br />
+Eğer arazi enkesitinde yalnızca sağlam zemin (ve kaya) yüzeyleri geliyorsa, sağlam zemin (ve kaya) derinliğinden farklı bir derinliğe sahip olacak olan uygun olmayan zemin hattını vermek mümkündür. Uygun olmayan zemin hattı için sondajla verilen derinliğin, arazi enkesitleri dosyasında gelen sağlam zemin ve/veya kaya derinliklerinin altına düşmemesini sağlamak kullanıcının sorumluluğundadır.</span><br />
+      <span class="Parrafo">
+      <br />
+      <br /></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="estructura">
+Yapı ve Eğik Yapıda Bölgelerin Tanımı</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Eğer bir hesaplama bölümünde 0 tip kesiti beyan edilirse, sistem araziyle kesişimleri hesaplamaz ve terasman geometrisi, üstyapı katman paketinin kalınlığı ve üstyapı katman paketinin kapanış şevleri için hemen önceki bölümde kullanılan tip kesitin verilerini kullanır. Eğer yapı için mevcut herhangi bir tip kesitten farklı verilere ihtiyaç duyulursa, bitkisel toprak örtüsünün kalınlığı için negatif bir değer yazarak yeni bir tip kesit oluşturmak ve bunu yapı bölgesinde uygulamak da mümkündür veya daha iyisi, ilgili sütunda <span style="font-weight: bold;">EVET</span> belirterek bölümü <span style="font-weight: bold;">YAPI</span> olarak işaretlemek.<br />
+      <br />
+Bu sonuncusu, daha sonra aynı bölgede, aynı sondaj verilerine sahip olması gereken diğer eksenlerle <span style="font-weight: bold;">[Branşman ekle]</span> seçeneği kullanılırsa önemlidir.<br />
+      <br />
+Refüj bölgesinde, yapıdaki tip kesit <a href="OL_subrasante.html#paralela">alt paralel</a> ve <a href="OL_subrasante.html#subarcen_prolonga">uzatılmış alt banket</a> olduğunda refüj kaldırılır.<br />
+      <br />Program ayrıca, yapının kesitin yalnızca bir tarafında göründüğü enkesitleri de dikkate almaya olanak tanır; bu, yeni yarı-yapı tip kesitleri tanımlamaya gerek kalmadan enkesitlerdeki toprak işleri metrajını iyileştirir. Her enkesitte, kenar ayağının konumu çizilir ve toprak işleri ile yapıdaki bölge mükemmel bir şekilde sınırlandırılır. Bu da, aşağıdaki örnekte gösterildiği gibi, <span style="font-weight: bold;">YAPI</span> sütununda beyan edilir:<br />
+      <br />
+</span></span></span>
+      <table style="text-align: left; height: 50px; width: 534px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-weight: bold;">Tip kesit (TK_b)<br />
+            </td>
+            <td style="vertical-align: top; width: 92px; font-weight: bold;">YAPI<br />
+            </td>
+            <td style="vertical-align: top; width: 92px; font-weight: bold;">BÖLÜM<br />
+            </td>
+            <td style="vertical-align: top; width: 200px; font-weight: bold;">AÇIKLAMA<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-style: italic; text-align: center;">1<br />
+1<br />
+2<br />
+1<br />
+1<br />
+            </td>
+            <td style="vertical-align: top; width: 92px; font-style: italic; text-align: center;">Hayır<br />
+Sağ<br />
+Evet<br />
+Sol<br />
+Hayır<br />
+            </td>
+            <td style="vertical-align: top; width: 92px; font-style: italic; text-align: center;">0-500<br />
+500-550<br />
+550-650<br />
+650-700<br />
+700-980<br />
+            </td>
+            <td style="vertical-align: top; width: 200px; font-style: italic; text-align: center;">Dolgu bölgesi<br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yapı sağdan giriyor<br />
+Yapı bölgesi<br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yapı soldan giriyor<br />
+Dolgu bölgesi<br />
+</span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu şekilde, eğik yapıların bulunduğu hesaplama bölgelerini mekanize etmek çok basittir, toprak işleri ve üstyapı metrajları hassas olduğu için işi büyük ölçüde kolaylaştırır.<br />
+      <br />
+Viyadük bölgelerinde, [Evet->(KMler)] tipi yerine [Evet (B-B)] tipi kullanılması önerilir. Otoyollarda ve otobanlarda (çift platform). Her iki taraf için tek bir tabliyeli bir viyadük yerleştirirsek: Taraf [SD], programın, yapının tanımında girilen verilerden eğik yapının farklı bölgelerinin KM'lerini belirlemesi için hesaplama bölgelerinde Viyadük [Evet->(KMler)] komutu kullanılabilir.<br />
+      <br /></span></span></span><img src="Imagenes/corregir_subras_est_esv.png" style="width: 274px; height: 70px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;Ayrıca, bu durumlarda, yarı-yapıdaki KM'ler için, enkesitin yapıda olan kısmında farklı bir terasman tanımlamak da ilgi çekici olabilir.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Bunun için, BOYKESİT </span></span></span><span class="Parrafo">→</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">TAMAMLAYICILAR</span> </span></span></span><span class="Parrafo">→</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span style="font-weight: bold;">Parametreler</span> diyalog kutusunda <a href="OL_parametros.html#corregir_subras"><span style="font-weight: bold; font-style: italic;">Eğik yapılarda terasmanı düzelt</span></a> kutucuğunun etkinleştirilmiş olması gerekir.<br />
+      <br />
+Bu seçenek, SOL ve SAĞ yarı-yapı bölümlerinde, yapının kesitinde tanımlanan minimum kalınlığı kullanarak <a href="OL_subrasante.html">terasmanı</a> değiştirerek çalışır. <br />
+      <br /></span></span></span><img src="Imagenes/trans_estructura_esviada.png" style="width: 221px; height: 33px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Örneğin, eğer kesitin 0,5 m üstyapı kalınlığı varsa ve yapıda yalnızca 0,1 m aşınma tabakası varsa, eğik bölgelerde dolgu kısmında tam <a href="OL_firmes.html">üstyapı katman paketi</a> görünecek ve yapı kısımlarında yalnızca üst 10 cm görünecektir, şekilde gösterildiği gibi.<br />
+
+      <br />
+Ayrıca, yapıda kullanılan üstyapı katman paketi uygulanır (yapının 1 metre içinde kullanılan paket aranır).<br />
+      <br />
+Çok eğik yapılar için, her iki tarafta da yapıda enkesitlerin bulunmadığı, bunun yerine bir tarafta yapı başlamadan önce diğer tarafta bittiği durumlarda; Hesaplama Bölgeleri diyalog kutusunda <span style="font-weight: bold;">Merkezi</span> adlı bir tip oluşturulur. Böyle bir yapı, şu şekilde bir hesaplama bölümleri dizisiyle tanımlanabilir: Sağ (D-Y) / Merkez/ Sol (D-Y). Merkez tipi, çakışma bölgesinde tanımlanmalıdır; bu bölümde enkesitler her iki tarafta da dolguya sahip olacak, ancak içte boş bir bölge olacaktır (yapının geçtiği yer). Tüm bu bölümler için, dolgu tip kesiti kullanılmalıdır. Şimdilik, bu tür bir yapı yarma konilerini desteklememektedir.<br />
+Bu tür yapılarda Yarma Konilerine izin verilir.<br />Yamaçlarda (D-Y) veya (Y-D) kullanıldığında, o bölümden önce veya sonra bir yapı tanımlanmadan, terasmanın kesişim noktasına kadar olan bölge konsol olarak hesaplanır. Dolgu tarafında, seçme malzemeler bu noktaya kadar götürülecektir.<br />
+      <br />
+      </span></span></span><span class="Titulo_2"><a name="sondeos_indep">Bağımsız Sondajlar</a></span><br />
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">[BAĞIMSIZ SONDAJLAR]</span> düğmesi, <a href="OL_sondeos_independientes.html">burada</a> açıklandığı gibi, tip kesitlerin bölümlendirilmesini jeoteknik bölümlendirmeden bağımsız hale getirmeyi mümkün kılan bir diyalog kutusu açar.<br />
+      <br />
+      <a name="descomponer"><span class="Titulo_2">Malzemeleri Ayrıştır</span><br />
+      <br />
+</a></span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/zona_calculo_descomp_entrada.png" style="width: 600px; height: 100px;" alt="" /></span></div>
+      <span class="Parrafo"><br />
+Bu diyalog kutusu aracılığıyla, kullanıcı .dar tablosunda tanımlanan her bir jeoteknik malzemeyi (Bitkisel, Uygun Olmayan, Y_Toprak, Kaya 1, Kaya 2...) beş farklı malzemeye kadar ayrıştırabilir.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/OL_zona_calculo_descomposicion.png" style="width: 600px; height: 218px;" alt="" /></span></div>
+      <span class="Parrafo"><br />
+Bu diyalog kutusunun çalışması için <span style="font-weight: bold;">Bu ayrıştırmayı kullan</span> kutucuğunu etkinleştirmeliyiz.<br />
+      <br />
+Bu malzemelerin her birine, bölümlere göre orijinal malzemenin bir yüzdesi, <span style="font-weight: bold;">Oran %</span> ve <span style="font-weight: bold;">kütleler diyagramı</span> için bir geçiş Katsayısı atanabilir.<br />
+      <br />
+Enkesitlerde ve metraj raporlarında, orijinal malzeme, bileşenleriyle (<span style="font-weight: bold;">Y TOPRAK A</span>, <span style="font-weight: bold;">Y TOPRAK B</span>, <span style="font-weight: bold;">Y TOPRAK C</span>... örneğin) değiştirilir.<br /><br /><span class="Parf_negrita">Veri olmayan aktif eksenlere bir veri ekle:</span> Bu, Jeoteknik malzemeleri ayrıştır verilerine sahip olmayan her aktif eksende, her malzemede ilk alt malzemede %100 ile bir satır oluşturur ve&nbsp;Bu ayrıştırmayı kullan'ı etkinleştirir. Çünkü ayrıştırmayı bir eksende kullandığımızda, o zaman hepsinde kullanılmalıdır.<br />
+      <br />
+</span><span class="Parrafo">
+Kavşak ve dönel kavşaklardaki kollar, başladıkları eksenin Jeoteknik Malzeme Ayrıştırmasını devralır.</span><br />
+      <span class="Parrafo">
+<br /></span><span style="font-weight: normal;" class="Titulo_2"><a name="cota_roja"><span class="Parrafo Titulo_2"><span class="Titulo_2">Kırmızı Kot Değerlerine Göre Tanımlanan Yapılar</span></span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">YAPILAR (KIRMIZI KOTA GÖRE)</span> düğmesi, burada açıklanan bir araca erişim sağlar; bu araç sayesinde program, kullanıcı tarafından belirtilen kırmızı kota bağlı olarak yapı ve tünel için hesaplama bölümleri oluşturur.<br />
+Kırmızı kota göre yapılar (viyadük ve tünelleri bölümlendirmek için kullanılır). Dört kırmızı kot aralığından yola çıkarak uygulanacak Tip Kesitleri ve Üstyapı Kesitlerini belirleme imkanımız var; ayrıca düz ve kurp arasında da ayrım yapabiliriz.<br />
+      <br />
+      <img src="Imagenes/zc_estructuras_cota_roja.png" style="width: 450px; height: 137px;" alt="" /><br />
+      <br />
+      <span class="Titulo_2"><a name="modificar_sondeos">Eksenlere Göre Sondajları Değiştir</a></span><a name="modificar_sondeos"><br />
+      <br />
+      <img src="Imagenes/zona_calculo_sondeos.png" style="width: 274px; height: 88px;" alt="" align="right" hspace="6" />Birden fazla eksen için aynı anda, tüm hesaplama bölümlerinde, farklı malzemelerin derinliklerinden herhangi birini değiştirmeye olanak tanır.<br /><br />Bu yardımcı program, Bağımsız Sondajlarla da çalışır.<br />
+      <br />
+      <br />
+<br />
+      <span class="Titulo_2"></span></a><a name="tramos_por_pendientes"><span class="Parrafo"><span class="Titulo_2">Eğimlere Göre Bölümler</span></span></a></span><a name="tramos_por_pendientes"><br />
+      <br />
+</a><img src="Imagenes/zona_calculo_tramo_pendientes.png" style="width: 384px; height: 162px; float: left;" alt="" hspace="5" />Her bir eğim bölümü için, boykesitte uygulanan eğime bağlı olarak, düz ve kurpta farklı bir tip kesit ve farklı bir üstyapı katman paketi atanabilir.<br />Belirli bir uzunluktan daha kısa olan düzlükler için farklı Tip Kesitler tanımlamak mümkündür.<br /></span></span></span>
+      <span style="font-weight: normal;" class="Titulo_2"><span class="Parrafo"><span class="Parrafo">
+      Bu menünün yapılandırma dosyasını &nbsp;<span class="Archivo">.tpp</span> uzantısıyla <span style="font-weight: bold;">kaydetmek</span> veya <span style="font-weight: bold;">yüklemek</span> mümkündür.<br />
+      <br />
+
+      <br />
+      <br />
+      <br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="tramo_por_tubos">Borulara Göre Bölüm</a></span><a name="tramo_por_tubos"><br />
+      <br /></a></span></span></span><div style="text-align: center;"><span style="font-weight: normal;" class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/zona_calculo_tramos_tubos.png" style="width: 300px; height: 149px;" alt="" /></span></span></span><span style="font-weight: normal;" class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></div><span style="font-weight: normal;" class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><a name="tramo_por_tubos"><br /><br />Her bir boru için bir bölüm oluşturmaya olanak tanır ve borunun çapına göre bir tip kesit atar. Her bölüm, borunun başlangıç km'sinde başlar ve bir sonraki borunun başlangıç km'sinde veya son enkesitte biter. Yalnızca boru hatları eksenleri için.<br />Bir şablonumuz olabileceğini unutmayın, örneğin <span class="Archivo">Hendek.dig</span>, farklı eksenlerde uygulanmak üzere önceden tanımlanmış bir dizi tip kesit içeren bir <span class="Archivo">*.vol</span> dosyası içerebilir.<br /><br />
+      <br />
+      <span class="Titulo_2"></span></a><a name="copiar_tramos_de_firme"><span class="Parrafo"><span class="Titulo_2">Üstyapı Bölümlerini Kopyala</span></span></a></span><a name="copiar_tramos_de_firme"><br />
+      <br />
+<a href="OL_firmes.html">Üstyapı Katman Paketi</a> menüsünde verilen bölümlendirmeyi kopyalamaya olanak tanır.<br />
+
+      <br />
+      <span class="Titulo_2"><a name="viaductos_zc">Viyadükleri Hesap Bölgelerine Aktar</a></span><a name="viaductos_zc"><br />
+      <br />
+<a href="OL_estructuras.html">Yapılar</a> menüsündeki viyadüklerin KM'lerini, yapı bölümleri olarak ekleyerek hesap bölgelerine kopyalar.<br />
+<br />
+      </span></span><span class="Titulo_2"><a name="tramif_indep"><span class="Parrafo"><span class="Titulo_2">Hesap Bölgesinden Bağımsız Kesitlerin Bölümlendirilmesi</span></span></a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><img src="Imagenes/tramif_indep.png" style="width: 111px; height: 133px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Buraya kadar açıklanan hesaplama bölgeleri, tip kesitin bir bütün olarak uygulanması için bölümlendirmeyi tanımlar. <span style="font-weight: bold;">[H]</span>, <span style="font-weight: bold;">[Y]</span>, <span style="font-weight: bold;">[D]</span> ve <span style="font-weight: bold;">[V]</span>, <a href="OL_cunetas.html">hendekleri</a>, <a href="OL_desmonte_tierra.html">yarmaları</a>, <a href="OL_terraplen_geometria.html">dolguları</a> ve <a href="OL_vectores.html">vektörleri</a> bağımsız olarak bölümlendirmek için diğer menülerdir.<br />
+      <br />
+Eğer <span style="font-weight: bold;">[H]</span> menüsünde, <span style="font-style: italic;">i</span> kesitinin belirli KM'ler arasında sağ tarafta uygulandığı bir bölümlendirme tanımlanırsa, o bölümde <span style="font-style: italic;">j</span> kesiti uygulanıyor olmasına rağmen, kullanılacak <a href="OL_cunetas.html">hendeğin</a> <span style="font-style: italic;">i</span> kesitinin sağ hendeği olduğu belirlenmektedir.<br />
+      <br />
+Genel durumda olduğu gibi, eğer bitiş tip kesiti sıfırdan farklı ve başlangıçtakinden farklıysa, <a href="OL_cunetas.html">hendek</a>, bölümde, iki tip kesit arasında doğrusal bir geçiş yapacaktır.<br />
+      <br />
+Hendeklerin alt bölümlendirmesinde her veri için bir seçeneğimiz var: <span style="font-weight: bold;">Sadece Toplam Alternatif İçin</span>. Etkinleştirildiğinde, bu hendeğin yalnızca yarma kesiti, kontrol, palye ve hendek seçeneğini içeren bir Alternatif TK'ye atladığında kullanılacağı anlamına gelir.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/zona_calc_cun_solo.png" style="width: 600px; height: 198px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span style="font-weight: bold;">[Y]</span> ve <span style="font-weight: bold;">[D]</span>, yarmalar ve dolgular için bağımsız bölümlendirmeler beyan eder ve tam olarak aynı şekilde çalışır.<br />
+      <br />
+<span style="font-weight: bold;">[H]</span>, <span style="font-weight: bold;">[Y]</span>, <span style="font-weight: bold;">[D] ve </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[V]</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> bölümlendirme tabloları, sağ veya sol tarafı seçmeye olanak tanıyan bir anahtara sahiptir. Sağ taraftaki veriler sola <span style="font-weight: bold;">Sağ->Sol</span> ve tam tersi <span style="font-weight: bold;">Sol->Sağ</span> kopyalanabilir.<br />
+
+      <br />
+
+<span style="font-weight: bold;">[H]</span>, <span style="font-weight: bold;">[Y]</span>, <span style="font-weight: bold;">[D]</span> ve </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[V]</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> tarafından kapsanmayan bölgelerde, HESAP BÖLGELERİ'nin temel <a href="#tramificacion">bölümlendirmesinde</a> verilen kesit uygulanacaktır. Bu alt bölümlendirme, dolayısıyla, genel <a href="#tramificacion">bölümlendirmeyi</a> tamamlar ancak yerine geçmez. Hesaplayıcı, HESAP BÖLGELERİ tablosunun verilerine ihtiyaç duyar.<br />
+      <br />
+Tüm bu diyalog kutularında, </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">[H]</span>, <span style="font-weight: bold;">[Y]</span>, <span style="font-weight: bold;">[D]</span> ve </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[V]</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, <a href="OL_zonas_calculo.html"><span style="font-weight: bold;">Hesap Bölgesi</span></a> menüsünde tanımlanan bölümlendirmeyi <span style="font-weight: bold;">Kopyalama</span> imkanı vardır.</span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span>
+      
+      <table style="text-align: left; width: 684px; height: 53px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; text-align: justify; width: 626px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">Hendeklerin, yarmaların, dolguların ve vektörlerin bağımsız bölümlendirilmesi için aşağıdaki davranış izlenir: eğer bir bölüm, bir sonrakinin başladığı aynı KM'de biterse ve o arazi enkesiti mevcutsa veya hesaplama bölümlerinin KM'lerinde enkesit enterpolasyonu etkinleştirilmişse, o zaman enkesit, genel HESAP BÖLGELERİ'nin KM'leriyle yapıldığı gibi, iki bölüme karşılık gelen veriler kullanılarak tekrarlanır.</span></span></span></span></td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

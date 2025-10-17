@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>ENKESİT TASARIMI ARAÇLARI MENÜSÜ</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ENKESİT TASARIMI ARAÇLARI MENÜSÜ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td class="obsolete Parrafo" style="width: 150px;"><br />
+      <div style="text-align: center;"><img src="Imagenes/alzado_herramientas.png" style="width: 550px; height: 137px;" alt="" /><br />
+      </div>
+      <ul>
+        <li style="font-weight: bold;"><img src="Imagenes/alzado_herramientas_dialogo.png" style="width: 132px; height: 401px;" alt="" align="right" hspace="6" /><a href="#generar_puntos_de_paso">Geçiş Noktaları Oluştur</a></li>
+        <li style="font-weight: bold;"><a href="OL_PK_dist.html">KM, Mesafe</a></li>
+        <li style="font-weight: bold;"><a href="#corto">Kısa Liste</a></li>
+        <li style="font-weight: bold;"><a href="#proyectar_vol">.vol Dosyasını Yansıt</a></li>
+        <li style="font-weight: bold;"><a href="#sumar_pk">KM Ekle</a></li>
+        <li style="font-weight: bold;"><a href="#genxyz">XYZHR .hpr Oluştur</a></li>
+        
+        <li style="font-weight: bold;"><a href="#generar_modelo_solido">Katı Model Oluştur</a></li>
+        <li style="font-weight: bold;"><a href="#enlace">Bağlantı</a></li>
+        <li style="font-weight: bold;"><a href="#truncar">Kırp</a></li>
+        <li style="font-weight: bold;"><a href="#zl53">Z -&gt; L53</a></li>
+        <li style="font-weight: bold;"><a href="#galibo">Gabari</a></li>
+        <li style="font-weight: bold;"><a href="OL_triangular_superficie.html">Yüzeyi Üçgenle</a></li>
+        <li style="font-weight: bold;"><a href="OL_pasos_de_mediana.html">Orta Refüj Geçişleri</a></li>
+        <li style="font-weight: bold;"><a href="#bordes_de_ejes_activos">Aktif Güzergahların Kenarları</a></li>
+        <li style="font-weight: bold;"><a href="OL_importar_ficheros_clip.html">CLIP Dosyalarını İçe Aktar</a></li>
+        <li style="font-weight: bold;"><a href="#puntos_de_perfiles">Profil Noktaları</a></li>
+        <li style="font-weight: bold;"><a href="OL_multiplicar_pk.html">KM Çoğalt</a></li>
+        <li style="font-weight: bold;"><a href="OL_desarrollar_toc.html">.toc Açılımı Yap</a></li>
+        <li style="font-weight: bold;"><a href="OL_anillo_de_dovelas.html">Segment Halkaları</a></li>
+        <li style="font-weight: bold;"><a href="#galibolineas">Çizgilerle Gabariler</a><br />
+        </li>
+        <li style="font-weight: bold;"><a href="#Triangular_sup_vista">Görünümdeki Yüzeyi Üçgenle</a></li>
+        <li style="font-weight: bold;"><a href="#Recortar_vol">.vol Dosyasını Kırp</a><br />
+        </li>
+
+
+      </ul>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+<br /><a name="generar_puntos_de_paso"><span class="Titulo_2">Geçiş Noktaları Oluştur</span></a><br />
+
+      <br />
+
+Profil ve deverlerle oluşturulan düzlemi, geçiş noktalarını alan güzergaha yansıtarak bu noktaları oluşturmayı sağlar. Geçiş noktalarını alan güzergahın dever ekseninde bir değişiklik olması durumunda, plandaki eksene bir mesafe girmeme olanak tanır. Bu şekilde, bir otoyolun beyaz şeridi üzerine kotu yansıtabiliriz. Geçiş noktasıyla gösterilen etikette bu mesafe dikkate alınır.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/alzado_herr_puntos_paso_dialogo.png" style="width: 249px; height: 169px;" alt="" /><br />
+
+      </div>
+      <br />
+
+      <img src="Imagenes/alzado_herr_puntos_paso_peraltes.png" style="width: 264px; height: 120px;" alt="" align="right" hspace="4" />Program, Profil menüsünden yükleyebileceğimiz bir .pas dosyası kaydeder. Ayrıca, belirttiğimiz nominal genişliğe bağlı olarak kavşak kolunun bir kotunu elde edeceği ve böylece deverlerini belirleyeceği bir .prl dever dosyası da kaydetmeme olanak tanır.<br />
+
+      <br />
+Hesaplanan deverlerin oluşturulmasında, geometrik eksen ile plan ekseni arasındaki mesafe de sorulur; bu, eksantrikliği ve/veya kaydırılmış dever ekseni olan güzergahlarda deverlerin doğru bir şekilde hesaplanmasını sağlar.<br />
+
+      <br />
+<a href="OL_PK_dist.html"><span class="Titulo_2"></span></a><br />
+      <a name="corto"><span class="Titulo_2">Kısa Liste</span></a><br />
+
+      <br />
+
+      KM, Mesafe komutuyla aynıdır, ancak daha az bilgi içeren kısaltılmış bir liste alırım.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/alzado_herr_corto.png" style="width: 309px; height: 199px;" alt="" /><br />
+
+      </div>
+      <br />
+Eğer seçenek etkinleştirilirse: Geçiş noktaları oluştur, mevcut güzergah üzerine tıklanan geçiş noktalarını kaydedeceği bir dosya adı girmeye izin verir.<br />
+<br />
+<a name="proyectar_vol"><span class="Titulo_2">.vol Dosyasını Yansıt</span><br />
+      <br />
+Belirttiğimiz güzergahın kesit verilerini, üzerinde bulunduğumuz güzergaha yansıtır.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/alzado_herr_proyeccion.png" style="width: 342px; height: 264px;" alt="" /><br />
+<br />
+      </div>
+
+      <div style="text-align: center;"><img src="Imagenes/alzado_herr_proy_vol.png" style="width: 309px; height: 90px;" alt="" /><br />
+
+      </div>
+
+      <br />
+
+İkinci güzergahın başlangıç KM'sinden önce veya bitiş KM'sinden sonra yansıtılan KM'ler için, orijinal güzergahtaki KM farklarına göre, ikinci güzergah içinde yansıtılabilen ilk veya son noktayla bir KM atanır.<br />
+      <br />
+Notlar: <br />
+      <ul>
+        <li>Yansıtan güzergahın profillerinin tüm <a href="OL_rasantes_diseno.html#alternativas">alternatifleri</a> de yansıtılır.</li>
+        <li>Bu araç, plan güzergahlarının birbiri üzerine gerçek bir projeksiyonu olmadığı KM bölgelerinde iyileştirilmiştir.<br />
+        </li>
+      </ul>
+
+
+      <br />
+      <a name="sumar_pk"><span class="Titulo_2">KM Ekle</span><br />
+      <br />
+.vol dosyasında kayıtlı olan tüm tanımlanmış verilere (profiller, menholler, borular, genişlikler, deverler, dever eksenleri, orta refüj ve eksantriklik...) KM ekler. Program, komut satırında başlangıç KM'sini ve KM artışını sorar.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/alzado_herr_sumarpk.png" style="width: 219px; height: 117px;" alt="" /><br />
+      </div>
+      <br />
+<a name="genxyz"><span class="Titulo_2">XYZ .hpr Oluştur</span><br />
+      <br />
+Eski Virtual 3D modülünde içe aktarılabilen bir dosya oluştururdu. Günümüzde Virtual 3D, güzergah boyunca görselleri kendi modülünden oluşturabilmektedir. <br />
+HPR, Yön (yatay açı), Eğim (eğim) ve Yuvarlanma (yan eğim, dever) anlamına gelir. Listede X, Y, Z koordinatlarını, yatay açıyı ve yan eğim açısını elde edeceğim.<br />
+      </a><br />
+<div style="text-align: center;"><img src="Imagenes/alzado_herr_gen_xyzhr_dialogo.png" style="width: 309px; height: 135px;" alt="" /><br />
+      <br />
+
+      </div>
+<div style="text-align: center;"><img src="Imagenes/alzado_herr_hpr.png" style="width: 168px; height: 174px;" alt="" /><img src="file:///C:/Users/Usuario/AppData/Local/Temp/moz-screenshot.jpg" alt="" />
+
+      </div>
+      <br />
+      <br />
+
+
+      <a name="generar_modelo_solido"><span class="Titulo_2">Katı Model Oluştur</span><br />
+
+      <br />
+Bir güzergah veya güzergah grubu için bir Blok (.b3d) oluşturmayı sağlar. Ayrıca, Virtual 3D modülünde kullanılabilmeleri için güzergahtan kamulaştırma sınırlarına kadar uzanan yüzey kaplama dosyaları da oluşturur. Kamulaştırma sınırı içindeki arazi şeridini de içerebilen .ttp üçgenleme dosyaları da oluşturulur.<br />
+
+      <br />
+Bir profil boyunca yüzey kaplamalarının başlangıcını ve sonunu tanımlayan dosya ISPOL.esc'dir. Her bir yüzey kaplamasının profilin hangi kodları arasında çizileceğini, hangi renge sahip olacağını ve hangi dosyada saklanacağını tanımlamayı sağlayan bu dosyayı düzenleme imkanımız var.<br />
+      <br />
+Bu iletişim kutusunda, katı modelin oluşturulacağı güzergahları seçebileceğiz. Şunlar belirtilebilir:<br />
+      </a>
+      <ul>
+<li>Tüm güzergahların geometrisinin tek bir yüzey kaplamasında mı yoksa her birinin ayrı ayrı mı oluşturulacağı.</li>
+      </ul>
+
+
+      <ul>
+<li>Kamulaştırılan arazi şeridinin yüzey kaplamasının oluşturulup oluşturulmayacağı.</li>
+      </ul>
+
+
+      <ul>
+<li>İş sınırı (veya kamulaştırma) ile bir çizgi oluşturulup oluşturulmayacağı. Bu çizgi, oluşturulan tüm güzergahları içerir.</li>
+      </ul>
+
+
+Kavşaklardaki kurp modelleri, ilgili iş sınırı ve kamulaştırma sınırı çizgileriyle oluşturulacaktır.<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img src="Imagenes/alz_herr_mod_sol.png" style="width: 459px; height: 234px;" alt="" /><br />
+
+      </div>
+
+
+      <br />
+      <br />
+
+
+      <a name="enlace"><span class="Titulo_2">Bağlantı</span><br />
+
+      <br />
+Tam menüdeki </a><a href="OL_lineas_frontera.html#auto_lfr">Otomatik Sınır Çizgisi</a>'ne eşdeğer bir araçtır.<br />
+
+
+
+      <br />
+<br />
+
+
+      <a name="truncar"><span class="Titulo_2">Kırp</span></a><br />
+
+
+
+      <br />
+
+
+Bu seçeneğe basıldıktan sonra, ekranda görünen çizgilerden biri seçilir ve sistem, üzerinde bulunduğumuz güzergahı bu çizgiyle kırparak bir <a href="OL_lineas_frontera.html">.lfr</a> dosyası kaydeder. Mevcut güzergahın daha önce hesaplanmış olması gerekir.<br />
+
+
+
+      <br />
+<br />
+
+
+
+      <a name="zl53"><span class="Titulo_2">Z -&gt; L53</span><br />
+      <br />
+      </a><img src="Imagenes/alzado_herramientas_zl53_dialogo.png" style="width: 300px; height: 194px; float: right;" alt="" align="right" hspace="6" />Bu araçla, plandaki güzergah hesaplamasında oluşturulan çizgilerin (L53) köşe noktalarına, ilgili güzergahın profil kotunu atarız.<br /><br />
+
+
+Bu komut, plandaki güzergah çizgisinin (L53) kot değişikliğine, düşey kurpların giriş ve çıkış noktalarını ve parabollerin bir ayrıklaştırılmasını da ekler.<br />
+
+
+      <br />Plandaki (Düz, Dairesel ve Klotoid) ve düşey güzergahtaki (Rampa, Eğim, Tepe Kurp veya Dere Kurp) eleman tipine göre renklerle bir <span style="font-weight: bold;">ayrıklaştırma</span> da aynı anda yapılabilir. Her ikisini ayırt edebilmek için, her birine bir dZ değeri girilebilir.<br /><br /><span style="font-weight: bold;">Düşey kurpları gizle</span>, düşey kurp bölgesinde bulunan çizgi parçasını gizlememe olanak tanır.<br />
+      <br />
+      <span style="font-weight: bold;">Enkesit Hesaplanırken Z -&gt; L53</span>, bir enkesit hesaplaması her çalıştırıldığında bu aracı otomatik olarak çalıştıracaktır.<br />
+
+
+      <br />
+
+
+Eğer <a href="OL_planta_opciones_visualizacion.html#opciones">Yapılandırma</a> &gt; Tercihler &gt; Plan &gt; Güzergahları 8D çizgilerle çiz menü seçeneği etkinse, bu komut, bu kutucuk etkin olmasaydı olduğu gibi, 8D çizgisini profil kotuna yerleştirir.<br />
+
+
+
+      <br />
+<br />
+
+
+
+      <a name="galibo"><img src="Imagenes/alzado_herramientas_galibo.png" style="width: 247px; height: 181px;" alt="" align="right" hspace="6" /><span class="Titulo_2">Gabari</span><br />
+      <br /></a>Bu araç, iki güzergahın platformlarının imleç üzerinde sunduğu kot farkını bildiren bir Gösterge oluşturur.- Geçiş rampaları, duvar+döşeme yükseklikleri tablosu, hesaplanan deverler tablosu, diğer genişlikler, bağımsız genişlikler ve KM'lere göre bordürler. <br />
+
+
+
+      <br />
+
+
+
+Komuta basıldığında, iki güzergahı seçmemiz istenir. Ardından, imlecin noktası için program, her bir güzergahın kotunu ana taşıt yollarının deverlerine göre yansıtır. Ekranda, her güzergah için KM, mesafe ve noktaya yansıtılan kotların farkı hakkında bilgi verilir.<br />
+
+
+
+      <br />
+
+
+
+Eğer herhangi bir yakalama modu kullanılırsa, analiz edilen nokta yakalanan noktadır.&nbsp;&nbsp; <br />
+
+
+
+      <br />
+
+
+
+      <a href="OL_triangular_superficie.html"><span class="Titulo_2"></span></a><br />
+
+
+
+      <a name="bordes_de_ejes_activos"><span class="Titulo_2">Aktif Güzergahların Kenarları</span><br />
+
+      </a><br />
+
+
+
+
+      Bu seçenek, ENKESİT TASARIMI &#8594; ARAÇLAR'dan erişilebilir ve her bir güzergahın her bir bölümünü çevreleyen çizgileri, Virtual 3D® modülünün yapacağı gibi oluşturmayı sağlar; yani, bir yandan her bir sanat yapısı veya tünel bölümünü dikkate alarak ve diğer yandan sanat yapıları ile tüneller arasındaki bölümlerin kenarlarını çizerek.<br />
+Eğer kesitimizde herhangi bir <a href="OL_revestimiento_terraplen.html">dolgu kaplaması</a> tanımlanmışsa, aktif kenarları elde etmek için <a href="OL_ficheros_lil.html">.lil Düzenle</a>'ye <a href="OL_ficheros_lil.html#bordes">kenarlar</a> alt menüsü aracılığıyla gitmemiz gerekecektir.<br />
+
+
+      <br />
+
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/ejem_dibujo_bordes.png" style="width: 299px; height: 210px;" alt="" /><br />
+      </div>
+
+
+
+      <a style="font-weight: normal;" href="OL_importar_ficheros_clip.html"><span class="Titulo_2"></span></a><br />
+<br />
+
+
+
+      <a name="puntos_de_perfiles"><span class="Titulo_2">Profil Noktaları</span><br />
+
+      </a><br />Menüyü başlattığınızda, dosya seçme seçeneği sunulur:<br /><br />
+
+
+
+
+      <div style="text-align: center;"><img src="Imagenes/alzado_herramientas_puntos_perfiles_fichero.png" style="width: 220px; height: 88px;" alt="" /><br /></div><br /><br /><img src="Imagenes/alzado_herramientas_puntos_perfiles.png" style="width: 159px; height: 169px;" alt="" align="right" hspace="6" />Bu araç, profillerde interaktif olarak seçtiğimiz noktaların, KM, eksene olan mesafe ve kot bilgilerini içeren listeler oluşturmayı sağlar.<br />
+
+
+Mesafeler ve kotlar, <span class="Parf_negrita">Taşı</span> komutuyla manuel olarak veya ekranda tıklayarak değiştirilebilir. <span class="Parf_negrita">OK</span> komutuyla mevcut veriyi listeye ekleriz.<br /><br /><span class="Parf_negrita">Tıklayarak Ekle</span> butonuyla, &nbsp;<span class="Parf_negrita">Taşı</span> ve &nbsp;<span class="Parf_negrita">OK</span> tuşlarına basmaya gerek kalmadan profilin birkaç noktasını ekleyebilirsiniz; seçim, &nbsp;<span class="Parf_negrita">İptal</span>'e basarak veya klavyedeki [<span class="Parf_negrita">Esc</span>] tuşuyla durdurulur.<br /><br />Önceki profile geri dönme veya önceki herhangi bir KM'ye geri dönme imkanı.<br /><br />
+
+
+
+<span class="Parf_negrita">Listele</span> komutu, mevcut listeyi kapatır ve gösterir ve mevcut KM'den yeni bir liste oluşturmayı sağlar.<br />
+
+
+Doğrudan herhangi bir KM'ye ilerleyebilir veya Sonraki Profile gidebilirsiniz. <span class="Parf_negrita">Çıkış</span> seçeneği, son listeyi kapatır ve gösterir ve araçtan çıkar.<br />
+
+
+
+      <br />
+
+
+
+      <div style="text-align: center;"><img src="Imagenes/alzado_herramientas_puntos_perfiles_listado.png" style="width: 400px; height: 111px;" alt="" /><br /></div>
+      <br />
+      <br />
+      <a name="galibolineas"><span class="Titulo_2">Çizgilerle Gabariler</span></a><br />
+      <br />TAMAMI menüsündeki <a href="OL_completo_galibo.html">Gabariler</a> aracına benzer bir araçtır, ancak bu durumda ilk güzergah mevcut güzergahtır ve ikinci güzergah, kullanıcının tek tek veya tipe göre seçebileceği kotlu bir dizi çizgiyle değiştirilir. Bir KM grafiksel olarak seçilir ve tanımlanan pay ile çalışma alanı sınırlandırılır. Yani, seçilen kodlara sahip çizgilerin kesişimleri (şerit ve/veya banket veya palye kenarları) sadece, seçilen KM'ye olan mesafesi paya eşit veya daha az olanlar dikkate alınır. Geçiş noktası dosyaları <span class="Archivo">gal_1_Lin.pas</span> (<span class="Archivo">gal_1D_Lin.pas</span> ve <span class="Archivo">gal_1I_Lin.pas</span> otoyollarda) adını alır.<br /><br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/alzado_herr_galiboconlineas.png" style="width: 400px; height: 245px;" alt="" /><br />
+      </div>
+      <br />Bu araç, ikinci bir çalışma modu olan <span class="Parf_negrita">Güzergah + 2D Çizgi + Güzergah</span>'ı sunar (<span class="Parf_negrita">Mod</span> açılır menüsünde mevcuttur), şu şekilde çalışır:<br /><ul><li>Seçilen çizginin ilk güzergahın platformunun karakteristik noktalarını kestiği noktalar hesaplanır.</li><li>Gabari, bu noktalarda ikinci güzergahın kotu eksi birinci güzergahın kotu olarak hesaplanır.</li><li>Geçiş Noktaları:</li><ul><li>Birinci güzergahın kotuna sahip noktalara dZ değeri (Gerekli minimum Gabari) eklenir ve o zaman ikinci güzergahın deverlerini takip ederek ikinci güzergah üzerine yansıtılır.</li><li>Bu geçiş noktası dosyasını ikinci güzergahın profiliyle yüklediğimizde, bu güzergahın profilinin, tanımlanan plandaki herhangi bir noktada birinci güzergaha göre gabariyi karşılamak için bu noktaların üzerinde olması gerekecektir.</li></ul></ul><br />
+      <a name="Triangular_sup_vista"><span class="Titulo_2">Görünümdeki Yüzeyi Üçgenle<br />
+      <br />
+</span>Bu araç, mevcut güzergahın veya her bir aktif güzergahın (kavşakların kurpları dahil) Bordürler + S67 + S68 + ... görünen yüzeyiyle bir &nbsp;<span class="Archivo">.ttg</span> dosyası oluşturur.<br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Mevcut güzergah veya tüm güzergahlar için oluşturulabilir.<br />
+Mevcut güzergahı seçme durumunda, <img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" />&nbsp;<span class="Parf_negrita">+ Kurplar</span> seçeneğiyle, diğer güzergahlara karşı kavşak veya döner kavşaklardaki kurpların kapladığı alanı aynı güzergaha ekleyebilirsiniz.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      </a>
+      <div style="text-align: center;"><img style="width: 364px; height: 447px;" alt="" src="Imagenes/alzado_herr_triangularvista.png" /><br />
+      </div>
+      <br />
+"Tümünü bir dosyaya kaydet" seçeneği işaretlendiğinde, tüm aktif güzergahların geometrisi tek bir dosyaya kaydedilir. Bu seçeneği kullanabilmek için önceden "Tüm aktif güzergahlar" seçeneğinin işaretlenmiş olması gerekir.<br /><br />Eğer <span style="font-weight: bold;">[ ] Üstyapısız</span> seçeneği etkinleştirilirse, hesaplamaya ne bordürleri ne de S67'yi dahil etmez. Viyadüklerde ve tünellerde platformu dahil edebilir veya <span style="font-weight: bold;">[ ] Sanat Yapılarını Dahil Et</span>'i etkinleştirerek üst üste binen yüzeyleri üçgenleyebiliriz.<br /><br /><span style="font-weight: bold;">[ ] Yaklaşım Dolgularını Dahil Et </span> seçeneği etkinleştirildiğinde, yaklaşım dolgularının görünen yüzeyini dahil eder.<br />
+      <br />
+Eğer projeye <a href="OL_anadir_ramal.html">KAVŞAK KOLU EKLE</a> seçeneğini kullanırsak ve Mevcutları Genişlet seçeneğini etkinleştirmişsek, ilgili seçeneği etkinleştirerek bu araçta &nbsp;ISPOLn_AR.per dosyasını kullanabiliriz.<br />
+      <br />Sonuç dosyaları, proje klasörünün Trisup alt klasöründe kalır.<br />
+      <br />
+      <a name="Recortar_vol"><span class="Titulo_2">.vol Dosyasını Kırp</span><br />
+      <br /></a><img src="Imagenes/recortar_vol.png" style="width: 405px; height: 152px;" alt="recortar_vol" align="right" hspace="10" /><a name="Recortar_vol">Aşağıdaki Enkesit Tasarımı veri tablolarının verilerini iki KM arasında kırpabilirsiniz. Bu araç, .vol Yansıt'a da dahildir.<br />
+      <br />
+      </a>
+      <ul>
+        <li><a name="Recortar_vol">Profiller, Menholler, Borular, Hat ve Travers, Dever Ekseni, Deverler, Genişlikler ve&nbsp; Yardımcı Taşıt Yolları.</a></li>
+      </ul>
+      <a name="Recortar_vol">Eğer kırpmanın başlangıç km'sinde veri yoksa, önceki veri bırakılır ve eğer kırpmanın bitiş km'sinde veri yoksa, sonraki veri bırakılır.</a>
+      <ul>
+        <li><a name="Recortar_vol">Profildeki nokta tablosu, Orta Refüj ve Eksantriklik, Formasyon Tabakası, Bağımsız Alttemel, Yarma Şev Başı, Temizlik Palyeleri,</a></li>
+        <li><a name="Recortar_vol">Seçilmiş Malzeme, Üstyapı Aralıkları, Hesaplama Aralıkları (ve H,Y,D), Dolgu Kaplaması, Yarma Kaplaması, Duvar Taban Kotu,</a></li>
+        <li><a name="Recortar_vol">Duvar Üst Kotu, Eksenler Arası Duvar, Koda Göre Kırpma ve Sanat Yapıları. </a></li>
+        <li><a name="Recortar_vol">Kafa Hendekleri, Kamulaştırma Sınırı, Açıklık Tabloları, Yol Çizgileri,</a></li>
+        <li><a name="Recortar_vol">Genişletme ve İyileştirme, Profil Enterpolasyonu için Aralıklar, Tüneller (Tünel genişlikleri tablosu, O1X Tablosu, O1Y Tablosu), Dolgu Zemin Islahları. </a></li>
+        <li><a name="Recortar_vol">Demiryollarında Faydalanma, hız diyagramları, deverler için hız aralıkları, kütleler diyagramında girdi aralıkları, yaya yolları, kavşak kurpları,</a></li>
+<a name="Recortar_vol">        </a><li><a name="Recortar_vol">Döner kavşak kurpları, kavşak kolları, platform uyumlaştırması, bağımsız sondajlar ve geoteknik malzeme ayrışımı. </a></li>
+<a name="Recortar_vol">        </a><li><a name="Recortar_vol">Geçiş rampaları, duvar+döşeme yükseklikleri tablosu, hesaplanan deverler tablosu, diğer genişlikler, bağımsız genişlikler ve KM'lere göre bordürler. </a></li>
+<a name="Recortar_vol">      </a></ul>
+
+<a name="Recortar_vol">      
+      
+
+</a></td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body></html>```

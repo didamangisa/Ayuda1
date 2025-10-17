@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Şablonlar .gut: Alanlar</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ENKESİT PAFTALARI İÇİN ŞABLONLAR: ALANLAR<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px; height: 802px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br /></span><img style="width: 260px; height: 45px; margin-left: 7px;" alt="" src="Imagenes/gut_recintos.png" align="right" /><span class="Parrafo">Buradan, taramalı çizgilerle renklendirmek üzere alanlar tanımlanır. Bunun için öncelikle alanlarda yer alacak <a href="#superficies">yüzeyleri</a> tanımlamak ve ardından bu <a href="#recintos">alanları</a> tanımlamak gerekir.<br />
+      <br />
+Program kütüphanesinde yer alan <span class="Archivo">color.gut</span> bilgi bandı, bu özelliğin kullanımına dair iyi bir örnektir.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="superficies">Alanlar için Yüzeylerin Tanımlanması</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img style="width: 280px; height: 105px; margin-left: 7px;" alt="" src="Imagenes/gut_sup_recintos.png" align="right" /><span class="Parrafo">Buradan, metraj sistemlerinin ( <span class="Archivo">.dar</span> tabloları) kullandığı aynı yöntemi izleyerek mevcut yüzeylerden yeni yüzeyler tanımlanır. Böylece, ilk sütunda programa oluşturulacak çizgi tipi (yüzey) ve ardından ilgili iki yüzey (<span style="font-weight: bold;">Yüzey 1</span> ve <span style="font-weight: bold;">Yüzey 2</span>) arasında kullanılacak <span style="font-weight: bold;">fonksiyon</span> belirtilir.<br />
+      <br />
+Belirtilen çizgi tipi, enkesitlerde daha önce MEVCUT OLMAYAN bir tip olmalıdır, çünkü bu hatalara yol açacaktır. Yüzeyler arasında uygulanabilecek mevcut fonksiyonlar şunlardır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">1 Yüzey</span>: Tanımlanan <span style="font-weight: bold;">Yüzey</span>, <span style="font-weight: bold;">Yüzey 1</span> ile aynıdır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">+ Alçak</span>: Bu durumda, <span style="font-weight: bold;">Yüzey 1</span> ve <span style="font-weight: bold;">Yüzey 2</span> yüzeyleri arasındaki en alçak yüzey, hem <span style="font-weight: bold;">Yüzey 1</span> hem de <span style="font-weight: bold;">Yüzey 2</span>'nin aynı anda bulunduğu yerlerde veri içeren yeni bir <span style="font-weight: bold;">Yüzey</span>'dir ve bu durumda en alçak olanla çakışır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">+ Yüksek</span>: <span style="font-weight: bold;">Yüzey 1</span> ve <span style="font-weight: bold;">Yüzey 2</span> yüzeyleri arasındaki en yüksek yüzey, sadece hem <span style="font-weight: bold;">Yüzey 1</span> hem de <span style="font-weight: bold;">Yüzey 2</span>'nin aynı anda bulunduğu yerlerde veri içeren ve en yüksek olanla çakışan yeni bir <span style="font-weight: bold;">Yüzey</span>'dir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Kırp</span>: <span style="font-weight: bold;">Yüzey 1</span>'in <span style="font-weight: bold;">Yüzey 2</span> ile kırpılması sonucu oluşan yüzey, <span style="font-weight: bold;">Yüzey 2</span>'nin bulunduğu bölgelerde <span style="font-weight: bold;">Yüzey 1</span> yüzeyiyle çakışan yeni bir <span style="font-weight: bold;">Yüzey</span>'dir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Tamamla</span>: <span style="font-weight: bold;">Yüzey 1</span>'in <span style="font-weight: bold;">Yüzey 2</span> ile tamamlanması sonucu oluşan <span style="font-weight: bold;">Yüzey</span>, <span style="font-weight: bold;">Yüzey 1</span>'in bulunduğu tüm bölgelerde onunla çakışan ve <span style="font-weight: bold;">Yüzey 1</span>'in bulunmadığı ancak <span style="font-weight: bold;">Yüzey 2</span>'nin bulunduğu bölgelerde <span style="font-weight: bold;">Yüzey 2</span> ile çakışan yeni bir <span style="font-weight: bold;">Yüzey</span>'dir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Alt Kenar</span>: Sonuçta ortaya çıkan <span style="font-weight: bold;">Yüzey</span>, mevcut tüm yüzeylerin tüm kotları arasındaki en düşük kotta bir yatay çizgidir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Üst Kenar</span>: Sonuçta ortaya çıkan <span style="font-weight: bold;">Yüzey</span>, mevcut tüm yüzeylerin tüm kotları arasındaki en yüksek kotta bir yatay çizgidir.</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kodları Gizle</span>: Herhangi bir yüzeyden, kodu tanımlanacak iki değer arasında olan bir noktada biten segmentleri gizlemeyi sağlar. Yüzey tipinde, çizilecek enkesitlerde mevcut olanlardan birini belirteceğiz. Onunla herhangi bir alan tanımlamaya gerek yoktur. Örneğin: Çift hatlı Demiryolu enkesitlerinde, traversin arkasındaki 67 hattının segmentini gizlemek istiyoruz: Yüzey 67, Fonksiyon: Segmenti Gizle, Baş.Kod: 1, Bit.Kod: 3.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">x Altında</span>: Yüzey sütununda, birinci yüzeyin ikinci yüzeyin altında kalan <span style="font-style: italic;">sadece</span> o kısmından oluşan bir sonuç yüzeyi tanımlanır. <br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">x Üstünde</span>: Yüzey sütununda, birinci yüzeyin ikinci yüzeyin üstünde kalan <span style="font-style: italic;">sadece</span> o kısmından oluşan bir sonuç yüzeyi tanımlanır. <br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ufuk Çizgisi</span>: a (<span style="font-weight: bold;">Yüzey1</span>) yüzeyini, ufuk çizgisi olarak kullanılan b (<span style="font-weight: bold;">Yüzey2</span>) yüzeyine karşı keser ve a'nın b'nin altında kalan uçlarını kaldırır (Tünel takibi için oluşturulan <a href="EDM_editor_perfiles.html#tablas_cubic">metraj tablolarının</a> ufuk çizgisi fonksiyonuyla aynı). Aşağıda <a href="OL_gut_recintos.html#recintos">alanların tanımı</a> bölümünde bir örnek görelim.<br />
+        </li>
+      </ul>
+      <br />
+
+
+      <span class="Parrafo">
+<span style="font-weight: bold;">Alt Kenar</span> ve <span style="font-weight: bold;">Üst Kenar</span> fonksiyonları, enkesitin alt ve üst kenarlarını tanımlamak için kullanılır.<br />
+      <br />
+Operasyonlar için: +Alçak, +Yüksek, xAltında, xÜstünde, Ufuk Çizgisi, Kırp, Tamamla, Alt Kenar, Üst Kenar durumlarında, eğer Yüzey sütununda tanımlanan yüzey için verilen tip zaten mevcutsa, o zaman yeni bir tane oluşturmak yerine bu yüzey değiştirilir. Bu, <a href="EDM_editor_perfiles.html#recortar">Enkesit Düzenleyici</a>'deki Tamamla, Kırp, +Yüksek ve +Alçak operasyonlarıyla aynı şekilde gerçekleşir.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="recintos">Alanların Tanımlanması</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img style="width: 280px; height: 93px; margin-left: 7px;" alt="" src="Imagenes/gut_def_recintos.png" align="right" /><span class="Parrafo">Buradan, enkesit çizgilerinden veya önceki alt menüde oluşturulanlardan alanlar tanımlanır. Bunun için taramalı çizgi tipleri (örnektekiler gibi) kullanılır ve mod aşağıdaki seçenekler arasından belirtilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Taban+Tavan</span>: Alan, iki yüzey (taban ve tavan) ile tanımlanır ve belirtilen çizgi tipiyle doldurulur.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Kapalı</span>: Bu durumda, belirtilen çizgi tipiyle doldurulacak kapalı bir yüzey (örneğin, tünel) belirtilir.</span></li>
+      </ul></span>
+      <ul>
+        <li><span style="font-weight: bold;">İç</span>: a (<span style="font-weight: bold;">Taban</span>) yüzeyinin b (<span style="font-weight: bold;">Tavan</span>) yüzeyinin içinde bıraktığı kısımdan oluşan bir alan oluşturur (Tünel takibi için oluşturulan metraj tablolarının I moduyla aynı).</li>
+      </ul><span style="font-weight: bold;">Sanat Yapıları</span> kutucuğunun işaretini kaldırarak, tanımlanan alanın sanat yapısı kesitlerinde oluşturulmamasını sağlayabiliriz.<br />
+      <br />
+<span style="font-weight: bold;">Branş Yüzeyleri</span> kutucuğunu seçerek, <span style="font-style: italic;">Branş Ekle</span> ile oluşturulan güzergahları içeren bir dosyanın branş yüzeylerinde alan tanımını kullanabiliriz.<br />
+      <br />
+
+Örnek: Bir tünel takip enkesitinde İÇERİDE metrajını renklendirmek istiyoruz:<br />
+      <br />
+      <div style="margin-left: 40px;">Önceki bölümde görülen Ufuk Çizgisi aracını kullanarak iki yüzey (1001 ve 1002) tanımlıyorum.<br />
+      <br />
+      </div>
+      <div style="text-align: center;"><img style="width: 300px; height: 112px;" alt="" src="Imagenes/gut_horiz_ejem.png" /><br />
+      </div>
+      <br />
+      <div style="margin-left: 40px;">İÇERİDE alanını taramalı bir çizgi tipiyle (örneğin L74) tanımlıyorum.<br />
+      </div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 337px; height: 112px;" alt="" src="Imagenes/gut_inter_ejem.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 409px; height: 357px;" alt="" src="Imagenes/gut_dentro.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+
+      <span class="Parrafo">
+      
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></td>
+    </tr><tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body></html>

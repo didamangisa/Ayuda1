@@ -1,0 +1,757 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Otomatik Dönel Kavşak Bağlantıları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>OTOMATİK DÖNEL KAVŞAK BAĞLANTILARI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"> <br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#fundamentos_geometricos">Geometrik Esaslar</a><br />
+      <a href="#previsualizacion">Sonuçların Önizlemesi</a><br />
+      <a href="#modalidades">Çalışma Modları</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#solo_param">Mod </a><span style="font-style: italic;"><a href="#solo_param">Sadece Parametreler</a><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#ejemplo">Örnek</a><span style="font-style: italic;"><br />
+      <span style="font-style: italic;" /></span></div>
+      <a href="#un_solo_radio">Mod <span style="font-style: italic;">Tek Yarıçap</span></a><br />
+      <a href="OL_entronque_glorieta.html#un_radio_anchos_ent_sal">Mod
+      <span style="font-style: italic;">Tek Yarıçap + Giriş ve Çıkış Genişlikleri</span></a><br />
+      <a href="#ejes">Mod <span style="font-style: italic;">Eksenler</span></a><br />
+      <a href="#por_numero">Mod <span style="font-style: italic;">Numaraya Göre Eksen</span></a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#otros_datos">Diğer Veriler ve Seçenekler</a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#cambio_geo">Ada Alanında Geometri Değişikliği</a><br /><a href="#Isleta_con_bordillo">Bordürlü Ada</a><br />
+      <a href="#Transiciones">Geçişler</a><br />
+      </div>
+
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+      <span class="Parrafo"> </span><img src="Imagenes/acceso_glorietas.png" style="width: 121px; height: 87px;" alt="" align="right" hspace="4" /><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, bir eksenin dönel kavşakla kesişimini BOYKESİT &#8594; <span style="font-weight: bold;">YARDIMCI ARAÇLAR</span>
+&#8594; <span style="font-weight: bold;">DÖNEL KAVŞAKLAR</span> menüsünden otomatik olarak hesaplama imkanı sunar.<br />
+      <br />
+Bu
+seçenek seçildiğinde, bir eksenin dönel kavşakla bağlantısını, biri dönel kavşağa giriş diğeri ise çıkış için olmak üzere iki yeni eksene (kavşak koluna) ayrılmasıyla gerçekleştirmek için bir dizi parametrenin tanımlanmasına olanak tanıyan bir diyalog kutusu açılır:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/modelo_ent_glorieta.png" style="width: 509px; height: 331px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Bu algoritmanın uygulanması aşağıdaki <span style="font-weight: bold;">hususları</span> içerir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Rg</span> yarıçaplı dönel kavşak ekseni, iç veya dış kenarından tanımlanmış olmalıdır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dönel kavşak bağlantı verileri, kavşağa bağlanan veya ayrılan her eksen için doldurulmalı ve birbiriyle tutarlı olmalıdır, aksi takdirde geometrik bir çözüm bulunamayabilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dönel kavşağa bağlanan eksenler hem tek platformlu (banketsiz) hem de bölünmüş yol olabileceği gibi, aliyman (düz) veya kurplu da olabilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dönel kavşağa bağlanan eksenin kırmızı kotu (profili), dönel kavşak için tanımlananla uyumlu olmalıdır. Bu amaçla, DİĞER EKSENLER seçeneği ve dönel kavşağa bağlanan/ayrılan eksenin kırmızı kot tasarımı sırasında bunlara yapılan <a href="OL_rasantes_enganches.html">özel bağlantı</a> oldukça faydalıdır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eğer eksen, dönel kavşağın diğer ucundan devam ediyorsa, bu bağlantıyı gerçekleştirmek için başka bir parametre seti tanımlanmış olabilir. Bu nedenle her kesişim için, eksenin dönel kavşakla kesiştiği yaklaşık kilometre belirtilir.</span></li>
+      </ul>
+      <ul>
+        <li>Dönel kavşak bağlantılarının hesaplanmasıyla ilgili olarak, <a href="OL_cruces.html#calculo">kavşakların hesaplanması</a> ile ilgili tüm hususlar dikkate alınmalıdır, çünkü işleyişleri benzerdir.</li>
+        <li>
+
+          <p class="" parrafo="" style="margin-left: 0cm;">Kavşak kollarının kübajları da, konvansiyonel kavşaklarda olduğu gibi listelerde ayrıntılı olarak gösterilir. Dolayısıyla, görülebileceği gibi, konvansiyonel kavşaklar için yapılan hemen hemen tüm değerlendirmeler burada da geçerlidir. Bu otomatik kavşakların tüm bilgilerinin <span class="Archivo">\CRZ</span> klasöründe saklandığı da buna dahildir.</p></li>
+        <li><span class="Parrafo">Dönel kavşak olarak kullanılan eksen, <span style="font-weight: bold;">herhangi bir açık eksen</span> olabilir. Bu durumda, kavşak kollarının hangi tarafta olduğunu belirlemek için diyalog kutusundaki <span style="font-weight: bold;">KM</span> ile tanımlanan noktanın konumu kullanılır.&nbsp;</span></li>
+
+      </ul><ul><li>Eğer
+kavşak kolunun çıktığı eksende Yarma veya Dolguda Alternatif Tip Kesit tanımlanmışsa, bu Tip Kesit kavşak kolu ekseni tarafından miras alınır.</li></ul><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kavşak
+kolunu tanımlayan eksende, kavşak kolu bölgesinde başlayan veya biten bir sanat yapısı tanımlanmışsa, artık kavşak kolu eksenlerinde iki hesap aralığı görünür: biri sanat yapısı bölgesinde, diğeri ise dolgu bölgesinde, her biri ilgili Tip Kesit ile birlikte.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><ul><li>Kavşak
+kollarının hesaplanmasından önce tanımlanmış olan sınır hatları, sınır hattında tanımlanan tarafa göre kesilir. Kavşak kolu ekseninin ana eksene göre ters yönde olması durumunda, kesme işleminin ters taraftan yapılacağı dikkate alınır. (DA ve DP kolları aynı tarafta, IA ve IP kolları ise ters tarafta).</li></ul>
+
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="fundamentos_geometricos">Geometrik
+Esaslar</a></span><br />
+      <span class="Parrafo"><br />
+Yukarıda belirtilen hususlar dikkate alındıktan ve parametreler doğru bir şekilde ayarlandıktan
+sonra, program aşağıdaki şekilde çalışır:<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 691px; height: 1158px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          
+          <tr>
+            <td style="vertical-align: top; text-align: right;">1) <br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Her
+iki eksen arasındaki kesişim noktası (<span style="font-weight: bold;">nokta 1</span>) bulunduktan sonra, dönel kavşağa
+bu noktadan teğet olan bir doğru <span style="font-weight: bold;">A</span> mesafesine
+kadar hesaplanır ve <span style="font-weight: bold;">nokta 2</span> elde edilir.
+<span style="font-weight: bold;">A</span> değerinin
+amacı, bu nedenle, <span style="font-style: italic;">temel üçgenin</span> veya <span style="font-style: italic;">referans üçgeninin</span> <span style="font-weight: bold;">B</span> tabanını merkezden kaçırmaktır.<br />
+            <br />
+            </span></td>
+            <td colspan="1" rowspan="3" style="vertical-align: top;"><img src="Imagenes/triang_base_ent_glorieta.png" style="width: 291px; height: 259px;" alt="" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Temel
+veya referans üçgeninin elde edilmesi</span><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">2)<br />
+            </div>
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo"><span style="font-weight: bold;">Nokta 2</span>'den ve dönel kavşağa
+teğet aynı doğru üzerinde, <span style="font-weight: bold;">B</span> mesafesinde <span style="font-weight: bold;">nokta 3</span> elde edilir.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">3)<br />
+            </div>
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">
+<span style="font-weight: bold;">Nokta 1</span>'den dönel kavşağa giren/çıkan eksene bir
+teğet çizilir ve bu teğete paralel, <span style="font-weight: bold;">H</span>
+uzunluğunda (<span style="font-style: italic;">temel üçgenin</span> yüksekliği)
+ve <span style="font-weight: bold;">d</span> mesafesinde bir çizgi
+çizilerek <span style="font-weight: bold;">nokta 4</span> elde edilir.
+<span style="font-weight: bold;">d</span> parametresi, bu nedenle, <span style="font-style: italic;">temel
+üçgenin</span> tepe noktasını merkezden kaçırmak için kullanılır.<br />
+            <br />
+Üçgenin tabanını ve tepe noktasını aynı ölçüde merkezden kaçırmak isteniyorsa, </span><img src="Imagenes/rel_triang_base.png" style="width: 52px; height: 30px; margin-bottom: 7px;" alt="" align="middle" /><span class="Parrafo"> ilişkisi sağlanmalıdır, ki bu programın varsayılan olarak kabul ettiği değerdir.<br />
+            </span><span class="Parrafo">
+<span style="font-weight: bold;">A</span> ve <span style="font-weight: bold;">d</span>
+parametreleri, araçların dönel kavşaktan çıkış yörüngesini kolaylaştırmayı hedeflerken, kavşağa girenlerin hızlarını azaltarak girmelerini sağlamayı amaçlar.</span><br />
+            <span class="Parrafo"><br />
+            </span></td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 60px; text-align: justify;">
+            <div style="margin-left: 40px;">4)</div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo"><span style="font-weight: bold;">Nokta 5</span>,
+dönel kavşağa teğet doğru ile dönel kavşağa giriş/çıkış eksenine teğet olan doğrunun paraleli arasındaki kesişim noktasıdır ve <span style="font-style: italic;">referans
+üçgeninin</span> tabanının merkezine karşılık gelir.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px;">
+            <div style="margin-left: 40px;">5)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo">Önceki noktadan başlayarak, <span style="font-weight: bold;">B</span> taban ve <span style="font-weight: bold;">H</span> yükseklik
+boyutlarına göre temel üçgen hesaplanır (kırmızı ile gösterilmiştir).<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px;">
+            <div style="margin-left: 40px;">6)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo">Dönel kavşağın giriş (<span style="font-weight: bold;">Ae</span>)
+ve çıkış (<span style="font-weight: bold;">As</span>) genişliklerine bağlı olarak referans üçgenine paralel çizgiler çizilir.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px; text-align: justify;">
+            <div style="margin-left: 40px;">7)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo">Referans
+üçgeninin kenarları, <span style="font-weight: bold;">Rr</span> yarıçaplı bir yay kullanılarak eksenle birleştirilir.
+Benzer şekilde, bir önceki adımda hesaplanan paraleller de eksenin platform kenarlarıyla birleştirilir. Program bu
+yarıçapları dönel kavşağa giriş (<span style="font-weight: bold;">Rre</span>)
+veya çıkış (<span style="font-weight: bold;">Rrs</span>) olmasına göre ayırt eder.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px;">
+            <div style="margin-left: 40px;">8)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo">Aynı şekilde, referans
+üçgenine paraleller, dönel kavşağa giriş için <span style="font-weight: bold;">Re</span> yarıçaplı
+bir yay ve dönel kavşaktan çıkış için <span style="font-weight: bold;">Rs</span> yarıçaplı
+başka bir yay ile dönel kavşakla birleştirilir.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">9)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; text-align: justify;"><span class="Parrafo">Böylece,
+plan üzerinde kavşak kolları, dış kenarlarından tanımlanmış iki eksen olarak elde edilir.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">10)<br />
+            </div>
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Program, her bir kavşak kolunun dönel kavşak ekseniyle
+kesişim noktasındaki deveri okur ve bunu ilgili kavşak koluna (kırmızı oklar), şekilde gösterilen
+aralıkta sabit olarak uygular. Böylece program, <span style="font-weight: bold;">ce/cs</span> parametresini kullanarak
+(bu, dönel kavşak ile eksen arasındaki kırmızı kot geçişini gerçekleştirmek için bir dağıtım katsayısıdır) yeşil renkte çizilen
+kırmızı kot parçasını türetebilir. 0.1 ile 0.9 arasında değerler kabul edilir, varsayılan
+olarak bu değerler 0.5'tir. Geçiş iki parabol ile yapıldığında, 0.1 katsayısı, dönel
+kavşak tarafındaki parabolün mevcut uzunluğun onda birini, diğer parabolün ise
+kalan alanı kapladığı anlamına gelir.<br />
+            <br />
+Giriş ve çıkış eksenlerinin iç banket deveri, platform deverinin devamı şeklinde, dönel
+kavşak alanına kadar korunur.<br />
+            </span></td>
+            <td style="vertical-align: top; text-align: center;"><span style="font-style: italic;"><img src="Imagenes/obt_peraltes_ent_glorieta.png" style="width: 222px; height: 165px;" alt="" /><br />
+            <br />
+            </span><span class="Info">Dönel kavşak ve kavşak kolu arasında kırmızı kot ve deverlerin türetilmesi</span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">11)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; text-align: justify;"><span class="Parrafo">Ardından,
+kavşak kolunun geri kalan kırmızı kotu, eksenden gelen kot ile
+önceki adımda hesaplanan parça birleştirilerek ve hesaplanan geometrik çözüme
+göre basit veya çift bir içbükey/dışbükey düşey kurp ile türetilir. Bu
+aralıkta, ayrıca, eksenden bir önceki adımda elde edilen devere bir dever
+geçişi yapar.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">12)<br /><br /><br /><br />13)<br /><br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top;"><span class="Parrafo">Son olarak, program modelden
+anlaşılacağı üzere <span style="font-weight: bold;">ae</span>/<span style="font-weight: bold;">as</span>, <span style="font-weight: bold;">RTe/RTs</span> ve <span style="font-weight: bold;">r/rv</span> değerlerinden
+yola çıkarak yönlendirme adasının geometrisini türetir. <span style="font-weight: bold;">ag</span> değeri
+kullanıcı tarafından girilmez ve dönel kavşağın dış banketinin
+genişliğine karşılık gelir.<br /><br /></span>Dönel kavşak kenarına, kavşak kolu ekseniyle teğet noktasında belirli mesafeler (<span style="font-weight: bold;">dge</span> ve <span style="font-weight: bold;">dgs</span>) tanımlamak mümkündür. Yani, kavşak kolu ekseni, dönel kavşağın 2 nolu koduna (platform dış kenarı) tanımlanan mesafedeki bir paralele teğet olarak başlar/biter.</td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold;">Kırmızı kot dağıtım katsayısı ce/cs</span>:
+-1 değeriyle, geçiş dönel kavşakla teğet noktasında başlar. Bu
+durumda, dönel kavşağın deveri, iç kenarın dönel kavşakla kesişiminden
+dış kenarın (kavşak kolu ekseni) dönel kavşakla teğet olduğu noktaya kadar
+olan kavşak kolu bölgesinde artık korunmaz. Kırmızı kot
+geçişi, kavşak kolu ekseninin dönel kavşakla teğet olduğu noktadan
+itibaren başlar ve belirtilen bölgedeki tüm deverler yeniden hesaplanır.<br />
+      <br />
+Kavşak kollarının kırpılması: Bir Dönel Kavşağın kavşak kolu eksenleri, <a href="OL_truncar_por_codigo.html">koda göre kırpma</a> (sol taraf) bilgisi ile oluşturulur, böylece bu eksenler normal eksenler gibi kopyalanabilir ve ek sınır hatları gerektirmez.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="previsualizacion">Sonuçların
+Önizlemesi</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu veriler tanımlandıktan sonra,
+<span style="font-weight: bold;">[Eksenleri Hesapla]</span> düğmesine basarak eksenlerin
+geometrik çözümünü ve <span style="font-style: italic;">referans üçgenini</span> önizlemek
+mümkündür. Bu, projeyi hesaplamaya gerek kalmadan
+mevcut eksen için çözümleri denemeye
+olanak tanır. Düğmeye basıldığında ayrıca, İspanyol 3.1-IC Mart 2015 normunda belirtilen dönel kavşağa yaklaşım açısı da gösterilir.</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ent_glorieta_previsual.png" style="width: 349px; height: 342px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Ayrıca <span style="font-weight: bold; font-style: italic;">Otomatik</span> kutucuğu işaretlenirse, geometrisini etkileyen parametrelerden herhangi biri değiştirildiğinde eksenler otomatik olarak yeniden hesaplanır.<br />
+      <br />
+Dönel kavşaklı bir proje hesaplandığında, çalışma klasöründe her bir dönel kavşak ekseni için, bir veya daha fazla eksenin bağlandığı bir Isglo_n.toc dosyası oluşturulur. Bu dosya, dönel kavşağa bağlanan her eksen için 4 nokta içerir: <br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Giriş kavşak kolunun iç kenarının, dönel kavşağa bağlanan eksenden ayrıldığı nokta.</span></li>
+        <li><span class="Parrafo">Çıkış kavşak kolunun iç kenarının, dönel kavşağa bağlanan eksenden ayrıldığı nokta.</span></li>
+        <li><span class="Parrafo">Giriş kavşak kolunun iç kenarının, dönel kavşağı kestiği nokta.</span></li>
+        <li><span class="Parrafo">Çıkış kavşak kolunun iç kenarının, dönel kavşağı kestiği nokta.</span></li>
+      </ul>
+Bu dosyalar, dönel kavşağın aplikasyon noktalarından oluşan bir pafta oluşturmak için Araçlar, Kotlar, NXYZ Koordinat Tablosu seçeneği tarafından kullanılabilir.<br />
+      <br />
+crz alt klasöründe ayrıca, projedeki tüm dönel kavşakların bu noktalarını içeren bir glo.top dosyası oluşturulur. <br />
+      <br />
+<span style="font-weight: bold;">Eksenleri Hesapla</span> aracını kullanmak için Proje'nin <span style="font-weight: bold;">ENL</span> kutucuğunu işaretlemek gerekli değildir.<br />
+ <span class="Parrafo">
+      </span><br />
+      <span class="Titulo_2"><a name="modalidades">Çalışma
+Modları</a></span><br />
+      <span class="Parrafo"><br />
+Dönel kavşak bağlantısını tanımlamak için dört farklı mod bulunmaktadır: <br />
+      </span>
+      <ul>
+        <li><a href="#solo_param">Mod <span style="font-style: italic;">Sadece Parametreler</span></a></li>
+        <li><a href="#un_solo_radio">Mod <span style="font-style: italic;">Tek Yarıçap</span></a></li>
+        <li><a href="#un_radio_anchos_ent_sal">Mod <span style="font-style: italic;">Tek Yarıçap + Giriş ve Çıkış Genişlikleri</span></a></li>
+        <li><a href="#ejes">Mod <span style="font-style: italic;">Eksenler</span></a></li>
+      </ul>
+      <span class="Parrafo"><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="solo_param">Mod Sadece Parametreler</a></span><br />
+      <span class="Parrafo"><br />
+Temel olarak, kavşak kollarının giriş ve çıkış yarıçapları da dahil olmak üzere gerekli tüm geometrik parametrelerin tanımlanmasından oluşur.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_param.png" style="width: 575px; height: 246px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+</span>Bu modda, <a href="#ejes"><span style="font-style: italic;">Eksenler</span> modu</a>nda olduğu gibi, <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">giriş ve çıkış eksenleri,
+ana eksenin kırmızı kotunu ve deverini, iç kenarlarının ayrıldığı noktaya kadar korur. Bu mesafe: </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">giriş ekseninin iç kenarından <span style="font-weight: bold;">ae</span>+<span style="font-weight: bold;">rv</span> ve çıkış ekseninin iç kenarından <span style="font-weight: bold;">as</span>+<span style="font-weight: bold;">rv</span>
+kadar (yani, iç banket kenarına rv mesafesinde paralel iki çizginin kesişimine kadar).</span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <br />
+      <span class="Parrafo"><br />
+      <br />
+      </span><span style="font-style: italic;"><a name="ejemplo">Örnek</a></span><br />
+      <span class="Parrafo"><br />
+Daha fazla netlik için aşağıda bir dönel kavşak ve onu boydan boya kesen iki ek eksen içeren bir örnek geliştirilmiştir:<br />
+      </span>
+      <ol>
+        <li><span class="Parrafo">İlk olarak, eksenler hazırlanır. Bu durumda, dairesel bir dönel kavşak (tip 5 aliyman) ve tek bir sabit aliymandan oluşan iki eksen söz konusudur; biri düz, diğeri -750 yarıçaplı:</span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_ent_glorieta_1.png" style="width: 434px; height: 340px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"> </span>
+      <ol start="2">
+        <li><img src="Imagenes/ejemplo_ent_glorieta_2.png" style="width: 290px; height: 209px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Kırmızı kotlara gelince, dönel kavşağınki KIRMIZI KOT araçlarında bulunan <a href="OL_rasantes_glorieta_catenaria.html#glorieta"><span style="font-weight: bold;">DÖNEL KAVŞAK</span></a>
+seçeneği yardımıyla oluşturulabilir ve diğer iki eksen, DİĞER EKSENLER (dönel kavşakla kesişimi görmek için) yardımıyla ve dönel kavşağın izinden (veya en azından çok yakınından) geçirilerek tasarlanacaktır:</span></li>
+      </ol>
+      <span class="Parrafo">
+      <ol start="3">
+        <li><span class="Parrafo">Enkesit elemanları verilir (bu örnekte, dönel kavşak dış kenarından tanımlanmıştır, bu nedenle sağ tarafa sıfır genişlik verilmiştir).</span></li>
+      </ol>
+      <span class="Parrafo">
+      <ol start="4">
+        <li><span class="Parrafo">Her eksen için, BOYKESİT &#8594;
+YARDIMCI ARAÇLAR &#8594; <span style="font-weight: bold;">[DÖNEL KAVŞAKLAR]</span> seçeneği seçildiğinde görünen diyalog kutusundaki veriler doldurulur.
+Örneğin, ikinci eksen için aşağıdaki veriler girilmiştir:</span></li>
+      </ol>
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_param.png" style="width: 599px; height: 239px;" alt="" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_param_2.png" style="width: 600px; height: 239px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span>
+      <ol start="5">
+        <li><span class="Parrafo">Sonucu elde etmek için, her zamanki gibi, PROJE sekmesine gidilmeli ve orada, <span style="font-weight: bold; font-style: italic;">Kavşaklar</span> kutucuğu ve ilgili hesaplama düğmeleri etkinleştirilmelidir:</span></li>
+      </ol>
+      </span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ent_glorieta_proyecto.png" style="width: 600px; height: 443px;" alt="" /><br />
+      <br />
+</span></span></span>
+      <div style="text-align: left;"><span class="Parrafo">Kavşak kolları
+alanında, ilgili eksenlerde C (hendekler), D (yarma), T
+(dolgu) ve/veya V (sabit platform vektörleri,...) alt aralıklarına göre tip kesit
+tanımlanmasına izin verilir. Ancak genel aralıklandırma kullanıldığında olduğu gibi,
+kavşak kollarının teğet noktaları tip kesit geçiş bölgelerinde olmamalıdır.<br />
+<span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span>
+      <ol start="6">
+        <li><span class="Parrafo">Elde edilen sonuç, aşağıda gösterilene benzer olmalıdır:</span></li>
+      </ol>
+      <span class="Parrafo">
+      <table style="text-align: left; height: 263px; width: 689px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 381px; text-align: right;"><img src="Imagenes/ejemplo_ent_glorieta_3.png" style="width: 336px; height: 259px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 304px; text-align: right;"><img src="Imagenes/ejemplo_ent_glorieta_4.png" style="width: 292px; height: 189px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span>
+      <ol start="7">
+        <li><img src="Imagenes/ent_glorieta_acuerdos.png" style="width: 136px; height: 172px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Konvansiyonel <a href="OL_cruces.html#vol">kavşaklarda</a> olduğu gibi,
+kavşak kolu seviyesinde çalışmak mümkündür
+(konvansiyonel kollardan ayırmak için, kol numarasına 1000 ekler).</span></li>
+      </ol>
+      <span class="Parrafo"> </span>
+      <ol start="8">
+        <li><span class="Parrafo">Böylece, kavşak kollarından biri yüklenip
+kırmızı kotu görüntülendiğinde, dönel kavşağa yakın bölgede
+türetilen parça parça bölüm ve bunun eksenin kırmızı kotuyla
+çift içbükey-dışbükey bir düşey kurp ile nasıl birleştiği gözlemlenebilir:</span></li>
+      </ol>
+      </span></span>
+      <div style="margin-left: 40px; text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ejemplo_ent_glorieta_5.png" style="width: 251px; height: 298px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <ol start="9">
+        <li><span class="Parrafo">Kübaj listeleri, ayrıştırılmış kavşak kolları ile birlikte, <a href="OL_cruces.html#cruces">kavşaklar</a> durumuna benzer:</span></li>
+      </ol></span></span></span></span></span>
+      <div style="margin-left: 40px;">Kavşak ve dönel kavşak kolları içeren projelerde, cvol.res,
+cv.res ve cv.xlsx listeleri her bir kavşak kolunun adıyla oluşturulur, örneğin:<br />
+      <ul>
+        <li>cv_3-2(1004)_DP.xlsx : Eksen 3'ün 2 nolu eksenle olan, Eksen 3'ün 4. Dönel Kavşak verisinde tanımlanan Sağ_Arka Dönel Kavşak Kolu.</li>
+        <li>cvol_5-7(2)_DA.res : Eksen 5'in 7 nolu eksenle olan, Eksen 5'in 2. Kavşak verisinde tanımlanan Sağ_Ön kavşak kolu.</li>
+      </ul>
+cvol.res ve cv.res dosyaları, eksenler hesaplandığında ve yeniden kübaj yapıldığında oluşturulur; cv.xlsx için ise Listeler'de seçeneğin etkinleştirilmiş olması gerekir.<br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">PROJE
+: Otomatik dönel kavşak bağlantıları
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+ EKSEN:&nbsp;&nbsp; 2: Eksen 2</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"> </span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+====================================================</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * * KAVŞAK KOLLARININ METRAJLARI * * *</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * * Ortalama alanlar yöntemine göre kübaj&nbsp; * * *</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+====================================================</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"> </span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+KM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EKSEN
+KOL&nbsp;&nbsp;&nbsp;&nbsp; MALZEME&nbsp;&nbsp;&nbsp;&nbsp; KISMİ HACİM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MALZEME&nbsp;&nbsp;&nbsp;&nbsp; KISMİ HACİM</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ------------- --- --
+--------------- ------------ --------------- ------------</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.000&nbsp;&nbsp; 1
+DA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ÜSTYAPI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ZAYIF ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53.27</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+YARMA_ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+125.17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BİTKİSEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 43.54</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DOLGU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.67</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.000&nbsp;&nbsp; 1
+IA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ÜSTYAPI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.37&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ZAYIF ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 108.27</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+YARMA_ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+642.55&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BİTKİSEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 88.59</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.000&nbsp;&nbsp; 1
+DP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ÜSTYAPI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+168.94&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ZAYIF ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 139.96</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BİTKİSEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+111.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DOLGU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1118.90</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.000&nbsp;&nbsp; 1
+IP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ÜSTYAPI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+99.45&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ZAYIF ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 67.85</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+YARMA_ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BİTKİSEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 54.33<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+<table style="text-align: left; width: 650px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr>
+
+            <td style="vertical-align: middle; text-align: left; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+
+            </td>
+
+            <td class="Info" style="vertical-align: middle; width: 637px; text-align: justify;"><a href="OL_listados_mediciones.html#list_conjunto">Toprak işleri toplu listeleri</a> ve <a href="OL_listados_mediciones.html#list_firmes_conjunto">üstyapı toplu listeleri</a>, dönel kavşak bağlantılarını dikkate alır.<br />
+
+      </td>
+
+          </tr>
+
+        
+  </tbody>
+      
+</table>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      Bu
+tür kavşaklarda, tanımlandığı eksen (dönel
+kavşağı geçen eksen) sadece bir tarafında genişliğe sahipse, o zaman sadece
+dönel kavşağın giriş veya çıkış kolu oluşturulur ve
+yönlendirme adası oluşturulmaz.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/glorieta_unancho.png" style="width: 444px; height: 378px;" alt="" /></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="un_solo_radio">Mod
+Tek Yarıçap</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu mod, <span style="font-style: italic;">Sadece
+Parametreler</span> moduna benzer, ancak daha basittir, çünkü dönel
+kavşağın giriş ve çıkış kollarını tek bir yarıçapla tanımlamaya olanak tanır (<span style="font-weight: bold;">Re</span> giriş yarıçapını ve <span style="font-weight: bold;">Rs</span> çıkış yarıçapını tanımlar):<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_1_radio.png" style="width: 574px; height: 229px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="un_radio_anchos_ent_sal">Mod Tek Yarıçap + Giriş ve
+Çıkış Genişlikleri</a></span><br />
+      <br />
+Bu mod, <a href="#un_solo_radio"><span style="font-style: italic;">Tek Yarıçap</span> modu</a> gibidir,
+farkı ise kavşak kolu eksenlerinin genişliğinin
+ana eksenin platform genişliğinden başlayarak dönel
+kavşakla birleşimde giriş (<span style="font-weight: bold;">Ae</span>) veya
+çıkış (<span style="font-weight: bold;">As</span>) genişliğine ulaşana kadar
+değişmesidir:<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_ejes_Aes.png" style="width: 574px; height: 229px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+      <br />
+      </span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="ejes">Mod Eksenler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu mod, kolları plandaki eksenler ve her birinin genişliğini tanımlayan
+çizgiler aracılığıyla tanımlamaya olanak tanır. Plan eksenleri,
+her eksen için bağımsız bir&nbsp;<span class="Archivo">.cej</span>
+dosyasında tanımlanmalıdır:<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_ejes.png" style="width: 574px; height: 229px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Aşağıdaki hususlar dikkate alınmalıdır:<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Giriş
+ekseni, dönel kavşağa bağlanan veya ayrılan ana
+eksenin platform kenarına teğet olarak başlamalı ve dönel
+kavşağın platform kenarına teğet olarak bitmelidir.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Çıkış
+ekseni, dönel kavşağın platform kenarına teğet olarak
+başlamalı ve dönel kavşağa bağlanan veya ayrılan eksenin
+platform kenarına teğet olarak bitmelidir.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Genişlikleri
+tanımlayan çizgiler, adanın yanındaki iç kenarları belirler
+ve bağlanan eksenin iki platformunun ayrılmaya başladığı noktadan, bu
+kenarın dönel kavşağın platform kenarıyla kesişimine kadar uzanmalıdır.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kavşak
+kolu eksenleri, ana eksenin kırmızı kotunu ve deverini, iç kenarlarının
+ayrıldığı noktaya (genişlik çizgisinin başlangıcı) kadar korur.</span></span></span></span></span></li>
+      </ul>
+      </span></span></span>
+      <ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#solo_param"><span style="font-style: italic;">Sadece Parametreler</span> modu</a>nda olduğu gibi, giriş ve çıkış eksenleri
+ana eksenin kırmızı kotunu ve deverini, iç kenarlarının ayrıldığı noktaya kadar korur. Bu mesafe: </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">giriş ekseninin iç kenarından <span style="font-weight: bold;">ae</span>+<span style="font-weight: bold;">rv</span> ve çıkış ekseninin iç kenarından <span style="font-weight: bold;">as</span>+<span style="font-weight: bold;">rv</span>
+kadar (yani, iç banket kenarına rv mesafesinde paralel iki çizginin kesişimine kadar).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="por_numero">Mod Numaraya Göre Eksen</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<a href="#ejes"><span style="font-style: italic;">Eksenler</span> modu</a>na benzer, ancak &nbsp;<span class="Archivo">.cej</span> dosyalarının adlarını vermek yerine, kavşak kolu eksenleri numaralarıyla tanımlanır, bu da bu eksenlerin projenin&nbsp;<span class="Archivo">.cej</span> dosyasına ait olduğu anlamına gelir. Bu eksenler (<a href="OL_planta_conexiones.html#etiquetas">etiketler</a> veya <a href="OL_planta_conexiones.html#conectores">bağlayıcılar</a> aracılığıyla) referanslandırılabilir ve <a href="OL_proyecto.html">proje tablosunda</a> hiçbir şeyle ilişkilendirilmemelidir (<span class="Archivo">.vol</span>,&nbsp;<span class="Archivo">.per</span>,...).<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_eje_num.png" style="width: 599px; height: 239px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="otros_datos">Diğer Veriler ve Seçenekler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir dizi parametre <span style="font-weight: bold;">DİĞER VERİLER</span> sekmesinde ayarlanabilir:<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/glo_otros.png" style="width: 612px; height: 260px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      </div>
+      <ul>
+        <li><a href="OL_cruces.html#equidistancia">Enkesit Aralığı</a>: <span style="font-weight: bold;">KAVŞAKLAR</span> aracındaki gibi çalışır.</li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a href="OL_cruces.html#margen"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Pay</span></span></span></span></span></span></span></span></span></span></span></span></span></span></a>: <span style="font-weight: bold;">KAVŞAKLAR</span> aracındaki gibi çalışır,
+bir detay hariç: bu değişkene 25 m'den büyük bir değer girersek, kavşak kolu ekseninin sol şevi ile
+dönel kavşağın şevi arasındaki sınır hattı, şevlerin gerçek kesişimiyle
+belirlenir (kesişimdeki platform kenarlarının açıortayı aracılığıyla
+yapılmak yerine).<br />
+</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a href="OL_cruces.html#estirar"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Uzat</span></span></span></span></span></span></span></span></span></span></span></span></span></span></a>: <span style="font-weight: bold;">KAVŞAKLAR</span> aracındaki gibi çalışır.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a href="OL_cruces.html#vol"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">.vol yeniden hesapla/koru</span></span></span></span></span></span></span></span></span></span></span></span></span></span></a>: <span style="font-weight: bold;">KAVŞAKLAR</span> aracındaki gibi çalışır:</span></span></span></span></li>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">HAYIR</span> : Kavşak kolunun .vol dosyasına dokunulmaz (Mevcut değilse hariç).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        </ul>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">EVET</span> : Kavşak kolunun .vol dosyası tamamen yeniden oluşturulur.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        </ul>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">K.Kotsuz</span> : Eğer kavşak kolu zaten bir .vol dosyasına sahipse, kırmızı kota dokunulmaz ve geri kalanı (Deverler,...) yeniden oluşturulur.<br />
+            </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kullanıcının kavşak kolunun &nbsp;<span class="Archivo">.vol</span> dosyasında tanımladığı veya değiştirdiği kırmızı kotu sabitlemek için vol: <span style="font-weight: bold;">K.Kotsuz</span>
+seçeneğini kullandığımızda, kavşak kollarının deverlerinin hesaplanması
+yeni kırmızı kota uyarlanacak şekilde düzeltilir. Ayrıca, kavşak kolunun
+&nbsp;<span class="Archivo">.vol</span> dosyasında, vol: <span style="font-weight: bold;">Evet</span> seçeneğiyle kullanılacak olan
+teorik kırmızı kot olan yardımcı kırmızı kotun konumu da saklanır.</span></span></span></span></span></span></span></span></li>
+        </ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kırmızı kotu ayarla</span>:
+dönel kavşakla ve ana eksenle birleşimde oluşan poligon
+kırmızı kot bölgelerini, izin verilen maksimum kot farkı toleransı (varsayılan
+1 cm) verilerek parabollerle ayarlamaya olanak tanır.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+          <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Minimum dever 1</span>:
+teğet noktasında dönel kavşaktan kopyalanan minimum dever.
+Soldaki kutucuk işaretlenerek, bu
+değerler bu noktalarda zorunlu dever değerleri olarak kullanılır, arada
+doğrusal bir geçiş yapılır ve kırmızı kot, bu deverlerle
+türetilen kotlarla hesaplanır.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+          <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Minimum dever 2</span>: iç kenarın dönel kavşakla kesişiminde dönel kavşaktan kopyalanan minimum dever.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+          <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Oto_KOT</span>:
+eksen 1'in kırmızı kotunu eksen 0'a uyarlamak için değiştirir. Bitişikteki
+metin kutusu, dönel kavşak kenarından eksene doğru bir geçiş uzunluğu
+belirtmeye olanak tanır.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+          <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Adasız</span>:
+kavşak kollarının tanımlandığı eksenin, kavşak kollarının deverlerinin
+dayandığı bir çatı mahyası gibi kullanılmasına olanak tanır.
+Bu şekilde, bu
+bölümde kavşak kollarının deveri bir yandan ana
+eksenin kotu, diğer yandan kavşak kolunun kırmızı kotu ile sabitlenir.
+Bu seçenek <span style="font-weight: bold;">Oto_KOT</span> ile birlikte kullanılmalıdır.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Model</span>:
+ada çizgilerinin oluşturulacağı modeli tanımlamaya olanak tanır.
+Varsayılan olarak, tanımlandığı eksenin modeli alınır.<br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_cruces.html#generar_crz_pol"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a>Herhangi bir zamanda <a href="OL_cruces.html#generar_crz_pol">[crz.pol Oluştur]</a> düğmesine basarak dönel kavşağın .pol dosyasını oluşturabiliriz.<ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <a name="cambio_geo"><span class="Titulo_2">Ada Alanında Geometri Değişikliği</span><br />
+      <br />
+Program, giriş ve çıkış kavşak kollarının eksenlerini ada tarafında, her eksene
+ilişkin ada parçasının ayrıldığı nokta olan 12 nolu kodda otomatik olarak
+kırpar.<br />
+Her bir kavşak kolunda yardımcı platformlar, yaya kaldırımları veya sabit platform
+tanımlanması durumunda, kırpma işlemi 50'den küçük bulunan son kodda
+gerçekleştirilecektir. Bu, kullanıcının <a href="OL_calzadas_aux.html">yardımcı platformlar</a>, <a href="OL_aceras.html">yaya kaldırımları</a> veya <a href="OL_vectores.html#plataforma_fija">sabit platform</a> kullanarak
+ada alanındaki geometriyi değiştirmesine, giriş ve çıkış kollarının
+geometrilerinin çakışmamasına dikkat ederek ve bu değişikliklerin
+korunması için dönel kavşak tanımındaki <a href="OL_cruces.html#vol">[vol]</a> düğmesinin
+işaretini kaldırarak olanak tanır. <br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/glorieta_bordillo.png" style="width: 559px; height: 342px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br /><a name="Isleta_con_bordillo"><span class="Titulo_2">Bordürlü Ada</span><br /><br />Ada için bir bordür tipi eklenebilir. Kavşaklar
+hesaplandığında, bu işlem kavşağı tanımlayan eksende, Çizgiye Göre Bordürler listesinde yeni veriler oluşturur.<br /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></ul></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Isleta_con_bordillo"><img src="Imagenes/glor_bord_isl.png" style="width: 580px; height: 231px;" alt="" /><br /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="Isleta_con_bordillo"><br /></a><div style="margin-left: 40px;"><a name="Isleta_con_bordillo">Ada için bir bordür eklendiğinde, bu bordür BIM'de oluşturulurken (</a><a href="OL_bordillos_para_las_st.html#bor_lineas">çizgiye göre bordürler</a>),
+eğer bordürün çıkış kotu giriş kotundan yüksekse, adanın
+içinde bordürün iç kenarını hizalayarak bir malzeme oluşturulur.
+Bu seçenek, çizgiye göre bordürler diyalog kutusunda, [ADA] (Adanın içini oluştur) seçeneği ile devre dışı bırakılabilir.<br />[ADA]
+göründüğünde, bu bordürün kavşaklar hesaplanırken otomatik
+olarak eklendiğini gösterir. Bu eksenin kavşakları yeniden hesaplanırsa,
+[ADA] bordürleri hesaplanan yenileriyle değiştirilir.</div><br />
+</span></span><br />
+      <h1><big><big><big><big><big><big><span class="Parrafo"><span class="Parrafo Titulo_2"><a name="Transiciones" />Ge<span class="Titulo_2"></span>çişler</span></span></big></big></big></big></big></big></h1>
+      <h1><span class="Parrafo"><span class="Parrafo" /></span></h1>
+      <span class="Parrafo"><span class="Parrafo">Kavşak kollarındaki gibi, üstyapı, terasman ve seçilmiş malzeme için bir geçiş yapılıp yapılmayacağını,<br />
+sadece mevcut eksenden mi miras alınacağını yoksa sadece diğer eksenden (dönel kavşak) mi miras alınacağını tanımlamaya olanak tanır.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 657px; height: 262px;" alt="" src="Imagenes/glo_transiciones.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

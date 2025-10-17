@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Sınır Çizgileri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SINIR ÇİZGİLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br /><span style="font-weight: bold;">Sınır çizgileri</span>, grafiksel olarak yönetilebilen ve ilgili iki güzergahın enkesitlerini kesmek için kullanılacak bir tür dikey 'duvar' tanımlayan öğelerdir. Bu çizgiler, inşa edilmeyecek kısımları (enkesit çakışma alanı) kaldırır.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 506px; height: 276px;" alt="" src="Imagenes/ejem_linFront.png" /><br />
+      </div>
+      <br />
+Bir sınır çizgisi, daha sonra güzergahları kırpabilmesi için sınır çizgisi nitelikleri verilen herhangi bir çizgi olabilir. Sınır çizgilerinin neden olduğu kırpma ile ilgili olarak, aşağıdaki hususlar dikkate alınmalıdır: <br />
+      <ul>
+        <li>Aç-kapa tünel bölgelerini de etkiler. Sınır çizgisi, kazı ve dolgu şevlerini kırpabilir, ancak kemer bölgesini kesmemelidir.</li>
+      </ul>
+      <ul>
+        <li>Dökülme konilerini etkiler. Güzergahın sağından veya solundan kırpan sınır çizgileri, dökülme konilerini dış taraftan (dökülme konilerinde dolgu eteği ve tünel ağızlarında yarma başı) kırpacaktır.</li>
+      </ul>
+      <ul>
+        <li>Ayrıca <a href="OL_marcas_viales.html">yol çizgilerini</a> de etkiler, öyle ki program, sınır çizgilerinden etkilenen segmentlerini gizler.<br />
+        </li>
+      </ul>
+<img style="width: 174px; height: 104px; margin-left: 7px;" alt="" src="Imagenes/ejem_lfr.png" align="right" /><span class="Parrafo"><span class="Parrafo">Her sınır çizgisi, “kırpması” gereken güzergahların numarası ve hangi taraftan olduğuyla etiketlenir. Eğer çizgi sadece bir güzergahı kırpacaksa, ikinci güzergahın numarası sıfır olarak görünür.<br />
+      <br />
+</span></span>
+      <table style="text-align: left; width: 510px; height: 47px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 43px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; text-align: justify; width: 461px;"><span class="Parrafo"><span class="Parrafo Info">Sınır çizgileri, L67 tipi ve onları özel kılan niteliklere sahip geleneksel çizgilerdir. Ancak çizgiler olarak, bir <span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> dosyasında mükemmel bir şekilde değiştirilebilir ve saklanabilir ve niteliklerini kaybetmeden herhangi bir zamanda yüklenebilirler.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>Sınır çizgileri manuel olarak oluşturulabilir ve yönetilebilir, ancak programın belirli bölümleri, kullanıcının müdahalesine gerek kalmadan bunları otomatik olarak oluşturur ve/veya yönetir (<a href="OL_muro_entre_ejes.html">güzergahlar arası duvar</a>, <a href="OL_cruces.html">kesişimler</a>, <a href="OL_entronques.html">kavşaklar</a>,...).<br />
+      <br />
+Programın otomatik olarak yönetmediği ve bir lineer proje projesinde kullanılan tüm sınır çizgileri, <span class="Archivo">.lfr</span> uzantılı tek bir dosyada <a href="#guardar_lfr">kaydedilmeli</a> ve <span class="Parrafo"><span class="Parrafo"><a href="OL_proyecto.html">PROJE tablosunda</a> beyan edilmelidir. </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu dosya beyan edildikten ve her güncellendiğinde, <a href="OL_perf_transv.html#eventos"><span style="font-weight: bold;">ENKESİT OLUŞTURMA OLAYLARI</span></a>'nda <span style="font-weight: bold; font-style: italic;">Sınır çizgileri</span> kutucuğunu etkinleştirerek güzergahlar için <a href="OL_perf_transv.html">arazi enkesitleri</a> çıkarılması önerilir.</span></span></span></span><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Sınır çizgilerinin manuel olarak oluşturulması ve yönetimi, ENKESİT (ALZADO) menüsünden <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">[KOMPLE]</span> </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">[SINIR ÇİZGİSİ]</span> aracılığıyla yapılır ve bunun için mevcut araçlar şunlardır:</span></span></span></span></span></span><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 468px; height: 544px;" alt="" src="Imagenes/acceso_lfr.png" /><br />
+      </div>
+      <br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 104px;">.lfr Yükle<br />
+            </td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 568px;"><a href="OL_proyecto.html">PROJE tablosunda</a> yüklenen <span class="Archivo">.lfr</span> dosyasında saklanan sınır çizgilerini ekranda gösterir.<br />
+<br /></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 104px;"><a name="guardar_lfr">.lfr Kaydet</a><br />
+            </td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 568px;">Ekranda düzenlenmiş olan sınır çizgileriyle bir <span class="Archivo">.lfr</span> dosyası oluşturur. Program, kaydettikten sonra, içindeki tüm tekrarlanan sınır çizgilerini kontrol eder ve bulduklarını siler (iki çizginin koordinatlarının tekrarlanıp tekrarlanmadığını belirlemek için bir dosyaya sınır çizgileri eklerken bir <a href="#tolerancia">tolerans</a> tanımlanabilir).<br />
+            <br />
+Sınır çizgileri mevcut bir dosyaya kaydedildiğinde, bu dosyanın aynı adla ancak <span class="Archivo">IS#</span> önekiyle bir yedeği oluşturulur. Ayrıca, program dosyanın tamamen değiştirilip değiştirilmeyeceğini veya o anda KOMPLE ortamında görünen tüm sınır çizgilerinin sonuna eklenip eklenmeyeceğini sorar.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">1 SÇ Ekle</span><br />
+            </td>
+            <td style="vertical-align: top;">Herhangi bir çizgiyi sınır çizgisi olarak ekler, bu çizginin etkilemesi gereken güzergahları ve taraflarını seçerek. Projeyle ilişkili sınır çizgileri dosyasına eklenir ve eğer yoksa yeni bir tane oluşturur ve ilişkilendirir (temelad.lfr veya ISPOL.lfr).<br />
+            <br />
+Dosyanın zaten içerdiği çizgileri analiz eder ve aynı güzergahlar ve taraflar arasında bulunan ve ilk güzergahın km'lerinde çakışan bir çizgi varsa, dosyadaki çizgiyi siler ve yenisiyle değiştirir.<br />
+            <br />
+            <div style="text-align: center;">&nbsp;<img style="width: 214px; height: 147px;" alt="dialogo_añadir" src="Imagenes/dialogo_a%C3%B1adir1LFR.png" align="top" /><br />
+            </div>
+
+            <br />
+<span style="font-weight: bold;">[Ekle]</span> seçeneğinin yanı sıra, döngüsel olarak çalışmak için <span style="font-weight: bold;">[Ekle ve başkasını seç]</span> seçeneğini de seçebiliriz.<br />
+            <br />
+Bir 8D çizgisi eklendiğinde, sınır çizgisi olarak kullanılmak üzere otomatik olarak bir 3D kopyası oluşturulur.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 104px;"><a name="definir_lfr">SÇ Tanımla</a><br />
+            </td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 568px;"><img style="width: 218px; height: 151px; margin-left: 7px;" alt="" src="Imagenes/definir_lfr.png" align="right" />Herhangi bir şekilde oluşturulmuş herhangi bir çizgiyi seçerek, programın ona sınır çizgisi nitelikleri vermesini sağlar. Kullanıcı, bu çizginin etkilemesi gereken güzergahları (grafiksel veya sayısal olarak) ve taraflarını seçer.<br />
+            <br />
+Sadece bir güzergahı kırpması isteniyorsa, ikinci güzergah 0 olmalıdır.<br />
+            <br />
+Sınır çizgisi, sadece bir güzergahın dökülme konilerini kırpmak için de kullanılabilir. Böylece, örneğin, 1. güzergahı soldan ve 2. güzergahın dökülme konilerini kırpması belirtilebilir.<br />
+            <br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir 8D çizgisi eklendiğinde, sınır çizgisi olarak kullanılmak üzere otomatik olarak bir 3D kopyası oluşturulur.</span></span></span></span></span></span></span></span></span></span></span><br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 104px;"><span style="font-weight: bold;">SÇ Kesimi</span><br />
+            </td>
+            <td style="vertical-align: top; width: 568px; text-align: justify;">Bu seçenek, kendilerini kesen döngü şeklindeki güzergahlarda sorunları önlemek için, her bir güzergahtaki sınır çizgisinin etki alanını sınırlamayı sağlar. Bir güzergah için aynı başlangıç ve bitiş KM'si verilirse, sınır çizgisi kısıtlanmaz. Kısıtlanmış sınır çizgileri, ekranda kısıtlanmış güzergah ve taraf numarasının arkasında bir yıldız işareti &lt;*&gt; ile görünür.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="auto_lfr">Oto SÇ</a></span></td>
+            <td style="vertical-align: top; text-align: justify;"><img style="width: 218px; height: 179px; margin-left: 7px;" alt="" src="Imagenes/auto_lfr.png" align="right" />ENKESİT (ALZADO) menüsündeki <span style="font-weight: bold;">[Bağlantı]</span> fonksiyonuna eşdeğer bir fonksiyondur ve platformlar arasındaki kesişimi arayarak destekli bir şekilde bir sınır çizgisi oluşturur, ancak aşağıdaki farklarla:<br />
+            <ul>
+              <li>Güzergah seçimi grafiksel veya sayısal olarak yapılır, uygulama, hesaplamaları yapmak için dikkate alınması gereken güzergahları ve her birinin tarafını ister.</li>
+            </ul>
+            <ul>
+              <li>Sınır çizgisi, ekranda mevcut olanlara eklenir, bu da daha sonra değiştirilmesine ve mevcut olanlarla birlikte kaydedilmesine olanak tanır.</li>
+            </ul>
+            <ul>
+              <li>Bu çizgileri otomatik olarak önceden belirlenmiş bir mesafe kadar uzatma imkanı sunar.</li>
+            </ul>
+            <img style="width: 218px; height: 109px; margin-right: 7px;" alt="" src="Imagenes/auto_lfr_truncar.png" align="left" />Sınır çizgisi düzenlemesi bittiğinde, güzergahların kırpılmasını engellemek mümkündür.<br />
+            <br />
+Eğer kırpmaya karar verilirse, <span class="Parrafo"><span class="Parrafo">program o ana kadar ekranda olan verileri kaydeder ve temiz bir ekranda, iki platformun tel kafes modellerini ve şevler arasındaki kesişimle belirlenen sınır çizgisini oluşturarak ekranda çizer.</span></span> Ayrıca ilk güzergahın dökülme konilerini çizer ve bu konilerin ikinci güzergahın şevleriyle kesişimindeki sınır çizgisini hesaplayabilir.<br />
+            <br />
+            OtoSÇ veya OtoSÇ+ ile sınır çizgileri hesaplanırken, ilk güzergahla birlikte, onunla tanımlanmış tüm kesişim ve dönel kavşak birleşim yerleri çizilir ve bu modeller, ikinci güzergahla olan sınır çizgisini belirlemek için kullanılır. (Proje menüsünün Kesişimler seçeneği etkin olmalıdır).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Kavşak SÇ</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bu seçenek aracılığıyla, her bir güzergahta tanımlanan kavşaklar için tüm sınır çizgileri otomatik olarak oluşturulur. Bir kavşağın sınır çizgisinin oluşturulması için, ENKESİT (ALZADO) menüsündeki KAVŞAKLAR bölümünde o kavşak için <span style="font-weight: bold; font-style: italic;">SÇ</span> kutucuğunun etkinleştirilmiş olması gerekir. Ayrıca, <span style="font-weight: bold; font-style: italic;">Pay</span> kutucuğuna bir değer girilirse, sınır çizgisi, E noktasından başlayarak KM = KM_E + Pay'a kadar, hesaplandığı iki güzergahın şevlerinin kesişimi boyunca uzatılır. Eğer genişletmelerin E noktasına kadar hesaplanacağı belirtilmişse, sınır çizgisi A'dan oluşturulmaya devam etse de, uygulama aralığı E'de başlayacaktır.<br />
+            <br />
+Bu seçenek başlatıldığında, program aktif gruplardaki tüm güzergahların bir hesaplamasını yapar.<br />
+            <br />
+Projenin sınır çizgileri dosyasını, hesapladığı çizgilerle oluşturur veya günceller.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="auto_lfr_plus">Oto SÇ+</a></span>
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><img style="width: 148px; height: 123px; margin-left: 7px;" alt="" src="Imagenes/auto_lfr_plus.png" align="right" /><span class="Parrafo"><span class="Parrafo"><a href="#auto_lfr"><span style="font-weight: bold;">Oto SÇ</span></a> ile aynıdır, ancak sınır çizgisinin konumunu ardışık enkesitlerden interaktif olarak değiştirmeye olanak tanır. Seçenek, her iki güzergahın aynı anda göründüğü ilk enkesite kadar otomatik olarak ilerler, kesişmeseler bile. </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kesim noktası hesaplamasına, branşın uygun olmayan zemindeki yarma çizgisi de eklenir.</span></span></span></span></span></span><br />
+            <span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">[Çıkış]</span> butonu, mevcut KM'de sınır çizgisi tanımını sonlandırmak için kullanılırken, <span style="font-weight: bold;">[KM]</span> butonu ile istenen KM'ye otomatik bir ilerleme yapılır.<br />
+            <br />
+<a href="OL_lineas_frontera.html#auto_lfr"><span style="font-weight: bold;">Oto SÇ</span></a> aracında olduğu gibi, </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo">sınır çizgisi düzenlemesi bittiğinde, güzergahların kırpılmasını engellemek mümkündür.<br />
+<br />
+            Bu araç, ilk güzergahın dökülme konilerini çizer ve bu konilerin ikinci güzergahın şevleriyle kesişimindeki sınır çizgisini hesaplayabilir.<br />
+            <br />
+OtoSÇ veya OtoSÇ+ ile sınır çizgileri hesaplanırken, ilk güzergahla birlikte, onunla tanımlanmış tüm kesişim ve dönel kavşak birleşim yerleri çizilir ve bu modeller, ikinci güzergahla olan sınır çizgisini belirlemek için kullanılır. (Proje menüsünün Kesişimler seçeneği etkin olmalıdır).<br />
+            </span></span></td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="truncar_1">1'i Kırp</a></span></td>
+            <td style="vertical-align: top; text-align: justify;">Bu seçeneğe tıklandıktan sonra, ekranda görünen sınır çizgilerinden biri seçilir ve sistem, daha önce hesaplanmış olmaları koşuluyla, her bir etkilenen güzergahı ona göre kırpar.<br />
+            <br />
+Eğer bir güzergah için <span class="Parrafo"><span class="Parrafo"><a href="OL_proyecto.html">PROJE tablosundaki</a></span></span> <span style="font-weight: bold;">[BAĞ]</span> (bağlantı) tuşu basılı değilse, bu güzergah kırpmalara karşı korunur ve bu seçenek, onu etkileyen sınır çizgileri olsa bile üzerinde çalışmaz.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Tümünü Kırp</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><a href="#truncar_1"><span style="font-weight: bold;">1'i Kırp</span></a> ile aynı işlemi yapar, ancak tüm sınır çizgilerini kullanır. Korunan güzergahlar dokunulmaz, ilgili <span class="Archivo">ISPOL#.per</span> dosyaları bozulmadan kalır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="tolerancia">Tolerans</a></span></td>
+            <td style="vertical-align: top; text-align: justify;">Bu tolerans, yinelenen çizgileri olan dosyaları önlemek için bir sınır çizgileri dosyası <a href="#guardar_lfr">kaydedilirken</a> uygulanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Yükle</span><br />
+            </td>
+            <td style="vertical-align: top;">.lfr<span class="Archivo"></span> dosyalarını yüklemeyi sağlar. Bu, tek bir dosyada birleştirmek için birkaç sınır çizgisi dosyasını yüklemeyi mümkün kılar.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 559px; height: 366px;" alt="" src="Imagenes/ent_lineas_lfr.png" /><br />
+            </div>
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Enkesitleri Dahil Et</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bu seçenek, bir sınır çizgisine, ilgili iki güzergahın enkesitleriyle kesişim noktalarını ekler. Bu şekilde, eğer her iki güzergahta da sınır çizgilerine göre enkesitler enterpole edilirse, bu bölgede her iki güzergahın enkesitleri sınır çizgisi üzerinde çakışacaktır.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 692px; height: 39px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 104px;"><span style="font-weight: bold;">Dosyayı Kırp</span><br />
+            </td>
+            <td style="vertical-align: top;">Herhangi bir enkesit dosyasını (bir güzergahla ilişkili) seçmeyi ve mevcut sınır çizgilerine göre kırpmayı sağlar. Bu seçenek çıktı için bir dosya ister.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 104px;"><span style="font-weight: bold;">Makas SÇ</span><br />
+            </td>
+            <td style="vertical-align: top;">Bu araç, J.C.A. numarasından yola çıkarak, makas içinde ana ve sapma hatlarının ray aralarının açıortayından geçen ve topuktan sonra ana ve branş güzergahlarının balast ve formasyon tabakasının dış şevleri arasındaki kesişimleri arayan bir sınır çizgisi oluşturur. <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu sonuncularından yarma veya dolgu şevlerinin kesişimini arar. Eğer sapma güzergahı makasın topuğunda başlıyorsa, sınır çizgisi o noktada başlayacaktır.</span></span></span></span></span></span><br />
+Oluşturulan çizgiyi projenin sınır çizgileri dosyasına dahil etmeyi, aynı bölgede daha önce oluşturulmuş başka bir çizgiyi değiştirerek sağlar. Ayrıca, oluşturulan çizgiyle güzergahları hemen kırpmayı da sağlar. <br />
+Bu aracı kullanmadan önce, orijinal şevler arasındaki kesişimin doğru bir şekilde belirlenebilmesi için, eğer bu güzergahlar daha önce ilgili bölgede kırpılmışsa, güzergahların boykesitini hesaplamak uygundur.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Güzergah SÇ Oluştur</span><br />
+            </td>
+            <td style="vertical-align: top;">Dönel kavşak güzergahı ve genel olarak herhangi bir güzergah için bu araç kullanılabilir. Bu yardımcı program, güzergahın ISPOL.per dosyasından kırpıldığı bölgelerin bilgisini çıkarır ve planda sınır çizgilerini oluşturur.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

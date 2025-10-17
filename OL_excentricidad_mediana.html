@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html PUBLIC "-//W-3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8-859-1" /><title>Eksantrisite ve Refüj</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>EKSANTRİSİTE VE REFÜJ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+</span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><a href="#excentricidad">Geometrik Eksenin Eksantrisitesi</a></span><br />
+      <span class="Parrafo"><a href="#mediana">Refüj Geometrisinin Tasarımı</a></span><br />
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#tipos">Refüj Geometrisi Tipleri</a></span><br />
+      <span class="Parrafo"><a href="#dist_eje">Eksene Mesafeye Göre Verilen Refüj Tepe Noktası</a></span><br />
+      <span class="Parrafo"><a href="#bermas_asim_trunca">Asimetrik Palye ve Enkesitin Kırpılması</a></span><br />
+      </div>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+Bu
+menüde otoyolların veya bölünmüş yolların refüjü tasarlanır, ancak
+aynı zamanda tek platformlu yollarda geometrik eksenin plan eksenine
+göre kaydırılması (<span style="font-weight: bold;">eksantrisite</span>) için de kullanılır. Tek platformlu yol durumunda, bu menüdeki diğer bilgiler göz ardı edilerek sadece eksantrisite verileri kullanılır.<br />
+      <br />
+Yardımcı platformlar ve refüj gibi bazı boykesit tablolarındaki maksimum veri sayısı 10000'e çıkarılmıştır.<br />
+      <br />
+Her iki veri arasında KM'ye göre doğrusal enterpolasyon yapılır ve
+gerekirse değerler geriye ve ileriye doğru ekstrapole edilir. Sabit
+refüj için tek bir veri yeterlidir.<br /><br /><span class="Parf_negrita">Kullanıcı KM'leri</span>
+seçeneği, KM'lerin kullanıcı değerleriyle girilmesine olanak tanır.
+Seçenek etkinleştirilebilir/devre dışı bırakılabilir ve etkinleştirme
+durumu .vol dosyasında kaydedilir.<br /><br /><span style="font-weight: bold;">[Otomatik]</span> düğmesi, mevcut eksenin başlangıç ve bitiş KM'leri ile iki veri başlatır. &nbsp;Ayrıca, bu <span class="Parf_negrita">[Otomatik]</span>&nbsp;araç,
+plan eksenindeki yanal sıçramayı telafi eder. Örnek: Başlangıç
+bölümünde ekseni sol platform kenarında ve bitiş bölümünde sağ platform
+kenarında olan, 4 metrelik iki platformlu bir yol. 800 metrelik eksen,
+325.421 KM'sinde +8 metrelik bir yanal sıçramaya sahiptir. Başlangıç
+kilometresinde +4 metrelik bir eksantrisitesi vardır.<br /><span class="Parf_negrita">[Otomatik]</span>'e basıldığında 4 veri oluşturulur:<br />KM&nbsp;&nbsp; 0.000 EKS +4.000<br />KM 325.420 EKS +4.000<br />KM 325.422 EKS -4.000<br />KM 800.000 EKS -4.000<br /><br /><br />
+      </span><span class="Parrafo"><span class="Parrafo">Bu menüdeki
+KM verileri hem grafiksel hem de sayısal olarak girilebilir
+(düğmeler <span style="font-weight: bold;">[Tıkla]</span>/<span style="font-weight: bold;">[Klavye]</span>).
+Grafiksel olarak girilmesi durumunda, noktanın eksen üzerindeki izdüşümü
+tam veya enterpole edilmiş bir profile referans verebilir.</span></span><br />
+      <span class="Parrafo"><br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_excentricidad_mediana.png" style="width: 617px; height: 190px;" alt="" /><br />
+      </div>
+      <br />Bu tablonun verileri ayrıca &nbsp;<span class="Archivo">.med</span> uzantılı dosyalar aracılığıyla kaydedilebilir&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> ve yüklenebilir&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" />.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="excentricidad">Geometrik Eksenin Eksantrisitesi</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><img src="Imagenes/modelo_excentricidad_mediana.png" style="width: 297px; height: 259px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Eksantrisite,
+bu menüye girildiğinde görünen modelde de gözlemlenebileceği gibi,
+geometrik eksenin (iki platformlu yollarda refüj tepe noktası veya tek
+platformlu yollarda platform merkezi) plan eksenine (matematiksel tanım
+ekseni) olan mesafesidir ve geometrik eksen plan eksenine göre sağa
+kaydırılırsa pozitiftir.<br />
+      <br />
+<span style="font-weight: bold;">[Çizgiye Göre Eksant.]</span>
+düğmesi (çizgiye göre eksantrisite), haritadan grafiksel olarak seçilen
+bir çizgiden yola çıkarak eksantrisite tablosunu otomatik olarak
+oluşturmaya olanak tanır. Bu seçenek çalıştırıldığında, oluşturulan tüm
+KM'ler için ilk veride tanımlanmış olabilecek refüj genişlikleri,
+palyeler, derinlik vb. veriler korunur.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="mediana">Refüj Geometrisinin Tasarımı</a></span><br />
+      <span class="Parrafo">
+      <br />
+<span style="font-weight: bold;">GENİŞLİK I</span> ve <span style="font-weight: bold;">GENİŞLİK D</span> refüj yarı genişliği, iç banketin iç kenarı ile refüjün tepe noktası arasındaki mesafedir.<br />
+      <br /></span><div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_excentricidad_mediana_anchoXlinea.png" style="width: 300px; height: 127px;" alt="" /></span><br /><span class="Parrafo"></span></div><span class="Parrafo"><br />Bu değerler, <span style="font-weight: bold;">[Çizgiye Göre Genişlik]</span>
+seçeneğiyle (çizgiye göre refüj yarı genişlikleri, 8D çizgiler kabul edilir) otomatik olarak verilebilir. Bu seçenek, planda çizilmiş iki çizgiden
+refüj yarı genişliklerini belirler. Seçenek, sağ ve sol genişlikler
+için çizgileri seçmeyi, her iki tarafa eklenecek/çıkarılacak bir
+mesafeyi, dikkate alınacak maksimum bir genişliği, bu değerin her
+katında bir veri oluşturmak için bir enkesit aralığını ister ve
+eksantrisite değeriyle telafi edilip edilmeyeceğini sorar. Bu veriler
+girildikten sonra, program bir genişlik tablosu oluşturur ve diğer
+veriler (eksantrisite, refüj tipi ve palye) ilk veriden kopyalanır;
+ancak enkesit aralığı 0 olarak girilirse, o zaman <span style="font-weight: bold;">[Çizgiye Göre Eksant.]</span>
+seçeneğiyle oluşturulan mevcut KM'lerde genişlik değerleri hesaplanır
+ve her KM'de zaten var olan diğer veriler (eksantrisite, derinlik,
+palyeler vb.) korunur.<br />
+      <br />
+Refüj tarafındaki palyeler de genişlik (<span style="font-weight: bold;">PALYE dX</span>) ve kot farkı (<span style="font-weight: bold;">PALYE dY</span>) ile her iki tarafta simetrik olarak tanımlanır.<br />
+      <br />
+Palye bölgesinde, banketle aynı yüksekliğe kadar herhangi bir üstyapı tabakası uzanmadığında, <span style="font-weight: bold;">Basamak</span> değeri tanımlanabilir.<br />
+      <br />
+Ayrıca palye şu şekilde olabilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">İçbükey</span>: <span style="font-weight: bold;">dx</span> ve <span style="font-weight: bold;">dy</span> değerleri her zaman korunur.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">İçbükey Olmayan</span>: Eğer banketin deveri <span style="font-weight: bold;">dy</span>/<span style="font-weight: bold;">dx</span>'i aşarsa, palyenin eğimi banketin devamı şeklinde ayarlanır ve sadece <span style="font-weight: bold;">dx</span> genişliği korunur.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Simetrik</span>: <span style="font-weight: bold; font-style: italic;">İçbükey Olmayan</span> gibidir,
+ancak iç banketin deveri nedeniyle bir taraftaki palyenin eğimi
+arttığında, diğer taraftaki palyeye de aynı eğim atanır. </span></li>
+      </ul>
+      <span class="Parrafo"><span style="font-style: italic;">Örnek: %7 dever ve %4 palye eğimi</span><br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 71px; width: 563px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 76px; font-weight: bold; text-align: center;">Tip<br />
+            </td>
+            <td style="vertical-align: top; width: 111px; font-weight: bold; text-align: center;">Sol Platform<br />
+            </td>
+            <td style="vertical-align: top; width: 101px; font-weight: bold; text-align: center;">Sol Palye<br />
+            </td>
+            <td style="vertical-align: top; width: 108px; font-weight: bold; text-align: center;">Sağ Palye<br />
+            </td>
+            <td style="vertical-align: top; width: 123px; font-weight: bold; text-align: center;">Sağ Platform<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 76px;">İçbükey<br />
+İçbükey Olmayan<br />
+Simetrik<br />
+            </td>
+            <td style="vertical-align: top; width: 111px; text-align: center;">7%<br />
+7%<br />
+7%<br />
+            </td>
+            <td style="vertical-align: top; width: 101px; text-align: center;">4%<br />
+7%<br />
+7%<br />
+            </td>
+            <td style="vertical-align: top; width: 108px; text-align: center;">4%<br />
+4%<br />
+7%<br />
+            </td>
+            <td style="vertical-align: top; width: 123px; text-align: center;">7%<br />
+7%<br />
+7%<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="tipos">Refüj Geometrisi Tipleri</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><img src="Imagenes/tipo_mediana.png" style="width: 142px; height: 375px;" alt="" align="right" hspace="4" /><span class="Parrafo">Refüj
+geometrisini tanımlama parametrelerine gelince, program <span style="font-weight: bold;">Tip</span> açılır listesinden erişilebilen aşağıdaki olanakları sunar:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Derinliğe Göre</span>:
+İki iç banketin iç kenarından (eğer farklı iseler) en düşük kotlu
+olandan ölçülür ve negatif olabilir. Sıfır derinlikli refüjlerde, iki
+noktayı birleştirmeye karşılık gelen kot atanır.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Maksimum Şeve Göre</span>:
+Her iki taraftan, palyenin iç kenarından verilen şevle çizilir ve
+refüjün tepe noktası, bu iki çizginin kesiştiği noktada kalır, bu nokta
+geometrik merkezle çakışmasa bile. Eğer kot farkı nedeniyle bu çizgiler
+kesişmezse, iki palye kenarı doğrudan karşılık gelen şevle (tanımlanandan
+daha az olacaktır) birleştirilir. </span></li>
+      </ul>
+      <span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">
+Bu tanım tipi için sol tarafa farklı bir şev tanımlamak mümkündür.
+Bunun için, <span style="font-weight: bold;">[DAHA FAZLA VERİ
+&gt;&gt;]</span> düğmesine bastıktan sonra, refüj şevinin asimetrik olduğunu belirtmek ve
+sol şev değerini girmek yeterlidir. </span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+Şeve Göre (ondalık olarak)</span>: Önceki durumla aynıdır, ancak eğer kot farkı nedeniyle bu çizgiler kesişmezse, en yüksek olanı tanımlanan şevle en düşük palyenin dikeyine kadar çizilir ve o noktadan dikey olarak aşağı inilir.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Önceki durumda olduğu gibi, bu tanım tipi için de sol tarafa farklı bir
+şev tanımlamak mümkündür. Bunun için, <span style="font-weight: bold;">[DAHA FAZLA VERİ &gt;&gt;]</span> düğmesine bastıktan sonra,
+<span style="font-weight: bold;">refüj şevinin</span> <span style="font-weight: bold;">asimetrik</span> olduğunu belirtmek ve <span style="font-weight: bold;">sol şev</span> değerini girmek yeterlidir.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+Merkezlenmiş Maksimum Şeve Göre</span>: Refüjün tepe noktası geometrik
+merkezle çakışır ve eğer palyeler farklı seviyelerde biterse, en düşük
+olandan refüj tanımlanan şeve sahip olacak ve en yüksek olandan daha
+küçük (daha dik) bir şeve sahip olacaktır.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Merkezlenmiş Minimum Şeve Göre</span>: Önceki durumun tamamlayıcısı olarak,
+refüjün tepe noktası geometrik merkezle çakışır ve eğer palyeler
+farklı seviyelerde biterse, en yüksek olandan refüj tanımlanan şeve
+sahip olacak ve en düşük olandan daha büyük (daha yatay) bir şeve sahip
+olacaktır.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Terasman ile kesişimden derinliğe göre</span>: Program, en düşük terasman ile kesişimden
+refüjün tepe noktasına kadar istenen derinliğin oluşması için eğimi
+hesaplar.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="mediana_abierta">
+Tip kesit uygulamalı açık refüj</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">: Bu durumda refüjde
+uygulanacak bir tip kesit tanımlanır. O zaman, iç banketin kenarından
+itibaren refüj oluşturmak yerine, tanımlanan yarma/dolgu kesiti
+analiz edilir. Sağ platformun iç kenarı için sol tarafın kesiti ve sol
+platformun iç kenarı için sağ tarafın kesiti uygulanır. Eğer iki iç
+kesit kesişirse, o ortak noktada kesilirler. Açık refüjde, refüj
+palyesi yerine ilgili yarma/dolgu kesitinin palyesi uygulanır.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Refüjde
+uygulanacak tip kesit, dış kenarlar için tanımlananlardan herhangi
+biri veya refüj için özel olarak oluşturulmuş farklı bir kesit
+olabilir.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Açık bir refüj tanımı, karma kesitlerde zorunludur: açık-tünel,
+açık-sanat yapısı, açık-aç-kapa tünel, aç-kapa tünel-aç-kapa tünel,
+aç-kapa tünel-tünel, vb.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+Tanımlanmış bir kırmızı kota göre</span>: KIRMIZI KOT menüsünde
+refüj için tanımlanan boykesitin kotunu alan merkezlenmiş bir
+refüjdür.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Seçilmiş malzemeden merkezlenmiş maksimum şeve göre</span>: Bu refüj şu şekilde oluşturulur:</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ol style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İç banketin veya refüj palyesinin kenarından, bir <span style="font-weight: bold;">TP</span> şeviyle (<a href="OL_berma_pavimento_terraplen.html">DOLGU PALYESİ</a> menüsünde tanımlanır) inilir.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu şevle, seçilmiş malzeme çizgisine veya eğer seçilmiş malzeme yoksa terasman çizgisine kadar inilir.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu noktadan, refüj menüsünde tanımlanan şevle geometrik eksene kadar inilir.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En düşük kotu veren tarafta bu şev korunur ve diğer tarafta şev, refüjün tepe noktasının çakışması için değiştirilir.</span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu tür bir refüj tanımlandığında, refüj tarafında bir kaplama şevi tanımlanabilir. Bunun için,
+      <span style="font-weight: bold;">[DAHA FAZLA VERİ &gt;&gt;]</span> düğmesine basılır ve kaplama şevi belirtilir. Bu değer
+0 bırakılırsa, dolgu kesitindeki <span style="font-weight: bold;">TP</span> değeri alınır.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Dever ekseninden derinliğe ve iki şeve göre</span>:
+Bu refüj geometrik eksende merkezlenir. Refüjün tepe noktasının kotu,
+en düşük kırmızı kotun kotundan derinlik olarak ölçülür ve <span style="font-weight: bold;">[DAHA FAZLA VERİ&gt;&gt;]</span> ekranından iki şev tanımlanır: biri <span style="font-weight: bold;">kaplamanın iç kapanışı</span> için ve diğeri <span style="font-weight: bold;">refüj</span> için. Bu
+tür bir refüj şu şekilde oluşturulur:</span></span></span></li>
+      </ul>
+      <ol style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Refüjün tepe noktasından, iç banket kenarından
+uygulanan kaplamanın iç kapanış şeviyle kesişene kadar tanımlanan şev
+çizilir. Bu kesişim, terasmanın üstünde veya altında olabilir.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      Terasman, banket kenarından
+kaplamanın iç kapanış şeviyle teorik kesişimine kadar uzatılır ve
+daha sonra bu noktanın sağ tarafı ile sol tarafı doğrudan birleştirilir.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer bu segmentin herhangi bir kısmı refüjün üzerindeyse, refüjden geçirilir.</span></span></span></li>
+      </ol>
+      <ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Tanımlanmış bir kırmızı kot ve bir şeve göre</span>: Refüj
+tabanı, KIRMIZI KOT menüsünde oluşturulan özel bir boykesit ile
+tanımlanır ve genişlikler yerine refüj şevlerinin değeri belirtilir ve
+bu şevle palye veya iç banket kenarının kotuna ulaşana kadar
+yükselinir.</span></span></span></li>
+
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Tepe noktasındaki derinliğe göre</span>.
+Bu tipte, refüjün tepe noktasının derinliği, iç banket veya palye
+kenarlarını birleştiren çizgiden ve tepe noktasının dikeyinden
+ölçülür.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Alçak kenardan sabit şevle</span>: En düşük kottaki kenardan, geometrik eksene kadar belirli bir şev çizilir ve sonra yüksek kenarla birleştirilir.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yüksek kenardan sabit şevle</span>: En yüksek kottaki kenardan, geometrik eksene kadar belirli bir şev çizilir ve sonra alçak kenarla birleştirilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kırmızı Kot + Hendek + P%</span>: Refüj tabanı, <a href="OL_rasantes_diseno.html#tipo_rasante">boykesitinden</a> tanımlanan kotu alır. Geometrik eksenden ve boykesitin kotundan <a href="OL_vectores.html#cuneta_mediana">vektörel refüj hendeği</a> oluşturulur.
+Vektörün son segmenti, refüj palyesinin kenarından çıkan ve bitişik
+kutucukta verilen bir P% eğimine sahip çizgiyle kesişene kadar uzatılır
+veya kısaltılır.</li>
+      </ul>
+      <div style="margin-left: 40px;">Vektörel refüj, her iki tarafta tek bir
+yatay segment olabilir. Bu durumda, P% eğimiyle inen palye, refüjün
+kırmızı kotuna ulaşana kadar iner ve tabandaki yatay segmenti uzatır
+veya kısaltır.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;"><img src="Imagenes/exc_linea3d.png" style="width: 77px; height: 51px;" alt="" align="right" hspace="4" />3B Çizgi</span>:
+Bu çizgi, refüjün tepe noktasının plan konumunu ve kotunu tanımlar,
+ancak iki iç palye (kod -50 veya palye yoksa -11) arasında bulunması
+şartıyla.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Vektör + Yarma Duvarı</span>:
+Bu durum, bir kırmızı kotun diğerinden daha yüksek olduğu otoyollarda
+ortaya çıkabilir. Yüksek tarafa, belirtilen tip kesitin yarma duvarı
+yerleştirilir (öncesinde <a href="OL_vectores.html#mediana_fija">sabit refüj</a> olabilir). Alçak tarafa, duvarla kesişene kadar sabit refüj yerleştirilir ve bu noktadan duvarın derinliği ölçülür.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sağ kenar şevi</span>, <span style="font-weight: bold;">Sol kenar şevi</span>:
+Her iki durumda da, seçilen kenardan geometrik eksene kadar tanımlanan
+şev çizilir ve diğer kenarla bu noktadan doğrudan birleştirilir.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Düz Birleştir</span>: Her
+iki tarafın son iç noktalarını (banket kenarı, palye kenarı veya
+vektörel refüj kenarı olabilir) birleştirerek aralarında tek bir düzlem
+bırakır. <br />
+        </li>
+
+      </ul>
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ayrıca, refüj geometrisi <a href="OL_vectores.html#medina_fija">sabit refüj</a> ve <a href="OL_vectores.html#cuneta_mediana">refüj hendeği</a> vektörleriyle tamamlanabilir.<br />
+      <br /><br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="dist_eje">Eksene Mesafeye Göre Verilen Refüj Tepe Noktası</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Aşağıdaki <a href="#tipos">refüj tipleri</a> için:<br />
+      </span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Derinliğe Göre</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Merkezlenmiş Maksimum Şeve Göre</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Merkezlenmiş Minimum Şeve Göre</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Terasman ile kesişimden derinliğe göre</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Tanımlanmış bir kırmızı kota göre</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Tanımlanmış bir kırmızı kot ve bir şeve göre<br />
+</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Tepe noktasındaki derinliğe göre</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Alçak kenardan sabit şevle</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yüksek kenardan sabit şevle</span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">(<span style="font-weight: bold;">[DAHA FAZLA VERİ&gt;&gt;]</span> sekmesinde) refüjün tepe noktasını konumlandırmak için geometrik <span style="font-weight: bold;">eksene bir mesafe</span> tanımlama imkanı vardır. <br />
+      <br />
+      <br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="bermas_asim_trunca">Asimetrik Palyeler ve Enkesitin Kırpılması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">[DAHA FAZLA VERİ &gt;&gt;]</span> düğmesine basıldığında diğer seçenekler (bazıları zaten açıklanmıştır) gösterilir:<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_excentricidad_mediana2.png" style="width: 617px; height: 190px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      Her iki taraf için farklı bir refüj palyesi
+tanımlanabilir. Bunun için, palyelerin <span style="font-weight: bold;">asimetrik</span> olduğunu belirtmek ve hem <span style="font-weight: bold;">sağ palye</span> hem de <span style="font-weight: bold;">sol palye</span> için <span style="font-weight: bold;">dX</span> ve <span style="font-weight: bold;">dY</span> değerlerini girmek yeterlidir.<br />
+      <br /><a name="truncar">
+Bu diyalog kutusu ayrıca enkesiti kırmaya olanak tanıyan bir sütun sunar:
+      </a></span></span></span>
+<ul>
+	  <li><span class="Parrafo"><span style="font-weight: bold;">2 Taraf</span>: Enkesitin her iki tarafı da oluşturulur (kırpma yapmaz).</span></li>
+<li><span style="font-weight: bold;">Sağı İptal Et</span>: Enkesitin sağ tarafını iptal eder.</li>
+<li><span style="font-weight: bold;">Solu İptal Et</span>: Enkesitin sol tarafını iptal eder.</li>
+<li><span style="font-weight: bold;">2'sini İptal Et</span>: Enkesiti tamamen iptal eder.</li>
+</ul>
+<span class="Parrafo"><span style="font-weight: bold;">[Sağı İptal Et]</span> veya <span style="font-weight: bold;">[Solu İptal Et]</span>
+seçenekleri otoyollar veya çift hatlı demiryolları için
+kullanıldığında, oluşturulan enkesiti içten tamamlamak için bir açık
+refüj veya hat arası tip kesiti kullanılabilir.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

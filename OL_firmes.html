@@ -1,0 +1,882 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Üstyapı Katmanları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ÜSTYAPI KATMANLARI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#def_geometrica">Bir Üstyapı Kesitinin Geometrik Tanımı</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#ejemplo">Örnek</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#vectores">Bir Üstyapı Katmanının Vektörel Tanımı</a><br />
+      </div>
+      <div style="margin-left: 80px;">
+      </div>
+
+      <div style="margin-left: 40px;"><a href="#tramificacion">Üstyapı Kesitlerinin Güzergah Boyunca Tanımlanması ve Kesitler Arası Geçiş</a><br />
+      <a href="#calculo">Üstyapı Katmanlarının Hesaplanması</a><br />
+      <a href="#ensanche_refuerzo">Genişletme ve Takviye için Üstyapı Katmanları</a><br />
+      <a href="#pautas">Bir Projenin Üstyapı Katmanlarını Oluşturmak İçin İzlenecek Adımlar</a><br />
+      </div>
+      <br />
+      <br />
+      <a name="generalidades"><span class="Titulo_2">Genel Bilgiler</span></a><br />
+      <br />
+      <img src="Imagenes/paquete_firme.png" style="width: 111px; height: 162px;" alt="" align="right" hspace="5" /> <span style="font-weight: bold;">[ÜSTYAPI KATMANI]</span> seçeneğine tıklandığında, uygulama, farklı üstyapı katmanlarının geometrisini tanımlamanın ve her birinin hangi kilometreler arasında uygulanacağını belirtmenin mümkün olduğu bir diyalog kutusu sunar.<br />
+
+      <br />
+
+Bu menü, üstyapı katman kesitlerinin tanımlanmasına ve bu kesitlerin, tüm hesaplamaları tamamlanmış bir güzergaha uygulanmasına olanak tanır.<br />
+
+      <br />
+
+      Her kesit, geometrisi ileride analiz edilecek bir dizi parametreye göre tanımlanan en fazla elli bileşeni kabul eder. ISTRAM®/ISPOL®'deki üstyapı katmanları, ayrıca çift taşıt yolunda çift <a href="OL_peraltes.html">dever</a> durumunda (örneğin, Kanada otoyollarında tipik olan) doğru şekilde çalışacak şekilde tasarlanmıştır.<br />
+      <br />
+
+      
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/modelo_firmes.png" style="width: 516px; height: 324px;" alt="" /><br />
+      </div>
+
+      <br />
+Bir güzergahın üstyapı katmanlarını oluşturmak için, BOYKESİT veya PROJE menüsünde güzergahın hesaplanması sonucunda ISPOL#.per (burada # güzergah numarasıdır) dosyasında saklanan platform ve subrasante (tesviye yüzeyi) geometrisi kullanılır. İyileştirilmiş taban, <a href="OL_suelo_seleccionado.html">seçilmiş malzeme</a> veya zayıf zemin kazısı gibi çeşitli adlarla anılan katmanlar ise ayrıca tanımlanır.<br />
+
+      <br />
+
+Bu nedenle, üstyapı katmanları oluşturulmadan önce güzergahın boykesiti ve platformu tamamen tanımlanmış ve hesaplanmış olmalıdır. Üstyapı katmanlarının doğru bir şekilde oluşturulabilmesi için, üstyapı alt kesiminin başlangıç ve bitiş kilometreleri istenen aralığı kapsamalıdır (program bu aralığın dışına enterpolasyon yapmaz).<br />
+
+      <br />
+
+Bu üstyapı ayrıştırması, detaylı metrajları içeren bir rapor (firme#.res) ve her güzergah için üstyapı katmanlarının ayrıştırılmış geometrisini içeren bir enkesit dosyası (ISFIR#.per) ile sonuçlanır. Üstyapı dolgu hattı (312), üstyapı dolgularının metrajında kullanılmak üzere bu dosyada en son oluşturulur.<br />
+
+      <br />
+
+Bu dosya, ilgili ISPOL#.per dosyasından bağımsızdır, ancak daha sonraki bir enkesit düzenleme işlemi olan "Birleştir" ile biri diğerine dahil edilebilir.<br />
+
+      <br />
+
+Eğer işlem bir <a href="#ensanche_refuerzo">genişletme ve takviye</a> projesi ise, üstyapı katmanlarının oluşturulması iyileştirme işleminden önce yapılmalıdır. Çünkü iyileştirme işlemi, subrasante yüzeyini mevcut üstyapıya uyarlamak için değiştirir ve bu şekilde değiştirilmiş bir subrasante, deforme olmuş bir üstyapı katmanı oluşturur. Benzer bir durum, ISPOL#.per dosyasının teorik içeriğini değiştiren platform birleştirme ve kırpma işlemleri için de geçerlidir. Üstyapının bu platform değişikliklerine uyarlanması, bu menüde ve BOYKESİT menüsünde bulunan üstyapı katmanlarını yeniden hesaplama seçeneği ile ikinci bir işlemde yapılır. Aynı zamanda PROJE menüsünden [RFI] kutucuğu aktifken de bu işlem gerçekleştirilir.<br />
+
+      <br />
+
+      <img src="Imagenes/firmes_capas.png" style="width: 429px; height: 175px; margin-left: 7px;" alt="" align="right" />Dikey menüdeki [Kesit] seçeneğine tıklandığında, ISPOL#.per dosyalarındaki L67 (proje kotu) hattına eşdeğer olan L312 yüzeyi de çizilir, böylece <a href="#rellenos">dolgu</a> olup olmayacağı görsel olarak anlaşılabilir. Ayrıca, bu kesite yaklaşıldığında her üstyapı katmanına karşılık gelen numaralar ve proje kotu kodları gösterilir.<br />
+
+      <br />
+
+Dikey menüdeki seçenekler, herhangi bir tip kesitin herhangi bir kilometrede görüntülenmesine olanak tanır.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_firmes.png" style="width: 550px; height: 241px;" alt="" /><br />
+      </div>
+      <br />
+
+      Bu menüdeki kilometre verileri hem grafiksel hem de sayısal olarak girilebilir (<span style="font-weight: bold;">[Tıkla]/[Sayısal]</span> butonları). Grafiksel olarak girilmesi durumunda, noktanın güzergah üzerindeki izdüşümü tam bir enkesite veya enterpole edilmiş bir enkesite referans verebilir.<br />
+       <br />
+Menünün <span style="font-weight: bold;">KESİTLER</span> sekmesi, her katmanın kalınlığını subrasante yüzeyine göreceli kotuna ve konumuna göre tanımlayan değerlerin girilmesine olanak tanır. Bu verilerin her bir seti, bir üstyapı kesiti tanımlar. Diyalog kutusu 10 katman (1-10) gösterse de, menünün sağ tarafındaki kaydırma çubuğu ile geri kalanlar görüntülenebilir.<br />
+
+      <br />
+
+<span style="font-weight: bold;">[Ekle]</span>, <span style="font-weight: bold;">[Tekrarla]</span> ve <span style="font-weight: bold;">[Sil]</span> butonları sırasıyla yeni üstyapı kesitleri oluşturmaya, mevcut olanı tekrarlamaya veya silmeye olanak tanır.<br />
+
+      <br />
+
+Oluşturulan farklı kesitlerin güzergah boyunca tanımlandığı, aralarındaki geçişlerin belirtildiği ve <a href="OL_EyM.html">genişletme ve iyileştirme</a> projelerinde nasıl uygulanacağının gösterildiği yer <span style="font-weight: bold;">KESİMLER</span> sekmesidir.<br />
+
+      <br />
+Kesitler ve kesimlerle bu şekilde çalışmak, bir kesit farklı kesimlerde tekrarlanıyorsa, verilerini tekrar girmeye gerek olmaması avantajını sunar.<br />
+
+      
+      <br />
+
+      <br />
+
+      <a name="def_geometrica"><span class="Titulo_2">Bir Üstyapı Kesitinin Geometrik Tanımı</span></a><br />
+
+      
+      <br />
+
+Üstyapı katmanlarını oluşturan farklı malzemelerin tanımı, yapım sırasına göre yapılmalıdır; yani ilk veriler temel tabakalarına, sonrakiler ara tabakalara ve en son veriler en üst tabakalara karşılık gelmelidir. Bunun nedeni, üstyapının her bir bileşeninin (inşa edildiği gibi) öncekilerin üzerine oturtularak hesaplanmasıdır. Dolayısıyla, "üstyapı kutusu içinde bir katman tarafından işgal edilen kısım, sonraki katmanlar tarafından işgal edilemez".<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/firmes_dato.png" style="width: 618px; height: 42px;" alt="" /><br />
+      </div>
+
+      <br />
+
+Her katmana, metraj listelerinde bileşeni tanımlamak için bir ad (boşluksuz) atanabilir. Belirli bir üstyapı bileşeninin metrajının görünmesi istenmiyorsa, ad '&lt;' (küçüktür) ve '&gt;' (büyüktür) sembolleri arasına yazılmalıdır. Örneğin, ad olarak &lt;granulertemel&gt; yazılırsa, bu metraj listelerde görünmeyecektir.<br />
+
+      <br />
+
+Bir güzergahtaki üstyapı katmanlarının ad listesi, o güzergahta tanımlanan tüm üstyapı kesitleri için ortaktır. Bu nedenle, her satırın başında, mevcut verinin belirli bir bileşeninin uygulanıp uygulanmayacağını belirten bir onay kutusu bulunur. Onay kutusunun yanındaki numara, katman numarasını belirtir. Bu, bir projede kullanılacak tüm katmanları içeren bir kesit oluşturmayı ve ardından projenin geri kalan kesitlerinde bu kesiti tekrarladıktan sonra, her kesimde kullanılan malzemelere karşılık gelen kutuları etkinleştirmeyi sağlar.<br />
+      <br />
+<span style="font-weight: bold;">Adlar -> Tümü</span> kutucuğu aracılığıyla: Bu araç, mevcut güzergahta tanımlanan üstyapı katmanlarının adlarını projenin geri kalan tüm güzergahlarına kopyalamayı sağlar.<br />
+
+      <br />
+
+Metraj hesaplayıcı, toplamları adlarına göre değil, sıra numaralarına göre biriktirir. Dolayısıyla, bir kesitte Doğal Granüler Temel (1), Ara Katman (2) ve Aşınma (3) varsa ve başka bir kesimde (sanat yapısı) granüler temel veya ara katman uygulanmıyorsa, bu 1 ve 2 numaralı yerler onay kutusu devre dışı bırakılarak boş bırakılmalı ve Aşınma katmanı 3 numaralı yerde tutulmalıdır ki hepsi doğru bir şekilde toplansın:<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; height: 96px; background-color: white; width: 375px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 83px; font-weight: bold; font-style: italic; text-align: center;">VERİ<br />
+            </td>
+            <td style="vertical-align: top; width: 130px; font-weight: bold; font-style: italic; text-align: center;">KESİT 1<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic; text-align: center; width: 136px;">KESİT 2<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 83px; text-align: center;">1<br />
+            </td>
+            <td style="vertical-align: top; width: 130px;"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Doğal Granüler Temel<br />
+            </td>
+            <td style="vertical-align: top; width: 136px;"><img src="Imagenes/checkbox_disabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Doğal Granüler Temel<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 83px; text-align: center;">2<br />
+            </td>
+            <td style="vertical-align: top; width: 130px;"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Ara Katman<br />
+            </td>
+            <td style="vertical-align: top; width: 136px;"><img src="Imagenes/checkbox_disabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Ara Katman<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 83px; text-align: center;">3<br />
+            </td>
+            <td style="vertical-align: top; width: 130px;"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Aşınma<br />
+            </td>
+            <td style="vertical-align: top; width: 136px;"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Aşınma<br />
+            </td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <br />
+TİP sütunundan, katmanın proje kotuna veya subrasante yüzeyine göre davranışı aşağıdaki seçeneklerle kontrol edilir:<br />
+
+      
+      
+      <ul>
+
+        <li>Proje kotuna paralel (<span style="font-weight: bold;">ProjeK_P</span>), yani eğimi proje kotuna eşit olan ve banketlerin altında devam eden.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Proje kotu ile subrasante arasında ara bir eğime sahip olan ve banketlerin altında devam eden (<span style="font-weight: bold;">AraEgim_P</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Subrasante yüzeyine paralel, yani eğimi subrasante yüzeyine eşit olan ve banketlerin altında devam eden (<span style="font-weight: bold;">Subras_P</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Proje kotuna paralel, banketlerin olası kırılmalarını takip eden (<span style="font-weight: bold;">ProjeK_Q</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Subrasante yüzeyine paralel, banketlerin olası kırılmalarını takip eden (<span style="font-weight: bold;">Subras_Q</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><a style="font-weight: bold;" href="#vectores">Vektörel</a>.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Proje kotuna paralel, proje kotunun 50 koduna kadar olan tüm olası kırılmalarını takip eden (<span style="font-weight: bold;">ProjeK_QP</span>). Daha sonra son eğimle şevle kesişene kadar devam eder (50 ve 100 kodları arasındaki segment).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Proje kotunun enine eğimini devam ettirir (ProjeK_P gibi), ancak dış banket altında eğim asla %2'den az olmaz (<span style="font-weight: bold;">ProjeK_P2</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li> <span style="font-weight: bold;">ProjeK_QP2</span> tipi ProjeK_QP'ye benzer, ancak palye (kod 50) bölgesinde farklılık gösterir. Bu durumda program, üstyapıyı proje kotuna paralel olarak, banketlerin kırılmalarını (kod 11, 12, 13) alarak ve tanımlanan son banketin son eğimini devam ettirerek oluşturur. ProjeK_QP tipi kullanıldığında ise üstyapı, banketlerin yanı sıra palyedeki kırılmayı da alarak paralel olacaktır.</li>
+      
+      </ul>
+
+      
+      <div style="margin-left: 40px;">Otoyollarda, orta refüj tarafından da, iç banket kenarından (kod -11) itibaren son eğimi içeri doğru devam ettirir.<br />
+      </div>
+
+      
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Derinlik</span>: <br />
+        </li>
+        <ul>
+          <li>Proje kotu yüzeyi, iki referans kodu arasında tanımlanan derinliğe (proje kotu yüzeyinden mutlak derinlik) kopyalanır.</li>
+          <li>Genişletmeler, kopyalanan bu parçanın başlangıcındaki ve sonundaki enine eğimle uzatılır.</li>
+          <li>Ve sonra tanımlanan şevlerle aşağı inilir.</li>
+        </ul>
+      
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Normal Derinlik</span>: Derinlik gibidir, ancak bu, dikey yerine yüzeye dik olarak ölçülür.<br />
+        </li>
+      </ul>
+
+
+
+
+      <span style="font-weight: bold;">KOT_D</span> sütununda, subrasante yüzeyinden katmanın yüzeyine olan minimum dikey mesafe (Normal_Derinlik seçeneği hariç) belirlenir. Eğer çift taşıt yolu kesiti ise, sol taraf (<span style="font-weight: bold;">KOT_I</span>) ve sağ taraf için farklı değerler verilebilmesi amacıyla ayrım yapılır. Üstyapı katmanlarının kotları dört ondalık basamakla saklanır.<br />
+      <br />
+<a style="font-weight: bold;" name="rellenos">Dolguları Listele</a> seçeneği, raporlarda ve enkesitlerde, herhangi bir katman tarafından doldurulmayan üstyapı kutusunun hacmi olarak dolgu bileşeninin görünmesini sağlar. Dolgu metrajı ISFIR.dar tablosuna dahil edilir (ve dolayısıyla birleştirilmiş ISPOL4+ISFIR.dar tablolarında da yer alır).<br />
+
+Eğer []<span style="font-weight: bold;">Dolguları Listele</span> seçeneği aktifse, bu metrajın adı ISPOL4+ISFIR.dar dosyasına "Dolgular" olarak geçer. Eğer devre dışı ise, listelerde görünmemesi için "&lt;Dolgular&gt;" olarak geçer (yardımcı metraj).<br />
+
+Proje seçeneği []<span style="font-weight: bold;">Üstyapıyı dahil et</span> aktifken, []<span style="font-weight: bold;">Dolguları Listele</span> seçeneği de aktifse, cvol... dosyalarında dolgu metrajı görünecektir.<br />
+
+      <br />
+Ardından, bu katmana karşılık gelen malzemenin yoğunluğunu tanımlamak mümkündür. Bu sayede, <a style="font-weight: bold;" name="toneladas">Tonajları Listele</a> seçeneği aktif edilirse, metraj özetinde bu değere göre malzeme tonajlarını içeren bir sütun görünür. Tonaj listesi aktifken, yoğunluğu (veya hacmi) sıfır olan katmanlar için metrajlar yazdırılmaz ve toplanmaz.<br />
+
+      <br />
+
+<a style="font-weight: bold;" name="riegos">Astar Metrajlarını Listele</a> seçeneği aktif edildiğinde, üstyapı raporlarında her bir üstyapı katmanının toplam astar (püskürtme) alanı da görünecektir. Bu alan, varsayılan olarak her katmanın üst yüzeyine karşılık gelir, ancak Ayarlar &#8594; Tercihler &#8594; Lineer Proje &#8594; Boykesit &#8594; Astar metrajını alt yüzeyden ölç seçeneği ile alt yüzey alanı olarak değiştirilebilir.&nbsp; <br />
+Üstyapı hesaplandığında veya yeniden metrajlandırıldığında, fi.res ile aynı formatta olan ancak her malzeme için şunu içeren ek bir ri.res (riXX.res) dosyası da oluşturulur: Enkesitte astar uzunluğu, enkesitler arası kısmi astar alanı ve birikimli astar alanı.<br />
+      <img src="Imagenes/OL_firmes_listado.png" style="width: 700px; height: 156px;" alt="OL_firmes_listado.png" /><br />
+      <br />
+<br /><a style="font-weight: bold;" name="riegos">BIM Astarları</a> seçenekleriyle, BIM modeliyle hangi astar türlerinin (yapıştırma, kür ve/veya bağlayıcı) oluşturulacağı seçilebilir.<br /><br /><span style="font-weight: bold;">Uzatılmış Şevler</span> seçeneği, ProjeK_P, AraEgim_P, SubRas_P tipi katmanlar üzerinde etki eder ve şevi başlatmak için referans noktasının proje kotunda (kullanılan kodda veya bu koda belirtilen mesafede) olmasını sağlar. Bu şekilde, aynı koda, aynı mesafeye ve şeve sahip tüm katmanların şevleri basamak oluşturmadan birbirinin devamı şeklinde olur.<br /><br />Kesit tasarımı için:<br /><br /><span style="font-weight: bold;">On iki veri sütunu</span> görünür; altısı güzergahın solu, diğer altısı sağı içindir. Buradan üstyapı katmanlarının genişlikleri ve yanal kapanma şevleri belirlenir.<br />
+
+      <br />Üstyapı katmanlarının genişlikleri, proje kotu kodlarına göre belirlenir. Görülebileceği gibi, program hem sağ hem de sol taraf için her katmanın dış genişlik ve şevini (Geniş dış / Şev dış) ve iç genişlik ve şevini (Geniş iç / Şev iç) tanır. Ayrıca, bu şekilde bir koda ve o koda göre bir mesafeye referans vermek, bu ek genişliği referansa eklemek mümkündür (negatif değerler ek genişliğin çıkarıldığını gösterir).<br />
+      <br />
+Girdiğimiz veriler belirtiyorsa, üstyapı katmanlarının iç kısmı geometrik ekseni geçebilir. Böyle bir durumda, program iç şevlerin kesişimini hesaplayacaktır.<br />
+
+      <br />
+
+<span style="font-weight: bold;">Kod</span> sütununda, üstyapı katmanlarının uzunluğunu sınırlamak için platform kodunu tanımlayacağız. Referans kodu olarak kabul edilen kodlar -50 ile 99 arasındaki herhangi bir değeri (her ikisi de dahil, 50'den büyük kodlara sahip bir <a href="OL_vectores.html">sabit platform</a> olabileceğini unutmayın) ve 1.1, 1.2, 1.5, 1.6, 1.7 ve 1.8 kodlarını içerir.<br />
+Varsayılan olarak iç genişletme için referans kodu 1, dış genişletme için 2'dir. Yani, 1.2 koduna bir genişlik referans verilirse ve bu kod mevcut değilse, referans 1 koduna atlar; 1.5 koduna bir genişlik referans verilirse ve bu kod mevcut değilse, referans 2 koduna atlar.<br />
+
+      <br />
+      <br />
+
+      <a style="font-weight: bold;" name="ejemplo">Örnek</a><br />
+
+      <br />
+
+
+Tümü proje kotuna paralel olan birkaç katmandan oluşan bir üstyapı katmanının geometrisini nasıl tanımlayacağınızı göstermek için, bir taraf için bu örneğin aşağıdaki adımlarını izlemeniz önerilir:<br />
+
+
+      <br />
+
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 244px; text-align: justify;">30 cm kalınlığında, taşıt yolu kenarları arasına ek olarak dışa doğru 25 cm'lik bir genişletme payı ile ve 1:1 kapanma şeviyle bir ilk temel tabakası tanımlanmak isteniyor.</td>
+            <td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_1.png" style="width: 429px; height: 28px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <br style="font-style: italic;" />
+
+      
+      Bunun için, kalınlık tanımlandıktan ve katman aktif hale getirildikten sonra, katmanın dış kenarının taşıt yolu kenarına (kod 2) ulaşması için Geniş dış sütununa 0.000 değerini ve Kod sütununa 2 değerini girmek yeterlidir. Bu durumda ayrıca dışa doğru 25 cm taşması gerektiği belirtildiği için, önceki değere 0.250 eklenmelidir, dolayısıyla Geniş dış hücresinde 0.000 + 0.250 = 0.250 olmalıdır.<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">Önceki temel tabakası, yanlarda başka bir malzemeden oluşan katmanlarla tamamlanır.</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_2.png" style="width: 429px; height: 36px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br style="font-style: italic;" />
+
+      Bu durumda, Geniş dış sütununa üstyapı katmanlarının uçlarına ulaşacak kadar büyük bir değer girmek yeterlidir. Böylece, Geniş dış = 10 için, program kod 2'den başlayarak 10 m'lik bir katman oluşturur, ancak üstyapı katmanının sınırına daha önce ulaştığı için onu geçmez. Diğer yandan, Geniş iç sütununa bir şey belirtmeye gerek yoktur, çünkü önceki katmanlar tarafından işgal edilen 'alan', sonrakiler tarafından (yapım sırasına göre) dikkate alınacaktır.<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">Ardından, 15 cm kalınlığında, banket kenarları arasından 20 cm eksik olacak şekilde ve 1:1 kapanma şeviyle bir ara katman yerleştirilir.</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_3.png" style="width: 429px; height: 28px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br />
+
+      Bu durum, katmanın dış kısmının 11 koduna ulaşması gerektiğini, dolayısıyla Kod sütununa 11 değerini, 20 cm eksik olacak şekilde Geniş dış = -0.200 (eksi işareti 20 cm'lik mesafenin içe doğru olduğunu gösterir) olarak tanımlayacağımızı belirtir. Ayrıca, KOT_D sütununa kalınlığın değil, kotun girildiği ve dolayısıyla değerinin 0.3 + 0.15 = 0.45 olacağı hatırlatılır.<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">Önceki katman, üstyapı katmanlarının kenarlarına kadar başka bir malzeme ile tamamlanır.</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_4.png" style="width: 429px; height: 28px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br />
+
+      Yan temel tabakası durumuna benzer.<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">Merkezdeki üst katman, 5 cm kalınlığında bir aşınma tabakasından oluşur ve taşıt yolu kenarları arasına ek olarak 20 cm'lik bir genişletme payı ve 1:1 kapanma şevi ile tanımlanır.</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_5.png" style="width: 429px; height: 28px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br />
+
+      Dolayısıyla, KOT_D = 0.500 ve Geniş dış = 0.200 ve Kod = 2.<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">Banketlerdeki aşınma tabakası, başka bir malzeme ile tam olarak banket kenarına kadar, yine 1:1 şev ile tamamlanır.<br />
+
+</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_6.png" style="width: 429px; height: 28px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br />
+
+      Dış koda referans, dolayısıyla Geniş dış = 0 ve Kod = 11 olacaktır.<br />
+
+      <br />
+
+      Palyelere karşılık gelen kısım için dolgular kullanılacaktır.<br />
+
+      <br />
+
+      Metrajlarının hesaplanması için, Dolguları Listele kutucuğunun işaretlenmesi gerekecektir.<br />
+
+      <br />
+Üstyapı katmanı simetrik olduğu için, bu değerler sağ tarafta tanımlandıysa, sol tarafa kopyalanmaları için [Sol &lt;= Sağ] butonuna basılacak veya sol tarafta tanımlanıp sağa kopyalanmaları isteniyorsa [Sol =&gt; Sağ] butonuna basılacaktır.<br />
+
+      <br /><br />Üstyapı katmanlarını tanımlayan yüzeyler aşağıdaki gibi kodlanır:<br /><ul><li>Katmanı tam olarak yanal şev eteğine kadar tanımlayan noktalar şu kodları alır: 1,2,3,....</li><li>Diğer yüzeyler üzerinde bulunan dış noktalar: 100,101,...</li><li>Otoyol kesitlerinde, diğer yüzeyler üzerinde bulunan iç noktalar: ... -102, -101, -100.</li></ul>Örnekler:<br /><br />Karayolunda bir üstyapı katmanının yarı-enkesiti: 1,2,3,100,101,102:<br /><ul><li>1= katmanın eksendeki noktası.</li><li>2= katmanın platform kenarı (omuz).</li><li>3= katmanın şev eteği.</li></ul>Otoyolda bir katmanın yarı-enkesiti: -102,-101,-100,1,2,3,4,100,101,102:<br /><ul><li>1= iç şev eteği.</li><li>2= iç platform kenarı (omuz).</li><li>3= dış platform kenarı (omuz).</li><li>4= dış şev eteği.</li></ul><br />
+
+
+      <br />
+
+
+      <a name="vectores"><span class="Titulo_2">Bir Üstyapı Katmanının Vektörel Tanımı</span></a><br />
+
+
+      <br />
+
+
+Bir üstyapı kesitini oluşturan katmanların geometrileri vektörel olarak da tanımlanabilir.<br />
+
+
+      <br />
+
+
+      
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_firmes_vectorial.png" style="width: 550px; height: 241px;" alt="" /><br />
+      </div>
+
+      <br />
+
+Her vektörel katman aşağıdaki verilerle tanımlanır:<br />
+
+
+      <br />
+
+
+      
+      
+      
+      <div style="margin-left: 40px; height: 10px;">Bileşen için bir koordinat başlangıcının tanımlanması:<a name="vectores"><br />
+      </a></div>
+
+
+      
+      
+      
+      <div style="margin-left: 40px;">
+      <ul>
+        <li>Kod sütununda belirtilen, proje kotu yüzeyinin (yüzey 67) referans kodu.</li></ul>
+      <ul>
+
+        <li>Koda olan mesafe (dışa doğru pozitif), Dc sütununda tanımlanır.</li>
+      </ul>
+      <ul>
+
+        <li>Derinlik (aşağı doğru pozitif), Dz sütununda tanımlanır. Sıfırdan farklı bir Dc değeri varsa, derinlik, Kod sütununda belirtilen koddan uzatılan proje kotu yüzeyinden ölçülür.</li>
+      </ul>
+      <ul>
+
+        <li>Kullanılacak geometri vektörünün numarası, Vek sütununda tanımlanır.</li>
+      
+      </ul>
+
+      </div>
+
+
+      
+      
+      
+      <div style="margin-left: 40px; height: 13px;">Geometri vektörlerinin tanımı<a name="vectores"><br />
+      </a></div>
+
+
+      
+      
+      
+      <div style="margin-left: 40px;">
+      <ul>
+        <li>Bileşen için bir ad, kullanıcının vektör listesinde onu tanımlamasını sağlar.</li>
+      </ul>
+      <ul>
+        <li>Uygulama tipi:</li>
+      </ul>
+      <div style="margin-left: 80px;">a) Yatay.<br />
+      b) Deverli (referans noktasından döndürülür).<br />
+      c) Sabit % eğimli (referans noktasından döndürülür).<br />
+      </div>
+      <ul>
+        <li>Vektör. Vektörel geometri tanımında, diğer vektör türlerinden bir fark dikkate alınmalıdır: Diyalog kutusundaki koordinatlar referans noktasına göre mutlaktır (diğer vektörlerde olduğu gibi bir önceki noktaya göreceli DEĞİLDİR).</li>
+      </ul>
+      </div>
+
+
+      Aynı vektör, aynı kesitin farklı katmanlarında veya farklı kesitlerde birden çok kez kullanılabilir, bu da aynı kesitte veya farklı kesitlerde (örneğin, otoparklı, bisiklet yollu vb. şehir içi kesitlerde, bir şeridi diğerinden ayırmak için yerleştirilen bordürleri tanımlamaya olanak tanır) tekrar eden aynı bileşenlerin tanımını çok basitleştirir.<br />
+
+
+      <br />
+
+
+      <br />
+
+      <a name="tramificacion"><span class="Titulo_2">Üstyapı Kesitlerinin Güzergah Boyunca Tanımlanması ve Kesitler Arası Geçiş</span></a><br />
+
+
+      <br />
+
+
+Her üstyapı kesiti, bir kesitten diğerine geçmeyi sağlayan tipik veri gezgini altında bulunan ilgili butonlarla eklenir, tekrarlanarak eklenir veya silinir.<br />
+
+
+      <br />
+
+
+      
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/firmes_tramificacion.png" style="width: 550px; height: 241px;" alt="" /><br /><br /><img src="Imagenes/firmes_tramificacion_1.png" style="width: 550px; height: 239px;" alt="" /><br />
+      </div>
+
+
+      <br />
+
+<span style="font-weight: bold;">Başlangıç KM</span> ve <span style="font-weight: bold;">Bitiş KM</span> alanlarına girilen değerler, tanımlanmakta olan tip kesitin kapsadığı aralığı belirler. Varsayılan olarak, ISTRAM®/ISPOL® iki ardışık kesim arasında üstyapı katmanlarının geometrik geçişlerini yapmaz. Geçişleri gerçekleştirmek için, Bitiş Kes. alanında bitiş kesitinin numarası belirtilmelidir. Böylece, 0'dan farklı bir değer verilirse, başlangıç KM ile bitiş KM arasındaki kesimde, mevcut üstyapı kesiti ile bu kutucukta numarası belirtilen kesit arasında bir geçiş yapılır.<br /><br /><span class="Parf_negrita">Kullanıcı KM'leri</span> seçeneği, kilometrelerin kullanıcı değerleri olarak girilmesine olanak tanır. Seçenek etkinleştirilebilir/devre dışı bırakılabilir ve etkinleştirme durumu .vol dosyasında saklanır.<br />
+      <br />
+Her bir Üstyapı uygulama Kesiminde, yarma <span style="font-weight: bold;">Y</span> ve dolgu <span style="font-weight: bold;">D</span> durumları için farklı kesitler tanımlanabilir. Aynı kilometrede sağ ve sol tarafa farklı kesitler uygulanabilir (Yamaç kesitleri).<br />
+
+
+      <br /><span class="Parf_negrita">Yeniden Sırala</span>: Bu araç, hesaplama bölgelerini yeniden sıralama aracına benzer şekilde çalışır, yani bir çakışma durumunda en son tanımlanan kesim geçerli olur. (Bu, genişletme ve takviye kesimleri için ayrı ayrı yapılır).<br /><br />
+
+
+<span style="font-weight: bold;">Hesaplama Bölgelerini Kopyala</span> aracı, eğer bu üstyapı kesiti mevcutsa, uygulanacak üstyapı kesiti olarak tip kesit numarasını da kopyalar.<br />
+      <br />
+[Yeniden Sırala] seçeneği, üstyapı verilerini aşağıdaki şekilde sıralamayı sağlar:<br />
+
+
+      
+      
+      
+      <ol>
+
+
+        <li>Tüm kesit veya genişletme için tanımlananlar öne yerleştirilir.</li>
+        <li>Takviye için tanımlananlar sona yerleştirilir.</li>
+        <li>İki grubun her biri başlangıç kilometresine göre yeniden sıralanır.</li>
+      
+      
+      </ol>
+
+
+      Bu seçenek, üstyapı katmanları hesaplandığında da otomatik olarak çalışır.<br />
+
+
+      <br />
+
+Her kesitin, listelerde görünecek bir adı olabilir. Bu ad, <span style="font-weight: bold;">KESİT ADI</span> alanında belirtilir.<br />
+
+
+      <br />
+
+[<span style="font-weight: bold;">1'i Kaydet</span>] ve [<span style="font-weight: bold;">1'i Yükle</span>] butonları, mevcut üstyapı kesitini .1pf uzantılı bağımsız bir dosyaya kaydetmeyi ve geri yüklemeyi sağlar, bu da yeniden kullanılabilecek üstyapı kesit kütüphaneleri oluşturma imkanı tanır.<br />
+
+
+      <br />
+
+[<span style="font-weight: bold;">Kaydet</span>] ve [<span style="font-weight: bold;">Yükle</span>] seçenekleri, tanımlanan kesitler setini uygulama aralıklarıyla birlikte .pfm adlı tek bir dosyaya kaydetmeyi veya geri yüklemeyi sağlar. Bir yükleme yapılması durumunda, mevcut üstyapı katman tanımı ve aralıkları okunanla değiştirilir.<br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <a name="calculo"><span class="Titulo_2">Üstyapı Katmanlarının Hesaplanması</span></a><br />
+
+
+      <br />
+
+      <img src="Imagenes/paquete_firmes_isfir.png" style="width: 153px; height: 60px;" alt="" align="right" hspace="6" />[<span style="font-weight: bold;">ÜK Oluştur</span>] (üstyapı katmanı oluştur) butonu, BOYKESİT dikey menüsündeki [Ü. Katmanı Oluştur] seçeneği ile aynı anlama gelir. Bu tanımı uygular, hesaplar ve raporları ile enkesit dosyasını (ISFIR#.per, # güzergah numarasıdır) oluşturur. Metrajlar ISFIR.dar tablosu kullanılarak yapılır, ancak burada tanımlanan bileşen adlarına sadık kalınır.<br />
+
+
+Bu diyalog kutusundan ISFIR#.per dosyasını doğrudan düzenleyebilirsiniz.<br />
+
+
+      <br />
+
+      <a name="recalcular_PF">[<span style="font-weight: bold;">ÜK Yeniden Hesapla</span>] (üstyapı katmanını yeniden metrajlandır) seçeneği, BOYKESİT dikey menüsündeki [Ü.K. Y. Hesapla] seçeneği veya PROJE'deki [RFI] butonu ile aynı anlama gelir ve ISFIR#.per dosyasını ISPOL#.per dosyasıyla karşılaştırır (burada # güzergah numarasıdır), eğer ikincisinde subrasante değişiklikleri veya kenarlarda kırpma bulursa birincisinin geometrisini düzeltir ve yeniden metrajlandırarak raporları oluşturur.<br />
+      <br />
+[<span style="font-weight: bold;">Mod Kaydet</span>] ve [<span style="font-weight: bold;">Mod Yükle</span>] seçenekleri, BOYKESİT menüsünde görünen [<span style="font-weight: bold;">M Kaydet</span>] ve [<span style="font-weight: bold;">M Yükle</span>] seçeneklerine benzer bir anlama sahiptir; ancak ISPOL#.per dosyalarını kaydetmek yerine, bu durumda üstyapı katmanlarını içeren ISFIR#.per dosyaları kaydedilir ve NN#.per adlı başka bir dosya serisine kopyalanarak sonraki hesaplamalar tarafından üzerine yazılmaktan korunur. Burada NN kullanıcı tarafından verilen temel addır ve # güzergah numarasıdır. Aynı şekilde, kaydedilen üstyapı katmanlarının adlarının kaydedildiği dosya NN.mpf olarak adlandırılır. Bu nedenle, bu kaydetme işlemini yaparken ISPOL#.per serisi için verilen adın bu ISFIR#.per serisi için olandan farklı olmasına dikkat etmek gerekir.<br />
+      <br />
+      <br />
+      </a><a name="ensanche_refuerzo"><span class="Titulo_2">Genişletme ve Takviye için Üstyapı Katmanları</span></a><br />
+
+
+      <br />
+
+
+      <img src="Imagenes/firmes_ensanche_refuerzo.png" style="width: 150px; height: 94px; margin-left: 7px;" alt="" align="right" />ISFIR#.per enkesit dosyalarına (# güzergah numarasıdır), üstyapı katmanlarının tasarım ve yorumlama sürecini kolaylaştırmak için mevcut taşıt yolu ve subrasante yüzeyleri de dahil edilir.<br />
+
+
+      <br />
+
+
+Her üstyapı kesitinde kullanım alanı tanımlanabilir:<br />
+
+
+      
+      
+      
+      <ul>
+
+
+        <li>Tüm kesitte</li>
+        <li>Genişletmede</li>
+        <li>Takviyede</li>
+      
+      
+      </ul>
+
+
+      Bu, <a href="OL_EyM.html">genişletme ve iyileştirme</a> projeleri için aynı kesimde, genişletme bölgesinde ve takviye bölgesinde farklı üstyapı kesitleri tanımlamayı sağlar (aynı kilometrelere sahip iki kesit).<br />
+
+
+      <br />
+
+
+Eğer aynı katman her iki kesitte de görünüyorsa (örneğin aşınma tabakası), genişletme bölgesinde ve takviye bölgesinde farklı kalınlıklara sahip olabilir. Düzenleme (rölaj) malzemeleri sadece takviye kesitine dahil edilecek ve genişletme için olan kesitin ilgili kutucuğunda devre dışı bırakılacaktır.<br />
+
+
+      <br />
+
+
+Takviye ve genişletmede farklı üstyapı kesitleri isteniyorsa, aşağıdaki gibi hareket edilecektir:<br />
+
+
+
+      
+      
+      <ul>
+
+
+        <li>Tüm üstyapı kesitlerini, farklı kesimlerde, kilometrelerine göre sıralanmış olarak, tüm kesitte veya genişletmede tanımlayın.</li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li>Daha sonra, takviyedeki farklı kesitleri kilometrelerine göre sıralanmış olarak sona ekleyin. Takviyedeki kesitlerin tüm kilometreleri kapsaması gerekmez.</li>
+      
+      
+      </ul>
+
+
+      Örnek: Aşağıdaki üstyapı katmanlarını kullanarak bir genişletme ve iyileştirme yapılmak istendiğini varsayalım:<br />
+
+
+      
+      
+      
+      <ul>
+
+
+        <li>Genişletmede 10 cm, takviyede 15 cm aşınma tabakası.</li>
+        <li>Sadece genişletmede 10 cm ara katman.</li>
+        <li>Sadece genişletmede 30 cm granüler temel.</li>
+        <li>Gerekirse takviyede, aşınma tabakasının altında mevcut üstyapıya kadar düzenleme (rölaj) kaması.</li>
+        <li>Üstyapı katmanlarının minimum kalınlığı 50 cm (subrasante menüsünde tanımlanmış).</li>
+      
+      
+      </ul>
+
+
+      O zaman iki kesit tanımlanacaktır:<br />
+
+
+      <br />
+
+
+      
+      
+      
+      <table style="text-align: left; width: 694px; height: 120px;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 321px; font-weight: bold; text-align: center;">Kesit 1<br />
+            </td>
+            <td style="vertical-align: top; width: 321px; font-weight: bold; text-align: center;">Kesit 2<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 321px; height: 90px;">Katman 1: 30 cm'e kadar Granüler Temel<br style="font-style: italic;" />
+            <br style="font-style: italic;" />
+            Katman 5: 40 cm'e kadar Ara Katman (10 cm kalınlık)<br style="font-style: italic;" />
+            Katman 9: 50 cm'e kadar Aşınma (10 cm kalınlık)<br />
+            </td>
+            <td style="vertical-align: top; width: 321px; height: 90px;"><br />
+            Katman 3: 35 cm'e kadar Düzenleme Kaması<br style="font-style: italic;" />
+            &nbsp;&nbsp;  <br style="font-style: italic;" />
+            Katman 9: 50 cm'e kadar Aşınma (15 cm kalınlık)<br style="font-style: italic;" />
+            (Takviyedeki aşınma tabakasını ayrı ölçmek istenirse, 9 yerine 8. katmana atanabilir)<br />
+            </td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+      <br />
+      <div style="text-align: left;">Mevcut taşıt yolu olan enkesitler için, ISFIR.per dosyasına Zayıf Zemin Kazısı (L107) hattının bir kopyası (L337) da eklenir. Bu, astar metrajlarının alt yüzey üzerinde, yeni veya mevcut üstyapıya oturduğu yerleri ayırarak doğru bir şekilde ölçülmesini sağlar. Bu metrajı elde etmek için Raporlar > Metrajlar > <a href="OL_listados_mediciones.html#riegos">Astar Alanları</a> menüsüne gidilmelidir.<br />
+      </div>
+<br />
+
+
+      <br />
+
+
+      <a name="pautas"><span class="Titulo_2">Bir Projenin Üstyapı Katmanlarını Oluşturmak İçin İzlenecek Adımlar</span></a><br />
+
+
+      <br />
+
+
+Program, her güzergah için raporlar oluşturmanın yanı sıra birleştirilmiş üstyapı raporları da oluşturduğundan, tüm güzergahların tüm üstyapı katmanlarının doğru bir şekilde tanımlanması ve metrajlarının alınması için kullanıcının uyması gereken bir dizi kısıtlama getirir. Bu nedenle, kullanıcının projenin üstyapısını tanımlarken aşağıdaki adımları izlemesi tavsiye edilir:<br />
+
+
+      
+      
+      
+      <ul>
+
+
+        <li>Üstyapı tanımlanacak bir güzergahta bulunurken, projede yer alacak TÜM malzemelerin adlarını, tanımlanmakta olan kesitte kullanılıp kullanılmayacağına bakılmaksızın ve yapım sırasına uyarak oluşturun. Olası proje revizyonlarına karşı "joker" olarak kullanmak üzere bazı katmanları boş bırakmak iyi bir fikirdir.</li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li>Şimdilik sadece farklı malzemelerin adlarını içerecek olan bu tip kesiti kaydedin. Bunun için [<span style="font-weight: bold;">1'i Kaydet</span>] seçeneği kullanılacaktır.</li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li>Her güzergah için farklı üstyapı kesitlerini oluşturun, her biri için önceki adımda kaydedilen malzeme listesini yükleyin. Her güzergah için buna bir alternatif, önceki kesiti ilk konuma yüklemek ve ardından güzergahta olacak ek üstyapı kesitleri kadar [<span style="font-weight: bold;">Tekrarla</span>] butonuna basmaktır.</li>
+      
+      
+      </ul>
+
+
+      
+      
+      
+      <ul>
+
+
+        <li>Her kesitin geometrisini tanımlayın.</li>
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li>Tanımlanan farklı kesitleri güzergah boyunca uygulayın.</li>
+
+      
+      
+      
+      </ul>
+
+Tüm bunları hızlı bir şekilde yapmanın bir yolu [<span style="font-weight: bold;">KESİT->GRUP</span>] butonu aracılığıyla sağlanabilir. Bu seçenek, mevcut üstyapı kesitini alır ve aynı <a href="OL_grupos.html">grubun</a> diğer güzergahlarının .vol dosyalarını, bu kesiti 1 numara olarak yükleyerek değiştirir. <br />Ayrıca, mevcut güzergahın tüm Üstyapı Kesitlerini, uygulama aralıklarını değiştirmeden aynı gruptaki tüm güzergahlar için kopyalama imkanı da vardır. Bunun için [<span class="Parf_negrita">KESİTLER->GRUP</span>] butonuna basılacaktır.<br />
+      <br />
+Ayrıca her bir üstyapı uygulama kesimine bir ad verme imkanımız da bulunmaktadır. Böylece BIM için her bileşene iki özellik eklenebilir: <span style="font-weight: bold;">Üstyapı Kesitinin Adı</span> ve <span style="font-weight: bold;">Uygulama Kesiminin Adı</span>.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/nombre_firm01.png" style="width: 550px; height: 241px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/nombre_firm02.png" style="width: 550px; height: 239px;" alt="" /><br />
+      </div>
+      <br />
+<span class="Parrafo"><span style="font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

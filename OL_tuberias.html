@@ -1,0 +1,1414 @@
+﻿<!DOCTYPE html PUBLIC "-//W-3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Borular</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SIHHİ TESİSAT VE DAĞITIM. BORULAR<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="obsolete Parrafo" style="width: 694px;"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#redes">Şebekeler</a><br /><a href="#dis_geom_redes">
+Şebekelerin geometrik tasarımı</a><br /><a href="#tablas_componentes">
+Bileşen tabloları</a><br /><a href="#entorno">
+Tasarım ortamı</a><br />
+      </div>
+
+      
+      <div style="margin-left: 40px;"><a href="#planta">Yatay güzergah tasarımı</a><br />
+      </div>
+
+
+      <div style="margin-left: 80px;"><a href="#planta_conv">Geleneksel menü ile yatay güzergah tasarımı</a><br />
+      <a href="#planta_espec">Borulara özel menü ile yatay güzergah tasarımı</a><br />
+      </div>
+
+      
+      <div style="margin-left: 40px;"><a href="#rasante">Kırmızı kot tasarımı. Dairesel kesitli borular ve bacalar</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#def_pozos">Bacaların veya rögarların tanımı</a><br /><a href="#def_tubos">Boruların tanımı</a><br />
+      <a href="#util_ras">Kırmızı kot yardımcı programları</a><br />
+      </div>
+
+      <div style="margin-left: 40px;"><a href="#alzado">Enkesit tasarımı</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#tipo_tuberia">Boru tipi eksen tanımlama</a><br /><a href="#zanja">
+Hendekteki boru</a><br />
+      <div style="margin-left: 40px;"><a href="#proteccion">Koruma bölgesi</a><br /><a href="#cubricion">Örtü bölgesi</a><br /><a href="#rellenos">
+Hendek dolguları</a><br />
+      </div><a href="#apoyo">
+
+Destekli boru</a><br /><a href="#datos_tubos">
+
+Boru verileri</a><br />
+      <a href="#tubos_vect">Vektörel borular</a><br /><a href="#camino_servicio">
+Servis yolu</a><br />
+
+      <a href="#acopios">Yığınlar</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#tabCubic_planos_listados">
+Boru projelerine özel metraj tabloları, paftalar ve raporlar</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#tablasCubic">Metraj tabloları</a><br />
+      <a href="#planos">Paftalar</a><br />
+      <a href="#listados">Raporlar</a><br />
+      </div>
+<br />
+      <span class="Parrafo"><br />
+</span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+
+      </span><span style="font-weight: bold; font-style: italic;"><a name="redes">Şebekeler</a></span><br />
+      <span class="Parrafo">
+      <br />
+Bir şebeke, topolojik kavramıyla, geometrik olarak tanımlanmış ve birbiriyle ilişkili aşağıdaki elemanlardan oluşur:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Noktalar</span>, noktasal geometrik varlıklardır (X,Y,Z).</span></li>
+
+        <li><span class="Parrafo"><span style="font-weight: bold;">Köşe Noktaları</span>, bir yayın parçası olan noktalardır.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Düğüm Noktaları</span>, aslında özel bir köşe noktası türüdür ve şunlar olabilir:</span></li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo">Üç veya daha fazla yayın bağlantı köşe noktası.</span></li>
+
+        <li><span class="Parrafo">İki farklı yayın bağlantı köşe noktası.</span></li>
+        <li><span class="Parrafo">Bir yay ucu.</span></li>
+      </ul>
+      <span class="Parrafo" /></div>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Yaylar</span>, köşe noktalarından geçen doğrusal varlıklardır.</span></li>
+      </ul>
+
+      <span class="Parrafo">Bu nesneler CAD tipi araçlarla oluşturulur veya değiştirilir. Verileri, dosyalar ve/veya veritabanları üzerinde düzenlenmiş veri yapılarında saklanır.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="dis_geom_redes">Şebekelerin geometrik tasarımı</a></span><br />
+      <span class="Parrafo">
+      <br />
+Bir şebeke, çoklu çizgilerden oluşan bir çizimden tanımlanabilir; bu çizim, diğer programlarda oluşturulmuş çizimlerden içe aktarılabilir, genel CAD'imizde bir çizimden dönüştürülebilir veya şebekelerin geometrik tasarım çalışma ortamında tanımlanabilir.<br />
+      <br />
+
+Şebekelerin geometrik tanım çalışma ortamında, noktalar, yaylar vb. oluşturmak için araçlar bulunur; bu araçlar, kullanıcıyı topolojik olarak tutarlı ve kullanılan fiziksel bileşenlerin geometrik kısıtlamalarıyla uyumlu bir geometrik yapı oluşturma ve değiştirme konusunda yönlendiren geometrik yardımlar ve kısıtlamalar sunar. Ayrıca, mevcut nesnelerin oluşturulması sırasında ve daha sonra, sonraki düzenlemeler ve değişikliklerde değiştirilmesine olanak tanır.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="tablas_componentes">Bileşen tabloları</a></span><br />
+      <span class="Parrafo">
+      <br />
+Bileşen tabloları, bir şebeke oluşturmak için mevcut olan her bir nesnenin veya bileşenin özelliklerini (geometrik veya başka türden) tanımlayan veri yapılarıdır. Her bileşenin, onu karakterize eden özellikleri ve geometrik sınırlamaları vardır.<br />
+      <br />
+
+Fiziksel bir şebekenin tasarımında temel olarak doğrusal bileşenleri veya yayları (borular, hendekler, kanallar,...) ve düğüm noktaları olarak bağlayıcıları veya aksesuarları (dirsek, T, baca,...) kullanırız.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="entorno">Tasarım ortamı</a></span><br />
+      <span class="Parrafo">
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün yatay güzergah tasarımı gibi bir ortam, şebeke tasarlamak için gereksiz yere karmaşık görünüyor. Bir çoklu çizgi oluşturmaya daha yakın bir şey daha uygun görünüyor. Ayrıca, bir yayın ilk noktasını tıklayarak bir yay oluşturmaya olanak tanıyan bir araca sahip olmak uygun olurdu; bu araç, hemen sağda ve solda kabul edilebilir minimum yarıçaplı yayın yankısını ve ikinci köşe noktası tıklanana kadar lastik bant segmentini görselleştirmelidir. Tıklandıktan sonra, yankı, yayda uygulanacak yarıçapı belirleyen bir ara nokta girilecek şekilde değişmelidir. İkinci yay olduğunda, yankı, her bir mevcut aksesuar için kapsama açılarını göstermelidir; çıkış azimutu olarak bir öncekinin sonu artı boşluk (90 derece +/- boşluk, 120+/- H,...) kullanarak, kullanıcının her aksesuar için mevcut alanı görmesini sağlar. Haritadaki nesnelere referans, ayrıca, bir kaldırım kenarına belirli bir mesafede ve belirli bir derinlikte paralel bir bölüm çizmek için çok önemlidir.<br />
+
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="planta">Yatay güzergah tasarımı</a></span><br />
+      <br />
+Yatay güzergah ekseninin tasarımı için iki seçenek mevcuttur: <a href="#planta_conv">geleneksel menüyü</a> veya borulara <a href="#planta_espec">özel menüyü</a> kullanmak. Her durumda, amaç aynıdır: eksenlerin yatay güzergah tasarımını içeren &nbsp;<span class="Archivo">.cej</span> dosyasını elde etmek.<br />
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="planta_conv">Geleneksel menü ile yatay güzergah tasarımı</a></span><br />
+      <br />
+Bu durumda, karayolu ve demiryolu eksenleri için kullanılan aynı <a href="OL_planta_diseno.html">yatay güzergah tasarım menüsü</a> kullanılır, ancak farklı boru kesitlerinin, doğrudan birleştirilmiş ardışık güzergah elemanlarına göre tanımlanabilmesi özelliğiyle (yatay birleşim kurpları olmadan, elbette). Bu nedenle, programın tespit ettiği <a href="OL_planta_opciones_visualizacion.html#no_errores_ptos_angulosos">köşeli noktalarla ilgili hata mesajı</a> göz ardı edilmelidir. Bu aşamada, güzergah elemanlarını birleştirmek için <a href="OL_planta_diseno.html#tecla_V">önceki köşe noktasına kenetlenme</a> <span style="font-weight: bold;">[V]</span> yararlı olabilir.<br />
+
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/red_tuberias.png" style="width: 441px; height: 258px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Boruların yerleştirileceği hendeklerin yatay güzergah tasarımında, yarıçap kullanmak alışılmış bir durum değildir, bu nedenle tasarım bir dizi düz güzergah elemanından oluşabilir. Yine de, gerekirse kurb elemanları da tasarlanabilir.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="planta_espec">Borulara özel menü ile yatay güzergah tasarımı</a></span><br />
+
+      <span class="Parrafo"><br />
+      YATAY GÜZERGAH yüzer penceresinde, <span style="font-weight: bold; font-style: italic;">Boru</span> onay kutusu bulunur. Etkinleştirilirse, borular için yatay güzergah ekseninin tanımı için yeni bir pencere açılır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/modo_tubo.png" style="width: 580px; height: 228px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+
+Kullanıcıya, YATAY GÜZERGAH › <span style="font-weight: bold;">[YARDIMCI PROGRAMLAR]</span> › <a href="OL_planta_herramientas.html#eje_tubo"><span style="font-weight: bold;">Ekseni boruya dönüştür</span></a> dikey menüsünden, geleneksel şekilde tanımlanmış yatay güzergah eksenlerini <span style="font-style: italic;">Boru</span> moduna dönüştürme imkanı hatırlatılır.<br />
+      <br />
+Bu menüde görünen seçeneklerin birçoğu, <a href="OL_planta_diseno.html">geleneksel yatay güzergah tasarım menüsü</a> ile aynıdır, bu nedenle aşağıda yalnızca bu tür projelere özgü olanlar açıklanmaktadır.<br />
+      </span>
+
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Minimum yarıçap</span>: Tasarım açısından, boruların bu değerin altına inmeden bükülebileceği kabul edilir, yani boru bu alanda belirtilen yarıçaptan daha küçük bir yarıçapa sahip olamaz. Her bir güzergah elemanı için farklı bir minimum yarıçap seçilebilir. Varsayılan olarak, güzergah elemanı eklendiğinde, eksenin minimum yarıçapı alınır. </span><span class="Parrafo"><span style="font-style: italic;">Boru</span></span><span class="Parrafo"> modunda, her bir güzergah elemanı için farklı bir minimum yarıçap seçilebilir. Varsayılan olarak, güzergah elemanı eklendiğinde, eksenin <span style="font-weight: bold;">minimum yarıçapı</span> alınır. Eğer 0.0'lık bir minimum yarıçap kullanılırsa, boru dönüş yarıçapı olmadan ve dirseğin açısına ve boşluğuna zorlanarak yerleştirilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><img src="Imagenes/longitud_tubos_3d.png" style="width: 183px; height: 54px;" alt="" align="right" hspace="6" />Boru uzunluğu</span>: Eksenin güzergah elemanlarını oluşturan ardışık düğüm noktalarını tanımlarken, borunun yataydaki uzunluğunu tanımlamaya olanak tanır, böylece bu uzunluk zorunlu olarak o uzunlukta veya katlarında olur. <span style="font-weight: bold; font-style: italic;">3D U</span> kutucuğu etkinleştirilirse, boru uzunlukları eğimleri dikkate alarak gerçek boyutta ölçülür.</span></li>
+
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="tabla_codos">Dirsek tablosu</a></span>: Her eksene, borulara özel bir tasarım tablosu (<span class="Archivo">.dip</span>) atanabilir. Bu tablolar, her bir dirsek veya bağlayıcı için, nominal açısını ve kabul edilebilir bir boşluk değerini, ayrıca menüde görünecek adı içerir. Kütüphanede, hiçbir tablo seçilmediğinde varsayılan olarak yüklenen aynı verileri içeren &nbsp;<span class="Archivo">CODOS.dip</span> tablosu bulunmaktadır:</span></li>
+      </ul>
+      
+      <div style="text-align: center;"><img src="Imagenes/codos_dip.png" style="width: 400px; height: 301px;" alt="" /><br />
+      </div>
+      <br />
+
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 650px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 35px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 595px; text-align: justify;"><img src="Imagenes/tuberias_copiar_codo_ant.png" style="width: 187px; height: 42px; margin-left: 7px;" alt="" align="right" />Bir güzergah elemanı eklerken önceki dirseğin kopyalanmasını ve tekrar girilmesini önlemek istenirse, YATAY GÜZERGAH dikey menüsündeki <a href="OL_planta_opciones_visualizacion.html#opciones">SEÇENEKLER</a>'den <span style="font-weight: bold; font-style: italic;">Eklerken, önceki dirseği kopyala</span> seçeneği etkinleştirilmelidir.</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+      <div style="margin-left: 40px;">Büyük çaplı borular için, ISPOL kütüphanesindeki &nbsp;<span class="Archivo">CODOS_RADIO.dip</span> tablosu gibi, bazı bağlayıcıların belirli bir yarıçapa sahip olduğu yatay güzergah tasarım tablolarında tanımlanmasına izin verilir. <br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/tabladip_radio_codos.png" style="width: 398px; height: 412px;" alt="" /><br />
+      </div>
+      </div>
+      <br />ISTRAM'ın oluşturduğu dirsekleri kütüphanedeki .3DO dosyalarıyla değiştirmek mümkündür; bunun için yarıçap değeri 3D nesneyle eşleşmeli ve ad alanı, uzantısıyla birlikte dosyanın adı olmalıdır. Yalnızca tek borulu bir TK için mümkündür. <br /><br /><div style="text-align: center;"><img style="width: 560px; height: 158px;" alt="" src="Imagenes/tabladip_codos3do.png" /><br /></div><br />Nesnenin başlangıç noktası dirseğin başlangıcında olmalı, Y+ yönüne yönlendirilmiş, X+ yönüne doğru dönüşlü ve boru ekseninde merkezlenmiş olmalıdır:<br /><br /><div style="text-align: center;"><img style="width: 424px; height: 261px;" alt="" src="Imagenes/TUB_codo3DO.png" /><br /></div><br />Dirseklerin .dip tablolarında: CODOS.dip ve CODOS_RADIO.dip'te, farklı eleman kategorilerini ayırt etmek için <span style="font-weight: bold;">TİP</span> adlı bir sütunumuz bulunmaktadır. Böylece dirseklere, manşonlara ve T'lere TİP 1 atanır ve tablolara yeni bir eleman eklenir: TİP 2 atanan Vantuz. Prensip olarak 5 farklı tip atayabiliriz.<br />
+<br /><img src="Imagenes/tuberias_planta_datos.png" style="width: 100px; height: 44px;" alt="" align="right" hspace="6" />
+Bu güzergah elemanları menüsünde, her düğüm noktası için aşağıdaki verileri içeren bir satır görünür (diyalog kutusunda görünen veri sayısı 2 ile 20 düğüm noktası arasında değiştirilebilir):<br />
+      <br />
+      <table style="text-align: left; width: 689px; height: 142px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">N<br />
+            </td>
+
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Eksen içindeki düğüm noktası numarası.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold; text-align: left;">X, Y<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Düğüm noktasının yataydaki koordinatları. Bir düğüm noktasına, daha önce tanımlanmış bir eksenin eksen numarasını ve düğüm noktası numarasını referans olarak vererek de koordinatlar atanabilir; bu durumda program X,Y koordinatlarını otomatik olarak hesaplar. Herhangi bir güzergah elemanının koordinatları, yarıçapı, minimum yarıçapı veya bağlayıcısı değiştirildiğinde, program, bağlayıcıların sınırlamalarını dikkate alarak, o elemandan itibaren tüm güzergahı yeniden ayarlar. Ayrıca sonraki tüm eksenleri de yeniden ayarlar.<br />
+
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">Z<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Düğüm noktasının kotu (dolayısıyla, <a href="#rasan_planta">kırmızı kotu yataydan</a> tanımlamaya olanak tanır). Hiçbir değer beyan edilmezse, kotlar KIRMIZI KOTLAR menüsünden beyan edilir. Bu <span style="font-weight: bold;">Z</span> değerleri <span class="Archivo">.cej</span> dosyalarından kaydedilir ve geri yüklenir.<br />
+
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">Der.<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Derinlik. Bir kenetlenme (örneğin, yüzeye) ile çalışırken, düğüm noktasına aktarılan <span style="font-weight: bold;">Z</span> değeri, önceden belirlenmiş derinlik kullanılarak elde edilir.<br />
+
+            <br />
+ </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">R<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Boru yarıçapı. Program, bir bağlayıcı tipi kullanıldığı sürece bunu otomatik olarak hesaplayabilir. Eğer güzergah elemanı bir bağlayıcı tarafından değil de serbest olarak koşullandırılmışsa, minimum yarıçapa uyarak girdi verisi de olabilir.<br />
+            <br />
+<span style="font-weight: bold;">Ser</span>. (Serbest) kutucuğu etkinleştirilirse, belirli bir düğüm noktasında (n güzergah elemanına karşılık gelen) yarıçap değerini değiştirirsek, program bu güzergah elemanının yeni teğet noktalarını, bir önceki ve bir sonraki konumu değiştirmeden hesaplar. Bu iki düğüm noktasının konumunu, "serbest" güzergah elemanının teğet noktalarını bulana kadar bu güzergah elemanları üzerinde kaydırarak değiştirir. Hesaplama tamamlandığında bu seçenek otomatik olarak devre dışı bırakılır.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tuberias_flo_ejemplo.png" style="width: 569px; height: 92px;" alt="" /><br />
+            </div>
+
+            <br />
+
+</td>
+          </tr>
+          <tr><td style="text-align: left; vertical-align: top;"><span style="font-weight: bold;">Boru U</span></td><td>Her bir güzergah elemanı için her bir borunun birim uzunluğunu değiştirmeye olanak tanır. Varsayılan olarak eksen için tanımlananı alır.<br /><br /></td></tr><tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">BAĞLAYICI<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Bileşen tabloları, bir şebeke oluşturmak için mevcut olan her bir nesnenin veya bileşenin özelliklerini (geometrik veya başka türden) tanımlayan veri yapılarıdır. Her bileşenin, onu karakterize eden özellikleri ve geometrik sınırlamaları vardır.<br />
+            <br /><div style="text-align: center;">
+            <img src="Imagenes/tuberias_conector.png" style="width: 567px; height: 209px;" alt="" /><br />
+</div>Önceki noktanın bağlayıcısı, yenisinin çıkış azimutunu belirler. Fiziksel bir şebekenin tasarımında temel olarak doğrusal bileşenler veya yaylar (borular, hendekler, kanallar,…) ve düğüm noktaları olarak bağlayıcılar veya aksesuarlar (dirsek, T, bacalar,…) kullanılır.<br />
+
+            <br />
+Borular, yaylar oluşturmak için sabit uzunlukta (manşonla biten döküm borular) veya sınırsız (kesitleri kesilen polietilen boru) esnek varlıklardır. Prensip olarak düzdürler ancak belirli bir minimum yarıçapa kadar bükülebilirler.<br />
+            <br />
+Dirseklerin karakteristik bir açısı ve belirli bir boşluğu vardır. Tipik dirsekler 90° ve ardışık yarılarıdır: 45°, 22.5°, 11.25°. “T”ler genellikle 90°'dir. Manşonları da +/- boşluklu 0°'lik bir dirsek olarak düşünebiliriz.<br />
+<br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">BOŞLUK</span><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Bağlayıcının açısı üzerinde ve derece cinsinden ölçülür. Grafiksel olarak yeni bir düğüm noktası eklendiğinde, yankı boruyu bükmeden olası iki bölgeyi ve bükülmesi durumunda minimum yarıçapa kadar olan sınırları gösterir ve bu noktada düğüm noktasının konumunu kilitler.<br />
+            <br />
+
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">EKSEN, N</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Branşmanlar için, ilk ve son düğüm noktası, önceki bir eksenin bir düğüm noktasına referans verebilir ve bu durumda koordinatlar otomatik olarak hesaplanır. Bu ilk düğüm noktasına, ilk borunun yönünü sınırlayan bir bağlayıcı da (örneğin, T 90) yerleştirilebilir.<br />
+
+
+      <br />
+
+<span style="font-weight: bold;">[BUL]</span> seçeneği ile program, açısı ve boşluğu güzergahın açısına uyan tablodaki bağlayıcıyı tespit eder. Hiçbiri bulunmazsa, serbest düğüm noktası olarak bırakılır.</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+      <br />
+<span style="font-style: italic;">Boru</span> modunda tanımlanmış bir eksen, normal modda tanımlanmış bir eksenin herhangi bir tipindeki bir güzergah elemanından çıkabilir. Alınan nokta, güzergah elemanının teğet noktasıdır ve azimutu, bağlayıcı için açısal referans olarak kullanılır.<br />
+      <br />
+Boru ekseni, herhangi bir noktanın başka bir eksene <span style="font-weight: bold;">yansıtılmasından</span> da çıkabilir. Bunun için,
+      <span style="font-weight: bold;">EKSEN</span> alanına diğer eksenin numarası, bitişik N alanına düğüm noktası numarası olarak "0" değeri ve X,Y kutucuklarına yansıtılacak noktanın koordinatları yazılmalıdır. Program daha sonra bu noktayı eksene yansıtır ve azimutu bağlayıcı için açısal referans olarak kullanır. <br />
+
+      <br />
+Her düğüm noktası için, koordinatların, yarıçapın veya aksesuarın değerini <span style="font-weight: bold;">kilitlemeye</span> izin verilir, böylece önceki bir düğüm noktasında bu verilerden biri değiştirildiğinde, eksenin otomatik yeniden ayarlanması kilitli verileri değiştirmez:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/tuberias_bloquear.png" style="width: 529px; height: 84px;" alt="" /><br />
+      </div>
+<br />
+Bir düğüm noktasında elde edilen açı, aksesuarın açısıyla (± boşluk) eşleşmezse, program bu değerleri etkilenen düğüm noktasının altında gösterir.<br />
+      <br />
+
+      <table style="text-align: left; width: 692px; height: 34px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 633px; text-align: justify;"><span class="Info">Bir düğüm noktası değiştirildiğinde, yalnızca mevcut eksen yeniden hesaplanır. Değişiklikler tamamlandıktan sonra, eksenler arasındaki tüm bağımlılıkların çözülebilmesi için bir hesaplama yapmak gerekir.</span></td>
+          </tr>
+        </tbody>
+
+      </table>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="rasante">Kırmızı kot tasarımı. Dairesel kesitli borular ve bacalar</a></span><br /><br />Eksen <a href="#tipo_tuberia">boru tipi olarak tanımlandıktan</a> sonra, KIRMIZI KOTLAR menüsü, alışılmış özelliklere ek olarak bu tür doğrusal yapılar için özel bazı özellikler sunar. Örneğin, birleşim yeri olmayan köşe noktalarının bilgi bandında dirseklerin gerçek açısı da görünür.<br />
+      <br />
+Kırmızı kot, bir boykesitte borunun en alçak jeneratrisinin (son su damlasının akacağı yer) izini işaretler. Eğer Planda bir boru uzunluğu tanımlanmışsa, bu sekmede borular arasındaki kesişim noktalarını görebiliriz.<br />
+      <br />
+
+Kırmızı kotların tanımı, karayolları için izlenenle aynı şekilde, ilgili düşey kurplarla veya kurpsuz olarak yapılır. Burada, ardışık kesimleri birleştirmek için köşe noktasına kenetlenme seçenekleri veya <a href="OL_rasantes_diseno.html#tecla_V"><span style="font-weight: bold;">[V]</span> düğmeleri</a>, köşeli noktalar oluşturarak yine çok yararlı olabilir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/rasante_tubo.png" style="width: 639px; height: 147px;" alt="" /><br />
+      </div>
+
+      <br />
+      <img src="Imagenes/rasantes_boton_ang.png" style="width: 176px; height: 54px;" alt="" align="right" hspace="6" />Program ayrıca, sağ alt köşede bulunan <span style="font-weight: bold;">[Açı]</span> düğmesi aracılığıyla, bir kırmızı kotun eğimini, önceki kırmızı kotla oluşturduğu açıya göre tanımlama imkanı da sunar.<br />
+      <br />
+Açı aracına benzer şekilde <span style="font-weight: bold;">Dirsek</span> aracı, kırmızı kotun eğimini dirsek tablosundan seçmeye olanak tanır. Dirseklerin yarıçapı varsa, bu da önceki ve mevcut kırmızı kot arasında bir birleşim olarak uygulanır.<br />
+
+      <br />
+<span style="font-weight: bold;">[Bacaya göre]</span> düğmesi, mevcut kırmızı kot verisi için, önceki kırmızı kot verisinin hemen sonraki bacayı kestiği PK1,Z1 koordinatlarını hesaplamaya olanak tanır.<br />
+      <br />
+      <img src="Imagenes/por_pozo.png" style="width: 396px; height: 123px; margin-right: 7px;" alt="" align="left" />Örneğin, eğer bacalar daha önce boykesit boyunca ilgili KM'lerde tanımlanmışsa, bir kırmızı kot güzergah elemanı tanımlanırken ve ikinci güzergah elemanı tanımlanırken <span style="font-weight: bold;">[Bacaya göre]</span> seçeneği kullanılırsa, program bu ikinci kırmızı kot güzergah elemanının PK1, Z1 koordinatlarını hesaplar.<br />
+      <br />
+      <br />
+
+      <img src="Imagenes/rasante_vertical.png" style="width: 171px; height: 82px;" alt="" align="right" hspace="6" /><a name="tramo_vertical">Karayolları durumundan farklı olarak, boru kırmızı kotlarının tanımında sık sık dikey kesitler veya <span style="font-weight: bold;">sıçramalar</span> görülür. Bunları tanımlamak için, örneğin, önceki köşe noktası verilebilir ve eğimin tanımlanabildiği alanın bitişiğindeki <span style="font-weight: bold;">[V]</span> düğmesi basılı tutulabilir (iki P1, P2 noktasıyla yarı-dikey bir kırmızı kot tanımlanması durumunda, mutlak değerde tanımlanan eğim %5000'i aşarsa dikey sıçrama olarak kabul edilir). Bu şekilde 90° eğimli bir kırmızı kot kesiti elde edilir.</a><br />
+
+      <br />
+      <a name="rasan_planta">Yatay güzergah ekseni boru modunda tanımlandığında, program, <span style="font-weight: bold;">[YARDIMCI PROGRAMLAR]</span> menüsünde bulunan <span style="font-weight: bold;">Yataydan kırmızı kot</span> seçeneği aracılığıyla, yatayda beyan edilen düğüm noktalarının KM'lerini ve kotlarını kullanarak kırmızı kotları oluşturmaya olanak tanır.</a><br />
+
+
+      <br /><img src="Imagenes/opc_rasantes_codos.png" style="width: 154px; height: 41px;" alt="" align="right" hspace="6" />&nbsp;Eğer bu ekranda <a href="#planta_espec">YATAY GÜZERGAH</a>'ta beyan edilen dirsekleri görüntülemek isterseniz, o zaman dikey menüden erişilebilen <a href="OL_rasantes_opciones_visualizacion.html">görselleştirme seçeneklerinin</a> <span style="font-weight: bold; font-style: italic;">Dirsekler</span> seçeneği etkin olmalıdır. Etkinleştirildiğinde, açıları söz konusu seçenekte belirtilen <span style="font-weight: bold;">minimum açıya</span> eşit veya daha büyük olduğu sürece, bu dirsekler sarı bir daire ile gösterilecektir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/rep_codo_rasantes.png" style="width: 138px; height: 81px;" alt="" /><br />
+      </div>
+
+
+      <br /><span class="Parf_negrita">3D U</span>: Mevcut kırmızı kotun P1'ini (PK1,Z1), bu kırmızı kotun eğimini dikkate alarak önceki kırmızı kotun P1'inden uygulanan bir 3D uzunluk aracılığıyla tanımlamaya olanak tanır. (İkinci kırmızı kottan itibaren uygulanabilir).<br /><br />
+
+      <a style="font-weight: bold; font-style: italic;" name="def_pozos">Bacaların veya rögarların tanımı</a><br />
+      <br />
+<a href="OL_rasantes_diseno.html#navegador_alineaciones">Güzergah elemanları gezgini</a>'nin üzerinde bulunan açılır menü aracılığıyla, <span style="font-weight: bold;">[BACALAR]</span> menüsüne geçilebilir. Bacalar (muayene, erişim vb.) genellikle borunun güzergah ve/veya eğim değişikliklerinde, <a href="#tramo_vertical">dikey kırmızı kot kesitleriyle</a> çakışacak şekilde yerleştirilir. Mevcut baca ekranda sarı renkte, geri kalan bacalar ise beyaz renkte gösterilir. Rögarlar kırmızı kotlar ekranında mavi renkte gösterilir. <br /><br /><a href="OL_rasantes_diseno.html#navegador_alineaciones">Ekle, Araya Ekle ve Sil</a> seçenekleri bilinmektedir; ancak, Araya Ekle seçeneği KM açısından şu şekilde çalışır: varsayılan olarak, mevcut veri ile bir önceki veri arasında bir ara km uygulanır.<br />
+      <br />
+Bir baca yerine bir rögar ekleyebilmek için sadece <span style="font-weight: bold;">Baca</span> kutucuğunu <span style="font-weight: bold;">Rögar</span> olarak değiştirmemiz yeterlidir.<br />
+Bacalar daireseldir ve çapları, radye kalınlıkları ve eksene göre bir eksantriklikle tanımlanırlar.<br />
+Rögarlar dikdörtgendir ve genişlik, uzunluk, duvar kalınlığı, radye kalınlığı ve eksene göre eksantriklikle tanımlanırlar.<br />
+      <br /><a href="OL_tuberias.html#datos_tubos">Boru Verileri</a> diyalog kutusunda genel seçenek etkinleştirilmiş olsa bile, Baca veya Rögar'ın KM değerinin hemen solundaki kutucuğu etkinleştirerek, bazı bacalarda/rögarlarda boru geçişinin kesilmemesini belirtebiliriz.<br /><br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_arqueta.png" style="width: 154px; height: 123px;" alt="" /><br />
+      </div>
+
+
+      <br />
+      
+      
+
+      Rögarlar açık bırakılabilir veya üzerlerine bir ızgara veya kapak eklenebilir. Ayrıca, boru eksenine <span class="Parf_negrita">V</span>, <span class="Parf_negrita">paralel</span> veya <span class="Parf_negrita">dik</span> bir bitiş ve bir <span class="Parf_negrita">dZ</span> (kenarların yükseklik artışı) ve bir <span class="Parf_negrita">dX</span> (çatı mahyasının eksantrikliği) verilerek de tanımlanabilir. V'nin çatı mahyası için bir <span style="font-weight: bold;">boyuna eğim</span>&nbsp;ve <span style="font-weight: bold;">enine eğim</span> tanımlanabilir. Aynı şekilde, bu eğimler bacaların kapak düzlemi için de tanımlanabilir. Bacaların BIM gösteriminde, her bacaya otomatik olarak bir kapak eklenir. <span style="font-weight: bold;">Dönüş</span> kutucuğu, söz konusu rögara bir döndürme açısı (derece ve saat yönünün tersine) uygulamamızı sağlar.<br /><br /><div style="text-align: center;"><img src="Imagenes/arqueta_rejilla.png" style="width: 601px; height: 160px;" alt="" /><br /></div><br />
+<span style="font-weight: bold;">[YARDIMCI PROGRAMLAR]</span> düğmesi, baca tasarımı için çok pratik bir dizi araca erişim sağlar:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 320px;" alt="" src="Imagenes/def_pozos.png" /><br />
+
+      </div>
+<ul>
+        <li><span style="font-weight: bold;">Baca tabanlarına göre kırmızı kotlar</span>: Zaten tanımlanmış olan bacaların tabanından güzergah elemanları çizerek bir kırmızı kot oluşturur.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Köşe noktalarında bacalar</span>: Bu seçenek, yatay güzergah ekseninin her bir düğüm noktasına, azimut korunsa bile (örneğin, boşluksuz ve minimum yarıçapı 0 olan bir manşon durumunda) ve başlangıcına ve sonuna otomatik olarak bir baca oluşturur. Yatay güzergah ekseni, düz güzergah elemanlarından veya dairesel güzergah elemanlarından oluşabilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Düşey sıçramalara ayarla</span>: Dikey kırmızı kotlara çok yakın olan bacaların KM'lerini, KM'yi eşleştirerek ayarlar.</li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Sırala</span>: Bacaları KM'lerine göre yeniden sıralar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="renumerar_pozo">Yeniden Numaralandır</a></span>: Bacalar, KM'lerin artan sırasına göre yeniden numaralandırılır.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Eşit aralıklı bacalar ekle</span>: Mevcut baca ile bir önceki baca arasına belirli sayıda eşit aralıklı baca eklemeye olanak tanır.&nbsp; <br />
+</li>
+
+      
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yüksek ve alçak noktalara bacalar</span>: Yüksek ve alçak noktalara bir baca oluşturur.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yüksek-Alçak noktasına ayarla</span>: Maksimum arama mesafesi kullanarak, yüksek veya alçak bir noktaya çok yakın olan bacaların KM'lerini ayarlar.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Mevcut bacanın geometrisini diğerlerine kopyala</span>. Tüm bacaların mevcut bacaya eşit olmasını sağlar.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Uzun kesimlere eşit aralıklı bacalar ekle</span>: Program, bacalar arasındaki maksimum mesafeyi soracaktır. Eğer iki baca daha büyük bir mesafede bulunuyorsa, bu mesafeyi karşılamak için aralarına gerekli bacalar eklenecektir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Bacaları ekle - çoklu</span>: Bazı özel noktalara bacalar eklemeye olanak tanır: yatay veya düşey güzergah köşe noktaları, yüksek veya alçak noktalar, dikey sıçramalar, belirli bir mesafede eşit aralıklı noktalar...<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Mevcut bacanın ağız ve radye kotunu diğerlerine kopyala</span>: Mevcut bacanın ağız ve radye kotları için referansları, tanımlanmış diğer tüm bacalara kopyalar.</li></ul><ul><li><span style="font-weight: bold;">Mevcut bacanın tipini ve açıklamasını diğerlerine kopyala</span>: Mevcut bacanın Tip ve Açıklama alanlarına girilen metinleri, tanımlanmış diğer tüm bacalara kopyalar.</li></ul><ul><li><span style="font-weight: bold;">.poz dosyasından bacaları ekle (km za zs ad) </span>: Aşağıdaki formata sahip bir .poz dosyasından bacaları ekler &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-style: italic;">KM Baca_Ağzı_Kotu Radye_Kotu ad</span></li>
+
+      </ul>
+
+
+      <br />
+
+Her baca bir dizi veri ile tanımlanacaktır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Numara</span>, listedeki sıra numarası, otomatik olarak atanır (1, 2,…).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ad</span>, ilgili raporlarda ve paftalarda görünecek olan baca adı (varsayılan olarak, P1, P2,…). Program, bir <span style="font-weight: bold;">temel ad</span> ve ilk baca için numara verme imkanı sunar. Bu değerler, <span style="font-weight: bold;">[Baca ekle]</span>, <span style="font-weight: bold;">[Baca araya ekle]</span> ve <span style="font-weight: bold;">[YARDIMCI PROGRAMLAR]</span> <span class="Parrafo">›</span> <a href="#renumerar_pozo"><span style="font-weight: bold;">Yeniden Numaralandır</span></a> seçenekleri tarafından, bacaların adlarını otomatik olarak oluşturmak için kullanılır.</li>
+
+      </ul>
+      <ul>
+        <li><img src="Imagenes/pk_dz_pozo.png" style="width: 134px; height: 62px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">KM</span>, bacanın konumu, grafiksel ( <a href="OL_rasantes_enganches.html">kenetlenme</a> ile veya olmadan) veya sayısal olarak verilir. <span style="font-weight: bold; font-style: italic;">KM,dZ Ağız</span> mod seçicisinin yanındaki seçeneği seçerek, bacanın KM'sini ve kotunu aynı anda grafiksel olarak vermek mümkündür; bu, belirli durumlarda çok yararlı olabilir.<br />
+</li>
+      </ul>
+      <table style="text-align: left; width: 648px; height: 27px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Info"><a name="PK_graf_planta">BACALARIN ve BORULARIN KM'lerini yataydaki konumlarına tıklayarak tanımlamak mümkündür. Bunun için, BOYKESİT'in herhangi bir alt menüsünden, dikey menüdeki <span style="font-weight: bold;">[KırmızıKot]</span>'a tıklayarak KIRMIZI KOTLAR görünümünü açmak, ardından bu görünümdeki <span style="font-weight: bold;">[VERİLER]</span> düğmesine tıklayarak KIRMIZI KOTLAR diyalog kutusunu açmak ve BACALAR veya BORULAR'a geçmek yeterlidir; buradan, yatay güzergahın genel penceresinde konumuna tıklandığında KM sabitlenir.</a></span></td>
+          </tr>
+
+        </tbody>
+      </table>
+      <ul>
+        <li><span style="font-weight: bold;">Ağız Kotu</span>, bacanın, şu şekillerde verilebilir:</li><ul><li>Araziye göre.</li><li>Kırmızı kota göre.</li><li>Mutlak olarak (Z).</li><li>Başka bir araziye göre (Arazi2). Bu son durumda, bacanın ağzının ikinci bir yüzeyin kotunu alması için en az iki <a href="EDM_control_entidades.html#control_superficies">yüzeye</a> enkesit çıkarılmış olması gerekir.</li><li>Kırmızı kota eklenmiş Başka Bir Eksenin kotuna göre. Prensip olarak, bacanın km'sinden herhangi bir Başka Eksen geçip geçmediğini arar ve geçmiyorsa, referans olarak arazi kotunu alır.</li><li><img src="Imagenes/icono_puntero_en_menu.png" style="width: 17px; height: 19px;" alt="" /> düğmesiyle grafiksel olarak tanımlanabilir/değiştirilebilir.<br />
+</li></ul>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Radye Kotu</span> veya baca derinliği, şu şekillerde verilebilir:</li><ul><li>Arazi yüzeyine göre</li><li>Kırmızı kota göre.</li><li>Mutlak olarak (Z).</li><li>Başka bir araziye göre (Arazi2).</li><li>Kırmızı kota eklenmiş Başka Bir Eksenin kotuna göre.&nbsp;</li><li><img src="Imagenes/icono_puntero_en_menu.png" style="width: 17px; height: 19px;" alt="" /> düğmesiyle grafiksel olarak tanımlanabilir/değiştirilebilir.</li></ul>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tip</span>: Bacayı tanımlayan ve ilgili raporlarda ve <a href="#planos">paftalarda</a> temsil edilecek olan özellik veya veri.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Açıklama</span>: Paftalar için başka bir alfanümerik yorum. Bitişik kutucuk, baca veya rögar için bir <a href="#excavacion">kazı</a> tanımlamaya olanak tanır.<br />
+</li></ul><ul><li><span class="Parf_negrita">Bacayla İlişkili Sembol</span>: Her bacaya, boykesit çiziminde gösterimi için farklı bir sembol atanabilir. Mevcut semboller, kütüphaneye eklenen bir&nbsp;<span class="Archivo">Simbolos_pozo.txt</span> dosyasında tanımlanır. (Ayrıca yeni S1440-S1499 sembolleri de eklenmiştir).</li>
+      </ul><div style="text-align: center;"><img src="Imagenes/pozos_radier.png" style="width: 450px; height: 328px;" alt="" /><br /></div>
+      <ul>
+        <li><span style="font-weight: bold;">Çap</span> <span style="font-weight: bold;">mm</span>: Her baca için bir çap tanımlayabiliriz. Bu değer, bacalar raporunda (pozos.res) yansıtılacak ve planda, örneğin <a href="OL_ficheros_lil.html#pozos_tubos_y_codos">Tuberias.lil</a> gibi bir .lil dosyası aracılığıyla temsil edilebilecektir. Eğer tanımlanmış bir değerimiz yoksa, .lil dosyasının değerini alacaktır. Boykesitte, örneğin Tubos8.gui bilgi bandından yansıtılacaktır. Eğer tanımlanmış bir değerimiz yoksa, .gui dosyasının değerini alacaktır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Eksantriklik (mm)</span>: Baca veya rögarın yerleştirilmesi için eksene göre yanal mesafe.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kalınlık (mm)</span>: Baca veya rögarın kalınlığını tanımlayabiliriz.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Radye</span> <span style="font-weight: bold;">(mm)</span>: Baca veya rögarın tabanında verebileceğimiz kalınlık.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/esquema_arqueta.png" style="width: 351px; height: 387px;" alt="" /><br />
+      </div>
+      <div style="text-align: center;"><span class="Info">Rögar Şeması</span><br />
+      </div>
+      <br /><img src="Imagenes/tronco_con.png" style="width: 240px; height: 68px;" alt="" align="right" hspace="6" />Ayrıca, bacalar için üst kısımda, üst çap ve bu bölgenin yüksekliği aracılığıyla konik bir bölge tanımlanabilir. Bu, kırmızı kotlar menüsünde, boykesit çiziminde ve bacanın BIM modelinde temsil edilecektir.<br />
+      <br />
+Tanımladığımız parametreler aracılığıyla, bu elemanları <a href="OL_ficheros_lil.html#pozos_tubos_y_codos">çizme</a> seçeneğiyle bir .lil dosyası tanımlamışsak, bacaları ve rögarları 3D olarak çizebiliriz.<br />
+
+      <br />
+
+
+      <br />
+      <img src="Imagenes/pozo.png" style="width: 343px; height: 256px; margin-left: 7px;" alt="" align="right" />Bu baca tanımı, bir &nbsp;<span class="Archivo">.pzt</span> tipi dosyaya kaydedilebilir ve menüden çıkmak suretiyle doğrudan ilgili &nbsp;<span class="Archivo">.vol</span> boykesit tanım dosyasına dahil edilir.<br />
+      <br />
+Bir projede, baca veya boru tanımı içeren bir &nbsp;<span class="Archivo">.vol</span> dosyası yüklendiğinde, BOYKESİT menüsü bu tür projelere uygun bir görünüm alır.<br />
+
+      <br />
+RAPORLAR menüsünde, (her baca için) adını ve açıklamasını, KM'sini, ağız kotunu, radye kotunu ve giriş ve çıkıştaki kırmızı kotu gösteren <a href="OL_listados_tuberias.html#cotas_pozos">&nbsp;<span class="Archivo">pozos.res</span> raporunu</a> elde etmek mümkündür.<br />
+      <br />
+Bir <span style="font-weight: bold;">*.1pz</span> dosyası (bir baca tanımıyla) yüklendiğinde, bacanın adı (ve KM'si de) değiştirilmez.<br /><br /><br /><br /><br />Bacanın ağzının ve radyesinin dZ değeri üzerinde, mutlak değerler ipucunda gösterilir. Bu değerler, aynı bacayı paylaşan diğer eksenler tarafından görülebilmesi için <span class="Texto_cursiva">*.vol</span> dosyasına kaydedilir.<br /><br /><div style="text-align: center;"><img src="Imagenes/tuberias_hint_cotas.png" style="width: 214px; height: 67px;" alt="" /><br /></div><br /><br />Kırmızı kotlardaki grafik penceresinde, diğer eksenlerin bacaları ve rögarları da gösterilir ve mevcut eksene yansıtılır. Üzerlerinde adları ve tanımlandıkları eksenin numarası görünür. Ve aşağıdaki renkte:<br /><ul><li>Kırmızı: Başka bir eksenin bacası.</li><li>Mavi: Başka bir eksenin rögarı.</li><li>Siena: Başka bir eksenin bacası veya rögarı, ancak *.vol'un önceki bir sürümünden okunduğu için, ağız ve radye mutlak kotları doğru bir şekilde temsil edilmeyebilir. (Bu eksenleri kırmızı kotlar menüsünden yüklemeniz ve sağ alt köşedeki diskete tıklayarak *.vol'u yeniden kaydetmeniz önerilir).</li></ul><div style="text-align: center;"><img src="Imagenes/tuberias_color_poz_otros_Ejes.png" style="width: 250px; height: 258px;" alt="" /><br /></div><div style="text-align: center;"><span class="Info">Mevcut eksenin bacası (sarı), Başka bir eksenin rögarı (mavi)</span><br /></div><br />Mevcut eksen tarafından geçilen diğer eksenlerde tanımlanmış bacalar da dahil olmak üzere, bacalar arasında çakışma olup olmadığı kontrol edilir. Çakışma durumunda, bacaların bulunduğu bölgede arazi üzerinde kırmızı bir bayrak gösterilir: [<span class="Parf_negrita">Baca Çakışması!</span>].<br /><br /><div style="text-align: center;"><img src="Imagenes/tuberias_solape_pozos.png" style="width: 200px; height: 222px;" alt="" /><br /></div><div style="text-align: center;"><span class="Info">Baca Çakışması!</span><br /></div><br />Ayrıca, diğer eksenlerde tanımlanan bacaların taban kotunun mevcut kırmızı kotun altında olup olmadığı da kontrol edilir; aksi takdirde, bacanın tabanında kırmızı bir bayrak gösterilir: [<span class="Parf_negrita">Baca Kotu yetersiz!</span>].<br /><br /><br /><div style="text-align: center;"><img src="Imagenes/tuberias_z_pozo_insuf.png" style="width: 200px; height: 170px;" alt="" /><br /></div><div style="text-align: center;"><span class="Info">Baca Kotu yetersiz!</span><br /></div><br />
+      <a name="excavacion"><span style="font-weight: bold;">Açıklama</span>'nın yanındaki kutucuğu işaretlersek, baca veya rögar için bir kazı tanımlayabiliriz.<br />
+      <br />
+      </a><div style="text-align: center;"><a name="excavacion"><img style="width: 600px; height: 181px;" alt="" src="Imagenes/tuberias_rasante_excavacion.png" /><br />
+      </a></div>
+<a name="excavacion">      <br />
+Bu kazı, ekseni çizmek için kullandığımız <a href="OL_ficheros_lil.html#pozos_tubos_y_codos">.lil modunda</a> bacaların çizimi etkinleştirilmişse, planda temsil edilecektir. Ayrıca, her eksen için kazı hacimlerinin metrajını içeren bir &nbsp;<span class="Archivo">exc_pozosN.res</span> raporu ve BIM modelinde bir katı eleman oluşturulacaktır.<br />
+<br />Not: Diğerlerinin yanı sıra Baca, Baca Kapağı ve Baca Tabanı kenetlenmelerimiz mevcuttur. Kırmızı kotla birlikte görünen Diğer Eksenlerin bacaları da dikkate alınır.<br />
+      <br /><span style="font-weight: bold; font-style: italic;"><a name="def_tubos">
+Boruların tanımı</a></span><br />
+      <br />
+<a href="OL_rasantes_diseno.html#navegador_alineaciones">Güzergah elemanları gezgini</a>'nin üzerinde bulunan açılır menü aracılığıyla, <span style="font-weight: bold;">[BORULAR]</span> menüsüne geçilebilir. Boru kesitleri, tanımlanan kırmızı kotu takip eder ve aşağıdaki bilgileri içerir:<br /><br /><div style="text-align: center;"><img src="Imagenes/def_tubos.png" style="width: 639px; height: 147px;" alt="" /><br /></div><ul><li><span style="font-weight: bold;">Numara</span>, listedeki sıra numarası, otomatik olarak atanır (1, 2,…).</li></ul><ul><li><span style="font-weight: bold;">KM</span>, başlangıç KM'si, grafiksel olarak (kenetlenme ile veya olmadan) veya sayısal olarak (klavyeden girilerek) verilir. Program, farklı özelliklere sahip bir boru kesiti tanımlanmadıkça, projenin bitiş KM'sini bitiş KM'si olarak alır; bu durumda, borunun bitiş KM'si bir sonrakinin başlangıç KM'si olacaktır.</li></ul><div style="margin-left: 40px;"><a href="#PK_graf_planta">Baca tanımı bölümünde</a> açıklandığı şekilde, yataydaki konumuna tıklayarak KM'yi grafiksel olarak seçmek mümkündür.</div><ul><li><span style="font-weight: bold;">Malzeme</span>, borunun malzemesi, yatay ve boykesit paftalarında etiketlenecektir.</li></ul><ul><li><span style="font-weight: bold;">Çap</span>, borunun iç çapı milimetre cinsinden (sol boru ve sağ boru). Tek bir boru varsa, sağdaki kullanılacaktır.</li></ul><ul><li><span style="font-weight: bold;">Kalınlık</span>, boru duvarlarının kalınlığı milimetre cinsinden (2 boru için). Tek bir boru varsa, sağdaki veri kullanılacaktır.</li></ul><ul><li><span style="font-weight: bold;">Tip</span>: Borunun özellikleri, yatay ve boykesit <a href="#planos">paftaları</a> için.</li></ul><ul><li><span style="font-weight: bold;">Açıklama</span>, borunun açıklaması.</li></ul> Mevcut boru ekranda sarı renkte, geri kalan borular ise beyaz renkte gösterilecektir.<br />
+      <br />
+Kırmızı kotlar menüsünde ve boykesit çiziminde, borular bacaların bölgesinde, kırmızı kotlar/bacalar/borular menüsünde tanımlanan baca çapı ve kalınlığı kullanılarak kesilir.<br />
+<br />
+Tüm boruların tanımı, bir &nbsp;<span class="Archivo">.tbt</span> tipi dosyaya <span style="font-weight: bold;">[Kaydet]</span> <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> ve <span style="font-weight: bold;">[Yükle]</span> <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> ile kaydedilebilir ve geri yüklenebilir,&nbsp; ancak bu gerekli bir adım değildir, çünkü menüden çıkmak suretiyle doğrudan ilgili &nbsp;<span class="Archivo">.vol</span> boykesit tanım dosyasına dahil edilir. Bir projede, baca veya boru tanımı içeren bir &nbsp;<span class="Archivo">.vol</span> dosyası yüklendiğinde, BOYKESİT menüsü bu tür projelere uygun bir görünüm alır.<br /><br />
+<span style="font-weight: bold;">[1'i Kaydet]</span>&nbsp;<img src="Imagenes/icono_guarda1.png" style="width: 20px; height: 20px;" alt="" /> ve <span style="font-weight: bold;">[1'i Yükle]</span>&nbsp;<img src="Imagenes/icono_abrir1.png" style="width: 20px; height: 20px;" alt="" /> seçenekleri, tüm boru setinin yerine, mevcut borunun çaplarını, kalınlıklarını, malzemelerini, tiplerini ve açıklamasını &nbsp;<span class="Archivo">.1tt</span> uzantılı dosyalara kaydetmeye veya geri yüklemeye olanak tanır.<br />
+      <br /><span style="font-weight: bold;">[YARDIMCI PROGRAMLAR]</span> düğmesinden araçlara erişilir:<br /><br /><div style="text-align: center;"><img style="width: 852px; height: 197px;" alt="" src="Imagenes/def_tubos_utiles.png" /><br /></div><ul><li><span style="font-weight: bold;">Baca KM'lerinde borular</span>, her baca KM'sinde başlayan yeni boru kesitleri oluşturur.</li></ul><ul><li><span style="font-weight: bold;">ZYT verilerinden borular:</span> Her hesaplama aralığının başlangıç KM'sinde bir boru oluşturur ve birinci ve ikinci borunun (eğer etkinleştirilmişlerse) geometrisini kopyalar: çap, kalınlık, yatay için çizgi tipi, tip ve malzeme. Birinci ve ikinci borunun dy değerini dikkate alarak, kırmızı kotta ve boykesitte, ZYT borularının kırmızı kot üzerindeki gerçek yüksekliğini oluşturur. Bu yardımcı program, boruları kırmızı kotta görmeye ve boykesitini çizmeye olanak tanır. ZYT kesitinin adı Açıklama (Açkl) alanına yazılır.</li></ul>
+      <br />
+Her bir boruyu yatayda çizmek için farklı bir çizgi tipi tanımlamaya olanak tanır. (tanımlanmazsa, .lil'de verdiğimiz tipi kullanır)<br />
+      <br />
+ISPOL4.dar tablosundan elde ettiğimiz farklı metrajlar arasında BORU DUVARI metrajını ayırt ederiz.<br />
+      <br />
+      <a name="util_ras"><span style="font-weight: bold; font-style: italic;">Kırmızı kot yardımcı programları</span><br />
+      <br />
+Yardımcı programların büyük çoğunluğu aşağıdaki <a href="OL_rasantes_herramientas.html">bağlantıda</a> tanımlanmıştır. Ancak, aşağıda detaylandırdığımız borulara özgü bazı yardımcı programlar bulunmaktadır.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/utiles_ras.png" style="width: 270px; height: 522px;" alt="" /><br />
+      </div>
+      <br />
+      <span style="font-weight: bold;">Borular için kırmızı kot</span>: Boru kesitleri için, belirli koşulları karşılayan bir kırmızı kotu otomatik olarak analiz etmeye ve/veya oluşturmaya olanak tanıyan bir&nbsp;aracımız bulunmaktadır:<br />
+      <ul>
+        <li>Borunun kaplama derinliğinin maksimum ve minimumu.</li>
+      </ul>
+      <ul>
+        <li>Kırmızı kotun maksimum derinliği.</li></ul><ul><li>Kırmızı Kotun minimum derinliği. Bu şekilde, yalnızca su hattının minimum ve maksimum derinliğini kontrol etmek istiyorsak, kırmızı kotun minimum ve maksimum derinlik parametrelerini kullanırız ve minimum kaplama derinliğine küçük veya sıfır bir değer ve maksimum kaplama derinliğine büyük bir değer koyarız, böylece kırmızı kottan olan derinlikler her zaman daha kısıtlayıcı olur.</li>
+      </ul>
+      <img src="Imagenes/ras_para_tubos.png" style="width: 309px; height: 214px;" alt="" align="right" hspace="6" />Ve aşağıdaki üç mod için:<br />
+      <ol>
+        <li>Dirsek Modu: Yüksek ve alçak nokta sayısını en aza indirmeye çalışılır.</li>
+      </ol>
+      <ol start="2">
+        <li>Düşey Kurp Modu: Düşey kurbun minimum yarıçapı tanımlanır.</li>
+      </ol>
+      <ol start="3">
+        <li>Baca Modu: Şu koşullar eklenir:</li>
+      </ol>
+      <ul>
+        <li>İnişte maksimum ve minimum eğim.</li>
+      </ul>
+      <ul>
+        <li>Çıkışta maksimum ve minimum eğim.</li>
+      </ul>
+      <ul>
+        <li>Bacaların maksimum derinliği.</li></ul><ul><li>[] Sadece iniş:&nbsp;bazen minimum eğimle aşağıya doğru devam ederken maksimum derinlik bandından çıkılabilse de, yukarı doğru dikey sıçramaları engeller.</li></ul><ul><li>[] Yataydaki köşe noktalarına bacaları dahil et: Yataydaki köşe noktalarına bacaları dahil eder (iki köşe noktası arasındaki mesafe bacanın dış çapından küçükse, çakışmamaları için dahil etmez).</li>
+      </ul><br />Otomatik hesaplama için başlangıç ve bitiş KM ve Kotu ile başlangıçtaki eğim tanımlanabilir. Kırmızı kot tasarımı sırasında etkinleştirilebilir:<br />
+      <ul>
+        <li>Kırmızı kotun geçebileceği olası bölgenin çizimi.</li>
+      </ul>
+      <ul>
+        <li>Öngörülen koşulların ihlal edildiğini gösteren bayrakların çizimi.</li>
+      </ul>
+Analiz, kırmızı kotun interaktif tasarımı sırasında etkin kalabilir. Otomatik hesaplama üç mod için de yapılabilir: Dirsekler, Düşey Kurplar ve Bacalar. Son durumda, bacalar için çap, duvar kalınlığı ve radye kalınlığı da tanımlanabilir.<br /><br /><span class="Parf_negrita">Referans yüzeyi</span> açılır menüsü ile, arazi enkesitleri dosyasında birden fazla yüzey varsa, referans yüzeyi seçilebilir; bu durum, Boru Verileri'nde şunu kullandığımızda ortaya çıkar: <span class="Parf_negrita">[]Doğal zemin + Öngörülen Platform</span>.<br /><br /><br />
+
+      
+      <span class="Titulo_2"><a name="alzado">Enkesit tasarımı</a></span><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="tipo_tuberia">Boru tipi eksen tanımlama</a></span><br />
+      <br />
+Bir eksenin program tarafından boru tipi olarak tanınması için, BOYKESİT <span class="Parrafo">›</span> <span style="font-weight: bold;">TİP</span> <span class="Parrafo">›</span> <span style="font-weight: bold;">[BORULAR]</span>'da bunu belirtmek gerekir. Bu, hem KIRMIZI KOTLAR hem de BOYKESİT tanım diyalog kutusunun bu tür eksenler için uygun bir görünüm sunmasını sağlar:<br />
+
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/alzado_tuberias.png" style="width: 590px; height: 342px;" alt="" /><br />
+      </div>
+      <br />BOYKESİT menüsünün seçeneklerinin çoğu, geleneksel bir eksende kullanılanlarla aynıdır, bu nedenle burada yalnızca bu tür eksenlere özgü olanlar açıklanmaktadır.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="zanja">Hendekteki boru</a></span><br />
+      <br />
+      <img src="Imagenes/modelo_zanja.png" style="width: 381px; height: 310px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">[HENDEK/DESTEK]</span> menüsünden, gömülü bir boru durumunda kesit geometrisini tanımlamak mümkündür. İlgili model, parametreleriyle birlikte gömülü bir borunun tip kesit tanımını gösterir; bu parametreler yüzer menüye girilmelidir.<br />
+      <br />
+Genel olarak, hendek bir <span style="font-weight: bold;">koruma bölgesi</span> ve bir <span style="font-weight: bold;">örtü bölgesi</span> veya hendekten oluşur. Daha sonra, bir <span style="font-weight: bold;">ön hendek</span> tanımlamak gerekirse, bilgiler, geleneksel bir eksenin <a href="OL_desmonte.html"><span style="font-weight: bold;">[YARMA]</span></a> menüsüne benzer olan <span style="font-weight: bold;">[ÖN HENDEK]</span> menüsünde tamamlanacaktır.<br />
+      <br />
+Diyalog kutusunda, boru sayısı (1 veya 2) ve kesit tipi (simetrik veya asimetrik) belirlenmelidir.<br />
+      <br />
+      <br />
+<br />
+      <br />
+      <a name="proteccion">KORUMA BÖLGESİ</a><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 540px; height: 238px;" alt="" src="Imagenes/dialogo_zanja.png" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">Koruma bölgesi</span> için aşağıdaki parametreler ayarlanabilir:<br />
+      <ul>
+        <li>Kırmızı kottan kazı tabanına kadar olan yükseklik (<span style="font-weight: bold;">h</span>); değerin yanındaki bayrak etkinleştirilirse, yükseklik borunun dış alt kenarından ölçülür.</li></ul>
+      <ul>
+        <li>Kırmızı kotun, borunun iç alt noktası üzerindeki yüksekliği (<span style="font-weight: bold;">dZ</span>); bu, borunun gerçek kırmızı kotunu tasarlanan kırmızı kottan bağımsız kılmaya olanak tanır.<br />
+        </li>
+
+      
+      </ul>
+
+      <ul>
+        <li>İki boru durumunda <img src="Imagenes/icono_dos_tubos.png" style="width: 20px; height: 20px;" alt="" />, sol borunun iç alt jeneratrisinden kazı tabanına kadar olan mesafe (<span style="font-weight: bold;">hs</span>).</li>
+      </ul>
+      <ul>
+        <li><img src="Imagenes/ancho_wd.png" style="width: 225px; height: 82px;" alt="" align="right" />Kazı radyesinin sağ yarı genişliği (<span style="font-weight: bold;">Gs</span>).</li>
+      </ul>
+      <ul>
+        <li>Kazı radyesinin sol yarı genişliği (<span style="font-weight: bold;">Gi</span>).&nbsp;<span style="font-weight: bold;" /></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Gi</span> ve <span style="font-weight: bold;">Gs</span>'nin yanındaki bayrakları etkinleştirerek, hendek tabanının genişliklerini borunun dış kenarına göreli genişlemeler olarak verme seçeneği. Bu seçenek etkinleştirildiğinde, W'nin toplam değerinin (her iki taraf için) belirli bir değere <span style="font-weight: bold;">Yuvarlanması</span> tanımlanabilir.</li>
+      </ul>
+      <ul>
+        <li>Koruma yüksekliğini alternatif olarak, borunun üst kısmından ölçülen bir <span style="font-weight: bold;">hy</span> değeri aracılığıyla tanımlama imkanı. O zaman koruma vektörü bu yüksekliği elde etmek için uzatılır veya kısaltılır.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;"><a name="vector_proteccion"><img src="Imagenes/tuberias_vectores_zp1.png" style="width: 160px; height: 114px;" alt="" align="right" hspace="6" /></a><a name="vector_proteccion">Koruma vektörleri</a></span>, koruma bölgesindeki kazı duvarını tanımlar. Bu <a href="definicion_vectorial.html">vektörün</a> bir verisi olması zorunludur, aksi takdirde bir <a href="#apoyo">destekli boru</a> olarak kabul edilir. <a href="definicion_vectorial.html">Vektörün</a> toplam yüksekliği, koruma bölgesinin yüksekliğini tanımlar. Bu vektör ayrıca BOYKESİT <span class="Parrafo">› <a href="OL_vectores.html"><span style="font-weight: bold;">[VEKTÖRLER]</span></a>'den de beyan edilebilir.</span></li>
+      </ul><ul>
+        <li>İki boru durumunda, boruların eksene olan mesafesi (<span style="font-weight: bold;">si</span> ve <span style="font-weight: bold;">sd</span>).</li></ul><ul><li>Koruma vektörünün sağda ve solda farklı yüksekliğe sahip olduğu asimetrik hendekler için, yükseklik değişimini başlatmak üzere her iki tarafta da bir iç mesafe&nbsp;(<span class="Parf_negrita">Xs</span>, <span class="Parrafo Parf_negrita">Xd</span>) tanımlanabilir. Değerlerden biri negatif olabilir.<br /></li>
+      </ul>
+
+      
+      
+      
+      
+      
+      
+      Aşağıdaki resimde, iki boru kullanmak için kullanılacak parametreler ve iki elemanlı tipik bir boru hattındaki sonuç görülmektedir:<br />
+
+      <br />
+
+      
+      <table style="text-align: left; height: 80px; width: 635px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 292px;"><img src="Imagenes/modelo_zanja_dos_tubos.png" style="width: 265px; height: 189px;" alt="" />
+      </td>
+      <td style="vertical-align: middle; width: 339px; text-align: center;"><img src="Imagenes/dos_tubos_result.png" style="width: 282px; height: 76px;" alt="" />
+      </td>
+    </tr>
+  </tbody>
+      </table>
+
+      <br />
+<br /><a name="cubricion">ÖRTÜ BÖLGESİ</a><br /><br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_cubricion.png" style="width: 541px; height: 234px;" alt="" /><br />
+      </div>
+<br />
+<span style="font-weight: bold;">Örtü bölgesinde</span> (hendek ve ön hendekten oluşur) şunlar tanımlanır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Örtü vektörleri</span>: <a href="#vector_proteccion">Koruma vektörünün</a> bittiği yerde başlar ve <a href="definicion_vectorial.html">tanımında</a>, maksimum tolere edilebilir değerden daha büyük, yeterli bir yüksekliğe sahip olmalıdır. Bu <a href="definicion_vectorial.html">vektörün</a> bir verisi olması zorunlu değildir; bu durumda doğrudan ön hendek kullanılır. Bu vektör ayrıca BOYKESİT <span class="Parrafo">› <a href="OL_vectores.html"><span style="font-weight: bold;">[VEKTÖRLER]</span></a>'den de beyan edilebilir.</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Minimum örtü</span>: Hendek bölgesinde, hem yarmada hem de dolguda, koruma bölgesinin üzerindeki minimum örtü kalınlığıdır.</li>
+      </ul>
+
+      
+      
+      <div style="margin-left: 40px;">
+Bu minimum örtü, yarma/dolgu kontrol noktasıdır, öyle ki, eğer arazi seviyesinin üzerindeyse, dolguda bir <span style="font-weight: bold;">PD</span> palyesi eklenir ve belirli bir şevle doldurulur. <br />
+      <br />
+
+Aksi takdirde, hendekle devam edilir (<span style="font-weight: bold;">maksimum yükseklik</span> ve <span style="font-weight: bold;">maksimum tolere edilebilir</span>'e göre).<br />
+      </div>
+
+      
+      
+      <ul>
+        <li><span style="font-weight: bold;">Maksimum yükseklik (Y)</span>: Kazı tabanından ölçülür ve koruma vektörü ile minimum örtünün toplamından daha büyük olmalıdır. Eğer negatif bir maksimum yükseklik verilirse, bu, eksendeki arazi kotundan ölçülecektir. Bu şekilde, örtünün değişken bir yüksekliği ve ön hendeğin sabit bir yüksekliği elde edilebilir.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Maksimum tolere edilebilir (ön hendekten kaçınmak için)</span>: Kazı tabanından ölçülen bu değer, içinde yarma yapılmayacak olan mevcut marjı gösterir. Açıkçası, her zaman maksimum yükseklikten daha büyük olacaktır. Bu şekilde, eğer arazi maksimum tolere edilebilirin altındaysa, ön hendek yapılmaz ve araziye kadar örtü yapılır; eğer arazi maksimum tolere edilebilirin üzerindeyse, maksimum yükseklikten itibaren ön hendek yapılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Dolguda örtü deveri (%)</span>: Yüzey suyunun tahliyesini kolaylaştırmak için dolgudaki örtünün deveri. Bu dever, taraflardan yalnızca biri dolguda olsa bile her iki tarafa da uygulanır.</li>
+      </ul>
+      <br />
+Eğer arazi seviyesi <span style="font-weight: bold;">maksimum yükseklikten (Y)</span> daha yüksekse, kazı arazi seviyesinde sona erer. Ancak, arazi seviyesi <span style="font-weight: bold;">maksimum yüksekliği (Y)</span> geçse de <span style="font-weight: bold;">maksimum tolere edilebilirin</span> altında kalırsa, kazı yine de arazi seviyesinde tamamlanır:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/terr_entre_Hmax_maxT.png" alt="" style="width: 283px; height: 193px;" /><br />
+      </div>
+      <br />
+Eğer arazi seviyesi maksimum tolere edilebilir değeri aşarsa, maksimum yükseklikten ve ilgili yarmadan başlayarak bir ön hendek yapılması gerekecektir; hendek vektörü bir <span style="font-weight: bold;">PY</span> palyesi ve <a href="OL_desmonte.html"><span style="font-weight: bold;">[ÖN HENDEK]</span></a> menüsünde tanımlanan kesitle kesintiye uğrar.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/terr_pasa_maxT.png" style="width: 274px; height: 268px;" alt="" /><br />
+      </div>
+
+      <br />
+      <img src="Imagenes/tuberias_BT.png" style="width: 274px; height: 149px; margin-right: 7px;" alt="" align="left" />Dolgu durumunda palyenin değeri <span style="font-weight: bold;">PD</span>'dir ve ondan sonra <a href="OL_terraplen.html"><span style="font-weight: bold;">[DOLGU]</span></a> menüsünde tanımlanan kesit eklenir.<br />
+      <br />Dolgu durumunda, palye için negatif bir değer girmeye izin verilir. O zaman, eksene en yakın bu noktadan, dolgu vektörünün en yüksek segmentiyle, koruma vektörünü kestiği yere kadar çizilir ve bu segmentin üzerinde kalan koruma dolgusunun tepe noktası silinir. Bu segmentin koruma vektörüyle kesişiminde, yarma mı yoksa dolgu mu uygulanacağı yeniden belirlenir.<br />
+      <br />
+      <br />
+      <br /><a name="rellenos">
+HENDEK DOLGULARI</a><br />
+      <br />
+Bu menü, metraj için hendeğin ayrıştırıldığı dolgu elemanlarını tanımlamaya olanak tanır. İlgili yüzer menü, bir modele göre parametreleri girmeye olanak tanır:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_rellenos_zanja.png" style="width: 549px; height: 144px;" alt="" /><br />
+      </div>
+
+&nbsp;<br />
+      Tanımlanacak parametreler şunlardır:<br />
+      <ul>
+        <li><img src="Imagenes/modelo_rellenos.png" style="width: 311px; height: 277px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">İksa genişliği (İG)</span>: Kazı duvarı üzerinde kalınlık olarak ölçülen iksa genişliğini temsil eder. Kendi kendini taşıyan duvarlar durumunda, bu değer sıfır olabilir.</li>
+      </ul>
+      <div style="margin-left: 40px;">Her bir taraf için farklı kalınlıkta bir iksa genişliği tanımlanabilir veya bir taraf veya her ikisi iptal edilebilir. Sol kutucuk sol taraftaki iksa genişliği olacak ve sağ kutucuk bize sağ taraftaki iksayı verecektir.<br />
+      </div>
+      <br />
+
+
+      
+      <div style="margin-left: 40px;">
+Eğer <span style="font-weight: bold; font-style: italic;">D.Z.'ye Kadar</span> kutucuğu işaretlenirse, o zaman dolgu kesitlerinde iksa yalnızca doğal zemin yüzeyine kadar yükselir.<br />
+      <br />
+
+İksa, yalnızca hendek yüksekliği <span style="font-weight: bold;">minimum yükseklik</span>'te belirtilenden daha büyükse uygulanacaktır. Bu, hendeğin çok derin olmadığı ve dolayısıyla iksa gerektirmeyen kesimlerde, kullanıcının bu iksayı bölümlendirmesine gerek kalmadan programın bunu dikkate almasını önler.<br />
+      </div>
+
+      
+      
+      <ul>
+        <li><span style="font-weight: bold;">Grobeton (HDL)</span>: Grobeton kalınlığı: hendek tabanına paralel, belirtilen kalınlıkta ve yukarıya doğru bir yüzey oluşturacaktır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">
+Genişlik (G)</span>: Borunun yatağının veya destek parçasının genişliğidir. Bu genişlik kazıdan daha büyük olabilir, bu durumda bu parçanın boyutları, kazının nominal genişliğini doldurana kadar ekstrapole edilir. Doğru bir metraj için, bu parça her zaman mevcut olmalıdır. Böyle bir beton yatak olmaması durumunda, bu tek koruyucu dolgunun böyle kabul edilmesi için yeterli bir genişlik ve açı vereceğiz.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yükseklik (Y)</span>: Yatağın veya destek parçasının yüksekliği.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">alfa</span>: Yatağın, boru ekseninden kapanma açısı (saat yönünün tersine pozitif), böbrekleri işaretler. Eğer <span style="font-weight: bold;">Y</span> yüksekliği boruyu tamamen kaplıyorsa, bu açının bir anlamı yoktur. Eğer <span style="font-weight: bold;">Y</span> yüksekliği boru ekseninin yüksekliğini aşarsa, parça (metraj amaçları için) üst ve alt olmak üzere iki parçaya ayrılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kalınlık P1</span>, <span style="font-weight: bold;">Kalınlık P2</span> ve <span style="font-weight: bold;">Kalınlık P3</span>: Koruyucu dolgunun farklı malzemelerinin kalınlıklarıdır. Boru destek takozu tanımlanmamış olsa bile <span style="font-weight: bold;">P1</span> dolgusu kullanılabilir. Tüm hendek, boru destek takozuyla veya <span style="font-weight: bold;">P1</span> veya <span style="font-weight: bold;">P2</span> veya <span style="font-weight: bold;">P3</span> dolgusuyla veya bunların herhangi bir kombinasyonuyla doldurulabilir. Koruyucu dolguların toplamının (<span style="font-weight: bold;">P1</span>+<span style="font-weight: bold;">P2</span>) koruma bölgesi için öngörülen yüksekliğe eşit veya daha büyük bir değere ulaşmasına izin verilir. Bu durumda program, <span style="font-weight: bold;">P1</span>+<span style="font-weight: bold;">P2</span> toplamının koruma bölgesinin yüksekliğine eşit olması için P2'nin yüksekliğini azaltır.</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Koruyucu dolgu <span style="font-weight: bold;">P2</span>: Bu dolguyu, eksene olan bir <span style="font-weight: bold;">P2G</span> mesafesinden başlayarak bir <span style="font-weight: bold;">P2Ş</span> şeviyle kapatma imkanı.<br />
+          </li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Yeniden dolgu kalınlığı</span>: Arazi yüzeyine paralel yeniden dolgu malzemesinin kalınlığını verir. 5 seviyeye kadar farklı yeniden dolgu malzemesi kabul edilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kalınlık Ö1</span>, <span style="font-weight: bold;">Kalınlık Ö2</span> ve <span style="font-weight: bold;">Kalınlık Ö3</span>: Örtü dolgusunun kalınlıklarıdır ve diğer üç malzemenin üç yüksekliğe ayrılmasına olanak tanır. <span style="font-weight: bold;">Ö1</span> yüksekliği, hendek ve ön hendek dolgularının metrajlarda mükemmel bir şekilde hacimlendirilmesi için sınırların tamamen tanımlanması gerektiğinden, ön hendeğin başlangıcına kadar verilmelidir.</li>
+      </ul>
+      
+      
+
+      <div style="margin-left: 40px;">Eğer <span style="font-weight: bold;">Ö1</span> ve/veya <span style="font-weight: bold;">Ö2</span> için negatif bir değer tanımlanırsa, örtü kalınlıklarının yüksekliği arazi kotundan alınır.<br />
+      <br />
+      <img src="Imagenes/cubricion_negativa_rell.png" style="width: 328px; height: 237px;" alt="" /><br />
+      </div>
+<ul>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Kod</span>: iksa, kazı kesitinin (L68) belirli bir koduna kadar yükseltilebilir.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Sökülebilir</span>: İksanın geçici olma ve dolgular yerleştirildiğinde sökülme olasılığı. Bu şekilde, tüm dolgular hendek duvarına kadar ulaşır, ancak enkesitte Sökülebilir İksa yüzeyi bırakılır. Bu metraj ISPOL4.dar tablosuna dahil edilir.</li>
+</ul><div style="margin-left: 40px;">Eğer&nbsp;Sökülebilir İksa işaretlenmişse, iksanın hendekten getirdiği eğimle ön hendekten geçerek araziye kadar yükselmesi, &nbsp;İksayı 10000 koduna kadar yükselt etkinleştirilerek sağlanabilir.</div><ul>
+<li><span style="font-weight: bold;">Koruma dolgusu için çatı eğimi (BP)</span>: Örtü dolguları 1 ve 2 varsa da etkiler.</li>
+
+code
+Code
+download
+content_copy
+expand_less
+</ul>
+
+  <ul>
+    <li><span style="font-weight: bold;">Örtü dolgusu için çatı eğimi (BC)</span>: Yeniden dolgu varsa etkiler.</li></ul><ul><li><span class="Parf_negrita">[] Maks-Eğim(%)</span>: Bu seçenek etkinleştirildiğinde, örtünün tavanı, hendeğin iki kenarını birleştiren düz bir çizgi olacak ve enine eğimi bu kutucukta tanımlanan değerle sınırlandırılacaktır.</li>
+  </ul>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <br /><span style="font-weight: bold; font-style: italic;"><a name="apoyo">
+
+Destekli Boru</a></span><br />
+<br />
+<img src="Imagenes/modelo_tuberia_apoyada.png" style="width: 272px; height: 272px; margin-left: 7px;" alt="" align="right" />İlgili model, borunun destekli olarak yerleştirilmesi durumunda boyutlandırma parametrelerini gösterir.<br />
+<br />
+<a href="#zanja"><span style="font-weight: bold;">[HENDEK]</span></a> menüsünde, borunun destekli olarak kabul edilmesi için <a href="#proteccion">koruma vektörünün</a> boş olması gerekir. <a href="#zanja"><span style="font-weight: bold;">[HENDEK/DESTEK]</span></a> ve <a href="#rellenos"><span style="font-weight: bold;">[DOLGULAR]</span></a> menülerinde aşağıdaki parametreler girilmelidir:<br />
+<ul>
+<li>Borunun iç alt jeneratrisinin yüksekliği (<span style="font-weight: bold;">h</span>).</li>
+<li>Yatağın kapanma açısı, boru ekseninden, saat yönünün tersine pozitif ve böbrekleri işaretleyen (<span style="font-weight: bold;">alfa</span>).</li>
+<li>Grobeton radyesinin genişliği (<span style="font-weight: bold;">W</span>).</li>
+<li>Yarma ve dolgudaki palyeler (<span style="font-weight: bold;">PY</span> ve <span style="font-weight: bold;">PD</span>).</li>
+<li>Yatağın veya destek parçasının genişliği (<span style="font-weight: bold;">G</span>).</li>
+<li>En azından borunun alt jeneratrisine kadar ulaşan yüksekliği (<span style="font-weight: bold;">Y</span>).</li>
+<li>Grobeton kalınlığı (<span style="font-weight: bold;">GBK</span>).</li>
+</ul>
+<br />
+<span style="font-weight: bold; font-style: italic;"><br /><a name="datos_tubos">Boru Verileri</a></span><br />
+<br />
+Eğer güzergah eğimi çok dikse, yüksekliğin araziye normal dikkate alınarak ölçülüp ölçülmediğine bağlı olarak verilerin kullanımında bir miktar hata olacaktır. Bunun için program en doğru seçeneği seçme imkanı sunar.<br />
+<br />
+<div style="text-align: center;"> <img src="Imagenes/dialogo_datos_tuberias.png" style="width: 457px; height: 241px;" alt="" /><br />
+</div>
+<br />
+<br />.ZYT TANIMLA (*.ZYT DOSYALARINDA TANIMLANAN KESİT)<br /><br />Bu menüden, *.zyt kütüphane dosyaları kullanılarak tanımlanmış bir kesit kullanılarak hendek, boru ve dolgu malzemelerinin geometrisi tanımlanabilir.<br /><br />Bu <span class="Parf_negrita">.ZYT TANIMLA</span> düğmesi, şunları yapılandırmaya olanak tanıyan bu dosyalar için interaktif bir düzenleyiciye erişim sağlar:<br />
+<ul>
+
+<li>Boruların geometrisi (40'a kadar), her biri dairesel veya vektörel bir kesite sahip olabilir. Her borunun yataydaki konumu, hendek ekseninden farklı bir eksene referans verilebilir. Düşeydeki konumu, hendek ekseninin sağ veya sol kırmızı kot verilerini referans olarak kullanabilir (KIRMIZI KOTLAR'dan, sol kırmızı kotu tanımlayabilmek için Kırmızı Kotlar: ÇİFT ve FARKLI seçilmelidir).</li></ul><ul><li>Koruma bölgesi. Hendek geometrisi, grobeton, iksa ve üç dolgu malzemesi tanımlanır: Yatak (P1), Koruma 2 ve Koruma 3.&nbsp;Bu üç malzemenin geometrisi vektörel olarak tanımlanır. Bu malzemelerin her biri için, bir eksen boyunca farklı kesitler uygulanırsa, bu katmanların her birini oluşturan malzemenin ayırt edilebilmesi için dört adede kadar farklı malzeme ve tip seçilebilir.&nbsp;</li>Hendek sağ ve sol kenarları, borulardan birine göre tanımlanabilir. Mesafe, borunun dış duvarından hendek tabanının kenarına kadar alınır. Bu mesafe yalnızca hendek genişliğini genişletmek için kullanılır, yani hendek en azından teorik genişliğine sahip olacaktır. Koruma kotu da herhangi bir borunun dış yüzeyine göre tanımlanabilir. Referans olarak kullanılan borular, başka eksenlere referans verilebilir.<br /><br />
+<li>Örtü bölgesi: Bu bölgedeki hendek geometrisi ve üç dolgu malzemesi: Minimum örtü (C1), Örtü 2 ve Örtü 3.&nbsp;</li></ul><ul><li>Ön hendek. Yarma veya dolgu kesitini başlatmak için palyeler tanımlanır.</li></ul><ul><li>Yeniden dolgu. Kalınlığı&nbsp;ve&nbsp;tipi belirtilerek 5 adede kadar&nbsp;yeniden dolgu malzemesi.</li>
+</ul>
+Bu türden iki kesit kullanan Tubos/<span class="Archivo">ZanjasZYT.isa</span> örneği eklenmiştir. Ayrıca, bu boruları temsil etmek için .lil Düzenle->Borular'a bir seçenek eklenmiştir. (Kütüphaneye ayrıca <span class="Archivo">ZYT.lil</span> dosyası da eklenmiştir).<br />
+<br />
+<div style="text-align: center;"><img style="width: 600px; height: 300px;" alt="" src="Imagenes/dialogo_definir_zyt.png" /><br /></div>
+<br />Adın yanında, <span style="font-style: italic;">Tümü</span>, <span style="font-style: italic;">Sadece borular</span> ve <span style="font-style: italic;">Sadece borular ve Koruma</span> seçenekleriyle bir açılır menü bulunmaktadır. <span style="font-weight: bold;">Sadece borular</span> seçeneği hendeği kaldırır ve kesit yalnızca arazi ve boru ile kalır. <span style="font-weight: bold;">Sadece borular ve koruma</span> seçeneği, koruma bölgesi ve borular hariç hendeği kaldırır.<br /><br />İki tam ZYT kesiti arasında bir geçiş yapmak mümkündür. Vektörel olarak tanımlanan elemanlar için, başlangıç ve bitiş kesitindeki nokta sayısı aynı olmalıdır. Geçişe izin vermeyen elemanlar veya parametreler için, başlangıç kesiti geçerli olur.<br />
+<br />
+
+
+ENKESİTLERDE BORU KESİTİ<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<ul>
+
+    <li><span style="font-weight: bold;">Gerçek kesit, eğime göre</span>: Dik bir eğim durumunda, boru enkesitte dikey eksene göre deforme olmuş görünecektir; bu, enkesiti oluşturan dikey düzlemin boruyla kesişimine göredir. Bu seçenek, en gerçekçi olması ve daha doğru metrajlar vermesi nedeniyle varsayılan seçenektir.</li>
+  
+  </ul>
+
+  
+  <ul>
+
+    <li><span style="font-weight: bold;">Dairesel</span>: Bu seçenek seçilirse, enkesitler boru kesitini dairesel geometriyle gösterir. Yüksek eğimler nedeniyle deformasyonların çok büyük olduğu durumlarda kullanımı tavsiye edilir, ancak daha az gerçekçidir.<br />
+      <br />
+</li>
+<li><span style="font-weight: bold;">Boruyu bacaların içinde kes</span>: Her bacanın KM'sinde otomatik olarak bir enkesit ve KM - baca yarıçapı ile KM + baca yarıçapında iki tane daha enkesit enterpole eder.<br />
+<br />
+</li>
+<li><span style="font-weight: bold;">Diğer eksenlerin bacalarında da kes</span>: bu seçenek normal boykesit hesaplamasında çalışmaz. Eğer <span style="font-style: italic;">Mevcut Projeyi Hesapla</span>'da veya <span style="font-style: italic;">PROJE</span> sekmesinde çalıştırılırsa, projenin tüm boru eksenlerinin tüm bacalarını içeren bir liste oluşturulur ve her boru ekseni hesaplandığında, eksen tarafından geçilen bacalar kendi bacalarıymış gibi ele alınır ve boru kesilir.<br />
+</li>
+
+code
+Code
+download
+content_copy
+expand_less
+</ul>
+
+  
+  <ul>
+
+    <li>Boru, bacanın içinde kesildiğinde, <span style="font-weight: bold;">hendek de kesilebilir</span>.<br />
+    </li>
+  
+  </ul>
+
+
+  <br />
+
+YÜKSEKLİK VE KALINLIK VERİLERİ<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+Bu veriler, <a href="#zanja"><span style="font-weight: bold;">[HENDEK/DESTEK]</span></a> menüsünde, <a href="#proteccion">koruma</a> ve <a href="#cubricion">hendek</a> vektörlerinin <span style="font-weight: bold;">h</span>, <span style="font-weight: bold;">dY</span> değerlerine ve ayrıca <span style="font-weight: bold;">minimum örtü</span>, <span style="font-weight: bold;">maksimum yükseklik</span>, <span style="font-weight: bold;">maksimum tolere edilebilir</span>'e ve <a href="#rellenos"><span style="font-weight: bold;">[DOLGULAR]</span></a> menüsünde, <span style="font-weight: bold;">Yükseklik Y</span>, <span style="font-weight: bold;">GBK</span>, <span style="font-weight: bold;">P1</span>, <span style="font-weight: bold;">P2</span>, <span style="font-weight: bold;">yeniden dolgu</span> kalınlığı, <span style="font-weight: bold;">Ö1</span> ve <span style="font-weight: bold;">Ö2</span> değerlerine referans verir. İki olasılık sunulur:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<ul>
+
+    <li><span style="font-weight: bold;">Düşeyde ölçülmüş</span>: Enkesitte, girildikleriyle aynı büyüklükte görüneceklerdir. Bu varsayılan seçenektir.</li>
+  
+  </ul>
+
+  
+  <ul>
+
+    <li><span style="font-weight: bold;">Eğime dik ölçülmüş</span>: Dik eğimler durumunda, boru düzlemindeki kalınlıkları koruduğu için daha tutarlıdır.</li>
+  
+  </ul>
+
+  <br />
+
+BORU GEOMETRİSİ<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+Her tip kesit (T.K.) için, boru şunlar olabilir:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<ul>
+
+    <li><span style="font-weight: bold;">Dairesel</span>: Çap ve kalınlık, <a style="font-weight: bold;" href="#def_tubos">[KIRMIZI KOTLAR]</a> menüsünde tanımlananlar olacaktır.</li>
+  
+  </ul>
+
+  
+  <ul>
+
+    <li><span style="font-weight: bold;">Vektörel</span>: Bu durumda boru numarasını girmek gerekir. Bu numara, <a href="#tubos_vect"><span style="font-weight: bold;">[VEKTÖREL BORULAR]</span></a> menüsünde tanımlanan bir vektörel boru listesine referans verir. İki boru durumunda, her birine farklı bir geometri atamak mümkündür. Farklı vektörel borulara sahip tip kesitler arasında geçişlere izin verilir. Geçişler, boru yüzeylerini oluşturan her bir vektörde aynı sayıda noktaya sahip benzer geometriye sahip kesitler arasında yapılmalıdır.</li>
+  
+  </ul>
+
+  <br />
+
+  <span style="font-weight: bold; font-style: italic;"><a name="tubos_vect">Vektörel Borular</a></span><br />
+
+  <br />
+
+Bu menü, <a href="OL_tuneles.html#def_vectorial">tünellere</a> benzer şekilde bir dizi boru tanımlamaya olanak tanır. Bu durumda tanım her zaman vektöreldir, ancak iki farklı şablondan yola çıkılabilir: eliptik borular (dairesel dahil) ve dikdörtgen borular (kutu menfez, kutu kesit...). Şablonlarda çaplar veya kenarlar ve kalınlık (mm cinsinden) tanımlanır.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+Tüm boruların tanımı,  <span class="Archivo">.tbv</span> uzantılı dosyalara <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> kaydedilebilir veya  <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> yüklenebilir. Tanımlayabileceğimiz borulardan yalnızca birini kaydetmek veya açmak için sırasıyla <img src="Imagenes/icono_guarda1.png" style="width: 20px; height: 20px;" alt="" /> veya <img src="Imagenes/icono_abrir1.png" style="width: 20px; height: 20px;" alt="" /> komutlarını kullanacağız; bu komutlar  <span class="Archivo">.1tb</span> uzantılı dosyaları kaydedecek veya açacaktır.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  
+  <div style="text-align: center;"><img src="Imagenes/dialogo_tubos_vect.png" style="width: 534px; height: 174px;" alt="" /><br />
+  </div>
+
+  <br />
+
+  <img src="Imagenes/modelo_tubos_vect.png" style="width: 217px; height: 217px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">[Şablonu Kopyala]</span> ile seçilen şablondan yola çıkarak, detayları eklemek için geometriyi <span style="font-weight: bold;">[DÜZENLE]</span>yebilirsiniz. Geometriler dört yüzeyle oluşturulur:<br />
+
+  
+  <ul>
+
+    <li>Borunun iç yüzeyinin tabanı.</li>
+    <li>Borunun iç yüzeyinin kapağı.</li>
+    <li>Borunun dış yüzeyinin tabanı.</li>
+    <li>Borunun dış yüzeyinin kapağı.</li>
+  
+  </ul>
+
+  Boruyu tanımlayan dört yüzeyin noktalarına, boru kesitinin herhangi bir karakteristik noktasını temsil edebilmek amacıyla bir kod eklenir.<br />
+
+  <br />
+
+Koordinatlar kırmızı kota (düşey eksen) göredir. Varsayılan olarak kırmızı kot, borunun iç yüzeyinin tabanının merkezindedir (0.0,0.0).<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  <br />
+
+  <span style="font-weight: bold; font-style: italic;"><a name="camino_servicio">Servis Yolu</a></span><br />
+
+  <br />
+
+Bu seçenek aracılığıyla, hendeğin bir veya her iki tarafına bitişik bir servis yolu tanımlamak mümkündür:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  
+  <div style="text-align: center;"><img src="Imagenes/dialogo_camino_servicio.png" style="width: 585px; height: 193px;" alt="" /><br />
+  </div>
+
+  <br />
+
+  <img src="Imagenes/modelo_camino_servicio.png" style="width: 269px; height: 269px; margin-left: 7px;" alt="" align="right" />Servis yolu yalnızca hendeğin solunda, sağında (varsayılan seçenek) veya her iki tarafında ve her zaman <span style="font-weight: bold; font-style: italic;">Servis yolu oluştur</span> kutucuğu etkinleştirilerek oluşturulabilir.<br />
+
+  <br />
+
+Oluşturulması için gereken diğer değerler, menüye eşlik eden modelden çıkarılabilir.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  <span style="font-weight: bold;">Yarmada, mesafeyi hendek-arazi kesişiminden ölç</span>: Bu durumda, yol hendeği işgal edemeyeceğinden, eksenler arasındaki mesafe yeterli değilse, diğer parametreleri koruyarak yol itilir. Bu seçeneğin yanında, hendek dışında 3. örtüden kaçınmak için bir kutucuk bulunur <img src="Imagenes/camino_serv_evit_fuera.png" style="width: 120px; height: 30px;" alt="" />.<br />
+
+  <br />
+
+  <span style="font-weight: bold;">Yol terasmanını hendeğe kadar uzat</span>: Bu seçenek, servis yolunun iç kenarı hendek dışında kaldığında kullanılabilir.<br />
+
+  <br />
+
+  <br />
+
+  <span style="font-weight: bold; font-style: italic;"><a name="acopios">Yığınlar</a></span><br />
+
+  <br />
+
+Bu menüden, hendek kazı ve sıyırma malzemelerini yığmak için gerekli genişliğe sahip bir tip kesit oluşturulabilir.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  
+  <div style="text-align: center;"><img src="Imagenes/dialogo_acopios.png" style="width: 549px; height: 159px;" alt="" /><br />
+  </div>
+
+  <br />
+
+Aynı tip kesit için bir tarafta toprak yığınları ve diğer tarafta servis yolu tanımlanabilir. Bu durumda, bitkisel toprak yığını yapılmaz.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  
+  <div style="text-align: center;"><img src="Imagenes/modelo_acopios.png" style="width: 464px; height: 216px;" alt="" /><br />
+  </div>
+
+  <br />
+
+  <br />
+
+  <span class="Titulo_2"><a name="tabCubic_planos_listados">Boru projelerine özel metraj tabloları, paftalar ve raporlar</a></span><br />
+  <br />
+
+  <span style="font-weight: bold; font-style: italic;"><a name="tablasCubic">Metraj tabloları</a></span><br />
+
+  <br />
+
+Borular durumunda kullanılacak metraj tablosu, otomatik olarak yüklenen <span class="Archivo">ISPOL4.dar</span>'dır<span class="Archivo">.<br />
+<br /></span>
+
+BORULAR bölümünde dolgu yüzeyleri oluşturulur:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<ul>
+<li>Boru destek betonu</li><li>Koruma dolgusu</li><li>Örtü dolgusu</li><li>Yeniden dolgu</li>
+
+code
+Code
+download
+content_copy
+expand_less
+</ul>
+
+Bu nedenle, dolgunun farklı bileşenlerini ayırmak için gömülü boru kesitlerinde 6 tür çizgi kullanılır: L121, L122, L123, L124, L125, L126. Ayrıca (tanımlanırsa), örtüde dairesel bir çatı eğimi tanımlandığında arazi yüzeyiyle çakışmayabileceğinden, bir yeniden dolgu çizgisi (L155) de görünecektir.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+Metraj tabloları, boruyu bir kutu menfez içinden geçirme durumunda, kutu menfez dolgularını ve kutu menfez temel kazısını bile dikkate alır.<span class="Archivo"><br />
+<br /><span class="Archivo">
+                     
+===================================================<br />
+                     
+
+ENKESİT METRAJLARI* * *<br />
+                     
+===================================================<br />
+<br />
+     ENKESİT     MALZEME 
+ENKESİT ALANI ARA HACİM TOPLAM HACİM   
+MALZEME   ALAN .....  <br />
+-----------   ---------- ------------ ------------ ------------   ------------- ---------<br />
+     0.000   
+DOLGU       
+8.062      
+0.00        
+0.0         
+Y_TOPRAK        8.562  <br />
+             
+BİTKİSEL_TOPLAM   
+6.154      
+0.00        
+0.0         
+GROBETON    2.313 <br />
+             
+ÖRTÜ_1    
+10.080      
+0.00        
+0.0         
+ÖRTÜ_3    
+0.432         <br />
+             
+KORUMA_3   
+24.360      
+0.00        
+0.0         
+BİTKİSEL_HENDEK   5.722<br />
+             
+BİTKİSEL_ÖNHENDEK   0.432      
+0.00        
+0.0         
+KAZI_HENDEK       8.562<br />
+<br />
+     10.000  
+DOLGU       
+0.781      
+44.22      
+44.2         
+Y_TOPRAK        23.170<br />
+             
+BİTKİSEL_TOPLAM   
+7.376      
+67.65      
+67.7         
+GROBETON     2.313<br />
+             
+ÖRTÜ_1    
+10.080     
+100.80     
+100.8         
+ÖRTÜ_3      1.205 <br />
+             
+KORUMA_3    24.360     
+243.60     
+243.6         
+BİTKİSEL_HENDEK    6.171<br />
+             
+BİTKİSEL_ÖNHENDEK  
+1.205       
+8.18       
+8.2         
+KAZI_HENDEK       23.170<br />
+<br />
+     20.000  
+DOLGU       
+1.944      
+13.63      
+57.8         
+Y_TOPRAK        25.041<br />
+             
+BİTKİSEL_TOPLAM   
+7.966      
+76.71     
+144.4         
+GROBETON     2.313<br />
+             
+ÖRTÜ_1    
+10.080     
+100.80     
+201.6         
+ÖRTÜ_3      7.133<br />
+             
+KORUMA_3    24.360     
+243.60     
+487.2         
+BİTKİSEL_HENDEK    5.056<br />
+             
+BİTKİSEL_ÖNHENDEK   2.910      
+20.58      
+28.8         
+KAZI_HENDEK       20.818<br />
+             
+KAZI_ÖNHENDEK    
+4.223      
+21.11       21.1<br />
+<br />
+     30.000  
+DOLGU       
+1.343      
+16.44      
+74.3         
+Y_TOPRAK        28.650<br />
+             
+BİTKİSEL_TOPLAM   
+8.256      
+81.11     
+225.5         
+GROBETON     2.313<br />
+             
+ÖRTÜ_1    
+10.080     
+100.80     
+302.4         
+ÖRTÜ_3      9.641<br />
+             
+KORUMA_3    24.360     
+243.60     
+730.8         
+BİTKİSEL_HENDEK    4.870<br />
+             
+BİTKİSEL_ÖNHENDEK   3.386      
+31.48      
+60.2         
+KAZI_HENDEK       22.395<br />
+             
+KAZI_ÖNHENDEK    
+6.255      
+52.39       73.5<br />
+<br />
+............................<br />
+............................<br />
+<br />
+             
+===================================================<br />
+             
+
+*      TOPLAM HACİM ÖZETİ       * * *<br />
+             
+===================================================<br />
+<br />
+<br />                         
+MALZEME                      
+HACİM     <br />
+                      
+--------------               
+----------------<br />
+                      
+DOLGU                            
+1621.594<br />
+                      
+Y_TOPRAK                            
+33825.813<br />
+                      
+BİTKİSEL_TOPLAM                       
+11266.975<br />
+                      
+İKSA                            
+532.038<br />
+                      
+GROBETON                         
+2760.564<br />
+                      
+BORU                                 
+6991.810<br />
+                      
+YENİDEN DOLGU                              
+0.013<br />
+                      
+ÖRTÜ_1                         
+13437.904<br />
+                      
+ÖRTÜ_3                          
+4236.832<br />
+                      
+KORUMA_3                        
+28700.870<br />
+                      
+BİTKİSEL_HENDEK                        
+8656.692<br />
+                      
+BİTKİSEL_ÖNHENDEK                       
+2610.283<br />
+                      
+KAZI_HENDEK                           
+32199.203<br />
+                      
+KAZI_ÖNHENDEK                         
+1626.617<br /></span>
+<br /><br /></span><a style="font-style: italic; font-weight: bold;" name="planos">Paftalar</a><br />
+
+<br />
+
+
+<img src="Imagenes/dibujo_tuberia_planta.png" style="width: 341px; height: 264px; margin-left: 7px;" alt="" align="right" />Yatay güzergah eksenlerinin etiketlenmesi için, program kütüphanesinde borulara özel kullanım için .ali dosyaları sunar; örneğin,  codos.ali (dirseklerin KM ve açılarını etiketler) ve  codos2.ali, şebekenin her bir düğüm noktasına uygulanan bağlayıcıların adlarını (dirsek 45, manşon, vb.) etiketler. Kullanıcıya, bu adların codos.dip gibi bir boru yatay güzergah tasarım tablosunda tanımlanabileceği hatırlatılır.<br />
+
+<br />
+
+
+Ayrıca, boru ve bacaların yatayda gösterimi için <a href="OL_ficheros_lil.html#pozos_tubos">özel dosyalar</a> da bulunmaktadır, örneğin:<span class="Archivo"> <span class="Archivo">tuberias.lil</span></span>,<span class="Archivo">  <span class="Archivo">tuberia2.lil</span></span>,<span class="Archivo"> <span class="Archivo">tuberia3.lil</span> </span>(gerçek açı),<span class="Archivo"> <span class="Archivo">tuberia3p.lil</span> </span>(yataydaki açı),<span class="Archivo"> <span class="Archivo">tuberia3c.lil</span> </span>(bağlayıcının açısı),<span class="Archivo"> <span class="Archivo">tuberia4.lil</span> </span>(gerçek açı),<span class="Archivo"> <span class="Archivo">tuberia4p.lil</span> </span>(yataydaki açı),<span class="Archivo"> <span class="Archivo">tuberia4c.lil</span> </span>(bağlayıcının açısı) ve<span class="Archivo"> <span class="Archivo">tuberias4i.lil</span> </span>(çift boru için).<span class="Archivo"><br />
+<br />
+<br /></span>
+Ayrıca boykesit gösterimi için özel boykesit pafta şablonları da bulunmaktadır: <span class="Archivo"><span class="Archivo">ISP20.gui</span>, <span class="Archivo">ISP22.gui</span>, <span class="Archivo">ISP22b.gui</span>, <span class="Archivo">tubos3.gui</span>, <span class="Archivo">tubos4.gui</span>, <span class="Archivo">tubos5.gui</span></span> ve <span class="Archivo"><span class="Archivo">tubos6.gui</span>.<br />
+<br />
+<div style="text-align: center;"><img src="Imagenes/ejemplo_gui_tuberias.png" style="width: 630px; height: 482px;" alt="" /><br />
+</div>
+<br /><br />
+</span><a style="font-weight: bold; font-style: italic;" name="listados">Raporlar</a><span class="Archivo"><br />
+<br /><span class="Parrafo">RAPORLAR menüsünde, <a href="OL_listados_tuberias.html">boru projelerine özel bir bölüm</a> bulunmaktadır ve bu bölüm, aksesuarların özelliklerini, iksa yüzeylerini, boru ve baca envanterlerini vb. elde etmeye olanak tanır.<br />
+<br />
+Raporların yapılandırmasında, Hesaplama'da iksa alanları raporunu cvol.res metraj raporuna ekleyip eklememe seçeneğimiz bulunmaktadır.<br />
+<br />
+</span></span>
+
+code
+Code
+download
+content_copy
+expand_less
+<div style="text-align: center;"><span class="Archivo"><span class="Parrafo"><img src="Imagenes/ol_listados_config_tub.png" style="width: 600px; height: 508px;" alt="" /></span></span><br />
+  <span class="Archivo"><span class="Parrafo" /></span></div>
+
+  <span class="Archivo"><span class="Parrafo"><br />
+<br />
+</span></span></td>
+</tr>
+</tbody>
+</table>
+
+</body></html>

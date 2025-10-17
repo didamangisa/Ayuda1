@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>3B Görüntü (Billboard) Oluşturma</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>3B Görüntü (Billboard) Oluşturma<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"> </span><span class="Parrafo"><a href="#billboard">Billboard Seçimi</a><br />
+      <span style="text-decoration: underline;"><a href="#siembra">Oluşturma ve Serpiştirme</a><br />
+      </span></span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+      </span>Bu seçenek, önceden tanımlanmış ve sınıflandırılmış 2B görüntüleri sahneye dahil etmeye ve bunları üç boyutlu nesneler olarak kullanmaya olanak tanır. Önce dahil edilmek istenen görüntü teması, ardından görüntünün kendisi ve son olarak da yerleştirme yöntemi seçilmelidir: manuel tıklama, doğrusal serpiştirme veya kapalı bir alan içine serpiştirme.<br />
+      <br />
+Görüntülerin sınıflandırılması, onları tanımlayan dosyaların bulunduğu klasörler aracılığıyla yapılır. Kütüphaneye, ilgili klasörlere dosyaları eklenerek yeni görüntüler eklenebilir.<br />
+      <br />
+2B görüntüler, billboard adı verilen dikdörtgen bir geometrinin dokusu (texture) olarak kullanılır. Bu geometrinin yatay (yatay işaretleme) veya dikey (düşey işaretleme, ağaçlar, reklam panoları) olacağı ve dikey olması durumunda, geometrinin sabit bir yönelime mi sahip olacağı (levhalar) yoksa kameraya dönük kalacak şekilde döneceği mi belirtilir.<br />
+      <br />
+Billboard'lar, harita üzerinde oluşturulan semboller ve hücrelerle ilişkilidir. Bunları korumak için harita ile birlikte kaydetmek gerekir. Sanal 3B'ye her girildiğinde ve haritada billboard'larla ilişkili semboller veya hücreler bulunduğunda, bu sembollere veya hücrelere karşılık gelen billboard'lar oluşturulur.<br />
+      <br />
+Billboard'ların, ilişkili oldukları sembollerin veya hücrelerin kendi "çizimlerinin" görüntüsünü alması sağlanabilir. Bu, işaretleme ve levhalar için çok kullanışlıdır.<br />
+      <br />
+Görüntülerin siyah kısımları, bir billboard'da kullanıldığında şeffaf kabul edilir.<br />
+      <br />
+Bu nesneler ve görüntüler olduğu gibi kullanılabilir, herhangi bir dönüşüme ihtiyaç duymazlar, ancak kullanıcının ihtiyaçlarına göre değiştirilebilirler.<br />
+      <img style="width: 338px; height: 895px; margin-left: 7px;" alt="" src="Imagenes/V3D_menu_crear_imagen_3D.png" align="right" /><br />
+      <a name="billboard">Billboard Seçimi<br />
+      <br />
+      <span style="font-weight: bold;">Sınıf</span>: eklenmek istenen görüntülerin temasını aşağıdakiler arasından seçmeyi sağlar:<br />
+&nbsp;&nbsp;&nbsp; -<span style="font-style: italic;">Göstergeler</span> (bir noktayı işaretler ve bir kot veya km yazar...)<br />
+&nbsp;&nbsp;&nbsp; -<span style="font-style: italic;">Yatay İşaretleme </span>(yön okları ve yol üzerine çizilmiş işaretler)<br />
+&nbsp;&nbsp;&nbsp; -<span style="font-style: italic;">Düşey İşaretleme</span> (bilgi, yasaklama, tehlike, zorunluluk... bir direk ve arka kısım eklenebilir)<br />
+&nbsp;&nbsp;&nbsp; -<span style="font-style: italic;">Bitki Örtüsü ve Ağaçlar</span> (otlar, çalılar ve ağaçlar).<br />
+      <br />
+      <span style="font-weight: bold;">Tip</span>: sınıftaki görüntülerden sembollerle, hücrelerle veya her ikisiyle ilişkili olanları seçerek sahnede gösterilmesini ve yerleştirilmesini sağlar.<br />
+      <span style="font-weight: bold;"> Mevcut elemanlar listesi</span>:
+seçilebilir tüm nesneleri içeren bir açılır liste.<br />
+      <span style="font-weight: bold;">İlişkili sembol veya hücre ve görüntü</span>: bu billboard türüyle ilişkili sembol veya hücrenin dosya adı gösterilir. Kütüphaneden bir görüntü kullanılıyorsa, onu içeren dosyanın adı da eklenir.<br />
+      <span style="font-weight: bold;"> Billboard önizleme görüntüsü</span>:
+görüntü gösterilir. 1x1, 2x2, 3x3 ve 3x5 seçenekleriyle her seferinde 1 ila 15 arasında görüntü görülebilir.<br />
+      <span style="font-weight: bold;"> Orijinal boyut</span>: görüntünün temsil ettiği nesnenin boyutunu bildirir.<br />
+      <span style="font-weight: bold;"> Genişlik, Yükseklik</span>: billboard'un boyutları, nesne ölçeklenerek değiştirilebilir.<br />
+      <span style="font-weight: bold;"> Sahneden Z Al</span>: billboard sahneye yerleştirilirken, kotunu üzerinde bulunduğu geometriden alır.<br />
+      <span style="font-weight: bold;"> Mevcut Z'yi Kullan</span>: billboard sahneye yerleştirilirken, kotunu Harita modülündeki Mevcut Kot değerinden alır.<br />
+      <span style="font-weight: bold;"> Zemin Z'si</span>: "Sahneden Z Al" ile aynı şekilde çalışır ancak yatay billboard'ları zemin geometrisine uyacak şekilde döndürür. <br />
+      <br />
+      </a><a name="siembra">Oluşturma ve Serpiştirme<br />
+      <br />
+Billboard oluşturmanın varsayılan yolu "<span style="font-weight: bold;">Manuel</span>"dir, yani billboard sahneden seçilen noktada oluşturulur. Ancak menüde sunulan kriterlere göre otomatik olarak da yapılabilir.<br />
+      <span style="font-weight: bold;"> Doğrusal Serpiştirme</span>: billboard'ları bir çizgi boyunca yerleştirmeyi sağlar; çizgi üzerine konulacak toplam billboard sayısı veya hangi aralıklarla yerleştirileceği belirtilebilir. Ayrıca, ilk billboard'un çizginin ilk noktasına yerleştirilmemesi için bir "Başlangıç Ötelemesi" belirtilir.<br />
+      <span style="font-weight: bold;"> Yüzeysel Serpiştirme</span>: billboard'ların yerleştirileceği alanı belirtmek için kapalı bir çizgi kullanılır. Serpiştirme "rastgele" veya billboard'lar arasındaki mesafe ve bu ızgara düğümlerine göre konumun rastgele değişimi ile parametrelendirilen düzenli bir ızgara şeklinde olabilir.<br />
+      <span style="font-weight: bold;">Oluştur</span>: bu buton, belirtilen billboard oluşturma işlemini yürütür. Oluşturma modu manuel ise, 3B görünümde her tıklandığında seçilen o noktada bir billboard oluşturulur ("Esc" tuşuna basılarak durdurulur). Her oluşturma işlemi arasında billboard tipi değiştirilebilir.<br />
+      <span style="font-weight: bold;">Geri Al</span>: gerçekleştirilen son oluşturma işlemini siler.<br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+</body></html>

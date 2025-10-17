@@ -1,0 +1,1231 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Görüş Mesafesi</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GÖRÜŞ MESAFESİ ETÜTLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <span class="Parrafo"><a href="#cruce">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><a href="#tipos_estudio">
+Etüt tipleri</a></span><br />
+      <span class="Parrafo">
+      </span></div>
+
+      
+      <div style="margin-left: 80px;"><span class="Parrafo"><a href="#parada_adelantamiento">Durma ve sollama görüş mesafesi</a><br />
+      <a href="#cruce">Kavşak görüş mesafesi</a><br />
+</span>
+      <span class="Parrafo"></span></div>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#pos_obs_ref_ang_bar">Gözlemci ve referans konumu, açılar, görüş engelleri,...</a></span><br />
+      <span class="Parrafo">
+      </span></div>
+
+      <div style="margin-left: 80px;"><span class="Parrafo"><a href="#posicionamiento">Konumlandırma</a><br />
+      <a href="#barreras_visuales">Görüş engelleri</a><br />
+      <a href="#opciones_ref">Referans seçenekleri</a><br />
+      <a href="#angulos_visuales">Görüş açıları</a><br />
+</span>
+      <span class="Parrafo"></span></div>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#config_visual">
+3D görüntüleme penceresinin yapılandırılması</a></span><br />
+      <span class="Parrafo">
+      <a href="#resultados">Sonuçlar</a></span><br />
+      <span class="Parrafo"></span></div>
+      <div style="margin-left: 80px;"><a href="#info_graf"><span class="Parrafo">Görüş mesafesinin grafik bilgileri</span></a><br />
+      <a href="#navega_errores">Hatalar üzerinde gezinme</a><br />
+      <span class="Parrafo"></span></div>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#metodologia">
+Çalışma metodolojisi ve sonuçların gözden geçirilmesi</a></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+Bu fonksiyon, programda BOYKESİT menüsünün YARDIMCI PROGRAMLAR bölümünde bulunur:<br />
+<br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/acceso_visibilidad.png" style="width: 590px; height: 342px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+      Bu seçeneğe girmeden önce, incelenmek istenen eksen veya eksenlerin geometrisinin <span style="font-weight: bold;">hesaplanmış</span> olması gerekir.<br />
+      <br />
+Görüş mesafesi etütlerinde, enkesitlerdeki arazi dikkate alınır (varsayılan olarak 5 m'de bulunan <a href="OL_parametros.html#margen_exprop_defecto">kamulaştırma sınırına</a> kadar).<br />
+      <br />
+Etüt konusu olan eksenin bir <a href="OL_rasantes_normativa.html">.dia tablosu</a> atanmış olması gerekir, çünkü bu tablolar aşağıdaki konularda kullanılan bilgileri içerir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Gözlemci ve referansın varsayılan konumlandırılması.</span></li>
+        <li><span class="Parrafo">Kavşak görüş mesafesi hesaplama parametreleri.</span></li>
+        <li><span class="Parrafo">Yönetmeliklere uyum.</span></li>
+        <li><span class="Parrafo">Boykesit mesafesi hesaplaması.</span></li>
+        <li><span class="Parrafo">Durma mesafesi hesaplaması.</span></li>
+      </ul>
+      
+       <span class="Parrafo">
+      Eğer bir .dia tablosu yüklenmemişse, program bir hata mesajı vererek kullanıcının bu yardımcı programa erişmesini engeller.<br />
+      <br />
+Görüş Mesafesi etütlerine girildiğinde, ana eksene ek olarak hangi eksenlerin görüntülenmesi ve incelenmesi istendiği belirtilebilir.<br />
+Etüt ana eksen üzerinde tanımlanır, ancak görüş hattı başka bir eksenin bir elemanını engel olarak bulursa, sonuçlar raporunda engelin hangi eksene ait olduğu belirtilir.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/visi_02.png" style="width: 496px; height: 309px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Görüş Mesafesi, bu menünün iki seçeneğinden daha bilgi toplar: <a href="OL_marcas_viales.html">yol çizgileri</a> ve <a href="OL_diagrama_de_velocidades.html">hız diyagramı</a>:<br /></span>
+      <ul>
+        <li><span class="Parrafo">
+<a href="OL_marcas_viales.html"><span style="font-weight: bold;">Yol çizgileri</span></a>, 3D görünüm penceresinde görüntülenmek ve bu <a href="OL_marcas_viales.html">yol çizgileri</a> görüş engeli oluşturabiliyorsa, yolun görüş mesafesini hesaplamak için kullanılır. Görüş Mesafesi'nde kullanılabilmeleri için çizilmeleri gerekir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+<a href="OL_diagrama_de_velocidades.html"><span style="font-weight: bold;">Hız diyagramı</span></a>, <a href="#parada_adelantamiento">durma görüş mesafesi</a> durumunda etüt mesafesini hesaplamak için kullanılabilir. <a href="OL_diagrama_de_velocidades.html">Hız diyagramı</a> kullanıldığında, mevcut durma mesafesine bağlı olarak yolda gidilebilecek hız hesaplanır. Bu sonuç, etüt raporunda, &nbsp;<span class="Archivo">ISPOLVP.txt</span> dosyasında görünür.</span></li>
+      </ul>
+      <span class="Parrafo">
+<a href="OL_marcas_viales.html">Yol çizgileri</a> ve <a href="OL_diagrama_de_velocidades.html">hız diyagramı</a> bilgileri, görüş mesafesi etütleri için zorunlu değildir, ancak çok yararlı olabilir.<br />
+      <br />
+Çalışma ekranı, açıkça ayırt edilen altı bölge gösterir:<br />
+<br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad.png" style="width: 657px; height: 316px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      </span>
+      <ol>
+        <li><span class="Parrafo"><span style="font-weight: bold;">3D grafik penceresi</span>: Yolun ve çevrenin 3D bir görünümü gösterilir. OpenGL<sup>®</sup> ile oluşturulmuştur, bu nedenle OpenGL<sup>®</sup> sürücüleri doğru şekilde yüklenmiş bir grafik kartı gereklidir.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Yatay Plan</span>: Öncekilerle aynı yol bölgesinin yataydaki üçgenlemesinin görünümü. Sütunundaki diğer pencerelerin bıraktığı alana sığar. Gözlemcinin ve referansın bulunduğu noktaları birleştiren bir çizgi gösterir. Üçgenlerin rengi, yolun hangi bölümüne ait olduklarına ve etüt alanı içinde mi yoksa dışında mı olduklarına bağlıdır.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Ana menü</span>: Görüş mesafesi etüdünün veri girişi, yapılandırılması ve sonuçlarının elde edilmesi için diyalog kutuları.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Güzergah elemanları, hız diyagramı ve sonuçlar</span>: Etüt bölgesindeki ve önceki ile sonraki bölgelerdeki güzergah elemanlarını gösterir. Ayrıca, oluşturulmuş ve yüklenmişse hız diyagramını da gösterir. Bir etüt yapıldıktan sonra sonuçları gösterir.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Boykesit</span>: Önceki pencereyle aynı bölgenin boykesit bilgilerini çizer. Kırmızı çizgi, gözlemci-referans görüş hattını ve sarı çizgi, ilgili kırmızı kot kesitini temsil eder.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Eksen</span>: Etütlerin yapılacağı kesimi siyah arka planla ve eksenin geri kalanını beyazla gösteren, güzergah elemanları diyagramıyla ekseni şematize eder. Gözlemcinin konumunu, yalnızca 3D grafik penceresinde yolun farklı görünümlerini gösterme amacıyla hareket ettirmeye olanak tanıyan bir kaydırıcıya sahiptir. Kaydırıcının sağında, daha sonra detaylandırılacak olan hata gezgini bulunur.</span></li>
+      </ol>
+      <span class="Parrafo"><br />
+Görüş mesafesi menüsünden çıkıp BOYKESİT'e geri dönmek için, çarpı şeklindeki düğmeye basmak yeterlidir.<br />
+      <br />
+Veri alanında üç ana menü vardır: <span style="font-weight: bold;">Etütler</span>, <span style="font-weight: bold;">Yapılandırma</span> ve <span style="font-weight: bold;">Sonuçlar</span>. Birincisi (varsayılan olarak seçili görünür) etütleri yapmak için kullanılır. İkincisinden, programın çalıştığı verileri veya elde edilen sonuçları gösterdiğinde uygulamanın görsel görünümünü yapılandıran tüm veriler kontrol edilir ve üçüncüsünden raporlara, bir AVI filmi oluşturmaya ve diğer seçeneklere erişilir.<br />
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="tipos_estudio">Etüt Tipleri</a></span><br />
+      <span class="Parrafo">
+      <br />
+Bir görüş mesafesi etüdü yapılırken, sonuçların uygun olması için etüdü tanımlayan tüm faktörler dikkate alınmalıdır. Hangi tür etüdün yapılacağını, etüdü parametrelendirmek için belirlenmiş yönetmeliklerin neler olduğunu bilmek ve bunları uygun şekilde uygulamak gerekir.<br />
+      <br />
+Yolu kat eden sürücüyü simüle eden bir gözlemciden ve sürücünün önünde belirli bir mesafede bulunan ve her zaman görünür olması gereken bir referanstan yola çıkılır. Gözlemcinin ve referansın yoldaki konumuna ve onları ayıran mesafeye bağlı olarak, farklı amaçlarla etütler yapılabilir:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Durma görüş mesafesi etüdü.</span></li>
+        <li><span class="Parrafo">Sollama görüş mesafesi etüdü.</span></li>
+        <li><span class="Parrafo">Kavşak görüş mesafesi etüdü.</span></li>
+      </ul>
+      <span class="Parrafo">Bu etütlerin özellikleri ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> programında önceden tanımlanmıştır, ancak kullanıcı tarafından tercih edildiği gibi yapılandırılmış başka etütler yapmak için değiştirilebilirler. Hatta Durma görüş mesafesi ve Sollama görüş mesafesi seçeneklerinde, projenin nihai sonucu hakkında bir fikir edinmek ve etüdü yoğunlaştırılacak sorunlu bölgeleri öngörmek için herhangi bir etüt yapmadan yolu kat etmek mümkündür.<br /><br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="parada_adelantamiento">Durma ve Sollama Görüş Mesafesi</a></span><br />
+      <span class="Parrafo">
+      <br />
+      Etütte, görüş engelleri de dahil olmak üzere görüntülenen tüm nesneler dikkate alınır. Aşağıdaki şema, görüş mesafesi etütlerinde yer alan elemanları açıklamaktadır:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/esquema_visib_parada.png" style="width: 432px; height: 325px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo">Gözlemci, bir kod mesafesinde yolu kat eder ve belirli bir yüksekliktedir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Referanslar, belirli mesafe ve yükseklik koşullarını karşılayan, güzergaha enine bir çizgi üzerinde yer alırlar.</span></li></ul>
+      <ul>
+
+        <li><span class="Parrafo">Gözlemciyi, referansların bulunduğu enine çizgiden ayıran görüş mesafesi.</span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo">Gözlemcinin gözünü ve referans noktalarını “birleştiren” düz çizgiyi gösteren görüş vektörleri.</span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo">Kullanıcı, <span style="font-weight: bold;">[Durma]</span> ve <span style="font-weight: bold;">[Sollama]</span> sekmelerinin, incelenecek ekseni tanımlamak için kullanılan, eksenin başlangıç ve bitiş KM'si, hızı ve diğer parametreler için varsayılan değerler gibi bazı değerleri içerdiğini dikkate almalıdır.<br /><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad_parada.png" style="width: 447px; height: 370px;" alt="" /><br />
+      <br />
+      <img src="Imagenes/dialogo_visibilidad_adelantamiento.png" style="width: 447px; height: 368px;" alt="" /><br />
+      </span><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+<table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 109px;">Maksimum etüt mesafesi<br />
+</td>
+            <td style="vertical-align: top; height: 8px; width: 563px; text-align: justify;">Maksimum etüt mesafesi 5000 m'ye ulaşabilir.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 109px;">Başlangıç KM'si<br />
+Bitiş KM'si<br />
+</td>
+            <td style="vertical-align: top; height: 18px; width: 563px; text-align: justify;">Eksen üzerindeki etütlerin başladığı ve bittiği KM'ler; varsayılan olarak eksenin ilk ve son KM'sidir.<br />
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Gözlemci atlamaları her...</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bir eksenin veya bir bölümünün etüdü sırasında gözlemcinin yerleştirileceği KM'ler arasındaki mesafe (varsayılan olarak 5 m).<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">İlk ...'yı etüt etme</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Görüş mesafesinin varsayıldığı mesafedir (varsayılan olarak 60 m).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Referans atlamaları her...</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bir alt etüt ile bir sonraki arasındaki mesafedir (varsayılan olarak 20 m).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic;">Görüş mesafesi palyelerini hesapla<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Durma veya sollama görüş mesafesi etütleri yapıldığında, bu görüş mesafesine izin vermek için yarmaların hareket ettirileceğini belirtir. Varsayılan olarak işaretli değildir. Bu kutucuk işaretlendiğinde, etüt yönünden bağımsız olarak, gerekirse her iki tarafın yarmaları da temizlenir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-style: italic;"><span style="font-weight: bold;">Görüş engellerini etüt et</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span style="font-weight: bold;">[Gözlemci ve referans konumu, açılar, görüş engelleri,…]</span> içindeki <span style="font-weight: bold;">Seçenekler</span>'de beyan edilen görüş engelleri, bu kutucuk etkinleştirildiğinde dikkate alınır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">KM aralığı /</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">Gözlemci KM'leri</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Etüdü, belirtilen KM aralığında veya <span style="font-weight: bold;">Gözlemci KM</span> alanında tanımlanan belirli bir KM'de yapmaya olanak tanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Referans KM</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Gözlemcinin konumundan ve etüt mesafesinden yola çıkarak referansın yerleştirildiği KM. Bu, yalnızca bilgilendirme amaçlı bir değerdir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Etüt Et]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Görüş mesafesi etüdü yapılır, yapılan etüdün %'si hakkında bilgi verilir ve <span style="font-weight: bold;">Sonuçlar</span> sekmesinden danışılabilecek bir rapor oluşturulur. Bu düğmeye tıklandığında, program, etüdü içerecek ve &nbsp;<span class="Archivo">.txt</span> uzantısına sahip olacak metin dosyası için bir ad ister.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Gezin]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Tüm eksenin hem 3D (OpenGL<sup>®</sup> penceresi) hem de 2D olarak bir gezinti görselleştirmesi sunar.<br /></td>
+          </tr>
+
+        </tbody>
+
+      </table></span><br />
+      <table style="text-align: left; width: 612px; height: 27px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 296px; text-align: center;"><img src="Imagenes/esquema_visib_1.png" style="width: 264px; height: 198px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 296px; text-align: center;"><img src="Imagenes/esquema_visib_2.png" style="width: 265px; height: 199px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      
+      </table>
+     <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="cruce">Kavşak Görüş Mesafesi</a></span><br />
+      <br />
+<a href="#parada_adelantamiento">Durma ve sollama görüş mesafesi</a> etütleri, güzergah boyunca, yani belirtilen tüm eksen veya KM aralığı boyunca gerçekleştirilen etütler olduğu gibi, bu etüt, bir kavşağın yerleştirileceği sabit bir konumdan gerçekleştirilir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/esquema_visib_cruce.png" style="width: 400px; height: 300px;" alt="" /><br />
+      </div>
+      <br />
+Bu etütte, gözlemci incelenecek yolun dışında durur ve yolu geçip geçemeyeceğini görmek için her iki tarafına da bakar.<br />
+      <br />
+Kullanıcıya sunulan diyalog kutusu, <a href="#parada_adelantamiento">durma ve sollama görüş mesafesi</a> etütleri için açıklanana benzer, ancak hız diyagramı gibi bazı unsurların kaybolması ve araç tipi, uzunluğu ve ivmesi gibi diğerlerinin ortaya çıkması farkıyla. Gözlemcinin konumu, görüş mesafesi palyeleri ve diğer gelişmiş seçenekler gibi ortak unsurlar <a href="#parametros">önceki bölümde</a> açıklanmıştır.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_visibilidad_cruce.png" style="width: 451px; height: 366px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Böylece, varsayılan olarak, mevcut eksen KM'lerin artan yönünde incelenir; kullanıcı, gözlemcinin konumunu (yolun sağında mı yoksa solunda mı olduğunu) seçebilir ve gözlemcinin sağına mı yoksa soluna mı baktığını yapılandırabilir.<br />
+      <br />
+Kavşak mesafesi, İspanyol yönetmeliğine göre araç tipine, ivmesine, uzunluğuna ve geçilecek platformun genişliğine bağlıdır.<br />
+      <br />
+</span></span></span><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 122px;">Kavşak mesafesini belirlemek için sabit hız <br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 550px;">Tüm güzergahın kat edildiği varsayılan hız (varsayılan olarak, proje hızı).<br />
+
+            <br />
+            <span class="Parrafo">
+            </span><span class="Parrafo"><table style="text-align: left; width: 503px; height: 175px; margin-left: 30px;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+
+          <tr>
+
+            <td style="vertical-align: middle; width: 163px;" rowspan="7" colspan="1">
+                  <div style="text-align: center;"><img src="Imagenes/formula_dist_cruce.png" style="width: 92px; height: 41px;" alt="" /><br />
+                  </div>
+                  <br />
+                  <div style="text-align: center;"><img src="Imagenes/formula_TC.png" style="width: 165px; height: 45px;" alt="" /><br />
+
+
+
+            </div>
+</td>
+
+            <td style="vertical-align: top; width: 3px;">D<sub>k</sub> <br />
+
+
+                  </td>
+
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">?</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+
+            </span></span></span></span></td>
+
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">Kavşak mesafesi (m)</span>
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 3px;">V<span class="Parrafo"></span></td>
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">?</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">
+Ana yol hızı (km/s)</span></td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 3px;">T<sub>k</sub><br />
+
+
+            </td>
+
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">?</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">Kavşak manevra süresi<br />
+</span></td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 3px;">T<sub>t</sub><span class="Parrafo"><br /></span></td>
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">?</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">Sürücü tepki süresi<br />
+</span></td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 3px;">u<br />
+
+
+            </td>
+
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">?</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">
+Araç uzunluğu</span><br />
+</td>
+          </tr><tr>
+                  <td style="vertical-align: top;">g<br />
+                  </td>
+                  <td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">?</span></span></span></span></td>
+                  <td style="vertical-align: top;">Şerit genişliği<br />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;">i<br />
+                  </td>
+                  <td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">?</span></span></span></span></td>
+                  <td style="vertical-align: top;">Araç ivmesi (m/s<sup>2</sup>)<br /></td>
+                </tr>
+
+
+
+        
+              </tbody>
+      
+      
+            </table>
+            </span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 122px;">Araç tipi, uzunluğu (m) ve ivmesi (g)<br />
+</td>
+            <td style="vertical-align: top; height: 8px; width: 550px; text-align: justify;">İspanyol yönetmeliği 3.1 IC'de tanımlanan tipler arasında değişir: Mafsallı, rijit veya hafif. Bu değerle, aracın uzunluk ve ivme değerleri otomatik olarak ayarlanır ve bunlarla gerekli kavşak mesafesi belirlenir. Her durumda, kullanıcı bu değerleri değiştirebilir (dolayısıyla etüt farklı bir geçerliliğe sahip olacaktır).<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 122px;">Geçilecek platform genişliği&nbsp; (m)<br />
+</td>
+            <td style="vertical-align: top; height: 18px; width: 550px; text-align: justify;">Geçilecek tüm şeritlerin toplam genişliğini belirtir (varsayılan olarak 7 m değerini alır).<br />
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 122px;"><span style="font-weight: bold;">Kavşak görüş mesafesi etüt tipi</span><br />
+            </td>
+            <td style="vertical-align: top; width: 550px; text-align: justify;">Programa, etütte gözlemcinin platformun sağında mı yoksa solunda mı olduğunu ve sağına mı yoksa soluna mı baktığını belirtir. Varsayılan olarak <span style="font-style: italic;">Gözlemci sağda, sola bakıyor</span> varsayılır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Gözlemci KM'si</span><br />
+            </td>
+            <td style="vertical-align: top;">Belirli bir görselleştirme yapmak için kullanıcının kriterine göre gözlemcinin anlık olarak yerleştirildiği KM.<br />
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="pos_obs_ref_ang_bar">Gözlemci ve Referans Konumu, Açılar, Görüş Engelleri,...</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      Bu seçeneğe tıklandığında iki yeni sekme açılır: <span style="font-weight: bold;">Konumlandır</span> (açılan sekme budur) ve <span style="font-weight: bold;">Seçenekler</span>.<br />
+      <br /><br /><a name="posicionamiento">KONUMLANDIRMA</a><br /><br />Etütlerde, gözlemcinin ve referansın konumunun tanımı dikkate alınır. Bu konumların değerleri, İspanyol karayolları yönetmeliğinde (3.1 IC) belirtilenlere göre varsayılan olarak tanımlanmıştır. <span style="font-weight: bold;">Konumlandır</span> sekmesine karşılık gelen diyalog kutusunda, kullanıcının bu değerleri değiştirmesine veya <span style="font-weight: bold;">[Vars. Değ.]</span> düğmesine basıldığında geri yüklemesine olanak tanıyan bir dizi seçenek bulunur. Bu konumların yerleştirilmesi, platformun enkesitine (çizgi 67) göre yapılır ve platform kenarlarına karşılık gelen kodlar kullanılır:<br />
+
+<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 447px; height: 377px;" alt="" src="Imagenes/dialogo_visibilidad_posicionar_2c.png" /><br />
+      <br />
+      <span class="Info">Çift platformlu yolda gözlemci ve referans konumu</span><br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Değerler, sağ platformdan geçiş yapılandırılıyormuş gibi girilmelidir. Ters yönde bir etüt yapılması durumunda, gözlemci ve referans konumları simetri ile hesaplanır.<br />
+      <br />
+Eğer tek bir yol ise, diyalog kutuları benzerdir, platform grafiği değişir:<br />
+      <br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 447px; height: 376px;" alt="" src="Imagenes/visi_o1.png" /><br />
+      <br />
+      <span class="Info">Tek platformlu yolda gözlemci ve referans konumu</span><br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Ve benzer şekilde, kavşak durumunda diyalog kutusu şöyledir:<br />
+      <br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad_posicionar_cruce.png" style="width: 449px; height: 372px;" alt="" /><br />
+      <br />
+      <span class="Info">Kavşakta gözlemci ve referans konumu</span><br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Gözlemcinin ve referansın yatay konumlandırılması:<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 93px;">Taraf</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 579px;">Bu seçenekle, gözlemcinin yerleştirildiği taraf seçilir; varsayılan olarak sağdadır.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 93px;">Kod<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 579px;">Burada referans kodu ayarlanır; varsayılan olarak 1'dir (çift platform durumunda iç beyaz şerit, tek platform durumunda eksen).<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 93px;">Koda mesafe<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 579px;">Önceki koda göre, m cinsinden ifade edilen mesafedir.<br />
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">Her zaman sağda<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Önceki mesafe, artan KM güzergah yönüne göre sağa doğru ölçülür.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Dışa doğru<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bu durumda mesafe, güzergah yönüne bağlı olarak platformun dışına doğru ölçülür. Bu varsayılan seçenektir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Görüş noktası yüksekliği<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Sürücünün ana platform üzerindeki yüksekliği, varsayılan olarak ve yönetmeliğe göre 1,10 m.<br />
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Gözlemcinin ve referansın dikey konumlandırılması:</span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">Yüzeyden<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">Yükseklik, 67 yüzeyinden, tüm olası kırılmaları dikkate alarak ölçülür.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;">Koddan (YATAY)<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">Yükseklik, kodun yatayından ölçülür.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 108px;">Ana platformdan (dever)<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 564px;">Yükseklik, deveri dikkate alarak platformun yüzeyinden ölçülür; bu varsayılan seçenektir.<br />
+            <br />
+            </td>
+          </tr>
+    
+    
+
+        </tbody>
+
+      </table></span></span><br />Etüt mesafelerinin ölçüm yapılandırması:<br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">Eksen KM'si üzerinde<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">Mesafeler eksenin KM'leri üzerinde ölçülür.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;">Gözlemci konumu üzerinde<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">Mesafeler, gözlemcinin kodunu ve koda olan mesafesini takip ederek gözlemcinin konumu üzerinde ölçülür.<br />
+            <br />
+            </td>
+
+          </tr>
+          
+    
+    
+
+        </tbody>
+
+      </table></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 635px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Prensip olarak, <span style="font-weight: bold;">Taraf</span>, <span style="font-weight: bold;">Dışa doğru</span> veya <span style="font-weight: bold;">Ana platformdan (dever)</span> varsayılan seçimini değiştirmek gerekli değildir, çünkü elde edilen sonuçlar uygun olmayabilir.</span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br /><br /><a name="barreras_visuales">GÖRÜŞ ENGELLERİ</a><br /><br />Görüş engelleriyle yapılan etütler, platform üzerinde (korkuluklar) veya yakınına (çalılar, binalar, ağaçlar, bir üst geçidin tabliyeleri,…) yerleştirilmiş hangi nesnelerin görüşü engellemediğini kontrol etmek için gereklidir. Bir görüş engeli, 3D bir çizgi ve onun üzerinde dikey düzlemde bir paralel ile tanımlanır. İkisi arasında, analizörün incelediği opak dikey bir şerit oluşturulur. Aynı çizgi tipindeki (çizgi katmanı) tüm çizgiler tanımlanır; örneğin, kaplama üzerine çizilmiş L404 ve ondan 0,70 m yükseklikte bir paralel, esnek (otokorkuluk) veya rijit (newjersey) bir bariyeri temsil edebilir. Binaların tanımlandığı çizgi tipi ve örneğin 15 m gibi genel bir yükseklik, genellikle şehir çevresi güzergahlarında kullanılır.<br /><br /><span style="font-weight: bold;">Görüş Mesafesi</span> dışında, görüş engellerinin geometrisi tanımlanır; aslında herhangi bir çizgi bir görüş engeli olabilir, ancak en yaygın olanı, görüş engellerinin BOYKESİT menüsündeki <a href="OL_marcas_viales.html">YOL ÇİZGİLERİ</a> seçeneğinde tanımlanması ve çizilmesidir.<br /><br /><span style="font-weight: bold;">Seçenekler</span> sekmesinin <span style="font-weight: bold;">Görüş engelleri</span> bölümünde, haritadaki bu engelleri (otokorkuluklar, newjerseyler, korkuluklar,...) temsil eden her bir çizgi tipine, yerleştirildikleri zeminden bir <span style="font-weight: bold;">yükseklik</span> atanır.&nbsp;Ayrıca, bir görüş engelinin yüksekliğinin negatif olması da öngörülmüştür; bu, bir üst geçitten veya benzerinden sarkan bir tabela veya pankarta uygulanabilir. Görüş engelleriyle yapılan etüt, görüş engelinin altından görme olasılığını da içerir.<br /><br />Haritada bulunabilecek binaları, duvarları vb. temsil etmek için her türlü özel çizgi tipi kullanılabilir. <span style="font-weight: bold;">Görüş engelleri</span>'nde belirtilen tiplere ait tüm çizgiler inceleneceğinden, bu tiplere ait çizgilerin gerekli olanlar olması ve fazlasının olmaması tavsiye edilir.<br /><br /></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad_barreras_visuales.png" style="width: 449px; height: 362px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><br />Başlangıç ve bitiş geçişlerinin uzunluğunu belirtmek mümkündür. Geçiş, engeli tanımlayan çizgiye eklenir.<br /><br /><span style="font-weight: bold; font-style: italic;">Kaydırılabilir</span> özelliği, görüş engelinin kaydırılıp kaydırılamayacağını belirtir. Varsayılan seçenek, kaydırılabilir olmalarıdır. Bir bina gibi (başka bir çizgi tipiyle çizilmiş) açıkça değiştirilemeyen görüş engelleri varsa, bu seçenek kullanılmamalıdır).<br /><br /><span style="font-weight: bold; font-style: italic;">Koru</span> seçeneği, program tarafından kaydırılması durumunda orijinal çizgilerin veya görüş engellerinin bir kopyasını korumaya olanak tanır.<br />
+      <br />
+Görüş engellerinin uzaklaştırıldığı bir etüt yapıldığında, incelenecek çizgi tiplerinin tanımında "Kaydırılabilir" ve "Koru" seçenekleri işaretlenirse, kaydırılan çizginin kendi rengi olarak kırmızı renk atanır. Bu, engelin kaydırıldığı bölgelerin tanımlanmasını kolaylaştırır.<br /><br />Bir otoyol veya otobanda etüt yapılıyorsa, görüş engellerini refüj boyunca sonuna kadar veya karşı yöndeki şeritleri işgal ederek kaydırmaya olanak tanıyan <span style="font-weight: bold; font-style: italic;">Refüjü geç</span> seçeneği etkinleştirilebilir.<br /><br /><span style="font-weight: bold; font-style: italic;">Ekseni geç</span> seçeneği benzerdir, ancak tek yönlü (tek taraflı) eksenler incelendiğinde, diğer taraftaki görüş engellerinin kaldırılabilmesi içindir.<br /><br />OpenGL<sup>®</sup> penceresinde, biri görülebilmesi için zeminden 0,1 metre yükseklikte ve diğeri o görüş engeli tipi için belirtilen yükseklikte olmak üzere iki mavi çizgi çizilir; bu, soldaki resimde gösterilmektedir. Sağdaki resimde ise aynı resim, <a href="#mostrar_texturas">dokular gösterilerek</a> ve kullanılan yol çizgisinin (otokorkuluk) 3D temsiliyle birlikte görünmektedir. Bunun için, <span style="font-weight: bold;">Yapılandırma</span> sekmesindeki <a href="#mostrar_marcas_viales"><span style="font-weight: bold; font-style: italic;">Yol çizgilerini göster</span></a> kutucuğu etkinleştirilmiştir: <br /><br /></span>
+      <table style="text-align: left; width: 625px; height: 275px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/visib_openGL_1.png" style="width: 294px; height: 263px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: right;"><img src="Imagenes/visib_openGL_2.png" style="width: 294px; height: 263px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br /><br /><a name="opciones_ref">REFERANS SEÇENEKLERİ</a><br /><br />
+Etüdün, enkesit üzerinde belirlenmiş konumundaki referansa bakılarak veya yolun kenarlarında, her ikisinde ve aynı anda yapılması belirtilebilir.<br />
+<br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">Referansta<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">Etüdün, her bir etüt KM'si için ilgili alt menülerde tanımlanan gözlemci noktası ile referans noktası arasında özel olarak yapılacağını belirtir. Bu varsayılan seçenektir.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;">Yol kenarlarında<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">Yolun her iki kenarında da eş zamanlı bir etüt yapılacağını belirtir. Gözlemcinin her konumu için, yolun sol ve sağ kenarı incelenir.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 108px;">Sadece bir şerit<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 564px;">Yol kenarları incelendiğinde özel bir işarettir ve etüdü gözlemcinin bulunduğu platformla sınırlar. Varsayılan olarak işaretli değildir.<br />
+            </td>
+          </tr>
+    
+    
+
+        </tbody>
+
+      </table></span></span></span><br />
+      <span class="Parrafo"><br /><a name="angulos_visuales">GÖRÜŞ AÇILARI</a><br /><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2"><tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">Yatay görüş açısı (°)<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">Bir sürücünün referansı görmek için yapması gereken maksimum dönüşün bir ölçüsüdür. Varsayılan değer 45°'dir. İspanyol yönetmeliği bu konuda bir şey belirtmez, ancak sürüş konforu hakkında bir fikir verir. Bu değerin etüt üzerinde bir etkisi olmaması isteniyorsa, 180°'lik bir değer kullanılması önerilir.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Düşey görüş açısı (°)</span></span></span>
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">Araç farlarının, içbükey düşey kurplarda referansı görmeye izin vermesi gereken maksimum yukarı doğru aydınlatma açısıdır. Varsayılan değer, yönetmeliğin belirttiği 1°'dir.<br />
+            <br />
+            </td>
+
+          </tr>
+          
+    
+    
+
+        </tbody>
+
+      </table></span></span></span><br />
+      <br />
+      <span class="Titulo_2"><a name="config_visual">3D Görüntüleme Penceresinin Yapılandırılması</a></span><br />
+      <br />
+Bu sekmeden, genel görüntüleme özelliklerini yapılandırmak mümkündür. <span style="font-weight: bold;">Yapılandırma</span> sekmesine tıklayarak erişilir:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_visibilidad_configuracion.png" style="width: 491px; height: 350px;" alt="" /><br />
+      </div>
+      <br />
+Bunlar, etütlerin sonuçlarını etkilemeyen seçeneklerdir, ancak pencerelerin yeniden çizilmesi nedeniyle gerçekleştirilme süresini etkileyebilir ve etüdü görme şeklimizi etkileyebilir.<br />
+      <span class="Parrafo"><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2"><tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 120px;">Eklenen görüntüleme (Yatay-Boykesit) (%)</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 552px;">Kullanıcının, programın gösterdiği grafikler hakkında genel bir fikir edinebilmesi için, etüt alanının yanı sıra, kullanıcı tarafından tanımlanan boyutta iki bölge (ön ve arka) çizilir. Varsayılan olarak, bu bölgelerin uzunluğu etüt alanınınkiyle aynıdır (%0). Bu bölgelerin uzunluğu, etüt alanının bir yüzdesi olarak belirtilir.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 120px;">Boykesit abartması (D/Y)<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 552px;">Boykesit için Y/D ölçek oranı.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 120px;">Referansa bak<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 552px;">Bu seçenek seçildiğinde, referans 3D görünüm penceresinin merkezine yerleştirilir.<br />
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">İleriye bak (m)<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Bu durumda, pencerenin merkezi, gözlemciden belirli bir mesafede (varsayılan olarak 100 metre) ve referansla aynı özelliklere sahip bir nokta tarafından işgal edilecektir. Bu, önündeki yolun genel bir görünümünü elde etmeye çalışan bir sürücünün görüşü olacaktır. Bu varsayılan görünümdür.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Teğetsel bak<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">3D görünüm penceresinde, pencerenin merkezinin gözlemcinin 1 metre önünde bulunan bir nokta tarafından işgal edileceğini belirtir. Yani, sürücünün o anda aracın gittiği yöne bakması durumundaki görüşü olacaktır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><span style="font-weight: bold;">Kameranın gözlemci konumuna göre yer değiştirmesi</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Kameranın görüş noktasını, gözlemciye göre 3 yönde yer değiştirmelerle (m cinsinden) hareket ettirmeye olanak tanır: yanal (pozitif değer sağa yer değiştirme anlamına gelir), boyuna (pozitif değer ileriye yer değiştirme anlamına gelir) ve yükseklik (pozitif değer yukarıya yer değiştirme anlamına gelir).<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><span style="font-weight: bold;">3D Çiz</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">3D görünüm penceresinin etütlerden bağımsız olarak yeniden çizilip çizilmeyeceğini belirtir. Varsayılan olarak işaretlidir, ancak bu pencere sistemi yavaşlatırsa, işareti kaldırılmalıdır.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;"><a name="mostrar_marcas_viales">Yol çizgilerini göster</a><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Bu seçenek işaretlendiğinde, görüş engeli olarak girilen 3D tipi çizgiler, 3D görünümde üç boyutlu şekilleriyle temsil edilir (örneğin, 404 çizgi tipi bir otokorkuluğu temsil eder).<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 120px;"><span style="font-weight: bold;"><a name="mostrar_texturas">Dokuları göster</a></span></td>
+            <td style="vertical-align: top; width: 552px; text-align: justify;">Etkinleştirilirse, 3D görünüm platform, yarma, dolgu,… dokularıyla temsil edilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Rapor oluştur<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Yapılmakta olan etütlerin raporlarının oluşturulup oluşturulmayacağını belirtir ve varsayılan olarak işaretlidir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Görüş mesafesi palyelerini kaydet<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Daha sonra BOYKESİT menüsünde kullanılabilecek <a href="OL_bermas_despeje.html">görüş mesafesi palyeleri</a> geometri dosyalarının oluşturulup oluşturulmayacağını belirtir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Belirtilen 3D görünümü koru<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Bu kontrol işaretliyse (varsayılan seçenek), gözlemcinin konumu veri menüsünden değiştirildiğinde, program kullanıcının 3D görünüm penceresinde yaptığı hareketleri “unutacak” ve o pencerede normal bir gezintiye karşılık geleni gösterecektir. İşaretli değilse, kullanıcının 3D görünüm penceresinde yaptığı tüm hareketleri yeni konuma uygulayacaktır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;"><a name="velocidad_pelicula">Film: Hız (km/s)</a><br /></td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">AVI filmleri oluşturulurken gözlemcinin yoldaki hareket hızını belirtir; varsayılan olarak 120 km/s'dir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Görüş açısı dairesi (°)<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Daire seçeneği etkinleştirilerek ve derece cinsinden bir açı beyan edilerek, program o açıyla görüş alanını gösteren bir daire çizer. Bu daire OpenGL<sup>®</sup> penceresinde görülebilir.<br />
+<br /></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">3D pencerede bilgi<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Burada programa, 3D pencerede hangi verilerin temsil edileceği belirtilir; bunlar şunlar olabilir:<br />
+            <ul>
+              <li>Hiçbiri</li>
+              <li>Gözlemcinin ve referansın KM'leri</li>
+              <li>Yukarıdakiler ve ayrıca gerekli ve görünür (mevcut) mesafe</li>
+              <li>Yukarıdakilerin tümü ve ayrıca referansın görüş eksikliğine neden olan engel</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[Kaydet]<br />
+</span></span></span></span><span style="font-weight: bold;">[Yükle]</span><span style="font-weight: bold;"><br />
+            </span></td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Genel görüntüleme yapılandırmasını bir .cvi uzantılı dosya aracılığıyla kaydeder ve geri yükler.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Raporları .xlsx formatında oluştur</span><br />
+            </td>
+            <td style="vertical-align: top;">Raporu, alışılmış düz metin .res formatına ek olarak Excel formatında da oluşturur.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Engel kesişim raporları</span><br />
+            </td>
+            <td style="vertical-align: top;">Görüş hattının engellerle kesişim konumlarını rapora ekler.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Etüt çizgilerini çiz</span><br />
+            </td>
+            <td style="vertical-align: top;">3D görünümde gözlemciyi referansa bağlayan çizgileri çizer.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Etüt durumunu çiz</span><br />
+            </td>
+            <td style="vertical-align: top;">3D görünümde, o anda incelenmekte olan KM'nin mevcut görünümünü, <span style="font-weight: bold;">Gezin</span> seçeneğini kullanıyormuş gibi çizer.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 120px;"><span style="font-weight: bold;">Bilgilendirici imleç</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Etkinleştirilirse, imleci 3D sahne üzerinde hareket ettirdiğinizde, imlecin 3D koordinatları, imlecin üzerinde bulunduğu üçgen ve KM, eksene olan mesafe ve azimutu hakkında bilgi verir.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+
+      </table></span></span></span><br />
+Eğer </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">"<span style="font-weight: bold;">Etüt durumunu çiz</span>"</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> seçeneği işaretlenirse, etüt yapıldığında 3D penceresinde tüm etüt konumları gösterilir; gözlemci ve referans ilgili yerlere yerleştirilir ve o noktanın görüş durumu belirtilir.<br />
+Ayrıca, yarma temizlenmesi veya yol çizgilerinin kaldırılması gerekiyorsa, bu kaldırmanın nasıl gerçekleştiği gösterilir.<br />
+Bu işlem, bir etüt yapmak için gereken süreyi önemli ölçüde artırır, bu nedenle bu seçenek varsayılan olarak devre dışıdır, ancak şüpheleri gidermek için yararlı olabilir.<br />
+Bu seçeneğin kullanılıp kullanılmaması, etüdün sonucunu hiçbir şekilde etkilemez.&nbsp; <br />
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="resultados">Sonuçlar</a></span><br />
+      <span class="Parrafo"><br />
+Bu sekmeden, raporlar veya resimler şeklinde sonuçların görüntülenmesine erişilir:<br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad_resultados.png" style="width: 446px; height: 317px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">AVI Filmi<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">AVI formatında, saniyede 25 kare hızında bir animasyon oluşturmak için kullanılır; kamera ve referansı, bir gezinti veya etüdün konumları boyunca <a href="#velocidad_pelicula"><span style="font-weight: bold;">Yapılandırma</span>'da belirtilen hızda</a> hareket ettirir.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;">Anlık Görüntü<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">Bir gezinti veya etüdün her konumunda bir BMP görüntüsü oluşturmaya olanak tanır. Her görüntü, numaralandırılmış bir dosyaya kaydedilir.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 108px;">Animasyon Kurpları<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 564px;">Bu seçeneğe tıklandığında, etüt konusu olan kesimde gezinti yapılır ve gözlemcinin (<span class="Archivo">kamera.cur</span>) ve referansın (<span class="Archivo">referans.cur</span>) gezintisini oluşturan kurplara karşılık gelen iki dosya oluşturulur; bu dosyalar, animasyonların hazırlanması için Virtual3D<sup>®</sup> modülünde kullanılabilir.<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">Raporları Görüntüle<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bir görüş mesafesi etüdünden gelen herhangi bir &nbsp;<span class="Archivo">.txt</span> uzantılı dosyayı not defteri ile açmaya olanak tanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Etüdü Haritaya Aktar<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Görüş mesafesi etüdü konusu olan kesim boyunca platform üzerine renkli alanlar çizer. Bu alanlar, görüş problemi olmayan bölgelerde yeşil renktedir ve görüş problemi olması durumunda üç tür alan ayırt edilir: projeyle ilgili bir problem durumunda kırmızı, bir görüş engeli tarafından kaynaklanan bir problem durumunda camgöbeği ve problemin görüş açılarından kaynaklanması durumunda sarı. Ayrıca, görüş eksikliğine neden olan engeller, sembollerle (456 tipi) ve gözlemci-referans görüş hatları (3 çizgi tipiyle) temsil edilir.<br />
+Bu araca tıklandığında, gözlemci konumundan referansın görülemediği görüş hatları çizilir (Çizgi Tipi 3, sarı renk).<br />
+Bu alt etüdün herhangi bir engelle çarpan ilk görüş hattını temsil eden çizgiyi (Tip 48, macenta rengi) ayırt edeceğiz.<br />
+Bu çizgi, görüş problemini temsil eden sembolden geçer.<br />
+            </td>
+          </tr>
+
+    
+    
+
+        </tbody>
+
+      </table></span></span></span><br />
+      <span class="Parrafo">Haritaya aktarılan bilgi türünü ve bu bilginin temsil edildiği çizgi türünü seçmek mümkündür. Mevcut bilgi türleri şunlardır:<br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Görüş mesafesinin olduğu veya olmadığı bölgeler (proje, engeller ve açılarla ilgili sorunlar arasında ayrım yapma imkanı ile).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Etüdün görüş hatları.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kısmi etütlerin görüş hatları.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eksen güzergahından çıkan görüş hatları.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Görüş hatlarının zarfı.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aşağıda, sabit hızlı bir durma görüş mesafesi etüdü raporu örneği gösterilmektedir:<br />
+      <br /></span></span></span></span></span></span>
+      <div style="text-align: left;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+G Ö R Ü Ş M E S A F E S İ &nbsp;&nbsp;&nbsp;&nbsp; E T Ü D Ü&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Bir eksen veya eksen kesiti boyunca Durma Görüş Mesafesi Etüdü&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+#
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# ISTRAM(R) V.&nbsp;
+9.04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+98 #</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Eksen:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+yönünde:
+Normal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# 120.0 Km/s sabit hızlı etüt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Eksen başlangıç KM'si:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+bitiş KM'si:&nbsp;&nbsp;&nbsp;
+2855.444&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Etüt başlangıç KM'si:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+bitiş KM'si:&nbsp;&nbsp;&nbsp;
+2855.444&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Etüt için gözlemci atlamaları her:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.00
+m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# İlk metrelerde görüş mesafesi varsayılır:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+60.00
+m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Buradan itibaren görüş mesafesi her:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.00
+m'de bir incelenir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Düşey tolerans açısı, derece cinsinden:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Yatay tolerans açısı, derece cinsinden:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+45.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Etüt, gözlemcinin görüş noktası ile referans noktası arasında yapılır&nbsp;&nbsp; #</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#
+yapılandırılmış.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Gözlemcinin yapılandırılmış yörüngesi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Yüzey:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Taraf:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Sağ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Kod:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+#&nbsp;&nbsp;&nbsp;&nbsp; Koda olan mesafe:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.5
+m&nbsp;&nbsp; dışa doğru&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Yükseklik:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.10 m&nbsp; Ana Platformdan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#
+Referansın yapılandırılmış yörüngesi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Yüzey:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Taraf:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Sağ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Kod:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+#&nbsp;&nbsp;&nbsp;&nbsp; Koda olan mesafe:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0
+m&nbsp;&nbsp; dışa doğru&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Yükseklik:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.20 m&nbsp; Ana Platformdan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+      </span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; KM&nbsp;&nbsp;&nbsp; Mevcut Gör. Gerekli Gör.&nbsp; i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Yarıçap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Kd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fl&nbsp;&nbsp; Hız Etüt Hız İnd. Engel
+Eksene Mes. Engel KM</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+--------------------------------------------------------------------------------</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp;&nbsp; 0.0&nbsp; 246.6&nbsp; 246.6&nbsp; 2.404%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp;&nbsp; 5.0&nbsp; 247.7&nbsp; 247.7&nbsp; 2.204%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 10.0&nbsp; 248.9&nbsp; 248.9&nbsp; 2.004%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 15.0&nbsp; 250.0&nbsp; 250.0&nbsp; 1.804%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 20.0&nbsp; 251.2&nbsp; 251.2&nbsp; 1.604%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 25.0&nbsp; 252.5&nbsp; 252.5&nbsp; 1.404%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 30.0&nbsp; 253.7&nbsp; 253.7&nbsp; 1.204%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 35.0&nbsp; 254.9&nbsp; 254.9&nbsp; 1.004%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 40.0&nbsp; 256.2&nbsp; 256.2&nbsp; 0.804%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 45.0&nbsp; 257.5&nbsp; 257.5&nbsp; 0.604%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 50.0&nbsp; 258.7&nbsp; 258.7&nbsp; 0.404%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 55.0&nbsp; 260.1&nbsp; 260.1&nbsp; 0.204%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 60.0&nbsp; 261.4&nbsp; 261.4&nbsp; 0.004%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 65.0&nbsp; 262.7&nbsp; 262.7 -0.196%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 70.0&nbsp; 240.0&nbsp; 264.1
+-0.396%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 114.9
+Refüj&nbsp;&nbsp;&nbsp; 1.664&nbsp;&nbsp;&nbsp;&nbsp; 296.717</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 75.0&nbsp; 240.0&nbsp; 265.5
+-0.596%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 114.6
+Refüj&nbsp;&nbsp;&nbsp; 1.525&nbsp;&nbsp;&nbsp;&nbsp; 291.611</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 80.0&nbsp; 240.0&nbsp; 266.9
+-0.796%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 114.3
+Refüj&nbsp;&nbsp;&nbsp; 1.498&nbsp;&nbsp;&nbsp;&nbsp; 286.528</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 85.0&nbsp; 240.0&nbsp; 268.3
+-0.996%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 114.1
+Refüj&nbsp;&nbsp;&nbsp; 1.509&nbsp;&nbsp;&nbsp;&nbsp; 280.428</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 90.0&nbsp; 220.0&nbsp; 269.8
+-1.196%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 109.3
+Refüj&nbsp;&nbsp;&nbsp; 1.809&nbsp;&nbsp;&nbsp;&nbsp; 284.852</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 95.0&nbsp; 220.0&nbsp; 271.2
+-1.396%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 109.0
+Refüj&nbsp;&nbsp;&nbsp; 1.853&nbsp;&nbsp;&nbsp;&nbsp; 279.639</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 100.0&nbsp; 220.0&nbsp; 272.7 -1.596%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp; -2500.000 0.291 120.0 108.8 Refüj&nbsp;&nbsp;&nbsp;
+1.942&nbsp;&nbsp;&nbsp;&nbsp; 273.422</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; 125.0&nbsp; 180.0&nbsp; 274.3 -1.805%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 98.4
+Platform&nbsp;&nbsp;&nbsp; 3.136&nbsp;&nbsp;&nbsp;&nbsp; 279.299</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 130.0&nbsp; 180.0&nbsp; 272.8 -1.605%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 98.6
+Platform&nbsp;&nbsp;&nbsp; 3.308&nbsp;&nbsp;&nbsp;&nbsp; 269.210</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 135.0&nbsp; 180.0&nbsp; 271.3 -1.405%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 98.8
+Platform&nbsp;&nbsp;&nbsp; 3.688&nbsp;&nbsp;&nbsp;&nbsp; 264.914</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 140.0&nbsp; 160.0&nbsp; 269.8 -1.205%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 93.3
+Platform&nbsp;&nbsp;&nbsp; 3.634&nbsp;&nbsp;&nbsp;&nbsp; 283.306</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 145.0&nbsp; 160.0&nbsp; 268.4 -1.005%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 93.6
+Platform&nbsp;&nbsp;&nbsp; 3.955&nbsp;&nbsp;&nbsp;&nbsp; 271.538</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 150.0&nbsp; 160.0&nbsp; 267.0 -0.805%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 93.8
+Platform&nbsp;&nbsp;&nbsp; 4.365&nbsp;&nbsp;&nbsp;&nbsp; 265.494</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 155.0&nbsp; 160.0&nbsp; 265.5 -0.605%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 94.0
+Platform&nbsp;&nbsp;&nbsp; 4.842&nbsp;&nbsp;&nbsp;&nbsp; 262.241</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 160.0&nbsp; 140.0&nbsp; 264.2 -0.405%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 87.8
+Platform&nbsp;&nbsp;&nbsp; 4.321&nbsp;&nbsp;&nbsp;&nbsp; 282.109</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 165.0&nbsp; 140.0&nbsp; 262.8 -0.205%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 88.0
+Platform&nbsp;&nbsp;&nbsp; 4.846&nbsp;&nbsp;&nbsp;&nbsp; 273.525<br />
+&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp; ...&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/visib_aviso_visualFuera.png" style="width: 286px; height: 129px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Görüş mesafesi etütlerinde, gözlemci ile referansı birleştiren görüş hattının, incelenen projenin geometrisinin <span style="font-weight: bold;">sınırlarının dışına çıkması</span> durumunda kullanıcı uyarılır. Bu noktalarda, arazinin şekli veya bunun görüş mesafesi için bir engel olup olmadığı hakkında bilgi yoktur, bu nedenle bu durum etüt raporunda da belirtilir.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/visib_visualFuera.png" style="width: 282px; height: 180px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="info_graf">Görüş Mesafesinin Grafik Bilgileri</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bir etüt yapıldıktan sonra, sonuçlar <span style="font-weight: bold;">Güzergah Elemanları, Hız Diyagramı ve Sonuçlar</span> penceresinde gözlemlenebilir. Bu pencerede, alt kısımda, sarı sütunların istenen görüş mesafesinin elde edildiği KM'leri ve kırmızıların elde edilemediği KM'leri gösterdiği bir histogram görünür. Bu sütunların yüksekliği, ulaşılan görüş mesafesiyle orantılıdır.<br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/visib_info_graf.png" style="width: 443px; height: 524px;" alt="" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Ancak bu sonuçlar, mevcut KM için YATAY PLAN penceresinde ve 3D görünümde de görülebilir. YATAY PLAN'da, gözlemcinin bulunduğu noktayı ve etüdün yapıldığı noktaları geçen bir çizgi görünür. <br />
+      <br />
+Bu çizgi, görüş mesafesinin olduğu kesimlerde yeşil, olmadığı kesimlerde ise kırmızı renktedir. 3D görünüm penceresinde aynı çizgi 3D olarak çizilir.<br />
+      <br />
+      <br />
+      </span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="navega_errores">Hatalar Üzerinde Gezinme</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Etüt yapıldıktan sonra, alt kısımda bulunan bu menüden, bir görüş problemi gözlemlenen her noktaya sırayla (KM'lere göre) gidilebilir; ayrıca, problemin nedeni ve ortaya çıktığı KM aralığı da belirtilir:<br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/visib_navega_errores.png" style="width: 637px; height: 30px;" alt="" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span><span class="Titulo_2"><a name="metodologia">Çalışma Metodolojisi ve Sonuçların Gözden Geçirilmesi</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Özet olarak ve görüş mesafesine pratik bir yaklaşım sunmak amacıyla, bir etüt yapmak için kullanıcının gerçekleştirmesi gereken adımlar aşağıda açıklanmaktadır:<br />
+      <br />
+      <span style="font-weight: bold;">Adım 1: Gerekli verilerin elde edilmesi</span><br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Görüş mesafesi seçeneğine girmeden önce, incelenmek istenen eksen veya eksenlerin boykesitinin hesaplanmış olması gerekir (&nbsp;<span class="Archivo">ispol#.per</span> dosyalarının mevcut olması, # eksen numarasıdır).</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Görüş Mesafesi algoritmaları tarafından dikkate alınabilmeleri için <a href="OL_marcas_viales.html">yol çizgilerinin</a> ve görüş engellerinin hesaplanmış ve çizilmiş olması çok yararlıdır.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ayrıca, görüş mesafesi etütlerini yöneten yönetmelikler hakkında bir fikir sahibi olmak da tavsiye edilir.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Tüm bunlar dikkate alındıktan sonra, Görüş Mesafesi menüsüne erişilir.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span style="font-weight: bold;">Adım 2: Etüdü tanımlayan verilerin girilmesi</span><br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Görüş Mesafesi'ne girildiğinde:<br />
+      </span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İncelenecek eksen seçilir.</span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Mevcut yönetmeliğe göre bir dizi etüt yapılandırma değeri tanımlayan bir etüt türü seçilir.</span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Tüm eksen incelenmeyecekse, etüdün başlangıç ve bitiş KM değerleri girilir; bu durumda varsayılan değerleri bırakmak yeterlidir.</span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold;">Adım 3: Etüdün gerçekleştirilmesi</span><br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bunun için <span style="font-weight: bold;">[Etüt Et]</span> düğmesine basmak yeterlidir ve etüt otomatik olarak gerçekleştirilir.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span style="font-weight: bold;">Adım 4: Sonuçların görüntülenmesi</span><br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Etüdün sonuçları bir raporda saklanır ve <span style="font-weight: bold;">Güzergah Elemanları, Hız Diyagramı ve Sonuçlar</span> penceresinde gösterilir.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sonuçlar beklenildiği gibi değilse, gerekli düzeltmeler bu menünün dışında yapılmalı ve uygun değişiklikler yapıldıktan sonra, gerekli hedeflere ulaşılana kadar bu süreç tekrarlanmalıdır.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Diğer kolaylıklar</span><br style="font-weight: bold; font-style: italic;" />
+      <br />
+Açıklandığı gibi, Görüş Mesafesi seçeneği, işi kolaylaştıran ve etütleri yapmak için kesinlikle gerekli olmayan başka olanaklara ve/veya özelliklere sahiptir. Program, kullanıcının gözlemci noktasını ve referans noktasını eksen boyunca ihtiyaç duyduğu noktalara <a href="#posicionamiento">yerleştirmesine</a> olanak tanır. Bunun için birçok yöntemi vardır.<br />
+      <br />
+Gözlemci ve referans, <span style="font-weight: bold;">Gözlemci KM'si</span> seçeneği ile istenen kilometre noktası değeri girilerek veya menünün alt kısmındaki kaydırıcıyı kullanarak konumunu vermek suretiyle eksenin herhangi bir KM'sine <a href="#posicionamiento">yerleştirilebilir</a>. Enine konumuna gelince, <a href="#pos_obs_ref_ang_bar"><span style="font-weight: bold;">Gözlemci ve referans konumu, açılar, görüş engelleri,…</span></a> alt menüsü bulunmaktadır; bu alt menüde, gözlemci, bir enkesiti tanımlayan kodlardan herhangi birine herhangi bir mesafede ve ayrıca yol yüzeyinden herhangi bir yükseklikte yerleştirilebilir.<br />
+      <br />
+Etüt, etüt mesafesini belirleyen bir <a href="OL_diagrama_de_velocidades.html">hız diyagramı</a> ile desteklenebilir. Bu özellikler tanımlandıktan sonra, bir eksen gezintisi veya bir görüş mesafesi etüdü yapılabilir. Her ikisi de gözlemci ve referans konumlarının enine özelliklerine uyar.<br />
+      <br />
+Etütler ve gezintiler, yoldaki her iki gidiş yönünü incelemek veya kat etmek için normal veya ters yönde yapılabilir. Kapsamları da sınırlandırılabilir. İşleyiş çok yavaşsa, herhangi bir grafik penceresinin çizimleri devre dışı bırakılabilir.<br />
+      <br />
+Etüt, referans üzerinde veya platformun her iki tarafında aynı anda yapılabilir. Yolun tek platformlu olması durumunda, yalnızca kat edilen şerit üzerinde yapılabilir.<br />
+      <br />
+Varsayılan olarak, başlangıç KM'sinden bitiş KM'sine kadar, eksen boyunca her 5 metrede bir etüt yapılır; ilk 60 metrede görüş mesafesi olacağı varsayılır, bu nedenle incelenmez ve buradan itibaren etüt mesafesine ulaşılana kadar her 20 metrede bir alt etütler yapılır. Yani, KM 1234,234'te başlanırsa, orada ilk etüt yapılır, bir sonraki KM 1239,234'te yapılır ve bu şekilde devam eder; her birinde ilgili alt etütler yapılır, gözlemci ile KM 1294,234'teki referansı birleştiren doğrunun yolun, arazinin veya görüş engellerinin hiçbir üçgenini kesmemesi aranır; bu alt etüt, referansı KM 1314,234, 1334,234 ve 1354,234'e yerleştirerek tekrarlanır (etüt mesafesinin 120 m olduğu varsayılarak).<br />
+      <br />
+Bu koşullar, kullanıcının ihtiyaçlarına uyacak şekilde değiştirilebilir. Son alt etüdün bitiş noktası etüt mesafesiyle çakışmazsa, etüt mesafesi için ek bir alt etüt yapılır (örneğin, varsayılan koşullar, <span style="font-weight: bold;">başlangıç ofseti</span> 50 olacak şekilde değiştirilirse, 1284,234, 1304,234, 1324,234, 1344,234, 1364,234 ve 1354,234 incelenir).<br />
+<br />
+
+
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

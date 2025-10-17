@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Düzenleyici</title>
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" />
+
+</head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>Nesne Düzenleyicileri<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"> </span><span class="Parrafo"><a href="#subraiz">Alt Kök</a><br />
+      <a href="#carpeta">Klasör</a><br />
+      <a href="#obra">Proje ve Eksen</a><br />
+      <a href="#grid">Grid</a><br />
+      <a href="#tren">Nesne Dizisi</a><br />
+      </span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+      </span>Bir sahnenin elemanları herhangi bir kontrol olmaksızın "dağınık" halde değildir. Sahnenin hiyerarşik düzenleme ağacında gösterildiği gibi, türlerine ve işlevlerine göre düzenlenmiş ve sınıflandırılmıştır. Düzenleyici düğümlerin bazı yapılandırılabilir özellikleri olabilir.<br />
+      <br />
+Düzenleyiciler, sahne elemanlarının saklandığı veya referans verildiği klasörler gibi çalışır.<br />
+Sanal 3B tarafından sahneyi yapılandırmak için gerekli olan belirli veri türlerini bulabilmek için yerleştirilmiş sabit düzenleyiciler vardır (<a href="#subraiz">alt kök</a> düğümleri). Otomatik olarak oluşturulan ve özel bir bağlantısı olan elemanları bir arada tutmak için oluşturulan düzenleyiciler vardır (<a href="#obra">proje, eksen</a> veya <a href="#grid">grid</a> düğümleri). Kullanıcının geometriyi istediği gibi sınıflandırmak için oluşturabileceği düzenleyiciler vardır (<a href="#carpeta">klasörler</a>). Ve içerdikleri elemanlara özel bir nitelik kazandıran düzenleyiciler vardır (<a href="#tren">nesne dizisi</a>).<br />
+      <br />
+      <br />
+      <a name="subraiz">Alt Kök<br />
+      <br />
+Bu düğümler değiştirilemez, adlarıyla var olmalı ve kendilerini karakterize eden unsurları içermelidir: Geometri, Kameralar, Işıklar, Ortam, Render ve Animasyonlar. Özelliklerine erişim yoktur; üzerlerine imleçle tıklandığında, ilk alt düğüme erişilir.<br />
+      <br />
+      <br />
+      </a><a name="carpeta">Klasör<br />
+      <br />
+Genel karakterli bir düzenleyicidir, sadece Geometri içinde oluşturulabilir. Onlara bir isim verilebilir.<br />
+      <br />
+Geometri içinde önceden tanımlanmış özel bir klasör vardır: "3B Katı Modeller"; Sanal 3B'de oluşturulan, yüklenen veya içe aktarılan tüm nesneler varsayılan olarak bu klasöre gider.<br />
+      <br />
+<img style="width: 339px; height: 171px;" alt="" src="Imagenes/V3D_menu_prop_obra1.png" align="right" />
+Sanal 3B'ye Doğrusal Proje'nin Boykesit menüsünden girildiğinde ve aktif eksenlerin geometrisi gösterildiğinde, </a><a name="obra">projeyi düzenleyen bir dizi klasör otomatik olarak oluşturulur. Böylece, doğrudan "Geometri" düğümüne yerleştirilen ve proje adını taşıyan ana bir proje klasörü oluşturulur.<br />
+      <br />
+Burada, proje geometrisiyle birlikte oluşturulan proje sınırı çizgilerinin haritaya gönderilmesi belirtilebilir. Ayrıca projenin yol çizgilerinin boyanıp boyanmayacağı da kontrol edilebilir; bazen o kadar çok olabilirler ki 3B görüntüleyici ile çalışmayı aşırı yavaşlatabilirler.<br />
+      <br />
+      <img style="width: 339px; height: 194px;" alt="" src="Imagenes/V3D_menu_prop_obra2.png" align="right" />Proje klasörünün içinde, her bir eksen ve kurp için bir klasör oluşturulur. Bunların her biri, bu eksenlerin bilgilerinden oluşturulan geometrileri içerir, aynı zamanda her bir viyadüğü ve yol çizgilerini içeren başka klasörler de bulunur. Bu yol çizgileri de, onları oluşturan çizgi tipine göre klasörler halinde sınıflandırılır.<br />
+      <br />
+Eksen klasörlerinde, kamerayı bir eksenin belirli bir noktasına (KM'si, kodu ve o koda olan mesafesi ile tanımlanan) yerleştirmek için seçenekler bulunur.<br />
+
+      <br />
+
+Ayrıca, <a name="grid">topografik veri gridleri yüklendiğinde de özel klasörler oluşturulur; bunlar ister ikili gridler olsun, ister çok sayıda üçgeni olan ttp'ler (üçgenlenmiş yüzeyler) olsun.<br />
+      <br />
+      <br />
+      </a><a name="tren">Nesne Dizisi<br />
+      <br />
+Bu tür bir düzenleyici başka elemanlar içermez, sadece onlara ve aralarında kurulan </a><a href="V3D_tren_objetos.html">bitişiklik ilişkisine</a> referans verir. Yararı, aynı rolü oynayacak aktörleri gruplamaktır: aynı güzergahı takip edecek nesneler.<br />
+      <br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+</body></html>

@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Parametreler</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PARAMETRELER<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="text-align: left; width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+Bu seçenek altında, sistemin farklı yerlerde kullandığı bir dizi parametre toplanmıştır. Bu parametrelerin neredeyse tamamı <span class="Archivo">.vol</span> dosyasında saklanır.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_parametros.png" style="width: 450px; height: 329px;" alt="" /><br />
+      </div>
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Boykesit ve platform listeleri için eşit aralık/katlar</span>: Boykesitteki eksen noktaları (<span class="Archivo">rasa.res</span>) ve platformun karakteristik noktaları (<span class="Archivo">plat.res</span>) listelerinde, sistem burada girilen eksen üzerindeki eşit aralıklara veya katlara göre bilgi verir. Varsayılan olarak değer 20 metredir. Bu değer, LİSTELER menüsünde <span class="Archivo">rasa.res</span> listesinin oluşturulması istendiğinde de değiştirilir. Eğer KATLAR olarak etkinleştirilmişse ve başlangıç KM'si örneğin 15.3 ise, 15.3, 20.0, 40.0,... dizisi elde edilir. Buna karşılık, EŞİT ARALIKLAR olarak etkinleştirilmişse 15.3, 35.3, 55.3,... dizisi elde edilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Boykesit ve platform listesi için ilk enkesit</span>:
+Yukarıda bahsedilen listelerde, bu başlangıç KM'sidir. Bu değer, LİSTELER menüsünde <span class="Archivo">rasa.res</span> listesinin oluşturulması istendiğinde de değiştirilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Düşeye yakın şevler</span>:
+Yarma kontrolü terasman kenarında yapıldığında ve belirtilen şev için bir değer verilmediğinde, üstyapının kapanma şevi. Varsayılan olarak 0.01 metredir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Düşeye yakın noktalar arası yatay mesafe</span>:
+Bu mesafe, üst üste gelebilecek bazı çizgileri planda hafifçe ayırmaya olanak tanır, böylece bu çizgilerin seçimini ve bu çizgileri içeren enkesitlerin çıkarılmasını kolaylaştırır (varsayılan 0.01 metre).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Duvarların genişliği</span>: Duvar eteği ve duvar başı çizgileri arasındaki yatay izdüşümde ölçülen mesafedir (varsayılan 0.1 metre).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="difer_escolleras_muros">Anroşmanları duvarlardan ayır</a></span>:
+Duvar ve duvar pabuçlarının metrajını, sırasıyla anroşman ve anroşman tabanlarının metrajından ayırmaya olanak tanır.</span></li></ul>
+      <ul>
+     
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="maxProfRoca">Kaya olarak kabul edilecek maksimum derinlik</a></span><a name="maxProfRoca">:
+Burada belirtilenden daha büyük derinlikler için, kayanın varlığı dikkate alınmaz ve <span class="Archivo">ISPOL#.per</span> (# eksen numarasıdır) dosyalarına dahil edilmez. Varsayılan olarak bu değer 25 metre olarak ayarlanmıştır. Eğer kayanın arazi kesitinde dikkate alınmaması gerekiyorsa, HESAP BÖLGELERİ menüsünün ilgili seçeneğinde sıfır derinlikte bildirilmesi tavsiye edilir.</a></span></li><a name="maxProfRoca">       
+      
+      </a></ul>
+
+<a name="maxProfRoca">      </a><div style="margin-left: 40px;"><span class="Parrafo"><a name="maxProfRoca">Bu derinlik <span style="font-weight: bold;">kırmızı kottan ölçülen</span> olabilir, yani arazi yerine kırmızı kot referans alınarak aynı şekilde ölçülür. Böylece, örneğin kaya derinliğine eşit bir değer bildirilirse, kaya sadece kırmızı kotun arazi altında olduğu enkesitlerde görünecektir.<br />
+      <span class="Parrafo"></span></a></span></div>
+<span class="Parrafo">
+<a name="maxProfRoca">      </a><ul>
+<a name="maxProfRoca">        <li><span style="font-weight: bold;">Enkesitteki küçük alanları ihmal et</span>: Program, burada belirtilenden daha küçük değerlere sahip enkesit alanlarını dikkate almayacaktır (varsayılan, 0.0002).<br />
+</li></a></ul>
+<a name="maxProfRoca">      </a><ul>
+<a name="maxProfRoca">        <li><span class="Parrafo"><span style="font-weight: bold;"><img src="Imagenes/parametros_vegyterr_solo_terraplen.png" style="width: 118px; height: 100px;" alt="" align="right" hspace="6" />Bitkisel ve zayıf zemin sadece dolguda</span>:
+<span style="font-weight: bold;">Evet</span> seçeneği ile, enkesitlerde bitkisel toprak kalınlığı sadece dolgu bölgelerinde görünecektir. <span style="font-weight: bold;">Evet + Kafa Hendeği</span> seçeneği ile bitkisel toprak, dolgu kafa hendeği bölgesine de dahil edilecektir. Yarma bölgelerinde veya platform dışında kalınlık sıfıra indirilir. <span style="font-weight: bold;">Sadece Kayada</span> seçeneği, Evet seçeneğine eşdeğerdir, ancak sadece sağlam zemin olmadığında ve bitkisel topraktan kayaya geçildiğinde geçerlidir.<br />
+</span></li>
+
+      
+      </a></ul></span>
+<a name="maxProfRoca">      </a><div style="margin-left: 40px;"><a name="maxProfRoca"><img src="Imagenes/parametros_tnotc.png" style="width: 173px; height: 63px;" alt="" align="left" hspace="6" />Sadece dolguda bitkisel toprak olması durumunda, dolgu için kontrol yüzeyi olarak doğal arazi veya sağlam zemin kullanılabilir.<br />
+      <br />
+      <br />
+      </a></div>
+<a name="maxProfRoca"> 
+      </a><ul><a name="maxProfRoca">        
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Bitkisel ve zayıf zemin sadece yarmada</span>:
+Bu seçenek etkinleştirilirse, enkesitlerde bitkisel toprak kalınlığı sadece yarma bölgelerinde görünecektir. Dolgu bölgelerinde veya platform dışında kalınlık sıfıra indirilir. Bitkisel toprak kalınlığı, belirli bir dolgu yüksekliğinden daha az olan dolgu bölgelerinde tanımlanabilir.</span></span></li>
+      </a></ul>
+<a name="maxProfRoca">      </a><div style="margin-left: 40px;"><a name="maxProfRoca">Bitkisel toprak, sadece yarmada ve belirli bir değerden daha küçük dolgularda. Bu değer, o değerden daha yüksek dolgularda bitkisel toprağın sıyrılması istenmediğinde eklenir.<br />
+      </a></div>
+<a name="maxProfRoca"><br />
+
+
+      
+      </a><div style="margin-left: 40px;"><a name="maxProfRoca">Bitkisel toprak örtüsünün uygulanıp uygulanmayacağını belirlemek için dolgu yüksekliği sadece <span style="font-weight: bold;">eksen</span> altında ölçülebilir ve bu değere bağlı olarak bitkisel toprak tüm dolgu kesiti altında dikkate alınabilir veya alınmayabilir.<br />
+      <br />
+      <img src="Imagenes/veg_inadec_solo_eje.png" style="width: 417px; height: 38px;" alt="" /><br />
+      </a></div>
+
+<a name="maxProfRoca">      
+      <br />
+      </a><div style="margin-left: 40px;"><a name="maxProfRoca">Bu son iki seçenek, n eksen numarası olmak üzere ISPOln.per dosyasında saklanır, böylece enkesitler sınır çizgileriyle kırpıldığında, bitkisel ve zayıf zeminin tekrar kısaltılması gerekip gerekmediğini görmek için bu bilgi yeniden işlenir.<br />
+      </a></div>
+<a name="maxProfRoca">      <br />
+</a><ul>
+<a name="maxProfRoca">        <li><span style="font-weight: bold;"></span></li></a><a name="desbroces_planta">Sıyırma kazısının planda ölçülmesi</a><span class="Parrafo"><span class="Parrafo">: Bu seçenek etkinleştirilirse, <a href="OL_listados_mediciones.html#diagmas"><span class="Archivo">dmas.res</span> listesindeki</a> sıyırma kazısı metrajı planda yapılır, aksi takdirde eğimler dikkate alınarak gerçek alan verilir. Yine de, tüm bilgileri veren özel bir sıyırma kazısı listesi (<span class="Archivo">desbr.res</span>) bulunmaktadır.</span></span></ul><span class="Parrafo"><span class="Parrafo"></span><ul><li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Bu eksendeki hiçbir duvarı kırpma</span>: Sınır çizgileri, bu eksen için projede tanımlanan duvarları kırpmayacaktır.<br /></span></span></li>
+</ul>
+<span class="Parrafo"><span class="Parrafo"> </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Arazi enkesit dosyasındaki sembolleri koru</span>: Bu seçenek etkinleştirildiğinde, arazi enkesit dosyası herhangi bir sembol içeriyorsa, bunlar ilgili <span class="Archivo">ISPOL#.per</span> (# eksen numarasıdır) dosyasına aktarılır. Hesaplamada enterpole edilen enkesitler, önceki ve sonraki enkesitlerde aynı tipte ve aynı sırada bir sembol varsa, konumları, açıları ve boyutları enterpole edilerek sembolleri de içerir.</span></span></li></ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Menfez bölgesindeki duvarları koru</span>: Bu seçenek etkinleştirildiğinde, menfezlerin olduğu bölgelerdeki duvarlar silinmez. </span></span><span class="Parrafo"><span class="Parrafo">Menfezle çakışan KM'lerde, duvarı olmayan veya menfez gövdesinin geçişine izin veren bir <a href="OL_muro_terraplen.html#abertura">boşluklu duvarı</a> olan bir tip kesit ile kesim tanımlanmalıdır.<br />
+</span></span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo"> </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Enkesitler arası minimum mesafe (kesim değişikliği hariç)</span>: Enkesitler arası minimum mesafe. Varsayılan olarak 0.005 m'dir. Bu değer, tekrar eden enkesitlerin hesaplanabildiği hesap kesimi değişikliklerini etkilemez. Değer 0.0 veya negatif olamaz. Boykesit hesaplanırken, KM'si bir öncekinden bu parametreden daha az bir mesafede olan bir enkesit bulunursa, bu enkesit atlanır (bir hesap bölgesi değişikliği olmadığı sürece).</span></span></li></ul><ul><li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Tünel enkesitlerinde araziyi koru</span>:
+Tünel kesitine karşılık gelen enkesitlerde arazi silinmez. Kalan arazi, tanımlanan kamulaştırma sınırı kadar bir yarı genişliğe karşılık gelir (diğer enkesitlerde olduğu gibi). Ayrıca ilk kaya horizonunun profilini de temsil eder.</span></span></li>
+      </ul>
+     <span class="Parrafo"><span class="Parrafo"> </span></span>
+      <ul>
+      </ul>
+      <div style="margin-left: 43px; width: 649px;">Kaya horizonu her zaman olduğu gibi SAM yüzeylerinden veya hesap bölgelerindeki sondaj verilerinden elde edilir.<br /><br />Tünel enkesitlerinde araziyi koru seçeneği etkinleştirildiğinde, arazi profilinde bulunan diğer yüzeyler de ISPOL.per'e eklenir.<br />
+      </div>
+      <div style="margin-left: 40px;">
+      <ul>
+        <ul>
+          
+          
+          
+        </ul>
+      </ul><ul style="list-style-type: circle;"><li><span style="font-weight: bold;">Kaya olarak kabul edilecek maksimum derinlik</span> ve <span style="font-weight: bold;">Kırmızı kottan</span> için yeterli değerler giriyoruz. ISPOL4.dar tablosunda aşağıdaki iki metraj kalemi ikiye ayrılmıştır:</li><li>TÜNEL KAZISI: [TÜN KAZI K] ve [TÜN KAZI T] olarak ikiye ayrılır</li><li>TOP TÜN KAZI: [TOP TÜN KAZI K] ve [TOP TÜN KAZI T] olarak ikiye ayrılır</li></ul>
+      </div>
+      <ul><li class="Parrafo"><span style="font-weight: bold;"><a name="conservar_calzada_falso_tunel">Tünellerin bu eksenle kesişimini hesaplama.</a></span></li></ul><ul><li class="Parrafo"><span style="font-weight: bold;"><a name="conservar_calzada_falso_tunel">Yarma-ört tünel enkesitlerinde mevcut kaplamayı koru</a></span>: <a href="OL_EyM.html">Genişletme ve iyileştirme</a> projelerinde, <a href="OL_tuneles.html#falso_tunel">yarma-ört tünel</a> kesimlerinde toprak yarması ve mevcut üstyapı metrajını ayırmaya olanak tanır.</li></ul><ul><li class="Parrafo"><img src="Imagenes/trans_estructura_esviada.png" style="width: 221px; height: 33px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;"><a name="corregir_subras">Verev yapılarda terasmanı düzelt</a></span>:
+Bu seçenek etkinleştirildiğinde, program, bir kısmı dolgu diğer kısmı yapı olan karma enkesitlere karşılık gelen yapıların verev bölgelerinde, yapı olan ve olmayan arasında ayrım yaparak enine yönde uygun üstyapı kalınlığını uygular.</li></ul><ul><li class="Parrafo"><span style="font-weight: bold;">Y/D'ye bağlı palye - TK'ya bağlı palye</span>:
+Bu seçenekle, yarma/dolgu palyesinin ayrı yarma/dolgu kesimlemesine mi bağlı olacağını yoksa bu palyelerin genel tip kesite mi bağlı olacağını seçebiliriz.</li></ul><ul><li class="Parrafo"><span class="Parrafo" style="font-weight: bold;">Dar kurplarda şevleri kırp</span><span class="Parrafo">:
+enkesitlerin kesişmemesi için şevlerin değiştirilmesini ve kırpılmasını sağlar. Her eksen için etkinleştirildiğinde üç parametre tanımlanır:</span><br class="Parrafo" />
+          <ul class="Parrafo">
+            <li>Maksimum yarıçap. Bu yarıçapa eşit veya daha küçük olan kurplar analiz edilir.</li>
+          </ul>
+          <ul class="Parrafo">
+            <li>Şev eteklerinin/başlarının kesişimini aramak için kurp başlangıcından önce ve sonundan sonraki maksimum KM cinsinden uzunluk.<br />
+            </li>
+          </ul>
+          <ul class="Parrafo">
+            <li>Bazı durumlarda nominal şeve geri dönmek için gereken KM cinsinden geçiş uzunluğu.<br />
+            </li>
+          </ul><span class="Parrafo">
+Eksen, boykesit ve projeden hesaplandığında, değiştirilmesi gereken şevleri belirleyen otomatik bir ön hesaplama yapılır. Herhangi bir hesaplama yapılmamışsa veya bir parametre değiştirilmişse, Gerçek Kesit yankısındaki etkisini görmek için bu iletişim kutusundan [</span><span class="Parrafo" style="font-weight: bold;">ön hesaplama</span><span class="Parrafo">] seçeneğine basmalıyız.</span></li></ul><span class="Parrafo"><ul><li class="Parrafo"><span class="Parrafo" style="font-weight: bold;">Hendek Izgarası</span><span class="Parrafo">: Hendek ızgarasının geometrisini tanımlamayı sağlar:</span><br class="Parrafo" />
+          
+          <ul class="Parrafo"><li><span style="font-weight: bold;">Her modülün uzunluğu (L).</span></li><li><span style="font-weight: bold;">Modülü çevreleyen kenar profillerinin genişliği (A).</span></li><li><span style="font-weight: bold;">Profillerin yüksekliği veya kalınlığı (H).</span></li><li>İç enine ve boyuna profillerin genişliği(a).</li><li>Her modül için iç enine ve boyuna profil sayısı (n).</li></ul></li></ul>
+      <ul>
+
+        
+        <li><span style="font-weight: bold;">Enkesite Semboller tablosunu sınır çizgileriyle kontrol etme</span>: <a href="OL_simbolos_perfil.html">Enkesite Semboller</a>'de tanımlanan sembollerin sınır çizgileri tarafından silinmemesini sağlar.<br />
+Bu seçenek burada etkinleştirilirse, seçeneğin etkin olduğu eksen üzerinde çalışır.
+Ancak Yapılandırma->Tercihler->Doğrusal Yapı->Boykesit (Boykesit-> Seçenekler) bölümünde etkinleştirilirse, her eksende neyin işaretlendiğine bakılmaksızın projenin tüm eksenleri için çalışır.</li>
+
+      </ul></span></span><ul style="text-align: justify;"><li><span style="font-weight: bold;">Bu yüzeyleri sınır çizgileriyle kırpma</span>:
+sınır çizgilerinden etkilenmeyecek 20 adede kadar yüzey belirtmeye olanak tanır. Eğer üstyapıya aitlerse (ISFIRn.per), üstyapı paketi yeniden hesaplandığında kırpılmazlar.</li></ul><span class="Parrafo"><span class="Parrafo"><ul><span class="Parrafo">
+        
+          
+
+        <ul>
+
+      
+
+      <ul>
+        
+        
+
+      </ul>
+      <ul>
+        </ul>
+      
+
+
+      <br />
+      <br />
+      </ul>
+</span></ul></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

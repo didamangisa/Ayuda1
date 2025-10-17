@@ -1,0 +1,1098 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+  
+  <meta content="IE=11.0000" http-equiv="X-UA-Compatible">
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>Kurulum ve Güncelleme</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css">
+
+  
+  <meta name="GENERATOR" content="MSHTML 11.00.9600.16476"></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"><a href="index.html"><img src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" style="border: 0px solid currentcolor; width: 33px; height: 33px;" alt=""></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30"></a> <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30"> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30"> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30"> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30"></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PROGRAMIN KURULUMU VE GÜNCELLENMESİ<br>
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td class="Parrafo" style="width: 694px;"><span class="Parrafo"><br>
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span><br>
+      <span class="Parrafo"><a href="#requisitos">Sistem Gereksinimleri</a></span><br>
+      <span class="Parrafo"></span><a href="#instalacion_programa"><span class="Parrafo">Programın Kurulumu</span></a><br>
+      <div style="margin-left: 40px;"><a href="#cd_usb">CD veya USB Bellekten Kurulum</a><br>
+      <div style="margin-left: 40px;"><a href="#monopuesto">Tek Kullanıcılı Lisans Kurulumu</a><br>
+      <a href="#multipuesto">Çok Kullanıcılı Lisans Kurulumu</a><br>
+      </div>
+<a href="#limit_educ"><span class="Parrafo">Eğitim Lisanslarının Sınırlamaları</span></a><br>
+      <a href="#reinstalar_ver_ant">Programın Eski Bir Sürümünü Yeniden Yükleme</a><br>
+      <a href="#instal_silenciosa">Sessiz veya Katılımsız Kurulum</a><br>
+      </div>
+      <a href="#instalacion_driver">Lisans Koruma Sistemi Sürücüsünün Kurulumu</a><br>
+      <div style="margin-left: 40px;"><a href="#lic_monopuesto_protec_hard"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Donanım Korumalı (HASP Kilitleri) Tek Kullanıcılı Lisans</span></span></span></span></a><br>
+      <a href="#lic_educ_protec_soft">Yazılım Korumalı Tek Kullanıcılı Eğitim Lisansı</a><br>
+      <div style="margin-left: 40px;"><a href="#instruc_instal_educ_soft">Lisans Kurulum ve Aktivasyon Talimatları</a><br>
+      <a href="#problemas_educ_soft">Yazılım Korumalı Bir Eğitim Lisansının Kurulumunda Olası Sorunlar</a><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#inst_desinst_manual_hasp">HASP Yazılımının Manuel Kurulumu ve Kaldırılması</a><br>
+      </span></span></span></span></span></span><a href="#procedim_instal_alter"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Alternatif Kurulum Prosedürü</span></span></span></span></span></span></a><br>
+      <a href="#problemas_ejecuc_lic_educ_soft">Yazılım Korumalı Bir Eğitim Lisansının Çalıştırılması Sırasında Olası Sorunlar</a><br>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><a href="#lic_red">Ağ veya Çok Kullanıcılı Lisanslar (NetHASP Kilitleri)</a><br>
+      </span></span>
+      <div style="margin-left: 40px;"><a href="#instal_servidor_lic"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lisans Sunucusunun Kurulumu</span></span></span></a><a href="/instalacion.html#apertura_puertos"><span class="Parrafo"></span></a><br>
+<a href="#consideraciones_nethasp"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">'ün NetHASP Kilitleri ile Çalışması ve Korunması Hakkında Dikkat Edilmesi Gerekenler</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a><br>
+      <a href="#instal_sesion_nethasp"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lisans Yönetim Servisinin Kurulumu: SesionNetHasp</span></span></span></span></span></span></span></span></span></span></a><br>
+      <a href="/instalacion.html#instal_servidor_sesiones"></a><a href="/instalacion.html#nethasp_ini"><span class="Parrafo"><span class="Parrafo"></span></span></a><a href="/instalacion.html#gestion"><span class="Parrafo"></span></a><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <a href="#actualizacion">Programın Güncellenmesi</a><br>
+      <div style="margin-left: 40px;"><a href="#actual_desde_programa"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Doğrudan Programın Kendisinden Güncelleme</span></span></span></span></span></span></span></span></span></span></span></span></span></span></a><br>
+      <a href="#actual_desde_web"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Web Üzerinden Güncelleme</span></span></span></span></span></span></span></span></span></span></span></span></span></span></a><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#desinstalacion">Programın Kaldırılması</a><br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      </div>
+      <div style="margin-left: 40px;"><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br>
+      <br>
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br>
+      <span class="Parrafo"><br>
+Istram kurulumu 2 bölümden oluşur: <span style="font-weight: bold;">koruma</span> kurulumu ve <span style="font-weight: bold;">uygulama</span> kurulumu.<br>
+Burada ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün çalışması için sistem gereksinimleri ile programın ve lisans koruma sistemi sürücüsünün kurulum süreci belirtilmektedir. Bu sürücünün kurulumu, kurulacak lisans türüne bağlı olacaktır ve her durumda, bir lisansın türüne göre izlenecek süreç açıklanmaktadır:<br>
+      </span>
+      <ul>
+        <li><span class="Parrafo">Donanım korumalı profesyonel veya eğitim amaçlı tek kullanıcılı.</span></li>
+        <li><span class="Parrafo">Donanım korumalı profesyonel çok kullanıcılı.</span></li><li><span class="Parrafo">Yazılım korumalı eğitim amaçlı tek kullanıcılı.</span></li>
+      </ul>
+      <span class="Parrafo">Ayrıca programın indirilmesi ve güncellenmesi, farklı kurulum şekilleri vb. ile ilgili çeşitli konular da açıklanmaktadır.<br>
+      <br>
+Kullanıcının, sahip olduğu lisans türüne göre kurulum talimatlarını DİKKATLİCE OKUMASI ve adımları adım adım takip etmesi rica olunur, çünkü kurulumla ilgili sorguların büyük bir yüzdesi yalnızca bu adımın dikkatli bir şekilde yapılmamasından, özellikle ağ (çok kullanıcılı) ve yazılım korumalı eğitim lisanslarının kurulumlarından kaynaklanmaktadır.<br>
+      <br>
+      <br>
+      </span><span class="Titulo_2"><a name="requisitos"><span class="Titulo_2">Sistem Gereksinimleri</span><span class=""></span><span class="Titulo_2"></span></a></span><br>
+      <span class="Parrafo"><br>
+Program daha düşük yapılandırmalarla çalışabilse de, kullanıcının rahat bir şekilde çalışabilmesi için, özellikle BIM ve Virtual 3D ile çalışılacaksa, en azından aşağıdaki yapılandırma önerilir:<br>
+      </span>
+      <ul>
+        <li><span class="Parrafo">Windows<sup>®</sup> 7, 8 veya 10 (64 bit) işletim sistemi.<br>
+          </span></li>
+        <li><span class="Parrafo">INTEL i7 veya Xeon işlemci, tercihen 3 GHz'den yüksek işlemci hızı</span><span class="Parrafo">.</span></li>
+        <li><span class="Parrafo">En az 8 GB RAM bellek, 16 GB tavsiye edilir. Ne kadar hızlı olursa o kadar iyidir.<br>
+</span></li>
+        <li><span class="Parrafo">Sabit diskte en az 1 GB boş alan (proje türüne bağlı olarak bu ihtiyacın çok daha fazla olabileceği dikkate alınmalıdır). Katı hal diski (SSD) şiddetle tavsiye edilir.<br>
+</span></li>
+        <li><span class="Parrafo">3D hızlandırmalı, NVIDIA veya AMD, en az 2 GB ayrılmış belleğe sahip ekran kartı. Anakartta entegre Intel grafikleri genellikle iyi sonuç vermez.<br>
+</span></li>
+        <li><span class="Parrafo">En az 1280×1024 piksel çözünürlüğe sahip ekran.</span></li>
+        
+      </ul>
+      <span class="Parrafo"><br>
+      </span><span class="Titulo_2"><a name="instalacion_programa">Programın Kurulumu<br>
+      <br></a><a name="cd_usb"></a>
+CD veya USB Bellekten Kurulum<br>
+
+      </span> <span class="Parrafo"><br>
+      </span><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span><span class="Parrafo"> yazılımını kurmak için, programla birlikte verilen USB belleği ve donanım kilidini kullanmak yeterlidir. Bu aygıtların içeriği, izin verilirse resimde gösterilen gibi bir pencere gösterecek bir otomatik çalıştırma sistemine sahiptir.<br>
+      <br>
+      <img src="Imagenes/instal_cd_1.png" style="width: 694px; height: 504px;" alt=""><br>
+      <br>
+Kurmak istediğiniz tek kullanıcılı veya ağ (çok kullanıcılı) lisans türünü seçin ve "<span style="font-weight: bold;">İleri</span>" düğmesine basın.<br>
+      <br>
+      <br>
+      <span class="Titulo_2"><a name="monopuesto"></a>Tek Kullanıcılı Lisans Kurulumu</span><br>
+      <br>
+Eğer tek kullanıcılı bir kurulum seçtiyseniz, bu ekran görünecektir.<br>
+      <br>
+      <img src="Imagenes/instal_cd_2.png" style="width: 694px; height: 504px;" alt=""><br>
+      <br>
+"<span style="font-weight: bold;">Kur</span>" düğmesi, kilidin sürücüsünü kurmayı sağlayan "<span style="font-weight: bold;">HaspUserSetup.exe</span>" programını çalıştırır.</span><span class="Parrafo"> Sürücünün <a href="instalacion.html#instalacion_driver">kurulum</a> süreci daha sonra gösterilmektedir.</span><br>
+      <span class="Parrafo">
+      <br>
+Windows 8'de bu adım gerekli olmayabilir, USB kilidini taktığınızda işletim sistemi internette arama yapar ve sürücüyü otomatik olarak kurar. Eğer bilgisayar internete bağlı değilse, sürücü buradan kurulabilir.<br>
+      <br>
+Bu adım, sürücü herhangi bir nedenle zaten kuruluysa da gerekli değildir.<br>
+      <br>
+Devam etmek için "<span style="font-weight: bold;">İleri</span>" düğmesine basın. Aşağıdaki resimdeki gibi bir ekran görünecektir.<br>
+      <br>
+      <img src="Imagenes/instal_cd_3.png" style="width: 694px; height: 504px;" alt=""><br>
+      <br>
+32 veya 64 bit sürümünü kurmak isteyip istemediğinizi seçin. Ayrıca modül 4 (Virtual 3D) kütüphanesinin ve ağır nesnelerin kurulmasını da seçebilirsiniz. Bu, yalnızca söz konusu modül satın alındıysa kullanışlıdır.<br>
+      <br>
+64 bit sürümü, 64 bit Windows 7 veya 64 bit Windows 8'e kurulabilir.<br>
+      <br>
+"<span style="font-weight: bold;">Kur</span>" düğmesi, 32 bit sürümü seçilirse "<span style="font-weight: bold;">IstramSE.exe</span>"yi veya 64 bit sürümü seçilirse "<span style="font-weight: bold;">Istram64.exe</span>"yi çalıştırır. Seçilirse Virtual 3D kütüphanesini de kopyalar.<br>
+      <br>
+Kurulum işlemi bittiğinde "<span style="font-weight: bold;">Çıkış</span>" düğmesine basabilirsiniz. Istram/ispol <a href="#instala_istram">kurulumuna</a> geçin.<br>
+      <br>
+<br><a name="multipuesto"></a>
+      <span class="Titulo_2">Çok Kullanıcılı Lisans Kurulumu</span><br>
+      <br>
+Eğer çok kullanıcılı bir kurulum seçildiyse, bu ekran görünecektir.<br>
+      <br>
+      <img src="Imagenes/instal_cd_4.png" style="width: 694px; height: 504px;" alt=""><br>
+      <br>
+      </span><span class="Parrafo"><span style="font-weight: bold;">Dikkat, bu adım hem kilidin bağlı olacağı bilgisayarda hem de Istram/Ispol'ün kullanılacağı bilgisayarlarda gerçekleştirilmelidir.</span><br style="font-weight: bold;">
+      <br>
+      </span><span class="Parrafo">"<span style="font-weight: bold;">Kur</span>" düğmesi, kilidin sürücüsünü kurmayı sağlayan "<span style="font-weight: bold;">HaspUserSetup.exe</span>" programını çalıştırır. Sürücünün <a href="#instalacion_driver">kurulum</a> süreci daha sonra gösterilmektedir.<br>
+      <br>
+Bu adım, sürücü herhangi bir nedenle zaten kuruluysa gerekli değildir.<br>
+      <br>
+Devam etmek için "<span style="font-weight: bold;">İleri</span>" düğmesine basın. Aşağıdaki ekran gösterilecektir.<br>
+      <br>
+      <img src="Imagenes/instal_cd_5.png" style="width: 694px; height: 504px;" alt=""><br>
+      </span><br>
+      <span style="font-weight: bold;">Dikkat, bu adım sadece ağ kilidinin bağlı olduğu bilgisayarda gerçekleştirilmelidir.</span><br style="font-weight: bold;">
+      <br>
+"<span style="font-weight: bold;">Kur</span>" düğmesi, "<span style="font-weight: bold;">instalaSesionNetHasp.exe</span>" programını çalıştırır ve Istram lisans sunucusunu kurar.<br>
+      <br>
+      <span class="Parrafo">Devam etmek için "<span style="font-weight: bold;">İleri</span>" düğmesine basın. Aşağıdaki ekran gösterilecektir.<br>
+      <br>
+      <img src="Imagenes/instal_cd_6.png" style="width: 694px; height: 504px;" alt=""><br>
+      </span><span class="Parrafo"><br>
+      <span style="font-weight: bold;">Dikkat, bu adım sadece Istram/Ispol'ün kullanılacağı bilgisayarlarda gereklidir.</span><br>
+      <br>
+      </span><span class="Parrafo">32 veya 64 bit sürümünü kurmak isteyip istemediğinizi seçin. Ayrıca modül 4 (Virtual 3D) kütüphanesinin ve ağır nesnelerin kurulmasını da seçebilirsiniz. Bu, yalnızca söz konusu modül satın alındıysa kullanışlıdır.<br>
+      <br>
+64 bit sürümü, 64 bit Windows 7 veya 64 bit Windows 8'e kurulabilir.<br>
+      <br>
+"<span style="font-weight: bold;">Kur</span>" düğmesi, 32 bit sürümü seçilirse "<span style="font-weight: bold;">IstramSE.exe</span>"yi veya 64 bit sürümü seçilirse "<span style="font-weight: bold;">Istram64.exe</span>"yi çalıştırır. Seçilirse Virtual 3D kütüphanesini de kopyalar.<br>
+      <br>
+Kurulum işlemi bittiğinde "<span style="font-weight: bold;">Çıkış</span>" düğmesine basabilirsiniz.<br>
+      </span><br>
+      <br>
+      <span class="Parrafo"><br>
+      <br>
+      </span><span class="Parrafo">Eğer CD veya USB belleği taktığınızda otomatik olarak başlamazsa, ilgili sürücüyü keşfedebilir ve &nbsp;<span class="Archivo">\INSTALL</span> klasörüne girebilirsiniz. Bu klasörde bu kılavuzda bahsedilen dosyalar bulunmaktadır.</span><br>
+      <span class="Parrafo"><br>
+Eğer kurulum CD'si yoksa, kullanıcının web sitemizin (<a href="http://www.istram.net/" target="_blank">http://www.istram.net/</a>) <span style="font-style: italic;">İndirmeler ve kaynaklar</span> alanına erişmesi ve bu kurulum dosyalarını edinmesi gerekecektir. Bu süreç, <a href="/instalacion.html#actualizacion"><span style="font-style: italic;">Programın Güncellenmesi. İnternetten İndirmeler</span></a> bölümünde açıklanmaktadır.</span><br>
+      <span class="Parrafo"><br>
+      <br>
+      <span class="Titulo_2"><a name="instala_istram"></a>Istram/Ispol Kurulumu</span><br>
+<br>
+O zaman aşağıdaki adımlardan oluşan kurulum sihirbazı açılır:<br>
+      <br>
+      </span>
+      <table style="width: 609px; height: 321px; text-align: left; margin-right: auto; margin-left: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 283px; vertical-align: top;"><img src="Imagenes/instal_paso_1.png" style="width: 282px; height: 218px;" alt=""><br>
+            <br>
+            <div style="text-align: justify;"><span class="Info">Hoş geldiniz ekranı.</span><br>
+            </div>
+            </td>
+            <td style="width: 22px; vertical-align: top;"><br>
+            <br>
+            </td>
+            <td style="width: 278px; vertical-align: top;"><img src="Imagenes/instal_paso_2.png" style="width: 282px; height: 218px;" alt=""><br>
+            <br>
+            <div style="text-align: justify;"><span class="Info">Yasal hususlar. Bu belgeyi dikkatlice okuyun.</span><br>
+            </div>
+            <br>
+            </td>
+          </tr>
+          <tr>
+            <td class="Info" style="width: 283px; vertical-align: top;"><img src="Imagenes/instal_paso_3.png" style="width: 282px; height: 218px;" alt=""><br>
+            <br>
+            <div style="text-align: justify;">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> uygulamasını oluşturan dosya ve klasörlerin kurulumunun yapılacağı sabit diskinizdeki klasörün seçimi.<br>
+            </div>
+            </td>
+            <td style="width: 22px; vertical-align: top;"><br>
+            <br>
+            </td>
+            <td class="Info" style="width: 278px; vertical-align: top;"><img src="Imagenes/instal_paso_4.png" style="width: 282px; height: 218px;" alt=""><br>
+            <br>
+            <div style="text-align: justify;">Dil seçimi. Uygulama sadece bir dilde kullanılabilir. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ü başka bir dilde kullanmak isterseniz, önceki kurulumun üzerine yenisini yazmanız gerekecektir.<br>
+            </div>
+            <br>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 283px; vertical-align: top;"><img src="Imagenes/instal_paso_5.png" style="width: 282px; height: 218px;" alt=""><br>
+            <br>
+            <div style="text-align: justify;"><span class="Info">Tüm dosya ve klasörler kurulmaya başlanır. Virtual 3D için 'LIBSOL' kütüphanesinin kurulumu 150 MB'den fazla yer kaplar. Eğer bu modülü çalıştırmak için lisansınız yoksa, bu dosyaları kurmanıza gerek yoktur.</span><br>
+            </div>
+            </td>
+            <td style="width: 22px; vertical-align: top;"><br>
+            <br>
+            </td>
+            <td class="Info" style="width: 278px; vertical-align: top;"><img src="Imagenes/instal_paso_6.png" style="width: 282px; height: 218px;" alt=""><br>
+            <br>
+Süreç tamamlandığında, son bir ekran ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> kurulumunun tamamlandığını bildirir.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br>
+Kurulum tamamlandıktan sonra iki yeni klasör oluşturulmuş olacaktır:<br>
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span class="Archivo">C:\ISPOL</span> klasörü (veya kullanıcının seçtiği konum), programın doğru çalışması için gerekli dosyaları ve kütüphaneleri içerir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Archivo">C:\TRABAJO</span> klasörü, kullanıcının programla çalışması ve her proje için bir alt klasör oluşturması önerilir. Bu klasörün içinde ayrıca DEMO adında basit bir örnek proje de kopyalanır.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <table style="width: 692px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""><br>
+            </td>
+            <td class="Info" style="text-align: justify; vertical-align: middle;">Önceki kurulumun hiçbir şekilde yedeklenmediği, bunun da özellikle program kütüphanesi (<span class="Archivo">\ISPOL\LIB</span>) için kritik bir şekilde etkili olduğu dikkate alınmalıdır.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br>
+      <br>
+      </span></span><span style="font-style: italic; font-weight: bold;"><a name="limit_educ">Eğitim Lisanslarının Sınırlamaları</a></span><br>
+      <span class="Parrafo"><span class="Parrafo"><br>
+Eğitim lisansları, bir dizi sınırlama ile profesyonel lisanslardan ayrılır. Bu tür bir lisansla ilişkili kısıtlama düzeyine bağlı olsa da, en önemli sınırlamalar şunlardır:<br>
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Ekranda maksimum poliline sayısı, EDM'de aynı anda 50000'den fazla çizgi bulunamaz. Bu değer aşılırsa, program izin verilen maksimum sayının aşıldığını belirten bir mesaj gösterir.</span></span></li>
+      </ul>
+      
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Maksimum GÜZERGAH PROJESİ eksen sayısı 10 ile sınırlıdır.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Eksen başına maksimum 50 aliyman limiti.<br>
+          <br>
+</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">&nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> veya &nbsp;<span class="Archivo">.dgn</span> dosyaları oluşturma imkansızlığı.</span></span></li>
+
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Güvenlik kilidinin kurulumundan itibaren 180 gün boyunca programın kullanılabilirliği (<span style="font-style: italic;">NetHasp</span> tipi yazılım kilidi olan lisanslar durumunda).</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Ancak, duruma göre belirli koşullar altında kısıtlama seviyesini değiştirmek mümkündür. Eğitim lisansınızın sınırlamasını gevşetmeniz gerekiyorsa, lütfen durumunuzu incelemeleri için İdari Departmanımızla iletişime geçin.<br>
+      <br>
+Ayrıca, eğitim lisansı aktif olduğu sürece, kullanıcının hem kurulum hem de programın kullanımı için e-posta yoluyla teknik destek hakkı olduğunu unutmayın: </span></span><span class="Parrafo"><a href="mailto:soporte@istram.net">soporte@istram.net</a></span><span class="Parrafo"><span class="Parrafo">.<br>
+      <br>
+      </span></span><span class="Parrafo">Programa yeni başlayan kullanıcıların, her şeyden önce web sitemizde bulunan <a href="http://www.istram.net/index.php?opcion=216&amp;producto=1">eğitimlerle</a> pratik yapmaları tavsiye edilir. Bunların okunması ve uygulanması çok hızlıdır ve kullanıcının programın farklı menülerinde rahatça gezinebilmesi ve belirli karmaşıklıktaki projeleri üstlenebilmesi için programla yeterli bir ilk temas kurmasını sağlar.</span><br>
+      <span class="Parrafo"><span class="Parrafo"><br>
+      <br>
+      </span></span><span style="font-style: italic; font-weight: bold;"><a name="reinstalar_ver_ant">Programın Eski Bir Sürümünü Yeniden Yükleme</a></span><br>
+      <span class="Parrafo"><span class="Parrafo"><br>
+Kullanıcı programı her güncellediğinde, &nbsp;<span class="Archivo">istramSE.exe veya istram64.exe</span> dosyasının bir kopyası &nbsp;<span class="Archivo">\ISPOL\BACKUP</span> klasöründe oluşturulur ve dosya adına sürümün tarih bilgisi eklenir.<br>
+      <br>
+Bu, kullanıcının herhangi bir nedenle belirli bir zamanda programın önceki bir revizyonuna geri dönmesi gerekirse, uygun tarihli kurulum dosyasını çalıştırarak bunu yapmasını sağlar.<br>
+      <br>
+      </span></span><span class="Parrafo"> <span class="Parrafo">
+      <table style="width: 692px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""><br>
+            </td>
+            <td class="Info" style="text-align: justify; vertical-align: middle;">Programın daha eski bir sürümüne geri dönülürse, programın daha yeni sürümleriyle oluşturulan verilerin doğru bir şekilde yorumlanamayabileceği ve beklenmedik sonuçlar doğurabileceği dikkate alınmalıdır.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br>
+      <br>
+      </span></span><span style="font-style: italic; font-weight: bold;"><a name="instal_silenciosa">Sessiz veya Katılımsız Kurulum</a></span><br>
+      <br>
+Bu tür bir kurulum, programı birden fazla bilgisayarda periyodik olarak güncellemekten sorumlu sistem yöneticileri için çok kullanışlı olabilir. Kurulum CD'sinde (<span class="Archivo">\INSTALL\ADDINS</span>), kullanıcının katılımını gerektirmeyen güncellemeler yapmayı sağlayan üç toplu işlem dosyası (<span class="Archivo">.bat</span>) sunulmaktadır:<br>
+      <ul>
+        <li><span class="Archivo">Istram SE Silent Spanish.bat</span></li>
+        <li><span class="Archivo">Istram SE Silent Portuguese.bat</span></li>
+        <li><span class="Archivo">Istram SE Silent Polish.bat</span></li>
+      </ul>
+      <table style="width: 692px; height: 147px; text-align: left;" border="0" cellpadding="2" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="width: 378px; text-align: justify; vertical-align: top;">Bu dosyaların, &nbsp;<span class="Archivo">istramSE.exe veya istram64.exe</span> kurulum dosyasıyla aynı klasörde bulunması gerekir.<br>
+            <br>
+Dosyayı çalıştırdığınızda, görünüşte etkin olmayan bir sistem penceresi belirecektir, ancak &nbsp;<span class="Archivo">istramSE.exe veya istram64.exe</span> dosyasında bulunan en son revizyonun tüm dosyaları kuruluyor olacaktır. Herhangi bir düğmeye basmaya gerek yoktur ve ayrıca sistem, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> uygulamasının nerede bulunduğunu algılar, herhangi bir hata yapma olasılığını ortadan kaldırır ve güncellemenin her zaman doğru bir şekilde yapılmasını sağlar.<br>
+            <br>
+Eğer kurulum CD'si yoksa, yöneticinin model olarak kullanabileceği, toplu işlem dosyasının oluşturulması için gösterilen kod kullanılabilir.</td>
+            <td style="width: 12px; vertical-align: top;"><br>
+            </td>
+            <td class="Archivo" style="width: 285px; vertical-align: top;">@echo off<br>
+cls<br>
+if exist istramSE.exe goto INSTALL<br>
+echo HATA, istramSE.exe bulunamıyor<br>
+echo.<br>
+goto END<br>
+:INSTALL<br>
+echo KURULUYOR . . .<br>
+istramSE.exe /S /LANG=es /DIR=C:\Ispol<br>
+echo.<br>
+echo ISTRAM/ISPOL kuruldu<br>
+:END<br>
+echo.<br>
+@pause<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <span class="Titulo_2"><a name="instalacion_driver">Lisans Koruma Sistemi Sürücüsünün Kurulumu</a></span><br>
+      <br>
+İki tür lisans vardır: <span style="font-weight: bold;">tek kullanıcılı</span> ve <span style="font-weight: bold;">ağ</span>. Birinciler, tüm profesyonel ve bazı eğitim lisansları tarafından kullanılan <span style="font-weight: bold;">donanım</span> (fiziksel donanım kilidi) koruma sistemine veya çoğu eğitim lisansının kullandığı <span style="font-weight: bold;">yazılım</span> (fiziksel olmayan donanım kilidi) koruma sistemine sahip olabilir. Ağ lisansları durumunda, hepsi bir donanım koruma sistemi kullanır, ancak kurulum profesyonel veya eğitim lisansları olmasına göre farklılık gösterir.<br>
+      <br>
+      <img src="Imagenes/llaves_monopuesto.png" style="width: 122px; height: 63px; margin-left: 7px;" alt="" align="right" />Fiziksel olarak, <span style="font-weight: bold;">tek kullanıcılı donanım</span> kilitleri üç tür olabilir:<br>
+      <ul>
+        <li>Paralel portlu, beyaz renkli. En eskileridir, bu nedenle değiştirilmeleri şiddetle tavsiye edilir. Unutmayın, teknik destek hizmetimize kayıtlıysanız, bu değişiklik bakım sözleşmesine dahildir.</li>
+      </ul>
+      <ul>
+        <li>USB tipi, mor renkli, toplam uzunluğu yaklaşık 5,2 cm ve aktif olduğunda aydınlatmalı. Bu model de eskidir, bu nedenle değiştirilmesi tavsiye edilir.</li>
+      </ul>
+      <ul>
+        <li>USB tipi, yeşil renkli, toplam uzunluğu yaklaşık 3,8 cm ve ayrıca aktif olduğunda aydınlatmalı. Şu anda teslim edilenlerdir ve öncekilere göre daha yüksek bir dahili yönetim kapasitesine sahiptirler.</li>
+      </ul>
+      <br>
+      <img src="Imagenes/llaves_red.png" style="width: 46px; height: 66px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">Ağ donanım</span> kilitlerine gelince, bunlar iki tiptir:<br>
+      <ul>
+        <li>USB tipi, kırmızı renkli, toplam uzunluğu yaklaşık 5,2 cm ve aktif olduğunda aydınlatmalı. Bu eski modeldir, bu nedenle değiştirilmesi tavsiye edilir.</li>
+      </ul>
+      <ul>
+        <li>USB tipi, kırmızı renkli, toplam uzunluğu yaklaşık 3,8 cm ve ayrıca aktif olduğunda aydınlatmalı. Şu anda teslim edilenlerdir ve tek kullanıcılı kilitler durumunda olduğu gibi, öncekilere göre daha yüksek bir dahili yönetim kapasitesine sahiptir.&nbsp;&nbsp;&nbsp; </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><br>
+Kilidin sürücüsünün kurulumu, programın bir bilgisayara ilk kez kurulduğunda yalnızca bir kez gereklidir ve söz konusu lisansın türüne bağlı olarak, donanım kilidinin kurulum süreci aşağıda açıklandığı gibi farklı olacaktır.<br>
+      <br>
+      </span></span><span class="Parrafo"> <span class="Parrafo">
+      <table style="width: 692px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""><br>
+            </td>
+            <td class="Info" style="text-align: justify; vertical-align: middle;">Bir bilgisayarda aynı anda bir donanım kilidi ve bir yazılım kilidi (eğitim) kuruluysa, birincisine öncelik verilir. </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br>
+      <br>
+      </span></span></span></span><span style="font-style: italic; font-weight: bold;"><a name="lic_monopuesto_protec_hard">Donanım Korumalı (HASP Kilitleri) Tek Kullanıcılı Lisans</a></span><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+      </span></span><span class="Parrafo"> <span class="Parrafo">
+      <table style="width: 692px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""><br>
+            </td>
+            <td class="Info" style="text-align: justify; vertical-align: middle;">Bilgisayarda Windows 8 kuruluysa, sistem koruma donanım kilidini otomatik olarak tanıyacaktır (bilgisayarın internet bağlantısı olması gerekir), bu nedenle bu adım gerçekleştirilmemelidir.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br>
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sürücüyü kurmak için, programın kopyasıyla birlikte verilen CD'yi kullanmak yeterlidir. Eğer bir yeniden kurulum ise, daha önce kurulmuş olan sürücünün kaldırılması gerekir.<br>
+      <br>
+CD'yi bilgisayarın optik sürücüsüne taktığınızda, resimde gösterilen gibi bir pencere otomatik olarak görünecektir.<br>
+      <br>
+Bu menüde, <span style="font-weight: bold;">Kurulum ve dokümantasyon</span> seçeneği seçilecektir.<br>
+      <br>
+Daha sonra, <span style="font-weight: bold;">HASP kilidi için sürücü kurulumu</span> seçeneğini seçmek yeterli olan yeni bir menüye erişilir.<br>
+      </span></span></span></span><span class="Parrafo"><br>
+      </span>
+      <table style="width: 691px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/instal_cd_1.png" style="width: 328px; height: 268px;" alt=""></td>
+            <td style="text-align: right; vertical-align: top;"><span style="color: rgb(51, 51, 51); font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; font-size: 10pt;"><img src="Imagenes/instal_cd_2.png" style="width: 328px; height: 268px;" alt=""><br>
+            </span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br>
+Eğer CD veya USB bellek takıldığında otomatik olarak başlamazsa, okuyucu sürücüsünü keşfetmek ve &nbsp;<span class="Archivo">\INSTALL</span> klasörüne girmek gerekecektir. Oradayken, kurulum sürecini başlatmak için &nbsp;<span class="Archivo">HASPUserSetup.exe</span> dosyasına çift tıklamak gerekecektir.<br>
+      <br>
+      </span><span class="Parrafo">Eğer kurulum CD'si yoksa, kullanıcının web sitemizin (<a href="http://www.istram.net/" target="_blank">http://www.istram.net/</a>) <span style="font-style: italic;">İndirmeler ve kaynaklar</span> alanına erişmesi
+      </span><span class="Parrafo">ve donanım kilidi sürücüsünün kurulum dosyasını (<span class="Archivo">HASPUserSetup.exe</span>) edinmesi gerekecektir.<br>
+      <br>
+O zaman aşağıdaki adımlardan oluşan kurulum sihirbazı açılır:<br>
+      <br>
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+      </span></span></span>
+      <table style="width: 692px; height: 96px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_hasp_1.png" style="width: 309px; height: 237px;" alt=""><br>
+            </div>
+            <br>
+            <div class="Info" style="text-align: justify;">Hoş geldiniz ekranı. Devam etmek için <span style="font-weight: bold;">[İleri &gt;]</span>'ye basın.<br>
+            </div>
+            <br>
+            </td>
+            <td style="width: 4px; vertical-align: top;"><br>
+            </td>
+            <td style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_hasp_2.png" style="width: 309px; height: 237px;" alt=""><br>
+            </div>
+            <br>
+            <div class="Info" style="text-align: justify;">Sürücü kurulumuna devam etmek için onay.<br>
+            </div>
+            <br>
+            </td>
+          </tr>
+          <tr>
+            <td class="Info" style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_hasp_3.png" style="width: 309px; height: 237px;" alt=""><br>
+            </div>
+            <br>
+            <div style="text-align: justify;">Sürücü kurulumu. Bu işlem birkaç dakika sürebilir.<br>
+            </div>
+            <br>
+            </td>
+            <td style="width: 4px; vertical-align: top;"><br>
+            </td>
+            <td style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_hasp_4.png" style="width: 309px; height: 237px;" alt=""><br>
+            </div>
+            <br>
+            <div class="Info" style="text-align: justify;">Süreç tamamlandığında, son bir ekran sürücü kurulumunun tamamlandığını bildirir. <br>
+            <br>
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </span></span><span class="Parrafo"><br>
+      </span></span></span></span></span></span></span>Eğer donanım kilidi henüz makinenin USB veya paralel portuna (eski donanım kilitleri) takılmamışsa, işletim sisteminin onu tanıyabilmesi için şimdi takma zamanıdır.<br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+      </span></span><span class="Parrafo"> <span class="Parrafo">
+      <table style="width: 692px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""><br>
+            </td>
+            <td class="Info" style="text-align: justify; vertical-align: middle;">Aynı bilgisayara birden fazla ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> koruma NetHASP kilidi takmak mümkün değildir. </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp; </span></span></span><br>
+      <span style="font-style: italic; font-weight: bold;"><a name="lic_educ_protec_soft">Yazılım Korumalı Tek Kullanıcılı Eğitim Lisansı</a></span><br>
+      <br>
+Bu lisans kontrolü sadece eğitim lisansları için mevcuttur ve aktivasyonu internet üzerinden yapılır, dolayısıyla fiziksel bir anahtar gerekmez. İnternet bağlantısı sadece bir kez, tam olarak anahtarı etkinleştirme anında gereklidir.<br>
+      <span class="Parrafo"><span class="Parrafo"><br>
+      </span></span><span class="Parrafo"> <span class="Parrafo">
+      <table style="width: 692px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 33px; vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""><br>
+            </td>
+            <td class="Info" style="width: 639px; text-align: justify; vertical-align: middle;">Bu kapsamda olmayan ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> lisansları için kullanmayın. </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br>
+      </span></span></span>Yeni kullanıcılar için: <br>
+      <ul>
+        <li>&nbsp;<span class="Archivo">HaspUserSetup.exe</span> lisans kontrolünü indirip kurmak GEREKMEZ.</li>
+        <li>Lisans kontrolünü kurmadan <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>'ü BAŞLATMAYIN (çalışmayacaktır).</li>
+      </ul>
+Zaten fiziksel kilitli bir eğitim lisansına sahip olan veya herhangi bir <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span> sürümünün bulunabileceği bir bilgisayar kullanan kullanıcılar için:<br>
+      <ul>
+        <li>HASP kilit sürücüsünü kaldırmaya gerek yoktur.</li>
+        <li>Bilgisayarın bir profesyonel lisansa erişimi olması durumunda, başlatmada ikincisine öncelik verilecektir (daha sonraki <a href="/instalacion.html#problemas_educ_soft"><span style="font-style: italic;">Yazılım korumalı bir eğitim lisansının kurulumunda olası sorunlar</span></a> başlığını okuyun).</li>
+        <li>Bir ağ lisans kontrolünün olduğu bilgisayarlarda ÇALIŞMAZ (<span style="font-style: italic;">HASPLicenseManager</span> veya <span style="font-style: italic;">HASPLoader</span>'ı kaldırın, ad kullanılan <span style="font-style: italic;">LMSetup</span> sürümüne bağlıdır).</li>
+      </ul>
+      <br>
+      <a name="instruc_instal_educ_soft">LİSANS KURULUM VE AKTİVASYON TALİMATLARI</a><br>
+      <br>
+Lütfen eğitim lisansınızın kurulumu için bu adımları sıkı bir şekilde takip edin:<br>
+      </span>
+      <ol>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Bu kilit, yönetici izinlerine sahip bir kullanıcı tarafından kurulmalıdır</span>, bu belgede belirtilen tüm prosedürler, bunları gerçekleştiren kullanıcının yönetici izinlerine sahip olduğunu varsayar.</span></li>
+      </ol>
+      <ol start="2">
+        <li><span class="Parrafo">Web sitemizden (bu kılavuzun <a href="/instalacion.html#actualizacion"><span style="font-style: italic;">Programın Güncellenmesi. İnternetten İndirmeler</span></a> bölümüne bakın) &nbsp;<span class="Archivo">istramSE.exe</span> ve &nbsp;<span class="Archivo">LlaveEducacional.rar</span> dosyalarını indirin.</span></li>
+      </ol>
+      <span class="Parrafo">
+      <ol start="3">
+        <li><span class="Parrafo">&nbsp;<span class="Archivo">LlaveEducacional.rar</span> dosyasını masaüstüne veya sistemin herhangi bir klasörüne açın. &nbsp;<span class="Archivo">.rar</span> dosyasının içeriğinin bir klasöre <span style="font-weight: bold;">gerçekten</span> açıldığından veya çıkarıldığından emin olmak gerekir.</span></li>
+      </ol>
+      </span>
+      <ol start="4">
+        <li><span class="Parrafo"><span class="Parrafo">Eğer etkinse, Windows güvenlik duvarını (firewall) veya kurulu olan başka bir şirketin güvenlik duvarını ve varsa antivirüs programını geçici olarak devre dışı bırakmanız tavsiye edilir. Örneğin, aşağıdaki antivirüs programları için:</span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"></span></span>
+      <div style="margin-left: 40px;">
+      <table style="width: 651px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 39px; vertical-align: middle;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""></span></span></span></td>
+            <td style="width: 592px; text-align: justify; vertical-align: middle;"><span class="Parrafo"><span class="Parrafo"><span class="Info">Bazı güvenlik paketleri, yazılım kilidinin kurulum sürecini bir truva atı olarak algılayabilir ve durdurabilir. Kullanıcı endişelenmemelidir, çünkü bu eylemi gerçekleştirmek güvenlidir.</span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <ol start="5">
+        <li><span class="Parrafo"><span class="Parrafo">&nbsp;<span class="Archivo">instalar_llave_educacional.bat</span> dosyasını üzerine çift tıklayarak çalıştırın. Bu program, bilgisayarınızı eğitim lisansının etkinleştirilmesine izin verecek şekilde hazırlar ve kurulumundan itibaren <span style="font-weight: bold;">7 gün</span> sonra sona erer. <span style="font-weight: bold;">Lisansı etkinleştirmeden bu sürenin geçmesine izin vermeyin, aksi takdirde iptal edilecektir</span>.</span></span></li>
+      </ol>
+      <ol start="6">
+        <li><span class="Parrafo"><span class="Parrafo">&nbsp;<span class="Archivo">istramSE.exe</span> kurulum dosyasını çalıştırın; bu, </span></span><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span><span class="Parrafo"><span class="Parrafo">'ü bilgisayarınıza kuracaktır. Daha önce açıklandığı gibi, kurulum çok basit bir süreçtir, sadece istediğiniz dili seçmeniz gerekir. Kurulumdan sonra bilgisayarınızı yeniden başlatmanıza gerek yoktur.</span></span></li>
+      </ol>
+      <ol start="7">
+        <li><img src="Imagenes/activ_licencia_educ.png" style="width: 356px; height: 242px; margin-left: 7px;" alt="" align="right"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span><span class="Parrafo"><span class="Parrafo">'ü başlatın. İlk çalıştırmada, lisansınızı yetkilendirmenizi isteyen bir iletişim kutusu görünecektir. Bu anda (ve sadece bu sefer) internet üzerinden bir bağlantı kurmak gerekir. Eğer internet bağlantınız bir proxy kullanıyorsa, ilgili verileri girmeniz gerekecektir.</span></span></li>
+      </ol>
+      <ol start="8">
+        <li><span class="Parrafo"><span class="Parrafo">İdari Departmanımızın size e-posta ile göndermiş olduğu yetkilendirme anahtarını girin. <span style="font-weight: bold;">[Etkinleştir]</span>'e basın ve veriler doğruysa, 'Lisans Etkinleştirildi' gibi bir onay mesajı göreceksiniz. &nbsp;&nbsp;&nbsp; &nbsp;</span></span></li>
+      </ol>
+      <ol start="9">
+        <li><span class="Parrafo"><span class="Parrafo">Eğer devre dışı bırakıldıysa, antivirüs ve güvenlik duvarını etkinleştirin. Genellikle devre dışı bırakıldıkları aynı prosedürle yeniden etkinleştirilirler.</span></span></li>
+      </ol>
+      <ol start="10">
+        <li><span class="Parrafo"><span class="Parrafo">Bu andan itibaren, eğitim sürümünde </span></span><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span><span class="Parrafo"><span class="Parrafo">'ü altı ay boyunca kullanabilirsiniz. Bu süre zarfında, ayrıca programı istediğiniz kadar güncelleyebilir ve programla ilgili herhangi bir şüpheniz için e-posta yoluyla (</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="mailto:soporte@istram.net">soporte@istram.net</a></span><span class="Parrafo"><span class="Parrafo">)</span></span><span class="Parrafo"><span class="Parrafo"> Teknik Destek Departmanı ile iletişime geçebilirsiniz.</span></span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span>
+      <table style="width: 692px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""></span></span></span></td>
+            <td class="Info" style="vertical-align: middle;">Lütfen <a href="/instalacion.html#limit_educ">Eğitim lisanslarının sınırlamaları</a> bölümündeki eğitim lisanslarının kısıtlamalarını okuyun. Unutmayın ki, eğitim lisanslarının amacı, kurs öğrencilerinin ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> programının kullanımıyla ilgili edindikleri bilgileri pratik yapmalarını sağlamaktır.<br>
+            </span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br>
+      <br>
+      <a name="problemas_educ_soft">YAZILIM KORUMALI BİR EĞİTİM LİSANSININ KURULUMUNDA OLASI SORUNLAR</a><br>
+      <br>
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün eğitim yazılım kilidi kurulduğunda, bazen kurulumun yapıldığı bilgisayarın yapılandırmasına bağlı olarak başarıyla tamamlanamayabilir. Bu bölümü okumadan önce, kurulumdan önce bilgisayarda kurulu olan herhangi bir güvenlik duvarını veya antivirüsü geçici olarak devre dışı bıraktığınızdan ve kurulum işleminin Yönetici olarak yürütüldüğünden emin olun. Eğer hala sorunlar devam ediyorsa, o zaman aşağıdaki durumları kontrol etmek gerekecektir:<br>
+      <br>
+      </span></span>
+      <table style="width: 692px; height: 142px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 48px; vertical-align: top;"><span style="font-weight: bold;">Durum 1:</span><br>
+            </td>
+            <td style="width: 624px; vertical-align: top;"><span style="font-weight: bold;">Program aktivasyon kodunu istemiyor</span><br>
+            <br>
+O zaman eğitim lisansının, işletim sisteminin &nbsp;<span class="Archivo">.bat</span> dosyasının doğru çalışmasını engellemesi nedeniyle doğru bir şekilde kurulmamış olması çok muhtemeldir. Bu nedenle, bu adımları izleyerek 'manuel' olarak çalıştırmak gerekir:<br>
+            <table style="width: 626px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="width: 306px; vertical-align: top;">
+                  <ol>
+                    <li style="text-align: justify;"><span class="Parrafo"><span class="Archivo">LlaveEducacional</span> klasörünü sabit diskin kök dizinine kopyalayın:</span></li>
+                  </ol>
+                  <div style="text-align: center; margin-left: 40px;"><img src="Imagenes/lic_educ_inst_manual_1.png" style="width: 260px; height: 189px;" alt=""><br>
+                  </div>
+                  </td>
+                  <td style="width: 5px; vertical-align: top;"><br>
+                  </td>
+                  <td style="width: 287px; vertical-align: top;">
+                  <ol style="text-align: justify;" start="2">
+                    <li>Başlat düğmesinden, &nbsp;<span class="Archivo">cmd</span> komutunu çalıştırın (komutu yazdıktan sonra &lt;Enter&gt;'a basarak).</li>
+                  </ol>
+                  <br>
+                  <div style="text-align: center; margin-left: 40px;"><img src="Imagenes/lic_educ_inst_manual_2.png" style="width: 146px; height: 71px;" alt=""><br>
+                  </div>
+                  </td>
+                </tr>
+                <tr align="justify">
+                  <td style="vertical-align: top;" rowspan="1" colspan="3">
+                  <ol start="3">
+                    <li><img src="Imagenes/lic_educ_inst_manual_3.png" style="width: 274px; height: 50px; margin-left: 7px;" alt="" align="right">Komut satırı açıldıktan sonra, aşağıdaki komut dizisini yazın ve her birinden sonra &lt;Enter&gt;'a basın:</li>
+                  </ol>
+                  <div class="Archivo" style="margin-left: 40px;">cd\<br>
+cd llaveeducacional<br>
+instalar_llave_educacional<br>
+                  </div>
+                  <ol start="4">
+                    <li>Lisans kurulmaya başlar. Bilgisayarınızda kurulu olan güvenlik programlarının (antivirüs, güvenlik duvarı, casus yazılım önleyici,...) olası uyarılarına dikkat edin ve bilgisayarda yapılacak değişikliklere izin verin.</li>
+                  </ol>
+                  <ol start="5">
+                    <li>Windows Vista/7'de, sonunda programın doğru bir şekilde kurulmamış olabileceğini belirten bir uyarı görüntülenebilir. Doğru bir şekilde kurulduğunu belirtin.</li>
+                  </ol>
+                  <ol start="6">
+                    <li>ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ü normal şekilde başlatın. Şimdi aktivasyon kodunu isteyen kutu görünmelidir.</li>
+                  </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 48px; vertical-align: top;"><span style="font-weight: bold;">Durum 2:</span><br>
+            </td>
+            <td style="width: 624px; vertical-align: top;">
+            <div style="text-align: justify;"><span style="font-weight: bold;">Sistemde <span style="font-style: italic;">HASP</span> veya <span style="font-style: italic;">HardLock</span> tipi (donanım veya yazılım), ancak Aladdin/SafeNET üreticisine ait OLMAYAN başka bir kilit kurulu.</span><br>
+            <br>
+Bu durumda sorun yaşanmaması gerekir, ancak lisansın başka bir bilgisayara kurulması tavsiye edilir.<br>
+            <br>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 48px; vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Durum 3:</span></span></span></span></span>
+            </td>
+            <td style="width: 624px; vertical-align: top;">
+            <div style="text-align: justify;"><span style="font-weight: bold;">Sistemde başka bir program tarafından kullanılan Aladdin/SafeNET üreticisine ait <span style="font-style: italic;">HASP</span> tipi (donanım veya yazılım) başka bir kilit kurulu.</span><br>
+            <br>
+Bu durumda da sorun yaşanmaması gerekir, ancak lisansın başka bir bilgisayara kurulması da tavsiye edilir.<br>
+            </div>
+            <br>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 48px; vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Durum 4:</span></span></span></span></span>
+            </td>
+            <td style="width: 624px; vertical-align: top;">
+            <div style="text-align: justify;"><span style="font-weight: bold;">Sistemde ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> için kullanılan Aladdin/SafeNET üreticisine ait <span style="font-style: italic;">HASP</span> tipi (donanım) başka bir kilit kurulu.</span><br>
+            <br>
+Program, eğitim lisansına göre profesyonel lisansa öncelik verir, bu nedenle birincisine karşılık gelen donanım kilidinin bağlantısı kesilmelidir.<br>
+            <br>
+Bilgisayarın bir profesyonel ağ lisansına erişebileceği bir ağa bağlı olması durumunda, program da buna öncelik verecektir, bu nedenle eğitim lisansını kullanırken ağ kablosunun çıkarılması gerekecektir.<br>
+            </div>
+            <br>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 48px; vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Durum 5:</span></span></span></span></span>
+            </td>
+            <td style="width: 624px; vertical-align: top;"><span style="font-weight: bold;">Aladdin/SafeNET üreticisinden bir <span style="font-style: italic;">NetHASP</span> (ağ) kilidi kurulu veya ilişkili yazılımı bilgisayarda kurulu kalmış.</span><br>
+            <br>
+            <div style="text-align: justify;">Bu durumda, uyumsuz oldukları için (üreticinin kendisi de böyle belirtir) ağ kilidi kaldırılana kadar yazılım kilidini kurmak mümkün değildir.<br>
+            </div>
+            <br>
+            <table style="width: 628px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="width: 34px; vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""><br>
+                  </td>
+                  <td class="Info" style="width: 574px; text-align: justify; vertical-align: top;">Ağ kilidiyle ilişkili yazılımın kurulu kalıp kalmadığını bilmek için, <span style="font-weight: bold;">Denetim Masası</span> &#8594; <span style="font-weight: bold;">Yönetimsel Araçlar</span> &#8594; <span style="font-weight: bold;">Hizmetler</span>'de HASPLicenseManager veya HASPLoader hizmetlerinin mevcut olup olmadığını kontrol etmek yeterlidir.<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br>
+Sistemde kurulu olabilecek HASP kilitleriyle ilişkili sürücülerin ve yazılımların temiz bir şekilde kaldırılmasını sağlamak ve programı hala başlatamadıysanız, aşağıdaki bölümleri okuyun.<br>
+      <br>
+      <br>
+      <a name="inst_desinst_manual_hasp">HASP YAZILIMININ MANUEL KURULUMU VE KALDIRILMASI</a><br>
+      <br>
+Herhangi bir HASP yazılımını, bir <span style="font-style: italic;">Komut İstemi</span> penceresinden (Windows Vista ve 7'de sağ tıklayarak ve içerik menüsündeki <span style="font-style: italic;">Yönetici olarak çalıştır</span> seçeneğini kullanarak açmanız tavsiye edilir) aşağıdaki komutu yürüterek manuel olarak kaldırmak ve kurmak mümkündür:<br>
+      <br>
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">haspdinst
+-fr -purge</span></span></span></span></span></span></span><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+Ardından, aynı pencereden, yazılım kilidi şu komutla kurulur:<br>
+      <br>
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Archivo">haspdinst -i</span><br>
+      </div>
+      <br>
+Eğer bu komut başarıyla tamamlanmazsa, bir sonraki bölümde açıklanan alternatif kurulum prosedürünü kullanın.<br>
+      <br>
+Bu komutları yürütmek için, <span style="font-style: italic;">Komut İstemi</span> penceresinde o dosyanın bulunduğu klasörde olduğunuz varsayılır.<br>
+      <br>
+      <br>
+      <a name="procedim_instal_alter">ALTERNATİF KURULUM PROSEDÜRÜ</a><br>
+      <br>
+Yazılım kilidinin kurulumunda normal prosedürün başarısız olması durumunda (tüm HASP kilitleri &nbsp;<span class="Archivo">haspdinst -fr -purge</span> komutuyla kaldırılmış olsa bile), hatalı öğeleri ortadan kaldırmak için bu prosedür uygulanabilir:<br>
+      </span>
+      <ol>
+        <li><span class="Parrafo"><span style="font-style: italic;">Program Ekle veya Kaldır</span>'dan (Windows XP) veya <span style="font-style: italic;">Programlar ve Özellikler</span>'den (Windows Vista ve 7) tüm HASP bileşenlerini kaldırın. Eğer daha önce bahsedilen manuel kaldırma komutu yürütüldüyse, muhtemelen hiçbiri görünmeyecektir.</span></li>
+      </ol>
+      <ol start="2">
+        <li><span class="Parrafo">Windows hizmetlerinden <span style="font-style: italic;">HASP</span> veya <span style="font-style: italic;">HLServer</span> ile başlayan herhangi bir hizmeti durdurun. <span style="font-weight: bold;">Denetim Masası</span> &#8594; <span style="font-weight: bold;">Yönetimsel Araçlar</span> &#8594; <span style="font-weight: bold;">Hizmetler</span>'de bu adlara sahip herhangi bir hizmeti durdurun.</span></li>
+      </ol>
+      <ol start="3">
+        <li><span class="Parrafo">Eğer varsa, &nbsp;<span class="Archivo">C:\windows\system32\drivers</span>'dan herhangi bir &nbsp;<span class="Archivo">aks*.*</span> (yani, &nbsp;<span class="Archivo">aks</span> ile başlayan ve herhangi bir uzantıya sahip olan), &nbsp;<span class="Archivo">Hardlock.sys</span> veya &nbsp;<span class="Archivo">haspnt.sys</span> dosyasını silin.</span></li>
+      </ol>
+      <ol start="4">
+        <li><span class="Parrafo"><span style="font-style: italic;">Aygıt Yöneticisi</span>'nden (<span style="font-weight: bold;">Bilgisayarım</span> &#8594; <span style="font-weight: bold;">Özellikler</span> &#8594; <span style="font-weight: bold;">Donanım</span> &#8594; <span style="font-weight: bold;">Aygıt Yöneticisi, Windows XP'de</span>; <span style="font-weight: bold;">Bilgisayar</span> &#8594; <span style="font-weight: bold;">Sistem özellikleri</span> &#8594; <span style="font-weight: bold;">Aygıt Yöneticisi</span>, Windows Vista ve 7'de), <span style="font-style: italic;">Görünüm</span> menüsünde <span style="font-style: italic;">Gizli aygıtları göster</span> seçeneğini seçin ve <span style="font-style: italic;">Tak ve Çalıştır Olmayan Sürücüler</span> seçeneğini genişletin ve gösterilen bu aygıtlardan, eğer varsa, "hardlock", "Haspnt" veya "Hasp fridge"i kaldırın.</span></li>
+      </ol>
+      <span class="Parrafo"></span>
+      <ol start="5">
+        <li><span class="Parrafo">Yazılım kilidini daha önce bahsedilen <a href="/instalacion.html#inst_desinst_manual_hasp">manuel şekilde</a> yeniden kurun (dosyanın bulunduğu klasördeki &nbsp;<span class="Archivo">Komut İstemi</span>'nden &nbsp;<span class="Archivo">haspdinst -i</span>'yi çalıştırın).</span></li>
+      </ol>
+      <span class="Parrafo"> Eğer bu kurulum da başarısız olursa, verilerinizi ve hata mesajlarını içeren ekran görüntülerini </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="mailto:soporte@istram.net">soporte@istram.net</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">'e gönderin, böylece biz de Aladdin/SafeNET ile iletişime geçebiliriz.<br>
+      <br>
+      <br>
+      <a name="problemas_ejecuc_lic_educ_soft">YAZILIM KORUMALI BİR EĞİTİM LİSANSININ ÇALIŞTIRILMASI SIRASINDA OLASI SORUNLAR</a><br>
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+      </span></span>
+      <table style="width: 692px; height: 142px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 48px; vertical-align: top;"><span style="font-weight: bold;">Durum 1:</span><br>
+            </td>
+            <td style="width: 624px; vertical-align: top;">
+            <div style="text-align: justify;"><span style="font-weight: bold;">Lisans çalışmayı durdurdu.</span><br>
+            <br>
+Bu, aşağıdaki nedenlerden birine bağlı olabilir:<br>
+            </div>
+            <ul style="text-align: justify;">
+              <li>Lisansın süresi doldu. Uzatma talep etmek isterseniz Buhodra Ingeniería, S.A. ile iletişime geçin.</li>
+            </ul>
+            <ul style="text-align: justify;">
+              <li>Eğitim kilidini olası bir tehdit olarak algılayan ve yanlış bir pozitif üreten bir güvenlik yazılımı (antivirüs, güvenlik duvarı, casus yazılım önleyici,...) kuruldu. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ü çalıştırırken güvenlik yazılımını devre dışı bırakın.</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 48px; vertical-align: top;"><span style="font-weight: bold;">Durum 2:</span><br>
+            </td>
+            <td style="width: 624px; vertical-align: top;">
+            <div style="text-align: justify;"><span style="font-weight: bold;">Belirli bir sayıda çizgiden daha fazlasını içeren çizimleri yüklemek mümkün değil, eksen ve aliyman sayısı sınırlı, DWG/DXF'e dışa aktarmak mümkün değil,...</span><br>
+            <br>
+Bu sınırlamalar, <a href="/instalacion.html#limit_educ"><span style="font-style: italic;">Eğitim lisanslarının sınırlamaları</span></a> bölümünde açıklandığı gibi, eğitim lisansına özgüdür.<span style="font-weight: bold;"><br>
+            </span><br>
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br>
+      <br>
+      </span></span></span></span></span></span></span></span></span><span style="font-style: italic; font-weight: bold;"><a name="lic_red">Ağ veya Çok Kullanıcılı Lisanslar (NetHASP Kilitleri)</a></span><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+Ağ lisans sunucusu sistemi, şirketinizin farklı bilgisayarlarına (istemciler) çalışma izinleri sunmayı sağlar; bu da kayıp, bozulma vb. riskleri olan bireysel kilitleri takıp çıkarma gerekliliğini ortadan kaldırır.<br>
+      <br>
+NetHASP kilitleri, tek bir kilit ile birden fazla ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> lisansının yönetimini sağlar. Bu tür kilitlerle çalışmak, kilidi kontrol eden bir yazılımın kurulmasını gerektirir. Bu yazılım, <span style="font-style: italic;">NetHasp</span> kilidinin bağlanacağı bilgisayara kurulmalıdır (bu bilgisayar, kilit bağlıyken kilit <span style="font-weight: bold;">sunucusu</span> işlevi görecektir). Bu yazılımı, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün çalıştırılacağı bilgisayarlara (istemci bilgisayarlar) kurmak gerekli değildir, meğer ki hem sunucu hem de istemci olmasınlar.<br>
+      <br>
+Bu sistem, çalışma bilgisayarlarının ek bir yapılandırmasını gerektirir. Bu yapılandırma, sunucu bilgisayarın çalışmasını optimize etmeye ve istemci bilgisayarlara ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ile çalışmak için nasıl ve nereye bağlanacaklarını belirtmeye yarar.<br>
+      <br></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/esquema_instal_red.png" style="width: 153px; height: 520px; margin-left: 7px;" alt="" align="right"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün ağ kilitleriyle çalışması için gerekli tüm dosyalar, lisanslarla birlikte dağıtılan CD veya USB belleklerde, \Install klasöründe bulunur. Ayrıca, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün web sitesinden (<a href="http://www.istram.net/" target="_blank">http://www.istram.net/</a>) indirme alanından da indirilebilirler (<span class="Archivo">nethasp.rar</span>). Dosyalar şunlardır:<br>
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">HaspUserSetup.exe</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">instalaSesionNetHasp.exe</span></span></span></span></li>
+        
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aşağıda, bu tür kilitlerin doğru kurulumu için izlenecek sürecin bir şeması gösterilmekte ve ardından her bir adım ayrıntılı olarak açıklanmaktadır.<br>
+      <br>
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sunucuda</span>:<br>
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ağ kilidini bağlayın.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Önce HaspUserSetup.exe ağ kilidi sürücüsünü kurun.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ardından, &nbsp;<span class="Archivo">instalaSesionNetHasp.exe</span> dosyasına çift tıklayarak <span style="font-style: italic;">SesionNetHasp</span> hizmetini kurun.</span></span></span></li>
+      </ul>
+      <ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Programı sunucuda da kurup onunla çalışmak mümkündür.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+Eğer <span style="font-weight: bold;">güvenlik duvarı</span> (firewall) varsa:<br>
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">1947 numaralı portu TCP modunda açın, ancak bu işlemi genellikle kilit sürücüsü zaten yapar.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">12345 numaralı portu TCP modunda açın<span class="Archivo"></span>.</span></span></span></li>
+      </ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+<span style="font-weight: bold;">Ağda</span>:<br></span></span></span><br>
+<ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">HaspUserSetup.exe ağ kilidi sürücüsünü kurun</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">.<br>
+          </span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">'ü, kurulum programı (<span class="Archivo">IstramSE.exe veya Istram64.exe</span>) aracılığıyla programı kullanacak her bilgisayara kurun.</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span><table style="width: 692px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""><br>
+            </td>
+            <td class="Info" style="vertical-align: middle;">Aynı bilgisayara birden fazla ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> koruma NetHASP kilidi kurmak mümkün değildir.<br>
+            </span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br>
+NetHasp kilitlerinin kontrolü<br>
+      <span class="Parrafo">
+
+
+
+      </span><span style="font-weight: normal;" class="Parrafo"><br>
+Kilit sürücüsü kurulduktan ve kilit bağlandıktan sonra, sürücü tarafından sunulan bir web sitesine erişilebilir: <a href="http://localhost:1947">http://localhost:1947</a>.<br>
+Bu web sitesinde, Istram/Ispol ile çalışmak için faydalı olabilecek, bağlı kilit hakkında bilgi bulunabilir.<br>
+      <br>
+Sürücü hem kilidin bağlı olduğu bilgisayarda hem de Istram/Ispol'ü kullanacak olan bilgisayarlarda kurulu olduğu için, bu web sitesine her birinden erişilebilir ve yardımcı programlarından yararlanılabilir.<br>
+      <br>
+      <img style="width: 695px; height: 532px;" alt="" src="Imagenes/driver_hasp1.png"><br>
+      </span><br>
+      <span class="Parrafo">Sentinel Keys seçeneğinde</span> erişilebilen kilitler gösterilir. Bunlar yerel kilitler (ağ veya değil) ve uzak ağ kilitleri olabilir.<br>
+      <br>
+      <img style="width: 694px; height: 460px;" alt="" src="Imagenes/driver_hasp2.png"><br>
+      <br>
+Features seçeneğinde 2 satır görünmelidir.<br>
+      <br>
+      <img style="width: 694px; height: 311px;" alt="" src="Imagenes/driver_hasp3.png"><br>
+      <br>
+Ve Configuration seçeneğinde, hangi "sunucu" bilgisayara erişileceği veya hangi "istemci" bilgisayarlardan erişilebileceği belirtilebilir.<br>
+      <br>
+Kilidin bağlı olduğu bilgisayardan "Access from remote clients" sekmesi kullanılabilir ve bu ağ kilidiyle çalışabilecek IP listesi belirtilebilir. "Access Restrictions" listesinde, bu kilide erişilebilecek IP adresleri (her satıra bir tane) belirtilebilir. Varsayılan seçenek herkese izin vermektir. "Allow access from remote clients" seçeneği işaretlenmezse, sadece kilidin bağlı olduğu bilgisayardan erişilebilir. Değişiklikler "Submit" düğmesiyle kabul edilir. Gri renkte görünen ve değişikliklerin etkili olmasının birkaç dakika sürebileceğini belirten mesaja dikkat etmek önemlidir. <br>
+      <br>
+      <img style="width: 694px; height: 468px;" alt="" src="Imagenes/driver_hasp4.png"><br>
+      <br>
+Istram'ı kullanan diğer bilgisayarlardan, "Access to remote license managers" sekmesi kullanılabilir ve Istram'ın lisans almak için bağlanacağı, ağ kilidine sahip olan "sunucu"nun IP adresi belirtilebilir. Ayrıca, yerel bir kilit kullanmak için hiçbir ağ kilidine erişilmemesi de belirtilebilir.<br>
+      <br>
+      <img style="width: 694px; height: 468px;" alt="" src="Imagenes/driver_hasp5.png"><br>
+      <br>
+Belirli bir sunucuya erişmek için "Broadcast" seçeneğinin işareti kaldırılmalı ve "Specify search parameters" bölümünde IP adresi belirtilmelidir. </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Değişiklikler "Submit" düğmesiyle kabul edilir. Gri renkte görünen ve değişikliklerin etkili olmasının birkaç dakika sürebileceğini belirten mesaja dikkat etmek önemlidir.<br>
+      <br>
+      <img style="width: 694px; height: 468px;" alt="" src="Imagenes/driver_hasp6.png"><br>
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="consideraciones_nethasp">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ÜN NETHASP KİLİTLERİYLE ÇALIŞMASI VE KORUNMASI HAKKINDA DİKKAT EDİLMESİ GEREKENLER</a></span></span></span><br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir NetHASP kilidi, 1 ila 50 ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> lisansına hizmet edebilir. Eşzamanlı oturum sayısı, sözleşmeli lisans sayısına ve bakımı ödenen sürümlerine bağlı olacaktır.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo">Ağ hizmeti herhangi bir nedenle kesilirse veya sunucu kullanılamaz hale gelirse veya <span style="font-style: italic;">HLM</span>'nin (HASP Lisans Yöneticisi) çalışması kesilirse, bireysel kullanım için bir kilidiniz (tek kullanıcılı) olmadıkça ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> çalıştırılamaz.;</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ağ yükü, <span style="font-style: italic;">NetHASP</span> kilidinde saklanan bilgilere erişim hızını etkiler.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-style: italic;">NetHASP</span> ve <span style="font-style: italic;">HLM</span> kilitleri, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> ile yalnızca TCP-IP ağ protokolüyle çalışır.</span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Bir <span style="font-style: italic;">NetHASP</span>'nin bulunduğu bir ağa ait bir PC'de tek kullanıcılı bir kilit varsa, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, her iki kilit de o PC'de olsa bile yerel kilit ile çalıştırılacaktır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, kullanıcıya (ekranın üst kısmında) devam eden yürütmenin işgal ettiği oturum numarasını bildirir.</span></li>
+      </ul>
+      <br>
+      <a name="instal_sesion_nethasp">PROFESYONEL LİSANS YÖNETİM HİZMETİNİN KURULUMU: SesionNetHasp</a><br>
+      <br>
+      </span></span></span><img src="Imagenes/instala_sesion_nethasp.png" style="width: 60px; height: 56px; margin-left: 7px;" alt="" align="right"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Bu hizmetin kurulumu, ağ kilidinin bağlı olduğu bilgisayarda &nbsp;<span class="Archivo">instalaSesionNetHasp.exe</span> kurulum programı çalıştırılarak yapılır. Ardından, bu hizmet ile istemci bilgisayarlarda çalıştırılan ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> arasındaki iletişim ve oturum izleyicisi aracılığıyla yönetimi için iki port açılmalıdır. Bu hizmetin kurulumu, kurulumu yapan kullanıcının <span style="font-weight: bold;">yönetici izinlerine</span> sahip olmasını gerektirir.<br>
+      <br>
+Bu programın kurulumu aşağıdaki adımları izler:<br>
+      <br>
+      </span></span></span>
+      <table style="width: 692px; height: 96px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_sesion_nethasp_1.png" style="width: 212px; height: 116px;" alt=""><br>
+            </div>
+            <br>
+            <div class="Info" style="text-align: justify;">Windows Vista/7/8'de, programı çalıştırmak için izin isteyerek başlar, bu nedenle [İzin Ver] seçeneği seçilecektir. Ardından, kurulum programının çalışacağı dili sorar. Seçildikten sonra [OK] tuşuna basılır.<br>
+            </div>
+            <br>
+            </td>
+            <td style="width: 4px; vertical-align: top;"><br>
+            </td>
+            <td style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_sesion_nethasp_2.png" style="width: 307px; height: 239px;" alt=""><br>
+            </div>
+            <br>
+            <div class="Info" style="text-align: justify;">Daha sonra, kurulacak uygulamayı sunan iki pencere belirir. Bu pencerelerde <span style="font-weight: bold;">[İleri &gt; ]</span>'ye basılacaktır.<br>
+            </div>
+            <br>
+            </td>
+          </tr>
+          <tr>
+            <td class="Info" style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_sesion_nethasp_3.png" style="width: 307px; height: 239px;" alt=""><br>
+            </div>
+            <br>
+            <div style="text-align: justify;">Bu pencere yasal hususları gösterir. Okunduktan sonra <span style="font-weight: bold;">[İleri &gt; ]</span>'ye basılacaktır.<br>
+            </div>
+            <br>
+            </td>
+            <td style="width: 4px; vertical-align: top;"><br>
+            </td>
+            <td style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_sesion_nethasp_4.png" style="width: 307px; height: 239px;" alt=""><br>
+            </div>
+            <br>
+            <div class="Info" style="text-align: justify;">Kurulum programı, hizmetin destek dosyalarının kopyalanacağı bir klasör ister. Klasör seçildikten veya varsayılan olarak önerilen klasör kabul edildikten sonra, <span style="font-weight: bold;">[İleri &gt;]</span>'ye basılır.<br>
+            <br>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_sesion_nethasp_5.png" style="width: 307px; height: 239px;" alt=""><br>
+            </div>
+            <br>
+            <div class="Info" style="text-align: justify;">Ardından hizmetin çalışma dili seçilir ve <span style="font-weight: bold;">[İleri &gt;]</span>'ye basılır.<br>
+            </div>
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/abrir_puerto.png" style="width: 282px; height: 214px;" alt=""></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+            </td>
+            <td style="width: 4px; vertical-align: top;"><br>
+            </td>
+            <td style="width: 330px; vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/instala_sesion_nethasp_6.png" style="width: 307px; height: 239px;" alt=""><br>
+            </div>
+            <br>
+            <div class="Info" style="text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Son olarak, sistemi yeniden başlatmak isteyip istemediğiniz sorulur. Çoğu durumda yeniden başlatmaya gerek yoktur, hizmet doğru bir şekilde başlar ve hemen kullanılabilir. Ancak bazı bilgisayarlarda durum böyle olmayabilir. Bu durumda, bilgisayar yeniden başlatıldığında bu hizmet çalışır durumda olacaktır. Eğer bu bilgisayar, diğer programların ve hizmetlerin bağlı olduğu bir sunucu ise, uygun olmayan bir zamanda yeniden başlatmak tehlikeli olabilir, bu nedenle bu kurulumun, bilgisayarı yeniden başlatmanın hiçbir kullanıcıya veya uygulamaya zarar vermeyeceğinden emin olunduğunda yapılması tavsiye edilir.<br>
+            <br>
+Bilgisayar yeniden başlatılmazsa, <span style="font-weight: bold;">[Bitir]</span> düğmesine basılan bir pencere gösterilir.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+            </div>
+            <br>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 330px; vertical-align: top;"><br>
+</td>
+            <td style="width: 4px; vertical-align: top;"><br>
+            </td>
+            <td class="Info" style="width: 330px; vertical-align: top;"><br>
+</td>
+          </tr>
+        </tbody>
+      </table>
+      </span></span><span class="Parrafo"><br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><a name="actualizacion">Programın Güncellenmesi</a></span><br>
+      <span class="Parrafo"><br>
+Programı sık sık güncellemeniz tavsiye edilir, çünkü bu, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün sürekli geliştirme politikasından yararlanmanın en iyi yoludur. Güncelleme süreci çok basit olsa da, şunları dikkate almakta fayda var:<br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sizin kurulu olanınızdan daha yüksek bir program sürümüyle yapılan projeler, mantıksal olarak farklı dosyalara daha fazla (veya farklı) veri yazar. Eski sürümlerin çalışmaya devam etmesi için tüm yeni işlevler izlense de, bazen anormal bir veri yüklemesi gerçekleşebilir. En iyisi her zaman güncel olmaktır.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> tarafından varsayılan olarak kurulan temel <a href="/EDM_librerias.html">kütüphane</a> sürekli büyümektedir, ancak en mantıklısı, çok daha spesifik (proje düzeyinde veya şirket düzeyinde) kendi kütüphanenize sahip olmaktır. Mevcut <a href="/EDM_librerias.html">kütüphanenin</a> dizininde (varsayılan olarak &nbsp;<span class="Archivo">\ispol\lib</span>) iyileştirmeler yapmayın, program tarafından her zaman saygı duyulacak bir kullanıcı konumu (<span class="Archivo">\ispol\libuser</span> örneğin) kullanın. Son çare olarak, programın <a href="/EDM_librerias.html">kütüphanenin</a> önceden bir yedek kopyasını almasını her zaman belirtebilirsiniz.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span><span class="Parrafo"> <span class="Parrafo">
+      <table style="width: 692px; height: 27px; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt=""><br>
+            </td>
+            <td class="Info" style="text-align: justify; vertical-align: middle;">Özellikle grup halinde çalışıyorsanız veya diğer şirketlerden ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> formatında veri alıyorsanız, sürüm sorunları olabileceğini unutmayın. Daha yüksek bir sürümle oluşturulmuş veriler size teslim edilirse, bunları yüklemeye çalışırken bir sorun ortaya çıkabilir.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+Programı güncellemek için iki alternatif yol vardır: <a href="/instalacion.html#actual_desde_programa">doğrudan</a> programın kendisi aracılığıyla veya programın kurulum dosyasını <a href="/instalacion.html#actual_desde_web">web sitemizden</a> indirerek.<br>
+      <br>
+      <br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="font-style: italic; font-weight: bold;"><a name="actual_desde_programa">Doğrudan Programın Kendisinden Güncelleme</a></span><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+Bu, tavsiye edilen seçenektir, ancak kullanıcının bilgisayar üzerindeki haklarına bağlı olarak bazı durumlarda çalışmayabilir, bu nedenle güncellemenin <a href="/instalacion.html#actual_desde_web">web üzerinden</a> yapılması gerekebilir. İzlenecek adımlar şunlardır:<br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ol>
+        <li><img src="Imagenes/actual_desde_programa_1.png" style="width: 198px; height: 99px; margin-left: 7px;" alt="" align="right">Programın ana menüsünde <span style="font-weight: bold;">Yardım</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">Güncellemeleri Kontrol Et</span> seçeneğini seçin.</span></span></span></span></span></span></li>
+      </ol>
+      <ol start="2">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">O zaman program güncelleme sunucusuna bağlanmaya çalışırken bir ilerleme çubuğu gösterilir. Eğer program bağlanamazsa, bir hata mesajı gösterilir. Bu genellikle kullanıcının gerekli erişim izinlerine sahip olmamasından kaynaklanır (program güncellenmek için bir FTP sunucusu kullanır).</span></span></span></span></span></span></li>
+      </ol>
+      <ol start="3">
+        <li>Ardından, bir iletişim kutusu mevcut sürüm hakkında bilgi ve eklenen en son yeniliklerin kısa bir açıklamasını gösterir. <span style="font-weight: bold;">[Güncelle]</span> butonu güncelleme sürecini başlatır.</li>
+      </ol>
+      <div style="text-align: center; margin-left: 40px;"><img src="Imagenes/actual_desde_programa_2.png" style="width: 462px; height: 244px;" alt=""><br>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ol start="4">
+        <li><img src="Imagenes/actual_desde_programa_3.png" style="width: 279px; height: 48px; margin-left: 7px;" alt="" align="right">Son olarak, programın en son sürümünün indirilmesi ve kurulmasına geçilir. Bir ilerleme çubuğu indirme süreci hakkında bilgi gösterir ve ardından, bir mesaj programın kurulum için kapanacağını bildirir ve kullanıcıya projesindeki değişiklikleri kaydetme fırsatı verir.</li>
+      </ol>
+      <div style="margin-left: 40px;">Ayrıca kullanıcıya, bakım sözleşmesi aktif değilse programı kurmaması gerektiği, çünkü o zaman programın çalışmayacağı bildirilir. Her durumda, indirilen sürüm, kurulum klasörünün &nbsp;<span class="Archivo">\backup</span> alt klasörüne kaydedilmiştir, bu nedenle kullanıcı yeniden indirmeye gerek kalmadan ona başvurabilir.<br>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+      <br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="font-style: italic; font-weight: bold;"><a name="actual_desde_web">Web Üzerinden Güncelleme</a></span><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+Bu, tavsiye edilen seçenektir, ancak kullanıcının bilgisayar üzerindeki haklarına bağlı olarak bazı durumlarda çalışmayabilir, bu nedenle güncellemenin <a href="/instalacion.html#actual_desde_programa">programın kendisinden</a> yapılması gerekebilir.<br>
+      <br>
+Güncelleme çok basittir, sadece web sitemizin indirmeler ve kaynaklar alanından elde edilen kurulum dosyasını (<span class="Archivo">istramSE.exe</span>) çalıştırmanız yeterlidir; bu, eski dosyaları yeni sürümlerle yeniden yazacaktır. İzlenecek adımlar şunlardır:<br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">http://www.istram.net/</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><a href="http://www.istram.net/" target="_blank"></a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> sayfasına erişin:</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center; margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/actual_desde_web_1.png" style="width: 512px; height: 384px;" alt=""></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span>
+      <ol start="2">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ürün (</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">) seçilir ve <span style="font-weight: bold;">Destek, İndirmeler ve Eğitim</span> alanına erişilir:<br>
+          </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      </span></span></span></span></span></span>
+      <div style="text-align: center; margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/actual_desde_web_2.png" style="width: 510px; height: 383px;" alt=""><br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İndirme alanı şunları sunar:</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yenilikler sayfası, programlanan tüm işlevlerin ve açıklamalarının anlatıldığı.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İndirmeler, buradan tüm programların, sürücülerin ve her uygulamanın yardımcı programlarının en son sürümlerini indirmek mümkündür.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yeni kullanıcıların öğrenmesini ve eğitilmesini kolaylaştırmak için tasarlanmış eğitimler ve materyaller.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <ol start="3">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sayfadaki dosyaları indirebilmek için kullanıcı adı ve şifre girilmelidir.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"> Lisansı satın aldığınızda, web sitemizin <span style="font-weight: bold;">Müşteri Alanı</span>'na girmeniz ve bilgilerinizi mümkün olduğunca öz bir şekilde yazmanız ve son olarak en önemlisi, lisans numaranızı ve kayıt talebinde bulunduğunuz ürünü (ISPOL<sup>®</sup>) belirtmeniz gerekir. Bu e-postayı gönderdiğinizde size müşteri hakları verilir ve daha sonra değiştirebileceğiniz bir başlangıç erişim şifresi içeren bir yanıt gönderilir.</span></span></span></span></span></span></span></span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/actual_desde_web_3.png" style="width: 511px; height: 384px;" alt=""></span></span></span><br>
+      </span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span>
+      <ol start="4">
+        <li>Son olarak, sadece kurulum dosyasını (<span class="Archivo">istramSE.exe</span>) indirip indirdikten sonra çalıştırmak kalır:<br>
+        </li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/actual_desde_web_4.png" style="width: 512px; height: 384px;" alt=""></span></span></span><br>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+      <br>
+      </span></span></span><span class="Titulo_2"><a name="desinstalacion">Programın Kaldırılması</a></span><br>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br>
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> uygulamasını ve tüm bileşenlerini, <span style="font-weight: bold;">Başlat</span> &#8594; <span style="font-weight: bold;">Programlar</span> &#8594; <span style="font-weight: bold;">Istram</span> &#8594; <span style="font-weight: bold;">Kaldır</span> menüsünden veya <span style="font-style: italic;">Program Ekle veya Kaldır</span> (Windows XP) veya <span style="font-style: italic;">Programlar ve Özellikler</span> (Windows Vista, 7 ve 8) denetim masasından kaldırabilirsiniz.<br>
+      <br>
+Uygulama, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> tarafından kullanılan yürütülebilir dosyaları ve kütüphaneleri ile uygulamanın kendi klasörlerini (tüm içeriğiyle birlikte) silecektir. Bu nedenle, önemli veya özelleştirilmiş dosyaları bu klasörlere kaydetmeyin, çünkü kaldırma işlemi tarafından silineceklerdir.<br>
+      <br>
+Güvenlik nedeniyle, işlem sırasında programın kurulduğu klasörde bulunan diğer tüm klasörler ve dosyalar korunur. Tam bir kaldırma için, bu nedenle, söz konusu klasörü manuel olarak silmek gerekecektir.<br>
+      <br>
+Güvenlik donanım kilidinin sürücüsünün kaldırılmasına gelince, bu, <span style="font-style: italic;">Program Ekle veya Kaldır</span> (Windows XP ve öncesi) veya <programlar ve="" özellikler<="" i=""> (Windows Vista, 7 ve 8) denetim masasından bağımsız olarak yapılacaktır; burada, seçilip kaldırılabilmesi için programlar listesinde tanımlayıcı bir adla görünecektir.<br>
+      <br>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

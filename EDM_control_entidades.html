@@ -1,0 +1,1177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Grafik Nesne Kontrolü</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="Ana Sayfa" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GRAFİK NESNE KONTROLÜ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#tipos">Tip Kontrolü</a><br />
+      </div>
+<div style="margin-left: 80px;"><a href="#control_lineas">Çizgi Kontrolü</a><br /><a href="#control_simbolos">Sembol Kontrolü</a><br /><a href="#control_textos">Metin Kontrolü</a><br /><a href="#control_celulas">Grafik Hücre (Cell) Kontrolü</a><br /><a href="#tabla_tipos">Tipler Tablosu</a><br /></div>
+      <div style="margin-left: 40px;"><a href="#control_grupos">Grup Kontrolü</a><br />
+      <a href="#control_modelos">Model Kontrolü</a><br />
+      </div>
+<div style="margin-left: 80px;"><a href="#tabla_modelos">Modeller Tablosu</a><br /></div>
+      <div style="margin-left: 40px;"><a href="#control_de_procedencias">Kaynak Kontrolü</a><br />
+<a href="#control_superficies">Yüzey Kontrolü</a><br />
+      <div style="margin-left: 40px;"><a href="#modo_extrac_perf_transv">Enkesit Çıkarma Modları</a><br />
+      <a href="#utiles">Yardımcı Araçlar</a><br />
+<a href="#control_sup_cartograficas">Sayısal Harita Yüzeyleri Kontrolü</a><br />
+      <a href="#control_ttps">TTP'lerin Kontrolü</a><br />
+      </div>
+
+      </div>
+      <br />
+Kontrol açılır menüsünden <span style="font-weight: bold;">Tümünü Aktif Et</span> seçeneği kullanılabilir.
+Bu komut ile tüm çizgi, sembol, metin ve grafik hücre tipleri aktif edilir. Ayrıca tüm katman grupları, tüm modeller ve tüm <a href="#control_de_procedencias">kaynaklar</a> da aktif hale getirilir.<br />
+<span style="font-weight: bold;">Tümünü Pasif Et</span> fonksiyonu ile tüm çizgi, sembol, metin ve grafik hücre tipleri pasif edilir. Ayrıca tüm katman grupları da pasif hale getirilir.<br />
+      <br />
+<span style="font-weight: bold;">A*</span> komutu ile daha önce belirtilen tüm nesne tiplerini aktif edebilir ve <span style="font-weight: bold;">D*</span> komutu ile pasif hale getirebiliriz. Bu komutlar, daha önce açıklanan seçeneklerle aynı işlevi görür.<br />
+      <br />
+AL, DL, AS, DS, AR, DR, AC, DC, AM ve DM komutları "*" karakterini joker olarak kabul eder.<br />
+Örnekler:<br />
+      <ul>
+        <li>AL3* -&gt; 30'dan 39'a kadar olan çizgi tiplerini aktif eder.</li>
+        <li>DS0* -&gt; 0'dan 9'a kadar olan sembol tiplerini pasif eder.</li>
+        <li>DC8**-&gt; 800'den 899'a kadar olan grafik hücre tiplerini pasif eder.</li>
+        <li>AM1*2-&gt; 102, 112, 122, 132, 142, 152, 162, 172, 182 ve 192 numaralı modelleri aktif eder.</li>
+      </ul>
+Bir komut yazarken, yukarı ve aşağı ok tuşları ile daha önce kullanılmış komutlar arasında gezinebiliriz.<br />
+
+<br /><span class="Titulo_2"><a name="tipos">Tip Kontrolü</a></span><br /><br />
+Farklı grafik nesne tiplerinin aktifleştirilmesi/pasifleştirilmesi, mevcut tipin belirlenmesi, bilgi alınması vb. ile ilgili tüm işlemler bu başlık altında toplanır.<br /><br /><span style="font-weight: bold;">Kontrol</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Tip Kontrolü</span> menüsünden tip yönetimine erişilir ve iletişim kutusu açıldıktan sonra farklı nesne sınıfları arasında geçiş yapmak mümkündür. Bu iletişim kutusuna standart araç çubuğundaki&nbsp;<img src="Imagenes/icono_control_tipos.png" style="width: 15px; height: 15px;" alt="Tip Kontrolü İkonu" /> ikonu ile de erişilebilir.<br /><br /><br />
+
+<span style="font-weight: bold; font-style: italic;"><a name="control_lineas">Çizgi Kontrolü</a></span><br /><br />
+Bu sekme aracılığıyla, aşağıdaki iletişim kutusu üzerinden ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'daki çizgi tiplerinin yönetimiyle ilgili tüm seçeneklere erişilir:<br /><br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_lineas.png" style="width: 481px; height: 342px;" alt="Çizgi Kontrolü Diyalog Kutusu" /><br />
+      </div>
+<br />Varsayılan olarak, sadece kullanımda olan çizgi tipleri gösterilir (<span style="font-weight: bold; font-style: italic;">Kullanılanları Göster</span> seçeneği). Mevcut tüm çizgi tiplerini görmek isteniyorsa, <span style="font-weight: bold; font-style: italic;">Tümünü Göster</span> seçeneği işaretlenmelidir. Ayrıca, çizgi paletinde tanımlanmış ve kütüphanedeki çizgi tiplerini belirli kriterlere göre sınıflandırmayı sağlayan listelere göre çizgileri <span style="font-weight: bold;">filtreleme</span> imkanı da sunulur (idari sınırlar, rölyef ve altimetri, hidrografya ve kıyılar, işaretlemeler, binalar ve yapılar vb.).<br /><br />Tipleri numaralarına, isimlerine, kalınlıklarına vb. göre sıralamak mümkündür. Bunun için sütun başlığına farenin sağ tuşuyla tıklamak yeterlidir. <img src="Imagenes/boton_ordenar.png" style="width: 15px; height: 15px;" alt="Sırala" /> butonuna basılarak herhangi bir zamanda başlangıçtaki sıralamaya geri dönülebilir.<br /><br /><span style="font-weight: bold;">Mevcut tip</span> (kullanıcının oluşturacağı herhangi bir çizginin çizileceği tip) gölgeli olarak, <span style="font-weight: bold;">seçili tip</span> ise siyah çerçeve ile vurgulanmış olarak görünür.<br /><br />Her tip için, iletişim kutusu aşağıdaki bilgileri içeren sekiz sütun gösterir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tip</span> (bilgilendirici, değiştirilemez ve stile karşılık gelen değer).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tip Adı</span> (stilin adına karşılık gelen ve çizgi tanımlama menüsünden değiştirilebilen bilgilendirici değer).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Aktivasyon Durumu</span>: Kutucuk işaretliyse, tipin aktif olduğu anlamına gelir.<br />
+</li>
+      </ul>
+      <div style="margin-left: 40px;">Tüm çizgi tiplerinin aktivasyon durumu üzerinde aşağıdaki seçeneklerle aynı anda işlem yapılabilir:<br />
+      <br />
+      <table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Aktif Et]</td>
+            <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm çizgi tiplerini aktif eder.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Pasif Et]</td>
+            <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm çizgi tiplerini pasif eder.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 119px; font-weight: bold;">[Aktivasyonu Ters Çevir]</td>
+            <td style="vertical-align: top; width: 512px; text-align: justify;">Her çizgi tipinin aktivasyon durumunu değiştirir; pasif olanları aktif, aktif olanları pasif yapar.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Bir dizi çizgi tipini aktif etmek veya pasif etmek için, fare ile bir tip aralığı seçilir ve içlerinden birinin durumu değiştirilir; tüm seçili tipler bu sonuncusunun durumuna geçer.<br />
+      <br />
+Ayrıca, <span style="font-style: italic;">AL#</span>,&nbsp; <span style="font-style: italic;">DL#</span> ve <span style="font-style: italic;">TL#</span> komutları ile klavyeden de çizgi tipleri aktif edilebilir, pasif edilebilir ve mevcut tip olarak seçilebilir (# tip numarasını temsil eder). <span style="font-style: italic;">ALT</span> ve <span style="font-style: italic;">DLT</span> komutları tüm çizgileri aktif eder ve pasif eder.<br />Başka bir yöntem ise, bir çizgi seçildikten sonra farenin sağ tuşuna tıklayıp açılan menüden <span style="font-style: italic;">Tipi Pasif Et</span> seçeneğini kullanmaktır.<br />
+      </div>
+      <ul>
+        <li><img src="Imagenes/represent_tipo_linea.png" style="width: 81px; height: 29px; margin-left: 7px;" alt="Çizgi tipi gösterimi" align="right" /><span style="font-weight: bold;">Gösterim</span>: Çizgi tipinin gösterimi. Üst kısmın <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Detaylı Görünüm</span></a> modundaki, alt kısmın ise <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Basit Görünüm</span></a> modundaki gösterime karşılık geldiği hatırlatılır.</li>
+      </ul>
+      <ul>
+        
+        <li><span style="font-weight: bold;">Kalınlık</span> (<span style="font-style: italic;">Ekran</span> modu için). Kalınlıkların görüntülenebilmesi için <span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Görüntüleme</span> menüsündeki <span style="font-style: italic; font-weight: bold;">Kalınlıklar</span> seçeneğinin aktif olması gerektiği hatırlatılır.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Ekran</span> modu için).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kalınlık</span> (<span style="font-style: italic;">Pafta</span> modu için). Kalınlıkların görüntülenebilmesi için <span style="font-style: italic; font-weight: bold;">Kalınlıklar</span> seçeneğinin aktif olması gerektiği hatırlatılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Pafta</span> modu için - <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Yazdırma</span> modu</a> veya <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Kalem</span> modu</a> olarak da adlandırılır).</li>
+      </ul>
+Çizgi, sembol, metin ve grafik hücre kontrolüne ilişkin tüm yapılandırma, <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="Kaydet" /> butonuna basılarak &nbsp;<span class="Archivo">.eac</span> uzantılı bir dosyaya kaydedilebilir. Bu yapılandırma <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="Aç" /> butonu ile geri yüklenebilir.<br /><br />
+İletişim kutusunun alt kısmında toplam, gösterilen ve aktif olan çizgi tipi sayısı hakkında bilgi verilir. Burada ayrıca çizgi tiplerini yönetmek için bir dizi buton bulunur:<br /><br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sil]<br />
+            </td>
+            <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki tüm çizgileri siler.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Değiştir]<br />
+            </td>
+            <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki çizgileri mevcut çizgi tipine dönüştürür.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sayım]<br />
+            </td>
+            <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki çizgi sayısını belirten bir mesaj gösterir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;"><a name="control_simbolos">Sembol Kontrolü</a></span><br /><br />
+Bu sekme, aşağıdaki iletişim kutusu aracılığıyla ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'daki sembol tiplerinin yönetimiyle ilgili tüm seçeneklere erişim sağlar:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_simbolos.png" style="width: 481px; height: 342px;" alt="Sembol Kontrolü Diyalog Kutusu" /><br />
+      </div>
+      <br />
+Varsayılan olarak, sadece kullanımda olan sembol tipleri gösterilir (<span style="font-weight: bold; font-style: italic;">Kullanılanları Göster</span> seçeneği). Mevcut tüm sembol tiplerini görmek isteniyorsa, <span style="font-weight: bold; font-style: italic;">Tümünü Göster</span> seçeneği işaretlenmelidir. Ayrıca, sembol paletinde tanımlanmış ve kütüphanedeki sembol tiplerini belirli kriterlere göre sınıflandırmayı sağlayan listelere göre sembolleri <span style="font-weight: bold;">filtreleme</span> imkanı da sunulur.<br />
+      <br />
+Tipleri numaralarına, isimlerine, ölçeklerine vb. göre sıralamak mümkündür. Bunun için sütun başlığına farenin sağ tuşuyla tıklamak yeterlidir. <img src="Imagenes/boton_ordenar.png" style="width: 15px; height: 15px;" alt="Sırala" /> butonuna basılarak herhangi bir zamanda başlangıçtaki sıralamaya geri dönülebilir.<br />
+      <br />
+<span style="font-weight: bold;">Mevcut tip</span> (kullanıcının oluşturacağı herhangi bir sembolün çizileceği tip) gölgeli olarak, <span style="font-weight: bold;">seçili tip</span> ise siyah çerçeve ile vurgulanmış olarak görünür. <br />
+      <br />
+Her tip için, iletişim kutusu aşağıdaki bilgileri içeren sekiz sütun gösterir:<br />
+      <ul>
+<li><span style="font-weight: bold;">Tip</span> (bilgilendirici, değiştirilemez ve stile karşılık gelen değer).</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Tip Adı</span> (stilin adına karşılık gelen ve sembol tanımlama menüsünden değiştirilebilen bilgilendirici değer).</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Aktivasyon Durumu</span>: Kutucuk işaretliyse, tipin aktif olduğu anlamına gelir.<br />
+</li>
+      </ul>
+
+      <div style="margin-left: 40px;">Tüm sembol tiplerinin aktivasyon durumu üzerinde aşağıdaki seçeneklerle aynı anda işlem yapılabilir:<br />
+<br />
+<table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Aktif Et]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm sembol tiplerini aktif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Pasif Et]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm sembol tiplerini pasif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Aktivasyonu Ters Çevir]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Her sembol tipinin aktivasyon durumunu değiştirir; pasif olanları aktif, aktif olanları pasif yapar.</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+Bir dizi sembol tipini aktif etmek veya pasif etmek için, fare ile bir tip aralığı seçilir ve içlerinden birinin durumu değiştirilir; tüm seçili tipler bu sonuncusunun durumuna geçer.<br />
+<br />
+Ayrıca, <span style="font-style: italic;">AS#</span>,&nbsp; <span style="font-style: italic;">DS#</span> ve <span style="font-style: italic;">TS#</span> komutları ile klavyeden de sembol tipleri aktif edilebilir, pasif edilebilir ve mevcut tip olarak seçilebilir (# tip numarasını temsil eder). <span style="font-style: italic;">AST</span> ve <span style="font-style: italic;">DST</span> komutları tüm sembolleri aktif eder ve pasif eder.</div>
+      <ul>
+        <li><span style="font-weight: bold;">Gösterim</span>: Sembol tipinin gösterimi.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Ekran</span> modu için).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Pafta</span> modu için).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ölçek Faktörü</span>: Sembol tipinin ölçek faktörü.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Billboard</span>: VIRTUAL 3D ile ilgilidir ve kütüphanedeki&nbsp;<span class="Archivo">ispol3dbb.cfg</span> dosyasında o sembolün adına referans verir.</li>
+      </ul>
+Tüm yapılandırma <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="Kaydet" /> butonu ile kaydedilebilir ve <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="Aç" /> butonu ile geri yüklenebilir.<br />
+      <br />
+İletişim kutusunun alt kısmında toplam, gösterilen ve aktif olan sembol tipi sayısı hakkında bilgi verilir. Burada ayrıca sembol tiplerini yönetmek için bir dizi buton bulunur:<br />
+      <br />
+
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sil]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki tüm sembolleri siler.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Değiştir]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki sembolleri mevcut sembol tipine dönüştürür.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sayım]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki sembol sayısını belirten bir mesaj gösterir.<br />
+      </td>
+    </tr>
+  </tbody>
+      </table>
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="control_textos">Metin Kontrolü</a></span><br /><br />
+Bu sekmeden, aşağıdaki iletişim kutusu aracılığıyla ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'daki metin tiplerinin yönetimiyle ilgili tüm seçeneklere erişilir:<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_textos.png" style="width: 481px; height: 342px;" alt="Metin Kontrolü Diyalog Kutusu" /><br />
+      </div>
+
+      <br />
+
+Varsayılan olarak, sadece kullanımda olan metin tipleri gösterilir (<span style="font-weight: bold; font-style: italic;">Kullanılanları Göster</span> seçeneği). Mevcut tüm metin tiplerini görmek isteniyorsa, <span style="font-weight: bold; font-style: italic;">Tümünü Göster</span> seçeneği işaretlenmelidir. Ayrıca, metin paletinde tanımlanmış ve kütüphanedeki metin tiplerini belirli kriterlere göre sınıflandırmayı sağlayan listelere göre metinleri <span style="font-weight: bold;">filtreleme</span> imkanı da sunulur.<br />
+
+      <br />
+
+Tipleri numaralarına, isimlerine, yazı tiplerine vb. göre sıralamak mümkündür. Bunun için sütun başlığına farenin sağ tuşuyla tıklamak yeterlidir. <img src="Imagenes/boton_ordenar.png" style="width: 15px; height: 15px;" alt="Sırala" /> butonuna basılarak herhangi bir zamanda başlangıçtaki sıralamaya geri dönülebilir.<br />
+
+      <br />
+
+<span style="font-weight: bold;">Mevcut tip</span> (kullanıcının oluşturacağı herhangi bir metnin çizileceği tip) gölgeli olarak, <span style="font-weight: bold;">seçili tip</span> ise siyah çerçeve ile vurgulanmış olarak görünür. <br />
+
+      <br />
+
+Her tip için, iletişim kutusu on sütunla aşağıdaki bilgileri gösterir:<br />
+
+      <ul>
+<li><span style="font-weight: bold;">Tip</span> (bilgilendirici, değiştirilemez ve stile karşılık gelen değer).</li>
+      </ul>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Tip Adı</span> (stilin adına karşılık gelen ve metin tanımlama menüsünden değiştirilebilen bilgilendirici değer).</li>
+      </ul>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Aktivasyon Durumu</span>: Kutucuk işaretliyse, tipin aktif olduğu anlamına gelir.</li>
+      </ul>
+
+
+      <div style="margin-left: 40px;">Tüm metin tiplerinin aktivasyon durumu üzerinde aşağıdaki seçeneklerle aynı anda işlem yapılabilir:<br />
+<br />
+<table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Aktif Et]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm metin tiplerini aktif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Pasif Et]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm metin tiplerini pasif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Aktivasyonu Ters Çevir]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Her metin tipinin aktivasyon durumunu değiştirir; pasif olanları aktif, aktif olanları pasif yapar.</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+Bir dizi metin tipini aktif etmek veya pasif etmek için, fare ile bir tip aralığı seçilir ve içlerinden birinin durumu değiştirilir; tüm seçili tipler bu sonuncusunun durumuna geçer.<br />
+<br />
+Ayrıca, <span style="font-style: italic;">AR#</span>,&nbsp; <span style="font-style: italic;">DR#</span> ve <span style="font-style: italic;">TR#</span> komutları ile klavyeden de metin tipleri aktif edilebilir, pasif edilebilir ve mevcut tip olarak seçilebilir (# tip numarasını temsil eder). <span style="font-style: italic;">ART</span> ve <span style="font-style: italic;">DRT</span> komutları tüm metinleri aktif eder ve pasif eder.</div>
+
+      <ul>
+<li><span style="font-weight: bold;">Gösterim</span>: Metin tipinin gösterimi.</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Ekran</span> modu için).</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Pafta</span> modu için).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Dolgu Rengi İndeksi</span> (<span style="font-style: italic;">Ekran</span> modu için).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Dolgu Rengi İndeksi</span> (<span style="font-style: italic;">Pafta</span> modu için).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Arka Plan Rengi İndeksi</span> (<span style="font-style: italic;">Ekran</span> modu için).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Arka Plan Rengi İndeksi</span> (<span style="font-style: italic;">Pafta</span> modu için).</li>
+      </ul>
+
+      <p class="MsoNormal">Yukarıdaki altı renk indeksi, ilgili metin tipi tanımlama menüsünde gösterilen ilk boyut aralığına karşılık gelir ve yalnızca o menüden değiştirilebilir.</p>
+
+Tüm yapılandırma <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="Kaydet" /> butonu ile kaydedilebilir ve <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="Aç" /> butonu ile geri yüklenebilir.<br />
+
+      <br />
+
+İletişim kutusunun alt kısmında toplam, gösterilen ve aktif olan metin tipi sayısı hakkında bilgi verilir. Burada ayrıca metin tiplerini yönetmek için bir dizi buton bulunur:<br />
+
+      <br />
+
+
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sil]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki tüm metinleri siler.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Değiştir]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki metinleri mevcut metin tipine dönüştürür.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sayım]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki metin sayısını belirten bir mesaj gösterir.<br />
+      </td>
+    </tr>
+  </tbody>
+      </table>
+
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="control_celulas">Grafik Hücre (Cell) Kontrolü</a></span><br />
+      <br />
+Bu sekmeden, aşağıdaki iletişim kutusu aracılığıyla ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'daki grafik hücre tiplerinin yönetimiyle ilgili tüm seçeneklere erişilir:<br />
+
+
+      <br />
+
+
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_celulas.png" style="width: 481px; height: 342px;" alt="Grafik Hücre Kontrolü Diyalog Kutusu" /><br />
+      </div>
+
+
+      <br />
+
+
+Varsayılan olarak, sadece kullanımda olan grafik hücre tipleri gösterilir (<span style="font-weight: bold; font-style: italic;">Kullanılanları Göster</span> seçeneği). Mevcut tüm grafik hücre tiplerini görmek isteniyorsa, <span style="font-weight: bold; font-style: italic;">Tümünü Göster</span> seçeneği işaretlenmelidir. Ayrıca, grafik hücre paletinde tanımlanmış ve kütüphanedeki tipleri belirli kriterlere göre sınıflandırmayı sağlayan listelere göre grafik hücreleri <span style="font-weight: bold;">filtreleme</span> imkanı da sunulur.<br />
+
+
+      <br />
+
+
+Tipleri numaralarına, isimlerine, ölçeklerine vb. göre sıralamak mümkündür. Bunun için sütun başlığına farenin sağ tuşuyla tıklamak yeterlidir. <img src="Imagenes/boton_ordenar.png" style="width: 15px; height: 15px;" alt="Sırala" /> butonuna basılarak herhangi bir zamanda başlangıçtaki sıralamaya geri dönülebilir.<br />
+
+
+      <br />
+
+
+<span style="font-weight: bold;">Mevcut tip</span> (kullanıcının oluşturacağı herhangi bir hücrenin çizileceği tip) gölgeli olarak, <span style="font-weight: bold;">seçili tip</span> ise siyah çerçeve ile vurgulanmış olarak görünür. <br />
+
+
+      <br />
+
+
+Her tip için, iletişim kutusu sekiz sütunla aşağıdaki bilgileri gösterir:<br />
+
+
+      <ul>
+<li><span style="font-weight: bold;">Tip</span> (bilgilendirici, değiştirilemez ve stile karşılık gelen değer).</li>
+      </ul>
+
+
+
+      <ul>
+<li><span style="font-weight: bold;">Tip Adı</span> (stilin adına karşılık gelen ve hücre tanımlama menüsünden değiştirilebilen bilgilendirici değer).</li>
+      </ul>
+
+
+
+      <ul>
+<li><span style="font-weight: bold;">Aktivasyon Durumu</span>: Kutucuk işaretliyse, tipin aktif olduğu anlamına gelir.</li>
+      </ul>
+
+
+
+      <div style="margin-left: 40px;">Tüm grafik hücre tiplerinin aktivasyon durumu üzerinde aşağıdaki seçeneklerle aynı anda işlem yapılabilir:<br />
+<br />
+<table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Aktif Et]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm grafik hücre tiplerini aktif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Pasif Et]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm grafik hücre tiplerini pasif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Aktivasyonu Ters Çevir]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Her hücre tipinin aktivasyon durumunu değiştirir; pasif olanları aktif, aktif olanları pasif yapar.</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+Bir dizi hücre tipini aktif etmek veya pasif etmek için, fare ile bir tip aralığı seçilir ve içlerinden birinin durumu değiştirilir; tüm seçili tipler bu sonuncusunun durumuna geçer.<br />
+<br />
+Ayrıca, <span style="font-style: italic;">AC#</span>,&nbsp; <span style="font-style: italic;">DC#</span> ve <span style="font-style: italic;">TC#</span> komutları ile klavyeden de hücre tipleri aktif edilebilir, pasif edilebilir ve mevcut tip olarak seçilebilir (# tip numarasını temsil eder). <span style="font-style: italic;">ACT</span> ve <span style="font-style: italic;">DCT</span> komutları tüm hücreleri aktif eder ve pasif eder.</div>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Gösterim</span>: Hücre tipinin gösterimi.</li>
+      </ul>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Ekran</span> modu için).</li>
+      </ul>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Pafta</span> modu için).</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Ölçek Faktörü</span>: Hücre tipinin ölçek faktörü.<br />
+</li></ul>
+      <ul>
+<li><span style="font-weight: bold;">Billboard</span>: VIRTUAL 3D ile ilgilidir ve kütüphanedeki&nbsp;<span class="Archivo">ispol3dbb.cfg</span> dosyasında o hücrenin adına referans verir.</li>
+      </ul>
+
+Tüm yapılandırma <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="Kaydet" /> butonu ile kaydedilebilir ve <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="Aç" /> butonu ile geri yüklenebilir.<br />
+
+      <br />
+
+İletişim kutusunun alt kısmında toplam, gösterilen ve aktif olan hücre tipi sayısı hakkında bilgi verilir. Burada ayrıca sembol tiplerini yönetmek için bir dizi buton bulunur:<br />
+
+      <br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sil]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki tüm hücreleri siler.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Değiştir]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki hücreleri mevcut hücre tipine dönüştürür.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sayım]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili tiplerdeki hücre sayısını belirten bir mesaj gösterir.<br />
+      </td>
+    </tr>
+  </tbody>
+      
+      </table>
+
+
+      <br />
+
+      <br /><span style="font-weight: bold; font-style: italic;"><a name="tabla_tipos">Tipler Tablosu</a></span><br /><br /><img src="Imagenes/acceso_tabla_tipos.png" style="width: 94px; height: 21px; margin-left: 7px;" alt="Tipler Tablosu İkonu" align="right" />Bahsedilen tip kontrol yöntemlerine ek olarak, mesaj alanındaki ilgili ikona tıklandığında açılan tablodan tipleri aktif etme imkanı da vardır.&nbsp;&nbsp;&nbsp;
+&nbsp;<br /><br /><img src="Imagenes/tabla_tipos.png" style="width: 270px; height: 201px;" alt="Tipler Tablosu" align="left" hspace="5" />Bu seçenek, çizimde mevcut olan tüm tipleri gösteren bir menü açar ve bunları aktif etmeye veya pasif etmeye de olanak tanır. İlgili tabloyu görmek ve doğrudan aktif/pasif edilecek tipe tıklamak için nesne tipini seçmek yeterlidir. Ayrıca <a href="#tabla_modelos">modeller tablosuna</a> da bir erişim sunar.<br /><br />Ayrıca, sırasıyla <span style="font-weight: bold;">[Tümünü Aktif Et]</span> ve <span style="font-weight: bold;">[Tümünü Pasif Et]</span> butonları aracılığıyla tüm tip ve modelleri tek bir işlemde aktif etme veya pasif etme imkanı sunar.<br /><br /><br /><br /><br /><br /><br />
+<br /><span class="Titulo_2"><a name="control_grupos">Grup Kontrolü</a></span><br /><br />
+<span style="font-weight: bold;">Kontrol</span> &#8594; <span style="font-weight: bold;">Grup Kontrolü</span> menüsünden, aşağıdaki iletişim kutusu aracılığıyla ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'daki tip gruplarının yönetimiyle ilgili tüm seçeneklere erişilir:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_grupos.png" style="width: 543px; height: 301px;" alt="Grup Kontrolü Diyalog Kutusu" /><br />
+      </div>
+&nbsp;<br />
+Amaç, tip kümelerini tek bir işlemde aktif edip pasif edebilmektir. Her grup istenen tipleri içerebilirken, bir tip en fazla bir gruba ait olabilir.<br />
+      <br />
+Yeni bir tip grubu oluşturmak için <span style="font-weight: bold;">[Ekle]</span> butonuna basmak yeterlidir. Varsayılan olarak, ilk grup (boş olsa da) zaten mevcuttur, bu yüzden oluşturulması gerekmez. Her grubun ayrıca varsayılan olarak <span style="font-style: italic;">Grup #</span> şeklinde (# grup numarasını belirtir) atanmış açıklayıcı bir adı vardır. Grup ve dolayısıyla ona bağlı tüm tipler, <span style="font-weight: bold;">Aktif</span> kutucuğu işaretli olduğu sürece aktif kalacaktır. <span style="font-weight: bold;">[Sil]</span> butonu seçili grubu siler.<br />
+      <br />
+      <img src="Imagenes/dialogo_control_grupos_2.png" style="width: 318px; height: 198px; margin-left: 7px;" alt="Grup Düzenleme" align="right" />Belirli bir sınıftaki tipleri eklemek veya çıkarmak için, ilgili nesne sınıfının <span style="font-weight: bold;">[Değiştir]</span> butonuna basmak gerekir. O zaman iki sütunlu bir kutu açılır; solda o anda grupta bulunan o sınıftaki tipler, sağda ise çizimde mevcut olup henüz hiçbir gruba ait olmayan tipler gösterilir. Resimde gösterildiği gibi, onları bir taraftan diğerine geçirmek için <span style="font-weight: bold;">[&gt;&gt;]</span> ve <span style="font-weight: bold;">[&lt;&lt;]</span> butonlarına basmak yeterlidir. Bu kutu kapatıldıktan sonra, yeni düzenleme ile grup kontrolü kutusuna geri dönülür.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Oluşturulan tip grupları ve aktivasyon durumları, &nbsp;<span class="Archivo">.grc</span> uzantılı dosyalar aracılığıyla diske kaydedilebilir ve daha sonra yüklenebilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="control_modelos">Model Kontrolü</a></span><br /><br />
+<span style="font-weight: bold;">Kontrol</span> &#8594; <span style="font-weight: bold;">Model Kontrolü</span> menüsünden, aşağıdaki iletişim kutusu aracılığıyla ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'daki modellerin yönetimiyle ilgili tüm seçeneklere erişilir:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_modelos.png" style="width: 455px; height: 309px;" alt="Model Kontrolü Diyalog Kutusu" /><br />
+      </div>
+      <br />
+      Model ataması aşağıdaki durumlarda otomatiktir:<br />
+      <ul>
+        <li>Bir harita yüklendiğinde, bir veya birden fazla önceden atanmış modele sahip olabilir; eğer yoksa, model 0'a yüklenir.</li>
+      </ul>
+      <ul>
+        <li>GÜZERGAH ESASLI PROJELERDE (OBRA LINEAL), her eksenin çizimi aynı numaralı bir modele atanır (eksen 1 model 1'e, eksen 2 model 2'ye vb.).</li>
+      </ul>
+      <ul>
+        <li>YÜZEY MODELLEMEDE (MODELADO DE SUPERFICIES), her bir yüzeyin çizimi de aynı numaralı bir modele atanır.</li>
+      </ul>
+      <ul>
+        <li>Çeşitli modüllerin daha az önemli bazı seçeneklerinde de modeller otomatik olarak atanır.</li>
+      </ul>
+Modellerin manuel olarak atanması konusunda kullanıcının sahip olduğu olanaklar şunlardır:<br />
+      <ul>
+        <li>Bir veya birden fazla çizim dosyası yüklendiğinde, bunların belirli bir modele ve ardışık modellere gitmesi (<span style="font-weight: bold;">Dosya</span> &#8594; <span style="font-weight: bold;">Modellere göre dosya yönetimi</span> &#8594; <span style="font-weight: bold;">Dosyaları ardışık modellere aç</span> seçeneği).</li>
+      </ul>
+      <ul>
+        <li>Eğer önceki seçenek kullanıldıysa, her modelin kendi dosyasına kaydedilmesi (<span style="font-weight: bold;">Dosya</span> &#8594; <span style="font-weight: bold;">Modellere göre dosya yönetimi</span> &#8594; <span style="font-weight: bold;">Her modeli kendi dosyasına kaydet</span>).</li>
+      </ul>
+      <ul>
+        <li>Çizim kaydedilirken hiçbir modele kaydedilmemesi (<span style="font-weight: bold;">Dosya</span> &#8594; <span style="font-weight: bold;">Modellere göre dosya yönetimi</span> &#8594; <span style="font-weight: bold;">Modeller olmadan bir dosyaya kaydet</span>).</li>
+      </ul>
+      <ul>
+        <li>Nesneleri bir modelden diğerine değiştirme.</li>
+      </ul>
+      <ul>
+        <li>Bazı yardımcı programlarda, kullanıcı tarafından belirtilen modele giden veri tabloları oluşturulur (program her zaman bir tane önerse de).</li>
+      </ul>
+Varsayılan olarak, sadece kullanımda olan modeller gösterilir (<span style="font-weight: bold; font-style: italic;">Kullanılanları Göster</span> seçeneği). Mevcut tüm modelleri görmek isteniyorsa, <span style="font-weight: bold; font-style: italic;">Tümünü Göster</span> seçeneği işaretlenmelidir. <span style="font-weight: bold; font-style: italic;">İsim</span> seçeneği ile tablodaki modeller isimlerine göre filtrelenebilir. <span style="font-weight: bold;">Mevcut model</span> (oluşturulacak herhangi bir çizim nesnesinin yerleştirileceği ve bu kutudan da değiştirilebilen model) gölgeli olarak, <span style="font-weight: bold;">seçili model</span> ise siyah çerçeve ile vurgulanmış olarak görünür. Bir model aralığı seçmek isteniyorsa, <span style="font-weight: bold;">Model aralığı seç</span> alanında belirtilir ve <img src="Imagenes/boton_selec_rango.png" style="width: 15px; height: 15px;" alt="Aralık Seç" /> butonuna basılır. GÜZERGAH ESASLI PROJELER modülünde çalışılıyorsa, aralığın eksenlere karşılık gelmesi ilginç olabilir. <span style="font-weight: bold;">[O.L. Yükle]</span> butonuna basıldığında, kullanıcı tarafından belirtilmesine gerek kalmadan bu aralık doğrudan oluşturulur. Bu, plandaki eksenlerin çizimini, haritanın geri kalanını pasif hale getirmeden silmek için kullanışlıdır.<br />
+      <br />
+<img src="Imagenes/icono_escoba.png" style="width: 18px; height: 15px;" alt="Temizle" /> kutucuğundan, hiçbir nesne (çizgi, metin, nokta ve hücre) içermeyen modellerin isimleri silinebilir.<br />
+<br />
+Modelleri numaralarına, isimlerine vb. göre sıralamak mümkündür. Bunun için sütun başlığına farenin sağ tuşuyla tıklamak yeterlidir.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Modele göre renklendir</span> seçeneği, çizimdeki nesneleri tiplerine göre değil, modellerine göre renklendirmeye olanak tanır. Bu seçenek, Plan menüsündeki güzergahların geçici olarak yazdırılması üzerinde de etkilidir.<br />
+      <br />
+Bir modele pencerenin arka planıyla aynı renk indeksi atandığında, bu modele ait nesneler, modelin rengi dikkate alınmadan normal şekilde çizilir.<br />
+      <br />
+Her model için, iletişim kutusu yedi sütunla aşağıdaki bilgileri gösterir:<br />
+      <ul>
+<li><span style="font-weight: bold;">Model Numarası</span> (bilgilendirici, değiştirilemez).</li>
+      </ul>
+
+
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Model Adı</span> (isteğe bağlı), bir modeli daha net bir şekilde tanımlamaya olanak tanır.</li>
+      </ul>
+
+
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Aktivasyon Durumu</span>: Kutucuk işaretliyse, tipin aktif olduğu anlamına gelir.<br />
+</li>
+      </ul>
+
+
+
+
+      
+      <div style="margin-left: 40px;">Tüm modellerin aktivasyon durumu üzerinde aşağıdaki seçeneklerle aynı anda işlem yapılabilir:<br />
+<br />
+<table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Aktif Et]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm modelleri aktif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Tümünü Pasif Et]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Tüm modelleri pasif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Aktivasyonu Ters Çevir]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Her modelin aktivasyon durumunu değiştirir; pasif olanları aktif, aktif olanları pasif yapar.</td>
+    </tr>
+  </tbody>
+</table>
+<br />Bir model aralığını aktif etmek veya pasif etmek için, ya fare ile ya da <span style="font-style: italic; font-weight: bold;">Model aralığı seç</span> seçeneği ile bir model aralığı seçilir ve içlerinden birinin durumu değiştirilir; tüm seçili modeller bu sonuncusunun durumuna geçer.<br />
+
+      <br />
+
+Ayrıca, AM#, DM# ve TM# komutları ile klavyeden de modeller aktif edilebilir, pasif edilebilir ve mevcut model olarak seçilebilir (# model numarasını temsil eder). AMT ve DMT komutları tüm modelleri aktif eder ve pasif eder.<br />
+<br />
+Ayrıca, <span style="font-style: italic;">AM#</span>,&nbsp; <span style="font-style: italic;">DM#</span> ve <span style="font-style: italic;">TM#</span> komutları ile klavyeden de MODEL <span style="font-style: italic;">#</span> aktif edilebilir, pasif edilebilir ve mevcut olarak seçilebilir. <span style="font-style: italic;">AMT</span> ve <span style="font-style: italic;">DMT</span> komutları tüm modelleri aktif eder ve pasif eder.</div>
+
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Gösterim</span>: Hücre tipinin gösterimi.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Ekran</span> modu için, <span style="font-style: italic; font-weight: bold;">Modele göre renklendir</span> seçeneği aktifken).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Renk İndeksi</span> (<span style="font-style: italic;">Pafta</span> modu için, <span style="font-style: italic; font-weight: bold;">Modele göre renklendir</span> seçeneği aktifken).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Soluklaştırma Derecesi</span>
+(100 tamamen opak, 0 ise tamamen şeffaf ve dolayısıyla görünmez anlamına gelir). Soluklaştırılmış modelleri görmek için <span style="font-style: italic; font-weight: bold;">Soluklaştırmayı Uygula</span> seçeneği işaretli olmalıdır. Soluklaştırma derecesi değiştirilirse, etkili olması için <span style="font-weight: bold;">[Uygula]</span> butonuna basmak gerekir. <span style="font-weight: bold;">Görünüm</span> &#8594; <a href="EDM_visualizacion.html#atenuacion_modelos"><span style="font-weight: bold;">Modellerin Soluklaştırılması</span></a> menüsünden modellerin soluklaştırma durumuna genel bir bakış sağlanır ve buradan da değişiklik yapılabilir.<br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Açıklama</span> (isteğe bağlı), örneğin her modelin içeriğini tanımlamaya olanak tanır.</li>
+      </ul>
+      <br /><span style="font-weight: bold; font-style: italic;">Sıraya göre çiz</span> seçeneği, <span style="font-weight: bold;">Sıra</span> sütunu ile birlikte, modelleri belirtilen sıraya göre çizmeyi sağlar; önce numarası daha düşük olan modeller çizilir.<br /><br />Model kontrolüne ilişkin tüm yapılandırma <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="Kaydet" /> butonu ile &nbsp;<span class="Archivo">.mod</span> uzantılı bir dosyaya kaydedilebilir. Bu yapılandırma <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="Aç" /> butonu ile geri yüklenebilir.<br />
+      <br />
+İletişim kutusunun alt kısmında toplam, kullanılan ve aktif olan model sayısı hakkında bilgi verilir. Burada ayrıca modellerin içeriğini yönetmek için bir dizi buton bulunur:<br />
+      <br />
+
+
+
+      
+      
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+  <tbody>
+    <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Ekle]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Seçilen nesneler mevcut modele taşınır. Eğer seçili bir nesne yoksa, program mesaj alanında nesnelerin seçilip onaylanmasını ister. Bu durumda, işlem döngüseldir; yani program &lt;Esc&gt; tuşuna basılana veya işlem iptal edilene kadar mevcut modele eklenecek yeni bir seçim ister.</td>
+          </tr>
+<tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sil]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili modellere ait tüm nesneleri siler.
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Değiştir]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili modellerdeki nesneleri mevcut modele taşır. Kaynak modelin adını ve açıklamasını, eğer mevcut modelde hiçbir eleman, ad veya açıklama yoksa, mevcut modele kopyalar.
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Sayım]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Seçili modellerdeki nesnelerin sınıfını ve sayısını belirten bir mesaj gösterir.
+      </td>
+    </tr>
+  </tbody>
+      
+      
+      </table>
+
+
+
+      <br /><br /><span style="font-weight: bold; font-style: italic;"><a name="tabla_modelos">Modeller Tablosu</a></span><br /><br /><img src="Imagenes/acceso_tabla_modelos.png" style="width: 80px; height: 38px; margin-left: 7px;" alt="Modeller Tablosu İkonu" align="right" />Modeller tablosu, arayüzün alt kısmındaki ikonlar alanında bulunan 'M' harfli ikona tıklandığında veya F6 tuşuna basıldığında açılır.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <img src="Imagenes/tabla_modelos.png" style="width: 209px; height: 368px; margin-right: 7px;" alt="Modeller Tablosu" align="left" />Tablo, modellerin 200'lük aralıklarla gösterilmesi sayesinde aktivasyon durumlarını daha hızlı bir şekilde görüntülemek için tasarlanmıştır. Ayrıca <span style="font-weight: bold;">mevcut modeli</span> değiştirmeye de olanak tanır.<br />
+      <br />
+Aktif modeller basılı butonlar şeklinde, pasif modeller ise basılmamış butonlar şeklinde gösterilir. Kullanımda olmayan modeller, üzerine tıklanamayan butonlar olarak gösterilir. Dolayısıyla, aktivasyon durumunu değiştirmek için mevcut bir modele tıklamak yeterlidir.<br />
+      <br />
+Örneğin, ekteki resimde mevcut model 6'dır, 0'dan 14'e kadar olan modellerde ve ayrıca 50 ve 52'de grafik nesneler bulunmaktadır ve 11 ile 12 hariç hepsi aktiftir.<br /><br />Her model sırasının önünde, bir model sırasının tamamını aktif etmek/pasif etmek için "A" ve "D" butonları bulunmaktadır.<br />
+      <br />
+Alt kısımdaki seçenekler ise şunlardır:<br />
+      <br />
+      <table style="text-align: left; width: 476px; height: 103px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Tümünü Aktif Et]</td>
+            <td style="vertical-align: top; width: 373px; text-align: justify;">Tüm modelleri aktif eder.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Tümünü Pasif Et]</td>
+            <td style="vertical-align: top; width: 373px; text-align: justify;">Tüm modelleri pasif eder.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Dahil Et]</td>
+            <td style="vertical-align: top; width: 373px; text-align: justify;">Nesneleri bir modelden diğerine taşımaya olanak tanır. Bu seçenek kullanıldığında, program hedef modeli sorar ve ardından o modele taşınacak nesnelerin seçilmesini ister.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[Seç]</td>
+            <td style="vertical-align: top;">Mevcut modeli, ekranda seçilecek bir nesnenin ait olduğu modelle değiştirir.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[Pasif Et]</td>
+            <td style="vertical-align: top; text-align: justify;">Ekranda içinde bulunan bir nesne seçilerek bir modeli pasif etmeye olanak tanır.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[Yeniden Numaralandır] </td>
+            <td style="vertical-align: top; text-align: justify;">Bir modelin numarasını değiştirmeye olanak tanır ve bu model aynı zamanda mevcut model olur.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[ÇİZGİLER]<br />
+[SEMBOLLER]<br />
+[YAZILAR]<br />
+[HÜCRELER]</td>
+            <td style="vertical-align: top; text-align: justify;">Aktif modellerdeki tüm çizgileri, sembolleri, yazıları veya hücreleri aktif veya pasif etmeye olanak tanır.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Bu tablo aracılığıyla modellerin aktivasyon durumunda yapılan herhangi bir değişiklik, çizimdeki değişiklikleri görebilmek için bir yeniden çizim (örneğin, fare tekerleği ile zoom yaparak) gerektirir.<br />
+      <br />
+      <span class="Titulo_2"><a name="control_de_procedencias">Kaynak Kontrolü</a></span><br />
+
+      <br />
+
+      <img src="Imagenes/control_procedencias_hint.png" style="width: 117px; height: 108px;" alt="Kaynak Bilgisi" align="right" hspace="6" />ISTRAM<sup>®</sup>/ISPOL<sup>® </sup>içindeki çizgi, sembol, metin, hücre gibi nesneler, kaynakları hakkında bilgi içerir. Bu bilgi, imleç nesnenin üzerinde durduğunda çıkan ipucu (hint) penceresinde görülebilir.<br />
+
+      <br />
+
+Kaynak, bir edm dosyasının adı, oluşturuldukları Istram modülü veya oluşturulmaları için kullanılan belirli bir araç ya da veri dosyası olabilir; örneğin bir yüzey, bir .ali dosyası ile yapılan yazılandırma, bir .lil dosyası ile eksen çizim modu vb.<br />
+
+      <br />
+
+Şu kaynakları ayırt edebiliriz: Plan Güzergahı, Z-L3D, ISPOL.ali, ISPOL.lil, ISPOL.gui, ISPOL.gut, Sanat Yapıları, Yol Çizgileri, Güzergah Yazılandırması, Enkesitlere Göre Yazılandırma, Genişletme/Dever Yazılandırması, Tepe/Dere Noktaları Yazılandırması, Taşıt Dönüş Yörüngeleri, 3B Çizgi Çiz, Sulama Alanları, Kavşak Ölçülendirmesi, Geopak Çizimleri, Makaslar (Plan), Adalar (Dönel Kavşaklar).<br />
+
+      <br />
+
+Bu menüye girmek için Kontrol açılır menüsünden, Kaynak Kontrolü'ne veya ekranın üst kısmında bulunan <img src="Imagenes/control_procedencias_icono.png" style="width: 26px; height: 26px;" alt="Kaynak Kontrolü İkonu" align="top" vspace="0" /> kısayolundan erişebiliriz.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/control_procedencias_cuadro_dialogo.png" style="width: 419px; height: 216px;" alt="Kaynak Kontrolü Diyalog Kutusu" /><br />
+
+      </div>
+      <br />
+
+<span style="font-weight: bold;">Tümünü Aktif Et</span> ve <span style="font-weight: bold;">Tümünü Pasif Et</span> kutucukları aracılığıyla kaynağa göre tüm nesneleri aktif edebilir veya pasif hale getirebiliriz. Ayrıca her kaynağın yanındaki onay kutusu ile belirli bir kaynağı aktif edebilir veya pasif hale getirebiliriz.<br /><br />
+
+      Kaynak adının sağında bulunan onay kutusu ile bazı kaynakları işaretlemek mümkündür. Böylece ekranda veya paftalarda yeniden çizim yapıldığında, vurgulanan kaynaklar ikinci bir geçişte çizilir ve bu kaynaklara ait çizgilerin (dolu veya opak dolgu), sembollerin, metinlerin ve hücrelerin dolguları, vurgulanmamış kaynaklara ait tüm nesneleri örter.<br />
+
+Çöp kutusu ikonu&nbsp;<img src="Imagenes/icono_basura.png" style="width: 23px; height: 23px;" alt="Sil" align="top" /> ile kaynağa göre silebilir ve süpürge ikonu&nbsp;<img src="Imagenes/icono_limpiar.png" style="width: 22px; height: 22px;" alt="Temizle" /> ile kaynağı temizleyebiliriz. <br />
+
+Bu, diğer araçlar veya modüller tarafından oluşturulan nesnelerin kaybolmasını önler.<br />
+
+      <br />
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo"><a name="control_superficies"><span class="Parrafo"><span class="Titulo_2">Yüzey Kontrolü</span></span></a><br />
+      <br />
+
+Yüzeyler, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'un en önemli bileşik nesne türüdür, çünkü arazi profilleri, kübaj hesaplamaları, belirli kotların elde edilmesi vb. işlemler bu yüzeylerden yapılır.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span style="font-weight: normal;" class="Titulo_2"><img src="Imagenes/control_sup_global_resultados.png" style="width: 515px; height: 342px;" alt="Yüzey Kontrolü Sonuçları" /></span><br />
+      <span style="font-weight: normal;" class="Titulo_2" /></div>
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo">
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, çeşitli yüzey tipleriyle çalışmaya olanak tanır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Sayısal Harita Yüzeyleri</span>: EDM'nin grafik nesnelerinden oluşur. <a href="#control_sup_cartograficas">Sayısal harita yüzeyi</a>, program tarafından geleneksel olarak en çok kullanılan ve eski versiyonlarda mevcut olan tek tipolojidir.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Topografik Üçgenlemeler</span>: <a href="EDM_topografia.html#ficheros_ttp">.ttp&nbsp;<span class="Archivo">dosyalarında</span></a> bulunur. Bu da programda geleneksel bir tipolojidir ve piyasadaki birçok program tarafından kullanılan tek yöntemdir. Üçgenleme yönetimi <a href="#control_ttps">TTP'lerin kontrolünden</a> yapılır.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Grid Yüzeyler</span>: Genellikle NASA'nın <a href="EDM_imagenes.html#srtm">SRTM dosyalarından</a> elde edilen ve Google Earth<sup>®</sup> gibi programlar tarafından yaygın olarak kullanılan <a href="EDM_imagenes.html#ascii_grid_geotiff_cota">ASCII-GRID veya 3B GeoTIFF görüntülerinden</a> gelir.<br /></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Lazer Veritabanı</span>: Tarayıcılardan elde edilen <a href="EDM_datos_laser.html">lazer verilerinin işlendiği</a> araçtan elde edilir.<br />
+        </li>
+      </ul><a href="EDM_coordenadas_enganches.html#enganches">Yüzeye yakalama</a> modu aktif edildiğinde, program imleci <span style="font-weight: bold;">mevcut yüzeye</span> "yakalar".<br />
+      <br />
+<span style="font-weight: bold;">Kontrol</span> &#8594; <span style="font-weight: bold;">SAM Yüzey Kontrolü</span> menüsünden ve ayrıca standart <a href="EDM_barras_herramientas.html">araç çubuğundaki</a>&nbsp;<img src="Imagenes/icono_toolBarEstandar_superf.png" style="width: 20px; height: 20px;" alt="Yüzey Kontrolü İkonu" /> ikonundan erişilebilen iletişim kutusu, farklı sayısal arazi modellerini yönetmek ve birleştirmek için tasarlanmıştır:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/superficies_combinadas.png" style="width: 609px; height: 283px;" alt="Birleşik Yüzeyler" /><br />
+      </div>
+      <br />
+Bu yüzeylerin her birinden kendi özel iletişim kutusuna erişilebilir. Kutuda ayrıca, her bir SAM yüzeyi için <a href="OL_perf_transv.html">enkesitlerdeki</a> gösterimi için bir çizgi tipi tanımlanır.<br />
+      <br />
+<img src="Imagenes/isdim_icono_papelera.png" style="width: 20px; height: 20px;" alt="Sil" /> kutucuğu ile bir veriyi silebiliriz. Belirli bir SAM yüzeyini yanındaki kutucukla <span style="font-weight: bold;">aktif</span> veya <span style="font-weight: bold;">pasif</span> yapabilir veya <img src="Imagenes/icono_tickaspa.png" style="width: 22px; height: 13px;" alt="Tümünü Aktif/Pasif Et" /> ikonları ile hepsini aynı anda aktif edebilir veya pasif hale getirebiliriz.<br />
+      <br />
+Bir SAM yüzeyi pasif hale getirildiğinde, ondan enkesit alınmaz ve ayrıca:<br />
+</span>
+      <ul>
+        <li>Eğer yüzey sayısal harita yüzeyi ise, onu oluşturan elemanlar (çizgiler, noktalar, metinler ve modeller) pasif hale getirilir.</li>
+        <li>Eğer yüzey bir TTP ise, gösterimi pasif hale getirilir.</li>
+        <li>Eğer yüzey Lazer Verisi ise, grid gösterimi pasif hale getirilir.</li>
+        <li>Eğer yüzey bir SAM gridi ise, gridin gösterimi ve dinamik tipte ise onu oluşturan görüntülerin gösterimi de pasif hale getirilir.<br />
+        </li>
+      </ul>
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo"><span style="font-weight: bold;">Yakalama</span> kutucuğunu aktif etmek, yüzeye yakalama (Görünüm &gt; Yakalama Modları &gt; Yüzeye Yakala) kullanımında mevcut olarak belirlediğimiz yüzeyi kullanır. <span style="font-weight: bold;">Profiller</span> kutucuğunu pasif hale getirmek, SAM yüzey kontrolüne sahip olmayan geleneksel Enkesit Çıkarma menüsüne geri döner. <span style="font-weight: bold;">YNB Basitleştir</span> alanında, yoğun nokta bulutları üzerinden profil çıkarmayı hızlandırmak için basitleştirme seviyesini (1'den 5'e kadar) tanımlayabiliriz.<br />
+      <br />
+      <span style="font-weight: bold;">[Kaydet]</span> ve <span style="font-weight: bold;">[Yükle]</span> butonları, sırasıyla, projede tanımlanan yüzeyleri &nbsp;<span class="Archivo">.csm</span> dosyaları kullanarak kaydetmeye ve geri yüklemeye olanak tanır.<br />
+      <br />
+En fazla 120 yüzey yüklenebilir. Enkesit çıkarılması için aynı anda kesilebilirler.<br />
+<br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="Uyarı" /><br />
+      </td>
+      <td class="Info" style="vertical-align: middle; text-align: justify;">Programdan çıkarken, yüzey kontrolü yapılandırması çalışma dizininin geçici klasörüne kaydedilir. Bu dizinde programa tekrar girildiğinde, son yüzey kontrolü yapılandırması otomatik olarak yüklenir.</td>
+    </tr>
+  </tbody>
+      
+      </table>
+
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="modo_extrac_perf_transv">Enkesit Çıkarma Modları</a></span><br />
+      <br />
+<a href="OL_perf_transv.html">Enkesitlerin</a> çıkarılması yüzey tipine bağlıdır:<br />
+      <ul>
+        <li><img src="Imagenes/modo_extrac_perf_sup_cart.png" style="width: 96px; height: 81px;" alt="Enkesit Çıkarma Modu" align="right" hspace="8" /><a style="font-weight: bold;" href="#control_sup_cartograficas">Sayısal harita yüzeyleri</a> doğrudan kullanılabilir veya yerel bir üçgenleme yapılmasını zorunlu kılabilir. İkinci durum, <span style="font-weight: bold; font-style: italic;">Üçgenle</span> seçeneği ile sağlanır; bu, enkesitlerin çıkarılmasının arazi yüzeyine ait çizgilerin ve noktaların bir üçgenlemesi kullanılarak yapılmasını sağlar.<br />
+
+      <br />
+Bu teknik, elde edilen profillerin mevcut topografyaya daha sadık bir şekilde uyum sağlamasına olanak tanır ve projeniz için geçerli bir çözüm olabilir; ancak daha önce de belirtildiği gibi, en iyi temsil, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ile oluşturulmuş bir sayısal üçgen modeldir.</li>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/extrac_perf_triang.png" style="width: 404px; height: 180px;" alt="Üçgenleme ile Enkesit Çıkarma" /><br />
+      </div>
+
+      
+      <ul>
+
+        
+        </ul></span>
+      <div style="margin-left: 40px;"><span style="font-weight: bold; font-style: italic;">Şev Başı/Eteği (Extraplomos)</span>:
+Bu, Enkesitler-&gt;Seçenekler menüsündeki "Sözde-dikey ve şev başı/eteği olan duvarlar" seçeneğine eşdeğerdir, ancak farklı modlardaki yüzeyleri birleştirmeye olanak tanır.<br />
+BIM ağacından edm'ye aktarılan nesnelerin, hatta IFC'den içe aktarılanların profillerini çıkarmak için kullanışlıdır, böylece geometrileri enkesitte görülebilir.<br />
+      </div>
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo">
+      <ul>
+        <li><span style="font-weight: bold;">Üçgenlemelerden</span> (TTP) gelenler, ağları veya üçgenleri keserek kullanılabilir. İkinci durumda, profil aynıdır, ancak üçgenin olmadığı profil segmentleri gizlenir, bu da haritadaki <span style="font-weight: bold;">boşlukların</span> ve dolayısıyla profillerdeki süreksizliklerin dikkate alınmasını sağlar. Üçgenleme yönetimi <a href="#control_ttps">TTP'lerin kontrolünden</a> yapılır.<br />
+        </li>
+
+
+      
+      
+      </ul>
+
+      <ul>
+        <li><a name="sup_rejilla"><span style="font-weight: bold;">Grid</span> tipi</a>, bir <a href="ascii_grid.html">ASCII-GRID dosyasına</a> veya kotlu bir GeoTIFF görüntüsüne dayanarak enkesitler oluşturmaya olanak tanır. Her iki dosya türü de görüntü olarak yüklenebildiğinden, program iki olasılık sunar:</li>
+      </ul>
+
+      
+      <ol style="margin-left: 40px;">
+<li>Görüntü olarak yüklenmiş ve dolayısıyla görüntü ağacında aktif olan dosyaları kullanmak (veri tipi <span style="font-weight: bold;">dinamik</span>, .asc dosyaları). Özellikle büyük miktarda veri durumunda önerilen mod budur. Dinamik dosyalar, bellekte kalıcı olan statik dosyaların aksine bellekte kalmaz.<br />
+
+</li>
+      </ol>
+
+      
+      <ol style="margin-left: 40px;" start="2">
+<li>Görüntüleri kullanmak yerine doğrudan dosyayı seçmek. Bu ikinci seçenek yalnızca <a href="ascii_grid.html">ASCII-GRID formatındaki</a> dosyalar için geçerlidir (veri tipi <span style="font-weight: bold;">statik</span>). Bunlar .txt, .asc, .grd, .hgt tipi dosyalardır. <br />
+</li>
+      </ol></span>
+      <div style="margin-left: 40px;">İlk durumda program, profillerin çıkarıldığı bölgelere bağlı olarak SAM'leri dinamik olarak yükler ve boşaltır. Özellikle bu iletişim kutusundan, görüntülerden herhangi bir bölgeyi işaretleyerek çıkarmak mümkündür.<br />
+<span style="font-weight: bold;">Grid çizgilerini oluştur</span> kutucuğu ile mevcut çizgi tipini kullanarak gridi sayısal harita çizgileri şeklinde oluşturabilirsiniz.<br />
+<span style="font-weight: bold;">Bölge Yükle</span> komutu ile <span style="font-weight: bold;">Satırlar</span> ve <span style="font-weight: bold;">Sütunlar</span> tarafından belirlenen yüklenmiş görüntünün belirli bir bölümünü seçebiliriz. <span style="font-weight: bold;">SAM Gridini Gör</span> kutucuğu ile görüntünün satırlarını ve sütunlarını bir grid aracılığıyla görürüz.<br />
+      </div>
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo"><br />
+
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/dialogo_mdt_rejilla.png" style="width: 466px; height: 282px;" alt="SAM Grid Diyalog Kutusu" /><br />
+      </div>
+      <br />
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">SAM Gridini Gör</span>&nbsp; seçeneği, kapladığı alanı görselleştirmeye olanak tanır. Çok yoğun bir grid durumunda, her sütun ve her satır için değil, sadece bazıları için çizgiler oluşturacaktır.<br />
+      <br />Bu kutudan ayrıca, grafik nesnelerin kotunu değiştirmeye olanak tanıyan <a href="EDM_control_entidades.html#utiles">yardımcı araçlara</a> da erişilir.<br />
+      <br />
+<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="Kaydet" /> ikonu ile grid dosyasının X,Y,Z koordinatlarını içeren bir&nbsp;<span class="Archivo">.xyz</span> dosyası kaydedilebilir.<br />
+      <br />
+Statik veya dinamik olsun, en fazla beş grid modeli tanımlanabilir.<br /><br /><img src="Imagenes/mdt_rej_int.png" style="width: 150px; height: 87px; float: right;" alt="İnterpolasyon Seçeneği" hspace="5" />SAM Yüzey Kontrolü menüsü içinde, MDT Tipi olarak Grid seçildiğinde, Seçenekler sütununda verilerin <span class="Parf_negrita">interpolasyonunu</span> yapmak isteyip istemediğinizi seçmenize olanak tanır.<br /><br />
+SAM Grid Kontrolü'nde 100 adede kadar Veri kabul edilir, ancak birkaç dosya aynı yüzeyi farklı bölgelerde temsil ediyorsa, bunları tek bir görüntü ağacı olarak (tek bir veri) yüklemek ve farklı seviyeleri temsil ederken farklı veriler kullanmak daha verimlidir.<br /><br /><span style="font-weight: bold;">[Başlat]</span>, <span style="font-weight: bold;">[Kaydet]</span> ve <span style="font-weight: bold;">[Yükle]</span> butonları, sırasıyla, projede tanımlanan yüzeyleri .crm dosyaları kullanarak başlatmaya, kaydetmeye ve geri yüklemeye olanak tanır.<br /><br />
+      </div>
+
+      
+      <ul>
+        <li><a href="EDM_datos_laser.html"><span style="font-weight: bold;">Lazer verileri</span></a> durumunda, tek gereklilik nokta bulutu veritabanının oluşturulmuş olmasıdır. Profil çıkarma işlemi bellek kullanımı açısından çok verimlidir, çünkü program disk üzerindeki verilerle çalışır, bu da ek bir avantaj olarak analiz edilecek verilerin boyutunun profilleri elde etme konusunda bir sınır oluşturmamasını sağlar.<br />
+        </li>
+      </ul>
+      <br />
+<span style="font-weight: bold;">No</span> sütununda, o yüzeyin kendi türündeki yüzeyler içindeki indeksi belirtilir. Örneğin, 4 sayısal harita yüzeyi tanımlanmışsa, bunlar 1, 2, 3 ve 4 olacaktır.<br />
+      <br />
+<span style="font-weight: bold;">Enk. Yüzeyi</span> sütununda, enkesitteki yüzey numarası belirtilir. '0', o yüzeyden enkesit alınmayacağını belirtirken, daha büyük bir değer atanmış olanlar, her yüzey için enkesitte bir çizgi elde edilecek şekilde tanımlanır (çoklu yüzey profilleri).<br />
+      <br />
+      <br />
+BİRLEŞTİRİLMİŞ YÜZEYLER<br />
+      <br />
+
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, <a href="OL_perf_transv.html">enkesitler</a> elde etmek amacıyla diğer yüzeylerin birleşiminden oluşan yüzeylerle çalışmaya olanak tanır. Bunun için, tek bir yüzey oluşturan yüzeylere aynı enkesit yüzey numarasını atamak yeterlidir. Profilin gösterimi için, bunlardan ilkinin çizgi tipi kullanılacaktır.<br />
+      <br />
+Enkesitler için yüzeylerin birleştirilmesi, <a href="EDM_editor_perfiles.html">enkesit editörünün</a> <a href="EDM_editor_perfiles.html#completar"><span style="font-style: italic;">tamamlama</span></a> işlemine benzer şekilde çalışır: program, profili oluşturmak için birleşimin ilk yüzeyini kullanır ve profilin olmadığı yerlerde, birleşimin geri kalan yüzeyleriyle tamamlar (sonuçta ortaya çıkan profil, ilkinin aynı numaraya sahip diğerleriyle tamamlanmasıyla elde edilir).<br />
+      <br />
+Örneğin, aşağıdaki örnekte 5 yüzey tanımlanmıştır:<br />
+      <ul>
+        <li>Yüzey 1, sayısal harita tipindedir ve mevcut tüm sayısal harita yüzeylerinin ilkidir. Enkesitte L104 tipi bir çizgi ile temsil edilecektir.</li>
+      </ul>
+      <ul>
+        <li>Yüzey 3, L3 üçgenlemesinden oluşur ve enkesitteki gösterimi 66 tipi çizgi ile olacaktır.</li>
+      </ul>
+      <ul>
+        <li>Yüzey 5, grid tipindedir ve enkesitlerde L103 tipi çizgi ile temsil edilir.</li>
+      </ul>
+      <ul>
+        <li>Yüzey 7, bir lazer veritabanından gelir ve enkesit gösterimi için L108 tipi çizgi kullanılacaktır.</li>
+      </ul>
+      <ul>
+        <li>Yüzey 8, sayısal harita tipindedir ve mevcut tüm sayısal harita yüzeylerinin ikincisidir. Ayrıca, enkesitteki gösterimi için L1 tipi çizgi kullanılacaktır.<br />
+        </li>
+      </ul>
+Ve enkesitlerin elde edilmesi açısından, 7 ve 8 numaralı yüzeyler (lazer verileri ve sayısal harita tipi), enkesitlerde görünecek toplam 4 yüzeyden 4. enkesit yüzeyini oluşturacak şekilde tek bir yüzey meydana getirir. Ayrıca, enkesitteki gösterimi için, birleşimin ilki 7 numaralı yüzey olduğu için L108 tipi çizgi kullanılacaktır.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/superficies_combinadas.png" style="width: 609px; height: 289px;" alt="Birleşik Yüzeyler" /><br />
+      </div>
+      <br />Aynı kapalı bir cismin tavanını ve tabanını oluşturan yüzey çiftleriniz varsa, bu cisimlerin enkesitlerini doğrudan oluşturabilirsiniz. Bunun için <span style="font-weight: bold;">Enk. Yüzeyi</span> sütununa N cisminin tavan veya taban yüzeyini ekleyin ve bir sonraki satıra tamamlayıcı yüzeyi -N olarak ekleyin. Enkesit oluşturucu, N yüzeyini -N ile kapatır. <br />Aynı anda birkaç kapalı cisim olabilir.<br /><br />Tanımlanabilecek SAM yüzey sayısı 1000'e kadardır.<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="utiles">Yardımcı Araçlar</a></span><br />
+      <br />
+
+      
+Ayrıca, çizgi ve sembollerin kotlarını <span style="font-weight: bold;">mevcut yüzeye</span> uyarlayarak değiştirmeye yönelik bir dizi <span style="font-weight: bold;">yardımcı araç</span> da bulunmaktadır:<br />
+      <br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Kot Al]</td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Mesaj alanında, verilen bir (X,Y) noktasının mevcut yüzey üzerindeki kotunu gösteren bir seçenektir.<br />
+            <br />
+</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Çizgileri Kota Getir]<br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Aktif çizgilerin her bir köşesini, mevcut yüzeyi kullanarak her birinde kotu enterpole ederek kota getirir.<br /><br /><a name="modo_interpolacion"><img src="Imagenes/modo_interp_cota_linea.png" style="width: 146px; height: 84px; margin-left: 7px;" alt="İnterpolasyon Modu" align="right" />Eğer mevcut yüzey</a> bir <a href="#control_sup_cartograficas">sayısal harita yüzeyi</a> veya bir <a href="#control_ttps">üçgenleme</a> ise, her köşenin kotunun hesaplanması için belirtilen <span style="font-weight: bold;">interpolasyon modu</span> kullanılır:<br /><ul><li><span style="font-weight: bold;">Tam İnterpolasyon</span>: Bu durumda, kot veren yüzeyin çizgileriyle kesişimler aranır, başlangıç ve bitiş noktalarının kotu K-G ve D-B dik profilleriyle hesaplanır ve son olarak, çizginin kendi köşelerindeki kot, kesişimlerden aldığı kotlu noktalardan enterpole edilir. Ayrıca kot veren yüzeyin çizgileriyle olan kesişimlerde yeni köşeler oluşturulur. Bu, hemen hemen her durumda en doğru ve etkili interpolasyon modudur ve varsayılan olarak seçilidir.<br /></li></ul><ul><li><span style="font-weight: bold;">Sadece Doğrusal İnterpolasyon</span>: Bu modda, kot veren yüzeyin çizgileriyle kesişimde yeni bir nokta atanır ve orijinal çizginin her köşesinde (dik kesitler yöntemiyle) ve her iki ucunda kot enterpole edilir. Bu kesişimlerde de yeni köşeler oluşturulur. Bu interpolasyon modu nehir, dere, sırt veya vadi çizgileri için uygundur.<br /></li></ul><ul><li><span style="font-weight: bold;">Köşe Ekleme</span>: Doğrusal interpolasyonla aynıdır ancak kot veren yüzeyin çizgileriyle kesişimlerde yeni köşeler oluşturulmaz.<br /></li></ul>
+            
+</td>
+    </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">[Sembolleri Kota Getir]</td>
+            <td style="vertical-align: top; text-align: justify;">Bu seçenek, mevcut yüzeyi kullanarak tüm aktif sembolleri kota getirir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[Metinleri Kota Getir]</td>
+            <td style="vertical-align: top; text-align: justify;">Bu seçenek, mevcut yüzeyi kullanarak tüm aktif metinleri kota getirir.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">[Seçimi Kota Getir]</span>
+      </td>
+      <td style="vertical-align: top; text-align: justify;">Kullanıcı tarafından seçilen elemanları yüzeye getirir. Bu durumda, program kullanılacak kotlu yüzeyi seçme seçeneği sunar ve eğer bir <a href="#control_sup_cartograficas">sayısal harita yüzeyi</a> ise, seçilen <a href="EDM_control_entidades.html#modo_interpolacion"><span style="font-weight: bold;">interpolasyon modunu</span></a> kullanır.<br />
+</td>
+    </tr><tr><td><span style="font-weight: bold;">[Yoğunlaştır]</span></td><td>Mevcut TTP'de her bir üçgeni, her ağın ortasına bir nokta ekleyerek 4 diğerine böler. Daha yüksek bir yoğunlaştırma seviyesi için birkaç kez basılabilir.</td></tr>
+
+  </tbody>
+      
+      </table>
+
+
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="control_sup_cartograficas">Sayısal Harita Yüzeyleri Kontrolü</a></span><br />
+<br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'da bir sayısal harita yüzeyi, şunlardan oluşan bir grafik nesnedir:<br />
+      <ul>
+        <li>Bir veya daha fazla tipe ait tüm çizgiler</li>
+        <li>Bir veya daha fazla tipe ait tüm semboller</li>
+        <li>Bir veya daha fazla tipe ait tüm metinler<br />
+        </li>
+
+        <li>Bir veya daha fazla model</li>
+        <li>Yukarıdakilerin herhangi bir kombinasyonu</li>
+        <li>Tam bir edm/edb dosyası<br />
+        </li>
+
+      </ul>Dolayısıyla, teorik yüzey üzerinde bulunan ve dolayısıyla onu temsil eden tüm çizgiler, semboller ve metinler tarafından temsil edildiği söylenebilir.<br />
+      <br />
+Varsayılan olarak, 1 numaralı sayısal harita yüzeyi, sırasıyla normal ve ana eş yükselti eğrileri olan 26 ve 27 tipi tüm çizgilerle temsil edilir. Kullanıcı, örneğin, geçerli bir kota sahip olmaları koşuluyla, karayolu kenarları, yollar, evler, çitler vb. temsil eden diğer çizgi tiplerini de buraya dahil edebilir, çünkü bir sayısal harita yüzeyini temsil eden sayısal model, bu çizgilerden herhangi biri kot dışındaysa bozulacaktır.<br />
+      <br />
+Belirli bir sayısal harita yüzeyini belirleyen nesneler, ait oldukları tipten bağımsızsa (örneğin, belirli çizgiler ve semboller, ancak aynı tipteki TÜMÜ değilse), o zaman onları içeren modeli/modelleri sayısal harita yüzeyine dahil etmek yeterlidir. Bu şekilde, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'da sayısal harita yüzeylerinin tanımlama olanakları, büyük çok yönlülüğü sayesinde oldukça geniştir.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="Bilgi" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; text-align: justify;"><span style="font-weight: bold;">Araçlar</span> &#8594; <a href="EDM_cotas.html"><span style="font-weight: bold;">Kotlar</span></a> menüsünde, örneğin 2B bir içe aktarımdan gelen çizgileri kota getirmek için çeşitli araçlar bulunmaktadır.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Bir çizgi, sembol, metin veya model tipi birden fazla sayısal harita yüzeyine ait olabilir. Örneğin, "yarma şev başı" ve "dolgu şev eteği" çizgileri, aynı anda karayolu yüzeyine ve orijinal topografik yüzeye ait olabilir.<br />
+      <br />
+Bir sayısal harita yüzeyi, bir edm/edb dosyasında bulunan tüm elemanlar (çizgiler, semboller ve metinler) aracılığıyla da tanımlanabilir. Bu dosyalar buradan yüklendiğinde düzenlenemezler.<br />
+1200, 1201, ... kaynaklarında saklanırlar. Çizimleri Ver edm/edm butonu ile gizlenebilir veya bir soluklaştırma seviyesi (0-100) tanımlanabilir. Ayrıca, Yapılandırma-&gt; Topografya: [ ] .ctp ve .csm'de Yolu kaydet aktif ise bu dosyaların tam yolu .sup ve .csm dosyaları içinde arşivlenebilir.<br />
+      <br /><br style="font-weight: bold; font-style: italic;" />
+SAYISAL HARİTA YÜZEYLERİ KONTROL SEÇENEKLERİ<br />
+      <br />
+Yüzeylerin tanımlanması ve değiştirilmesi <span style="font-weight: bold;">Kontrol</span> &#8594; <span style="font-weight: bold;">Sayısal Harita Yüzeyleri Kontrolü</span> menüsünden (ayrıca <img src="Imagenes/icono_superf_carto.png" style="width: 16px; height: 16px;" alt="Sayısal Harita Yüzeyleri İkonu" /> butonundan da erişilebilir) aşağıdaki iletişim kutusu aracılığıyla yapılır:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_superficies_cartograficas.png" style="width: 600px; height: 381px;" alt="Sayısal Harita Yüzeyleri Kontrolü Diyalog Kutusu" /><br />
+      </div>
+      <br />
+Burada tanımlanan farklı sayısal harita yüzeyleri, adları ve her birini oluşturan nesneler gösterilir. Netlik açısından, her sayısal harita yüzeyine ait olan tip veya modeller sadece sınıflarına göre gösterilir ve her biri için bir sekme bulunur (çizgiler, semboller, metinler ve modeller). Böylece, seçilen sekme <span style="font-style: italic;">Çizgiler</span> ise, her sayısal harita yüzeyini oluşturan çizgi tipleri görünür; <span style="font-style: italic;">Noktalar</span> ise, sayısal harita yüzeyine ait sembol tipleri gösterilir; <span style="font-style: italic;">Metinler</span> ise, sayısal harita yüzeyinin metin tipleri gösterilir ve <span style="font-style: italic;">Modeller</span> ise, o sayısal harita yüzeyine ait olan her bir modelin adı ve numarası gösterilir.<br />
+<img src="Imagenes/icono_tic.png" style="width: 24px; height: 23px;" alt="Mevcut Yap" /> ikonu ile mevcut yüzeyi belirleriz, böylece ihtiyaç duyduğumuz çizgileri, sembolleri vb. ekleyebiliriz.<br />
+      <br />
+
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="Uyarı" /><br />
+      </td>
+      <td class="Info" style="vertical-align: middle; text-align: justify;">Bir sayısal harita yüzeyinden <a href="OL_perf_transv.html">enkesitler</a> alırken, program bunları Çizgiler bölümünde tanımlanan ilk çizgi tipi ile temsil eder.</td>
+    </tr>
+  </tbody>
+      </table>
+
+      <br />
+Bir sayısal harita yüzeyine bir tip veya model eklemek için, <span style="font-weight: bold;">[Çizgi Ekle]</span> / <span style="font-weight: bold;">[Nokta Ekle]</span> / <span style="font-weight: bold;">[Metin Ekle]</span> / <span style="font-weight: bold;">[Model Ekle]</span> butonuna (aktif sekmeye göre) basmak ve ekranda o tip veya modele ait bir nesneye tıklamak veya yazmak yeterlidir.<br />
+      <br />
+      Mevcut sayısal harita yüzeyinden bir tip veya modeli kaldırmak için, <span style="font-weight: bold;">[Çizgi Sil]</span> / <span style="font-weight: bold;">[Nokta Sil]</span> / <span style="font-weight: bold;">[Metin Sil]</span> / <span style="font-weight: bold;">[Model Sil]</span> butonu kullanılır ve ardından ya ekranda o tip veya modele ait bir nesneye tıklanır ya da ona bağlı <img src="Imagenes/icono_papelera.png" style="width: 16px; height: 16px;" alt="Sil" /> ikonuna basılır.<br /><br />
+Sayısal harita yüzeylerini yönetmek için diğer seçenekler şunlardır:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 107px;">[Yüzey Seç]</td>
+      <td style="vertical-align: top; text-align: justify; width: 565px;">Açıklandığı gibi, bir yüzeyi <span style="font-weight: bold;">mevcut yüzey</span> olarak seçmeye olanak tanır. Bunun için haritada istenen sayısal harita yüzeyine ait çizgilerden birini seçmek yeterlidir. Birden fazla sayısal harita yüzeyine ait bir çizgi tipi seçilmesi, onu tanımlayan ilk sayısal harita yüzeyinin seçilmesine yol açar. Seçim modu <span style="font-weight: bold;">SAYISAL</span> olarak ayarlanmışsa, sayısal harita yüzeyinin numarası klavyeden girilir. <span style="font-weight: bold;">Mevcut yüzey</span>, menüde görünen yatay kaydırıcı ile de seçilebilir.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 107px;">[Yüzey Ekle] </td>
+      <td style="vertical-align: top; text-align: justify; width: 565px;">Sonuna boş bir yeni sayısal harita yüzeyi ekler. İlk yüzey boş olsa bile her zaman mevcuttur.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 107px;">[Yüzey Sil]<br /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 565px;">Mevcut sayısal harita yüzeyini (her zaman sol sütunda görünen) siler ve sonrakileri yeniden numaralandırır.<br />
+            <br />
+</td>
+    </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Kaydet] <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="Kaydet" /></span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Mevcut sayısal harita yüzeyleri tanımını, daha sonraki bir ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> oturumunda kullanılabilmesi için bir&nbsp;<span class="Archivo">.sup</span> uzantılı dosyaya kaydeder.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Yükle] <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="Aç" /></span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bir <span class="Archivo">.sup</span> dosyasında kaydedilmiş bir sayısal harita yüzeyleri tanımını kullanmaya olanak tanır. Yüklenen dosyanın tanımları, mevcut tanımların yerini alır.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Sırala]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Her bir sayısal harita yüzeyini oluşturan çizgi, sembol ve model tiplerini artan değerlere göre sıralar.</td>
+          </tr>
+
+  </tbody>
+      </table>
+
+      <br />
+Bu sayısal harita yüzeyleri tanımları, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> sisteminin her yerinden görülebilir ve bu menüden çıkıldığında kaybolmaz. Oturum kapatıldığında, çalışma dizininde mevcut sayısal harita yüzeyleri tanım durumunu içeren&nbsp;<span class="Archivo">ISPOL.sup</span> dosyası oluşturulur. Yeni bir oturum başlatıldığında, çalışma klasöründe&nbsp;<span class="Archivo">ISPOL.sup</span> dosyası varsa, bu dosya otomatik olarak yüklenir ve böylece önceki oturumun kapatıldığı sayısal harita yüzeyleri tanım durumu geri yüklenir. Eğer&nbsp;<span class="Archivo">ISPOL.sup</span> dosyası bulunmazsa, varsayılan olarak 26 ve 27 numaralı çizgilerden oluşan bir sayısal harita yüzeyi oluşturulur.<br />
+      <br />
+Aşağıdaki dört seçenek, diğer şeylerin yanı sıra, farklı çizgi ve sembol tiplerinin sayısal harita yüzeylerine atanmasını kontrol etmeye olanak tanır:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Mevcut Olanı Pasif Et]</td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Bu seçenek, mevcut sayısal harita yüzeyinin tüm çizgi ve sembol tiplerini pasif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Mevcut Olanı Aktif Et] </td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Bu seçenek, mevcut sayısal harita yüzeyinin tüm çizgi ve sembol tiplerini aktif eder.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Tümünü Pasif Et]<br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Bu seçenek, bir sayısal harita yüzeyine ait olsun ya da olmasın, mevcut tüm tipleri pasif eder.</td>
+    </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Tümünü Aktif Et]</span><br />
+            </td>
+            <td style="vertical-align: top;">Bir sayısal harita yüzeyine ait olsun ya da olmasın, mevcut tüm tipleri aktif eder.</td>
+          </tr>
+
+  </tbody>
+      </table>
+
+      <br />
+Bu kutudan ayrıca, grafik nesnelerin kotunu değiştirmeye olanak tanıyan aynı <a href="#utiles">yardımcı araçlara</a> da erişilir.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="control_ttps">TTP'lerin Kontrolü</a></span><br />
+      <br />
+<span style="font-weight: bold;">Kontrol</span> &#8594; <span style="font-weight: bold;">TTP'lerin Kontrolü</span> menüsünden veya <img src="Imagenes/icono_control_ttps.png" style="width: 16px; height: 16px;" alt="TTP Kontrolü İkonu" /> butonundan erişilebilen bu iletişim kutusundan, <a href="EDM_topografia.html#ficheros_ttp">.ttp dosyalarından</a> gelen sayısal arazi modellerini yönetmek mümkündür. Bu modeller, enkesitlerin çıkarılması için GÜZERGAH ESASLI PROJELER modülünde, bir veya iki model gerektiren yardımcı programlar için YÜZEY MODELLEME modülünde veya <a href="EDM_topografia.html">TOPOGRAFYA</a>'da oluşturulan model için kullanılabilir.<br />
+      <br />
+.ttp dosyaları aracılığıyla enkesitler kesilirken, TTP'lerin Kontrolü iletişim kutusundaki tüm aktif TTP'lere karşı enkesitler kesilir. Aynı anda yüklenebilen 1000 adede kadar TTP/TTG kullanma imkanı vardır.<br />
+<br />
+İletişim kutusu, dosyaları yüklemeye&nbsp;<img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="Aç" /> veya kaldırmaya&nbsp;<img src="Imagenes/icono_basura.png" style="width: 23px; height: 23px;" alt="Sil" />, gösterimi için bir çizgi tipi tanımlamaya ve gösterimini <img src="Imagenes/icono_topo_tic.png" style="width: 20px; height: 20px;" alt="Aktif/Pasif" /> aktif etmeye veya pasif hale getirmeye olanak tanır. Ayrıca mevcut yapılandırmayı kaydedebilir veya kaydedilmiş bir yapılandırmayı yeniden yükleyebiliriz.<br />
+Yüklenen her&nbsp;<span class="Archivo">.ttp</span> dosyasının yanında, <a href="EDM_topografia.html">Topografya</a> menüsüne giderek <img src="Imagenes/icono_toolBarEstandar_topo.png" style="width: 14px; height: 16px;" alt="Topografya" /> onu düzenleme imkanımız vardır.<span style="font-weight: normal;" class="Titulo_2 Parrafo"><br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_superficies.png" style="width: 610px; height: 260px;" alt="TTP Kontrolü Diyalog Kutusu" /><br />
+      </div>
+      <br />
+Ayrıca bir TTP'yi mevcut olarak seçmek de mümkündür. Mevcut olarak seçilen TTP:<br />
+      <ul>
+        <li>TTP'ye <a href="EDM_coordenadas_enganches.html#enganches">yakalama</a> işleminde kotu çıkarmak için kullanılır.</li>
+        <li>Vurgulamak için diğerlerinden farklı bir <span style="font-weight: bold;">soluklaştırmaya</span> sahip olabilir.</li>
+        <li><a href="EDM_topografia.html">TOPOGRAFYA</a>'da düzenlenen TTP'dir.</li>
+        <li>VIRTUAL 3D'de gösterilen TTP'dir.</li></ul>
+Bu kutudan ayrıca, grafik nesnelerin kotunu değiştirmeye olanak tanıyan aynı <a href="EDM_control_entidades.html#utiles">yardımcı araçlara</a> da erişilir.<br />
+      <br />
+      <span style="font-weight: bold;">[Kotları Yumuşat]</span>, mevcut TTP'nin bir kopyasını oluşturarak, noktalarının kotlarını yakındaki noktaların kotlarına göre değiştirir ve böylece "tepeler" oluşturan aralarındaki ani değişiklikleri yumuşatır.<br />
+      <br /><span class="Parrafo"><span class="Titulo_2">
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

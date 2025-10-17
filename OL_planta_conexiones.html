@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Yatayda Eksenler Arası Bağlantılar</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table style="width: 700px; height: 1px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YATAY GÜZERGAH: EKSENLER ARASI BAĞLANTILAR<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="height: 1510px; width: 700px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 690px;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#etiquetas">
+Etiketler</a><br />
+      <a href="#conectores">
+Bağlayıcılar</a><br />
+      <a href="#conexion_asistida">
+Eksenler arası yardımlı bağlantılar</a><br />
+      </div>
+
+      <br />
+<br /><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+Yatay güzergahta eksenler arasında <span style="font-weight: bold;">bağımlılıklar</span> bildirmek mümkündür. Zorunlu bir adım olmasa da, <span style="font-weight: bold;">şiddetle tavsiye edilir</span>, çünkü eksenler arasında bu ilişkiler kurulduğunda güzergahın <span style="font-weight: bold;">matematiksel kesinliği</span> garanti altına alınır ve ayrıca, bir ana eksende meydana gelen geometrik değişiklikler, tüm bağımlı eksenlerinin <span style="font-weight: bold;">otomatik olarak yeniden hesaplanmasını</span> tetikleyerek kullanıcıya çok zaman kazandırır.<br />
+      <br />
+Program, <span style="font-weight: bold;">iç içe geçmiş bağımlılıkları</span> destekler, yani bir eksene başka bir eksen bağlı olabilir ve bu eksene de üçüncü bir eksen 'asılı' olabilir ve bu şekilde devam eder.<br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, bu bağımlılıkları bildirmek için iki tür <span style="font-weight: bold;">özel güzergah elemanına</span> sahiptir: <a href="#etiquetas"><span style="font-weight: bold;">etiketler</span></a> ve <a href="#conectores"><span style="font-weight: bold;">bağlayıcılar</span>,</a> ikincisi çeşitli varyantlar sunar. Bu özel elemanlar, işleyiş açısından tamamen <a href="OL_planta_alineaciones.html#fijas">sabit güzergah elemanları</a> gibi davranır, bağımlı eksende bildirilir ve normalde o eksenin birinci ve/veya sonuncusu olurlar.<br />
+      <br />
+İki tür eleman arasındaki temel farklar şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Etiketler</span> normalde karayolu eksenleri arasında kullanılır ve özünde yaptıkları, ikincil eksenin başlayacağı ana yoldan teğetlik noktasını elde etmektir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Bağlayıcılar</span> her türlü projede kullanılabilir, ancak demiryolları durumunda <span style="font-weight: bold;">makas</span> şeklini alırlar ve boru hattı eksenleri arasındaki bağlantılar genellikle <span style="font-weight: bold;">aksesuarlarla</span> ilişkilidir. İşleyişleri, etiketlerde olduğu gibi programın hesaplaması yerine, kullanıcının branşın tam başlangıç noktasını belirtmesine dayanır.</li>
+      </ul>
+      <div style="margin-left: 40px;">Öte yandan, mevcut bağlayıcı tipleri, belirli senaryolarda kullanımlarını çok esnek hale getirir. Örneğin, branşın çıkış noktasındaki ana yolun yarıçapını otomatik olarak hesaplayan ve ilgili azimutu benimseyen bağlayıcılar vardır, bu da onları ana yolun bir klotoidinden doğan branşlar için ideal kılar.<br />
+      </div>
+      <br />
+Her durumda, kullanıcı eksenler arasındaki bağımlılık koşulunu göz önünde bulundurmalıdır:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-weight: bold; font-style: italic;">İki eksen arasındaki bir bağlantıda, ana eksen görevi gören eksen numarası, bağımlılığın kurulduğu eksenden (ikincil eksen) her zaman daha küçük olmalıdır. Bu, yalnızca eksenleri Etiketlerle bağlama durumu için geçerlidir.<br />
+Bağlayıcıların kullanımı, eksenlerin numaralandırılmasından etkilenmez.<br />
+</span>
+      </div>
+      <br />
+Böylece, bir kavşakta ana yol görevi gören eksen 3 numara ve branş 2 numara ise, yatay güzergahta bağlantı kurulamaz, ancak branşın 3'ten büyük bir numarası varsa mümkün olurdu. (Sadece bağlantının Etiketlerle tanımlandığı durum için geçerlidir)<br />
+      <br />
+Burada etiketlerin ve bağlayıcıların işleyişi detaylı olarak açıklansa da, özellikle deneyimsiz kullanıcılar için, hem etiketlerin hem de bağlayıcıların işleyişlerinin inceliklerini bilmeye gerek kalmadan kullanılmasını sağlayan <a href="#conexion_asistida">eksenler arası yardımlı bağlantılar</a> menüsünü kullanmaları tavsiye edilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="etiquetas">Etiketler</a></span><br />
+      <br />
+      <img style="width: 275px; height: 71px; margin-left: 7px;" alt="" src="Imagenes/declarar_etiqueta.png" align="right" />Etiketler aracılığıyla eksenler arasındaki bağımlılıklar, ikincil eksenin başlayacağı <span style="font-weight: bold;">ana yolun güzergah elemanını</span> bir numara (11 ile 99 arasında) ile <span style="font-weight: bold;">tanımlamaktan</span> ibarettir. Bu, o elemanın <span style="font-weight: bold;">ETİKET</span> alanında yapılır.<br />
+      <br />Ana yolun etiketlenmiş elemanı bir doğru ise, branşa aktarılan veriler ana başlangıç noktası ve o noktadaki eksenin azimutudur. Bir kurp durumunda, merkezi aktarılır. Yani, davranış açısından etiket, branşta bir doğru durumunda tip 5 <a href="OL_planta_alineaciones.html#punto_azimut">merkez ve azimut ile sabit</a> veya bir dairesel kurp durumunda <a href="OL_planta_alineaciones.html#fija_centro_radio">merkez ve yarıçap ile sabit</a> bir eleman gibi çalışır.<br />
+      <br />
+Etiketlenmiş bir güzergah elemanı, grafik ekranda eleman numarasının yanında değerini gösterir:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 390px; height: 220px;" alt="" src="Imagenes/ali_etiquetada.png" /><br />
+      </div>
+
+      <br />Branşın 'başlayacağı' veya ulaşacağı ana yolun elemanı etiketlendikten sonra, o ikincil ekseni o etikete <span style="font-weight: bold;">referanslamak</span> ve böylece bağımlılığı kurmak artık mümkündür. Bunun için bir <a href="OL_planta_conexiones.html#conexion_asistida">yardımlı bağlantı</a> (daha rahat) veya aşağıda detaylandırıldığı gibi manuel bir bağlantı bildirmek mümkündür.<br />
+      <br />
+      <img style="width: 147px; height: 90px; margin-left: 7px;" alt="" src="Imagenes/tipo_eti_conDesarrollo.png" align="right" />Ana yolun etiketlenmiş bir elemanına manuel olarak bir referans bildirmek için, branşın ilgili elemanı (normalde birinci veya sonuncu) etikete atanan numara tipinde olacaktır. Örneğin, eğer ana yolun elemanı &lt;11&gt; olarak etiketlenmişse ve ondan bir branş ekseni doğuyorsa, o branşın ilk elemanı tip &lt;11&gt; olacaktır.:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 544px; height: 247px;" alt="" src="Imagenes/ent_eti_conDesarrollo.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><span class="Info">Etiketle yatay güzergahta bağlantı, branş ana yolun özel noktasından 'doğarak'</span><br />
+      </div>
+      <br />
+      <br /><img style="width: 148px; height: 90px; margin-left: 7px;" alt="" src="Imagenes/tipo_eti_sinDesarrollo.png" align="right" /> Eğer TİP, başka bir elemanın etiketine karşılık gelen 111 ile 199 arasında bir değerse, öyle ki “Etiket + 100 = Tip” ise, sistem elemanın <span style="font-weight: bold;">gelişiminin sıfır</span> olduğunu anlar (ki bu normaldir). Böylece, bir branşı başlatmak için bir doğru ise, çözüm sıfır uzunlukta, bitiş noktasına indirgenmiş olarak kalır; o noktada yeni eksenin 2. elemanı başlar. Benzer şekilde, bir ekseni başlatan veya bitiren bir dairesel kurp durumunda, gelişimini sıfırlamak için azimutu aramak gerekmez:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 556px; height: 222px;" alt="" src="Imagenes/ent_eti_sinDesarrollo.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><span class="Info">Etiketle yatay güzergahta bağlantı, branş ana yola teğetlik noktasından 'doğarak'</span><br />
+      </div>
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Ana yolun bir doğru elemanından çıkan branş</span><br />
+<br /><img style="width: 91px; height: 47px; margin-left: 7px;" alt="" src="Imagenes/az_negativo.png" align="right" />Branşın bağlantıdaki KM gelişimi, KM'lerin ters yönünde ise, <span style="font-weight: bold;">Az</span> alanına herhangi bir negatif değer girilmelidir, bu da bağlantının dolaşım yönünü orijinal yöne göre tersine çevirir.<br />
+      <br />
+<span style="font-weight: bold;">Öteleme</span> (<span style="font-weight: bold;">Öte</span>), branş ekseninin ana yola göre normal mesafesini belirtir. Örneğin, ekseni dıştan tanımlanmış ve şerit başına 3,5 m genişliğinde bir yoldan çıkan bir branşta, öteleme 7 m olacaktır.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 31px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; text-align: justify; width: 625px;">Etiketlere verilebilecek özel bir kullanım, uzunluk ve öteleme kullanarak başka birine paralel elemanlar içindir. Bu kullanım, <span style="font-weight: bold;">demiryolu hat gruplarının</span> tasarımında çok yaygındır.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;">Ana yolun bir dairesel elemanından çıkan branş</span><br />
+      <br />
+Ana yoldan çıkış elemanı bir dairesel kurp ise, aktarılan veri merkezdir ve bu nedenle ötelemeyi belirtmek için yarıçap kullanılır, öyle ki bu, branşın aynı elemanında, ana yola etiketle referansın bildirildiği yerde de bildirilmelidir.<br />
+      <br />
+Branşın bağlantıdaki KM gelişimi, KM'lerin ters yönünde ise, o zaman yarıçap, ana yolun referans elemanının yarıçapının ters işaretiyle bildirilmelidir, bu da bağlantının dolaşım yönünü orijinal yöne göre tersine çevirir.<br />
+      <br />
+Eğer bir <span style="font-weight: bold;">öteleme</span> verilmek isteniyorsa, bu yarıçapa eklenir veya çıkarılır, öyle ki eğer bu, ana yolun elemanından daha küçükse, yeni eleman içte eş merkezli ve aksi takdirde dışta olur. <span style="font-weight: bold;">Öte</span> alanında bildirilen değer bu durumda hesaplayıcı tarafından göz ardı edilir; ancak bu eleman eksenin sonuncusuysa uzunluk kullanılır (tip 5 <a href="OL_planta_alineaciones.html#fija_centro_radio">merkez ve yarıçap ile sabit</a> bir eleman gibi davranır).<br />
+      <br />
+      <br /><span class="Titulo_2"><a name="conectores">Bağlayıcılar</a></span><br />
+      <br />
+      Bağlayıcılar, branşları önceden var olan eksenlere bağlamak için kullanılan özel bir tür güzergah elemanıdır ve demiryolları durumunda makasların konumlandırılmasına olanak tanır. Dikkate değer bir faydası, bir branşı klotoidler de dahil olmak üzere herhangi bir noktada bir eksenden ayırmak, eksene paralel veya belirli bir açıyla çıkmaktır. Aşağıdaki türler mevcuttur:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tip 1001 (EKSEN + KM)</span>: Oluşturulmakta olan güzergah elemanı, doğduğu eksen ve o eksen üzerindeki mutlak KM ile tanımlanır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tip 1002 (EKSEN + ELEMAN + KM</span>:
+Doğduğu eksen, dayandığı güzergah elemanının numarası ve belirtilen elemanın başlangıcından itibaren ölçülecek ve branşın başlangıç noktasını işaretleyecek bir mesafe ile tanımlanır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tip 1003 (EKSEN + NOKTA (X,Y) + KM)</span>:
+Doğduğu eksen ve eksen üzerindeki izdüşümü, branşın başlangıç noktasını işaretleyen mesafenin ölçüleceği başlangıcı işaretleyen bir nokta ile tanımlanır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tip 1004 (ETİKET + KM)</span>:
+Oluşturduğumuz güzergah elemanı, daha önce tanımlanmış ve etiketlenmiş herhangi bir önceki eksenin bir elemanının etiketi ve o elemanın başlangıcına göre bir KM ile tanımlanır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tip 1005 (EKSEN + NOKTA (X,Y) + KM + Otomatik Yarıçap)</span>:
+1003 gibidir ancak güzergah elemanı, bağlantı noktasındaki ana eksenin yarıçapına (doğru, daire veya klotoid) +/- ötelemeye eşit bir yarıçapa sahip daireseldir. 1005 tipi elemanlarla bir eksen hesaplandığında, elde edilen yarıçap otomatik olarak iletişim kutusundaki ilgili kutuya atlar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tip 1006 (Eksen + NOKTA (X,Y) + KM + Otomatik Yarıçap + L=0)</span>:
+Bu tür bağlayıcı 1005 gibi çalışır, ancak eksenin ilk elemanına bir serbest eleman tarafından takip edilerek ve/veya bir serbest elemandan önce sonuncusuna yerleştirildiğinde, program, bağlayıcının sıfır uzunluğa sahip olması için, yani serbest elemanın klotoidde bile ana eksene teğet doğması için noktayla olan KM farkını otomatik olarak belirler.&nbsp; </li>
+      </ul>
+Bu tipler için iletişim kutusunda anlamı değişen bazı kutucuklar belirir:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 575px; height: 77px;" alt="" src="Imagenes/dialogo_conector.png" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; height: 142px; width: 691px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">X1</span> ve <span style="font-weight: bold;">Y1</span></td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">1003 ve 1005 durumlarında noktayı tanımlamak için kullanılır.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">KM</span> (<span style="font-weight: bold;">X2</span> yerine)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">1001 durumunda mutlak KM'yi ve 1002, 1003, 1004 ve 1005 durumlarında göreceli mesafeleri tanımlamak için kullanılır. Değer negatif olabilir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">EKSEN</span> (<span style="font-weight: bold;">X3</span> yerine)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">1001, 1002, 1003 ve 1005 durumlarında branşın dayandığı ekseni tanımlamak için kullanılır. Eğer branşın ana yola göre <span style="font-weight: bold;">ters yönü</span> varsa, eksen numarası <span style="font-weight: bold;">negatif işaretle</span> belirtilmelidir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">ELEMAN</span> (<span style="font-weight: bold;">Y3</span> yerine)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">1002 durumunda, referans elemanın kendi eksenindeki sıra numarasını tanımlamak için kullanılır.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">ETİ</span> (<span style="font-weight: bold;">Y3</span> yerine)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">1004 durumunda, eksenin referans aldığı güzergah elemanının etiketidir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">Tg</span> (<span style="font-weight: bold;">Az</span> yerine)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">Branşı ana yola göre saptırmak için bir açının trigonometrik tanjantını tanımlamayı sağlar. Sıfır değeri teğet bir eleman anlamına gelir. Negatif bir değer, referans ekseninden daha küçük bir azimut veya sola çıkış anlamına gelir. Referans eksenine ters yönde çıkmak için, eksen numarası negatif verilmelidir.<br />
+            <br />
+Bu metin kutusunun yanında, soldan veya sağdan dik bir bağlantı yapmak için iki simge <img style="width: 38px; height: 17px;" alt="" src="Imagenes/icono_conexion_perpendicular.png" /> bulunur.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">AV</span> (<span style="font-weight: bold;">X2</span> yerine)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">Demiryolları durumunda, kütüphaneden bir <span style="font-weight: bold;">makas</span> yüklemeyi sağlar. Bu durumda, <span style="font-weight: bold;">Tg</span> değeri makas tarafından zorunlu kılınır ve değiştirilemez. Her makas, kütüphanede, ASCII formatında ve .apv adında bir dosyada tanımlanır. Bazı yaygın olanlar dahildir ve diğerlerini tanımlamak için örnek olarak kullanılabilir. Adı, geometrik özelliklerin bir kısaltmasıdır (demiryolu projelerine ayrılmış bölüme bakınız).</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Her durumda, bağlayıcılarla bağımlılığı kurmak, manuel yerine bir <a href="#conexion_asistida">yardımlı bağlantı</a> bildirerek daha kolaydır.<br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="conexion_asistida">Eksenler arası yardımlı bağlantılar</a></span><br />
+      <br />
+      <img style="width: 172px; height: 218px; margin-left: 7px;" alt="" src="Imagenes/planta_conexion.png" align="right" /> ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, etiketler ve bağlayıcılar aracılığıyla eksenler arasındaki bağımlılıkları, bunların tüm işleyiş kurallarını hatırlamaya gerek kalmadan basit bir şekilde bildirmeyi sağlar. Bunun için, bu tür bir güzergah elemanı bildirirken, <span style="font-weight: bold;">[TİPLER]</span> düğmesine gidip <span style="font-weight: bold;">BAĞLANTI</span>'yı seçmek yeterlidir.<br />
+      <br />
+Daha sonra, başka bir eksenle bağlanan elemanın parametrelerini, ya bağlayıcılar (veya makaslar) ya da etiketler kullanarak tanımlamayı sağlayan bir iletişim kutusu açılır.<br />
+      <br />
+Bu kutu, yatay güzergahtaki bağlantıların (etiketler ve bağlayıcılar) bildirimini büyük ölçüde basitleştirir, çünkü kullanıcının bu özel türdeki elemanlarla ilişkili tüm özellikleri hatırlamasını önler ve bu nedenle eksenler arası bağlantıların bildirilmesi için önerilen alternatiftir.<br />
+      <br />
+      <table style="text-align: left; height: 27px; width: 679px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 343px; text-align: center;"><img style="width: 336px; height: 140px;" alt="" src="Imagenes/planta_conexion_conector.png" /><br />
+            <br />
+<span class="Info">Otomatikleştirilmiş bağlayıcı tipi bağlantı</span><br />
+            </td>
+            <td style="vertical-align: top; width: 318px; text-align: center;">
+            <div style="text-align: right;"><img style="width: 336px; height: 140px;" alt="" src="Imagenes/planta_conexion_etiqueta.png" /><br />
+            </div>
+            <br />
+            <span class="Info">Otomatikleştirilmiş etiket tipi bağlantı</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" /></span></span></span><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+<br />
+
+</body></html>

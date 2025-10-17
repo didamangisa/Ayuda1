@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Işık</title>
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" />
+
+</head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>Işık<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"> </span><span class="Parrafo"><a href="#opciones">Seçenekler</a><br />
+      </span></span></span>
+      <div style="margin-left: 40px;"><a href="#direccional"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yönlü</span></span></span></a><br />
+      <a href="#puntual"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Noktasal</span></span></span></a><br />
+      <div style="margin-left: 40px;"><a href="#esferica"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Küresel</span></span></span></a><br />
+      <a href="#conica"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Konik (Spot)</span></span></span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></div>
+      </div>
+      </div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+      </span>Bu menüde, ışıkların tüm özellikleri ayarlanabilir. OpenGL'in mevcut uygulamaları nedeniyle aynı anda 8'den fazla "açık" ışık olamaz.<br />
+      <br />
+Işıklar 2 ana türde olabilir: yönlü veya noktasal. Yönlü ışıklar, Güneş ışığının Dünya'dan nasıl algılandığına benzer; noktasal ışıklar ise kendi içinde iki türe ayrılabilir: küresel veya konik. Küresel ışıklar bir ampule, konik ışıklar ise bir spot lambasına benzer.<br />
+      <br />
+Varsayılan olarak, Sanal 3B, sahnenin tüm nesnelerin net bir şekilde görülebilmesi için aydınlatılmasını sağlayan iki adet yönlü ışık sunar.<br />
+      <br />
+      <br />
+      <a name="opciones">Seçenekler</a><img style="width: 339px; height: 526px; margin-left: 7px;" alt="" src="Imagenes/V3D_menu_prop_luz.png" align="right" /><br />
+      <span style="font-weight: bold;"><br />
+İsim</span>: ışığı bir isimle tanımlamayı sağlar.<br />
+      <span style="font-weight: bold;">Yorum</span>: ışığa açıklayıcı bir yorum eklemeyi sağlar.<br />
+      <img style="width: 24px; height: 24px;" alt="" src="Imagenes/V3D_salvar.png" /> Işığı sahne dışında bir dosyaya kaydetmeyi sağlar.<br />
+      <img style="width: 24px; height: 24px;" alt="" src="Imagenes/V3D_abrir.png" /> Bir ışık dosyasını yükler.<br />
+      <span style="font-weight: bold;">Konum (X, Y, Z)</span>:
+ışığın bulunduğu tam noktayı belirtir.<br />
+      <span style="font-weight: bold;">Referans Noktası (X, Y, Z)</span>:
+ışığın yöneldiği tam noktayı belirtir.<br />
+Yönlü ve konik noktasal ışıklarda, bu değerler ışığın yönünü belirtir.<br />
+      <span style="font-weight: bold;">Ortam (Ambient) Bileşeni</span>:
+bu ışığın, nesnelerin malzemelerinin ortam bileşenini hangi renk ve yoğunlukta etkileyeceğini ayarlamayı sağlar.<br />
+      <span style="font-weight: bold;">Dağınık (Diffuse) Bileşen</span>: bu ışığın, nesnelerin malzemelerinin dağınık bileşenini hangi renk ve yoğunlukta etkileyeceğini belirtir; bu, nesnelere ulaşan ışıktır.<br />
+      <span style="font-weight: bold;">Yansıma (Specular) Bileşeni</span>:
+bu ışığın, nesnelerin malzemelerinin yansıma bileşenini hangi renk ve yoğunlukta etkileyeceğini belirtir; bu, nesnelerin parlak alanlarda yansıttığı ışıktır.<br />
+Bu üç bileşenin birbiriyle tutarlı renklere sahip olması gerekir, ancak kullanıcı tarafından istenildiği gibi yapılandırılabilirler.<br />
+      <br />
+Buraya kadar olanlar tüm ışıklar için genel seçeneklerdir.<br />
+      <br /><a name="direccional" />
+Yönlü Işık<br />
+      <img style="width: 339px; height: 216px;" alt="" src="Imagenes/V3D_menu_prop_luz2.png" align="right" /><br />
+Bunlar, sahnedeki konumdan bağımsız olarak tüm ışık ışınlarının paralel olarak ilerlediği ışıklardır. Bu ışıkların konumu, önceki menü resminde olduğu gibi <span style="font-weight: bold;">koordinatlara göre</span>, kullanıcının sağladığı <span style="font-weight: bold;">bir tarih ve saate göre</span> veya bilgisayarın <span style="font-weight: bold;">saatine göre</span> belirlenebilir.<br />
+      <br />
+&nbsp; <br />
+      <span style="font-weight: bold;"><br />
+      <br />
+      <br />
+      </span><a name="puntual" />Noktasal Işık<br />
+<img style="width: 339px; height: 329px;" alt="" src="Imagenes/V3D_menu_prop_luz3.png" align="right" /><br />
+      Noktasal ışıkların, yoğunluklarının maksimum olduğu bir konumu vardır; bu noktadan uzaklaştıkça ışıkların zayıflaması artar.<br />
+      <br />
+Noktasal ışıklar, sahnedeki nesnelerle birlikte hareket edip yönlenmeleri için bu nesnelere <span style="font-weight: bold;">bağlanabilir</span>.<br />
+      <br />
+Noktasal ışıklar bir açılma açısı ile tanımlanır; OpenGL 0 ila 180 derece ve 360 derece açıları destekler.<br />
+      <br /><a name="esferica" />
+Küresel Işık<br />
+      <br />Bir
+küresel ışık, bir noktadan her yöne ışınlar gönderir. Açılma açısı 360 derecedir. Ampuller gibidirler.<br />
+      <br />
+      <a name="conica" />Konik (Spot) Işık<br />
+      <br />
+Bir konik ışık, belirli bir yönde bir açılma açısına göre ışınlar gönderir.<br />
+      <br />
+      <span style="font-weight: bold;">Açılma Açısı</span>: ışığın açılma açısını belirtir.<br />
+      <span style="font-weight: bold;">Kenar Yayılımı</span>: ışığın aydınlattığı alanın kenarının keskin mi yoksa dağınık mı olacağını belirtir.<br />
+      <span style="font-weight: bold;">K Zayıflama</span>: OpenGL'in sabit zayıflama katsayısı.<br />
+      <span style="font-weight: bold;">Mesafeye Göre Zayıflama</span>: ışık ile aydınlatılan nokta arasındaki mesafeye göre zayıflama faktörü.<br />
+      <span style="font-weight: bold;">Mesafenin Karesine Göre Zayıflama</span>: ışık ile aydınlatılan nokta arasındaki mesafenin karesine göre zayıflama faktörü.<br />
+Varsayılan zayıflama değerleri, zayıflamanın minimum olması içindir.<br />
+      <br />
+      <br />
+      <br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+</body></html>```

@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Prizmatik Hacim Hesabı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PRİZMATİK HACİM HESABI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+	  <span class="Parrafo"><br />
+İki yüzey ve kapalı bir kontur ile sınırlanan hacmi hesaplar. Kontur çizgisinin yüzeylerden herhangi birine ait olması gerekmez ve dikey bir prizmanın kılavuz çizgisi olarak kullanılır. <br />
+      <br />
+Bu algoritma, hacmi yarma ve dolgu hacimlerini ayırarak <span style="font-weight: bold;">kare tabanlı prizmaların</span> hacimlerinin toplamı olarak hesaplar.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 650px; height: 255px;" alt="" src="Imagenes/diagrama_vol_prisma.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+      Aşağıdaki şekillerde, prizmatik hacim hesaplama <span style="font-weight: bold;">kavramı</span> şematize edilmiştir:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 232px; width: 689px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 313px;"><img style="width: 296px; height: 228px;" alt="" src="Imagenes/concepto_vol_prisma_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: right; width: 364px;"><img style="width: 372px; height: 223px;" alt="" src="Imagenes/concepto_vol_prisma_2.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> tarafından istenen giriş parametreleri her durumda şunlardır:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Bir yüzeyin diğerine göre yarma ve dolgu kriterini belirlemeyi sağlayan <span style="font-weight: bold;">alt yüzey</span> ve <span style="font-weight: bold;">üst yüzey</span>.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Hacim hesaplamasının içinde yapılacağı <span style="font-weight: bold;">kontur çizgisi</span>.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Çözünürlük</span>, yani kare tabanlı prizmanın kenar uzunluğu. Kontur bölgelerinde, bu, bu çizgiye uyum sağlayan daha küçük üçgenlere bölünür.</span></li>
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 609px; height: 132px;" alt="" src="Imagenes/vol_prismas.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+&nbsp;<br />
+      Kullanıcı, koordinatlarını bildiği bir <span style="font-weight: bold; font-style: italic;">Grid Noktasını Sabitleme</span> imkanına sahiptir. Bu nokta verildiğinde, program gridin geri kalanını seçilen kontura kadar hesaplar. Bu seçenek etkinleştirilmezse, program otomatik olarak varsayılan bir grid hesaplar.<br />
+      <br />
+Belirtilen kontur içinde her iki yüzey arasındaki karşılaştırma, yarma (alt olarak tanımlanan yüzeyin üstte olması) veya dolgu (alt olarak tanımlanan yüzeyin altta olması) ölçümünü verir. Hacim, kare tabanlı prizmaların hacimlerinin toplamı olarak hesaplanır.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Prizmaları Çiz</span> seçeneği, hesaplama için kullanılan prizmaları, yarma ve dolgu için belirtilen çizgi tipleriyle (varsayılan olarak sırasıyla L54 ve L60) harita üzerine aktarır. <span style="font-weight: bold;">[S]</span> butonu bu prizmaları siler.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 536px; height: 355px;" alt="" src="Imagenes/ejem_vol_prisma.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+
+      <br />
+      </span><img style="width: 234px; height: 289px; margin-left: 7px;" alt="" src="Imagenes/opciones_vol_prisma.png" align="right" /><span class="Parrafo"><a name="opc"><span style="font-weight: bold;">[Seçenekler]</span> butonu, kullanıcının <span style="font-weight: bold;">[Metraj Oluştur]</span> butonuna bastıktan sonra listelenecek ölçümleri seçebileceği bir iletişim kutusu açar.<br />
+      <br />
+Eğer <span style="font-weight: bold; font-style: italic;">Kotları Listele</span> kutucuğu etkinleştirilirse, listede her prizmanın merkez koordinatı ve her prizmadaki alt ve üst yüzeylerin ortalama kotları da dahil edilir.<br />
+      <br />
+Bu kutucuk listelendiğinde, prizmanın yarma hacmine ve dolgu hacmine katılım yüzdesi de listelenir. Toplam, kontur tarafından kesilen prizmalarda 100'den az olacaktır.<br />
+<br />
+      </a></span><span class="Parrafo">
+      </span><span class="Parrafo"><table style="text-align: left; width: 452px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 630px; text-align: justify;"><span class="Parrafo"><span class="Info"><span style="font-weight: bold;">Kotları Listele</span> seçeneği etkinleştirilirse, listenin çok uzun olabileceği dikkate alınmalıdır, bu nedenle hacim hesaplamasında bir milyondan fazla prizma kullanılmışsa, bu bilgi elde edilmeyecektir.</span></span></td>
+          </tr>
+        </tbody>
+      </table></span><br />
+
+      <span class="Parrafo">Sonuç, yarma ve dolgu hacimleri şeklinde durum çubuğunda yansıtılır, ayrıca &nbsp;<span class="Archivo">volprisma.res</span> listesinde yarma ve dolgunun ortalaması ve diğer ilgili bilgilerle birlikte görünür. <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br /><span class="Archivo">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =====================================================<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PRİZMATİK HACİM HESABI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =====================================================<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Birinci olarak tanımlanan yüzey (1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yüzey 1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; İkinci olarak tanımlanan yüzey (2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yüzey 2<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Kullanılan Çözünürlük&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.000<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hacmi hesaplanan kontur alanı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+112893.705<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hacmi hesaplanan kontur çevresi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1326.858<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yüzeyin 3D alanı (1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+127117.545<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yüzeyin 3D alanı (2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+121068.310<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yarma Alanı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+54010.780<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dolgu Alanı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+57600.255<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ortalama kot farkı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.239<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yarmadaki ortalama kot farkı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6.603<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dolgudaki ortalama kot farkı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4.077<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sonuçlanan toplam hacimler<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yarma Hacmi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+356651.793<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dolgu Hacmi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+234815.056<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yarma-Dolgu Hacmi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+121836.737<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yüzeyin Alt Kotu (1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+24.000<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yüzeyin Üst Kotu (1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+83.000<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yüzeyin Alt Kotu (2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+26.614<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yüzeyin Üst Kotu (2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+78.766<br />
+      <br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Xc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Yc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Z1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Z2&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+------------ ------------&nbsp;&nbsp; ----------&nbsp;&nbsp; ----------<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104602.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.416&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 76.341<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104603.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.213&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 76.131<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104604.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+75.849&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75.779<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104605.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+75.526&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75.538<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104606.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+75.210&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75.346<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104607.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+74.847&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75.160<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104608.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+74.350&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 74.848<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br /></span>
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span>
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

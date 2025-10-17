@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Malzeme Alanları (Coğrafi Sınırlar)</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>MALZEME ALANLARI (COĞRAFİ SINIRLAR)<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Malzeme alanları aracı, belirli bir eksen (veya projenin tüm eksenleri) için <a href="EDM_editor_perfiles.html#tablas_cubic">metraj tablosuna</a> göre bir metrajı olan malzemeleri arar, tanımlar ve listeler oluşturur.</span><span class="Parrafo"><br />
+      </span> <br />
+      <div style="margin-left: 40px;"><a href="#general"><span class="Parrafo">Genel Kullanım</span></a><br />
+      <a href="#modos"><span class="Parrafo">Liste Modları</span></a><a href="#angulo_codos"><span class="Parrafo"></span></a><br />
+      </div>
+      <ul>
+      </ul>
+      <span class="Parrafo"> <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 600px; height: 241px;" alt="" src="Imagenes/geocercas_ventana.png" /><br />
+      </div>
+      <br />
+      </span><a name="general"><span class="Titulo_2">Genel Kullanım</span></a><br />
+      <br />
+Temel kullanım yöntemi basittir: Pencerenin sol tarafında çalışmak istediğimiz malzemeler seçilir ve listenin oluşturulması için sağ taraftaki <span style="font-weight: bold;">Oluştur</span> düğmesine basılır.<br />
+      <br />
+Pencerenin sol tarafındaki <span style="font-weight: bold;">malzeme listesi</span> şu sütunları sunar:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Seçim kutusu:</span>
+Burada seçilen malzemeler, pencerenin sağ tarafındaki alanlar listesine dahil edilecektir.<br />
+        </li>
+        <li><span style="font-weight: bold;">Metraj No:</span> <span class="Parrafo"><a href="EDM_editor_perfiles.html#tablas_cubic">Metraj tablosuna</a></span> göre metraj numarası.</li>
+        <li><span style="font-weight: bold;">Malzeme:</span> <span class="Parrafo"><a href="EDM_editor_perfiles.html#tablas_cubic">Metraj tablosundaki</a></span> metraj kaleminin adı.<br />
+        </li>
+        <li><span style="font-weight: bold;">Çizgi Tipi:</span>
+üç sütunda çizgi numarasını, adını ve o metrajın planda, .per enkesit dosyalarında vb. çizildiği grafiksel gösterimi gösterir.</li>
+      </ul>
+Bu arada, pencerenin sağ tarafındaki <span style="font-weight: bold;">alanlar listesi</span> şu sütunları sunar:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Eksen:</span> burada listelenen malzemenin ait olduğu eksen.</li>
+        <li><span style="font-weight: bold;">Malzeme:</span> metraj kaleminin adı.</li>
+        <li><span style="font-weight: bold;">Başlangıç/Bitiş KM:</span>
+alanın başladığı/bittiği KM.<br />
+        </li>
+        <li><span style="font-weight: bold;">Hacim:</span> Malzemenin Hacmi.<br />
+        </li>
+      </ul>
+Alanlar listesinin KM veya hacim gibi bazı alanları, kullanıcı tarafından <span style="font-style: italic;">kendi sorumluluğunda</span> düzenlenebilir. Bunun programın işleyişi üzerinde bir etkisi yoktur, ancak herhangi bir ince ayar veya düzeltme yapmak istersek <span class="Archivo">.res</span>/<span class="Archivo">.xls</span> listelerinde sunulan sonuçları değiştirmemizi sağlar.<br />
+      <br />
+Bu araç ayrıca aşağıdaki özelliklere sahiptir:<br />
+      <br />
+      <ul>
+        <li><span style="font-weight: bold;">Oluştur:</span> malzeme listesinde seçilen malzemelerden alanlar listesini oluşturur.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Birleştir</span>: bir alanı diğerine grafiksel olarak seçerek birleştirir, böylece araç KM'lerini, hacmini ve yeni ağırlık merkezini yeniden hesaplar. Alanlar aynı malzemeden olmalıdır, ancak farklı eksenlere ait olabilirler.<br />
+          <br />
+        </li>
+        <li><img style="width: 27px; height: 27px;" alt="" src="Imagenes/icono_dibujar.png" align="middle" /> bu alanı (veya tüm alanları) <span class="Parrafo"><a href="EDM_editor_perfiles.html#tablas_cubic">metraj tablosunda</a></span> belirtilen çizgi tipini kullanarak planda çizer.<br />
+          <br />
+        </li>
+        <li><img style="width: 27px; height: 27px;" alt="" src="Imagenes/icono_basura2.png" align="middle" /> bu alanın (veya tüm alanların) plandaki çizimini siler.<br />
+          <br />
+</li>
+        <li><img style="width: 27px; height: 27px;" alt="" src="Imagenes/icono_excel.png" align="middle" /> alanlar listesini .xls formatında oluşturur.<br />
+          <br />
+        </li>
+        <li><img style="width: 27px; height: 27px;" alt="" src="Imagenes/icono_explorar.png" align="middle" /> .\res listeler klasörünü açar.<br />
+          <br />
+        </li>
+        <li><img style="width: 27px; height: 27px;" alt="" src="Imagenes/icono_blocdenotas.png" align="middle" /> alanlar listesini .res formatında oluşturur.<br />
+          <br />
+        </li>
+        <li><img style="width: 27px; height: 27px;" alt="" src="Imagenes/icono_eliminar.png" align="middle" /> alanı listeden siler.<br />
+          <br />
+        </li>
+        <li><img style="width: 27px; height: 27px;" alt="" src="Imagenes/icono_cortePK.png" align="middle" />&nbsp; alanı belirli bir KM'den ikiye böler.<br />
+          <br />
+        </li>
+        <li><img style="width: 27px; height: 27px;" alt="" src="Imagenes/icono_nuevo.png" align="middle" />&nbsp; sıfırdan yeni bir liste oluşturmak için alanlar listesini boşaltır.<br />
+        </li>
+</ul>
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="modos">Liste Modları</a></span><br />
+      <span class="Parrafo"><br />
+Varsayılan liste modu <span style="font-weight: bold;">Malzemeler</span>'dir. Bu mod etkinken, "malzeme" olarak </span><span class="Parrafo"><a href="EDM_editor_perfiles.html#tablas_cubic">metraj tablosundaki</a></span><span class="Parrafo"> herhangi bir girdiyi anlayarak, projede kullanılan tüm malzemelerle bir liste oluşturulur.<br />
+      <br />
+Alanlar listesi oluşturulduğunda, her bir malzemenin her bir kullanımı için bir girdi oluşturulur ve .xls veya .res formatında liste oluşturulduğunda bize Istram içindeki bu listenin verilerini (eksen, metraj no, başlangıç/bitiş KM, hacim, 2D alan) ve ayrıca ağırlık merkezinin XYZ koordinatlarını sunar. İletişim kutusunun Hacim kutucukları üzerinden imleç geçirildiğinde, 2D Alan da gösterilir.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 220px;" alt="" src="Imagenes/geocercas_materiales.png" /></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Pencerenin üst kısmında bulunan seçici aracılığıyla, liste modunu <span style="font-weight: bold;">Kazılar/Dolgular</span> olarak değiştirebiliriz. Bunu yaptığımızda, liste ikiye bölünür:<br />
+      </span></span></span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Kazılar:</span> kütleler diyagramı için pozitif bir Dönüşüm Faktörüne sahip tüm metraj kalemleri: toprak kazısı, kaya kazısı...<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Dolgular:</span> kütleler diyagramı için negatif bir Dönüşüm Faktörüne sahip tüm metraj kalemleri: dolgu, seçme malzeme...</li>
+      </ul>
+      <span class="Parrafo">Alanlar listesi oluşturulduğunda, kazıları kazılarla ve dolguları dolgularla gruplandırır. Hacimleri, onu oluşturan malzemelerin dönüşüm faktörüne göre hesaplar.<br />
+      <br />
+</span><span class="Parrafo">.xls veya .res formatında liste oluşturulduğunda bize Istram içindeki bu listenin verilerini (eksen, kazı/dolgu, başlangıç/bitiş KM, hacim) ve ayrıca ağırlık merkezinin XYZ koordinatlarını ve her bir malzemenin hesaplanan hacme olan katkısını sunar.</span><br />
+      <span class="Parrafo">
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 220px;" alt="" src="Imagenes/geocercas_excavaciones.png" /></span><br />
+      </div>
+      <span class="Parrafo">
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

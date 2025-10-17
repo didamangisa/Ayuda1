@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Platformların Uyumlaştırılması</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLATFORMLARIN UYUMLAŞTIRILMASI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu menüden, önceden bağlanmış iki eksenin (katılım veya ayrım rampası) geometrisini uyumlu hale getirmeye çalışacağız. Bu menü, Düşey Güzergah menüsünde, Eklentiler seçenekleri içinde yer almaktadır.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 580px; height: 138px;" alt="" src="Imagenes/alz_compl_conciliacion.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Platformların uyumlaştırılması, iki eksenin bitişik tarafındaki geometriyi ve bir <a href="OL_entronques.html#menu_entronque">kavşağın</a> ABCDE karakteristik noktalarından sonraki <a href="OL_lineas_frontera.html">sınır çizgisi</a> bölgesindeki geometriyi değiştirir. İki eksen arasında platform uyumlaştırması yapılmadan önce, kavşağın tüm aşamalarının tanımlanmış olması gerekir.<br />
+Uyumlaştırma, bu nedenle, <a href="OL_proyecto.html">Proje</a> menüsünden yapılan hesaplamanın son aşaması olarak yürütülür ve şunları gerektirir:<br />
+      </span></span>
+      <ul>
+        <li><img style="width: 347px; height: 124px;" alt="" src="Imagenes/conciliacion_firmes.png" align="right" hspace="6" /><a href="OL_firmes.html">Üstyapıların</a> enkesite dahil edilmesi. Hem Ana Eksen'de hem de Rampa Ekseni'nde farklı üstyapı kalınlıklarının tanımlanmış olması gerekir. Üstyapıların uyumlaştırılması, her iki eksenin <a href="OL_calzadas_aux.html">banketlerinin</a> farklı katman kalınlıklarında gerçekleştirilecektir.</li>
+      </ul>
+      <ul>
+        <li>Uyumlaştırma bölgesinde önceden tanımlanmış bir <a href="OL_lineas_frontera.html">sınır çizgisi</a> bulunması.</li>
+      </ul>
+      <ul>
+        <li>Enkesitlerin RAM'de aktif olması. Yapılandırma, Tercihler, Seçenekler, Güzergah Projesi, Bellekte (RAM) Hesaplamalar açılır menüsünden.</li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 563px; height: 428px;" alt="" src="Imagenes/concil_ram.png" /><br />
+      </div>
+      <br />
+İki eksen arasındaki uyumlaştırma, daha küçük numaralı eksende tanımlanır ve aşağıdaki parametrelerle gerçekleştirilir:<br />
+      <ul>
+        <li>Diğer <strong>Eksenin</strong> numarası.</li>
+      </ul>
+      <ul>
+        <li>Tanımlamanın yapıldığı eksen üzerindeki <strong>Başlangıç KM</strong> ve <strong>Bitiş KM</strong>. Genellikle sınır çizgisinin ilk noktasından önce bir başlangıç kilometresi ve platformların uyumlaştırılmasını artık istemediğimiz bir bitiş kilometresi tanımlanacaktır. Her iki kilometre de yaklaşıktır.<br />
+</li>
+      </ul>
+      <ul>
+        <li>Mesafe aralığı: Tanımlanan kilometre bölgesi içinde, <a href="OL_anchos.html">platform</a> kenarları (kod 2) <strong>minimum</strong> mesafeden daha büyük ve <strong>üstyapı/toprak işleri</strong> mesafesinden daha küçük bir mesafede ise üstyapı uyumlaştırması yapılır; mesafe <strong>üstyapı/toprak işleri</strong> mesafesinden büyük ve <strong>maksimum</strong> mesafeden küçük ise toprak işleri uyumlaştırması yapılır.</li>
+      </ul></span>
+      <div style="margin-left: 40px;">Ana eksene bağlanan katılım veya ayrım rampasında kod 2 bulunmadığı durumlarda, program tek hatlı karayolu ekseni olan kod 1'i analiz eder.<br />
+      </div>
+      <span class="Parrafo"><br />
+
+      <div style="text-align: center;"><img style="width: 592px; height: 157px;" alt="" src="Imagenes/concil_editar_firmes.png" /><br />
+      </div>
+      <br />
+Uyumlaştırmayı gerçekleştirmek için <strong>Uyumlaştır</strong> kutucuğunun ve aynı şekilde, yukarıdaki resimde gördüğümüz gibi uyumlaştırmamız gereken eksenlere ilişkin tüm verilerin etkinleştirilmesi zorunludur.<br />
+      <br />
+<strong>Üstyapı</strong> Uyumlaştırması:<br />
+      <ul>
+        <li>Bitişik <a href="OL_calzadas_aux.html">banketler</a> bölgesindeki kırmızı kot, tesviye yüzeyi ve üstyapı katmanları yüzeylerinin geometrisini, bu katmanların ana platformların <a href="OL_firmes.html">üstyapı</a> katmanları tanımında başladığı noktalardan itibaren hizalayarak değiştirir.</li>
+      </ul>
+      <ul>
+        <li>Bu uyumlaştırmanın yapılabilmesi için, iki platform kenarı arasındaki <strong>eğimin</strong> verilen bir değerden küçük olması gerekir.<br />
+        </li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 566px; height: 222px;" alt="" src="Imagenes/concil_firmes_dibujo.png" /><br />
+      </div>
+      <br />
+<strong>Toprak İşleri</strong> Uyumlaştırması:<br />
+      <ul>
+        <li>Öncelikle, her eksen için <strong>tercih edilen bir tip kesit</strong> kullanarak iki platform birleştirilmeye çalışılır (her iki kesit de mevcut eksende tanımlıdır).</li>
+      </ul>
+      <ul>
+        <li>Mevcut eksenin tercih edilen kesitinin dolgu kesitleri ve <a href="OL_cunetas.html">hendeği</a> kullanılır.</li>
+      </ul>
+      <ul>
+        <li>Eksenlerin kesitleri arasında bir kesişim yoksa veya kesitlerden birinin yatay gelişimi tanımlanan minimumdan (<strong>am</strong>) daha az ise:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>&nbsp;Daha alçak olan eksene, <strong>minimum genişliğe</strong> kadar <strong>tercih edilen kesiti</strong> ve ardından hendeği koymak denenir. Daha sonra, diğer eksenle olan bitiş şevi kontrol edilir; bu şev, tercih edilen dolgu kesitinin şevi ile <strong>izin verilen</strong> kesitin şevi arasında olmalıdır.</li>
+          <li>Ve bu koşulu sağlamazsa, <strong>alternatif kesitler</strong> kullanılır. Alternatif tip kesitler uygulandığında, kenarı daha yüksek olan eksen dolgu kesitini, kenarı daha alçak olan ise yarma kesitini uygular.</li>
+        </ul>
+      </ul>
+      <div style="text-align: center;"><img style="width: 592px; height: 157px;" alt="" src="Imagenes/concil_edit_tierras.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img style="width: 516px; height: 324px;" alt="" src="Imagenes/cocil_modelo.png" /><br />
+      </div>
+      <br />
+Her eksene, hendek tabanına kadar olan toprak işleri atanır.<br />
+      <br />
+Uyumlaştırmayı gerçekleştirmek için, bu menüyü tamamen tanımladıktan sonra <a href="OL_proyecto.html">Proje</a> sekmesinden hesaplama yapmamız gerekecektir. Ardından, bu uyumlaştırmanın kontrolü için <a href="OL_anadir_ramal.html">Katılım Kolu Ekle</a> menüsünden faydalanarak ana eksen enkesitlerinde uyumlaştırılmış rampa platformlarını görebiliriz.<br />
+      <br />
+Bir ana eksenin iki rampa ekseniyle uyumlaştırılmasının üç boyutlu görünümü:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 536px; height: 312px;" alt="" src="Imagenes/concil_3d.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+<a href="OL_anadir_ramal.html">Katılım Kolu Ekle</a> menüsünden iki rampalı bir ana eksen enkesitinin görünümü:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 640px; height: 258px;" alt="" src="Imagenes/concil_aramal.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Zeminde Yarma</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ZEMİNDE YARMA GEOMETRİSİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+<tbody><tr><td class="obsolete Parrafo" style="width: 692px;"><br />
+<span class="Parrafo">Bu sekmeden yarma geometrisi ile ilgili her şey tanımlanır. ISTRAM<sup>®</sup>BIM
+bu konuda, basit parametrik tanımdan başlayarak tablolara, 3B çizgilere, duvarlara vb. bağlı olarak şevlerin otomatik oluşturulmasına kadar, aşağıda ayrıntıları verilen çok geniş olanaklar sunar.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_desmonte_tierra.png" style="width: 550px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+</span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#def_param">Parametrik Tanım</a></span><br />
+      <span class="Parrafo"><a href="#def_vectorial">Vektörel Tanım</a></span><br />
+      <span class="Parrafo"><a href="#ubicacion">Yarma Topuğu ve Şev Başına Göre Şev Tanımı</a></span><br />
+      <span class="Parrafo"><a href="#terreno_inadecuado">Zayıf Zeminde Yarma</a></span><br />
+      <span class="Parrafo"><a href="#STAlt">Alternatif Tip Kesit</a><br />
+      <a href="#punto_obligado">Zorunlu Nokta</a><br />
+</span>
+      <span class="Parrafo"><a href="#def_avanzadas">Gelişmiş Tanımlar</a></span><br />
+      <span class="Parrafo"><a href="#tuneles">Tünel ve Aç-Kapa Tünel için Yarma Kesitleri</a></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Bu diyalog kutusunda, diyalog kutusunu genişletmeye veya daraltmaya yarayan bir <img src="Imagenes/icono_desplegar.png" style="width: 20px; height: 20px;" alt="" /> ikonu bulunur (Uzun/Kısa Menü).<br />
+      <br />
+      </span><span class="Titulo_2"><a name="def_param">Parametrik Tanım</a></span><br />
+      <span class="Parrafo">
+<br />
+      </span><img src="Imagenes/modelo_desmonte.png" style="width: 345px; height: 220px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Farklı şevlerin uygulanacağı kademeler için ardışık yükseklikler girilir. Şev tanımı aşağıdaki parametrelerle yapılır:<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 340px; height: 108px;" border="0" cellpadding="2" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 29px;"><strong>ZD1</strong><br style="font-weight: bold;" />
+            <strong>ZD2</strong><br style="font-weight: bold;" />
+            <strong>ZD3</strong><br />
+            </td>
+            <td style="vertical-align: top; width: 262px; text-align: justify;">Zemindeki yarma kesitini farklı şevler uygulamak için bölünebilecek üç artan (kümülatif) yüksekliktir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 29px;">
+
+           <strong>D1</strong><br style="font-weight: bold;" />
+            <strong>D2</strong><br style="font-weight: bold;" />
+            <strong>D3<br /><img src="Imagenes/desmonte_sexagesimales.png" style="width: 83px; height: 21px;" alt="" /><br /></strong>
+            </td>
+            <td style="vertical-align: top; width: 262px;">0 ile <strong>ZD1</strong> arasındaki şev.<br />
+<strong>ZD1</strong> ile <strong>ZD2</strong> arasındaki şev.<br />
+<strong>ZD2</strong> ile <strong>ZD3</strong> arasındaki şev.<br />Altmışlık sistemde şev açıları.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">ABD<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Yarma palyelerinin genişliği.
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">DBD<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Palyeler arası düşey mesafe.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><strong>+</strong><br />
+            </td>
+            <td style="vertical-align: top;">Son şev için izin verilen yükseklik fazlası.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">Pen<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Yarma palyelerinin eğimi (% ve içe doğru pozitif).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><strong>ZB1</strong><br />
+            </td>
+            <td style="vertical-align: top;">İlk palye için kot.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">maks<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Uygulanacak maksimum palye sayısı.</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><strong>G.B.Y.</strong><br />
+            </td>
+            <td style="vertical-align: top;">İlk palyenin kaybolmaya başlayacağı yükseklik (Geçiş Başlangıç Yüksekliği).<br />
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      <br />
+Hesaplama sırasında, zemindeki yarma kesitinin yüksekliği <strong>ZD1</strong>, <strong>ZD2</strong> veya <strong>ZD3</strong>'ten en büyüğünü AŞMAZSA, şevler yerine program, hendekten sonra, varsa görüş palyesinden sonra veya kaya varsa açığa çıkan kayadan sonra dikey bir şev (veya tanımlıysa bir duvar) yerleştirir ve bunun tacı AMD yatay bileşenli ve ZMD kot farklı bir şevle belirlenir. Bu nedenle, tanımlanan en yüksek şeve, araziyi kesecek kadar yeterli bir yükseklik atanması gerekir, bu yüzden genellikle 100 veya 1000 gibi bir değer atanır.<br />
+      <br />
+Şevin Y:D oranına göre verildiğini (dikeyde bir birim yükselmek için yatayda gereken doğrusal birim) hatırlamak gerekir; böylece 0 şevi tamamen dikey olur ve sayı arttıkça şev daha yatık hale gelir.<br />
+      <br />
+Eğer sadece bir şev kullanılacaksa, bu <strong>ZD1</strong>, <strong>D1</strong> verilerinde yer almalıdır; eğer iki şev kullanılacaksa, <strong>ZD1</strong>, <strong>D1</strong> ve <strong>ZD2</strong>, <strong>D2</strong> olmalıdır ve üç şev durumunda da benzer şekilde devam eder. Kullanılmayan veriler sıfır olarak bırakılabilir.<br />
+      <br />
+<strong>[ ] Boyuna Hatta Göre</strong> kutucukları, ilk palyenin kotunu yardımcı boyuna hattan alması için, <strong>[ ] Kırmızı Kot Z</strong>, yükseklikleri kırmızı kot kotundan ölçmesi için veya <strong>[ ] dZ'yi Koru</strong>, ilk palye yarma topuğunun altında kalırsa kot farkını korumak için etkinleştirilebilir.<br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="def_vectorial">Vektörel Tanım</a></span><br />
+      <br />
+      <img src="Imagenes/desm_modo_vectorial.png" style="width: 201px; height: 91px;" alt="" align="right" />Parametrik tanım yerine, burada zemindeki yarma kesitlerinin <a href="definicion_vectorial.html">vektörlerle tanımı</a> (sayısal veya grafik olarak) yapılabilir. Bir vektörle (veya tanımlıysa bir duvarla) tanımlandığında, uygulandığında arazi yüzeyiyle kesişime ulaşılmazsa, vektör yerine dikey bir şev yerleştirilir. Bu nedenle, genel olarak, bu vektörün tanımı her zaman araziye ulaşacak kadar büyük olmalıdır.<br />
+      <br />
+      <br />
+<span class="Parrafo">
+      </span><span class="Parrafo"><table style="text-align: left; width: 600px; height: 183px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 397px; text-align: center;"><img src="Imagenes/dialogo_def_vect_desmonte.png" style="width: 450px; height: 138px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 278px; text-align: center;"><img src="Imagenes/desm_modo_vectorial2.png" style="width: 190px; height: 120px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+<a href="definicion_vectorial.html">Vektörel tanımın</a> üçüncü sütunu, vektörün her bir tepe noktasıyla ilişkili kodlara karşılık gelir.<br />
+<br />Vektörel ve Topuktan Sabit modundaki şevler için iki kontrol ayırt ederiz:<br /></span></span><ol><li><span class="Parrafo"><span class="Parrafo">Parametrik şevlerde izin verilenle aynı olan bir <strong>tolerans</strong>, araziye çok yakın bir palye yapmaktan kaçınmak için son şev için bir yükseklik fazlasına izin verir.</span></span></li><li><span class="Parrafo"><span class="Parrafo"><strong>Tam Palyeler</strong>: Eğer arazi son palyeyi keserse, o zaman bu palyeyi yapmaktan kaçınmak için önceki şev gerekli olduğu kadar uzatılır:</span></span></li></ol><div style="text-align: center;"><img src="Imagenes/desm_vec_tol.png" style="width: 275px; height: 99px;" alt="" /></div><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><span class="Titulo_2"><a name="ubicacion">Yarma Topuğu ve Şev Başına Göre Şev Tanımı</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Şimdiye kadar açıklanan her şey, şev geometrisinin topuktan tanımlandığı durumlar için geçerlidir. Ancak program, şevleri şev başından tanımlamaya da olanak tanır. <br />
+      <br />
+      </span><span class="Parrafo"><strong>KONUM</strong> seçeneği, alışılmış <strong>ŞEV TOPUĞUNDAN SABİT</strong> modu ile <strong>ŞEV BAŞINDAN SABİT</strong> modu arasında geçiş yapmayı sağlar.<br />
+      <br />
+</span></span>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/desm_ubicacion.png" style="width: 300px; height: 108px;" alt="" /></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span>
+
+      <p class="MsoCaption" style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 9pt; font-weight: normal;" lang="ES-TRAD">İlk durumda, zemindeki yarma aşağıdan yukarıya doğru uygulanır ve fazlalık yukarıdan kesilir. İkinci durumda, üst uç araziye yerleştirilir ve kesit fazlası, duruma göre hendeğin veya kayanın dış kenarında kesilir.</span><span style="font-size: 9pt;" lang="ES-TRAD"><o:p></o:p></span></p>
+
+
+      <br />
+      <img src="Imagenes/desm_fijo_cabeza.png" style="width: 282px; height: 175px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Örneğin, 2 metrelik bir yüzeysel zemin katmanı, 6 metre derinliğe kadar sökülebilir kaya ve geri kalanı sağlam kaya olan bir durumda, uygun bir şev uygulaması, şekilde gösterildiği gibi Z1, Z2 ve Z3 için sırasıyla 108, 106 ve 100 aralıklarıyla şev başından sabit konumu dayatacaktır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/desm_fijo_cabeza_dialogo.png" style="width: 300px; height: 108px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"><br />
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="terreno_inadecuado">Zayıf Zeminde Yarma</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><img src="Imagenes/desm_inadecuado.png" style="width: 141px; height: 57px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Eğer <strong>[->Z.Z.]</strong> seçeneği etkinleştirilirse, zemindeki yarmada tanımlanan şev, zayıf zemin ve bitkisel toprak için de geçerli kabul edilir. Bu koşullar altında, yarma şevinin zayıf zemin ve bitkisel topraktan geçen çizgi kesimine, zayıf zemindeki yarmada kullanılan tip atanır. Ayrıca, zayıf zemini ve bitkisel toprağı desteklemek için yarma şev başında dolgu kamasına gerek olmadığı kabul edilir.<br />
+      <br />
+Eğer tip kesitte bir <a href="OL_vectores.html#desmonte_inadecuado">zayıf zeminde yarma vektörü</a> tanımlanmışsa ve aynı anda zemindeki yarma kesitinde bu seçenek etkinleştirilmişse, program şu şekilde hareket eder:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><strong>Dolgu</strong>: Şev, sağlam zemine kadar iner ve sonra zayıf zemindeki yarma vektörü ile yüzeye kadar yükselir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><strong>Yarma</strong>: Zemindeki yarmada tanımlanan geometri yüzeye kadar yükselir, ancak zayıf zeminden geçen kesimin tipi, zayıf zemindeki yarma tipine (L69) değiştirilir.</span></li>
+      </ul>
+      <span class="Parrafo"><br />
+      </span></span><span class="Titulo_2"><a name="STAlt">Alternatif Tip Kesit</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><img src="Imagenes/desm_STAlt.png" style="width: 100px; height: 45px;" alt="" align="right" hspace="8" /><span class="Parrafo">Yarma kesiti uygulanırken öngörülen yükseklik aşılırsa ve alternatif tip kesit numarası sıfırdan büyükse, program yarma kesitini (kayada yarma + zeminde yarma) o alternatif tip kesitte tanımlanan verilerle oluşturmaya çalışacaktır.<br />
+      <br />
+Eğer bu kesitle de öngörülen maksimum yükseklik aşılırsa, o zaman ilk kesitin duvarı yerleştirilir.<br />
+      <br />
+Mevcut kesit sayısı kadar alternatif kesitlere atlamalara izin verilir. Bu şekilde, artan yüksekliklere sahip bir dizi kesit tanımlanabilir ve program, yüksekliğe bağlı olarak ihtiyaç duyduğu kesiti seçer.<br />
+      <br />
+Alternatif kesitler, yarma, dolgu ve her bir taraf için bağımsız olabilir.<br />
+      <br />
+Bitişikteki kutucuk etkinleştirilirse, o zaman alternatif tip kesitin tüm bileşenleri (vektörler, kontrol noktası, palye, hendek ve yarma ile dolgu geometrisi) alınır ve SADECE yarma geometrisi alınmaz. Kontrol noktası da alındığı için, başlangıçta dolgu olan bir kesitin, alternatifle yarma kesitine dönüşmesi ve tersi mümkündür.<br />
+      <br />
+      <span class="Titulo_2"><a name="punto_obligado">Zorunlu Nokta</a></span><br />
+
+      <br />
+
+Şev oluşturma noktalarının (parametrik veya vektörel) belirli bir sayısını zorunlu olarak tanımlamaya izin verilir. <br />
+
+</span></span>
+      <ul>
+        <li>Zorunlu noktalardan sonrasına kadar araziyle kesişim aranmaz.</li>
+        <li>Yarma kesitinin bir kısmı arazinin üzerinde kalabilir, bu dolgu olarak metrajlandırılacaktır.</li>
+        <li>Eğer son zorunlu nokta arazinin üzerinde kalırsa, kesit orada biter.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/desmonte_punt_obl.png" style="width: 480px; height: 366px;" alt="" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><a name="def_avanzadas"><span class="Titulo_2">Gelişmiş Tanımlar</span></a><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Parametrik ve vektörel modların yanı sıra, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, her zaman kullanıcının veri giriş sürelerini azaltmaya odaklanmış, çok güçlü bir yarma geometrisi tanım modları yelpazesi sunar.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/desm_avanzado.png" style="width: 600px; height: 278px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+<strong>MOD</strong> açılır menüsüne tıklandığında, farklı tanım olanaklarını içeren bir yardım grafiği (model) ekranda açılır.<br />
+      <br />
+Herhangi bir EDM çizgisinin kullanıldığı durumlarda, çizgiyi seçmek için <strong>[ÇİZGİ 0 nkt]</strong> düğmesine basılır ve ardından harita üzerinden çizgi seçilir. Seçilen çizgi ekranda daha kalın ve camgöbeği renginde gösterilir ve ayrıca menüde çizginin nokta sayısı görünür.<br />
+      <br />
+<strong>[Aktar]</strong> seçeneği ayrıca, &nbsp;<span class="Archivo">.vol</span> dosyasında saklanan çizgiden bir EDM çizgisi oluşturmaya olanak tanır, bu da geldiği EDM dosyasını yüklemeye gerek kalmadan çizgiyi düzenlemeyi mümkün kılar.<br />
+      <br /><i><strong>(Duvar) + Plan Çizgisi</strong></i><br />
+      <br />
+      </span></span><img src="Imagenes/desm_L2D.png" style="width: 264px; height: 144px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><img src="Imagenes/modelo_desm_L2D.png" style="width: 150px; height: 74px; margin-left: 7px;" alt="" align="right" /></span><span class="Parrafo">X ve Y koordinatlarına sahip bir plan çizgisinden yola çıkarak, program araziyle kesişimi hesaplar ve bu A kesişim noktasını hendeğin son noktası B ile birleştirir.<br />
+            <br />
+Eğer sabit yükseklikte bir duvar tanımlanmışsa (isteğe bağlı), önce duvar uygulanır ve eğer bu araziye ulaşmazsa, o zaman duvarın başından itibaren 3B çizginin konumuna veya plan çizgisinin konumundaki araziye kadar bir şev çizilir.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Parrafo"><br />
+      <br />
+      </span></span><i><strong><a name="L3D">(Duvar) + 3B Çizgi</a><br />
+      <br />
+      </strong></i><span class="Parrafo"><img src="Imagenes/modelo_desm_L3D.png" style="width: 154px; height: 84px; margin-left: 7px;" alt="" align="right" /></span><img src="Imagenes/desm_L3D.png" style="width: 276px; height: 166px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Önceki yönteme benzer, ancak bu durumda çizgi, hendeğin son noktası B ile birleşerek ilgili yarma şevini oluşturan A noktasını verecektir. Bu şev, kesinlikle çizgide (A noktası) kesilecektir.<br />
+<br />
+Eğer (isteğe bağlı) sabit yükseklikte bir duvar tanımlanırsa, önce duvar uygulanır ve eğer bu araziye ulaşmazsa, o zaman duvarın başından itibaren 3B çizginin konumuna veya plan çizgisinin konumundaki araziye kadar bir şev çizilir.<br />
+<br />
+Kesitin yarma veya dolgu bölgesinde oluşmasından bağımsız olarak, son nokta, şev alçalırsa (ve hendek yoksa) 601 ve yükselirse 1399 olarak kodlanır.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><i><strong><br />
+      </strong></i>
+      <br /></span><span class="Parrafo"><i><strong>3B Çizgi + Duvar<br />
+      <br />
+</strong></i></span></span><span class="Parrafo"><img src="Imagenes/modelo_desm_L3D_muro.png" style="width: 153px; height: 83px; margin-left: 7px;" alt="" align="right" /></span><img src="Imagenes/desm_L3D_muro.png" style="width: 288px; height: 169px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Bu durumda 3B çizgi, bir duvarın temelini temsil edebilir. Bu nedenle, hendeğin son noktası çizgiye birleştirilir ve duvar dikey olarak araziyi kesene kadar devam eder.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><i><strong><br />
+      </strong></i>
+      <br /></span><br />
+      <span class="Parrafo"><br />
+      <br />
+3B çizginin kotu arazinin üzerindeyse, o zaman bu noktadan itibaren dolgu duvarı uygulanır.<br />
+      <br />
+<br />
+      <i><strong>Şev Tablosu</strong></i><br />
+      <br />
+</span></span><img src="Imagenes/dialogo_desm_tabla_taludes.png" style="width: 258px; height: 198px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><img src="Imagenes/modelo_desm_tabla_taludes.png" style="width: 150px; height: 92px; margin-left: 7px;" alt="" align="right" /></span><span class="Parrafo"><strong>Şev Tablosu</strong> modunun yanında başka bir <strong>[T:n Şev]</strong> düğmesi görünür. Bu tuşa basıldığında, vektör tanımına benzer bir menü açılır, ancak <strong>ŞEV</strong> ve <strong>MAKSİMUM YÜKSEKLİK</strong> sütunları bulunur.<br />
+<br />
+Hesaplama sırasında program, tablodaki ilk şevle denemeye başlar. Eğer öngörülen maksimum yükseklikten daha düşük bir yükseklikle araziye ulaşmazsa, program tablodaki bir sonraki veriyi denemeye başlar; eğer bununla da öngörülen maksimum yüksekliğiyle araziye ulaşmazsa, bir sonraki veriye atlar ve bu şekilde devam eder.<br />
+<br />
+Eğer tablodaki verilerden hiçbiriyle araziye ulaşılamazsa, o zaman dikey bir şev (veya tanımlıysa bir duvar) yerleştirilir.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+<br /></span><i><strong>Duvar + Şev + Çizgi</strong></i><br />
+      <span class="Parrafo"><br />
+      </span></span><img src="Imagenes/modelo_desm_muro_talud_L2D.png" style="width: 154px; height: 84px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Bu durumda çizgi, kullanıcının seçimine göre 2B veya 3B olabilir. Eğer 2B bir çizgiyse, bu araziye götürülür; eğer 3B ise, sahip olduğu kot korunur.<br />
+      <br />
+Bu çizgiden itibaren, duvarı kesene kadar bir AMD/ZMD şevi (duvar taç değerleri kullanılarak) çizilir (bu nedenle duvar değişken yüksekliktedir).<br />
+      <br />
+Alternatif olarak, tanımlanan AMD/ZMD şevi bir vektörle değiştirilebilir. Eğer vektörün herhangi bir noktası varsa, bu kullanılır ve tanımlanan AMD/ZMD değerleri dikkate alınmaz.<br />
+      <br />
+Duvarın da şevleri, genişliği ve derinliği olabilir. Eğer çizgi, duvarı temelinin altından keserse, duvar ortadan kalkar ve daha yatık bir şev kalır.<br />
+      <br />
+Eğer yarma şev tacı tanımlanmışsa, 2B çizginin arazi üzerindeki izdüşüm noktası, yarma şev tacının <strong>T</strong> şevi ile bir <strong>A</strong> yüksekliği kadar aşağı indirilir ve bu yeni noktadan itibaren duvar + şev geometrisi uygulanır.<br />
+<br />
+      <br />
+      <i><strong>Yarmada (D) ve Dolguda (T) Asma Duvar</strong></i><br />
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_muro_colgado.png" style="width: 153px; height: 173px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Bu tip, her kilometrede kotunun alındığı bir 3B çizginin tanımlanmasını gerektirir. Kesitin yarma mı yoksa dolgu mu olduğu kontrol edilmez ve yarma duvarı, yarma duvarı için tanımlanan geometriyle (genişlik, derinlik, şevler,....) çizginin kotuna kadar inşa edilir.<br />
+      <br />
+<strong>ASMA DUVAR D</strong> (yarma tipi), duvarın temelini platform kenarında ve başını 3B çizgiden gelen kota sahip olacak şekilde yerleştirir. Duvarın, yarma duvarında tanımlanan bir yükseltisi, derinliği ve diğer geometrik özellikleri olabilir.<br />
+      <br />
+<strong>ASMA DUVAR T</strong> (dolgu tipi), duvarın başını platform kenarında ve temelini 3B çizgiden gelen kota sahip olacak şekilde yerleştirir. Duvarın, dolgu duvarında tanımlanan bir yükseltisi, derinliği ve diğer geometrik özellikleri olabilir.<br />
+      <br />
+Duvarların geometrilerinin sırasıyla yarma ve dolgu alt menülerinde tanımlanmasına rağmen, hem yarmadaki hem de dolgudaki asma duvarların buradan tanımlandığına dikkat etmek gerekir.<br />
+      <br />
+Bu duvar tipleri, otomatik olarak uygun yükseklikteki duvarı arayan duvar tanım menülerinin <i><strong>Oto</strong></i> seçeneğiyle uyumludur.<br />
+<br />
+      <br /></span></span><i><strong><a name="vector_muro_L3D">
+Vektör + Duvar + 3B Çizgi</a></strong></i><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_vector_muro_L3D.png" style="width: 150px; height: 189px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo">Bu mod, kullanıcı tarafından tanımlanan bir vektörü platform kenarından itibaren uygular.<br />
+      <br />
+Eğer enkesitteki 3B çizgi tarafından tanımlanan nokta vektörün üzerindeyse, noktadan başlayarak vektörü kesene kadar bir yarma duvarı uygulanır.<br />
+      <br />
+Eğer enkesitteki 3B çizgi tarafından tanımlanan nokta vektörün altındaysa, noktadan yukarıya doğru vektörü kesene kadar bir dolgu duvarı yükseltilir.<br />
+      <br />
+      3B çizgi hendek veya platform üzerinde kalsa bile, bu mod çalışmaya devam edecek ve sonuç olarak duvar, enkesitin ilgili bölümünü budayacaktır.<br />
+      <br />
+Bu tanımı sadece yarmalarda uygulamak için <strong>[ ] Sadece yarma durumunda uygula</strong> seçeneği etkinleştirilebilir.<br />
+      <br />
+Mod seçicinin yanındaki etiketsiz kutucuğu işaretleyerek, vektörün kayadaki yarmadan sonra başlamasını zorlayabiliriz.<br />
+      <br />
+<br /><i><strong>
+Görünür Şev</strong></i><br />
+      <br />
+</span></span><img src="Imagenes/modelo_desm_talud_aparente.png" style="width: 163px; height: 81px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Bu modda, yarma şev başı, hendek sonundan D1 şevi kullanılarak hesaplanır, ancak daha sonra kesit, önceden hesaplanan noktaya AMD/ZMD şevi kullanılarak kapatılan değişken yükseklikte bir duvarla oluşturulur. Ortaya çıkan duvar ve şev yükseklikleri orantılıdır.<br />
+      <br />
+      <br />
+      <i><strong>Duvar Yüksekliği 3B Çizgiye Göre</strong></i><br />
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_alto_muro_L3D.png" style="width: 138px; height: 93px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Bu durumda, 3B çizginin kotu duvarın başının kotunu belirler, ardından duvarın tacı ve/veya tanımlanmış olan parametrik zeminde yarma kesiti ile devam edilir.<br />
+      <br />
+Eğer 3B çizgi, duvarın başını arazinin üzerine çıkarırsa, kesit, dolgu kesitinde tanımlanan ilk şevle araziye karşı kapatılır.<br />
+      <br />
+Duvarın başından itibaren uygulanan yarma, şev topuğundan sabit veya şev başından sabit olabilir. Ayrıca, bu duvar tipleri, otomatik olarak uygun yükseklikteki duvarı arayan duvar tanım menülerinin <i><strong>Oto</strong></i> seçeneğiyle uyumludur.<br />
+      <br />
+<br />
+      </span></span><i><strong><a name="muro_losa">Duvar + Döşeme</a></strong></i><br />
+      <span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span><img src="Imagenes/modelo_desm_muro_losa.png" style="width: 136px; height: 93px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Bu mod, bir taç döşemesi yerleştirilen ve sonra doldurulan duvarlardan bir aç-kapa tünel yapmayı sağlar. İki değer girilmelidir:</span></span><br />
+<ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo">Döşeme kalınlığı (<strong>C</strong>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Net yükseklik (<strong>H</strong>).</span></span></li>
+
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Net yüksekliğin nereden ölçüleceği seçilebilir ve ayrıca bu yüksekliği eksen boyunca her iki tarafta kesimlere ayırabileceğimiz bir tablo da tanımlanabilir. Yükseklikler şuradan ölçülebilir:<br /></span></span><ul><li>Kırmızı Kot</li><li>Kod 1 (platformun geometrik eksenindeki kod 1'den dy bileşeni)</li><li>Platform</li><li>Platform+Banket</li><li>Yardımcı boyuna hat.</li><li>Sağ kırmızı kot (farklı çift kırmızı kot durumunda, her bir taraf için hangisinin kullanılacağı seçilebilir).</li><li>Sol kırmızı kot.</li><li>Kod 1 üzerinde (otoyollar ve deverli döşeme durumunda, yüksekliği kod 1 üzerinde hesaplar ve bu kotu kod 1'in düşeyindeki döşemeye uygular).</li>
+        <li>Diğer tarafla eşitle (Örn. Eğer sağ tarafta Kod 1 üzerinde seçeneği konulursa, eksendeki kot devere bağlı olacaktır; bu seçeneği kullanarak sol taraftaki kot, o taraftaki deverden bağımsız olarak aynı olacaktır).<br />
+        </li>
+</ul><br /><span class="Parrafo"><span class="Parrafo">Demiryolunda:<br />
+</span></span>
+      <ul>
+        <li>Kırmızı Kot</li>
+        <li>Alçak Ray (C.D.G.'yi koruma durumlarında kırmızı kottan farklı olabilir, demiryolu tipi eksen durumunda).</li>
+        <li>Hatlar Arası (iki rayın ortalama kotu olarak tanımlanır, demiryolu tipi eksen durumunda).</li>
+        <li>Yüksek Ray (en elverişsiz, demiryolu tipi eksen durumunda).</li><li>Yardımcı boyuna hat.</li><li>Sağ kırmızı kot (farklı çift kırmızı kot durumunda, her bir taraf için hangisinin kullanılacağı seçilebilir).</li><li>Sol kırmızı kot.</li><li>Kod 1 üzerinde (çift hat ve deverli döşeme durumunda, yüksekliği kod 1 üzerinde hesaplar ve bu kotu kod 1'in düşeyindeki döşemeye uygular).</li>
+        <li>Diğer tarafla eşitle (Örn. Eğer sağ tarafta Kod 1 üzerinde seçeneği konulursa, eksendeki kot devere bağlı olacaktır; bu seçeneği kullanarak sol taraftaki kot, o taraftaki deverden bağımsız olarak aynı olacaktır).</li>
+
+      </ul>Yarmada Duvar + Döşeme kesiti, Duvar bir <a href="OL_muro_desmonte.html#Pilotes">Kazık Perdesi</a>'nden oluştuğunda, kazık yüksekliğini arazi yüzeyinden tanımlanan bir derinliğe kadar yükseltmek mümkündür. Bunun için duvar tanımında:<br /><ul><li>Hc: duvarın fazla taç yüksekliği.</li><li>ZMD: araziden ölçülen ve duvarın keseceği derinlik.</li></ul>Bölünmüş yol kesitlerinde, refüje bir duvar veya kazık perdesi eklenebilir; bu durumda duvar (veya kazık perdesi) verilerinin hangi tip kesitten okunacağı belirtilir.<br /><br /><img src="Imagenes/muro+losa_calzada_doble_pilotes.png" style="width: 512px; height: 162px;" alt="" /><br /><br /><img src="Imagenes/muro+losa_calzada_doble_pilotes_st.png" style="width: 512px; height: 239px;" alt="" /><br /><br style="font-weight: bold;" /><strong><a name="vigaspref"></a>Prefabrik kirişli çatı:</strong><i><br /><br /><img style="width: 550px; height: 174px;" alt="" src="Imagenes/muro_losa_vigas_prefabricadas.png" /><br /><br /></i>Bu seçenek etkinleştirilerek, döşeme yerine prefabrik kirişli bir çatı kullanılabilir.<br />Hesaplama aralığı içinde neopren tablosunda veri varsa, her bir kirişin 2 dolgusunun da tanımlanan konum dikkate alınarak kirişler ve dolgular (tel kafes model ve BIM modeli) oluşturulur, ancak her iki dolgunun da prefabrik kirişli çatı ile tanımlanan hesaplama aralığı içinde olması gerekir. <br /><br /><img style="width: 400px; height: 233px;" alt="" src="Imagenes/vigas_prefabricadas.png" /><br /><br /><img style="width: 400px; height: 248px;" alt="" src="Imagenes/mono_vigas_prefabricadas.png" /><br /><br />Döşeme yüksekliği H, kirişin tabanına kadar olacaktır.<br />Seçenek etkinleştirildiğinde, aşağıdaki bilgilerin tanımlandığı bir diyalog kutusu açılır:<br /><ul><li>Kiriş tipi (Yapılar menüsündeki kiriş editörü ile aynı formatta. Yapı Elemanları içindeki Kiriş Editörü menüsünden oluşturulabilir ve düzenlenebilir). Doldurulacak parametreler dış mesnetteki bindirme payı <i>ge</i>, refüjdeki mesnetteki bindirme payı&nbsp;<i>gm&nbsp;</i>ve kiriş eksenleri arasındaki mesafe olacaktır.</li><li>Yük bindirme kirişlerinin geometrisi: dış yastık kirişinin kolon ekseninden dışa doğru yarı genişliği<i> ae</i>; kolon ekseninden içe doğru dış yastık kirişinin yarı genişliği &nbsp;<i>ai</i> ve refüj yastık kirişinin yarı genişliği&nbsp;<i>am</i>, yükseklik&nbsp;<i>h</i> ve kalınlık&nbsp;<i>ee.</i></li><li>Yükseklik&nbsp;<i>hc</i>, <i>Uzunluk</i>, genişlik&nbsp;<i>ac</i>, dış mesnet ekseni ile dış kolon ekseni arasındaki mesafe&nbsp;<i>de&nbsp;</i>ve iç mesnet ekseni ile geometrik eksen arasındaki mesafe&nbsp;<i>dm</i> aracılığıyla dolguların geometrisi.</li><li>Kirişler üzerindeki döşeme kalınlığı <i>el.</i></li></ul>Enkesitte yeni Yastık Kirişi, Kiriş ve Dolgu yüzeyleri temsil edilir. Yastık kirişi ve döşeme, enkesitin geri kalan malzemeleri gibi ölçülür. Kirişler ve dolgular ayrı olarak oluşturulur. Bunun için Ispol4.dar tablosuna sırasıyla Viga_Losa ve Cuña_Losa özelliği verilerek eklenirler.<br /><br /><img style="width: 550px; height: 260px;" alt="" src="Imagenes/perfil_vigas_cargadero.png" /><br /><i><i></i><br /></span>
+      <span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 291px;" alt="" src="Imagenes/perfil_sup_vigas_cargadero.png" /><br /><br /><img style="width: 601px; height: 292px;" alt="" src="Imagenes/perfil_mediciones_vigas_cargadero.png" /><br /><br />Bu elemanları tel kafes modelde temsil etmek mümkündür. Bunun için .lil Düzenle -> Tabliyeler ve Bordürler -> Prefabrik kirişli çatı menüsünden:<br /><br /><img style="width: 600px; height: 292px;" alt="" src="Imagenes/dibujo_planta_cubierta_vigas_prefabricadas.png" /><br /><br /><img style="width: 600px; height: 334px;" alt="" src="Imagenes/alambrico_3D_vigas_cargadero.png" /><br /><br />Ve ayrıca tüm elemanlar BIM modelinde oluşturulur:<br /><br /><img style="width: 600px; height: 380px;" alt="" src="Imagenes/bim_vigas_cargadero.png" /><br /><br />Çizim veya BIM modeli oluşturulurken, <strong>neoprenosX.xlsx</strong> adında bir rapor oluşturulur ve şunları içerir:<br /></span></span><ul><li>Kirişlerin uzunluğu.</li><li>Kümülatif uzunluk.</li><li>Neoprenlerin merkezinin X,Y koordinatları.</li><li>Neoprenlerin merkezinin üst kısımdaki (kirişle temas eden) kotu.</li></ul><span class="Parrafo"><span class="Parrafo"><br /><br /></span></span><i><strong><a name="vector_desm_L3D">
+Vektör + Yarma + 3B Çizgi</a></strong></i><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_vector_desm_L3D.png" style="width: 129px; height: 86px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Bu durumda, vektörel yarma, hendek veya görüş palyesinin sonundan itibaren uygulanır ve parametrik yarma, 3B çizginin konumundan itibaren şev başından sabit olarak uygulanır. Dolayısıyla, programın hesapladığı şey, ikisi arasındaki kesişimdir.<br />
+      <br />
+Bu seçenek <a href="#vector_desm_L3D">Vektör + Yarma + 3B Çizgi</a>'ye benzer, ancak parametrik yarmanın şev topuğundan bağlanması sayesinde ilk palyenin kotu sabit bir değerle veya yardımcı kırmızı hat aracılığıyla boyuna hatta göre tanımlanabilir. <br />
+      <br />
+      <br />
+      </span></span><i><strong>Vektör + Duvar + 3B Çizgi + Yarma</strong></i><br />
+      <br />
+      <a href="#vector_muro_L3D">Vektör + Duvar + 3B Çizgi</a> moduyla tamamen aynı şekilde çalışır, ancak farkı, 3B çizginin konumundan itibaren parametrik yarma geometrisinin araziyle kesişene kadar uygulanmasıdır.<br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br />
+</span></span><span class="Parrafo"><span class="Parrafo"><br />
+      <i><strong>(Duvar) + 3B Çizgi + Yarma</strong></i><br />
+      <br />
+<a href="#L3D">3B Çizgi</a> gibidir, ancak 3B çizginin konumundan itibaren parametrik yarma geometrisi araziyle kesişene kadar uygulanır. Duvar isteğe bağlıdır.<br />
+      <br />
+      <i><strong>(Duvar) 3B Çizgi + Vektörel Yarma</strong></i><br />
+      <br />
+Bu seçenek, (Duvar)3B Çizgi + Yarma ile aynıdır, ancak parametrik yarma tanımı yerine vektörel yarma kullanılır.<br />
+<br />
+      <i><strong>3B Çizgi + Palyeler</strong></i><br />
+      <br />
+Bu mod, hendek sonundan 3B çizgiye kadar giden şevi aşağıdaki geometriye sahip basamaklarla değiştirmeyi sağlar:<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; height: 85px; width: 596px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 73px; font-weight: bold;">D1<br />
+            </td>
+            <td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo">Basamaklar için minimum şev. </span></span><span class="Parrafo"><span class="Parrafo">Görünür şev D1'den küçükse, basamak yapılmaz.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 73px; font-weight: bold;">DBD<br />
+            </td>
+            <td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo">Palyeler arası düşey mesafe (basamak yüksekliği).</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 73px; font-weight: bold;">ABD<br />
+            </td>
+            <td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo">Palyelerin maksimum genişliği.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 73px; font-weight: bold;">Pen<br />
+            </td>
+            <td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo"> Palyelerin eğimi.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+D1 şevi ile, palyeler ABD genişliğine ulaşana kadar basamaklar inşa edilir. O andan itibaren palyeler ABD genişliğinde korunur ve basamakların şevi artırılır.<br />
+      <br />
+Eğer <strong>[ ] Sabit genişlikli palyeler</strong> seçeneği etkinleştirilirse, iki parametre daha eklenir:<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; height: 27px; width: 636px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td style="vertical-align: top; width: 73px; font-weight: bold;">ZB1<br />
+            </td><td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İlk palyenin kotu.<br />
+</span></span></span></span></td></tr><tr>
+            <td style="vertical-align: top;"><strong>Son palye geçişi</strong><br />
+            </td>
+            <td style="vertical-align: top;">Son palye için geçiş katsayısı (0.0 ile 1.0 arasında).<br />
+            </td>
+          </tr>
+</tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+<br /><i><strong>Yarma + Vektör + 3B Çizgi</strong></i><br />
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_desm_vector_L3D.png" style="width: 129px; height: 86px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Parametrik yarma, hendek veya görüş palyesinin sonundan itibaren şev topuğundan sabit olarak ve vektörel yarma da bir öncekinin kesişiminden itibaren şev topuğundan sabit olarak, 3B çizgide son bulacak şekilde oluşturulur. Dolayısıyla, programın hesapladığı şey, ikisi arasındaki kesişimdir.<br />
+      <br />
+Bu seçenek, <a href="#vector_desm_L3D">Vektör + Yarma + 3B Çizgi</a>'ye benzer, ancak parametrik yarmanın şev topuğundan bağlanması sayesinde ilk palyenin kotu sabit bir değerle veya yardımcı kırmızı hat aracılığıyla boyuna hatta göre tanımlanabilir. <br />
+      <br />
+      <br />
+      </span></span><i><strong><a name="alto_muro_tabla">Duvar Yüksekliği Tabloya Göre</a></strong></i><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Bu mod, hem yarmada hem de <a href="OL_terraplen_geometria.html">dolguda</a> uygulanabilir ve duvar başı kotları tablosuna erişim sağlar. Bu tablo, her bir taraf için bir <strong>Başlangıç KM</strong> ve bir <strong>Bitiş KM</strong> ile verilen kesimler tablosu ve bu kilometrelerdeki duvar başı kotunu tanımlamayı sağlar; öyle ki, bu kotun değeri <strong>Başlangıç Z</strong>'den <strong>Bitiş Z</strong>'ye doğrusal olarak değişir. Eğer açılır menüden <strong>Boyuna Hatta Göre</strong> seçeneğini seçersek, duvarın kotu <a href="OL_rasantes_diseno.html#tipo_rasante">Kırmızı Kot</a> > Duvar Başı'nda girilen verilerle tanımlanacaktır. </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Veri satırı yoksa, eksenin başlangıç kilometresinden sonuna kadar bir tane oluşturulur.</span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      <strong>Diğer tarafa kopyala</strong>: Bir taraftaki verileri diğer taraf için kopyalama imkanımız vardır.<br />
+      <br />
+Bu modla birden fazla tip kesit olsa bile tablo tektir. Bu modla tanımlanan bir kilometre, tablonun kesimleri dışındaysa, duvar, <a href="OL_muro_desmonte.html">DUVAR</a> sekmesinde kendisi için tanımlanan yükseklikle oluşturulur.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/cota_cabeza_muro.png" style="width: 460px; height: 214px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Duvar başı kotları tablosuna DÜŞEY GÜZERGAH </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <strong>EKLENTİLER</strong> </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <strong>DUVAR BAŞI KOTU</strong>'ndan da erişilebilir ve <a href="OL_muro_desmonte.html#cota_base_muro">duvar taban kotu</a> tablosuna çok benzer; en önemli fark, duvar başı kotu tablosunun tüm duvarları değil, yalnızca bu modla tanımlananları (hem yarmada hem de dolguda) etkilemesidir. <br />
+      <br />
+Bu durum için, Dolgu sekmesinde en azından bir yükseklik (ZT1) ve bir duvar şevi (T1) tanımlanmış olması gerekir. Ayrıca, Duvarlar sekmesindeki AMT ve ZMT kutucuklarına değer girilmemelidir.<br />
+      <br />
+Duvar Başı araziyi aştığında ve bir AMD/ZMD duvar bitiş şevi tanımlandığında: Eğer Duvar Başından AMD/ZMD şevi çizildiğinde bu araziyi kesmez ve üzerinde kalırsa, o zaman şevi daha düşük olsa bile AMD mesafesindeki araziye kadar giden bir segment kullanılır. Bu segmentin o mesafeden önce araziyle herhangi bir kesişimi olup olmadığı kontrol edilir ve o zaman bu noktada bırakılır.<br />
+      <br />
+</span></span></span></span></span></span><span class="Parrafo">Bu veriler, <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> kutucuğundan .ccm uzantılı dosyalar aracılığıyla kaydedilebilir ve <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> kutucuğu aracılığıyla yüklenebilir. Sıfırla ikonu <img src="Imagenes/icono_toolbarEstandar_nuevo.png" style="width: 16px; height: 17px;" alt="" /> ile ekranda olabilecek tüm verileri kaldıracaktır.<br />
+      <br />
+<strong>Tabloya göre duvar yüksekliği + 3B Çizgi</strong> modu, duvarın başını bir tabloyla yerleştirerek ancak daha sonra kesiti bir 3B çizgiye doğru kapatarak çok benzer şekilde çalışır.<br />
+      <br />
+</span>
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span><span class="Parrafo"><span class="Parrafo"><i><strong>Duvar + Şev + 3B Çizgi</strong></i></span></span> <i><strong>+ Vektör</strong></i><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Duvar, AMD/ZMD şevi ile 3B çizgiye ulaşacak şekilde bir yükseklikte yerleştirilir. Sonra, eğer 3B çizgi yerin altındaysa, araziyi kesene kadar vektör eklenir.<br />
+      <br />
+      <i><strong>2B Çizgi + Tabloya göre duvar yüksekliği</strong></i><br />
+      <br />
+2B çizgi, duvarın iç yüzünü konumlandırır. Eğer çizgi, hendeğin son noktasından daha uzaktaysa, hendek duvara yatay bir segmentle uzatılır.<br />
+Eğer çizgi hendek bölgesine düşerse, hendek o noktada budanır.<br />
+Eğer çizgi platformun içine düşerse, çizgi dikkate alınmaz ve duvar platforma bitişik olarak yerleştirilir.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/l2d_muro_tabla_ej.png" style="width: 410px; height: 366px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+</span></span><i><span class="Parrafo"><span class="Parrafo"><strong>Şev Geçişleri</strong></span></span></i><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Yarma ortaya çıktığında, bir şevle (<strong>D1o</strong> değeri) başlar ve bu ilk basamak <strong>H1</strong> yüksekliğine ulaşana kadar devam eder. O kilometrede şunlar olur:<br />
+      </span></span>
+      <ul>
+        <li><strong>ABD</strong> genişliğinde ve <strong>Pen</strong> eğiminde palye eklenir.</li>
+        <li>Bir sonraki basamağın etüdü başlar.</li>
+        <li><strong>LT1</strong> kilometre uzunluğu boyunca, <strong>H</strong> yüksekliği korunarak başlangıç şevi <strong>D1o</strong> (daha yatık) ile nihai şev <strong>D1</strong> (daha dik) arasında bir geçiş yapılır.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">İkinci ve sonraki basamaklar için, basamak tam <strong>H</strong> yüksekliğine ulaşana kadar bir <strong>Do</strong> şevi ile başlar ve o andan itibaren:<br />
+      </span></span>
+      <ul>
+<li><strong>ABD</strong> genişliğinde ve <strong>Pen</strong> eğiminde palye eklenir.</li><li>Bir sonraki basamağın etüdü başlar.</li><li><strong>LT</strong> kilometre uzunluğu boyunca, her zaman <strong>H</strong> yüksekliği korunarak nihai <strong>D</strong> şevine bir geçiş yapılır.<br />
+  </li>
+      </ul>
+
+Basamakların şev geçişleri, girilen verilere ve yarmanın ne kadar hızlı artıp/azaldığına bağlı olarak kilometrelerde çakışabilir veya çakışmayabilir.<br />
+      <br />
+Diğer yarma tiplerinden farklı olarak, belirli bir kilometredeki geometri sadece o kilometredeki araziye değil, aynı zamanda tüm kesim boyunca evrimine de bağlıdır. Bu nedenle, &nbsp;<span class="Archivo">ISPOLn.per</span> dosyaları için geometri hesaplaması yapılmadan önce, her kilometrede önceki ve sonraki kilometrelere bağlı olarak hangi kesitin uygulanacağını belirleyen bir ön hesaplama gereklidir. Bu ön hesaplama, DÜŞEY GÜZERGAH'tan veya PROJE'den hesaplama yapıldığında otomatik olarak gerçekleştirilir. Ancak bunlardan hiçbiri yapılmadıysa veya bir parametre değiştirildiyse, <strong>[Kesit]</strong> veya <strong>[Anlık Kesit]</strong> bilgi izleyicisinde gezinmeden önce, bu tip kesitin tanımlandığı diyalog kutusundan ön hesaplamayı zorlamalıyız.<br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <i><strong>Değişken Şevler (Alabyo)</strong></i><br />
+      <br />
+Bu tür şev oluşturma, bazı karayolu yönetmeliklerinde (Peru, Paraguay,...) kullanılır. <br />
+Aşağıdaki parametrelerle tanımlanır: <br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Bir <strong>Hmin</strong> değerinden (örn. 4m) daha yüksek ve nominal bir <strong>D</strong> Şevine (örn. 2:1) sahip yarmalarda, bu şevin, yarmanın <strong>Ht</strong> yüksekliğine (örn. 2m) sahip olduğu noktadan, yarmanın sıfır yüksekliğe sahip olduğu ve başka bir <strong>Do</strong> şevinin (örn. 4:1) atandığı noktaya kadar bir geçişi yapılır.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Eğer şev <strong>Ht</strong> yüksekliğine ulaşmazsa, değişken şev uygulanmaz.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Eğer şevin maksimum yüksekliği <strong>Ht</strong> ile <strong>Hmin</strong> arasındaysa, o zaman geçişe başlamak için yükseklik Hmin/2 olacaktır.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Geçiş bölgesinin uzunluğu en az <strong>LTmin</strong> (örn. 10m) olacaktır.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Eğer yarmanın toplam uzunluğu <strong>Lmin</strong>'den (örn. 40m) daha az ise, değişken şev uygulanmaz.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Şevin maksimum yüksekliğini sınırlamak için bir <strong>Hmaks</strong> parametresi de eklenir.</span></span></li>
+      </ul>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/alabeo_desm.png" style="width: 270px; height: 82px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <i><strong>Vektör +2B Çizgi + Duvar</strong></i><br />
+      <br />
+Hendek ve ardından vektörel yarma kesiti 2B çizginin konumuna kadar götürülür. Bu noktadan itibaren, vektörün ilgili kotuyla Duvar başlatılır. 2B çizgi, hendek tabanından vektörel yarma sonuna kadar kesiti kesebilir; eğer bu kısa kalırsa, 2B çizginin konumuna kadar yatay olarak uzatılır. Eğer vektör, 2B çizginin konumunda arazinin üzerinde kalırsa, duvar havada kalabilir ve temelinin altında dolgu görünebilir.<br />
+<br />
+      </span></span><span class="Titulo_2"><a name="tuneles">Tünel ve Aç-Kapa Tünel için Yarma Kesitleri</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />Bu tip kesitler, bu menüden veya <a href="OL_tuneles.html">tüneller</a> menüsünün kendisinden, <a href="OL_tuneles.html#declaracion">burada</a> açıklandığı gibi beyan edilebilir.<br />
+      </span></span><br />
+</span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

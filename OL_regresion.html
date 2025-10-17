@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Regresyon</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>REGRESYON<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler. Regresyon Menüsü. Kullanım Kılavuzu</a><br />
+      <div style="margin-left: 40px;"><a href="#planta">Yatay Güzergah Regresyonu</a><br />
+      <div style="margin-left: 40px;"><a href="#alineaciones">Güzergah Elemanları Menüsü</a><br />
+      <a href="#configuracion">
+Yapılandırma Menüsü</a><br />
+      <a href="#grafico">
+Grafik Kontrol Menüsü ve Genel Hususlar</a><br />
+      <a href="#tabla">
+Yarıçaplar, Sapmalar ve Ağırlıklar Tablosu</a></div>
+      <a href="#alzado">Boykesit Regresyonu</a><br />
+      </div>
+      </div>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler. Regresyon menüsü. Kullanım Kılavuzu</a></span><br />
+
+      <br />
+
+      </span></span>
+
+      <p class="MsoNormal"><img src="Imagenes/regresion_dib_pl.png" style="width: 109px; height: 335px;" alt="" align="right" hspace="5" />Regresyon, bir TOP veya TXT dosyasında bulunan veya ekranda çizilmiş bir poligon hat olarak var olan bir dizi noktadan yola çıkarak yatayda veya düşeyde matematiksel bir eksen elde etmeyi sağlayan bir araçtır.</p>
+
+
+      <p class="MsoNormal">Süreç, noktaların başlangıçta doğru ve kurp kesimlerine veya elemanlarına sınıflandırılması için anlık eğrilikleri analiz ederek başlar. Yatay güzergahta her kurp, bir dairesel kurp ve klotoidlerine yol açacaktır. Boykesitte her kurp bir parabole veya bir daireye uydurulacaktır. Kesimlerin ve yarıçapların başlangıçtaki yorumu, hesaplama algoritmalarının daha uygun bir çözüm bulmasına yardımcı olmak için kullanıcı tarafından değiştirilebilir.</p>
+
+
+      <p class="MsoNormal">İkinci bir aşamada, kesimlerin her biri, güzergah elemanlarının yarıçaplarını ve konumunu değiştiren, her noktanın hesaplanan eksene göre sapmalarının karelerini en aza indiren bir uydurma algoritması ile analiz edilebilir. Bu uydurma, eleman bazında veya tüm eksen için yapılabilir.</p>
+
+
+      <p class="MsoNormal">Regresyon menüsünden çıkıldığında, uydurma işleminin bittiği matematiksel eksene sahip oluruz.</p>
+
+
+
+
+
+
+      <p class="MsoNormal">İki erişim yolu vardır:<o:p><br />
+      <o:p></o:p></o:p></p>
+
+
+      <p class="MsoNormal"><span style="font-weight: bold;">YATAY GÜZERGAH</span> &gt; <span style="font-weight: bold;">PLAN ÇİZİMİ</span> &gt; <span style="font-weight: bold;">REGRESYON</span>'dan:</p>
+
+
+
+
+      <p class="MsoNormal"><b><i>Plan Çizimi</i></b> menüsünden, <b><i>REGRESYON</i></b>'a erişiriz. Bu araç, bir ekseni verilen noktalara uydurmamıza yardımcı olacaktır.</p>
+
+
+      <p class="MsoNormal">.TOP, .TXT formatında veya bir ISTRAM çizgisi olarak verilen bir dizi noktadan, bu noktaların çizdiği eğriliğe en iyi uyan <b>sabit</b> güzergah elemanları otomatik olarak hesaplanacaktır ve bu sabit elemanlardan (yaylar ve doğrular) yola çıkarak, yatay güzergah menüsünde yapıldığı gibi hesaplanabilir bir eksen uydurmaya çalışacaktır.</p>
+
+
+
+
+      <p class="MsoNormal">Bu sabit güzergah elemanlarına yaklaşımları yapmak için, program, bir doğru olarak kabul edilecek minimum eğrilik yarıçapı, aynı kurp elemanını oluşturduklarını kabul etmek için yarıçap değişim toleransı ve yarıçapların hesaplanmasında dikkate alınacak noktalar arasındaki minimum mesafe gibi bir dizi öncülden yola çıkacaktır, ayrıca diğer kontrol parametreleri de vardır.</p>
+
+
+
+
+      <p class="MsoNormal">Nokta dizisinden ISTRAM'da bir eksen elde etmek için izlenecek ana adımları görelim:</p>
+
+
+
+
+
+
+      <p class="MsoNormal">PLAN ÇİZİMİ menüsünden REGRESYON düğmesine basarız.</p>
+
+
+
+
+      <p class="MsoNormal">Bir dosyadan veri almak veya ekranda mevcut olan haritadan bir çizgi seçmek için bir dizi seçenek içeren bir pencere görünecektir.</p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_eje.png" style="width: 309px; height: 75px;" alt="" /><br />
+
+      </div>
+
+
+
+
+      <p class="MsoNormal">Dosya veya çizgi seçildikten sonra, tüm noktalar yüklenecek ve yatay güzergah üzerinde mi yoksa boykesit üzerinde mi çalışacağımızı seçeceğiz (mantıksal sıra yatay güzergahla başlamak ve sonra boykesiti yaklaştırmaktır). Yatay güzergahta, noktalar eğrilik diyagramına yüklenir ve Kesimleri Hesapla ile ekranda eksen için ilk kesimleme ve çözüme zaten sahibizdir.<o:p><br />
+      <o:p></o:p></o:p></p>
+
+
+      <p class="MsoNormal"><o:p>Regresyon menüsü, <span style="font-weight: bold;">YATAY GÜZERGAH</span> &gt; <span style="font-weight: bold;">ARAÇLAR</span> &gt; <span style="font-weight: bold;">Çizgiyi mevcut eksene dönüştür</span>'den de açılabilir:</o:p></p><p class="MsoNormal">Bu araç iki adımda gerçekleştirilir:<br />1) Seçilen çizgiyi mevcut eksene dönüştürür. <span class="Parf_negrita">Regresyon ile interaktif olarak düzelt</span> seçeneği işaretlenmez ve elde edilen eksen yatay güzergah menüsünden düzenlenir.<br />2) Adım 1'de seçilen çizgi ve yatay güzergah menüsünde düzenlenen mevcut eksen ile, regresyon ile interaktif düzeltmeye girilir.</p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_conv.png" style="width: 300px; height: 259px;" alt="" /><div style="text-align: left;"><br />Bir yatay güzergah çizgisinin regresyonu için başlangıç kesimlerinin hesaplanması, Çizgiden Mevcut Eksene algoritması ile yapılır.
+
+      </div>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+      <p class="MsoNormal"><span style="">Çizgiyi seçmeden önce, açılan veri menüsünde, poligon hattın köşe noktalarına verilen başlangıç işlemini tanımlayan bir dizi seçenek işaretlemeliyiz. <span style="font-weight: bold;">NOKTA_atma</span> seçicisi, noktalar birbirine çok yakın olduğunda noktaların atılmamasını şart koşar ve ayrıca bir eksenin ilk hesaplamasından sonra regresyon ile interaktif ayarlamaya devam edilip edilmeyeceğini de seçeriz. Bahsedilen dahili tablo (ISPOL12.ple yapılandırma dosyasıyla aynı içeriğe sahip), verilerin analizi için bir dizi kontrol parametresi tanımlar. Eksenin bir bölgesinde bulunan yarıçapa bağlı olarak, o tablodan ayarlama sürecini yönlendiren bir dizi parametre alınır (minimum ve maksimum yarıçaplar, minimum noktalar arası mesafe, …)</span></p>
+      <p class="MsoNormal"><span style=""><span style="font-weight: bold;">Regresyon ile interaktif olarak düzelt</span> seçeneği etkinleştirildiğinde, çizgiden mevcut eksene algoritması tarafından hesaplanan eksen, regresyon için başlangıç tahmini olarak alınır.<br />
+
+      </span></p>
+
+
+      <a name="planta"><span class="Titulo_2">Yatay Güzergah Regresyonu</span><br />
+      <br />
+Yatay Güzergah'ı seçip başlangıç kesimlerini hesaplarsak aşağıdaki iletişim kutusunu elde ederiz:<br />
+      <br />
+</a><div style="text-align: center;"><img style="width: 650px; height: 268px;" alt="" src="Imagenes/reg_cal_tr.png" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+      <p class="MsoNormal">Burada, yüklenmiş olan noktaların bir eğrilik diyagramı bulunmaktadır. Grafikte, tüm noktaları eksen üzerinde ve sarı renkte eğrilik diyagramını temsil ediyoruz. Ayrıca, başlangıçta hesaplanan eksenin eğrilik diyagramını macenta renginde görüyoruz.</p>
+
+
+Grafiği çevreleyen kaydırma çubukları yardımıyla, grafiği yatay ve dikey yönde daraltıp genişletebilir veya merkezi alt kaydırıcıyla veya grafik üzerinde tıklayıp sürükleyerek belirli bir noktaya yerleştirebiliriz.<br />
+
+      <p class="MsoNormal"><span style="font-weight: bold;">Doğru için minimum yarıçap</span>: bir doğruya ¥ eğrilik yarıçapı karşılık gelir, ancak hesaplamaları yapmak için yönetebileceğimiz bir rakama ihtiyacımız var. Bu nedenle, başlangıçta eğrilik yarıçapı 100.000,00 veya daha büyükse, kesimin doğru olduğu kabul edilir.</p>
+      <p class="MsoNormal"><span style="font-weight: bold;">% Tolerans</span>: Kesimleri hesaplarken, bir eğrilik yarıçapı bir sonrakiyle karşılaştırılır, eğer bu toleransı kabul ederek eşitlerse, aynı kurba ait olurlar. Bu tolerans başlangıçta %5 olacaktır ve kullanıcı tarafından değiştirilebilir.</p>
+      <p class="MsoNormal"><span style="font-weight: bold;">Noktalar arası minimum mesafe</span>: iki nokta arasındaki mesafe kullanıcı tarafından belirlenen bu miktardan daha az olduğunda, ikinci nokta göz ardı edilir ve “pasif” olarak görünür, eğrilik hesaplamalarında dikkate alınmaz. Eğer NOKTA atmama seçeneği seçilmişse, anlık eğrilik o noktayla hesaplanmaz; ancak hepsi aktif kalır. Bu, çok yakın olan ve hesaplamayı bozan noktalardan kaynaklanan tepe noktalarını önlemek için yapılır. Başlangıçta minMesafe 0,5m değerine sahiptir ve daha sonra göreceğimiz gibi kullanıcı kararıyla değiştirilebilir.</p>
+
+
+
+
+
+
+Bu parametreler, noktaların gösterdiği yerel güzergah "stiline" göre ayarlanır. Bir eksende farklı eğrilik aralıklarına sahip bölgeler olabilir. Algoritma, yerel yarıçaplara bağlı olarak farklı kontrol parametreleri alacaktır.<br />
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>Kesimler hesaplandıktan sonra, hem eğrilik penceresinde hem de yukarıdaki şekilde gördüğümüz gibi yatay güzergah grafiğinde işaretlenmiş olarak görüneceklerdir.<br />
+
+      <br />
+
+Hesaplanan kesimler yatay güzergah üzerinde macenta ile işaretlenmiş olarak görülecektir. Mevcut kesim, yatay güzergahta nasıl hareket ettiğimizi belirtmek için sarı ile vurgulanır.<br />
+
+      <br />
+
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_pantalla.png" style="width: 634px; height: 371px;" alt="" /></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><a name="alineaciones"><span class="Titulo_2">Güzergah Elemanları Menüsü</span><br />
+      <br />
+      
+
+      </a><p class="MsoNormal">Regresyon menüsü dört bölüme ayrılmıştır. Sol alt kısım, bulunan güzergah elemanlarına karşılık gelir.</p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_pl.png" style="width: 602px; height: 270px;" alt="" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Noktaları seçmek için tıklamalar, diyagram üzerinde veya yatay güzergah üzerinde farksız olarak yapılabilir. Bir kesimin başlangıç noktası (sayısal veya grafiksel olarak) değiştirildiğinde, eğer yeni başlangıç noktası bir önceki kesimin içinde kalırsa, en az iki noktası dışarıda kalıyorsa bu silinmez ve değiştirilen kesimin dışında kalan noktaları korur. Bitiş noktası için de aynı durum geçerlidir.<br /><br />
+      <br />
+Mevcut kesimi veya tüm kesimleri, yapılandırma menüsünde göreceğimiz gibi En Küçük Kareler (EKK) ile uydurmak mümkündür.<br />
+      <br />
+      </span></span><span class="Titulo_2">Yapılandırma Menüsü</span><br />
+
+      <br />
+
+      
+
+      <p class="MsoNormal">Aşağıda görünen menü, kesimlerin otomatik hesaplanması için değerlerin yapılandırılmasına karşılık gelir.</p>
+
+
+Buradan değiştirilebilen parametreler, bir doğruyu düşünmek için minimum yarıçap (<span style="font-weight: bold;">R.DOĞRU</span>), kurplar için tolerans yüzdesi (<span style="font-weight: bold;">%TOL</span>) ve noktalar arası minimum mesafe (<span style="font-weight: bold;">minMES</span>)'dir. Ayrıca, eğrilik hesaplamalarında dikkate alınmamaları için noktaları veya nokta (kümeleri) kesimlerini etkinleştirebilir ve devre dışı bırakabilir veya güzergah elemanları hesaplamasında kullanılmamaları için bir nokta kümesini kilitleyebilir ve kilidini açabiliriz.<br />
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_conf.png" style="width: 266px; height: 82px;" alt="" /></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+
+
+      <p class="MsoNormal">İsteğimize göre yapılandırdıktan sonra, güzergah elemanlarını yeniden hesaplayabiliriz. <span style="font-weight: bold;">KESİM</span> seçeneği ile sadece bulunduğumuz kesimi yeniden hesaplar ve <span style="font-weight: bold;">TÜMÜ</span> ile tüm eksen yeniden hesaplanır. Bu son seçenekle dikkatli olmak gerekir, çünkü kilitlemediğimiz sürece güzergah elemanlarında yaptığımız tüm değişiklikleri silecektir. Ayrıca, Tümünü Kilitleme veya Kilidi Açma seçeneğimiz de vardır.<br />
+</p>Noktalar kilitlendiğinde ve/veya kilidi açıldığında, kilitli bir noktası olan elemanlar kilitlenir ve kilitli bir noktası olmayan elemanların kilidi açılır.<p class="MsoNormal"><span style="font-weight: bold;">EKK</span> tuşu, tüm ekseni En Küçük Kareler ile yeniden ayarlamayı emreder. Her bir elemanı tanımlayan Kesimler yaklaştırılana kadar bunu yapmamak tavsiye edilir, çünkü hesaplama oldukça fazla makine zamanı gerektirebilir.</p>
+
+
+<a name="configuracion">      </a><a name="grafico"><span class="Titulo_2">Grafik Kontrol Menüsü ve Genel Hususlar</span><br />
+      <br />
+Bu menüden, yatay güzergah üzerinde neyin görülmesini istediğimizi kontrol ederiz:<br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 278px; height: 126px;" alt="" src="Imagenes/reg_control.png" /><br />
+
+      </div>
+      <br />
+
+
+
+      <p class="MsoNormal"><span style="font-weight: bold;">Veri Elemanları</span>, <span style="font-weight: bold;">Hesaplanmış Eksen</span>, her noktanın hesaplanan eksene olan <span style="font-weight: bold;">Mesafesi</span> abartılı x (20) (menüde tüm noktaların eksene olan ortalama&nbsp;karesel mesafesi (<span style="font-weight: bold;">dO</span>), maksimum mesafeyle birlikte gösterilir), her (10) noktada bir <span style="font-weight: bold;">numara</span> gösterme ve <span style="font-weight: bold;">EKK</span> algoritmasının ulaştığı <span style="font-weight: bold;">Uydurma Seviyesi</span> (verilerde gürültü varsa bu seviyeyi düşürün). Ayrıca, yapılan son değişiklikleri Geri Almak ve Yinelemek için iki kontrol de vardır.</p><p class="MsoNormal"><span class="Parf_negrita">[]hatalar</span> seçeneği, yatay güzergah hesaplama hatalarını, konumu kalın kırmızı bir daire ve &lt;Kesişiyorlar&gt; veya &lt;Negatif uzunluk&gt; gibi bir metinle çevreleyerek vurgulamayı sağlar.<br /></p>
+
+
+
+
+      <p class="MsoNormal"><span style="font-weight: bold;">Kaydet</span>: Çalışmanın mevcut durumunu bir .rgr dosyasına yazar, böylece <span style="font-weight: bold;">Yükle</span> ile yükleyerek sonraki oturumlarda üzerinde çalışmaya devam edilebilir. Yatay güzergahtaki ekseni kaydetmez, bunun için bu menüden çıkıp YATAY GÜZERGAH'a gitmek gerekir. Daha kötüye gidebilecek bir ayarlama aramak için bir dizi değişiklik yapmadan önce, ilginç bir ayarımız olduğunda geçici kaydetmeler yapmak tavsiye edilir.</p>
+
+
+
+
+      <span style="font-weight: bold;">[X] </span>Regresyon menüsünü kapatır ve yeni bir dosya yüklemek için seçebileceğimiz başlangıç menüsüne geri döner. Başlangıç menüsündeki [X] düğmesine basılana kadar REGRESYON'dan çıkmış olmayız.<br />
+
+      <br /><span style="font-weight: bold;">boyut</span>, veri noktalarının temsil boyutunu kontrol etmeyi sağlar.<br />
+      <br />
+
+      <a name="tabla"><span class="Titulo_2">Yarıçaplar, Sapmalar ve Ağırlıklar Tablosu</span>
+
+
+      </a><p class="MsoNormal">Sağ alt köşedeki tablo, analiz altındaki noktaların verilerini sunar.<o:p></o:p></p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_radios.png" style="width: 212px; height: 189px;" alt="" /><br />
+
+      </div>
+      <br />
+
+İlk sütun, her noktanın sıra numarasıdır. İkinci sütun, mevcut matematiksel eksenin noktanın izdüşümünde sahip olduğu yarıçapı gösterir (macenta diyagram). Üçüncüsü, o noktada hesaplanan anlık yarıçaptır (sarı diyagram). Bir sonraki sütun, noktanın hesaplanan eksene olan mesafesidir (yatay güzergahta abartılı olarak yeşil veya kırmızı bir segmentle işaretlenir). Son sütun, her noktanın EKK ile ağırlıklandırmadaki ağırlığıdır. Prensip olarak tüm noktalar 1'dir. Ağırlığı düşürürsek, noktanın önemi azalır (sıfır ile hesaplamayı etkilemez, bu da devre dışı bırakılmasına benzer). 1'den büyük değerlerle ağırlıklandırması artar ve ayarlanmış eksenin ona yaklaşmasını sağlar.<br />
+
+      <br />
+Not defteri simgesine <img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /> tıklayarak, tüm bu verileri tablo halinde içeren bir nokta raporu (<span class="Archivo">rgrs_puntosN.res</span>) oluşturabiliriz.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">HESAPLAMALAR</span>: Yatay güzergah grafiği üzerinde, güzergah elemanlarını bulmaya yönelik hesaplamaları görmeyi sağlar: eleman numarası, yarıçap, merkez vb.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/reg_cal.png" style="width: 221px; height: 320px;" alt="" /><br />
+
+Hesaplamalı Grafik<br />
+
+      </div>
+      <br />
+
+
+
+      <p class="MsoNormal"><span style="font-weight: bold;">MESAFE</span>: Nokta ile hesaplanan eksen arasındaki farkı (daha görünür olması için abartılmış) gösterir. Yeşil, noktanın sağa, kırmızı ise sola kaldığı anlamına gelir.</p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_dist.png" style="width: 216px; height: 321px;" alt="" /><br />
+
+Sapmalı Grafik<br />
+
+      </div>
+      <br />
+
+      <span style="font-weight: bold;">ETİKETLER</span>: Eksen hesaplamasından sonra oluşturulan etiketleri, hesaplanan yarıçaplar ve klotoidlerin parametreleriyle gösterir.<br />
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_rot.png" style="width: 234px; height: 345px;" alt="" /><br />
+
+Etiketli Grafik<br />
+
+      </span></span><span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+      <p class="MsoNormal"><span style="font-weight: bold;">NUMARALAR</span>: Her noktanın numarasını, belirtilen sıklıkta gösterir. Başlangıçta hepsi gösterilecektir.</p>
+
+
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_num.png" style="width: 232px; height: 342px;" alt="" /><br />
+
+Numaralı Grafik<br />
+
+      </span></span><span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />Nokta numarasının Bilgi Ekranı, nokta ile eksen arasındaki mesafeyi gösterir. Kırmızı kotta da benzerdir.<br /><br /></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_eco_punto.png" style="width: 400px; height: 210px;" alt="" /></span></span><br /><span class="Parrafo"><span class="Parrafo"></span></span></div><span class="Parrafo"><span class="Parrafo"><br /><br />
+      </span></span><a name="alzado"><span class="Titulo_2">Boykesit Regresyonu</span><br />
+      <br />
+      
+
+
+
+
+
+      </a><p style="text-align: left;" class="MsoNormal"><span class="Parrafo"><span class="Parrafo">Bu araç, bir eksenin boykesit regresyonunu yapmak için kullanılır. <span style="font-weight: bold;">YATAY GÜZERGAH</span> &gt; <span style="font-weight: bold;">PLAN ÇİZİMİ</span> &gt; <span style="font-weight: bold;">REGRESYON</span> menüsünden erişilir.</span></span></p>
+      <p style="text-align: left;" class="MsoNormal"><span class="Parrafo"><span class="Parrafo">Aşağıdakilerden gelen bir dizi noktanın x,y,z koordinatları kullanılır:<br />
+</span></span></p>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Bir .top dosyası</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Bir .txt dosyası</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Ekranda seçilen bir Çizgi.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Yatay güzergah regresyonu için zaten kullanılmış noktalar (.rgr)</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Bir boykesit regresyonundan zaten kullanılmış noktalar (.rga)</span></span></li>
+      </ul>
+      <p style="text-align: left;" class="MsoNormal"><span class="Parrafo"><span class="Parrafo">Noktalar yaklaşık olarak mevcut yatay güzergah ekseni üzerinde olmalıdır. (Kotlu bir çizgi için önce yatay güzergah regresyonu ve sonra boykesit regresyonu yapılabilir).</span></span></p>
+      <p class="MsoNormal">Yatay güzergahtaki ekseni hesapladıktan sonra veya regresyon seçeneğine zaten yüklenmiş bir eksenle girersek, boykesit regresyonuna başlayabiliriz.<br />
+
+      </p>
+      <p class="MsoNormal">Boykesit seçeneği seçildiğinde, noktaların kotu eksen üzerine yansıtılacak, böylece her noktanın KM'si elde edilecek ve böylece kırmızı kotu temsil etmek için bir KM-kot diyagramı oluşturulabilecektir.</p>
+      <p class="MsoNormal"><span class="Parrafo"><span class="Parrafo">Regresyon, bir eğim diyagramının ve Kırmızı Kotlar menüsünün grafik penceresi içinde gösterildiği bir iletişim kutusu aracılığıyla yapılır.</span></span> </p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_alz.png" style="width: 657px; height: 276px;" alt="" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+      <p class="MsoNormal"><span style="font-weight: bold;">Kesimleri Hes.</span> düğmesine basıldığında, verilen noktalara en çok benzeyen doğru kesimlerin ve parabolik birleşimlerin bir yaklaşımı yapılır. Bunun için, her iki nokta arasındaki eğimler hesaplanır ve başlangıçtaki bir tolerans (±%0,1) dikkate alınarak aynı eğimde olan noktalar aranır.</p>
+      <p class="MsoNormal">
+Not defteri simgesine <img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /> tıklayarak, tüm bu verileri tablo halinde içeren bir nokta raporu (<span class="Archivo">rgrs_puntos_alz.res</span>) oluşturabiliriz.</p>
+
+      <p class="MsoNormal"><span class="Parrafo"><span class="Parrafo">İnteraktif olarak regresyona başlamadan önce, aşağıdaki yöntemleri kullanarak bir dizi kesim veya kırmızı kot otomatik olarak önceden hesaplanabilir:</span></span></p><ul><li><span class="Parrafo"><span style="color: rgb(3, 5, 3);" class="Parrafo"> Herhangi bir kırmızı kot:&nbsp;</span><span class="Parrafo"><span class="Parrafo"><span style="color: rgb(3, 5, 3);"> Sahada alınmış noktalar.</span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo">Analitik kırmızı kot: Noktalar analitik bir kırmızı kottan gelir.</span></span></li><li><span class="Parrafo"><span class="Parrafo">.ras dosyası: Kırmızı kotlar menüsünden oluşturulan bir *.ras dosyasından, örneğin bir kırmızı kotu araziye uydurma aracıyla, vb...</span></span></li><li><span class="Parrafo"><span class="Parrafo">Bir kesim: Geçerli ilk noktadan sonuncusuna giden tek bir kırmızı kot oluşturur. Bu, daha sonra Böl seçeneğiyle ve birleşim eğrilerinin başlangıç ve bitiş noktalarına tıklayarak manuel olarak bir kırmızı kot yaklaştırmayı sağlar.<br /></span></span></li></ul>
+
+
+      <div style="text-align: center;"><img style="width: 650px; height: 269px;" alt="" src="Imagenes/reg_alz_cal.png" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Bu ön hesaplamayı kabul ettikten sonra, iletişim kutusunun çalışma ortamı yatay güzergah regresyonununkine çok benzer.<br />
+      <br />
+Kesimleri manuel olarak sayısal olarak veya grafik penceresinde ya da eğim diyagramı üzerinde tıklayarak düzenleyebiliriz.<br /><br /></span></span><span class="Parrafo"><span class="Parrafo">Bir kesimin başlangıç noktası (sayısal veya grafiksel olarak) değiştirildiğinde, eğer yeni başlangıç noktası bir önceki kesimin içinde kalırsa, en az iki noktası dışarıda kalıyorsa bu silinmez ve değiştirilen kesimin dışında kalan noktaları korur. Bitiş noktası için de aynı durum geçerlidir.</span></span><br /><span class="Parrafo"><span class="Parrafo">
+      <br />Nokta numarasının Bilgi Ekranı, nokta ile kırmızı kot arasındaki mesafeyi gösterir.<br /><br />
+Eğimi ve kotları, Kv'yi veya hepsini aynı anda bir kırmızı kot ve onun birleşim eğrisi için en küçük kareler yöntemiyle ayarla; her noktaya farklı bir ağırlık verilebilir veya devre dışı bırakılabilir.<br />
+      <br />
+Her an, noktaların sapması ve her kesimin ve tüm eksenin ortalama karesel sapması sayısal ve grafiksel olarak görülür.<br />
+      <br />
+Ayrıca, manuel olarak düzenlenmiş belirli kırmızı kotları kilitlemek ve programın geri kalanını, bahsedilen iki yöntemden biriyle otomatik olarak yeniden hesaplamasını sağlamak da mümkündür.<br /><br />Düşey kurplar <span style="font-style: italic;">Kv</span> veya <span style="font-style: italic;">Uzunluk</span> ile tanımlanabilir.<br /><br />Eğimler varsayılan olarak % olarak gösterilir, ancak <span style="font-style: italic;">Eğim</span> kutucuğunun yanındaki bayrak etkinleştirilirse binde olarak da gösterilebilir.<br /><br /><span style="font-style: italic;"></span><br />
+      <br />
+Tüm değişikliklerin geri alınması ve yeniden yapılması mümkündür.<br />
+      <br />
+Hesaplanan düşey güzergah, mevcut eksenin kırmızı kotu olur ve *.ras <img src="Imagenes/reg_salva_ras.png" style="width: 40px; height: 19px;" alt="" /> ve/veya bir <span style="color: black;" class="Archivo">*.vol</span> dosyasına kaydedilebilir. <img src="Imagenes/reg_salva_vol.png" style="width: 20px; height: 19px;" alt="" /> (bu durumda, eksenin önceden bir *.vol dosyası olmalıdır).<br />
+<br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

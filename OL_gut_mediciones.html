@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Şablonlar .gut: Metrajlar</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ENKESİT PAFTALARI İÇİN ŞABLONLAR: METRAJLAR<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Buradan, her enkesitte hangi metrajların gösterileceği belirtilir: <span style="font-weight: bold;">alanlar</span>, <span style="font-weight: bold;">ara hacim</span> ve <span style="font-weight: bold;">toplam hacim</span>.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 620px; height: 388px;" alt="" src="Imagenes/gut_mediciones.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu metrajların yanı sıra, her biri için bazı alt bölümleri de gösterebiliriz:<br />
+</span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Yarmalar</span>: Pozitif dönüşüm katsayısına sahip tüm kalemlerin alanlarının toplamını içerir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Dolgular</span>: Negatif dönüşüm katsayısına sahip tüm kalemlerin alanlarının toplamını içerir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Sıyırma Kazıları</span>: Jeoteknik malzemelerin ve sıfır dönüşüm katsayılı alanların toplamını içerir.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">Metin</span> açılır menüsü içinde, önceden tanımlanmış üç format seçeneği ve dördüncü bir özelleştirilebilir seçenek bulunur:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Tümü</span>: <span class="Archivo">.dar</span> tablosuna göre metrajın tam adını, yüzeyi belirten <span style="font-style: italic;">S</span> harfini önüne ekleyerek listeler (örneğin, <span style="font-style: italic;">S.YARMA_TOPRAK = 52.28 m2</span>).</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kısa</span>: Metrajın adını dar formatta listeler (örneğin, <span style="font-style: italic;">A.YARMA_TOPRAK 52.28</span>).</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Hiçbiri</span>: Metrajın adının önüne hiçbir harf eklenmez ve dolayısıyla <span class="Archivo">.dar</span> tablosuna göre gösterilir (örneğin, <span style="font-style: italic;">YARMA_TOPRAK = 52.28 m2</span>).</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Format</span>: Metni kullanıcı tarafından belirtilen bir formata göre özelleştirmeyi sağlar. Örneğin, <span style="font-style: italic;">S.%s = %7.2lf m2</span> formatı, programın <span style="font-weight: bold;">Tümü</span> önceden tanımlanmış formatı seçildiğinde kullandığı formattır ve "&#8220;<span style="font-style: italic;">S. yaz, ardından bir metin_dizisi, bir boşluk, = işareti, başka bir boşluk, 7 basamaklı ve ikisi ondalık olan bir sayı, bir boşluk ve son olarak m2 yaz</span>&#8221; şeklinde yorumlanır; burada <span style="font-style: italic;">metin_dizisi</span> kullanılan <span class="Archivo">.dar</span> tablosunda görünen addır.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Daha sonra metin <span style="font-weight: bold;">stili</span> (yazı tipi) ve etiketin yatay (hizalama) ve dikey <span style="font-weight: bold;">bağlantı noktası</span> belirtilir.<br />
+      <br />
+<span style="font-weight: bold;">Metin/sütun</span> verisi, izin verilen sütun başına maksimum etiket satırı sayısını belirtir. Tüm bu sütunlar, <span style="font-weight: bold;">Karş.Düz.Mes.</span>'de belirtilen karşılaştırma düzlemine olan mesafeye ve <span style="font-weight: bold;">Yatay Mesafe</span>'de belirtilen bir yatay ötelemeye yerleştirilecektir. Diğer yandan, veri sütunları birbirinden <span style="font-weight: bold;">dx</span> değeri kadar uzakta olacak ve satırlar <span style="font-weight: bold;">dy</span> kadar ayrılacaktır.<br />
+      <br />
+<span style="font-weight: bold;">Ara hacim</span> ve <span style="font-weight: bold;">toplam hacim</span> gösterimi, metin formatının iki seçenek sunması dışında (biri <span style="font-weight: bold;">Tümü</span>'ne benzer önceden tanımlanmış ve diğeri özelleştirilmiş) tam olarak aynı şekilde çalışır.<br />
+      <br />
+Metrajların konumu ile ilgili olarak, bunları enkesitin altında ve ortalanmış (<span style="font-weight: bold;">Güney</span>), sol altta (<span style="font-weight: bold;">GB</span>), sol üstte (<span style="font-weight: bold;">KB</span>) gösterme veya konumu bir yüzeyin (<span style="font-weight: bold;">Yüzey</span>) bir <span style="font-weight: bold;">tarafının</span> (sağ veya sol) bir <span style="font-weight: bold;">koduna</span> (<span style="font-weight: bold;">Kod</span>) göre referanslama imkanı sunulur.<br />
+      <br />
+      <span style="font-weight: bold;">Sıfır Metrajlar</span>: Sıfır metrajları yazdırma imkanı. Bu durumda, adı &lt;&gt; karakterleri arasında olanlar hariç, .dar tablosundaki tüm metrajlar yazdırılır.<br />
+<br />
+Branş Ekle (yeni yüzeyler) seçeneğiyle elde edilen enkesitler olması durumunda, ana güzergaha eşlik eden o veya o diğer güzergahların yüzeylerine replikalar (branş yüzeyleri) diyoruz. <span style="font-weight: bold;">Branş yüzeylerinin alanları</span> kutucuğunu etkinleştirerek bu branşların yüzey alanlarını enkesitlerimizde etiketleyebiliriz. Etiketleme için referans, yüzey ve koda göre olacak veya varsayılan olarak Güney konumunda olacaktır.<br /></span></span></span></span>Ayrıca, kesişim birleşim yerleri olan ve güzergah sembolü taşımayan Branş Ekle güzergahları da dikkate alınır. (Daha önce bu sembol zorunluydu ve sadece normal güzergahlarda görünür, kesişimlerde görünmezdi).<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+<span style="font-weight: bold;">Alanları Çiz</span> kutucuğu, her metraj için kapalı bir alan oluşturur. Çizgi, <span class="Archivo">.dar</span> tablosundaki metraj numarasıyla eşleşen modele dahil edilir.<br />
+      <br />
+</span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 663px; height: 82px;" alt="" src="Imagenes/gut_mediciones_replicas_codigo.png" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 638px; height: 313px;" alt="" src="Imagenes/gut_mediciones_replicas_codigo_ejemplo.png" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span class="Parf_negrita">Alanlar için Başlık Hücresi</span>: Bu seçenekle, güzergahın ve her bir branşın Alanları için bir başlık hücresi eklenebilir, böylece çizimi daha kolay düzenlemek, aynı güzergahın tüm alanlarını enkesitte birlikte hareket ettirmek, hücrenin bir noktasını sürükleyerek mümkün olur.<br /><br /></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 650px; height: 365px;" alt="" src="Imagenes/gut_mediciones_ej_cel_para_cabe.png" /></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

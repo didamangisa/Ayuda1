@@ -1,0 +1,643 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Platformlar (Tesviye Yüzeyleri)</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLATFORMLAR (TESVİYE YÜZEYLERİ)<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo">
+	  <br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#geom_expla"><span class="Parrafo">Platform Geometrisinin Oluşturulması</span></a><br />
+      </div>
+
+      
+      
+      <div style="margin-left: 80px;"><a href="#metodos_calculo">Hesaplama Yöntemleri</a><br />
+      <a href="#lineas">Platform Çizgileri, Kenar Çizgisi ve Sınır Çizgileri</a><br />
+      <a href="#tramif">Aralıklara Bölme</a><br />
+      <a href="#obt_geometria">Geometrinin Elde Edilmesi</a><br />
+      <a href="#plat_modif">Platformlar. Platformların İnteraktif Olarak Değiştirilmesi</a><br />
+      <a href="#compensacion">Yarma ve Dolgu Otomatik Dengelemesi</a><br />
+      <a href="#guardar_cargar"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Platformları Kaydetme ve Yükleme</span></span></span></span></span></a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#mediciones"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Metrajların Alınması</span></span></span></span></span></a><br />
+      <a href="#balsas_vertederos">Gölet ve Depo Alanı Tasarımı</a><br />
+      <a href="#firmes"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Üstyapı Katmanları</span></span></span></span></span></a><br />
+      <a href="#roca">Kaya Katmanları</a><br />
+      <a href="#grupos">Gruplar</a><br />
+      </div>
+
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo">Bu araç, kotlu kapalı çizgilerle ve iki vektörle (biri yarma, diğeri dolgu için) tanımlanan bir dizi platformun yarma ve dolgularının eş zamanlı olarak oluşturulması için tasarlanmıştır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diagrama_explanaciones.png" style="width: 650px; height: 255px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+<br />
+      <span style="font-weight: bold;">[Platformlar]</span> butonuna tıklandığında aşağıdaki iletişim kutusu belirir:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_explanaciones.png" style="width: 684px; height: 87px;" alt="" /><br />
+      <br />
+</span>
+      <div style="text-align: left;"><span class="Parrafo">Bu iletişim kutusu, aşağıda göreceğimiz sekmeli modu (YÜZEYLER, ÇİZGİLER, PLATFORMLAR, TİP KESİTLER, ÜSTYAPI, KAYA, SEÇENEKLER, METRAJLAR, GRUPLAR) kullanır. <br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo">
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+Platformlar menüsünün tüm yapılandırmasının kaydedildiği bir .exp dosyasını <span style="font-weight: bold;">Kaydedebilir</span> veya <span style="font-weight: bold;">Yükleyebiliriz</span>. Varsayılan olarak bir &nbsp;<span class="Archivo">ISMOS.exp</span> dosyası oluşturulur.<br />
+Bir platform oluşturulduğunda, .exp dosyasının adı çizilen elemanların <a href="EDM_control_entidades.html#control_de_procedencias">kaynağı</a> olarak ilişkilendirilir. Aynı şekilde, veriler değiştirilmişse uyarılır ve .exp dosyasını kaydetme imkanı sunulur.<br />
+Bu menü aracılığıyla oluşturulmuş çizgiler içeren bir edm/edb dosyası yüklendiğinde, bir çizgi seçilip sağ tuşla özellikler kutusu açılırsa, oluşturulduğu .exp dosyasının adıyla bir kaynak tuşu belirir. Bu tuşa basılırsa, .exp dosyası yüklenmiş olarak doğrudan Platformlar iletişim kutusuna geçilir. O zaman <span style="font-weight: bold;">Öncekileri Sil</span>'e basarak, bir parametreyi değiştirerek ve tekrar <span style="font-weight: bold;">Oluştur</span>'a basarak platform değiştirilebilir.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ismos_propiedades_expl.png" style="width: 452px; height: 275px;" alt="ismos_propiedades_expl.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="geom_expla">Platform Geometrisinin Oluşturulması</a></span><br />
+      <span class="Parrafo"><br />
+Öncelikle, programa arazinin hangi yüzeyi temsil ettiğini belirtmek gerekir; bu parametre, iletişim kutusunun üst kısmındaki <span style="font-weight: bold;">Arazi</span> alanında ayarlanır.<br />
+      <br />
+      <span style="font-weight: bold;">Gölet Tabanı</span>: PLATFORM sekmesinde belirlediğimiz takdirde (Dış şev, iç şev veya her ikisi), iç şevlerin kesişeceği yüzey olacaktır.<br />
+      <br />
+      <span style="font-weight: bold;">Platform</span>: Platform tek bir düzlemde yer almıyorsa, yüzeyi bir Harita Yüzeyi aracılığıyla tanımlanır. Kontur çizgisini içermesi gerekmez ve ondan daha büyük olabilir.<br /><br />Uygulanması için, yüzey olarak tanımlanmasının yanı sıra, <span style="font-weight: bold;"> <a href="#incl_sup_expl">Platform yüzeyini dahil et</a></span> seçeneğinin de aktif olması gerekir.<br />
+      <br /><span style="font-weight: bold;">Sağlam Zemin</span>: Bu yüzey, metrajlar sekmesinde verilen Bitkisel Toprak kalınlığının yerini alır.<br />
+      <br />
+      <span style="font-weight: bold;">KAYA</span>. Tanımlanırsa, bu yüzey Kaya sekmesindeki ilk kayanın derinliğinin yerini alır. (Profil için tipi buradan alır). (Profillere göre platformlarda bu kayadaki yarma, eğer topraktan farklıysa kaya için Tip Kesit geometrisiyle oluşturulacaktır.)<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_sup.png" style="width: 684px; height: 162px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Her platform tarafından oluşturulan yarma ve dolgular <a href="definicion_vectorial.html">vektörel olarak</a> verilir ve yarma ile dolguya bağlı çizim çizgileri, kullanıcının belirleyeceği <span style="font-weight: bold;">tipte</span> olacaktır (varsayılan olarak, yarma için L43 ve dolgu için L82).<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_explanada.png" style="width: 585px; height: 381px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /><span style="font-weight: bold;">TİP KESİTLER</span> butonuna tıklandığında, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'deki ortak <a href="definicion_vectorial.html">vektörel tasarım</a> menüsü görünecektir.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_secc_tipo.png" style="width: 684px; height: 147px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Eğer yarma veya dolgu vektörü tek bir veri ile tanımlanırsa, platform oluşturulurken otomatik olarak ayrıklaştırılır.<br />
+Örn. (200, -100) -&gt;&nbsp; (2, -1), (2, -1), (2, -1).....<br /><br />Eğer seçenekler sekmesinde <span class="Parf_negrita">Sağlam Zemine Kadar Dolgu</span> veya <span class="Parf_negrita">Sağlam Zemine Kadar Yarma</span>'yı etkinleştirmişsek, o zaman Tip Kesitler'de <span class="Parf_negrita">Uygun Olmayan Arazide Yarma</span> için bir vektör kullanımını etkinleştirmemize izin verir.<br />
+<br /></span>
+      <table style="text-align: left; width: 691px; height: 17px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 630px; text-align: justify;"><span class="Parrafo"><span class="Info">Platform vektörlerinin işaret kriteri, yarma için pozitif delta Y ve dolgu için negatif delta Y'dir.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="metodos_calculo">Hesaplama Yöntemleri</a></span><br />
+      <span class="Parrafo"><br />
+Kullanıcı ayrıca platformun hesaplama yöntemini de seçmelidir; iki olasılık vardır:<br />
+      </span>
+      <ol>
+        <li><img src="Imagenes/def_vect_expla_niveles.png" style="width: 203px; height: 123px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Seviyelere Göre</span>: Varsayılan moddur. Platform, tek bir tip kesitle oluşturulur, ancak her platform için platformun ilk bölgesinde tanımlanan tip kesit alınır.</span></li>
+      </ol>
+      <div style="margin-left: 40px;"><span class="Parrafo">Vektörlerin her köşe noktası için bir seviye (tabaka) oluşturarak çalışır, bu nedenle bunların veri açısından yoğun olması tavsiye edilir, örneğin bu araçta kullanılan varsayılan vektörler gibi.</span><br />
+      <span class="Parrafo"><br />
+      <span class="Parrafo">En hızlı yöntemdir ve örneğin, ilk denemeler için tavsiye edilir.&nbsp; <br />
+      <br />
+      <br />
+Seviyelere göre platformlar, aşağıda göreceğimiz gibi, profillere göre yöntem gibi, SAM yüzeylerini de kullanır. Yani arazi, bir harita yüzeyi, bir SAM, bir Lazer veritabanı veya bir Grid SAM olabilir. </span><span class="Parrafo"></span></span></div>
+      <span class="Parrafo">
+      <ol start="2">
+        <li><span style="font-weight: bold;"><a name="por_perfiles">Profillere Göre</a></span><span class="Parrafo">: Bu durumda, profiller arasında minimum bir mesafe gerekir ve arazi profillerini üçgenleme ile çıkarma imkanı verilir. <br />
+</span></li>
+      </ol></span></span>
+      <div style="margin-left: 40px;">Profillere göre platformlar, SAM yüzeylerini kullanır. Yani arazi, bir harita yüzeyi, bir SAM, bir Lazer veritabanı veya bir Grid SAM olabilir.<br />
+      <br />
+      <img src="Imagenes/expla_mdt.png" style="width: 684px; height: 162px;" alt="" /><br />
+      <br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ayrıca, toprak işlerinin ulaşım sınırları için bir çizgi tipi de seçilebilir. Aynı şekilde, bu yöntemde, farklı bölgeler tanımlanabilir ve KM'lere göre farklı tip kesitler uygulanabilir.</span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo">Profillere göre hesaplanan platformlar için, yarma ve dolgu geometrilerini tanımlayan vektörler, <span style="font-weight: bold;">etek</span>'ten veya <span style="font-weight: bold;">baş</span>'tan (seviyelere göre yöntemde mevcut değildir) yakalanarak yerleştirilebilir.<br />
+      <br />
+      <img src="Imagenes/eng_vect_expla.png" style="width: 684px; height: 147px;" alt="" /><br />
+      <br />
+      </span><span class="Parrafo"><span style="font-weight: bold;">TİP KESİT</span> alanında, platformlara farklı bölgelerde uygulanabilecek ve böylece birden fazla geometri elde edilebilecek mevcut yarma ve dolgu vektörlerinin (tip kesitler) sayısı belirtilir.<br />
+      <br />
+Seçilebilecek iki tür yarma/dolgu kontrolü ve hendek yakalaması vardır: <span style="font-style: italic;">Alttemel</span> (üstyapı katmanlarının tabanına göre) veya <span style="font-style: italic;">Platform Kenarı</span>. Her ikisi de üstyapı katmanları olmadığında aynı etkiye sahiptir.<br />
+      <br />
+Profillere göre platformlar için, her yarma ve/veya dolgu kesitine, arazide kesişmek için yeterli yüksekliğe sahip bir son segment tanımlanması gereken, vektörel olarak tanımlanmış <span style="font-weight: bold;">kafa hendekleri</span> ekleme imkanımız vardır.<br />
+      <br />
+      <img src="Imagenes/expla_cun_guarda.png" style="width: 684px; height: 147px;" alt="" /><br />
+<br />Ayrıca, her tip kesite, kaya veya toprakta başlanıp başlanmadığına bakılmaksızın, yarma kesitlerinde üstyapı katmanlarından sonra yerleştirilecek bir <span style="font-weight: bold;">hendek</span> ekleme imkanı da vardır.<br />
+      <br />
+      <img src="Imagenes/expla_cun.png" style="width: 684px; height: 147px;" alt="" /><br />
+      <br />
+Bu yöntem seçildiğinde, SEÇENEKLER sekmesinde profiller aracılığıyla platform oluşturmak için çeşitli kutucuklar da etkinleştirilir:<br />
+      <br />
+      <img src="Imagenes/expla_opciones.png" style="width: 684px; height: 147px;" alt="" /></span><br />
+
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">.ttp oluştur</span>: Bu seçenek işaretlendiğinde, oluşturulan her bir platformun geometrisini içeren bir &nbsp;<span class="Archivo">.ttp</span> dosyası (<span class="Archivo">expla1.ttp</span>,&nbsp;<span class="Archivo">expla2.ttp</span>,...) oluşturulur.<span style="font-weight: bold;"> <br />
+</span></span></span></span></li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ekim Alanları: </span>İki <span style="font-weight: bold;">şev</span> (<span style="font-weight: bold;">minimum</span> ve <span style="font-weight: bold;">maksimum</span>) arasında kalan 3D yüzey alanını ölçme imkanı. .ttp dosyasının oluşturulmasını gerektirir ve ttp yüzeyi üzerinde, maksimum eğimi tanımlanan şevler arasında olan üçgenlerin 3D alanını toplayarak hesaplanır.</li>
+      </ul>
+      <img style="width: 684px; height: 147px;" alt="" src="Imagenes/expla_area_siembra.png" /><br />
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu ölçüm, platformların geometrisi oluşturulurken oluşturulur ve listeye metrajlar menüsünden erişilir: siembra_expN_mM.res. <span style="font-weight: bold;"><br />
+          </span></span></span></span></li>
+
+      
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Köşeleri yuvarla</span>: Platformların köşelerindeki şevleri (konik yüzey) yuvarlamayı sağlar. Bu seçenek, şevlerin <a href="#por_lado">kenarlara göre</a> aralıklara bölünmesi durumunda seçilemez.</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">İçbükey köşe modu</span>: İçbükey köşelere ve kotu değişken olan kenar çizgisine sahip göletler için alternatif bir algoritma. Profillere göre seçeneklerde etkinleştirilebilir.<br />
+</li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Şev Taraması Yap</span>: Etkinleştirilirse, sadece enkesit eğiminin değiştiği noktalarda (palye vb.) boyuna çizgiler çizilir. Enkesit çizgileri, şev bölgelerinde bir uzun ve bir kısa çizgi ile çizilir.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sağlam Zemine Kadar Dolgu</span>: Bu seçenek etkinleştirilirse, dolgu kesitlerinde şev sağlam zemine kadar iner.</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sağlam Zemine Kadar Yarma</span>: Sağlam Zemine kadar yarma. Bu seçenek etkinleştirildiğinde, Sağlam Zemine Kadar Dolgu da aynı anda etkinleştirilir.<br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><img src="Imagenes/expla_secc_tipo_roca.png" style="width: 309px; height: 214px;" alt="" align="right" hspace="4" />Farklı Kaya T.K.</span>: Kaya bölgesinde farklı bir Tip Kesit kullanma imkanı. Bunun için seçeneği işaretlemenin yanı sıra, bölgeler iletişim kutusunda (PLATFORM sekmesi) kayada kullanılacak T.K.'leri de tanımlayabiliriz (bu kesitin yarma vektörü alınacaktır).<br />
+Bu, seviyelere göre mod ve kenarlara göre mod için ve ayrıca göletlerdeki iç şevler için geçerli değildir.<br />
+Kayadaki yarma vektörü, üstyapı katmanlarının kenarından başlayarak tanımlanan ilk kayanın tavanına ulaşana kadar uygulanır. Bu noktadan itibaren dış kesitin yarma vektörü kullanılmaya başlanır.</li>
+      </ul><br />
+      <br />
+      <br />
+
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="incl_sup_expl"></a>Platform yüzeyini dahil et</span> Bu seçenek, iç şevli platformlarda (<a href="MS_explanaciones.html#balsas_vertederos">göletler ve depolar</a>), oluşturulan yeni yüzeye, iç şevlerin dolgu etekleriyle (gölet tabanı,...) sınırlanan kapalı alan içinden geçen platform içi yüzeyinin çizgilerinin dahil edilmesini sağlar. Aksi takdirde, program aralarındaki yüzeyi dikkate almadan doğrudan dolgu eteklerini birleştirir.</span></li>
+      </ul>
+      <img src="Imagenes/expla_supef_expla.png" style="width: 684px; height: 162px;" alt="" /><br />
+      <ul>
+
+      
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Maksimum aralık</span>: Düz segmentlerde profil oluşturmak için profiller arası maksimum aralık.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Maksimum açı</span>: Köşelerde profil oluşturmak için aralık.</span></li></ul><ul><li><span class="Parrafo"><span style="font-weight: bold;">Gölet İçi: Yarma/Dolgu Şevlerini Kullan</span>: Program varsayılan olarak göletlerin iç şevleri için dolgu şevlerini kullanır, ancak bu seçenek etkinleştirilirse, göletlerin iç şevleri orijinal arazinin altındaysa, ilgili yarma kesitinin şevlerini (baştan yakalanmış) kullanır.<br /></span></li>
+      </ul><span class="Parrafo"></span></div>
+      
+      <span class="Parrafo"><br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="lineas">Çizgiler</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">ÇİZGİLER'e karşılık gelen bölümde, <span style="font-weight: bold;">Platformun Tepe Noktası</span>'na atanan çizgi tipi bildirilmelidir. O tipteki her çizgi, bir platformun hesaplanması için dikkate alınır, böylece aynı anda çok sayıda platform hesaplanabilir. <br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><img style="width: 685px; height: 147px;" alt="" src="Imagenes/expla_lineas.png" /><br />
+      </div>
+
+      <br />
+<span style="font-weight: bold;">İç Kenar (Göletler)</span> olarak adlandırılan iç şevlerin tabanı için farklı bir çizgi tipi tanımlanabilir. Program, bu çizginin tamamen platform kenar çizgisinin içinde olmasını arar. Dış şevler kenar çizgisinden ve iç şevler iç kenar çizgisinden oluşturulur.<br />
+Bir Platform/Gölet için birden fazla iç kenar çizgisine izin verilir. Örneğin, "sekiz" şeklinde bir platform durumunda.<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_talud.png" style="width: 684px; height: 237px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      <br />
+      </span><img src="Imagenes/ejemplo_explanada_2.png" style="width: 240px; height: 282px; margin-left: 7px;" alt="" align="right" />
+      <table style="text-align: left; height: 64px; width: 440px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td style="vertical-align: middle; width: 370px; text-align: justify;"><span class="Parrafo"><span class="Info">Bu çizgi tipinin kullanımını SADECE platform kenarları için ayırmaya özel dikkat gösterilmelidir, çünkü aksi takdirde program o tipteki tüm çizgileri platform olarak kabul edeceğinden istenmeyen sonuçlar elde edilir.</span><br />
+            </span></td>
+    </tr>
+  </tbody>
+      </table>
+
+      <br />
+      <span class="Parrafo">Bildirilen <span style="font-weight: bold;">İşgal Sınırı</span> tipi, programın platformun kenarını (dolgu eteği ve yarma başı) çizmek için kullanacağı tip olacaktır. Varsayılan olarak, şeffaf gri bir dolguya sahip bir çizgi olan L75 tipi kullanılır.<br />
+      <br />
+Program, yarma başını ve dolgu eteğini ayırt etmek için işgal sınırı çizgisini gözden geçirir.<br />
+      <br />
+</span></span></span><span style="font-weight: bold;">Sınır çizgileri</span> kutucuğu etkinleştirilerek, platformların yarma veya dolgu şevlerini tanımlanan çizgi tipinden itibaren kesebiliriz. Eğer kesim üstyapı katmanları bölgesinde gerçekleşirse, üstyapının yan şevi azaltılır ancak kalınlık korunur.<br />
+Sınır çizgisi platformu etkilemez, öyle ki bir bölgede tüm şev kaldırılmak isteniyorsa, sınır çizgisi platform çizgisiyle çakışacak şekilde getirilmelidir. Eğer sınır çizgisi platformun içine geçerse, artık şevleri etkilemez.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br /><span style="font-weight: bold;">Üstyapı Sınırı</span>: Platformun üstyapı uzantısını sınırlamak için bir çizgi tipi seçilebilir, en fazla 2 sınır çizgisi olabilir. Bu seçenek etkinleştirilirse ve platformun kenarının içinde bu çizgi varsa, üstyapı katmanları sadece bu kapalı alan içinde oluşturulur ve her üstyapı bileşeninin sahip olduğu şevle biter.<br />Sınır çizgisinin kenarla çakışması durumunda, tanınması için içeriye doğru kaydırılması gerekir.<br /><br /><img style="width: 685px; height: 147px;" alt="" src="Imagenes/expla_limite_firmes.png" hspace="20" /><br /><br /><img style="width: 686px; height: 330px;" alt="" src="Imagenes/expla_limite_firmes_perfil.png" hspace="20" /><br /><br />
+<span style="font-weight: bold;">Öncekileri Sil</span> komutuyla, mevcut oturumda oluşturulmamış ve bir .edm veya .edb dosyasında gelmiş olsalar bile, bir platformdan gelen tüm öğeleri siler.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_borrar_prev.png" style="width: 684px; height: 87px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><a name="tramif"><span style="font-weight: bold; font-style: italic;">Aralıklara Bölme</span></a><br /><br /><span style="font-weight: bold;">Bölgeler</span> seçeneğine tıklandığında, çizgiyi KM'lere göre aralıklara bölmeyi ve tanımlanmış olan farklı tip kesitleri uygulamayı sağlayan bir pencere açılır.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_zonas.png" style="width: 684px; height: 237px;" alt="" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/expla_tramif.png" style="width: 309px; height: 214px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />Bu araç, hesaplama yöntemi <a href="#por_perfiles">profillere göre</a> olduğunda, platformun çevresinde farklı şev geometrileri ve hatta aralarında geçişler uygulamayı sağlar. Konturu aralıklara bölerken iki olasılık vardır:<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Bölgelere Göre</span>: Platform konturunu oluşturan çizginin başlangıcından itibaren KM 0 alınır ve buradan farklı tip kesitlerle farklı aralıklar oluşturulur. Bölgeler belirlendikten sonra, ekranda bölgenin veri numarasının tip kesit numarasının önünde yazıldığını gözlemleyebiliriz.</span></li>
+      </ul></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_zonas_rotul.png" style="width: 161px; height: 119px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span style="font-weight: bold;"><a name="por_lado">Kenarlara Göre</a></span><span class="Parrafo">: Platform polilinesinin her bir kenarına bir tip kesit atanır ve bu, bir sonraki kenarın tip kesitiyle kesişimini arar.</span></li>
+      </ul><span class="Parrafo"><span style="font-weight: bold;">Bölgeler</span>'den <span style="font-weight: bold;">Kenarlar</span>'a ve tersine geçiş yapıldığında, program iki yapılandırmayı ayrı ayrı tutar, böylece önceki yapılandırma kaybolmaz. .exp dosyalarında her iki yapılandırma da kaydedilir, öyle ki Kenarlara göre moduyla kaydedilmiş bir dosya yüklersek, Bölgelere göre moduna geçtiğimizde bu yapılandırmanın değerlerini geri yükleriz.&nbsp;&nbsp; </span><br />
+
+      <span class="Parrafo"><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="obt_geometria">Geometrinin Elde Edilmesi</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">PLATFORM'un yanında, platform çizgisinin tanımını iyileştirmek için bir YARDIMCI PROGRAMLAR menüsü bulunur. Özellikle, <span style="font-weight: bold;">Başlangıç Noktası</span> aracı, platform çizgisinin başlangıç noktasını, platformun doğru hesaplanması için en uygun olan en uzun düz segmentin orta noktasına taşır.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_pto_inicio.png" style="width: 684px; height: 237px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br /><span style="font-weight: bold;">Azimut</span> yardımcı programının üç seçeneği vardır:<br />
+</span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Otomatik</span> seçeneği ile program, her platform için platformun en uzun yönünde bir azimut hesaplar. Azimut, 0 ile 200 grad arasındaki değerlerle sınırlıdır.</span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Paralel</span> seçeneği ile program, azimutu en uzun segmente paralel yapar.</span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Dik </span> seçeneği ile program, azimutu en uzun segmente dik yapar.<br />
+          </span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span style="font-weight: bold;">Minimum Kotlar</span>. Bu araç, platformun kapalı alanını yükseltir veya alçaltır, böylece dolgu önlenir. Platformun kapalı alanının tüm köşe noktalarının ve platformlar iletişim kutusunun maksimum aralığını kullanarak noktalar arasındaki kırmızı kotu hesaplar. Elde edilen en yüksek kırmızı kot, tüm noktalardan çıkarılır.<br /><br /><span class="Parf_negrita">Temizle</span> seçeneği, platform kenar çizgilerini analiz ederek bu çizgilerdeki olası döngüleri bulur ve ortadan kaldırır. Temizlenmiş çizgilerle edm'yi kaydetmek tavsiye edilir.<br />
+
+<span style="font-weight: bold;">[Geometri Oluştur]</span> butonu (ilgili geri alma işlemi <span style="font-weight: bold;">[Geri Al] <img src="Imagenes/icono_basura.png" style="width: 23px; height: 23px;" alt="" /></span> ile), bu kenarlardan, seçilen çizgi tipi kapalı alanları ve <a href="definicion_vectorial.html">vektörel olarak</a> tanımlanan şeve göre oluşturulan yarma ve dolguyu oluşturur:<br />
+
+&nbsp;&nbsp;&nbsp; &nbsp;<br />
+
+      
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_explanada_3.png" style="width: 565px; height: 413px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Model aşağıdaki çizgilerle oluşturulur:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Platformu tanımlayan çizgi</span></li>
+        <li><span class="Parrafo">Kenar çizgisi (yarma başı ve dolgu eteği)</span></li>
+        <li><span class="Parrafo">Yarma/dolgudaki boyuna ve enine çizgiler</span></li>
+      </ul>
+      <span class="Parrafo">Program, platformların geometrisini oluştururken, onları 1, 2, 3,... olarak numaralandırır. Her platformun tüm öğeleri —platform, dolgu ve yarma— otomatik olarak her platforma atanan sayıya eşit bir <span style="font-weight: bold;">model</span> numarasına yerleştirilir (güzergah projesi eksenlerine benzer). Metraj oluşturulmadan önce bu platformlar düzenlenmek istenirse, eklenen öğelerde çizgi tipleri ve model numaralarına uyulmalıdır.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="plat_modif">Platformlar. Platformların İnteraktif Olarak Değiştirilmesi</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Açılır pencerenin sağ tarafında, aşağıdaki kolaylıkları sağlayan <span style="font-weight: bold;">PLATFORMLAR</span> seçeneği bulunur:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Analiz Et</span>: Platformlar için seçilen tipteki tüm çizgileri arar ve her biri için farklı bir azimut tanımlamayı sağlayan bir tablo oluşturur. Bu azimut, metraj profillerini oluşturmak için kullanılacaktır. Ayrıca, bir platformu tanımlayan her çizginin sahip olduğu nokta sayısı hakkında da bilgi verir.</span></li>
+      </ul></span></span></span></span></span></span></span></span><ul><li><span class="Parf_negrita">Z/Ş/Üstyapı Böl. 1 -&gt; Grup 0</span>: Bölgeler, Şevler (Dış/İç/Her ikisi) ve Üstyapı Kesiti ile ilgili tüm bilgileri, mevcut platformdan aynı gruptaki tüm platformlara kopyalamayı sağlayan bir araç. Örn. (bir rüzgar santralinin farklı platformlarına ait aynı tipteki alt platformlar).</li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span>Geometrinin oluşturulması ve metrajlar için, Platformlar sekmesinde üç mod gösterilir:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Bağımsız Platformlar</span>: Her platformu diğerlerinden bağımsız olarak oluşturur ve ölçer.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Çakışmaları Kırp</span>: Şevlerin kesişimini hesaplar. <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Diğerleriyle kesişen platformların şevlerini kırmayı sağlar (ancak birinin şevi diğerinin platform kapalı alanı içine girerse bunu yapmaz).</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul style="text-align: left;">
+        <li><span style="font-weight: bold;">Sırayla Yürüt</span>: Bu modda her platform, bir öncekinin bıraktığı duruma dayanır, gerekli kazıyı veya dolguyu yapar. Her platform, arazi yüzeylerini ve kaya horizonlarını değiştirir, ancak enkesit profiline, arazi yüzeylerinin orijinal durumu, önceki platformun bıraktığı durum ve önceki tüm platformların yüzeyleri ile yüzeyler eklenir. Bu modda, çok uzakta olan platformların dikkate alınmaması için bir arama mesafesi eklenir.</li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_modif.png" style="width: 684px; height: 237px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+
+      <span class="Parrafo">
+      <table style="text-align: left; height: 44px; margin-left: 40px; width: 422px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td style="vertical-align: middle; width: 328px; text-align: justify;"><span class="Parrafo"><span class="Info">Bu seçenek, hem <span style="font-weight: bold;">[Platformlar]</span> menüsüne girildiğinde hem de platformlar için çizgi tipi değiştirildiğinde otomatik olarak yürütülür.</span></span></td>
+    </tr>
+  </tbody>
+      </table>
+
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Şev</span>: Kapalı alanın dışına (platformlar), içine (depolar) ve dışına ve içine (göletler) şev oluşturmak için düğmeyi değiştirmeyi sağlar.</span></span></span></span></li></ul><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">B, B+U</span>: Her bir platform için bağımsız bir bitkisel toprak ve bitkisel+uygun olmayan toprak kalınlığı tanımlamayı sağlar; eğer sağlam zemin için bir yüzey tanımlanmışsa, bu B+U'da tanımlanan değerden önceliklidir.<br /></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Taşı</span>: Platformu tanımlayan çizgiyi taşımayı sağlar. Tek bir platform veya birden fazla platform olduğunda, ancak sadece üzerinde işlem yapılmak istenen platform aktif olduğunda ve toprak işleri oluşturulmuşsa, <span style="font-weight: bold;">[Taşı]</span> seçeneği, platformun konumuna bağlı olarak yarma ve dolgu geometrilerinin dinamik olarak nasıl değiştiğini görmeyi sağlar. Programın platformu gerçek zamanlı olarak çizmeye devam etmesi için <span style="font-weight: bold;">Yapılandırma</span> </span></span></span></span><span class="Parrafo">&#8594;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Tercihler</span> </span></span></span></span><span class="Parrafo">&#8594;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+          <span style="font-weight: bold;">Düzenleme Sırasındaki Davranış</span> </span></span></span></span><span class="Parrafo">&#8594;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">İşleyiş</span> menüsündeki <span style="font-weight: bold; font-style: italic;">Hızlı kaydırma</span> kutucuğunun işaretli olması tavsiye edilir.</span></span></span></span></li></ul>
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Döndür</span>: Platformu tanımlayan çizgiyi döndürmeyi sağlar. Tek bir platform veya birden fazla platform olduğunda, ancak sadece üzerinde işlem yapılmak istenen platform aktif olduğunda ve toprak işleri oluşturulmuşsa, <span style="font-weight: bold;">[Döndür]</span> seçeneği, platformun konumuna bağlı olarak yarma ve dolgu geometrilerinin dinamik olarak nasıl değiştiğini görmeyi sağlar. Başlangıçta referans noktası olarak tıklanan nokta, dönme merkezi olarak kullanılır ve imlecin mevcut konumu ile o nokta arasındaki açı belirlenir. Her platformun azimutu onunla birlikte döner.</span></span></span></span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+          <span style="font-weight: bold;">Yükselt</span>: Platformu tanımlayan çizginin kotunu yükseltmeyi sağlar. Tek bir platform veya birden fazla &nbsp;</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">platform olduğunda, ancak sadece üzerinde işlem yapılmak istenen platform aktif olduğunda</span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> ve toprak işleri oluşturulmuşsa, <span style="font-weight: bold;">[Yükselt]</span> seçeneği, platformun konumuna bağlı olarak yarma ve dolgu geometrilerinin dinamik olarak nasıl değiştiğini görmeyi sağlar. İmleci K-G yönünde hareket ettirerek platformun kotu yükselir veya alçalır.</span></span></span></span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+          <span style="font-weight: bold;">Eğim Ver</span>: Platformu, profiller için azimut çizgisine göre eğmeyi sağlar. Bir eğim artışı sunulduğunda, platform noktalarının kotları çizgiye olan mesafeye bağlı olarak yükselir veya alçalır. Dinamik mod kullanıldığında, eğim imleci ekran boyunca yukarı veya aşağı hareket ettirerek artırılır veya azaltılır.</span></span></span></span></li>
+      
+      </ul>Birden fazla platform olduğunda, Geometri Oluştur'dan sonra, Taşı/Döndür/Yükselt/Eğim Ver araçları, listenin en üstünde görünen AKTİF platform üzerinde interaktif olarak çalışır.
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Birden fazla platformumuz olduğunda, Değiştir kutucuğunda seçilen seçeneğe bağlı olarak <span style="font-weight: bold;">taşıyabilir</span>, <span style="font-weight: bold;">döndürebilir</span>, <span style="font-weight: bold;">yükseltebilir</span> veya <span style="font-weight: bold;">eğim verebiliriz</span>:<br />
+</span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Değiştir <span style="font-weight: bold;">tek tek</span>.</span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Hepsi aynı anda</span>.</span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Hepsi <span style="font-weight: bold;">aynı gruptakiler</span>. Bu son seçenek, bir platform seçmeyi ve aynı gruptaki tümünü aynı anda taşımayı, döndürmeyi, yükseltmeyi veya eğim vermeyi sağlar.</span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br /><span style="font-weight: bold;">Grup</span>: Her platforma bir grup atanabilir ve onları ayırt etmek için her gruba farklı bir renk verilebilir.<br />
+      <br />
+Tek bir platform ve zaten oluşturulmuş şevler durumunda, <span style="font-weight: bold;">yükseltme</span> ve <span style="font-weight: bold;">eğim verme</span> seçenekleri interaktif modda, daha iyi bir kontrol sağlamak için veriyi klavyeden girmeye zorlanabilir. Bu, <span style="font-weight: bold; font-style: italic;">Klavyeden</span> seçeneği etkinleştirilerek sağlanır.<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;"><img src="Imagenes/explanacion_intercambiar.png" style="width: 134px; height: 52px;" alt="" align="right" hspace="6" />Sıra Değiştir</span>: Platformun sırasını ikişer ikişer değiştirmeyi sağlar. Bu konum değişikliği, geometri oluşturulduktan sonra bile yapılabilir. Geometri oluşturulduktan veya bir .exp dosyası kaydedildikten sonra, eğer çizgiler değiştirilmişse, haritanın .edm dosyasını da kaydetmeniz tavsiye edilen bir mesaj görüntülenir.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span><span class="Parrafo"><table style="text-align: left; width: 691px; height: 17px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 630px; text-align: justify;"><span class="Parrafo"><span class="Info">Platformun dinamik hareketleri kullanılacağı zaman, en hızlı yeniden oluşturma modu profillere göre ve üçgenlemesiz, sonra seviyelere göre ve en yavaşı profillere göre ve üçgenlemelidir.</span></span></td>
+          </tr>
+        </tbody>
+      </table></span><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="compensacion">Yarma ve Dolgu Otomatik Dengelemesi</a></span><br />
+      <br />
+<span style="font-weight: bold;">[Dengele]</span> butonu, yarma ve dolgu hacimleri arasındaki fark belirtilen <span style="font-weight: bold;">dengeleme yüzdesinin</span> altına düşene kadar tüm platformların kotunu birer birer deneyerek yükseltir veya alçaltır.<br /><br /><span style="font-weight: bold;">[Dolgu Fazlası]</span> butonu, dolgu ile yarma arasındaki farkın bu değere yaklaşması için platformun yüksekliğini aramayı sağlar. 0'dan farklı bir değer atanması durumunda, yüzde bu değer üzerinden hesaplanır.<br />
+<br />
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_compensar.png" style="width: 684px; height: 237px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span><span class="Parrafo"><table style="text-align: left; width: 691px; height: 17px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 630px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Bu işlem, geometri hesaplamasını içerir, bu nedenle önceden <span style="font-weight: bold;">[Geometri Oluştur]</span> butonuna basılmamalı, doğrudan <span style="font-weight: bold;">[Dengele]</span> butonuna basılmalıdır.</span></span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="guardar_cargar">Platformları Kaydetme ve Yükleme</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br /></span></span></span></span></span><img src="Imagenes/expla_guardar_cargar.png" style="width: 89px; height: 55px;" alt="" align="right" hspace="5" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;Ekranın üst kısmında, tüm platform verilerini &nbsp;<span class="Archivo">.exp</span> uzantılı dosyalar aracılığıyla yönetmeyi sağlayan <span style="font-weight: bold;">[Kaydet]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> ve <span style="font-weight: bold;">[Yükle]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> tuşları bulunur.<br />
+      <br />
+Yüklemek için, bölgelerin doğru bir şekilde atanması için kaydın yapıldığı aynı harita ve platformların mevcut olması tavsiye edilir.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <br /></span></span></span></span></span><span class="Titulo_2"><a name="mediciones">Metrajların Alınması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Hacim hesaplamalarında yer alan parametreler <span style="font-weight: bold;">METRAJLAR</span> bölümünde toplanmıştır. Burada, hacim hesaplaması için <span style="font-weight: bold;">profiller arası bir aralık</span> ve bunlara uygulanacak bir <span style="font-weight: bold;">yarı bant genişliği</span> ile profil ve metraj hesaplamasında bir sıyırma kazısını dikkate alma imkanı belirlenir. Bu sıyırma kazısını hesaplamak için <span style="font-weight: bold;">Bitkisel Toprak Kalınlığı</span> alanı doldurulmalı ve uygun olmayan toprağı hesaplamak için <span style="font-weight: bold;">B+U</span> alanı doldurulmalıdır; tek bir bitkisel ve/veya uygun olmayan toprak değeri yapılandırılabilir ve <span style="font-weight: bold;">Aktif Platformlara Kopyala</span> komutuyla tüm aktif platformlara kopyalanabilir.<br />Eğer Yüzeyler sekmesinde sağlam zemin için bir SAM yüzeyi tanımlamışsak, bu, Platformlar sekmesindeki bir bitkisel toprak kalınlığı <span style="font-weight: bold;">B</span> ile şu şekilde birleştirilebilir:<br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li>Eğer 0'da bırakılırsa, sağlam zemine kadar olan tüm malzeme Bitkisel Toprak olarak kabul edilir.</li><li>Eğer negatif bir değer girilirse, uygun olmayan arazi yüzeyi bitkisel toprağın bir kopyası olarak oluşturulur ve o zaman sağlam zemine kadar olan tüm malzeme Uygun Olmayan olarak kabul edilir.</li><li>Eğer pozitif bir değer girilirse, Uygun Olmayan yüzeyi Bitkisel Toprağa paralel olarak oluşturulur ve profilin herhangi bir noktasında sağlam zeminin altındaysa düzeltilir, o zaman bitkisel yüzey ile uygun olmayan yüzey arası bitkisel, uygun olmayan ile sağlam zemin arası ise uygun olmayan olarak kabul edilir.</li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Göletler için bir <span style="font-weight: bold;">dolum payı</span> belirtilebilir, böylece göletin kapasitesi taşana kadar değil, o sınırdan belirli bir yükseklik altına kadar ölçülür.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_mediciones.png" style="width: 684px; height: 162px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold; font-style: italic;">Platformun köşe noktalarında profiller</span> seçeneği, aralığa göre profillere ek olarak, programın platformun çizgisinin veya konturunun köşe noktalarından geçen profilleri de almasına neden olur, böylece daha hassas hacim hesaplamaları elde edilir.<br />
+      <br />
+      <span style="font-weight: bold;">Platform için model</span>: İlk platform için 1900 değerine kadar bir model numarası tanımlanabilir. Bundan sonra geri kalanı sırayla numaralandırılır.<br />
+<br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Program, her platform için &nbsp;<span class="Archivo">expla#.per</span> adında (burada # eksen numarasıdır) bir profil dosyası oluşturacaktır. Profiller, varsayılan olarak azimutu 0 olan düz bir eksene göre oluşturulacaktır. Her platformun eksen yönü, <span style="font-weight: bold;">PLATFORMLAR</span> bölümündeki <span style="font-weight: bold;">Azimut</span> alanı aracılığıyla değiştirilebilir.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_azimut.png" style="width: 684px; height: 237px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+<span style="font-weight: bold;">dX</span> sütunundan her platformun eksenini yanal olarak kaydırabiliriz. <br />
+      <br />
+Metraj oluşturulduğunda, kullanıcının referansını alabilmesi için profilleri oluştururken kullanılan ekseni takip eden bir L53 tipi çizgi oluşturulur.<br />
+      <br />
+Ayrıca, GÜZERGAH PROJESİ modülünden faydalı olabileceği düşünülerek, metraj profilleri için kullanılan eksenleri içeren &nbsp;<span class="Archivo">expla.cej</span> dosyası da oluşturulur.<br />
+      <br />
+Dikkate alınacak eksen şunlar olabilir:<br /></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">İşgal alanına göre eksen</span>; işgal alanının, yani yarma başı ve dolgu eteğinden oluşan kapalı alanın ağırlık merkezinden geçer (varsayılan seçenektir).</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Platforma göre eksen</span>; platformun geometrik merkezinden geçer.</span></span></span></span></span></li>
+      </ul></span></span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">İki noktaya göre eksen</span>; her platform için ölçüm ekseni iki nokta ile tanımlanabilir.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_eje.png" style="width: 684px; height: 237px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu bölümdeki <span style="font-weight: bold;">[Oluştur]</span> butonuna basıldığında, kullanıcı arazi yüzeyinin model 0'da olduğundan emin olmalıdır, çünkü program her platformu, kullanıcı tarafından tanımlanan profil aralığı ve yarı bant genişliğine göre bir Güney-Kuzey eksenine göre profillerle tarar ve yüzey sayısını otomatik olarak artırır, mevcut olanlara saygı duyar ve platform, yarma ve dolgu için tanımlanan tiplerle başka bir tane oluşturur.<br />
+      <br />
+Metraj oluşturulduktan sonra, program haritanın bazı öğelerinin modelini değiştirir ve sadece arazi yüzeyine ait olan nesneleri 0'da bırakır. <span style="font-weight: bold;">[Modeli Geri Yükle]</span> seçeneği ile, metraj oluşturulduktan sonra bu öğelerin modeli geri yüklenir.<br />
+      <br /></span></span></span></span></span><img src="Imagenes/expla_listados.png" style="width: 167px; height: 106px;" alt="" align="right" hspace="10" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Metraj oluşturulduğunda, her platforma atanan numarayla bir sembol ve ayrıca her platformun yarma ve dolgu hacimlerini içeren ve hepsini toplayan &nbsp;<span class="Archivo">cubica.res</span> listesi de oluşturulur. Her platformun alanı da (işgal sınırı için tanımlanan çizginin kapladığı plan alanı) dahil edilir. Ölçüm, &nbsp;<img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /> <span style="font-weight: bold;">[cubica.res Listesi]</span> butonuna basıldığında gösterilir.<br />
+cubica.res listesinde platformun kotunu veya değişken kotu varsa ortalama kotunu buluruz.<br />
+      <br />
+<br /><span class="Archivo">
+      <br /></span></span></span></span></span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: left;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+===================================================</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *&nbsp;&nbsp;&nbsp; PLATFORM METRAJLARI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * * *</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+===================================================</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+      </span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;PLATFORM&nbsp;&nbsp;&nbsp; ---KISMİ HACİMLER---------------- --TOPLAM HACİMLER----------------</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --DOLGU--&nbsp;&nbsp;&nbsp;&nbsp; --YARMA--&nbsp;&nbsp;&nbsp;&nbsp; --KAPASİTE-- --DOLGU--&nbsp;&nbsp;&nbsp;&nbsp; --YARMA--&nbsp;&nbsp;&nbsp;&nbsp; --KAPASİTE--</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+      </span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp; 1 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+16.00&nbsp;&nbsp;&nbsp;&nbsp;
+57678.74&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+16.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+57678.7&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 0.0</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+26949.91&nbsp;&nbsp;&nbsp;&nbsp;
+10671.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 &nbsp; &nbsp;&nbsp;
+26965.9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+68350.7&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 0.0</span></span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Ayrıca, her platform için <span class="Archivo">explaN_mM.res</span> ve &nbsp;<span class="Archivo">exN_mM.res</span> dosyaları oluşturulur (<span class="Archivo">N</span> platform numarası ve M model numarasıdır) ve bunlar, elde edilen &nbsp;<span class="Archivo">explaN_mM.per</span> dosyasına göre KM'lere göre metraj listelerine karşılık gelir; ikisi arasındaki fark, ikincisinin doğrudan bir hesap tablosuna yüklenebilecek bir formata sahip olmasıdır. &nbsp;<img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /> <span style="font-weight: bold;">[explaN_mM.res]</span> butonuna basıldığında, her platformun &nbsp;<span class="Archivo">explaN_mM.res</span> listelerine erişilir.<br />
+SIYIRMA KAZISI metrajı, Bitkisel Toprak ve UYGUN OLMAYAN Zemin olarak ikiye ayrılır.<br />
+      <br />
+Geometriyi oluşturduğumuzda, <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">[altura_explaN_mM.res]</span> adlı bir liste de oluşturulur; bu liste, maksimum yarma ve dolgu yüksekliklerini içerir (N platform numarası ve M model numarasıdır).<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_alt_max.png" style="width: 350px; height: 222px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Ayrıca, kullanıcının ölçümleri kontrol etmesini sağlayan &nbsp;<span class="Archivo">expla.dar</span> adında bir <a href="EDM_editor_perfiles.html#tablas_cubic">hacim tablosu</a> da otomatik olarak oluşturulur. <br />
+<span style="font-weight: bold;">expla.dar</span> tablosu, metrajların ve BIM için malzemelerin kapalı alanlarını çizmek için çizgi tipleriyle oluşturulur.<br />
+Kütüphaneye, platformun enkesitlerini metrajların katı kapalı alanlarıyla (üstyapı katmanları, dolgu vb.) çizmeyi sağlayan <span style="font-weight: bold;">Expla.gut </span> dosyası eklenir.<br />
+      <br />
+Platformların metrajı oluşturulduğunda, platform eksenlerinin .cej dosyasının adıyla bir <span style="font-weight: bold;">expla.pol</span> dosyası oluşturulur ve metrajda oluşturulan profilleri arazi profilleri olarak atar. Ayrıca, her platform için eksenden çıkarılan bir profili içeren bir .vol dosyası da eklenir.<br />
+Bununla, güzergah projeleri modülünde platformun bir boyuna profilini çizebiliriz (Boykesitte hesaplama yapmaya gerek yoktur). <br />
+      <br />
+Platformlarda metraj yürütülürken oluşturulan expla.pol projesi Güzergah Projesi'ne yüklendiğinde, <span style="font-weight: bold;"> <span style="font-weight: bold;">Proje Oluştur</span> seçeneği işaretlenerek metraj profillerinden bir BIM modeli elde edilebilir.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_gen_proy.png" style="width: 624px; height: 601px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_bim.png" style="width: 600px; height: 292px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span><span class="Titulo_2"><a name="balsas_vertederos">Gölet ve Depo Alanı Tasarımı</a></span><br />
+      <span class="Parrafo"><br />
+Göletlerin oluşturulması için aynı anda iki yüzeyle çalışma imkanı vardır. Bu tür geometrilerde, dış şevlerin kesimi için bir yüzey ve iç şevler için başka bir yüzey (göletin tabanı) tanımlanır.<br />
+      <br />
+Depo alanları durumunda, sadece iç şevler kullanılacak ve depo alanının tepe kotuna sahip olacak iç yüzeyle kesişim aranacaktır.<br />
+      <br />
+      <br /></span></span></span></span></span><span class="Titulo_2"><a name="firmes">Üstyapı Katmanları</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Platform yüzeyine paralel olarak, her katmanın kalınlığını, bir ad, yan şevi ve profiller için bir yüzey tipi vererek, 30'a kadar farklı üstyapı katmanı tanımlamak mümkündür.<br />
+      <br />
+Her üstyapı katmanı ayrı ayrı ölçülür. Dış ve iç şevli gölet tipi platformlar için üstyapı katmanları tanımlanmasına izin verilir.<br />
+      <br />
+30'a kadar farklı üstyapı kesiti tanımlanabilir. Adlar ve yüzeyler tüm kesitler için aynıdır. Her kesitte kullanılan katmanlar, kalınlıkları ve şevleri değişir. PLATFORMLAR sekmesinde (<span style="font-weight: bold;">Üstyapı Kes.</span>) her birine hangi üstyapı kesitinin uygulanacağı tanımlanır.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_firmes.png" style="width: 684px; height: 252px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><br />
+Platform için bir iç yüzey tanımlandığında ve bu yüzeyin üstyapı katmanları olduğunda, ölçüm profillerinde platformunkine paralel üstyapı katmanlarının yüzeylerini elde etmek için bu yüzey her katmanın derinliğine kopyalanır.<br />
+<br />
+      <a name="roca"><span class="Titulo_2">Kaya Katmanları</span><br />
+      <br />
+Metraj oluşturulduğunda profillere eklenen 6'ya kadar Kaya horizonu eklenebilir.<br />
+      <br />
+</a></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span><img src="Imagenes/expla_roca.png" style="width: 684px; height: 192px;" alt="" /></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <a name="grupos"><span class="Titulo_2">Gruplar</span><br />
+      <br />
+</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>Gruplara göre etkinleştirmeyi veya devre dışı bırakmayı ve renklerini ve adlarını değiştirmeyi sağlar. Pasif gruplardaki platformlar soluk çizilir ve geometrileri oluşturulmaz veya metrajları yapılmaz. Grupların etkinleştirme durumu, .exp dosyasında da kaydedilir.<br />
+      <br />
+Her platforma bir <span style="font-weight: bold;">ad</span> atanabilir. Bu ad ekranda gösterilir ve eksen için de ad olarak geçer.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/expla_grupos.png" style="width: 684px; height: 237px;" alt="" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span class="Parf_negrita">Ata</span>: Bu araç, grup dizisinin tekrarlandığı platform bloklarına grubu tek seferde atamayı sağlar. <br />
+      <br />
+<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

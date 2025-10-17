@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Hemzemin Kavşaklar</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>HEMZEMİN KAVŞAKLAR<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><br />
+      <span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo">
+      <a href="#tipos">Bağlantı Tiplerinin Tanımlanması</a></span><br />
+      <span class="Parrafo">
+      <a href="#acuerdos">Bağlantıların Kullanımı: Kavşakların Tanımlanması ve Dever ile Kırmızı Kotun Otomatik Ayarlanması</a></span><br />
+      <span class="Parrafo"><a href="#calculo">Kavşakların Hesaplanması</a><br />
+      <a href="#generar_crz_pol">Kavşak Kolu Eksenleriyle Proje Oluşturma</a><br />
+</span>
+      <span class="Parrafo" /></span></div>
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+Bu menü, hemzemin kavşaklardaki eksenler arası bağlantı geometrisini hızlı ve etkili bir şekilde tanımlamak için kullanılır.<br />
+      <br />
+      </span><img src="Imagenes/cruces_acuerdo_concavo_convexo.png" style="width: 321px; height: 135px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">İki eksen arasındaki kavşaklar, daha az öneme sahip olan eksen üzerinde tanımlanır ve veriler&nbsp;<span class="Archivo">.vol</span> dosyasında saklanır.
+Bu yardımcı program, bir eksenin diğerinin 'üzerinden geçmesi' için gerekli verileri hesaplar ve kot geçişinin doğru olması için gerekli içbükey-dışbükey kesimleri kırmızı kota ekler. <br />
+<br /> Program ayrıca, iki eksenin platformlarının tam olarak birleşmesi için gerekli deverleri de hesaplar.<br />
+      <br />
+      </span><img src="Imagenes/cruce.png" style="width: 268px; height: 195px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Ayrıca,
+banket veya trotuar gibi her eksende tanımlanan enkesit elemanlarının doğru bir şekilde enterpolasyonu için gerekli tüm hesaplamalar yapılır. <br />
+Program, boyuna hatta göre tanımlanmış <a href="OL_cunetas.html#fija_y_porLongitudinal">hendeklere</a> sahip eksenler arasındaki kavşakları hesaplayabilir. Kavşak kollarının hendeği için boyuna hat, başlangıç ve bitişte eksenlerin hendek kotlarını alan tek bir kırmızı kot ile oluşturulur. Hem ana eksenin hem de bağlandığımız eksenin hendeklerinin boyuna hatta göre tanımlanmış olması gerekir. Aynı şekilde, bu durum <a href="OL_cuneta_guarda_caballon.html#cun_fija">kafa hendekleri</a> için de geçerlidir.<br />
+      <br />Eğer bağlantı kolunun çıktığı eksende Yarma veya Dolgu için Alternatif Tip Kesit tanımlanmışsa, bu Tip Kesit bağlantı kolu ekseni tarafından miras alınır.<br /><br />
+Üstyapı paketleri, geometrik anlayış açısından benzer olmalıdır, aksi takdirde doğru bir şekilde yorumlanmaları mümkün değildir.<br />
+<br />Kavşakların tanımı iki alt menüde yapılır. İlk olarak, kullanılacak olan bir bağlantıyı tanımlayan tüm olası parametre kombinasyonlarını (yarıçap,...) içeren bir dizi tipin tanımlandığı <a href="#tipos">TİPLER</a> menüsünde.<br />
+      <br />
+Eksenler arası <a href="#acuerdos">BAĞLANTILAR</a> menüsünde, iki eksen arasındaki her bir kavşağın sahip olabileceği dört olası bağlantıdan her birinde kullanılacak tipler tanımlanır (her eksen çiftinin birden fazla kavşağı olabilir). <br /><br />Bağlantıların hesaplanmasından önce tanımlanmış olan sınır çizgileri, sınır çizgisinde tanımlanan tarafa göre budanır; eğer bağlantı kolu ekseni ana eksene ters yönde ise, o zaman ters taraftan budanacaktır (DA ve DP bağlantıları aynı taraftan, IA ve IP bağlantıları ise ters taraftan).<br />
+      <br />
+Not: </span><span><span data-testid="comment-base-item-11029">Kesişen eksen, ana ekseni kesmeye ulaşmadığında, kavşak tanım kilometresi, ana eksenin banketini geçmiş bir değer olarak verilmelidir.</span></span><br />
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="tipos">Bağlantı Tiplerinin Tanımlanması</a></span><br />
+      <span class="Parrafo"><br />
+İlk aşamada, bağlantı tiplerinin sahip olacağı özellikler tanımlanır, daha sonra her olası bağlantıya kendi tipi atanır. Diyalog kutusu aşağıdaki gibidir:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_cruces_tipos.png" style="width: 575px; height: 176px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/modelo_cruces.png" style="width: 247px; height: 247px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Model, iki eksen arasındaki dört olası bağlantıyı tanımlamayı sağlayan sol-sağ, önceki ve sonraki kodlamayı açıklar.<br />
+      <br />
+Her kavşakta dört olası bağlantı vardır:<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 434px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 17px;">DA<br />
+            </td>
+            <td style="vertical-align: top; width: 397px; text-align: justify;"><span class="Parrafo">Mevcut eksenin sağ tarafında, diğer ekseni kesmeden önceki bağlantı (Sağ-Önceki).</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 17px;">IA<br />
+            </td>
+            <td style="vertical-align: top; width: 397px; text-align: justify;"><span class="Parrafo">Mevcut eksenin sol tarafında, diğer ekseni kesmeden önceki bağlantı (Sol-Önceki).</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 17px;">DP<br />
+            </td>
+            <td style="vertical-align: top; width: 397px; text-align: justify;"><span class="Parrafo">Mevcut eksenin sağ tarafında, diğer ekseni kestikten sonraki bağlantı (Sağ-Sonraki).</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 17px;">IP<br />
+            </td>
+            <td style="vertical-align: top; width: 397px; text-align: justify;"><span class="Parrafo">Mevcut eksenin sol tarafında, diğer ekseni kestikten sonraki bağlantı (Sol-Sonraki).</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Girilecek değerler şunlardır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><strong>Yarıçap(lar)</strong>: Program, her bağlantı için burada belirtilen yarıçapa sahip dairesel bir güzergahtan oluşan bir eksen oluşturur.</span></li>
+      </ul>
+      <div style="margin-left: 40px;"><img src="Imagenes/cruces_3R.png" style="width: 183px; height: 123px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Eğer <i><strong>3R</strong></i> kutucuğu işaretlenirse, bağlantı <strong>üç merkezli</strong> olacaktır. Bu tip aşağıdaki parametrelerle tanımlanır:</span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo">Kavşak açısına bağlı olarak <strong>merkezi yarıçap</strong>.</span></li>
+        <li><span class="Parrafo"><strong>Yarıçap oranı</strong> R1:R2:R3. Varsayılan değer 2:1:3'tür.</span></li>
+        <li><span class="Parrafo">Yan yarıçapların <strong>açıları</strong> a1 ve a3 (eğer a1+a3 mevcut açıdan büyükse, sadece merkezi yarıçap kullanılacaktır) veya <strong>merkezi dairenin</strong> <strong>geri çekilmesi</strong>.</span></li>
+      </ul><span class="Parrafo"><span class="Parrafo">
+Bu bağlantı tipi sadece şu durumlarda kullanılabilir:<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Düz eksenler arasındaki kavşaklar için, yani kavşak bölgesindeki güzergahlar düz olmalıdır.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Kesişen eksenin kaplama kenarında doğrusal bir değişime sahip olduğu, böylece bu kenarın eksene paralel olmayan bir doğruyu takip ettiği durumlarda.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      Aksi takdirde sadece merkezi yarıçap kullanılacaktır.</span></span><br />
+
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"> <strong>Kod</strong>: Bağlantı kolu ekseninin hangi enkesit noktasına teğet olduğunu belirtir. Bu değer varsayılan olarak kod 2'ye (kaplama kenarı) karşılık gelir. Kodların 2, 11, 12 ve 13 olarak değiştirilmesine izin verilir. Örneğin kod 11'i kullanırsak, ilk banketin ana platformun uzantısında olması gerekir, vb.</span></li>
+      </ul>
+      <ul>
+        <li><strong><a name="equidistancia">Adım Aralığı</a></strong><span class="Parrafo">: Bağlantı kolu eksenine dik enkesit almak için maksimum adım aralığıdır. Yarıçap ne kadar küçükse, adım aralığı o kadar küçük olmalıdır. Programın, <a href="OL_perf_transv.html#menu_extrac">enkesit alma tablosunun</a> yapılandırmasına göre, bant yarı genişliği ile ve haritaya karşı veya üçgenleme yaparak enkesit alacağı dikkate alınmalıdır.</span></li>
+      </ul>
+      <ul>
+        <li><strong><a name="margen">Marj</a></strong><span class="Parrafo">: Yarma ve dolgu şev eteklerinin mesafesi bağlantı kolu yarıçapından büyükse, programın ilgili iki eksenin şevlerinin kesiştiği ve bağlantı kolu merkezinin arkasında bir sınır çizgisi belirlemesi için bir marj verilir.</span></li>
+      </ul>
+      <ul>
+        <li><strong><a name="estirar">Uzat</a></strong><span class="Parrafo">: Marja göre hesaplanan sınır çizgisinin son segmenti, burada belirtilen uzunluk kadar "uzatılabilir".</span></li>
+      </ul><br />
+Her bir enkesit elemanının farklı yarıçaplarının hesaplanması için aşağıdaki hususlar dikkate alınmalıdır:<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Bağlantı kolu eksenini hesaplamak için referans alınan <strong>kod</strong>.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><a href="OL_aceras.html">Trotuarlı</a> eksenler arasındaki kavşaklar için, program <a href="OL_aceras.html">trotuarların</a> dış kenarları için bir <strong>dış bağlantı yarıçapı</strong> tanımlama imkanı sunar. İki eksenin <a href="OL_aceras.html">trotuarları</a> farklı genişlikte olduğunda bu yarıçapı tanımlamak kullanışlıdır (eğer <a href="OL_aceras.html">trotuarların</a> <strong>D2</strong>'de tanımlanmış bir genişlik değeri varsa ve <strong>D3</strong> genişliği sıfıra eşitse, <strong>D2</strong> değerini <strong>D3</strong>'e geçirmek önerilir).</span></span></li></ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Banket genişliklerinin bağlantı kolu yarıçapından büyük olduğu kavşaklarda, bağlantı kollarının banketlerinin deveri, bağlantı kolu eksenini oluşturan yayın merkezinde kesişen banket kenarlarında tek bir kot elde etmek için değiştirilir. Bu kot, kesişen iki eksene karşılık gelen kotların ortalamasıdır. <br />
+          </span></span></li>
+
+      
+      </ul>
+
+      <ul>
+        <li>Banket genişliklerinin bağlantı kolu yarıçapından büyük olduğu ve bağlantı kolunun her iki uçtan banketlerin dış kenarlarının kesiştiği noktaya kadar uzatıldığı küçük yarıçaplı kavşaklar için, % cinsinden bir göreceli eğim (<i><strong>P%</strong></i>) verilebilir. Böylece, kesişim noktasında iki kenarın kotu farklıysa, ortalama bir kot atanır ve bağlantı kolu ekseni her iki taraftan L = 100 × dZ / P% kadar uzatılır ve bu uzunluk boyunca ilgili eksendeki kenar kotuna ulaşılır.</li></ul>
+      <ul>
+        <li><span class="Parrafo">Geniş trotuar genişliklerine ve kendi bağlantı yarıçapına sahip bağlantılarda, <a href="OL_subrasante.html#anchos_normales">normal genişlik düzeltmesi</a> otomatik olarak etkinleştirilir.<br />
+          </span></li>
+
+      
+      </ul>
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="acuerdos">Bağlantıların Kullanımı: Kavşakların Tanımlanması ve Dever ile Kırmızı Kotun Otomatik Ayarlanması</a></span><br />
+      <span class="Parrafo"><br />
+Belki de en önemli verisi bağlantıyı tanımlayan yarıçap olan bağlantı tipleri tanımlandıktan sonra, mevcut eksenin her bir kavşağında bağlantıların kullanımı beyan edilir.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_cruces_acuerdos.png" style="width: 575px; height: 176px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Bağlantıların tali eksen üzerinde tanımlanması tavsiye edilir, çünkü bu eksenin kırmızı kot ve dever verileri, 'aynı seviyeden geçmesini' sağlamak ve araçların zıplamasını veya normal seyrini tehlikeye atmasını önlemek için değiştirilecektir.<br />
+      <br />
+Kavşakların hesaplanmasından sonra elde edilen veriler, veri kopyalama/kaydetme veya paylaşma sırasında dikkate alınması gereken&nbsp;<span class="Archivo">crz</span> adlı bir alt klasörde saklanır.<br />
+      <br />
+Program tarafından farklı bağlantılar için hesaplanan kesitler, dayandıkları eksenlerin kesitleri arasında bir <strong>doğrusal enterpolasyon</strong> yapmanın sonucudur; yardımcı platformların enterpolasyonu hariç, bu durumda bir <strong>parabolik geçiş</strong> yapılır.<br /><br /><strong>Üstyapılar</strong> seçeneği üç değer sunar:<br /></span></span></span></span><ol><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İki eksenin kesitleri arasında bağlantı kolunda geçiş.&nbsp;</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Mevcut eksenin kesitini kullan.</span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Diğer eksenin kesitini kullan.</span></span></span></span></li></ol><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><strong>Tesviye Yüzeyi</strong> seçeneği, tesviye yüzeyinin minimum kalınlığını kontrol etmeyi sağlar ve aynı üç seçeneğe sahiptir:<br /></span></span></span></span><ol><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Geçiş</span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Mevcut Eksen</span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Diğer Eksen.</span></span></span></span></li></ol><strong>Seçme Malzeme</strong>: Seçme Malzemeleri, üstyapıya benzer şekilde Bağlantı Kollarına dahil etme modu. Ayrıca 3 seçenek sunar: <br /><ol><li>Geçiş</li><li>Mevcut Eksen</li><li>Diğer Eksen.</li></ol><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      
+</span></span></span></span>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 29px;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /></span></span></td><td style="vertical-align: top; width: 642px;"><span class="Info">Eğer bağlantı kolunun çıktığı ve ulaştığı eksenlerin sondaj verilerinden (V, I, R, vb.) herhangi birinde farklı derinlikler varsa, o zaman bağlantı kolu ekseninde bir sondajdan diğerine geçiş, bağımsız sondajlar olarak tanımlanır.</span><br />
+            </td></tr></tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Aşağıda diyalog kutusunda bulunan girdilerin anlamı açıklanmaktadır:</span><span class="Parrafo"><br />
+      <br />
+      <table style="text-align: left; height: 873px; width: 691px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">EKSEN</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 613px;">Mevcut eksenin kesiştiği eksenin numarası.</td>
+          </tr>
+          <tr><td style="text-align: left;"><img style="width: 9px; height: 13px;" alt="" src="Imagenes/icono_cursor_flecha.png" /></td><td>Ekseni ekranda tıklayarak grafik olarak seçmeyi sağlar.</td></tr><tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">KM</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 613px;">Mevcut eksen üzerindeki yaklaşık kavşak kilometresi. İki eksenin birden çok kez kesişme olasılığını ayırt etmeye yarar. Eğer mevcut eksen, diğer ekseni kesmeden ondan çıkan veya ona ulaşan bir rampa ise, mevcut eksenin başlangıç veya bitiş kilometresi verilebilir.<br />
+            <br />
+Her bir <strong>DA</strong>, <strong>IA</strong>, <strong>DP</strong>, <strong>IP</strong>'ye karşılık gelen kutucuğa 0 konulursa, ilgili bağlantının yapılmayacağını gösterir. 0'dan farklı bir sayı, kullanılacak olan bağlantı <a href="#tipos">TİPİNİ</a> belirtir.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold;"><a name="vol">Vol</a></td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 613px;"><span class="Parrafo"><span class="Parrafo">Her bir bağlantının (<strong>DA</strong>, <strong>DP</strong>, <strong>IA</strong>, <strong>IP</strong>) numarasının yanında, <strong>vol</strong> sütununda varsayılan olarak <strong>Evet</strong> seçeneği seçilidir, böylece program kavşak her hesaplandığında bağlantının&nbsp;<span class="Archivo">.vol</span> dosyasını yeniden oluşturur. Eğer <strong>Hayır</strong> seçeneği seçilirse, program bağlantıyı hesaplarken önceden bir&nbsp;<span class="Archivo">.vol</span> dosyası varsa onu kullanır ve yeniden oluşturmaz. <br />
+            <br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/alzado_acuerdos.png" style="width: 180px; height: 135px; margin-left: 7px;" alt="" align="right" /></span></span></span></span>Bu, kullanıcının DÜŞEY GÜZERGAH kayan penceresinden (BAĞLANTI açılır tuşu) her bir bağlantının&nbsp;<span class="Archivo">.vol</span> dosyasını yüklemesine ve kırmızı kot, dever, tip kesitler vb. verilerini değiştirip değişiklikleri kaydetmesine olanak tanır. Bu şekilde ve bu düğme devre dışı bırakıldığında, yeni bir kavşak hesaplaması, kullanıcı tarafından değiştirilen&nbsp;<span class="Archivo">.vol</span> dosyasını kullanır ve yeni bir tane türetmez.<br />
+            <br />
+Düzenlenmek istenen bağlantının seçimi, yazıldıkları sistem dikkate alınırsa çok basittir. Örneğin, ilk eleman 2-1(1).DA, <i>2. Eksen ile 1. Eksen, birinci kavşak, sağ-önceki</i> anlamına gelir.<br />
+            <br />
+Bu düzenlemenin, projenin eksen sayısının n olduğu varsayılarak, geçici bir n+1 ekseni oluşturularak yapıldığı ve bu eksene yalnızca o anda erişilebildiği dikkate alınmalıdır.<br />
+            <br />
+Bununla, bağlantının kırmızı kotları ve diğer tanım verileri analiz edilebilir, planı çizilebilir veya (G) seçeneğine sahip olan RAPORLAR menüsünden herhangi bir rapor oluşturulabilir.<br />
+<br />
+            </span></span>
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span><table style="text-align: left; height: 35px; width: 609px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+                  </td><td style="vertical-align: top; width: 543px; text-align: justify;"><span class="Parrafo"><span class="Parrafo Info">Bu geçici olarak yüklenen eksen, Düşey Güzergah menüsünden yeniden hesaplanmamalıdır, çünkü o zaman oluşturulacak olan ISPOL#.per dosyası uygun şekilde budanmış olmayacaktır.</span></span></td></tr></tbody>
+            </table>
+            <br />
+            <span class="Parrafo"><span class="Parrafo">Eğer <strong>Kkot Yok</strong> seçeneği seçilirse, bağlantı mevcut kırmızı kotu korur ancak geri kalanını (deverler, vb.) değiştirir.<br />
+            </span></span></span></span></span></span></span></span></td>
+          </tr><tr>
+            <td style="vertical-align: top;"><strong>Oto_KKOT</strong><br />
+            </td>
+            <td style="vertical-align: top; width: 613px; text-align: justify;">Bu seçenek etkinleştirilirse, proje hesaplaması yapılırken program, eksenin kırmızı kotlarını değiştirir ve giriş bağlantıları bölgesinde iki parabol ve çıkış bağlantıları bölgesinde iki parabol aracılığıyla bir geçiş yapar. Orta bölgede, başlangıç kırmızı kotu ile bitiş kırmızı kotunu bir veya iki parabolik düşey kurp ile birleştirir. Bu işlemler, eksenin tanımlı kırmızı kotlarından, kesişen eksenin platformunun zorunlu kıldığı kırmızı kota geçmek için yapılır. Ardından, değişikliklerle birlikte&nbsp;<span class="Archivo">.vol</span> dosyası otomatik olarak kaydedilir.<br />
+            <br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; height: 44px; width: 613px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+</td>
+<td style="vertical-align: top; width: 559px; text-align: justify;"><span class="Parrafo"><span class="Parrafo Info">Bu seçenek, kavşağı tanımlayan eksenin, dönme ekseninin plan ekseniyle çakıştığı bir karayolu olduğu durumlarda ve dönme ekseninin plan eksenine taşındığı tek kırmızı kotlu otoyollarda çalışır.</span></span></td>
+</tr></tbody>
+            </table>
+            </span></span></span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><strong>Oto_DEVER</strong><br />
+            </td>
+            <td style="vertical-align: top; width: 613px;">
+            <div style="text-align: justify;">Bu seçenek etkinleştirilirse, proje hesaplaması yapılırken program, bağlantı kolu bölgesinde bir geçiş yaparak eksenin deverlerini değiştirir, böylece platform kenarı, kesiştiği eksenin platform kenarıyla aynı kota gelir.<br />
+            <br />
+Bu seçeneği, bağlantı kollarının deverlerinden ayırt etmek gerekir. Bağlantı kollarının deverleri şu şekilde belirlenir:<br />
+            <ul>
+              <li>Bağlantı kolu ekseninin her bir kilometresi için, enkesit, kavşağın iki ekseninden birinin platform kenarını kesene kadar uzatılır. O noktada, o eksenin deveri ve kırmızı kotu tarafından oluşturulan düzlem belirlenir.</li>
+            </ul>
+            <ul>
+              <li>Daha sonra, bağlantı koluna, enkesitindeki platformun o düzlemden geçeceği şekilde bir dever atanır. Algoritma, KAVŞAKLAR'daki gibi çalışır.</li>
+            </ul>
+            </div>
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><strong>Kenara Teğet</strong><br />
+            </td>
+            <td style="vertical-align: top;">Bağlantı kolu ekseninin, ana eksenin kenarına teğet olmasını sağlar ve dolayısıyla ana ekseninkinden farklı bir azimuta sahip olur. Genişliğin, bağlantı kolu ekseninin teğet olduğu bölgede değişken olduğu eksenler için kullanılır. <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><strong>Üstyapılar</strong><br />
+            </td>
+            <td style="vertical-align: top;">Bağlantı kolunda, bağlantıyı tanımlayan eksenin Üstyapı Kesitini korur (Geçiş yapılmaz).<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><strong>Eksenleri Hesapla</strong><br />
+            </td>
+            <td style="vertical-align: top;">Eksenleri Hesapla aracını kullanmak için Proje'nin BRL kutucuğunu etkinleştirmek gerekmez.<br />
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      
+      
+      </span></span>
+      <table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 29px;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /></span></span></td>
+            <td style="vertical-align: top; width: 642px;"><span class="Info">Eğer Oto_KKOT veya Oto_DEVER seçeneği etkinleştirilirse, otomatik değişiklikler kabul edilmezse diye önceden eksenin .vol dosyasının bir kopyasını almak tavsiye edilir.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 29px;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /></span></span></td><td style="vertical-align: top; width: 642px;"><span class="Info">Eğer bağlantı kolunun başladığı eksen kilometresinde kilometreye göre tanımlanmış bordürler varsa, bunlar bağlantı kolunun tip kesitine aktarılır.</span><br />
+            </td></tr></tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+<span class="Parrafo"><span class="Titulo_2"><a name="calculo">Kavşakların Hesaplanması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Kavşaklar ilk kez hesaplandığında, programın ihtiyaç duyduğu arazi enkesitlerini alabilmesi için haritanın mevcut olması gerekir. Bunun için arazinin YÜZEYİ'nin de tanımlanmış olması gerekir. Kullandığı bant yarı genişliği, enkesit alma menüsünde tanımlanan değerdir ve eğer üçgenlemeden enkesit alma etkinleştirilmişse, burada da kullanılır. Devre dışı bırakılmış gruplara ait eksenlerin bağlantı kolları hesaplanmayacaktır.<br />
+      <br />
+      </span></span></span><img src="Imagenes/cruces_proyecto.png" style="width: 268px; height: 148px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_proyecto.html">PROJE menüsündeki</a> <i>Kavşaklar</i> seçeneği, <strong>[Hesapla]</strong> seçeneğine basıldığında programın tanımlanan kavşakları oluşturması, ilgili eksenleri budaması ve eksenlerin ve kavşakların plan çizimini yapması için etkinleştirilmiş olmalıdır. Ayrıca <strong>[HES]</strong>, <strong>[BRL]</strong>, <strong>[ALN]</strong> ve <strong>[YAP]</strong> seçenekleri de aktif olmalı ve bir çizim stili tanımlanmış olmalıdır.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+Kavşakların dört hesaplama modu vardır:<br />
+</span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><strong>Tümünü Hesapla</strong>. Bu durumda, bir harita veya bir <a href="EDM_topografia.html#ficheros_ttp">TTP</a>'nin yüklü olduğu ve dolayısıyla kavşak bağlantılarının enkesitlerinin alınabileceği kontrol edilir.<br />
+</span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><strong>.per YOK</strong>&nbsp; (yeni arazi enkesitleri alma): Kavşaklar hesaplanırken, program bağlantı kollarının enkesitlerinin daha önce oluşturulup oluşturulmadığını arar. Eğer enkesit dosyası&nbsp;<span class="Archivo">crz</span> dizininde zaten mevcutsa, bu dosya kullanılır; yoksa haritadan yeniden oluşturulmaya çalışılır. Bu seçenek etkinken ve kavşaklar daha önce hesaplanmışsa, kavşakların hesaplanması için haritanın mevcut olması gerekmez, bu da projenin genel hesaplamasını hızlandırır.</span></span></span></span></li>
+      </ul>
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><strong>Oto_Kkot Oto_Dever YOK</strong>: .per YOK seçeneğini içerir, ayrıca kırmızı kotun ve deverlerin otomatik ayarlanması seçeneklerini engelleyerek kavşağı tanımlayan eksenin .vol dosyasını değiştirmez.</span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><strong>
+.vol YOK</strong>: <strong>Oto_Kkot Oto_Dever YOK</strong> seçeneğini içerir ve ayrıca kavşak bağlantılarının&nbsp;<span class="Archivo">.vol</span> dosyalarını yeniden hesaplamaz.</span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      Her bir bağlantı kolu ekseninin düşey güzergahı, mevcut eksenin ve diğer eksenin kırmızı kotunu kendi deverlerini takip ederek, bağlantı kolu ekseninin başında ve sonunda, ortada bir geçiş bölgesi ile projelendirilerek hesaplanır. <br />
+Bağlantı bölgelerinde, ilgili eksenlerde tip kesitin C (hendekler), D (yarma), T (Dolgu) ve/veya V (Sabit platform vektörleri,...) alt kesimlerine göre tanımlanmasına izin verilir. Ancak, genel kesimlere ayırma kullanıldığında olduğu gibi, bağlantıların teğet noktaları tip kesit geçiş bölgelerinde olmamalıdır.<br /><br />Bağlantıyı tanımlayan eksenin, bağlantı bölgesinde başlayan veya biten bir sanat yapısı tanımlanmışsa, artık bağlantı eksenlerinde iki hesaplama kesimi görünür: biri sanat yapısı bölgesinde, diğeri dolgu bölgesinde, her biri ilgili Tip Kesit ile.<br />
+      <br />
+<a name="cubic"><strong>Metraj</strong></a> ile birlikte, üstyapı paketleri ve seçme malzeme tanımı da hesaplanır ve bunların metrajı her bir bağlantı kolunun eksenlerine entegre edilir. Bağlantı kollarının metrajları, kavşak beyan eden her eksen için, hacim listesinin (<span class="Archivo">cvol#.res</span>, # eksen numarasıdır) sonunda, özetten hemen önce yer alır ve bu hacimler toplama eklenir:<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">PROJE
+: Kavşak &nbsp;
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;
+EKSEN:&nbsp;&nbsp; 2: Tali eksen</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"> </span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+====================================================</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * * KAVŞAK BAĞLANTI KOLLARININ METRAJLARI * * *</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * * Dengelemiş mesafelere göre metraj&nbsp; * * *</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+====================================================</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"> </span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+KM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EKSEN
+BK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MALZEME&nbsp;&nbsp; KISMİ HACİM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MALZEME&nbsp;&nbsp; KISMİ HACİM</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ------------- --- --
+--------------- ------------ --------------- ------------</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.000&nbsp;&nbsp; 1
+DA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ÜSTYAPI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ZAYIF ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53.27</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Y_ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+125.17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BİTKİSEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 43.54</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+DOLGU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.67</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.000&nbsp;&nbsp; 1
+IA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ÜSTYAPI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.37&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ZAYIF ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 108.27</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Y_ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+642.55&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BİTKİSEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 88.59</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.000&nbsp;&nbsp; 1
+DP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ÜSTYAPI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+168.94&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ZAYIF ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 139.96</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BİTKİSEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+111.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DOLGU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1118.90</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.000&nbsp;&nbsp; 1
+IP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ÜSTYAPI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+99.45&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ZAYIF ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 67.85</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Y_ZEMİN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BİTKİSEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 54.33</span></span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>Kavşak ve dönel kavşak bağlantı kollarını içeren projelerde, cvol.res, cv.res ve cv.xlsx raporları her bir bağlantı kolunun adıyla birlikte oluşturulur, örneğin:<br />
+
+      <ul>
+<li>cv_3-2(1004)_DP.xlsx : Eksen 3'ün Dönel Kavşaklar verisinin 4. satırında tanımlanan Eksen 3 ile 2 arasındaki Dönel Kavşak Sağ_Sonraki bağlantı kolu.</li><li>cvol_5-7(2)_DA.res : Eksen 5'in Kavşaklar verisinin 2. satırında tanımlanan Eksen 5 ile 7 arasındaki Sağ_Önceki kavşak bağlantı kolu.</li>
+      </ul>
+
+cvol.res ve cv.res dosyaları, eksenler hesaplandığında ve yeniden metrajlandırıldığında oluşturulur; cv.xlsx için Raporlar'da seçeneğin etkinleştirilmiş olması gerekir.<br /><br />Kavşaklı ve üstyapı paketli bir proje hesaplandığında, her bir bağlantı kolu için cv'lere benzer şekilde, örn: <span class="Archivo">fi7-1(1001)_DA.res</span> (ve <span class="Archivo">fi_7-1(1001)_DA.xlsx</span>) raporları da oluşturulur.<br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; text-align: left; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 637px; text-align: justify;"><a href="OL_listados_mediciones.html#list_conjunto">Toprak işleri toplu metraj</a> ve <a href="OL_listados_mediciones.html#list_firmes_conjunto">üstyapı toplu metraj</a> raporları kavşakları dikkate alır.<br />
+</td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Plandaki eksen tanım dosyaları (<span class="Archivo">.cej</span>), düşey güzergah (<span class="Archivo">.vol</span>), enkesitler (<span class="Archivo">.per</span>) ve kavşakların oluşturulması için gerekli diğer tüm veriler, çalışma dizininin altında bulunan&nbsp;<span class="Archivo">crz</span> adlı bir alt dizinde saklanır.</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 691px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 26px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 645px; text-align: justify;"><span class="Info">Sadece iki eksenin kavşağını hesaplamak için bir seçenek, bunları geçici olarak bağımsız bir gruba yerleştirmek ve diğer grupları devre dışı bırakmaktır. Bu şekilde, sadece aktif gruplardaki eksenlerin kavşakları hesaplanacaktır. Bu küçük hile, bir kavşak için tanımlanan verilerin doğru olup olmadığını doğrulamaya olanak tanır. </span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span><span class="Titulo_2"><a name="generar_crz_pol">Kavşak Kolu Eksenleriyle Proje Oluşturma</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Kavşaklar menüsündeki <strong>[crz.pol Oluştur]</strong> düğmesi, farklı bağlantı kollarının tüm&nbsp;<span class="Archivo">.cej</span> dosyalarını tek bir dosyada gruplar ve&nbsp;<span class="Archivo">crz</span> klasöründeki tüm&nbsp;<span class="Archivo">.per</span> ve&nbsp;<span class="Archivo">.vol</span> dosyalarını yeniden numaralandırarak, çalışma dizininde&nbsp;<span class="Archivo">crz.pol</span> projesini oluşturur.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

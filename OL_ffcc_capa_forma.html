@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Koruyucu Tabaka</title>
+
+<link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+<tbody>
+<tr>
+<td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+<a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+<a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+<tbody>
+<tr>
+<td class="Titulo_2">
+<div align="center"><strong>KORUYUCU TABAKA<br />
+</strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+<tbody>
+<tr>
+<td style="width: 694px;" class="obsolete Parrafo"><br />
+<div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+<a href="#norma_francesa">Fransız Yönetmeliği</a><br />
+<a href="#entronque">Bağlantı</a><br />
+<a href="#deducir">Minimum balast kalınlığını ve eğimi türet</a><br />
+<a href="#solobalasto">Sadece balast</a><br />
+</div>
+<br />
+<br />
+<img style="width: 355px; height: 255px; margin-left: 7px;" alt="" src="Imagenes/modelo_capa_forma.png" align="right" /><a name="generalidades">Koruyucu
+tabakanın kalınlığını, çatı kırım noktasının (mahya) konumunu ve enine
+eğimlerini tanımlamaya olanak tanır. Eğer çatı kırım noktası
+istemiyorsak, sağa ve sola eşit değerde ancak zıt işaretli eğimler
+koyacağız.<br /><br />Bu menünün&nbsp;<img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolbarEstandar_nuevo.png" />
+seçeneği, veri değerlerini sıfırlar ve subbalast ve minimum balast
+kalınlığına, <a href="OL_ffcc_via_traviesa.html">HAT ve TRAVERS</a> menüsünde belirtilen verileri atar.<br /><br />
+Koruyucu tabaka menüsünde tanımlanan yapılandırmayı sırasıyla <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" />, <img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />&nbsp; kutucukları aracılığıyla kaydedebilir veya yükleyebiliriz. Dosyalar&nbsp;<span class="Archivo">.cdf</span> uzantısına sahip olacaktır.<br />
+<br />Eğimler, <span style="font-weight: bold;">Eğim sağ (%)</span> ve <span style="font-weight: bold;">Eğim sol (%)</span> alanlarında tanımlanır. <a href="OL_ffcc_via_traviesa.html#via_placa">RHEDA<sup>®</sup> plakası</a>
+kullanılan durumlarda, koruyucu tabakanın üst yüzey eğimi, koruyucu
+tabakanın tabanına paralel olabilir veya, onay kutusu işaretlenirse,
+PLATFORM'da beyan edilen <span style="font-weight: bold;">P4</span> koridorunun eğimine paralel olabilir.<br /><br /><img style="width: 240px; height: 74px;" alt="" src="Imagenes/pendp4_techo_sub.png" align="right" hspace="6" />
+<span style="font-weight: bold; font-style: italic;">Subbalastın üst yüzeyinde P4 Eğimi</span> seçeneği, <a href="OL_ffcc_via_traviesa.html#via_placa">RHEDA<sup>®</sup> plakası</a> olmayan normal kesitler için de kullanılabilir; tek, çift veya optimum çatı kırım noktası ile; bu durumda subbalastın üst ve alt yüzeyinde <span style="font-weight: bold;">P4</span> eğimi ve koruyucu tabakanın üst yüzeyinde <span style="font-weight: bold;">P4</span> ve tabanında kendi eğimi bulunur.<br /><br />
+<br />
+<span style="font-weight: bold;">Subbalast Tabanı Koruyucu Tabakaya Paralel</span> kutucuğu
+aracılığıyla, ki bu öncekiyle (Subbalastın üst yüzeyinde P4 Eğimi)
+birlikte kullanılır, subbalastın üst yüzeyini P4 eğimiyle ve tabanını
+koruyucu tabakanın eğimiyle tanımlayabiliriz. Koruyucu tabakanın tabanı
+ve üst yüzeyi paralel olacaktır.<br />
+<br />
+<div style="text-align: center;"><img style="width: 590px; height: 308px;" alt="" src="Imagenes/ejemplo_sub_paral_cdf.png" /><br />
+</div>
+<br />
+<div style="text-align: center;"><img style="width: 600px; height: 248px;" alt="" src="Imagenes/dialogo_capa_forma.png" /><br />
+</div>
+<br />
+KORUYUCU TABAKA'nın kalınlığı <span style="font-weight: bold;">Koruyucu tabaka</span> alanında beyan edilir.<br />
+<br />
+<span style="font-weight: bold;">A.B.</span> sütunu: Balastı doğrudan
+koruyucu tabaka üzerine oturtma seçeneği etkinleştirilirse, balast
+eteğinden arazi üzerine yeniden şevlendirme yapılabilir. Bunun için
+yarma kesitinde yarma palyesi, hendek ve istenen yarma şev geometrisi
+tanımlanır ve yeniden şevlendirmeyi etkinleştirmek için, hendekte bazı
+zorunlu noktaların olduğunu işaretleriz. Bu kesitler, balastın araziyle
+birleştiği etekten itibaren, Dolgu Kenar Hendeği olarak tanımlanan bir
+hendek taşıyabilir.<br />
+<br />
+Çift hat durumunda çatı kırım noktası (mahya) şu şekilde olabilir:<br />
+<ul>
+<li><span style="font-weight: bold;">Tek</span>: Geometrik eksene göre eksantrisitesi <span style="font-weight: bold;">Eksant. sağ</span> alanına girilir.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Çift</span>: Sol çatı kırım noktası için eksantrisite de <span style="font-weight: bold;">Eksant. sol</span> alanında tanımlanmalıdır.</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Optimum</span>: Her iki taraf için aynı anda minimum balast kalınlığının sağlanacağı şekilde konumlandırılır.</li>
+</ul>
+Ayrıca bu menüde hem minimum balast kalınlığı hem de subbalast kalınlığı tanımlanır (sırasıyla <span style="font-weight: bold;">Min. Bal. Kal.</span> ve <span style="font-weight: bold;">Sub-Bal. Kal.</span> alanları). Bu iki veri, <a href="OL_ffcc_via_traviesa.html">HAT VE TRAVERS</a> menüsünde girilenlerden <img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolbarEstandar_nuevo.png" /> komutuyla otomatik olarak aktarılır.<br />
+<br />
+Profiller açısından, subbalastı ve koruyucu tabakayı tanımlayan yüzeyler artan sayılarla (1, 2, 3, 4,…) kodlanır.<br />
+<br />
+PK kutusu ile çatı kırım noktası seçimi arasındaki kutucuk, <span style="font-weight: bold;">Balastı doğrudan araziye oturt</span>
+seçeneğini etkinleştirir; bu seçenekle ne subbalast ne de koruyucu
+tabaka oluşturulur. Özellikle koruyucu tabakanın önceden inşa edildiği
+işler için düşünülmüştür.<br />
+<br /><img style="width: 138px; height: 54px;" alt="" src="Imagenes/cdf_paral.png" align="right" hspace="6" />
+Sabit bir platform tanımlandığında, koruyucu tabaka ve subbalastın üst yüzeyinin hattın deverlerine paralel olması koşulu etkinleştirilebilir.<br />
+<br />
+<br />
+<span style="font-weight: bold; font-style: italic;">Koruyucu tabaka, balast ve subbalastı dahil et</span> seçeneği aktif olduğunda,
+subbalast üst yüzeyi (L46) ve koruyucu tabaka (L45) çizgileri, bu
+menüde girilen kalınlıklara göre doğrudan &nbsp;<span class="Archivo">ISPOL#.per</span> dosyasında oluşturulur. Metrajlara balast,
+subbalast ve koruyucu tabaka da dahil edilir. Balast, subbalastın üst
+yüzeyi ile platform yüzeyi (L67) arasındaki kalan malzeme olarak
+ölçülür. Eğer kesit başka tür dolgular içeriyorsa, bu seçeneği devre
+dışı bırakmak ve <a href="OL_firmes.html">ÜSTYAPI
+PAKETLERİ</a> menüsünü kullanmak tavsiye edilir (bu durumda balast metrajı elde edilmez). <br />
+<br />
+Koruyucu tabaka, balast ve subbalast içeren bölümlerin yanı sıra başka
+tür dolgu/kesit içeren bölümlerin (örneğin, plakalı bir hat) bulunduğu
+eksenler için, <span style="font-weight: bold; font-style: italic;">Koruyucu tabaka, balast ve subbalastı dahil et</span>
+seçeneğini genel olarak işaretli bırakabilir ve kesitimizin bu
+unsurlardan yoksun olduğu bölümler için <span style="font-weight: bold;">Min. Bal. Kal.</span> yanındaki kutucuk aracılığıyla özelleştirebiliriz.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<div style="text-align: center;"><img style="width: 290px; height: 81px;" alt="" src="Imagenes/esp_min_bal.png" /><br />
+  </div>
+
+  <br />
+
+  <br />
+
+<span style="font-weight: bold;">ÜSTYAPI (Toplam) Listeleme</span> seçeneği etkinleştirilirse,
+ne listelerde ne de BIM nesnesi olarak ÜSTYAPI metrajı oluşturulmaz.
+Balast, subbalast ve koruyucu tabaka dahil edildiğinde etkinleştirilebilir.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+<span style="font-weight: bold;">Veriler arasında geçiş yapma</span> seçeneğini kullanmak mümkündür. Böylece bir KM için girilen değerler bir sonraki KM'ye kadar korunur.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+<span style="font-weight: bold;">Minimum balast kalınlığının kontrolü</span> için iki olasılık vardır:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<ul>
+
+    <li><span style="font-weight: bold;">Rayların altında kontrol et</span>:
+
+En elverişsiz rayın altından ölçülür. Bu seçenek seçildiğinde, dever
+eğiminden bağımsız olarak, ray ve travers yüksekliğini dikey olarak
+uygulayan ADIF formülünü kullanmaya olanak tanıyan yeni bir kutucuk
+belirir.<br />
+</li>
+<li><span style="font-weight: bold;">Tüm travers genişliğinde kontrol et</span>: Travers genişliğinin en elverişsiz noktasının altından ölçülür.<br />
+</li>
+
+code
+Code
+download
+content_copy
+expand_less
+</ul>
+
+Eğer <span style="font-weight: bold; font-style: italic;">İşaretle</span> kutucuğu etkinleştirilirse,
+minimum balast, subbalast, koruyucu tabaka ve terasman kalınlığının
+kontrol edildiği konuma semboller oluşturulur. Kullanılan semboller,
+tek çatı kırım noktası durumunda veya sağ hat için S872, S874, S876 ve
+S878; çift veya optimum çatı kırım noktası durumunda sol hat için S873,
+S875, S877 ve S879'dur.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  
+  <table style="text-align: left; width: 572px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+
+    <tbody>
+      <tr>
+        <td style="vertical-align: top;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+        </td>
+        <td style="vertical-align: middle; text-align: justify;"><span class="Info">Bu semboller, bu malzemelerin kalınlıklarını <a href="OL_gut_simbolos.html#acota">enkesitlerde ölçülendirmeye</a> olanak tanır.</span></td>
+      </tr>
+    </tbody>
+  
+  </table>
+
+  <br />
+  <div style="text-align: center;"><img style="width: 320px; height: 351px;" alt="" src="Imagenes/esp_min_balasto_marcar.png" /><br /></div>
+  <br />
+  <br />
+
+<span class="Parf_negrita">Sanat Yapısı Bölümleri</span> kutucuğu
+etkinleştirilirse, Sanat Yapısı Bölümleri için bir Subbalast, Koruyucu
+Tabaka kalınlığı ve minimum bir Balast kalınlığı tanımlamaya olanak
+tanır. Varsayılan olarak Subbalast 0'a ve koruyucu tabaka 0.001'e
+ayarlanır. Bu bölümlerde koruyucu tabaka için farklı bir eğim tanımlamak
+da mümkündür.<br />
+<br />
+<br />
+
+<span style="font-weight: bold; font-style: italic;">Traversi düş</span>  seçeneği, traversin kapladığı hacmi düşmeye olanak tanır.
+Etkinleştirilirse, hesaplama veya yeniden kübaj yapıldığında,
+belirtilen metrajdan (varsayılan olarak 167, kübaj tablosu <span class="Archivo">ispol4.dar</span>'daki balast alanına karşılık gelir), formüle göre traverslerin metre başına kapladığı hacim düşülür:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  
+  <div style="text-align: center;">
+
+(Hat Sayısı) x (SEB · LT · AT) x (1/DT)<br />
+</div>
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+Eğer <a href="EDM_editor_perfiles.html#tablas_cubic">.dar tablosunda</a> <span style="font-style: italic;">Balast</span> özelliğine sahip bir metraj varsa, o zaman bu metraj öncelikli olur.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+Asimetrik kesitler durumunda, ekranın sağ alt köşesindeki <span style="font-weight: bold;">[VERİLER]</span> seçeneğine basarak daha fazla parametre tanımlama imkanı vardır, bu da yeni bir veri giriş diyalog kutusu gösterir:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  
+  <div style="text-align: center;"><img style="width: 596px; height: 211px;" alt="" src="Imagenes/dialogo_capa_forma_2.png" /><br />
+  </div>
+
+  <br />
+
+<span style="font-weight: bold;">Çift hat</span> durumunda, kutucuk, her iki tarafta <span style="font-weight: bold;">farklı kalınlıklar</span> ve kalınlık değişim noktasına bir <span style="font-weight: bold;">mesafe</span> (<span style="font-weight: bold;">D1</span>, <span style="font-weight: bold;">D2</span> ve <span style="font-weight: bold;">D3</span>) beyan etmeye olanak tanır.
+Yani, gösterilen seçeneklerle sağ ve solda farklı balast, subbalast ve koruyucu tabaka değerleri tanımlanabilir.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+<span style="font-weight: bold;">Basamağın</span> konumu da tanımlanabilir.
+Varsayılan olarak, subbalast üst yüzeyindeki basamak, daha yüksek
+kalan taraftaki subbalast ve koruyucu tabakayı indirerek ortadan
+kaldırılır (o tarafta minimum subbalast kalınlığı öngörülenden daha
+büyük olacaktır).<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+<span style="font-weight: bold;">Asimetrik kesitler</span>
+durumunda, her iki tarafta dışarıda dört adede kadar kırılma noktası
+tanımlama imkanı vardır; her taraf için geometrik eksene göre
+eksantrisite ve eğim tanımlanır, bu durumda subbalast ve koruyucu
+tabakanın üst yüzeyi bu kırılmaları takip eder. Hatta, dış koridor
+subbalastın uzantısı olarak tanımlanırsa, bu ikinci çatı kırım noktası
+bu dış koridorun altına gidebilir. Bu tanıma <span style="font-weight: bold;">[Ön Yükleme/ÇATI2]</span> düğmesine basılarak erişilir, bu da bu parametreleri girmek için aşağıdaki diyalog kutusunu gösterir:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  
+  <div style="text-align: center;"><img style="width: 596px; height: 211px;" alt="" src="Imagenes/dialogo_capa_forma_3.png" /><br />
+  </div>
+
+  <span class="Parrafo"><span class="Parrafo"><br />
+
+Bir <span style="font-weight: bold;">Ön Yükleme</span> kalınlığı değeri tanımlayabiliriz. Bu kalınlık, koruyucu tabaka üzerinden ölçülür. Metraj, diğer metrajlarla birlikte verilir.<br />
+<br />
+</span></span>
+
+code
+Code
+download
+content_copy
+expand_less
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 547px; height: 201px;" alt="" src="Imagenes/precarga_ejemplo.png" /></span></span><br />
+  <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+  <span class="Parrafo"><span class="Parrafo">
+  <br />
+  </span></span><span class="Titulo_2"><a name="norma_francesa">Fransız Yönetmeliği</a></span><br />
+
+  <span class="Parrafo"><span class="Parrafo"><br /><span style="font-weight: bold;">[Fransız Yönetmeliği]</span> düğmesi,
+
+koruyucu tabakanın eğimlerini, 100 mm'den büyük devere sahip kurplar
+için koruyucu tabakanın kurbun içine doğru tek eğimli hale gelecek
+şekilde oluşturur.<br />
+<br />
+</span></span>
+
+code
+Code
+download
+content_copy
+expand_less
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 590px; height: 304px;" alt="" src="Imagenes/ffcc_norma_francesa.png" /></span></span><br />
+  <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+  <span class="Parrafo"><span class="Parrafo"><br />
+
+Balast hacmini azaltmayı amaçlayan bu seçenek, <a href="OL_ffcc_peraltes_via.html#norma_francesa">deverleri Fransız yönetmeliğine göre</a> tanımladıktan sonra kullanılmalıdır.<br />
+<br />
+<br />
+</span></span><span class="Titulo_2"><a name="entronque">Bağlantı</a></span><br />
+
+code
+Code
+download
+content_copy
+expand_less
+<span class="Parrafo"><span class="Parrafo"><br />
+  </span></span><img style="width: 358px; height: 144px; margin-left: 7px;" alt="" src="Imagenes/capa_forma_entronque.png" align="right" /><span class="Parrafo"><span class="Parrafo">Yakın
+
+ve platform paylaşan bölümlerdeki iki eksen için, subbalast ve
+koruyucu tabakanın geometrisinin aşağıdaki şekilde değiştirileceği
+beyan edilebilir:<br />
+</span></span>
+
+code
+Code
+download
+content_copy
+expand_less
+<ul>
+
+    <li><span class="Parrafo"><span class="Parrafo">Subbalastın
+
+üst yüzeyi, ana yol olarak işlev gören eksenin subbalastının çatı kırım
+noktasını, kavşak kolu olarak işlev gören eksenin dış tarafındaki
+koridorun dış kenarı olan kod 13 ile birleştiren çizgiye uyarlanacaktır.</span></span></li>
+
+code
+Code
+download
+content_copy
+expand_less
+</ul>
+
+  
+  <ul>
+
+    <li><span class="Parrafo"><span class="Parrafo">Bu bölüm hem ana yolda, diğer ekseni <span style="font-weight: bold;">kavşak kolu modunda</span> kullanarak, hem de kavşak kolunda, diğer ekseni <span style="font-weight: bold;">ana yol modunda</span> kullanarak tanımlanmalıdır.</span></span></li>
+  
+  </ul>
+
+  <span class="Parrafo"><span class="Parrafo">Böylece, ana yolda <a href="OL_anadir_ramal.html"><span style="font-weight: bold;">[Kavşak Kolu Ekle]</span></a>
+
+seçeneği çalıştırıldığında, mevcut yüzeyler genişletilerek ve
+kırpılarak, ortak tarafta tek ve sürekli bir eğim elde edilir.<br />
+<br />
+<span class="Titulo_2"><a name="deducir">Minimum balast kalınlığını ve eğimi türet</a></span><br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+  <img style="width: 309px; height: 282px;" alt="" src="Imagenes/dialogo_deducir_ffcc.png" align="right" hspace="6" />Bir
+
+bölümde minimum balast kalınlığı ve koruyucu tabakanın enine eğim
+değerlerini, <span style="font-weight: bold;">mevcut eksene</span> paralel bir <span style="font-weight: bold;">ana eksenden</span>
+yola çıkarak, eksenimizin subbalastının üst yüzeyinin ana eksenin
+uzantısında ve tek eğimli olacak şekilde türetmeye olanak tanır.<br />
+
+Tanımlanan bölümde (<span style="font-weight: bold;">Başlangıç Km</span> ve <span style="font-weight: bold;">Bitiş</span>)
+bu değerler, koruyucu tabaka tablosunda mevcut tüm veriler için yeniden
+hesaplanır (<span style="font-weight: bold;">Sadece mevcut verileri araya ekle</span>), ancak ayrıca önceden belirlenmiş bir değerin <span style="font-weight: bold;">katları</span> olan yeni veriler de eklenebilir.<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+  <br />
+
+Örnek:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+Türetme uygulamadan önce:<br />
+
+code
+Code
+download
+content_copy
+expand_less
+<br />
+
+</span></span>
+
+code
+Code
+download
+content_copy
+expand_less
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 560px; height: 190px;" alt="" src="Imagenes/deducir_ejemplo_antes.png" /></span></span><a name="deducir"><br />
+  <span class="Parrafo"><span class="Parrafo"></span></span></a></div>
+
+  <span class="Parrafo"><span class="Parrafo"><br />
+
+Türetme uyguladıktan sonra:<br />
+<br />
+</span></span>
+
+code
+Code
+download
+content_copy
+expand_less
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 560px; height: 196px;" alt="" src="Imagenes/deducir_ejemplo_desp.png" /></span></span><a name="deducir"><br />
+  <span class="Parrafo"><span class="Parrafo"></span></span></a></div>
+
+  <span class="Parrafo"><span class="Parrafo">
+  <br />
+
+</span></span><span class="Parrafo"><span class="Parrafo"><img style="width: 309px; height: 282px;" alt="" src="Imagenes/deducir_limatesa.png" align="right" hspace="6" />Bu
+araç ayrıca, bir çatı kırım noktasının (mevcut eksenin ve ana eksenin
+balast tabanının kesişimi) konumunu sabitlemeye olanak tanır. <span style="font-weight: bold;">Eğimleri Koru ve Çatı Kırım Noktasını Sabitle</span> kutucuğunu etkinleştireceğiz.<br />
+Bu konum, <span style="font-weight: bold;">mevcut eksene mesafe</span>, <span style="font-weight: bold;">ana
+eksene</span> mesafe veya her iki eksenin <span style="font-weight: bold;">orta noktası</span> verilerek sabitlenebilir. (Geometrik eksenler, plan
+eksenleri değil). <br />
+Bu durumda program, koruyucu tabaka için verilen eğimleri
+değiştirmeden, çatı kırım noktasının sabitlenen noktada oluşması için
+mevcut eksen için minimum balast kalınlığını belirler.</span></span><br />
+
+code
+Code
+download
+content_copy
+expand_less
+<span class="Parrafo"><span class="Parrafo"><br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+Örnek: Aşağıdaki resimlerle bu yöntemi kullanmadan önceki ve sonraki durum gösterilmektedir.<br />
+<br />
+</span></span>
+
+code
+Code
+download
+content_copy
+expand_less
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 573px; height: 223px;" alt="" src="Imagenes/deducir_capaf_limatesa.png" /></span></span><br />
+  <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+  <span class="Parrafo"><span class="Parrafo"><br />
+  </span></span>
+  
+  <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 560px; height: 172px;" alt="" src="Imagenes/deducir_capaf_limatesa_resul.png" /></span></span><br />
+  <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+  <span class="Parrafo"><span class="Parrafo"><br />
+  <br />
+
+</span></span><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><a name="solobalasto"><span class="Titulo_2">Sadece balast</span><br />
+<img style="width: 300px; height: 80px;" alt="" src="Imagenes/solobalasto.png" align="right" /><br /><span style="font-weight: normal;">
+Bu mod, hat iyileştirme projeleri için düşünülmüştür. Bu seçenek
+etkinleştirildiğinde ve </span></a><span style="font-weight: normal;">koruyucu
+tabaka olmadığında (yani, sıfır subbalast ve koruyucu tabaka
+kalınlıklarımız olduğunda), kesit, balastın dış eteğinde, zemine yakın
+olduğunda kesilir.</span><br style="font-weight: normal;" />
+<br style="font-weight: normal;" /><span style="font-weight: normal;">
+Etkinleştirildiğinde üç parametre girebiliriz:</span><br style="font-weight: normal;" />
+<ul>
+<li style="font-weight: normal;"><span style="font-weight: bold;">dZ</span>: balast
+eteğinin (bu, 67 ve 68 yüzeylerinin birleştiği yer veya 67 yüzeyinin 12
+kodu olarak tanımlanır) araziye maksimum dikey mesafesi. Eğer mesafe
+bundan küçükse, o zaman kesit bu noktada kesilir.<br />
+<br />
+</li>
+<li>TD, TT<span style="font-weight: normal;">: Kesiti balast eteğinden araziye kapatmak için yarma ve dolgu şevleri.</span><br />
+</li>
+</ul>
+</span></span></span></td>
+</tr>
+
+</tbody>
+</table>
+
+</body></html>

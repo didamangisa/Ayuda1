@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>.dwg/.dxf Dosyalarını İçe Aktarma</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>.DWG/.DXF DOSYALARINI İÇE AKTARMA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+      <span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#opciones">Seçenekler</a><br />
+      <a href="#gestor_capas">Katman Yöneticisi</a><br />
+      <a href="#conversion_lineas">Çizgi Dönüşümü</a><br />
+      <a href="#conversion_rotulos">Yazı Dönüşümü</a><br />
+      <a href="#conversion_simbolos">Sembol Dönüşümü</a><br />
+      <a href="#conversion_imagenes">Resim Dönüşümü</a><br />
+      <a href="#diccionarios">Dönüşüm Sözlükleri</a><br />
+      <a href="#importacion_rapida">Hızlı DWG/DXF Nesnesi İçe Aktarma</a><br />
+      </div>
+<br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br /><br />
+      <img style="width: 103px; height: 324px; margin-left: 7px;" alt="" src="Imagenes/importar_dwg_dxf.png" align="right" /><span style="font-weight: bold;">Dosya</span> &#8594; <span style="font-weight: bold;">İçe Aktar</span> &#8594; <span style="font-weight: bold;">DWG/DXF</span> seçeneği seçildiğinde, bu formattaki bir veya daha fazla dosyayı içe aktarırken gerekli olan her şeyi yönetmeyi sağlayan menü görüntülenir.<br /><br /><span style="font-weight: bold;">[BİTİR]</span> butonu içe aktarma işlemini sonlandırmaya yarar ve bu butona basıldığında DWG/DXF içe aktarma menüsü kapanır.<br /><br /><span style="font-weight: bold;">[Pan]</span>, <span style="font-weight: bold;">[Zoom]</span>, <span style="font-weight: bold;">[Önceki]</span>, <span style="font-weight: bold;">[Sonraki]</span>, <span style="font-weight: bold;">[Yeniden Çiz]</span>, <span style="font-weight: bold;">[NoD]</span> butonları, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün diğer menülerindekiyle aynı işlevselliğe sahiptir.<br /><br />
+Program, her türlü <span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> dosyası sürümüyle uyumludur.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="opciones">Seçenekler</a></span><br />
+      <br />
+<span style="font-weight: bold;">[SEÇENEKLER]</span> butonuna tıklandığında, içe aktarılması amaçlanan DWG/DXF dosyalarını işlerken kullanılacak temel ayarları gösteren bir açılır menü belirir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 384px; height: 507px;" alt="" src="Imagenes/opc_imp_dwg_dxf.png" /><br />
+      </div>
+      <br />
+<span style="font-weight: bold;">İçe Aktarma Tipi</span> açılır listesi, kullanıcıya dört farklı içe aktarma yöntemi arasından seçim yapma imkanı tanır, ancak bu seçenekler için yapılandırma dosyaları yüklemeye devam edebilir. Ön tanımlı yapılandırmalar şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Varsayılan</span>: İçe aktarıcının standart seçeneklerle bir içe aktarma işlemi gerçekleştirdiği ayarlar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Orijinal Autocad</span>: Bu yöntem seçildiğinde, içe aktarma işlemi tamamlandığında sonuç çizimin görünümünün orijinal DWG/DXF dosyasına benzer olması için gerekli kutucuklar aktif hale gelir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Orijinal Ispol</span>: Bu seçenek seçildiğinde, içe aktarıcı, muhtemelen yine ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ile oluşturulmuş bir dosyayı geri yüklemeye çalışır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Hızlı</span>: Bu seçenek, mümkün olan en hızlı ve en basit içe aktarma işlemini yapmak için tüm seçeneklerin işaretini kaldırır.</li>
+      </ul>
+Bu iletişim kutusundaki içe aktarma seçenekleri aşağıda açıklanmaktadır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Spline'lar için kontrol noktaları arası segment sayısı</span>: Bu değer, bir spline'dan bir çizgi oluşturulurken, bu çizginin spline'a mümkün olduğunca yakın olmasını sağlamak için spline segmentlerinin kaç parçaya bölüneceğini belirtir. Değer ne kadar yüksek olursa, çizgi spline'a o kadar çok yaklaşır. Varsayılan değeri 10'dur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yaylar için Yay-Kiriş Mesafesi (Flecha)</span>: Bu alanda, dairelerden, elipslerden, yaylardan, eliptik yaylardan ve genel olarak yaylardan oluşan herhangi bir elemandan poliline oluşturmak için kullanılacak yay-kiriş mesafesi değeri belirtilir. Varsayılan olarak, <span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Seçenekler</span> &#8594; <span style="font-weight: bold;">Eğri Yumuşatma</span> iletişim kutusunda belirtilen <span style="font-weight: bold;">Yay-Kiriş Mesafesi</span> alanındaki değeri alır. Bu değer sadece içe aktarılacak dosyaları işlerken geçerlidir, yani bu iletişim kutusunda değiştirilirse, genel <span style="font-weight: bold;">Yay-Kiriş Mesafesi</span> değeri değiştirilmez. İlgili açılır liste, üç ön tanımlı <span style="font-weight: bold;">Yay-Kiriş Mesafesi</span> değerinden oluşur (ancak istenen değer girilebilir):</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 250px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 122px; font-weight: bold; text-align: right;">Normal (Harita):<br />
+
+Orta (Profiller):<br />
+
+Hassas (Detaylar):<br />
+            </td>
+            <td style="vertical-align: top; width: 108px; font-weight: bold;">0.01<br />
+0.001<br />
+0.0001</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Poliline Filtreleme</span>: Bu alanda, içe aktarma dosyaları işlendikten sonra polilineleri filtrelemek için <span style="font-weight: bold;">Yanal Tolerans</span> ve <span style="font-weight: bold;">Maksimum Mesafe</span> değerleri belirtilir. Varsayılan olarak, <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Haritayı Temizle</span> &#8594; <span style="font-weight: bold;">Temizleme Parametrelerini Tanımla</span> iletişim kutusunda belirtilen değerler alınır. Bu değerler sadece içe aktarılacak dosyaları işlerken geçerlidir, yani bu iletişim kutusunda değiştirilirse, genel <span style="font-weight: bold;">Yanal Tolerans</span> ve <span style="font-weight: bold;">Maksimum Mesafe</span> değerleri değiştirilmez. İlgili açılır liste, üç ön tanımlı değerden oluşur (ancak istenen değerler girilebilir):</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 393px; height: 111px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Yanal Tolerans<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Maksimum Mesafe<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Normal (Harita)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">0.25<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">10.0000<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Orta (Profiller)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">0.05<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">2.0000<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Hassas (Detaylar)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">0.0005<br />
+            </td>
+            <td style="vertical-align: middle; text-align: center;">0.0200<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+      <div style="margin-left: 40px;">Filtrelemenin gerçekleştirilebilmesi için kutucuğun işaretli olması gerekir.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;"><a name="explotar_bloques">Blokları Patlat (Sembolleri Korur)</a></span>: Bu seçenek işaretliyse, DWG/DXF bloklarından noktalar oluşturulduğunda, bu noktalar yerleştirme noktası artı bloğa ait grafik bilgiden oluşur. Eğer seçenek işaretli değilse, içe aktarılacak çizimde bir blok tespit edildiğinde ekranda sadece yerleştirme noktası gösterilir ve bloğun grafik bilgisi gizli kalır, ancak bu bilgi daha sonra SEMBOLLER iletişim kutusundan gösterilebilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Çizgilere DWG/DXF rengini ata</span>: Bu seçenek işaretliyse, içe aktarılan dosyalardan oluşturulan çizgiler DWG/DXF çizimindeki renkleriyle gösterilir. Eğer seçenek işaretli değilse, çizgiler tipe göre renklendirilir. Çizgilerin rengiyle ilgili tüm bilgiler, içe aktarma işlemi yapıldıktan sonra ÇİZGİLER yapılandırma iletişim kutusundan düzenlenebilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Katman adından model ve tipleri algıla (M1L78, R0,&#8230;)</span>: Bu seçenek seçildiğinde, dosyalar içe aktarılırken her bir nesnenin tipi ve modeli, eğer elemanın ait olduğu katmanda kodlanmışsa, algılanmaya çalışılır. Bunun için katmanların MxTy tipinde olması gerekir; burada 'x' model, 'y' ise tip olarak yorumlanır. Bu seçenek, daha önce ISTRAM <sup>®</sup>/ISPOL<sup>®</sup> ile oluşturulmuş bir haritayı geri yüklemeye çalışırken kullanışlıdır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">DWG/DXF'ten yazı stilleri oluştur, başlangıç indeksi</span>: Bu seçenek etkinleştirildiğinde, DWG/DXF'te tanımlanan yazı stillerinin ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'de tanımlanan stillerle eşleşip eşleşmediği kontrol edilir. DWG/DXF'teki bir stilin ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'deki hiçbir stille eşleşmemesi durumunda, belirtilen indeksten itibaren boşta olan stiller kullanılarak yeni bir stil oluşturulur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Yazıların hizalamasını koru</span>: Bu seçenek seçildiğinde, dosyadan yüklenen yazılar orijinal hizalamalarını korur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Log dosyası oluştur</span>: Bu seçenek seçildiğinde, her bir <span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> dosyası çevrildikten sonra, <span class="Archivo">Info DWG tarih saat.txt</span> adında küçük bir rapor dosyası oluşturulur ve bu dosyada çevrilecek dosyada bulunan nesnelerin bir özeti gösterilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Farklı ölçekli blokları okumaya zorla</span>: Bu seçenek etkin DEĞİLSE, sadece (X,Y,Z) = (1,1,1) ölçek faktörlerine sahip blok referansları içe aktarılır. Aksi takdirde, herhangi bir (X,Y,Z) ölçeğindeki blok referansları içe aktarılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Dairelerden sembol oluştur, maksimum yarıçap</span>: Bu seçenek etkinleştirildiğinde, seçenekte belirtilen yarıçaptan daha küçük yarıçapa sahip tüm daireler tip 0 sembollerine dönüşür (bu tip, sembol çeviri iletişim kutusunda değiştirilebilir). Sembolün yerleştirme noktası dairenin merkezidir ve dairenin kotuyla aynı kotu alır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Kot bilgisini öznitelikten al, öznitelik</span>: Bu kutucuk etkinleştirildiğinde, seçenekte belirtilenle aynı ada sahip bir özniteliği olan semboller, kot olarak o özniteliğin değerini alır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Özniteliği (ISPOL sembolü) öznitelikten (DWG/DXF) al</span>: Bu seçenek, öznitelik değerini sembolün kotuna atamak yerine sembolün özniteliğine ataması dışında, bir öncekiyle aynı şekilde çalışır.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold; font-style: italic;">Kot (Z) için katsayı</span>: İçe aktarılacak dosyadan gelen kot değerlerine belirtilen katsayıyı uygular.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Her katmanı farklı bir modele ata</span>: İçe aktarılacak dosyanın her katmanındaki nesneleri, bitişik metin kutusunda belirtilenden başlayarak boşta olanlar arasından seçilen farklı bir modele atar.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Katmanlardan çizgi tipleri oluştur</span>: İçe aktarılacak dosyada kullanılanlardan yeni çizgi tipleri oluşturur; numaralar, bitişik metin kutusunda belirtilenden başlayarak boşta olanlar arasından seçilir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Bloklardan sembol tipleri oluştur</span>: İçe aktarılacak dosyanın bloklarından yeni semboller oluşturur; numaralar, bitişik metin kutusunda belirtilenden başlayarak boşta olanlar arasından seçilir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Aktif veya görünür olmayan katmanlardaki elemanları atla</span>: İçe aktarma işlemini, aktif veya görünür bir katmanda OLMAYAN elemanları yoksaymaya zorlar.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Kaynak veriler coğrafi koordinatlarda</span>: Bu seçenek etkinleştirildiğinde ve dosya yüklendiğinde, ekranda enlem-boylam koordinatları derece/dakika/saniye olarak gösterilir.<br />
+        </li>
+
+      </ul>
+      <ul>
+        <li>İçe aktarma sırasında <span style="font-weight: bold;">X</span>, <span style="font-weight: bold;">Y</span>, <span style="font-weight: bold;">Z</span>'de <span style="font-weight: bold;">ölçekleme</span> yapılabilir.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Okuma sonunda görünümü ayarlama</span>: Bu seçenek etkinse, dosyaların okunması sonunda görünümü ayarlamadan mevcut zoom korunur.<br />
+        </li>
+
+      
+      </ul>
+
+
+İçe aktarma ayarları tanımlandıktan sonra, artık içe aktarılmak istenen <span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> dosyalarını seçmeye hazırsınız. Bunun için <span style="font-weight: bold;">[DWG/DXF Yükle]</span> butonuna basılır ve ardından içe aktarılacak dosyaları (aynı anda en fazla 10 adet) seçmeyi sağlayan bir dosya seçici belirir. İçe aktarma süreci başlar; bu süreç önce dosya bilgileriyle veritabanını oluşturmaktan ve ardından bunu yorumlamaktan oluşur. Bir ilerleme çubuğu, sürecin bu aşamalarının her birini gösterir.<br />
+      <br />
+Tüm nesneler tip 0 ve model 0'a çevrilir. DWG/DXF blokları tip 0 sembollerine çevrilir ve daha sonra onlardan yeni semboller oluşturulabilmesi için geometrik olarak patlatılır. Bir eleman DWG/DXF'te görünür olmayan veya kullanılmayan bir katmandaysa, bu eleman -1 tipine sahip olur ve dolayısıyla pasif kalır.<br />
+      <br />
+Ayrıca, okunması sırasında patlatılabilen ACAD_PROXY_ENTITY tipi nesneler de dönüştürülür. İçe aktarıcıda çevrilen bu yeni nesneler, DWG/DXF'te patlatılabilen ve daha sonra bunları içeren dosyanın patlatılmış nesneyle kaydedilebildiği nesnelerdir. Oluşturuldukları uygulamanın bu elemanların patlatılmasına izin vermemesi nedeniyle yorumlanamayan ACAD_PROXY_ENTITY tipi elemanlar hala mevcuttur.<br />
+      <br />İçe aktarıcıda Surface/Yüzey elemanlarının işlenmesini de kapsar.<br /><br />
+Yarıçapı 0 olan daireler ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'de sembollere çevrilir. Sembol çeviri iletişim kutusunda bunlar CIRCLE_0 adıyla görünür. Ayrıca, içe aktarma tamamlandığında, bu türden elemanlar (yarıçapı 0 olan daireler) bulunduysa, elemanın kaç kez geçtiğini gösteren bir mesaj görüntülenir.<br />
+      <br />
+Dosyaların çeviri süreci tamamlandığında, yani harita ekranda göründüğünde, geriye kalan tek adım, içe aktarma sonrası oluşturulan yeni nesneleri özelleştirmektir. Bu, her bir nesneyi (çizgiler, semboller ve yazılar) manuel olarak değiştirerek veya daha önce oluşturduğumuz bir dönüşüm sözlüğü aracılığıyla otomatik olarak yapılabilir. Şu anda içe aktarılan nesneler şunlardır: çizgiler, polilineler, yüzeyler (faces), yaylar, daireler, elipsler, spline'lar, katılar (solids), 2D polilineler, 3D polilineler, taramalar (rellenos), yazılar, öznitelikler, çoklu metinler, hizalı ölçülendirmeler, döndürülmüş ölçülendirmeler, radyal ölçülendirmeler, çap ölçülendirmeleri, açısal ölçülendirmeler, blok referansları, noktalar ve DWG/DXF dosyalarıyla çalışan uygulamalarla oluşturulmuş belirli nesneler. Her an, çevrilen kombinasyonların sayısı hakkında ekranda bilgi sunulur. Ayrıca, fareyi herhangi bir düğmenin üzerine getirdiğinizde, o düğmenin işlevselliğini belirten bir etiket belirir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="gestor_capas">Katman Yöneticisi</a></span><br />
+      <br />
+      <img style="width: 288px; height: 221px; margin-left: 7px;" alt="" src="Imagenes/imp_dwg_gestor_capas.png" align="right" />Sağdaki dikey menüdeki <span style="font-weight: bold;">[KATMANLAR]</span> butonu aracılığıyla erişilen küçük ve pratik bir (DWG/DXF) katman yöneticisi bulunmaktadır. Bu butona basıldığında, sağda gösterilen görünüme sahip bir iletişim kutusu sunulur.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Tümünü Göster</span> ve <span style="font-weight: bold; font-style: italic;">Tümünü Gizle</span> kutucukları, sırasıyla tüm içe aktarılan katmanları göstermeye veya gizlemeye yarar.<br />
+      <br />
+Her katman için gösterilen bilgiler şunlardır:<br />
+      <br />
+      <table style="text-align: left; height: 50px; width: 269px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 148px; font-weight: bold;">1<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 13px; font-weight: bold;">2<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 16px; font-weight: bold;">3<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 15px; font-weight: bold;">4<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 17px; font-weight: bold;">5<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 11px; font-weight: bold;">6<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 17px; font-weight: bold;">7<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 13px; font-weight: bold;">8<br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="8" rowspan="1" style="vertical-align: top; width: 13px;"><img style="width: 265px; height: 15px;" alt="" src="Imagenes/imp_dwg_gestor_capas_dat.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ol>
+        <li>DWG/DXF katmanının adı</li>
+        <li>DWG/DXF'te katman görünür/görünmez</li>
+        <li>DWG/DXF'te katman kullanılıyor/kullanılmıyor</li>
+        <li>DWG/DXF'te katman kilitli/kilitli değil</li>
+        <li>Katmanda çizgi var/yok</li>
+        <li>Katmanda yazı var/yok</li>
+        <li>Katmanda sembol var/yok</li>
+        <li>Katmanı ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'de göstermek veya göstermemek için kutucuk</li>
+      </ol>
+Katmanın çizgiler, yazılar ve/veya semboller içermesi durumunda, <span style="font-weight: bold;">5</span>, <span style="font-weight: bold;">6</span> ve <span style="font-weight: bold;">7</span> numaralı butonlara tıklayarak sırasıyla çizgi, yazı ve sembol düzenleme diyaloglarına geçilir ve o katmandaki tüm elemanlar seçili olur.<br />
+      <br />
+Bu iletişim kutusunun alt kısmında, katman araması yapmayı sağlayan bir metin alanı bulunur. Arama alanına katman adı girilip &lt;Enter&gt; tuşuna basılırsa veya sağdaki <img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_prismaticos.png" /> simgesine tıklanırsa, girilenle eşleşen bir katman varsa, diyalogun ilk satırında gösterilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="conversion_lineas">Çizgi Dönüşümü</a></span><br />
+      <br />
+Çizgi butonu <span style="font-weight: bold;">5</span>'e veya dikey menüdeki <span style="font-weight: bold;">[ÇİZGİLER]</span> butonuna veya <span style="font-weight: bold;">[Çizgiler]</span> sekmesine tıklandığında, aşağıdaki görünüme sahip bir diyalog gösterilir:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 679px; height: 221px;" alt="" src="Imagenes/imp_dwg_lineas.png" /><br />
+      </div>
+      <br />
+İçe aktarma menüsü aktif olduğu sürece, çizgilerin bilgi etiketlerinin davranışı değişir; program, fare imlecinin üzerinde bulunduğu çizgiyle aynı katmana ait olan tüm çizgileri vurgular.<br />
+      <br />
+Her bir eleman için saklanan bilgiler şunlardır:<br />
+      <br />
+      <table style="text-align: left; width: 532px; height: 69px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="15" rowspan="1" style="vertical-align: top; width: 58px;"><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:396.75pt;
+ height:36pt'>
+ <v:imagedata src="file:///C:\Users\soporte\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img src="../../Users/soporte/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" v:shapes="_x0000_i1025" height="48" width="529" /><!--[endif]--></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 13px;">1<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 16px;">2<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 13px;">3<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 13px;">4<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 41px;">5<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 38px;">6<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 39px;">7<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 39px;">8<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 52px;">9<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 37px;">10<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 39px;">11<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 45px;">12<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 16px;">13<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 42px;">14<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 58px;">15<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ol>
+        <li>Elemanın DWG/DXF katmanının görünür ve kullanımda olup olmadığını bildirir.</li>
+      </ol>
+      <ol start="2">
+        <li>Elemanın DWG/DXF katmanında yazı olup olmadığını belirtir. Eğer bu buton <span style="font-weight: bold;">A</span> harfi ile süslenmişse, üzerine tıklandığında yazı düzenleme diyaloğu gösterilir ve ilk satırda o DWG/DXF katmanında bulunan ilk yazı kombinasyonu belirir. Eğer buton süslenmemişse, üzerine tıklandığında hiçbir işlem yapılmaz.</li>
+      </ol>
+      <ol start="3">
+        <li>Elemanın DWG/DXF katmanında blok olup olmadığını belirtir. Eğer bu buton bir DWG/DXF blok sembolü ile süslenmişse, üzerine tıklandığında sembol düzenleme diyaloğu açılır ve ilk satırda o DWG/DXF katmanında bulunan ilk blok kombinasyonu gösterilir. Eğer buton süslenmemişse, üzerine tıklandığında hiçbir işlem yapılmaz.</li>
+      </ol>
+      <ol start="4">
+        <li>Satırın seçili olup olmadığını belirtir. Grafik penceresinde nesneye tıklamak yeterlidir ve seçilecektir. Seçili elemanlar üzerindeki işlem aşağıda açıklanmıştır.</li>
+      </ol>
+      <ol start="5">
+        <li>DWG/DXF katmanının adını belirtir. Sadece bilgilendirme amaçlı bir elemandır.</li>
+      </ol>
+      <ol start="6">
+        <li>DWG/DXF rengini belirtir. Değeri <span style="font-weight: bold;">katman</span> (eleman rengini DWG/DXF katmanından alır), <span style="font-weight: bold;">blok</span> (eleman bloğa göre renkle tanımlanmış) veya <span style="font-weight: bold;">1</span> ile <span style="font-weight: bold;">255</span> arasında DWG/DXF renk paletinin indeksini belirten bir değer olabilir. Bu butona tıklandığında, aynı renge sahip tüm çizgi kombinasyonları seçilir, ayrıca daha önce seçilmiş olabilecek kombinasyonlar da dahil edilir.</li>
+      </ol>
+      <ol start="7">
+        <li>DWG/DXF'teki çizgi kalınlığı tipi hakkında bilgi verir.</li>
+      </ol>
+      <ol start="8">
+        <li>DWG/DXF'teki çizgi stili tipi hakkında bilgi verir.</li>
+      </ol>
+      <ol start="9">
+        <li>Elemanın DWG/DXF'teki rengini temsil eder.</li>
+      </ol>
+      <ol start="10">
+        <li>Bu alan düzenlenebilir ve satırla ilişkili çizgi kombinasyonunun modelini değiştirmeye yarar. Varsayılan değeri 0'dır. Açılır liste, seçili elemanların modelini renklerine, kalınlıklarına veya 0'a çevirmeye yarar.</li>
+      </ol>
+      <ol start="11">
+        <li>Bu alan düzenlenebilir ve satırla ilişkili çizgi kombinasyonunun tipini değiştirmeye yarar. Varsayılan değeri 0'dır. Eğer bu alanda -1 değeri varsa, o kombinasyonla ilişkili içe aktarılan çizgiler ISTRAM <sup>®</sup>/ISPOL<sup>®</sup>'de pasif hale gelir. Açılır liste ile seçili elemanların tipi renklerine, kalınlıklarına veya 0'a çevrilir.</li>
+      </ol>
+      <ol start="12">
+        <li>Dönüşüm tipinin adı (bilgilendirme alanı).</li>
+      </ol>
+      <ol start="13">
+        <li>Çizginin DWG/DXF'teki rengiyle mi yoksa tipe göre renkle mi temsil edildiğini belirten kutucuk. Varsayılan olarak renk, tipe göredir.</li>
+      </ol>
+      <ol start="14">
+        <li>ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'deki gösterim rengi. Hemen üstünde ayrıca iki buton gösterilir. <span style="font-weight: bold;">[A]</span> butonu tüm çizgileri aktif eder ve <span style="font-weight: bold;">[D]</span> butonu çevrilmiş çizgileri pasif hale getirir.</li>
+      </ol>
+      <ol start="15">
+        <li>İçe aktarılan çizgiler (toplam ve DWG/DXF katmanına göre).</li>
+      </ol>
+Diyalogdaki diğer seçenekler:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 114px;">[Tümü] / [Hiçbiri]</td>
+            <td style="vertical-align: top; width: 558px;">Tüm çizgi kombinasyonlarını seçer/seçimini kaldırır.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 114px;">[Çevrilmemiş]</td>
+            <td style="vertical-align: top; width: 558px;">Çevrilmemiş tüm çizgileri, yani tipini 0'da tutanları seçer.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <img style="width: 150px; height: 177px; margin-left: 7px;" alt="" src="Imagenes/imp_dwg_selec_multip.png" align="right" />Son olarak, çoklu eleman dönüşümleri yapmak için, diyalogun sağ tarafı kullanılır ve işlevselliği aşağıda detaylandırılmıştır.<br />
+      <br />
+<span style="font-weight: bold;">Model</span> alanına, diyalogun sol tarafında seçili olan elemanlara atanmak istenen model girilir. Örnekte gösterildiği gibi bu alandan sonra <span style="font-style: italic;">#</span> karakteri belirirse, bu, menünün sol tarafında seçilen tüm elemanların aynı modele sahip olmadığını gösterir. Aksine, hiçbir eleman seçilmemişse veya seçilenlerin tümü aynı modele sahipse, bu alanda tüm seçilenlere ortak olan model gösterilir ve <span style="font-style: italic;">#</span> karakteri görünmez.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+<span style="font-weight: bold;">Tip</span> alanı, <span style="font-weight: bold;">Model</span> alanı ile aynı çalışma felsefesine sahiptir, yani seçilen tüm elemanlar aynı tipe sahipse veya hiçbir eleman seçilmemişse, alanın sağ tarafında <span style="font-style: italic;">#</span> karakteri görünmez ve alan, seçilen elemanların aynı olan tipini gösterir. Diyalogun sol tarafında seçili olan tüm elemanları pasif hale getirmek için bu alana -1 değeri yazılmalıdır. Bu alanın sağındaki devre dışı bırakılmış butonda tipin adı gösterilir.<br />
+      <br />
+Şeklin alt kısmındaki grafik alanda, menünün sol tarafında seçilen elemanların ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'deki gösterim rengi gösterilir.<br />
+      <br />
+Butonlara gelince:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 107px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 76px; font-weight: bold;">[Tamam]<br />
+            </td>
+            <td style="vertical-align: top; width: 596px; text-align: justify;">Bu buton, yapılan değişiklikleri koruyarak çizgi düzenleme diyaloğunu kapatmaya yarar.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 76px; font-weight: bold;">[İptal]<br />
+            </td>
+            <td style="vertical-align: top; width: 596px; text-align: justify;"><span style="font-weight: bold;">[Uygula]</span> butonuna son basıldığı andan itibaren yapılan değişiklikleri kaybederek diyaloğu kapatır.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 76px; font-weight: bold;">[Uygula]<br />
+            </td>
+            <td style="vertical-align: top; width: 596px; text-align: justify;">Uygula butonu, diyalogda yapılan değişiklikleri kaybetmemeye yarar. <span style="font-weight: bold;">[Tamam]</span> butonu ile aynı işlevselliğe sahiptir ancak bu, düzenleme diyaloğunu kapatmaz.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="conversion_rotulos">Yazı Dönüşümü</a></span><br />
+      <br />
+İşleyişi <a href="#conversion_lineas">çizgiler durumuna</a> benzer, farkı burada DWG/DXF'in yazı stili, eğiklik açısı (yani metnin eğimi) ve genişlik/yükseklik oranının gösterilmesidir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 668px; height: 206px;" alt="" src="Imagenes/imp_dwg_rotulos.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="conversion_simbolos">Sembol Dönüşümü</a></span><br />
+      <br />
+Yine iletişim kutusu, <a href="#conversion_lineas">çizgilere karşılık gelen duruma</a> çok benzer, ancak burada sembol adına tıklandığında, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün o sembol tipini kütüphaneye ekleme imkanı sunduğunu belirtmek gerekir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 631px; height: 206px;" alt="" src="Imagenes/imp_dwg_simbolos.png" /><br />
+      </div>
+      <br />
+Böylece, gösterilen örnekte, <span style="font-weight: bold;">[S9]</span>'a basılırsa aşağıdaki iletişim kutusu açılır:<br />
+      <br />
+      <img style="width: 332px; height: 146px; margin-right: 7px;" alt="" src="Imagenes/imp_dwg_crear_simb.png" align="left" />Buradan, içe aktarılan bloktan bir sembol oluşturmak ve bu oluşturulan sembolü ya seçili bloğa (varsayılan seçenek), ya aynı ada sahip tüm bloklara, ya mevcut seçime atamak ya da sadece sembolü oluşturup atamamak mümkündür.<br />
+      <br />
+Ayrıca, sembolü oluşturmadan o ada sahip tüm blokları seçmek de mümkündür.<br />
+      <br />
+Ekranda sembolleri seçmek için DWG/DXF bloğundan oluşturulan sembolün yerleştirme noktasına tıklamak gerekmez, sembole bağlı bir çizgiye doğrudan tıklayarak seçilebilir. Bunu yaptıktan sonra, diyalogun ilk satırında o çizgiyle ilişkili sembolün bilgileri belirir.<br />
+      <br />
+<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_explotar.png" /> simgesiyle başlığı olan sütuna karşılık gelen PATLAT sütunundan, içe aktarılan DWG/DXF bloklarını göstermek veya gizlemek mümkündür. Şu şekilde çalışır:<br />
+      <ul>
+        <li>Eğer dikey menüdeki <a href="#opciones"><span style="font-weight: bold;">[SEÇENEKLER]</span></a>'den <a href="#explotar_bloques"><span style="font-weight: bold;">Blokları Patlat (Sembolleri Korur)</span></a> kutucuğu işaretliyse, o zaman bu kutucuklar da işaretli olur, semboller çizgilere patlatılmış olur ve buradan, eğer devre dışı bırakılırlarsa, o semboller görünmez ve dolayısıyla sadece yerleştirme noktası içe aktarılır.</li>
+      </ul>
+      <ul>
+        <li>Eğer <a href="#explotar_bloques"><span style="font-weight: bold;">Blokları Patlat (Sembolleri Korur)</span></a> seçeneği işaretli DEĞİLSE, o zaman buradan ilgili kutucukları işaretleyerek sembolleri patlatmak mümkündür (aksi takdirde, sadece yerleştirme noktaları içe aktarılır).</li>
+      </ul>
+Doğrudan <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_explotar.png" /> simgesine tıklayarak tüm sembol katmanları üzerinde genel bir işlem yapmak mümkündür.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="conversion_imagenes">Resim Dönüşümü</a></span><br />
+      <br />
+.dwg/.dxf formatındaki dosyalarda bulunan resimler de içe aktarılır. Resimlere referans veren yollarla ilgili sorunları önlemek için, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün çalışma klasörünün, resimleri içeren <span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> dosyasının bulunduğu klasörle aynı olması önemlidir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="diccionarios">Dönüşüm Sözlükleri</a></span><br />
+&nbsp;<br />
+İlgilenilen tüm elemanların çevirisi özelleştirildikten sonra, bu bilgiyi bir dosyaya kaydederek sonraki çevirilerde yüklemek ve aynı işi birden fazla yapmaktan kaçınmak mümkündür. Bunun için sağdaki menüdeki <span style="font-weight: bold;">[SÖZLÜK KAYDET]</span> butonuna veya iletişim kutusundaki <img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_guardar.png" /> simgesine tıklanır ve dönüşüm sözlüğüne bir ad atanan bir dosya seçici belirir. <span style="font-weight: bold;">[SÖZLÜK KAYDET]</span> butonu ile <img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_guardar.png" /> simgesini kullanmak arasındaki fark, ilk durumda her zaman <span class="Archivo">.cod</span> dosyası için bir ad istenmesi, ikinci durumda ise sadece daha önce oluşturulmamışsa istenmesidir.<br />
+      <br />
+      <img style="width: 309px; height: 84px; margin-left: 7px;" alt="" src="Imagenes/imp_dwg_dicc_cargar.png" align="right" />Bu bilgiyi sonraki oturumlarda yüklemek için <span style="font-weight: bold;">[SÖZLÜK YÜKLE]</span> butonuna veya <img style="width: 16px; height: 14px;" alt="" src="Imagenes/icono_abrir.png" /> simgesine tıklanmalı ve daha önce kaydedilen dosya seçilmelidir. Ardından program, tüm özellik kombinasyonları yerine sadece katmana göre sözlükleri yükleme seçeneği sunar ve iki olasılık sunar:&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      <ul>
+        <li><span style="font-weight: bold;">Normal</span> (varsayılan): Bu durumda tüm alanlar (katman, renk, kalınlık ve stil) dikkate alınır, böylece içe aktarma bu alanların kombinasyonlarına göre yapılır. Eğer sözlük tüm olası kombinasyonları içermiyorsa, program sözlük tarafından kapsanmayan her bir kombinasyon için yeni bir girdi oluşturur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sadece katmanı</span> dikkate alarak: İçe aktarıcı, sözlüğü uygulamak için sadece katman adını dikkate alır ve dolayısıyla yeni girdiler oluşturulmaz.</li>
+      </ul>
+      <img style="width: 234px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/imp_dwg_dicc_cargar_2.png" align="right" />Dosya yüklendikten sonra program, sözlükte yüklenen bilgiyi uygulamak mı yoksa sadece bellekte saklamak mı istediğinizi sorar.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+Eğer <span style="font-weight: bold;">EVET</span> yanıtı verilirse, dosyadan yüklenen ve bellekteki mevcut bir kombinasyonla eşleşen eleman kombinasyonları mevcut haritaya uygulanır; aksine <span style="font-weight: bold;">HAYIR</span> yanıtı verilirse, bilgi sadece belleğe yüklenir ancak mevcut haritada değişiklik uygulanmaz.<br />
+      <br />
+Programın eski sürüm sözlüklerini, yani <span class="Archivo">.dwg</span> dosyalarını yüklemeye izin veren sürümden öncekileri yüklemek için, <span style="font-weight: bold;">[ESKİ SÖZLÜK]</span> butonuna basılmalı ve yüklenecek sözlük seçilmelidir. Bu durumda, ekrandakilerle eşleşen kombinasyonlar yüklenir ve önceki durumda olduğu gibi, sadece bilgiyi yüklemek mi yoksa ekrandaki haritaya da uygulamak mı istediğinizi belirtmeniz gerekir.<br />
+      <br />
+Bir sözlük yüklemek istiyor ancak hangi bilgileri sakladığını tam olarak bilmiyorsanız, <span style="font-weight: bold;">[SÖZLÜK DÜZENLE]</span> butonuna basıldığında, not defterinde görüntülenecek sözlüğün seçileceği bir dosya seçici belirir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="importacion_rapida">Hızlı DWG/DXF Nesnesi İçe Aktarma</a></span><br />
+      <br />
+Program, Autocad<sup>®</sup>'den bir veya daha fazla grafik nesnesini kopyalayıp ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'e yapıştırma imkanı sunar. Autocad<sup>®</sup>'den nesne(ler)i kopyalamak için &lt;Ctrl + C&gt; ve ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'e yapıştırmak için &lt;Ctrl + V&gt; tuş kombinasyonunu kullanmak çok pratiktir.<br />
+      <br />
+Bu metodolojiyi, örneğin bir kapalı alan (recinto) için bir çizgi veya bir güzergah projesi elemanı için referans çizgisi olarak, içe aktarma ekranından geçmeye gerek kalmadan içe aktarmak çok kullanışlıdır.<br />
+      <br />
+Ancak bu işlevsellik, yalnızca aşağıdaki DWG/DXF grafik nesne sınıflarıyla sınırlıdır:<br />
+      <ul>
+        <li>Çizgiler</li>
+        <li>2D ve 3D Polilineler</li>
+        <li>Yaylar</li>
+        <li>Daireler</li>
+        <li>Elipsler</li>
+        <li>Spline'lar</li>
+      </ul>
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ortamına yapıştırıldıktan sonra, mevcut tip ve modele ait çizgilere dönüşeceklerdir.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 635px; text-align: justify;">Bu özelliğin doğru çalışması için, yapıştırma işlemi gerçekleştirilene kadar Autocad<sup>®</sup> programının açık kalması gerekebilir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br />
+<span class="Parrafo">
+      </span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

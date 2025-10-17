@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Temel İşlemler</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YÜZEY MODELLEME: Temel İşlemler<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">
+      </span><span class="Parrafo"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <a href="#superf_simples">Basit Yüzeyler Oluşturma Yardımcı Programları</a></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></div>
+
+      <div style="margin-left: 80px;"><a href="#direct_nivel_talud_inters"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sabit Kotlu Kılavuz Çizgi ve Şev Kesişimi</span></span></span></a><br />
+      <a href="#lin3D_paral3D"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">3D Çizgi ve 3D Paralel</span></span></span></a><br />
+      <a href="#linea3D_generatriz"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">3D Çizgi ve Doğrultman</span></span></span></a><br />
+      <a href="#sobre_talud"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir Şev Üzerindeki Çizgi</span></span></span></a><br />
+      <a href="#cono"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir Yüzeyle Kesişen Koni Oluşturma</span></span></span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      
+      <div style="margin-left: 40px;"><a href="#calculos_simples"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yüzeylerle Basit Hesaplamalar ve İşlemler</span></span></span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></div>
+
+      <div style="margin-left: 80px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#camino"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Maksimum Eğimli Bir Yol Çizme Yardımı</span></span></span></a><br />
+
+      <a href="#perfil_longit"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Boyuna Profil</span></span></span></a><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#corte"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir Arazi Kesitini ve Diğer Yüzeyleri Görüntüleme (Kesit)</span></span></span></a><br />
+
+      <a href="#poner_cota_sup"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir Yüzeyi Kota Getirme</span></span></span></a><br />
+
+      <a href="#esquema_plano"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğik Düzlemler Üzerinde Çizim. Düzlem Şeması</span></span></span></a><br />
+
+      <a href="#inters_superf"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yüzeylerin Kesişimi</span></span></span></a><br />
+
+      <a href="#zonas_inundacion"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Taşkın Alanlarının Hesaplanması </span></span></span></a><br /><a href="#ms_subdivide"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kapalı Alanı Böl</span></span></span></a><br /><a href="#AlargaRecorta_x_TTP_">SAM'a (.ttp) Göre Uzat/Kırp</a><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+      
+      <div style="margin-left: 40px;"><a href="#dib_gen_perf">Profilleri Çizme ve Oluşturma</a><br />
+      </div>
+<br />
+      <br />
+      <span class="Parrafo"><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br /><img style="width: 128px; height: 274px; margin-right: 7px;" alt="" src="Imagenes/util_ismos.png" align="left" /><img style="width: 75px; height: 138px; margin-left: 7px;" alt="" src="Imagenes/toolbar_ismos.png" align="right" /><span class="Parrafo">Yüzey modellemenin temel işlemleri, <span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsü altında gruplandırılmıştır ve ayrıca YÜZEY MODELLEME modülüne girildiğinde otomatik olarak açılan özel bir <a href="EDM_barras_herramientas.html">araç çubuğu</a> aracılığıyla da doğrudan erişime sahiptir.<br /><br />Bu yardımcı programlar, kullanıcıya koniler ve temel şevler gibi basit yüzeyleri hızlı bir şekilde elde etme, ayrıca <a href="EDM_control_entidades.html#control_superficies">yüzeyler</a> arasında kesişim hesaplama, kotlarını değiştirme, maksimum eğimini takip eden bir yol oluşturma yardımı, hızlı profil kesitleri alma gibi işlemleri yapma imkanı tanır.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="superf_simples">Basit Yüzeyler Oluşturma Yardımcı Programları</a></span><br />
+      <span class="Parrafo"><br />
+Kavramsal olarak yüzeylerin oluşturulması, aşağıdaki şekilde belirtildiği gibi bir kılavuz çizgi (directriz) ve bir doğrultmanın (generatriz) katılımını gerektirir: <br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 377px; height: 319px;" alt="" src="Imagenes/directriz_generatriz.png" /><br />
+      <br />
+      <span class="Info">Doğrultman ve Kılavuz Çizgi Kavramı</span><br />
+      </span><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />Bu bölümde, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün YÜZEY MODELLEME modülünde yer alan temel yüzeylerin oluşturulması için üç yöntem açıklanmaktadır:<br /></span>
+      <ul>
+        <li><a href="#direct_nivel_talud_inters"><span class="Parrafo">Sabit Kotlu Kılavuz Çizgi ve Şev Kesişimi</span></a></li>
+        <li><a href="#lin3D_paral3D"><span class="Parrafo">3D Çizgi ve 3D Paralel</span></a></li>
+        
+        <li><a href="#linea3D_generatriz"><span class="Parrafo">3D Çizgi ve Doğrultman</span></a></li>
+
+      </ul>
+      <span class="Parrafo">Üçüncü yöntem, yukarıdaki şekilde gösterilen yüzey oluşturma modeline (vektörel kılavuz çizgi ve doğrultman) tam olarak karşılık gelirken, ilk iki yöntem doğrultmanı bir dizi yardımcı parametre ile tanımlar. Ancak, her yöntemin, kullanıcının bir yöntemi veya diğerini kullanmaya karar verirken değerlendirmesi gereken avantajları ve dezavantajları vardır.<br /><br /><br />
+      </span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="direct_nivel_talud_inters">Sabit Kotlu Kılavuz Çizgi ve Şev Kesişimi</a></span><br />
+      <span class="Parrafo"><br />Bu yöntem, bir kılavuz çizgiden başlayarak, kullanıcı tarafından önceden belirlenmiş yukarı, aşağı veya yatay bir eğime sahip bir yüzey oluşturur, topografik yüzeyle kesişimini belirler ve bunu yeni bir tipte eşyükselti eğrileriyle temsil eder. Yüzey, kullanıcı tarafından önceden belirlenen kotta veya ondan tanımladığı mesafede sona erecektir; aynı şekilde, yapımı tasarımcı istediğinde sonlandırılabilir veya topografik yüzeyi geçene kadar büyümesine izin verilebilir. Yöntem iki adımdan oluşur:<br />
+      </span>
+      <ol>
+        <li><img style="width: 159px; height: 75px; margin-left: 7px;" alt="" src="Imagenes/dialogo_directriz_nivel.png" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Sabit Kotlu Kılavuz Çizginin Oluşturulması</span>: <span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Sabit Kotlu Kılavuz Çizgi</span> seçeneğine veya araç çubuğundaki &nbsp;<img style="width: 19px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_direcNivel.png" /> simgesine tıklandıktan sonra, kılavuz çizginin kotunun ve onu oluşturacak köşe noktalarının (X,Y) girildiği bir iletişim kutusu belirir. Kot girildiğinde, seçilen kotun eşyükselti eğrileri (eğer varsa) yeşil renkte, verilen kotun hemen üstündeki ve altındaki ise beyaz renkte vurgulanır. <span style="font-weight: bold;">[Tamam]</span> butonuna basıldıktan sonra kullanıcı, şu iki durumdan birinde olacağını dikkate alarak çizgiyi doğrudan harita üzerinde oluşturur:<br />
+          </span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo">O kotta eşyükselti eğrileri var: Bu durumda yeşil renkte vurgulanırlar ve kullanıcı, ilk ve son segmentin seçilen yeşil vurgulu eşyükselti eğrisini kesecek şekilde çizgiyi grafiksel olarak çizmelidir, yani birinci ve ikinci nokta çizginin farklı taraflarında olmalı ve sondan bir önceki ile sonuncu için de aynı durum geçerlidir. <br />
+</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">O kotta eşyükselti eğrileri yok: Bu durumda, sadece verilen kotun hemen üstündeki ve altındaki beyaz renkte vurgulanır ve o zaman hem ilk hem de son segment, bu beyaz vurgulu eşyükselti eğrilerini aynı anda kesmelidir.<br />
+</span></li>
+      </ul>
+      <span class="Parrafo"></span></div>
+      <div style="margin-left: 40px;"><span class="Parrafo">Her iki durumda da program, ilk ve son segment üzerinde araziyle kesişimi belirler, sabit kotlu kılavuz çizgiyi (L40 tipi çizgi) oluşturur ve fazla çizgi parçalarını siler. Kesişim yoksa, program bunu kapalı bir çizgi olarak kabul eder.<br />
+      </span><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <ol start="2">
+        <li><span class="Parrafo"><span style="font-weight: bold;">Şev parametrelerinin ve araziyle kesişiminin tanımı</span>: <span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Şev Kesişimi</span> seçeneğine </span><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 20px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_taludInters.png" /> simgesine tıklandığında, </span><span class="Parrafo">aşağıdaki parametreler grafiksel olarak istenir:</span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Dayanak Kılavuz Çizgisi</span>. Kılavuz çizgi olarak, sadece <span style="font-weight: bold;">Sabit Kotlu Kılavuz Çizgi</span> seçeneği ile oluşturulanlar değil, aynı zamanda <span style="font-weight: bold;">Şev Kesişimi</span> ile oluşturulan veya kullanıcı tarafından tasarım çizgileri olarak tanımlanan herhangi bir çizgi de kullanılabilir. Bu, yüzeyleri birbirine bağlamayı sağlar, bu da palyelerle, farklı eğimli bölümlerle vb. kesintiye uğrayan ardışık şevlerin oluşturulmasında çok pratiktir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kılavuz çizginin yüzeyin oluşturulacağı tarafı</span>.<br />
+</span></span></li>
+      </ul>
+
+      <span class="Parrafo"><img style="width: 234px; height: 135px; margin-left: 7px;" alt="" src="Imagenes/dialogo_talud_inters.png" align="right" /></span>Bu veriler girildikten sonra, kullanıcının aşağıdakileri belirtmesi gereken bir iletişim kutusu gösterilir:<br />
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Yüzeyin eğimi</span> (%). Kılavuz çizgiden itibaren tüm yüzeyde sabit olacaktır. Burada negatif bir değer alçalan yönü, pozitif bir değer ise yükselen yönü belirtir. Eğer girilen eğim sıfır ise, program yüzeyin kenarını çizeceği <span style="font-weight: bold;">mesafeyi</span> sorar. Aksi takdirde, <span style="font-weight: bold;">nihai kotu</span> ister. Burada, programın topografik yüzeyi geçene kadar hesaplama yapması isteniyorsa, duruma göre yeterince yüksek veya düşük bir değer girilir.</span></span></li>
+      </ul>
+
+      
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Arama faktörü</span>; bu, ardışık paralel çizgilerin araziyle kesişimini ararken kullanılan bir toleranstır.</span></li>
+      </ul>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 637px; height: 242px;" alt="" src="Imagenes/diagrama_direc_nivel_talud_inters.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Tüm veriler bildirildikten sonra, hesaplama başlar ve program elde edilen eşyükselti eğrilerini birer birer sunar ve kullanıcının bunları kabul etmesini bekler. Eğer kullanıcı bir çizgiyi reddederse, oluşturma durur. Toprak işleri modülü belirli bir kot için makul bir çözüm bulamadığında, hesaplama için kullandığı çizgiyi geçici olarak sarı renkte sunar ve "Eksik çözüm. Kabul ediliyor mu?" mesajını gösterir ve operatör EVET veya HAYIR yanıtıyla karar verir. Eğer yanıt HAYIR ise çizgi silinir, EVET ise kabul edilir ve tasarımcının güzergahını manuel olarak değiştirmesine olanak tanır.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 389px; height: 212px;" alt="" src="Imagenes/ejem_direct_talud_inters.png" /><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br /><span class="Info">Kılavuz Çizgi + Şev Kesişimi yöntemiyle yüzey elde etme örneği</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span><span style="font-weight: bold; font-style: italic;"><a name="lin3D_paral3D">3D Çizgi ve 3D Paralel</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Bu yöntem, mevcut bir çizgiye paralel bir dizi çizgi oluşturmayı sağlar. Eğer başlangıç çizgisi üç boyutlu ise (her noktada farklı kot), sonuç çizgiler de öyle olur. Program mesafeyi, hangi tarafa, vb. ve oluşturacağı ara bölüm veya çizgi sayısını sorar. Yöntem iki adımdan oluşur:<br />
+      </span></span>
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo">Eğer zaten mevcut değilse, SAYISAL HARİTACILIK modülünün CAD'i ile kılavuz çizgi görevi görecek bir <span style="font-weight: bold;">çizgi oluşturma</span>.</span></span></li>
+      </ol>
+      <ol start="2">
+        <li><img style="width: 316px; height: 154px; margin-left: 7px;" alt="" src="Imagenes/dialogo_paralela_3D.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sabit eğimli bir yüzey oluşturmak için parametrelerin tanımı</span>. Bu parametreler, </span></span><span class="Parrafo"> <span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">3D Paralel</span> seçeneğine </span><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 21px; height: 20px;" alt="" src="Imagenes/icono_toolBarIsmos_paral3D.png" /> simgesine tıklandığında bildirilir</span><span class="Parrafo"><span class="Parrafo"> ve şunlardır:</span></span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Önceki adımda bildirilen ve grafiksel olarak seçilen dayanak kılavuz çizgisi.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Yüzeyin eğimi (%). Kılavuz çizgiden itibaren tüm yüzeyde sabit olacaktır.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Yüzeyin nihai kotu.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Yüzeyin oluşturulacağı kılavuz çizginin tarafı.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Yüzeyin oluşturduğu aralık veya eşyükselti eğrisi sayısı.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div><span style="font-weight: bold; font-style: italic;">Segmentlere göre eğim</span> seçeneği, kılavuz çizginin her segmentine farklı eğimler vermeyi sağlar. Etkinleştirildiğinde, her bir kenar grafiksel olarak ekranda tanımlanır ve kullanıcının her kenarın eğimini değiştirebilmesi için iletişim kutusunun sağ tarafı etkinleştirilir. Eğer genel eğim değiştirilirse, o zaman tüm kenarların eğimi değiştirilir.<br />
+<br />
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 637px; height: 242px;" alt="" src="Imagenes/diagrama_L3D_paral3D.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <table style="text-align: left; height: 50px; width: 544px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 305px;"><img style="width: 270px; height: 152px;" alt="" src="Imagenes/ejem_lin3D_paral3D_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 233px; text-align: right;"><img style="width: 168px; height: 159px;" alt="" src="Imagenes/ejem_lin3D_paral3D_2.png" /><br />
+            </td>
+          </tr>
+          <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 233px;"><span class="Info"><br />
+3D Çizgi + 3D Paralel yöntemiyle yüzey elde etme örnekleri</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="linea3D_generatriz">3D Çizgi ve Doğrultman</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Bu yöntemi kullanarak, kılavuz çizgi olarak kullanılan üç boyutlu bir çizgiyi takip ederek kayan bir enkesit (doğrultman) kullanarak bir yüzey elde edilebilir. Yöntem aşağıdaki adımlardan oluşur:<br />
+      </span></span>
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo">Eğer zaten mevcut değilse, SAYISAL HARİTACILIK modülünün CAD'i ile kılavuz çizgi görevi görecek bir <span style="font-weight: bold;">çizgi oluşturma</span>.</span></span></li>
+      </ol>
+      <ol start="2">
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Doğrultmanın tanımı</span>; <span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Doğrultman</span> seçeneğine </span></span><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 19px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_generatriz.png" /> simgesine tıklandığında yapılır</span><span class="Parrafo"><span class="Parrafo">. <a href="definicion_vectorial.html">Vektörel tanımı</a>, doğrultmanın enkesitini tanımlayan segmentleri oluşturan, eksene olan mesafe ve kot artışı (<span style="font-weight: bold;">delta Z</span>) veri çiftlerinden oluşan bir liste hazırlamayı sağlar:</span></span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 456px; height: 204px;" alt="" src="Imagenes/def_generatriz.png" /></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <table style="text-align: left; width: 672px; height: 168px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 262px;"><img style="width: 258px; height: 147px;" alt="" src="Imagenes/ejem_lin3D_generatriz_1.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 233px; text-align: center;"><img style="width: 212px; height: 87px;" alt="" src="Imagenes/ejem_lin3D_generatriz_2.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 169px; text-align: right;"><img style="width: 146px; height: 115px;" alt="" src="Imagenes/ejem_lin3D_generatriz_3.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" rowspan="1" style="vertical-align: top; width: 262px;"><br />
+            <div style="text-align: center;"><span class="Info">3D Çizgi + Doğrultman yöntemiyle yüzey elde etme örnekleri</span><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="sobre_talud">Bir Şev Üzerindeki Çizgi</a></span><br style="font-weight: bold; font-style: italic;" />
+      <span class="Parrafo"><br />Bir ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> üç boyutlu çizgisi artı bir enkesit eğimi, geometrik olarak bir geçiş yüzeyi tanımlar. Bu seçenek, </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Şev Üzerinde</span> seçeneğine </span><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 18px; height: 16px;" alt="" src="Imagenes/icono_toolBarIsmos_sobreTalud.png" /> simgesine tıklandığında erişilebilir ve </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">o teorik yüzey üzerinde başka çizgiler oluşturmayı sağlar.<br /><br />Yeni çizgilerin eşyükselti eğrisi olması gerekmez ve belirli bir boyuna eğimle oluşturulabilirler.<br /><br /></span></span></span></span></span></span><img style="width: 234px; height: 105px; margin-left: 7px;" alt="" src="Imagenes/dialogo_sobre_talud.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Toprak işleri modülü, kılavuz çizginin gidiş yönünü ve enkesit eğiminin işaretini kullanarak şevin hangi tarafa ve hangi yöne uzanacağını belirler. Yeni çizginin kotu, başlangıç noktasının kotuna atıfta bulunur, çünkü boyuna eğim, yeni çizgi boyunca kotu değiştirecektir.<br /><br />Bu seçenek, örneğin bir açık ocak madeninde bir rampa tasarlarken çok kullanışlıdır. Bu durumda, prosedür aşağıdaki gibi olacaktır:<br /></span>
+      <ul>
+        <li><span class="Parrafo">3D kılavuz çizgisi, ocağın konturu ve enkesit eğimi şev olacaktır.</span></li>
+        <li><span class="Parrafo">Boyuna eğim, rampanın eğimidir.</span></li>
+        <li><span class="Parrafo">Bu şekilde, rampanın kenarının ilk bölümü elde edilir.</span></li>
+        <li><span class="Parrafo">O bölüme bir paralel, rampanın diğer kenarını elde etmeyi sağlar; bu da rampanın başka bir bölümünün kılavuz çizgisi olacaktır.</span></li>
+        <li><span class="Parrafo">İşlemi ardışık olarak yürüterek, resimde gösterildiği gibi rampanın tasarımı elde edilir:</span></li>
+      </ul>
+      
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 459px; height: 266px;" alt="" src="Imagenes/ejem_sobreTalud.png" /><br />
+      <br />
+      <span class="Info">Şev üzerinde çizgi kullanım örneği</span><br />
+      </span><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="cono">Bir Yüzeyle Kesişen Koni Oluşturma</a></span><br />
+      <span class="Parrafo"><br />
+Bu seçenek, </span><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Koni</span> seçeneğine </span><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 20px; height: 12px;" alt="" src="Imagenes/icono_toolBarIsmos_cono.png" /> simgesine tıklandığında erişilebilir ve </span><span class="Parrafo">bir noktada tepe noktası olan ve verilen bir eğime sahip olan koninin bir yüzey üzerine oturduğu koniyi belirler.<br />
+      <br />Bir iletişim kutusu aracılığıyla program şunları ister:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Koninin oturacağı yüzey.</span></li>
+        <li><span class="Parrafo">Koninin tepe noktası olacak nokta.</span></li>
+        
+        <li><span class="Parrafo">Koninin eğimi (%).</span></li>
+        <li><span class="Parrafo">Koni yüzeyini ayrıklaştırmak için nokta sayısı.</span></li>
+        <li><span class="Parrafo">Koni yüzeyi için model numarası.</span></li>
+      </ul>
+      <span class="Parrafo">Verilen verilere bağlı olarak, program, noktanın kotuna ve haritanın en düşük kotuna bağlı olarak koninin tabanındaki maksimum yarıçapı hesaplar. Bu değer sunulur ve örneğin, ters koniler gerçekleştirmek için değiştirilebilir.<br />
+      <br />
+</span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 549px; height: 287px;" alt="" src="Imagenes/ejem_cono_ismos.png" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Kutudaki veriler değiştirildikçe, program koninin nasıl görüneceğini gösterir. Kabul edildikten sonra iki tür çizgi oluşturulur:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Koninin doğrultmanları.</span></li>
+        <li><span class="Parrafo">Diğer yüzeyle kesişim çizgisi.</span></li>
+      </ul>
+      <span class="Parrafo"><br /></span></span></span></span></span></span><span class="Titulo_2"><a name="calculos_simples">Yüzeylerle Basit Hesaplamalar ve İşlemler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu başlık altında, bir hacim hesaplaması, maksimum eğimli bir yol oluşturma, iki yüzey arasındaki kesişim gibi basit bir hesaplama elde etme amacıyla yüzeyler üzerinde çalışmaya yönelik araçlar toplanmıştır.<br />
+      <br />
+      <br />
+      </span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="camino">Maksimum Eğimli Bir Yol Çizme Yardımı</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span><img style="width: 429px; height: 184px; margin-left: 7px;" alt="" src="Imagenes/ismos_ejem_camino.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu yardımcı program, </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Yol</span> seçeneğine </span><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 18px; height: 16px;" alt="" src="Imagenes/icono_toolBarIsmos_camino.png" /> simgesine tıklandığında erişilebilir ve </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">temel topografya üzerinde sabit eğimli yardımcı yolların çiziminde bir yardım seçeneği oluşturur.<br />
+      <br />
+Bu düğmeye basıldığında, program komut satırında yol için istenen eğimi sorar. O zaman kullanıcı, bir eşyükselti eğrisinin bir noktasına tıklayarak yolun noktalarını girmeye başlamalıdır, böylece girilen noktanın kotu belirlenebilir. Girilen her noktada, toprak işleri modülü, yolun eğiminin sabit ve girilen değere eşit kalması için bir sonraki noktanın olası konumlarını önerir.<br />
+      <br />
+Bu iletişim kutusunda aşağıdaki bilgiler tespit edilebilir:<br />
+</span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Yüzey</span>: 26, 27, 40 vb. tipteki gibi düz veya eşyükselti çizgileri içermelidir...</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Başlangıç A</span>: Yolun başlangıç noktası. Yüzeyin herhangi bir elemanı üzerinde olması gerekmez, çünkü program ona karşılık gelen kotu arar.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Hedef B</span>: Yolun bitiş noktası. Kotu da otomatik olarak atanır.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Maksimum eğim</span>.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Dönüş kurpları arasındaki minimum uzunluk</span>.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Başlangıç yönü</span> A,B,C,D. Başlangıçtan veya son kabul edilen noktadan itibaren birden fazla olasılık olduğunda, bunlar grafiksel olarak gösterilir ve aralarından seçim yapılmasına olanak tanır.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kabul et</span>: Program, A'dan B'ye tam bir güzergah gösterir, başlangıç yönü C, D,... seçilerek değiştirilebilir ve güzergahı temsil eden noktalardan birine kadar kabul edebiliriz. O zaman herhangi bir değeri değiştirebiliriz: Eğim, uzunluk, yön ve bunlar sadece kabul edilen noktadan itibaren uygulanacaktır. Son kabul edilen noktayı değiştirirken, sonraki bir noktayı veya önceki bir noktayı seçebiliriz.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kabul Et</span>: A'dan B'ye son güzergahla bir poliline oluşturarak araçtan çıkar. B'ye kadar kabul etmek gerekli değildir.</span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 329px; height: 192px;" alt="" src="Imagenes/camino.png" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Noktayı Taşı</span>, güzergahın herhangi bir noktasını kendi eşyükselti eğrisi üzerinde kaydırmayı sağlar. Bu nokta, kabul edilen nokta olur ve sonraki noktalar yeniden hesaplanır.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">B noktasını değiştirirken, eğer zaten kabul edilmiş bir nokta varsa, sadece </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">kabul edilen noktadan B noktasına kadar olan yol yeniden hesaplanır.</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Yol çizgisi oluşturulduktan sonra (sadece <span style="font-weight: bold;">İptal</span> seçeneği onu siler), iletişim kutusunu kapattığımızda son deneme için oluşturulan çizgi kalacaktır.</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Noktaları Taşı</span> seçeneğiyle bir Noktayı döngüsel olarak taşıyabilirsiniz.<br />
+</span></span></span></span></span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="perfil_longit">Boyuna Profil</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu seçenek, bir veya daha fazla yüzey üzerinde bir veya daha fazla çizgiyi takip ederek profiller oluşturmayı sağlar. A</span><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Profil</span> seçeneğine </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 18px; height: 19px;" alt="" src="Imagenes/icono_toolBarIsmos_perfil.png" /> simgesine tıklandığında erişilebilir. &nbsp;Daha fazla bilgi için &nbsp;<a href="MS_perfil.html">Profil</a>'e gidin. <br /></span></span></span></span></span></span></span><span class="Parrafo"><br />
+<br /></span><span style="font-weight: bold; font-style: italic;"><a name="corte">Bir Arazi Kesitini ve Diğer Yüzeyleri Görüntüleme (Kesit)</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu seçenek, </span><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Kesit</span> seçeneğine </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarIsmos_corte.png" /> simgesine tıklandığında erişilebilir</span></span></span></span></span></span></span><span class="Parrafo">, haritanın iki noktasına tıklanmasını ister, ardından program <span style="font-weight: bold;">Kontrol</span> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span><span class="Parrafo"> <a href="EDM_control_entidades.html#control_superficies"><span style="font-weight: bold;">Yüzey Kontrolü</span></a> menüsünde tanımlanan tüm yüzeyler üzerindeki kesiti gösteren dikey bir kesit oluşturur.<br />
+Bu araç döngüsel modda çalışır. Yeniden çizim yapıldığında veya yakınlaştırıldığında, profil çizimi ve kesit planı kalır.<br />
+Kullanımı bittiğinde, ESC tuşuna basıldığında, bu araç kullanılarak elde edilen son kesit olan &nbsp;<span class="Archivo">corte.per</span> profilini düzenleyebileceğimiz bir iletişim kutusu sunulur.<br />
+<br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="poner_cota_sup">Bir Yüzeyi Kota Getirme</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu seçenek, </span><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Kota Getir</span> seçeneğine </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarIsmos_ponerEnCota.png" /> simgesine tıklandığında erişilebilir ve </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">kotu bilinmeyen veya hatalı olan başka bir yüzeye ait tüm çizgileri ve sembolleri, kotu geçerli olan çizgilerden oluşan bir yüzey kullanarak 3D'ye getirmeyi sağlar.</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu ikinci yüzeyin çizgileri, <a href="EDM_control_entidades.html#control_sup_cartograficas">Harita Yüzeyleri Kontrolü</a>'nde bildirilen <a href="EDM_control_entidades.html#modo_interpolacion">enterpolasyon moduna</a> göre yerleştirilir.<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Doğrusal Enterpolasyon</span>: Bu modda, kot veren yüzeyin çizgileriyle kesişim noktasında yeni bir nokta atanır ve orijinal çizginin her bir köşe noktasında (dik kesitler yöntemiyle) ve her iki uçta kot enterpole edilir.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Profiller</span>: Bu durumda, kot veren yüzeylerin çizgileriyle kesişimler aranır, K-G ve D-B dik profilleriyle başlangıç ve bitiş noktalarının kotu hesaplanır ve son olarak, çizginin kendi köşe noktalarında, kesişimlerle zaten aldığı kotlu noktalardan yola çıkarak kot enterpole edilir.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Seçeneğe tıklandığında, modül önce kota getirilecek yüzeyi ve ardından kotları verecek olan yüzeyi sorar.<br />
+<br /><br /></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="dib_gen_perf">Profilleri Çizme ve Oluşturma</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Profilleri Çiz</span> seçeneği, </span><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsünde, ayrıca araç çubuğundaki &nbsp;<img style="width: 19px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_dibPerf.png" /> simgesinden de erişilebilir ve </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">GÜZERGAH PROJESİ modülünün <a href="OL_planos_transversales.html">enkesit paftaları</a> elde etme aracına erişim sağlar.<br />
+      <br />
+</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Benzer şekilde, </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Profilleri Oluştur</span> seçeneği, </span><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsünde</span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, ayrıca araç çubuğundaki &nbsp;<img style="width: 20px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_genPerf.png" /> simgesinden de erişilebilir ve </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">kullanıcının <a href="OL_perf_transv.html">enkesitler elde edeceği</a> bir eksen tasarlayabilmesi için GÜZERGAH PROJESİ modülünün <a href="OL_planta_diseno.html">plan tasarımı</a> menüsüne erişim sağlar.</span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="esquema_plano">Eğik Düzlemler Üzerinde Çizim. Düzlem Şeması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu seçenek, </span><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Düzlem Şeması</span> seçeneğine </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_toolBarIsmos_esqPlano.png" /> simgesine tıklandığında erişilebilir ve </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">bir <a href="definicion_vectorial.html">vektörel çizim</a> oluşturmayı ve ardından bir taban noktası ve bir tepe noktası seçerek (yakalama modlarını kullanarak) eğik bir düzleme uyarlamayı sağlar.<br />
+      <br />
+Üzerine çizim yapılan düzlem, taban noktası ile tepe noktasını birleştiren çizginin maksimum eğimine sahip olan düzlemdir.<br />
+      <br />
+Vektörün ilk noktası taban noktasına ve sonuncusu tepe noktasına yakalanır ve bu noktaların çakışması için çizim yeniden ölçeklendirilir.<br />
+</span></span></span></span><br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="inters_superf">Yüzeylerin Kesişimi</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img style="width: 309px; height: 109px; margin-left: 7px;" alt="" src="Imagenes/dialogo_inters_superf.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Bu seçenek, </span><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Yüzeylerin Kesişimi</span> seçeneğine </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarIsmos_interSup.png" /> simgesine tıklandığında erişilebilir ve </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">iki yüzey arasındaki kesişim noktalarını oluşturur.<br />
+      <br />
+Kesiştirilecek iki <span style="font-weight: bold;">yüzeyi</span> seçtikten sonra, program birinci yüzeyin çizgilerinin ikinci yüzey üzerindeki kesitlerini analiz ederek ortak kot noktalarını (dolayısıyla kesişimleri) bulur ve bir daire ile işaretler. Ardından bu noktaları birleştirerek belirtilen <span style="font-weight: bold;">çizgi tipiyle</span> kesişim çizgisini oluşturur.<br />
+      <br />
+</span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 637px; height: 242px;" alt="" src="Imagenes/diagrama_inters_superf.png" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Analiz sistemi göz önüne alındığında, hesaplama sürelerini en aza indirmek için ilk yüzey olarak en basit olanı vermek tavsiye edilir.<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 545px; height: 205px;" alt="" src="Imagenes/ejem_inters_superf.png" /><br />
+      <span class="Info">Yüzey kesişimi örneği</span><br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="zonas_inundacion">Taşkın Alanlarının Hesaplanması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu seçenek, </span><span class="Parrafo"><span style="font-weight: bold;">[Yardımcı Programlar]</span> alt menüsündeki <span style="font-weight: bold;">Taşkın Alanları</span> seçeneğine </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> veya araç çubuğundaki &nbsp;<img style="width: 21px; height: 9px;" alt="" src="Imagenes/icono_toolBarIsmos_zonasInund.png" /> simgesine tıklandığında erişilebilir ve </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">en az bir yüzeyin tanımlandığı bir EDM ve bir nehir çizgisi üzerinden taşkın alanlarını hesaplamayı sağlar.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 459px; height: 154px;" alt="" src="Imagenes/dialogo_zonas_inundacion.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu seçenek seçildikten sonra, program kullanıcıdan <span style="font-weight: bold;">nehir çizgisini</span> seçmesini ister (gerçek kotu olmalıdır) ve ardından aşağıdaki bilgilerin girilmesi gereken bir iletişim kutusu gösterilir:</span></span></span></span></span></span><br />
+<ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Taşkın konturunun hesaplanacağı yüzey (taşkın alanıyla kesişecektir).</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Taşkın alanının hesaplanacağı başlangıç ve bitiş noktaları (profil elde etme ekseni).</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Veri alma aralığı (profiller arası aralık).</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Profiller için yarı bant genişliği.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Nehir çizgisi üzerindeki su yüksekliği.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Taşkın alanını temsil edecek çizgiler için model numarası.</span></span></span></span></span></span></li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 636px; height: 241px;" alt="" src="Imagenes/diagrama_zonas_inund.png" /><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><span class="Parrafo"><img style="width: 366px; height: 285px; margin-left: 7px;" alt="" src="Imagenes/ejem_zona_inund.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Seçenek, yüzey üzerinde enkesitler hesaplar ve bunların, o profildeki nehir çizgisinin kotu artı su yüksekliğine eşit bir kota sahip yatay bir çizgi ile kesişimini belirler. Son olarak, kesişim noktaları planda birleştirilerek taşkın alanını belirleyen kontur oluşturulur.<br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 316px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 263px; text-align: justify;">YÜZEY MODELLEME modülü ayrıca, HEC-RAS<sup>®</sup> programından gelen verilere dayanarak bu alanların hassas bir şekilde hesaplanmasını sağlayan <a href="MS_llanuras_inundacion.html">TAŞKIN SAHALARI</a> menüsüne de sahiptir.<br /></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="ms_subdivide"><span style="font-weight: bold; font-style: italic;"></span></a><a name="zonas_inundacion"><span style="color: black;"></span></a><a name="ms_subdivide"></a>Kapalı Alanı Böl</span><br /><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu araç, Kapalı Alanı Böl ve &nbsp;Sabit Noktadan Kapalı Alanı Böl aracı gibi çalışır, ayrıca kapalı alan (araç bu çizginin bir üçgenlemesini yapar) ile bir SAM arasındaki hacme bağlı olarak bölme yapmayı sağlar:<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 400px; height: 231px;" alt="" src="Imagenes/ms_subdividir_recinto.png" /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></div><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="AlargaRecorta_x_TTP_"></a>SAM'a (.ttp) Göre Uzat/Kırp</span><br /><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu araç, bir SAM dosyasının yüzeyini kullanarak, belirtilen bir tipteki iki noktalı çizgileri uzatır veya kırpar. <br />Değiştirilen nokta en yüksek veya en alçak olan olabilir.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 400px; height: 167px;" alt="" src="Imagenes/alarga_recorta_ttp.png" /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></div><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

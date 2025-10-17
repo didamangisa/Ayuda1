@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Kurp İşaretlemesi</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>KURP İŞARETLEMESİ (VİRAJ YÖNLENDİRME PANELLERİ)<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><img style="width: 53px; height: 113px;" alt="" src="Imagenes/balizastres.png" align="right" hspace="6" />Bu
+menü, virajlarda yönlendirme panellerinin doğru bir şekilde yerleştirilmesi için sırasıyla tek, iki ve üç panelli yönlendirme levhalarını temsil eden sembollerin (S971, S972, S973, S981, S982, S983) yerleştirilmesine yardımcı olur. Yönlendirme panellerinin kullanımı, belirli virajlara yaklaşma hızı nedeniyle oluşabilecek tehlikeye karşı sürücüyü uyarır.<br />
+      <br />
+Belirli bir taşıt ile hız diyagramı hesaplandığında, her bir kurp için aşağıdaki bilgileri gösteren <strong>baliza.res</strong> raporu oluşturulur:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Seyir yönü.</span></li>
+        <li><span class="Parrafo">Aliyman numarası.</span></li>
+        <li><span class="Parrafo">Seyir yönündeki kurp başlangıç kilometresi.</span></li>
+        <li><span class="Parrafo">Kurp öncesi hız.</span></li>
+        <li><span class="Parrafo">Kurptaki limit hız.</span></li>
+        <li><span class="Parrafo">İki hız arasındaki fark (dV).</span></li>
+        <li><span class="Parrafo">Kurptaki panel sayısı: aralık = (R/10 >= 10), n=uzunluk/aralık.</span></li>
+        <li><span class="Parrafo">İlk panelin tipi: Yok (dV &lt; 15), tekli (15 &lt; dV &lt; 30), ikili (30 &lt; dV &lt; 45), üçlü (45 &lt; dV).</span></li>
+      </ul>
+      <span class="Parrafo">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_balizamiento.png" alt="" style="width: 615px; height: 338px;" /></span><br />
+      <span class="Parrafo"></span></div>
+      </span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"></span>Örnek: DEMO klasöründeki <span class="Archivo">Estructura_Doble.isa</span>.<br /><span class="Parrafo"><span class="Parrafo"></span></span></span></div><span class="Parrafo"><span class="Parrafo"><br />Yönlendirme panellerini oluşturmak için, öncelikle <strong>Parametreler</strong> düğmesine basarak yerleşim kriterlerini yapılandırmalıyız:<br />
+</span></span>
+      <ul>
+        <li>Paneller arasındaki <strong>Aralık</strong>; yerleştirilecekleri kurbun yarıçapının bir oranı olarak, minimum ve maksimum değerlerle birlikte.</li>
+      </ul>
+      <ul>
+        <li><strong>Görüş</strong> kriterinin yapılandırılması ve kullanılıp kullanılmayacağı (aşağıda detaylandırılmıştır).</li>
+      </ul>
+      <ul>
+        <li>Panellerin, karşı yöndeki ilk panelin pozisyonunu <strong>Geçmesine</strong> izin verilip verilmeyeceği.</li>
+      </ul>
+      <ul>
+        <li>Paneller arasındaki mesafenin, konumlarını belirlemek için kullanılan <strong>Dış</strong> çizgi üzerinden ölçülüp ölçülmeyeceği.</li>
+      </ul>
+      <ul>
+        <li>Her iki yöndeki ilk paneller arasındaki mesafenin minimumdan az olması durumunda, her ikisinin de <strong>Orta Noktaya</strong> yerleştirilip yerleştirilmeyeceği.<br />
+        </li>
+      </ul>
+<strong>Oluştur</strong> düğmesine basıldığında, paneller aşağıdaki yöntemle yerleştirilir:<br />
+
+      
+      
+      <ul>
+
+        <li><span class="Parrafo">İlk panel için, panelin platform tarafındaki kenarının konumu; kurptan önceki düzlüğün son noktasında <strong>şerit ortasından</strong> veya <strong>şerit kenarından</strong> (sağa kurplarda eksen) uzatılan doğrunun (<strong>Görüş Teğeti</strong>), <strong>dış banket kenarına</strong>&nbsp; veya <strong>kaplama kenarına</strong> (<strong>Kesişim noktası</strong> kutucuğundaki seçime bağlı olarak) <strong>bir metre</strong> (varsayılan değer, değiştirilebilir) paralel bir çizgi ile kesişimi olarak hesaplanır. Yönelimi, bu doğruya (görüş hattına) diktir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Paneller arasındaki aralık, kullanıcı tarafından tanımlanan bir <strong>R/k</strong> değerinden yola çıkılarak belirlenir (varsayılan k = 10).<br />
+</span></li>
+
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo">Bu aralık, (kullanıcı tarafından tanımlanan) minimumdan küçükse, minimuma ayarlanır. Maksimumdan büyükse, maksimuma ayarlanır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eğer <strong>Görüş</strong> seçeneği etkinse, tanımlanan görüş açısı içinde minimum/maksimum <i>n</i> adet panelin bulunacağı şekilde iki yeni minimum ve maksimum aralık hesaplanır. Önceki noktanın kontrolü bu yeni minimum/maksimum değerlerle tekrarlanır.<br />
+</span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo">Arada
+düzlük olmayan ve önceki kurbun yarıçapı daha büyük olan ardışık iki kurp olduğunda, bir sonraki kurbun işaretlenip işaretlenmeyeceğini belirlemek için bu kurpta ulaşılan maksimum hız da dikkate alınır.<br /><br />Her zaman, önceki aliyman (düzlük veya daha küçük yarıçaplı bir kurp olsa bile) üzerinde ulaşılan maksimum hız ile mevcut kurptaki spesifik hız karşılaştırılır. Bu hızlar baliza.res raporunda [V önce] ve [V kurp] olarak gösterilir.<br /><br />Tekli, ikili veya üçlü panel uygulamak için hız farkları yapılandırılabilir:<br /></span><ul><li><span class="Parrafo"><span class="Parrafo">[&gt;]&nbsp;&nbsp; dV > 15</span></span></li><li><span class="Parrafo"><span class="Parrafo">[&gt;&gt;]&nbsp; dV > 30</span></span></li><li><span class="Parrafo"><span class="Parrafo">[&gt;&gt;&gt;] dV > 45</span></span></li></ul><span class="Parrafo"><span class="Parrafo">Bu şekilde, sadece tekli ve ikili panelleri kullanmak istersek şöyle ayarlayabiliriz:<br /></span></span><ul><li><span class="Parrafo"><span class="Parrafo">[&gt;]&nbsp; dV >&nbsp; 5</span></span></li><li><span class="Parrafo"><span class="Parrafo">[&gt;&gt;] dV > 20</span></span></li><li><span class="Parrafo"><span class="Parrafo">[&gt;&gt;&gt;] dV > 999</span></span></li></ul><span class="Parrafo"><span class="Parrafo"><br />Bir kurpta paneller arası <strong>Minimum Aralık</strong> ve <strong>Maksimum Aralık</strong>, <strong>Minimum</strong> ve <strong>Maksimum panel sayısı</strong> ile görsel <strong>Açı</strong> parametreleri arasında bir çakışma olması durumunda, her zaman minimum ve maksimum aralık önceliklidir.<br /><br /></span></span><span class="Parrafo"><span class="Parrafo">Bu değerleri değiştirirsek, panelleri yeniden oluşturmadan önce hız diyagramını tekrar hesaplamamız gerektiğini unutmayın.</span></span><br /><span class="Parrafo"><span class="Parrafo"><br />Karayollarında, eğer bir kurp her iki trafik yönü için de panel içeriyorsa, ara panellerin konumları çakıştırılır, ancak her biri kendi yönelimine sahip olur.<br />
+      <br />
+Burada oluşturulan panel tablosu düzenlenebilir veya <strong>Çiz</strong> düğmesine basılarak harita üzerine çizilebilir. İçerdiği bilgi, BIM modelinde sanal gösterimi için kullanılabilir.<br />
+<br />
+Bu araç, eksen için oluşturulan son hız diyagramına ait <strong>baliza.res</strong> dosyasını başlangıç verisi olarak alır. Kurptaki panel sayısı, bu raporda belirtilenden daha az olabilir.<br />
+Hız diyagramı bir otomobil ile oluşturulmalıdır, çünkü otomobiller düzlüklerde bir kamyondan veya standarttaki ağır taşıttan daha yüksek hızlara ulaşabilir.&nbsp;&nbsp;&nbsp; <br />
+      <br />
+Otoyollar ve bölünmüş yollarda, paneller refüj tarafından yerleştirildiğinde (sağa kurplar) referans şerit refüj tarafındaki şerittir; paneller dış tarafa yerleştirildiğinde (sola kurplar) ise referans şerit, ilerleme yönündeki sağ şerittir. Her panel için sağ veya sol platforma ait olup olmadığı seçilebilir ve <strong>Çiz</strong>im sırasında sadece sağdakileri, sadece soldakileri veya her ikisini de çizmeyi seçebiliriz.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

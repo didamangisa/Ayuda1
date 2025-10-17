@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Parsellere Göre Hacim Hesabı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PARSELLERE GÖRE HACİM HESABI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo Parrafo">
+      
+      <span class="Parrafo"><span class="Parrafo"><br />
+Parsellere göre hacim hesaplaması, ilgili iletişim kutusunun üst kısmında seçilecek üç farklı yönteme göre yapılabilir:<br />
+      <br />
+</span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="MS_vol_parcelas.html#vol_parcelas">Parsellere Göre Hacim Hesabı</a>
+      </span></span></span><br />
+      <span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><a href="MS_vol_parcelas.html#vol_parcelas_dar">Parsellere Göre ve bir .dar tablosu ile Hacim Hesabı</a></span></span></span><br />
+      <span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><a href="MS_vol_parcelas.html#vol_parcelas_ttp">Üçgenlenmiş yüzeyler (.ttp) arasındaki parsellere göre Hacim Hesabı</a><br /><a href="#vol_par_ndp"><span style="color: rgb(0, 79, 175);">İki yoğun nokta bulutu arasındaki parsellere göre Hacim Hesabı</span></a><br /></span></span></span>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Bu menüde ölçümü nasıl yapacağımızı seçebiliriz, çünkü birkaç yol izleyebiliriz:<br />
+</span></span>
+      
+      <ol start="1">
+        <li><span class="Parrafo"><span class="Parrafo">Herhangi bir <span style="font-weight: bold;">SAM Yüzeyi</span> (Harita, SAM (TTP), Grid veya Yoğun Nokta Bulutu). </span></span><span class="Parrafo">Bu durumda, yüzeyler arasındaki ölçüm, belirli bir çözünürlüğe sahip prizmalarla yapılır.</span></li><li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">SAM (TTP) Yüzeyleri</span>. Bu durumda ölçüm, SAM'a Göre Hacim Hesabı tarzında üçgenleme kesişimi ile yapılır.</span></span></li><li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">YNB Yüzeyleri</span>. Bu durumda, yüzeyler arasındaki ölçüm yoğun nokta bulutları ile yapılır ve &nbsp;iki yoğun nokta bulutu arasındaki hacim hesaplama aracının yöntemini kullanır.<br /></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo">İlk iki yöntem için ölçümlerle ilgili olarak iki yol seçebiliriz:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Doğrudan ölçüm&nbsp; <span style="font-weight: bold;">Yarma/Dolgu/Sıyırma Kazısı</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">.dar tablosu</span> tarzında ölçüm</span></span></li>
+      </ul><ul><li><span style="font-weight: bold;">Kot Değeri (Ağırlık Merkezinde)</span> Ölçümü</li></ul>
+      <span class="Parrafo"><span class="Parrafo">
+      Yüzey ve ölçümle ilgili tüm olası kombinasyonlar mümkündür.<br />
+      <br />
+Her parsel ataması, bir malzeme ve bir grupla ilişkilendirilebilir.<br />
+      <br />
+      <span style="font-weight: bold;">Grup</span>:<br />
+</span></span><ul><li><span class="Parrafo"><span class="Parrafo">Her Grubun bir Adı, bir rengi ve kapalı alanları aktarmak için bir çizgi tipi vardır.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Gruplar etkinleştirilebilir/devre dışı bırakılabilir, böylece sadece aktif gruplar ölçülür.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Ölçümler gruplara göre yapılır ve gruplara göre toplanır.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Grupların bilgisi ve durumu, parsellerin .vpp dosyasında kaydedilir.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Grup adı etiketlenebilir.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Ayrıca her parsel için bir yoğunluk kullanma imkanı da eklenmiştir.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Yoğunluk kullanılırsa, listelerde gruplara göre toplam kütle toplanır.<br /></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ms_parcelas_gr.png" style="width: 400px; height: 143px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /><br /><br />
+      <span style="font-weight: bold;">Malzeme</span>: MALZEMELER sekmesinden, her bir malzemenin adıyla ve yoğunluğuyla tanımlanmasına izin verilir. Bu seçeneği kullanırken, her parsel için bir malzeme seçebiliriz. Birden fazla parsel aynı malzemeye sahip olabilir. Her grup içinde, parseller malzemelere göre sıralanır.&nbsp;Listelenenler:<br /></span></span><ul><li><span class="Parrafo"><span class="Parrafo">Parsel başına kısmi kütle.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Malzemeye göre birikmiş kütle (aynı malzemeye sahip gruptaki tüm parseller).</span></span></li><li><span class="Parrafo"><span class="Parrafo">Gruba göre birikmiş kütle.</span></span></li></ul><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ms_parcelas_material.png" style="width: 400px; height: 138px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Titulo_2"><a name="vol_parcelas">Parsellere Göre Hacim Hesabı</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Bu seçenek, iki yüzey arasında ve bir kontur içinde yarma ve dolgu ölçümü yapmayı sağlar (<a href="MS_vol_prisma.html">prizmatik hacim hesabı</a> aracı gibi), ancak ölçümü herhangi bir kapalı alanla tanımlanan farklı parsellere göre ayırır. <span style="font-weight: bold;">[Parsellere Göre Hacim]</span> butonuna basıldığında aşağıdaki iletişim kutusu açılır:<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_vol_parcelas.png" style="width: 601px; height: 256px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Bildirilecek seçenekler ve/veya parametreler şunlardır:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sıyırılmış orijinal yüzey</span>: Yüzeyin numarası girilir.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Nihai yüzey</span>: Yüzeyin numarası girilir.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Doğal arazi</span>: Bu yüzeye mevcut bir yüzeyin numarası verilirse, program yüzey tutarlı olduğu sürece yarma ve dolgudaki sıyırma kazısını da ölçer.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kotları Listele</span>: Bu seçenek etkinleştirildiğinde, listede ek olarak her parselin merkezi ve bu noktadaki orijinal ve nihai yüzeylerin kotları yazdırılır.</span></span></li>
+      </ul></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Kontur</span>: Ölçümü sınırlayan kapalı bir çizgi seçilir.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Çözünürlük</span>: Hesaplamanın yapıldığı birim prizmanın genişliğini tanımlar.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+          <span style="font-weight: bold;">PARSELLER</span>: <span style="font-weight: bold;">Ekle</span>, <span style="font-weight: bold;">Araya Ekle</span> ve <span style="font-weight: bold;">Sil</span> parsellerine olanak tanır.&nbsp;Her parsel, <span style="font-weight: bold;">Noktalar</span> sütunundaki butona tıklayarak onu tanımlayan kapalı alanı seçerek ve bir <span style="font-weight: bold;">Ad</span> ile tanımlanır. <span style="font-weight: bold;">x Kapalı Alan</span> butonlarıyla, seçilecek bir kapalı alandan geçen tüm parseller etkinleştirilebilir ve devre dışı bırakılabilir. Diğer parseller, aktivasyon durumlarını korur. </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Parseller, &nbsp;<span class="Archivo">.vpp</span> dosyaları aracılığıyla <span style="font-weight: bold;">[Kaydedilebilir]</span>, <span style="font-weight: bold;">[Eklenebilir]</span> ve <span style="font-weight: bold;">[Yüklenebilir]</span>, böylece aynı parsellerle başka bir ölçüm yapmak için bunların haritada çizili olması gerekmez.&nbsp;</span></span></span></li></ul></span><div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir .vpp dosyası Yüklenirken veya Eklenirken, parsel adları P- ile başlıyorsa, yeni parsel listesinde karşılık gelen sıra numarası kullanılarak yeniden adlandırılır.</span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div><span class="Parrafo"><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ayrıca şu seçenekler de mevcuttur:</span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Adı Yakala</span>: Parseli seçerken, haritada belirli bir stildeki metinler arasından, yerleştirme noktası parselin içinde olan adı arar.</span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Konturu Bul</span>: Bir iç noktaya tıklayarak parseli seçmeyi sağlar, konturun tek bir kapalı alandan oluşması bile gerekmez.</span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;" class="Parf_negrita">Parselleri Etkinleştir veya Devre Dışı Bırak</span>: Bireysel parselleri etkinleştirme/devre dışı bırakma imkanı. Bir parseli kullanmak için, hem grubunun hem de parselin kendisinin aynı anda aktif olması gerekir.</span></span></span></li>
+      </ul></span></span></span></span><ul><ul><li>Etkinleştirmek, devre dışı bırakmak veya onlara bir grup atamak için bir <span style="font-weight: bold;">parsel aralığı</span> seçin.</li></ul></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul><li><span class="Parf_negrita">Gözden Geçirme ve Parsel Arama</span>: Parsel tablosunda, parselleri gözden geçirilmiş olarak işaretlemek için bir sütun ve parseli aramak için başka bir sütun olmak üzere iki sütunumuz var; ikincisine basıldığında ekran, konturu vurgulanan aranan parsele genişler ve ortalanır. Sütundaki tüm alanları etkinleştirmek &nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/volpp_activar.png" /> ve devre dışı bırakmak &nbsp;<img style="width: 17px; height: 15px;" alt="" src="Imagenes/volpp_desactivar.png" /> için simgeler eklenmiştir (parsel gözden geçirildi). Mevcut parselin numarası düzenlenebilir bir alandır, bu da doğrudan başka bir parsele gitmeyi sağlar.&nbsp;<span style="font-style: italic;">Gözden Geç.&nbsp;</span><span style="font-style: italic;">Yeniden Sırala&nbsp;</span>aracı, parselleri gruba ve malzemeye göre sıralamayı sağlar.</li></ul><div style="text-align: center;"><img style="width: 630px; height: 170px;" alt="" src="Imagenes/rev_parcelas.png" /><br /></div><span class="Parrafo"><ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Parselleri Aktar</span>: Bir parsel dosyasından şunları oluşturmayı sağlar:</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Belirtilen çizgi tipiyle kontur.</span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Seçilen sembol (etiket) tipiyle parsel numarası.</span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Belirtilen bir metin stili ve boyutuyla ad.</span></span></span></li>
+      </ul>
+      <ul>
+        </ul></span><span class="Parrafo"><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Parsel Izgarası Oluştur</span>: Aşağıdaki verilerle yeni bir pencere açar:</span></span></span></li></ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Parsel ızgarasının içinde olması gereken kontur.</span></span></span></li></ul>
+      <ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Izgaradaki bir Noktanın X,Y Koordinatları.</span></span></span></li></ul>
+      <ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Parsellerin (kare) Kenarı.</span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yönelim (altmışlık derece).</span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Konturu temizlemek için simge <img src="Imagenes/icono_basura2.png" style="width: 20px; height: 20px;" alt="" />.</span></span></span></li></ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Oluşturma sırası: BDKG, BDGK, DBKG, DBGK, GKBD, KGBD, GKBK veya KGDB.</span></span></span></li>
+      </ul></span></span></span></span></span></span></span></span></span></span><ul><ul><li>Yön değiştir: her n satırda veya sütunda oluşturma yönünü tersine çevirmeyi sağlar.</li></ul></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Metraj Oluştur</span>: </span></span></span><span style="font-weight: normal;">Hesaplamayı yapar ve </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;<span style="font-weight: normal;" class="Archivo">cubica.res</span><span style="font-weight: normal;"> listesini oluşturur. Her parsel içindeki ölçüm, aynı zamanda ölçüm konturunun içine düşen parsel bölgelerinde yapılır (tamamen kontur içinde, tamamen dışında veya kısmen içinde ve kısmen dışında parseller olabilir). Hesaplama sırasında, yarma alanı maviye ve dolgu alanı kırmızıya boyanır. <span style="font-weight: bold;">[Listado cubica.res]</span> butonuna basıldığında görüntülenebilen liste, kısmi hacmi, birikmiş hacmi, yarma ve dolgu arasında ayrım yaparak parsellere göre alanı ve her parselin kontur içindeki alanını listeler. Ayrıca, herhangi bir hesap tablosu tarafından hızlı bir şekilde yorumlanabilmesi için sekmelerle ayrılmış olan &nbsp;</span><span style="font-weight: normal;" class="Archivo">cb.res</span><span style="font-weight: normal;"> dosyası da oluşturulur.</span></span></span></span></li>
+      </ul></span>
+      <div style="margin-left: 40px;">Malzeme tablosu kullanıldığında ve yarma/dolgu/sıyırma kazısı tipi ölçümlerde (.dar tablosuyla değil), cubica.res ve cubicaPP.xlsx listelerinin sonunda malzemelere ve gruplara göre bir metraj özet listesi oluşturulur.<br />
+      </div>
+      <span class="Parrafo"><br />
+</span>
+      <div style="margin-left: 40px;">Listeler içinde, seçtiğimiz yönteme göre diğer verilerin yanı sıra şunları elde edebiliriz:<br />
+      <ul>
+        <li>Ölçüm Tipi: Yarma/Dolgu/Sıyırma Kazısı veya .dar tablosuna göre.</li>
+        <li>Yüzey Tipi: SAM (Prizmalara Göre Hacim) veya SAM (TTP) (SAM'lara Göre Hacim).</li>
+        <li>SAM'ların veya SAM'lerin adları (.dar tablosuyla ölçüm hariç).<br />
+        </li>
+      </ul>
+      </div>
+      <span class="Parrafo"><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/list_vol_parcelas.png" style="width: 651px; height: 258px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">vol_parcelas_ndp.png<img src="Imagenes/ejem_vol_parcelas.png" style="width: 424px; height: 278px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      </span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">ORANLAR</span>: Bu sekme, her parsel için bir katsayı ve bir yorum tanımlamayı sağlar. Etkinleştirilirse, bu katsayı her parselde ölçülen hacimlerin (Y/D) hesaplanmasını etkiler.</span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 269px;" alt="" src="Imagenes/vol_por_parcelas_ratios.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span><span class="Titulo_2"><a name="vol_parcelas_dar">Parsellere Göre, bir .dar tablosu ile ve kot değeri ile Hacim Hesabı</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <p class="MsoNormal">Bu durum, farklı metrajlar çıkarmak için bir alan tanım tablosu tanımlamanın mümkün olması ve ayrıca <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Seviyelere göre Hacim Hesaplama</span> imkanı eklemesi dışında, öncekiyle aynıdır; üst ve alt kotlar ile aralık verilir.</span></span></span></span></span></span></span></span></span></span></p>
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_vol_parcelas_dar.png" style="width: 599px; height: 303px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Bu alan tanım tablosu, <a href="EDM_editor_perfiles.html">ENKESİT EDİTÖRÜ</a>'nün <a href="EDM_editor_perfiles.html#tablas_cubic">hacim tabloları</a> menüsündekiyle aynıdır, ancak aşağıdaki basitleştirmelerle:<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Her metrajın adını tanımlamaya izin verilir. Hacim tablolarında olduğu gibi, ad " &lt; &gt; " arasında olduğunda, metraj için dikkate alınır ancak listelerde görünmez.<br />
+</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Metraj, iki A ve B yüzeyi arasında yarma (Y) veya dolgu (D) olabilir. Ayrıca, enkesit editörünün .dar tablolarında olduğu gibi Alanlar (A)&nbsp; ve Oranlar (O) da tanımlanabilir. Ayrıca, bu tablolar iletişim kutusundan kaydedilebilir ve yüklenebilir.<br />
+Bir tablo okunduğunda, Y,D,A veya O olmayan satırlar Y'ye dönüşür.<br />
+Not: Bu tabloları enkesit editörünün tablolarıyla karıştırmamak gerekir, çünkü onlar enkesitlerde tanımlanan yüzeyler üzerinde çalışırken, bunlar &nbsp;SAM yüzeyleri (Harita, SAM (TTP), Grid veya Yoğun Nokta Bulutları) veya SAM'larla (TTP) çalışır.<br />
+</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">A ve B yüzeyleri, yüzeyler arasındaki bir işlemin sonucu olabilir. Burada sadece şu işlemlere izin verilir: <span style="font-weight: bold;">[1 yüzey]</span>, <span style="font-weight: bold;">[+Alçak]</span> ve <span style="font-weight: bold;">[+Yüksek]</span>,&nbsp;<span style="font-weight: bold;">[+Tam Alçak], [+Tam Yüksek], [+Alçak veya A1/B1], [+Yüksek veya A1/B1].</span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Varsayılan olarak aşağıdaki yüzeyler varsayılır:</span></span></span></span></span></li>
+      </ul>
+      </span>
+      <div style="margin-left: 40px;">
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sıyırılmış orijinal yüzey.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Nihai yüzey.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sıyırılmamış orijinal arazi yüzeyi.</span></span></span></span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bunlarla aşağıdaki metrajlar elde edilir:</span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;">
+      <ul style="list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">1 ve 2 yüzeyleri arasındaki dolgu</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">1 ve 2 yüzeyleri arasındaki yarma</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Dolgudaki sıyırma kazısı</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yarmadaki sıyırma kazısı</span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      </span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Katsayı</span> parametresi aracılığıyla, örneğin ton bazında bir metraj elde etmek için her satıra bir değer verebiliriz.</li><br />
+      </ul><span style="font-weight: bold;">Kot Değeri</span> seçeneği ile, her parsel için her bir SAM yüzeyinin parselin ağırlık merkezindeki kot değerini içeren bir liste oluşturulur.<br />SAM yüzeyleri, SAM Yüzeyleri Kontrolü iletişim kutusunun Yüzey Profili sütununa konulan numaraya göre sıralanır. Kot değeri şunlar olabilir: Gerçek kot, eğim, yüzde, yoğunluk vb. parsele ilişkilendirilmesi istenen herhangi bir değer.<br />Ölçümün adı, orijinal dosyanın adıyla eşleşir (Eğer bir ttp tipi yüzey ise, ttp dosyasının adı vb.).<br />Eğer <span style="font-weight: bold;">[Alt Parsel Ortalaması]</span> seçeneği etkinleştirilirse, ağırlık merkezinde hesaplanan kotlar, bir alt parsel bölünmesi kullanılarak hesaplanabilir: örneğin, alt parselin kenar değerini girmeyi sağlayan bir <span style="font-style: italic;">Alt Parsel Izgarası</span> penceresi açılır. Metraj oluşturulduğunda, kotun parsel içine düşen alt parselin alanını dikkate alarak ağırlıklı bir ortalama olması için her parselin alt parselleri dinamik olarak oluşturulur.<br />&nbsp;<br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><a name="vol_parcelas_ttp">Üçgenlenmiş yüzeyler (.ttp) arasındaki parsellere göre Hacim Hesabı</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      <a href="#vol_parcelas_ttp">Parsellere göre hacim</a> ve <a href="MS_vol_ttp.html">.ttp'ye göre hacim</a>'in bir karışımıdır. <a href="EDM_topografia.html#ficheros_ttp">&nbsp;<span class="Archivo">.ttp</span> dosyalarında</a> üçgenlenmiş modellerle tanımlanan iki yüzey arasındaki yarma ve dolgu hacimlerinin ölçümünü, ölçümü kullanıcı tarafından tanımlanan parsellere göre ayırarak gerçekleştirir. İsteğe bağlı olarak, ölçüm alanını sınırlamak için bir kontur seçilebilir.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><a href="EDM_topografia.html#ficheros_ttp">&nbsp;<span class="Archivo">.ttp</span> dosyaları</a>, <img src="Imagenes/icono_control_ttps.png" style="width: 16px; height: 16px;" alt="" /> butonu ile erişilebilen <a href="EDM_control_entidades.html#control_ttps">SAM kontrolü</a> listesinin indeksleri aracılığıyla bildirilir.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_vol_parcelas_ttp.png" style="width: 600px; height: 256px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span><span class="Parrafo"><br />
+Modda: SAM (TTP) Yüzeyleri ve Hacim Hesaplama .dar tablosu kullanılarak aşağıdaki olanaklara sahibiz:<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>Her bir metraj verisi için enkesit editörünün hacim tablolarında olduğu gibi bir <span style="font-weight: bold;">çizgi tipi</span> tanımlama imkanı.</li>
+        <li>Her bir metrajın kapalı alanlarını, her biri için tanımlanan çizgi tiplerini kullanarak planda <span style="font-weight: bold;">oluşturma</span> imkanı.</li>
+        <li>Üst ve alt kotları ile aralığı vererek <span style="font-weight: bold;">seviyelere göre hacim hesaplamayı</span> etkinleştirme imkanı.<br />
+        </li>
+
+      </ul>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ms_generar_recintos.png" style="width: 600px; height: 303px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <br />İki ttp üzerinde ölçülen dolgu ve yarma 3D yüzeyleri eklenir. SAM'ların kesişimiyle ve .dar tablosu kullanılarak <span style="font-weight: bold;">+Tam Yüksek</span>, <span style="font-weight: bold;">+Tam Alçak</span>,<span style="font-weight: bold;"> + Alçak veya A1/B1 </span>ve <span style="font-weight: bold;">+ Yüksek&nbsp; veya A1/B1</span> işlevleri eklenir.<br /><br /><div style="text-align: center;"><img src="Imagenes/volumenxttp_list.png" style="width: 600px; height: 101px;" alt="" /><br /></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />Parsellere göre, Gruplara göre gruplandırılmış, Seviyelere Göre Hacim Hesaplama modunda bir Excel formatında hacim listesi oluşturabiliriz. Liste oluşturulduğunda, .res klasöründe varsayılan adı <span class="Archivo">CubicaPPGrupos.xlsx</span> olan bir dosya oluşturulur, bu dosyaya belirli bir ad verme imkanı vardır. Ayrıca, listeyi azalan şekilde sıralayabiliriz.<br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/vol_pp_gr_pn.png" style="width: 600px; height: 351px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span class="Titulo_2"><a name="vol_par_ndp">Yoğun Nokta Bulutları Arasındaki Parsellere Göre Hacim Hesabı <br /><br /><span style="font-weight: normal;" class="Parrafo">Bu yöntem, iki yoğun nokta bulutundan yola çıkar </span></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><a name="vol_par_ndp">ve <span style="font-style: italic;">Yoğun Nokta Bulutları</span> menüsündeki <span style="font-style: italic;">Hacim Hesapla</span> aracının yöntemini kullanır: diğer iki tabanın kot farkıyla düzenli bir grid üzerinde üçüncü bir veritabanı oluşturur. Bu yöntem, Ölçüm seçicilerini devre dışı bırakır. <span style="font-style: italic;">Y/D alanları oluştur</span> bayrağını etkinleştirerek yarma ve dolgu alanlarını oluşturma imkanı sunar.<br /><br /></a></span></span><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="vol_par_ndp"><img src="Imagenes/vol_parcelas_ndp.png" style="width: 600px; height: 256px;" alt="" /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="vol_par_ndp"><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></div></span><a name="vol_par_ndp"><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

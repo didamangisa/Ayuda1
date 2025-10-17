@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Yüzeyler ve Kodlar</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YÜZEYLER VE KODLAR<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />Bir ekseni tanımlayan tüm bilgiler, her bir KM için (sabit aralıklarla ve tanımlanmış özel noktalarda) enkesiti oluşturan her bir yüzeyin geometrik verilerini içeren&nbsp;<span class="Archivo">ISPOL#.per</span> dosyalarına yazılır. Her nokta ayrıca, eksenden sağa ve sola doğru artan sayısal kodlar kullanılarak kataloglanır. <br /><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> tarafından kullanılan sistemi açıklayan basit bir şema aşağıdaki resimde görülmektedir. Bu resimde, farklı jeoteknik katmanları tanımlayan dört yüzeye sahip tipik bir otoyol enkesiti görülebilir. Bu katmanlar, orijinal araziye paralel olarak uygulama tarafından oluşturulabilir veya enkesitlerde zaten tanımlanmış olan veriler olarak elde edilebilir. Bu jeoteknik çizgiler veya yüzeyler şunlardır: kaya (L66 tipi çizgi), sağlam zemin (L66), uygun olmayan zemin (L105) ve bitkisel toprak yüzeyi (L104).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 587px; height: 144px;" alt="" src="Imagenes/superf_cod.png" /><br />
+      </div>
+      <br />
+Ayrıca dört yapısal çizgi veya yüzey ayırt edilir: kırmızı kot (L67), terasman veya toprak işleri hattı (L68), zayıf zemin kazısı (L107) ve uygun olmayan yarma durumu için bitiş (L69). İyileştirme hattı, duvar, kaplamalar, tünel vb. gibi daha birçok yüzey bulunabilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2">Yüzey numaralandırma sisteminin işlevselliği</span><br />
+      <br />
+Dolayısıyla yüzey numarası, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> kütüphanelerinde tanımlanmış bir grafik çizgi tipiyle kesin bir şekilde bağlantılıdır. Bu basit yöntemle, eleman tipi grafik görünümüyle (renk, kalınlık, çizgi stili,...) ek bir eleman yapılandırmaya gerek kalmadan ilişkilendirilir.<br />
+      <br />
+Öte yandan, yüzey verilerini kullanan bazı süreçler (çizilmesi veya yüzey hesaplamak için kullanılması için) onu benzersiz bir şekilde tanımlayabilmelidir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2">Kodlara göre organizasyonun anlamı</span><br />
+      <br />
+Prensip olarak, jeoteknik yüzeyler veya birimler kodlama gerektirmez, ancak kullanıcının mevcut platformun tanımlanması veya bir sembolün kodun konumuna yerleştirilmesi gibi çeşitli amaçlarla belirli noktalara kodlar ataması mümkündür.<br />
+      <br />
+Ancak, her bir yapısal elemanın bilgisini analiz etmek ve kullanmak için, koordinatlarından bağımsız olarak her zaman tanımlanabilmesi için onu kodlamak gerekir. Örneğin, 67 yüzeyinin 1 ve 1.5 kodları arasındaki yüzey bölümü her zaman ana platforma karşılık gelir, aynı şekilde 100 kodu da kırmızı kot ile terasmanın kesiştiği noktayı tanımlayacaktır.<br />
+      <br />
+      <br />
+      <span class="Titulo_2">67 ve 68 yüzeylerinin en sık kullanılan kodları</span><br />
+      <br />
+Neredeyse tüm yapısal yüzeyler kodlanmış olsa da, bu çizgilerden birinin özellikler kutusunu <a href="EDM_editor_perfiles.html">enkesit düzenleyicide</a> açtığınızda görülebileceği gibi, şüphesiz en önemlileri 67 ve 68 yüzeylerine karşılık gelenlerdir. Aşağıda, her iki çizginin en sık kullanılan kodlarını içeren bir tablo gösterilmektedir:<br />
+      <br />
+      <table style="text-align: left; width: 581px; height: 1154px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 494px;"><span style="font-weight: bold;">YÜZEY 67 (platformlar)</span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 67px;"><span style="font-weight: bold; font-style: italic;">Kod</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 494px;"><span style="font-weight: bold; font-style: italic;">Açıklama</span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">0<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Tanımsız köşe noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-100 ... -51<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Refüj tabanı. -51'e kadar olan geri kalanlar refüj noktalarını temsil eder (çift platform).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-50<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Refüj palye kenarı (çift platform).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-13<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Üçüncü iç banket kenarı (çift platform).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-12<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">İkinci iç banket kenarı (çift platform).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-11<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Birinci iç banket kenarı (çift platform).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Tek platformda geometrik eksen, çift platformda iç beyaz şerit.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">2<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Dış beyaz şerit.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">11<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Birinci dış banket kenarı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">12<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">İkinci dış banket kenarı. Banket yoksa, bir yaya kaldırımının veya sabit bir platform vektörünün ilk köşe noktasını temsil edebilir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">13<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Üçüncü dış banket kenarı. Banket yoksa, bir yaya kaldırımının veya sabit bir platform vektörünün ikinci köşe noktasını temsil edebilir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">14<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Üçüncü dış banket kenarı. Banket yoksa, bir yaya kaldırımının veya sabit bir platform vektörünün üçüncü köşe noktasını temsil edebilir.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">15 ... 25<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Yaya kaldırımlarının veya sabit platform vektörlerinin köşe noktaları.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">50<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Yarma / dolgu kaplamasında palye.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">51<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Terasmanla kesişim.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">90 ... 99<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Kırmızı kot-terasman birleşiminden önce kalan hendek noktaları (platform içinde).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">100<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Kaplama ve terasman kesişimi.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 494px;"><br />
+            </td>
+          </tr>
+          <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 494px;"><span style="font-weight: bold;">YÜZEY 68 (terasman + şevler)</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;"><span style="font-weight: bold; font-style: italic;">Kod</span></td>
+            <td style="vertical-align: top; width: 494px; text-align: center;"><span style="font-weight: bold; font-style: italic;">Açıklama</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-100<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Refüj tabanı (çift platform).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-55.5<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Terasmanın refüjle kesişimi (çift platform).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Çatı mahyasının tepe noktası<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">2<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Platformun dış kenarı altındaki nokta<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">99/100<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Terasmanın son noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">101<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Dolguda zorunlu hendek tabanı.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">102 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Dolguda zorunlu hendek noktaları.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">395<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Üçüncü dolgu noktası (yukarıdan başlayarak).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">396<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Dolgu palyesinin iç dirseği (yukarıdan başlayarak).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">397<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">İkinci dolgu noktası (yukarıdan başlayarak).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">398<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Alçak dolgu palyesinin iç dirseği (yukarıdan başlayarak).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">399<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Dolgunun ilk noktası (yukarıdan başlayarak).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">495<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Üçüncü dolgu noktası (aşağıdan başlayarak).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">496<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Dolgu palyesinin iç dirseği (aşağıdan başlayarak).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">497<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">İkinci dolgu noktası (aşağıdan başlayarak).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">498<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Alçak dolgu palyesinin iç dirseği (aşağıdan başlayarak).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">499<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Dolgunun ilk noktası (aşağıdan başlayarak).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">500<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Dolgu duvarının başlangıcı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">600<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma hendeğinin tabanı.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">601<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Dolgu kesitinin sonu.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">601.1, ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Dolgu duvarının noktaları.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">602<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Duvarın sonu.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1101<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Hendeğin ilk noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1102<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Hendeğin ikinci noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1103<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Hendeğin üçüncü noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1201<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Kaya yarmasının ilk noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1202<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Kaya yarmasının ikinci noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1203<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Kaya yarmasının üçüncü noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1251 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma duvarının noktaları.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1260 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma duvarının noktaları.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1270 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma duvarının noktaları.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1280 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma duvarının noktaları.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1290 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma duvarının noktaları.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1301<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Toprak yarmasının ilk noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1302<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">İlk yarma palyesinin iç dirseği.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1303<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Toprak yarmasının ikinci noktası.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1304<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">İkinci yarma palyesinin iç dirseği.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1305<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Toprak yarmasının üçüncü noktası.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1399<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Toprak yarma vektörünün sonu.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1500<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma şev tacına geçiş.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1501<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma şev tacının ilk noktası.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1600<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Duvarın/yarma kesitinin sonu.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1600<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma şev tacı.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">2800<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Yarma/dolgu arkasındaki serbest arazi (koruma hendeği).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">3000<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Koruma hendeğinin başlangıcı.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">3010<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Koruma hendeğinin kontrol noktası.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br /></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

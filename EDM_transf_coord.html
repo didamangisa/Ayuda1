@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Koordinat Dönüşümü</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>KOORDİNAT DÖNÜŞÜMÜ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      Bu başlık altında, <a href="EDM_georreferenciacion.html#crs">koordinat referans sistemi</a> (zonlar, elipsoidler, projeksiyon sistemleri,...) ile ilgili değişikliklerle ilişkili OLMAYAN tüm koordinat dönüşümleri gruplandırılmıştır.<br />
+      <br />
+<span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Koordinat Dönüşümü</span> menüsü, harita, topografya, plan eksenleri, resimler ve Parseller (vpp) verilerini dönüştürmeyi sağlar. Parseller (vpp) seçeneği, dönüşümü yüklenen parsellerin konturlarına uygular. Bu değişikliğin sonraki kullanımlar için korunması isteniyorsa, bir .vpp dosyası kaydedilmelidir. <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 645px; height: 239px;" alt="" src="Imagenes/dialogo_transf_coord.png" /><br />
+      </div>
+      <br />
+Dönüşümler, orijinal ve nihai noktaların koordinatlarına (bunlara <span style="font-weight: bold;">kalibrasyon noktaları</span> denir) dayanarak yapılır; bu noktalar ya doğrudan fare ve uygun yakalama modu etkinleştirilerek (Tıklama modu) ya da koordinatlar girilerek (<span style="font-weight: bold;">Klavye</span> ile modu) verilebilir. Olası dönüşümler şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Öteleme</span>: Bir başlangıç ve bir hedef noktası gerektirir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Öteleme+Döndürme</span>: Bu durumda iki nokta gerekir ve ikinci nokta dönüştürüldüğünde mesafedeki hata gösterilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Öteleme+Döndürme+Ölçekleme</span>: Bu da iki nokta gerektirir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ortogonal Olmayan Öteleme (Bilineer)</span>: Üç nokta aracılığıyla.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Öteleme + Döndürme + Ölçekleme (ortalama)</span>: Üç veya daha fazla nokta ile, ortalama alarak. Bu durumda, her bir veri noktasını dönüştürürken mesafedeki hataları içeren bir sütun gösterilir ve her kalibrasyon noktasına bir ad atama imkanı sunulur. Ayrıca, veri noktalarını ikişer ikişer alarak ortaya çıkan döndürme ve ölçek değerlerini gösteren bir pencereye de erişim sağlanır. İlgili seçenek etkinleştirilerek ölçeği 1.000'e "zorlamak" mümkündür, ancak bu durumda Helmert dönüşümü daha hassastır. </li>
+      </ul>
+      <div style="margin-left: 40px;">1 metreden daha yakın olan nokta çiftleri, dönüşüm hesaplaması için dikkate alınmaz. Ayrıca, her noktanın onay kutusu, dönüşüm parametrelerinin hesaplanmasına katılıp katılmadığını belirtir ve etkinleştirildiğinde veya devre dışı bırakıldığında her şey otomatik olarak yeniden hesaplanır.<br />
+      </div>
+      <ul>
+        <li><img style="width: 195px; height: 50px; margin-left: 7px;" alt="" src="Imagenes/matriz_transf.png" align="right" /><span style="font-weight: bold;">3D Helmert</span>: Üç veya daha fazla veri noktası çifti için 3D HELMERT dönüşümü. Bu seçenek, verilerin geçerli olup olmadığını ve geçerliyse dönüşüm parametrelerini belirten <span style="font-weight: bold;">dönüşüm matrisine</span> erişim sağlar. Menüde ayrıca veri noktaları için X, Y, Z'deki hatalar da gösterilir.<br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;">Ortalama öteleme, döndürme ve ölçekleme dönüşümünde olduğu gibi, burada da dönüşüm parametrelerinin hesaplanması için kalibrasyon noktalarını etkinleştirmek veya devre dışı bırakmak, her şeyi gerçek zamanlı olarak yeniden hesaplamak ve her noktaya bir ad atamak mümkündür. İlgili seçenek etkinleştirilerek ölçeği 1.000'e "zorlamak" da mümkündür.<br />
+      <br />
+Bu dönüşüm ayrıca, giriş verileri, dönüşüm parametreleri ve giriş verilerini dönüştürürken oluşan hataları içeren bir liste (<span class="Archivo">Helmert.res</span>) oluşturmayı da sağlar.<br />
+      <br />
+      <img style="width: 260px; height: 39px; margin-left: 7px;" alt="" src="Imagenes/helmert3D_dinamica.png" align="right" />3D HELMERT dönüşümünün daha gelişmiş bir <span style="font-weight: bold;">dinamik</span> varyantı vardır ve şu şekilde davranır:<br />
+      <ol>
+        <li>Aktif kalibrasyon noktalarının bir üçgenlemesi yapılır. Aşağıdaki şekil, 11 kalibrasyon noktasıyla dinamik bir 3D Helmert dönüşümü için olası bir üçgenlemeyi göstermektedir:<br />
+        </li>
+      </ol>
+      <div style="margin-left: 40px; text-align: center;"><img style="width: 341px; height: 289px;" alt="" src="Imagenes/helmert3D_dinamica_exp.png" /><br />
+      </div>
+      <ol start="2">
+        <li>Her bir aktif kalibrasyon noktası için, o noktaya dayanan üçgenlerin köşe noktalarını tanımlayan tüm veri çiftlerinin bilgileri kullanılarak bir 3D Helmert dönüşümünün parametreleri hesaplanır (bkz. &nbsp;<span class="Archivo">Helmert.res</span> listesi). Bu şekilde, 1 numaralı noktaya uygulanacak 3D Helmert dönüşümü, üçgenleri paylaştığı 1, 2, 3, 4, 8 ve 10 numaralı noktalar için hesaplanan olacaktır. Benzer şekilde, 3 numaralı noktaya uygulanan dönüşüm, 1, 3, 4 ve 5 numaralı noktalara göre hesaplanan olacaktır ve 4 numaralı nokta için dönüşüm, 1, 3, 4, 5, 6, 7 ve 10 numaralı noktalar için hesaplanan bir 3D Helmert'e karşılık gelecektir.<br />
+        </li>
+      </ol>
+      <ol start="3">
+        <li>Harita dönüştürülürken, her nokta için, onları içeren üçgenin köşe noktalarının üç dönüşümü, noktanın üçgen içindeki konumuna bağlı olarak ağırlıklandırılarak kullanılır. Herhangi bir üçgenin içinde olmayan noktalar için, en yakın noktanın dönüşümü kullanılır. Bunu önceki şekle uygulayarak, haritaya ait sarı noktanın uğrayacağı dönüşüm, daha önce bahsedilen 1, 3 ve 4 numaralı noktalar için hesaplanan dönüşümlerin ağırlıklı bir dönüşümü olacaktır. Ağırlıklandırma, sarı noktanın onu içeren üçgenin her bir köşe noktasına olan mesafesine göre yapılacaktır.<br />
+        </li>
+      </ol>
+İletişim kutusundan çıkıldığında, dönüşüm (hem statik hem de dinamik 3D Helmert) etkin kalır ve bir GPS'ten veri takibi gibi programın diğer yardımcı programları tarafından kullanılabilir.<br />
+      <br />
+      <img style="width: 153px; height: 65px; margin-left: 7px;" alt="" src="Imagenes/helmert3D_gps.png" align="right" />3D Helmert dönüşümü (statik veya dinamik) için, orijinal koordinatları bir <a href="EDM_gps.html">GPS</a> ile okunan veriler (enlem, boylam, yükseklik) olarak girme imkanı vardır. Bu durumda program şu şekilde hareket eder:<br />
+      <ol>
+        <li>(Enlem, boylam) WGS84 koordinatları, <a href="EDM_georreferenciacion#crs">CRS</a> iletişim kutusunda tanımlanmış olan dönüşüm aracılığıyla (örneğin, ED50'den WGS84'e bir dönüşüm tanımlanmışsa, X ve Y koordinatları ED50'de elde edilir) kaynak <a href="EDM_georreferenciacion#crs">CRS</a>'de (X,Y)'ye dönüştürülür.</li>
+      </ol>
+      <ol start="2">
+        <li>Eğer hedef CRS için bir <a href="EDM_georreferenciacion.html#rejilla">düşey referans sistemi</a> tanımlanmışsa (örneğin &nbsp;<span class="Archivo">EGM08_REDNAP.gzb</span>), veri yüksekliği Z'ye (deniz seviyesinden yükseklik) dönüştürülür. Değilse, veri yüksekliğinin zaten deniz seviyesinden olduğu varsayılır.</li>
+      </ol>
+      <ol start="3">
+        <li>Bu (X,Y,Z) koordinatları orijinal olarak kullanılır. Eğer bu koordinatların nihai değerleri biliniyorsa, o zaman bir koordinat dönüşümü (yerel kalibrasyon için) tanımlamak mümkündür.</li>
+      </ol>
+      <ol start="4">
+        <li>Bu koşullar altında, <a href="EDM_gps.html">GPS takibi</a> bağlanırsa, okunan koordinatlar önce <a href="EDM_georreferenciacion#crs">CRS</a> dönüşümünden ( <a href="EDM_georreferenciacion.html#rejilla">düşey referans sistemi</a> dahil) ve sonra 3D Helmert dönüşümünden (statik veya dinamik) geçirilir.</li>
+      </ol>
+
+      </div>
+      <ul>
+        <li>1, 2 veya 3 noktaya göre <span style="font-weight: bold;">kot dönüşümü</span>:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">Tek noktaya göre</span>: Tüm noktalara tek bir kot artışı (&#8710;Z) uygulanır.</li>
+      </ul>
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">İki noktaya göre</span>: Maksimum eğim çizgisi iki veri noktasından oluşan bir düzlem (X,Y,&#8710;Z) oluşturulur ve her noktaya konumuna (X,Y) göre karşılık gelen &#8710;Z uygulanır.</li>
+      </ul>
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">Üç noktaya göre</span>: Üç veri noktasıyla bir düzlem (X,Y,&#8710;Z) oluşturulur ve her noktaya konumuna (X,Y) göre karşılık gelen &#8710;Z uygulanır.</li>
+      </ul>
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">X ve Y'yi Değiştir</span>: X koordinatının değerlerini Y koordinatının değerleriyle ve tersini değiştirir. Bu, örneğin, birinci sütunun ordinatlar ve ikinci sütunun apsisler olduğu bir nokta bulutunun içe aktarıldığı durumlarda kullanışlıdır.</li>
+      </ul><ul><li><span class="Parf_negrita">Öteleme + Ölçekleme (parametrelerle)</span>: Bu durumda, iletişim kutusunda gösterildiği gibi uygulanan yeni X ve Y başlangıç noktası ve Ölçek faktörü verilir:</li><ul><li>Xnihai = (Xorijinal - Başlangıç_X)/ÖlçekFaktörü.</li><li>Ynihai = (Yorijinal - Başlangıç_Y)/ÖlçekFaktörü.</li></ul></ul>
+      <br /><img style="width: 132px; height: 82px; margin-left: 7px;" alt="" src="Imagenes/transf_coord_guardar_cargar.png" align="right" /> Orijinal ve nihai başlangıç verileri, &nbsp;<span class="Archivo">.dtc</span> uzantılı dosyalar aracılığıyla, bir bütün olarak veya ayrı ayrı <span style="font-weight: bold;">kaydedilebilir</span> ve <span style="font-weight: bold;">yüklenebilir</span>.<br />
+      <br />
+Bu dosyalardan biri yüklendiğinde, diğer veriler sıfırlanmaz ve konumu adıyla aranır. Eğer aynı ad yoksa, listenin ilk boş adına eklenir. Bu tür dosyalar birbiriyle uyumludur, öyle ki bir toplam dosyadan sadece orijinal veya nihai koordinatlar okunabilir veya bir nihai koordinat dosyası orijinal olarak okunabilir, vb.<br />
+      <br />
+Orijinal veya nihai koordinatları yükleme seçenekleri, &nbsp;<a href="OL_replanteo_planta.html#def_bases"><span class="Archivo">.bas</span></a> ve &nbsp;<a href="EDM_topografia.html#ficheros_toc"><span class="Archivo">.toc</span></a> uzantılı dosyaları da kabul eder.<br />
+Bir .toc dosyası yükleyebilmek için, Koordinat Dönüşümü menüsünün <span style="font-weight: bold;">Ad</span> sütunu (varsayılan olarak P1, P2, P3... değerleriyle), yükleyeceğimiz .toc dosyasının ilk sütunuyla (birinci sütun nokta numarası, ikinci sütun X, üçüncü sütun Y, dördüncü sütun Z) eşleşmelidir.<br />
+<br />
+      <span class="Parrafo"><span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

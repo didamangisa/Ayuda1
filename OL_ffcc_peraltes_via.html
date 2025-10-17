@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Hat Deverleri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>HAT DEVERLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 695px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 693px;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#tabla_dip">.dip tablosu kullanılarak otomatik hesaplama</a><br />
+      <a href="#auto_tabla">.tpe tablosuna göre deverler</a><br />
+      <a href="#tpv">Hıza göre bölümlendirilmiş deverler</a><br />
+      <a href="#proyeccion">Başka bir eksenden izdüşümle elde edilen dever</a><br />
+      <a href="#peraltes_por_linea">Çizgiye göre deverler</a><br />
+      <a href="#promediar">Ortalama Al</a><br />
+      <a href="#modos">Dever hesaplama modları</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#hilo_bajo_ras">Alçak
+ray kırmızı kotta</a><br />
+      <a href="#mantener_cdg_curvas_s">S kurplarında ağırlık merkezini koru</a><br />
+      <a href="#norma_francesa">Fransız Yönetmeliği</a><br />
+      <a href="#matener_cdg_espirales_cortas">Kısa geçiş eğrilerinde ağırlık merkezini koru</a><br />
+      <a href="#cota_entrecarril">Kırmızı kotu hat aralığı eksenine göre</a><br />
+      <a href="#curvas_S_Z_entrecarril">S şeklindeki kurp grupları, kırmızı kotu hat aralığında koru</a><br /><a href="#Norma_metro_Mexico"><span style="color: rgb(0, 79, 175);">Meksika Metrosu Yönetmeliği</span></a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="OL_ffcc_peraltes_via.html#via_doble_placa">Çift hat için dever</a><br />
+      <div style="margin-left: 40px;"><a href="#via_doble_independiente">Bağımsız
+çift hat</a><br />
+      <a href="#via_doble_en_placa">Plakalı çift hat</a><br />
+      <a href="#via_doble_en_placa_cota_en_eje">Plakalı çift hat,
+Kot Geometrik Eksende</a><br />
+      </div>
+      <a href="OL_ffcc_planta.html#peralte_velocidad_obligados">Zorunlu
+dever</a><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+      <img style="width: 288px; height: 181px; margin-left: 7px;" alt="" src="Imagenes/modelo_peraltes_ferrocarriles.png" align="right" />Demiryollarında deverler milimetre cinsinden verilir. <br />
+      <br />
+Aliymanda
+sıfırdır ve kurpta dış rayın yükseltilmesiyle dever eksenine göre
+uygulanır. Ancak, anlaşma gereği, sağa kurplarda pozitif ve sola
+kurplarda negatif değerle gösterilir.<br />
+      <br />
+Demiryolları için deverler menüsünün işleyişi, <a href="OL_peraltes.html">karayolları için deverler</a> menüsüne çok benzer,
+ancak ilk durumda deverleri otomatik olarak ve aşağıdaki paragraflarda
+açıklandığı gibi beyan etmenin ve hesaplamanın birkaç yolu vardır.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 550px; height: 257px;" alt="" src="Imagenes/dialogo_peraltes_ffcc.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="tabla_dip">.dip tablosu kullanılarak otomatik
+hesaplama</a></span><br />
+      <br />
+<span style="font-weight: bold;">[Oto DIP] </span>düğmesine basıldığında,
+deverler, <a href="OL_ffcc_planta.html#tablas_dip">.dip&nbsp;<span class="Archivo">tablosunda</span></a> tanımlanan parametreler kullanılarak, yarıçap,
+seyir hızı, mod ve zorunlu dever değerleri kullanılarak otomatik olarak
+hesaplanır.<br />
+      <br />
+Dever rampaları, hesaplanan <a href="OL_planta_curvas_transicion.html">geçiş eğrilerinin</a>
+uzunluğuna karşılık gelir. İki aliyman arasında <a href="OL_planta_curvas_transicion.html">geçiş
+eğrisi</a> yoksa, tablo, <a href="OL_ffcc_planta.html#tablas_dip">.dip&nbsp;<span class="Archivo">tablosundan</span></a>
+alınan gerekli uzunluğa göre geçişi aşağıdaki şekilde hesaplamaya
+çalışır:<br />
+      <ul>
+        <li>Aliyman - kurp: Tüm dever rampasını aliymana yerleştirir.</li>
+        <li>Kurp - kurp (aynı yönde): Dever rampasını daha az devere sahip kurba yerleştirir.</li>
+        <li>Kurp
+- karşı kurp (S kurp): Her kurba kendi dever rampasını yerleştirir ve her iki kurbun teğet noktasında sıfır deverden
+geçer (dever rampasının tüm uzunluğu sığmazsa, mevcut tüm alan
+kullanılır).</li>
+      </ul>
+Öte yandan, eğer <a href="OL_ffcc_planta.html#peralte_velocidad_obligados">zorunlu hız veya
+dever</a> bölümleri tanımlanmışsa, <a href="OL_ffcc_planta.html#tablas_dip">.dip&nbsp;<span class="Archivo">tablosuna</span></a>
+göre deverlerin hesaplanması, orada beyan edilen her KM'ye karşılık
+gelen verileri kullanır.<br /><br /><img style="width: 109px; height: 61px; float: right;" alt="" src="Imagenes/doucines_ffcc.png" hspace="5" />Dever rampalarının giriş ve çıkışını yumuşatan <span class="Parf_negrita">Doucine</span>
+tipi geçiş için, parabolün KV'si ve maksimum uzunluğu yapılandırılabilir.<br />
+      <br />
+      <span class="Titulo_2"><a name="auto_tabla">.tpe tablosuna göre deverler</a></span><br />
+      <br />
+Demiryolu eksenleri durumunda, genellikle deverler, eksene bağlı <a href="OL_ffcc_planta.html#tablas_dip">.dip&nbsp;<span class="Archivo">tablosu</span></a> kullanılarak hesaplanır. Yine de, çok özel durumlar için, <a href="OL_peraltes.html">karayollarında</a> olduğu gibi .tpe&nbsp;<span class="Archivo">dosyalarını</span> kullanmak da mümkündür.<br />
+      <br />
+Örnek olarak, demiryolları için tipik bir tablo yapılandırması içeren &nbsp;<span class="Archivo">FER.tpe</span> ve &nbsp;<span class="Archivo">FFCC.tpe</span> kütüphane dosyaları sunulmaktadır:<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;"># D.Y. DEVER TABLOSU normal hat açıklığı<br />
+# Tablodaki maksimum P-r veri sayısı = 100<br />
+# İlk veriden daha büyük yarıçap için<br />
+# belirtilen değerde bombe uygulanır.<br />
+# İkinci ve sonraki veriler için<br />
+# dever değeri tablodan enterpole edilir:<br />
+# ... yarıçap &gt;= ... için dever ...<br />
+# ------&nbsp;&nbsp; ----&nbsp;&nbsp;&nbsp; ------<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6000.<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5700<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp;
+20.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4662<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp; 50.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3544<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp; 80.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2694<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp; 90.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2048<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp; 110.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1557<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp; 130.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1184<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp; 160.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+900<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;
+160.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+# enterpolasyon ve hassasiyet<br />
+# ------&nbsp; ----<br />
+&nbsp; Inter&nbsp;&nbsp;&nbsp; 1.0&nbsp; yorumlu, enterpole etmez<br />
+# aliymandaki bombe değeri (2 - 2.5)<br />
+# ------&nbsp; ----<br />
+&nbsp; Bom&nbsp;&nbsp;&nbsp;&nbsp; 0.0<br />
+# kurptaki maksimum dever (160 mm)<br />
+# ------&nbsp; ----<br />
+&nbsp; Maxp&nbsp;&nbsp; 160.0<br />
+# S şeklindeki klotoidlerin<br />
+# sonsuz noktasındaki dever (0 - 2)<br />
+# ------&nbsp; ----<br />
+&nbsp; Sbo&nbsp;&nbsp;&nbsp;&nbsp; 0.0<br />
+# tepe klotoidlerinde veya kısa kurplarda<br />
+# minimum sabit dever uzunluğu<br />
+# ------&nbsp; ----<br />
+&nbsp; Lmcur&nbsp;&nbsp; 30.0<br />
+# klotoidsiz aliyman-kurp<br />
+# minimum geçiş uzunluğu. Aliymandaki kesir (daha az dever)<br />
+# uzunluk =&nbsp;&nbsp; L0&nbsp; + L1 * kurp_deveri<br />
+# ------&nbsp; ----&nbsp; ----<br />
+&nbsp; Rmtr&nbsp;&nbsp;&nbsp; 30.0&nbsp;&nbsp; 0.0<br />
+# klotoidsiz aliyman-kurp<br />
+# minimum geçiş uzunluğu. Kurptaki kesir (daha fazla dever)<br />
+# uzunluk =&nbsp;&nbsp; L0&nbsp; + L1 * kurp_deveri<br />
+# ------&nbsp; ----&nbsp; ----<br />
+&nbsp; Cmtr&nbsp;&nbsp;&nbsp; 30.0&nbsp;&nbsp; 0.0<br />
+# klotoid içinde bombe geçişi (0)<br />
+# veya yarısı içeride yarısı dışarıda (1)<br />
+# D.Y.'da bombe geçişleri yoktur<br />
+# ------&nbsp; ----<br />
+&nbsp; Trbo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+# bombe geçişinin otomatik düzeltilmesi ? evet = 1<br />
+# D.Y.'da bombe geçişleri yoktur<br />
+# ------&nbsp; ----<br />
+&nbsp; A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+# TABLOYU (FIN) İLE BİTİRMEK ZORUNLUDUR<br />
+# ------<br />
+&nbsp; FIN<br />
+      </div>
+      <br />
+Demiryolları için .tpe&nbsp;<span class="Archivo">dosyaları</span> aşağıdaki özelliklere sahiptir:<br />
+      <ul>
+        <li>Her tablo belirli bir tasarım hızı için tanımlanır.</li>
+        <li>Deverler milimetre cinsinden verilir.</li>
+        <li><span style="font-weight: bold;">Bom</span> komutu sıfır olmalıdır.</li>
+        <li><span style="font-weight: bold;">Sbo</span> komutu da sıfır olmalıdır.</li>
+        <li><span style="font-weight: bold;">Lmcur</span>,
+          <span style="font-weight: bold;">Rmtr</span> ve <span style="font-weight: bold;">Cmtr</span> komutları, bir demiryolu plan ekseninin tasarlandığı koşullarda asla çalışmamalıdır.</li>
+        <li><span style="font-weight: bold;">A</span> komutu her zaman sıfır olmalıdır, çünkü demiryolu eksenlerinde bombe veya bombe geçişleri yoktur. </li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="tpv">Hıza göre bölümlendirilmiş deverler</a></span><br />
+      <br />
+DEVERLER menüsünde birbiriyle ilişkili iki seçenek bulunur:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 98px; font-weight: bold;">[HIZLAR]
+            </td>
+            <td style="vertical-align: top; width: 574px; text-align: justify;"><img style="width: 225px; height: 235px; margin-left: 7px;" alt="" src="Imagenes/peraltes_velocidad.png" align="right" />KM
+bölümlerine göre bir dizi hız tanımlamaya olanak tanıyan bir menüye
+geçiş yapar. <span class="Parrafo">Bu bilgi, eksenin&nbsp;<span class="Archivo">.vol</span>
+dosyasında saklanır, ancak bağımsız&nbsp;<span class="Archivo">.tpv</span>
+dosyalarında da saklanabilir.</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 98px; font-weight: bold;">[Oto
+TabloV]</td>
+            <td style="vertical-align: top; width: 574px; text-align: justify;"><a href="#auto_tabla"><span style="font-weight: bold;">[Oto
+tablo]</span></a> gibi çalışır, ancak &nbsp;<span class="Archivo">.tpv</span>
+uzantılı bir tablo arar, böylece dever, yarıçapın yanı sıra bölümdeki
+tanımlanan hıza da bağlı olur. Bir kurp farklı bir hız bölümünde
+başlayıp bittiğinde, kurbun başlangıç KM'sinin bulunduğu bölümün hızına
+karşılık gelen dever atanır.<br />
+            <br />
+Kütüphanede, bu seçeneği kullanan &nbsp;<span class="Archivo">FEVE.tpv</span> tablosu mevcuttur. Bu tür tablolar, 1 ila 14 farklı hız sütunu kullanabilir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="proyeccion">Başka bir eksenden izdüşümle elde edilen dever</a></span><br />
+      <br />
+      <img style="width: 171px; height: 75px;" alt="" src="Imagenes/proyectar_vol_peraltes_ffcc.png" align="right" hspace="6" />Çift
+hatlı demiryolları için, deverler menüsünde, her bir hat için, başka
+bir eksenden yansıtılmış bir dever kanunu (BOYKESİT'in <span style="font-weight: bold;">[.vol Yansıt]</span> seçeneği tarzında) türetmeye olanak tanıyan bir yardımcı program bulunur.<br />
+      <br />
+Bu işlevsellik, iki tek hatlı eksenden tek bir çift hatlı eksen oluşturmak için kullanışlıdır.<br />
+      <br />
+      <a name="peraltes_por_linea"><span class="Titulo_2">Çizgiye göre deverler</span><br />
+      <br />
+Rayları temsil eden iki 3B çizgiden dever ve/veya kırmızı kot kanununu
+çıkarmaya olanak tanır. Dever, milimetre cinsinden kot farkından
+çıkarılır. Kırmızı kot için ikisinden en düşük kot alınır (alçak ray).
+Veriler, ilk çizginin noktalarından veya enkesit aralıklarından
+çıkarılabilir.<br />
+Kırmızı kotun parabollerle otomatik olarak ayarlanması yapılabilir.<br />
+      <br />
+      <img style="width: 309px; height: 169px;" alt="" src="Imagenes/peralte_linea_ffcc.png" /><br /><br />Çift
+hat deverleri için iki seçenek vardır: iki çizgi seçerek her iki hatta
+aynı deveri uygulamak veya sol ve sağ deverleri ayrı ayrı hesaplamak
+için 4 çizgi kullanmak.<br />
+      <br />
+</a><a name="promediar"><span class="Titulo_2">Ortalama Al</span><br />
+      <br />
+Bu araç, örneğin <span style="font-weight: bold; font-style: italic;">Çizgiye göre</span> seçeneğiyle elde edilen bir dever kanunundan yola çıkarak yeni bir dever kanunu oluşturur; aliymanlarda sıfır değeri atar ve kurplarda, her birinin içinde elde edilen deverlerin ortalama değerini atar.<br />
+
+      <br />
+
+      </a><a name="modos"><span class="Titulo_2">Dever hesaplama modları</span></a><br />
+      <br />
+      ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+demiryolu projelerinde deverlerin hesaplanması için çeşitli modları destekler:<br /><img style="width: 195px; height: 160px; float: right;" alt="" src="Imagenes/modos_peraltes_ffcc.png" hspace="0" /><br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="hilo_bajo_ras">Alçak ray kırmızı kotta</a></span><br />
+      <br />
+Kırmızı kot, kurbun iç rayına uygulanır ve dış ray deveri oluşturmak için yükselir. Bu, varsayılan olarak ayarlanan hesaplama modudur.<br />
+      <br />
+Bu modun işleyişine örnek olarak, yatay bir kırmızı kota ve planda aşağıdaki tekil noktalara sahip bir eksen bölümü varsayalım:<br />
+      <ul style="font-style: italic;">
+        <li>KM=1000'de. Sağa doğru bir dairesel aliyman +160 mm deverle biter.</li>
+      </ul>
+      <ul style="font-style: italic;">
+        <li>Ardından, 400 m uzunluğunda S şeklinde iki klotoid kolu gelir, öyle ki:</li>
+      </ul>
+      <div style="margin-left: 40px; font-style: italic;">
+      <ul style="list-style-type: circle;">
+        <li>KM=1200'de. Klotoidin sonsuz noktası 0 mm deverle bulunur.</li>
+        <li>KM=1400'de. Sola doğru bir dairesel kurp -160 mm deverle başlar.</li>
+      </ul>
+      </div>
+O zaman dever uygulaması şu şekilde olacaktır:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 50px; margin-left: auto; margin-right: auto;" border="0" cellpadding="10" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 221px; text-align: center;"><img style="width: 192px; height: 60px;" alt="" src="Imagenes/peralte_hilo_bajo_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 222px; text-align: center;"><img style="width: 192px; height: 57px;" alt="" src="Imagenes/peralte_hilo_bajo_2.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 221px;"><img style="width: 192px; height: 62px;" alt="" src="Imagenes/peralte_hilo_bajo_3.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 221px; text-align: justify;">KM=1000'de sağ ray kırmızı kotta ve sol ray +160 mm'dedir.</td>
+            <td style="vertical-align: top; width: 222px; text-align: justify;">KM=1000 ile KM=1200 arasında sağ ray kırmızı kotta kalır ve sol ray +160mm'den kırmızı kot seviyesine iner.</td>
+            <td style="vertical-align: top; width: 221px; text-align: justify;">KM=1200 ile KM=1400 arasında sol ray kırmızı kotta kalır ve sağ ray +160 mm'ye ulaşana kadar yükselir.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Bu uygulama şekli, yatay bir kırmızı kot için, trenin ağırlık merkezinin KM=1000'den KM=1200'e indiğini ve buradan KM=1400'e yükseldiğini varsayar.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="mantener_cdg_curvas_s">S kurplarında ağırlık merkezini koru</a></span><br />
+      <br />
+Bu modda, önceki örneğin davranışı aşağıdaki gibi olacaktır:<br />
+      <br />
+      <table style="text-align: left; width: 688px; height: 225px; margin-left: auto; margin-right: auto;" border="0" cellpadding="6" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 177px; text-align: center;"><img style="width: 192px; height: 60px;" alt="" src="Imagenes/peralte_hilo_bajo_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: center;"><img style="width: 230px; height: 58px;" alt="" src="Imagenes/peralte_hilo_bajo_4.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 229px;"><img style="width: 215px; height: 68px;" alt="" src="Imagenes/peralte_hilo_bajo_5.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 177px; text-align: justify;">KM=1000'de sağ ray kırmızı kotta ve sol ray +160 mm'dedir.</td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Sol
+ray KM 1000'de inmeye başlar ve aynı anda sağ ray yükselir, öyle ki
+KM=1200'de her iki ray da kırmızı kot +80 mm seviyesindedir, bu nedenle
+bu noktadaki dever hala +0 mm'dir (veya istenirse, her iki rayda da +80
+mm).</td>
+            <td style="vertical-align: top; width: 229px; text-align: justify;">Sol
+ray, KM 1400'de kırmızı kot seviyesine ulaşana kadar inmeye devam ederken,
+sağ ray da KM 1400'de +160 mm'ye ulaşana kadar yükselmeye devam eder.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Bu şekilde, her iki ray da tüm geçiş boyunca kırmızı kotun üzerindedir
+(yani, alçak ray kırmızı kottan "ayrılır"), ancak bu sayede trenin
+ağırlık merkezinin, son dever daha düşükse düzgün bir şekilde inmesi
+veya tersi durumda yükselmesi sağlanır, S'nin merkezinde bir minimum
+kottan geçmeden.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="norma_francesa">Fransız Yönetmeliği</a></span><br />
+      <br />
+Fransız dever yönetmeliği, aşağıdaki kriterle eksenin balast hacmini azaltmayı hedefler (burada <span style="font-style: italic;">p</span> dever, <span style="font-style: italic;">Zkırmızı</span> kırmızı kot ve <span style="font-style: italic;">D</span> ray ile geometrik eksen arasındaki mesafedir):<br />
+      <ul>
+        <li>Çift hat durumunda:</li>
+      </ul>
+      <div style="margin-left: 80px;"><span style="font-style: italic;">İç
+alçak rayın kotu = Zkırmızı -&nbsp; p/3</span><br style="font-style: italic;" />
+      <span style="font-style: italic;">İç yüksek rayın kotu =
+Zkırmızı + 2p/3</span><br />
+      </div>
+      <ul>
+        <li>p &lt;= 100 mm olan kurplar için:</li>
+      </ul>
+      <div style="margin-left: 80px;"><span style="font-style: italic;">Dış
+alçak rayın kotu = Zkırmızı </span><br style="font-style: italic;" />
+      <span style="font-style: italic;">Dış yüksek rayın kotu =
+Zkırmızı + p</span><br />
+      </div>
+      <ul>
+        <li>p &gt; 100mm olan kurplar için:</li>
+      </ul>
+      <div style="margin-left: 80px;"><span style="font-style: italic;">Dış
+alçak rayın kotu = Zkırmızı + (D-0.75)*0.08&nbsp; </span><br style="font-style: italic;" />
+      <span style="font-style: italic;">Dış yüksek rayın kotu =
+Zkırmızı + (D-0.75)*0.08 + p</span><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img style="width: 590px; height: 304px;" alt="" src="Imagenes/ffcc_norma_francesa.png" /><br />
+      </div>
+      <br />
+Deverler bu yönetmeliğe göre uygulandıktan sonra, <a href="OL_ffcc_capa_forma.html#norma_francesa">koruyucu tabakanın eğimleri Fransız yönetmeliğine göre</a> oluşturulmalıdır.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="matener_cdg_espirales_cortas">Kısa geçiş eğrilerinde ağırlık merkezini koru</a></span><br />
+      <br />
+Bu
+durumda ayrıca maksimum rampa da verilmelidir (varsayılan olarak 1:300,
+yani 3.33 mm/m). Bu değer belirlendikten sonra, program dever
+rampalarının bu değeri aşıp aşmadığını kontrol eder. Bu durumda, alçak
+ray geçiş sırasında deverin yarısı kadar inerken diğer ray aynı miktarda
+yükselir. Böylece kurpta toplam dever korunur, ancak rampa yarıya
+düşer.<br />
+      <br />
+Bu durumda, kırmızı kotun kotu, iki rayın kotunun ortasındadır.<br />
+      <br />
+      <span style="font-style: italic; font-weight: bold;"><a name="cota_entrecarril">Kırmızı kotu hat aralığı eksenine göre</a></span><a name="cota_entrecarril"><br />
+      <br />
+      </a>Kırmızı kotun kotu, raylar arasındaki orta noktada korunur.
+Yükselen ray, deverin yarısı kadar yükselir ve inen ray, deverin
+yarısı kadar iner.<br />
+Bu davranış, çift hatta, şu seçenekleri kullanırsak maskelenebilir:<a name="cota_entrecarril"><br />
+      </a>
+      <ul>
+        <li>Plakalı çift hat.</li>
+        <li>Kırmızı Kotun Geometrik Eksende Olduğu Plakalı Çift Hat.</li>
+      </ul>
+      <br />
+      <a style="font-weight: bold;" name="curvas_S_Z_entrecarril">S şeklindeki kurp grupları, kırmızı kotu hat aralığında koru</a><br />
+      <br />
+İki aliyman arasında bir çift S kurpu içeren bir dizi kurp
+göründüğünde, deverler, bir rayın deverin yarısı kadar yükselmesi ve
+diğerinin kırmızı kot kotuna göre diğer yarısı kadar inmesiyle
+uygulanır. Bir kurp ve karşı kurp arasında bir aliyman olsa bile (bu
+aliyman 10 cm'den küçük olduğu sürece) bir çift kurp, S kurpları olarak
+kabul edilir.<br /><br /><span style="font-weight: bold;"><a name="Norma_metro_Mexico"></a>Meksika Metrosu Yönetmeliği<br /><br /></span>Bu mod, Fransız yönetmeliğine benzer, çift hat durumlarında şunlara sahip olacağız:<br /><br />İç_Alçak_Ray_Kot = Zkırmızı -&nbsp; p/2&nbsp; (p=dever)<br />İç_Yüksek_Ray_Kot = Zkırmızı + p/2<br />p değerinden bağımsız olarak:<br />Dış_Alçak_Ray_Kot = Zkırmızı <br />Dış_Yüksek_Ray_Kot = Zkırmızı + p<br /><br />Daha
+sonra Koruyucu Tabaka'da, Koruyucu Tabakanın eğimlerini oluşturan
+"Fransız Yönetmeliği" düğmesi de kullanılabilir, böylece (100mm)'den
+büyük devere sahip kurplar için koruyucu tabaka kurbun içine doğru tek
+eğimli hale gelir. (Deverleri tanımladıktan sonra kullanılmalıdır).<br /><span style="font-weight: bold;"><br /></span>
+      <br />
+      <br />
+      <span class="Titulo_2">Çift hat için dever</span><br />
+      <br />
+      <span style="font-weight: bold;"><a name="via_doble_independiente">Bağımsız
+çift hat</a></span><a name="via_doble_independiente"><br />
+      <br />
+      </a>Her iki hatta da seçilen mod uygulanır.<a name="via_doble_independiente"><br />
+      <br />
+      <span style="font-style: italic; font-weight: bold;"></span></a><a name="via_doble_en_placa"><span style="font-weight: bold; font-style: italic;">Plakalı çift hat</span><br />
+      <br />
+Bu seçenekle, dört ray aynı enkesit düzlemine yerleştirilebilir ve kırmızı kotun kotunu dördünden en alçak olanı korur.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img style="width: 539px; height: 227px;" alt="" src="Imagenes/peralte_via_placa.png" /><br />
+      </div>
+      <br />
+      <a name="via_doble_en_placa_cota_en_eje"><span style="font-weight: bold; font-style: italic;">Plakalı çift hat,
+kot geometrik eksende</span><br />
+      <br />
+Dört ray hizalanır ancak kırmızı kotun kotu geometrik eksene uygulanır.<br />
+      <br />
+Çift hattaki dever seçenekleri, dever değerlerinin tanımlandığı KM'lere göre tanımlanabilir.<br />
+      <br />
+      </a><img style="width: 238px; height: 122px;" alt="" src="Imagenes/peralte_ffcc_datos_viadoble.png" /><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

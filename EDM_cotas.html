@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Kot Düzenleme</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>n
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="Ana Sayfa" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>KOT DÜZENLEME<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><br />
+      <span class="Parrafo">
+      <a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo">
+      <a href="#atenuacion">Eş Yükselti Eğrilerinin Kota Göre Soluklaştırılması</a></span><br />
+      <span class="Parrafo">
+      </span><a href="#marcaje"><span class="Parrafo"><span class="Parrafo">Çizgi/Sembol/Metinlerin Kota Göre İşaretlenmesi</span></span></a><br />
+      <a href="#asignacion_manual"><span class="Parrafo"><span class="Parrafo">Manuel Kot Atamaları</span></span></a><br />
+      </span></div>
+
+      
+      <div style="margin-left: 80px;"><a href="#cota_linea"><span class="Parrafo">Bir Çizgiye Kot Atama</span></a><br />
+      <a href="#cota_vertices_linea"><span class="Parrafo">Bir Çizginin Köşelerine Kot Atama</span></a><span class="Parrafo"><br /><a href="#cota_por_banda">Bir Şeride Göre Eş Yükselti Eğrilerine Kot Atama</a><br /></span><span class="Parrafo"><a href="#cota_linea_2_puntos">İki Noktaya Göre Bir Çizginin Köşelerine Kot Atama</a><br /></span><a href="#cota_simb"><span class="Parrafo">Bir Sembole Kot Atama</span></a><br />
+      <a href="EDM_cotas.html#cota_interp"><span class="Parrafo">Köşe Kotunu Sil/Enterpole Et</span></a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#asignacion_auto"><span class="Parrafo">Otomatik Kot Atamaları</span></a><br />
+      </div>
+
+      
+      <div style="margin-left: 80px;"><a href="#cota_auto_curvas_nivel"><span class="Parrafo">Eş Yükselti Eğrilerine Otomatik Kot Atama</span></a><br />
+      <a href="#cota_auto_simb"><span class="Parrafo">Sembollere Otomatik Kot Atama</span></a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#etiquetado"><span class="Parrafo">Eş Yükselti Eğrilerini ve Noktaları Etiketleme</span></a><br />
+      </div>
+      <div style="margin-left: 80px;"><span class="Parrafo"><a href="#etiquetado_curvas_nivel">Eş Yükselti Eğrilerini Etiketleme</a></span><br />
+      <span class="Parrafo"><a href="#etiquetado_simb"><span class="Parrafo">Sembolleri veya Noktaları Etiketleme</span></a><br />
+      </span></div>
+      <div style="margin-left: 40px;"><a href="#auto_nivel_maestras"><span class="Parrafo">Ana Eş Yükselti Eğrilerini Otomatik Oluşturma</span></a><br />
+      <a href="#redondeo"><span class="Parrafo">Eş Yükselti Eğrisi Kotlarını Yuvarlama</span></a><br />
+      <a href="#cuadro_coord"><span class="Parrafo">Koordinat Tabloları Oluşturma</span></a><br /><a href="#color_cota">
+Kota Göre Renklendirme</a><br />
+      <a href="#cotas_g_e">Google Earth Kotları</a><br />
+      </div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo">
+<br />
+      <div style="margin-left: 40px;"><span class="Parrafo"></span></div>
+      <span class="Parrafo">Sayısal harita düzenleme işlemlerinin birçoğunun, çizgilerin ve noktaların Z koordinatının değiştirilmesi veya yazdırılmasıyla ilgili olması yaygındır. Örneğin, 2 boyutlu bir haritayı 3 boyutlu hale getirmek (kotlandırmak), kotlarını belirten yazılara sahip 2 boyutlu bir nokta bulutunu işlemek veya eş yükselti eğrilerini etiketlemek gibi durumlar bu kapsama girer.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 411px; height: 617px;" alt="Kotlar Menüsü" src="Imagenes/acceso_cotas.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Bu menü, kotlarının yazdırılması gereken eş yükselti eğrilerinin ve tekil noktaların yardımlı etiketlenmesini, ayrıca çizgilerin, çizgi köşelerinin ve sembollerin kotlarının otomatik olarak hesaplanmasını ve değiştirilmesini kontrol eder. Bu menüye <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> yolundan erişilir.<br />
+      <br />
+</span></span><img style="width: 83px; height: 177px; margin-left: 7px;" alt="Kotlar Araç Çubuğu" src="Imagenes/toolBar_cotas.png" align="right" /><span class="Parrafo"><span class="Parrafo">Program ayrıca bu fonksiyonlar için özel bir <a href="EDM_barras_herramientas.html">araç çubuğu</a> ile donatılmıştır ve bu çubuk <span style="font-weight: bold;">Yapılandırma</span> </span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Araç Çubuklarını Göster</span> </span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Kotlar</span> menüsünden gösterilebilir.<br />
+      </span></span><br />
+
+
+
+
+      
+      
+      
+      
+      <table style="text-align: left; height: 106px; width: 550px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+
+        <tbody>
+          <tr>
+            <td style="width: 24px;"><img style="width: 24px; height: 24px;" alt="Kota Göre Soluklaştır" src="Imagenes/icono_toolBarCotas_atenuacion.png" /><br />
+</td>
+            <td style="width: 127px;">Kota Göre Soluklaştır<br />
+</td>
+            <td style="width: 24px;"><img style="width: 24px; height: 24px;" alt="Kota Göre İşaretle" src="Imagenes/icono_toolBarCotas_marcar.png" /><br />
+</td>
+            <td style="width: 147px;">Kota Göre İşaretle<br />
+</td>
+            <td style="width: 23px;"><img style="width: 24px; height: 24px;" alt="Çizgilere Otomatik Kot Ata" src="Imagenes/icono_toolBarCotas_cotaLauto.png" /><br />
+</td>
+            <td style="width: 153px;">Çizgilere Otomatik Kot Ata<br />
+</td>
+          </tr>
+          <tr>
+            <td style="width: 24px;"><img style="width: 24px; height: 24px;" alt="Şeride Göre Kot Ata" src="Imagenes/icono_toolBarCotas_banda.png" /><br />
+</td>
+            <td style="width: 127px;">Şeride Göre Kot Ata<br />
+</td>
+            <td style="width: 24px;"><img style="width: 20px; height: 22px;" alt="2 Noktaya Göre Çizgiye Kot Ata" src="Imagenes/icono_toolBarCotas_cotaL2P.png" /><br />
+</td>
+            <td style="width: 147px;">2 Noktaya Göre Çizgiye Kot Ata<br />
+</td>
+            <td style="width: 23px;"><img style="width: 24px; height: 24px;" alt="Kot Artırımı ve Çizgi Tipi" src="Imagenes/icono_toolBarCotas_incZTL.png" /><br />
+</td>
+            <td style="width: 153px;">Kot Artırımı ve Çizgi Tipi<br />
+</td>
+          </tr><tr>
+            <td><img style="width: 24px; height: 24px;" alt="Kot Sil/Enterpole Et" src="Imagenes/icono_toolBarCotas_eliminarinterpolar.png" /><br />
+</td>
+            <td style="width: 127px;">Kot Sil/Enterpole Et<br />
+</td>
+            <td style="width: 24px;"><img style="width: 20px; height: 20px;" alt="Özellikleri Al" src="Imagenes/icono_toolBarCotas_tomarAtrib.png" />
+</td>
+            <td style="width: 147px;">Özellikleri Al
+</td>
+            <td style="width: 23px;"><img style="width: 22px; height: 18px;" alt="Özellikleri Uygula" src="Imagenes/icono_toolBarCotas_ponerAtrib.png" />
+</td>
+            <td style="width: 153px;">Özellikleri Uygula
+</td>
+          </tr>
+          <tr>
+            <td><img style="width: 24px; height: 24px;" alt="Özellikleri Aktar" src="Imagenes/icono_toolBarCotas_pasarAtrib.png" />
+</td>
+            <td style="width: 127px;">Özellikleri Aktar
+</td>
+            <td style="width: 24px;"><img style="width: 23px; height: 21px;" alt="Noktalara Otomatik Kot Ata" src="Imagenes/icono_toolBarCotas_cotaPauto.png" />
+</td>
+            <td style="width: 147px;">Noktalara Otomatik Kot Ata
+</td>
+            <td style="width: 23px;"><img style="width: 24px; height: 24px;" alt="Ana Eş Yükselti Eğrileri" src="Imagenes/icono_toolBarCotas_linDirectoras.png" />
+</td>
+            <td style="width: 153px;">Ana Eş Yükselti Eğrileri
+</td>
+          </tr><tr>
+            <td><img style="width: 24px; height: 22px;" alt="Kotları Yuvarla" src="Imagenes/icono_toolBarCotas_redondear.png" />
+            </td>
+            <td>Kotları Yuvarla
+            </td>
+            <td><img style="width: 24px; height: 24px;" alt="Çizgileri Etiketle" src="Imagenes/icono_toolBarCotas_etiquetadoL.png" />
+            </td>
+            <td>Çizgileri Etiketle
+            </td>
+            <td><img style="width: 23px; height: 21px;" alt="Noktaları Etiketle" src="Imagenes/icono_toolBarCotas_etiquetadoP.png" />
+            </td>
+            <td>Noktaları Etiketle
+            </td>
+          </tr>
+          <tr>
+            <td><img style="width: 24px; height: 17px;" alt="Nokta Koordinatları" src="Imagenes/icono_toolBarCotas_coord.png" />
+            </td>
+            <td>Nokta Koordinatları
+            </td>
+            <td><img style="width: 24px; height: 19px;" alt="NXYZ Tablosu" src="Imagenes/icono_toolBarCotas_cuadroNXYZ.png" />
+            </td>
+            <td>NXYZ Tablosu
+            </td>
+            <td><img style="width: 24px; height: 24px;" alt="Kota Göre Renklendir" src="Imagenes/icono_toolBarCotas_color.png" />
+            </td>
+            <td>Kota Göre Renklendir
+            </td>
+          </tr>
+
+
+          
+        </tbody>
+      
+      
+      
+      </table>
+
+
+
+
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Titulo_2"><a name="atenuacion">Eş Yükselti Eğrilerinin Kota Göre Soluklaştırılması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img style="width: 290px; height: 102px; margin-left: 7px;" alt="Kota Göre Soluklaştırma" src="Imagenes/atenuacion_por_cotas.png" align="right" /><span class="Parrafo"><span class="Parrafo">Bu seçenek sadece eş yükselti eğrileri (L26 ve L27 tipleri) üzerinde çalışır. Bunun için <span style="font-weight: bold; font-style: italic;">Soluklaştırmayı Uygula</span> seçeneği işaretlenir, soluklaştırılmak İSTENMEYEN kot aralığı ve soluklaştırma seviyesi (% olarak) belirtilir. Sonuç olarak, verilen aralığın dışındaki eş yükselti eğrileri, aralığa ait olanlara göre daha soluk görünür.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="marcaje">Çizgi/Sembol/Metinlerin Kota Göre İşaretlenmesi</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img style="width: 316px; height: 198px; margin-left: 7px;" alt="Kota Göre İşaretleme" src="Imagenes/marcaje_lineas.png" align="right" /><span class="Parrafo"><span class="Parrafo">Bu araç, aşağıdaki seçeneklere göre vurgulanmak istenen çizgiler/semboller/metinler için minimum ve maksimum kotları tanımlamaya olanak tanır:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Çizgileri işaretlemek için minimum ve maksimum kot.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Sadece L26 ve L27 eş yükselti eğrilerini mi yoksa tüm çizgileri mi işaretleneceğini seçme.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Tamamen aralık içinde kalan çizgileri mi yoksa noktalarının bir kısmı aralık içinde olanları mı işaretleneceğini seçme.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Noktasal sembolleri de analiz etme.</span></span></li></ul><span class="Parrafo"><span class="Parrafo"></span></span><ul><li><span class="Parrafo"><span class="Parrafo">Metinleri de analiz etme.<br /></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">İşaretlenen elemanların taşınacağı modeli seçme.&nbsp;&nbsp;&nbsp; &nbsp;</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold;">[Modele Taşı]</span> butonu, işaretlenen tüm nesneleri belirtilen modele taşır.<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Çizgileri İşaretle</span> kutucuğu aktif olduğu sürece, yeniden çizimlerde nesneler belirtilen kot aralığına göre işaretlenmiş olarak görünür.<br />
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="asignacion_manual">Manuel Kot Atamaları</a></span><br />
+      <span class="Parrafo"><br />Kot değişiklikleriyle ilgili birçok işlem, kullanıcı tarafından yapılan manuel atamalarla gerçekleştirilir. Aşağıda, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'un bu amaçla sunduğu tüm araçlar açıklanmaktadır.<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_linea">Bir Çizgiye Kot Atama</a></span><br />
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Çizgiye Kot Ata</span> seçeneği, herhangi bir tipteki bir çizginin genel kotunu ve <span style="font-weight: bold;">tüm köşelerinin</span> kotunu yeni bir kota değiştirir. Bu, örneğin çizgileştirme sırasında yapılan hataları düzeltmeye olanak tanır.<br /><br />Eğer seçili bir çizgi yoksa, program değiştirilmek istenen çizgiyi seçmenizi ister ve ardından komut satırında, aktif köşenin mevcut kotunu gösterirken yeni kotu sorar. Sayıyı yazıp &lt;Intro&gt; tuşu ile onaylamak, yeni kotun atanması için yeterlidir.<br /><br />Eğer önceden seçilmiş çizgiler varsa, program her çizgi için sırayla yeni kotları sorar. Bu işlemden &lt;Esc&gt; tuşuna basarak herhangi bir zamanda çıkılabilir.<br /><br />Ayrıca, bir kot artışına göre sürekli olarak çizgilere kot atamak da mümkündür. </span><span style="font-weight: bold;"><a name="cota_increm_tipo_linea">Araçlar</a></span><span class="Parrafo"> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Z(artış) + Çizgi Tipi</span> seçeneği, ilk kotu ve kot artışını sorar. Bundan sonra kullanıcı, programın yeni kot atayacağı her bir çizgiye tıklamalıdır; yeni kot, bir önceki kotun verilen artışla artırılmasıyla elde edilir ve <span style="font-weight: bold;">ayrıca mevcut çizgi tipi atanır</span>. Çizgi tipinin değişmesi, hangilerinin zaten kotlandığını bir bakışta tanımayı sağlar. Süreç, kullanıcı tarafından &lt;Esc&gt; tuşu ile kesilene kadar döngüseldir.<br /><br />Bir çizgiye yarı otomatik olarak kot atamanın ve aynı zamanda onu bir eş yükselti eğrisine dönüştürmenin başka bir yolu daha vardır. Bunun için aşağıdaki sıra izlenmelidir:<br /></span>
+      <ol>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="tomar_atributos">Araçlar</a></span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Özellikleri Al</span> seçeneğini seçin ve bir referans çizgisi seçin. Program bu çizgiden çizgi tipini ve eğer bir eş yükselti eğrisi ise kotunu alır.</li>
+      </ol>
+      <ol start="2">
+        <li><span class="Parrafo"><a name="poner_atributos"><span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Özellikleri Uygula</span> seçeneğini seçin ve bir hedef çizgisi seçin. Program, önceki seçenekle alınan son çizginin tipini ve kotunu (eğer referans çizgisi bir eş yükselti eğrisi ise) atar.</a></span></li>
+</ol>
+<a name="poner_atributos">      <span class="Parrafo"></span></a><a name="pasar_atributos"><span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Özellikleri Aktar</span> seçeneği, önceki adımları art arda gerçekleştirir. İlk seçilen çizgiden özellikler alınır, ikinciye uygulanır, üçüncüden tekrar alınır ve bu şekilde devam eder.<br /><br />Bu üç araçtan herhangi birini başlattığınızda (<span class="Parf_negrita">Özellikleri Al</span> / <span class="Parf_negrita">Özellikleri Uygula</span> / <span class="Parf_negrita">Özellikleri Aktar</span>), hangi özelliklerin aktarılacağını seçebileceğiniz bir iletişim kutusu gösterilir. Ayrıca, kot, tipi ne olursa olsun hedef çoklu doğruya aktarılır.<br /><br /></a><div style="text-align: center;"><img style="width: 150px; height: 160px;" alt="Özellik Aktarma Ayarları" src="Imagenes/cotas_tomar_poner_pasar.png" /><br /></div><a name="pasar_atributos"><br /><br />
+      <span style="font-weight: bold; font-style: italic;"></span></a><a style="font-weight: bold; font-style: italic;" name="cota_vertices_linea">Bir Çizginin Köşelerine Kot Atama</a><br />
+      <span class="Parrafo"><br />
+Bu seçenek, <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Çizgi Köşesine Kot Ata</span> yolundan erişilebilir ve herhangi bir tipteki bir çizginin her bir köşesine farklı bir kot atama imkanı sunar.<br /><br />Bu seçenek seçildiğinde, program kotu değiştirilmek istenen köşeyi (eğer zaten seçili değilse) sorar. Bir iletişim kutusu, o köşenin koordinatlarını gösterir ve Z değerini değiştirme imkanı sunar. &lt;Intro&gt; tuşu ile onaylandığında, kot değiştirilir ve çizginin bir sonraki köşesine geçilir.<br /><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 404px; height: 254px;" alt="Köşelere Kot Atama" src="Imagenes/cota_a_vertices.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />Her durumda, <span style="font-weight: bold;">[Önceki]</span> ve <span style="font-weight: bold;">[Sonraki]</span> butonları ile çizginin tüm köşeleri arasında gezinmek ve kotlarını onaylamak mümkündür.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br />
+<br style="font-weight: bold; font-style: italic;" /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_por_banda">Bir Şeride Göre Eş Yükselti Eğrilerine Kot Atama</a></span><br style="font-weight: bold; font-style: italic;" />
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Şeride Göre Kotlar</span> seçeneği, fare ile uçları belirlenen bir şeride göre eş yükselti eğrilerine (L26 ve L27) kot atar.<br /><br /></span><img style="width: 234px; height: 117px; margin-left: 7px;" alt="Şeride Göre Kot Atama" src="Imagenes/cota_por_banda.png" align="right" /><span class="Parrafo">Eğriler için <span style="font-weight: bold;">başlangıç kotu</span> ve <span style="font-weight: bold;">kot artışı</span> verilerini içeren bir pencere sunar. Verileri kabul ettikten sonra, kullanıcıdan şeridin iki ucunu belirtmesi istenir. Bu yapıldıktan sonra, program şerit tarafından kesilen eş yükselti eğrilerine, şeridin ilk noktasına en yakın olana <span style="font-weight: bold;">başlangıç kotunu</span> ve sonrakilere <span style="font-weight: bold;">artışa</span> göre artan kotları atar. Etkilenen tüm çizgiler, bir yeniden çizim gerçekleşene kadar geçici olarak vurgulanır.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_linea_2_puntos">İki Noktaya Göre Bir Çizginin Köşelerine Kot Atama</a></span><br />
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">2 Noktaya Göre Çizgiye Kot Ata</span> seçeneği, bir çizginin iki köşesini seçmeyi ve her birine farklı bir kot atamayı ister. Program daha sonra, aradaki köşelerin kotunu veri noktalarına olan mesafelerine göre enterpole eder (geri kalanını olduğu gibi bırakarak) aşağıdaki formüle göre:<br /><br />
+      </span>
+      <table style="text-align: left; width: 511px; height: 27px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 226px;"><img style="width: 195px; height: 50px;" alt="Formül" src="Imagenes/formula_cota_linea_2_puntos.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 14px;"><span class="Parrafo">Z<sub>i</sub><br />Z1<br />Z2<br />d1<br />d2 <br /></span></td>
+            <td style="vertical-align: top; width: 263px;"><span class="Parrafo">&#8594; Hesaplanacak köşe kotu<br />&#8594; Seçilen ilk köşe kotu<br />&#8594; Seçilen ikinci köşe kotu<br />&#8594; Seçilen ilk köşeye olan mesafe<br />&#8594; Seçilen ikinci köşeye olan mesafe</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Kullanıcı, yukarıdaki formüle göre, aradaki köşelere atanan kotun kesinlikle artan veya azalan olmayabileceğini (örneğin, apsislerde geri dönüşler olan çizgilerde) dikkate almalıdır.<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_simb">Bir Sembole Kot Atama</a></span><br />
+      <span class="Parrafo"><br />
+Bir noktanın kotunu <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Noktaya Kot Ata</span> menüsünden değiştirmek de mümkündür. Bir nokta her seçildiğinde, mesaj mevcut koordinatlarını gösterirken yeni kotu ister.<br /><br />
+      <br />
+</span><a name="cota_interp"><span style="font-weight: bold; font-style: italic;">Köşe Kotunu Sil/Enterpole Et</span><br />
+      <br />
+Bu araç, köşeleri siler veya kot değerlerini enterpole eder. Kot aralığı girilir ve köşelerin silinmesi mi yoksa kot değerlerinin enterpole edilmesi mi istendiği işaretlenir.<br />
+      <br />
+      </a><span class="Parrafo"><br /></span><span class="Titulo_2"><a name="asignacion_auto">Otomatik Kot Atamaları</a></span><br />
+
+      <span class="Parrafo"><br />Bazen, temel haritanın kotu atanmamış veya hatalı olabilir, ancak eş yükselti eğrilerinin kotunu belirten yazılarla birlikte gelir. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, bu durumdan yararlanan ve aşağıda açıklanan araçlarla donatılmıştır.<br /><br /><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="cota_auto_curvas_nivel">Eş Yükselti Eğrilerine Otomatik Kot Atama</a></span><br />
+
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Eş Yükselti Eğrilerine Otomatik Kot Atama</span> menüsünden, eş yükselti eğrilerine otomatik olarak kot atanabilir. Bunun için kotlu noktaları, kot metni içeren yazıları ve/veya kot metni içeren yazılarla ilişkilendirilmiş noktaları kullanır. Yukarıda belirtilenlerden en fazla üç veri türüne izin verir.<br /><br /></span><img style="width: 234px; height: 364px; float: right;" alt="Otomatik Kot Atama" src="Imagenes/cota_curvas_auto.png" hspace="5" vspace="5" /><span class="Parrafo">Hesaplama şu şekilde yapılır: Çizimdeki iki noktadan ve ilgili kotlarından yola çıkarak, bu noktalarla tanımlanan segmenti kesen eş yükselti eğrileri aranır. Bulunan çizgi sayısı, noktaların kot farkı ve seçilen kot artışıyla uyumluysa, ilgili kotlar atanır ve diğer noktalarla arama devam eder.<br /><br />İhtiyaç duyduğu hesaplama verilerini ve kotu alacağı nokta ve/veya metin tiplerini içeren bir pencere sunar. Hesaplama <span style="font-weight: bold;">hassasiyeti</span>, kot ataması yapmak için nesneler (noktalar, yazılar ve/veya etiketler) arasındaki maksimum mesafeyi sınırlar (varsayılan, 100 m). <span style="font-weight: bold;">Artış</span>, açıkça eş yükselti eğrilerinin artışını ifade eder. <span style="font-weight: bold; font-style: italic;">Tümüne Uygula</span>, tüm eş yükselti eğrilerine kot hesaplar ve atar, <span style="font-weight: bold; font-style: italic;">Kotu Olmayanlara Uygula</span> ise kotu olan çizgileri korur.<br /><br />Hesaplamanın dayandığı nesneler kotlu noktalar ise, <span style="font-weight: bold;">nesne</span> olarak <span style="font-weight: bold;">nokta</span>, <span style="font-weight: bold;">tip</span> olarak kütüphanedeki tip ve <span style="font-weight: bold;">ilişkili nokta -1</span> seçilmelidir. Eğer kot metni içeren yazılar ise, <span style="font-weight: bold;">nesne</span> <span style="font-weight: bold;">yazı</span>, <span style="font-weight: bold;">tip</span> kütüphanedeki tip ve <span style="font-weight: bold;">ilişkili nokta -1</span> olacaktır. Eğer kotu yakındaki bir yazının metninden alınmak istenen noktalar ise, <span style="font-weight: bold;">nesne</span> olarak <span style="font-weight: bold;">yazı</span> (hesaplama için Z), tip olarak kütüphanedeki tip ve <span style="font-weight: bold;">ilişkili nokta</span> (hesaplama için X ve Y) kütüphanedeki tip seçilecektir.<br /><br /><span style="font-style: italic;"><span style="font-weight: bold;">Metin Kutusunun Kesişimine Göre Kot </span></span>:
+O metnin yazdığı kotun atanmasını istediğiniz çoklu doğruların üzerinde bulunan metinlerin tipini ve çoklu doğruların tipini belirtmek yeterlidir. Tipleri doldurduktan sonra Ata butonuna tıklamak gerekir.<br />Araç, metni çevreleyen kutunun çoklu doğrularla kesişimlerini arar ve kesişim olması durumunda, metnin yazdığı kot çoklu doğruya atanır. Metin kutusunun kesişimlerini ararken, o kotu almaması gereken diğer çoklu doğruları da kesebilir; bu durumda, çizimi gözden geçirmek ve belki de metinlerin boyutunu küçültmek önerilir.<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_auto_simb">Sembollere Otomatik Kot Atama</a></span><br />
+
+      <span class="Parrafo"><br />
+Sembollere otomatik olarak kot atamak için <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Noktalara Otomatik Kot Ata</span> seçeneğine başvurmak gerekir. Bu menü, kotu olmayan noktalara, yakındaki bir metinde yazılı olan değeri atamaya olanak tanır. İşleyişi şöyledir:<br /></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span style="font-weight: bold;">Nokta Tipi S</span>:&nbsp; Kot atanacak nokta tipi (varsayılan, S1).</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Değiştirilecek Tip S</span>: Kot atandıktan sonra tip buna değiştirilir (varsayılan, S43).</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Metin Tipi R</span>: Kotu içeren ve aranacak metin stili (varsayılan, R0).</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Kullanılan R'yi Sil</span>: Aktif edilirse, kullanılan metinler silinir. </span></li>
+      
+      </ul>
+
+      <img style="width: 234px; height: 214px; margin-left: 7px;" alt="Noktalara Otomatik Kot Atama" src="Imagenes/cota_puntos_auto.png" align="right" /><span class="Parrafo">Programın, belirtilen tipteki hangi sembollere kot ataması gerektiğini anlaması için, nokta ile yazı arasında bir <span style="font-weight: bold;">mesafe</span> kriteri ve bir <span style="font-weight: bold;">tolerans</span> kullanılır; böylece metin bu marjların dışındaysa, o an analiz edilen sembole ait olmadığı anlaşılır.<br /><br />Dolayısıyla, şu değerlere ihtiyaç vardır: nokta-metin <span style="font-weight: bold;">konum vektörü</span>, şu şekilde tanımlanır:<br /></span>
+      
+      <ul>
+
+        <li><span class="Parrafo">Metin ve nokta arasındaki apsis mesafesi, dx = XT-XP.</span></li>
+        <li><span class="Parrafo">Metin ve nokta arasındaki ordinat mesafesi, dy = YT-YP.</span></li>
+      
+      </ul>
+
+      <span class="Parrafo">Ve arama <span style="font-weight: bold;">toleransı</span> (varsayılan, 0.05 ).<br /><br />Konum vektörü, bir nokta ve ona bağlı yazıyı fare ile seçerek <span style="font-weight: bold;">grafik olarak</span> elde edilebilir (bu durumda herhangi bir yakalama modunu aktif etmeye gerek yoktur).<br /><br />Bu algoritmayı belirtilen kriterlerle çalıştırmak için, <span style="font-weight: bold;">[Kotları Ver]</span> butonuna basılır. Program, o zaman <span style="font-weight: bold;">Nokta Tipi S</span> ile noktaları arar ve toleranslar içinde <span style="font-weight: bold;">Metin Tipi R</span> stiline sahip bir yazı bulursa, yazılı kotu noktaya atar ve tipini <span style="font-weight: bold;">Değiştirilecek Tip S</span>'ye değiştirir. Yakınında bir metin bulamayan noktalar kendi tipleriyle kalır ve kullanılmayan metinler olduğu gibi kalır.<br /><br />Seçenek kullanıldıktan sonra, toleranslar değiştirilebilir ve ilk denemede dışarıda kalmış bazı noktaları "yakalamak" için tekrar kullanılabilir.<br /><br />Bazen noktalar, kesişen iki çizgi segmentiyle temsil edilir; bu durumlar için, çizgilerin kesişimlerinden noktalar oluşturmaya olanak tanıyan bir seçenek de vardır: <span style="font-weight: bold;">[Çizgi Kesişimlerinde Nokta Oluştur]</span>, <span style="font-weight: bold;">Nokta Tipi S</span>'de belirtilen tipte bir sembolü, aktif çizgiler arasındaki tüm mevcut kesişimlerde oluşturur.<br /><br />Diğer zamanlarda, metinlerin kendileri kotlu sembollere dönüştürülmek istenir, çünkü yerleştirme noktaları (X,Y) istenen koordinatlarla çakışır. <span style="font-weight: bold;">[Metinleri Kotlu Noktalara Dönüştür]</span> seçeneği, <span style="font-weight: bold;">Değiştirilecek Tip S</span>'de belirtilen tipte sembolleri, <span style="font-weight: bold;">Metin Tipi R</span>'de belirtilen tipteki metinlerin yerleştirme noktalarında ve metnin kendisinde belirtilen kotla oluşturur. Bu durumda, çizimde netlik sağlamak için <span style="font-weight: bold; font-style: italic;">Kullanılan R'yi Sil</span> seçeneğini işaretli bırakmak tavsiye edilir.<br /><br /><br /></span><span class="Titulo_2"><a name="etiquetado">Eş Yükselti Eğrilerini ve Noktaları Etiketleme</a></span><br />
+
+      <span class="Parrafo"><br />Haritalarda kotların yazdırılması, düzenleme aşamasında sıkça yapılan bir işlemdir. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, bu süreci önemli ölçüde hızlandıran çeşitli yardımcı araçlara sahiptir.<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="etiquetado_curvas_nivel">Eş Yükselti Eğrilerini Etiketleme</a></span><br />
+
+      <span class="Parrafo"><br /></span><img style="width: 288px; height: 207px; margin-left: 7px;" alt="Eş Yükselti Eğrisi Etiketleme" src="Imagenes/etiquetado_curvas_nivel.png" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Çizgileri Etiketle...</span> menüsü altında, eş yükselti eğrilerinin kotlarını farklı şekillerde yazdırmaya olanak tanıyan bir dizi seçenek gruplandırılmıştır.<br /><br />Yazdırma, ya doğrudan çizgilerin üzerine ya da uçlarına (çizimin çevresine) yapılabilir ve yalnızca L26 ve L27 tipi çizgileri dikkate alır.<br /><br />Yazdırma için, ya üzerinde etiketlenen tüm segmenti gizleyen <span style="font-weight: bold;">S34</span> tipi etiket ya da yalnızca etiketin kapladığı alanı kapatan <span style="font-weight: bold;">S42</span> tipi etiket kullanılır. Gizlenen kısımlar kaybolmaz, sadece sunumda silinir.&nbsp;&nbsp;&nbsp;
+&nbsp;<br /><br />
+<br /><br /></span><img style="width: 212px; height: 272px; margin-right: 7px;" alt="Kapatan Kot Etiketleri" src="Imagenes/etiquetado_cotas_tapan.png" align="left" /><span class="Parrafo">Varsayılan olarak, hem S34 hem de S42 etiketleri kotları ondalıksız olarak temsil eder. Bir ondalık sayısı belirtmek isteniyorsa, bu özellik <span style="font-weight: bold;">Yapılandırma</span> &#8594;
+<span style="font-weight: bold;">Tipleri Tanımla</span> &#8594; <span style="font-weight: bold;">Sembol Tipi Tanımla</span> menüsünden değiştirilmelidir.<br /><br />Bir eş yükselti eğrisini etiketlemek için, 26 veya 27 tipi bir çizginin segmentini seçmek ve <span style="font-weight: bold;">[Çizgiyi Etiketle]</span> butonuna basmak yeterlidir.<br /><br />Benzer şekilde, önceki etiketlemeyi silmek için segment seçilir ve <span style="font-weight: bold;">[Çizgiyi Geri Yükle]</span> seçeneği kullanılır veya işlem geri alınır. Bunu bu şekilde yapmak gerekir, çünkü bir çizgiden bir etiket doğrudan silinirse, olduğu yer çizimde gizli kalır (ancak silinmez). Bu seçenekle, silinen o bölge yeniden çizilir ve penceredeki kot etiketi, eğer bu etiket çizginin bir ucunda veya zorunlu bir konumda değilse silinir. Bu durumda kullanıcı etiketi doğrudan silmelidir.<br /><br /><span style="font-weight: bold;">[Şeridi Etiketle]</span> seçeneği, eş yükselti eğrilerinin toplu olarak etiketlenmesine olanak tanır. Program, kullanıcıdan bir çizginin (şeridin) uçlarını fare ile belirtmesini ister ve bu çizgi tarafından kesilen tüm eş yükselti eğrileri etiketlenir.<br /><br />Şeride göre etiketleme yaparken ve <span style="font-style: italic;"><span style="font-weight: bold;">Çizgiyi Kapatan S42 Etiketi</span></span> seçeneği işaretliyken, semboller, şeridin çoklu doğruyu kestiği segmentin orta noktası yerine, şeridin çoklu doğruyu kestiği noktada oluşturulur.<br /><br />Eğer <span style="font-weight: bold; font-style: italic;">Sadece Ana Eğriler</span> kutucuğu işaretlenirse, program sadece ana eş yükselti eğrilerini (L27) arayarak şeride göre etiketleme yapar ve normal eş yükselti eğrilerini (L26) etiketlemez.<br /><br />Şeride göre etiketleme, etiketlerin ya haritanın kuzeyine göre (varsayılan seçenek) ya da şeridin yönüne göre yönlendirilmesine de olanak tanır. Bu, örneğin etiketlerin yönünün kot artışına göre yapılmasını sağlar.<br /><br /><span style="font-weight: bold;">[Şeridi Geri Yükle]</span> seçeneği, kullanıcı tarafından uçları belirtilen bir şerit tarafından kesilen segmentlerin etiketlerini kaldırır.<br /><br />Son olarak, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, eş yükselti eğrilerinin <span style="font-weight: bold;">uçlarından</span> otomatik olarak etiketlenmesine olanak tanır. Eğer <span style="font-weight: bold; font-style: italic;">Sadece Ana Eğriler</span> seçeneği aktif edilirse, bu etiketleme yalnızca ana eş yükselti eğrilerini (L27) etkiler. Çizginin ucuna bir <span style="font-weight: bold;">mesafe</span> belirtmek gerekir (varsayılan 3 mm). Eğer mesafe negatif ise, etiketleme içeri doğru yapılır.<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="etiquetado_simb">Sembolleri veya Noktaları Etiketleme</a></span><br />
+
+      <span class="Parrafo"><br />
+Noktaların etiketlenmesi, <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Noktaları Etiketle</span> seçeneği ile mümkündür; bu seçenek, varsayılan olarak kotu noktanın sağ üst kısmına yazar.<br /><br />Eğer önceden seçilmiş noktalar varsa, hepsi etiketlenir, aksi takdirde program, kullanıcı &lt;Esc&gt; tuşuna basarak fonksiyonu kesene kadar tek tek sorar. S32 sembolü kullanılır, böylece tanımını (<span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tipleri Tanımla</span> &#8594; <span style="font-weight: bold;">Sembol Tipi Tanımla</span>) değiştirerek sunumu değiştirilebilir.<br /><br />Bu kot etiketinin konumu, <span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Sembollerde Sayı Notasyonu</span> menüsünden değiştirilebilir.<br /><br />Ayrıca, <a name="coords_ptos"><span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Nokta Koordinatları</span></a></span><span class="Parrafo"> &#8594; <span style="font-weight: bold;">Sembollerle Yazdır</span></span><span class="Parrafo"> menüsü aracılığıyla sembollerin koordinatlarını etiketlemek de mümkündür, bu da aşağıdaki iletişim kutusunu açar:<br />
+      </span><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;">&nbsp;</span><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><img style="width: 312px; height: 166px;" alt="Nokta Koordinatlarını Yazdır" src="Imagenes/rotular_coord_puntos.png" align="left" hspace="6" /></span><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"> <br />
+Bu kutu, yazdırılacak koordinatları, koordinat etiketinin sembolün yerleştirme noktasına göre yerleştirileceği mesafeyi (X ve Y olarak), etiketinin dönüşünü ve kullanılacak etiket tipini (varsayılan, S32) işaretlemeye olanak tanır.<br /><br />Tercihler belirtildikten sonra, <span style="font-weight: bold;">[Yazdır]</span> butonuna basılarak yazdırma işlemine geçilir. Bu yazdırma, tek bir noktaya, bir pencere tarafından yakalanan tüm noktalara veya belirtilen tipteki tüm noktalara yapılabilir.<br /><br />
+      <br />
+      <br />
+</span></span><span class="Parrafo">Diğer bir seçenek ise, <a name="coords_ptos"><span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Nokta Koordinatları</span></a></span><span class="Parrafo"><span style="font-weight: bold;"> </span></span><span class="Parrafo">&#8594; <span style="font-weight: bold;">Hücrelerle Yazdır</span></span><span class="Parrafo"> menüsünü kullanmaktır, bu da aşağıdaki iletişim kutusunu açar:</span><br />
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+      </span></span><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><img style="width: 312px; height: 166px;" alt="Koordinatları Hücrelerle Yazdır" src="Imagenes/rotular_coord_celulas.png" align="left" hspace="6" /></span>Bu kutuda, seçeceğimiz her bir noktanın hangi hücre ile yazdırılacağını, önceki araçta olduğu gibi üç yoldan biriyle seçebiliriz: belirli bir nokta, bir pencerede yakalanan tüm noktalar veya seçtiğimiz tiple aynı olan tüm noktalar.<br />
+      <br />
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+<br />
+      </span><span class="Parrafo"><img style="width: 161px; height: 79px;" alt="Dönüşü Uygula" src="Imagenes/cotas_aplicar_giro.png" align="right" hspace="6" /></span><a name="coords_ptos"><span class="Parrafo">Her iki durumda da, <span style="font-weight: bold;">Noktanın dönüşünü uygula</span> kutucuğu aktif edilerek, koordinat noktaları oluşturulurken, referans aldıkları sembolün hem dönüşünü hem de konumunu alırlar.<br />
+      <br />
+<br /></span><span class="Titulo_2"></span></a><a name="auto_nivel_maestras"><span class="Titulo_2">Ana Eş Yükselti Eğrilerinin Otomatik Oluşturulması</span></a><br />
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594;&nbsp; <span style="font-weight: bold;">Ana Eş Yükselti Eğrileri</span> seçeneği, ana eğriler arasındaki kot aralığını yeniden atamaya (veya önceden yoksa oluşturmaya) olanak tanır.<br /><br />Program komut satırında yeni aralığı sorar ve ardından eş yükselti eğrilerini analiz ederek kotu verilen sayının katı olanları ana eğriye (L27) ve geri kalanları ara eş yükselti eğrisine (L26) dönüştürür.<br /><br /><br /></span><span class="Titulo_2"><a name="redondeo">Eş Yükselti Eğrisi Kotlarını Yuvarlama</a></span><br />
+      <span class="Parrafo"><br />Fotogrametrik alım sistemine bağlı olarak, bazen eş yükselti eğrileri tam kota sahip olmayabilir, ona yakın bir değere sahip olabilir. Örneğin, nominal kotu 126 m olan bir eş yükselti eğrisi 125,98 veya 126,01 olabilir. <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">Eş Yükselti Eğrisi Kotlarını Yuvarla</span> menüsünden erişilebilen bu işlem, bunları analiz eder ve düzeltir, önceki örnek durumunda 126 m kotunu atar.<br /><br />Program, eş yükselti eğrileri arasındaki nominal aralığı sorar (örneğin, 1:1000 ölçekli bir harita için 1 m) ve aralığın yarısının en yakın katına yuvarlar (örnek için kotları yarım metre aralıklarla yuvarlardı).<br /><br /><br /></span><span class="Titulo_2"><a name="cuadro_coord">Koordinat Tabloları Oluşturma</a></span><br />
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <span style="font-weight: bold;">NXYZ Tablosu...</span> seçeneği, kullanıcının interaktif olarak belirttiği bir dizi koordinat içeren bir tablo oluşturmaya olanak tanır. Bu tablo, aşağıda detaylandırıldığı gibi <span style="font-weight: bold;">Klasik</span> bir modda veya <span style="font-weight: bold;">Hücreler</span> ile oluşturulabilir.<br /><br /></span><img style="width: 345px; height: 234px; margin-left: 7px;" alt="Koordinat Tablosu Ayarları" src="Imagenes/cuadro_coord.png" align="right" /><span class="Parrafo">Klasik iletişim kutusu, kullanılacak <span style="font-weight: bold;">metin stilini</span> ve <span style="font-weight: bold;">boyutunu</span>, çerçeve için <span style="font-weight: bold;">çizgi tipini</span> ve çizimde nokta numarasını işaretlemek ve tabloda tanımlamak için <span style="font-weight: bold;">sembol tipini</span> kontrol eder. Ayrıca, bu tablonun yerleştirileceği bir <span style="font-weight: bold;">model</span> belirtilmelidir (varsayılan, 999). Ek olarak, aynı anda noktalarla bir&nbsp;<span class="Archivo">nxyz.res</span> listesi ve bir&nbsp;<span class="Archivo">nxyz.top</span> dosyası oluşturmak mümkündür.<br /></span><span class="Parrafo"><br />Tüm bu tercihler belirtildikten sonra, <span style="font-weight: bold;">[Oluştur]</span> butonuna basılır ve ardından çizimde tablonun yerleştirme noktası belirtilir. O anda tablonun başlığı çizilir ve nokta vermeye başlanabilir (genellikle bir yakalama modunu aktif etmek uygun olacaktır). Noktalar tek tek seçilebilir veya iletişim kutusunda uygun seçenek işaretlenirse pencere ile seçilebilir.<br /><br /><span style="font-weight: bold;">[Ekle]</span> seçeneği ile tabloya herhangi bir zamanda devam edilebilir (veriler, eğer varsa, listeye ve nokta dosyasına da eklenir).<br /><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 432px; height: 246px;" alt="Örnek Koordinat Tablosu" src="Imagenes/ejemplo_cuadro_coord.png" /></span><br />
+      </div>
+      <span class="Parrafo"><br />Program ayrıca, koordinat tablosunun oluşturulması için dört sütunlu n X Y Z (nokta numarası ve koordinatlar) formatında ASCII dosyalarını yükleme imkanı da sunar. <span style="font-weight: bold;">[Dosyadan...]</span> butonuna basmak, belirtilen formattaki dosyayı (herhangi bir uzantıda) seçmek ve tablonun yerleştirileceği grafik ekran üzerinde bir noktaya tıklamak yeterlidir. Bundan sonra, dosyanın içerdiği noktalar yerleştirilir ve koordinat tablosu tamamlanır.<br /><br />Eğer coğrafi koordinatlarla çalışılıyorsa, tablo ve liste, noktaların bilgilerini boylam, enlem ve yükseklik olarak sunar.<br /><br /></span><img style="width: 323px; height: 219px;" alt="Hücrelerle Koordinat Tablosu" src="Imagenes/cuadro_coord_celulas.png" align="right" hspace="6" /><span class="Parrafo">Eğer tablo hücreler kullanılarak oluşturulursa, işlevselliği önemli ölçüde artar, çünkü içeriğinin (her noktaya referansla) anında güncellenmesini sağlayan gelişmiş hücreler kullanır ve kullanıcıya bir ön ek ve bir numaralandırma başlangıcı ekleme imkanı sunar.<br /><br />Böylece, bu fonksiyon kullanıldığında, A1, A2, A3,... veya W100, W101, W102, vb. gibi noktalar içeren bir özet tablosu hızlı ve kolay bir şekilde elde edilebilir ve ayrıca bu numaralandırma, ilişkili noktalarla mekansal olarak bağlantılı kalır, yani interaktif olarak değiştirilmesi tabloda anında güncellenir.<br />
+      <br />
+Hücrelere ilişkin seçenekler, klasik oluşturmaya benzer, ancak bazı farklılıklar gözlemlenir:<br />
+</span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Tabloyu Sil</span>: Seçilen tüm tabloyu siler.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ekle</span>: Nereye eklemek istediğimizi sorduktan sonra, ekranda "tık" yaptıkça yeni noktalar ekler.<br />
+        </li>
+      </ul>
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo">
+      
+      <br />
+      </span><span class="Titulo_2"><a name="color_cota">Kota Göre Renklendirme</a></span><br />
+      <span class="Parrafo"><br />
+      Bu seçenek, eş yükselti eğrilerini kotlarına göre farklı renklerle göstermeye olanak tanır:<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 504px; height: 289px;" alt="Kota Göre Renklendirme" src="Imagenes/cotas_color_por_cota.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Ayrıca, S34, S42 sembolleriyle <a href="EDM_cotas.html#etiquetado_curvas_nivel">kotlandırılmış</a> olan eş yükselti eğrileri, tanımladığımız aralığa göre sembol tiplerini değiştirebilir. Varsayılan olarak program, S270'den S274'e kadar farklı renklere sahip semboller sunar.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><img style="width: 315px; height: 256px;" alt="Kota Göre Sembol Değişimi" src="Imagenes/color_por_cot_sim.png" /></span></span><br />
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"></span></span></div>
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img style="width: 32px; height: 32px;" alt="Uyarı" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 635px; text-align: justify;"><span class="Parrafo"><span class="Info">Eğer çizimi başka bir formata (DWG/DXF gibi) dışa aktarmak isteniyorsa, dışa aktarma seçeneklerinde nesnelerin kendi renklerini koruması gerektiği belirtilmelidir.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <a name="cotas_g_e"><span class="Titulo_2">Google Earth Kotları</span><br />
+      <br />
+Bu komut aracılığıyla, Google Earth'de belirlenen bölgenin kotlarını kullanarak çizgilere, sembollere ve metinlere kot atayabiliriz.<br />
+      <br />
+</a></span></span>
+<a name="cotas_g_e">      </a><div style="text-align: center;"><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><a name="cotas_g_e"><img style="width: 271px; height: 223px;" alt="Google Earth Kotları Diyalog Kutusu" src="Imagenes/dialogo_cotas_GE.png" /></a></span></span><a name="cotas_g_e"><br />
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"></span></span></a></div>
+<a name="cotas_g_e">      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+      <span style="font-weight: bold;">Çizgileri Kota Getir</span>, <span style="font-weight: bold;">Metinleri Kota Getir</span> ve <span style="font-weight: bold;">Sembolleri Kota Getir</span> kutucukları aktifken Çalıştır kutucuğuna tıkladığımızda, program bu nesnelere Google Earth kotlarını atayacaktır.<br />
+Eğer <span style="font-weight: bold;">Öznitelikleri Kota Getir</span> kutucuğu aktif edilirse, </span></span></a><a href="EDM_dibujo_entidades.html#simbolos">özniteliğe</a> sahip sembollerde bu öznitelik de kot değerini alacaktır.<br />
+      <br />
+Nesne seçimini, o an yüklü olan tüm elemanlar kümesiyle (<span style="font-weight: bold;">Tümü</span>) veya nesneleri seçerek (<span style="font-weight: bold;">Seçim</span>) yapabiliriz.<br />
+      <br />
+Eğer <span style="font-weight: bold;">Sadece Kotu 0 Olanlar</span> kutucuğu aktif ise, sadece kotu sıfır olan nesneler Google Earth'den kot alacaktır.<br />
+      <br />
+Google'ın günde 2500 istek limiti vardır. Her istekte en fazla 512 konum sorgulayabilirsiniz, ancak günde toplam 25.000 konum limitini aşamazsınız.<br />
+      <br />
+Google Earth, WGS84 <a href="EDM_georreferenciacion.html#crs">referans sistemiyle</a> çalışır, bu yüzden seçilen nesnelerin kotlarını doğru bir şekilde algılayabilmesi için kaynak CRS'mizin doğru tanımlanmış olması gerekir.<br />
+<br />
+      </span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

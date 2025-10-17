@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Dönme Eksenleri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>DÖNME EKSENLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Bu menü, dönme ekseninin (otoyollarda dönme eksenlerinin) konumunu eksen boyunca, uzayda tanımlamayı sağlar. Dönme ekseni, platformun enkesitinde kırmızı kotun uygulandığı noktadır.<br /><br /><strong>Kullanıcı KM'leri</strong> seçeneği, kilometrelerin kullanıcı tanımlı değerlerle girilmesine olanak tanır. Bu seçenek etkinleştirilip devre dışı bırakılabilir ve durumu .vol dosyasına kaydedilir.<br />
+      <br />
+Tek platformlu yollar durumunda, belirli bir kilometredeki dönme ekseninin konumu, geometrik eksene olan mesafesi <strong>D</strong> (sağa doğru pozitif, sola doğru negatif) ve kırmızı kot ile olan yükseklik farkı <strong>H</strong> (pozitif değer platformu kırmızı kota göre aşağı indirir) ile tanımlanır.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_ejes_giro.png" style="width: 549px; height: 204px;" alt="" /><br />
+      </div>
+      <br />
+Bölünmüş yollar (otoyollar veya ekspres yollar) durumunda, varsayılan olarak dönme ekseninin konumu iç şerit çizgilerindedir ve tek platformlu yollar durumunda, bu menüdeki veriler dönme ekseninin konumunu başka bir yere kaydırmadığı sürece platformun merkezinde olacaktır. Dönme ekseni üzerine, boyuna hatta (veya iki tane varsa boyuna hatlarda) tanımlanan kot uygulanacaktır. <a href="OL_peraltes.html#doble_peralte">Çift deverli platformlara</a> sahip otoyollar durumunda, program dönme ekseninin konumunun hesaplanmasını uyarlar.<br />
+      <br />
+</span>Otoyollarda negatif yatay mesafeli dönme eksenleri tanımlandığında, iç banketin deverini kullanma imkanı. Sağ ve sol ötelemeler sütunundaki bitişik kutucuğu etkinleştirmeliyiz.<br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/modelo_ejes_giro.png" style="width: 319px; height: 259px; margin-left: 7px; margin-top: 7px;" alt="" align="right" /><span class="Parrafo">Eğer dönme ekseninin yüksekliği sıfır değilse, platformun dönme eksenindeki kotunu elde etmek için kırmızı kot kotundan <strong>H</strong> düşülür (<strong>H</strong>'nin pozitif olmasının platformu aşağı indirdiğini unutmayın). Bu iki değer, <strong>D</strong> ve <strong>H</strong>, kilometreye bağlı olarak değişebilir ve şu hususlar dikkate alınmalıdır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Eğer iki ardışık noktada, <strong>D</strong> veya <strong>H</strong> için farklı değerler verilirse, iki nokta arasındaki değişimin doğrusal olduğu kabul edilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eğer tanım, hesaplama aralığını kapsamazsa, dışa doğru uzatılır (ekstrapolasyon yapılır).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Eğer dönme eksenini varsayılan konumundan hareket ettirmek gerekmiyorsa, bir veriyi tamamen sıfır bırakmak yeterlidir.</span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu menüdeki KM verileri hem grafik olarak hem de sayısal olarak girilebilir (<strong>[Tıklama]</strong>/<strong>[Klavye]</strong> düğmeleri). Grafik olarak verilmesi durumunda, noktanın eksen üzerindeki izdüşümü tam bir enkesite veya enterpole edilmiş bir enkesite karşılık gelebilir.</span></span><br />
+      <span class="Parrafo"> <br />
+Ayrıca, aşağıdaki seçenekler mevcuttur:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">[Otomatik]</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;">Mevcut eksenin başlangıç ve bitiş kilometreleriyle iki veri oluşturur.<br />
+Dönme eksenini, farklı kilometrelerde farklı eksantriklikler tanımlanmış olmasına rağmen, plan ekseni üzerinde korumak istenen yollar için; Otomatik aracı, tabloyu aynı kilometreler ve eksantriklik ile aynı ancak zıt işaretli yatay öteleme ile doldurur. Plan ekseninde yanal bir atlama nedeniyle ani bir sıçrama olursa, deverden kaynaklanan kot farkı, kırmızı kotta dikey bir sıçrama ile telafi edilmelidir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">[Kaydet] <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /><br />
+[Yükle] <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;">Bu tablonun verilerini .egi uzantılı dosyalar aracılığıyla kaydetmeyi ve geri yüklemeyi sağlar.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold;">[Çizgiye Göre]</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify;">Bu seçenekle, dönme ekseninin <strong>D</strong> mesafesi, bir plan çizgisi seçilerek tanımlanabilir.<br />
+Otoyollarda, her bir platformdaki dönme ekseninin konumunu belirlemek için farklı bir çizgi seçmeye olanak tanıyan bir diyalog kutusu oluşturulur. Bu durumda veriler, her iki çizginin de eksen üzerinde izdüşümü olduğu bölgede ve belirli bir değerin katları olan kilometrelerde hesaplanır.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/OL_eje_giro_linea.png" style="width: 320px; height: 168px;" alt="" /><br />
+            </div>
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><strong>D.E. Çiz</strong><br />
+            </td>
+            <td style="vertical-align: top;">Bu kutucuk etkinleştirilerek, enkesitlerde dönme ekseninin konumu işaretlenebilir.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><strong>Referans geometrik eksende</strong><br />
+            </td>
+            <td style="vertical-align: top;">İç şerit çizgisi yerine otoyolun geometrik eksenini referans olarak kullanır.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

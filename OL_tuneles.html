@@ -1,0 +1,701 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Tünel ve Aç-Kapa Tünel</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TÜNEL VE AÇ-KAPA TÜNEL<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#declaracion">Tünel / Aç-Kapa Tünel Tip Kesitinin Tanımlanması</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#uno_dos_tuneles">Her Platform İçin Bir veya İki Tünel Seçimi</a><br />
+      <a href="#def_seccion_mixta_falso_tunel">Karma Kesitlerin ve Aç-Kapa Tünelin Tanımlanması</a><br />
+      <a href="#transiciones">Tünel Tip Kesitleri Arasındaki Geçişler</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#def_analitica">Analitik Tanım</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#orig_coord">Koordinat Başlangıcı, Merkez ve Davranış</a><br />
+      <a href="#def_boveda">Kemerin Tanımlanması</a><br />
+      <a href="#def_contraboveda">İnvert Kemerin Tanımlanması</a><br />
+      <a href="#def_zapatas">Temellerin Tanımlanması</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#def_vectorial">Vektörel Tanım. Diyafram Duvar Tüneli</a><br />
+      <a href="#falso_tunel">Aç-Kapa Tünel Kesiti</a><br />
+      <a href="#linea_galibo">Gabari Hattı</a><br />
+      </div>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo">
+      <br />
+Bu menü, daha sonra bir güzergah projesinin farklı tip kesitlerinde çağrılabilecek bir tünel kesitleri tablosu oluşturmaya olanak tanır.<br />
+      <br />
+Uygulama için bu, bir kesit daha demektir; ancak, enkesit çizimi, metrajların elde edilmesi ve en önemlisi, tünel imalat takibi modülünde özel olarak kullanılması gibi programın diğer bölümlerinde özel olarak kullanılabilmesi için bir dizi yeni yüzey oluşturulur.<br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, iki tür geometri tanımlamaya olanak tanır: analitik ve vektörel. Birincisi, kemerin, invert kemerin, nihai kaplama ve toplam kazı yüzeylerinin görünümünü az veriyle tanımlamayı kolaylaştırır. Ancak aynı yüzeyler, her türlü karmaşıklıkta vektörel olarak da tanımlanabilir.<br />
+      <br />
+Vektörel geometriler içinde, değişken genişlikler (birden fazla tünel tipi tanımlamayı önler) ve üst döşeme için özel bir kontrol (varsa) gibi bu tür tünellere özgü bazı parametreler sunularak, “diyafram duvar” tipi tüneller tanımlama imkanı sunulur.<br />
+      <br />
+Her tünel, kesitin geometrik merkezlerine ve platform hattının birkaç koduna ilişkin parametreler kullanılarak inşa edilir; pozitif ve negatif (+ ve -) işaret kuralı, elemanların inşasının sağa (+) veya sola (-) doğru hesaplanacağı anlamına gelir.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="declaracion">Tünel / Aç-Kapa Tünel Tip Kesitinin Tanımlanması</a></span><br />
+      <span class="Parrafo"><br />
+</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tierra_boveda_tunel.png" style="width: 186px; height: 224px;" alt="" align="right" hspace="6" /><span class="Parrafo">Bir tünel kesiti uygulayabilmek için ilk adım, uygulamaya belirli bir tip kesitin tünel tipi olacağını belirtmektir. Yarma tablosunda,
+      <a href="OL_punto_control_y_arranque_cuneta.html">KONTROL/HENDEK</a> bölümünde <span style="font-style: italic;">Tünel</span> veya <span style="font-style: italic;">Aç-Kapa Tünel</span> seçeneği beyan edilir. Tünel olması durumunda, iki olasılık vardır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Palye kenarına bağlı hendek.</span></li>
+        <li><span class="Parrafo">Terasmana bağlı hendek.</span></li>
+      </ul>
+      <span class="Parrafo">Genellikle bir tünel kesitinde platform, hendekten önce tünelin kendisi tarafından kesildiği için, yukarıdaki seçim genellikle fark etmez.<br />
+      <br />
+Daha sonra, <a href="OL_desmonte_tierra.html#tuneles">TOPRAK/KEMER</a> bölümünde, tünel numarası ve bir aç-kapa tünel durumunda dolgunun ulaştırılmak istendiği yüzey seçilecektir.<br /><br />Tünel durumlarında, ayrıca nihai kaplamanın jeotekstil tabakasının metrajını ve iksanın kalıp metrajını oluşturmak için özel kutucuğu etkinleştirmek de mümkündür, aynı zamanda BIM modelindeki gösterimi de. Kalıp metrajları ikiye ayrılır: iksa için ve topuk için.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_desm_tuneles.png" style="width: 512px; height: 162px;" alt="" /><br />
+</span></span>
+      </div>
+      <br /></span><span class="Parrafo">
+      <table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 636px; text-align: justify;"><span class="Parrafo"><span class="Parrafo Info">Tünel numarası ile uygulanacak tip kesit ve yan arasındaki bu ilişki, TÜNELLER menüsünden <a href="OL_tuneles.html#aplicar_ST"><span style="font-weight: bold;">T.K.'e UYGULA</span></a> seçeneği aracılığıyla doğrudan da beyan edilebilir.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <a href="#aplicar_ST"><span style="font-weight: bold;"></span></a>Daha sonra, mevcut eksende uygulanacak farklı tünel tiplerinin geometrisinin tanımlandığı BOYKESİT'teki <a href="#diseno">TÜNELLER</a> menüsüne girilmelidir. Tünellerin tanımı, diğer eksenlerde ve hatta diğer projelerde hemen uygulanabilmeleri için bağımsız dosyalarda saklanabilir.<br />
+      <br />
+      <br />
+      </span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="uno_dos_tuneles">Her Platform İçin Bir veya İki Tünel Seçimi</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><span class="Parrafo"><span class="Parrafo">Otoyol durumunda, tünel geometrisini tanımlayan veriler sağa doğru pozitif ve sola doğru negatif olduğundan, sağ ve sol platformlar için farklı tünel kesiti tanımlanmalıdır; bu nedenle tünel simetrik olsa bile bu veriler farklı işaretlere sahiptir. Her platforma bir tünel numarası atamak yeterlidir (ve tabii ki, bunları ilgili bölümde tanımlamak).<br />
+      <br />
+</span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/doble_tunel.png" style="width: 366px; height: 125px;" alt="" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Tek bir tünele ihtiyaç duyulması durumunda, sol için tünel kesiti olarak sıfır (0 yani hiçbiri) seçilmelidir.<br />
+      <br />
+      </span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_tunel_unico.png" style="width: 439px; height: 139px;" alt="" /></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_unico.png" style="width: 153px; height: 117px; margin-left: 7px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="def_seccion_mixta_falso_tunel">Karma Kesitlerin ve Aç-Kapa Tünelin Tanımlanması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Ayrıca, sağ ve sol tarafın tamamen farklı kesitler kullandığı, tünel-açık veya tünel-aç-kapa tünel gibi karma kesitler de tanımlamak mümkündür.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_seccion_mixta.png" style="width: 453px; height: 144px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Bu durumlarda, kesiti <a href="OL_desmonte.html#generalidades"><span style="font-weight: bold;">[ASİMETRİK]</span></a> olarak tanımlamak, <a href="OL_punto_control_y_arranque_cuneta.html">KONTROL/HENDEK</a>'te farklı davranışlar ve bu kesimlerde <a href="OL_excentricidad_mediana.html#mediana_abierta">açık refüj</a> (geometrik kesişimin hesaplanabilmesi için) tanımlamak gerekir:<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_tunel_seccion_mixta.png" style="width: 475px; height: 98px;" alt="" /><br />
+      <br />
+      <img src="Imagenes/mediana_abierta.png" style="width: 559px; height: 87px;" alt="" /><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="transiciones">Tünel Tip Kesitleri Arasındaki Geçişler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+<a href="OL_zonas_calculo.html">HESAP BÖLGELERİ</a>'nde, farklı tünel geometrisine sahip iki tünel tip kesiti arasında geçişler yapılabilir. Tüneller aynı tipte olmalıdır (vektörel veya analitik).<br />
+<br />
+      <br />
+      </span></span></span></span></span><span class="Titulo_2"><a name="diseno">Tünel / Aç-Kapa Tünel Kesiti Tasarımı</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      BOYKESİT menüsünden <span style="font-weight: bold;">[TÜNELLER]</span> tablosu açıldığında, birkaç farklı bölgenin gözlemlenebildiği aşağıdaki diyalog kutusu açılır:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Tünel tasarımının bilgi yükleme, kaydetme, kemer tipi vb. çeşitli işlemlerin yapılabileceği üst kısım.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Koordinat başlangıcı, merkezler ve tünel davranışı.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Kemer ve invert kemerin geometrik tanımı.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Temellerin tanımı.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Toplam kazı ve iksa yüzeylerinin tanımı.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_tuneles.png" style="width: 561px; height: 321px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+<table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 95px;">[Ekle]<br />
+[Sil]<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 583px;"><span class="Parrafo"><span class="Parrafo">Tabloya yeni tünel kesitleri eklemeye veya mevcut kesitleri silmeye olanak tanır. Her tünel kesitine bir ad atanabilir.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 95px;">[Kaydet] <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /><br />
+[Yükle] <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /><br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 583px;"><span class="Parrafo"><span class="Parrafo">Tünel kesitleri tablosu, bu düğmelerle &nbsp;<span class="Archivo">.tun</span> uzantılı dosyalar aracılığıyla arşivlenebilir ve geri yüklenebilir.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 95px;">[1'i Kaydet] <img src="Imagenes/icono_guarda1.png" style="width: 20px; height: 20px;" alt="" /><br />
+[1'i Yükle] <img src="Imagenes/icono_abrir1.png" style="width: 20px; height: 20px;" alt="" /><br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 583px;"><span class="Parrafo"><span class="Parrafo">Tüm tablo yerine, tünellerden yalnızca birinin tanımını .<span class="Archivo">1tu</span> uzantılı dosyalar aracılığıyla değiştirmeye olanak tanır. Ancak, bir eksende en az bir tünel kesiti tanımlanmışsa, o eksenle ilişkili tüneller tablosu, o eksenin geometrisini tanımlayan diğer verilerle birlikte &nbsp;<span class="Archivo">.vol</span> dosyasına kaydedilir.</span></span></td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 95px; font-weight: bold;"><span class="Parrafo"><a name="aplicar_ST">[T.K.'e UYGULA]</a></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 583px;"><span class="Parrafo"><span class="Parrafo">Mevcut kemerin hangi tip kesitlerde uygulandığını görmeye ve ayrıca mevcut kemeri belirli bir tip kesite uygulama imkanı sunar.<br />
+            <br />
+</span></span>
+            <table style="text-align: left; width: 577px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: middle; width: 37px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+                  </td>
+                  <td style="vertical-align: top; width: 520px; text-align: justify;"><span class="Info">Buradan bir tip kesite bir kemer uygulandığında, o tip kesit tünel tipi olur. Başka bir tipe geçmek için <a href="OL_desmonte.html">YARMA</a> menüsünden erişilmelidir.</span><br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="Parrafo"><span class="Parrafo"></span></span></td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="dibujar_O1">O1 Çiz</a></span>
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Bu seçenek etkinleştirildiğinde, &nbsp;<span class="Archivo">ISPOL#.per</span> enkesit dosyalarında (# eksen numarasıdır) O1 konumuna S313 sembolü çizilir. Bu, örneğin, &nbsp;<span class="Archivo">CentroTun.lil</span> çizim moduyla, tünel merkezlerinin 3D bir çizgi olarak temsil edilebilmesini ve dolayısıyla, o çizgiden bilgi çıkarılabilmesini, eksene yansıtılabilmesini, bir nokta bulutu (<span class="Archivo">.toc</span>) oluşturulabilmesini vb. sağlar.<br />
+            <br />
+Çift kemerli bir tünelimiz olduğunda, soldaki O1, S286 sembolüyle, sağdaki ise S313 sembolüyle çizilecektir.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <br />
+      
+      </span></span><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/deslizador_tuneles.png" style="width: 179px; height: 42px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yatay bir kaydırıcı, mevcut eksen için tanımlanmış farklı tünel kesitleri arasında gezinmeye olanak tanır. Bir eksenin her tünel kesiti, tünel numarasıyla tanımlanacaktır.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      Bir tünel kesitinin geometrisi, dış <span style="font-weight: bold;">D</span> ve iç <span style="font-weight: bold;">İ</span> yüzeylerini veya tünelin beton <span style="font-weight: bold;">iksa</span> ve <span style="font-weight: bold;">nihai kaplama</span> olarak da adlandırılan iki yüzeyi temsil eden iki yüzeyde saklanır. Ayrıca, üçüncü bir <span style="font-weight: bold;">T</span> yüzeyi veya <span style="font-weight: bold;">toplam kazı</span> hattı da oluşturulabilir.<br />
+      <br />
+</span></span></span></span></span></span></span><img src="Imagenes/lineas_tuneles.png" style="width: 228px; height: 185px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Program aşağıdaki çizgi tiplerini kullanır:</span></span></span></span></span></span></span><br />
+      <ul style="margin-left: 240px;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">L9: Toplam kazı</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">L19: İksa</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">L12: Nihai Kaplama</span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu geometrinin verileri, programın daha sonra her bir belirli KM'ye, devere ve tünelin inşası için diğer kontrol noktalarının konumuna bağlı olarak uyguladığı <a href="#def_analitica"><span style="font-weight: bold;">[ANALİTİK KEMER]</span></a>'deki bir dizi parametre aracılığıyla girilir.<br />
+      <br />
+      <br />
+      <br />
+<br /><span class="Parrafo"><br />
+      <br />
+</span></span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="def_analitica">Analitik Tanım</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span><img src="Imagenes/modelo_tunel.png" style="width: 324px; height: 319px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">TÜNELLER menüsünde gösterilen model, tünel kesitinin analitik tanımında yer alan farklı parametrelerin beyanında kullanıcıya rehberlik eder.<br />
+      <br />
+      <br /><a name="orig_coord">
+KOORDİNAT BAŞLANGICI, MERKEZ VE DAVRANIŞ</a><br />
+      <br />
+Uygulama, kemeri tanımlamak için <span style="font-weight: bold;">üç merkez</span> ve invert kemeri uygulayan dördüncü bir merkez kullanan bir tünel kesiti tanımlamaya olanak tanır.<br />
+      <br />
+
+<span style="font-weight: bold;">O1</span> kemer merkezinin <span style="font-weight: bold;">O1X</span>, <span style="font-weight: bold;">O1Y</span> koordinatları şunlardır:<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">O1x</span>: Dönme eksenine olan mesafe (otoyollarda ana platformun iç kenarında bulunur). O1X, ilgili kutucuk etkinleştirilerek <span style="font-weight: bold;">yatay güzergah ekseninden</span> bir mesafe olarak da tanımlanabilir.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">O1y</span>: Tanımlanan kırmızı kotla olan kot farkı, deveri dikkate alarak, yani platformla olan kot farkı.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Demiryolları durumunda, <span style="font-weight: bold;">O1x</span> <span style="font-weight: bold;">hat ekseninden</span> ve <span style="font-weight: bold;">O1y</span> <span style="font-weight: bold;">ray kotundan</span> alınabilir, ilgili seçenekler işaretlenerek.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 639px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Çift hatlı, plakalı (dört tel aynı düzlemde) ve iki hattın tek bir kemerde olduğu demiryolu kesitleri için, <span style="font-weight: bold; font-style: italic;">O1Y ray kotundan</span> seçeneği etkinleştirildiğinde, kemerin tanımlandığı taraftan farklı bir tarafta olsa bile, dört telden en alçaktakinin kotu alınır. </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_orig_coord.png" style="width: 556px; height: 62px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu noktanın tam olarak yerleştirilmesi ayrıca aşağıdaki varyantları da kullanabilir:<br />
+      </span></span></span></span></span></span></span></span>
+      <ul>
+        <li><img src="Imagenes/tunel_orig_O1y.png" style="width: 248px; height: 136px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">En elverişsiz noktadan</span>: İki banket kenarının en elverişsiz (en yüksek) noktasından kot farkını kullanır.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Yardımcı boykesitten</span>: Kemer merkezinin kotunu veya vektörel kemerin referans başlangıcını, örneğin tünel tavanının yüksekliği sokağın seviyesine bağlı bir döşeme olduğunda, yardımcı bir boykesitten referans almaya olanak tanır. Bu yardımcı boykesit KIRMIZI KOTLAR'da tanımlanmalıdır.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Dönme ekseninden</span>: <span style="font-weight: bold;">O1y</span>'nin konumu için dever dikkate alınmaz ve kırmızı kotun kotu kullanılır.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Ayrıca, kemerin deverle nasıl hareket ettiği de belirtilmelidir:<br />
+      </span></span></span></span></span></span></span></span>
+      <ul>
+        <li><img src="Imagenes/tunel_compor_O1.png" style="width: 203px; height: 106px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sabit</span>: <span style="font-weight: bold;">O1x</span> yatayda ve <span style="font-weight: bold;">O1y</span> düşeyde ölçülür.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">O1x,O1y deverle birlikte döner</span>: <span style="font-weight: bold;">O1x</span> değeri devere göre kırmızı kotu takip ederek ve <span style="font-weight: bold;">O1y</span> değeri devere dik olarak ölçülür (bu ölçümler dönme eksenine göre yapılır).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">O2,O3,a1 deverle birlikte döner</span>: Bu seçenek, a1 yayının deverle birlikte dönmesine olanak tanır, böylece O2,O3 merkezlerini birleştiren düzlem, deverin eğimlerini takip ederek platforma paralel kalır. Kemer rijit bir şekilde döner.</span></li></ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">O1y deverle birlikte döner</span>: Önce platform üzerinde yatay bir <span style="font-weight: bold;">O1x</span> mesafesinde bir nokta aranır ve bu nokta üzerinde platforma dik olarak <span style="font-weight: bold;">O1y</span> mesafesi alınır.<br />
+</span></li>
+
+      
+      </ul>
+
+      
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/tunel_tramif_O1X.png" style="width: 270px; height: 150px;" alt="" align="right" hspace="7" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="tabla">Program ayrıca, hem <span style="font-weight: bold;">O1x</span> hem de <span style="font-weight: bold;">O1y</span> değerlerine (veya <a href="#def_vectorial">vektörel kemerlerde</a> <span style="font-weight: bold;">Dx</span>/<span style="font-weight: bold;">Dy</span>'ye) KM'lere göre artışlar vermek için bir tablo tanımlama imkanı da sunar.<br />
+      <br />
+Tabloların beyanına erişim, <span style="font-weight: bold;">[TABLO d_O1x]</span> ve </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[TABLO d_O1x]</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> düğmeleri aracılığıyla yapılır. Bunların bir tünelde kullanımını etkinleştirmek için, <span style="font-weight: bold; font-style: italic;">d_O1x/d_Dx tabloya göre</span><span style="font-style: italic;"><span style="font-weight: bold;"> </span></span> ve </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">d_O1y/d_Dy tabloya göre</span> seçeneklerini etkinleştirmek yeterlidir.<br />
+      <br />
+</span>İlk sütunu KM'ler ve ikinci sütunu mesafeler için ayrılmış .pkd uzantılı dosyaları <span style="font-weight: bold;">yükleyebilir</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> veya <span style="font-weight: bold;">kaydedebilirsiniz</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" />.<span style="font-weight: bold; font-style: italic;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br /><a name="def_boveda">
+KEMERİN TANIMLANMASI</a><br />
+      <br />
+      <img src="Imagenes/def_boveda.png" style="width: 276px; height: 217px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">D1Y</span> ve <span style="font-weight: bold;">İ1Y</span>, <span style="font-weight: bold;">O1</span> noktasında merkezlenmiş ve <span style="font-weight: bold;">a1</span> derecelik bir yayı kapsayan kemerin sırasıyla dış ve iç yarıçaplarıdır. Bu yay, dış veya iksa yüzeyi (<span style="font-weight: bold;">a1D</span>) için, iç veya nihai kaplama yüzeyi (<span style="font-weight: bold;">a1İ</span>) için farklı olabilir.<br />
+      <br />
+      <span style="font-weight: bold;">D2Y</span> ve <span style="font-weight: bold;">İ2Y</span>, tünelin sağ tarafının dış ve iç yarıçaplarıdır. Eğer Y=0 ise, bu taraf düz olacaktır.<br />
+
+      <br />
+      <span style="font-weight: bold;">D3Y</span> ve <span style="font-weight: bold;">İ3Y</span>, tünelin sol tarafının dış ve iç yarıçaplarıdır. Eğer Y=0 ise, bu taraf düz olacaktır.<br />
+      <br />
+      <span style="font-weight: bold;">İ4Y</span> ve <span style="font-weight: bold;">D4Y</span>, invert kemerin iç ve dış yarıçaplarıdır; kullanılan merkezin konumuna ve yarıçaplara bağlı olarak farklı sonuçlar elde edilir.<br /><br /><span style="font-weight: bold;">+ Yarıçaplar</span>, yanal parametreyi 2 farklı yarıçapa ayırmaya olanak tanır, böylece 3 yarıçaplı kemerler tanımlanabilir.<br />
+      <br />
+Program, R1, R2 ve R3'e girilen farklı yarıçapların artan değerlere sahip olduğunu kontrol eder.<br />
+      <br />
+<span style="font-weight: bold;">Toplam kazı hattı</span> seçeneği etkinleştirilirse, <span style="font-weight: bold;">R1T</span>, <span style="font-weight: bold;">R2T</span>, <span style="font-weight: bold;">R3T</span> ve <span style="font-weight: bold;">R4T</span> yarıçapları, ayrıca temelin altındaki <span style="font-weight: bold;">et</span> kalınlığı ve radye yatay olduğunda ve suyun merkezi bir drene boşaltılması istendiğinde uygulanacak <span style="font-weight: bold;">pt</span> eğimi de tanımlanmalıdır.<br />
+
+      <br />
+Yukarıda tanımlanan yayların her biri, kullanıcı tarafından tanımlanan bir dizi <span style="font-weight: bold;">bölüme</span> ayrılır.<br />
+      <br />
+      <br /><a name="def_contraboveda">
+İNVERT KEMERİN TANIMLANMASI</a><br />
+      <br />
+      <span style="font-weight: bold;">İ4Y</span> ve <span style="font-weight: bold;">D4Y</span>, invert kemerin iç ve dış yarıçaplarıdır. Kullanılan merkezin konumuna ve yarıçaplara bağlı olarak farklı sonuçlar elde edilecektir.<br />
+      <br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><img src="Imagenes/def_contraboveda.png" style="width: 310px; height: 181px; margin-right: 7px;" alt="" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/tunel_comporO4y.png" style="margin-left: 7px; width: 182px; height: 161px; float: right;" alt="" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> İnvert kemerin dış ve iç yayları eş merkezli olabilir veya olmayabilir ve iç yarıçap dış yarıçaptan daha büyük olabilir.<br />
+      <br /><span style="font-weight: bold;">e4</span> parametresi aracılığıyla invert kemerin minimum kalınlığını tanımlamak mümkündür; <span style="font-weight: bold;">e4</span> = <span style="font-weight: bold;">D4y</span> - <span style="font-weight: bold;">İ4y</span> ise yayların eş merkezli olduğu, aksi takdirde <span style="font-weight: bold;">e4</span> değerinin sağlanması için iç yarıçapın merkezinin hesaplandığı dikkate alınmalıdır.</span></span></span></span></span></span></span></span><br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 503px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 446px; text-align: justify;">Eğer invert kemer yarıçapları <span style="font-weight: bold;">İ4Y</span> ve <span style="font-weight: bold;">D4Y</span> sıfır olarak bırakılırsa ve <span style="font-weight: bold;">e4</span> kalınlığına pozitif bir değer verilirse, düz bir invert kemer elde edilir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">O4Y</span>, deveri dikkate alarak kırmızı kota göre invert kemer merkezinin Y koordinatıdır.
+
+
+
+
+      Aşağıda detaylandırılan birkaç olasılık bulunmaktadır:<br />
+      <br />
+      </span></span></span></span>
+      <table style="text-align: left; width: 691px; height: 119px;" border="0" cellpadding="2" cellspacing="10">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 338px; text-align: justify;"><span style="font-weight: bold;">O1Y gibi</span>: İnvert kemer merkezi için düşey başlangıç, <span style="font-weight: bold;">O1Y</span>'ninkiyle çakışır. <span style="font-weight: bold;">O4</span> merkezi, <span style="font-weight: bold;">O1</span> ile aynı düşeyde olacaktır.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_o4y_como_o1y.png" style="width: 299px; height: 303px;" alt="" /><br />
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 339px; text-align: justify;"><span style="font-weight: bold;">Deverli İnvert Kemer</span>: Merkezin konumu, yayın temellerin dış köşelerinden geçmesi için hesaplanır. Bu seçenek etkinleştirilirse, program <span style="font-weight: bold;">O4y</span> değerini kullanmaz ve dış yayın yan temellerin alt ve dış köşelerinden geçmesi için yayın merkezini hesaplar. <span style="font-weight: bold;">O4</span> artık <span style="font-weight: bold;">O1</span> ile aynı düşeyde olmayacaktır.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_contraboveda_peraltada.png" style="width: 299px; height: 291px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 338px; text-align: justify;"><span style="font-weight: bold;">Dönme ekseninden</span>: <span style="font-weight: bold;">O4Y</span>, dönme ekseninden ölçülür. İnvert kemer yayı, temellerin taban düzleminde veya iç bölgedeki uzantısında durur.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_o4y_desde_eje_giro.png" style="width: 271px; height: 139px;" alt="" /><br />
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 339px; text-align: justify;"><span style="font-weight: bold;">Dönme ekseninden (D)</span>: <span style="font-style: italic;">Dönme ekseninden</span> seçeneğine benzer, fark invert kemerin dış yayının bitişindedir. Bu modda, yay temelin iç dikey çizgisini kesene kadar devam eder.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_o4y_desde_eje_giro_2.png" style="width: 272px; height: 136px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 338px; text-align: justify;"><span style="font-weight: bold;">O1Y gibi (D)</span>: <span style="font-style: italic;">O1Y gibi</span> seçeneğine benzer, tek fark invert kemer yayının temelin iç dikey çizgisini kesene kadar devam etmesidir. Bu, invert kemerden daha aşağıya uzanan iki dikey diyafram duvarla inşa edilen tüneller için kullanılabilir.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_o4y_como_o1y_2.png" style="width: 285px; height: 133px;" alt="" /><br />
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 339px; text-align: justify;"><span style="font-weight: bold;">Birincil iksa</span>: <span style="font-style: italic;">Deverli invert kemer</span>'e benzer, ancak iksa hattının köşesini aramak yerine birincil iksa hattının ucundan geçer.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_contraboveda_sostPrimario.png" style="width: 300px; height: 208px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 338px; text-align: justify;"><span style="font-weight: bold;">İkincil iksa</span>: <span style="font-style: italic;">Birincil iksa</span>'ya benzer, ancak ikincil iksanın ucundan geçer.<br />
+            <br />
+            <div style="text-align: center;">
+            <div style="text-align: center;"><img src="Imagenes/tunel_contraboveda_sostSecundario.png" style="width: 305px; height: 207px;" alt="" /><br />
+            </div>
+
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 339px; text-align: justify;"><span style="font-weight: bold;">İçten deverli</span>: İnvert kemerin iç yayı, temellerin iki iç ucundan yüksek noktasında veya terasmanla kesişiminde geçer.<br /><br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_contraboveda_sostSecundario.png" style="width: 305px; height: 207px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+            </td>
+          </tr><tr><td><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Deverli Diyafram Duvar</span>: Diyafram duvar tünelleri için kullanılır. o4y değeri ile, aşağı doğru başlaması için negatif olarak, invert kemerin iç başlangıcının 150 koduna (67 yüzeyinin diyafram duvarının iç yüzeyi ile kesişimi) göre dikey mesafesi tanımlanır.<br /><br />
+            </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_o4y_como_o1y_2.png" style="width: 285px; height: 133px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+            <div style="text-align: center;">
+            <div style="text-align: center;"><br /></div></div></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td><td></td></tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 33px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td style="vertical-align: top; width: 639px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Çift hatlı, plakalı (dört tel aynı düzlemde) ve iki hattın tek bir kemerde olduğu kesitler için, <span style="font-weight: bold;">O4Y dönme ekseninden</span> seçeneği seçildiğinde, dönme ekseninin kotu olarak, kemerin tanımlandığı taraftan farklı bir tarafta olsa bile, dört telden en alçaktakinin kotu alınır. </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+      </table>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+İnvert kemer, temelin iç köşesine dayandığında, bir pah oluşturarak <span style="font-weight: bold;">temeli kırma</span> imkanı vardır (ilgili seçeneği etkinleştirmek yeterlidir).<br />
+<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><a name="def_zapatas">
+TEMELLERİN TANIMLANMASI</a><br />
+      <br />
+      <span style="font-weight: bold;">T1x</span>, <span style="font-weight: bold;">T1y</span>, <span style="font-weight: bold;">T1</span> noktasının koordinatlarıdır ve <span style="font-weight: bold;">T2x</span>, <span style="font-weight: bold;">T2y</span>, sırasıyla sağ ve sol banket kenarlarından (veya demiryolları durumunda balast kenarından, kod 11) ölçülen <span style="font-weight: bold;">T2</span> noktasının koordinatlarıdır.<br />
+      <br />
+Ayrıca, tünel temelinin iç kısmı için bir yükseklik ve bir şev ve terasmanla kesişimi tanımlanmasına izin verilir (parametreler <span style="font-weight: bold;">zt2</span>, <span style="font-weight: bold;">zh2</span>, <span style="font-weight: bold;">zt1</span> ve <span style="font-weight: bold;">zh1</span>).<br />
+      <br />
+
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_def_zapatas.png" style="width: 556px; height: 49px;" alt="" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Vektörel olarak tanımlanmış temeller durumunda, <span style="font-weight: bold;">tlh1</span> ve <span style="font-weight: bold;">tlh2</span> kutucukları aracılığıyla iksa topukları tanımlanabilir. Temel kalınlığından daha büyük bir değer verilirse, topukları tanımlayan bir çizgi oluşturulur ve bu topuklara TALON_TUNEL adlı bir metraj eklenir. İKSA metrajı bu metrajı içerir.<br />
+Bu çizgi, <a href="OL_seg_tun_talon.html">Tünel İmalat Takibi</a> menüsünde, bir püskürtme beton yüzeyine göre TALON metrajını hesaplamak için kullanılır.<br />
+<a href="OL_seg_tun_talon.html">İmalat takibi</a> enkesitlerinde, topuk püskürtme beton hattına kadar yeniden yapılırsa, püskürtme beton ile teorik kaplama arasında topuğun üzerindeki Kemerin gerçek kaplamasına karşılık gelen yeni bir kapalı yüzey de oluşturulur.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/talon_tunel_ejemplo.png" style="width: 556px; height: 366px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Temeller, <span style="font-weight: bold;">Ty</span> parametresiyle kontrol edilir ve program aşağıdaki olasılıkları sunar:<br />
+      </span></span></span></span>
+      <table style="text-align: left; width: 691px; height: 561px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 454px; text-align: justify;">
+            <ul>
+              <li><span style="font-weight: bold;">Yatay</span>: 11 kodundan, <span style="font-weight: bold;">Ty</span> mesafesi dikey olarak çizilir. O noktadan, <span style="font-weight: bold;">Tx</span> uzunluğu yatay olarak ölçülür. Son olarak, temeli, terasmanla kesişimi dikeyde ve iksa ile nihai kaplama yüzeyleriyle kesişimi yatayda arayarak inşa etmeyi tamamlar.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Deverli</span>: Öncekine benzer, ancak temel dever eğimini takip eder.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Deverden bağımsız</span>: <span style="font-weight: bold;">T1y</span> ve <span style="font-weight: bold;">T2y</span> yükseklikleri her ikisi de O1y ile aynı başlangıçtan ölçülür, bu nedenle her iki temel de aynı yükseklikte olacaktır.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Diğer platform</span>: Yalnızca çift platformlu ve çift kemerli durumlar için geçerlidir. Bağımsız gibidir, ancak diğer tarafın kemerinin temelleri için referans olarak kullanılan kot referansını kullanır. Bu, örneğin, sol taraftaki temellerin sağ taraftakilerle aynı kotta veya tam tersi olmasına olanak tanır.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Dönme ekseni</span>: Bağımsız seçeneği gibidir, ancak temel için kot referansı olarak dönme ekseninin kotunu kullanır.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;"><a name="zapata_vectorial">Vektörel</a></span>: <a href="#def_vectorial">Vektörel kemerli</a> tünellerde, temel de vektörel olarak tanımlanabilir. Bu durumda, tünel tamamen vektörel olarak tanımlanır ve <span style="font-weight: bold;">T1x</span>, <span style="font-weight: bold;">T1y</span>, <span style="font-weight: bold;">T2x</span>, <span style="font-weight: bold;">T2y</span>,… değerleri kullanılmaz. Bu, tam dairesel kesitli tüneller için uygulanabilir yöntemdir.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Diyafram Duvar</span>: Diyafram duvarlarla (<a href="#def_vectorial">vektörel kemerler</a>) inşa edilen tüneller için, program <span style="font-weight: bold;">T1y</span> ve <span style="font-weight: bold;">T2y</span> değerlerini, diyafram duvarların ne kadar aşağıya indiğini belirlemek için kullanır ve <span style="font-weight: bold;">T1x</span> ve <span style="font-weight: bold;">T2x</span> değerlerini dikkate almaz.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Diyafram Duvar Kaya 1, 2, 3...</span>: Diyafram duvarının ayağını, jeolojik katmanına göre tanımlanmış kaya derinliğine karşı kesmeye olanak tanır. Altı kayadan herhangi biri seçilebilir. Kayadan itibaren derinlik, T1y ve T2y parametrelerinde verilir.</li>
+            </ul>
+            <br />
+
+            </td>
+            <td style="vertical-align: top; width: 217px;"><br />
+            <div style="text-align: center;"><img src="Imagenes/zapata_horizontal.png" style="width: 194px; height: 146px;" alt="" /><br />
+            <span class="Info">Yatay temel</span><br />
+            <br />
+            <br />
+            <img src="Imagenes/zapata_peraltada.png" style="width: 194px; height: 150px;" alt="" /><br />
+            <span class="Info">Deverli temel</span><br />
+            <br />
+            <br />
+            <img src="Imagenes/zapata_independiente.png" style="width: 189px; height: 140px;" alt="" /><br />
+            <br />
+            <span class="Info">Bağımsız temel</span><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/pantalla_roca_dos.png" style="width: 573px; height: 325px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">Diyafram duvarların</span> belirli bir kaya kalınlığına (1, 2, 3...) ulaşması durumunda, <span style="font-weight: bold;">T1y</span> ve <span style="font-weight: bold;">T2y</span> değerleri kaya jeolojik katmanlarına göredir. Diyafram duvarının vektörel tanımı, programın <span style="font-weight: bold;">T1y</span> ve <span style="font-weight: bold;">T2y</span> parametrelerini okuyabilmesi için yeterli uzunluğa sahip olmalıdır.<br />
+      <br />
+<span style="font-weight: bold;">Dış kemerdeki noktalar</span> parametresi, 68 hattının yarma kesitini başlatmadan önce dış kemerde kaç segment boyunca ilerleyeceğini tanımlamamızı sağlar. Varsayılan olarak 1'dir, ancak kemeri yukarı doğru taramak için negatif değerlere sahip olabilir.<br /><br /><span style="font-weight: bold;">İç kemerdeki kod</span> parametresi, terasman yüzeyinin (L68) dış kemere geçmeden önce bu koda kadar iç kemer boyunca devam etmesini sağlar. <br />
+      <br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="def_vectorial">Vektörel Tanım. Diyafram Duvar Tüneli</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><img src="Imagenes/dialogo_boveda_vectorial.png" style="width: 180px; height: 69px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kemer, vektörel olarak da tanımlanabilir. Bunun için, TÜNELLER menüsü içinde <span style="font-weight: bold;">[ANALİTİK KEMER]</span> tipi <span style="font-weight: bold;">[VEKTÖREL KEMER]</span> tipine değiştirilmelidir.<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tunel_def_vectorial.png" style="width: 299px; height: 171px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İç, dış ve toplam kazı yüzeyleri grafiksel olarak oluşturulabilir veya değiştirilebilir. Genellikle, programın daha sonra her bir belirli KM'de <span style="font-weight: bold;">T1</span> ve <span style="font-weight: bold;">T2</span> noktalarının gerçek konumuna ve hala analitik olan invert kemere göre kesişimi hesaplaması için aşağıya doğru fazla veri olacak şekilde tanımlanırlar.<br />
+      <br />
+Yüzeylerin tanımının, sağ ve sol taraf için bağımsız çizgiler kullanılarak yapılması ve ayrıca nokta dizisinin resimde görüldüğü gibi yukarıdan aşağıya doğru gitmesi gerektiğini vurgulamak çok önemlidir.<br />
+      <br />
+Bu kesit tipi, diyafram duvar tipi tünelleri, radyesiz veya radyesiz olarak tasarlamak veya bir tünel açma makinesinin tamamen dairesel kesitini çok basit bir şekilde tanımlamak için en uygun olanıdır (çünkü analitik sistemle, bu durumda var olmayan temeller için yapılması gereken hesaplamanın bir sonucu olarak her zaman küçük bir geometrik kalıntı kalır).<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tunel_desp_vectores.png" style="width: 224px; height: 59px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Vektörlere ek olarak, bu durumda, vektörlerin (0,0) koordinatlarının dönme eksenine göre göreceli bir yer değiştirmesini tanımlayan <span style="font-weight: bold;">Dx</span> ve <span style="font-weight: bold;">Dy</span> değerleri de bulunur. <span style="font-weight: bold;">Dx</span> değeri, deveri takip ederek uygulanır.<br />
+      <br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tunel_vectorial_fuerte_pend.png" style="width: 211px; height: 74px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Vektörel kemerler için ve <span style="font-weight: bold;">dik eğimler</span> durumunda, tanımlanan kesitin kırmızı kota dik olduğu seçilebilir.<br />
+      <br />
+<span style="font-weight: bold;">Analitik kemeri kopyala</span> seçeneği, analitik verilerden başlangıç vektörleri oluşturur ve X'in başlangıcını <span style="font-weight: bold;">O1</span> merkezinin düşeyine yerleştirir, aynı zamanda <span style="font-weight: bold;">O1x</span> değerini <span style="font-weight: bold;">Dx</span> üzerine kopyalar.<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/copiar_boveda_analitica.png" style="width: 354px; height: 78px;" alt="" align="left" hspace="8" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">O1x</span> değeri, daha sonra deveri takip ederek uygulandığı için vektöre entegre edilmez; bu, her bir KM'de kemerin gerçek kotunu değiştirir. Vektörel tanımlarda, invert kemer tarafından kullanılabilecek <span style="font-weight: bold;">O1x</span>, <span style="font-weight: bold;">O1y</span> parametreleri bulunur.<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/def_boveda_vectorial.png" style="width: 135px; height: 126px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer vektörel kemerin deverle birlikte dönmesi isteniyorsa, o zaman <span style="font-weight: bold; font-style: italic;">Deverle birlikte döner</span> seçeneği etkinleştirilmelidir. Bu seçenek tek hatlı demiryollarında etkinleştirildiğinde, kemer alçak ray etrafında döner.<br />
+      <br />
+<span style="font-weight: bold;">[DÜZENLE]</span> düğmesi, vektörel kemeri değiştirmek için çizgiler araç çubuğu açılmış bir grafik ortam açar. Eğer vektörlerin nokta sayısı 0 ise (düzenlemeye ilk kez girildiğinde), analitik kemer otomatik olarak kopyalanır.<br />
+      <br />
+Programın bu yüzeyleri sırasıyla toplam kazı, iksa ve nihai kaplama olarak tanıyabilmesi için üç özel çizgi tipi, L9, L7 ve L8 kullanılmalıdır. Bu işi kolaylaştırmak için, bu çizgi tiplerini grafiksel olarak tanımlamaya olanak tanıyan bir diyalog kutusu gösterilir. Kullanıcı bu diyalog kutusunu kapatır ve yeniden çağırmak isterse, dikey menüdeki <span style="font-weight: bold;">VEKTÖREL KEMER </span> düğmesine tıklamalıdır.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialog_tun_vec_tipoL.png" style="width: 303px; height: 116px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span><img src="Imagenes/def_boveda_vectorial2.png" style="width: 135px; height: 127px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Kemerin grafik düzenlemesinden çıkıldığında, iç, dış ve teorik kazı yüzeylerinin nasıl kaldığını gösteren doldurulmuş çizgilerle bir çizim gösterilir ve çıkmak için onay istenir. Bu, ilgili çizgilerin geometrisindeki, yönelimindeki veya tiplerindeki hataları kolayca tespit etmeyi sağlar.<br />
+      <br />
+Güvenlik amacıyla, daha sonraki bir oturumda geri yüklenebilecek bir &nbsp;<span class="Archivo">IS#EP.edm</span> dosyası da oluşturulur.<br />
+      <br />
+      <br />
+      <br />
+<a href="OL_tuneles.html#zapata_vectorial">Vektörel temel</a> durumunda, bir topuk veya başlangıç duvarı bağımsız olarak vektörel bir şekilde tanımlanabilir. Topuk veya başlangıç duvarının yapım şeması, tüneller menüsünün şemasında bulunmaktadır. İnşa edileceği çizginin 332 numaralı çizgi olması ve şemaya göre başlayıp bitmesi önemlidir.<br />
+Metraj, TÜNEL TOPUĞU olarak verilecektir.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tun_zap_vect_talon.png" style="width: 303px; height: 396px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/tuneles_vectorial_ptos_control.png" style="width: 338px; height: 105px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Vektörel temelli vektörel tünel için, birincil ve ikincil iksaların dış/iç kemerin hangi noktasına kadar uzandığını tanımlama imkanı vardır. <br />
+      <br />
+<br />
+DİYAFRAM DUVAR TÜNELİ<br />
+      <br />
+Eğer bir tünel H şeklinde diyafram duvarlarla vektörel olarak tanımlanırsa, <span style="font-weight: bold; font-style: italic;">Diyafram duvarı kırp</span> seçeneği ile, diyafram duvarların sağlam zeminden taşan kısmı kaldırılır. Eğer döşeme sağlam zeminden taşarsa, döşemenin tavan seviyesinde kesilir.<br />
+      <br />
+H'deki diyafram duvarının vektörel tanımında, döşemeden taşan tüm kısmın, kemerin dış yüzeyini tanımlayan çizgiyle oluşturulması gerektiği hatırlatılır.<br />
+      <br />
+Bir <span style="font-weight: bold;">YK</span> değeri kabul edilir: diyafram duvarının araziyle dış kesişimi üzerindeki tepe yüksekliği. Diyafram duvarı bir derinliğe (YK < 0) kırpma seçeneği etkinleştirilirse, her iki tarafın en elverişsiz, yani en alçak yüksekliğine kırpmak için yeni seçenek etkinleştirilebilir.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_rec_pantalla.png" style="width: 600px; height: 83px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span style="font-weight: bold;">
+GENİŞLİK TABLOSU</span><br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tuneles_tabla_anchos.png" style="width: 226px; height: 70px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Diyafram duvarlarla veya başka herhangi bir vektörel olarak tanımlanmış tünelle yapılan tüneller için, bu genişlik tablosu, tip kesitten bağımsız olarak değişken bir genişlik tanımlamaya olanak tanır. Değişken genişlikler bölgesinde, program tünelin geometrisini esnetir veya daraltır ve dış kemeri (iksa) tanımlayan vektörün ikinci noktasını tabloda belirtilen mesafeye getirir.<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tuneles_anchos_aplicar_peralte.png" style="width: 152px; height: 100px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Tablonun verileri, ilk KM'den önce ve son KM'den sonra ekstrapole edilmez; bu bölgelerde tünel için tanımlanan geometriye uyulur.<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu genişlik tablosunun tanımında <span style="font-weight: bold; font-style: italic;">Deveri uygula</span> seçeneği bulunur. Bu seçenek etkinleştirildiğinde, değişken genişliğin uygulandığı başlangıç ve bitiş segmentleri de deverin eğimini alır.<br />
+      <br />
+Çift kemer durumunda, her birinde farklı genişlikler tanımlanabilir.<br />
+      <br />
+Bu tablolar, <span style="font-weight: bold;">çizgiye göre</span> genişlikler aracılığıyla tanımlanabilir.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/anch_linea.png" style="width: 609px; height: 259px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span><span class="Titulo_2"><a name="falso_tunel">Aç-Kapa Tünel Kesiti</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, tanımlanmış tünel kesitini, vektörlerle tanımlanmış şevlerle birleştirerek, bir aç-kapa tünel kesiti tanımlamak ve birleşik bir kesite karşılık gelen sonuçları elde etmek için kullanabilir.<br />
+      <br />
+Başka bir deyişle, yarma kesitinin tüm geometrik ve hacimsel sonuçları (toprak ve kaya yarması, şev aplikasyon raporları vb.) ve birleşik hesaplamalar yapmaya gerek kalmadan tünele karşılık gelen sonuçlar elde edilecektir.<br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+YARMA'nın <a href="OL_punto_control_y_arranque_cuneta.html">[KONTROL/HENDEK]</a> menüsünde <span style="font-style: italic;">Aç-Kapa Tünel</span> seçeneği bulunur. Bu seçenek etkinleştirildiğinde şunları tanımlamaya izin verilir:<br />
+      </span></span></span></span>
+      <ul>
+        <li><img src="Imagenes/relleno_falso_tunel.png" style="width: 314px; height: 190px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#declaracion">Tünel numarası</a>, tünel tanım tablosundan.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_berma_pavimento_desmonte.html">Yarma palyesi</a>, temelin topuğunun üst dış köşesine bağlanır.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_cunetas.html">Hendek</a>.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_desmonte_roca.html">Kaya yarması</a>.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_desmonte_tierra.html#def_vectorial">Toprak yarma vektörü</a>.</span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Enkesitlerde, iksa yüzeyi boyunca ilerleyen, kazı yüzeyi boyunca devam eden ve arazi yüzeyiyle kapanan kapalı bir yüzey oluşturulur. Bu alanın içinde kalan alan, metrajlarda Aç-Kapa Tünel Dolgusu olarak görünür.<br />
+Aç-Kapa tüneldeki kazı için, uygun olmayan arazi için toprak yarma şevini doğrulayan <a href="OL_vectores.html#desmonte_inadecuado"><span style="font-weight: bold;">->UA</span></a> seçeneği kullanılabilir.<br />
+      <br />
+YARMA'nın TOPRAK/KEMER menüsünde, aç-kapa tüneller durumunda tünel numarasının yanında ikinci bir dolgu tanımlanabilir. İki dolgunun ayırım ufku, tünel kemerinin tepe noktasına göre bir <span style="font-weight: bold;">dZ</span> kot artışı ve bir <span style="font-weight: bold;">eğim</span> ile tanımlanır (pozitif bir değer, sağa doğru inen bir eğimi gösterir). Metrajlarda o zaman <span style="font-style: italic;">Aç-Kapa Tünel Dolgusu</span> ve <span style="font-style: italic;">Aç-Kapa Tünel Dolgusu 2 </span> ölçümleri yansıtılacak, ayrıca 771 çizgisi aracılığıyla <span style="font-style: italic;">aç-kapa tünel dolgusunun görünen yüzeyleri </span> ve 772 çizgisi aracılığıyla<span style="font-style: italic;"> aç-kapa tünel dolgusu 2'nin dolgusu </span> oluşturulacaktır.<span style="font-style: italic;"><br /><br /></span>Şev, Vektörel veya 3D Çizgi MODUNDA tanımlanabilir.<br />
+      <br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_relleno_falso_tunel.png" style="width: 520px; height: 165px;" alt="" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/falso_tunel.png" style="width: 538px; height: 218px;" alt="" /></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Aç-kapa tüneller durumunda, kullanıcı ayrıca aşağıdaki hususları da göz önünde bulundurmalıdır:<br />
+      </span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aç-kapa tüneller için yarma şevi, <a href="OL_coronacion_desmonte.html">TAÇ</a> menüsünde yarma tepesi için girilen verileri (varsa) dikkate alır.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aç-kapa tüneller, tek hatlı karayolları ve demiryollarına veya çift hatlı otoyollara ve demiryollarına, iki platform veya hattın tek bir kemerde veya ayrı kemerlerde olmasıyla uygulanabilir. İkinci durumda, bir <a href="OL_excentricidad_mediana.html#mediana_abierta">açık refüj</a> tanımlamak gerekir.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Başlangıçta, yarmayı uygulamak için kontrol noktası, temelin topuğunun dış ve üst köşesindedir. Bu noktanın arazinin üzerinde olması durumunda, palyenin ucu da analiz edilir, öyle ki, temel ile aynı yüksekliğe sahip dikey bir <a href="OL_berma_pavimento_desmonte.html">palye</a> (<span style="font-weight: bold;">PY</span> = 0, <span style="font-weight: bold;">YPY</span> = temel h'si) beyan edilirse, yarma kesitinin kontrolü topuğun dış-alt köşesine geçer.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir aç-kapa tünelde, <a href="#zapata_vectorial">vektörel temeli</a> tanımlamak mümkündür. Program, yarma vektörünü uygulamaya başlamak için en dıştaki noktayı aşağıdan arar.</span></span></span></span></li>
+      </ul></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>Aç-Kapa Tüneldeki Vektörel Yarma Kesiti, Yarma Başlığından sabit olarak uygulanabilir. Bu durumda, Yarma Tepesi uygulanmaz. (Vektörün üst kısmına dahil edilebilir).<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aç-kapa tünel kesitlerinde, eksenden başlayarak kazı yüzeyini temellerin altından geçerek terasmanın L68 hattıyla temellerin topuğunun üst dış köşesinde kesişene kadar takip eden yeni bir yüzey (radye, L51 çizgi tipiyle temsil edilir) bulunmaktadır.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aç-kapa tünel dolgusunun metrajının belirlenmesi için, kemerin tamamen arazinin altında olmamasına izin verilir.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer aç-kapa tünelin kemer tanımında teorik kazı hattı tanımlanırsa, bu hat kemerin minimum örtüsü olarak kullanılır, öyle ki dolgu hiçbir zaman bu teorik kazı hattının altına inmez.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Enkesitte teorik kazı hattı görünmeyecek, yalnızca arazinin kemere çok yakın veya altında olduğu ve dolgu tavanının teorik kazı hattının şeklini aldığı bölgelerde fark edilecektir.</span></span></span></span></li>
+      </ul></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>Kemerle birlikte, aç-kapa tünel dolgusunun minimum örtüsünü temsil eden teorik kazı yüzeyi tanımlandığında, şu seçenek işaretlenebilir: <span style="font-weight: bold;">Teorik kazı hattının üzerinde doldurma</span>.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Aç-Kapa Tünel</span>'in özel bir durumu, aç-kapa tünelin kazı şevlerinin, hendek iç şevini kestiği bir hendekle karma bir kesitte ortaya çıkabilir, öyle ki tüm aç-kapa tünel dolgusu bu şevde sona erer. Bu, hendek şevi aç-kapa tünelin şevinden daha yatık olduğunda meydana gelebilir.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/falso_tunel_seccion_mixta_trinchera.png" style="width: 625px; height: 172px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu kesiti oluşturmak için, hendek şevinin içi için tip kesiti uygulayacağımız bir <a href="OL_excentricidad_mediana.html">açık refüj</a> oluşturmamız gerekecektir. Diğer yandan, <a href="OL_zonas_calculo.html">hesaplama bölgesinde</a>, yarma menüsünde <a href="OL_punto_control_y_arranque_cuneta.html">asimetrik</a> olma özelliğine sahip (sağda aç-kapa tünel ve solda örneğin kontrol noktası / hendek tabanında / palye kenarında) bir X tip kesiti tanımlayacağız. Son olarak, tüneller menüsünde ilgili tünel kesitimizi tanımlamamız gerekecektir.<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>Bir aç-kapa tünel kesiti, Aç-Kapa Tünel Dolguları metrajından düşülen bir <a href="OL_revestimiento_desmonte.html">Yarma Kaplaması</a> (Anroşman...) taşıyabilir.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/falso_tun_escoll.png" style="width: 313px; height: 154px;" alt="" align="top" /><br />
+      </div>
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="linea_galibo">Gabari Hattı</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/tunel_linea_galibo.png" style="width: 138px; height: 119px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Gabari hattı</span> seçeneği, <a href="OL_seg_tun.html">tünel imalat takibi</a> modülünde bulunan seçeneğe benzer. Etkinleştirildiğinde, 11 veya -11 kodunda (banket kenarları) platforma dik bir çizgi oluşturur ve nihai kaplama yüzeyini keser. Ayrıca, <a href="OL_planos_transversales.html">enkesitler</a> &nbsp;<span class="Archivo">GALIBO.gut</span> bilgi bandıyla çizilirse, bu çizgi üzerindeki platform ile nihai kaplama yüzeyi arasındaki mesafe etiketlenir.<br />
+      <br />
+Teorik gabari hattı, platforma normal veya düşey olarak oluşturulabilir.<br />
+      <br />
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body></html>

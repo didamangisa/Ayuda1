@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Geçiş Dolguları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GEÇİŞ DOLGULARI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+<tbody><tr><td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+Bu menü, sanat yapılarının kenarayakları arkasındaki dolgu için iki farklı dolgu geçiş malzemesi (MAT_TRANS_1 ve MAT_TRANS_2 olarak metrajlandırılır) oluşturmayı sağlar.<br />
+      <br />
+</span><span class="Parrafo"><span class="Parrafo">Bu menüdeki Kilometre (KM) verileri hem grafik hem de sayısal olarak girilebilir (<strong>[Tıklama]</strong>/<strong>[Klavye]</strong> düğmeleri). Grafik olarak verilmesi durumunda, noktanın eksen üzerindeki izdüşümü tam bir enkesite veya enterpole edilmiş bir enkesite karşılık gelebilir.</span></span><br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/modelo_cunas_transcicion.png" style="margin-right: 7px; width: 349px; height: 250px; float: left;" alt="" /><span class="Parrafo">İlk olarak, <strong>TİPLER</strong> sekmesinden farklı geometriler (mesafeler ve şevler) tanımlanır. Gerekli kazı, zemin iyileştirme kazısı (<span class="Archivo">EXCAVA_SANEO</span>) olarak metrajlandırılacaktır.<br />
+      <br />
+<a href="OL_rasantes_diseno.html">KIRMIZI KOTLAR</a> menüsünde, eğer <a href="OL_rasantes_opciones_visualizacion.html#estructuras">sanat yapıları çizimi</a> etkinse, geçiş malzemelerini tanımlayan çizgiler (<strong>MT1</strong> ve <strong>MT2</strong>) boyuna olarak gösterilir.<br />
+      <br />
+Düşey güzergah hesaplandığında, bu malzemelerin göründüğü veya geometrisinin değiştiği tüm özel kilometrelerde otomatik olarak enkesitler enterpole edilir.<br />
+      <br />
+      Geçiş malzemesi 2'yi (<strong>MT2</strong>, &nbsp;<span class="Archivo">MAT_TRANS_2</span> olarak metrajlandırılır) ortadan kaldırmak için, <strong>D3</strong>, <strong>D4</strong>, <strong>T3</strong> ve <strong>T4</strong> değerlerini sıfır bırakmak yeterlidir.<br />
+      <br />
+      <br /><i><strong>MT0</strong></i> seçeneği, <strong>MT1</strong> malzemesini iki malzemeye ayırmayı sağlar: <strong>MT0</strong> ve <strong>MT1</strong>.<br /><br /><i><strong>D4=2H</strong></i> kutucuğu, <strong>D4</strong> uzunluğunu <strong>H</strong> yüksekliğinin iki katına eşit yapar. Bir&nbsp;<strong>D4 min</strong> değeri atanarak, <strong>D4=2H</strong> sonucunun bu değerden küçük olması durumunda minimum bir değer zorlanabilir.<br />
+      <br /><strong>MT0</strong> katmanının arazinin üzerinde belirli bir kota kadar ulaşması ve onun üzerinde <strong>MT1</strong> veya <strong>MT2</strong>'nin yer alması sağlanabilir. Bunun için dolguda arazinin üzerinde bir <strong>Z</strong> kotu tanımlanır ve bu durumda dolgu tipinde:<br /></span><ul><li><span class="Parrafo"><strong>MT0</strong>'ı işaretleriz.</span></li><li><span class="Parrafo"><strong>D2</strong> ve <strong>T2</strong>'yi istenen değerlerle tanımlarız, örn. <strong>D2</strong>=10 <strong>T2</strong>=2:1.</span></li><li><span class="Parrafo"><strong>T1</strong>=0 ve <strong>D1</strong>= Kenarayaktan <strong>Z</strong> kotundaki <strong>T2</strong> şevi ile kesişime kadar olan Mesafe olarak tanımlarız. (<strong>T2</strong> şevi, <strong>MT0</strong>'ı <strong>D1</strong>'den araziye kadar kapatmak için de kullanılacaktır).</span></li></ul><span class="Parrafo"><strong>T1</strong> ve <strong>T3</strong> şevleri, <strong>V1</strong> ve <strong>V3</strong> vektörleri ile değiştirilebilir. <strong>T3</strong> (<strong>V3</strong>) şevi artık, geçiş malzemesinin dolgu üzerine oturmasına neden olacak şekilde, dolgu bölgelerinde bile tesviye yüzeyine kadar uzatılabilir.<br /><br />Bir yapıdan sonraki bir dolgunun <strong>T4</strong> şevi, bir sonraki dolgunun (başka bir yapıdan önce gelen) şeviyle kesiştiğinde, kesişim noktası belirlenir ve bu kilometreden itibaren bir sonraki dolgu ile devam edilir. Bu kesişim noktasında da bir enkesit enterpole edilir.<br /><br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_cunas_transicion_tipos.png" style="width: 600px; height: 483px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+<span class="Parrafo"><br />
+      Son olarak, <strong>DOLGULAR</strong> sekmesinden, önceki geometrilerin her biri için kilometre aralıkları tanımlanır. Her bir geçiş dolgusu, kenarayaktaki kilometre, ilerleme yönü ve kenarayak temeli için kazı taban kotu ile tanımlanır. Bu kot, mutlak bir değer olarak veya arazi yüzeyine göreceli bir değer olarak (yüzeyin altındaki bir kot negatif olmalıdır) verilebilir.<br />
+      <br />
+Ayrıca geçiş malzemeleri için bir üst kot da tanımlamak mümkündür. Bu kot, mutlak olarak veya kırmızı kota göreceli olarak tanımlanabilir. Bu malzemelerin üzeri dolgu ile kaplanır.<br />
+      <br />
+Her bir geçiş dolgusu için enine kazı <strong>şevi</strong> ve geçiş malzemesi MT2'nin tavanının eksende araziyi kestiği (<strong>T4</strong> şevi) noktadan sonraki bir bölgeyi analiz etmeyi sağlayan bir kilometre <strong>marjı</strong> tanımlanabilir.<br /><br /><strong>D2</strong> ve <strong>D4</strong> (dolgular sekmesi) tanım kutucuklarında, etkinleştirilmesi durumunda bu mesafelerin, mevcut olması koşuluyla, seçme malzemede ölçülmesi için bir bayrak eklenmiştir.<br /><br /></span>Diyalog kutusunda, Mevcut Dolgunun (Dolgular Sekmesi) geometrisini görselleştirmeyi sağlayan bir 3B görüntüleyici gösterilir. Eğer <strong>TİPLER</strong> sekmesinde veri değiştiriyorsak, mevcut dolgu olarak, görselleştirmek istediğimiz tip verisini kullanan bir dolguya sahip olmalıyız. Görüntüleyici, eksenin ve arazinin gerçek kilometrelerini ve kotlarını (boyuna yönde) kullanır.<br /><span class="Parrafo"><br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_cunas_transicion_cunas.png" style="width: 600px; height: 483px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      
+      <br />Eğer <i><strong>MT1'i İptal Et</strong></i> kutucuğu etkinleştirilirse, <strong>MT1</strong> malzemesi göz ardı edilir ve dolayısıyla <strong>MT1</strong>'in tüm kısmı <strong>MT2</strong> malzemesi ile doldurulur.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      <img src="Imagenes/cuna_transicion_nucleo.png" style="width: 359px; height: 225px;" alt="" align="right" hspace="6" />Dolguları <strong>Sadece Çekirdek</strong> modunda oluşturabiliriz. Bu durumda geçiş malzemeleri, dolgunun platform kenarı (tesviye yüzeyi veya seçme malzemenin drenaj noktası) ile yanal olarak sınırlandırılmış iç kısmına uygulanır.<br />
+Bu noktanın düşeyinden dışarıya doğru olan kısım dolgu malzemesi ile doldurulur.<br />
+      </span></span></td>
+    </tr><tr class="Parrafo" align="justify"><td><br />"<strong>Sadece Çekirdek</strong>" bayrağı devre dışı bırakıldığında, dolgu kazısını değiştirmek için ayarlanabilecek parametreler şunlar olabilir:<br /><ol><li><img style="width: 150px; height: 91px; float: right;" alt="" src="Imagenes/cuna_base_techo.png" hspace="5" />Kazı genişliğinin hangi kotta ölçüleceğini belirleyen açılır menü: kazı tabanında mı yoksa tavanında mı.</li><li>Kazı genişliğini seçmeye olanak tanıyan açılır menü: dolgu topuğu, hendek veya kafa hendeği (hendek yoksa, dolgu topuğuna kadar gider).</li><li>Önceden seçilen noktaya göre kazıya bir ek genişlik girilen kutucuk.</li></ol><div style="text-align: center;"><img style="width: 150px; height: 79px;" alt="" src="Imagenes/cuna_sobreancho.png" /><br /></div>Geçiş dolgusu malzemelerinin <a href="OL_obras_fabrica.html">Sanat Yapıları</a> dolgusu üzerine oturtulmasına izin verilir.<br /><br />Geçiş dolgusu, <a href="OL_saneos_terraplen.html">Dolgu Zemin İyileştirmesi</a> üzerine oturtulabilir. Drenaj tabakalı bir iyileştirme tanımlanmış olmalıdır. O zaman dolguyu oluşturan malzemeler drenaj tabakasının üzerinde görünür.<br />
+      <br />
+"Sadece çekirdek" bayrağı devre dışı bırakıldığında, dolgu kazısını enine yönde iki mod aracılığıyla tanımlamaya izin verilir:<br /><ul><li><strong>Mesafe</strong>: enkesitteki fazla kazının ulaştığı mesafeyi girmek için bir kutucuk etkinleştirilir (0 ise, dolgu topuğuna kadar gider). </li></ul><ul><li><strong>Kafa hendeğine kadar</strong>: kazı, kafa hendeğinin ucuna kadar genişletilir, eğer varsa. Yoksa, dolgu topuğuna kadar götürülür.</li></ul><div style="text-align: center;"><img style="width: 250px; height: 97px;" alt="" src="Imagenes/cuna_trans_cun_g.png" /><br /></div><br />Sadece çekirdek durumunda, iki modumuz vardır: <br />
+      <ul>
+        <li><strong>Genişlik</strong>, burada çekirdeğin genişliği metre cinsinden tanımlanır.</li>
+        <li><strong>Kod + Mesafe + Şev</strong>, burada çekirdeğin genişliği kod ve mesafe ile sabitlenir. Aynı şekilde, bu mod dolguda bir şev oluşturmaya olanak tanır, böylece tavandaki ve tabandaki genişlik aynı olmaz.</li>
+      </ul>
+Son olarak, yol gösterici olması amacıyla, dolgu editörünün önizlemesinde kazı yüzeyini görme imkanımız vardır.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/cuna_codigo_ancho.png" style="width: 620px; height: 499px;" alt="" /><br />
+      </div>
+<br /></td></tr></tbody></table></body></html>

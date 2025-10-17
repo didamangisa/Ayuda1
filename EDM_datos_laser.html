@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Yoğun Nokta Bulutları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="Ana Sayfa" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>YOĞUN NOKTA BULUTLARI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td class="Parrafo" style="width: 694px;">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#tipos_datos">Veri Tipleri</a><br />
+      <a href="#analisis">Analiz</a><br />
+      <a href="#base_datos">Veritabanı</a><br />
+      <a href="#visualizacion">Görselleştirme</a><br />
+      <a href="#filtros">Filtreler</a><br />
+      <a href="#utiles">Yardımcı Araçlar</a><br />
+      <a href="#basescargadas">Yüklenmiş Veritabanları</a><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+Hem <span style="font-weight: bold;">Araçlar</span> menüsünden hem de <a href="EDM_topografia.html"><span style="font-weight: bold;">TOPOGRAFYA</span></a>&nbsp;<img src="Imagenes/icono_toolBarEstandar_topo.png" style="width: 14px; height: 16px;" alt="Topografya" /> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span>
+      <span style="font-weight: bold;">YARDIMCI ARAÇLAR</span>'dan erişilebilen bu araç, lazer tarama (LiDAR) kaynaklı milyonlarca nokta içeren dosyaları işlemeye olanak tanır.<br />
+      <br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/acceso_datos_laser.png" style="width: 154px; height: 389px;" alt="Menü Erişimi 1" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/acceso_datos_laser_1.png" style="width: 268px; height: 447px;" alt="Menü Erişimi 2" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+Aracın amacı, gelecekteki üçgenleme işlemleri, topoğrafik düğüm noktası düzenlemesi, eş yükselti eğrisi oluşturma vb. için bilgiyi veri paketleri halinde işlemektir.<br />
+      <br />
+Bu menü, <img src="Imagenes/icono_desplegar.png" style="width: 20px; height: 20px;" alt="Genişlet/Daralt" /> ikonu aracılığıyla alt pencereleri daraltmaya veya genişletmeye olanak tanır.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_datos_laser.png" style="width: 460px; height: 547px;" alt="Yoğun Nokta Bulutları Diyalog Kutusu" /><br />
+      </div>
+      <br />
+Program tarafından işlenecek nokta sayısı konusunda herhangi bir sınırlama yoktur, ancak bilgisayar donanımının gücüne bağlı bir miktar bağımlılık bulunmaktadır.<br />
+      <br />
+Bu araç seçildiğinde, yukarıdaki resimde gösterilen iletişim kutusu belirir.<br />
+      <br />
+İzlenecek adımlar şunlardır:<br />
+      <ol>
+        <li><a href="#tipos_datos"><span style="font-weight: bold;">Veri tipini</span></a> (dosyaların formatı ve uzantısı) tanımlayın.</li>
+      </ol>
+      <ol start="2">
+        <li>Verileri içeren dosyaların adlarını içeren bir listeye dayanarak noktaların <a href="#analisis"><span style="font-weight: bold;">analizini</span></a> yürütün.</li>
+      </ol>
+      <ol start="3">
+        <li>Bir grid'e (ızgaraya) göre <a href="#base_datos"><span style="font-weight: bold;">veritabanını</span></a> oluşturun.</li>
+      </ol>
+      <ol start="4">
+        <li>Verileri farklı kriterlere göre <a href="#visualizacion"><span style="font-weight: bold;">görselleştirin</span></a> (tek renk, <a href="#reflectancia">yansıtıcılık</a> veya kot).</li>
+      </ol>
+      <ol start="5">
+        <li>Veritabanını hafifletmek ve istenmeyen noktaları kaldırmak için bilgiyi <a href="#filtros"><span style="font-weight: bold;">filtreleyin</span></a>.</li>
+      </ol>
+      <ol start="6">
+        <li>Örneğin, eş yükselti eğrileri ve/veya programın diğer bölümlerinde ilgi çekici olabilecek, zaten filtrelenmiş verileri içeren bir nokta dosyası elde etmeye olanak tanıyan çeşitli <a href="#utiles"><span style="font-weight: bold;">yardımcı araçları</span></a> kullanın.<br />
+        </li>
+      </ol>
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_esquema.png" style="width: 409px; height: 297px;" alt="Nokta Bulutu İş Akışı Şeması" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="tipos_datos">Veri Tipleri</a></span><br />
+      <br />
+VERİ TİPİ'ne ayrılmış bölümde, bilgiyi içeren ASCII dosyalarının uzantısı ve formatı seçilebilir.<br />
+      <br />
+      <img src="Imagenes/datos_laser_tipo_datos.png" style="width: 420px; height: 35px;" alt="Veri Tipi Ayarları" align="left" hspace="4" />Dosya uzantısı kullanıcı tarafından en fazla 4 karakterle belirtilir, varsayılan olarak&nbsp;<span class="Archivo">.xyz</span>'dir. Format olarak, her noktanın X,Y,Z koordinatlarını içeren en az 3 sütuna sahip nokta dosyalarıdır, ancak koordinatlardan önce örneğin nokta numarası, yansıtıcılık veya başka bir parametreye karşılık gelen sütunlar da olabilir. Örneğin, <span style="font-style: italic;">a b c X Y Z</span> şeklinde bir format seçilirse, program 6 sütunlu bir veya daha fazla dosya bekler; ilk 3 sütun noktanın bir parametresine, son 3 sütun ise koordinatlarına karşılık gelir. Tanımlanan farklı ASCII formatları, sütun ayırıcı olarak boşlukların " " yanı sıra virgül "," ve noktalı virgülü ";" de kabul eder.<br />
+      <br />
+Program ayrıca diğer çeşitli nokta bulutu dosya formatlarını da destekler:&nbsp;<span class="Archivo">.las/.la20</span>,&nbsp;<span class="Archivo">.laz</span>,&nbsp;<span class="Archivo">.pts</span>,&nbsp;<span class="Archivo">.e57</span>...<br />
+      <br />
+.pts dosyaları için format aşağıdaki ikisinden biri olmalıdır: <br />
+      <ul>
+        <li>X Y Z YANSITICILIK KIRMIZI YEŞİL MAVİ <br />
+        </li>
+        <li>X Y Z YANSITICILIK</li>
+      </ul>
+
+      
+      <div style="text-align: center;"><img src="Imagenes/nubes_densas_puntos_las.png" style="width: 446px; height: 70px;" alt="LAS Format Ayarları" /><br />
+      </div>
+      <br />
+Gerçek renge sahip olmayan bir .las dosyası yüklenirken bir arka plan görüntüsü varsa, program yüklenen noktaları görüntü ile renklendirmeye izin verir, böylece görüntü her noktaya kendi rengini yansıtır. Bu işlemi gerçekleştirebilmek için görüntüyü yüklemiş olmamız ve <span style="font-weight: bold;">Görüntü ile Renklendir</span> kutucuğunu işaretlememiz gerekir (<a href="EDM_datos_laser.html#utiles">Yardımcı Araçlar</a> bölümünde açıklanmıştır).<br />
+      <br />
+.pts uzantılı ASCII dosyalarını yüklemeye izin verir: İlk satırda toplam nokta sayısı bulunur ve ardından her satırda yedi değerli bir nokta bulunur: X Y Z yoğunluk(yansıtıcılık) R G B.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/nubes_densas_pts.png" style="width: 446px; height: 49px;" alt="PTS Format Ayarları" /><br />
+      </div>
+      <br />
+Veri Tipi bölümünde bazı ek seçenekler kullanabiliriz:<br />
+      <ul>
+        <li><span style="font-weight: bold;">dX</span>, <span style="font-weight: bold;">dY</span>, <span style="font-weight: bold;">dZ:</span>
+eğer noktalar göreceli veya kaydırılmış koordinatlarda geliyorsa, burada bu koordinatlara <span style="font-weight: bold;">eklenecek</span> olan farklı artışları tanımlayabiliriz.</li>
+        <li><span style="font-weight: bold;">[Başlığı Gör]</span>:
+kullanıcının bu dosyaların formatını tanımlayabilmesi için dosyanın başlığını gösterir.</li>
+        <li><span style="font-weight: bold;"><span style="font-style: italic;">n</span> satır atla</span>: dosyanın ilk <span style="font-style: italic;">n</span> satırını, eğer bunlar nokta verilerine karşılık gelmiyorsa (başlıklar vb.) yok sayar.</li>
+        <li><span style="font-weight: bold;"><a name="reflectancia">Yansıtıcılık</a></span><a name="reflectancia">:&nbsp;
+<span style="font-weight: bold;">Yansıtıcılık</span>, yüzeylerin ışığı yansıtma kapasitesini ölçer. Bu tür dosyalarda bulunabilen verilerden biridir. Eğer ilk sütuna karşılık geliyorsa, programın verileri okurken bunu dikkate alması ve </a><a href="EDM_datos_laser.html#visualizacion">görselleştirme</a> seçeneklerinde kullanılabilmesi için bu seçeneği aktif etmek tavsiye edilir.</li>
+        <li><span style="font-weight: bold;">.las/.laz dosyalarındaki ölçeği düzelt</span>: Bazı dosyaların ölçek değerleri hatalıdır, bu hatayı bu kutucuğu işaretleyerek düzeltebiliriz.</li>
+      </ul>
+      <br />
+      <br />
+      <a name="analisis"><span class="Titulo_2">Analiz</span></a><br />
+      <br />
+Analizi yapmadan önce, veri setini oluşturan tüm nokta dosyalarının adlarını içeren bir <span style="font-weight: bold;">liste</span> oluşturmak gerekir.<br />
+Giriş dosyalarının listesini dosya seçici aracılığıyla oluşturma imkanı vardır, hatta dosyalar çalışma klasöründen farklı bir klasörde olabilir. Bu durumda her zaman ISPOL.lt1 listesi oluşturulur.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_analisis.png" style="width: 450px; height: 67px;" alt="Analiz Bölümü" /><br />
+      </div>
+      <br />
+      <img src="Imagenes/datos_laser_lista.png" style="width: 234px; height: 79px;" alt="Liste Oluşturma" align="right" hspace="4" />Veriler tek bir dosyada olsa bile bu liste oluşturulmalıdır. Bunun için <span style="font-weight: bold;">[Liste Oluştur]</span> butonuna basılır, ardından listeyi içerecek dosyanın adını belirtmeniz gereken bir iletişim kutusu belirir. Dosya oluşturulduktan sonra (<span class="Archivo">.lt1</span> uzantılı), program çalışma dizininde bulabildiği, <a href="#tipos_datos">veri tipinde</a> belirtilen uzantıya sahip tüm dosyaları listeye otomatik olarak ekler. Diğer yandan, <span style="font-weight: bold;">[Düzenle]</span> butonu, listeye eleman ekleyerek veya çıkararak değiştirilebilmesi için dosyanın içeriğini gösterir.<br />
+      <br />
+Liste oluşturulduktan sonra, <span style="font-weight: bold;">[Analiz Et]</span> butonuna basarak tüm noktaları işlemek mümkündür. Program listedeki dosyaları analiz eder, toplam nokta sayısını ve X, Y, Z ve yansıtıcılığın maksimum ve minimum değerlerini belirler.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="base_datos">Veritabanı</a></span><br />
+      <br />
+      <img src="Imagenes/datos_laser_bd.png" style="width: 450px; height: 67px;" alt="Veritabanı Bölümü" align="right" hspace="4" />Nokta bulutunun tamamını analiz ettikten sonra, elde edilen tüm bilgilerle bir <span style="font-weight: bold;">veritabanı</span> oluşturma zamanı gelmiştir. Bu veritabanının amacı, işlendikten sonra tüm bilgiyi yeniden düzenlemek ve kullanıcının tüm verileri tekrar analiz etmesine gerek kalmadan herhangi bir zamanda geri alabilmesi için depolamaktır.<br />
+      <br />
+      <img src="Imagenes/datos_laser_celdas.png" style="width: 253px; height: 207px; margin-right: 7px;" alt="Hücre Yapısı" align="left" />Bu veritabanını oluştururken noktalar düzenli bir grid'e göre gruplandırılır. Oluşturulan hücre sayısı, hücre başına minimum ortalama nokta sayısı olan <span style="font-weight: bold;">pmin</span> parametresine göre hesaplanır (programın maksimum bir hücre sayısı olduğu için bu minimumdur).<br />
+      <br />
+Hücreler, içerdiği nokta sayısına göre farklı renklerde gösterilir, bu da lazer tarayıcı tarafından alınan farklı nokta yoğunluklarını bir bakışta ayırt etmeyi sağlar.<br />
+      <br />
+Veritabanı varsayılan olarak çalışma klasörünün <span style="font-style: italic;">laser</span> adlı bir alt klasöründe oluşturulur, ancak kullanıcı isterse başka bir ad belirleyebilir.<br />
+      <br />
+Veritabanı oluşturulduktan sonra, <span style="font-weight: bold;">[Aç]</span> butonuna basılarak herhangi bir zamanda geri yüklenebilir, bu da programla başka bir çalışma oturumunda noktaları yeniden analiz etme zorunluluğunu ortadan kaldırır.<br />
+      <br />
+      <span style="font-weight: bold;">[Kapat]</span> butonu, iş bittikten sonra belleği boşaltmak için aktif veritabanının tüm veri dosyalarını kapatır. Bu adım, ardından başka bir veritabanı yüklemek isteniyorsa gereklidir.<br />
+      <br />
+Program, bir lazer veritabanı oluştururken, .las dosyalarından aşağıdaki bilgileri çıkarır:<br />
+      <ul>
+        <li>Noktanın X,Y,Z koordinatları</li>
+        <li>Yansıtıcılık</li>
+        <li>Gerçek renk (r,g,b). Bu değer gelmezse, bölgenin bir görüntüsünden <span style="font-weight: bold;">Görüntü ile Renklendir</span> aracıyla atanabilir.</li>
+        <li><span style="font-weight: bold;"><img src="Imagenes/laser_clasif.png" style="width: 187px; height: 187px;" alt="Sınıflandırma" align="right" hspace="6" />Sınıflandırma</span>:
+Noktalar kategorilere ayrılabilir, örneğin: Zemin, Alçak Bitki Örtüsü, Orta Bitki Örtüsü, Yüksek Bitki Örtüsü, Yapılar, Su, Kilit Noktalar, Gürültü, vb... İlk 64 kategori rezerve edilmiştir, ancak noktalar 256 farklı kategoriye kadar sınıflandırılabilir.<br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;"><img src="Imagenes/icono_info_laser.png" style="width: 20px; height: 20px;" alt="Bilgi" /> ikonuna basıldığında program, veritabanında her tipten kaç nokta olduğunu otomatik olarak sayar.<br />
+      <br />
+Hem görselleştirmede hem de bir arazi modeli (eş yükselti eğrileri, profiller vb.) oluşturmak için farklı kategoriler aktif edilebilir/pasif hale getirilebilir. Örneğin, sadece Zemin noktaları aktif bırakılarak diğer tümü pasif hale getirilebilir.<br />Sınıflandırmanın aktivasyon durumu, her zaman grid'i görme seçeneğinin yanı sıra yapılandırma dosyasına (ispol.cfg) kaydedilir/geri yüklenir.<br />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="visualizacion">Görselleştirme</a></span><br />
+      <br />
+Veritabanı oluşturulduktan sonra, verileri farklı kriterler kullanarak ekranda görselleştirmek mümkündür:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_visualizacion.png" style="width: 450px; height: 49px;" alt="Görselleştirme Seçenekleri" /><br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Sınıfa Göre Renklendir</span>:
+Noktalar sınıflandırmalarına göre renklendirilir.</li>
+      </ul>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/nubes_densas_editar_clase_ej.png" style="width: 242px; height: 215px;" alt="Sınıfa Göre Renklendirme Örneği" /><br />
+            </td>
+            <td style="vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/nubes_densas_editar_clase.png" style="width: 170px; height: 118px;" alt="Sınıf Düzenleme" /><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li><span style="font-weight: bold;">Yansıtıcılığa Göre Renklendir</span>:
+Noktalar <a href="#reflectancia">yansıtıcılıklarına</a> göre renklendirilir.</li>
+        <li><span style="font-weight: bold;">Kota Göre Renklendir</span>: Noktalar kotlarına göre renklendirilir.<br />
+        </li>
+        <li><span style="font-weight: bold;">Gerçek Renk</span>. Noktalar, dosyada tanımlanan RGB renklerine (veya <span style="font-weight: bold;">Görüntü ile Renklendir</span> kullanarak tanımladığımız renklere) göre renklendirilir.<br />
+        </li>
+      </ul>
+      <img src="Imagenes/datos_laser_ejem_visual.png" style="width: 281px; height: 266px; margin-left: 7px;" alt="Görselleştirme Örneği" align="right" />Eğer toplam nokta miktarı çok fazlaysa, bunların gösterimi çok yavaş olabilir. Bu sorunu önlemek için, hücre başına veya metrekare başına görüntülenecek maksimum bir nokta sayısı belirtilebilir ve sadece bu noktaları görüntülemek için <span style="font-weight: bold;">[Noktaları Gör]</span> butonuna basılabilir. Eğer <span style="font-weight: bold;">[Tümünü Gör]</span> butonuna basılırsa, verilerin tamamı ekranda gösterilir.<br />
+      <br />
+Eğer <span style="font-weight: bold;">[OpenGL]</span> butonuna basarsak, lazer veritabanının içeriğini 2B veya 3B bir pencerede ve gerçek zamanlı olarak (varsayılan seçenek) görebiliriz. Veritabanı, hızlı bir şekilde çizilebilmesi için "tamamen" belleğe aktarılır.<br />
+      <br />
+3B görselleştirme, <span style="font-weight: bold;">[OpenGL]</span> butonuna basıldığında gösterilen menü ile yapılandırılır:<br />
+      <br />
+      <img src="Imagenes/dialogo_opengl.png" style="width: 300px; height: 329px;" alt="OpenGL Ayarları" /><br />
+      <br />
+Bu menünün seçenekleri şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tümünü Gör</span> / <span style="font-weight: bold;">Noktaları Gör</span>: Veritabanındaki tüm noktaların mı yoksa hücre başına belirli sayıda noktanın mı dikkate alınacağını belirtir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Pmaks</span>: "Noktaları Gör" seçeneği seçilirse, her hücreden okunacak maksimum nokta sayısını belirtir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Sınıfa / Yansıtıcılığa / Kota / Gerçek Renge Göre Renklendir</span>: Veritabanındaki noktaların renklendirme modunu belirtir. Yansıtıcılık veya gerçek renk, lazer veritabanında mevcut olmalıdır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">OpenGL 2D</span>: Noktaları, ya entegre pencerede ya da bağımsız bir pencerede iki boyutlu olarak gösterir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">OpenGL 3D</span>: Noktaları, ya entegre pencerede ya da bağımsız bir pencerede üç boyutlu olarak gösterir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Haritayı Göster</span>: OpenGL penceresinde sayısal haritayı görmeye olanak tanır.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Entegre Pencere</span>: Noktaların 2B veya 3B olarak gösterimini ISTRAM'ın kendi penceresinde gösterir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Bağımsız Pencere</span>: Noktaların 2B veya 3B olarak gösterimini bağımsız bir pencerede gösterir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Nokta Büyütme Mesafesi</span>: Kameradan bakılan geometri noktasına (pencerenin merkezi) kadar ölçülen, metre cinsinden mesafeyi belirtir. Kamera bu noktaya yaklaştıkça, noktalar bilginin sürekliliği hissini daha iyi vermek için "büyütülür".<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">İmleç Hareket Ederken Bilgi</span>:
+Bu kutucuk aktif edildiğinde, program her noktanın bilgisini sadece fare imlecini üzerine getirerek verir. Gösterilen bilgi, koordinatlar, renk, yansıtıcılık ve sınıfla ilgilidir. Bu kutucuk aktif edilmezse, OpenGL penceresinde bu bilgiyi sol üst köşede her noktanın üzerine farenin sol tuşuyla tıklayarak görebiliriz.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Pencere Kapatıldığında OpenGL Verilerini Kaldır</span>:
+OpenGL penceresi kapatıldığında, veritabanı bilgisinin bellekten otomatik olarak kaldırılıp kaldırılmayacağını belirtir (lazer veritabanının kendisine bir şey olmaz). Başka bir görselleştirme için bu bilginin tekrar okunması gerekecektir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">OpenGL Verilerini Şimdi Kaldır</span>
+          <span style="font-weight: bold;">!</span>:
+Görselleştirme için okunan veritabanı noktalarının kapladığı belleği serbest bırakmaya olanak tanır. Bu seçenek yalnızca veriler okunduktan ve pencere bilgi indirilmeden kapatıldıktan sonra kullanılabilir. Bu bilgi, bu butonla serbest bırakılana, "Kaldır" seçeneği işaretliyken OpenGL penceresi kapatılana veya ISTRAM'dan çıkılana kadar bellekte kalır.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">OpenGL'de Gösterilecek Alan</span>: Noktaların hangi XY koordinatları arasında görselleştirileceğini sınırlamaya olanak tanır. Koordinatları doğrudan yazarak, fareyi kullanarak (<span style="font-weight: bold;">Görülecek Hücreleri Seç</span>) veya <span style="font-weight: bold;">Tüm Hücreleri Seç</span>'i kullanarak tüm noktaları seçebiliriz.<br />
+        </li>
+      </ul>
+Bu görselleştirmede gezinme, "3B Görünüm" ile aynıdır.<br />
+      <ul>
+        <li>Farenin sol tuşu: Bakılan noktayı seçer.</li>
+        <li>Fare tekerleği: Kamerayı noktalara yaklaştırır veya uzaklaştırır.</li>
+        <li>Fare tekerleği (buton olarak kullanılırsa) veya orta tuş, fareyi sürükleyerek: Kameranın görüntünün merkezindeki nokta etrafında dönmesini sağlar.</li>
+        <li>Farenin sağ tuşu, fareyi sürükleyerek: Kamerayı noktalar üzerinde kaydırmaya olanak tanır.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_opengl_ej.png" style="width: 600px; height: 450px;" alt="OpenGL Görselleştirme Örneği" /><br />
+      </div>
+      <br />
+      <span class="Titulo_2"><a name="filtros">Filtreler</a></span><br />
+      <br />
+Az önemli veya hatalı bilgi sağlayan noktaları kaldırmak ve böylece süreci hızlandırmak amacıyla <a href="#base_datos">veritabanını</a> filtrelemek mümkündür.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_filtros.png" style="width: 300px; height: 214px;" alt="Filtreler Bölümü" /><br />
+      </div>
+      <br />
+Bu noktada, verilerin tarayıcıya olan mesafelerine ve azimut ile zenit açılarına göre <span style="font-weight: bold;">sıralanmış olduğu</span> unutulmamalıdır. Bunu göz önünde bulundurarak, olası filtreleme kriterleri şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Hücre Başına Maksimum Nokta Sayısı</span> (<span style="font-weight: bold;">Pmaks</span>): <a href="#visualizacion"><span style="font-weight: bold;">Görselleştirme</span></a> kriterine benzer bir kriterdir; yani program, grid'in her bir hücresi için en fazla burada belirtilen sayıda nokta tutar. Noktaların filtrelenmesi ardışık olarak yapılır, böylece örneğin bir hücrede 50.000 nokta varsa ve en fazla 5.000 kabul edileceği belirtilmişse, program her on veriden birini alır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kontur</span>: Bir kapalı alan (kapalı bir çoklu doğru) seçmeye olanak tanır. Eğer <span style="font-weight: bold;">[ ]Aynı Tip</span> kutucuğu aktifse, aynı çizgi tipini kullanan kapalı alanlar da seçilir. Bu filtre, <span style="font-weight: bold;">İçinde/Dışında</span> seçeneğine göre sadece kapalı alanın içinde/dışında kalan noktaları tutar. Eğer <span style="font-weight: bold;">Ayır</span> seçeneği kullanılırsa, her kapalı alanda bulunan noktalarla yeni bir veritabanı oluşturulur ve ilgili .las dosyası oluşturulur. Eğer <span style="font-weight: bold;">İçinde Filtrele</span> tipi seçilirse, program geri kalan filtreleri sadece belirtilen tipteki kapalı alanın veya alanların içindeki noktalara uygular. Dışarıdaki noktalar değiştirilmez.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kot Aralığı</span>: [<span style="font-weight: bold;">Zmin</span>,<span style="font-weight: bold;">Zmaks</span>] aralığında olmayan tüm noktalar atılır. Bu, özel bir durum nedeniyle alınmış olan noktaları (örneğin, bölgeden geçen bir kuş) dikkate almamak için kullanışlıdır.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">dZ Kırmızı Kot SAĞ/SOL</span>: [<span style="font-weight: bold;">Kırmızı Kot +/- dZ</span>] aralığında olmayan tüm noktaları atar. Sadece bu Yoğun Nokta Bulutları penceresi, Güzergah Esaslı Projeler modülünün <a href="OL_rasantes_diseno.html">Kırmızı Kot</a> sekmesi açıkken kullanılabilir.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Aykırı Kotlar</span>: Bir bölgedeki, kotu en yakın noktaya göre <span style="font-weight: bold;">dZ</span>'de belirtilen değerden daha fazla farklılık gösteren noktaları siler, yani "sivrilikleri" ortadan kaldırır.<br />
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/datos_laser_filtro_cota_aislada.png" style="width: 573px; height: 391px;" alt="Aykırı Kot Filtresi" /><br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Ana Noktalar</span>: Koordinatları doğru olsa da aslında sete önemli bir bilgi katmayan hizalı noktaları (doğrusal noktaları) ortadan kaldırmaya olanak tanır. Bu filtreleme, belirtilen <span style="font-weight: bold;">yanal toleransa</span> göre yapılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Piramidal</span>: Bu filtre, topografyadaki üçgen filtresine eşdeğerdir. Bir <span style="font-weight: bold;">minimum dZ</span>, <span style="font-weight: bold;">maksimum dZ</span> ve bir <span style="font-weight: bold;">Maksimum Mesafe</span> ile tanımlanır.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Zemini Temizle</span>: Çevresindeki noktalara göre belirli bir şev eğimini aşan tüm noktaları siler. Bir tünelin kemerlerini, binaları, ağaçları, direkleri, araçları vb. kaldırmak için çok kullanışlıdır.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">.ENP Dosyası</span>: Birkaç işlemi art arda gerçekleştirmek için bir&nbsp;<span class="Archivo">.enp</span> filtreleme komutları dosyasını yüklemeye olanak tanır.<br />
+        </li>
+      </ul>
+Her bir seçeneğin yanında, sınıflandırmalardan birinin numarasını veya 0 yazabileceğiniz bir kutucuk bulunur. Bir sınıflandırma numarası girilirse, filtreleme yapıldığında filtrelenen bu noktaları belirtilen sınıflandırmaya yerleştirir. Eğer 0 girilirse, filtrelenen noktalar basitçe veritabanından silinir.<br />
+      <br />
+      <span style="font-weight: bold;">Bittiğinde veritabanını yeniden oluştur</span>:
+Eğer veritabanını filtreledikten sonra kalan nokta sayısı orijinalinden çok daha az ise, yeni nokta yoğunluğuna daha uygun bir hücre dağılımı oluşturmak için bu seçeneği aktif etmek tavsiye edilir. Sadece belirli bir sınıfı tutmayı seçebilir veya hepsini kaydetmek için <span style="font-weight: bold;">Kaydedilecek Sınıf</span> kutusuna 0 koyabilirsiniz.<span style="font-weight: bold;"><br />
+      <br />
+[Filtrele:]</span> seçili filtreleri uygular ve bitişik alanda belirtilen klasörde yeni bir veritabanı oluşturur. Eğer o alanda orijinal veritabanıyla aynı ad belirtilirse, orijinal veritabanının filtrelenmiş yenisiyle değiştirileceğine dair bir uyarı gösterilir ve kullanıcının onayı istenir.<br />
+      <br />
+      <span style="font-weight: bold;">[Rapor]</span>, filtrelemeden önceki ve sonraki nokta sayısı, uygulanan filtreler ve her biriyle silinen nokta sayısı hakkında bilgi içeren bir dosya gösterir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><br />
+      <a name="utiles">Yardımcı Araçlar</a></span><br />
+      <br />
+Bu bölümde, işlenmiş nokta bulutunu kullanmak için bir dizi temel yardımcı araç sunulmaktadır:<br />
+      <br />
+Bu bölüm, <span style="font-weight: bold;">Eş Yükselti Eğrileri Oluştur</span> kutucuğundan kotta bir <span style="font-weight: bold;">eğri aralığına</span> göre eş yükselti eğrileri oluşturma imkanı sunar. Diğer yandan, <span style="font-weight: bold;">Yumuşatılmış Eş Yükselti Eğrileri Oluştur</span> komutu aracılığıyla program, düzenli olabilen veya olmayan bir grid üzerinde dahili bir veritabanı oluşturur. Bu yeni veritabanı üzerinde eş yükselti eğrileri oluşturmaya olanak tanır. Üçgenlemeye gerek kalmadan eş yükselti eğrileri oluşturulur, bu da süreci hızlandırır. <a href="#rejilla_regular">Yumuşatılmış Eş Yükselti Eğrileri Oluştur</a> kutucuğuna tıklandığında aşağıda göreceğimiz bir kutu belirir.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_utiles.png" style="width: 451px; height: 103px;" alt="Yardımcı Araçlar Bölümü" /><br />
+      </div>
+      <br />
+      <ul>
+        <li><span style="font-weight: bold;">Eş Yükselti Eğrileri Oluştur</span>:
+Nokta bulutundan, butonun yanındaki kutucukta belirtilen eğriler arası mesafeyi kullanarak eş yükselti eğrileri oluşturur. <span style="color: rgb(0, 78, 175);">Filtreler</span>'de <span style="font-weight: bold;">Kontur</span> aktifken ve geçerli bir çizgi seçildiğinde, oluşturulan eş yükselti eğrileri yalnızca o kapalı alanın <span style="font-weight: bold;">İçinde/Dışında</span> veya <span style="font-weight: bold;">[ ]Aynı Tip</span>'teki tüm alanlarda oluşturulacaktır.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;"><a name="rejilla_regular">Yumuşatılmış Eş Yükselti Eğrileri Oluştur</a></span>:
+Bu seçenekle, noktaların orijinal konumunu değiştirmeden çevresindekileri kullanarak kotlarını yumuşatma ve ardından bir grid üzerinde eş yükselti eğrileri oluşturma imkanımız vardır. Aşağıdaki bilgiler gereklidir:</li>
+         
+        <ul>
+           
+          <li>Eş yükselti eğrileri arası mesafe: önceki seçenekle aynı.<br />
+
+            </li>
+           
+        </ul>
+         
+        <ul>
+           
+          <li>Noktalar arası mesafe:
+Yeni veritabanı, düzenli bir grid üzerinde yer alan noktalardan oluşur ve burada grid'in çözünürlüğü verilir. Bu mesafe, orijinal verilerin ortalama nokta mesafesinden daha büyük olmalıdır.</li>
+           
+        </ul>
+         
+        <ul>
+           
+          <li>Arama mesafesi:
+Her yeni nokta, kotunu hesaplamak için bu mesafe içindeki noktaların kotunu kullanır.</li>
+           
+        </ul>
+         
+        <ul>
+           
+          <li>Ağırlık katsayısı ve ağırlık eğrisi: Daha yakın noktalara daha fazla, daha uzak olanlara daha az ağırlık vermek için bir Gauss eğrisi kullanılır.</li>
+           
+        </ul>
+         
+      </ul>
+       
+      <div style="margin-left: 40px;"><span style="color: rgb(0, 78, 175);">Filtreler</span>'de <span style="font-weight: bold;">Kontur</span> aktifken ve geçerli bir çizgi seçildiğinde, oluşturulan eş yükselti eğrileri yalnızca o kapalı alanın <span style="font-weight: bold;">İçinde/Dışında</span> veya <span style="font-weight: bold;">[ ]Aynı Tip</span>'teki tüm alanlarda oluşturulacaktır.<br /><br />Renk, yansıtıcılık ve sınıflandırma en yakın noktadan miras alınır. Başlangıçta elde edilen veritabanı orijinaliyle aynı hücrelere sahiptir, bu nedenle nokta yoğunluğu çok daha düşükse, bir&nbsp;<span class="Archivo">.las</span> dosyası kaydetmek ve bu dosya ile veritabanını yeniden oluşturmak tavsiye edilir.<br />
+
+Bu yeni veritabanıyla eş yükselti eğrileri oluşturulduğunda, orijinal veritabanına göre daha yumuşak çizgiler elde edilir, çünkü uygun parametreler kullanılarak oldukça fazla gürültü giderilebilir.<br />
+
+      </div>
+       <br />
+
+      
+      <div style="text-align: center;"><a name="rejilla_regular"><img src="Imagenes/laser_rejilla_regular.png" style="width: 384px; height: 282px;" alt="Düzenli Grid ile Yumuşatma" /><br />
+      </a></div>
+       
+      <ul>
+         
+        <li><span style="font-weight: bold;">Noktaları Ekle (Aktif Semboller)</span>: Haritadaki mevcut noktaları (aktif sembolleri) veritabanına ekler.<br />
+
+          <br />
+
+          </li>
+         
+        <li><span style="font-weight: bold;">Bir Noktadan Üçgenle</span>:
+Bu araç, 3B Yüzeyler (3D faces) tarzında bir EDM çizgileri ağı oluşturur ve bu, sözde-dikel duvarlarda ters şevler seçeneği ile enkesit çıkarmaya olanak tanır. Ağ, bir konturun içindeki noktaları, (x,y) koordinatları yerine tanımlanan noktadan görülen yatay ve dikey açıları koordinat olarak kullanarak üçgenler. <span style="font-weight: bold;">Maksimum Ağ Uzunluğunu</span> metre cinsinden bir değer belirterek sınırlamak mümkündür.<br /></li></ul><div style="margin-left: 40px;">İlgili kutucuk işaretlenerek sonuçlar bir .ttg dosyasına kaydedilir.</div><div style="text-align: center;"><br /><img style="width: 512px; height: 226px;" alt="Bir Noktadan Üçgenleme" src="Imagenes/nubes_densas_puntos_triangular_desde_punto.png" /></div><ul><li><span style="font-weight: bold;">Başka bir Y.N.B. Ekle</span>:&nbsp;Mevcut Y.N.B.'nin noktalarını, bir veya daha fazla, aynı tipteki konturun içinde, başka bir Y.N.B.'nin noktalarıyla değiştirmeye olanak tanır.&nbsp;Konturlar önceden <span style="color: rgb(0, 78, 175);">Filtreler</span> sekmesinde, <span style="font-weight: bold;">Kontur</span> ile filtrelemeyi aktif ederek, bir kontur seçerek ve gerekirse <span style="font-weight: bold;">[ ]Aynı tip</span> seçeneğini işaretleyerek tanımlanmalıdır. <span style="font-weight: bold;">[&nbsp;] Başka bir Y.N.B. Ekle</span> üzerine tıklandığında, noktalarını ekleyecek Y.N.B.'yi seçmeye olanak tanır.&nbsp;</li></ul><ul><li><span style="font-weight: bold;">Z Ekle</span>: Yoğun nokta bulutunun tüm noktalarının kotuna sabit bir değer (pozitif veya negatif) ekler.</li></ul>
+
+          <ul>
+         
+        <li> 
+          <div style="text-align: right;"><img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="Kaydet" /> <span style="font-weight: bold;">.xyz/.las/.tif/.ttp</span>: Çeşitli dosya kaydetme işlemlerini gerçekleştirmek için bir açılır menü açar:<img src="Imagenes/nubes_densas_puntos_utiles_guardar.png" style="width: 228px; height: 198px;" alt="Kaydetme Seçenekleri" align="right" hspace="4" /><br />
+
+          </div>
+           <br />
+
+          </li>
+         
+        <ul>
+           
+          <li><span style="font-weight: bold;">.xyz / .las / .laz Kaydet</span>: Aktif veritabanı ile bir .xyz, .las veya .laz dosyası kaydeder.<br />
+
+            <br />
+
+            </li>
+           
+          <li><span style="font-weight: bold;">Rasterleştir</span>:
+Lazer veritabanındaki noktalardan bir raster görüntü oluşturur. Oluşturulacak dosyanın adını, m/piksel cinsinden çözünürlüğünü ve formatını (Geotiff, ASC,...) soracaktır.<br />
+
+            <br />
+
+            </li>
+           
+          <li><span style="font-weight: bold;">Basitleştirilmiş .ttp</span>:
+Bir lazer veritabanından bir&nbsp;<span class="Archivo">.ttp</span> (<a href="EDM_topografia.html#ficheros_temporales">üçgenleme dosyası</a>) oluşturur, <span style="font-weight: bold;">maksimum nokta sayısını</span> ve piramidal bir filtreleme için <span style="font-weight: bold;">başlangıç</span> parametrelerini (<span style="font-weight: bold;">dZmin</span>, <span style="font-weight: bold;">dZmax</span> ve <span style="font-weight: bold;">Maks. Mesafe</span>) verir. Program veritabanını filtreler ve bir .las dosyası oluşturur; eğer bu dosyanın nokta sayısı hala öngörüleni aşıyorsa, bu .las dosyasıyla yeni bir veritabanı oluşturur, filtreleme parametrelerini artırır ve öngörülenden daha az sayıda nokta içeren bir veritabanı elde edene kadar süreci tekrarlar. Bu noktada, üçgenleme dosyası&nbsp;<span class="Archivo">.ttp</span>'yi oluşturur ve bu yüzeyi aynı zamanda <a href="EDM_control_entidades.html#control_ttps">mevcut üçgenleme</a> olarak kaydeder.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">.las/.xyz Kaydet -&gt;
+Hedef CRS/Hedef DİLİM/koordinat dönüşümü</span>: Hedef CRS'de, veya hedef dilimde, veya Araçlar/Koordinat Dönüşümü'nde belirtilen dönüşümü uygulayarak bir .las veya .xyz dosyası kaydeder.<br />
+          </li>
+        </ul>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Verileri Düzenle</span>:
+Bu araç, veritabanındaki noktaları grup halinde veya tek tek düzenlemeye olanak tanır. Önce, noktaları olağan şekillerden herhangi biriyle (sınıfa göre, yansıtıcılığa göre, kota göre, gerçek renge göre) görüntüleyebileceğimiz bir çalışma alanı seçilmelidir.</li>
+        <br />
+        <ul>
+          <li><span style="font-weight: bold;">Sınıf Değiştir ve Sil</span>:
+Değişken yarıçaplı dairesel bir imleç kullanarak seçmeye/seçimi kaldırmaya olanak tanır. Seçilen elemanlar toplu olarak belirli bir sınıfa değiştirilebilir veya silinebilir.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Bir Noktayı Düzenle</span>:
+çeşitli öznitelikleri düzenlemek için noktaları tek tek seçmeye olanak tanır: koordinatlar, yansıtıcılık, RGB renk, sınıf veya hatta onları silmek.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">+/-</span>: RGB ve Yans. alanlarının yanında, bu kutucuklar aralık araçları için bir tolerans belirtmemize olanak tanır.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">RGB/YANS. Aralığı</span>:
+rengi/yansıtıcılığı, mevcut noktanın değeri artı (eksi) +/- kutucuklarında belirtilen tolerans aralığında olan tüm noktaları seçer.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Sınıfı Değiştir</span>:
+noktanın sınıfını, sol taraftaki listede aktif olan sınıfa değiştirir. Aktif sınıf, Hedef sütununda seçili olandır.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Geri Al</span>:
+<img src="Imagenes/icono_deshacer_pequeno.png" style="width: 18px; height: 15px;" alt="Geri Al" /> butonu, seçili noktanın özelliklerinde yapılan değişiklikleri geri alır.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Değişiklikleri veritabanına uygula</span>: yaptığımız düzenlemeleri kabul eder ve bunları kalıcı olarak veritabanına dahil eder.<br />
+          </li>
+          <li><span style="font-weight: bold;">Eş Yükselti Eğrileri Oluştur</span>:
+<img src="Imagenes/icono_curvas_nivel.png" style="width: 18px; height: 18px;" alt="Eş Yükselti Eğrileri Oluştur" /> butonu, yüklenen çalışma alanındaki veritabanından eş yükselti eğrileri oluşturmamızı sağlar.<br />
+          </li>
+        </ul>
+        <span style="font-weight: bold;"><br />
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="vertical-align: top; text-align: center;"><img src="Imagenes/nubes_densas_editar_1punto.png" style="width: 384px; height: 289px;" alt="Tek Nokta Düzenleme Ekranı" /> </td>
+              <td style="vertical-align: top; text-align: center;"><img src="Imagenes/nubes_densas_editar_punto.png" style="width: 246px; height: 345px;" alt="Nokta Düzenleme Arayüzü" /><br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </span></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Görüntü ile Renklendir</span>:
+Yüklemiş olmamız gereken bir <a href="EDM_imagenes.html">arka plan görüntüsünün</a> renginden yola çıkarak lazer veritabanındaki noktalara renk (RGB, "gerçek renk") verir.</li>
+        <br />
+        <li><span style="font-weight: bold;">Kotları Yumuşat</span>:
+Bu seçenekle, noktaların orijinal konumunu değiştirmeden sadece kotlarını çevresindekileri kullanarak yumuşatma imkanımız vardır. Dolayısıyla lazer veritabanını yumuşatmaya olanak tanır. Aşağıdaki bilgiler gereklidir:</li>
+        <ul>
+          <li>Noktalar arası mesafe:
+Yeni veritabanı, düzenli bir grid üzerinde yer alan noktalardan oluşur ve burada grid'in çözünürlüğü verilir. Bu mesafe, orijinal verilerin ortalama nokta mesafesinden daha büyük olmalıdır.</li>
+        </ul>
+        <ul>
+          <li>Arama mesafesi:
+Her yeni nokta, kotunu hesaplamak için bu mesafe içindeki noktaların kotunu kullanır.</li>
+        </ul>
+        <ul>
+          <li>Ağırlık katsayısı ve
+ağırlık eğrisi: Daha yakın noktalara daha fazla, daha uzak olanlara daha az ağırlık vermek için bir Gauss eğrisi kullanılır.</li>
+        </ul>
+      </ul>
+      <div style="margin-left: 40px;">Renk, yansıtıcılık ve sınıflandırma en yakın noktadan miras alınır. Başlangıçta elde edilen veritabanı orijinaliyle aynı hücrelere sahiptir, bu nedenle nokta yoğunluğu çok daha düşükse, bir&nbsp;<span class="Archivo">.las</span> dosyası kaydetmek ve bu dosya ile veritabanını yeniden oluşturmak tavsiye edilir.<br />
+Bu yeni veritabanıyla eş yükselti eğrileri oluşturulduğunda, orijinal veritabanına göre daha yumuşak çizgiler elde edilir, çünkü uygun parametreler kullanılarak oldukça fazla gürültü giderilebilir.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Kübaj Hesabı</span>:
+İki lazer veritabanı arasında kübaj hesaplamaya olanak tanır, bunu sadece bir kapalı alanda yapma veya yarma ve dolgu alanlarını oluşturma seçeneği de vardır. Diğer iki veritabanının kot farklarıyla, düzenli bir grid üzerinde üçüncü bir veritabanı oluşturur.</li>
+      </ul><ul><li><span class="Parf_negrita">Kilometreye Göre Şerit</span>:
+Eğer Güzergah Esaslı Projeler modülünde, Plan veya Boykesit sekmesinde isek ve Yoğun Nokta Bulutları iletişim kutusuna erişirsek, <span style="font-style: italic;">Yardımcı Araçlar</span> sekmesinde <span style="font-style: italic;">[KM'ye Göre Şerit]</span> aracını buluruz. Bu araç, eksenleri ve üzerlerindeki kilometreleri sayısal veya grafik olarak seçmeye olanak tanır ve kilometre bazında ve eksene olan mesafeye göre bir yarı genişlikle bir şerit tanımlar, böylece normal (2B veya 3B) veya OpenGL'de yüklüyse nokta görselleştirmesi bu şeritle sınırlanır. Eğer kilometreleri tıklamaya devam edersek ve OpenGL penceresi açıksa, görselleştirme değişikliği anında olur.</li></ul><div style="margin-left: 40px;">Farklı bir .per dosyası seçilebilir. Bu çıktı dosyası, ISPOLn.per dosyasına ek olarak seçilen aralıktaki YNB noktalarını da içerecektir.</div><div style="margin-left: 40px;">ISPOLx.per'e ekle aracı, bu dosyanın profillerini dolaşır ve her profil için belirtilen maksimum nokta sayısını elde etmek için Şeridin KM yarı genişliğini otomatik olarak ayarlar, boyuna eğimi dikkate alarak bunları KM üzerine yansıtır ve onlara belirtilen boyutta bir sembol ve orijinal rengin yoğunluğuna bağlı olarak bir sembol aralığından alınan bir tip atar. Bu semboller hem enkesit editöründe hem de bir enkesit çiziminde görülebilir.<br />Eğer <span style="font-style: italic;">Yüzey Oluştur</span> seçeneği aktif edilirse, profildeki bulut noktalarını birleştirerek kapalı bir yüzey oluşturulur; bunun için yüzeyin tipini tanımlamak ve noktaları sıralamak için bir açısal referans yapılandırmak gerekir, böylece bu yüzeyle ölçümler yapabiliriz.<br /><br /><div style="text-align: center;"><img style="width: 250px; height: 490px;" alt="KM'ye Göre Şerit" src="Imagenes/ndp_bporpk.png" /><br /></div></div><br /><div style="margin-left: 40px;">Gerçek Kesitte Gör: Aktif edilirse, imleci tanımlanan kilometreler arasında eksen üzerinde hareket ettirdiğimizde, Kesit penceresine Yoğun Bulut'un noktaları eklenir ve bu profilleri düzenleyebiliriz.<br />
+      <br />
+Kontura Aktar seçeneği, kilometreler arasındaki boşluğun kapalı alanıyla bir çizgi oluşturur ve bunu filtrelemek için kontur olarak seçer.<br /><br />Boykesitte ve boykesit çiziminde eksene yansıtılan bulut noktalarını görselleştirmek için <span style="font-style: italic;">Nokta Tablosu</span>'na eklemek mümkündür. Bu seçeneğe Boykesit menüsünden erişilebilir.<br />
+</div><br />Bu kutudan ayrıca, grafik nesnelerin kotunu değiştirmeye olanak tanıyan aynı <a href="EDM_control_entidades.html#utiles">yardımcı araçlara</a> da erişilir: Kot Al, çizgileri kota getir, sembolleri kota getir...<br />
+      <br />
+      <ul>
+        <li><span style="font-weight: bold;">Maksimum Ağ Uzunluğu</span>: Bir nokta bulutu <a href="EDM_control_entidades.html#control_superficies">SAM yüzeyi</a> olarak kullanıldığında ve o menüde nokta bulutunu üçgenlerle değil, ağlarla kesmek seçildiğinde, burada bir maksimum ağ uzunluğu belirtebiliriz. Üçgenleme yaparken, izin verilenden daha büyük ağlar olmayacak şekilde üçgenleri filtreleyecektir.</li>
+      </ul><span class="Parf_negrita">3B Veri Düzenleme</span><br /><br />Bir küre veya bir kutu aracılığıyla hacimsel nokta seçimi. Her ikisi de genel koordinatlar aracılığıyla manuel olarak konumlandırılabilir veya Yoğun Nokta Bulutları görüntüleyicisinde bir tıklama ile hacim yerleştirilebilir. Hacim düzenlenebilir; küre durumunda yarıçap belirtilerek ve kutu durumunda genişlik, uzunluk ve yükseklik belirtilerek.<br /><br /><div style="text-align: center;"><img src="Imagenes/seleccion3d_laser.png" style="width: 620px; height: 290px;" alt="3B Seçim" /><br /></div><br /><div style="text-align: center;"><img src="Imagenes/seleccion3d_laser_2.png" style="width: 400px; height: 450px;" alt="3B Seçim Ayarları" /><br /></div><br /><div style="text-align: center;"><img src="Imagenes/seleccion3d_laser_3.png" style="width: 600px; height: 291px;" alt="3B Seçim Sonucu" /></div>
+
+      <br />
+      <br />
+      <a name="basescargadas"><span class="Titulo_2">Yüklenmiş Veritabanları
+</span></a><br />
+      <br />
+Aynı anda en fazla 5 lazer veritabanı ile çalışabileceğiz. Yeni bir veritabanı oluşturulduğunda ve okunduğunda, bilgisi mevcut veritabanına geçer.<br />
+<br style="font-weight: bold;" />
+Aşağıdaki pencereden bir veritabanı yüklendiğinde, bilgisi okunur ve aktif veritabanı olur.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_cinco.png" style="width: 450px; height: 118px;" alt="Yüklü Veritabanları" /><br />
+      </div>
+      <br />
+Bir <a href="EDM_control_entidades.html#control_superficies">SAM yüzeyi</a>, mevcut beş lazer veritabanından herhangi biriyle tanımlanabilir ve aynı anda birkaç lazer veritabanından enkesitler kesilebilir.<br />
+      <span style="font-weight: bold;"><span style="font-weight: bold;"><br />
+      </span></span><span style="font-weight: bold;">Soluklaştırma</span> ve <span style="font-weight: bold;">Mevcut</span> kutucukları aracılığıyla, mevcut olarak yüklenmiş Lazer dosyasına ve diğerlerine bir yüzde vererek görselleştirmeyi azaltabilirim.<br />
+      <br /><span style="font-weight: bold;">[Başlat]</span>, <span style="font-weight: bold;">[Kaydet]</span> ve <span style="font-weight: bold;">[Yükle]</span> butonları, sırasıyla, projede tanımlanan yüzeyleri .cnd dosyaları kullanarak başlatmaya, kaydetmeye ve geri yüklemeye olanak tanır.<br /><br />
+Aynı anda 100 adede kadar yoğun nokta bulutu veritabanına sahip olma imkanı vardır.<br />
+      <span style="font-weight: bold;"><span style="font-weight: bold;">
+      <br />
+      <span class="Parrafo"><span class="Titulo_2"></span></span></span></span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

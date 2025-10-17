@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Gabariler</title>
+
+<link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a>
+<a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a> <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a> <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span> </td>
+</tr>
+</tbody>
+</table>
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td class="Titulo_2">
+<div align="center"><strong>Gabariler<br />
+</strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td style="width: 694px;" class="obsolete Parrafo"><br />Bu pencereden, 2 eksen arasında bir gabari analizi yapılabilir. <br /><br /><div style="text-align: center;"><img style="width: 470px; height: 216px;" alt="" src="Imagenes/completo_galibo.png" /><br /></div><br /><br />İki eksen seçildiğinde, bunların kesişimi hesaplanır ve kesişim noktası etrafındaki bir alanda (±<strong>Marj</strong>) kaplama ve banket kenarları çizilir.<br /><br />Eğer eksenlerin birden fazla kesişimi varsa, [<strong>Diğer Kesişim</strong>] komutuyla değiştirilebilir.<br /><br />[<strong>Hesapla</strong>] komutu, aşağıdaki açılır menüde bulunan seçeneklerden seçilen ile kesişimleri analiz eder:<br /><br /><div style="text-align: center;"><img style="width: 170px; height: 131px;" alt="" src="Imagenes/completo_galibo_op.png" /><br /></div><br />Yüzey, kod ve tarafa göre seçeneği ile (Gabari çizgilerle gibi) yüzey her zaman 100 koduna kadar 67 ve daha yüksek kodlar için 68 olacaktır. Taraf olarak ise her zaman her ikisi de incelenecektir.<br /><br />Ayrıca, <strong>Nokta Ekle</strong> düğmesine tıklayarak manuel olarak noktalar eklenebilir. Bu, iki eksenin kesiştiği şev eteklerine/başlarına kadar ulaşmayı sağlar. <br /><br />Sonuçta elde edilen gabari, Mutlak Değer olarak (2 eksenin L67 hatları arasındaki fark) gösterilir. Ayrıca, önceden bir değer girilmişse, sabit bir miktar (<strong>Sabit Düşüm</strong> kutucuğu) düşülebilir.<br /><br />[<strong>Minimum Gabari</strong>] seçeneği, minimum gabari değerinin oluştuğu noktayı bulur.<br /><br />Sonuçlar ekranda grafik olarak çizilir, bir veri tablosuna eklenir ve <span class="Archivo">galibos.res</span> raporuna dahil edilir. Bu bilgiler ayrıca bir hesap tablosuna da kaydedilebilir.<br /><br /><div style="text-align: center;"><img style="width: 550px; height: 404px;" alt="" src="Imagenes/completo_galibo_rejilla.png" /><br /></div><br /><br />Veri tablosunda ve raporlarda gösterilecek parametreler yapılandırılabilir:<br /><ul><li>X, Y.</li><li>KM.</li><li>Mesafe</li><li>Kot.</li><li>Azimut</li><li>Eğim.</li><li>Her eksenin deverleri.</li></ul>Ayrıca, bir eksenin diğeri üzerindeki geçiş noktaları dosyaları da oluşturulabilir (<strong>Geçiş Noktaları</strong> kutucuğu etkinleştirilerek), örn:<span class="Archivo"> <br /></span><ul><li><span class="Archivo">gal_1_(2).pas</span>: Eksen 2'nin gabarilerinin eksen 1 üzerine projekte edilmiş hali (Eksen 1'in kırmızı kotu ile yüklemek için).</li><li>Eğer eksenlerden biri bölünmüş yol ise, onun için iki dosya oluşturulur: sağ ve sol kırmızı kot ile karşılaştırmak için sırasıyla <span class="Archivo">gal_1D_(2).pas</span> ve <span class="Archivo">gal_1I_(2).pas</span>.</li></ul>Geçiş noktalarının kotu, noktanın ilgili taraftaki dönme ekseni üzerine projeksiyonudur ve üzerine projekte edildiği eksenin deveri kullanılır; böylece gösterilen kot farkı, kırmızı kotta değil, gerçekten noktanın altında oluşacaktır.<br /><br />Ayrıca, hesaplanan noktaların kilometreleri ve eksene olan mesafeleri ile bir <span class="Archivo">*.pkd</span> dosyası da oluşturulur (res/<span class="Archivo">galibos.pkd</span>). Enkesitler, Özel KM'ler, Dosyalar menüsünde artık, bu kilometrelerde enkesit almak için ilk sütunda kilometreyi içeren <span class="Archivo">*.pkd</span>, <span class="Archivo">*.pkz</span> veya <span class="Archivo">*.pk</span> dosyalarını yüklemeye izin verilir.<br /><br /><br /></td>
+</tr>
+</tbody>
+</table>
+<br />
+</body></html>

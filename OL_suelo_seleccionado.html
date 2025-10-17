@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Seçme Malzeme</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SEÇME MALZEME VE ZAYIF ZEMİN KAZISI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px; height: 6077px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#control_pend">Seçme malzeme eğiminin kontrolü</a><br />
+      <a href="#taludes">Seçme malzeme katmanları için şevlerin tanımlanması</a><br />
+      <a href="#taludes">Derinlik kontrolü</a><br />
+      <span class="Parrafo"><a href="#sim_revest_terr">
+Bir dolgu kaplamasının simülasyonu</a></span><br />
+      <span class="Parrafo"><a href="#EyM">Güçlendirme tablosuna göre seçme malzeme. Genişletme ve iyileştirme projeleri</a></span><br />
+      <span class="Parrafo"></span></div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+<img src="Imagenes/modelo_suelo_selec.png" style="width: 275px; height: 260px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Enkesit hesaplamasının temel işlevi, üstyapı katman paketinin oturacağı bir yarma kazısı ve bir dolgu platformu oluşturmaktır.<br />
+      <br />
+      </span><span class="Parrafo">Bazı durumlarda, üstyapı ile oturma yüzeyi arasındaki teması iyileştiren bir seviyenin üstyapı altında olması istenir. Genellikle yarmada yapılması gereken işlem olduğu için <span style="font-weight: bold;">zayıf zemin kazısı</span>, dolguda tesviye yüzeyinin son katmanı olduğu için <span style="font-weight: bold;">iyileştirilmiş taban</span> veya bu malzemenin yapıldığı malzeme olduğu için <span style="font-weight: bold;">seçme malzeme</span> olarak adlandırılır.<br />
+      <br />
+Bu menüde, bu seviyeler farklı kalınlıklarda, kayada (SSR veya SSR2), yarma toprağında veya dolguda olmasına göre ve her KM için farklı değerlerle tanımlanabilir; her veri çifti arasında doğrusal olarak enterpolasyon yapılır veya hesaplama aralığının tamamına ulaşılmazsa ekstrapolasyon yapılır.<br /><br /><span class="Parf_negrita">Kullanıcı KM'leri</span> seçeneği, KM'leri kullanıcı değerleriyle girmeye olanak tanır. Seçenek etkinleştirilebilir/devre dışı bırakılabilir ve etkinleştirme durumu .vol dosyasına kaydedilir.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;<br />
+BOYKESİT'ten <span style="font-weight: bold;">[SEÇME MALZEME]</span> tuşuna basıldığında, aşağıdaki gibi bir pencere açılır:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 292px;" alt="" src="Imagenes/dialogo_SS.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Bilgi içeren her veri için, terasmandan aşağı doğru ölçülen seçme malzeme kalınlıkları aşağıdaki değerlerle tanımlanabilir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Kayada seçme malzeme kalınlığı (<span style="font-weight: bold;">SSR2</span>).</span></li>
+        <li><span class="Parrafo">Kayada seçme malzeme kalınlığı (<span style="font-weight: bold;">SSR</span>).<br />
+</span></li>
+
+        <li><span class="Parrafo">Yarmada seçme malzeme kalınlığı (<span style="font-weight: bold;">SSD</span>).</span></li>
+        <li><span class="Parrafo">Dolguda seçme malzeme kalınlığı (<span style="font-weight: bold;">SST</span>).</span></li>
+      </ul>
+      <span class="Parrafo">Hesaplama, prensip olarak ve daha sonra belirtileceği gibi değiştirilebilse de, üstyapı katman paketinin terasmanının bir kopyasını kendisine paralel olarak yaparak, her noktada üstyapının dolgu, toprak yarma veya kaya üzerinde olup olmadığını kontrol ederek, Kaya 1 veya 2 kalınlığını ayırt ederek ve her durumda tanımlanan derinliği (<span style="font-weight: bold;">SSR2</span>, <span style="font-weight: bold;">SSR</span>, <span style="font-weight: bold;">SSD</span> ve <span style="font-weight: bold;">SST</span>) uygulayarak gerçekleştirilir.<br />
+      <br />
+      </span><img src="Imagenes/SS_refDT.png" style="width: 94px; height: 65px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span style="font-weight: bold;">[Şev]</span> </span><span class="Parrafo">→</span><span class="Parrafo"> <span style="font-weight: bold;">Ref Y/D</span>'den, yarma veya dolgu kalınlıklarını uygulamak için referans arazi seçilebilir. İki olasılık vardır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Varsayılan seçenek olan sağlam zeminden.</span></li>
+        <li><span class="Parrafo">Uygun olmayan zeminden.&nbsp;&nbsp;&nbsp; &nbsp;</span></li>
+      </ul>
+      <span class="Parrafo"><img src="Imagenes/SS_ZD_ZT.png" style="margin-left: 7px; width: 133px; height: 77px; float: right;" alt="" /><span class="Parrafo">Ayrıca, istenen katmanlar için <span style="font-weight: bold;">SSR</span> ve/veya <span style="font-weight: bold;">SST</span>'de girilen değerin bir kalınlık yerine <span style="font-weight: bold;">mutlak kot</span> olduğunu belirtmek de mümkündür. Bunun için <span style="font-weight: bold;">Şev</span> sekmesine tıklamak ve sırasıyla <span style="font-weight: bold; font-style: italic;">ZD</span>/<span style="font-weight: bold; font-style: italic;">ZT</span> sütunlarındaki ilgili kutucuğu işaretlemek gerekir. <br /><br /><span style="font-weight: bold;">PR</span> (Paralel Refüj) kutucuğu işaretlenirse, yüzey kırmızı kota (yüzey 67) paralel olarak 1 kodundan içeriye doğru çizilecektir. </span></span><span class="Parrafo"><span class="Parrafo"><br /><br /><span style="font-weight: bold; font-style: italic;">ZM</span> seçeneği, yüksekliğin duvar temel pabucuna göre olmasını sağlar. <br /><br /></span></span><span class="Parrafo"><span class="Parrafo">Sağdaki kutucuk işaretlenirse, bu kotun yalnızca eksende uygulanacağını ve geri kalanının terasmana paralel olacağını belirtmiş oluruz. <br />&nbsp;&nbsp; &nbsp;<br />
+      Seçme malzeme menüsünde gösterilen katman sayısı (1-20) seçilebilir. Görünen katman sayısı (1-20) &nbsp;<span class="Archivo">.vol</span> dosyasına kaydedilir.<br />
+      <br /></span>
+      <table style="text-align: left; width: 692px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 30px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 641px; text-align: justify;"><span class="Parrafo"><span class="Info">Menüde tüm katmanlar gösterilmese de, bu katmanların verileri olabilir ve oluşturulacaktır. Belirli özel durumlar için, seçme malzeme katmanları negatif değerler alabilir.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Varsayılan olarak, seçme malzeme katmanları dolgu durumunda şevde, yarma durumunda ise hendeğin en alt noktasında durur.<br />
+      <br />
+Seçme malzemenin yanal uzantısı, katmanın ulaşması gereken dış ve iç kodları ve bunlara olan bir mesafeyi (<span style="font-weight: bold;">Dış Kod</span>, <span style="font-weight: bold;">Dış Mes.</span>, <span style="font-weight: bold;">İç Kod</span>, <span style="font-weight: bold;">İç Mes.</span>) girerek de sınırlandırılabilir.<br />
+      <img src="Imagenes/ss_superficie_otra.png" style="width: 153px; height: 86px;" alt="" align="right" hspace="6" />Dış ve iç kenarlar için referans yüzey olarak, onu kullanan katmandan önce oluşturulmuş olan 68 yüzeyinin yanı sıra herhangi bir yüzeyin kullanılmasına izin verilir.<br />
+      <br /></span><img src="Imagenes/SS_codigos.png" style="width: 359px; height: 174px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"> Dış kodun 100 (platformun terasmanla kesişimi) olması durumunda, seçme malzeme bu noktanın altında durmaz, dolgu şevi veya yarma durumunda hendek şevini kesene kadar uzatılır.<br />
+      <br />
+İkinci durumda, eğer seçme malzeme hendekten daha derinse, hendek tabanının düşeyinde durur. Her durumda, yarmadaki aşırı kazının dış kapanışı, uygun bir dış kod (örneğin, 1103) girilerek hendeğin arkasında da yapılabilir.<br />
+      <br />Dış kodlar için, hendek ve yarmanın başlangıcı bu tür bir yüzeyle oluşturulduğunda, <a href="OL_desmonte_tierra.html#terreno_inadecuado">uygun olmayan yarma</a> yüzeyinin kodları da kullanılabilir. <br />
+      <br />
+İç başlangıç noktası için 100'den büyük referans kodlarına izin verilir; bu, hendek veya yarmanın altından dışarıya doğru başlayan katmanlar içindir.<br />
+<br />
+Tesviye yüzeyinin aplikasyonu için son geçerli nokta (dolgu şeviyle kesişim, hendek tabanının düşeyindeki nokta veya dış kodun düşeyindeki nokta) 101.0 koduyla kodlanır.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br /></span><img src="Imagenes/SS_escar.png" style="width: 246px; height: 83px;" alt="" align="right" hspace="6" /><span class="Parrafo">Yarmadaki bazı seçme malzeme katmanlarında, <span style="font-weight: bold; font-style: italic;">kazıma</span> (escarificación) kutucuğu etkinleştirilerek, uzantı önceki katmanınkiyle aynı hale getirilebilir.<br />
+      <br />
+      </span><img src="Imagenes/SS_op.png" style="width: 251px; height: 83px;" alt="" align="left" hspace="6" /><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">op</span> kutucuğu, belirli bir katmandan başlayarak, önce iyileştirme ve drenaj katmanı kazı hattının (eğer varsa) uygulanmasına ve daha sonra bu alt seçme malzeme katmanlarının o hatlara dayanarak sonlanmasına olanak tanır.<br />
+      <br />
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;">Refüj</span> seçeneği, refüjün terasmanı kestiği bölgede, seçme malzemenin refüjün tepe noktasına paralel yapılmasını sağlar.<br />
+      <br /><span style="font-weight: bold; font-style: italic;">Malz. Geç. San.Y.</span> seçeneği etkinleştirildiğinde, Seçme Malzeme malzemesi, <a href="OL_obras_fabrica.html#excyrec">Sanat Yapılarının</a> kaplama geçiş malzemelerine göre öncelikli olur.<br /><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">SST</span> seçeneği etkinleştirildiğinde, dolgudaki seçme malzeme değeri yarmadaki seçme malzemeden daha düşük olduğunda ve hala arazinin üzerinde olduğumuzda, bu durumda arazinin altında olsak bile artık yarmada seçme malzeme katmanı tanımlanmaz.<br /><br /></span></span><span class="Parrafo"><span class="Parrafo">
+      <span style="font-style: italic;">Örnek</span><br />
+      <br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo">
+Platformların altında üç kat seçme malzeme bulunan, her biri 30 cm olan ve iç banket kenarından başlayarak refüje doğru 1/1 şevle biten bir otoyol. Refüj bölgesinde bu 90 cm'lik kısım farklı bir malzeme ile doldurulur.</span><br />
+      <span class="Parrafo">
+      </span><br />
+      <span class="Parrafo">
+Tanım:</span><br />
+      <span class="Parrafo"></span></div>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Katman 1 (üst, refüj dolgusuna karşılık gelen): kalınlık 0.9, dış kod -11 (iç banket kenarı), yukarıdan 1.0 dış <a href="#taludes">şev</a>.</span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Katman 2 (platformların altındaki en yüksek katman), kalınlık -0.6 (derinlik = 0.9 - 0.6 = 0.3).</span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Katman 3, kalınlık 0.3 (derinlik = 0.9 - 0.6 + 0.3 = 0.6).</span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Katman 4, kalınlık 0.3 (derinlik = 0.9 - 0.6 + 0.3 + 0.3 = 0.9).</span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Son olarak, <span style="font-weight: bold; font-style: italic;">Refüj</span> kutucuğu etkinleştirilir.</span></li>
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_ejemplo.png" style="width: 551px; height: 184px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"></span></div><span class="Parrafo"><br />
+Seçme malzeme tanım tablosu &nbsp;<span class="Archivo">.vol</span> dosyasına kaydedilir, ancak sırasıyla <span style="font-weight: bold;">[Kaydet]</span> ve <span style="font-weight: bold;">[Yükle]</span> düğmeleri aracılığıyla &nbsp;<span class="Archivo">.ssl</span> uzantılı dosyalara da kaydedilebilir ve geri yüklenebilir.<br />
+</span><span class="Parrafo"><br />Diğer yandan, <span style="font-weight: bold;">[SM->GRUP]</span> seçeneği, mevcut eksenin seçme malzeme tanımını, ilgili &nbsp;<span class="Archivo">.vol</span> dosyalarını değiştirerek, aynı <a href="OL_grupos.html">grubundaki</a> tüm eksenler için kopyalamaya olanak tanır.<br />
+      <br />
+</span></span>
+      <div style="text-align: left;">Özel durum:&nbsp; Seçme malzemeyi hendek veya yarma kodlarından birine (1101,1102,...,1301,1302,..) kadar götürdüğümüzde ve bu kod uygun olmayan veya bitkisel zemin üzerine düştüğünde, uygun olmayan zemin vektörü bu kod geçene kadar uygulanmayacaktır.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ss_cod.png" style="width: 541px; height: 277px;" alt="" /><br />
+      </div>
+      <br />
+Seçme malzeme için dış kod, hendek veya yarma araziye daha önce ulaştığı için kesildiğinde, o zaman kesitin son noktasının kodu olarak alınır.&nbsp;<span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo">
+      <span class="Parrafo">
+      <br />
+      <br /></span><span class="Titulo_2"><a name="control_pend">Seçme malzeme eğiminin kontrolü</a></span><br />
+      <span class="Parrafo">
+      <br /></span></span><img alt="" style="width: 175px; height: 296px; float: right;" src="Imagenes/SS_control_pend.png" hspace="5" /><span class="Parrafo"><span class="Parrafo">Program, seçme malzemenin farklı katmanlarının alacağı eğimin davranışını belirlemek için üç farklı yol sunar. Bu seçenekler, her bir KM için aşağıda göreceğimiz parametrelerin farklı değerlerini tanımlayabilmek için <span style="font-weight: bold;">[Eğim]</span> sekmesinde tanımlanabilir:<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Paralel</span>: Seçme malzeme terasmana paraleldir. Bu varsayılan seçenektir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Alt Paralel</span>: Bu durumda seçme malzeme, merkezde çatı mahyası ile ana platformların deverini alır ve banketlerin altından uzatılır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Yatay</span>: Seçme malzeme katmanları yataydır (bu mod, alt paralel gibi çalışır ancak dever 0 olarak atanır).</span></li>
+      </ul></span>
+      <ul>
+        <li><span style="font-weight: bold;">Alt Paralel Otoyol</span>: Eğer terasman refüje doğru akıyorsa, çatı mahyası veya minimum kalınlığı ölçmek için nokta olarak terasmanın 2 kodu alınır ve tüm seçme malzeme, terasmanın eğimine eşit veya eğer o daha düşükse girilen minimum eğime sahip tek bir eğimle refüje doğru yerleştirilir.<br />
+Eğer terasman dışarıya doğru akıyorsa, çatı mahyası terasmanın 1 kodunun altına yerleştirilir ve SS, dışarıya doğru terasmanın eğimiyle veya tanımlanan minimumla ve refüje doğru diğer taraftan inen SS'yi arayacak şekilde iki yana eğimli olarak yerleştirilir.<br />Çatı eğimi durumunda, her iki tarafta da suyun dışarıya akması için içeriye doğru aynı eğimle uzatılması tercih edilir.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Sabit Karayolları</span>: Katman kalınlığını terasman çatı mahyasının altından alır. Seçme malzeme, sağa doğru akıyorsa pozitif, sola doğru akıyorsa negatif tek bir enine eğimle yapılır.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Çift Eğim</span>: Belirtilen kalınlığı geometrik eksenin konumundaki terasmandan alır ve ardından belirtilen minimum eğimle her iki tarafa doğru akar. Dever, tanımlanan minimum eğimi aştığında, seçme malzemenin eğimi devere eşlik eder.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Sağ kenar</span>: Belirtilen kalınlığı sağ tarafta, ilgili kutucuğa girdiğimiz kodun yüksekliğinde alır ve ardından belirtilen minimum eğimle sol tarafa doğru akar.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Sol kenar</span>: Öncekine benzer şekilde, belirtilen kalınlığı sol tarafta, ilgili kutucuğa girdiğimiz kodun yüksekliğinde alır ve ardından belirtilen minimum eğimle sağ tarafa doğru akar.</li></ul><ul><li><span class="Parf_negrita">Sağ.Kn Min.Eğim</span> (Sağ Kenar minimum eğim) <span class="Parf_negrita">Sol.Kn Min.Eğim</span> (Sol Kenar minimum eğim): <span class="Parf_negrita">Sağ kenar</span> ve <span class="Parf_negrita">Sol kenar</span> modları gibi çalışırlar, ancak&nbsp;karşı tarafın deveri daha büyük bir eğimle akana kadar atanan minimum eğim korunur, o zaman bu eğimle devam eder.</li></ul><ul><li><span class="Parf_negrita">Çift Eğim + Kırmızı Kot Kodu</span>: Dönüş noktası, Seçme Malzemenin kalınlığı ile terasmanın altında, kırmızı kotun seçilen koda sahip olduğu noktada uygulanarak belirlenir.&nbsp;Dever, tanımlanan minimum eğimi aştığında, seçme malzemenin eğimi devere eşlik eder.</li></ul><ul><li><span class="Parf_negrita">Çift Eğim + Mevcut Yol Şevi</span>: Bu modda, S.S. katmanı için tanımlanan kalınlık, bu şev üzerindeki katman tabanının başlangıcından ölçülür. (Mevcut Yol Şevi, <a href="OL_EyM.html">Genişletme ve İyileştirme</a> diyalog kutusunda, <span class="Parf_negrita">[Parametreler]</span> sekmesinde tanımlanır.). Dever, tanımlanan minimum eğimi aştığında, seçme malzemenin eğimi devere eşlik eder.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Çift Eğim. Sabit eğim</span>: Çift Eğim modu gibidir, ancak tanımlanan eğim, o tarafın deveri daha büyük olsa bile sabittir.</li></ul><ul><li><span style="font-weight: bold;">Alt.Otoyol + İç.Eğim: </span>Kalınlık kontrol noktasından dışarıya doğru, belirtilen katmandan itibaren Alt Paralel Otoyol gibi çalışır. Platformun içine doğru, tüm katmanlara uygulanan bir eğim tanımlamaya olanak tanır. </li>
+        <br />
+
+
+      
+      </ul>
+
+      <span class="Parrafo">
+      <span class="Parrafo"><img src="Imagenes/SS_desde.png" style="width: 128px; height: 55px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span style="font-weight: bold;">Alt paralel</span> veya <span style="font-weight: bold;">yatay</span> katman davranışı belirtildiğinde, <span style="font-weight: bold; font-style: italic;">Başlangıç</span> kutucuğunda belirtilerek hangi çizgiden uygulanmaya başlanacağına karar verilebilir. Örneğin, 4 katmandan oluşan bir seçme malzeme olabilir ve ilk ikisinin terasmana paralel, alttaki ikisinin ise yatay olması istenebilir. Bu durumda, 3. katmandan itibaren yatay davranış belirtilirdi.<br />
+      <br />
+Yukarıdakilere ek olarak, program bir <span style="font-weight: bold;">minimum eğim</span> belirlemeye olanak tanır. Bu şekilde, <span style="font-weight: bold;">Min. Eğ. (%)</span> değerine sıfırdan farklı bir değer girilirse, dever bu değere eşit veya daha düşükse, minimum eğime sahip çift eğimli bir seçme malzeme (otomatik bir çatı mahyası oluşturarak) inşa edilir. Dever bu değerden büyükse, seçme malzeme <a href="OL_subrasante.html">terasmana</a> paralel olarak uygulanır.<br />
+      <br />Otoyollar durumunda, deverler minimum eğimden daha düşükse, seçme malzeme için her iki tarafta da otomatik bir çatı mahyası oluşturulur. Refüj altında, eğimler ikisinin en alçak noktasını arar.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_calz_doble.png" style="width: 461px; height: 209px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />Tek platformlu karayolları durumunda, deverler minimum eğimden daha düşükse, terasman alt paralel olsa bile seçme malzeme için otomatik bir çatı mahyası oluşturulur.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_calz_unica.png" style="width: 462px; height: 198px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br /></span><img src="Imagenes/SS_pedMin_desde.png" style="width: 248px; height: 46px;" alt="" align="right" hspace="6" /><span class="Parrafo">&nbsp;Minimum eğimde, seçme malzemenin hangi çizgiden uygulanmaya başlanacağı da <span style="font-weight: bold;">başlangıç</span> olarak belirlenebilir. Örneğin, 4 katmandan oluşan bir seçme malzeme varsa ve üstteki iki katmanın tabanının terasmana paralel olması ve alttaki iki katmanın tabanının drenajı sağlamak için %10'luk bir minimum eğime sahip olması isteniyorsa, o zaman 3. katmandan itibaren uygulanacak %10'luk bir minimum eğimle paralel bir davranış belirtilecektir.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Program, <span style="font-weight: bold;">%dever (Mahya->PK)</span>'de belirtilen değer aracılığıyla çatı mahyasını platform kenarı altına getirmek için deveri belirtmeye olanak tanır. Bu seçenek, minimum eğim de 0'dan farklı olduğunda çalışır, seçme malzemenin çatı mahyasının konumunu optimize eder ve dever minimum eğime eşit olduğunda, çatı mahyası platform kenarı altına yerleştirilir.<br />
+      <br />
+Örneğin, sağa doğru bir kurpta çatı eğiminden %2 devere geçen bir karayolu varsa ve %4 minimum eğimli ve <span style="font-weight: bold;">%dever (Mahya->PK)</span> = 2 olan bir seçme malzeme belirtilmişse, o zaman seçme malzemenin çatı mahyası çatı eğimi bölgesinde eksenin altından, %2 dever bölgesinde platformun sol kenarı altına geçecektir.<br />
+      <br />
+      <br /></span><span class="Titulo_2"><a name="taludes">Seçme malzeme katmanları için şevlerin tanımlanması</a></span><br />
+      <span class="Parrafo">
+      <br />
+Seçme malzeme şevleri, <span style="font-weight: bold;">[Şev]</span> sekmesine tıklandığında görünen diyalog kutusundan, <span style="font-weight: bold;">DIŞ ŞEV</span> ve <span style="font-weight: bold;">İÇ ŞEV</span>'e karşılık gelen kutucuklardan tanımlanabilir. Dış şev uygulaması için aşağıda göreceğimiz 3 olasılık vardır ve iç şevler için bunları 2 tanesiyle (yukarı veya aşağı) tanımlayabiliriz:<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">
+Aşağıdan</span>: Şev, dış kodun düşeyinden artı mesafeden başlayarak aşağıdan yukarıya ve dışarıya doğru çizilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Yukarıdan</span>: Şev, dış kodun düşeyinden artı mesafeden başlayarak yukarıdan aşağıya ve içeriye doğru çizilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">
+Önceki katmandan</span>: Şev, önceki katmanın (hemen üstündeki) şevinin uzantısı olarak çizilir.</span></li>
+      </ul></span>
+      <ul>
+        <li>Sabit genişlikli (dış kod + mesafe) seçme malzeme katmanları için, dış kapanış şevi için şu imkana sahibiz: <span style="font-weight: bold;">Dolgu Şev Dibi</span><br />
+          <ul>
+            <li>Eğer dolgu şev dibi, seçme malzemenin tabanından daha yüksekteyse, dolgu şev dibine doğru kapatılır.</li>
+          </ul>
+          <ul>
+            <li>Eğer altındaysa, o zaman seçme malzeme dolgu şevini kesene kadar yatay olarak uzatılır.</li>
+          </ul>
+          <ul>
+            <li>Yarmada, 600 kodlu hendek tabanıyla veya 99 ile kapatılır.</li>
+          </ul>
+          <ul>
+            <li>Eğer kapatılması gereken nokta, seçme malzemenin ucundan eksene daha yakınsa, o zaman belirtilen şevle <span style="font-weight: bold;">Aşağıdan</span> seçeneğindeki gibi kapatılır.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="Parrafo"><br />
+
+      <span class="Parrafo">
+      Seçme malzemenin tanımlandığı çizginin dolgu şev dibinin altında olduğu alçak dolgulardaki seçme malzeme durumunda, dış şeve -1000 değeri verilirse, her iki çizgi de, dolgu şevi arazinin altından ve seçme malzeme eğimini takip ederek, arazinin altındaki bir noktada kesişene kadar uzatılır. Ayrıca, uygun olmayan bir yarma vektörü tanımlanmışsa, bu vektör kazı çizgisini araziyi tekrar kesene kadar uzatmak için kullanılır. Bu, aşağıdaki örnekte oldukça iyi görülmektedir:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 50px; margin-left: auto; margin-right: auto; width: 691px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 385px;"><img src="Imagenes/SS_terr_bajo_1.png" style="width: 338px; height: 120px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 305px; text-align: right;"><img src="Imagenes/SS_terr_bajo_2.png" style="width: 313px; height: 109px;" alt="" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 385px; text-align: center;"><span class="Parrafo"><span class="Info">Dış şeve -1000 değeri verilmeden</span></span></td>
+            <td style="vertical-align: top; width: 305px; text-align: center;"><span class="Parrafo"><span class="Info">Dış şeve -1000 değeri verilerek</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/SS_mas_alla_cuneta.png" style="width: 251px; height: 168px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Dolgu şev dibini arazinin altına, seçme malzemenin uzantısını kesene kadar uzatma seçeneği kullanıldığında, program aşağıdaki hususları dikkate alır:<br />
+</span></span>
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo">Üstyapı katmanlarının kapanış şevinin araziyle kesişiminde sona eren azaltılmış dolgu durumunda, dolgu şev dibi de bu şevle uzatılır.</span></span></li>
+      </ol>
+      <ol start="2">
+        <li><span class="Parrafo"><span class="Parrafo">Ayrı çizgi tiplerinde <a href="OL_cuneta_guarda_caballon.html">koruma hendekleri</a> olması durumunda, dolgu şev dibine uzatılan kısımdan hendek kesilir.</span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo">Yarmada, aşırı kazı hendek tepe noktasından daha uzağa, örneğin yarma şevinin aşağı doğru uzantısını kesene kadar uzatılabilir. Bunun için şunlar belirtilmelidir:<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Dış kod</span> 1103 (bu, hendeğin son noktasıdır, başka bir tane de konulabilir).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Dış şev</span>, yarma şevine eşit (başka bir tane de konulabilir).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Yukarıdan tanımlanmış</span> (bu, hendek tepe noktasını aşmaya izin verilen tek durumdur).&nbsp;&nbsp;&nbsp; &nbsp;</span></li>
+      </ul>
+      <span class="Parrafo">
+      <br />
+Dolguda, iç şevler dolgu şevine paralel yapılabilir.<br />
+      <br />
+<span style="font-weight: bold;">Şev</span> pozitif bir değerle tanımlandığında, terasmandaki şevin başlangıç noktası, kodlu noktadan tanımlanan yatay mesafededir, bu da şevin seçme malzeme tabanında bittiği noktanın devere bağlı olarak yanal olarak hareket edebileceği anlamına gelir:<br />
+      <br /></span>
+      <table style="text-align: left; height: 27px; margin-left: auto; margin-right: auto; width: 639px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 267px; text-align: center;"><img src="Imagenes/SS_talud_int_1.png" style="width: 291px; height: 152px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 307px;"><img src="Imagenes/SS_talud_int_2.png" style="width: 262px; height: 130px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      Eğer <span style="font-weight: bold;">iç şev</span> negatif bir değerle tanımlanırsa, tanımlanan yatay mesafede ve kodlu noktayla aynı kotta bir noktadan geçirilir. Bu şekilde, terasmandaki şevin başlangıç noktası deverle yanal olarak değişebilir, ancak şevin seçme malzeme tabanında bittiği nokta sabit kalır.<br />
+      <br /></span><img src="Imagenes/SS_comp_talud.png" style="width: 319px; height: 189px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Ayrıca dolguda, yukarıdan (veya öncekinden) bir kapanış şevi tanımlanırsa ve bir dolgu enkesitinde seçme malzeme çizgisi arazinin altındaysa, resimde gösterildiği gibi seçme malzemeyi kesmek için dolgu şev dibinden tanımlanan şev kullanılır.<br />
+      <br />
+İçeriden seçme malzemeyi sınırlayan iki noktayı (iç kod + mesafe), terasman refüjü kestiğinde bile düz bir segmentle birleştirmek mümkündür. Bunun için, iç şev olarak -1000 değerini belirtmek yeterlidir.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+Ayrıca, iç koddan itibaren seçme malzemenin belirli bir minimum eğim almasını zorlamak da mümkündür, öyle ki eksende en düşük kota sahip olan diğer tarafa hükmeder. Bunu yapmak için şunlar belirtilecektir:<br />
+      <br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo">
+İÇ ŞEV = <span style="font-style: italic;">-1002</span>, %2 eğim için</span><br />
+      <span class="Parrafo">
+İÇ ŞEV = <span style="font-style: italic;">-1004</span>, %4 eğim için</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+ve bu şekilde devam eder.<br />
+      <br />
+      <br /></span><span class="Titulo_2"><a name="control_prof">Derinlik Kontrolü</a></span><br />
+      <span class="Parrafo">
+      <br /></span><span class="Parrafo"><img src="Imagenes/SS_control_prof.png" style="width: 147px; height: 90px;" alt="" align="right" hspace="4" /><span style="font-weight: bold;">[Şev]</span> sekmesine tıklandıktan sonra görünen seçenekler arasında, seçme malzemenin derinliğinin kontrolüyle ilgili olan ve aşağıda açıklanan bazıları bulunmaktadır.<br />
+      <br />
+Eğer yalnızca dolgu için bir seçme malzeme tanımlanırsa, referans arazi üzerinde durmak yerine, referans arazinin (sağlam veya uygun olmayan) altında belirtilen derinliği iyileştirene kadar devam edecektir.<br />
+      <br />
+Derinlik değeri, iyileştirme derinliğine, iyileştirme basamaklarının yüksekliğine veya her ikisinin toplamına eşit olabilir.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_control_prof_2.png" style="width: 452px; height: 144px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Yarma bölgelerinde, <span style="font-weight: bold;">birinci</span> seçme malzeme katmanının taban derinliği araziden tanımlanabilir. Bu, <span style="font-weight: bold;">SSD1 başlangıç</span> sütununda bulunan <span style="font-weight: bold; font-style: italic;">Arazi</span> kutucuğu etkinleştirilerek sağlanır.<br />
+      <br />
+Program, referans yüzey olarak duvar temel pabucu için kazıdan (<span style="font-weight: bold;">D.T.P.</span>) oluşan ve sağlam zeminle tamamlanan yüzeyi kullanma imkanına sahiptir.<br />
+      <br /></span><span class="Titulo_2"><a name="sim_revest_terr">Bir Dolgu Kaplamasının Simülasyonu</a></span><br />
+      <span class="Parrafo">
+      <br />
+SEÇME MALZEME KATMANI İLE:<br /></span>
+      <ul>
+        <li><span class="Parrafo">İÇ başlangıç kodu (örneğin 100)</span></li>
+        <li><span class="Parrafo">İç koda negatif mesafe (örneğin -3)</span></li>
+        <li><span class="Parrafo">İç kapanış şevi (örneğin dolgu şeviyle aynı değer)</span></li>
+      </ul>
+      <span class="Parrafo">
+      Eğer bir enkesitte, iç kodlu terasman noktasına olan mesafeyi eklediğimizde, referans noktası eksenin diğer tarafında kalırsa, istenen mesafede ve aşağıdaki kotta bir referans noktası işaretlenir:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Eğer şeve pozitif bir değer verilirse, enkesit eksenindeki kırmızı kot kotu.</span></li>
+        <li><span class="Parrafo">Eğer şeve negatif bir işaret verilirse (koda olan yatay mesafeye uymak için bir kural), kodlu noktayla aynı kot konulur.</span></li>
+      </ul>
+      <span class="Parrafo">
+      Bu noktadan, seçme malzeme katmanıyla kesişimini aramak için istenen şevle bir çizgi çizilir ve eksenin diğer tarafında kalan kısım silinir.<br />
+      <br />
+Grafikte aşağıdaki seçme malzeme katmanları görünmektedir:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Refüjün altını, iç banket kenarından 0.75 m'ye kadar (dış kod = -11) 1/1 dış şevle doldurmak için 0.5 m'lik ilk katman.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+Birincisiyle aynı kalınlıkta ve onun devamı niteliğinde (SST = SSD = 0 ve SSR = 0.001) olan, sonuna kadar uzanan ve yarma durumunda 2.8/1'lik bir kapanış şevine sahip ikinci bir katman.dialogo_SS.png</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+Yalnızca yarma için, önceki katmandan itibaren dikey bir kapanış şevine sahip 0.5 m'lik üçüncü bir katman (şev <span style="font-weight: bold;">
+öncekinden</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Yarmadaki aşırı kazının SSD=0.6 kalınlığında bir kazıması olan dördüncü bir katman.</span></li>
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_revest_terr.png" style="width: 629px; height: 127px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+&nbsp;<br />
+      <br /></span><span class="Titulo_2"><a name="EyM">Güçlendirme tablosuna göre seçme malzeme. Genişletme ve iyileştirme projeleri</a></span><br />
+      <span class="Parrafo">
+      <br /><img src="Imagenes/ss_tabla_ref.png" style="width: 110px; height: 36px;" alt="" align="right" hspace="6" />&nbsp;Eğer <span style="font-weight: bold; font-style: italic;">Güçlendirme tablosu</span> kutucuğu etkinleştirilmişse, o zaman program, bu tablodan seçme malzeme için veri okumak yerine, BOYKESİT </span><span class="Parrafo">→</span><span class="Parrafo"> <a href="OL_EyM.html#tabla_refuerzo"><span style="font-weight: bold;">[GÜÇLENDİRME TABLOLARI]</span></a> menüsünde tanımlananları okuyacaktır. <span style="font-weight: bold;">[GÜÇLENDİRME TABLOLARI]</span>'ndan ve <span style="font-style: italic;">Düzenleme</span> veya
+      <span style="font-style: italic;">Genişletme</span> modlarından bir seçme malzeme tanımlandığında, bu malzemeye paralel katmanlar, seçme malzeme menüsünden 3, 4 ve 5 numaralı katmanlarda tanımlanabilir.<br />
+      <br />
+Bu paralel katmanların kalınlıkları üç sütundan herhangi birinde verilebilir (<span style="font-weight: bold;">SSR</span>, <span style="font-weight: bold;">SSD</span>, <span style="font-weight: bold;">SST</span>).<br />
+      <br />
+Güçlendirme Tabloları menüsüne gidebilir veya Seçme Malzeme menüsünün kendisinden, <img src="Imagenes/icono_desplegar.png" style="width: 20px; height: 20px;" alt="" /> tuşuyla menüyü açarak Tanınan Doğal Zemin verilerini tanımlayabiliriz.<br />
+<br /></span><img src="Imagenes/SS_tabla_PKi_Zi_Zd.png" style="width: 117px; height: 51px;" alt="" align="right" hspace="6" /><span class="Parrafo">&nbsp;<a href="OL_EyM.html">Genişletme ve iyileştirme</a> projelerinde, seçme malzeme katmanını düzenleme katmanının altında, sol ve sağda farklı ve KM ile değişen kalınlıklarla tanımlamak mümkündür. Bunun için, <span style="font-weight: bold;">[YARDIMCI PROGRAMLAR]</span> açılır menüsünde, her satırında üç veri içeren &nbsp;<a href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a> uzantılı bir dosyayı okuyan <span style="font-weight: bold;">[Tablo KM Zs Zd]</span> yardımcı programı bulunur: <span style="font-style: italic;">KM</span>, <span style="font-style: italic;">Zs</span> ve <span style="font-style: italic;">Zd</span>; burada <span style="font-style: italic;">Zs</span> sol taraftaki seçme malzeme katmanının kalınlığı ve <span style="font-style: italic;">Zd</span> sağ taraftaki kalınlıktır. Bu dosya yüklendiğinde, sol katmanın verileri üçüncü seçme malzeme katmanına ve sağdakiler dördüncüye eklenir; birinci ve ikinci katmanlar, <a href="OL_EyM.html#tabla_refuerzo">güçlendirme tablosundan</a> tanımlanan olası düzenleme katmanları için ayrılır.<br />
+Kalınlıklarını tanımlamak için Z değerlerini mutlak kotlarla vermek istersek, tabloyu yüklemeden önce, tabloyu kullanan üçüncü seçme malzeme katmanının <span style="font-weight: bold;">[Şev]</span> sekmesindeki <span style="font-weight: bold;">ZD</span> ve <span style="font-weight: bold;">ZT</span> kutucuklarını işaretleyebiliriz. Tabloyu yüklerken, bu kutucuklardan herhangi biri işaretlenmişse, tüm veriler için otomatik olarak genişletilir.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

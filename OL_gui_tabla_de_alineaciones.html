@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Şablonlar .gui: Güzergah Elemanları Tabloları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BOYKESİT PAFTALARI İÇİN ŞABLONLAR: GÜZERGAH ELEMANLARI TABLOLARI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+      </span>Her paftaya, .ali düzenleyicisindekine benzer, ancak o paftada görünen güzergah elemanlarını içeren bir Güzergah Elemanları Tablosu ekleme imkanı.<br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span><span class="Archivo"><span class="Parrafo"><span class="Parrafo"><span><span class="Archivo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo">
+Plandaki güzergah elemanlarının bir veri tablosunu (<span style="font-weight: bold;">Başlık</span> sekmesi) tanımlayabiliriz, örneğin:<br />
+Güzergah elemanı numarası, Tip, KM, Uzunluk, X teğet, Y teğet, Azimut, X merkez/i, Y merkez/i, Yarıçap, Parametre, Kurbun yönü (sağ/sol), Dairesel kurbun tanjant boyu, Klotoidlerin uzun ve kısa tanjantları, Kurbun dış mesafesi, Kurbun PI some noktası KM'si, Her güzergah elemanının (aliyman, daire veya klotoid) bitiş KM'si, Kurbun PI some noktası X,Y koordinatları, Xc klotoid, Yc klotoid, p klotoid, k klotoid, Kurbun deveri, Kurbun genişletmesi, Sapma açısı (klotoidler ve daireler).<br />
+      <br />
+<span style="font-weight: bold;">Tipe göre numaralandır</span> kutucuğunu etkinleştirerek, tipe göre (aliyman, daire, klotoid) bağımsız numaralandırmalı bir tablo oluşturabiliriz.<br />
+<span style="font-weight: bold;">Aliymanları atla</span> seçeneğini etkinleştirerek, program tabloda aliyman olan güzergah elemanlarını oluşturmaz.</span></span><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span><span class="Archivo"><span class="Parrafo"><span class="Parrafo"><span><span class="Archivo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Başlangıç ve bitiş noktasını dahil et</span>: Bu durumda sadece km,x,y,azimut etiketlenir.</span></span><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 560px; height: 331px;" alt="" src="Imagenes/gui_tabla_ali.png" /><br />
+      </div>
+      <br />
+ISPOL kütüphanesinde örnek olarak <span class="Archivo">TABLA_ALI.gui</span> bilgi bandı mevcuttur.<br />
+<br /><span class="Parf_negrita">PST,PC.PI.PT Aplikasyon Modu</span> kutucuğu etkinleştirildiğinde, özel bir moda erişim sağlanır:<br /><br /></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 560px; height: 345px;" alt="" src="Imagenes/gui_tabla_ali_Modo_Rep.png" /></span></span><br /><span class="Parrafo"><span class="Parrafo"></span></span></div><span class="Parrafo"><span class="Parrafo"><br />Bu mod, her güzergahtan kurpların some noktalarını (PI), kurpların başlangıç ve bitiş noktalarını (PC, PT) ve aliymanlar üzerinde bulunan 500m'nin katlarındaki bir noktayı (PST) çıkarır.<br /><br />Bu modda aşağıdaki parametreler tanımlanabilir:<br /></span></span><ul><li><span class="Parrafo"><span class="Parrafo">X teğet, Y Teğet (noktanın koordinatlarıyla, aliyman durumunda tanımlanan sembol kullanılır)</span></span></li><li><span class="Parrafo"><span class="Parrafo">Some açısı: Bu durumda, istasyondan bakılan noktaya olan açıdır ve başlangıç olarak bir önceki noktaya bakış alınır. (yine aliyman durumu için tanımlanan sembol kullanılır)</span></span></li><li><span class="Parrafo"><span class="Parrafo">Some mesafesi. İstasyon ile bakılan nokta arasındaki mesafe. Aliyman için tanımlanan sembol.</span></span></li><li><span class="Parrafo"><span class="Parrafo">İstasyon. Noktanın PST,PC,PI,PT olmasına göre sembol kullanılarak KM (düzenlenmiş)</span></span></li><li><span class="Parrafo"><span class="Parrafo">Bakılan nokta. Noktanın PST,PC,PI,PT olmasına göre sembol kullanılarak KM</span></span></li><li><span class="Parrafo"><span class="Parrafo">Rulman. İstasyon ile bakılan nokta arasındaki rulman, Kuadrant gösteriminde (K-D, K-B,G-D,G-B).</span></span></li></ul><span class="Parrafo"><span class="Parrafo">Kütüphaneye bu tabloyu kullanan <span class="Archivo">PSTS.gui</span> dosyası eklenmiştir. Ayrıca <span class="Archivo">*.ali</span>'nin <a href="OL_ficheros_ali.html#tabla_de_alineaciones">Güzergah Elemanları Tablosu</a>'na da bakınız.<br /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+</body></html>

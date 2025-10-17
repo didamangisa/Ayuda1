@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><title>BIM Seçenekleri</title>
+
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BIM Seçenekleri<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#presentacion">Giriş</a><br />
+      <a href="#interfaz">Oluşturma</a><br />
+      <a href="#propiedades">Özellikler</a><br />
+      <a href="#traduccion">Sınıf Dönüşümü</a><br />
+      <a href="#atributos">Kullanıcı Nitelikleri</a><br />
+      <a href="#visualizacion">Görselleştirme</a><br />
+      <a href="#archivos">Dosyalar</a><br />
+      </div><p class="Standard" style="text-align: justify;">Güzergah Projesi penceresi içindeki BIM sekmesi, projenin BIM geometrisinin düzenlenmesi, içe aktarılması ve dışa aktarılması ile ilgili ana seçeneklerin gösterildiği ve düzenlendiği yerdir. Seçenekler beş sekmeye ayrılmıştır: <strong>Oluşturma</strong>, <strong>Sınıflar</strong>, <strong>Nitelikler</strong>, <strong>Görselleştirme</strong> ve <strong>Dosyalar</strong>.<br />
+      </p>
+
+
+      
+
+      <div style="text-align: center;"><img style="width: 624px; height: 245px;" alt="" src="Imagenes/Menu_BIM.png" /><br />
+      </div>
+
+      <br /><br />
+<p class="Standard" style="text-align: justify;"><span class="Titulo_2"><a name="interfaz">Arayüz</a></span></p>
+      <ul>
+        <li>BIM Ağacı</li>
+      </ul>
+
+      <p class="Standard" style="text-align: justify;">Ağaçta proje bilgilerinin yapısı görülebilir.</p>
+
+      <p class="Standard" style="text-align: justify;">Kök düğüm tüm projeyi temsil eder, ondan her bir eksen grubunu düzenleyen bir eleman sarkar. Arazi geometrisinin (TTP), sanat yapılarının veya demiryolu makas donanımlarının dahil edildiği düzenleyici düğümler de bu düğümden sarkar. Bu düzenleyici düğümler, içerecekleri elemanlar mevcut değilse oluşturulmaz.</p>
+
+      <p class="Standard" style="text-align: justify;">Her bir eksen grubu düğümünden, o gruba ait her bir eksen için bir eleman sarkar.</p>
+
+      <div style="text-align: center;"> <img style="width: 382px; height: 712px;" alt="" src="Imagenes/arbol_BIM.png" /><br />
+
+	  </div>
+	  
+      <p class="Standard" style="text-align: justify;">Her bir eksenden, geometri elemanlarını içeren düğümler sarkar: her eksenin kesimleri ve ondan çıkan birleşim geometrileri. Ayrıca yol çizgilerinin, şev eteği konilerinin, kenarayakların ve bacaların geometri elemanları da eklenir.</p>
+
+      <p class="Standard" style="text-align: justify;">Demiryolu eksenleri durumunda, Güzergah Projesi'nin <a href="OL_ffcc_via_traviesa.html">HAT ve TRAVERS menüsünde</a> verilen spesifikasyonlara göre her bir hattın rayları ve traversleri de oluşturulur.</p>
+
+      <p class="Standard" style="text-align: justify;">Ağaçtan, OpenGL'de görselleştirilmek veya dışa aktarımda dikkate alınmak üzere elemanlar ve tüm dallar seçilebilir veya seçimden kaldırılabilir.</p>
+      <p class="Standard" style="text-align: justify;">
+
+      </p>
+      <span class="Titulo_2">Özellikler</span><ul>
+        
+      </ul>
+
+      <p class="Standard" style="text-align: justify;">Bir BIM elemanının, ilgili alanda gösterilen bir dizi özelliği vardır. Her zaman bir <strong>ad</strong> ve bir <strong>yorum</strong> içerir; proje, eksen grupları, eksenler, kesimler, birleşim geometrileri ve diğer düzenleyici düğümler gibi ağacın yaprak olmayan elemanları yalnızca bu özelliklere sahiptir; geometri (ağacın yaprakları) ise doğasına bağlı olarak renk, uzunluk, başlangıç ve bitiş kilometresi, hacim gibi başka özelliklere sahip olabilir...</p>
+
+      <p class="Standard" style="text-align: justify;">Bazı özellikler kullanıcı tarafından değiştirilebilir, diğerleri ise projeden otomatik olarak hesaplanır.</p>
+
+      <div style="text-align: center;"><img style="width: 624px; height: 335px;" alt="" src="Imagenes/propproy_BIM.png" /><br />
+
+      <br />
+
+<div style="text-align: left;"><strong>Eksenleri eleman tiplerine göre kesimlere ayır</strong>: BIM modeli oluşturulurken, her eleman güzergah boyunca onu oluşturan parçalar kadar parçaya ayrılır.<br />
+
+      <br />
+
+      <strong>Kilometreye Göre Kesimlere Ayır</strong>: her bir ekseni kilometreye göre kesimlere ayırır. Bu kesimlere ayırma, eleman tiplerine göre kesimlere ayırma ile uyumludur. <br />
+
+      </div>
+
+      </div>
+      <p class="Standard" style="text-align: justify;">
+
+      </p><div style="text-align: center;"><img style="width: 624px; height: 335px;" alt="" src="Imagenes/propgeom_BIM.png" /><br />
+
+      </div>
+      <p class="Standard" style="text-align: justify;">
+
+      </p><div style="text-align: center;"><img style="width: 624px; height: 335px;" alt="" src="Imagenes/proptrav_BIM.png" /><br />
+
+      </div>
+      <br />
+
+
+      <p class="Standard" style="text-align: justify;">Proje, Grup, Eksen, Kesim ve Birleşim Geometrisi elemanlarının özelliklerinde, elemanı ve ona bağlı olan tüm elemanları oluşturmak için bir düğme belirir. Kök eleman durumunda, tüm proje oluşturulur; bu, araziyi ve sanat yapılarını da içerir. Ayrıca, oluşturulan geometriyi OpenGL penceresinde gösterir.</p>
+
+      <p class="Standard" style="text-align: justify;"> Geometri elemanları tiplerine göre etkinleştirilebilir veya devre dışı bırakılabilir. Bu elemanların özelliklerinde kendi tipleri görünür. Düzenleyici elemanlarda ise, bu düzenleyicilere bağlı tüm elemanların tipleri görünür.</p>
+	  
+	  <span class="Titulo_2">Sınıf Dönüşümü</span>
+      <p class="Standard" style="text-align: justify;"> Istram tarafından her bir eleman türüne atanan sınıflar, diğer sınıflandırma standartlarına "dönüştürülebilir". <br />
+
+	  <br />
+
+	  Varsayılan olarak, çevirisi Istram'ın orijinaliyle aynı olan bir dizi "dönüştürülmüş sınıf" oluşturulur. Bu dönüşümler dosyalara kaydedilebilir ve yüklenebilir.&nbsp;</p><p class="Standard" style="text-align: justify;">
+</p><p style="margin-bottom: 0cm; line-height: 100%;" align="justify">Uniformat formatında, aşağıdaki yapıya sahip bir sınıf dosyası yükleyebiliriz:</p><div style="text-align: center;"><br /><img style="width: 614px; height: 306px;" alt="" src="Imagenes/OL_BIM_Image02.png" /></div>
+      
+<p style="margin-bottom: 0cm; line-height: 100%;" align="justify">Sınıf dönüşümü sekmesinden, her bir varlığa sınıf adları atayabiliriz.</p><div style="text-align: center;"><br /><img style="width: 521px; height: 370px;" alt="" src="Imagenes/OL_BIM_Image01.png" /></div>
+      
+<p style="margin-bottom: 0cm; line-height: 100%;" align="left">&nbsp;<img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_carga_puntos.png" /> &nbsp;         düğmesine tıklandığında, sınıf dosyasından okunan sınıflandırmayı içeren bir ağacın gösterildiği bir pencere açılacaktır.</p><div style="text-align: center;"><br /><img style="width: 331px; height: 391px;" alt="" src="Imagenes/OL_BIM_Image03.png" /></div><p style="margin-bottom: 0cm; line-height: 100%;" align="justify">İstenen elemanı seçer ve bu seçimin atanması için Kabul et düğmesine basarız.</p><p class="Standard" style="text-align: justify;">Yapılan atamaları bu ve diğer projelerde daha sonra kullanmak üzere kaydedebiliriz. Aynı zamanda, her bir sınıf dosyası türü için yapılan tüm atamalar dahili olarak saklanır, böylece diğer projelerde önceden atanmış varlıkların göründüğü yeni bir proje başlatıldığında, bu atamalar kullanılır ve tekrar girmekten tasarruf edilir.</p><p class="Standard" style="text-align: justify;">Bu şekilde, dışa aktarımda ve elemanların etkinleştirilmesinde Istram sınıfları yerine bu isimlendirme kullanılacaktır.
+      </p>
+<a name="traduccion">	  </a><a name="atributos"><span class="Titulo_2">Kullanıcı Nitelikleri</span>
+      </a><p class="Standard" style="text-align: justify;"><a name="atributos">Bu nitelikler, bu menüde bir başlık (nitelikleri gruplayan), niteliğin adı ve alacağı değer (veya zincirlenmiş değerler) belirtilerek oluşturulur. Yeşil artı işaretli düğmeler ve çöp kutusu şeklindeki düğmeler, nitelik ve değer eklemek veya silmek için kullanılır.<br />
+      <br />
+Bu nitelik bilgisi, herhangi bir zamanda geri yüklenmek üzere bir dosyaya kaydedilebilir.<br />
+      <br />
+Tanımlanan nitelikler, oluşturuldukları anda ilgili BIM elemanlarına aktarılır; ancak, BIM elemanları bu nitelikler olmadan oluşturulmuşsa, bu menüden nitelikleri alabilirler.<br />
+      <br />
+Bu niteliklerin olası değerleri ve açıklamaları, bir Istram kütüphane dosyasında toplanmıştır: <strong>Atributos0.atc</strong>. Bu dosyayı doğrudan değiştirmek yerine, bir kütüphanede bir kopyasını oluşturup oradan değiştirmek daha iyidir. Gereksiz değerlerin görünmemesi için satırlar silinebilir veya en sık kullanılanları daha hızlı bulmak için sıraları değiştirilebilir.<br />
+      </a></p>
+      <div style="text-align: center;"><img style="width: 624px; height: 335px;" alt="" src="Imagenes/atributos_usuario_bim.png" /><br />
+
+      </div>
+	  <p>
+Bu nitelikler, oluşturmanın veya uygulamanın yapıldığı BIM ağacı düğümünden itibaren uygulanır.<br />
+
+	  <br />
+
+	  </p>
+      <p>
+	  </p><table caption="Niteliklere atanabilir Istram değerleri" style="border: 1px solid black; border-collapse: collapse;">
+	  <thead>
+		  <tr>
+				<th style="border: 1px solid black; border-collapse: collapse;" height="30" width="24%">
+				Nitelik
+				</th>
+				<th style="border: 1px solid black; border-collapse: collapse;">
+				Menü
+				</th>
+				<th style="border: 1px solid black; border-collapse: collapse;">
+				Alan
+				</th>
+				<th style="border: 1px solid black; border-collapse: collapse;" width="50%">
+				Değer ve uygulama
+				</th>
+		  </tr>
+	  </thead>
+	  <tbody>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje: Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje adını, ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje: Yorum
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Yorum
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje yorumunu, ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje: Aşama
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Aşama
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje aşamasını, ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje: Sorumlu
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Sorumlu
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Proje sorumlusunu, ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Gruplar: Grup Adı
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Gruplar
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanı içeren eksenin ait olduğu grup adını, bir eksene ait olan ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel: Eksen Numarası
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Numara
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın ait olduğu eksenin numarasını, bir eksene ait olan ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel: Eksen Adı
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın ait olduğu eksenin adını, bir eksene ait olan ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel: Takma Ad 1
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Takma Ad 1
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın ait olduğu eksenin 1. takma adını, bir eksene ait olan ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel: Takma Ad 2
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Takma Ad 2
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın ait olduğu eksenin 2. takma adını, bir eksene ait olan ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel: Takma Ad 3
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Genel
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Takma Ad 3
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın ait olduğu eksenin 3. takma adını, bir eksene ait olan ağaçtaki tüm elemanların niteliğine uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM: Yorum
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM->Özellikler
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Yorum
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Her elemanın BIM menüsünde atanmış olan yorumunu uygular.
+				</td>
+		  </tr>
+		  <!--
+		  <tr>
+				<td style="border-collapse: collapse; border: 1px solid black;">
+				BIM: Kesim adı
+				</td>
+				<td style="border-collapse: collapse; border: 1px solid black;">
+				BIM (eksen tipi elemanlar)
+				</td>
+				<td style="border-collapse: collapse; border: 1px solid black;">
+				
+				</td>
+				<td style="border-collapse: collapse; border: 1px solid black;">
+				Eksenin kesimlere ayrılmasında atanan kesim adını uygular.
+				</td>
+		  </tr>
+		  -->
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Tip Kesit: Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Tip Kesitler->Adlar
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Nesnenin ait olduğu eksendeki kilometresine karşılık gelen tip kesitin adını uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Tip Kesit: Yapı: Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Tip Kesitler->Yapılar
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Nesnenin ait olduğu eksendeki kilometresine karşılık gelen yapının adını uygular (o kilometrede bir yapı varsa).
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Tip Kesit Üstyapı: Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Üstyapı Paketi
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Kesit Adı
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Nesnenin ait olduğu eksendeki kilometresine karşılık gelen üstyapı paketi kesitinin adını uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				DAR: Nesne Adı
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Metraj Tabloları->Çizgi Tipleri
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Ad
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın DAR tablosundaki tanımından aldığı sınıfı uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM: Nesne Adı Dönüşümü
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM->Sınıf Dönüşümü
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Sınıf (dönüştürülmüş)
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın BIM menüsündeki dönüşümden aldığı sınıfı uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				DAR: Çizgi Tipi
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Metraj Tabloları->Çizgi Tipleri
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Çizgi Tipleri
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Metrajların enkesitlerde tanımlanması için kullanılan çizgi tipinin adını, metrajlardan oluşturulan tüm elemanlara uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				DAR: Malzeme Klasörü ve Malzeme
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Metraj Tabloları->Çizgi Tipleri
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Malzeme Klasörü + Malzeme
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın dekorasyon (doku) tanımını içeren dosyanın adını, metrajlardan oluşturulan tüm elemanlara uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				DAR: Özellikler
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Metraj Tabloları->Çizgi Tipleri
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Özellikler
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				"Metraj Tabloları" menüsünde atanan eleman özelliğinin adını, metrajlardan oluşturulan tüm elemanlara uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				DAR: Disiplin
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Metraj Tabloları->Çizgi Tipleri
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Disiplin
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın sınıfının ait olduğu disiplinin adını uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM: Başlangıç KM
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM->Özellikler
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Başlangıç KM
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın BIM menüsünden oluşturulurken aldığı başlangıç kilometresini uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM: Bitiş KM
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM->Özellikler
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Bitiş KM
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın BIM menüsünden oluşturulurken aldığı bitiş kilometresini uygular.
+				</td>
+		  </tr>
+		  <tr>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM: Hacim
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				BIM->Özellikler
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Hacim
+				</td>
+				<td style="border: 1px solid black; border-collapse: collapse;">
+				Elemanın, metraj tablosundan oluşturulan ölçümlerden elde edilen hacmini, BIM menüsünden oluşturulurken uygular.
+				</td>
+		  </tr>
+	  </tbody>
+	  </table>
+	  
+      <br />
+<p class="Standard" style="text-align: justify;">Niteliklerin değerinin, kullanıcı tarafından belirtilen bir metin olması imkanı. Bu metin, niteliğin uygulandığı tüm elemanlara aktarılır.<br />
+Bu niteliği alan her elemanda, değeri bireysel olarak düzenlenebilir. <br />
+</p>
+      <a name="visualizacion"><span class="Titulo_2">Görselleştirme</span></a><ul>
+        
+      </ul>
+
+      <p class="Standard" style="text-align: justify;">Eleman oluşturma düğmesine veya "<strong>OpenGL'de Gör</strong>" düğmesine basıldığında, oluşturulan geometrinin 3B temsilini içeren bir pencere gösterilir.</p>
+
+
+      <div style="text-align: center;"><img style="width: 385px; height: 273px;" alt="" src="Imagenes/Visualizar_BIM.png" /><br />
+
+      </div>
+      <br />
+
+
+
+      <p class="Standard" style="text-align: justify;"><strong><a name="visualizacion">Aydınlatılmış Model</a></strong><a name="visualizacion">: geometri "aydınlatılmış" veya düz renkle gösterilebilir. Aydınlatılmışsa hacim daha iyi anlaşılır.</a></p>
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><strong><a name="visualizacion">İki Yüz</a></strong><a name="visualizacion">: üçgenlerin her iki yüzden de boyanacağını belirtir. Geometrilerin içini görmek isteniyorsa kullanışlıdır.</a></p>
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><strong><a name="visualizacion">Şeffaflık</a></strong><a name="visualizacion">: etkinleştirildiğinde tüm nesneler belirli bir şeffaflık derecesi kazanır, OpenGL penceresinde imlecin üzerine getirildiği nesne biraz daha opak olur ve seçilen nesne opak olur.</a></p>
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><strong><a name="visualizacion">Tel Kafes Model</a></strong><a name="visualizacion">: üçgenlerin kenarlarını üzerlerine çizmeye olanak tanır, bu şekilde normal bir görselleştirmede fark edilmeyebilecek geometri detayları görülebilir.</a></p>
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><strong><a name="visualizacion">Harita</a></strong><a name="visualizacion">: OpenGL penceresinde yüklü olan haritanın görselleştirmesini ekler.</a></p>
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><strong><a name="visualizacion">Dokulu</a></strong><a name="visualizacion">: geometrilerin dokularının boyanacağını belirtir. Kurulum, BIM geometrisinin dokularla görselleştirilmesi için gerekli olan Virtual 3D kütüphanesinin malzemelerini (dokularını) içerir.<br />
+</a></p>
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><strong><a name="visualizacion">Nesnelerin genel aktivasyonu</a></strong><a name="visualizacion">: nesnelerin tiplerine göre etkinleştirilmesine veya devre dışı bırakılmasına olanak tanır: kazılar, dolgular, yüzeyler ve diğerleri.</a></p>
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><a name="visualizacion">Güzergah projelerinde BIM nesnelerinin geometrilerinin doğası gereği, diğer nesnelerin içinde kalan nesneleri görebilmek için kameranın görüşüne dik bir <strong>kırpma düzlemi</strong> etkinleştirilmesine izin verilir.</a></p>
+
+
+
+
+
+
+<a name="visualizacion">      </a><ul>
+<a name="visualizacion">        </a><li><a name="visualizacion">OpenGL Penceresi</a></li>
+<a name="visualizacion">      </a></ul>
+
+
+
+
+<a name="visualizacion">Bu pencerede projenin 3B görünümü gösterilir. Başlangıçta kamera, Kuzey yönelimli bir plana benzer bir görünüm gösterecek şekilde konumlandırılır. Daha sonra, sahnenin herhangi bir detayını görmek için kamera döndürülebilir veya hareket ettirilebilir.<br />
+      <br />
+      </a><div style="text-align: center;"><a name="visualizacion"><img style="width: 589px; height: 444px;" alt="" src="Imagenes/OpenGL_BIM1.png" /><br />
+      </a></div>
+<a name="visualizacion">      </a><div style="text-align: center;"><a name="visualizacion"><img style="width: 589px; height: 444px;" alt="" src="Imagenes/OpenGL_BIM2.png" /><br />
+      </a></div>
+
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><a name="visualizacion">Farenin sol tuşu, nesneleri seçmeye ve görünümü bir noktaya ortalamaya olanak tanır. Üst üste binen nesneler varsa, imlecin altındaki nesnelerden herhangi birinin seçilebileceği bir bağlam menüsü gösterilir.</a></p>
+
+
+
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><a name="visualizacion">Farenin orta tuşu, görünümü görüntünün merkez noktası etrafında döndürmeye olanak tanır.</a></p>
+
+
+
+
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><a name="visualizacion">Farenin sağ tuşu, sahne üzerinde gezinmeye olanak tanır.</a></p>
+<a name="visualizacion">      </a><p class="Standard" style="text-align: justify;"><a name="visualizacion">BIM projesi özellikler sekmesinden oluşturulduğunda, proje sekmemizde BIM adında bir alt klasör oluşturulur. Bu klasörde, BIM bilgileri içeren bir .csv dosyası saklanır.</a></p><a name="archivos"><span class="Titulo_2">Dosyalar</span>
+
+
+
+
+      
+      </a><p class="Standard" style="text-align: justify;"><a name="archivos">Oluşturulan bilgiler <strong>IFC</strong>, <strong>3DO</strong>, <strong>DGN</strong>, <strong>DWG/DXF</strong> ve <strong>OBJ</strong> formatlarında kaydedilebilir.</a></p>
+
+
+<a name="archivos">      
+      </a><div style="text-align: center;"><a name="archivos"><img style="width: 624px; height: 335px;" alt="" src="Imagenes/Exportar_BIM.png" /><br />
+      </a></div>
+
+
+<a name="archivos">      
+      </a><p class="Standard" style="text-align: justify;"><a name="archivos">IFC formatında, ağaç yapısı ve mevcut düğüme bağlı ağaç elemanlarının tüm özellikleri (renk ve malzeme hariç) tek bir dosyada saklanır. Bu dosyalar, bu formatın iki sürümünde kaydedilebilir: 2x3 ve 4. İkinci durumda, güzergah elemanları eklenebilir.</a></p>
+
+
+<a name="archivos">      
+      
+      </a><p class="Standard" style="text-align: justify;"><a name="archivos">OBJ formatında, mevcut düğüme bağlı ağaç elemanlarının geometrisi, rengi ve malzemesi tek bir dosyada saklanır. <br />
+      </a></p>
+
+<a name="archivos">      
+      </a><p class="Standard" style="text-align: justify;"><a name="archivos">BIM elemanları ağacının herhangi bir düğümünde, o düğüme bağlı tüm geometri OBJ formatında dışa aktarılabilir. Bu, bir geometri elemanını, bir ekseni, bir eksen grubunu veya tüm projeyi tek bir dosyada kaydetmeyi sağlar. <br />
+      </a></p>
+
+
+
+<a name="archivos">      
+      </a><p class="Standard" style="text-align: justify;"><a name="archivos">Diğer formatlarda, her bir geometri elemanı için bir dosya kaydedilir ve dosya adına ait olduğu eksen veya birleşim geometrisi bilgisi dahil edilir.</a></p>
+<a name="archivos">      </a><p class="Standard" style="text-align: justify;">
+<a name="archivos">      </a></p>
+
+
+
+
+<a name="archivos"><br />
+      </a></td>
+    </tr>
+  </tbody>
+</table><img style="width: 521px; height: 370px;" alt="" src="Imagenes/OL_BIM_Image01.png" />
+
+</body></html>```

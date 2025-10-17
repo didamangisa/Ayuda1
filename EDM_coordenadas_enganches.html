@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Koordinat Girişi ve Yakalama Modları</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="Ana Sayfa" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>KOORDİNAT GİRİŞİ. YAKALAMA MODLARI (OSNAP)<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      <span class="Titulo_2"><a name="coordenadas">Koordinat Girişi</a></span><br />
+      <br />
+Sistemin herhangi bir fonksiyonu ekranda grafik olarak bir nokta seçilmesini beklediğinde, bu noktanın klavyeden girilmesi de kabul edilir. <span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Düzenleme Davranışı</span> &#8594; <span style="font-weight: bold;">İşleyiş</span> menüsünde <span style="font-weight: bold; font-style: italic;">Klavyeden XY girişine dışarıda izin ver</span> seçeneği devre dışı bırakılırsa (varsayılan olarak grafik ekranın dışına düşen noktalara izin vermek için aktiftir), girilecek noktalar grafik pencere ile sınırlandırılabilir.<br />
+      <br />
+Koordinat girişi farklı şekillerde yapılabilir:<br />
+      <ol style="font-weight: bold;">
+        <li>Mutlak Koordinatlar: <span style="font-style: italic;">X Y Z</span></li>
+      </ol>
+      <div style="margin-left: 40px;">Mutlak koordinatlar (X,Y,Z) (işaretli veya işaretsiz, ondalıklı veya ondalıksız) aralarında boşluk bırakılarak yazılır ve bitirmek için &lt;Enter&gt; veya &lt;Intro&gt; tuşuna basılır. <br />
+      <br />
+Eğer sadece bir veri girilirse, bu X olarak yorumlanır ve Y ile Z koordinatları o anki mevcut değerler olarak kabul edilir. İki veri girilmesi durumunda, bunlar X ve Y olarak yorumlanır ve Z koordinatı olarak mevcut kot alınır. Mevcut koordinatlar, son tıklanan veya yazılan noktanın (bir komut vermek için yapılan bir tıklama olsa bile) veya "lastik bant" imleçlerinden birinin sabitlendiği noktanın koordinatları olacaktır.<br />
+      </div>
+      <br />
+      <ol style="font-weight: bold;" start="2">
+        <li>Göreceli (Rölatif) Koordinatlar: <span style="font-style: italic;">@X&nbsp; Y&nbsp; Z</span></li>
+      </ol>
+      <div style="margin-left: 40px;">Benzer şekilde, koordinatlar son seçilen noktaya göreceli değerler olarak da yazılabilir. Bu durumda veri girişi @ karakteri ile başlamalıdır. Bu durumda da Y, Z veya her ikisi de eksik olabilir.<br />
+      </div>
+      <br />
+      <ol style="font-weight: bold;" start="3">
+        <li>Kutupsal Koordinatlar: <span style="font-style: italic;">/r açı Z</span></li>
+      </ol>
+      <div style="margin-left: 40px;">Koordinatlar, son seçilen noktadan itibaren mesafe ve açı olarak da yazılabilir. Bu durumda veri girişi / karakteri ile başlamalıdır. / karakterine bitişik olan sayı mesafeyi, ikincisi açıyı (<span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tercihler</span> &#8594; <span style="font-weight: bold;">Açı Birimleri</span> menüsünden seçilen birimlerde) ve üçüncüsü mevcut kota göre kot artışını belirtir. Eğer Z ihmal edilirse, kot artışı sıfır kabul edilir. Sadece bir sayı verilirse, bunun açı olduğu ve yarıçapın birim (1) olduğu varsayılır. Örneğin, <span style="font-style: italic;">/açı</span>, <span style="font-style: italic;">/1 açı</span> olarak yorumlanır.<br />
+      </div>
+      <br />
+      <ol style="font-weight: bold;" start="4">
+        <li>Segment Uzunluğu: <span style="font-style: italic;">l uzunluk</span> (küçük L harfi ve uzunluk değeri)</li>
+      </ol>
+      <div style="margin-left: 40px;">Bazı çizim fonksiyonları, bir önceki nokta ile oluşturduğu segmentin uzunluğunu bu şekilde belirterek yeni bir nokta girilmesine izin verir; örneğin yön, yatay veya dikey olması, başka bir elemana paralel veya dik olması ya da bir önceki segmente dik olması gibi koşullarla zaten belirlenmişse. Diğer durumlarda, grafik olarak bir değer (örneğin bir yarıçap) istendiğinde, bu değer klavyeden sayısal olarak da girilebilir.<br />
+      </div>
+      <br />
+Mevcut <span style="font-weight: bold;">kot</span>, bir nesne oluşturulduğunda veya değiştirildiğinde güncellenir. Örneğin, bir çizgi seçmek, bir çizgiye kot vermek ve bir noktaya kot vermek mevcut kotu değiştirir.&nbsp;&nbsp; <br />
+      <br />
+Mevcut bir nesneye <a href="#enganches"><span style="font-weight: bold;">yakalama (kenetleme)</span></a>, kabul edilen kotun yakalanan nesnenin veya üzerinde enterpole edilen kotun olmasını sağlar.<br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="enganches">Yakalama Modları (Osnap)</a></span><br />
+      <br />
+Ekranda nokta seçimi gerektiren fonksiyonlar ve yardımcı araçlar, <span style="font-weight: bold;">yakalama moduna</span> bağlı olarak farklı değerler alabilir.<br />
+      <br />
+<span style="font-weight: bold;">Yakalama modları</span> şuralarda bulunur:<br />
+      <table style="text-align: left; width: 367px; height: 81px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 259px;">
+            <ul>
+<li>Ana menüde, <span style="font-weight: bold;">Görünüm</span> &#8594; <span style="font-weight: bold;">Yakalama Modları</span></li><li style="width: 229px;">Arayüzün alt kısmından</li><li>Yakalama modları <a href="EDM_barras_herramientas.html">araç çubuğundan</a></li>
+            </ul>
+            </td>
+            <td style="vertical-align: middle; width: 354px;"><img style="width: 73px; height: 48px;" alt="Yakalama Modu Erişimi" src="Imagenes/acceso_enganche_inf.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+Aktif yakalama modu "Serbest" olmadığında, koordinat bilgisi imlecin değil, yakalanan noktanın koordinatlarını gösterir. Ayrıca, yakalama yalnızca "yakalanacak" nesne fare imlecine yeterince yakın olduğunda (imlecin etki alanı içinde) çalışacaktır.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Yakalama Modları</span><br />
+      <br />
+      <img style="margin-left: 7px; width: 120px; height: 536px; float: right;" alt="Yakalama Modları" src="Imagenes/enganches.png" />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, bazıları belirli menülere özgü (örneğin GÜZERGAH ESASLI PROJELER modülündeki <a href="OL_rasantes_enganches.html">DÜŞEY GÜZERGAHLAR</a> gibi) çok sayıda yakalama moduna sahiptir. Bu nedenle, her an yalnızca etkinleştirilebilen modlar kullanılabilir olacak, geri kalanı soluk renkte kalacaktır.<br />
+      <br />
+Serbest mod dışındaki bir yakalama modu aktifken, programın beklediği koordinatlı nokta yanıtı <a href="#coordenadas">klavyeden koordinat girilerek</a> verilirse, program prensip olarak yazılan noktayı kabul eder, bu noktaya yakalama modunu uygular ve dönüştürülmüş nokta, onu bekleyen fonksiyona geri döndürülür.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Yakalamayı göster</span> seçeneği (<span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Görüntüleme</span> menüsü) aktifken ve bir yakalama modu seçiliyken, imleci hareket ettirirken gerçekten bir yakalama gerçekleşirse, yakalanan noktayı işaretleyen artı işareti boyutunu 3 kat artırır.<br />
+      <br />
+Eğer <span style="font-weight: bold; font-style: italic;">Sembolü göster</span> seçeneği de aktifse, fare imlecinde ayrıca aktif yakalama türünü belirten bir sembol gösterilir (köşe, nokta, kenar, orta nokta, kesişim vb.).<br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'da mevcut olan yakalama modları şunlardır:<br />
+      <br />
+      <table style="text-align: left; width: 568px; height: 533px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 79px; text-align: center; font-weight: bold;">Mod<br />
+            </td>
+            <td style="vertical-align: top; width: 33px; text-align: center; font-weight: bold;">İkon<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 428px;">Açıklama<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Serbest<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 17px; height: 17px;" alt="Serbest" src="Imagenes/icono_toolBarEnganches_libre.png" /></td>
+            <td style="width: 428px; text-align: justify;">Alınan koordinatlar fare imlecinin (X,Y) koordinatları ve mevcut kottur. "Yakalama yok" olarak yorumlanabilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Köşe<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 17px; height: 16px;" alt="Köşe" src="Imagenes/icono_toolBarEnganches_vert.png" /></td>
+            <td style="width: 428px; text-align: justify;">Alınan koordinatlar, en yakın çoklu doğrunun (polyline) köşesinin (X,Y,Z) koordinatlarıdır. Yakında (imlecin etki alanı içinde) bir çoklu doğru bulunmazsa, serbest yakalama gibi çalışır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Kenar<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 18px; height: 12px;" alt="Kenar" src="Imagenes/icono_toolBarEnganches_lado.png" /></td>
+            <td style="width: 428px; text-align: justify;">Alınan koordinatlar, imlecin en yakın çoklu doğru üzerine izdüşümünün (X,Y,Z) koordinatlarıdır; Z, segmentin köşelerinden enterpole edilir. Yakında bir çoklu doğru bulunmazsa, serbest yakalama gibi çalışır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Orta Nokta<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 21px;" alt="Orta Nokta" src="Imagenes/icono_toolBarEnganches_ptoMedio.png" /></td>
+            <td style="width: 428px; text-align: justify;">En yakın çoklu doğru segmentinin orta noktasının koordinatları alınır; Z, segmentin köşelerinden enterpole edilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Uç Nokta<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 16px; height: 13px;" alt="Uç Nokta" src="Imagenes/icono_toolBarEnganches_extremo.png" /></td>
+            <td style="width: 428px; text-align: justify;">Bir çoklu doğrunun en yakın uç köşe noktasını seçerek çalışır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Köşe ve Orta Nokta<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 15px;" alt="Köşe ve Orta Nokta" src="Imagenes/icono_toolBarEnganches_vpm.png" /></td>
+            <td style="width: 428px; text-align: justify;">Bu yakalama modu, orta nokta veya köşe noktasından en yakın olanı alır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Nokta<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 15px;" alt="Nokta" src="Imagenes/icono_toolBarEnganches_vpm.png" /></td>
+            <td style="width: 428px; text-align: justify;">İmlecin etki alanı içindeki en yakın sembolün (X,Y,Z) koordinatları alınır. Bu pencere içinde hiçbir nokta yoksa, serbest yakalama gibi çalışır.<br />
+            <br />
+            </td>
+          </tr><tr><td>Metin</td><td style="text-align: center; vertical-align: middle;"><img style="width: 18px; height: 21px;" alt="Metin" src="Imagenes/icono_toolBarEnganches_texto.png" /></td><td>Metinlere yakalama, metinlerin yerleştirme noktasına yakalanmasını sağlar.</td></tr><tr>
+            <td style="width: 79px; font-style: italic;">Kesişim<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 16px;" alt="Kesişim" src="Imagenes/icono_toolBarEnganches_inters.png" /></td>
+            <td style="width: 428px; text-align: justify;">Planimetrik koordinatlar, kesişen iki çoklu doğrunun en yakın kesişim noktasının koordinatlarıdır ve atanan kot, mevcut kottur.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;"><a name="enganche_multiple">Çoklu</a><br /></td>
+            <td style="width: 33px; text-align: center;"><img style="width: 17px; height: 17px;" alt="Çoklu" src="Imagenes/icono_toolBarEnganches_multiple.png" /></td>
+            <td style="width: 428px; text-align: justify;"><img style="width: 218px; height: 165px; margin-left: 7px;" alt="Çoklu Yakalama Ayarları" src="Imagenes/enganche_multiple.png" align="right" />Aşağıdaki yakalama modlarının bir kombinasyonundan oluşur: <br />
+            <ul>
+              <li>Çoklu doğru köşesi</li>
+              <li>Segmentin orta noktası</li>
+              <li>Çoklu doğruların kesişimi</li>
+              <li>Tek nokta veya sembol</li>
+              <li>Kenar</li>
+              <li>Çoklu doğrunun uç noktası</li>
+              <li>Topografik nokta<br />
+              </li>
+
+            </ul>
+Ayrıca, her yakalama türüne bir öncelik (daha düşük değer daha yüksek öncelik) atamak mümkündür. Eşit öncelik durumunda, her an imlecin konumuna en yakın yakalama noktasını belirleyen mod baskın olacaktır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Yüzey<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="Yüzey" src="Imagenes/icono_toolBarEnganches_sup.png" /></td>
+            <td style="width: 428px; text-align: justify;">Sonuçta ortaya çıkan nokta, tıklanan noktanın (X,Y) koordinatlarına sahiptir ve kot, tıklanan noktadan geçen iki dik kesite göre mevcut yüzey üzerinde enterpole edilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Grid (Izgara)<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="Grid" src="Imagenes/icono_toolBarEnganches_rejilla.png" /></td>
+            <td style="width: 428px; text-align: justify;">Bu durumda imleç, o anda çalışma alanında mevcut olan grid'e (eğer varsa) yakalanır. Grid, DÜŞEY GÜZERGAHLAR, grafik sembol editörü gibi programın belirli bölümlerinde otomatik olarak görünür ve diğer durumlarda kullanıcı tarafından manuel olarak ayarlanabilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Düğüm (Node)<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 12px;" alt="Düğüm" src="Imagenes/icono_toolBarEnganches_nodo.png" /></td>
+            <td style="width: 428px; text-align: justify;">Bu yakalama modu, kamulaştırma GIS modülü ile ilgilidir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Topografik Nokta<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 17px; height: 13px;" alt="Topografik Nokta" src="Imagenes/icono_toolBarEnganches_ptoTopo.png" /></td>
+            <td style="width: 428px; text-align: justify;"><a href="EDM_topografia.html">Topografya</a> menüsüne girildiğinde bu yakalama modu belirir ve fare imlecinin, imlecin etki alanı içine düşen en yakın topografik noktanın koordinatlarını almasını sağlar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Daire Merkezi<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 11px;" alt="Daire Merkezi" src="Imagenes/icono_toolBarEnganches_cc.png" /></td>
+            <td style="width: 428px; text-align: justify;">Bu yakalama modu yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_planta_diseno.html">plan</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, fare imleci, imlecin etki alanı içine düşmesi koşuluyla bir dairesel güzergah elemanının merkezine yakalanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Kırmızı Kot<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="Kırmızı Kot" src="Imagenes/icono_toolBarEnganches_ras.png" /></td>
+            <td style="width: 428px; text-align: justify;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_rasantes_diseno.html">düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, imleç, imlecin etki alanı içindeki en yakın kırmızı kota yakalanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Profil<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="Profil" src="Imagenes/icono_toolBarEnganches_perfil.png" /></td>
+            <td style="width: 428px; text-align: justify;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_rasantes_diseno.html">düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, fare imleci yüklenmiş olan arazi boykesitine yakalanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Diğer Boykesit<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="Diğer Boykesit" src="Imagenes/icono_toolBarEnganches_otroLong.png" /></td>
+            <td style="width: 428px; text-align: justify;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_rasantes_diseno.html">düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, fare imleci çoklu doğru olarak yüklenmiş boykesitlere yakalanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Diğer Eksen<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 18px;" alt="Diğer Eksen" src="Imagenes/icono_toolBarEnganches_otroEje.png" /></td>
+            <td style="width: 428px; text-align: justify;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_rasantes_diseno.html">düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, fare imleci diğer eksenlerin gösterimlerine yakalanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Geçiş Noktası<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="Geçiş Noktası" src="Imagenes/icono_toolBarEnganches_ptoPaso.png" /></td>
+            <td style="width: 428px; text-align: justify;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_rasantes_diseno.html">düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, imleç, imlecin etki alanı içindeki en yakın geçiş noktasına yakalanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Veri Noktası<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="Veri Noktası" src="Imagenes/icono_toolBarEnganches_ptoDato.png" /></td>
+            <td style="width: 428px; text-align: justify;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_rasantes_diseno.html">düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, imleç, imlecin etki alanı içindeki en yakın düşey güzergah veri noktasına yakalanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Nokta Tablosu<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="Nokta Tablosu" src="Imagenes/icono_toolBarEnganches_tablaPtos.png" /></td>
+            <td style="width: 428px; text-align: justify;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_rasantes_diseno.html">düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, imleç, imlecin etki alanı içindeki nokta tablosunun en yakın noktasına yakalanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Bacalar<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="Bacalar" src="Imagenes/icono_toolBarEnganches_pozos.png" /></td>
+            <td style="width: 428px; text-align: justify;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_tuberias.html#rasante">boru hattı düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, fare imleci, imlecin etki alanı içine düşen en yakın <a href="OL_tuberias.html#def_pozo">bacanın</a> kilometresini alır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-style: italic;">Kırmızı Kot Somesi</span><br />
+            </td>
+            <td style="vertical-align: middle; text-align: center;"><img style="width: 17px; height: 18px;" alt="Kırmızı Kot Somesi" src="Imagenes/icono_toolBarEnganches_vertRas.png" /></td>
+            <td style="vertical-align: top;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_tuberias.html#rasante">boru hattı düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, imleç mevcut düşey güzergahın somelerine yakalanır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-style: italic;">Diğer Düşey Güzergah Verisi</span><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Yalnızca GÜZERGAH ESASLI PROJELER modülünde <a href="OL_tuberias.html#rasante">boru hattı düşey güzergah</a> düzenlemesi sırasında aktiftir. Bu mod aktifken, fare imleci (farklı düşey güzergahlara sahip çift platformlu otoyollarda) diğer platformun düşey güzergahının somelerine yakalanır.</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-style: italic;">GPS<br />
+            </td>
+            <td style="text-align: center;"><img style="width: 11px; height: 17px;" alt="GPS" src="Imagenes/icono_toolBarEnganches_gps.png" /></td>
+            <td style="vertical-align: top;">Gerçek zamanlı GPS ile çalışmak için kullanılır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-style: italic;">TTP</span><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Aktif TTP yüzeyinin imlece en yakın noktasının koordinatları alınır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-style: italic;">Yoğun Nokta Bulutları</span><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Aktif YNB yüzeyinin imlece en yakın noktasının koordinatları alınır.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+<br />
+      <span class="Parrafo"><span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

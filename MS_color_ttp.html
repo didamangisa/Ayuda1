@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  
+
+  
+  
+  <title>SAM'a Göre Renklendirme</title><link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SAM'A (TTP) GÖRE RENKLENDİRME<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />
+Bir üçgenleme (.ttp) dosyasından gelen kotlara göre bir renk haritası oluşturmayı sağlar. Renk haritası, bir *.edm dosyasına kaydedilebilecek çizgiler olarak oluşturulacaktır.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 247px; height: 413px;" alt="" src="Imagenes/dialogo_color_ttp.png" /><br />
+      </div>
+      <br />
+İlk adım, <a href="EDM_topografia.html#ficheros_ttp">üçgenlemeden</a> gelen .ttp dosyasını, <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_control_ttps.png" /> kutucuğu aracılığıyla doğrudan erişebildiğimiz <a href="EDM_control_entidades.html#control_ttps">SAM kontrolü</a> menüsünden yüklemektir.<br /><br />Yüklendikten sonra, program otomatik olarak <span style="font-weight: bold;">Minimum Z</span> ve <span style="font-weight: bold;">Maksimum Z</span>'yi tanımlayacaktır. Bu değerler, daha sonra çizeceğimiz kot aralığını belirlemek için bizim kullanımımıza sunulacaktır.<br />
+<span style="font-weight: bold;">Önizleme</span> kutucuğu aracılığıyla, belirlediğimiz farklı renklerle çizimimizin nasıl görünebileceğine dair dinamik bir görselleştirme elde ederiz.<br /><br />Kot değerlerine bağlı olarak program, daha sonra bir katı çizgi tipi tanımlayacağımız bir kot <span style="font-weight: bold;">Aralığı</span> belirler. Kot aralığını Kot Aralığı ile veya <span style="font-weight: bold;">aralık sayısı</span> ile belirleyebiliriz. Her iki seçenek de birbiriyle değiştirilebilir.<br />
+      <br />*.ttp dosyası bir yüzeyin kotlarını temsil ettiğinde, her kot aralığı ve toplam için 2D ve 3D alanların bir listesi oluşturulabilir; bunun için <span style="font-weight: bold;">Alanlar (Kot SAM'ı)</span> düğmesine basmak gerekir.<br /><br />*.ttp dosyası kalınlıkları veya derinlikleri (izopaklar için ttp) temsil ettiğinde, her kalınlık aralığı ve toplam için 2D alan ve hacim listesi oluşturulabilir; bunun için <span style="font-weight: bold;">Hacimler (İzopak SAM'ı)</span> düğmesine basmak gerekir.<br /><br />
+      <br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 318px; height: 301px;" alt="" src="Imagenes/areras_colores_ttp.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 327px; height: 306px;" alt="" src="Imagenes/color_ttp_volumen.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />İzopaklar için bir SAM durumunda bir dolgu eğrisi hesaplamak için yeni bir yardımcı program eklenmiştir.<br /><br />*.ttp dosyası kalınlıkları veya derinlikleri (izopaklar için ttp) temsil ettiğinde, <span style="font-weight: bold;">Dolgu Eğrisi (İzopak SAM'ı)</span> düğmesine basıldığında bir dolgu eğrisi hesaplanır. Bu durumda, negatif ve pozitif aralıklar ayrı ayrı toplanır. Ayrıca, 2D alanların sıfırdan pozitif aralıklara ve sıfırdan negatif aralıklara doğru kümülatif olduğu da dikkate alınmalıdır. Örneğin, 10 ile 30 arasında kotları olan bir SAM'ımız varsa, 15 ile 16 arasındaki hacim için 2D alan, 15 ile 30 arasındaki tüm üçgenlerin 2D alanlarını içerir.<br /><br /><div style="text-align: center;"><img style="width: 327px; height: 233px;" alt="" src="Imagenes/color_ttp_c_llenado.png" /><br /></div><br />
+Her kot aralığı için katı <span style="font-weight: bold;">çizgi tiplerini</span> tanımladıktan sonra, renk haritasının çizimini <span style="font-weight: bold;">Oluşturmaya</span> hazır oluruz.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 409px; height: 504px;" alt="" src="Imagenes/ejemplo_color_ttp.png" /><br />
+      </div>
+      <br />
+      <img style="width: 119px; height: 50px;" alt="" src="Imagenes/color_ttp_leyenda.png" align="right" hspace="6" /><img style="width: 184px; height: 154px;" alt="" src="Imagenes/dibujo_leyenda_colorttp.png" align="left" hspace="6" />Oluşturulduktan sonra, <span style="font-weight: bold;">Oluştur</span> komutuyla çizime bir lejant ekleyebiliriz; metin tipini, Modeli veya kot kutusunda görünecek Başlığı değiştirebiliriz.<br />
+      <br />
+      <img style="width: 234px; height: 167px;" alt="" src="Imagenes/gama_colores_colorttp.png" align="right" hspace="6" /><span style="font-weight: bold;">Renk Gamı</span> komutundan, programa aralığımızın başlangıç çizgi tipini ve onu oluşturan çizgi sayısını belirtebiliriz.<br />
+      <br />
+      <br />
+      <br />
+Aralıklarla ilişkili bilgileri <span style="font-weight: bold;">Yükleyebilir</span> veya <span style="font-weight: bold;">Kaydedebiliriz</span>.<br />
+<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

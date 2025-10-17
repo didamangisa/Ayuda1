@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>.dwg/.dxf Dosyalarını Dışa Aktarma</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>.dwg/.dxf DOSYALARINI DIŞA AKTARMA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#opc_generales">Genel Dışa Aktarma Seçenekleri</a><br />
+      <a href="#opc_particular">Çizgiler, Semboller, Hücreler ve Yazılar için Özel Dışa Aktarma Seçenekleri</a><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <br />
+      <img style="width: 148px; height: 95px; margin-left: 7px;" alt="" src="Imagenes/dialogo_exportar_dwg_dxf.png" align="right" /><span style="font-weight: bold;">Dosya</span> &#8594; <span style="font-weight: bold;">Dışa Aktar</span> &#8594; <span style="font-weight: bold;">DWG/DXF</span> seçeneği seçildikten sonra,
+dosyayı doğrudan kaydetme veya dışa aktarma seçeneklerini tanımlama imkanı sunan bir iletişim kutusu görüntülenir. 
+Program, &nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> dosyalarının tüm sürümleriyle uyumludur.<br /><br />
+Eğer dışa aktarma seçeneklerini tanımlamayı seçerseniz, o zaman EDM'yi dışa aktarırken gereken her şeyi yönetmenizi sağlayan başka bir iletişim kutusu görüntülenir:<br />
+      <br />
+<br />
+      <div style="text-align: center;"><img style="width: 600px; height: 416px;" alt="" src="Imagenes/dialogo_opc_exportar_dwg_dxf.png" />&nbsp;<br />
+      </div>
+<br />İletişim kutusu dört sütuna ayrılmıştır; her biri ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün temel obje sınıflarından birine (<span style="font-weight: bold;">çizgiler</span>, <span style="font-weight: bold;">semboller</span> ve <span style="font-weight: bold;">yazılar</span>) ve tüm dışa aktarma işlemini etkileyen bir diğerine (<span style="font-weight: bold;">Genel</span>) aittir.<br /><br /><br /><span class="Titulo_2"><a name="opc_generales">Genel Dışa Aktarma Seçenekleri</a></span><br /><br /><span style="font-weight: bold;">[Varsayılan Değerler]</span> düğmesi, iletişim kutusunu varsayılan dışa aktarma değerleriyle (yukarıdaki resimde görünenler) yapılandırır.<br /><br />Öte yandan, DWG/DXF <span style="font-weight: bold;">katman adlarının formatını</span> belirtmek için birkaç seçenek vardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;"><img style="width: 187px; height: 207px; float: right;" alt="" src="Imagenes/exp_dwg_formato_capas.png" hspace="6" />L (tip_no) tipi katmanlar</span>:
+Her obje, adı Lx olan bir katmana gidecektir; burada L obje sınıfı (çizgi, sembol veya yazı) ve x tiptir. Örneğin, EDM'deki 20 tipi semboller, DWG/DXF'in S20 adlı katmanına gidecektir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">M(model_no)L(tip_no) tipi katmanlar</span>:
+Her obje, adı MxLy olan bir katmana gidecektir; burada x objenin ait olduğu model numarası, L obje sınıfı (çizgi,
+sembol veya yazı) ve y tiptir. Örneğin, EDM'de 7. modele ait 31 tipi bir çizgi, DWG/DXF'in M7L31 adlı katmanına gidecektir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">M(model_no) tipi katmanlar</span>: Her obje, adı Mx olan bir katmana gidecektir; burada x
+objenin ait olduğu model numarasıdır. Örneğin,
+EDM'de 2. modele ait bir yazı, DWG/DXF'in M2 adlı katmanına gidecektir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Çeviri Sözlüğü</span>: Dışa aktarma için &nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/boton_3puntos.png" /> düğmesine basılarak sözlük kullanılır (eğer hiçbiri yoksa, varsayılan olarak &nbsp;<span class="Archivo">dxf.cod</span> dosyasını aramaya çalışır). <img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_notepad.png" /> düğmesine basılırsa, program &nbsp;<span class="Archivo">.cod</span> dosyasını not defteri ile açar, böylece kullanıcı onu değiştirebilir. Eğer mevcut çizimden bir &nbsp;<span class="Archivo">.cod</span> dosyası oluşturmak isteniyorsa, <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_nuevo.png" /> düğmesine basmak yeterlidir. Bu dışa aktarıcı, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün tüm sürümlerindeki &nbsp;<span class="Archivo">.cod</span> dosyalarını kullanabilir.</li>
+      </ul>
+      <div style="margin-left: 40px;">Sözlüğü kullanırken,
+kullanıcı, farklı grafik obje türlerinin, adları
+dosyada belirtilen DXF/DWG dosyasının aynı katmanlarına gitmesini sağlar. Bu sözlüğü <a href="EDM_importar_dwg_dxf.html">içe aktarma işlemi</a> sırasında da oluşturma imkanı olduğunu hatırlatırız, bu nedenle dışa aktarma için de kullanmaya karar verilirse ters etki elde edilecektir.<br />
+      <br />
+&nbsp;<span class="Archivo">.cod</span> sözlüğünde, ilk sütun olarak Autocad katmanını, ikinci sütun olarak eleman sınıfını (103 çizgiler,
+203 semboller, 303 yazılar), üçüncü sütun olarak objenin numarasını tanımlamalıyız.
+Katman rengiyle dördüncü bir sütun ve katman çizgi stiliyle beşinci bir
+sütun eklenebilir. Bu son iki <img style="width: 211px; height: 21px;" alt="" src="Imagenes/exp_dwg_color_estilo.png" align="right" hspace="6" />sütun çift tırnak arasına yazılmalıdır.<br />
+      <br />
+Çizgi stili (örneğin HIDDEN2), autocad katman stillerinde yer almalıdır. Eğer içermiyorsa, Autocad'de bu stili içeren bir .dwg şablonu eklemek <img style="width: 201px; height: 50px;" alt="" src="Imagenes/exp_dwg_estilo_plantilla.png" align="right" hspace="6" />gerekebilir.<br />
+<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Tümünü tek bir katmana</span>: Belirtilen adda, seçilen renkte bir katman oluşturulur ve tüm objeler bu katmana eklenir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Katman = Tip Adı</span>:
+Bu seçenek seçildiğinde,
+DWG/DXF dosyasında oluşturulan katmanlar, o katmanı oluşturan eleman tipinin (çizgi, etiket veya sembol)
+adını alır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">L(tip_no)M(model_no) tipi katmanlar</span>:
+Her obje, adı LxMy olan bir katmana gidecektir; burada y, objenin
+ait olduğu model numarası, L obje sınıfı (çizgi,
+sembol veya etiket) ve x tiptir. Örneğin,
+EDM'de 7. modele ait 31 tipi bir çizgi, DWG/DXF'in L31M7 adlı katmanına gidecektir.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">L(tip_no)_ModelAdı tipi katmanlar</span>:
+Her obje, adı Lx_ModelAdı olan bir katmana gidecektir; burada L
+obje sınıfı (çizgi, sembol veya etiket), x tip ve ModelAdı
+objenin ait olduğu modelin adıdır.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">M(model_no)TipAdı tipi katmanlar</span>: Her obje, adı MxTipAdı olan bir katmana gidecektir; burada x
+objenin ait olduğu model numarası ve TipAdı tipin adıdır.</li></ul><ul><li><span style="font-weight: bold;">M(model no)L(tip no)TipAdı tipi katmanlar</span>: Bu seçenek seçildiğinde, model numarası ile adı arasına çizgi numarası eklenir.</li>
+
+      </ul>
+
+Ayrıca, DWG/DXF'deki <span style="font-weight: bold;">renk davranışını</span> belirtmek için birkaç olası seçenek vardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;"><img style="width: 293px; height: 169px;" alt="" src="Imagenes/exp_color_por_tipo.png" align="right" hspace="6" />Özel renk</span>: Objeler, EDM'de renklendirildikleri renkle aynı olan <a href="EDM_dibujo_entidades.html#propiedades_linea">kendi renklerine</a> sahiptir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Katmana göre renk</span>: Objeler,
+ait oldukları DWG/DXF katmanının rengini alırlar (varsayılan
+seçenek). Örneğin, eğer katman formatında <span style="font-weight: bold;">Tt tipi katmanlar</span> veya <span style="font-weight: bold;">MmTt tipi katmanlar</span>
+seçeneği seçilmişse, DWG/DXF'in L31 katmanına ait çizgiler,
+EDM'de karşılık gelen 31 numaralı <a href="EDM_definicion_tipos.html#definir_linea">çizgi tipinin rengini</a> alacaktır. Ve eğer seçilen seçenek <span style="font-weight: bold;">Mm tipi katmanlar</span><span style="font-style: italic;"> ise,</span> o zaman DWG/DXF katmanının rengi EDM modelinin rengine karşılık gelecektir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Bloğa göre renk</span>: Objeler, ait oldukları DWG/DXF bloğunun rengini alırlar.<br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">İndekse veya RGB'ye göre renk</span>: İlk durumda (varsayılan seçenek), program AutoCAD<sup>®</sup> paletine göre en yakın rengi hesaplamaya çalışacaktır.
+RGB (kırmızı, yeşil, mavi) seçilmesi durumunda, DWG/DXF'deki objeler
+EDM ile aynı renge sahip olacak, ancak genel olarak bu paletin renkleriyle
+eşleşmeyecektir.<br />
+        </li>
+      </ul>
+Hem katmanların formatı hem de renk türü her
+obje sınıfı için ayarlanabilir, ancak bu dışa aktarma özelliklerini <span style="font-weight: bold;">Genel</span> sütunundan seçmek, bu özelliği üç obje sınıfı için de değiştirir.<br /><br /><span style="font-weight: bold;">Diğer genel seçenekler</span> şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold;">3 boyutu koru</span>:
+Bu seçenek etkinse, çoklu doğrular ve semboller üç
+boyutlu olarak yazılır, aksi takdirde Z bileşeni yok sayılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Mutlak koordinatlar</span>:
+Bu seçenek etkin olduğunda (varsayılan seçenek), tüm
+koordinatlar (0,0)'dan itibaren toplam ötelemeleriyle yazılır.
+Aksi takdirde, tüm koordinatlar mevcut X<sub>min</sub> ve Y<sub>min</sub> değerlerine göreli olarak yazılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Model başına bir dosya</span>:
+Bu seçenek etkinleştirilirse, her model ayrı bir
+dosyaya yazılır (çıktı dosyasının adı verilirken belirtilecek olan ad temel ad olarak kullanılacaktır). Eğer seçenek
+etkin değilse, tüm modeller tek bir dosyaya yazılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Taramaları dışa aktar</span>: Taramaları dışa aktarmak istiyorsanız, bu seçenek etkin olmalıdır. Aksi takdirde, taramalar yok sayılır.</li>
+      </ul>
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">İlişkisel</span> seçeneği de işaretlenirse, oluşturulan taramaların sınırları, bunu destekleyen herhangi bir başka CAD programından yönetilebilir.<br />
+      </div>
+      <ul>
+        </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><img style="width: 148px; height: 284px;" alt="" src="Imagenes/exp_color_relleno.png" align="right" hspace="6" />Taramalar için FILL sonekli katman</span>: Istram'daki
+dolgulu <a href="EDM_definicion_tipos.html#definir_linea">çizgiler</a>,
+dış hat ve iç kısımdan oluşur.
+Dış hat, L78 gibi iç kısmından farklı bir renge sahip olabilir.
+Autocad'de dolgulu çizgiler tek bir obje olarak ele alınır.
+Bu kutucuk, dolgunun ve dış hattın renklerini ayırt etmek için
+etkinleştirilir. Böylece Autocad'de, belirli bir renkteki
+dış hatta karşılık gelen L78 ve başka bir renkteki
+dolguyu temsil eden L78FILL oluşturulacaktır.<br />
+        </li>
+      </ul>
+      
+
+      <ul>
+        <li><span style="font-weight: bold;">Şablon kullan</span>: Bu seçenek işaretlenirse, &nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/boton_3puntos.png" /> düğmesine basılarak belirtilen şablon kullanılır (&nbsp;<span class="Archivo">.dwt</span>,&nbsp;<span class="Archivo">.dwg</span> ve&nbsp;<span class="Archivo">.dws</span> dosyaları).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Çoklu görev ile yaz</span>:
+Bu kutucuk işaretlendiğinde, program, dosya oluşturma süreci için
+bağımsız bir yürütme iş parçacığı başlatarak çok çekirdekli bir
+işlemcinin özelliklerinden yararlanır. Bu
+şekilde, kullanıcı &nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> dosyasının oluşturulmasını
+beklemeden programla çalışmaya devam edebilir. Özellikle çok büyük dosyaların oluşturulması için kullanışlıdır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">ispol.ccd dosyasını dikkate al</span>: &nbsp;<span class="Archivo">.edm</span> dosyası ile &nbsp;<span class="Archivo">.dxf</span> dosyası arasındaki renk çevirisini kolaylaştırmak için, kütüphanede, renk dönüşümünü otomatikleştiren ve bu kutucuk işaretlendiğinde kullanılan &nbsp;<span class="Archivo">ispol.ccd</span> dosyası bulunur. Bu dosya, ISTRAM <sup>®</sup>/ISPOL<sup>®&nbsp;</sup> paletinin (Ayarlar &gt; <span style="font-weight: bold;">Renk Paleti</span> açılır menüsü) indeksi ile DWG/DXF paletinin indeksi arasındaki eşleşmeyi içeren bir tablo içerir. Dosya aşağıdaki yapıya sahiptir:</li>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img style="width: 377px; height: 239px;" alt="" src="Imagenes/ispol_ccd.png" /><br />
+      </div>
+      <br />
+      <div style="margin-left: 40px;">Üçüncü sütun, program <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Yazdırma</span> modunda</a> veya <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Kalemler</span> modunda</a> olduğunda kullanılacak DWG/DXF paletinin indeksine karşılık gelir.<br />
+      <br />
+&nbsp;<img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_notepad.png" /> düğmesine basılırsa, program &nbsp;<span class="Archivo">ispol.ccd</span> dosyasını not defteri ile açar, böylece kullanıcı onu değiştirebilir. Değiştirildikten sonra, dosyayı belleğe yeniden yüklemek ve böylece dışa aktarma için dikkate alınmasını sağlamak için &nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/boton_actualizar.png" /> düğmesine basmak gerekecektir.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Bitince AutoCAD ile aç</span>:
+Bu seçenek işaretliyken, DWG/DXF dosyası yazma işlemi bittiğinde,
+oluşturulan dosyayı açmak için DWG/DXF uzantılı dosyalarla ilişkilendirilmiş yazılım başlatılır (örneğin, AutoCAD<sup>®</sup>).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Görüntüleri dışa aktar</span>: Bu seçenek etkinleştirilirse, haritada bulunan görüntüler de DWG/DXF dosyasına aktarılır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><img style="width: 137px; height: 73px;" alt="" src="Imagenes/exp_guardar_DWG_DXF.png" align="right" hspace="6" />Sadece seçim</span>:
+Eğer elemanlar seçiliyse ve bu kutucuk etkinleştirilirse, sadece
+bu elemanlar DWG/DXF dosyasına yazılır. Bu seçenek,
+elemanlar seçiliyken gösterilen bağlam menülerinde de yansıtılır.
+x elemanı seçip farenin sağ tuşuna tıkladığımda <span style="font-weight: bold;">DWG/DXF Kaydet</span> seçeneğini elde ederim. <br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Birim sistemi</span>: Metrik veya İmparatorluk</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Eklenen içeriğin ölçek birimleri</span>: Santimetre, Metre, Kilometre...</li></ul><ul><li><span class="Parf_negrita">CRS dönüşümünü uygula</span>: Etkin olduğunda, &nbsp;<a href="EDM_georreferenciacion.html#crs">Koordinat referans sistemi</a> menüsünde tanımlı olan CRS dönüşümü uygulanır.</li>
+      </ul>
+<br /><span class="Titulo_2"><a name="opc_particular">Çizgiler, Semboller, Hücreler ve Yazılar için Özel Dışa Aktarma Seçenekleri</a></span><br /><br />Daha
+önce açıklandığı gibi, her obje sınıfı, her biri için belirtilen
+katman formatını ve renk türünü takip edebilir. Ayrıca, bir obje sınıfının dışa aktarılıp aktarılmayacağını belirtmek de mümkündür:<br /><br />
+      <div style="text-align: center;"><img style="width: 571px; height: 37px;" alt="" src="Imagenes/exportar_dwg_clases.png" />&nbsp;<br />
+      </div>
+<br /><span style="font-weight: bold;">Çizgiler</span> için özel seçenekler:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Katmana model no ekle</span>:
+Dışa aktarılan katmana, içinde bulunduğu modelin numarasını sonek olarak
+ekler. Bu seçenek etkinse, &nbsp;<span style="font-weight: bold;">Katman adından önce M_...</span> seçeneğini etkinleştirmeye izin verilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Katmana özel renk no ekle</span>:&nbsp;
+Bu kutucuk etkinleştirildiğinde, eğer herhangi bir çoklu doğrunun özel rengi varsa,
+çoklu doğrunun renginin sonek olarak eklendiği yeni bir katman oluşturulur.</li></ul><ul><li><span class="Parf_negrita">Katman açıklaması = tip adı</span>: &nbsp;Katman tipinin adını, katmanın açıklamasına aktarır.</li>
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Çizgi kalınlığını koru</span>:
+Bu kutucuk etkin olduğunda, çizgilerin kalınlığı çıktı
+dosyasında korunur ve bu kalınlık daha sonra
+DWG/DXF'te görülebilir. Eğer kutucuk etkin değilse, objeler
+varsayılan kalınlıkla oluşturulur.</li>
+      </ul><ul>
+        </ul><ul><li><span style="font-weight: bold;">Çoklu Doğrularda Genel Kalınlık</span>:
+Çizgi tipinin kalınlığını, oluşturulacak
+2B çoklu doğrunun genel kalınlığına dönüştürmeyi sağlar. <span style="font-weight: bold;">3 boyutu koru</span> seçeneği ile uyumlu değildir.</li></ul><ul><li><span style="font-weight: bold;">Çizgileri Detaylandır</span>: Bu kutucuk etkinleştirildiğinde, çizgiler DWG/DXF'e detaylandırılmış olarak aktarılır.</li>
+      </ul>
+      <ul>
+        
+        <ul>
+          <li><span style="font-weight: bold;">‘Çizgi segmentlerini’ kes</span>:
+Bu seçenek, önceki işaretliyken kullanılabilir ve bir
+çizgi stili oluşturup onu çoklu doğruya atamak yerine,
+detaylandırılmış çoklu doğrunun sahip olduğu segment sayısı kadar çizgi çizer.</li>
+        </ul>
+
+      </ul>
+      <ul style="list-style-type: circle;">
+        </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Taramaları arkaya gönder</span>:
+Bu kutucuk işaretliyse (varsayılan seçenek), o zaman önce
+taramalar sonra çizgiler oluşturulur, böylece çizgi sınırlarının üzerine
+binmeleri önlenir.</li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+
+      
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Çizgileri yumuşat</span>: Bu seçenek etkin olduğunda, yumuşatılmış çizgiler çıktı dosyasında oluşturulur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kotlu Çoklu Doğrular</span>:
+Bu seçenek etkin olduğunda, bir çoklu doğrunun tüm köşe noktalarının kotları eşit olduğunda (örneğin, bir eş yükselti eğrisi), bu 2B bir çoklu doğru olarak dışa aktarılır ve kotu, köşe noktalarının kotu olarak alınır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">8D çizgilerinin dışa aktarımı</span>: Burada, <a href="EDM_entidades_basicas.html#lineas8D">8D çizgilerinin</a> DWG/DXF'e nasıl aktarılacağı belirtilir: ayrı çizgiler ve yaylar olarak mı yoksa tam çoklu doğrular olarak mı.<br />
+        </li>
+      </ul>
+      <br />
+Öte yandan, EDM'de kapalı olan çoklu doğrular,
+çizim DWG/DXF'e aktarıldığında hem 2B çoklu doğrular hem de 3B çoklu doğrular durumunda her zaman kapalı özelliğine sahip olurlar.<br />
+      <br />
+<br /><span style="font-weight: bold;">Semboller</span> için özel seçenekler:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Renk türü (blok tanımı)</span>:
+Bu, blokları oluşturan objelere uygulanan renktir,
+yani bloğun geometrisini tanımlayan objelere (blok referansının rengiyle karıştırılmamalıdır). Diğer
+durumlarda olduğu gibi, olanakları özel renk, katmana göre ve bloğa göredir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Katman türü (blok tanımı)</span>:
+Eğer sembole ait herhangi bir obje hiçbir tipe karşılık gelmiyorsa,
+o zaman patlatıldığında geldiği sembolün katmanına gider (veya diğer seçenek olan katman 0'a).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Bloklardaki öznitelikleri patlat</span>:
+Bu kutucuk işaretlenirse, blok eklemelerinin öznitelikleri
+bağımsız metinler olarak patlatılır. Bu, etiketler durumunda kullanışlıdır,
+çünkü bu şekilde her birinin stili
+DWG/DXF'te bağımsız olarak değiştirilebilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tek tip ölçek</span>: Bu seçenek etkin olduğunda, X ve Y'de aynı ölçeğe sahip semboller, Z'de de aynı ölçeğe sahip olur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ekran veya kağıt rengini al</span>: Bu şekilde, <span style="font-style: italic;">Ekran</span> modunda veya <span style="font-style: italic;">Kağıt</span> modunda olunmasından bağımsız olarak, semboller görüntüleme moduna göre istenen renkle dışa aktarılabilir.</li>
+      </ul>
+      <ul>
+        <li><img style="width: 241px; height: 222px; margin-left: 7px;" alt="" src="Imagenes/exportar_dwg_dxf_puntos.png" align="right" /><span style="font-weight: bold;">Bloklar yerine noktalar oluştur</span>:
+Bu seçenekle, belirli EDM sembol tiplerinin, blok
+referansları yerine DWG/DXF dosyasında noktalar olarak dışa aktarılması belirtilebilir. Üstteki &nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/boton_3puntos.png" />
+düğmesine basıldığında, nokta olarak dışa aktarılacak sembol tipleri seçilir,
+alttaki düğme ise DWG/DXF'deki nokta tipini ve boyutunu seçmeyi sağlar.</li>
+      </ul><ul><li><span style="font-weight: bold;" class="Parf_negrita">Bloklar için ad</span>:
+&nbsp;Blokları, onları oluşturan sembolün tip adıyla oluşturma
+imkanı. Bu şekilde, artık bloklar şu ada sahip olabilir:</li><ul><li class="Parf_negrita">SXXXX, burada XXXX sembolün tip numarasıdır</li><li><span class="Parf_negrita">Sembol tipinin adı</span></li></ul></ul><br />
+      <br />
+<span style="font-weight: bold;">Hücreler</span> için özel seçenekler:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Hücreleri dışa aktar</span>:
+Eğer hücreleri dışa aktarmak istiyorsanız, bu seçenek etkin olmalıdır. Aksi
+takdirde, hücreler yok sayılır. <br />
+        </li>
+        <li><span style="font-weight: bold;">Hücreleri bloklara</span>:
+Program, hücreleri temel
+objelere (çizgiler, semboller ve yazılar) ayırır ve elde edilen her obje sınıfıyla,
+katmanların formatı ve renk türü açısından geri kalanıyla aynı şekilde
+işlem yapar, eğer bu seçenek işaretli değilse; işaretliyse, hücrenin içeriğiyle bir blok oluşturur.<br />
+        </li>
+      </ul>
+
+<br /><span style="font-weight: bold;">Yazılar</span> için özel seçenekler:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Hizalamayı koru</span>:
+Bu kutucuk işaretlendiğinde, orijinal metnin hizalaması
+korunmaya çalışılır. Yine de, ISTRAM <sup>®</sup>/ISPOL<sup>®</sup>'ün
+DWG/DXF formatından daha fazla hizalama olanağına sahip olması nedeniyle eşleşme mükemmel değildir, bu nedenle
+devre dışı bırakılması önerilir. Bu durumda, metnin hizalaması
+her zaman sol-alttır.</li>
+      </ul>
+      <ul><li><span class="Parf_negrita">Metinleri MText olarak oluştur</span>: Metni birden çok satırda düzenlemeyi sağlar.</li></ul><ul><li><span style="font-weight: bold;">Yazı stilleri oluştur</span>: Bu kutucuk işaretlendiğinde, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'de kullanılan stiller DWG/DXF'te oluşturulur. Metinler, TrueType yazı tipleri ve DWG/DXF formatıyla eşleşen bazı ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> yazı tipleri durumunda stillerini korur.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Stiller için ad</span>: Oluşturulan stillerin sahip olacağı adı yapılandırmayı sağlar:</li>
+        <ul>
+          <li>Rx şeklinde, burada x yazı stilinin numarasıdır.</li>
+          <li>ISPOL$stil_no stilinin adı, yani yazı stilinin kendi adı ve ardından numarası.</li>
+          <li>ISPOL stilinin adı, yani sadece yazı stilinin kendi adıyla.<br />
+          </li>
+        </ul>
+
+      
+      </ul>
+
+Etiketlerin, sembollerin ve süslü çizgilerin dışa aktarılması için, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Detaylı</span> modda</a>
+olması gerekir, aksi takdirde sadece süslenmemiş çoklu doğrular dışa aktarılacaktır (YAZDIRMA'da sayfa yapılandırma seçenekleri dikkate alınır).<br /><br />Son olarak, bu dışa aktarma tablosunun yapılandırmasını &nbsp;<span class="Archivo">.opc</span> uzantılı bir dosyaya <img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_guardar.png" /> düğmesiyle kaydetmek mümkündür,
+böylece sonraki dışa aktarmalarda kullanılabilir. Bir
+yapılandırma dosyasını yüklemek için, &nbsp; <img style="width: 16px; height: 14px;" alt="" src="Imagenes/icono_abrir.png" /> düğmesine bastıktan sonra onu seçmek yeterlidir.<br /><br />Dışa aktarma seçenekleri yapılandırıldıktan sonra (varsayılan olarak en yaygın olanlar işaretlidir), işleme devam etmek için <span style="font-weight: bold;">[Tamam]</span> düğmesine basılmalıdır.
+Ardından dosya seçici açılır, burada çıktı dosyasının adı ve formatın sürümü
+belirtilmelidir.<br /><br />
+
+      <span class="Parrafo"><span class="Titulo_2" /></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

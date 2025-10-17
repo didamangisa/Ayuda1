@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Dolgu İyileştirmeleri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>DOLGU İYİLEŞTİRMELERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 699px; height: 7954px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td class="obsolete Parrafo" style="width: 681px;"><br />
+      <span class="Parrafo">Bu menüden, dolguları oturtmak için zemin iyileştirmeleri üç ana tip ve varyantlarına göre tasarlanır ve hesaplanır, böylece bu konudaki olası çözümler kapsanır. DOLGU İYİLEŞTİRMELERİ menüsüne girildiğinde, her bir kesim için tanım satırları eklemenin mümkün olduğu bir veri tablosu belirir. Bu tanım <span class="Archivo">.vol</span> dosyasında saklanacak ve eksenin geri kalanıyla birlikte hesaplanacaktır. Ayrıca, bu iyileştirmeleri <span style="font-weight: bold;">kaydetmek</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> ve <span style="font-weight: bold;">yüklemek</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> <span class="Archivo">.spt</span> uzantılı dosyalarda bağımsız olarak da mümkündür.<br /><br /><span class="Parf_negrita">Kullanıcı KM'leri</span> seçeneği, KM'lerin kullanıcı değerleriyle girilmesine olanak tanır. Bu seçenek etkinleştirilebilir/devre dışı bırakılabilir ve aktivasyon durumu .vol dosyasında saklanır.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 600px; height: 211px;" alt="" src="Imagenes/dialogo_saneos_terraplen.png" /><br />
+      </div>
+      <br />
+      </span><span class="Parrafo">Bir veri eklendiğinde (<span style="font-weight: bold;">Baş.KM</span> ve <span style="font-weight: bold;">Bit.KM</span> ile tanımlanan bir kesime karşılık gelir), ilk olarak iyileştirme tipi belirtilmelidir. Aynı zamanda, program seçilen her tip için sadece gerekli kutucukları kullanılabilir hale getirir ve geri kalanını gizler.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/modelo_saneos_terraplen.png" style="width: 516px; height: 324px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Her iyileştirme kesimi içinde, her bir iyileştirme verisine bir <span style="font-weight: bold;">açıklama</span> veya yorum verilebilir. Bu yorum, bir <a href="OL_planos_longitudinales.html#tablas_textos">metin tablosu</a> aracılığıyla <a href="OL_gui_tablas_de_textos.html">boykesit potasında</a> yansıtılabilir.<br />
+<br />
+Tüm diğer yapılandırmaların türetildiği ana tipler üç tanedir ve ilgili modelde görülebilir:<br />
+      </span>
+      <ul>
+        <li><a href="#tipo_0"><span class="Parrafo">Drenaj tabakalı iyileştirme (tip 0)</span></a></li>
+        <li><a href="#tipo_1"><span class="Parrafo">Eşit kalınlıktaki tabakalarla iyileştirme (tip 1)</span></a></li>
+        <li><a href="#tipo_2"><span class="Parrafo">Maksimum ve minimum kademelerle iyileştirme (tip 2)</span></a></li>
+      </ul>
+      <span class="Parrafo"><br />
+Ayrıca, geniş bir <a href="#cierres">iyileştirme bitişi</a> tipolojisi mevcuttur.<br />
+      <br />
+Bu belgenin okunmasını basitleştirmek amacıyla, aşağıdaki bölümlerin açıklandığı <a href="#avanzado">dolgu iyileştirmelerinin gelişmiş tanımıyla</a> ilgili konular son bölümde sunulmuştur:<br />
+</span>
+      <ul>
+        <li><a href="#por_codigo"><span class="Parrafo">Yanal sınırlama: koda göre iyileştirme</span></a></li>
+        <li><a href="#terreno_competente_inadecuado"><span class="Parrafo">Sağlam zemin ve uygun olmayan zemin referanslı iyileştirmeler</span></a></li>
+        <li><a href="#vector_desmonte_terreno_inadecuado"><span class="Parrafo">Dolgu iyileştirmeleri ve uygun olmayan zeminde yarma vektörü</span></a></li>
+        <li><a href="#fronteras"><span class="Parrafo">Sınırlar ve aynı enkesitte iki tip iyileştirme</span></a></li>
+        <li><a href="#cota_base"><span class="Parrafo">Taban kotu ile verilen iyileştirmeler</span></a></li>
+        <li><span class="Parrafo"><a href="#calzada_existente">Mevcut kaplamalı iyileştirmeler</a><br />
+</span></li>
+
+      </ul>
+      <span class="Parrafo">
+      <br />
+<br />
+      </span><span class="Titulo_2"><a name="tipo_0">Drenaj tabakalı iyileştirme (tip 0)</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Gerekli veriler, kesimin başlangıç ve bitiş KM'lerine ek olarak, kademeli uygulamanın (azalan yönde) yapılmasını belirleyen minimum dolgu yüksekliği <span style="font-weight: bold;">H</span>'dir.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneo_tipo0_1.png" style="width: 221px; height: 115px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Dolgu kretinden ve sağlam zemin (çizgi tipi 66) üzerindeki oturma hattından ölçülür. Bu minimum yüksekliğin altında kademelendirme yapılmaz.<br />
+      <br />
+      </span><br />
+      <span class="Parrafo">Kademeler, sağlam zeminden <span style="font-weight: bold;">P</span> derinliğinde bir referans hattı üzerinde inşa edilmeye başlanır. Bu <span style="font-weight: bold;">P</span> derinliği, <span style="font-style: italic; font-weight: bold;">Z</span> kutucuğu işaretlenerek mutlak kot olarak verilebilir, ancak bu seçeneğin sadece tip 2 iyileştirmelerde kullanılması tavsiye edilir. <span style="font-weight: bold;">H</span> hattının işaretlediği başlangıç noktasından itibaren, program kademeleri belirli bir <span style="font-weight: bold;">T</span> şevi ve <span style="font-weight: bold;">A</span> genişliği ile ayarlar. Kademelendirme, dolgu şev eteği noktasına kadar ulaşır ve yüzeye (drenaj) çıkarmaya çalışır. Bu tür iyileştirmelerde, kademelerin yarı yatay kesimleri için % cinsinden bir eğim (parametre <span style="font-weight: bold;">P%</span>) tanımlamak da mümkündür.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneo_tipo0_2.png" style="width: 364px; height: 171px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+<a href="#cierres"><span style="font-weight: bold;">Bitiş</span></a>, tip 1 ve 2 iyileştirmeler için tanımlananlar gibi de yapılabilir. Bunun için, mevcut beş tipten (0, 1, 2, 3 ve 4) biri olan <span style="font-weight: bold;">C</span> (bitiş şevi) ve <a href="#cierres"><span style="font-weight: bold;">bitiş tipi</span></a> verileri kullanılacaktır.<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 695px; height: 65px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/saneos_altura_eje.png" style="width: 203px; height: 57px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top;"><span class="Parrafo"><span style="font-weight: bold;">H</span> yüksekliği eksenden ölçülebilir.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 690px; height: 65px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><span class="Parrafo">
+Daha sonra, <span style="font-weight: bold;">D</span> kalınlığında drenaj malzemesi katmanı, sonuçtaki kademeli kazı hattını takip ederek eklenir. Drenaj katmanının tavanı, mutlak bir <span style="font-weight: bold;">Z</span> kotu ile verilebilir.</span></td>
+            <td style="vertical-align: top;"><img src="Imagenes/saneos_z_techo_capa_drenante.png" style="width: 126px; height: 59px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br /><span class="Parf_negrita">YK</span>: Karma Kesit bölgelerinde, iyileştirme yarma bölgesindeki fazla kazının altında devam eder.<br /><br />Metraj şu şekilde yapılır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Dolgu iyileştirmesi için gerekli kazı, yani oturma hatları (L66) ile kademeli iyileştirme hattı (L87) arasındaki hacim.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Drenaj malzemesi katmanı, drenaj katmanı hatları (L89) ile kademeli iyileştirme (L87) arasında.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dolgu, drenaj katmanının tavanına kadar.</span></li>
+      </ul>
+      <br />
+      <img src="Imagenes/saneo_tipo0_3.png" style="width: 324px; height: 93px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Tip 0 içinde iki özel durum olabilir. Bunlardan birincisinde, kademelendirme yoktur (<span style="font-weight: bold;">A</span> = 0) ve referans hattı, dolgunun oturduğu sağlam zemin hattının (L66) kendisi olacaktır (<span style="font-weight: bold;">P</span> = 0). Bu durumda, drenaj katmanı kalınlığı <span style="font-weight: bold;">D</span>, bitkisel veya zayıf zemin kalınlığından daha büyük olabilir.<br />
+      <br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo0_4.png" style="width: 313px; height: 103px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Ayrıca, kademelendirme olmaması (<span style="font-weight: bold;">A</span> = 0) ve referans hattının derinliğinin, drenaj katmanının kalınlığına (<span style="font-weight: bold;">P</span> = D) eşit olması durumu da olabilir. Bu durumda, drenaj katmanı referans hattına dayanır ve tavanı sağlam zemin hattı (L66) olacaktır.<br />
+      <br />
+      <br />
+<span style="font-weight: bold;">P</span> derinliği ve drenaj katmanı kalınlığı <span style="font-weight: bold;">D</span> değerleri, kesimin başlangıç ve bitiş KM'si arasında değişebilir.<br />
+      <br />
+Tavanı doğal arazinin üzerinde olan bir drenaj katmanı olması durumunda, bu katman, doğal arazinin üzerindeki ve altındaki malzemenin ayrı bir metrajını elde etmek için iki malzemeye bölünebilir </span><span class="Parrafo">(metraj listelerinde <span class="Archivo">GECIS_MALZ_1</span> ve <span class="Archivo">GECIS_MALZ_2</span> olarak görünecektir)</span><span class="Parrafo">. Bunun için <span style="font-style: italic; font-weight: bold;">2 KATMAN</span> kutucuğunu etkinleştirmek gerekir.<br />
+      <br />
+<br /></span><span class="Apartados">Dolgu yüksekliğinin belirli bir değerden düşük olduğu dolgu iyileştirmesi</span><span style="font-style: italic;"><span style="font-weight: bold;">o<br />
+<br />
+      </span></span><span class="Parrafo">Daha önce görüldüğü gibi, <a href="#tipo_0">tip 0</a> iyileştirmeler için ve sıfır kademe genişliğiyle (<span style="font-weight: bold;">A</span>=0), <span style="font-weight: bold;">H</span>, iyileştirmenin yapılmadığı maksimum dolgu yüksekliğini belirtir. Ancak bu değer negatif işaretle (<span style="font-weight: bold;">–H</span>) girilirse, o zaman dolgu etekleri, yükseklik H olana kadar iyileştirilir ve dolayısıyla, dolgu yüksekliği <span style="font-weight: bold;">H</span>'den küçükse tüm genişlik iyileştirilir.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Tek bir eğimle iyileştirme</span><br />
+      <br />
+A=0 ve P%= 1000 olan tip 0 iyileştirmeler için (kenarların bir derinliğinden düz birleştirme), bu durum için sol ve sağ tarafta farklı bir derinlik tanımlamak mümkündür.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneo_terr_unica_pendiente.png" style="width: 420px; height: 87px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /></span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejem_saneo_unica_pendiente.png" style="width: 244px; height: 231px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Bu, örneğin resimde gösterilen barajların tasarımında kullanışlı olabilir.<br />
+      <br />
+Öte yandan, bir taraftan sabit eğimli iyileştirmeler için, referans noktası, kod 601'i örneğin 3010'a (kafa hendeği tabanı) değiştirerek artık değiştirilebilir.<br /><br /><span style="font-weight: bold; font-style: italic;">Sol ve sağ tarafta farklı derinlikte iyileştirme</span><br /><br />A=0 ve P%= 1000 olan tip 0 iyileştirmeler için (kenarların bir derinliğinden düz birleştirme), bu durum için sol ve sağ tarafta farklı bir derinlik tanımlamak mümkündür.<br /><br /><img src="Imagenes/saneo_prof_diferente.png" style="width: 420px; height: 74px;" alt="" /><br /><span class="Parrafo">
+      <img src="Imagenes/saneo_prof_diferente_sec.png" style="width: 244px; height: 95px;" alt="" /><br /><br /><br />
+      <span style="font-weight: bold; font-style: italic;">Her kademenin minimum yüksekliği (Bmin) ve eğimleri ile tanımlanan iyileştirme</span><br />
+      <br />
+Sadece kademe yüksekliği <span style="font-weight: bold;">Bmin</span>'i kontrol etmek istendiğinde, minimum genişlik <span style="font-weight: bold;">A</span>'ya da bir değer girmek gerekir (örn. 0.1), çünkü A=0 ile kademesiz bir iyileştirme yapılır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneos_tipo0_Bmin_pend_editable.png" style="width: 394px; height: 85px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneos_tipo0_Bmin_pend.png" style="width: 431px; height: 215px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br /></span><span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;">2 katmana bölünmüş drenaj tabakalı iyileştirme</span><br />
+      <br />
+2 KATMAN kutucuğunu etkinleştirerek, drenaj katmanının metrajını ikiye bölebiliriz, bitkisel toprak katmanından başlayarak ayırt ederek ve geçiş malzemelerini sadece geçiş dolguları için bırakarak.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneos_2capas.png" style="width: 250px; height: 68px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <span style="font-style: italic; font-weight: bold;">Eksende ölçülen yüksekliğe bağlı olarak alternatif iyileştirmeler</span><br />
+      <br />
+Eksende ölçülen yüksekliğe bağlı olarak alternatif iyileştirmeler tanımlanabilir. Bu durumda, en büyük yükseklikten başlayarak tanımlanmalıdır. Örneğin:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Veri 1:&nbsp; Tip=0, BaşKM/BitKM&nbsp; H=8 (Eksende Terasman(68) ve S.Z. (66) arasında ölçülür): Eksendeki dolgu yüksekliği 8'den büyükse iyileştirmeyi yapar.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Veri 2 : Tip=0, Aynı BaşKM/BitKM H=4 (eksende): Bu iyileştirmeyi 4'ten büyük ve 8'den küçük dolgu için yapar.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Veri 3 : Tip=0, Aynı BaşKM/BitKM H=0: Bu iyileştirmeyi geri kalan dolgular için yapar (yükseklik 4'ten küçük).</span></li>
+      </ul>Hem tip 0 hem de tip 2 iyileştirmeler için, her bir kesim veya dolgu yüksekliği için farklı bir drenaj malzemesi kullanılabilir: Drenaj katmanı, Stabilize zemin 1, 2, 3, 4 veya 5 arasından seçim yapılabilir. <span style="font-weight: bold;">2 KATMAN</span> seçeneği işaretliyse uygulanamaz.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/san_capa_dren.png" style="width: 246px; height: 165px;" alt="" /><br />
+      </div>
+      <br />
+
+      <span class="Parrafo">
+      <br />
+      </span><span class="Titulo_2"><a name="tipo_1">Eşit kalınlıktaki tabakalar için iyileştirme (tip 1)</a></span><br />
+      <span class="Parrafo"><br />
+      Uygulama makineleri birkaç parametreyi belirler. Minimum genişlik parametresi (<span style="font-weight: bold;">Amin</span>), kazı makinelerinin genişliğiyle, tabakaların kalınlığı ise serici makinelerle belirlenir.<br />
+      <br />
+Ayrıca, her kademenin başından dolgu şevine kadar minimum bir mesafe belirlenebilir ve bu, <span style="font-weight: bold;">Bmin</span> parametresiyle verilir.<br />
+      <br />
+Kademeli uygulamanın yapılmasını belirleyen, enkesit bandındaki arazinin genel eğiminin bir <span style="font-weight: bold;">M</span> değeri vardır. Eğer eğim belirli bir <span style="font-weight: bold;">M</span> sınır değerini aşarsa, kademeli kazı yapılır. Bu değere ulaşılmazsa, kademelendirme yapılmaz (ancak iyileştirme yapılır).<br />
+<br />
+      </span><img src="Imagenes/saneo_tipo1_1.png" style="width: 257px; height: 108px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Bu kazı, dolgu şev eteğinden, dolgunun oturduğu sağlam zemin hattını (L66) kesene kadar belirli bir <span style="font-weight: bold;">C</span> şeviyle başlar.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo1_2.png" style="width: 270px; height: 126px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Tabakaların E kalınlığına göre, kademeyi oluşturmak için belirli sayıda tabaka serilebilir. Şekilde, iki tabakaya karşılık gelen kalınlık, oturma hattı 66'yı aşmaktadır.<br />
+      <br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+İlk tabaka serilir ve dolgu oturma hattının ikinciyle kesişimine kadar ulaşılır, sonuçtaki <span style="font-weight: bold;">A</span> genişliğinin tolere edilebilir minimum genişlik <span style="font-weight: bold;">Amin</span>'den büyük olduğu kontrol edilir. Aksi takdirde, minimum genişlik kazılır ve daha önce bahsedilen prosedüre göre işlem yapılır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneo_tipo1_3.png" style="width: 628px; height: 152px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Dolgu eteğinde, belirtilen <span style="font-weight: bold;">Amin</span> genişliğinde tek bir kademe yapma imkanı vardır. Bu durumda, kademe kazısı için bir <span style="font-weight: bold;">T</span> şevi tanımlanmasına izin verilir.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/san1_unico.png" style="width: 600px; height: 223px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+</span>Tip 1 iyileştirmeler için, A=0 genişliğiyle: Eğer eğime %1000'lik bir değer girersek, bir dolgu eteğinden diğerine (belirtilen derinlikle) değişken eğimle yapılır.<span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="tipo_2">Maksimum ve minimum kademelerle iyileştirme (tip 2)</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Yine, <span style="font-weight: bold;">Amin</span>, kademe başına minimum genişliktir. Ayrıca, bu durumda maksimum kademe <span style="font-weight: bold;">Emaks</span> ve minimum kademe <span style="font-weight: bold;">Emin</span> vardır. Bu tür iyileştirmelere bir drenaj katmanı da eklenebilir.<br />
+      <br />
+Kademelerin şevi, <span style="font-weight: bold;">T</span> kutucuğundan verilir ve eğimleri <span style="font-weight: bold;">P%</span> kutucuğundan verilebilir.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_saneo_terraplen_tipo2.png" style="width: 600px; height: 223px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+<a href="#tipo_1">Tip 1</a> iyileştirme durumunda olduğu gibi, her kademenin başından dolgu şevine kadar olan minimum mesafe de <span style="font-weight: bold;">Bmin</span> parametresiyle belirlenebilir.<br />
+      <br />
+      </span><span class="Parrafo">İlk kademe için, <span style="font-weight: bold;">A1</span> değeriyle farklı bir genişlik tanımlanabilir. Her durumda, bu tür bir iyileştirmede <span style="font-weight: bold;">Bmin</span> parametresi kullanılırsa, ilk kademenin o genişliğinin (<span style="font-weight: bold;">A1</span>) iptal edilmesi tavsiye edilir; bu durumda <span style="font-weight: bold;">Amin</span> için daha küçük değerler kullanılabilir.</span><br />
+      <span class="Parrafo"><br />
+Kademelendirme için referans hattı, <span style="font-weight: bold;">P</span> derinliğine konumlandırılır. Bu <span style="font-weight: bold;">P</span> derinliği, <span style="font-weight: bold; font-style: italic;">Z</span> kutucuğu işaretlenerek mutlak kot olarak verilebilir.<br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo2_2.png" style="width: 270px; height: 156px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Bu tür kademelendirmenin tasarımı, referans hattını kesene kadar belirli bir T şeviyle, minimum Amín veya A1 genişliğiyle başlar.<br />
+      <br />
+Ulaşılan yükseklik, minimum <span style="font-weight: bold;">Emin</span> ve maksimum <span style="font-weight: bold;">Emaks</span> kademe boyutlarıyla karşılaştırılır. Kazının bitişi, dolgu şev eteğinin düşeyinde, bir <span style="font-weight: bold;">C</span> şeviyle yapılır, ancak <a href="#cierres">bitiş tipleri</a> 0 veya 1 için de yapılandırılabilir.<br />
+      <br />
+      </span>
+
+      <p class="MsoBodyText" style="margin-bottom: 0.0001pt;"><span style=""><br />
+</span></p>
+      <p class="MsoBodyText" style="margin-bottom: 0.0001pt;"><img src="Imagenes/saneo_tipo2_3.png" style="width: 339px; height: 120px; margin-right: 7px;" alt="" align="left" /><span style=""><br />
+      </span></p>
+      <p class="MsoBodyText" style="margin-bottom: 0.0001pt;"><span style="">Eğer bu yükseklik, minimum kademe </span><span style="font-weight: bold;" class="EstiloNegritaarial10"><span style="font-size: 10pt;">Emin</span></span><span style="">'den küçükse, minimum kademeyi uygulamayı başarana kadar minimum genişlik aşılır.</span></p>
+
+
+      <br />
+      <span class="Parrafo"><br />
+      <br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo2_4.png" style="width: 292px; height: 192px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+Eğer değeri, minimum <span style="font-weight: bold;">Emin</span> ve maksimum <span style="font-weight: bold;">Emaks</span> kademeler arasında ise, ulaşılan yüksekliğe göre uygulanır.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo2_5.png" style="width: 278px; height: 129px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><br />
+      <br />
+Son olarak, sonuçtaki yükseklik maksimum kademe <span style="font-weight: bold;">Emaks</span>'tan büyükse, minimum genişlik<span style="font-weight: bold;"> Amin</span> uygulanır ve <span style="font-weight: bold;">Emaks</span> değeriyle bir önceki kademe oluşturulur, ardından yeni bir minimum genişlikle devam edilir.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+İlk kademe için farklı bir yükseklik, <span style="font-weight: bold;">E1</span>, önceden belirlenebilir. Örn: 1m yüksekliğinde bir ilk kademe ve geri kalanı 0.5m istiyoruz. O zaman şöyle yaparız: <span style="font-weight: bold;">E</span>=0.5&nbsp; <span style="font-weight: bold;">Emaks</span>=0.5&nbsp;<span style="font-weight: bold;"> E1</span>=1.00 (bunun için <span style="font-weight: bold;">Emaks</span> 1.0 olarak alınır).<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/san_emax.png" style="width: 195px; height: 96px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <img src="Imagenes/saneo_tipo2_1.png" style="width: 291px; height: 175px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span style="font-weight: bold;">M</span>, % cinsinden bir sınırlayıcı faktördür; bu faktörle, arazi eğimi o değeri aştığı andan itibaren kademelendirme yapılır, eğimin altında kaldığı bölgelerde ise kademelendirme yapılmaz (ancak iyileştirme yapılır). Program, eğimi sadece arazi profilinin bir yükselen veya alçalan kesiminin başında analiz eder.<br />
+      <br />
+      </span><img src="Imagenes/saneos_casilla_M.png" style="width: 68px; height: 41px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Onay kutucuğu etkinleştirilirse, program, arazi profilinin bir yükselen veya alçalan kesiminde araya girmiş olsalar bile, belirtilenden daha düşük eğimli bölgelerde kademelendirme yapmaktan kaçınır.<br />
+      <br />
+Drenaj katmanının <span style="font-weight: bold;">Di</span>/<span style="font-weight: bold;">Df</span> kalınlığının sadece dikey olarak ölçülmesi imkanımız vardır.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/san_vert.png" style="width: 200px; height: 159px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span><span class="Parrafo"><br />
+</span></span></span>Drenaj Katmanının tavanıyla ilgili olarak: aşağıdaki modlara sahibiz: Paralel/Dikey/Arazi/Yatay.<br /><ul><li>Paralel Modu: Tavan, iyileştirme tabanına paralel kademelerle oluşturulur.</li><li>Dikey Modu: İyileştirme tabanının dikey bir ötelemesidir.</li><li>Arazi Modu: Tavan araziye paraleldir.</li><li>
+Yatay Modu: kotların başlangıcı dolgu şev eteğidir ve Di/Df değerleri 0 veya 0'dan büyük veya küçük olabilir.</li><li>
+Yatay Sağ ve Yatay Sol modları. Yatay mod gibidirler ancak kot için dolgu şev eteği referansının hangi taraftan kullanılacağını kontrol etmeyi sağlarlar.</li></ul>
+      
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">1/2</span> kutucuğu etkinleştirildiğinde, kademelerin yüksekliği, tanımlanan derinliğin yarısı yukarıda ve diğer yarısı aşağıda olacak şekilde uygulanır.<br />
+      <br />
+<span style="font-weight: bold;">D0</span> kutucuğu:<br />
+      <br />
+Drenaj katmanı iki katmana bölünebilir. Eğer <span style="font-weight: bold;">D0</span> > 0 ve drenaj katmanının toplam kalınlığı <span style="font-weight: bold;">D</span>'den küçük bir değer verilirse, o zaman drenaj katmanının tabanında <span style="font-weight: bold;">D0</span> kalınlığında bir katman oluşturulur.<br />
+Bu katmanın metrajı için malzeme <span style="font-weight: bold;">Stabilize Zemin</span> 1, 2 veya 3 olabilir. Ve tavana kadar olan geri kalanı Drenaj Katmanı olacaktır.<br />
+Eğer <span style="font-weight: bold;">Di</span> ve <span style="font-weight: bold;">Df</span> değerleri drenaj katmanının tavanının mutlak kotu olarak verilirse, o zaman <span style="font-weight: bold;">D0</span> da drenaj katmanı tabanının tavanı için mutlak kot olarak alınacaktır. <span style="font-weight: bold;">2 KATMAN</span> seçeneği ile uyumlu DEĞİLDİR.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/san_d0.png" style="width: 600px; height: 223px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Eğer <span style="font-weight: bold;">A1 genişliğine</span> 1000 değeri atarsak, o zaman iyileştirme hattı, iyileştirmenin başlangıç ve bitiş noktaları arasında bir doğrudur.<br />
+      <br />
+Tip 1 ve 2 iyileştirmeler için, mevcut kaplamanın varlığını dikkate almayan <span style="font-weight: bold;">Mevcut Kapl. Yok</span> seçeneğimiz vardır.<br /><br />Tip 2 iyileştirmeler için, dolgu bir anroşman üzerine oturduğunda, kademelendirmenin anroşman tabanından (kod 601.1) başlamasına izin veren <span style="font-style: italic;">Anroşman</span> seçeneğini etkinleştirmek mümkündür.<br /><br /></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span><img style="width: 600px; height: 205px;" alt="" src="Imagenes/saneos_tipo2_escollera.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span><span class="Titulo_2"><a name="cierres">İyileştirme Bitişleri</a></span><br />
+      <span class="Parrafo"><br />
+Program, aşağıda açıklanan çeşitli iyileştirme bitişi türlerine sahiptir.<br />
+      <br />
+      <br />
+      <span class="Apartados">Tip 0, 1 ve 2 iyileştirme bitişleri</span><br />
+      <br />
+Bu bitiş türünde, dolgu şev eteği iyileştirme tabanına yansıtılır ve bu, doğal arazi ile kesişene kadar yatay olarak dışarı doğru uzatılır.<br />
+      <br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Tip 1 bitişi</span>, dolgu şev eteğinden başlar ve kullanıcı tarafından belirtilen <span style="font-weight: bold;">C</span> şeviyle iyileştirme tabanını arar.<br />
+      <br />
+      </span></span></span><img src="Imagenes/saneo_terr_cierre_tipo_1_a.png" style="width: 260px; height: 67px;" alt="" align="left" hspace="5" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu bitiş türü için ayrıca, iyileştirmenin başlangıcı, <span style="font-weight: bold;">a</span> parametresi aracılığıyla dolgu şev eteğinden ölçülen sabit bir mesafede kaydırılabilir. İşleyişi şöyledir: Pay, dolgu şev eteğinden yatay olarak ölçülür. Pozitif değerler dışa doğru bir ötelemeyi, negatif değerler ise içe doğru bir ötelemeyi belirtir. Varsayılan olarak mesafe, bitiş şevinin eteğine kadar ölçülür. Ek olarak, bu parametrenin yanındaki kutucuk etkinleştirilirse, mesafe dolgu şev eteğinden yerine bitiş şevinin başından ölçülecektir.<br />
+İlk kutucuk etkinleştirilerek: iyileştirme payının değeri, dolgu şevinin yüksekliğine bağlı olarak verilebilir: Pay = a x Yükseklik.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: left;">Pay değerinin sağındaki ikinci kutucuk şu durumlarda kullanılır: Yarma geometrisine sahip (hendek vb.) ancak dolguda olan kesitler için, çünkü kazı tamamen bitkisel veya zayıf zemin içinde olup sağlam zemine ulaşmamaktadır.<br />
+İyileştirmenin 100 kodunda bitmesi ve 600'e (hendek tabanı) kadar uzatılmaması sağlanabilir. Bunun için, istenen bitiş şeviyle tip 1 bir iyileştirme bitişi seçilir ve pay değeri a=0 bırakılarak, <span style="font-weight: bold;">Dolgu şev eteğinden iyileştirme başına ölçülen pay</span> seçeneği işaretlenir. Eğer bu son seçenek <span style="font-weight: bold;">Karma Kesit</span> seçeneğiyle aynı anda kullanılırsa, pay hendek tabanından (yani kod 600'den) da uygulanacaktır.<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+&nbsp;<br />
+      <span style="font-weight: bold;">Tip 2 bitişi</span> durumunda ise, dolgu şev eteği iyileştirme tabanına yansıtılır ve bu noktadan itibaren <span style="font-weight: bold;">C</span> şeviyle ve doğal araziye kadar dışarı doğru çıkılır.<br />
+      <br />
+      <br />
+      <span class="Apartados">Tip 3, 4 ve 5 iyileştirme bitişleri</span><br />
+      <br />
+Tip 2'ye benzerler, ancak iyileştirmenin başlangıç noktası olarak, iyileştirme derinliğindeki dolgu şev eteğinin düşeyi yerine, iyileştirme horizonuna kadar şevini takip eden dolgu şev eteğinin uzantısı alınır.<br />
+      <br />
+Dolgu metrajı o zaman, bitkisel toprağı yüzeye kadar dolduracak kısmı içermez, yani sağlam zeminden yukarıya doğru dolgu şevi içinde ölçülür.<br />
+      <br />
+İyileştirme dolgusu metrajı ( <span class="Archivo">DOLGU_IYIL</span> olarak verilir), tüm iyileştirme kazısını (sağlam zemin altı) ölçer ve dolgu şevinin uzantısının dışında kalan miktar dahil edilmez. Bu kısım, dolgu şevinin dışına ve yüzeye kadar farklı bir malzeme ile doldurulması durumunda ayrı olarak ölçülür.<br />
+      <br />
+Tip 4 bitişi, tip 3'e benzer, ancak farkı, dolgu hattının (L86), dolgu şev eteğinden arazi yüzeyi boyunca iyileştirme sonuna kadar gitmek yerine, dolgu şeviyle iyileştirme tabanını kesene kadar alçalmaya devam etmesi ve ardından bu çizgiyi sona kadar takip etmesidir. Ayrıca, tip 4 bitişli iyileştirmeler için:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">İyileştirme dolgusu ( <span class="Archivo">DOLGU_IYIL</span> olarak metrajlandırılır), dolgu şevinin uzantısına kadar ölçülür.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dolgu şevinin dışında ve doğal araziye kadar olan iyileştirme kazı boşluğuna karşılık gelen dış iyileştirme dolgusu metrajı ( <span class="Archivo">DIS_IYIL_DOLGU</span> olarak metrajlandırılır) dikkate alınır.</span></li></ul>
+      <ul>
+        <li><span class="Parrafo">Kazı tabanında ölçülen ve <span style="font-weight: bold;">a</span> parametresine karşılık gelen yatay bir pay tanımlamayı sağlar.<br />
+</span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo">Dolgu şev eteğinin bir palye ile çakıştığı durumlarda, sağlam zemine kadar olan uzantı için aynı bitiş şevi kullanılır. Bu bitiş tipinde (<span style="font-weight: bold;">Tip 4</span>) dolgu şev eteğinin kodlaması, plan, boykesit çizgileri ve taramaların çizimini iyileştirmek için değiştirilir.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/saneos_cierre_tipo4_berma_dibujo.png" style="width: 361px; height: 270px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/saneos_cierre_tipo4_berma.png" style="width: 382px; height: 248px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Tip 5 bitişi, tip 4'e benzer, ancak farkı, bu durumda <span style="font-weight: bold;">a</span> parametresinin, dolgunun iyileştirme tabanına kadar uzatıldığı şevi belirtmek için kullanılmasıdır<span style="font-weight: bold;">.<br />
+      <br />
+      <br />
+      <span class="Apartados">İyileştirmeler ve kullanım ile kamulaştırma alanları</span><br />
+      <br /></span>
+Dolgu şev eteğinden daha uzağa başlayan bir bitişle ilişkili bir dolgu iyileştirmesi olduğunda, program bunu, gerçek kullanım alanlarını dikkate almak için listelerde ve çizimlerde dikkate alır. Ayrıca, kamulaştırma sınırı o noktadan itibaren ölçülür.<span style="font-weight: bold;"><br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="avanzado">Dolgu iyileştirmelerinin gelişmiş tanımı</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo">Bu bölümde, açıklanan tüm iyileştirme tiplerine ortak olan bir dizi parametreye bağlı olarak dolgu iyileştirmesini yapılandırmak için programın sunduğu bir dizi olanak bir araya getirilmiştir.<br />
+      <br />
+      <br />
+      </span></span></span><span class="Apartados"><a name="por_codigo">Yanal sınırlama: koda göre iyileştirme</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><img src="Imagenes/saneo_porCodigo.png" style="width: 117px; height: 79px;" alt="" align="right" hspace="5" /><span class="Parrafo"><span class="Parrafo">ENKESİT DÜZENLEYİCİ'den&nbsp;arazi yüzeyinin kodlarını tanımlamak mümkündür, bu da iyileştirmeyi sınırlamak için kullanılabilir.<br />
+      <br />
+Aynı KM'de, arazi yüzeyinin kodlarına göre farklı bölgeleri tanımlayarak farklı iyileştirme tipleri uygulanabilir.<br /><br />Platform yüzeyinin (Yüzey 67) kodlarını kullanmak mümkündür. Bu durumda ayrıca taraf da belirtilmelidir. Eğer kod 0 kullanılırsa, o tarafta sınırlama olmadığı anlamına gelir.<br />
+      <br />
+Ayrıca, aşağıdaki hususlar dikkate alınmalıdır:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">İyileştirmeler menüsünde, aynı KM aralığında uygulanan farklı bölgeler, enkesitin solundan sağına doğru tanımlanmalıdır.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Eğer bir tarafta kod 0 konulursa, o tarafta kesitin sonuna kadar olduğu anlaşılır.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Eğer bir bölgenin sol kodu, bir öncekinin sağ koduyla çakışmazsa, yani bitişik değillerse, boşlukta iki ucun en düşük kotuyla yatay bir iyileştirme yapılır.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;">Örnek</span>:<br />
+      <br />
+      </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">Dolgu kesitinde mevcut bir karayolunun tanındığı bir arazi düşünelim. Mevcut karayolunun genişletilmesi projesi yapılır ve orijinal arazi bölgelerinde belirli özelliklere sahip bir <a href="#tipo_1">tip 1</a> iyileştirme ve mevcut dolgu bölgesinde farklı bir geometriye sahip bir <a href="#tipo_2">tip 2</a> iyileştirme yapılması istenir.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">İlk adım, &nbsp;</span></span><span class="Parrafo"><span class="Parrafo">ENKESİT DÜZENLEYİCİ</span></span><span class="Parrafo"><span class="Parrafo"> aracılığıyla, arazi profilindeki mevcut dolgu eteklerini kodlamaktır. Örneğin, şöyle ayarlanabilir:</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">Mevcut sol dolgu eteği: kod 15</span></span><br />
+      <span class="Parrafo"><span class="Parrafo">Mevcut sağ dolgu eteği: kod 5</span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">Dolgu iyileştirmeleri menüsünde, aynı KM aralığıyla, aşağıdaki gibi üç veri satırı tanımlanacaktır:</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <table style="text-align: left; margin-left: 40px; width: 424px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 23px;">1.</td>
+            <td style="vertical-align: top; width: 91px;"><span class="Parrafo"><span class="Parrafo">İyileştirme tip 1</span></span></td>
+            <td style="vertical-align: top; width: 102px;"><span class="Parrafo"><span class="Parrafo">Sol Kod = 0</span></span></td>
+            <td style="vertical-align: top; width: 170px;"><span class="Parrafo"><span class="Parrafo">Sağ Kod = 15</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 23px;">2.</td>
+            <td style="vertical-align: top; width: 91px;"><span class="Parrafo"><span class="Parrafo">İyileştirme tip 2</span></span></td>
+            <td style="vertical-align: top; width: 102px;"><span class="Parrafo"><span class="Parrafo">Sol Kod = 15</span></span></td>
+            <td style="vertical-align: top; width: 170px;"><span class="Parrafo"><span class="Parrafo">Sağ Kod = 5</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 23px;">3.</td>
+            <td style="vertical-align: top; width: 91px;"><span class="Parrafo"><span class="Parrafo">İyileştirme tip 3</span></span></td>
+            <td style="vertical-align: top; width: 102px;"><span class="Parrafo"><span class="Parrafo">Sol Kod = 5</span></span></td>
+            <td style="vertical-align: top; width: 170px;"><span class="Parrafo"><span class="Parrafo">Sağ Kod = 0</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span><span class="Apartados"><a name="terreno_competente_inadecuado">Sağlam zemin ve uygun olmayan zemin referanslı iyileştirmeler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><img src="Imagenes/saneo_ref.png" style="width: 56px; height: 57px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Sağlam ve zayıf zemin referansları sadece <a href="#tipo_0">tip 0</a> ve <a href="#tipo_2">tip 2</a> iyileştirmelere uygulanabilir. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> bu konuda aşağıdaki olanakları sunar:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sağlam zemin</span> (<span style="font-weight: bold;">SZ</span>): Varsayılan seçenektir.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Uygun olmayan zemin</span> (<span style="font-weight: bold;">UZ</span>):
+İyileştirmeyi oluşturmak için uygun olmayan zeminin tavanı referans olarak alınır. Bu iyileştirmenin altında uygun olmayan zemini kaldırmak gerekmez.&nbsp;</span></span><span class="Parrafo"><span class="Parrafo">Metrajlara gelince:</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo">İyileştirme hattının altında kalan uygun olmayan zemin dikkate alınmaz.</span></span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo">İyileştirme kazısı metrajı, iyileştirme dolgusu gibi sadece sağlam zeminin altında dikkate alınmaya devam eder. Sağlam zeminin üzerinde kazı, UYGUN OLMAYAN ZEMİN ile ve dolgu, DOLGU ile ölçülecektir.</span></span></li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bir dolgu iyileştirmesi, uygun olmayan arazi yüzeyinde referansla tanımlandığında, yarma bölgelerindeki davranış değiştirilir. İyileştirme hattı (L87), fazla kazı hattı (L107) veya terasman (L68) ile veya bunlardan daha alçak olduğu yerlerde uygun olmayan arazi (L105) hattı ile tamamlanır, böylece platformun altında da 87 hattının altındaki uygun olmayan arazi kaldırılmaz.</span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sağlam zemin artı bir derinlik</span> (<span style="font-weight: bold;">SZp</span>): İyileştirme derinliğini, sağlam zeminden <span style="font-weight: bold;">SZ</span> gibi ölçer, ancak şu farkla:</span></span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">SZ</span> ile, terasman veya fazla kazı sağlam zemin hattının altında olduğunda iyileştirme yapılır.</span></span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">SZp</span> ile, terasman veya fazla kazı sağlam zeminin altında olduğunda ve P derinliğine kadar da iyileştirme yapılır (terasman <span style="font-weight: bold;">P</span> derinliğinin üzerinde olduğu sürece dolgu olarak kabul edilir, yani <span style="font-weight: bold;">P</span>'den daha az derinlikte yarma bölgeleri).</span></span></li>
+      </ul>
+      </span></span>
+      <div style="margin-left: 40px;">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">SZp</span> referansıyla genişletme ve iyileştirme projelerinde, mevcut kaplamanın altında iyileştirme uygulanmaz. Bu durumda dolgu iyileştirmesi tanımlanırken <a href="OL_saneos_terraplen.html#tipo_2">tip 2</a> kullanılması tavsiye edilir.</span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span><span class="Apartados"><a name="vector_desmonte_terreno_inadecuado">Dolgu iyileştirmeleri ve uygun olmayan zeminde yarma vektörü</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Uygun olmayan zeminde bir yarma vektörünü dolgu iyileştirmesiyle birlikte kullanmak mümkündür. Herhangi bir iyileştirme türü (0, 1, 2) için geçerlidir, ancak bir <a href="#cierres">tip 1 bitişi</a> kullanılmalıdır. O zaman, dolgu şevi sağlam zemin hattına (L66) kadar iner ve o noktadan iki çizgi doğar:<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Birincisi dışa doğru, arazi yüzeyini (L104) kesene kadar yükselen uygun olmayan zemindeki yarma vektörüdür.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İkincisi içe doğru, iyileştirme kazı hattıdır (L8).</span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span class="Apartados"><a name="fronteras">Sınırlar ve aynı enkesitte iki tip iyileştirme</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><img src="Imagenes/saneo_frontera.png" style="width: 80px; height: 40px; margin-right: 7px;" alt="" align="left" /><img src="Imagenes/saneo_frontera_lado.png" style="width: 91px; height: 63px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Dolgu iyileştirmeleri menüsünde, yatayda bir sınır çizgisi seçilebilir. İyileştirmeler, çizginin sadece bir tarafında veya her iki tarafında yapılabilir.<br />
+      <br />
+Aynı KM'de (eşit veya çakışan kesimler), birisi çizginin solunda ve diğeri sağında olmak üzere iki iyileştirme bir arada bulunabilir.<br />
+      <br />
+Örneğin, kısmen mevcut bir dolgu üzerine oturan bir hat genişletmesi durumunda, orijinal araziye oturan kısım bir tür iyileştirme ile ve mevcut dolguya oturan kısım başka bir türle iyileştirilebilir; sınır çizgisi olarak mevcut dolgunun eteği seçilerek.<br />
+      <br />
+Eğer bir sınırın bir tarafı için bir iyileştirme tanımlanırsa, sınır çizgisine bir mesafe de belirtilebilir. Eğer aynı bölgede iki iyileştirme tanımlanırsa,&nbsp; örneğin:<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sınırın sağ tarafı +2 metre</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sınırın sol tarafı -2 metre</span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ortada kalan bölge, iki yan iyileştirmenin en düşük kotuyla tek bir yatay kesimle iyileştirilir. Ardından, iki iyileştirmenin birleşimi, sınır çizgisinden daha yüksek iyileştirmeye doğru en düşük iyileştirmenin bitiş şevi kullanılarak yapılır, şekilde gösterildiği gibi:<br />
+<br />
+      </span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/saneo_con_lfr.png" style="width: 532px; height: 220px;" alt="" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span>Bir KM'de, bir kodla veya Sınır Çizgisiyle kesilmiş tek bir iyileştirme verimiz olduğunda, eğer 0 veya 1 tipi bir bitişimiz ve 0'dan farklı bir şevimiz varsa, bu şevle koddan veya sınır çizgisinden araziye veya kazı hattına (Terasman veya seçme malzeme) karşı kapatır.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span><img style="width: 600px; height: 211px;" alt="" src="Imagenes/saneo_cierre_codigo_o_lf.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Geometrik ekseni, tanımlanmadığı bölgelerde veya hiçbir sınır çizgisi seçilmemişse sınır çizgisi olarak kullanmak mümkündür; ayrıca, o sınır çizgisi için eksene bir mesafe de belirtilebilir:<br /><br /></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span><img style="width: 600px; height: 211px;" alt="" src="Imagenes/saneo_eje.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br /></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span></span><span class="Apartados"><a name="cota_base">Taban kotu ile verilen iyileştirmeler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><img src="Imagenes/saneo_cotaBase.png" style="width: 171px; height: 64px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, başlangıç ve bitiş KM'leri ile başlangıç ve bitiş mutlak kotlarıyla verilen kesimlere göre, <a href="#tipo_0">tip 0</a> veya <a href="#tipo_2">tip 2</a> bir iyileştirme tanımlamak için bir liste oluşturmayı sağlar.<br />
+      <br />
+      Bu seçenek, <span style="font-weight: bold;">Pi</span> ve <span style="font-weight: bold;">Pf</span> değerlerinin mutlak kot olduğu (seçenek <span style="font-weight: bold;">Z</span>) her liste kesimi için bir iyileştirme tanımlamaya eşdeğerdir. Fark, iyileştirme taban kotu ile bir liste kullanıldığında, sadece bir iyileştirme verisi ( <a href="#tipo_0">tip 0</a> veya <a href="#tipo_2">tip 2</a>) tanımlamanın yeterli olmasıdır.<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_saneo_cotaBase.png" style="width: 344px; height: 214px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span>
+      <table style="text-align: left; height: 51px; width: 692px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 35px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td><td style="vertical-align: top; width: 647px; text-align: justify;"><span class="Info"><a href="OL_rasantes_diseno.html">KIRMIZI KOTLAR</a> menüsünde iyileştirme tabanının boykesitini görmek için, iyileştirme verilerine göre enkesitlerin enterpole edilmesini belirtmek, boykesiti hesaplamak ve KIRMIZI KOTLAR'a arazi enkesitleri olarak # ekseninin ISPOL#.per dosyasını yüklemek yeterlidir.</span><br />
+            </td></tr></tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Apartados"><a name="calzada_existente">Mevcut kaplamalı iyileştirmeler</a></span><a name="calzada_existente"><br />
+      <br />
+Genişletme ve iyileştirme projesi durumunda, mevcut kaplama kenarındaki bitiş şevini temsil eden <span style="font-weight: bold; font-style: italic;">C2</span> ve mevcut kaplama kenarındaki palye genişliği olan <span style="font-weight: bold; font-style: italic;">A2</span> parametrelerini kullanabiliriz. Tip 2 iyileştirmeler tavsiye edilir.<br />
+      <br />
+      </a></span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneos_a2_c2.png" style="width: 256px; height: 74px;" alt="" /></span><a name="calzada_existente"><br />
+      <span class="Parrafo"></span></a></div>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Dolgu iyileştirmesi için bir <span style="font-weight: bold; font-style: italic;">A2</span> palye genişliği ve mevcut kaplama kenarında bir <span style="font-weight: bold; font-style: italic;">T2</span> şevi tanımlandığında, bu şevin, arazideki nihai bitiş şevi bölgesindeki teorik iyileştirme hattını kesmesi olabilir. Bu durumlarda, kaplamanın bu tarafındaki tüm iyileştirme kaldırılır.<br />
+      <br />
+Mevcut kaplamalı durumlar için, mevcut kaplamanın altındaki araziyi iyileştirmek isteniyorsa, <a href="OL_EyM.html">Kazıma ve Söküm</a> sekmesinde, <span style="font-weight: bold;">Hiçbir durumda kullanma</span> seçeneği için, Mevcut kaplama altında iyileştirmeye izin ver seçeneği eklenir.<br />
+      <br />
+</span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/san_eym.png" style="width: 684px; height: 85px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

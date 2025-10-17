@@ -1,0 +1,2118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plan Çizim Modları (.lil)</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLAN ÇİZİM MODLARI (.lil)<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 696px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td class="obsolete Parrafo" style="width: 692px; vertical-align: middle;">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="OL_Catalogo_archivos_LIL.html" target="_blank">.lil Dosyaları Kataloğu</a><br />
+      <a href="#descripcion">.lil Çizim Modu Dosyalarının Açıklaması</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#formato">.lil Dosyalarının Formatı</a><br />
+      <a href="#lineas_longitudinales">Boyuna Çizgiler</a><br />
+      <a href="#Peines_de_taludes">Şev Taramaları</a><br />
+      <a href="#peines_por_codigos">Kodlara Göre Taramalar</a><br />
+      <a href="#muros_y_cunetas_de_guarda">Duvarlar ve Kenar Hendekler</a><br />
+      <a href="#estructura">Sanat Yapıları</a><br />
+      <a href="#lineas_por">Yüzey, Kod ve Tip Kesite Göre Çizgiler</a><br />
+      <a href="#lineas_por_pendiente">Eğime Göre Çizgiler ve Eğimler</a><br />
+      <a href="#rotulacion_de_taludes">Şevlerin Etiketlenmesi</a><br />
+      <a href="#geopak">Geopak</a><br />
+      <a href="#recintos_dt">Yarma/Dolgu Alanları</a><br />
+      <a href="OL_ficheros_lil.html#isolineas">Eşyükselti Eğrileri</a><br />
+      <a href="#Traviesas_y_Carriles">Traversler ve Raylar</a><br />
+      <a href="#lineas_transversales">Enine Çizgiler</a><br />
+      <a href="#recintos_de_taludes">Şev Alanları</a><br />
+      <a href="#bordes">Sınırlar</a><br />
+      <a href="#pozos_tubos_y_codos">Rögarlar, Borular ve Dirsekler</a><br />
+      <a href="#tablas_de_textos">Metin Tabloları</a><br />
+      <a href="#lineas_por_simbolos">Sembollere Göre Çizgiler</a><br />
+      <a href="#simbolos_por_simbolos">Sembollere Göre Semboller</a><br />
+      <a href="#recintos_por_sup_y_cod"><span class="Parrafo">Yüzey ve Koda Göre Alanlar</span></a><br />
+      <a href="#conos_de_derrame">Dolgu Konileri</a><br />
+      <a href="#fresado_y_demolicion">Kazıma (Frezaj) ve Söküm</a><br />
+      <a href="#bordillostableros">Bordürler, Tabliyeler</a><br />
+      <a href="#capasfirmes">Üstyapı Katmanları</a><br />
+      <a href="#Cambios_de_pendiente"><span style="color: rgb(0, 79, 175);">Eğim Değişimleri</span></a><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/editable_lil.png" style="width: 350px; height: 316px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><br />
+Bu menü aracılığıyla .lil plan çizim dosyalarını interaktif olarak düzenleyebiliriz. Diyalog kutusuna girildiğinde, mevcut çizim modu (ISPOL.lil) otomatik olarak yüklenir ve değişiklikler mevcut eksen üzerinde yeniden çizilir.<br />
+Eğer eksen çok ağırsa, düzenleme başka bir eksen kullanılarak veya <span style="font-weight: bold;">Oto</span> seçeneği devre dışı bırakılarak yapılabilir, böylece yeniden çizimler kullanıcının isteği üzerine gerçekleştirilir.<br />
+Yaptığımız değişikliklerle .lil dosyalarını yükleyebilir veya kaydedebilir, ayrıca düzenlenmiş dosyayı ikinci veya üçüncü kütüphaneye kaydedebiliriz.<br />
+Bu diyalog kutusunda, herhangi bir varlığın tanımlandığı alt menülerde "tik" işaretleri görünecektir.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+Plan
+çizim modları, farklı elemanlar için seçilen 3B çizgi gösterim türünü
+yansıtır. Kütüphanede mevcut olan birçok modun adları, çizdikleri
+elemanları tanımlamaya yardımcı olan harf kombinasyonları kullanır:</span><span class="Parrafo"><br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 143px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">L<br />
+            </td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;">Boyuna
+çizgiler, eksen boyunca (eksenin kendisi, platform kenarları,
+banket kenarları vb.)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">B<br />
+            </td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;">Proje
+sınırları (dolgu etekleri ve yarma başları)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 10px; font-weight: bold;">P<br />
+            </td>
+            <td style="vertical-align: top; height: 10px; text-align: justify;">Şev
+taraması veya şev çizgileri<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; height: 10px;">E<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; height: 10px;">Kamulaştırma
+Sınırları (varsayılan olarak 5 metre)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; height: 14px;">T<br />
+            </td>
+            <td class="Parrafo" style="vertical-align: top; text-align: justify; height: 14px;">Arazinin
+enkesitleri, mevcut olduğu yerlerde<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 20px; font-weight: bold;">C<br />
+            </td>
+            <td class="Parrafo" style="vertical-align: top; height: 20px;">Yarma ve dolguları renkle göstermek için Kapalı Alanlar<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 16px; font-weight: bold;">M<br />
+            </td>
+            <td style="vertical-align: top; height: 16px; text-align: justify;">Duvarlar<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </span><span class="Parrafo"><br />
+Örneğin, LBT.lil&nbsp;<span class="Archivo">modu</span>,
+platformun boyuna çizgilerini, proje sınırlarını ve enkesitleri
+çizmeyi emreder. Belirli renkler ve modlar, dosya içindeki komut
+satırlarında ve .lil ÇİZİM MODLARI DÜZENLEYİCİSİ'nde açıklanmıştır.<br />
+      <br />
+      </span><span class="Parrafo">Şev taraması için P koduna birkaç ‘uzantı’ mevcuttur; <span style="font-weight: bold;">P11</span>
+programa ‘çizgileri’ banket kenarından çizmesini emreder ve <span style="font-weight: bold;">P5</span>
+aynısını palye kenarından (kod 50) yapar.</span><br />
+      <span class="Parrafo"><br />
+Aşağıda, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'un&nbsp;
+varsayılan olarak &nbsp;<span class="Archivo">\ispol\lib</span> dizininde sunduğu farklı .lil&nbsp;<span class="Archivo">dosyalarını</span> uygulayarak oluşturulan sonucun bazı basit grafik örnekleri gösterilmektedir.
+      <br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 641px; height: 271px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 294px;"><img src="Imagenes/ejemplo_lil_lp5.png" style="width: 238px; height: 206px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 327px;">
+            <div style="text-align: right;"><img src="Imagenes/ejemplo_lil_lp5m.png" style="width: 225px; height: 204px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">LP5.lil, palye kenarından şev taraması<br />
+            <br />
+            </span></td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">LP5m.lil, ayrıca duvarları da çizer</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 294px;"><img src="Imagenes/ejemplo_lil_lp11.png" style="width: 242px; height: 231px;" alt="" /><br />
+            <br />
+            </td>
+            <td style="vertical-align: middle; width: 327px;">
+            <div style="text-align: right;"><img src="Imagenes/ejemplo_lil_lbt_3D.png" style="width: 314px; height: 166px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">LP11.lil, banketten şev taraması</span></td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">LBT.lil, 3B görselleştirme</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="descripcion">.lil Çizim Modu Dosyalarının Açıklaması</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="formato">.lil Dosyalarının Formatı</a></span><br />
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 555px;">Bu
+ASCII dosyaları, örneğin Windows sistemlerinin not defteri
+kullanılarak düzenlenebilir.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/editable_simbolo_lil.png" style="width: 34px; height: 34px;" alt="" align="left" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Varsayılan olarak bu dosyalar, temel veya birincil kütüphanede mevcut
+olan çizgileri kullanır ve bu nedenle, eğer bu kütüphane
+değiştirilmişse, sonuçlar veya çizimlerin görünümü istenen gibi
+olmayabilir. Öte yandan, kullanıcının bu dosyaları düzenleyerek veya
+bunlardan yeni dosyalar oluşturarak kütüphaneyi zenginleştirmesi
+önerilir.<br />
+      <br />
+Aşağıda, kullanıcının bu tür dosyaları anlamaya başlaması için basit bir çizim modu (<span class="Archivo">LBT.lil</span>) açıklanmaktadır:<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># LBT.lil, L çizgilerini, T çizgilerini ve
+işgalleri çizer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># KODLARA GÖRE L ÇİZGİLERİNİN ÇİZİM
+KOMUTLARI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; koda
+kadar&nbsp;&nbsp;
+elemanlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-50.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+refüj
+tabanı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+refüj palyeleri ve yardımcıları&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ana
+platformlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+110.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dış palyeler ve banketler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dolgu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1200.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+hendek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+yarma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+69&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+zayıf zemin
+yarması&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># İŞGAL VE KAMULAŞTIRMA ÇİZGİLERİNİN ÇİZİM
+KOMUTU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L
+tipi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+elemanlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+65&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ulaşılan
+alanlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+74&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+kamulaştırma
+alanı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+ENKESİT ÇİZGİLERİNİN
+ÇİZİM
+KOMUTU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L
+tipi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+elemanlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+61&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+enkesit
+çizgileri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+TARAMALAR İÇİN
+ÇİZİM
+KOMUTU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; mes(mm)&nbsp;
+iptal&nbsp;&nbsp; 1 uzun, her
+n'de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># AYRI KENAR HENDEKLERİ İÇİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L
+tipi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+GL&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Boyuna
+Çizgiler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+GT&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Enine
+Çizgiler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L
+tipleri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+----------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+GL2&nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;
+168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boyuna
+Çizgiler
+(Dolg,Yarm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+GT2&nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;
+168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enine
+Çizgiler&nbsp;&nbsp;
+(Dolg,Yarm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+DUVARLAR İÇİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L
+tipi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+ML&nbsp;&nbsp;&nbsp;&nbsp;
+150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Boyuna
+Çizgiler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+MT&nbsp;&nbsp;&nbsp;&nbsp;
+150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Enine
+Çizgiler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;
+son&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+SON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"><span class="Archivo"> <br />
+      </span>İlk sütun çizim komutudur. Böylece, <span style="font-weight: bold;">T</span> komutu
+boyuna çizgiler çizmeyi sağlar. Örnekte, -50'ye kadar olan tüm benzer
+kodlar (bu, kod -100 olan refüj tabanını içerir) L39 çizgi tipiyle
+birleştirilecektir. -50 (iç palye kenarı) ile -10 arasındaki tüm olası
+kodlar, L81 çizgi tipiyle temsil edilecektir; bu, palye kenarlarını ve
+iç banket çizgisini, ayrıca olası kaldırımları veya iç sabit
+platformları içerir. Aynı işlem, 3000'e kadar olan farklı kod
+aralıklarıyla yapılır.<br />
+      <br />
+Bu çizgilerden herhangi birinin gösterimini engellemek için, ilgili
+koda -1 çizgi tipi atamak yeterlidir. Dördüncü sütun, program
+tarafından okunmaz ve yalnızca gelecekteki düzenlemeler için dosyanın
+daha iyi anlaşılmasına yönelik yorumlar olarak hizmet eder.<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 328px; text-align: justify;"><span class="Parrafo">Ardından, hem proje sınırlarını (komut <span style="font-weight: bold;">B</span>, çizgi tipi L65) hem de
+kamulaştırma alanı sınırlarını (komut <span style="font-weight: bold;">E</span>, çizgi tipi L74) temsil etmek için çizgi tipleri tanımlanır.</span><br />
+            <span class="Parrafo"><br />
+Bu dosyanın # karakteriyle başlayan her satırı program
+tarafından okunmaz; bu, kullanıcının bir satırı değiştirirken, tekrar
+ihtiyaç duyması durumunda önceki durumu koruması için kullanışlıdır.
+Örnekte, kamulaştırma sınırına karşılık gelen boyuna çizgiler, o satır
+bu karakterle başladığı için çizilmeyecektir.<br />
+            <br />
+Enkesitleri temsil eden çizgiler (komut <span style="font-weight: bold;">R</span>),
+L61 tipiyle çizilecektir, ancak <span style="font-weight: bold;">RE</span> komutuyla sanat yapısı kesitleri için farklı bir çizgi tipi tanımlamak mümkündür (LT.lil&nbsp;<span class="Archivo">dosyası</span>
+bunu kullanır). Bu komut, eksenin yarı sanat yapısında olup olmadığını
+ve sanat yapısının vinoluğunu dikkate alır.</span></td>
+            <td style="vertical-align: top; width: 344px;">
+            <div style="text-align: right;"><img src="Imagenes/ejemplo_lil_lt.png" style="width: 341px; height: 287px;" alt="" /><br />
+            </div>
+            <div style="text-align: center;"><span class="Info">LT.lil çizim moduyla çizilmiş plan</span><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span>Enkesit çizgileri, LT2.lil&nbsp;<span class="Archivo">çizim</span>
+modunun kullandığı <span style="font-weight: bold;">RS</span> komutu aracılığıyla iki belirli kod arasında kısmen de çizilebilir:<br />
+      <span class="Archivo"><br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Archivo"> ...</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo"># ENKESİT ÇİZGİLERİNİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#
+YÜZEY VE
+KODLARA GÖRE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L tipi&nbsp;
+Yüzey&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Başlangıç Kodu
+Bitiş Kodu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo"># ---&nbsp; ---------&nbsp;
+----------------&nbsp; -------------- ---------------&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; RS&nbsp;&nbsp;&nbsp;&nbsp;
+67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; RS&nbsp;&nbsp;&nbsp;&nbsp;
+68&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+68&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">...</span><br />
+      <span class="Archivo"></span></div>
+      <span class="Parrafo"><br />
+Bu dosyada, 67 enkesit yüzeyinin 2 ve 100 kodları arasındaki kısmı 67
+çizgi tipiyle ve 68 enkesit yüzeyinin 100 ve 5000 kodları arasındaki
+kısmı 68 çizgi tipiyle çizilir.<br />
+      <br />
+Enkesit çizgileri, LT2.lil&nbsp;<span class="Archivo">çizim</span> modunun kullandığı <span style="font-weight: bold;">RS</span> komutu aracılığıyla iki belirli kod arasında kısmen de çizilebilir.<br />
+      <br />
+Ardından, şev taraması çizimi için <span style="font-weight: bold;">P</span>
+komutu gelir. Bu örnekte satır yorumlu olduğu ve bu nedenle
+çizilmeyecek olsa da, işleyişi şu şekilde olacaktır:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 49px; width: 692px; margin-left: 0px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 209px;"><img src="Imagenes/peinado.png" style="width: 199px; height: 147px; margin-right: 7px;" alt="" /> </td>
+            <td style="vertical-align: top; width: 477px; text-align: justify;">Şev
+taramasında, bu moda göre, L0 tipi çoklu çizgiyle, her çizgi arasında 5
+mm kağıt mesafesiyle (1:1000 ölçek varsayılarak arazide 5 metre)
+çizilecektir. <br />
+            <br />
+Eğer sonuçta ortaya çıkan "çizgi" 1 mm'den kısa ölçülürse, görünür
+olmayacağı için gösterimi ihmal edilir. Aynı şekilde, her iki çizgiden
+biri uzun çizilir.<br />
+            <br />
+Şevlerin "taranması" ile ilgili, <a href="#peinado">daha sonra</a> detaylandırılan birkaç komut bulunmaktadır. </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_lil_peine.png" style="width: 346px; height: 102px;" alt="" /><br />
+      <span class="Info">Peine.lil çizim moduyla çizilmiş plan</span></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Örnek, ayrıca <a href="#cunetas">daha
+sonra</a> yorumlanan kenar hendekleri ve duvarların gösterimi için bir dizi komutla devam eder.<br />
+      <br />
+Son olarak, dosya büyük harflerle <span style="font-weight: bold;">SON</span> kelimesiyle biter, bu da ondan sonraki herhangi bir komut satırını geçersiz kılar.<br />
+      <br />
+Eğer aynı türden birkaç komut aynı anda kullanılırsa, okunan son komut
+kullanılacaktır. Örneğin, aşağıdaki durumda, sadece <span style="font-weight: bold;">C5</span> dikkate alınacaktır:<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># KAPALI ALANLAR OLUŞTURMA ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi Yarm&nbsp; L tipi
+Dolg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+--------------&nbsp;
+--------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+C11&nbsp;&nbsp;&nbsp;&nbsp;
+72&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+71&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (banket kenarından c==11)&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+72&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+71&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (terasmandan)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+C5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+72&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+71&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Palyeden kod==50)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+Ancak doğru olan, # karakterini <span style="font-weight: bold;">C11</span> ve <span style="font-weight: bold;">C</span> komut satırlarının başına koymak olacaktır.<br />
+      <br />
+Aşağıda, kesitin bölgelerine göre uygulamanın sunduğu tüm olanaklar
+açıklanmakta ve ayrıca demiryolu ve boru hattı projeleri için özel
+modlar tanımlanmaktadır. <br />
+      <br />
+      <a name="lineas_longitudinales"><span style="font-style: italic; font-weight: bold;">Boyuna Çizgiler</span><br />
+      <br />
+      </a></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Bu menüden, çizgi tipini ve bu boyuna çizgiyi hangi koda kadar çizmek istediğimizi tanımlayarak boyuna çizgileri elde edebiliriz.<br />
+            <br />
+<span style="font-weight: bold;">Hendek Tipi: L68'i takip et, L67'yi değil</span> seçeneğini etkinleştirerek, boru hattı eksenleri durumunda sadece hendek boyuna çizgilerini takip etmesini sağlayabiliriz.<br />
+            <br />
+            <span style="font-weight: bold;">Dolgu Kaplamasını Takip Et</span>: Bu kutucukla, tanımlanmış dolgu kaplaması olan eksenler durumunda boyuna çizgiyi çizebiliriz.<br />
+            <br />
+            <span style="font-weight: bold;">8D çizgileri kullan</span>: boyuna çizgiyi bu çizgi tipiyle oluşturur.<br />
+            <br />
+            <span style="font-weight: bold;">Yüzeye Göre</span>:
+Profillerde elde edilen bir yüzeyden boyuna çizginin çiziminin çizgi
+tipini belirteceğiz. Örneğin&nbsp;<span class="Archivo">Bovedas.lil.<br />
+            <br />
+            <span class="Parrafo"><span style="font-weight: bold;">Kod
+Eşdeğerliği</span>:
+Bu yardımcı program, boyuna çizgiler oluşturulurken, 68 yüzeyinin bazı
+kodlarını yeniden kodlamaya olanak tanır, böylece örneğin bir yarma
+hendeği ile bir dolgu kenar hendeği arasında devamlılık sağlanabilir:
+(örn. 600-&gt;601, 1102-&gt;3010, 1103-&gt; 3011,
+1104-3012).</span><br />
+            </span> </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_lineas_longitudinales.png" style="width: 300px; height: 518px;" alt="" align="right" hspace="8" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+      </span>
+      <table style="text-align: left; width: 692px; height: 220px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 244px;"><img src="Imagenes/ejemplo_lil_comandoLS.png" style="width: 252px; height: 184px; margin-right: 7px;" alt="" /> </td>
+            <td style="vertical-align: top; width: 426px;">
+            <div style="text-align: justify; width: 424px;">.<br />
+            <br />
+            <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ejemplo_lil_bovedas.png" style="width: 402px; height: 113px;" alt="" /></span></span></span><br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+            <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Info">Bovedas.lil çizim moduyla çizilmiş plan</span></span></span><br />
+            <span class="Parrafo"><span class="Parrafo"></span></span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Archivo"><br />
+      </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+bovedas.lil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># HERHANGİ BİR YÜZEYDEN ÇIKARILAN BOYUNA
+ÇİZGİLER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L Tipi&nbsp; Yüzey&nbsp;&nbsp;&nbsp;
+elemanlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># --- ---------&nbsp;
+----------
+------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LL&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Destekleme (Karşı kemersiz)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LL&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Destekleme (Karşı kemerli)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LL&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kaplama (Karşı kemersiz)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LL&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kaplama (Karşı kemerli)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#--------------------------------------------------------------------#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># HERHANGİ BİR YÜZEYDEN ÇIKARILAN ENİNE
+ÇİZGİLER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L Tipi&nbsp; Yüzey&nbsp;&nbsp;&nbsp;
+elemanlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># --- ---------&nbsp;
+----------
+------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LT&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Destekleme (Karşı kemersiz)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LT&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Destekleme (Karşı kemerli)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LT&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kaplama (Karşı kemersiz)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LT&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kaplama (Karşı kemerli)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+      <span class="obsolete"><span class="Parrafo"><span style="font-style: italic; font-weight: bold;" class="Parrafo"><a name="Peines_de_taludes">Şev Taramaları</a></span><span class="Parrafo"><a name="Peines_de_taludes"><br />
+      </a></span></span><span style="font-weight: bold; font-style: italic;"><br />
+      </span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><span class="Parrafo">Bu
+menüden, şev taramalarının çizimini tanımlayabiliriz. Şevleri
+Terasman, Palye Kenarı, Banket Kenarı, Platform Kenarı, Otomatik mod,
+Balastı Tara, Üstyapı şevini Tara veya Sadece kodlara göre taramalar'dan
+tarayabiliriz.<br />
+            <br />
+Yarma ve Dolgu taramalarının çizgi tipini seçeceğiz.<br />
+            <br />
+Kütüphanede bulabileceğimiz bazı örnekler arasında&nbsp;<span class="Archivo">Derrame4_medios_peines.lil</span>
+veya&nbsp;<span class="Archivo">PF.lil</span> bulunmaktadır.<br />
+            <br />
+LPmuelle.lil&nbsp;<span class="Archivo">gibi</span> sembollerle tarama,
+            <span style="font-weight: bold;">Yarım Taramalar</span>,
+Hendeği tara veya yetkin/zayıf zemin değişim noktasını atla, çizim
+dosyamızın nihai davranışını kolaylaştırmak için diğer araçlardır.<br />
+            <br />
+Kütüphanemizde bulunan derrame4_medios_peines.lil dosyası, yarma ve
+dolgu şevlerinde ve dolgu konilerinde, taramaların uzun ve kısa
+segmentlerinin uzunluğunu yarıya indiren PM komutunu içerir.<br />
+            </span></td>
+            <td style="vertical-align: top;"><img style="width: 320px; height: 277px;" alt="" src="Imagenes/lil_peines_de_taludes.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span>LPM.lil
+çizim modu, P11 komutunu içerir. Bu, taramayı banket kenarından yapar,
+böylece hendekler taranmaz. Ayrıca, platformun yanal palyelerinin
+çizgileri veya terasmanla kesişim de çizilmez.<br />
+      <br />
+LP2.lil dosyası, dolgu şevlerinin taranmasını kod 2'den (platform
+kenarı, beyaz şerit) başlatarak gerçekleştiren P2 komutunu içerir.
+Ayrıca, yarma ve dolgu taramalarını farklı çizgi tipleriyle temsil etmek
+için PT komutu da görülebilir.<br />
+      <br />
+Belirli kodlar arasında şev taramasını çizmek için bir örnek olarak,
+sadece duvarların arka yüzeyinin iki bölgesini taramaya olanak tanıyan
+PeinaMur.lil dosyası bulunur:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_peinamur.png" style="width: 423px; height: 216px;" alt="" /><br />
+      </div>
+      <br />
+      <span style="font-weight: bold;">P0</span>: Taramaların parametrelerini tanımlar, ancak <span style="font-weight: bold;">PCD</span> veya <span style="font-weight: bold;">PCT</span> ile tanımlananlar hariç hepsini iptal eder.<br />
+      <span style="font-weight: bold;">PCD</span> ayak_kodu tepe_kodu: İki belirli kod arasında bir yarma taraması tanımlamak için.<br />
+      <span style="font-weight: bold;">PCT</span> tepe_kodu ayak_kodu: İki belirli kod arasında bir dolgu taraması tanımlamak için.<br />
+      <br />
+Ayrıca, sırasıyla dolgu ve yarma için <span style="font-weight: bold;">PCTA</span>
+ve <span style="font-weight: bold;">PCDA</span> komutları da mevcuttur ve işleyişleri aşağıdaki örnekle açıklanmaktadır:<br />
+      <br />
+      <span class="Archivo">PCDA 50 600</span>&nbsp; <span style="font-style: italic;">Yarmada
+50 kodundan 600'e kadar tarayacaktır, ancak 50 kodunu bulamazsa, önceki
+noktadan (örneğin, 11 kodu olabilir) başlayacaktır</span>.<br />
+      <br />
+<span style="font-weight: bold;">PI</span> komutu, şev taraması ve boyuna
+çizgiler <span style="font-weight: bold;">L</span>'nin çizimi için
+yetkin zeminden zayıf zemine yarma değişim çizgisini atlar. Bu komut, <a href="OL_desmonte_tierra.html" target="_blank">zayıf zeminde yarma</a>
+tanımının etkinleştirildiği kesitlerde çalışır. Bu komut, Peine_b.lil&nbsp;<span class="Archivo">dosyasında</span> bulunur:<br />
+      <br />
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+TARAMALAR İÇİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi yarma&nbsp; L tipi
+dolgu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># YETKİN/ZAYIF ZEMİN NOKTASINI TARAMALAR VE L Çizgileri İÇİN
+ATLA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; mes(mm)&nbsp;
+iptal&nbsp;&nbsp; 1 uzun, her
+n'de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+P5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; (Palyeden kod==50)&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+      </span>
+      <table style="text-align: left; width: 597px; height: 50px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 293px; text-align: center;"><img src="Imagenes/ejemplo_lil_peine_.png" style="width: 279px; height: 129px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 284px; text-align: center;"><img src="Imagenes/ejemplo_lil_peine_b.png" style="width: 270px; height: 129px;" alt="" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 293px; text-align: center;"><span class="Info">Peine.lil çizim moduyla çizilmiş plan</span><br />
+            </td>
+            <td style="vertical-align: top; width: 284px; text-align: center;"><span class="Info">Peine_b.lil çizim moduyla çizilmiş plan</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+<span style="font-weight: bold;">PA</span> veya <span style="font-weight: bold;">CA</span> komutu,
+100, 50, 11, 2 kodlarını arayarak taramanın başını otomatik olarak
+belirler. Profilde bulunan ve ayrıca .lil&nbsp;<span class="Archivo">dosyasında</span>
+çizimi devre dışı bırakılmamış olan ilkini dikkate alır. PeineA.lil&nbsp;<span class="Archivo">dosyasında</span>,
+100 kodlu çizginin (terasman drenajı) çizimi devre dışı bırakılmıştır,
+bu nedenle tarama palye (50), banket kenarı (11) veya platform kenarı
+(2) çizgisinden başlayacaktır.<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+TARAMALAR İÇİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi yarma&nbsp; L tipi
+dolgu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; mes(mm)&nbsp;
+iptal&nbsp;&nbsp; 1 uzun, her
+n'de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp;
+(Otomatik)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+Demiryolları için özel bir çizim modu olan LPbalast.lil&nbsp;<span class="Archivo">dosyası</span>,
+balast (kod 11-12) ve koruyucu tabaka (13-100 veya 50-100) şevlerini
+taramaya olanak tanıyan bir tarama komutu, <span style="font-weight: bold;">PB</span>, içerir:<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Archivo">######################################################################<br />
+#
+TARAMALAR İÇİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L tipi&nbsp; mes(mm)&nbsp;
+iptal&nbsp;&nbsp; 1 uzun, her
+n'de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+# ---&nbsp; ---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #<br />
+&nbsp;
+PB&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+######################################################################<br />
+      </span> </div>
+      <span class="Parrafo"> <br />
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_lil_lpbalast.png" style="width: 475px; height: 128px;" alt="" /></span><br />
+      <span class="Parrafo"> <span class="Info">LPBalast.lil çizim moduyla çizilmiş plan</span></span><br />
+      <span class="Parrafo"></span></div>
+      <br />
+      <span class="Parf_negrita">&nbsp;</span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="checkbox" /></span></span></span></span><span class="obsolete"><span class="Parrafo"><span class="Parf_negrita">&nbsp;
+Sembollerle tara:</span>&nbsp;Şev taramalarını ölçeklenebilir sembollerle
+değiştirmek için, &nbsp;<span class="Archivo">1 uzun, her n'de</span> verisi -1 değeriyle değiştirilir. LPmuelle.lil&nbsp;<span class="Archivo">modu</span>, S89 sembolünü kullanır:<br />
+      </span> <span class="Parrafo"> <br />
+&nbsp;<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="checkbox" /></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"> Hendekleri tara</span>:
+Hendek taraması için de, LP50CUN.lil'de&nbsp;<span class="Archivo">kullanılan</span> özel bir komut, <span style="font-weight: bold;">PC50</span>, mevcuttur:<br />
+      <br />
+      </span> <span class="Parrafo"><span class="Archivo"> <br />
+      <span class="Parrafo"><span style="font-weight: bold;">PF</span>
+(üstyapı taraması) komutu, üstyapı şevini 50 ve 100 kodları arasında
+tarar ve ardından dolgu ve/veya yarma şevini tarar. PF.lil&nbsp;<span class="Archivo">dosyası</span> bu komutu içerir:</span><br />
+      <br />
+      </span></span>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+TARAMALAR İÇİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi yarma&nbsp; L tipi
+dolgu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; mes(mm)&nbsp;
+iptal&nbsp;&nbsp; 1 uzun, her
+n'de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; (Palyeden kod==50)&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span><br />
+      <span class="Parrafo"></span></span></div>
+
+      <span class="Parrafo"> <br />
+      <span class="Archivo"><span class="Parrafo">zanja.lil&nbsp;<span class="Archivo">dosyası</span>, şevleri hendek tabanına kadar taramaya olanak tanır:</span><br />
+      <br />
+      </span></span>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># Hendek&nbsp;&nbsp; :
+Şevleri hendek tabanına kadar
+tarama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># KODLARA GÖRE L ÇİZGİLERİNİN ETİKETLEME TANIMI&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; koda
+kadar&nbsp;&nbsp;
+elemanlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+110.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Hendek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dolgu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1200.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+hendek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+yarma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+69&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+zayıf zemin
+yarması&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+TZ&nbsp;&nbsp;&nbsp; Hendek Tipi: Tüm 68'i takip eder, 67'yi
+değil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+TARAMALAR İÇİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi yarma&nbsp; L tipi
+dolgu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; mes(mm)&nbsp;
+iptal&nbsp;&nbsp; 1 uzun, her
+n'de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+P1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; (kod==100'den)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;
+son&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+SON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span></div>
+
+      <br />
+
+LPqatar.lil gibi bir sembol kullanarak şev taraması yapabiliriz; bir uzun ve bir kısa sembol çizerek veya bir uzun ve iki kısa sembol çizerek...<br />
+
+      <br />
+
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_LPqatar_peines.png" style="width: 309px; height: 222px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_LPqatar_dibujo.png" style="width: 370px; height: 273px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      <span class="Parf_negrita">&nbsp; </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="checkbox" /></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"> Yarma duvarı kazısını tara:</span>&nbsp;1282-1283 kodları arasındaki yüzeyi (149) tarar.<br />
+Kodlara göre tarama kullanmaya gerek yoktur.<br />
+      </span></span></span>
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_peines_taludes_taluddemontemuros.png" style="border: 1px solid ; width: 387px; height: 303px;" alt="img_peine_taludes_taluddesmontemuros" align="middle" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span class="obsolete"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="checkbox" /></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"> Platform kenarına dik taramalar:&nbsp;&nbsp;</span></span></span></span></span></span><span class="obsolete"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">platform genişliği geçişlerinde.</span></span></span></span></span><br /><span class="obsolete"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="peines_por_codigos">Kodlara Göre Taramalar</a></span><a name="peines_por_códigos"><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Bu menüden kodlara göre tarama yapabiliriz.<br />
+            <br />
+Örnek olarak kütüphanemizde Peinacod.lil&nbsp;<span class="Archivo">dosyası</span>, Peinamur.lil&nbsp;<span class="Archivo">dosyası</span>
+ve diğerleri bulunmaktadır.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_peines_codigos.png" style="width: 309px; height: 286px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a name="muros_y_cunetas_de_guarda"><span style="font-weight: bold; font-style: italic;">Duvarlar ve Kenar
+Hendekler</span><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Duvarların ve kenar hendeklerin çizimi için özel menü.<br />
+            <br />
+            <span class="Parrafo">Genişliği ve derinliği olan duvarlar için, ML ve MT komutlarını içeren lp5m.lil&nbsp;<span class="Archivo">dosyası</span> bulunmaktadır.<br />
+            <br />
+Bir dolgu duvarının görünen yüzünü taramaya olanak tanıyan yeni bir komut içeren LP5MuroT.lil dosyası.<br />
+            <br />
+Duvarların başlangıç ve bitiş KM'lerini ve uzunluklarını etiketleme imkanı.<br />
+            <br />
+            </span></td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_muros.png" style="width: 309px; height: 354px; float: right;" alt="" hspace="5" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo">Aynı&nbsp;<span class="Archivo">lp5m.lil</span>
+dosyasında, platformdaki palye kenarları ile banket kenarlarının çizgi
+tiplerini ayıran ve diğer .lil&nbsp;<span class="Archivo">dosyalarında</span>
+karışık gelen kesitin boyuna çizgileri için bir tanım bulunur. İlgili
+kodları ekleyerek daha fazla tip ayırmak mümkündür:<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># KODLARA GÖRE L ÇİZGİLERİNİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; koda
+kadar&nbsp;&nbsp;
+elemanlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-51.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+refüj
+tabanı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+refüj
+palyeleri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+refüj
+yardımcıları&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ana
+platformlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dış
+banketler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+110.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dış
+palyeler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dolgu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1200.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+hendek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+yarma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+69&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+zayıf zemin
+yarması&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span></div>
+      </span><br />
+Ayrı bir çizgi tipinde tanımlandığında kenar hendeklerinin boyuna ve
+enine çizgilerini çizmek için iki komut bulunur. Kütüphanede, bu
+komutları (<span style="font-weight: bold;">GL</span>, <span style="font-weight: bold;">GT</span>, <span style="font-weight: bold;">GL2
+      </span>ve <span style="font-weight: bold;">GT2</span>) içeren LTG.lil dosyası bulunur:<br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># AYRI KENAR HENDEKLERİ İÇİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L
+tipi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+GL&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Boyuna
+Çizgiler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+GT&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Enine
+Çizgiler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L
+tipleri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+----------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+GL2&nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;
+168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boyuna
+Çizgiler
+(Dolg,Yarm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+GT2&nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;
+168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enine
+Çizgiler&nbsp;&nbsp;
+(Dolg,Yarm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+<span style="font-weight: bold;">GL</span> ve <span style="font-weight: bold;">GT</span> komutları (yorumlu oldukları ve bu nedenle kullanılmayacakları), hendekleri 50 çizgi tipiyle çizer ve <span style="font-weight: bold;">GL2</span> ve <span style="font-weight: bold;">GT2</span>'den farkı, bunların dolgu ve yarma kenar hendeklerini çizmek için iki farklı tip tanımlamaya olanak tanımasıdır (50 ve 168).</span></span></span></span></span><br />
+      <br />
+      <a name="estructura"><span style="font-weight: bold; font-style: italic;">Sanat Yapıları</span><br />
+      </a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Bu menü aracılığıyla, Sanat Yapıları menüsünde tanımladığımız adı, KM'yi, uzunluğu, orta ayakların KM'sini ve orta ayakların kendisini çizebiliriz.<br />
+            <br />
+KM denklemlerinden türetilen kullanıcı KM'lerinde (KM denklemleri), sanat yapısının başlangıç ve bitiş KM'lerini ve orta ayakların KM'lerini etiketleyebiliriz.<br />
+            <br />
+<span style="font-weight: bold;">Eksene Mes.</span> kutucuğunu etkinleştirirsek, gerçek mesafe yerine grafik ölçeğine göre kağıt mm cinsinden mesafe veririz. 1:1000 ölçekli bir çizimde isek, her iki değer de aynı olacaktır.<br /><br />Sol
+taraftaki viyadükler için, Ad, başlangıç ve bitiş KM'si, Uzunluk ve
+orta ayakların KM'si farklı bir şekilde etiketlenebilir.<br />
+            </td>
+            <td style="vertical-align: top;"><img style="width: 400px; height: 316px;" alt="" src="Imagenes/lil_estructura.png" hspace="8" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+derrame2.lil&nbsp;<span class="Archivo">çizim</span> modu, öncekinden
+farklı olarak sanat yapısı ve tünel alanlarını doldurur ve derrame3.lil&nbsp;<span class="Archivo">dosyası</span>
+ayrıca, her bir orta ayağın adını, KM'sini, uzunluğunu ve çizim KM'sini
+etiketlemeyi ekler; tüm bu veriler SANAT YAPILARI menüsünde tanımlanır.
+Bunun için sırasıyla <span style="font-weight: bold;">EST_N</span>,
+      <span style="font-weight: bold;">EST_PK</span>, <span style="font-weight: bold;">EST_L</span> ve <span style="font-weight: bold;">EST_PILA</span> komutları kullanılır:<br />
+      <span class="Parrafo"><span class="Parrafo"> <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_lil_derrame3.png" style="width: 363px; height: 263px;" alt="" /><br />
+      <br />
+      <span class="Info">Derrame3.lil çizim moduyla çizilmiş plan</span><br />
+      </div>
+      <br />
+      </span></span><span class="Parrafo"><span class="Parrafo">
+derrame4.lil&nbsp;<span class="Archivo">çizim</span> modu, öncekinden
+çok benzerdir, ancak <span style="font-weight: bold;">N5</span> yerine <span style="font-weight: bold;">NT5</span> komutunu kullanır, bu da dolgu konilerinin hem sanat yapıları hem de tünel portalları için oluşturulduğunu gösterir. Taramaların çizimi için, yarma ve dolgu taramaları için tanımlanan aynı tipleri kullanmaya olanak tanır. Bu çizim modu, bovedas.lil&nbsp;<span class="Archivo">modunun</span> yaptığına benzer şekilde, tünellere karşılık gelen boyuna ve enine çizgileri de çizer.<br />
+      <br />
+      <img src="Imagenes/lil_modelo_pila.png" style="width: 246px; height: 150px; margin-left: 7px;" alt="" align="right" /> derrame4.lil&nbsp;<span class="Archivo">çizim</span>
+modu başka özellikler de sunar: dolgu dış kaplama şevleri boyunca
+boyuna çizgiler ve taramalar çizmeyi sağlayan <span style="font-weight: bold;">TR</span> komutunun kullanımı (bu yüzeyin tanımlandığı bölgelerde) ve boyutları SANAT YAPILARI <a href="OL_estructuras.html">menüsünde</a>
+beyan edildiği sürece orta ayakların 3B tel modelini çizen <span style="font-weight: bold;">EST_P3D</span> komutunun kullanımı.<br />
+      <span class="Parrafo"><br />
+      </span></span><br />
+      <br />
+      <br />
+      <br />
+      <a name="lineas_por"><span style="font-weight: bold; font-style: italic;">Yüzey, Kod ve Tip Kesite Göre Çizgiler</span><br />
+      <br />
+      </a><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu menüyü kullanarak, herhangi bir yüzey ve koddan boyuna çizgiler çizebiliriz.<span style="font-style: italic;"><span style="font-weight: bold;"><br />
+      <br />
+      </span></span>Çizilecek
+çoklu çizginin <span style="font-weight: bold;">tarafı</span>, <span style="font-weight: bold;">sağ</span>, <span style="font-weight: bold;">sol</span> veya <span style="font-weight: bold;">her ikisi</span>'ni seçerek koda göre ayrıştırılabilir.<br />
+      <br />
+<span style="font-weight: bold;">KM</span> sütunundaki kutucuk işaretlenerek, her bir çizginin başlangıç ve bitiş KM'si etiketlenebilir.<br />
+      <br />
+<span style="font-weight: bold;">Bölge</span> sütununda, her zaman mı yoksa sadece yarma veya dolgu bölgelerinde mi çizileceğini seçebiliriz.<br />
+      <br />
+<span style="font-weight: bold;">Kesit</span> sütununda, her çizgiyi tipine göre işaretleyebiliriz: C, D veya T.<br />
+      <br />
+Örnek olarak kütüphanemizde Cuneta_ST.lil&nbsp;<span class="Archivo">dosyası</span> bulunmaktadır.</span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_lineas.png" style="width: 496px; height: 189px;" alt="" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Cuneta_ST.lil dosyası, hendek tabanını (LCST komutu) çizmek için her bir hendek tip kesitine farklı bir çizgi tipi atamaya olanak tanır:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_cuneta_ST.png" style="width: 427px; height: 281px;" alt="" /><br />
+      </div>
+      <br />
+<span class="Parf_negrita">Kullanıcı Km'si</span> kutucuğu etkinleştirilirse, <a href="OL_ecuaciones_de_PK.html">KM Denklemlerinden</a> türetilen KM'leri kullanır.<br />
+      <br />
+      <br />
+      <a name="lineas_por_pendiente"><span style="font-weight: bold; font-style: italic;">Eğime Göre Çizgiler ve Eğimler</span><br />
+      <br />
+      </a><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Bu menüden, Cuneta.lil&nbsp;<span class="Archivo">dosyasında</span>
+olduğu gibi, eğime, yüzeye ve koda göre boyuna çizgiler çizebiliriz.<br />
+            <br />
+Ayrıca, Cuneta_S.lil&nbsp;<span class="Archivo">dosyasında</span> olduğu gibi, sembole göre eğimli çizgiler de çizebiliriz.<br />
+            <br />
+Yüzey ve koda göre eğim: Kesitin bir noktasının boyuna eğimini
+etiketlemeye olanak tanır. Ayrıca, çok yakın etiketlerin çakışmaması
+için etiketler arasında minimum bir mesafe de verilir.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_linea_pendiente.png" style="width: 384px; height: 414px;" alt="" align="right" hspace="8" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Hendek çizgilerini (hendek tabanı veya kesitin herhangi bir
+karakteristik çizgisi), eğime bağlı olarak çizgi tipini değiştirerek ve
+suyun akış yönüne bağlı olarak yönlendirerek çizebiliriz. Ayrıca, yüksek
+noktaları bir sembolle ve alçak noktaları başka bir sembolle işaretler:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_cuneta.png" style="width: 427px; height: 312px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_lil_cuneta.png" style="width: 407px; height: 130px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><span class="Nota"><span class="Info">cuneta.lil çizim moduyla çizilmiş örnek</span></span><a name="lineas_por_pendiente"><br />
+      </a></div>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span>cuneta_s.lil modu, cuneta.lil'e benzer, ancak hendeğin
+konumunu belirlemek için profil sembollerini kullanır. Aynı şekilde,
+eğime bağlı olarak üç farklı çizgi tipi oluşturur ve suyun akış yönüne
+göre yönlendirilir. Ayrıca, yüksek ve alçak noktaları farklı sembollerle
+işaretlemeye olanak tanır:<span style="font-weight: bold; font-style: italic;"><br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span style="font-weight: bold; font-style: italic;"><img src="Imagenes/lil_cuneta_S.png" style="width: 426px; height: 324px;" alt="" /></span><a name="lineas_por_pendiente"><br />
+      <span style="font-weight: bold; font-style: italic;"></span></a></div>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span><a name="rotulacion_de_taludes"><span style="font-weight: bold; font-style: italic;">Şevlerin Etiketlenmesi</span><br />
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span> </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Derrame4.lil&nbsp;<span class="Archivo">dosyasında</span>
+ve diğerlerinde görünen TaludD ve TaludT komutlarından yola çıkarak,
+yaptığımız şevin sayısal tipini belirten bir sembol çizebiliriz.
+Ayrıca, minimum ve maksimum şev değerleri sayesinde aynı şevi değerine
+göre farklı bir sembolle etiketleyebiliriz.<br />
+            <br />
+[ ] H:V için sembolleri kullan kutucuğunu işaretlersek, şevler H/1, H/2, H/3, H/4, H/5, H/6 şeklinde etiketlenecektir.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_rotulacion.png" style="width: 309px; height: 264px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_simbolos_taludes.png" style="width: 443px; height: 196px;" alt="" /><br />
+      </div>
+      <br />
+      <a name="geopak"><span style="font-weight: bold; font-style: italic;">Geopak</span><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Bu menü Geopak tarzı çizimlere yöneliktir.<br />
+            <br />
+Teksas kütüphanesinde bu tarzda bazı gitarlarımız var.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_geopak.png" style="width: 463px; height: 316px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a name="recintos_dt"><span style="font-weight: bold; font-style: italic;">Yarma/Dolgu
+Alanları</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/lil_recintosDT.png" style="width: 309px; height: 227px;" alt="" /><br />
+      </div>
+      <br />
+YARMA ve DOLGU şevleri, taramalar yerine, düz renklerle, desenlerle
+veya SGL raster dolgularıyla doldurulabilen kapalı çizgilerle
+gösterilebilir. Kütüphanede, bu imkanı kullanan lc.lil ve recinto.lil
+dosyaları bulunur:<br />
+      <br />
+      <div style="text-align: center;"><span style="font-weight: bold; font-style: italic;"><img src="Imagenes/lil_recintos.png" style="width: 427px; height: 104px;" alt="" /></span><a name="recintos_dt"><br />
+      <span style="font-weight: bold; font-style: italic;"></span></a></div>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span>C komutunu kullanarak dolgu şevleri, terasman drenajı olan
+100 kodunda başlar; C5 komutuyla, palye sonu olan 50'de başlarlar ve son
+olarak C11 komutuyla banket kenarından başlarlar.<br />
+      <br />
+Ayrıca, bu amaç için bir seçenek kullanılarak, herhangi iki yüzeyden türetilen yarma/dolgu alanları da çizilebilir.<br />
+      <span style="font-weight: bold; font-style: italic;"> <br />
+      </span>
+      <div style="text-align: center;"><span style="font-weight: bold; font-style: italic;"><img src="Imagenes/ejemplo_lil_recinto.png" style="width: 540px; height: 144px;" alt="" /></span><a name="recintos_dt"><br />
+      <span style="font-weight: bold; font-style: italic;"></span></a></div>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span>
+      <div style="text-align: center;"><span class="Nota"><span class="Info">recinto.lil çizim moduyla yapılmış örnek</span></span><a name="recintos_dt"><br />
+      </a></div>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><a name="isolineas">Eşyükselti Eğrileri</a></span><a name="isolineas"><br />
+      <br />
+      </a></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_isolineas.png" style="margin-left: 7px; width: 310px; height: 160px; float: right;" alt="" /></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu
+menü aracılığıyla, dolgu konilerindeki eşyükselti eğrileri de dahil olmak
+üzere, bitmiş işin yüzeyindeki eşyükselti eğrilerini çizebiliriz.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[ ] Üstyapısız</span> seçeneği, platform
+yüzeyini (yüzey 67) veya bordürleri kullanmadan eşyükselti eğrilerini
+çizer. Yani, eşyükselti eğrilerini terasmandan (yüzey 68) geçirerek
+oluşturur.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[ ] Sanat Yapıları</span> seçeneği, sanat yapısı bölgelerinde de eşyükselti eğrilerini çizer.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="Traviesas_y_Carriles">Traversler ve Raylar</a></span><a name="Traviesas_y_Carriles"><br />
+      <br />
+Travers oluşturma seçeneği, sembollere göre çizgiler alt menüsünden
+(programın 2020'den önceki eski sürümlerinde yapıldığı gibi)
+kaldırılmıştır. Artık, hem normal bir hatta hem de bir makasta olmalarına
+bağlı olarak hem raylar hem de traversler için farklı çizgi tipleri
+seçilebilen bir RAYLAR VE TRAVERSLER alt menümüz var. Burada oluşturulan
+raylar ve traversler, BIM modelinde oluşturulanlarla aynı geometriye
+sahiptir, yani Platform->Hat ve Travers ve Ray diyalog kutusunda
+tanımlanan parametreleri takip eder, istenirse kaynakları da oluşturur
+ve traversleri onlardan ayırır.<br />
+      <br />
+      </a></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_traviesasycarriles.png" style="width: 350px; height: 214px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="Traviesas_y_Carriles"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Makasların topuğundan sonra gelen ve konumu makasla (.apv dosyası)
+tanımlanan traversler, makas traversleri için tanımlanan çizgi tipiyle
+çizilir.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_traviesas_apv.png" style="width: 400px; height: 616px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="lineas_transversales"><span style="font-weight: bold; font-style: italic;">Enine Çizgiler</span><br />
+      </a></span></span>Bu menü aracılığıyla, çeşitli kaynaklardan gelen enine çizgileri çizebiliriz:<br />
+Her birinin <span style="font-weight: bold;">KM</span>'sini etiketleme imkanıyla, enkesitlerden gelen çizgileri çizebiliriz.<br />
+      <br />
+Bir yüzey ve bir başlangıç ve bitiş kod çifti tanımıyla belirlenen
+çizgileri çizebiliriz. <span style="font-weight: bold;">e</span>
+sütunundaki kutucuğu işaretleyerek, bu segmentlerin her birinin enine
+eğimini de etiketleyebiliriz. <span style="font-weight: bold;">Min.Eğim</span> ve <span style="font-weight: bold;">Maks.Eğim</span> kutucuklarını kullanarak, etiketleme yapmak için iki minimum ve maksimum eğim değeri belirtebiliriz. Bu şekilde, örneğin, eğim aralığına göre farklı renklerdeki semboller kullanarak aynı veri satırını tekrarlayabiliriz.</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+Son olarak, bir yüzeyin tüm enine çizgilerini, burada yüzeyi ve planda
+temsil edileceği çizgi tipini belirleyerek çizebiliriz. <span style="font-weight: bold;">Boru</span> kutucuğunu etkinleştirirsek, bu çizgileri sadece boru ayırma profillerinde çizmesini sağlayabiliriz.<span style="font-weight: bold;"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_lineas_transversales.png" style="width: 600px; height: 467px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <a name="recintos_de_taludes"><span style="font-weight: bold; font-style: italic;">Şev Alanları</span><br />
+      <br />
+Bu menüden Yarma ve Dolgu şevlerinin alanlarını çizebiliriz. <br />
+Örnek olarak kütüphanemizde LC.lil ve Rec.lil gibi çizim modları bulunmaktadır.<br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_recintos_taludes_dibujo.png" style="width: 351px; height: 167px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_recintos_taludes.png" style="width: 309px; height: 136px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a name="bordes"><span style="font-weight: bold; font-style: italic;">Sınırlar</span><br />
+      <br />
+      </a></span>
+Bu menü aracılığıyla, projemizin işgal ve kamulaştırma sınırlarını bir çizgi tipiyle işaretleyebiliriz. <span style="font-weight: bold;">Dolgu Kaplamasını Takip Et</span>
+kutucuğu etkinleştirilmişse, sınır çizgisi dolgu dış kaplama yüzeyini de
+kullanır. Sınırın dış kaplamayı dikkate alması için, <a href="OL_ficheros_lil.html#lineas_longitudinales">Boyuna Çizgiler</a>'de
+eşdeğer kutucuğuyla birlikte bir veri tanımlanmış olmalıdır.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="bordes"><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_bordes_dibujo.png" style="width: 350px; height: 178px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/lil_bordes.png" style="width: 309px; height: 222px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Meksika etiketleme stili için bazı durumlarda, bu alt menü aracılığıyla yapabileceğimiz bir kademelendirme gerekir:<br />
+Belirli bir değerin katları olan profiller analiz edilir, varsayılan
+olarak 50m. Ardışık iki profilde, geleneksel kamulaştırma sınırı
+(örneğin, dolgu eteği veya yarma başı artı 1m) analiz edilir ve ikisinin
+en büyük değeri alınır.<br />
+Bu değer, belirli bir değere (1m) yukarı yuvarlanabilir. Bu değer her iki profile de uygulanır ve bir segmentle birleştirilir.<br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/lil_bordes_estilo_mex_ejemplo.png" style="width: 299px; height: 222px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/lil_bordes_estilo_mex.png" style="width: 309px; height: 222px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <a name="pozos_tubos_y_codos"><span style="font-weight: bold; font-style: italic;">Rögarlar, Borular ve Dirsekler</span><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Bu menü, rögarların farklı özellikleriyle (isim, açıklama, sembol, ağız kotu, taban kotu...), Boruların (Malzeme ve çap, sondaki Malzeme...) ve Dirseklerin (hücreler veya semboller) çizimi için tasarlanmıştır.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_pozos_tubos_codos.png" style="width: 459px; height: 301px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Bu tür projeler için özel çizim olanaklarını numaralandırmadan önce,
+köşeli noktalara sahip eksenler için, boyuna, enine çizgiler vb. plan
+çizim rutinlerinin şu işlemi gerçekleştirdiğini belirtmek gerekir: Eğer
+köşeli noktada bir profil varsa, bu profil giriş ve çıkış azimutu
+arasındaki açıortaya kadar döndürülürken, eksene olan mesafeler
+döndürülen açının kosinüsünün tersine eşit bir katsayı ile çarpılır. Bu,
+çizimlerin daha yumuşak ve daha iyi tanımlanmış olmasını sağlar.<br />
+      <br />
+<span style="font-weight: bold;">Çizim</span> (rögarlar) kutucuğunu etkinleştirerek, atanan çizgi tipiyle her bir rögarın çapıyla 3D çizimini planda görebiliriz. Eğer Rögarlar (Kırmızı Kot) menüsünde herhangi bir çap tanımlanmamışsa, bu menüde tanımlanan <span style="font-weight: bold;">Üst çap</span> ve <span style="font-weight: bold;">Alt</span> çap okunur. Ayrıca menholler için farklı bir çizgi tipi belirlemek de mümkündür.<br />
+      <br />
+Rögarları çizerken: .lil'i düzenle, Rögarlar, <span style="font-weight: bold;">Çiz</span>: Her eksen için iki dosya oluşturulur:<br />
+      </span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">tmp/projePZ_n.3d : Rögarlar ve menhol nesnelerini içeren üçgen dosyası.</span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">tmp/projePZ_n.top : Rögar veya menholün planını içeren, araziyle kesişimi çalıştırmak için dosya.</span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu
+dosyalar, VIRTUAL 3D ve BIM tarafından bu nesnelerin gösterimi için
+kullanılır.<br />
+      <br />
+Ayrıca, aşağıdaki ek açıklamaları sürükleyecek bir <span style="font-weight: bold;">hücre</span> (örn. C47) tanımlama imkanımız da vardır:<br />
+      </span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Rögar adı, Ağız kotu, Zağız-Ztaban, Zgiriş ve Zçıkış.</span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Boru
+hattı projeleri durumunda mevcut komutlara girildiğinde, program şu
+gibi özel komutlar sunar:<br />
+      <br />
+      <div style="text-align: left;"><span style="font-weight: bold;">ZN</span>
+RÖGARLARIN plandaki adları&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZP</span> Rögarın ağız ve tabanının 3D çizimi&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZT</span> Boruların 3D
+çizimi&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZD</span> Rögarın
+tanımı&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZM</span> Borunun malzemesi ve
+çapı&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZS</span> Borunun tanımı<br />
+      </div>
+      <br />
+tuberias.lil dosyası bu komutların kullanımına iyi bir örnektir:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_pozos.png" style="width: 421px; height: 148px;" alt="" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; height: 238px; width: 543px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 315px;"><img src="Imagenes/ejemplo_lil_tuberias.png" style="width: 324px; height: 115px;" alt="" /><br />
+            </td>
+            <td style="width: 335px; text-align: right;"><img src="Imagenes/ejemplo_lil_tuberias_2.png" style="width: 172px; height: 205px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center;"><span class="Info">tuberias.lil moduyla temsil edilen bir eksenin planı ve 3D görünümü</span><a name="pozos_tubos_y_codos"><br />
+      </a></div>
+      <br />
+ZC komutu, hem planda hem de boykesitteki köşe noktalarından kaynaklanan
+dirseklerin gerçek açısını altmışlık derece cinsinden etiketlemeye olanak
+tanır. Açı 3D olarak hesaplanır. Bu aynı komutlara 'O' karakteri
+eklenerek (ZNO, ZDO, ZZO,…) açının mutlak mı yoksa eksene göreceli mi
+olduğu seçeneği sunulur (O sütununa 0 veya 1 yerleştirerek). tuberias3.lil
+dosyası, örneğin, bu komutları kullanır:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_tuberias3.png" style="width: 397px; height: 475px;" alt="" /><br />
+      </div>
+      <br />
+ZCOM komutuyla ayrıca, açıları bu değerden küçük olan dirsekleri
+etiketlememek için bir minimum açı belirlenebilir. tuberias3.lil&nbsp;<span class="Archivo">dosyası</span>
+da bu imkanı içerir. Hem ZCO hem de ZCOM komutu için, etiketleme için
+kullanılacak sembol tipi belirtilmelidir (varsayılan olarak S635).<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_lil_tuberia3.png" style="width: 439px; height: 123px;" alt="" /><br />
+      </div>
+      <div style="text-align: center;"><span class="Info">Tuberia3.lil çizim moduyla temsil edilen bir eksenin planı</span><a name="pozos_tubos_y_codos"><br />
+      </a></div>
+      <br />
+tuberias4.lil&nbsp;<span class="Archivo">durumunda</span>, etiketleme hücrelerle (varsayılan olarak C20 tipi) yapılır ve o zaman yeni komutlar ortaya çıkar:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_tuberias4.png" style="width: 396px; height: 517px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_lil_tuberia4.png" style="width: 579px; height: 146px;" alt="" /><br />
+      </div>
+      <div style="text-align: center;"><span class="Info">tuberia4.lil çizim moduyla temsil edilen bir eksenin planı</span><a name="pozos_tubos_y_codos"><br />
+      </a></div>
+      <br />
+ZZOB ve ZZOS komutları, tuberias4p.lil&nbsp;<span class="Archivo">çizim</span> modunda kullanılır ve sırasıyla rögarın ağız ve taban kotlarını etiketlemeye olanak tanır.<br />
+      <br />
+tuberias4i.lil modu, çift boru bölgelerinde iki rögar sembolü (ZZO2
+komutu) çizmeyi ve/veya her boru için birer tane olmak üzere iki rögarı
+(ZP_2 komutu) çizmeyi sağlayan komutlar kullanır. Ayrıca sol boruyu (ZT_I
+komutu) ve sol borunun malzemesini ve çapını (ZMOI komutu) da boyar.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">2D Uzunluk</span> ve <span style="font-weight: bold; font-style: italic;">(gerçek) Uzunluk</span> kutucukları aracılığıyla, rögarlar arasındaki boru uzunluğunu orta noktalarında etiketleyebiliriz.<br />
+      <br />
+<span style="font-weight: bold;">Yükseklik</span> kutucuğuyla toplam yüksekliği etiketleriz: (Zağız - Ztaban) + Radye kalınlığı.<br />
+      <br />
+Borular sekmesinde:<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span><img style="width: 500px; height: 409px;" alt="" src="Imagenes/tubos_lil.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Borunun malzemesini, tanımını ve tipini farklı konumlarda etiketleme imkanı.<br />
+      <br />
+Her boru için tanımlanan özel çizgi tipinin, sadece boru ekseninin
+çizimi için kullanılması ve .lil düzenlemesinde tanımlanan tipin
+genişlikler için uygulanması imkanı.<br />
+      <br />
+Dirsekler sekmesi içinde program şunları etiketlemeye olanak tanır: 3D Açı, KM, Kot, Sembol ve plan, boykesit ve plan-boykesit dirseklerini ayırt ederek numara.<br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_codos.png" style="width: 459px; height: 219px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <a name="tablas_de_textos"><span style="font-weight: bold; font-style: italic;">Metin Tabloları</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/lil_tablas_textos.png" style="width: 406px; height: 237px;" alt="" /><br />
+      </div>
+      <br />
+Ayrıca kütüphanede, bir metin tablosunda toplanan bilgileri plan
+üzerine etiketleyen TABLATEX.lil dosyası da bulunur.
+Böylece, örneğin, tablo [Tip Kesitler] seçeneğiyle yüklenmişse, hesap
+bölümlerinin KM'leri, her bölümde uygulanan tip kesitlerin adları ve
+her bölümün uzunluğu etiketlenir (ETT_N, ETT_PK, ETT_L ve ETT_T
+komutları).<br />
+      <br />
+Nokta tablolarını etiketleme imkanı. Çizim, nokta tabloları diyalog
+kutusunun <span style="font-weight: bold;">Dök</span> komutuna benzer, ancak burada şunlara sahibiz: <br />
+Sembol için: <br />
+      </span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Mutlak veya eksene dik yöne göreceli bir açı verilebilir.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Öznitelik olarak şunlar atanabilir:
+Z, KM veya Kesit. <br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Metin için şunlar seçilebilir:<br />
+      </span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Metin stili.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Mutlak veya göreceli yönelim açısı.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">dx,dy kaydırması veya göreceli açı durumunda eksene ve km'ye olan mesafe.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Boyut.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Yatay ve dikey hizalamalar.
+          <br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Her iki durumda da eksen modelinde oluşturulur ve burada kaynak ISPOL.lil'dir.</span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+5 nokta tablosunun her biri için bağımsız bir etiketleme tanımlanabilir.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_tablas_5puntos.png" style="width: 406px; height: 77px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Metnin Yatay Hizalaması: Tipik <span style="font-weight: bold;">sağa</span>, <span style="font-weight: bold;">merkeze</span> veya <span style="font-weight: bold;">sola</span> hizalamaların yanı sıra, &nbsp;<span style="font-weight: bold;">Eksen Tarafı</span> hizalamasına sahibiz:
+Bu durumda, eksenin sağındaki noktaların metinleri sağ taraflarından
+ve solundakiler sol taraflarından hizalanır. Bu durumda ayrıca, nokta
+eksenin solundaysa, dX değerinin işareti değiştirilir.<br />
+      <br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">#
+TABLATEX: Metin
+Tablosu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">#
+TABLATEX.lil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo"># KODLARA GÖRE L ÇİZGİLERİNİN ETİKETLEME TANIMI&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; koda
+kadar&nbsp;&nbsp;
+elemanlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo"># ---&nbsp; ---------&nbsp;
+----------------&nbsp; ------------------------------&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-50.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+refüj
+tabanı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+refüj palyeleri ve yardımcıları&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ana
+platformlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+110.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dış palyeler ve banketler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dolgu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1200.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+hendek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+yarma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+69&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+zayıf zemin
+yarması&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3012.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Kenar
+Hendeği&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Kenar Hendek Yarması&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">#
+TARAMALAR İÇİN ETİKETLEME
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi yarma&nbsp; L tipi
+dolgu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#
+---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L tipi&nbsp; mes(mm)&nbsp;
+iptal&nbsp;&nbsp; 1 uzun, her
+n'de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp;
+P5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; (Palyeden kod==50)&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo"># DOLGU KONİSİ VE TÜNEL PORTALLARI
+TANIMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">#
+N,N5 ve N11'i taramalar gibi kabul
+eder.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp; YarmaŞev DolguŞev
+MaksKonAçı MaksÖnMesafe KenarTipi TaramaTipi&nbsp; #</span><br />
+      <span class="Archivo"># --- -------- -------- ----------
+------------ --------- ---------&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; NT5&nbsp;&nbsp;
+0.50&nbsp;&nbsp;&nbsp;
+1.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp; -1 (PT kullanır)#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo"># METİN TABLOLARININ ETİKETLENMESİ&nbsp; #</span><br />
+      <span class="Archivo">#--------------------------------------------------------------------#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Stl/Smb KM_Mes&nbsp;
+Eks_Mes Açı Boyut YaH
+YaD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo"># ------ ------- -------- -------- ------
+------ ---
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; ETT_N&nbsp;&nbsp;&nbsp;&nbsp;
+7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+25.0&nbsp;&nbsp;&nbsp; 0.0&nbsp;&nbsp;&nbsp; 2.0&nbsp;&nbsp;
+0&nbsp;&nbsp; 2&nbsp;&nbsp; İSİM&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; ETT_PK&nbsp;&nbsp;
+383&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BAŞLANGIÇ KM'Sİ&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; ETT_L&nbsp;&nbsp;&nbsp;
+553&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 35.0&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+UZUNLUK&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp;
+ETT_T
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TABLO 1&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">#&nbsp;
+son&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp;&nbsp;
+SON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <br />
+      <a name="lineas_por_simbolos"><span style="font-weight: bold; font-style: italic;">Sembollere Göre Çizgiler</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_lineas_por_simbolos.png" style="width: 428px; height: 351px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+Kütüphanede, iç ve dış korkulukları çizmeye olanak tanıyan biondas.lil
+çizim modu bulunur. Sağ platform için iç korkuluk sağa kurplarda ve sol
+platformda sola kurplarda yerleştirilir.<br />
+      <br />
+Carriles_Y_Traviesas.lil plan çizim modu, profilden bir sembol (raylar)
+çıkarmaya ve bunlarla eksen boyunca bir 3B çizgi oluşturmaya olanak
+tanıyan S komutunu içerir. Eğer bir profilde aranan sembol görünmezse,
+program çizgiyi keser. Bu çizim modundan yola çıkarak, deveri, eğimi,
+yüksekliği, genişliği ve traversin uzunluğunu ve aralarındaki mesafeyi
+dikkate alarak traversleri üç boyutlu olarak çizmek mümkündür.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/lil_carriles.png" style="width: 459px; height: 376px;" alt="" /><br />
+      </div>
+      <a name="lineas_por_simbolos"> <br />
+CentroTun.lil çizim modu da önceki komutu kullanır, bu da tünellerin
+merkezlerini bir 3B çizgi olarak göstermeye olanak tanır. Hem karayolları
+hem de demiryolları için uygulanabilir. Bu çizgiden, eksen üzerine
+yansıtarak, bir .top/.toc oluşturarak vb. bilgi çıkarılabilir.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_centrotun.png" style="width: 399px; height: 177px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+Profilin bir sembolünü onu oluşturan çizgilere ayırmaya ve homolog
+köşeleri hem enine (ST komutu) hem de boyuna (SLT komutu) birleştirmeye
+olanak tanıyan daha gelişmiş komutlar bulunur. Böylece, örneğin,
+CARRILES_LT.lil dosyası, traversleri (onları tanımlayan köşelerin enine
+birleşimi) ve rayları (onları oluşturan köşelerin boyuna birleşimi)
+çizer:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_carrilesLT_dibujo.png" style="width: 394px; height: 286px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_carrilesLT.png" style="width: 273px; height: 193px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> </a>
+      <div style="text-align: center;"><span class="Info"><a name="lineas_por_simbolos">carrilesLT.lil çizim moduyla çizilmiş plan</a></span><a name="lineas_por_simbolos"><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+Kritik nokta (gabari çalışmaları):<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_punto_critico.png" style="width: 428px; height: 351px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+SS komutu, bir sembolün içindeki ilişkili bir sembolün konumunu
+çıkarmaya ve daha sonra gabari çalışmasında kullanılmak üzere bir 3B
+çizgi ve bir .pmt dosyası oluşturmaya olanak tanır. Birkaç SS komutu
+eklendiğinde, noktaları aynı .pmt dosyasına (pmt=2) ekleme imkanı
+oluşturulur; burada her nokta, sembol tipiyle numaralandırılır. Eğer bir
+profilde aranan sembol görünmezse, program çizgiyi keser:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_puntocritico_dibujo.png" style="width: 396px; height: 228px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+      </a><a name="simbolos_por_simbolos"><span style="font-weight: bold; font-style: italic;">Sembollere Göre Semboller</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="simbolos_por_simbolos"><img src="Imagenes/lil_simbolos_simbolos.png" style="width: 309px; height: 249px;" alt="" /><br />
+      </a></div>
+      <a name="simbolos_por_simbolos"> <br />
+SP komutu, profilden semboller çıkarmaya ve bunları EDM sembolleri olarak çizmeye olanak tanır. Bir kullanım örneği simbolos.lil dosyasıdır:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="simbolos_por_simbolos"><img src="Imagenes/lil_simbolo_dibujo.png" style="width: 398px; height: 176px;" alt="" /><br />
+      </a></div>
+      <a name="simbolos_por_simbolos"> <br />
+      </a><a name="recintos_por_sup_y_cod"><span style="font-weight: bold; font-style: italic;">Yüzey ve Koda Göre Alanlar</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="recintos_por_sup_y_cod"><img src="Imagenes/lil_recintos_sup_cod.png" style="width: 512px; height: 232px;" alt="" /><br />
+      </a></div>
+      <a name="recintos_por_sup_y_cod"> <br />
+Areas.lil dosyası, belirli yüzeylerden çıkarılan referans kodlarıyla
+sınırlı kapalı alanlar çizmeyi sağlayan ve tünel, sanat yapısı ve yarı
+sanat yapısı bölgelerini dolu çizgilerle çizmeyi sağlayan komutlar
+içerir. Ayrıca dolgu konilerinin alanlarının bölgelerini çizmek için de
+komutlar içerir. Konilerin tanım komutu, her viyadük ve her tünel için
+SANAT YAPILARI menüsünde tanımlanan ön cephe şevlerini kullanabilir:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="recintos_por_sup_y_cod"><img src="Imagenes/lil_areas_dibujo.png" style="width: 397px; height: 753px;" alt="" /><br />
+      </a></div>
+      <a name="recintos_por_sup_y_cod"> <br />
+      </a>
+      <div style="text-align: center;"><a name="recintos_por_sup_y_cod"><img src="Imagenes/ejemplo_lil_areas.png" style="width: 475px; height: 128px;" alt="" /><br />
+      </a></div>
+      <a name="recintos_por_sup_y_cod"> </a>
+      <div style="text-align: center;"><span class="Info"><a name="recintos_por_sup_y_cod">Areas.lil çizim moduyla çizilmiş plan</a></span><a name="recintos_por_sup_y_cod"><br />
+      </a></div>
+      <a name="recintos_por_sup_y_cod"> <br />
+Kütüphanede ayrıca, alanları 8D çizgiler kullanarak çizen AREAS8D.lil dosyası da bulunur.<br />
+      <br />
+      </a><a name="conos_de_derrame"><span style="font-weight: bold; font-style: italic;">Dolgu Konileri</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="conos_de_derrame"><img src="Imagenes/lil_conos_derrame.png" style="width: 309px; height: 207px;" alt="" /><br />
+      </a><a name="conos_de_derrame"> </a></div>
+      <a name="conos_de_derrame"> <br />
+Kütüphanede, sanat yapılarının kenar ayaklarındaki dolgu konilerini
+çizen bir komut (N5) içeren derrames.lil, derrame2.lil, derrame3.lil ve
+derrame4.lil dosyaları bulunur. Ayrıca, dik olmayan kenar ayaklı sanat
+yapılarında, yani bir dizideki dolgu konilerini de çizer:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="conos_de_derrame"><img src="Imagenes/lil_cono_derrame_dibujo.png" style="width: 423px; height: 92px;" alt="" /><br />
+      </a></div>
+      <a name="conos_de_derrame"> <br />
+TaludDes ve TaludTer değerleri, programın dolgu konilerinde uygulayacağı sırasıyla yarma ve dolgu şevlerini tanımlamaya olanak tanır. <br />
+      <br />
+      </a>
+      <div style="text-align: center;"><span class="Info"><a name="conos_de_derrame">Bu değerler, SANAT YAPILARI menüsünde başka değerler tanımlanmadığı sürece her zaman kullanılacaktır, çünkü ikincisi önceliklidir.</a></span><a name="conos_de_derrame"><br />
+      </a></div>
+      <br />
+Eğer kenar için çizgi tipi = -2 koyarsak, o zaman dolgudaki koniler
+için dolgu eteğinin (kod 601) boyuna çizgileriyle aynı tipi ve yarmadaki
+koniler için yarma başınınkini (kod 1399) kullanacaktır.<a name="conos_de_derrame"><br />
+      </a>
+      <div style="text-align: center;"><a name="conos_de_derrame"><img src="Imagenes/ejemplo_lil_derrames.png" style="width: 577px; height: 137px;" alt="" /><br />
+      </a></div>
+      <a name="conos_de_derrame"> </a>
+      <div style="text-align: center;"><span class="Info"><a name="conos_de_derrame">derrames.lil çizim moduyla çizilmiş plan</a></span><a name="conos_de_derrame"><br />
+      </a></div>
+      <a name="conos_de_derrame"> <br />
+      </a><a name="fresado_y_demolicion"><span style="font-weight: bold; font-style: italic;">Kazıma (Frezaj) ve Söküm</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/lil_fresado_demolicion.png" style="width: 309px; height: 212px;" alt="" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">D komutu, mevcut bir
+platformun kazınmış, sökülmüş veya kullanılmış bölgelerini farklı çizgi
+tipleriyle göstermeye olanak tanır. Kütüphanede, bu komutu içeren iki
+dosya, D.lil ve D2.lil, bulunur.<br />
+            <br />
+D2.lil'de D2 komutu, her iki platformda bağımsız güçlendirmeye sahip otoyollar için kullanılır:<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/ejemplo_lil_d.png" style="width: 299px; height: 149px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_fresadoydemolicion.png" style="width: 423px; height: 186px;" alt="" /><br />
+      </div>
+      <span style="font-weight: bold; font-style: italic;"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+    <tr>
+      <td class="Parrafo" style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span><span style="font-weight: bold; font-style: italic;"><a name="bordillostableros">Bordürler, Tabliyeler</a></span><br />
+
+      <br />
+Bordürlerin, tabliyelerin ve kirişlerin boyuna ve/veya enine çizgilerini temsil eder.<br />
+      <br />
+Bordürlerin bağlantı noktalarının boyuna çizgileri de, her bordürde tanımlanan çizgi tipi kullanılarak temsil edilebilir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/editar_lil_bor.png" style="width: 300px; height: 301px;" alt="" /><br />
+
+      </div>
+       <br />
+
+<span style="font-weight: bold;">Üçgenler</span> çizim modu etkinleştirilebilir; bu mod, BIM modelinin üçgenlerinin tel modelini oluşturur, bu da
+KML'ye (Google Earth) mutlak kotta (zemine yapışık değil) aktarıldığında tabliyeleri, kirişleri, kazık perdelerini ve temel kazıklarını katı bir cisim olarak görmeyi sağlar.<br />
+
+      <br />
+
+      <br />
+
+      <a name="capasfirmes"><span style="font-weight: bold; font-style: italic;">Üstyapı Katmanları<br />
+      <br />
+      </span>Bu seçenekle, üstyapı katmanlarının
+her biri için boyuna çizgileri, enine çizgileri ve kaplanan alanı
+çizebiliriz; bunu yaparken katmanın sadece görünen yüzünü dikkate
+alırız.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/editar_lil_capasfirmes.png" style="width: 350px; height: 300px;" alt="" /><br />
+      </div>
+      <span style="font-weight: bold; font-style: italic;"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-weight: bold;" class="Parrafo"><a name="Cambios_de_pendiente">Eğim
+Değişimleri<br />
+      <br />
+      </a></span><span class="Parrafo">KM'yi,
+kotu ve önceki ve sonraki eğim değişim noktasıyla olan mesafeleri ve
+eğimleri etiketlemek için sembollerin ilişkilendirildiği bir hücre
+tanımlamaya olanak tanır. Eğim için bir tolerans değeri (dEmin)
+belirlenir. Etiketlenecek kesit noktalarının bir listesi tanımlanabilir,
+örneğin: hendek tabanı (yüzey 68 kod 600), kenar hendeği (yüzey 68, kod
+3010), vb... Hücrenin konumu daha sonra düzenlenebilir ve bu hücre tüm
+sembollerini beraberinde sürükler.<br />
+
+      <br />
+
+      </span><span style="font-weight: bold;" class="Parrafo"></span></td>
+    </tr>
+    <tr align="center">
+      <td><img src="Imagenes/cambios_de_pendiente.png" style="width: 350px; height: 418px;" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

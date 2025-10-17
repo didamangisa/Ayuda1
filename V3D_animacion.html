@@ -1,0 +1,849 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Animasyon</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>Animasyon<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#guion">Senaryo</a><br />
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#Editor_de_papeles">Rol Editörü</a><br />
+      <a href="#geometrias">Geometrik Nesnelerin Rol Editörü</a><br />
+      <a href="#camaras_luces">Kameraların ve Işıkların Rol Editörü</a><br />
+      <a href="#carpetas_objetos">Nesne Klasörlerinin Rol Editörü</a><br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <a href="#guia">Kılavuzlar</a><br />
+      </span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br /><img style="width: 274px; height: 215px;" alt="" src="Imagenes/virtual3d_animacion.png" align="right" hspace="8" />
+Animasyonlar, aktörlerin (kamera, araç, ışık vb.) sahne üzerindeki hareketini tanımlamayı sağlar. Bu animasyonlardan yola çıkarak, bir projenin vurgulanmak istenen yönlerini gösteren <a href="V3D_render.html#video">videolar</a> oluşturulabilir.<br />
+      <br />
+Bir animasyon, bir sahnede yer alan bir grup aktörün zamansal bir diziyi takip ederek canlandırdığı roller bütününden oluşan bir senaryoya sahiptir.<br />
+      <br />
+Animasyon Moduna, Sanal 3B menüsündeki <img src="Imagenes/V3D_icono_menu_principal_animaciones.png" style="width: 40px; height: 32px;" alt="" /> butonu aracılığıyla erişilir. <br />
+      </span><br />
+      <br />
+<br />
+      <span class="Titulo_2">Genel Seçenekler</span><br />
+      <span style="font-weight: bold;"><br />
+      <img style="width: 350px; height: 125px;" alt="" src="Imagenes/virtual3d_secuenciatemporal.png" align="right" hspace="8" />İsim</span>:
+animasyon modunu bir isimle tanımlamayı sağlar.<br />
+      <span style="font-weight: bold;">Yorum</span>: animasyon moduna açıklayıcı bir yorum eklemeyi sağlar.<br />
+      <img src="Imagenes/V3D_salvar.png" style="width: 24px; height: 24px;" alt="" /> Animasyon modunu sahne dışında bir dosyaya kaydetmeyi sağlar.<br />
+      <img src="Imagenes/V3D_abrir.png" style="width: 24px; height: 24px;" alt="" /> Kayıtlı bir animasyon modunu mevcut animasyon olarak yükler.<br />
+      <br />
+      <span style="font-weight: bold;">Süre (sn)</span>: animasyonun ne kadar süreceğini tanımlar.<br />
+      <span style="font-weight: bold;">FPS</span>: animasyonun her saniyesi için oluşturulacak kare sayısını (Frames Per Second) belirtir.<br />
+      <span style="font-weight: bold;">Toplam Kare</span>: bu animasyon için oluşturulacak toplam kare sayısını gösterir.<br />
+      <br />
+Her bir karede, aktörlerin rollerini canlandırmasıyla o anki zamana karşılık gelen durum gösterilir.<br />
+      <br />
+      <a name="guion"><span class="Titulo_2">Senaryo</span></a><br />
+      <br /><img style="width: 300px; height: 526px;" alt="" src="Imagenes/virtual3d_habilitaractor.png" align="right" hspace="8" />
+Senaryo, animasyondaki tüm rollerin bütününü kapsar. Her bir rol, bir geometri, bir kamera, bir ışık, bir nesne dizisi veya bir nesne klasörü olabilen bir aktör tarafından temsil edilir.<br />
+      <br />
+      <span style="font-weight: bold;">No</span>: mevcut rolün listedeki sıra numarasını belirtir, canlandırılacağı zamanla bir ilgisi yoktur. "<span style="font-weight: bold;">&lt;</span>" ve "<span style="font-weight: bold;">&gt;</span>" butonları listede gezinmeyi sağlar.<br />
+      <span style="font-weight: bold;">Rol Ekle</span>: listenin sonuna yeni bir rol ekler.<br />
+      <span style="font-weight: bold;">Araya Rol Ekle</span>: mevcut rolün bulunduğu pozisyona yeni bir rol ekler ve mevcut rol ile sonrakileri bir sıra kaydırır.<br />
+      <span style="font-weight: bold;">Rolü Sil</span>: mevcut rolü siler.<br />
+      <br /><img style="width: 350px; height: 193px;" alt="" src="Imagenes/virtual3d_guion.png" /><br />
+      <br />
+Rollerin hepsi birbirinden bağımsızdır, aralarında bir etki veya bağımlılık yoktur. Ancak görsel olarak olabilir.<br />
+      <br />
+      <span style="font-weight: bold;">Rol (n/m)</span>: rolün toplam roller içindeki sırasını ve açıklayıcı bir ismini belirtir.<br />
+      <span style="font-weight: bold;">Aktif</span>: rolün animasyon sırasında canlandırılıp canlandırılmayacağını belirtir.<br />
+      <span style="font-weight: bold;">Aktör</span>: rolü canlandıracak aktörü seçmeyi sağlar.<br />
+      <span style="font-weight: bold;">Rolü Düzenle</span>: aktörün rolü boyunca sergileyeceği tüm özelliklerin belirtildiği <a href="V3D_editor_papeles.html">diyalog kutusunu</a> açar.<br />
+      <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 451px;" alt="" src="Imagenes/virtual3d_editarpapel.png" /><br />
+      </div>
+      <br />
+      <a name="Editor_de_papeles"><span class="Titulo_2">Rol Editörü</span><br />
+
+      <br />
+
+Bir rol düzenlendiğinde, aktörün zaman içinde gerçekleştireceği eylemlerin belirtilebileceği bir menü görüntülenir.<br />
+
+      <br />
+
+Aktörün türüne bağlı olarak farklı eylemler gerçekleştirilebileceği için, bu menünün aktörün türüne göre üç farklı "versiyonu" bulunur:<br />
+
+      <br />
+
+      
+      </a><div style="text-align: center;"><img style="width: 449px; height: 130px;" alt="" src="Imagenes/V3D_editor_papeles2.png" /><br />
+
+      </div>
+
+      <br />
+
+
+Bir kamera veya bir ışık:<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 109px;" alt="" src="Imagenes/V3D_editor_papeles1.png" /><br />
+
+      </div>
+
+      <br />
+
+
+Veya bir nesne klasörü:<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 67px;" alt="" src="Imagenes/V3D_editor_papeles3.png" /><br />
+
+      </div>
+
+      <br />
+
+
+Ayrıca bu menü, pencerenin üst kısmında bulunan butonlar aracılığıyla animasyonun farklı rolleri arasında gezinmeye veya sıra numarasına göre belirli bir role erişmeye olanak tanır.<br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <a name="geometrias"><span class="Titulo_2">Geometrik Nesnelerin Rol Editörü</span></a><br />
+
+      <br />
+
+Geometrik nesneler, değişen özelliklerine bağlı olarak dört farklı türde rol üstlenebilirler:<br />
+
+      
+      <ul>
+<li>Nesnenin zaman içindeki olası konumlarını belirleyen yolları veya "kılavuzları" takip etmesi sağlanarak konumu değiştirilebilir.</li>
+      </ul>
+
+      
+      <ul>
+<li>Yönelimi veya dönüşü değiştirilebilir.</li>
+      </ul>
+
+      
+      <ul>
+<li>Şeffaflığı değiştirilebilir.</li>
+      </ul>
+
+      
+      <ul>
+<li>Penceredeki "belirme" derecesi değiştirilebilir.</li>
+      </ul>
+
+      
+      <ul>
+<li>Aynı anda birden fazla özelliği değiştirilebilir.</li>
+      </ul>
+
+      <br />
+
+Bu özelliklerden herhangi birini değiştirecek bir eylem eklemek için ilgili seçenek açılır.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Öteleme</span><br />
+
+      <br />
+
+Eğer <span style="font-weight: bold;">Öteleme</span> açılır menü butonuna tıklanırsa, bu nesneyi sahne boyunca hareket ettirecek eylemler gösterilir. Başlangıçta hiçbir eylem yoktur, ancak &nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonuna tıklayarak eklenebilir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 463px; height: 361px;" alt="" src="Imagenes/V3D_editor_papeles_geo_desp.png" /><br />
+      </div>
+
+      <br />
+
+&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonları, diğer herhangi iki eylem arasına veya eylem dizisinin sonuna eylem eklemeyi sağlar. Her eylemde:<br />
+
+      
+      <ul>
+<li><span style="font-weight: bold;">İsim</span> alanı, eylemin ne olduğunu kısaca tanımlamaya yarar.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Kılavuz</span> alanı, nesnenin hareket etmek için takip edeceği kılavuzun seçilmesini sağlar. Bir kılavuzu takip ederken, nesnenin "ön" kısmının yönelimi kılavuza teğet olacaktır.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Bezier</span> onay kutusu, kılavuzun bir Bezier eğrisi olarak mı yoksa sadece yumuşatılmış bir çizgi olarak mı kullanılacağını belirtir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">t0</span> ve <span style="font-weight: bold;">Süre</span> alanları, sırasıyla eylemin başlangıç anını ve ne kadar süreceğini belirtir. Bu zamanlar saniye cinsinden ifade edilir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">e0</span> ve <span style="font-weight: bold;">ef</span> alanları, nesnenin kılavuz uzunluğu boyunca <span style="font-weight: bold;">t0</span> anında ve bu eylem bittiğinde sahip olacağı konumu belirtir. Bu konumlar, kılavuzun ilk noktasından itibaren kılavuz üzerinde ölçülen metre cinsinden ifade edilir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">v0</span> ve <span style="font-weight: bold;">vf</span> alanları, nesnenin <span style="font-weight: bold;">t0</span> anında ve bu eylem bittiğinde sahip olacağı hızı belirtir. Bu hızlar km/sa cinsinden ifade edilir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">a</span> alanı sadece bilgilendirme amaçlıdır; bu eylemin yürütülmesi sırasında başlangıç hızından son hıza geçmek için gereken ivmeyi gösterir. Bu ivme sabit kabul edilir ve m/s<sup>2</sup> cinsinden ölçülür.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Süre</span>, <span style="font-weight: bold;">ef</span> ve <span style="font-weight: bold;">vf</span> alanlarının yanında, diğerleri değiştirildiğinde bu 3 değerden hangisinin otomatik olarak hesaplanacağını belirten bir seçim butonu bulunur. Şu formüller takip edilir:</li>
+      </ul>
+
+
+      
+      <div style="margin-left: 80px;">vf = v0 + a × t<br />ef = e0 + v0 × t + 0.5 × a × t<sup>2</sup></div>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Yolu Çiz</span> onay kutusu, eylem sırasında nesnenin bulunacağı noktaların sahnede gösterilmesini sağlar. Ayrıca, eylemin geçtiği tam saniyelere denk gelen konumlar farklı bir renkle ve ilgili metinle işaretlenir. Bu bilgi, bir animasyon oluşturulurken görünmez.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Zemini Takip Et</span> onay kutusu, nesnenin altında bulunan geometrinin yüzeyine uyum sağlayarak kılavuzu takip edeceği anlamına gelir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Inc. X0</span>, <span style="font-weight: bold;">Inc. Xf</span>, <span style="font-weight: bold;">Inc. Y0</span>, <span style="font-weight: bold;">Inc. Yf</span>, <span style="font-weight: bold;">Inc. Z0</span> ve <span style="font-weight: bold;">Inc. Zf</span> alanları, nesnenin kılavuza göre olması gereken orijinal konumuna göre ötelemeleri belirtir. X'e göre ötelemeler nesnenin yatay enine ekseninde (negatifler sola doğru), Y'ye göre ötelemeler nesnenin boyuna ekseninde (negatifler geriye doğru) ve Z'ye göre ötelemeler nesnenin dikey ekseninde yapılır. Bu ötelemeler başlangıçta ve sonda farklıysa, her noktada öteleme bu iki değer arasında enterpole edilir.</li>
+      </ul>
+
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Aktif</span> onay kutusu, bunun gerçekleştirilmesi gereken bir eylem olduğunu belirtir, aksi takdirde aktif hale getirilene kadar yok sayılır.</li>
+      </ul>
+
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Öncekinden Devam Et</span> onay kutusu, yeni eylemin başlangıç verisi olarak bir önceki eylemin bitiş verilerini alacağını belirtir.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> butonu eylemi siler.</li>
+      </ul>
+
+      <br />
+
+Seçeneklerin altında, güzergah boyunca hızın değişimini gösteren "V(e)", zamanla hızın değişimini gösteren "V(t)" ve her aralıkta kat edilen mesafeyi gösteren "E(t)" olmak üzere 3 adet yatay çubuk grafik görünür.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Döndürme</span><br />
+
+      <br />
+
+Eğer <span style="font-weight: bold;">Döndürme</span> açılır menü butonuna tıklanırsa, nesnenin kendi etrafında dönmesini sağlayacak eylemler gösterilir.<br />
+
+
+Başlangıçta hiçbir eylem yoktur, ancak <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonuna tıklayarak eklenebilir.<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 463px; height: 337px;" alt="" src="Imagenes/V3D_editor_papeles_geo_rot.png" /><br />
+      </div>
+
+
+      <br />
+
+
+<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonları, diğer herhangi iki eylem arasına veya eylem dizisinin sonuna eylem eklemeyi sağlar. Kullanıcı tarafından tanımlanabilen elemanlar şunlardır:<br />
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">İsim</span> alanı, eylemin ne olduğunu kısaca tanımlamaya yarar.</li>
+      </ul>
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">t0</span> ve <span style="font-weight: bold;">Süre</span> alanları, sırasıyla eylemin başlangıç anını ve ne kadar süreceğini belirtir. Bu zamanlar saniye cinsinden ifade edilir.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>Devamında, eylemin başlangıcında nesnenin ne kadar dönük olduğunu belirten açı ile eylem bittiğinde ulaşacağı son açıyı (tam tur sayısı + son açı) gösteren 9 adet kutucuk bulunur. Bu açılar derece cinsinden ölçülür. Her bir eksen için döndürme değerleri belirtilir. Dönüşlerin uygulanma sırası şöyledir:</li>
+      </ul>
+
+
+      
+      <ol style="margin-left: 40px;">
+<li>Z ekseni etrafında</li><li>X ekseni etrafında</li><li>Y ekseni etrafında</li>
+      </ol>
+
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Aktif</span> onay kutusu, bunun gerçekleştirilmesi gereken bir eylem olduğunu belirtir, aksi takdirde aktif hale getirilene kadar yok sayılır.</li>
+      </ul>
+
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Öncekinden Devam Et</span> onay kutusu, yeni eylemin başlangıç verisi olarak bir önceki eylemin bitiş verilerini alacağını belirtir.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> butonu eylemi siler.</li>
+      </ul>
+
+
+Seçeneklerin altında, nesnenin her bir eksende zamana göre ne kadar döndüğünü gösteren üç yatay çubuk grafik görünür.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Şeffaflık</span><br />
+
+      <br />
+
+Eğer <span style="font-weight: bold;">Şeffaflık</span> açılır menü butonuna tıklanırsa, animasyon süresi boyunca nesnenin şeffaflığını değiştirecek eylemler gösterilir. Başlangıçta hiçbir eylem yoktur, ancak <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonuna tıklayarak eklenebilir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 463px; height: 225px;" alt="" src="Imagenes/V3D_editor_papeles_geo_trans.png" /><br />
+      </div>
+
+      <br />
+
+
+<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonları, diğer herhangi iki eylem arasına veya eylem dizisinin sonuna eylem eklemeyi sağlar. Kullanıcı tarafından tanımlanabilen elemanlar şunlardır:<br />
+
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">İsim</span> alanı, eylemin ne olduğunu kısaca tanımlamaya yarar.</li>
+      </ul>
+
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">t0</span> ve <span style="font-weight: bold;">Süre</span> alanları, sırasıyla eylemin başlangıç anını ve ne kadar süreceğini belirtir. Bu zamanlar saniye cinsinden ifade edilir.</li>
+      </ul>
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Başlangıç</span> ve <span style="font-weight: bold;">Bitiş</span> alanları, eylemin başında ve sonunda nesnenin şeffaflık derecesini belirtir. Şeffaflık yüzde olarak ölçülür; 0 hiç şeffaflık olmamasını (nesnenin kendisi zaten şeffaf değilse) ve 100 tam şeffaflığı (böylece görünmez hale gelir) ifade eder.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Aktif</span> onay kutusu, bunun gerçekleştirilmesi gereken bir eylem olduğunu belirtir, aksi takdirde aktif hale getirilene kadar yok sayılır.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Öncekinden Devam Et</span> onay kutusu, yeni eylemin başlangıç verisi olarak bir önceki eylemin bitiş verilerini alacağını belirtir.</li>
+      </ul>
+
+      
+      <ul>
+<li>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> butonu eylemi siler.</li>
+      </ul>
+
+Seçeneklerin altında, nesnenin şeffaflığının zamana göre değişimini gösteren yatay bir çubuk grafik görünür.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Belirme</span><br />
+
+      <br />
+
+Eğer <span style="font-weight: bold;">Belirme</span> açılır menü butonuna tıklanırsa, animasyon süresi boyunca nesnenin pencerenin bir ucundan diğerine veya merkeze doğru bir süpürme efektiyle belirmesini veya kaybolmasını sağlayacak eylemler gösterilir.<br />
+
+Bu tür bir eylem, uygulandığı nesne pencerenin büyük bir bölümünü kaplıyorsa anlamlıdır. Başlangıçta hiçbir eylem yoktur, ancak <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonuna tıklayarak eklenebilir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 463px; height: 249px;" alt="" src="Imagenes/V3D_editor_papeles_geo_apa.png" /><br />
+      </div>
+
+      <br />
+
+&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonları, diğer herhangi iki eylem arasına veya eylem dizisinin sonuna eylem eklemeyi sağlar. Her eylemde:<br />
+
+      
+      <ul>
+<li><span style="font-weight: bold;">İsim</span> alanı, eylemin ne olduğunu kısaca tanımlamaya yarar.</li>
+      </ul>
+
+
+
+
+      
+      
+      <ul>
+<li><span style="font-weight: bold;">t0</span> ve <span style="font-weight: bold;">Süre</span> alanları, sırasıyla eylemin başlangıç anını ve ne kadar süreceğini belirtir. Bu zamanlar saniye cinsinden ifade edilir.</li>
+      </ul>
+
+
+
+      
+      
+      <ul>
+<li>
+<span style="font-weight: bold; font-style: italic;">Belirerek gel</span> ve <span style="font-weight: bold; font-style: italic;">Kaybol</span> seçenekleri, eylemin nihai sonucunun nesnenin tamamen görünmesi mi yoksa kaybolması mı olacağını belirtir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Soldan sağa</span>, <span style="font-weight: bold; font-style: italic;">Sağdan sola</span>, <span style="font-weight: bold; font-style: italic;">Yukarıdan aşağıya</span> ve <span style="font-weight: bold; font-style: italic;">Aşağıdan yukarıya</span> onay kutuları, nesnenin hangi yönde belireceğini veya kaybolacağını belirtir. Birkaçı, hatta hepsi işaretlenebilir. İki zıt yön işaretlenirse, her iki süpürme efekti pencerenin merkezinde birleştiğinde nesne tamamen belirir veya kaybolur.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Aktif</span> onay kutusu, bunun gerçekleştirilmesi gereken bir eylem olduğunu belirtir, aksi takdirde aktif hale getirilene kadar yok sayılır.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Öncekinden Devam Et</span> onay kutusu, yeni eylemin başlangıç verisi olarak bir önceki eylemin bitiş verilerini alacağını belirtir.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> butonu eylemi siler.</li>
+      </ul>
+
+Seçeneklerin altında, nesnenin belirme durumunun zamana göre değişimini gösteren yatay bir çubuk grafik görünür.<br />
+
+      <br />
+
+      <br />
+
+      <span class="Titulo_2"><a name="camaras_luces">Kameraların ve Işıkların Rol Editörü</a></span><br />
+
+      <br />
+
+Kameralar ve ışıklar, değişen özelliklerine bağlı olarak üç farklı türde rol üstlenebilir.<br />
+
+      
+      <ul>
+<li>Elemanın zaman içindeki olası konumlarını belirleyen yolları veya "kılavuzları" takip etmesi sağlanarak konumu değiştirilebilir. Referansın konumu (kameralarda bakılan nokta veya ışığın yönünü belirleyen nokta) pozisyonun hareketine teğetsel olarak eşlik eder.</li>
+      </ul>
+
+      
+      <ul>
+<li>Elemanın konumu için referanstan farklı bir yol belirtilebilir.</li>
+      </ul>
+
+      
+      <ul>
+<li>Yönelimi veya dönüşü değiştirilebilir.</li>
+      </ul>
+
+      
+      <ul>
+<li>Aynı anda birden fazla özelliği değiştirilebilir.</li>
+      </ul>
+
+Bu özelliklerden herhangi birini değiştirecek bir eylem eklemek için ilgili seçenek açılır.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Konum Ötelemesi</span><br />
+
+      <br />
+
+Eğer <span style="font-weight: bold;">Konum Ötelemesi</span> açılır menü butonuna tıklanırsa, bu nesneyi sahne boyunca hareket ettirecek eylemler gösterilir. Başlangıçta hiçbir eylem yoktur, ancak <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonunu kullanarak eklenebilir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 340px;" alt="" src="Imagenes/V3D_editor_papeles_camluz_desp.png" /><br />
+      </div>
+
+      <br />
+
+Bu resimde kullanıcı tarafından tanımlanabilen tüm elemanlar görülebilir. <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonları, diğer herhangi iki eylem arasına veya eylem dizisinin sonuna eylem eklemeyi sağlar. Her eylemde:<br />
+
+      
+      <ul>
+<li><span style="font-weight: bold;">İsim</span> alanı, eylemin ne olduğunu kısaca tanımlamaya yarar.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Kılavuz</span> alanı, nesnenin hareket etmek için takip edeceği kılavuzun seçilmesini sağlar. Bir kılavuzu takip ederken, nesnenin "ön" kısmının yönelimi kılavuza teğet olacaktır. <span style="font-weight: bold; font-style: italic;">Bezier</span> onay kutusu, kılavuzun bir Bezier eğrisi olarak mı yoksa sadece yumuşatılmış bir çizgi olarak mı kullanılacağını belirtir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">t0</span> ve <span style="font-weight: bold;">Süre</span> alanları, sırasıyla eylemin başlangıç anını ve ne kadar süreceğini belirtir. Bu zamanlar saniye cinsinden ifade edilir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">e0</span> ve <span style="font-weight: bold;">ef</span> alanları, nesnenin kılavuz uzunluğu boyunca <span style="font-weight: bold;">t0</span> anında ve bu eylem bittiğinde sahip olacağı konumu belirtir. Bu konumlar, kılavuzun ilk noktasından itibaren kılavuz üzerinde ölçülen metre cinsinden ifade edilir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">v0</span> ve <span style="font-weight: bold;">vf</span> alanları, nesnenin <span style="font-weight: bold;">t0</span> anında ve bu eylem bittiğinde sahip olacağı hızı belirtir. Bu hızlar km/sa cinsinden ifade edilir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">a</span> alanı sadece bilgilendirme amaçlıdır; bu eylemin yürütülmesi sırasında başlangıç hızından son hıza geçmek için gereken ivmeyi gösterir. Bu ivme sabit kabul edilir ve m/s<sup>2</sup> cinsinden ölçülür.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Süre</span>, <span style="font-weight: bold;">ef</span> ve <span style="font-weight: bold;">vf</span> alanlarının yanında, diğerleri değiştirildiğinde bu 3 değerden hangisinin otomatik olarak hesaplanacağını belirten bir seçim butonu bulunur. Şu formüller takip edilir:</li>
+      </ul>
+
+      
+      <div style="margin-left: 80px;">vf = v0 + a × t<br />ef = e0 + v0 × t + 0.5 × a × t<sup>2</sup><br /></div>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Yolu Çiz</span> onay kutusu, eylem sırasında nesnenin bulunacağı noktaların sahnede gösterilmesini sağlar. Ayrıca, eylemin geçtiği tam saniyelere denk gelen konumlar farklı bir renkle ve ilgili metinle işaretlenir. Bu bilgi, bir animasyon oluşturulurken görünmez.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Inc. X0</span>, <span style="font-weight: bold;">Inc. Xf</span>, <span style="font-weight: bold;">Inc. Y0</span>, <span style="font-weight: bold;">Inc. Yf</span>, <span style="font-weight: bold;">Inc. Z0</span> ve <span style="font-weight: bold;">Inc. Zf</span> alanları, nesnenin kılavuza göre olması gereken orijinal konumuna göre ötelemeleri belirtir. X'e göre ötelemeler nesnenin yatay enine ekseninde (negatifler sola doğru), Y'ye göre ötelemeler nesnenin boyuna ekseninde (negatifler geriye doğru) ve Z'ye göre ötelemeler nesnenin dikey ekseninde yapılır. Bu ötelemeler başlangıçta ve sonda farklıysa, her noktada öteleme bu iki değer arasında enterpole edilir.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Aktif</span> onay kutusu, bunun gerçekleştirilmesi gereken bir eylem olduğunu belirtir, aksi takdirde aktif hale getirilene kadar yok sayılır.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Öncekinden Devam Et</span> onay kutusu, yeni eylemin başlangıç verisi olarak bir önceki eylemin bitiş verilerini alacağını belirtir.</li>
+      </ul>
+
+      
+      <ul>
+<li>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> butonu eylemi siler.</li>
+      </ul>
+
+Seçeneklerin altında, güzergah boyunca hızın değişimini (<span style="font-weight: bold;">V(e)</span>), zamanla hızın değişimini (<span style="font-weight: bold;">V(t)</span>) ve her aralıkta kat edilen mesafenin değişimini (<span style="font-weight: bold;">E(t)</span>) gösteren üç yatay çubuk grafik bulunur.<br />
+
+      <br />
+
+Bu menü, kameranın veya ışığın hareketini, referans noktasının pozisyona bağlı ve teğetsel olarak hareket etmesini sağlayacak şekilde tanımlar. Bu, kamera veya ışığın bir nesneyi takip ettiği durumlarda olağan kullanımdır. Ancak, bir sonraki menüde açıklandığı gibi, referansın sabit kalması veya başka bir yolu izlemesi gibi farklı bir davranış sergilemesi de belirtilebilir.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Referans Ötelemesi</span><br />
+
+      <br />
+
+Bu menünün açılabilmesi (ve kullanılabilmesi) için <span style="font-weight: bold; font-style: italic;">Referans ayrı bir aktördür</span> onay kutusunun işaretlenmesi gerekir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 109px;" alt="" src="Imagenes/V3D_editor_papeles4.png" /><br />
+      </div>
+
+      <br />
+
+Bu menünün seçenekleri <a style="font-weight: bold;" href="V3D_editor_papeles.html#desp_posicion">Konum Ötelemesi</a> menüsündekilerle aynıdır ve aynı şekilde çalışır.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Döndürme</span><br />
+
+      <br />
+
+Eğer <span style="font-weight: bold;">Döndürme</span> açılır menü butonuna tıklanırsa, nesnenin kendi etrafında dönmesini sağlayacak eylemler gösterilir.<br />
+
+Başlangıçta hiçbir eylem yoktur, ancak <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonuna tıklayarak eklenebilir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 316px;" alt="" src="Imagenes/V3D_editor_papeles_camluz_rot.png" /><br />
+      </div>
+
+      <br />
+
+<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonları, diğer herhangi iki eylem arasına veya eylem dizisinin sonuna eylem eklemeyi sağlar. Kullanıcı tarafından tanımlanabilen elemanlar şunlardır:<br />
+
+      
+      <ul>
+<li><span style="font-weight: bold;">İsim</span> alanı, eylemin ne olduğunu kısaca tanımlamaya yarar.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">t0</span> ve <span style="font-weight: bold;">Süre</span> alanları, sırasıyla eylemin başlangıç anını ve ne kadar süreceğini belirtir. Bu zamanlar saniye cinsinden ifade edilir.</li>
+      </ul>
+
+      
+      <ul>
+<li>Devamında, eylemin başlangıcında nesnenin ne kadar dönük olduğunu belirten açı ile eylem bittiğinde ulaşacağı son açıyı (tam tur sayısı + son açı) gösteren 9 adet kutucuk bulunur. Bu açılar derece cinsinden ölçülür. Her bir eksen için döndürme değerleri belirtilir. Dönüşlerin uygulanma sırası şöyledir:</li>
+      </ul>
+
+      
+      <ol style="margin-left: 40px;">
+<li>Z ekseni etrafında</li><li>X ekseni etrafında</li><li>Y ekseni etrafında</li>
+      </ol>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Aktif</span> onay kutusu, bunun gerçekleştirilmesi gereken bir eylem olduğunu belirtir, aksi takdirde aktif hale getirilene kadar yok sayılır.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Öncekinden Devam Et</span> onay kutusu, yeni eylemin başlangıç verisi olarak bir önceki eylemin bitiş verilerini alacağını belirtir.</li>
+      </ul>
+
+      
+      <ul>
+<li>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> butonu eylemi siler.</li>
+      </ul>
+
+Seçeneklerin altında, nesnenin her bir eksende zamana göre ne kadar döndüğünü gösteren üç yatay çubuk grafik görünür.<br />
+
+      <br />
+
+      <br />
+      <span class="Titulo_2"><a name="carpetas_objetos">Nesne Klasörlerinin Rol Editörü</a></span><br />
+
+      <br />
+
+Geometrik nesne klasörleri tek bir tür rol üstlenebilir: Penceredeki belirme dereceleri değiştirilebilir.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-style: italic; font-weight: bold;">Belirme</span><br />
+
+      <br />
+
+Eğer <span style="font-weight: bold;">Belirme</span> açılır menü butonuna tıklanırsa, nesnenin pencerenin bir ucundan diğerine veya merkeze doğru bir süpürme efektiyle belirmesini veya kaybolmasını sağlayacak eylemler gösterilir.<br />
+
+Bu tür bir eylem, uygulandığı klasördeki nesneler pencerenin büyük bir bölümünü kaplıyorsa anlamlıdır. 
+Başlangıçta hiçbir eylem yoktur, ancak <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonuna tıklayarak eklenebilir.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 186px;" alt="" src="Imagenes/V3D_editor_papeles_car_apa.png" /><br />
+      </div>
+
+      <br />
+
+
+<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> butonları, diğer herhangi iki eylem arasına veya eylem dizisinin sonuna eylem eklemeyi sağlar. Kullanıcı tarafından tanımlanabilen elemanlar şunlardır:<br />
+
+      
+      <ul>
+<li><span style="font-weight: bold;">İsim</span> alanı, eylemin ne olduğunu kısaca tanımlamaya yarar.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li><span style="font-weight: bold;">t0</span> ve <span style="font-weight: bold;">Süre</span> alanları, sırasıyla eylemin başlangıç anını ve ne kadar süreceğini belirtir. Bu zamanlar saniye cinsinden ifade edilir.</li>
+      </ul>
+
+      
+      <ul>
+<li>
+<span style="font-weight: bold; font-style: italic;">Belirerek gel</span> ve <span style="font-weight: bold; font-style: italic;">Kaybol</span> seçenekleri, eylemin nihai sonucunun nesnenin tamamen görünmesi mi yoksa kaybolması mı olacağını belirtir.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Soldan sağa</span>, <span style="font-weight: bold; font-style: italic;">Sağdan sola</span>, <span style="font-weight: bold; font-style: italic;">Yukarıdan aşağıya</span> ve <span style="font-weight: bold; font-style: italic;">Aşağıdan yukarıya</span> onay kutuları, nesnenin hangi yönde belireceğini veya kaybolacağını belirtir. Birkaçı, hatta hepsi işaretlenebilir. İki zıt yön işaretlenirse, her iki süpürme efekti pencerenin merkezinde birleştiğinde nesne tamamen belirir veya kaybolur.</li>
+      </ul>
+
+
+
+      
+      
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Aktif</span> onay kutusu, bunun gerçekleştirilmesi gereken bir eylem olduğunu belirtir, aksi takdirde aktif hale getirilene kadar yok sayılır.</li>
+      </ul>
+
+
+
+      
+      
+      
+      <ul>
+<li><span style="font-weight: bold; font-style: italic;">Öncekinden Devam Et</span> onay kutusu, yeni eylemin başlangıç verisi olarak bir önceki eylemin bitiş verilerini alacağını belirtir.</li>
+      </ul>
+
+
+
+      
+      
+      
+      <ul>
+<li>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> butonu eylemi siler.</li>
+      </ul>
+
+
+Seçeneklerin altında, nesnenin belirme durumunun zamana göre değişimini gösteren yatay bir çubuk grafik görünür.<br />
+      <br />
+<span class="Titulo_2"><a name="guia">Kılavuzlar</a></span><br />
+      <br />
+Kılavuzlar, sahne üzerinde bir rotayı tanımlayan nokta dizileridir. Haritadan alınmış çizgiler, eksen bilgilerinden oluşturulmuş hatlar veya bu animasyon menüsünde oluşturulmuş yollar olabilirler.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 400px; height: 444px;" alt="" src="Imagenes/virtual3d_guias.png" /><br />
+      </div>
+
+      <br />
+      <span style="font-weight: bold;">Çizerek Oluştur</span>: 3B görüntüleyicide noktalara tıklayarak bir kılavuz oluşturma modunu başlatır. Bu moddan "Esc" tuşuna basarak çıkılır.<br />
+      <span style="font-weight: bold;">Çizgi Seçerek Oluştur</span>: haritadan bir çizgiyi kılavuz olarak kullanmak üzere seçmeyi sağlar.<br />
+      <span style="font-weight: bold;">Sil</span>: mevcut kılavuzu siler.<br />
+      <span style="font-weight: bold;">Yükle</span>: kılavuzlar listesine bir kılavuz eklemeyi sağlar.<br />
+      <span style="font-weight: bold;">Kaydet</span>: bir kılavuzu sahne dışında bir dosyaya kaydeder.<br />
+      <span style="font-weight: bold;">Kılavuz</span>: mevcut tüm kılavuzları içeren seçici; seçilen kılavuzun verileri gösterilir.<br />
+      <span style="font-weight: bold;">Kılavuzları İşaretle</span>: kılavuzların 3B görüntüleyicide çizilmesini sağlar.<br />
+      <span style="font-weight: bold;">İsim</span>: mevcut kılavuzun ismini belirtir.<br />
+      <span style="font-weight: bold;">Bezier</span>: kılavuzun noktalarının Bezier eğrilerinin düğüm noktaları olarak kabul edilmesini sağlar. Çizgi en fazla 63 köşe noktasına sahip olabilir.<br />
+      <span style="font-weight: bold;">Nokta</span>: gösterilen kılavuz noktasının sıra numarasını belirtir. "<span style="font-weight: bold;">&lt;</span>" ve "<span style="font-weight: bold;">&gt;</span>" butonları kılavuzun noktaları arasında gezinmeyi sağlar.<br />
+      <span style="font-weight: bold;">Ters Çevir</span>: kılavuzdaki noktaların sırasını tersine çevirir.<br />
+      <span style="font-weight: bold;">X, Y, Z</span>: kılavuzun mevcut noktasının koordinatlarını gösterir ve ayarlar.<br />
+      <span style="font-weight: bold;">Taşı</span>: mevcut noktayı 3B görüntüleyicide taşımayı sağlar.<br />
+      <span style="font-weight: bold;">Sil</span>: noktayı kılavuzdan siler.<br />
+      <span style="font-weight: bold;">Araya Ekle</span>: 3B görüntüleyici aracılığıyla kılavuza bir nokta eklemeyi sağlar.<br />
+      <span style="font-weight: bold;">Ekle</span>: kılavuzun sonuna noktalar ekler.<br />
+      <br />
+Sanal 3B'ye Boykesit menüsünden girilirse, kılavuzlar eksenlerden oluşturulabilir. Her zaman enkesitlerin yüzeyindeki 1 numaralı koddan oluşturuldukları varsayılır. Bu kodun eksenin tüm kilometrelerinde mevcut olduğu ve dolayısıyla ani değişiklikler göstermediği kabul edilir. Başka kodları takip eden diğer kılavuzları oluşturmak için doğrusal proje menülerinden işlem yapılmalıdır.<br />
+      <br />
+      <span style="font-weight: bold;">Eksen</span>: kılavuzun oluşturulacağı ekseni belirtir.<br />
+      <span style="font-weight: bold;">Yön</span>: kılavuzun kilometreleri artan mı yoksa azalan sırada mı takip edeceğini belirtmek için kullanılır.<br />
+      <span style="font-weight: bold;">Başlangıç KM, Bitiş KM</span>: kılavuzun oluşturulacağı kilometre aralığını belirler.<br />
+      <span style="font-weight: bold;">Oluştur</span>: belirtilen verilerle kılavuzu oluşturur.<br />
+      <br />
+Animasyon menüsüne girildiğinde, Istram penceresinin alt kısmında (3B görüntüleyiciden yer alarak) roller arasındaki zamansal ilişkiyi görmeyi ve animasyonun görüntülenmesini yönetmeyi sağlayan bir diyalog kutusu belirir.<br />
+      <br />
+      <img style="width: 694px; height: 318px;" alt="" src="Imagenes/V3D_menu_animacion2.png" /><br />
+      <br />
+Bu diyalog kutusunda şunlar gösterilir:<br />
+      <ul>
+        <li>Animasyon yönetimi butonları.</li>
+        <li>Saniye ve kare ölçekleri.</li>
+        <li>Hem mevcut kareyi hem de "oynatılacak" bir kare aralığını seçmek için bir zaman çizgisi.</li>
+        <li>Zaman/kare ızgarası üzerinde temsil edilen rolleri, isimleriyle birlikte. Mevcut rol kırmızı ile işaretlenir.<br />
+        </li>
+        <li>Bu rolleri gerçekleştiren aktörlerin isimleri.</li>
+      </ul>
+Butonlarla belirli bir kareye, bir öncekine, bir sonrakine, ilkine veya sonuncusuna geçilebilir. Animasyonun oynatılması başlatılabilir veya durdurulabilir. Başa dönecek şekilde durdurulabilir ve oynatmanın döngüsel olması sağlanabilir. Son butonlar, daha geniş veya daha dar bir zaman/kare aralığını göstermek ve rollerin ne zaman başlayıp bittiğini görmek içindir.<br />
+      <br />
+Rollerin çubukları, kaydırılarak başlangıç zamanlarının değiştirilmesine olanak tanır.<br />
+
+      <br />
+      </td>
+    </tr><tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+</body></html>

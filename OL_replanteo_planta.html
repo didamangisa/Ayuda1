@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Eksen Aplikasyonu</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>EKSEN APLİKASYONU<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="obsolete Parrafo" style="width: 694px;"><br />
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades"><span class="Parrafo"><span class="Parrafo">Genel Bilgiler</span></span></a></span><br />
+      <span class="Parrafo">
+      <a href="#datos_cabecera_lista">Her Listenin Başlık Verileri</a></span><br />
+      <span class="Parrafo">
+      <a href="#def_bases">Aplikasyon Bazlarının Tanımlanması</a></span><br />
+      <span class="Parrafo">
+      </span><a href="#listas_lineas_rep"><span class="Parrafo">Aplikasyon Veri Listeleri ve Satırları</span></a><br />
+      <a href="#rep_2_ejes"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İki Eksen Verisi Kullanarak Aplikasyon</span></span></span></a><br />
+      <a href="#calculo">Hesaplama</a><br />
+      <span class="Parrafo"><a href="#listados">Listeler</a></span><br />
+      <span class="Parrafo"><a href="#dibujo">Aplikasyon Noktalarının Çizimi</a><br />
+      <a href="#trans">Aplikasyon Öncesi Enkesit Oluşturma</a><br />
+      <a href="#LONGI">BOYKESİT Menüsü</a><br />
+</span>
+      <span class="Parrafo"></span></div>
+
+      
+      <span class="Parrafo">
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />Bu iletişim kutusu aracılığıyla, bir eksene göre KM ve mesafelerle, iki eksene olan mesafelerle veya bir eksenin diğeri üzerindeki dikmeleriyle analitik olarak tanımlanan noktaların X, Y koordinatlarında veya aplikasyon verileri (azimut, mesafe) olarak hesaplanması imkanı sunulur. İsteğe bağlı olarak, hesaplamalar, projeksiyon türüne göre bazların anamorfoz katsayısını dikkate alabilen bir dizi baza göre yapılabilir.<br />
+      <br />
+</span><span class="Parrafo">
+      <table style="text-align: left; width: 690px; height: 32px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 633px; text-align: justify;"><span class="Parrafo"><span class="Info">Bu menüye YATAY GÜZERGAH'tan erişim, aynı oturumda en az bir kez eksen hesaplaması yapılmasını gerektirir.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">LİSTELER menüsünden, eksenlerin <a href="OL_listados_geometria.html">geometrisiyle</a> ilgili çeşitli hesaplamaların daha hızlı bir şekilde elde edilme imkanının yanı sıra, arazi ölçüm cihazlarına doğrudan aktarım imkanının da sunulduğunu hatırlatmakta fayda var.</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      Yatay güzergah aplikasyon menüsü, noktaların tanımı için bir dizi <span style="font-weight: bold;">liste</span> oluşturmaya olanak tanır. Her liste, bir dizi başlık verisi ve farklı kesimleri veya hesaplama bölgelerini tanımlamak için bir dizi satır içerir.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"></span><img style="width: 600px; height: 154px;" alt="" src="Imagenes/dialogo_replanteo.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">[Kaydet]</span> ve <span style="font-weight: bold;">[Yükle]</span> düğmeleri, tanım listelerini <span class="Archivo">.rep</span> uzantılı dosyalara kaydetmeyi ve bu dosyalardan geri yüklemeyi sağlar.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span><span class="Parrafo"><a name="procedimientos">Üç aplikasyon prosedürü mevcuttur:</a><br />
+      </span>
+      <ol>
+<li><span class="Parrafo"><span style="font-weight: bold;">Eksen A üzerinde ölçülen bir eşit aralığa ve eksen A'ya olan mesafelere göre nokta serileri</span>: Örneğin, eksen 1'in 3 metre sağına paralel bir çizgi üzerinde her 20 m'de bir noktalar. Eksen B, 0 olmalıdır.</span></li>
+      </ol>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ol start="2"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Eksen A'ya dikmelerin eksen B ile kesişimi</span>:
+Örneğin, eksen 1'in 0, 20, 40, 60,... KM'lerinin eksen 2 üzerine yansıtılması (bu nedenle, <a href="#rep_2_ejes">iki eksen verisi kullanarak aplikasyon</a> söz konusudur).<br />
+</span></span></span></li></ol>
+<ol start="3"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Eksen A ve B'ye paralel veya yaklaşık paralel çizgilerin kesişimi</span> (bu da <a href="#rep_2_ejes">iki eksen verisi kullanarak bir aplikasyon</a> elde edilmesini sağlar).<br />
+</span></span></span></li></ol></span></span></span><span class="Parrafo"><span class="Parrafo">Eğer listelerden herhangi birinde sonucun aplikasyon verileriyle verilmesi gerekiyorsa, bir <a href="#def_bases">baz</a> tanım listesi de eklenmeli ve her satırda farklı bir çift aplikasyon <a href="#def_bases">bazı</a> tanımlanmalıdır.</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+DOĞRUSAL YAPI modülü, her biri yüzlerce komut satırı içerebilen çok sayıda listeyi aynı anda hesaplayabilir ve tek bir dosyada saklayabilir. Aynı dosyada, özel baz dosyalarına ek olarak sınırsız sayıda aplikasyon bazı da tanımlanabilir.<br />
+<br /><br />
+      </span><span class="Titulo_2"><a name="datos_cabecera_lista">Her Listenin Başlık Verileri</a></span><br />
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 690px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold;"><span class="Parrafo">[LİSTE: i /n]</span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Parrafo">Mevcut listenin <span style="font-style: italic;">i</span> numarasını ve mevcut <span style="font-style: italic;">n</span> toplamını içerir. Bir LİSTEDEN diğerine atlamayı sağlar. Mevcut LİSTE sayısından daha büyük bir numara verilirse, sonuncusuna ardışık bir numara ile yeni bir LİSTE oluşturur.<br /><br />Listeler arasında gezinmek için [-] ve [+] düğmelerimiz bulunmaktadır.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">[Tıkla] [Klavye]</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Grafik elemanların, eksenlerin ve bazların seçim modları arasında geçiş yapar: elemanı fare ile işaretleyerek veya numarasını klavye ile yazarak.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold;"><span class="Parrafo"><a name="resul">SONUÇ</a></span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><img src="Imagenes/replanteo_resul.png" style="width: 157px; height: 64px; margin-left: 7px;" alt="" align="right" />Sonuçların nasıl elde edileceğini belirler ve aşağıdaki olanakları sunar:<br />
+            <ul>
+              <li><span class="Parrafo">Sonuç, kartezyen koordinatlarda (X,Y) elde edilecektir.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><a href="#listados">Listeler</a>, sonuçları önceden tanımlanmış <a href="#def_bases">bazlara</a> göre azimut ve mesafe olarak sunacaktır (Az,Mes).</span></li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold; font-style: italic;"><span class="Parrafo"><a name="utm">UTM</a></span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Parrafo">Etkinleştirilirse, mesafe hesaplamaları anamorfoz katsayısından ve <span style="font-weight: bold;">Yapılandırma</span> &#8594; <a href="EDM_georreferenciacion.html#correcciones_replanteo"><span style="font-weight: bold;">Koordinat Referans Sistemi</span></a> menüsüyle belirtilen telafilerden etkilenecektir:<br />
+            </span>
+            <table style="text-align: left; width: 486px; height: 42px; margin-left: 0px; margin-right: 0px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; width: 195px;">
+                  <ul>
+                    <li><span class="Parrafo">Küremsellik ve kırılma</span></li>
+                    <li><span class="Parrafo">Kirişten yaya geçiş</span></li>
+                  </ul>
+                  </td>
+                  <td style="vertical-align: top; width: 177px;">
+                  <ul>
+                    <li><span class="Parrafo">Deniz seviyesine indirgeme</span></li>
+                    <li><span class="Parrafo">UTM düzlemine geçiş</span></li>
+                  </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="Parrafo">Bu telafiler ters yönde uygulanır. Aplikasyon menüsünde noktaların kotuyla çalışılmadığı için küremsellik ve kırılma çalışmaz.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold; font-style: italic;"><span class="Parrafo"><a name="solo_planta">Sadece yatay</a></span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><img src="Imagenes/replanteo_solo_planta.png" style="width: 177px; height: 48px; margin-left: 7px;" alt="" align="right" />Bu seçenek etkinleştirilirse, <a href="#listados">listeler</a>, tanımlanmış olmaları koşuluyla, düşey kurp, kot ve eğim verilerini içerecektir. Ayrıca, eksen B ile eksen A'ya dikmelerin kesişimi <a href="#procedimientos">prosedüründe</a>, her iki eksen arasındaki kot farkı da listelenir.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold; font-style: italic;"><span class="Parrafo">Boykesit öz. nkt.</span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Parrafo">Düşey kurpların giriş ve çıkış teğetlerinin yanı sıra yüksek ve alçak noktalar gibi boykesitin özel noktalarının hesaplanmasını etkinleştirmeyi/devre dışı bırakmayı sağlar.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold; font-style: italic;"><span class="Parrafo">Özel nkt.</span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Parrafo">Yatay güzergahın özel noktalarının (teğetlik noktaları) <a href="#listados">listelerde</a> hesaplanmasını etkinleştirmeyi/devre dışı bırakmayı sağlar.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr><td><span style="font-weight: bold; font-style: italic;">Makasları Hariç Tut</span></td><td>Bu seçenek etkinleştirildiğinde, makas bölgesindeki KM'ler hariç tutulur.</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic;"><span class="Parrafo">Olaylar</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Etkinleştirildiğinde, arazinin <a href="OL_perf_transv.html">enkesit oluşturma</a> menüsünde etkinleştirilen <span style="font-style: italic;">ENKESİT OLUŞTURULACAK OLAYLAR</span>'a karşılık gelen her KM'de bir nokta hesaplanır.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">EKSEN A</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Nokta tanımı için kullanılan birinci eksenin numarası. Seçim, grafiksel veya sayısal olarak yapılabilir (aktif seçim moduna göre).<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">EKSEN B</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Sadece <a href="#rep_2_ejes">iki eksen verisi kullanarak aplikasyon</a> durumunda kullanılır, seçimi de <span class="Parrafo">grafiksel veya sayısal olarak yapılabilir (aktif seçim moduna göre).</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"> <br />
+</span></span><span class="Titulo_2"><a name="def_bases">Aplikasyon Bazlarının Tanımlanması</a></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span>Eğer <span style="font-weight: bold;">aplikasyon bazları</span> ile çalışılmak isteniyorsa, o zaman aplikasyon satırları gezgininin üzerindeki düğme ile belirtilmelidir, bu durumda alt kısımda bu bazların bildirilmesi ve yönetimi için bir tablo açılır:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/replanteo_bases.png" style="width: 550px; height: 188px;" alt="" />&nbsp;<br />
+      </div>
+      <br />
+Her baz için bir tanımlayıcı <span style="font-weight: bold;">ad</span>, üç <span style="font-weight: bold;">koordinatı</span> (grafiksel veya sayısal olarak verilebilir) ve baza atanan ve <a href="#utm"><span style="font-weight: bold; font-style: italic;">UTM</span></a> seçeneği seçiliyse kullanılacak olan <span style="font-weight: bold;">anamorfoz</span> katsayısı bildirilmelidir.<br />
+      <br />
+<span style="font-weight: bold;">[Anamorfoz hesapla]</span> düğmesi, <a href="EDM_georreferenciacion.html#correcciones_replanteo">koordinat referans sistemine</a> karşılık gelen menüde görünen verilere bağlı olarak her baz için anamorfoz katsayısını otomatik olarak hesaplar:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-style: italic;">Anamorfoz katsayısı</span> = (<span style="font-style: italic;">Genel ölçek faktörü</span>) × <span style="font-style: italic;">K</span>’.<br />
+(<span style="font-style: italic;">K</span>’ bazın koordinatlarına ve hedef dilime ve hedef elipsoide bağlıdır)<br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_proyeccion.png" style="width: 459px; height: 94px;" alt="" /><br />
+      </div>
+      <br />
+Bazlar, <span style="font-weight: bold;">kaydedilebilir</span> ve <span class="Archivo">.bas</span> uzantılı dosyalar aracılığıyla <span style="font-weight: bold;">yüklenebilir</span>. Ayrıca, <a href="EDM_georreferenciacion.html#imp_coord_geograf">coğrafi koordinatlardaki bir dosyadan</a> bazları yüklemek de mümkündür. Bu dosya yüklendiğinde, program bazları artan bir şekilde adlandırır ve gözlem alanında bazın orijinal adını belirtir. <span style="font-weight: bold;">[Kaldır]</span> düğmesi, yüklenen tüm bazları siler.<br />
+      <br />
+<span style="font-weight: bold;">[Bazları etiketle]</span> düğmesine basıldığında, EDM'ye her baz için konumunu işaretleyen bir çarpı işareti ve bazın kotu ile bir sembol (S43) eklenir; sembolün altına bazın adı mevcut metin stili ve boyutuyla etiketlenir.<br />
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="listas_lineas_rep">Aplikasyon Veri Listeleri ve Satırları</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/replanteo_navega_lineas.png" style="width: 120px; height: 52px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Her liste içinde, <span style="font-weight: bold;">veri satırlarının</span> oluşturulması, silinmesi ve gezinmesi, iletişim kutusunun sağ tarafında bulunan gezgin seçenekleriyle yapılır. <span style="font-weight: bold;">[-]</span> düğmesiyle program, mevcut satırdan bir önceki satıra konumlanır, <span style="font-weight: bold;">[+]</span> ile ise bir sonraki satıra geçer. İki düğme arasında, mevcut listenin kaç satırı olduğu ve mevcut listenin içindeki mevcut satırın numarası bildirilir.<br />
+      <br />
+<span style="font-weight: bold;">[Ekle]</span> düğmesi sonda yeni bir satır oluştururken, <span style="font-weight: bold;">[Araya Ekle]</span> ile mevcut olanın önüne yeni bir tane oluşturulur. <span style="font-weight: bold;">[Sil]</span> düğmesi ile mevcut satır silinir. Eğer bir listenin tek satırı silinirse, tek liste olmadığı sürece liste de silinir.<br />
+      <br />
+Bir satırın veri değişikliği, iletişim kutusundan yapılır ve aşağıdaki veri girişlerini kabul eder:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/replanteo_datos_linea.png" style="width: 540px; height: 52px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 690px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 80px; font-weight: bold;"><span class="Parrafo">[Baz 1]<br />
+[Baz 2]</span></td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;"><span class="Parrafo">Satırda tanımlanan kesim için aplikasyon bazlarının adı. Sadece sonuç (Az, Mes) olarak istendiğinde doldurulmalıdır. Bu durumda <span style="font-style: italic;">Baz 1</span> ve <span style="font-style: italic;">Baz 2</span> değerleri var olmalı, farklı olmalı ve <a href="#def_bases">bazlar</a> ilişkisinde yer almalıdır. Bunları seçme şekli, bildirilmek istenen baz üzerine çizimde tıklamaktır.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 80px;"><span style="font-weight: bold;"><a name="auto">[OTO]</a></span>
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;"><span class="Parrafo">Tanımlanmış <a href="#def_bases">bazlara</a> (varsa) ve aşağıdaki kriterlerden birine göre otomatik olarak bir dizi kesim veya veri satırı oluşturmayı sağlar:<br />
+</span>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">İzdüşüm KM'sine göre</span>: Bazlar, aplike edilecek eksen üzerine yansıtılır, böylece farklı kesimler oluşturulur, öyle ki </span><span class="Parrafo"><span class="Parrafo">her biri, bazların yansıtıldığı iki KM arasındaki kesimin aplikasyonuna karşılık gelir</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> (referans ve gözlem). </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"> Eğer tüm bazlar eksenin dışına yansıtılırsa (başlangıç KM'sinden önce veya bitiş KM'sinden sonra), o zaman en yakın iki tanesi alınır.&nbsp;</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></li>
+            </ul>
+            <div style="margin-left: 40px;">Bu kriter, bazların mevcut listenin A ekseni üzerindeki yansıtıldıkları KM'ye göre yeniden sıralanmasını sağlar ve her ardışık baz çifti için iki veri satırı (doğrudan ve ters aplikasyon) oluşturur, <span style="font-weight: bold; font-style: italic;">Sadece doğrudan veriler</span> seçeneği etkin kalmadıkça; bu durumda her kesim için sadece doğrudan aplikasyon oluşturulur, ters veya karşılıklı olan değil.<br />
+</div>
+<ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">En kısa mesafeye göre</span>: Her kesim, o kesime en yakın baza göre oluşturulur.<br />
+                </span></li>
+            </ul>
+            <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/replanteo_bases_auto.png" style="width: 358px; height: 113px;" alt="" /></span><br />
+            <span class="Parrafo"></span></div>
+            <span class="Parrafo"><br />Belirlenen kritere ek olarak, program ayrıca <span style="font-weight: bold;">eksene maksimum mesafeyi</span> de dikkate alır, öyle ki belirtilenden daha büyük bir mesafede olan bazlar aplikasyon listeleri yapmak için dikkate alınmaz.<br />
+            <br />
+Bu parametreler belirlendikten sonra, <span style="font-weight: bold;">[Oluştur]</span> düğmesine basıldığında, otomatik olarak oluşturulan listelerin zaten gözlemlenebildiği aplikasyon iletişim kutusuna geri dönülür.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 80px;"><span style="font-weight: bold;">[Eşit Ar.]</span> / <br />
+            <span style="font-weight: bold;">[Katlar]</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;"><img src="Imagenes/replanteo_equidist_menos1.png" style="width: 82px; height: 97px;" alt="" align="right" hspace="4" />Aplike edilecek noktaların tanımı için A ekseni üzerinde ölçülen eşit aralık. Eğer <span style="font-style: italic;">0</span> değeri girilirse, o zaman sadece <a href="#PKAi"><span style="font-weight: bold;">PKAi</span></a>'de bildirilen KM noktasında hesaplama yapılır. <span class="Parrafo"><span class="Parrafo">Eğer -1 değeri bildirilirse, o zaman farklı yarıçap aralıkları için dört adede kadar farklı eşit aralık tanımlamak mümkündür. Varsayılan olarak, bu tablo aşağıdaki değerleri içerir:<br />
+<br /></span></span>
+            <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">150 m'ye eşit veya daha büyük yarıçaplar için 20 m.</span></span><br />
+            <span class="Parrafo"><span class="Parrafo">150 m'den küçük ve 100 m'ye eşit veya daha büyük yarıçaplar için 10 m.</span></span><br />
+            <span class="Parrafo"><span class="Parrafo">100 m'den küçük ve 50 m'ye eşit veya daha büyük yarıçaplar için 5 m.</span></span><br />
+            <span class="Parrafo"><span class="Parrafo">50 m'den küçük yarıçaplar için 2 m.</span></span><br />
+            </div>
+            <br />
+<span style="font-weight: bold;">[T]</span> düğmesi, tipik bir dizi aplikasyon aralığı sunar.<br />
+            <br />
+Eğer eşit aralık yerine <span style="font-weight: bold;">katlar</span> ayarlanırsa, o zaman aplike edilecek KM'ler bu değerin katları olacaktır. Örneğin, eğer <span class="Parrafo"><span class="Parrafo"><a href="OL_replanteo_planta.html#PKAi"><span style="font-weight: bold;">PKAi</span></a> olarak 324.578 bildirilirse, her durumda 20 m'lik bir aralık için ve eksenin başlangıcından itibaren aplike edilecek KM'ler şunlar olacaktır:<br />
+            <br />
+            <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">
+<table style="text-align: left; height: 50px; width: 512px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 105px; text-align: left; font-weight: bold; font-style: italic;">Eşit Aralıklar<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">324.578<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">344.578<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">364.578<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">384.578<br />
+      </td>
+      <td style="text-align: center; width: 73px; font-style: italic;">...<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 105px; text-align: left; font-weight: bold; font-style: italic;">Katlar<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">324.578<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">340.000<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">360.000<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">380.000<br />
+      </td>
+      <td style="text-align: center; width: 73px; font-style: italic;">...<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+</span></span></div>
+<br />
+            <span class="Parrafo">Aplike edilecek noktalar, eksenden (sabit veya değişken) bir <a href="#distancia">mesafede</a> olduğunda, aralık değeri <span style="font-weight: bold; font-style: italic;">eksen üzerinden</span> alınabilir veya <span style="font-weight: bold; font-style: italic;">ötelenmiş üzerinden</span> ölçülebilir. Bu ikinci durumda, <a href="#listados">listede</a>, ötelenmiş eksen üzerinden ölçülen noktalar arasındaki mesafenin aralığa denk geldiği eksen üzerindeki KM'ler görünecektir, son nokta hariç, bu bir veridir. Bu yöntem, örneğin, eksene yaklaşık paralel bir direk hattının verilerini elde etmek için uygulanabilir.<br />
+<br />
+            </span></span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Pkd Yükle</span><br />
+            </td>
+            <td style="vertical-align: top;">Bir .pkd dosyasını bir aplikasyon listesine yükleme imkanı. Her km ve mesafe değeriyle, mevcut listeye yeni bir satır eklenir.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 80px;"><span style="font-weight: bold;">P1</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">Aplikasyon satırının ilk noktasını ifade eder ve aşağıdaki olanakları sunar:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Yeni</span>: Kullanıcı, aplikasyon satırının ilk veri noktasını tanımlamalıdır.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Önceki</span>: Program, kesimin başlangıç noktası olarak, bir önceki satırda hesaplanan son noktayı alacaktır. Örneğin, KM 0'dan 825'e kadar her 25 metrede bir ve 825'ten 1000'e kadar her 5 metrede bir noktaları hesaplamak isteniyorsa, bu seçenekle ikinci satırda 825 değerini tekrarlamak gerekmez.</li>
+            </ul>
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 80px;"><a style="font-weight: bold;" name="PKAi">PKAi</a><br />
+            <span style="font-weight: bold;">PKAf</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">PKBi</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">PKBf<br />
+DAi<br />
+DAf<br />
+DBi<br />
+DBf<br />
+            <br />
+            </span></td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">1 ve 2 numaralı aplikasyon <a href="#procedimientos">prosedürlerinde</a> (bir eşit aralığa göre nokta serileri ve eksen A'ya dikmelerin eksen B ile kesişimi), <span style="font-weight: bold;">PKAi</span> verisi, hesaplamanın başlangıç KM'sine karşılık gelir. 3 numaralı <a href="#procedimientos">prosedürde</a> (eksen A ve B'ye paralel çizgilerin kesişimi), bu durumda çözümü ayırt etmek için hizmet eden, eksen A üzerindeki yaklaşık KM'dir.<br />
+            <br />
+            <span style="font-weight: bold;">PKAf</span>, kullanılan eksen A üzerindeki kesimin son noktasının KM'sidir. Bu alan <span style="font-style: italic;">0</span> olarak bırakılırsa, "eksen sonuna kadar" olarak yorumlanır.<br />
+            <br />
+            <span style="font-weight: bold;">DAi</span>, <span style="font-weight: bold;">PKAi</span> noktasının A eksenine olan mesafesidir (negatif değerler sol tarafı belirtir).<br />
+            <br />
+            <span style="font-weight: bold;">DAf</span>, <span style="font-weight: bold;">PKAf</span> noktasının eksene olan mesafesidir. Bu durumlarda, eğer <span style="font-weight: bold;">DAi</span>, <span style="font-weight: bold;">DAf</span>'den farklıysa, ara noktaların eksene olan mesafesi, KM'ye göre <span style="font-weight: bold;">PKAi</span> noktasındaki <span style="font-weight: bold;">DAi</span> ile <span style="font-weight: bold;">PKAf</span>'deki <span style="font-weight: bold;">DAf</span> arasında doğrusal olarak değişecektir.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/replanteo_PKAi.png" style="width: 503px; height: 49px;" alt="" /><br />
+            </div>
+            <br />
+2 ve 3 numaralı <a href="#procedimientos">prosedürlerde</a>, çizgilerin eksenlere nasıl yaklaşıp uzaklaştığını tanımlamayı sağlayan <span style="font-weight: bold;">[PKBi]</span>, <span style="font-weight: bold;">[DBi]</span>, <span style="font-weight: bold;">[PKBf]</span> ve <span style="font-weight: bold;">[DBf]</span> düğmeleri de görünür. 3 numaralı <a href="#procedimientos">prosedürde</a>, <span style="font-weight: bold;">[PK1f]</span>, çözümü aramaya başlamak için eksen B üzerindeki yaklaşık KM'yi de bildirir.<br />
+            <br />
+A ve B eksenlerinin başlangıç ve bitiş KM'leri, yanındaki <span style="font-weight: bold;">[&lt;]</span> düğmesine basılarak grafiksel olarak verilebilir.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 80px;"><span style="font-weight: bold;"><a name="distancia">MESAFE</a></span></td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">1 numaralı <a href="#procedimientos">prosedürde</a>, nokta dizisi temel komuta birkaç paralel üzerinde hesaplanır. Artan bir dizi mesafe verilmesi gerekir; örneğin, ilk 3 alanı -3.5, 0 ve 3.5 değerleriyle doldurarak, bu mesafelerde üç nokta serisi hesaplanacaktır.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/replanteo_dist_cota.png" style="width: 540px; height: 37px;" alt="" /><br />
+            </div>
+            <br />
+Aşağıdakileri seçmemizi sağlayan bir seçicimiz var:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Eksene mesafeler</span>: 8 değer tanımlamayı sağlayan şimdiye kadarki yöntemdir.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Eşit aralıklar</span>: Eksenin yanı sıra her iki tarafta aplike edilecek nokta sayısını, noktalar arası eşit aralığı ve sağ/sol/her iki tarafı tanımlamayı sağlar. (Her iki taraftaki nokta sayısı sınırsızdır).</span></span></li>
+            </ul>
+
+            <div style="text-align: center;"><img src="Imagenes/ejem_replanteo_distancia.png" style="width: 402px; height: 185px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Kot</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><a href="#distancia"><span style="font-weight: bold;">MESAFELER</span></a> satırının altında, bu noktalar için <span style="font-weight: bold;">kotlar</span> tanımlama imkanı vardır. Eğer sıfırdan farklı bir değer yazılırsa, <a href="#listados">listede</a> kot, kırmızı kot yerine bu değere sahip olacak ve <a href="#dibujo">çizim</a> seçeneklerinde, işaretler ve çizginin noktaları da bu kotu alacaktır.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><span class="Titulo_2"><a name="rep_2_ejes">İki eksen verisi kullanarak aplikasyon</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><img src="Imagenes/replanteo_2_ejes.png" style="width: 352px; height: 50px;" alt="" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İki eksen kullanarak aplikasyon hesaplaması durumunda, <span style="font-weight: bold;">PROS</span> düğmesine basıldığında değiştirilen iki olası <a href="#procedimientos">prosedür</a> vardır:<br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <ol start="1">
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Eksen A'ya dikmelerin eksen B ile kesişimi</span>:
+Örneğin, eksen 1'in 0, 20, 40, 60,... KM'lerinin eksen 2 üzerine yansıtılması. Bu durumda A ekseni 1 ve B ekseni 2'ye karşılık gelecektir.</span></span></span></li>
+
+      </ol><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><img src="Imagenes/replanteo_cal_PKBproyectA.png" style="width: 147px; height: 48px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aynı A ekseni bölgesi için B ekseni ile birden fazla kesişim olduğunda, elde edilen çözüm, PK B alanında belirtilen KM'ye en yakın değerlere sahip olanıdır. Bu alan, dolayısıyla, A ekseninin tek bir KM'sinden çizilen dikmeyle kesişimi olan farklı B ekseni bölgelerini ayırt etmeyi sağlar. Yanındaki <span style="font-weight: bold;">[?]</span> düğmesi, B'nin başlangıcından A'ya yansıtılan KM'yi otomatik olarak hesaplamayı sağlar.&nbsp;</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Program, bir B ekseni seçilir seçilmez bu moda geçer. <a href="OL_replanteo_planta.html#listados">Listeye</a>, ilgili seçenek etkinse, A ekseninin düşey güzergah özel noktaları da eklenir. Ayrıca, ilgili KM'lerde yer alan eksenlerin deverleri hakkında bilgi sunar, </span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ayrıca her noktada her iki eksene yansımaya karşılık gelen iki yarıçap sunulur.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <br />
+B ekseni üzerindeki noktaları aramak için yaklaşık KM. Bu değeri, sadece A ekseninden çizilen dikmelerin B ekseni ile kesişim noktaları durumunda girmek gerekir, çünkü bu, A ekseninin tek bir KM'sinden çizilen dikmeyle kesişimi olan farklı B ekseni bölgelerini ayırt etmeyi mümkün kılar. Diğer durumlarda, bu değer çalışmaz.<br />
+      <br />
+<img src="Imagenes/replanteo_autoPKAi.png" style="width: 149px; height: 53px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">PKAi</span> alanının yanındaki <span style="font-weight: bold;">[?]</span> düğmesi, B'nin başlangıcından A'ya yansıtılan KM'yi otomatik olarak aramayı sağlar; bu değer manuel olarak da bildirilebilir. </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer B noktasının KM'si 0 ise ve hesaplama yaparken hiçbir nokta elde edilemezse, program otomatik olarak bu KM'yi aramayı (mevcut liste için) çalıştırır ve hesaplamayı yeniden dener.<br /><br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eksen B ile kesişim, Eksen A'ya dikmelerin hesaplanması için iki soru işaretini [?](PKB ve PKAi....) basmak tavsiye edilir.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Bu prosedür için, çift kırmızı kot durumunda, A ve B eksenlerinin her birinde hangi (<span style="font-weight: bold;">S/L</span>) ikisinin kullanılmak istendiğine karar verilebilir.<br />
+      <br />
+Liste örneği:<br />
+      <img src="Imagenes/listado_replanteo_planta2ejes.png" style="width: 640px; height: 113px;" alt="listado_replanteo_planta2ejes" /><br />
+</span></span></span></div>
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+      <ol start="2">
+        <li><img src="Imagenes/replanteo_inter_aprox.png" style="width: 132px; height: 53px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;"> Eksen A ve B'ye paralel veya yaklaşık paralel çizgilerin kesişimi</span>:<span style="font-weight: normal;"> Önceki durumdan, PROC (prosedür) düğmesine basıldığında bu moda geçilir.</span></span></span></span><span style="font-weight: normal;">
+      </span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer bu prosedürle hesaplama yaparken program herhangi bir çözüm bulamazsa, ekranda grafiksel olarak tıklayarak verilmesi gereken yaklaşık bir çözüm isteyen [?] düğmesi kullanılmalıdır. Verildikten sonra, PKAi ve PKBi alanları, üzerine tıklanan noktanın yansıtıldığı KM'lerle doldurulur</span></span></span></span></span></span></span></span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> ve hesaplama yeniden denenir</span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">.</span></span></span></span></span></span></span></span></span></li>
+      </ol></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="calculo">Hesaplama</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span><img src="Imagenes/replanteo_calculo.png" style="width: 167px; height: 87px;" alt="" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[Hesaplama]</span> düğmesine basıldığında, program tanımlanan tüm listelerin hesaplamasını yapar, elde edilen noktaları ekranda grafiksel olarak temsil eder ve &nbsp;<img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> <span style="font-weight: bold;">Listele</span> düğmesine basıldığında ekranda görüntülenebilen <a href="#listados">listeyi</a>&nbsp;<span class="Archivo">cpun.res</span> oluşturur.<br />
+      <br />
+[<span class="Parf_negrita">Tümü]:</span> tüm eksenler için hesaplama ve liste oluşturur.<br />
+&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" />&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita">Gruplara Göre:</span> aktif gruplardaki eksenler için hesaplama ve liste oluşturur.<br />
+<br />
+<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span><img src="Imagenes/replanteo_resul.png" style="width: 157px; height: 64px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eğer <a href="#def_bases">bazlarla</a> bir aplikasyon hesaplaması yapılıyorsa, o zaman önceden <a href="#resul">sonucun</a> azimut ve mesafe olarak olacağı belirtilmelidir. Bu durumda ve <span style="font-weight: bold;">[Hesaplama]</span> düğmesine basıldıktan sonra, bazlardan gelen görseller ekranda gösterilir:<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ejem_replanteo_con_bases.png" style="width: 528px; height: 167px;" alt="" /></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">[Tümü]</span> düğmesi, birinci listede bildirilen eşit aralık değerine göre <span style="font-weight: bold;">tüm aktif eksenler</span> için bir aplikasyon listesi oluşturur.</span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu seçenek, tüm eksenleri içeren bir <span class="Archivo">cpun0.res</span> dosyası ve her eksen için ayrı bir liste oluşturur: <span class="Archivo">cpun1.res</span>, <span class="Archivo">cpun2.res</span>,...</span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Eğer aplikasyon <a href="#def_bases">bazlarla</a> ve <a href="#resul">sonuçların</a> azimut ve mesafe olarak ayarlanmışsa, o zaman her bir eksenin noktalarını hesaplamadan önce <a href="#auto"><span style="font-weight: bold;">[OTO]</span></a> seçeneği otomatik olarak çalıştırılır.<br />
+      <br />
+Hesaplanan tüm noktalarla otomatik olarak bir <span class="Archivo">ISreplanteo.toc</span> dosyası oluşturulur. Bu dosya, <a href="EDM_cotas.html#cuadro_coord">NXYZ Tablosu</a> aracı tarafından, <span class="Parf_negrita">[Dosyadan...]</span> seçeneğini kullanarak bu noktaların bir koordinat tablosu oluşturmak için kullanılabilir.<br />
+&nbsp; <img src="Imagenes/isreplanteo_toc.png" style="width: 322px; height: 178px;" alt="isreplanteo" /><br />
+      <br />
+      <br />
+&nbsp;<img src="Imagenes/cuadro_coord.png" style="width: 345px; height: 234px;" alt="cuadro_coord" /><br />
+<br />
+
+      <br />
+      </span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="listados">Listeler</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;">X,Y,Z ile aplikasyon listesi</span><br />
+      <br />
+<span class="Archivo">cpun.res</span> listesinde, eğer boykesitte veri varsa ve PROJE tablosunda hesaplanan eksen için bir arazi enkesit dosyası varsa, her KM'ye karşılık gelen arazi kotu da görünecektir. Ayrıca deverler, kotlar, eksene mesafeler,... gibi veriler de gösterilir.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 692px; height: 60px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 36px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="width: 636px; text-align: justify;">Eğer sadece yatay güzergahla ilgili veriler elde edilmek isteniyorsa, o zaman iletişim kutusundaki <a href="#solo_planta"><span style="font-weight: bold; font-style: italic;">Sadece yatay</span></a> seçeneği etkinleştirilmelidir.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/replanteo_solo_planta.png" style="width: 177px; height: 48px; margin-left: 7px;" alt="" align="right" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      </span></span></span></span>
+      <span class="Parrafo"><img src="Imagenes/replanteo_listado_xyz.png" style="width: 583px; height: 291px;" alt="" /></span><br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Aplikasyon <a href="#def_bases">bazları</a> kullanarak aplikasyon listesi</span><br />
+      <br />
+      
+      <span class="Parrafo">Aşağıdaki resim, bu tür bir listenin yorumlanmasını şematik olarak temsil etmektedir:<br />
+      <br />
+</span>
+      
+      <div style="text-align: center;"><img src="Imagenes/replanteo_interpretacion.png" style="width: 381px; height: 475px;" alt="" />&gt;<br />
+      </div>
+
+      <br />
+Bazlardan bir aplikasyon yapıldığında (azimut ve mesafeleri listele), basitleştirilmiş bir liste de oluşturulur:&nbsp;<span class="Archivo">biseccion.res</span><br />
+<br />
+      <span class="Titulo_2"><a name="dibujo">Aplikasyon Noktalarının Çizimi</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aplikasyon noktaları hesaplandıktan sonra, bu noktaların KM'lerini ve işaretlerini EDM üzerine etiketlemeyi sağlayan bazı küçük araçları kullanmak mümkündür. Bu araçlar, APLİKASYON dikey menüsünün <span style="font-weight: bold;">[ÇİZİMLER]</span> açılır alt menüsü altında bulunur ve şunlardır:<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><br />
+      <table style="text-align: left; width: 692px; height: 426px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 67px; width: 92px;"><span style="font-weight: bold;">Eleman Etiketl. Modu</span><br />
+            </td>
+            <td style="vertical-align: top; width: 356px; text-align: justify; height: 67px;"><a href="OL_ficheros_ali.html"><span class="Archivo">.ali</span></a> uzantılı kütüphanedeki bir dizi dosya arasından birini seçmeyi sağlar. O andan itibaren eksenlerin güzergah elemanları, içinde tanımlanan stile göre etiketlenecektir.<br />
+<br />
+            </td>
+            
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 65px; width: 92px;"><span style="font-weight: bold;">Elemanları Etiketle</span><br />
+            </td>
+            <td style="vertical-align: top; width: 356px; text-align: justify; height: 65px;">Seçilen <a href="OL_ficheros_ali.html">etiketleme moduna</a> göre istenen eksenin güzergah elemanlarının ana noktalarının otomatik olarak etiketlenmesini sağlar. Bu seçenek &lt;Esc&gt; tuşuna basılana kadar döngüseldir.<br />
+            <br />
+Her durumda, dikey menüdeki <a href="OL_dibujos.html#menu_rotul_avanzado"><span style="font-weight: bold;">[ETİKETLEME]</span></a> düğmesi, eksenlerin etiketlenmesi için çok daha kapsamlı bir iletişim kutusuna erişim sağlar.<br />
+<br />
+            </td>
+            
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 92px; font-weight: bold; height: 111px;">KM<br />
+            </td>
+            <td style="vertical-align: top; width: 356px; text-align: justify; height: 111px;">Bu seçenek, son hesaplanan dizinin KM değerlerini, tam sayılar için S35 tipi ve kesirli sayılar için S36 tipi sembol dizisi kullanarak plan üzerine yerleştirir. Örneğin, her 100 metrede bir ve eksenden belirli bir mesafede noktaların hesaplanması yapılabilir, KM'ler etiketlenir ve ardından her 20 metrede bir başka bir dizi hesaplanarak bu noktalar işaretlenir. Bu KM etiketleri ve işaretler, çizime EDM sembolleri olarak aktarılır, böylece daha sonra taşınabilir, kaldırılabilir,...<br />
+<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 92px; font-weight: bold; height: 40px;">İşaret<br />
+            </td>
+            <td style="vertical-align: top; width: 356px; text-align: justify; height: 40px;">Son hesaplanan dizinin her noktasına bir sembol oluşturur. Kullanılan sembol S11'dir. En yaygın kullanımı, eksen üzerine işaretler koymaktır (örneğin her 20 m'de bir).<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 92px; font-weight: bold; height: 40px;">Çizgi<br />
+            </td>
+            <td colspan="1" rowspan="1" style="vertical-align: top; width: 356px; text-align: justify; height: 40px;">Bu seçenek, son hesaplamanın noktalarını (bir eksen üzerindeki noktalar ve bir eksenin diğerine dikmelerinin izdüşümü) birleştirerek mevcut tipte bir çizgi oluşturur.<br />
+            <br />
+
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 92px; font-weight: bold; height: 41px;">S500<br />
+S501<br />
+            </td>
+            <td colspan="1" rowspan="1" style="vertical-align: top; width: 356px; text-align: justify; height: 41px;"><span style="font-weight: bold;">KM</span> ve <span style="font-weight: bold;">İşaret</span> gibi çalışır ve KM'lerin etiketlenmesi için S500 veya S501 sembollerini kullanmayı sağlar.<br />
+            <br />
+
+            </td>
+
+          </tr><tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">Mesafe (S798)</span><br />
+            </td>
+            <td style="vertical-align: top;">Bu hesaplama yapıldığında, Çizimler->Mesafe(S789) aracını kullanmak mümkündür. Bu araç, iki eksen arasında hesaplanan mesafeyi, orta noktada ve alındığı yönle etiketler.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; height: 38px;"><span style="font-weight: bold;"><a name="rotul_celulas">Hücrelerle Etiketle</a></span></td>
+            <td colspan="1" rowspan="1" style="vertical-align: top; height: 38px; text-align: justify;"><img src="Imagenes/rotular_celulas.png" style="width: 218px; height: 221px; margin-left: 7px;" alt="" align="right" />Hücreler kullanarak yatay güzergahtaki eksenleri etiketlemeyi sağlar. Prosedür, bir eksen ve bir hücre tipi seçmekten ibarettir. Her bir değişken metne, her hücre oluşturulduğunda otomatik olarak girilecek içeriği yapılandırmak mümkündür. Bu değişken metinler için olası değerler şunlardır:<br />
+            <ul>
+              <li>Seçilen eksenin KM'si.</li>
+              <li>X ve Y koordinatları.</li>
+              <li>Eksene mesafe.</li>
+              <li>Azimut.</li>
+              <li>Kırmızı Kot Z</li>
+              <li>Z<br />
+              </li>
+
+              <li>Hiçbir şey (değişken metin boş bırakılacaktır).</li>
+              <li>Kazık<br />
+              </li>
+
+            </ul>
+Bu değerler, hücrenin ana ekleme noktasına referans olacaktır ve hepsine isteğe bağlı bir önek eklenebilir.&nbsp; <br />
+            <br />
+<span style="font-weight: bold;">[Hücreyi sil]</span> düğmesi ile, ardından tıklanan hücreler silinir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Sil</span><br />
+            </td>
+            <td colspan="1" rowspan="1" style="vertical-align: top; text-align: justify;">Yapılan son çizimi siler.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2"><img src="Imagenes/replanteo_trans.png" style="width: 111px; height: 222px;" alt="" align="right" hspace="4" /><a name="trans">Enkesit</a></span><br />
+
+      <br />
+
+Bu komut, aplikasyonda hesaplanan noktalara enkesitler keser. <a href="EDM_control_entidades.html#control_superficies">SAM yüzey kontrolü</a> kutusunda tanımlanan model kullanılır, yüzeyler Harita, Üçgenleme, Grid SAM, TTP ile tanımlanmış olsun.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="LONGI">BOYKESİT</a></span><a name="LONGI"><br />
+
+      <br />
+</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/replanteo_longi.png" alt="" style="width: 200px; height: 295px; float: right;" hspace="4" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu menüden, belirli bir araziye boykesit kesim dosyaları (.lon) oluşturulabilir. Kesim yüzeylerinin yapılandırılması, enkesitler için olduğu gibi SAM Yüzey Kontrolü'nden yapılır. Eğer TTP veya NDP tipi bir yüzey boyunca boykesitler çıkarılırsa ve Üçgenler seçeneği seçiliyse, üçgenlemede boşluklar varsa bunlar boykesitte temsil edilir ve hem Kırmızı Kotlar menüsünde hem de boykesitlerin çiziminde gösterilir.&nbsp; <br /><br />Hangi eksenlerden boykesit alacağımızı, ne kadar mesafede, ne kadar yarı genişlikte vb. tanımlayabiliriz. Ayrıca, boykesitimizi hangi KM aralığında elde etmek istediğimizi de tanımlayabiliriz.<br /><br /><span style="font-weight: bold;">Etkilenen altyapılarla kesişim için Boykesit</span> kutucuğu etkinleştirildiğinde, bir altyapıyı (harita yüzeyi) temsil eden çizgilerle kesişimdeki verev açısı bilgisi .lon dosyasına dahil edilir. Bu bilgi ve çizginin parametrik tanımı (QA) ile, boykesitlerde ve <a href="OL_rasantes_diseno.html">KIRMIZI KOTLAR</a> menüsünde kesişimi gerçek büyüklüğünde temsil etmek mümkündür.<br />
+      <br />
+Bu ana işlevin yanı sıra, bu menüde bazı araçlar sunulmaktadır:<br />
+
+
+      <span style="font-weight: bold;"></span><span class="Parf_negrita"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span><table style="text-align: left; width: 484px; height: 55px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: top; width: 92px; height: 41px; font-weight: bold;">Çizgi -> .lon<br />
+            </td><td colspan="1" rowspan="1" style="vertical-align: top; width: 356px; text-align: justify; height: 41px;">Bir 3D çizgiden bir .lon dosyası oluşturur.<br />
+<br />
+</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">.pkz -> .lon<br />
+            </td>
+            <td style="vertical-align: top;">Bir .pkz dosyasından bir .lon dosyası oluşturur.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">.lon -> .per<br />
+            </td>
+            <td style="vertical-align: top;">Bir .lon dosyasından bir .per dosyası oluşturur, belirtilen yarı genişliğe sahip tek bir yüzey oluşturarak.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">.per -> .lon<br />
+            </td>
+            <td style="vertical-align: top;">Bir .per dosyasından bir .lon dosyası oluşturur, dosyanın ilk yüzeyini alarak.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Çizgi tipini yansıt -> .lon<br />
+            </td>
+            <td style="vertical-align: top;">Eksenin sağına ve soluna, maksimum bir mesafede ve eksene göre maksimum bir açıyla bulunan belirli bir tipteki çizgiler için iki .lon dosyası oluşturur. Eğer birkaç çizgi segmenti KM'lerde çakışırsa, eksene en yakın olan alınır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Çukur sınıflandırması<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+          </tr>
+
+</tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

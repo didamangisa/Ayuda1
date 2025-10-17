@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Şablonlar .gui: Kurp Geometrisi</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BOYKESİT PAFTALARI İÇİN ŞABLONLAR: KURP GEOMETRİSİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">Bu bölümden, her paftaya karşılık gelen yatay kurpların parametrelerinin etiketlenmesi sağlanabilir:<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 592px;" alt="" src="Imagenes/gui_geometria_curvas.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />Bu parametreleri göstermenin iki olası yolu vardır:<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Her paftada bir <span style="font-weight: bold;">lejant</span> şeklinde (Meksika, Kolombiya gibi ülkelerde çok kullanılır). Prensip olarak, bu tabloyu kullanmak için ek bir <a href="OL_gui_pauta_fija.html#simb_cabecera">başlık sembolü</a> olarak S432'nin tanımlanması gerekir, çünkü bu, şekilde gösterildiği gibi bu lejanta uyarlanmış bir tabloya karşılık gelir:</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <div style="margin-left: 40px; text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 449px; height: 249px;" alt="" src="Imagenes/gui_geometria_curvas_ejemp.png" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      
+      
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Boykesit bilgi bandında (gitarda), <a href="OL_gui_diagrama_de_curvaturas.html">yatay kurp diyagramına</a> eşlik ederek etiketlenmiş şekilde.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span><span class="Parrafo"><span class="Parrafo">Program kütüphanesinde yer alan <span class="Archivo">SCT1.gui</span> şablonu bu lejantı kullanır. Ayrıca, bu bilgi bandıyla birlikte kullanılmak üzere <span class="Archivo">S101SCT1</span> formatı da dahildir. Örnek olarak çok kullanışlı başka bir şablon, Kolombiya kütüphanesinde yer alan <span class="Archivo">COLOM_2.gui</span>'dir.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br /><img style="width: 206px; height: 95px;" alt="" src="Imagenes/gui_geometria_curva_estaca_pk.png" align="right" hspace="6" />
+Diyalog kutusu üç bölüme ayrılmıştır: biri karakteristik noktaların <span style="font-weight: bold;">KM'lerinin</span> veya <span style="font-weight: bold;">Kazık Numaralarının</span> ve <span style="font-weight: bold;">koordinatlarının</span> etiketlerinin konumuna (şeklin üst kısmı), diğeri kurpların <span style="font-weight: bold;">geometri</span> etiketlerinin konumuna (orta kısım) ve bir diğeri de <span style="font-weight: bold;">düşey kurpların</span> etiketlenmesine (alt kısım) aittir.<br />
+      <br /><br />
+      <span class="Titulo_2">KM veya Kazık No ve Koordinat Verileri</span><br />
+      <br />
+<span style="font-weight: bold;">(X0</span>, <span style="font-weight: bold;">Y0</span>) koordinatları verileri yerleştirmek için referans noktasıdır ve yatay ve dikey ötelemeler (<span style="font-weight: bold;">dx</span> ve <span style="font-weight: bold;">dy</span>) ona göre olacaktır.<br />
+      <br /><span style="font-weight: bold;">dH</span> değerleri, her bir kurba karşılık gelen veri grupları arasındaki dikey veya yatay aralığı belirtir. Kurp numaraları belirtilen sembolle temsil edilir ve ilki, <span style="font-weight: bold;">dx</span> ve <span style="font-weight: bold;">dy</span> değerleriyle belirtilen orijine göreli konuma yerleştirilir.<br />
+      <br />
+<span style="font-weight: bold;">Kurp</span>'ta belirtilen sembol tipi, kurp numarasını etiketlemek için kullanılacaktır. Eğer kurp numarası yerine some numarası etiketlenmek isteniyorsa, <span style="font-weight: bold; font-style: italic;">Some numarası</span> seçeneğini etkinleştirmek gerekir. Bu durumda, 1. kurp 2. some olur, vb.<br />
+      <img style="width: 94px; height: 39px;" alt="" src="Imagenes/geom_curvas_flag.png" align="right" hspace="4" />Eğer <span style="font-weight: bold;">Kurp</span> kutucuğundaki ilgili kutuyu etkinleştirirsek, kurp numarası şu şekilde etiketlenir: 1000 x Güzergah Numarası + Kurp Numarası.<br />
+<br />
+Karakteristik noktaların KM'leri ve X, Y koordinatları, belirtilen sembol tipiyle (negatif değerler gösterilmemesine neden olur), orijine (X0, Y0) göre <span style="font-weight: bold;">dx</span> ve <span style="font-weight: bold;">dy</span> mesafeleriyle ve belirtilen açıyla temsil edilecektir. <span style="font-weight: bold;">Some</span> noktalarına karşılık gelen KM'ler durumunda, bunlar yalnızca bitişik kutucuk etkinleştirilirse köşe noktalarında etiketlenebilir.<br />
+      <br />
+      </span></span><span class="Parrafo"><span class="Parrafo">Ek olarak, <span style="font-weight: bold; font-style: italic;">Başlangıç ve bitiş noktasını dahil et</span> seçeneği etkinleştirilerek güzergahın başlangıç ve bitiş noktalarını etiketlemek mümkündür. Bu seçenek etkinleştirildiğinde, ilk pafta için dikey aralığı belirten <span style="font-weight: bold;">dH0</span> alanları görünür ve bu, başlangıç noktasını içerdiği için diğer paftalardan farklı olacaktır:</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <table style="text-align: left; width: 690px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 264px; height: 177px;" alt="" src="Imagenes/gui_geometria_curvas_inicio_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 314px; height: 165px;" alt="" src="Imagenes/gui_geometria_curvas_inicio_2.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">İlk paftanın veri tablosu (dH0)</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">Diğer paftaların veri tablosu (dH)</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <img style="width: 186px; height: 37px;" alt="" src="Imagenes/gui_geometria_curvas_pkvertice.png" align="right" hspace="8" />Eğer <span style="font-weight: bold;">PI (Some) PC+ST1</span> kutucuğunu etkinleştirirsek, kurp başlangıcının kilometresi artı tanjant boyu değerini elde ederiz. Eğer bitişik kutucuğu etkinleştirirsek, kilometre sadece köşe noktalarında, yani dairesel kurpsuz aliyman-aliyman birleşim noktalarında etiketlenir.<br />
+      <br />
+Kurpların geometri tablosuna, varsayılan olarak 500'ün katları olan <span style="font-weight: bold;">Teğet Üzerindeki Noktaları</span> veya <span style="font-weight: bold;">PST</span>'yi ekleme imkanı. Ancak bu değer değiştirilebilir. Meksika kütüphanesinde bu imkanı kullanan SCT1+PST.gui dosyası mevcuttur.<br /><br />
+      <span class="Titulo_2">Geometri Verileri</span><br />
+      <br />
+<span style="font-weight: bold;">Geometri</span> verilerinin gösterimi tam olarak aynı şekilde çalışır. Dolayısıyla, bu veriler için bir koordinat başlangıcı (<span style="font-weight: bold;">X0</span>,<span style="font-weight: bold;">Y0</span>), kurplar arasında bir dikey ayrım <span style="font-weight: bold;">dH</span> ve her veri için sembol tipleri ve orijine olan mesafeler (negatif tipler gösterilmemesine neden olur) belirtmek gerekecektir. Gösterilebilecek veriler şunlardır:<br />
+<br />
+</span></span>
+      <table style="text-align: left; width: 690px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">dt<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Teğetlerin sapma açısı<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">dc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo">Dairesel kurbun merkez açısı</span></span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">ST1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Giriş tanjant boyu<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Lc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Dairesel kurbun uzunluğu<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Xc1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo">EC'nin (giriş) göreceli X koordinatı</span>
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Yc1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo">EC'nin (giriş) göreceli Y koordinatı</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">E<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Somedeki dış mesafe (bisektris)<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">T<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Dairesel kurbun tanjantı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">PI-PI<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Someler arası mesafe<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Az2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Çıkış azimutu. Derece veya grad cinsinden ya da Güney'den saat yönünde etiketlenmesi seçilebilir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">0e2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Çıkış spiralinin sapma açısı</span></span></span></span></span>
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Xc2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">CE'nin (çıkış) göreceli X koordinatı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">p2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">TL1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Giriş uzun tanjantı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">TC2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Çıkış kısa tanjantı<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">ST2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Çıkış tanjant boyu<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">S/A</span><br />
+            </td>
+            <td style="vertical-align: top;">Kurptaki genişletme<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">SAĞ</span><br />
+            </td>
+            <td style="vertical-align: top;">Kurbun yönü (sağa)<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">IP1</span><br />
+            </td>
+            <td style="vertical-align: top;">Girişteki dever rampasının eğimi<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">IP2</span><br />
+            </td>
+            <td style="vertical-align: top;">Çıkıştaki dever rampasının eğimi<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Vhi1</span><br />
+            </td>
+            <td style="vertical-align: top;">Girişteki dever eksikliği değişimi</td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Vhi2</span></td>
+            <td style="vertical-align: top;">Çıkıştaki dever eksikliği değişimi</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Az1</span><br />
+            </td>
+            <td style="vertical-align: top;">Giriş azimutu. Derece veya grad cinsinden ya da Güney'den saat yönünde etiketlenmesi seçilebilir.<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><br />
+            </span></td>
+            <td style="vertical-align: top;"><br />
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span>
+      
+      <table style="text-align: left; width: 690px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Gc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Dairesel kurbun kurp derecesi<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Rc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Dairesel kurbun yarıçapı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">0e1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Giriş spiralinin sapma açısı</span></span></span></span>
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Le1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Giriş spiralinin uzunluğu</span></span></span></span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">k1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">p1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Per<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Dever<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Le2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Çıkış spiralinin uzunluğu</span></span></span></span></span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">A1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Giriş spiralinin parametresi<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">A2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Çıkış spiralinin parametresi<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Yc2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">CE'nin (çıkış) göreceli Y koordinatı
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">k2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">TL2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Çıkış uzun tanjantı<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">TC1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Giriş kısa tanjantı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">XCc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Dairesel kurbun merkezinin X koordinatı<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">YCc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo">Dairesel kurbun merkezinin Y koordinatı</span>
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">SOL</span><br />
+            </td>
+            <td style="vertical-align: top;">Kurbun yönü. Sola<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">VP</span><br />
+            </td>
+            <td style="vertical-align: top;">Kurba atanan proje hızı<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">(dt)</span><br />
+            </td>
+            <td style="vertical-align: top;">Mutlak değer olarak teğetlerin sapma açısı<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">hi</span><br />
+            </td>
+            <td style="vertical-align: top;">Dever eksikliği<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Vh1</span><br />
+            </td>
+            <td style="vertical-align: top;">Girişteki dever değişimi<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Vh2</span><br />
+            </td>
+            <td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo">Çıkıştaki dever değişimi</span></span></td>
+          </tr>
+
+
+
+        </tbody>
+      
+      </table>
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br />
+<ul>
+        
+        
+        
+        
+        
+        <li><span class="Parrafo"><span class="Parrafo">PC veya PT'nin koordinatları (öteleme) (<span style="font-weight: bold;">k,p</span>)</span></span></li></ul>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2">Düşey Kurp Verileri</span><br />
+      <br />
+</span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 489px; height: 77px;" alt="" src="Imagenes/gui_geometria_curvas_curvas_verticales.png" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+Kurp geometri tablolarıyla ilişkili .txt listesi. Bu liste sadece boykesit ile çizilen değerleri yazdırır.<br />
+      <br />
+</span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 300px; height: 425px;" alt="" src="Imagenes/ol_geometria_curvas_txt.png" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Hız Diyagramı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>HIZ DİYAGRAMI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px; height: 6763px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <ul>
+        <li><a href="#carreteras">Karayolları için Hız Diyagramı</a></li>
+      </ul>
+      <ul>
+        <ul>
+          <li><a href="OL_balizamiento_de_curvas.html">Kurplarda Yönlendirme Panelleri</a><br />
+          </li>
+        </ul>
+      </ul>
+      <ul>
+        <li><a href="#ferrocarriles">Demiryolları için Hız Diyagramı</a></li>
+      </ul>
+<br />
+      <img src="Imagenes/acceso_diag_velocidades.png" style="width: 116px; height: 78px;" alt="" align="right" hspace="6" /><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL</span><sup><span class="Parrafo">®</span></sup><span class="Parrafo"> hem <a href="#carreteras">karayolu</a> hem de
+      <a href="#ferrocarriles">demiryolu</a> projeleri için hız diyagramı raporlarının oluşturulmasına olanak tanır.<br />
+      <br />
+</span><span class="Parrafo Archivo"><span class="Parrafo">Hız diyagramının elde edilmesi, DÜŞEY GÜZERGAH &#8594; <strong>[YARDIMCI ARAÇLAR]</strong> &#8594; <strong>[HIZ DİYAGRAMI]</strong> yolunda gösterilen diyalog kutusu aracılığıyla gerçekleştirilir. </span></span><br />
+      <span class="Parrafo"><br />
+Hesaplama, aynı zamanda diyagramın <a href="OL_gui_terreno.html#diag_velocidades">boykesit ile birlikte gösterilmesini</a> (şablon&nbsp;<span class="Archivo">DiagVel.gui</span>) sağlar ve karayolu eksenleri durumunda, diyagramdan <a href="OL_visibilidad.html">görüş mesafesi etütleri</a> için de yararlanılabilir.<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 691px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 25px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 646px; text-align: justify;"><span class="Parrafo Info">Hem <a href="OL_gui_terreno.html#diag_velocidades">boykesit paftalarında hız diyagramının gösterimi</a> hem de görüş mesafesi etütleri için, program tmp klasöründe gerekli bilgileri içeren DVdir#.dat ve Dvinv#.dat dosyalarını (# eksen numarasıdır) oluşturur.<br />
+            </span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br /></span>Raporların .xlsx hesap tablosu formatında oluşturulmasına izin verilir.<br /><span class="Parrafo"><br />
+      </span><span class="Parrafo">ETÜT VERİLERİ ve TAŞIT VERİLERİ yalnızca eksen değiştirildiğinde sıfırlanır.</span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="carreteras">Karayolları</a></span><br />
+      <span class="Parrafo"><br />
+Karayolu projelerinde hız diyagramının yaygın bir kullanımı, tırmanma şeritlerinin tasarımıdır. Ayrıca, burada belirlenen hızları dikkate alarak <a href="OL_visibilidad.html">görüş mesafesi etütleri</a> yapılmasına olanak tanır. <br />
+      <br />
+Hız diyagramı, bir aracın bir eksen boyunca seyahat edebileceği maksimum hız olarak hesaplanır. Bu maksimum hız, her zaman aşağıdakilerden en küçüğüdür:<br /></span>
+      <ul>
+        <li><span class="Parrafo">
+Aracın mekanik özelliklerine bağlı olarak ulaşabileceği maksimum hız. Belirli bir araç için bu hız, başlangıç hızına ve güzergahın boykesitine, yani DÜŞEY GÜZERGAH geometrisine (eğimler, rampalar ve düşey kurplar) bağlıdır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Yarıçapa, devere ve enine sürtünme katsayısına bağlı olan ve dolayısıyla YATAY GÜZERGAH geometrisinin bir fonksiyonu olan spesifik hız.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Güzergah geometrisinden bağımsız olarak, kentsel alanlar, kavşaklar vb. yerlerde diğer koşullar tarafından zorunlu kılınan maksimum hız.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Aracın, daha düşük bir spesifik hıza sahip noktalara gelmeden önce durabilmesi için seyretmesi gereken maksimum hız.</span></li>
+      </ul>
+      <span class="Parrafo">
+      
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diagrama_velocidades_carreteras.png" style="width: 574px; height: 316px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+      Menü, beş farklı taşıt tipinin kullanılmasına olanak tanır:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><strong>İspanyol 3.1 I.C. Standardına göre ağır taşıt</strong>: Bu aracın davranışı, farklı eğimler için farklı uzunluk/hız eğrilerinin temsil edildiği ilgili talimatın grafiğini izler. Güzergahın spesifik hızındaki bir düşüş veya kullanıcı tarafından dayatılan bir hız sınırlaması nedeniyle aracın fren yapmak zorunda kalması durumunda, yavaşlama hesaplaması için aynı talimatta yer alan duruş mesafesi formülü kullanılır:</span></li>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/diag_velocidades_formula.png" style="width: 533px; height: 96px;" alt="" /><br />
+      </div>
+      </span><span class="Parrafo"><br /></span><div style="margin-left: 40px;">Bu eğriler, Ağır Taşıt 3.1-IC 2016 vp80.gad ve 3.1-IC_2016_V100.gad dosyaları tarafından verilir.</div><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span><ul>
+        <li><span class="Parrafo"><strong>Otomobiller</strong>: Otomobillerin davranışı aşağıdaki üç özellikten türetilir:<br />
+          <br />
+          </span>
+          <ol>
+            <li><span class="Parrafo">Maksimum hız (km/s)</span></li>
+            <li><span class="Parrafo">0'dan 100 km/s'ye çıkmak için geçen süre (saniye)</span></li>
+            <li><span class="Parrafo">Duruştan başlayarak 1000 metre kat etmek için geçen süre</span></li>
+          </ol>
+          <span class="Parrafo"><br />
+13 farklı ticari model için bu özellikleri içeren bir tablo dahildir. Standarttaki hafif taşıt, 100 HP'lik SEAT Ibiza'dır. Ek olarak, frenleme durumunda m/s<sup>2</sup> cinsinden bir yavaşlama değeri girilmelidir. Burada pozitif bir değer girilmezse, aynı duruş mesafesi formülü kullanılır.<br />
+          <br />
+Kullanıcı, birbiriyle tutarlı olmaları koşuluyla, bu üç özellik için farklı değerler de girebilir.<br />
+</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><strong>Kamyonlar</strong>: Kamyonların davranışı, duruştan başlayarak dört farklı hıza ulaşmak için harcanan dört zaman verisinden türetilir.<br />
+          <br />
+60, 70, 80 ve 85 km/s hıza ulaşma sürelerini içeren sekiz farklı ticari modelin yer aldığı bir tablo dahildir.<br />
+          <br />
+Aynı şekilde, bu durumda varsayılan olarak 90 km/s olan bir hız sınırlaması da girilmelidir. Ve otomobillerde olduğu gibi, frenleme durumunda bir yavaşlama değeri girmek de mümkündür, aksi takdirde duruş mesafesi formülü kullanılacaktır.</span></li>
+      </ul></span>
+      <ul>
+        <li><strong>Highway Capacity 2000 Ağır Taşıtı</strong>: Bu taşıtın maksimum hızı 90 km/s'dir ve -%8.0 ile %8.0 arasındaki eğimler için kullanılabilir.</li>
+      </ul>
+      <ul>
+        <li><strong>İvmelenme ve yavaşlama grafiği</strong>: Bu grafikler kütüphane dosyaları olan&nbsp;<span class="Archivo">.gad</span> dosyalarında tanımlanır. <span class="Archivo">HighwayCapacity2000.gad</span> dosyası dahildir. Dosyayı <img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /> ile düzenleyebiliriz.<br />
+          <img src="Imagenes/diag_vel_higway.png" style="width: 168px; height: 133px;" alt="" align="right" hspace="6" />Dosya şunları içermelidir:<br />
+          <ul>
+            <li>Grafiğin adı</li>
+          </ul>
+          <ul>
+            <li>Oluşturan eğri sayısı</li>
+          </ul>
+          <ul>
+            <li>Her bir eğri için:</li>
+          </ul>
+          <ul>
+            <ul>
+              <li>&nbsp;Eğim&nbsp; (eğriler artan eğim sırasına göre verilmelidir, örn. -5,-4,-3,-2,-1,0,1,2.....)<br />
+              </li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li>&nbsp;O eğim için izin verilen maksimum hız.</li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li>&nbsp;Nokta sayısı. Eğriler kullanılmadan önce yumuşatıldığı için çok fazla nokta tanımlamak gerekli değildir.<br />
+              </li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li>&nbsp;Eğrilerin Hız/Kat edilen mesafe noktaları.</li>
+            </ul>
+          </ul>
+Negatif ve 0 eğimler için hız ve mesafe her zaman artan olmalıdır (ivmelenme eğrisi).<br />
+Maksimum hızın üzerinde nokta vermeye devam etmek gerekli değildir.<br />
+Pozitif eğimler için mesafeler maksimum hıza kadar artar (ivmelenme eğrisi) ve sonra azalır (yavaşlama eğrisi).<br />
+Yavaşlama eğrileri genellikle hepsi aynı başlangıç hızına (80, 90 veya 100) kadar yapılır.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;">Etüt Verileri</span><br />
+      <span class="Parrafo"><br />
+Burada, yarıçapa bağlı olarak <strong>spesifik hızları</strong> ve ayrıca hıza bağlı <strong>boyuna ve enine sürtünme katsayısını</strong> içeren bir plan tasarım tablosu (<span class="Archivo">.dip</span>) seçilmelidir.<br />
+      <br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">
+......</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+      </span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#&nbsp;&nbsp; Radio&nbsp;&nbsp;&nbsp; Peralte&nbsp;&nbsp;
+Arecom&nbsp;&nbsp; Aminimo&nbsp; LonClo&nbsp; VelEsp&nbsp;&nbsp;&nbsp;
+ft&nbsp; RsMin RsMax&nbsp;&nbsp;&nbsp; fl</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+# ---------&nbsp; -------&nbsp; -------- --------&nbsp; ------- ------ ------ ----- ----- -------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 670.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 291.&nbsp;&nbsp;&nbsp;&nbsp;
+245.&nbsp;&nbsp;&nbsp; 89.6&nbsp; 110.0&nbsp;&nbsp; 0.0955&nbsp; 300.
+2000. 0.30600</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 570.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 258.&nbsp;&nbsp;&nbsp;&nbsp;
+217.&nbsp;&nbsp;&nbsp; 82.7&nbsp; 105.0&nbsp;&nbsp; 0.0999&nbsp; 278.
+2000. 0.31300</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 485.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 229.&nbsp;&nbsp;&nbsp;&nbsp;
+192.&nbsp;&nbsp;&nbsp; 76.3&nbsp; 100.0&nbsp;&nbsp; 0.1039&nbsp; 255.
+2000. 0.32000</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 410.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 202.&nbsp;&nbsp;&nbsp;&nbsp;
+170.&nbsp;&nbsp;&nbsp; 70.1&nbsp;&nbsp; 95.0&nbsp;&nbsp; 0.1083&nbsp;
+231. 2000. 0.32700</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 350.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 179.&nbsp;&nbsp;&nbsp;&nbsp;
+151.&nbsp;&nbsp;&nbsp; 64.8&nbsp;&nbsp; 90.0&nbsp;&nbsp; 0.1122&nbsp;
+208. 2000. 0.33400</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 305.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 162.&nbsp;&nbsp;&nbsp;&nbsp;
+136.&nbsp;&nbsp;&nbsp; 60.5&nbsp;&nbsp; 85.0&nbsp;&nbsp; 0.1165&nbsp;
+188.&nbsp; 670. 0.34100</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 265.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 145.&nbsp;&nbsp;&nbsp;&nbsp;
+122.&nbsp;&nbsp;&nbsp; 56.4&nbsp;&nbsp; 80.0&nbsp;&nbsp; 0.1202&nbsp;
+168.&nbsp; 522. 0.34800</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 225.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 129.&nbsp;&nbsp;&nbsp;&nbsp;
+108.&nbsp;&nbsp;&nbsp; 51.9&nbsp;&nbsp; 75.0&nbsp;&nbsp; 0.1269&nbsp;
+146.&nbsp; 395. 0.35850</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 190.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 113.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+95.&nbsp;&nbsp;&nbsp; 47.7&nbsp;&nbsp; 70.0&nbsp;&nbsp; 0.1331&nbsp;
+125.&nbsp; 309. 0.36900</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 155.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+97.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 82.&nbsp;&nbsp;&nbsp;
+43.1&nbsp;&nbsp; 65.0&nbsp;&nbsp; 0.1446&nbsp; 103.&nbsp; 241. 0.37950</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 130.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+85.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 72.&nbsp;&nbsp;&nbsp;
+39.5&nbsp;&nbsp; 60.0&nbsp;&nbsp; 0.1480&nbsp;&nbsp; 87.&nbsp; 198.
+0.39000</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 105.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+73.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 61.&nbsp;&nbsp;&nbsp;
+35.5&nbsp;&nbsp; 55.0&nbsp;&nbsp; 0.1568&nbsp;&nbsp; 70.&nbsp; 159.
+0.40050</span></span><br />
+      <span class="Parrafo"><span class="Archivo" /></span></div>
+      <span class="Parrafo"><span class="Archivo">
+      <br /></span>
+Spesifik hızı belirlemenin iki yolu vardır:<br /></span>
+      <ul>
+        <li><span class="Parrafo">
+      <strong>Yarıçapa göre spesifik hız</strong>: Güzergahın plandaki yarıçapı için, tabloya göre karşılık gelen spesifik hız değeri alınır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+      <strong>Yarıçap ve devere göre spesifik hız</strong>:
+Tasarım tablosundan, formülü sağlayan Vesp ve ft çifti belirlenir:</span></li>
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diag_velocidades_formula2.png" style="width: 465px; height: 55px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+Bu, deverin yarıçapa uymadığı, iyileştirme projelerinde veya deverin standarda göre doğru bir şekilde uygulanamadığı durumlarda kullanışlıdır.<br />
+      <br />
+Raporda, seçilen spesifik hızın yanı sıra, karşılaştırmalara olanak tanımak için sadece yarıçaptan elde edilen spesifik hızı yazdıran bir sütun da bulunur.<br />
+      </span><br />
+      <span class="Parrafo">Yukarıdakilerin dışında, aşağıdaki veriler beyan edilmelidir:</span>
+      <ul>
+        <li><span class="Parrafo">İncelenecek bölgeyi sınırlayan <strong>Başlangıç KM</strong> ve <strong>Bitiş KM</strong>.</span></li>
+        <li><span class="Parrafo">Raporların ve boykesit noktalarının oluşturulması için <strong>Adım Aralığı</strong>.</span></li>
+        <li><span class="Parrafo"><strong>Doğru yöndeki</strong> diyagram çalışması için başlangıç kilometresindeki <strong>Başlangıç Hızı</strong>.</span></li>
+        <li><span class="Parrafo"><strong>Ters yöndeki</strong> diyagram çalışması için bitiş kilometresindeki <strong>Başlangıç Hızı</strong>.</span></li>
+        <li><span class="Parrafo">Zamanın başlangıcını tanımlayan <strong>Başlangıç Zamanı</strong>.</span></li>
+        <li><span class="Parrafo">Simülasyon adımı (<strong>dT</strong>), 0.001 ile 1.000 saniye arasında değişebilir. Bu değer ne kadar büyük olursa, rapor o kadar hızlı oluşturulur, ancak hassasiyet o kadar düşük olur.</span></li>
+      </ul>
+      <span class="Parrafo">Eğer <i><strong>Frenlemeyi öngör</strong></i> seçeneği etkinleştirilirse, program, spesifik hızın aniden düştüğü noktalarda, aracın hiçbir zaman spesifik veya kullanıcı tarafından sınırlandırılmış hızın üzerine çıkmaması için nerede fren yapmaya başlaması gerektiğini analiz eder. Seçenek devre dışı bırakıldığında, araç, spesifik veya kullanıcı tarafından sınırlandırılmış hız düştüğünde fren yapmaya başlar; bu nedenle, düşüş çok ani ise, bazı kesimlerde bu hızın üzerinde olabilir.<br />
+      <br />
+<strong>KİLOMETREYE GÖRE SINIRLAMA</strong> kutucuğu, biri doğru yönde, diğeri ters yönde ilerleyen çalışma için olmak üzere iki tablo tanımlamayı sağlar. Bu tablolarda kullanıcı, güzergahın farklı kilometrelerinde hız sınırlamaları girebilir. İki tablo değeri arasında programın hız değerlerini doğrusal olarak enterpole ettiği dikkate alınmalıdır; bu nedenle, noktasal sınırlama verileri girilirse, nominal hızları geri yüklemek için de veri girilmelidir. Örneğin, 400-500 ve 800-900 kesimlerinde hızı 50 km/s ile sınırlamak isteniyorsa, şu şekilde girilir:<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 154px; height: 160px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 69px; font-weight: bold; text-align: center;">KM<br />
+            </td>
+            <td style="vertical-align: top; width: 65px; font-weight: bold; text-align: center;">Hız<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 69px; text-align: center;">0<br />
+399<br />
+400<br />
+500<br />
+501<br />
+799<br />
+800<br />
+900<br />
+901<br />
+            </td>
+            <td style="vertical-align: top; width: 65px; text-align: center;">120<br />
+120<br />
+50<br />
+50<br />
+120<br />
+120<br />
+50<br />
+50<br />
+120<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br /><strong>[S->S]</strong> düğmesi, doğru yöndeki kilometreye göre sınırlama verilerini ters yöne kopyalamayı sağlar.<br />
+      <br />
+Kilometreye göre herhangi bir sınırlama girilmezse, program tüm eksen boyunca 250 km/s varsayar.<br />
+      <br />
+Etüt verileri belirlendikten sonra, <strong>[OLUŞTUR]</strong> düğmesi, doğru ve ters yönlerde hız diyagramını hesaplar ve aşağıdaki bilgileri içeren&nbsp;<span class="Archivo">diagv.res</span> raporunu oluşturur:<br /></span>
+      <ul>
+        <li><span class="Parrafo">KM</span></li>
+        <li><span class="Parrafo">Zaman, s</span></li>
+        <li><span class="Parrafo">Hız, km/s</span></li>
+        <li><span class="Parrafo">Spesifik hız, km/s</span></li>
+        <li><span class="Parrafo">Limit hız, km/s</span></li>
+        <li><span class="Parrafo">Yarıçap, m</span></li>
+        <li><span class="Parrafo">Eğim, mm/m (binde)</span></li>
+        <li><span class="Parrafo">Yarıçapa göre spesifik hız, km/s</span></li>
+        <li><span class="Parrafo">Anlık ivme, m/s<sup>2</sup></span></li>
+      </ul>
+      <span class="Parrafo Archivo">
+      <div style="margin-left: 40px;"><span class="Parrafo Archivo">&nbsp; ******************************************************************************</span><br />
+      <span class="Parrafo Archivo">&nbsp;
+* *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DIAGRAMA DE
+VELOCIDADES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *</span><br />
+      <span class="Parrafo Archivo">&nbsp; * *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PK.
+crecientes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *</span><br />
+      <span class="Parrafo Archivo">&nbsp; ******************************************************************************</span><br />
+      <span class="Parrafo Archivo"><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; DATOS DEL VEHICULO:&nbsp;&nbsp;&nbsp; Vehiculo Pesado de la Norma 3.1-IC</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; P.K. Inicial...:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.000</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; P.K. Final.....:&nbsp;&nbsp;&nbsp;&nbsp; 800.510</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; Equidistancia..:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.000</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; Vel. Inicial...:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; T. Inicial.....:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo"><br />
+      <span class="Parrafo Archivo">&nbsp;P.K.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+t (sg)&nbsp;&nbsp; v (km/h) v.espec. v.limit.
+Radio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i(mm/m)&nbsp; v.esp(R) a
+(m/s2)</span><br />
+      <span class="Parrafo Archivo">&nbsp;----------- -------- -------- -------- -------- ----------- -------- -------- --------</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; 168.30&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;
+-8.051&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+20.000&nbsp;&nbsp;&nbsp;&nbsp; 6.03&nbsp;&nbsp;&nbsp; 26.39&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -8.051&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 1.36</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40.000&nbsp;&nbsp;&nbsp;&nbsp; 8.31&nbsp;&nbsp;&nbsp; 36.51&nbsp;&nbsp;
+153.86&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp; 2428.07&nbsp;&nbsp;
+-8.051&nbsp;&nbsp; 153.86&nbsp;&nbsp;&nbsp;&nbsp; 1.17</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+60.000&nbsp;&nbsp;&nbsp; 10.15&nbsp;&nbsp;&nbsp;
+40.00&nbsp;&nbsp;&nbsp; 89.89&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 347.10&nbsp;&nbsp;
+-8.051&nbsp;&nbsp;&nbsp; 89.89&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+80.000&nbsp;&nbsp;&nbsp; 11.95&nbsp;&nbsp;&nbsp;
+40.00&nbsp;&nbsp;&nbsp; 69.96&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 186.91&nbsp;&nbsp;
+-8.051&nbsp;&nbsp;&nbsp; 69.96&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+100.000&nbsp;&nbsp;&nbsp; 13.75&nbsp;&nbsp;&nbsp;
+40.00&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 150.00&nbsp;&nbsp;
+-8.051&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+120.000&nbsp;&nbsp;&nbsp; 15.55&nbsp;&nbsp;&nbsp;
+40.00&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 150.00&nbsp;&nbsp;
+-8.051&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+140.000&nbsp;&nbsp;&nbsp; 17.32&nbsp;&nbsp;&nbsp;
+42.89&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 150.00&nbsp;&nbsp;
+-7.168&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;&nbsp;&nbsp; 1.09</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+160.000&nbsp;&nbsp;&nbsp; 18.89&nbsp;&nbsp;&nbsp;
+48.41&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 150.00&nbsp;&nbsp;
+-5.168&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;&nbsp;&nbsp; 0.84</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+180.000&nbsp;&nbsp;&nbsp; 20.32&nbsp;&nbsp;&nbsp;
+52.40&nbsp;&nbsp;&nbsp; 64.87&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 155.21&nbsp;&nbsp;
+-4.569&nbsp;&nbsp;&nbsp; 64.87&nbsp;&nbsp;&nbsp;&nbsp; 0.75</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+200.000&nbsp;&nbsp;&nbsp; 21.65&nbsp;&nbsp;&nbsp;
+55.94&nbsp;&nbsp;&nbsp; 78.70&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 251.64&nbsp;&nbsp;
+-4.569&nbsp;&nbsp;&nbsp; 78.70&nbsp;&nbsp;&nbsp;&nbsp; 0.73</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+220.000&nbsp;&nbsp;&nbsp; 22.90&nbsp;&nbsp;&nbsp; 59.17&nbsp;&nbsp;
+109.70&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+664.54&nbsp;&nbsp; -4.569&nbsp;&nbsp; 109.70&nbsp;&nbsp;&nbsp;&nbsp;
+0.71</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+240.000&nbsp;&nbsp;&nbsp; 24.09&nbsp;&nbsp;&nbsp; 62.19&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.70</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+260.000&nbsp;&nbsp;&nbsp; 25.22&nbsp;&nbsp;&nbsp; 65.02&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.69</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+280.000&nbsp;&nbsp;&nbsp; 26.30&nbsp;&nbsp;&nbsp; 67.64&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.66</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+300.000&nbsp;&nbsp;&nbsp; 27.35&nbsp;&nbsp;&nbsp; 70.10&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.67</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+320.000&nbsp;&nbsp;&nbsp; 28.37&nbsp;&nbsp;&nbsp; 70.73&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+340.000&nbsp;&nbsp;&nbsp; 29.39&nbsp;&nbsp;&nbsp; 70.73&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+360.000&nbsp;&nbsp;&nbsp; 30.40&nbsp;&nbsp;&nbsp; 70.73&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+380.000&nbsp;&nbsp;&nbsp; 31.44&nbsp;&nbsp;&nbsp;
+66.19&nbsp;&nbsp;&nbsp; 70.96&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 193.67&nbsp;&nbsp;
+-4.569&nbsp;&nbsp;&nbsp; 70.96&nbsp;&nbsp;&nbsp; -3.16</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</span><br />
+      <span class="Parrafo Archivo" /></span></span></div>
+      </span></span><br />
+Şimdi <a href="OL_balizamiento_de_curvas.html">kurpların yönlendirme panellerini</a> yerleştirmeye geçebiliriz.<br /><br /><span class="Parrafo"><span class="Parrafo Archivo"><span class="Archivo">
+<br />
+      </span><span class="Titulo_2"><a name="ferrocarriles">Demiryolları</a></span><br />
+      <span class="Parrafo"><br />Demiryolu projelerinde hız diyagramının hesaplanması için, eksenin bu tür eksenlere özgü bir plan tasarım tablosu (<span class="Archivo">.dip</span>) ile ilişkilendirilmiş olması gerekir.<br />
+      <br />
+Her kurpta kullanılan Vp hızı, Plan menüsünün <strong>[P%]</strong> nomogramında <a href="OL_ffcc_planta.html#peralte_velocidad_obligados">zorunlu kılınan Vp</a>'dir. Eğer tanımlanmamışsa, <a href="OL_general.html">Genel</a> sekmesindeki <strong>[Vp Kesimleri]</strong> <a href="OL_ffcc_planta.html#velocidad_proyecto">kesimler tablosundaki</a> hız kullanılır. Ve eğer önceki durumlarda tanımlanmamışsa, Genel menüsündeki eksenin Vp'si okunur.<br />
+Deverler tablosunda hesaplandığında, Plan menüsünün [P%] nomogramından gelen zorunlu değerler dikkate alınır (plan eksenlerinin kaydedildiği&nbsp;<span class="Archivo">.cej</span> dosyasında saklanır).<br />
+      <br />
+Bu diyagramda, Spesifik Hızın hesaplanması için iki seçenek seçebiliriz:<br />
+</span></span></span>
+      <ul>
+        <li><strong>Yarıçap</strong>: Vp, Yarıçap... değerlerinden yola çıkarak teorik deveri hesaplar.</li>
+      </ul>
+      <ul>
+        <li><strong>Yarıçap + Dever</strong>: Düşey güzergahın <a href="OL_ffcc_peraltes_via.html">dever kuralında</a> tanımlanan deveri kullanır.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo Archivo"><span class="Parrafo">
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo Archivo"><span class="Parrafo"><img src="Imagenes/diagrama_velocidades_ferrocarriles.png" style="width: 600px; height: 221px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo Archivo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo Archivo"><span class="Parrafo">
+      <br />
+Seyir hızını da sınırlayan spesifik hızın hesaplanması için, tasarım tablosunda tanımlanan dengelenmemiş ivme değerleri de kontrol edilir.<br />
+<br />
+<strong>[VERİLERİ DÜZENLE]</strong> düğmesi, çeker ve çekilen araçlarla ilgili tüm verilerin yapılandırılması gereken başka bir diyalog kutusuna erişim sağlar. Bu veriler, .trn uzantılı dosyalara <strong>[Kaydet]</strong>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> ve <strong>[Yükle]</strong>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> komutlarıyla kaydedilebilir ve yüklenebilir.<br />
+      <br />
+Hız diyagramı çalışması için yapılandırma dosyasında, trenin özelliklerini içeren .trn dosyası da kaydedilir.<br />
+      <br />
+      </span></span></span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 29px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 643px; text-align: justify;"><span class="Info">Programın temel kütüphanesinde, çeker ve çekilen araçlara ilişkin bazı yol gösterici örnekler (talgo4000_350.trn, alaris_MRM.trn, caf444_500.trn, caf_civia2.trn) bulunmaktadır.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diagrama_velocidades_ferrocarriles2.png" style="width: 615px; height: 273px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Bu veriler şunları içerir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><strong>V</strong>-<strong>Ft</strong> nokta çiftleri; <strong>V</strong> hız (km/s) ve <strong>Ft</strong> çekiş kuvveti (kN) olup, çekiş eğrisini (mavi) tanımlar.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Yavaşlama (m/s<sup>2</sup>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Lokomotifin ağırlığı (<strong>Pl</strong>, ton) ve dingil sayısı (<strong>ne</strong>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Lokomotifin harekete karşı direncini (<strong>Rl</strong>) hesaplamak için katsayılar (A0, A1, A2, B, C); öyle ki:</span></li>
+      </ul>
+      <div style="margin-left: 80px;"><span class="Parrafo">Rl = (A0 + A1&#8226;Pl + A2&#8226;ne) + (B0 + B1&#8226;Pl)&#8226;V + C&#8226;V<sup>2</sup></span></div>
+      <ul>
+        <li><span class="Parrafo">Çekilen araçların ağırlığı (<strong>Pc</strong>, ton).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Çekilen araçların harekete karşı direncini hesaplamak için katsayılar (<strong>ka</strong> ve <strong>kb</strong>), yolcu ve yük için ayrı ayrı.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Aderans katsayısı ve hıza bağlı olarak hesaplanması için katsayılar (m0, a, b, c).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dönen kütleler (<strong>Mr</strong>, ton).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Kurp geçişi (<strong>Kc</strong>), eğim (<strong>Rp</strong>) ve tünel geçişi (<strong>Kt</strong>) sırasındaki yerel dirençler.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Konfor nedeniyle bir sınırlama olarak maksimum ivme (<strong>a_max</strong>, m/s<sup>2</sup>).</span></li>
+      </ul>
+      <span class="Parrafo">Demiryolu projelerinde hız diyagramının hesaplanması için diğer seçenekler, <a href="OL_diagrama_de_velocidades.html#carreteras">karayolu</a> projelerindekine benzer şekilde çalışır.<br />
+      <br />
+      <strong>Frenleme Eğrileri</strong>:<br />
+      <br />
+Kütüphanede, elektrikli fren için Hız/Kuvvet eğrisinin tanımını içeren TranviaZCC.trn ve Tranvia.ZSC.trn adında iki dosyamız bulunmaktadır. Simülasyonda, elde edilen yavaşlama tanımlanan maksimumdan büyükse, maksimum değer kullanılır.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/curvas_fren.png" style="width: 592px; height: 263px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      </span>
+
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tiempos_parada2.png" style="width: 197px; height: 217px;" alt="" align="left" hspace="6" />Program ayrıca <strong>duraklama sürelerini</strong> simüle etmeye de olanak tanır. <strong>Hız(km/s)</strong> sütununa negatif bir değer girerek belirli bir duraklama süresi tanımlanabilir. Program bunu saniye cinsinden duraklama süresi olarak anlayacaktır. Bu kilometrelerin önüne ve arkasına hızı geri getirmek için başka veriler koymak gerekli değildir. <br />
+Sonuçlar raporunda, eşit aralıklı kilometrelerin yanı sıra, sınırlı hızlar ve duraklamalar tablosundaki kilometreler de yazdırılır.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <img src="Imagenes/tiempos_parada.png" style="width: 184px; height: 203px;" alt="" align="right" hspace="6" />Duraklama sürelerini uygulamanın başka bir olasılığı aşağıdaki örnekten yola çıkabilir. Bu, bir trenin 4+000 kilometresindeki bir istasyonda beş dakika durması ve frenlemede maksimum fren kapasitesinden, kalkışta ise maksimum çekiş kapasitesinden yararlanılması durumu olabilir. O zaman kilometreye göre sınırlı hızlar tablosu şekilde gösterilen görünüme sahip olacaktır ve şu şekilde okunacaktır:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 50px; width: 512px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 42px; text-align: center; font-weight: bold;">Veri<br />
+            </td>
+            <td style="vertical-align: top; width: 71px; text-align: center; font-weight: bold;">KM<br />
+            </td>
+            <td style="vertical-align: top; width: 79px; text-align: center; font-weight: bold;">Hız<br />
+            </td>
+            <td style="vertical-align: top; width: 284px; text-align: center; font-weight: bold;">Anlamı<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 42px; text-align: center;">1<br />
+2<br />
+3<br />
+4<br />
+            </td>
+            <td style="vertical-align: top; width: 71px; text-align: center;">0.000<br />
+3990.000<br />
+4000.000<br />
+4010.000<br />
+            </td>
+            <td style="vertical-align: top; width: 79px; text-align: center;">200<br />
+200<br />
+-300<br />
+200<br />
+            </td>
+            <td style="vertical-align: top; width: 284px;">Bu trenin maksimum hızı<br />
+Tren buraya gelmeden çok önce fren yapmaya başlayacak<br />
+Bekleme süresi = 300 saniye, negatif<br />
+Maksimum hız<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+0-3990 kesiminde maksimum hız 200 km/s olacaktır, ancak 4000 kilometresinde durabilmek için tren, 3990 kilometresinden çok önce fren yapmaya başlayacaktır, bu yüzden durma noktasından hemen önce ve sonra bir kilometre konulur. Eğer bu yapılmasaydı ve şu şekilde belirtilseydi:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 50px; width: 220px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 42px; font-weight: bold; text-align: center;">Veri<br />
+            </td>
+            <td style="vertical-align: top; width: 70px; font-weight: bold; text-align: center;">KM<br />
+            </td>
+            <td style="vertical-align: top; width: 82px; font-weight: bold; text-align: center;">Hız<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 42px; text-align: center;">1<br />
+2<br />
+            </td>
+            <td style="vertical-align: top; width: 70px; text-align: center;">0.000<br />
+4000.000<br />
+            </td>
+            <td style="vertical-align: top; width: 82px; text-align: center;">200<br />
+-300<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+O zaman program, ara kilometreler için 200 ile 0 km/s arasında maksimum hızları enterpole edecektir.<br />
+      <br />
+</span></span><span class="Parrafo"><span class="Parrafo"><strong>[S->S]</strong> düğmesi, doğru yöndeki duraklama süreleri verilerini ters yöne kopyalamayı sağlar.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />Etüt verileri belirlendikten sonra, [<strong>OLUŞTUR</strong>] düğmesi doğru ve ters yönlerde hız diyagramını hesaplar ve raporları oluşturur. Eğim nedeniyle tren ilerleyemediğinde veya frenlemeyi öngöremediğinde bir mesaj gösterilir ve simülasyon o noktada terk edilir.<br /><br /></span><span class="Parrafo">Aşağıda, aşağıdaki parametreleri içeren bir demiryolu hız diyagramı örneği gösterilmektedir:<br /></span></span><ul><li>KM</li><li>t (sn) = Zaman (saniye).</li><li>v (km/s) = Anlık hız (km/s).</li><li>v.özel. = Özel hız (km/s).</li><li>v.limit. = Limit hız (km/s).</li><li>Yarıçap (m).</li><li>i (mm/m) = Boyuna eğim (mm/m).</li><li>F-R (kN) = Çekiş - Harekete karşı direnç (kN).</li><li>a (m/s2) = Anlık ivme (m/s2).</li><li>H (mm) = Dever (mm).</li><li>ANC (m/s2) = Dengelenmemiş ivme (m/s2).</li><li>R (kN) = Harekete karşı direnç (kN).</li></ul><span class="Parrafo"><span class="Parrafo">
+      <br /></span><div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">&nbsp;<small><br />&nbsp; ******************************************************************************<br />&nbsp;
+* *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+HIZ DİYAGRAMI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *<br />&nbsp; * *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Artan KM.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *<br />&nbsp; ******************************************************************************<br /><br />&nbsp;&nbsp; TREN: Hayali tren, varsayılan veriler<br />&nbsp;&nbsp; Başlangıç KM...:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 70.000<br />&nbsp;&nbsp; Bitiş KM.......:&nbsp;&nbsp; 15979.792<br />&nbsp;&nbsp; Adım Aralığı...:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.000<br />&nbsp;&nbsp; Başlangıç Hızı...:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00<br />&nbsp;&nbsp; Başlangıç Zamanı.....:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00<br /><br /></small></span></span><div style="text-align: justify;"><div style="text-align: left;"><span class="Parrafo"><span class="Archivo"><small>&nbsp;KM &nbsp;&nbsp;
+t (sn)&nbsp;&nbsp; v (km/s) v.özel. v.limit.
+Yarıçap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i(mm/m)&nbsp; F-R(kN)&nbsp; a
+(m/s2) H(mm) ANC(m/s2) R (kN)&nbsp; </small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;----
+ &nbsp; ------ &nbsp;&nbsp;-------- &nbsp;-------- -------- -----------
+-------- -------- -------- ----- --------- --------</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;70.00 &nbsp; &nbsp;&nbsp; 0.00&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp;&nbsp;&nbsp; 0.00</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;80.00&nbsp; &nbsp; &nbsp; 5.89&nbsp;&nbsp;&nbsp;
+17.64&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 508.11&nbsp;&nbsp;&nbsp;&nbsp;
+1.20&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-210.52</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;100.00&nbsp;&nbsp;&nbsp;&nbsp; 8.88&nbsp;&nbsp;&nbsp;
+30.55&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 505.67&nbsp;&nbsp;&nbsp;&nbsp;
+1.20&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-209.85</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;120.00&nbsp;&nbsp;&nbsp;
+10.94&nbsp;&nbsp;&nbsp; 39.44&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 503.80&nbsp;&nbsp;&nbsp;&nbsp;
+1.20&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-209.20</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;140.00&nbsp;&nbsp;&nbsp;
+12.61&nbsp;&nbsp;&nbsp; 46.66&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 502.17&nbsp;&nbsp;&nbsp;&nbsp;
+1.20&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-208.56</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;160.00&nbsp;&nbsp;&nbsp;
+14.08&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 501.38&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-208.23</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;180.00&nbsp;&nbsp;&nbsp;
+15.52&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-50.956&nbsp;&nbsp; 468.55&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-175.40</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;200.00&nbsp;&nbsp;&nbsp;
+16.96&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-30.956&nbsp;&nbsp; 395.96&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-102.81</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;220.00&nbsp;&nbsp;&nbsp;
+18.40&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-10.956&nbsp;&nbsp; 323.36&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp; -30.21</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;240.00&nbsp;&nbsp;&nbsp; 19.84&nbsp;&nbsp;&nbsp;
+50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp; 1277.20&nbsp;&nbsp;&nbsp;
+9.044&nbsp;&nbsp; 248.49&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;&nbsp;
+12&nbsp;&nbsp;&nbsp;&nbsp; 0.075&nbsp;&nbsp;&nbsp; 44.66</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;260.00&nbsp;&nbsp;&nbsp; 21.28&nbsp;&nbsp;&nbsp;
+50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 206.27&nbsp;&nbsp;
+19.000&nbsp;&nbsp; 200.63&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp; 72&nbsp;&nbsp;&nbsp;&nbsp;
+0.467&nbsp;&nbsp;&nbsp; 92.52</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;280.00&nbsp;&nbsp;&nbsp; 22.72&nbsp;&nbsp;&nbsp;
+50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 123.00&nbsp;&nbsp;
+19.000&nbsp;&nbsp; 191.02&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;
+120&nbsp;&nbsp;&nbsp;&nbsp; 0.784&nbsp;&nbsp; 102.13</small></span></span><br /></div><span class="Parrafo"><span class="Archivo" /></span></div><span class="Parrafo"><span class="Archivo"><br /></span></span></div></span></td></tr></tbody></table></body></html>

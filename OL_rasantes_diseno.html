@@ -1,0 +1,778 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Kırmızı Kot Tasarımı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table style="width: 700px; height: 1px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>KIRMIZI KOT TASARIMI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="height: 1782px; width: 694px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 690px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Bu bölüm aşağıdaki kısımlara ayrılmıştır:<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#longit_ter">Arazi Boykesitinin Gösterimi</a><br />
+      </span> <span class="Parrafo"><a href="#descripcion_dialogo">İletişim Kutusunun Açıklaması</a></span><br />
+      <span class="Parrafo" /></div>
+      <div style="margin-left: 80px;"><span class="Parrafo"><a href="#rasante_unica_doble">Tek veya Çift Kırmızı Kot (karayolları/otoyollar, tek hat/çift hat)</a><br />
+      <a href="#navegador_alineaciones">Güzergah Elemanları Gezgini</a><br />
+      <a href="#tipo_rasante">Kırmızı Kot Tipi</a><br />
+      <a href="#def_tramos_rasante">Kırmızı Kot Kesimlerinin Tanımlanması</a><br />
+      <a href="#acuerdos_verticales">Düşey Kurpların Tanımlanması</a><br />
+      <a href="#entronques">Kavşaklar için Kırmızı Kotların Otomatik Ayarlanması</a><br />
+      <a href="#alternativas">Kırmızı Kot Alternatifleri</a><br />
+      </span><span class="Parrafo" /></div>
+      <div style="margin-left: 40px; height: 207px;"><span class="Parrafo"><a href="#modif_dinamica">Dinamik veya Gerçek Zamanlı Değişiklik</a><br />
+      </span><a href="#descarga_datos"><span class="Parrafo">Kırmızı Kota İlişkin Verilerin Kaldırılması</span></a><br />
+      <span class="Parrafo"><a href="#calculo">Hesaplama, Geometrik Çözüm ve Listeler</a><br />
+Ekranın sağ tarafındaki Sabit Menü<br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#Eco_Informativo">Bilgi Ekranı</a><br />
+      <a href="OL_Rasantes_Opciones_Visualizacion.html#opciones">Seçenekler</a><br />
+Arazi Yükle ve Kaldır<br />
+      <a href="OL_rasantes_herramientas.html">Araçlar</a><br />
+      <a href="OL_rasantes_otros_longitudinales.html">Diğer Boykesitler</a><br />
+      <a href="OL_rasantes_otros_ejes.html">Diğer Eksenler</a><br />
+      <a href="OL_rasantes_puntos_paso.html">Geçiş Noktaları</a><br />
+      <a href="OL_rasantes_otras_lineas.html">Diğer Çizgiler</a><br />
+      <a href="OL_rasantes_normativa.html">Tasarım</a><br />
+      <a href="OL_rasantes_ficheros.html">Dosyalar</a><br />Yatay Güzergah<br />
+      </div>
+      <span class="Parrafo"> </span> <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+KIRMIZI KOT tasarım menüsü, düşey güzergahı, kırmızı kotlar ve parabolik veya dairesel düşey kurplar aracılığıyla tanımlamayı sağlar. Çalışma ortamı, tasarım elemanlarını ayırt etmek için uygun olan, varsayılan olarak 10'luk bir <span style="font-weight: bold;">D/Y</span> ölçek oranıyla ve gerçek büyüklükte XZ düzleminde bir tasarım görünümü gösterir:<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/diseno_rasante.png" style="width: 586px; height: 321px;" alt="" /><br />
+      </div>
+      <br />
+Ortam, YATAY GÜZERGAH ve BOYKESİT alanlarına çok benzer: Bir ana iletişim kutusu ve bir sabit yan menü. Koordinat sistemi X, Y'den KM ve kota değişir, bu da veri girişlerinin grafiksel veya sayısal olarak sağlanmasına olanak tanır ve görüntüleyicide imlecin konumu KM ve kot olarak gösterilir. Ekran üzerinde yapılan ölçümler, ölçülen mesafeyi, bunun yatay ve düşey bileşenlerini, eğimi ve düşey açıyı bildirir.<br />
+      <br />
+Kırmızı kotların tanımlandığı iletişim kutusu, karayolları, demiryolları, boru hatları ve liman yapıları gibi tüm proje türleri için benzerdir. Boru hatları durumunda, baca ve boruların geometrik tanımına izin verilir.<br />
+      <br />
+Ayrıca, yatay güzergah elemanları diyagramı, dever diyagramı ve dönme ekseninin konumu da görüntülenir. Bunlar ve bilgi etiketlerinin boyutu (yüksekliği) gibi diğer seçenekler, sabit yan menüden erişilebilen <a href="OL_rasantes_opciones_visualizacion.html">[SEÇENEKLER]</a> iletişim kutusu aracılığıyla yapılandırılır.<br />
+      <br />
+Projenin diğer eksenlerinin, diğer boykesitlerin ve hatta çizgilerin ve sembollerin çiziminin görüntülenmesi, uygulama tarafından basit bir şekilde yönetilir ve tüm bu veriler tanım verileriyle birlikte saklanır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_rasantes.png" style="width: 596px; height: 137px;" alt="" /><br />
+      <span class="Parrafo" /></span></div>
+      <span class="Parrafo"> <br />
+      </span><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="longit_ter">Arazi Boykesitinin Gösterimi</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/rasante_cargar_terreno.png" style="width: 232px; height: 291px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Arazi boykesitinin görüntülenmesi, enkesit dosyasında mevcut olan eksendeki arazi kotu kullanılarak elde edilir. Bu dosyalar, her eksenin arazi enkesit dosyaları oluşturulduğunda (<a href="OL_perf_transv.html"><span style="font-weight: bold;">[ENKESİTLER]</span></a> seçeneğinden) projenin her eksenine otomatik olarak 'bağlanır'.<br />
+      <br />
+      Bazen başka tür arazi verileri yüklenmek istenebileceğinden (belki de imalatın mevcut durumunu gösteren bir boykesit), program, <span style="font-weight: bold;">[ARAZİ YÜKLE]</span> düğmesi altında gruplanmış diğer dosyalardan bilgi yüklemeyi ve kaldırmayı sağlayan gerekli araçlarla donatılmıştır.<br />
+      <br />
+<span style="font-weight: bold;">.per</span>'e tıklandığında, bir arazi enkesit dosyası yüklenir ve mevcut enkesit <a href="OL_proyecto.html#alternativas">alternatifine</a> atanır. Bu dosyadan, her enkesitin eksenindeki kot çıkarılır ve bu verilerle ekranda görünen arazi boykesiti oluşturulur. Bir enkesit dosyası yüklendiğinde, o dosyanın adı <a href="OL_proyecto.html#alternativas">PROJE</a> sekmesindeki tabloya eklenir ve projeyle ilişkilendirilir.<br />
+      <br />
+Başka bir eksen için oluşturulmuş bir dosyanın verileri yüklenemez, bu nedenle böyle bir durumda program yeni eksene geçmek için onay ister, bu da veri kaybına neden olabilir. Her durumda, eğer <a href="OL_proyecto.html">PROJE</a> tablosunda mevcut eksene zaten bir arazi enkesit dosyası atanmışsa, eksen değiştirildiğinde bu dosya otomatik olarak yüklenir.<br />
+      <br />
+<span style="font-weight: bold;">.lon</span>'a tıklandığında, program doğrudan bir boykesit dosyasını&nbsp;<a href="OL_perf_longit.html#formato_lon"><span class="Archivo">.lon</span></a> arazi profili olarak yüklemeyi sağlar. Eğer bir enkesit dosyasından sonra yüklenirse, verileri enkesitler arasına eklenerek detaylarını (yol kesişimleri, dereler,...) ekler, <a href="OL_perf_longit.html#generacion_optima"><span style="font-style: italic;">Optimal Boykesit Oluşturma</span></a> bölümünde açıklandığı gibi.<br />
+      <br />
+<span style="font-weight: bold;">Alt1</span>, <span style="font-weight: bold;">Alt2</span>, <span style="font-weight: bold;">Alt3</span> ve <span style="font-weight: bold;">Alt4</span> düğmeleri, her eksene atanabilecek olası arazi enkesit <a style="font-weight: bold;" href="OL_proyecto.html#alternativas">alternatiflerine</a> atıfta bulunur, öyle ki kullanımda olan <span style="font-style: italic;">&gt;</span> simgesinin yanında görünür. Her <a href="OL_proyecto.html#alternativas">alternatif</a>, ilişkili enkesit dosyasının adını gösterir, bu şekilde bir arazi <a href="OL_proyecto.html#alternativas">alternatifinden</a> diğerine geçmek çok kolaydır. Eğer seçilen <a href="OL_proyecto.html#alternativas">alternatifin</a> ilişkili bir enkesit dosyası yoksa, o zaman arazi kaldırılır.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="descripcion_dialogo">İletişim Kutusunun Açıklaması</a></span><br />
+      <span class="Parrafo"> <br />
+      </span><img src="Imagenes/rasante_selec_eje.png" style="width: 221px; height: 61px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Çalışılacak eksenin seçimi, <span style="font-weight: bold;">EKSEN</span> seçicisi kullanılarak yapılır. Eksen değişikliği, seçilen eksenin verilerinin otomatik olarak yüklenmesini gerektirir, ancak önce kullanıcıya mevcut eksenin verilerinin olası kaybı hakkında uyarıda bulunulur ve bunları kaydetme imkanı verilir.<br />
+      <br />
+İki seçenek, bilginin nasıl görüleceğini ve sağlanacağını 'yapılandırmayı' sağlar:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Veri giriş modunu grafiksel ve sayısal arasında değiştiren tipik <span style="font-weight: bold;">[Tıkla/Klavye]</span> düğmesi. </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Grafik modunda, kullanıcı kırmızı kot tasarımına özgü <a href="OL_rasantes_enganches.html">yakalama</a> modlarından yararlanabilir.<br />
+          </span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Boykesit tanım ekranında arazinin rölyefini vurgulamayı sağlayan düşey/yatay ölçek oranı (<span style="font-weight: bold;">Düş/Yat</span>) (varsayılan olarak 10:1'de bulunur).</span></li>
+      </ul>
+      </span>
+      <ul>
+        <li>İlk düşey kurba bir numara atanabilir (<span style="font-weight: bold;">İlk kurp</span>). Boykesit çiziminde, bir boykesit potasından düşey kurpların numaralandırılması etiketlenebilir:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li><a href="OL_gui_rasantes.html#simb_anot">Sayaç veya Sayaç+1</a> komutundan</li>
+          <li><a href="OL_gui_geometria_curvas.html">Kurp geometrisi</a>, düşey kurplar, nokta alt menüsünden.<br />
+          </li>
+        </ul>
+      </ul>
+      <span class="Parrafo"> <span class="Parrafo">Ayrıca, <span class="Archivo">.ras</span> ve <span class="Archivo">.vol</span> dosyalarında saklanacak olan boykesit için bir ad eklemek de mümkündür. Bu açıklayıcı ad, eksen numarasının girildiği kutucuğun sağındaki boşluğa girilir.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="rasante_unica_doble">Tek veya Çift Kırmızı Kot (karayolları/otoyollar, tek hat/çift hat)</a></span><br />
+      <span class="Parrafo"> <br />
+      </span><img src="Imagenes/num_calzadas.png" style="width: 311px; height: 50px;" alt="" align="right" hspace="4" /><span class="Parrafo"><span style="font-weight: bold;">PLATFORM SAYISI</span> seçeneğinin kullanılması, güzergahın tek platformlu geleneksel bir karayolu mu yoksa bir orta refüjle ayrılmış iki platformlu bir otoyol mu olduğunu belirlemeyi sağlar. Demiryolları durumunda, tek hat mı yoksa çift hat mı olduğunu tanımlamaya da yarar. Seçeneğe basıldığında, veri <span style="font-weight: bold;">[1]</span> veya <span style="font-weight: bold;">[2]</span> değerleri arasında alternatif olarak atlar.<br />
+      <br />
+<span style="font-weight: bold;">[2]</span> platform durumunda, tanımlanacak boykesit, ilgili ana platformların iç kenarına uygulanır. Bu durum, <span style="font-weight: bold;">[AYNI/FARKLI]</span> düğmesiyle değişebilir:&nbsp;
+      <br />
+      </span><span class="Parrafo"><br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;"><span class="Parrafo">[AYNI]</span></td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;"><span class="Parrafo">Bir otoyol durumunda, sağ platform için tanımlanacak boykesit, sol için de uygulanacaktır.</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;"><span class="Parrafo">[FARKLI]</span></td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;"><span class="Parrafo">İki platform için farklı boykesitler tanımlamayı sağlar.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      </span><span class="Parrafo">Veri girmek veya toplamak istenen tarafı seçmek için, <span style="font-weight: bold;">MEVCUT</span> platformu belirtmek üzere <span style="font-weight: bold;">[SAĞ/SOL]</span> düğmesine basmak yeterlidir.<br />
+      <br />
+Tanımlanan kot, tek platform durumunda plan eksenindeki platforma ve otoyol durumunda her platformun iç şeridine uygulanır. Bu konum, enkesit tasarımında <a href="OL_ejes_de_giro.html">dönme eksenleri</a> değiştirilerek kaydırılabilir.<br />
+      <br />
+      </span><span class="Parrafo"><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="navegador_alineaciones">Güzergah elemanları gezgini</a></span><br />
+      <span class="Parrafo"> <br />
+      </span><img src="Imagenes/navegador_rasantes.png" style="width: 120px; height: 52px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Güzergah elemanları gezgini, tanımlanacak veya değiştirilecek kırmızı kot kesimini seçmenin yanı sıra veri silme ve ekleme imkanı sunar. Varsayılan olarak her zaman boş olsa bile bir veri bulunur.<br />
+      <br />
+Ayrıca, bir kırmızı kot üzerine tıklayarak grafiksel olarak da seçim yapılabilir, bu durumda o kırmızı kot mevcut hale gelir. Mevcut kırmızı kot, onu diğer kırmızı kotlardan ayıran küçük bir daire ile veri noktalarında sarı renkte sunulur.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 116px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">[Ekle]</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;">Tanımlanan sonuncunun ardından ve herhangi bir kesimde bulunurken yeni bir kırmızı kot kesimi eklemeyi sağlar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">[Araya Ekle]</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;">Mevcut kırmızı kot kesiminin hemen önüne yeni bir kırmızı kot kesimi eklemeyi sağlar, böylece geri kalan kesimler otomatik olarak yeniden numaralandırılır.<br />
+Bacalar durumunda, bu seçenekle varsayılan olarak mevcut ve önceki veri arasında bir ara KM uygulanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 37px; font-weight: bold;">[Sil]<br />
+            </td>
+            <td style="vertical-align: top; height: 37px; text-align: justify;"><span class="Parrafo">Mevcut kırmızı kot kesimini silmeyi sağlar; şimdi mevcut olarak, daha önce sonraki olan tanımlanır, yani 6. eleman silinirse, 7. şimdi 6, 8. 7, 9. 8,... olur. Bu, art arda basılırsa bir dizi kesimi silmenin mümkün olduğu anlamına gelir.&nbsp;</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      </span></span><span style="font-weight: bold; font-style: italic;"><a name="tipo_rasante">Kırmızı Kot Tipi</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"> <br />
+      </span></span><img src="Imagenes/tipo_rasante.png" style="width: 226px; height: 126px;" alt="" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL</span></span><span class="Parrafo"><sup>®</sup></span><span class="Parrafo"><span class="Parrafo">
+, aynı eksene birkaç kırmızı kot ilişkilendirmeyi ve tanımlamayı sağlar. Elemanların tanımı hepsi için aynıdır: bir dizi kesim ve birleşim eğrisi.<br />
+      <br />
+En normal durum, sağ için bir ve sol için başka bir olmak üzere iki farklı kırmızı kota sahip bir otoyoldur, ancak ayrıca <a href="OL_cunetas.html">hendeklerin</a> ve kafa hendeklerinin (hem sağ hem de sol), orta refüjün ve çeşitli amaçlar için kullanılan bir yardımcı kırmızı kotun kırmızı kotunu tanımlamak da mümkündür.<br />
+      <br />
+Güzergah elemanları gezgininde, resimde görülebileceği gibi her bir elemana erişim sağlayan bir düğme bulunur.<br />
+      <br />
+Orta refüj, <a href="OL_cunetas.html">hendek</a> ve kafa hendeği için kırmızı kotların özel durumu, hendek tabanı (veya orta refüj) kotunun, platform kenarlarından veya şevden geometrik tanımla elde edilenden bağımsız bir tanıma sahip olduğu projelerde uygulanır.<br />
+      <br />
+Bu durumlar için, her bir elemanın tanım iletişim kutusunda <span style="font-weight: bold;">[Boykesite Göre]</span> modu etkinleştirilir ve o zaman orta refüj, <a href="OL_cunetas.html">hendekler</a> ve kafa hendeklerinin tabanları burada tanımlanan her bir kırmızı kotun kotuyla hesaplanır.<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 31px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 580px;"><span class="Info"><span style="font-weight: bold;">[LİSTELER]</span> menüsünde, hendeklerin listesi oluşturulurken aynı anda bir .lon ve/veya bir .ras dosyası da elde edilebilir.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Ayrıca, <a href="OL_desmonte_tierra.html#alto_muro_tabla">duvar kretinin</a> ve <a href="OL_muro_desmonte.html#cota_base_muro">duvar tabanının</a> bir boykesitini tanımlama imkanı da vardır. Tanımlanan kırmızı kotların kotunun elde edilmesi için her birinin ilgili menüsünde <span style="font-weight: bold;">[Boykesite Göre]</span> seçeneğini etkinleştirmeliyiz.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><span style="font-weight: bold; font-style: italic;"><a name="def_tramos_rasante">Kırmızı Kot Kesimlerinin Tanımlanması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"> <br />
+ISTRAM</span></span><span class="Parrafo"><sup>®</sup></span><span class="Parrafo"><span class="Parrafo">/ISPOL</span></span><sup>®</sup><span class="Parrafo"><span class="Parrafo">'de kırmızı kot tasarımı, iki nokta veya nokta ve eğimle tanımlanan sabit eğimli kırmızı kotların tanımına dayanır. Bu kırmızı kotlar için, girilen parabolik birleşim eğrilerinin uygulanmasından kaynaklanan kesişimler ve giriş ile çıkış teğetlikleri hesaplanır.<br />
+      <br />
+Sistem, birleşim eğrileri tanımlamayı zorunlu kılmaz (poligonal kırmızı kotlar kullanılmasına izin verilir), bunların kullanılıp kullanılmayacağı kullanıcının elindedir. Bu işlevsellik, çeşitli şekillerde elde edilen ayrık verileri kullanma imkanı sunar (örneğin, birleşimsiz her 5 m'de bir tanımlanmış bir kırmızı kot, bir hendeği tanımlamak için tamamen geçerli olabilir).<br />
+      <br />
+İletişim kutusunda, noktalar KM ve Z koordinatlarının girilmesiyle tanımlanır. Her bir eleman veya kesim, alternatif yöntemlerden biriyle tanımlanabilir:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">İki nokta</span>, KM ve kot ile verilir ve eğim <span style="font-weight: bold;">Hes. Eğim (%)</span> alanında bildirilir.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Bir nokta</span>, KM'si ve kotu ile ve <span style="font-weight: bold;">Tan. Eğim (%)</span> alanında bildirilen <span style="font-weight: bold;">eğim</span> ile verilir.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Eğim (yüzde olarak), <span style="font-weight: bold;">rampa</span> (kot artışı) durumunda pozitif ve <span style="font-weight: bold;">eğim</span> (kot azalması) durumunda negatiftir. Uygulama tarafından oluşturulan listelerde bu felsefe korunur.<br />
+      <br />
+İki kesimin alışılmış <a href="#acuerdos_verticales">parabolik birleşim eğrisi</a> ile birleştirilmesi, ilgili kutucuğa birleşim eğrisinin değerini (KV) girerek sağlanır ve aktif kesim ile bir sonraki arasında uygulanır.<br />
+      <br />
+Tanımlanan verilerle, kullanıcı verileri girerken kırmızı kotu hesaplayabilir ve bir inceleme ve doğrulamanın ardından, enkesit tanımından oluşan bir sonraki tasarım aşamasına geçilebilir.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/def_tramos_rasante.png" style="width: 588px; height: 35px;" alt="" /><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <table style="text-align: left; width: 690px; height: 885px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 94px;">KM1,
+Z1<br />
+            </td>
+            <td style="vertical-align: top; height: 5px; width: 578px; text-align: justify;">Devam eden kırmızı kotun bir geçiş noktasını tanımlarlar. Eğer tanım grafik modda yapılırsa (varsayılan mod), KM ve kotun yazıldığı metin kutularından herhangi birine dokunulduğunda, ekranda noktaya tıklanması istenir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 94px;">KM2,
+Z2<br />
+            </td>
+            <td style="vertical-align: top; height: 8px; width: 578px; text-align: justify;">Mevcut kırmızı kotun ikinci veri noktasını tanımlarlar. Ekranda konumlandırıldığında, kırmızı kot kesimi sarı renkte çizilir ve program hesaplanan eğim değerini <span style="font-weight: bold;">Hes. Eğim (%)</span> alanında sunar.<br />
+            <br />
+            <table style="text-align: left; height: 44px; width: 585px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: middle; width: 33px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+                  </td>
+                  <td style="vertical-align: top; width: 534px;">
+                  <div class="Info" style="text-align: justify;">Program, kırmızı kotların KM ve kotlarını planda grafiksel olarak tıklayarak tanımlama imkanı sunar. Prosedür, prensip olarak BOYKESİT'in herhangi bir alt menüsünde bulunmak ve:<br />
+                  <ol>
+                    <li>Kırmızı kotlar görünümünü <span style="font-weight: bold;">[K.Kot]</span> açmak.</li>
+                    <li>Kırmızı kotlar iletişim kutusunu açmak için bu görünümün <span style="font-weight: bold;">[VERİLER]</span> seçeneğine basmak.</li>
+                    <li>Bir kırmızı kot elemanı eklemek veya mevcut olanı değiştirmek.</li>
+                    <li>Grafik modda, kırmızı kotlar iletişim kutusunda KM veya kot değerini seçmek.</li>
+                    <li>Planın genel penceresinde konumuna tıklamak.</li>
+                  </ol>
+Algoritma, tıklanan noktayı eksen üzerine yansıtır ve KM ile mevcut kotu (seçilen yakalama moduna göre) döndürür.<br />
+                  <br />
+                  <div style="text-align: center;"><img src="Imagenes/rasantes_clic_planta.png" style="width: 247px; height: 140px;" alt="" /><br />
+                  </div>
+                  </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 94px;"><span style="font-weight: bold;">Kot Art.</span><br />
+            </td>
+            <td style="vertical-align: top; width: 578px; text-align: justify;">Bu parametreyle ilişkili değer, P1 veya P2 noktalarının kotunu elde ederken belirtilen kota eklenir. Bu araç, gabarileri korumayı veya başka bir güzergahın verileri, bir elektrik hattı, bir yeraltı boru hattı vb. gibi başlangıç bilgilerine dayanmayı sağlar; bunlar, önceden yüklenmiş olan boykesitleri veya geçiş noktalarıyla temsil edilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 94px;"><span style="font-weight: bold;"><a name="tecla_V">[S]</a></span> </td>
+            <td style="vertical-align: top; text-align: justify; width: 578px;"><img src="Imagenes/rasantes_V.png" style="width: 235px; height: 34px;" alt="" align="right" hspace="4" />İlk durumda, nokta olarak (<span style="font-weight: bold;">KM1</span>,<span style="font-weight: bold;">Z1</span>) önceki kırmızı kotun (<span style="font-weight: bold;">KM2</span>,<span style="font-weight: bold;">Z2</span>) değerini alır (önceki some), böylece o nokta her iki kırmızı kot arasındaki birleşimin somesidir. Eğer önceki kırmızı kot nokta ve eğimle tanımlanmışsa, o zaman önce önceki kırmızı kotun Z2'si, verilen eğime bağlı olarak tanımlanan KM2 için yeniden hesaplanır.<br />
+            <br />
+İkinci durumda, <span style="font-weight: bold;">[S] </span>düğmesi, nokta olarak (<span style="font-weight: bold;">KM2</span>,<span style="font-weight: bold;">Z2</span>) bir sonraki kırmızı kotun (<span style="font-weight: bold;">KM1</span>,<span style="font-weight: bold;">Z1</span>) değerini alır (sonraki some).<br />
+            <br />
+Bu, ardışık somelerle sağlandığında farklı elemanların 'hızlı' giriş modudur.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Tç]</span>, <span style="font-weight: bold;">[Tg]</span><br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Tç</span> kutucuğu ile P1'de (<span style="font-weight: bold;">KM1</span>, <span style="font-weight: bold;">Z1</span>) verilen değerleri önceki birleşimin çıkış teğetiyle çakıştırabiliriz.<br />
+<span style="font-weight: bold;">Tg</span> kutucuğu ile P2'de (<span style="font-weight: bold;">KM2</span>, <span style="font-weight: bold;">Z2</span>) verilen değerleri bir sonraki birleşimin giriş teğetiyle çakıştırabiliriz.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[S]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Mevcut kırmızı kotu, yatay güzergahtaki <a href="OL_planta_alineaciones.html#flotante">serbest</a> elemanlar gibi hesaplar: Program, önceden tanımlanmış bir eğim için konumu (KM1,Z1) belirler, böylece önceki birleşim, önceki kırmızı kotun (KM2,Z2) noktasında başlar ve hesaplanan (KM1,Z1) noktasında ve verilen eğimle biter.<br />
+P1 ile ilişkili <span style="font-weight: bold;">S</span> kutucuğu: Bir birleşimi sabitlemek ve birleşimin sonraki kırmızı kotunun eğimini, birleşimin uzunluğunu değiştirerek Kv'yi koruyacak şekilde değiştirebilmek için kullanılır.<br />
+P2 ile ilişkili <span style="font-weight: bold;">S</span> kutucuğu: Bir birleşimi sabitlemek ve birleşimin önceki kırmızı kotunun eğimini, birleşimin uzunluğunu değiştirerek Kv'yi koruyacak şekilde değiştirebilmek için kullanılır.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/rasante_F_ejemplo.png" style="width: 560px; height: 248px;" alt="" /><br />
+            </div>
+            <div style="text-align: center;"><span class="Info">P1 ile ilişkili S kutucuğu örneği</span><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr><td><span style="font-weight: bold;">Kullanıcı KM'leri</span></td><td>Etkinleştirilirse, iletişim kutusundaki, tablodaki ve grafik gösterimdeki KM'ler, <a href="OL_ecuaciones_de_PK.html">KM Eşitliklerinden</a> elde edilir.</td></tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Birleştir</span><br />
+            </td>
+            <td style="vertical-align: top;">Bu komutla program, mevcut kırmızı kotu bir sonrakiyle şu şekilde birleştirir:<br />
+Dört eleman ve ilgili KV'leriyle bir örnek görelim:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/rasante_fusion1.png" style="width: 549px; height: 270px;" alt="" /><br />
+            </div>
+            <br />
+2 numaralı elemanı 3 numara ile birleştirmek için 2 numaralı elemana konumlanacağız ve 1 ile 2 arasındaki düşey kurbun çıkış teğetini 3 ile 4 arasındaki düşey kurbun giriş teğetiyle birleştiren yeni bir birleştirilmiş eleman elde edeceğiz. Program Kv değerlerini korur.<br />
+            <br />
+Sonuç şöyle olurdu:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/rasante_fusion2.png" style="width: 561px; height: 287px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 94px;">Hes. Eğim (%)<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 578px;">Hesaplanan eğim. Bir kırmızı kot kesiminin iki noktasını konumlandırdıktan sonra, program bu değeri otomatik olarak hesaplar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 94px;">Tan. Eğim (%)<br />
+            </td>
+            <td style="vertical-align: top; width: 578px;">
+            <div style="text-align: justify;">Kullanıcı tarafından tanımlanan eğim. Eğer bu değişken sıfırdan farklı bir değere sahipse, kırmızı kotun P1 noktasından kullanıcı tarafından tanımlanan eğimle geçtiği varsayılır ve ikinci noktanın <span style="font-weight: bold;">Z2</span> değeri göz ardı edilir. Tanımlanan eğim, dolayısıyla hesaplanan eğime göre önceliğe sahiptir. Bir kırmızı kot kesimi nokta ve eğimle tanımlandığında, o kesim <span style="font-weight: bold;">KM2</span>'de belirtilen değere kadar uzanır (<span style="font-weight: bold;">KM2</span> > <span style="font-weight: bold;">KM1</span>). Eğer <span style="font-weight: bold;">KM2</span>'ye girilen değer <span style="font-weight: bold;">KM1</span>'den küçükse ve bu ilk kırmızı kot elemanı ise, o zaman eksenin başlangıcı o <span style="font-weight: bold;">KM2</span>'ye kadar geriye doğru uzatılır.<br />
+            </div>
+            <br />
+            <table style="text-align: left; width: 578px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: middle; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+                  </td>
+                  <td style="vertical-align: top; width: 490px; text-align: justify;"><span class="Info">Bu durumda, sıfırdan farklı bir değer girilirse, eleman P1 ve eğim olarak davranmaya başlar ve P2 noktası göz ardı edilir. Bu özellik, değiştirilmek istenen belirli bir elemanın eğimi bilinmediğinde veya sadece bilgi amaçlı bir veri olarak uygulanır.</span><br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">L=0</span><br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/rasa_L0.png" style="width: 191px; height: 35px;" alt="" align="right" hspace="6" />Kırmızı kotun uzunluğunu sıfırlamak için eğimini hesaplar, yani önceki birleşimin çıkış teğetinin mevcut birleşimin giriş teğetiyle çakışmasını sağlar. Alternatif olarak, kırmızı kot uzunluğunu sıfırlamak için eğimi koruyarak KM1, Z1'i kaydırabilir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span style="font-weight: bold; font-style: italic;"><a name="acuerdos_verticales">Düşey Kurpların Tanımlanması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Düşey kurplar, tanımlanan kırmızı kotlar arasında parabolik veya dairesel geçişler yapmayı sağlar. Kullanıcı, eğrilik parametresini doğrudan değerini girerek tanımlayabilir veya programın diğer geometrik verilere dayanarak otomatik olarak hesaplamasına izin verebilir.<br />
+      <br />
+      </span></span></span></span>
+      <table style="text-align: left; width: 690px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 630px; text-align: justify;"><span class="Info">Düşey kurplar program için güzergah elemanları DEĞİLDİR ve işleyişleri yatay güzergahtaki klotoidlere benzer. Dolayısıyla, gerekirse sadece onları karakterize eden parametreyi bir önceki elemana bildirmek yeterlidir.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/diseno_rasante2.png" style="width: 343px; height: 296px;" alt="" />Balast omzunun kotu, traversin ucunda kırmızı kota göreceli bir kota kadar yükselir/alçalır<br />Zh = KırmızıKot - Ray_Yüksekliği - sth (sth, traversin balasttan ne kadar çıktığıdır).<br />Ve H3, yüksek rayın tarafından bile kırmızı kot kotundan uygulanır.<br />Çift Hatta iç bölge Zh ile korunur.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span><img src="Imagenes/formula_acuerdo_vertical.png" style="width: 115px; height: 37px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Tüm veriler, ekli formüllere göre hesaplanır (birincisi düşey eksenli parabolü ve ikincisi L, Kv ve eğimlerin cebirsel farkı arasındaki ilişkiyi tanımlar).<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/kv_radio.png" style="width: 101px; height: 35px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Önceden, bildirilecek birleşim eğrisi türünün <span style="font-weight: bold;">parabolik</span> olduğu varsayılır. Ancak, <span style="font-weight: bold;">[KV / Yarıçap]</span> düğmesi, düşey birleşim eğrilerini tanımlamak için iki olası yöntem arasında geçiş yapmayı sağlar: Kv'si (somedeki yarıçap) ile tanımlanan düşey eksenli <span style="font-weight: bold;">paraboller</span> kullanmak veya <span style="font-weight: bold;">yarıçapları</span> ile tanımlanan <span style="font-weight: bold;">dairesel</span> birleşim eğrileri kullanmak.<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/definicion_acuerdos.png" style="width: 174px; height: 185px;" alt="" align="left" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Birleşim eğrisi ayrıca, Kv parametresiyle, uzunluğuna, açıortay veya sehim konumuna ve KM ile kot olarak bir geçiş noktasına göre de tanımlanabilir.&nbsp;&nbsp; <br />
+      <br />
+      </span></span></span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bunun için, program resimde gösterilen seçenekler açılır kutusunu sunar.<br />
+      <br />
+Olasılıklardan her birine tıklandığında, yeni tiple ilişkili değerin birleşimi değiştirmemesi için ilgili hesaplamalar yapılır, böylece kullanıcı değişiklik yapmaya başlamadan önce başlangıç değerini not alabilir.<br />
+      <br />
+      <br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><br />
+      <table style="text-align: left; width: 691px; height: 180px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">KV<br />
+            </td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;">Birleşim eğrisi, Kv parametresine (parabol) veya yarıçapına (dairesel birleşim eğrileri durumunda) göre belirlenir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">Uzunluk</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;">Uzunluğa göre. Giriş, çıkış veya eğim noktalarındaki bir değişiklik, Kv'nin değiştirilmesi anlamına gelir, uzunluk korunur veya parametre kullanılmışsa ve uzunluk değilse tersi olur.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 37px; font-weight: bold;">Bz<br />
+            </td>
+            <td style="vertical-align: top; height: 37px; text-align: justify;"><span class="Parrafo">Some ile hesaplanan kırmızı kot arasındaki kot farkı (açıortay veya sehim).<br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="pk_z">KM,Z</a></span></td>
+            <td style="vertical-align: top;">Herhangi bir noktadan (KM ve kot) geçişe bağlı olarak. Bu durumda&nbsp; seçim grafiksel veya sayısal olarak yapılabilir ve nokta ekranda sarı bir kare olarak çizilir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Belirli bir noktaya göre</span><br />
+            </td>
+            <td style="vertical-align: top;">Birleşim eğrisi, aşağıda <a href="#para_por_p1">açıklanan</a> şekilde, mevcut veya sonraki elemanın belirli bir veri noktasından geçecek şekilde hesaplanır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">L1,L2</span><br />
+            </td>
+            <td style="vertical-align: top;">Düşey kurplar, L1 ve L2 olmak üzere iki uzunlukla tanımlanabilir; L1= Some KM'si - Giriş teğeti KM'si ve L2= Çıkış teğeti KM'si - Some KM'si.<br />
+Kırmızı kot durum listesinde, bu birleşim için toplam uzunluk ve KV yerine L1 ve L2 uzunlukları yazdırılır.<br />
+Boykesitteki eksen noktaları listesinde, birleşime düşen noktalar KV ile etiketlenmek yerine, duruma göre L1 veya L2 ile etiketlenir.<br />Bu asimetrik tipteki birleşimler için, bilgi panosunda iki KV gösterilir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span></span>Program, her zaman girilen değere karşılık gelen modu saklar, böylece her birleşim için tanım için kullanılan veriyi (ve ilgili Kv'yi değil) her zaman görüntülemek mümkündür.<br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><img src="Imagenes/rasantes_boton_def.png" style="width: 218px; height: 85px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[TNM.]</span> tuşuna basıldığında, birleşimin parametre, uzunluk veya açıortayla tanımlanıp tanımlanmayacağını ve ilgili değerleri belirlemeyi sağlayan bir iletişim kutusu açılır. Bu, elemanlar eklendikçe program tarafından eklenen 'ortalama' değerlerin hızlı bir şekilde girilmesini sağlar.<br />
+      <br />
+Yeni bir kırmızı kot eklenirse, birleşimi varsayılan değerlerle oluşturulur. Sona bir kırmızı kot eklenirse, varsayılan değerler önceki kırmızı kota sadece değeri hala sıfırsa uygulanır. <span style="font-weight: bold; font-style: italic;">Hiçbiri</span> seçildiğinde, yeni bir kırmızı kot eklendiğinde önceki kırmızı kotla olan birleşimin değeri değiştirilmez.<br />
+      <br />
+Bu araç, başlangıç hedefinin 'yumuşak' bir güzergah elde etmeyi sağlayan hızlı bir güzergah geliştirmek olduğu bilgi amaçlı projeler gibi başlangıç çalışmalarında uygun olabilir. Başka bir faydası, 'minimum' birleşim eğrileri sağlamak ve böylece uygun parametrelerin girilmesini bir an için tehlikeye atabilecek unsurları anında gözlemleyebilmektir.<br />
+      <br />
+<span style="font-weight: bold;">[T]</span>'ye basıldığında, bazı 'tipik' değerleri seçme imkanı sunan bir menü açılır ve aşağıda açıklanan belirli geometrik koşulların karşılanması için gerekli Kv'yi hesaplayan birkaç mod sunulur:<br />
+      <br />
+      </span></span></span></span>
+      <table style="text-align: left; height: 142px; width: 691px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 97px; font-weight: bold;">Öntanımlı değerler<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">500, 1000, 1500, 2500, 5000, 10000, 15000 veya 20000.<br />
+            </td>
+            <td colspan="1" rowspan="16" style="vertical-align: top; width: 101px; text-align: right;"><img src="Imagenes/rasantes_boton_T.png" style="width: 95px; height: 320px;" alt="" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 97px; font-weight: bold;">DİĞER KV<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Değerini klavyeden girmek için.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 97px; font-weight: bold;">UZUNLUK<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Uzunluk girilir ve program, birleştirdiği kırmızı kotlara göre Kv'yi hesaplar.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 97px; font-weight: bold;"><a href="OL_rasantes_normativa.html">YÖNETMELİK</a><br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Bir <span class="Archivo">.dia</span> boykesit tablosundan hesaplanan minimum ve istenen değerleri içeren bir tablo açar. <a href="OL_rasantes_normativa.html#tecla_N"> <span style="font-weight: bold;">[N]</span></a> düğmesiyle aynı etkiye sahiptir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 97px; font-weight: bold;">AÇIORTAY<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Somedeki sehim değeri.<br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 465px;"><br />
+Aşağıdaki girişler, tanım noktalarını kullanmayı ve ilgili parametreyi hesaplamayı sağlar; Kv, aşağıdaki varsayımları karşılamak üzere hesaplanır:<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 97px; font-weight: bold;">BİR NOKTA<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Parabol, belirli bir noktadan, KM-kottan geçer. Yukarıda <a href="#pk_z">açıklanan</a> <span style="font-weight: bold;">KM,Z</span>'ye benzer bir seçenek.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 97px; font-weight: bold;"><a name="para_por_p1">P1'den geçer</a><br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Birleşim eğrisi (KM1,Z1) noktasında teğet olarak çıkar.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 97px; font-weight: bold;">P2'den geçer<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Birleşim eğrisi (KM2, Z2) noktasında teğet olarak çıkar.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 97px;">Sonraki P1'den geçer<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Birleşim eğrisi, bir sonraki kırmızı kotun (KM1,Z1) noktasında teğet olarak ulaşır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 97px;">Sonraki P2'den geçer<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Birleşim eğrisi, bir sonraki kırmızı kotun (KM2,Z2) noktasında teğet olarak ulaşır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 97px;">Önceki Çıkış Teğeti<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Birleşim eğrisi, önceki birleşimin sonunda teğet olarak çıkar.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 97px;">Sonraki Giriş Teğeti<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Birleşim eğrisi, bir sonraki birleşimin girişinde teğet olarak ulaşır.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">3 noktadan geçer</span><br />
+            </td>
+            <td style="vertical-align: top;">İletişim kutusu, üç nokta (KM ve Z) belirtmek için genişler. [Oluştur]'a basıldığında, yeni parabol belirlenir ve bitişik kırmızı kotun KM ve Z'si değiştirilir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">2 nokta ve Kv'den geçer</span><br />
+            </td>
+            <td style="vertical-align: top;"><span class="Parrafo">İletişim kutusu, iki nokta (KM ve Z) ve bir Kv değeri belirtmek için genişler. [Oluştur]'a basıldığında, yeni parabol belirlenir ve bitişik kırmızı kotun KM ve Z'si değiştirilir.</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 97px;">BORU UZUNLUĞU<br />
+            </td>
+            <td style="vertical-align: top; width: 465px; text-align: justify;">Sadece dairesel birleşim eğrileri durumunda görünen bu seçenek, daire yayı boyunca ölçülen gerçek uzunluğu vermeyi sağlar (boru hattı projelerinin tanımında kullanılır).<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="entronques">Kavşaklar için Kırmızı Kotların Otomatik Ayarlanması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+      </span></span></span></span><img src="Imagenes/rasante_entronque.png" style="width: 144px; height: 57px;" alt="" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;Bir ana yol ve bir rampa gibi eksenler arasındaki kavşakların tanımı, kot ve deverde gerekli bağlantıyı içerir. <span style="font-weight: bold;">[Kavşak]</span> tuşuna basıldığında, sonucu aktif eksene, ki bu açıkça rampa olmalıdır, kırmızı kot(lar)ın eklenmesi olan ve böylece rampa ile ana yol arasındaki ortak bölgede platformun geometrik sürekliliğini garanti eden bir dizi hesaplama yapılır.<br />
+&nbsp;<br />
+Başlangıç tanımı ile elde edilen kırmızı kotlar arasında sürekliliği sağlamak için, tanımlanan kırmızı kot ile eklenenler arasında çift parabol ile bir geçiş yapılır veya önerilen geçişin yarısından daha uzun bir parabol sığarsa tek bir parabol kullanılır. Gerekli veriler, BOYKESİT menüsünde bulunan <a href="OL_entronques.html#ent_auto"><span style="font-weight: bold;">[KAVŞAKLAR]</span></a> iletişim kutusundan rampa içinde tanımlanır.<br />
+      <br />
+      <br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="alternativas">Kırmızı Kot Alternatifleri</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><img src="Imagenes/alternativas_rasante.png" style="width: 216px; height: 174px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">İletişim kutusunda, aynı eksen için on adede kadar farklı kırmızı kot alternatifi bildirilebilir. Buna karşılık, her alternatif, platformların, <a href="OL_cunetas.html">hendeklerin</a>, <a href="OL_cuneta_guarda_caballon.html">kafa hendeklerinin</a>, <a href="OL_excentricidad_mediana.html#mediana">orta refüjün</a> ve yardımcının kırmızı kotlarını içerir. Her alternatif ayrıca bir ad, platform sayısı ve KV/Yarıçap birleşim eğrileri modunu içerir.<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_rasantes_opciones_visualizacion.html">Görüntüleme seçeneklerinde</a>, farklı kırmızı kot alternatiflerinin ekranda gösterilmesi belirtilebilir.<br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Alternatifler, <span class="Archivo">.ras</span> dosyasında ayrı ayrı yüklenebilir/kaydedilebilir. <span class="Archivo">.vol</span> dosyasında, mevcut tüm alternatifler ve ayrıca hesaplama için hangisinin mevcut olduğu değeri de kaydedilir/yüklenir.<br />
+      <br />
+      <br />
+      </span></span></span></span><span class="Titulo_2"><a name="modif_dinamica">Dinamik veya gerçek zamanlı değişiklik</a></span><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+      <br />
+      <span style="font-weight: normal;"><img src="Imagenes/pinzamientos_rasante.png" style="width: 352px; height: 205px; margin-left: 7px;" alt="" align="right" /><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Yatay güzergah tasarımında olduğu gibi, kırmızı kotu interaktif olarak, fareyi kullanarak ve kırmızı kotun 'veri' noktalarını (tutamakları) hareket ettirerek değiştirme imkanı vardır, böylece tasarımın nasıl değiştiği ekranda gözlemlenebilir.</span><br />
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">Bu gerçek zamanlı değişiklikler ve daha fazlası, ilgili düğmeler aracılığıyla da yapılabilir. Kullanımı şöyledir: Bir tıklama, değiştirilecek veriyi grafiksel olarak 'almayı' sağlar ve imleçle kaydırıldıktan sonra, yeni bir tıklama ekranda gerçek zamanlı olarak gösterilen değişikliklerin kabul edildiği anlamına gelir.<br />
+      <br />
+      </span></span></span></span></span></span><img src="Imagenes/botones_modif_rasantes.png" style="width: 185px; height: 31px; margin-right: 7px;" alt="" align="left" /><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Bu düğmelerden birine basıldıktan sonra, işlevi, grafik penceresinin dışında herhangi bir yere, örneğin [Hesapla] düğmesine veya Kv parametresinin değerine tıklanana kadar aktif kalır.<br />
+      <br />
+Hem tutamakları doğrudan manipüle ederek hem de bu düğmeleri kullanarak, &lt;Esc&gt; tuşu değişiklik işlemini anında iptal eder. Mevcut kırmızı kotun bir sonrakiyle olan birleşiminin somesinde ve (KM1, Z1), (KM2, Z2) koordinatlarında tutamaklar oluşturulur.<br />
+&nbsp; </span><br />
+      </span></span></span></span></span>
+      <table style="text-align: left; width: 692px; height: 284px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 60px; font-weight: bold;"><span class="Parrafo">[:]</span><br />
+            </td>
+            <td class="Parrafo" style="vertical-align: top; width: 612px; text-align: justify; font-weight: normal;">İki nokta (<span style="font-weight: bold;">KM1</span>, <span style="font-weight: bold;">Z1</span>) ve (<span style="font-weight: bold;">KM2</span>, <span style="font-weight: bold;">Z2</span>) ile tanımlanan bir kırmızı kotu, kendisine paralel olarak interaktif bir şekilde hareket ettirmeyi sağlar. Aynı işlev, kırmızı kot kesiminin merkez tutamağını hareket ettirerek de gerçekleştirilir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td class="Parrafo" style="vertical-align: top; width: 60px; font-weight: bold;">[P1]<br />
+[P2]<br />
+[S]<br />
+            </td>
+            <td class="Parrafo" style="vertical-align: top; width: 612px; text-align: justify; font-weight: normal;">Başlangıç noktasını, bitiş noktasını veya someyi hareket ettirmeyi sağlar; her zaman birleşim eğrilerinin parametreleri ve nokta ile eğimle verilen kesimlerde eğim de korunur.<br />
+Başlangıç ve bitiş noktalarının değiştirilmesi, ilgili tutamakları hareket ettirerek doğrudan gerçekleştirilebilir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td class="Parf_negrita"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span style="font-weight: bold;">[S]</span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><br />
+            </span></span></span></span></span></span></span></span></td>
+            <td>Some'yi hareket ettirmeyi sağlar.<br />
+Bu düğmenin kutucuğu etkinleştirildiğinde, sadece kot değiştirilir ve KM kilitlenir.</td>
+          </tr>
+          <tr>
+            <td class="Parrafo" style="vertical-align: top; width: 60px; font-weight: bold;">[Tg]<br />
+[Tç]<br />
+            </td>
+            <td class="Parrafo" style="vertical-align: top; width: 612px; text-align: justify; font-weight: normal;">Bir düşey kurbun giriş veya çıkış teğet noktasını interaktif olarak hareket ettirmeyi sağlar; birleşim eğrisi uzayda sabit kalır ve kırmızı kot onun üzerinde kayar. Sonunda kırmızı kot, nokta ve eğimle tanımlanır; nokta (<span style="font-weight: bold;">KM1</span>,
+            <span style="font-weight: bold;">Z1</span>) sırasıyla giriş veya çıkış teğet noktasına eşit olur ve eğim, o noktadaki birleşime karşılık gelir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px; font-weight: bold;"><span class="Parrafo">[Some Ekle]</span><br />
+            </td>
+            <td style="vertical-align: top; width: 612px; text-align: justify; font-weight: normal;"><span class="Parrafo">Bu seçenek, interaktif olarak bir some ekler. Prosedür, mevcut kırmızı kotu önce iki noktalı bir kırmızı kota dönüştürmek, bu noktaların önceki some ve sonraki some ile çakışmasını sağlamak ve böylece yeni some eklendiğinde önceki ve sonrakinin konumunu değiştirmemektir. O anda uygulama, <span style="font-weight: bold;">[S]</span> seçeneğiyle tamamen aynı şekilde davranır.</span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px; font-weight: bold;"><span class="Parrafo">[Some Kaldır]</span><br />
+            </td>
+            <td style="vertical-align: top; width: 612px; text-align: justify; font-weight: normal;"><span class="Parrafo">Silmek istenen somenin üzerine bir fare tıklamasıyla interaktif olarak bir someyi silmeyi sağlar.</span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Some Ekle]</span><br />
+            </td>
+            <td style="vertical-align: top;">Bu seçenek, tanımlanan son kırmızı kot kesiminden sonra interaktif olarak yeni bir some ekler.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: normal;">İnteraktif değişiklik, ayrıca resimde görüldüğü gibi proje enkesitini de gözlemlemeyi sağlar. Başlangıçta tıklanan noktaya en yakın enkesitin KM'sindeki gerçek enkesit gösterilir (seçilen KM'nin tanımlanmış hesap bölgelerinden birinin içinde kalması gerekir, yani veriler ekstrapole edilmez).<br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><img src="Imagenes/modif_interactiva_rasante.png" style="width: 431px; height: 219px;" alt="" /></span></span></span></span></span></span><br />
+      <span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" /></span></span></span></span></span></div>
+      <span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span>
+      <table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 11px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 635px;"><span style="font-weight: normal;">Bu işlevsellik, yalnızca </span>RAM'deki Enkesitler<span style="font-weight: normal;"> seçenekleri etkinse mümkündür (</span>Yapılandırma<span style="font-weight: normal;"> </span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">&#8594;</span></span>
+Tercihler<span style="font-weight: normal;"> </span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">&#8594;</span></span><span style="font-weight: normal;"> </span>Seçenekler<span style="font-weight: normal;"> </span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">&#8594;</span></span><span style="font-weight: normal;"> </span>Doğrusal Yapı<span style="font-weight: normal;"> </span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">&#8594;</span></span><span style="font-weight: normal;"> </span>RAM'de Hesaplamalar<span style="font-weight: normal;"> menüsünden erişilebilir).</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="descarga_datos">Kırmızı Kota İlişkin Verilerin Kaldırılması</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/rasantes_descarga.png" style="width: 99px; height: 173px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"> Yan menüdeki <span style="font-weight: bold;">[KALDIR]</span> seçeneğine basıldığında, yüklü (veya ekranda mevcut) olan farklı veri türlerine göre kaldırma seçenekleri sunan başka bir menü açılır.<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">KIRMIZI KOTLAR</span>:
+
+Tanımlanmış tüm kırmızı kotları, yani sağ ve sol platform, hendekler (sol ve sağ), orta refüj ve yardımcı boykesiti kaldırır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">MEVCUT K.KOT</span>: </span><span class="Parrafo">Mevcut boykesitin</span><span class="Parrafo"> tüm kırmızı kotlarını kaldırır, yani platformların kırmızı kotu aktifse bunlar silinir, aksine hendeklerin tanımı aktifse bunların verileri silinir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">ARAZİLER</span>:
+Enkesitleri, arazi boykesitini ve diğer boykesitleri kaldırır.&nbsp;&nbsp;&nbsp; &nbsp;</span></li>
+        <li><span class="Parrafo"><a href="OL_rasantes_otros_longitudinales.html"><span style="font-weight: bold;">DİĞER BOYK.</span></a>: Poligon hat olarak yüklenmiş tüm boykesitleri kaldırır. Eğer seçici bir kaldırma yapmak isteniyorsa, <span style="font-weight: bold;">[DİĞER BOYK.]</span> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span><span class="Parrafo"> <a href="OL_rasantes_otros_longitudinales.html#ver_menu"><span style="font-weight: bold;">Menüyü gör</span></a> seçeneğiyle açılan kutu kullanılmalıdır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">DİĞER EKSENLER</span>: Yüklenmiş olan diğer eksenlere yapılan referansları kaldırır, eğer seçici bir kaldırma yapmak isteniyorsa <span style="font-weight: bold;">[DİĞER EKSENLER]</span> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span><span class="Parrafo"> <span style="font-weight: bold;">Sil</span> seçeneği kullanılmalıdır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">GEÇİŞ NOKTALARI</span>: Geçiş noktalarını kaldırır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">DİĞER ÇİZGİLER</span>: Mevcut tüm çizgileri (kırmızı kot üzerinde çizgi düzenleyici ile çizilmiş) kaldırır, düzenleyici kullanılarak tek tek silinebilir.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">SONDAJLAR</span>:
+Sondaj verilerini kaldırır.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">TÜMÜ</span>:
+Mevcut tüm verileri (kırmızı kot tanımları, yüklenmiş diğer boykesitler, diğer eksenlerle ilgili bilgiler, vb.) kaldırır.</span></li>
+      </ul>
+      <span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+      <span style="font-weight: normal;"><span class="Titulo_2"><a name="calculo">Hesaplama, geometrik çözüm ve listeler</a></span><br />
+      </span></span><br />
+      <span class="Parrafo"><span style="font-weight: normal;"> <span style="font-weight: bold;">[Hesaplama]</span> düğmesine basıldığında, tüm hesaplamalar yapılır ve ulaşılan çözüm ekranda çizilir; her birleşime ilişkin alfanümerik bilgiler aşağıdaki verilerle gösterilir:</span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: normal;">Uzunluk (<span style="font-weight: bold;">L</span>) ve birleşim eğrisi parametresi (<span style="font-weight: bold;">KV</span>).</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: normal;">Giriş (<span style="font-weight: bold;">Pe</span>) ve çıkış (<span style="font-weight: bold;">Ps</span>) eğimi.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: normal;">Giriş, some ve çıkış noktaları için KM ve kot.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: normal;">İki eleman arasında çakışmalar varsa, hatayı bildiren kırmızı bir 'pano veya bilgi bandı' gösterilir.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: normal;">Ayrıca, kırmızı kot tanımı yatay güzergah ekseninin başlangıcından önce başlar veya son KM'sinden sonra biterse, mavi uyarı 'bilgi bantları' gösterilir.</span></span></li>
+      </ul>
+Hesaplama yapıldığında (Hesaplama kutucuğuna tıklandığında), yapılan işlemler veya her alternatif ve her eksen için on adede kadar durum yığını saklanır.<br />
+Hesapla komutunun altında, bu yapılan işlemleri geri almak (<span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><img src="Imagenes/icono_toolBarEstandar_deshacer.png" style="width: 12px; height: 13px;" alt="" /></span></span></span></span></span></span></span>) veya yinelemek (<span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><img src="Imagenes/icono_toolBarEstandar_rehacer.png" style="width: 14px; height: 15px;" alt="" /></span></span></span></span></span></span></span>) için simgelerimiz vardır.<br />
+Yığından bir durum geri yüklendiğinde, bu durumun yığının dışında kalmaması isteniyorsa Hesapla komutuna basılmalıdır.<br />
+      <span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><img src="Imagenes/rasante_calculo.png" style="width: 468px; height: 359px;" alt="" /><a name="FFCC: Rasante y Peraltes desviada"><span class="Titulo_2">DD: Sapmalı Kırmızı Kot ve Deverler</span></a><br />
+      <span class="Parrafo" /></div>
+      </span> <br />
+      <span class="Parrafo"><span style="font-weight: normal;">Çizim sistemi, yatay güzergah tasarımı için mevcut olanla benzerdir: hesaplama ile hesaplama arasında 'yeniden çizim' yapılmaz, böylece farklı alternatifler gözlemlenebilir ( 'yeniden çiz' tuşuyla veya fare tekerleğiyle yapılan dinamik yakınlaştırmalarla bir yenileme yapılana kadar).<br />
+      <br />
+      <img src="Imagenes/rasantes_list.png" style="width: 159px; height: 119px; margin-left: 7px;" alt="" align="right" />Hesaplamaların bir sonucu olarak, dikey menüdeki <span style="font-weight: bold;">[rasa.res]</span> düğmesiyle doğrudan erişilebilen <span class="Archivo">rasa.res</span> listesi oluşturulur. Bu listede, girilen tanım verileri ve ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> tarafından yapılan hesaplamadan elde edilenler bulunur<sup><span class="Parrafo" /></sup><span style="font-weight: normal;">; her birleşimin giriş ve çıkış teğet noktalarının konumu (KM), elde edilen eğimler ve mevcut kırmızı kotun yüksek ve alçak noktaları bildirilir: sağ platform, sol platform, sağ hendek, sol hendek, yardımcı, orta refüj, sağ kafa hendeği veya sol kafa hendeği.</span><br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">Listenin ikinci bölümü, her KM için (özel teğet noktalarıyla 20 m'lik bir aralıkla oluşturulmuş) kot, eğim ve eleman türü (rampa veya birleşim eğrisi) hakkında bilgi verir.<br />
+      <br />
+      </span></span></span></span></span></span><span class="Parrafo"><spanffcc: rasante="" y="" peraltes="" desviada="" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Bu listelere ayrıca </span><a href="OL_listados_geometria.html#eje_alzado">geometri listelerinden</a> de erişilebilir.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><br />
+      </span><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 11px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 635px;"><span style="font-weight: normal;">Eğer LİSTELER menüsünde <span style="font-weight: bold;">6 ondalıklı aplikasyonlar</span> seçeneği etkinse, rasa.res listesi KM ve kotta 6 ondalık ve eğimler için 8 ondalıkla oluşturulur.</span><span style="font-weight: normal;"><br />
+            </span></td>
+          </tr>
+        </tbody>
+      </table>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></spanffcc:></span></span><br />
+      <a name="Eco_Informativo"><span class="Titulo_2">Bilgi Ekranı</span><br />
+      <br />
+KM eşitliklerinden elde edilen kullanıcı KM'si diğer parametreler arasında gösterilir.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="Eco_Informativo"><img src="Imagenes/ras_ecoinf.png" style="width: 100px; height: 114px;" alt="" /><br />
+      </a></div>
+      <a name="Eco_Informativo"> <img src="../../AppData/Local/Temp/moz-screenshot.jpg" alt="" /> </a>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Eco_Informativo"><img src="Imagenes/ras_ecoinf_pkusuario.png" style="width: 251px; height: 113px;" alt="" /><br />
+      <br />
+      </a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="Eco_Informativo"> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="FFCC: Rasante y Peraltes desviada"><span class="Titulo_2">DD: Sapmalı Kırmızı Kot ve Deverler<br />
+      </span></a><br />
+      <span class="Parrafo">Bu araca yan menüdeki <span style="font-weight: bold;">[ARAÇLAR]</span> üzerinden erişilir. Ana hattın kurpta, deverli ve boyuna eğimli olabileceğini dikkate alarak makasların neden olduğu sapmalı bir hattın kırmızı kotlarını ve deverlerini belirler.<br />DD: Sapmalı Kırmızı Kot ve Deverler aşağıdaki parametrelere sahiptir:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Maksimum eşit aralık: makas boyunca ara noktaları analiz etmek için</span></li>
+        <li><span class="Parrafo"> Geçiş uzunluğu: makasın sonundan önceden tanımlanmış kırmızı kota geri dönmek için bir geçiş yapmak üzere.</span></li>
+        <li><span class="Parrafo">Kırmızı kotu ayarla, incelenen noktalarda kırmızı kotları ve parabolleri, maksimum bir kot farkı ve noktalar arasında maksimum bir mesafe vererek ayarlamayı sağlar.</span></li>
+        <li><span class="Parrafo">Elde edilen deverlerin değeri için yuvarlama.</span></li>
+        <li><span class="Parrafo">Aynı değere sahip ardışık ikiden fazla veri olduğunda deverleri filtrele.</span><span class="Parrafo"> <br />
+          </span></li>
+      </ul>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><img src="Imagenes/FFCC_RASANTE_PERALTES_DESVIADA.png" style="width: 365px; height: 203px;" alt="" /><span class="Parrafo" /></div>
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

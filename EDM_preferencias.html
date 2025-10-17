@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Sayısal Harita Tercihleri</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>HARİTA YAPILANDIRMA TERCİHLERİ<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Genel Bilgiler</a><br />
+      <a href="#librerias">Kütüphaneler</a><br />
+      <a href="#comportamiento_edicion">Düzenleme Sırasındaki Davranış</a><br />
+      </div>
+
+      
+      <div style="margin-left: 80px;"><a href="#funcionamiento">İşleyiş</a><br />
+
+      <a href="#menus_teclado">Menüler ve Klavye</a><br />
+      <a href="#seguridad">Güvenlik</a><br />
+      <a href="#graduacion_cursores">İmleç Ayarları</a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#visualizacion">Görselleştirme</a><br />
+      <a href="#opciones">Seçenekler</a><br />
+      <div style="margin-left: 40px;">Harita<br />
+      <a href="#topografia">Topografya</a><br /><a href="#obra_lineal">
+Güzergah Projesi</a><br />
+      <div style="margin-left: 40px;"><a href="EDM_preferencias.html#planta">Plan</a><br />
+      <a href="EDM_preferencias.html#rasantes">Profil (Kırmızı Hat)</a><br /><a href="#alzado">
+
+Boykesit</a><br />
+RAM'de Hesaplamalar<br />
+      </div>
+
+Virtual 3D<br />
+
+      </div>
+
+      <a href="#editor_perfiles">Enkesit Editörü</a><br /><a href="#unidades_angulares">Açısal Birimler</a><br />
+      <a href="#sistema_unidades">Birim Sistemi</a><br />
+      <a href="#notacion_num_simb">Sembollerde Sayı Gösterimi</a><br /><a href="#suavizado_curvas">
+Eğri Yumuşatma</a><br />
+Listeler<br />
+      <div style="margin-left: 40px;">Format<br />
+Genel Özellikler<br />
+Özel Özellikler<br />
+      </div><a href="#paginado_planos">
+Pafta Düzeni</a><br />
+      
+<a href="#config_memoria">
+Gelişmiş Bellek Yapılandırması</a><br /><a href="#estado">
+Durum Bilgisi. Mevcut Kotun Değiştirilmesi</a><br />
+
+      </div>
+
+<br /><br /><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br /><br /><img src="Imagenes/arbol_preferencias.png" style="width: 156px; height: 339px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Tercihler</span> menüsünden, programın arayüzle ilgili yapılandırma seçeneklerinin çoğunu bir araya getiren bir iletişim kutusuna erişilir.<br /><br />Tercihler, iletişim kutusunun sol tarafında gösterilen ağaç yapısına göre sınıflandırılmıştır.<br /><br />Gerekli değişiklikler yapıldıktan sonra, bu yapılandırmanın gelecekteki çalışma oturumlarında dikkate alınması için kaydedilmesi gerekir (yapılandırmanın belirli bir projeye mi yoksa herhangi bir projeye mi yönelik olduğuna bağlı olarak sırasıyla <span style="font-weight: bold;">[Yerel Kaydet]</span> veya <span style="font-weight: bold;">[Genel Kaydet]</span> butonu). Ardından, değişikliklerin etkili olması için <span style="font-weight: bold;">[Tamam]</span>'a basılacaktır.<br /><br />Yerel yapılandırma aynı çalışma klasörüne, &nbsp;<span class="Archivo">ispol.cfg</span> dosyasına kaydedilir ve genel yapılandırma programın kütüphanesi içine (varsayılan olarak &nbsp;<span class="Archivo">C:\ISPOL\LIB</span>'de), &nbsp;<span class="Archivo">istram.cfg</span> dosyasına kaydedilir.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br />Başlatıldığında, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> bu yapılandırmaların varlığını kontrol eder. Proje klasöründe &nbsp;<span class="Archivo">ispol.cfg</span> dosyasının bulunduğunu görürse, o yapılandırmayla başlar; aksi takdirde, genel yapılandırma dosyasını aramaya çalışır ve o da yoksa, varsayılan yapılandırmayla başlar.<br /><br />Program ayrıca, program yapılandırmasını, kullanıcının seçtiği kütüphanede oluşturulacak bağımsız bir dosyaya (<span class="Archivo">.cfa</span> uzantılı) <span style="font-weight: bold;">[Farklı Kaydet]</span> seçeneği ile kaydetme imkanı da sunar; böylece istenildiğinde <span style="font-weight: bold;">[Yükle]</span> seçeneği ile geri yüklenebilir.<br /><br />
+
+      <br />
+      <span class="Titulo_2"><a name="librerias">Kütüphaneler</a></span><br />
+      <br />
+Kütüphanelerin kullanımı ve yapılandırılması, <a href="EDM_librerias.html">kılavuzun bu bölümünde</a> açıklanmaktadır.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="comportamiento_edicion">Düzenleme Sırasındaki Davranış</a></span><br />
+
+      <br />
+Bu bölüm, programın bazı çizim, seçim, düzenleme vb. seçenekleri açısından çalışma moduna atıfta bulunur.<br />
+      <br />
+Varsayılan olarak, ilgili seçeneklerin davranışının mümkün olduğunca alışılmış olması için yapılandırılmıştır, ancak belirli durumlarda bunlardan bazılarının değiştirilmesinin uygun olabileceği de bir gerçektir.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="funcionamiento">İşleyiş</a></span><br />
+      <br />
+
+      <img style="border: 1px solid ; width: 350px; height: 362px; float: right;" alt="" src="Imagenes/config_funcionamiento.png" hspace="5" />Seçenekler şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Döngüsel çizgi seçimi</span>: Eğer seçim penceresinden birden fazla çizgi geçiyorsa, en son oluşturulan veya veri dosyasındaki sıraya göre en sonuncusu seçilir, çünkü program son çizgiden geriye doğru analiz etmeye başlar. Ancak bu seçenek etkinleştirilirse, program son seçilen çizginin önünden geriye doğru başlar, bu nedenle aynı noktaya birkaç kez tıklanırsa, o noktadan geçen farklı çizgiler sırayla seçilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Birden çok çizgi üzerinde köşe noktası yakalama, en yakınını bul</span>: Köşe noktası yakalama etkin olduğunda ve yakalama penceresinden birden fazla çizgi geçtiğinde, köşe noktası en yakın olan çizgi seçilecektir.  <br />
+
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Klavye ile ekran dışı X,Y girişine izin ver</span>: Bu seçenek etkinleştirilirse, ekranda gösterilen alanın dışındaki mutlak koordinatların klavyeden girilmesine izin verilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Hızlı kaydırma</span>: Farenin tekerleği/orta tuşu ile kaydırma yaparken çizimi optimize eder.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Noktaları ve çizgileri taşırken Z yakalama</span>: Bu seçenek etkinleştirilmişse, bir sembolü veya bir çizgiyi taşırken, yer değiştirme 3D olacaktır, yani herhangi bir yakalama türü etkinse kot dikkate alınır. Buna karşılık, devre dışı bırakılırsa, hareket yalnızca yakalama tarafından okunan kottan bağımsız olarak XY düzleminde olacaktır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Noktaları ve çizgileri eklerken Z yakalama</span>: Devre dışı bırakılırsa, etkin bir yakalama ile çizgilere nokta eklerken yakalamanın kotu alınmaz, sadece X ve Y koordinatı alınır (<span style="font-weight: bold; font-style: italic;">Noktaları ve çizgileri taşırken Z yakalama</span> seçeneğine benzer şekilde çalışır).<br />
+
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Paralel ve dik çizgi modunda referansları otomatik olarak bul</span>: Etkinleştirildiğinde, çizgi modu etkinken sadece üzerlerinden geçerek nesnelere paralel veya dik olanı otomatik olarak arar. Devre dışı bırakılırsa, her köşe noktasından önce nesnenin seçilmesi istenir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Paralel çizgide döngüleri kaldır</span>: Bu seçenek etkinken, bir paralel çizginin içbükeylikleri nedeniyle belirli bir mesafeden sonra oluşturduğu döngüler, resimde gösterildiği gibi önlenir:</li>
+
+      </ul>
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/paralela_con_bucle.png" style="width: 273px; height: 176px;" alt="" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Döngülü Paralel</span><br />
+
+            </div>
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/paralela_sin_bucle.png" style="width: 300px; height: 178px;" alt="" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Döngüsüz Paralel</span><br />
+            </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Yapıştırılacak yer</span>: Daha önce kesilmiş veya kopyalanmış bir nesne seçimi yapıştırıldığında, bu yapıştırma geldiği aynı modele, mevcut modele veya kullanıcının belirttiği modele gidebilir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Bir köşe noktasını diğerinin üzerine taşırken</span>, program iki çizgiyi birleştirebilir (veya bir çizginin başlangıç ve bitiş köşe noktaları ise çizgiyi kapatabilir), hiçbir şey yapmayabilir veya kullanıcıya sorabilir.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Seçim Türü</span>: Buradan, yeni seçimin mevcut seçime eklenip eklenmeyeceği veya onun yerini alıp almayacağı ayarlanır. Bu tercih, <span style="font-weight: bold;">Düzenle</span> &#8594; <span style="font-weight: bold;">Seç</span> menüsünden ve içerik menüsündeki <span style="font-weight: bold;">Seç</span> seçeneğinden de ayarlanabilir.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yayları 8D çizgilerle oluştur</span>: Bu seçenek etkinleştirilirse, polilineler, daireler vb. <a href="EDM_entidades_basicas.html#lineas8D">8D çizgiler</a> olarak çizilir.<br />
+        </li>
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Kullanımdaki modellerin bilgisini EDM/EDB'de kaydet</span>: Bu seçenek etkinleştirildiğinde, kullanımda olan <a href="EDM_control_entidades.html#control_modelos">modellerin</a> bilgisi &nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> dosyalarına kaydedilir. Bu şekilde, dosya yeniden yüklendiğinde modellerin bilgisi de güncellenir.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Mesajları bir dosyaya kaydet</span>: Tüm mesajları proje klasöründeki MESAJLAR.txt adlı bir dosyada saklar.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Taşımak/döndürmek için doğrudan hücre noktasına tıkla</span>: Etkinse, bir hücrenin bir noktasını taşımak veya döndürmek için üzerine tıklayıp taşımak/döndürmek yeterlidir. Aksi takdirde, noktalarını taşımadan önce hücrenin seçilmesi gerekir.</li>
+
+      </ul><ul><li><span style="font-weight: bold;">Daha sonraki revizyon için yalnızca bir uyarı</span>: Bu seçenek etkinleştirilirse ve çalışılan revizyondan daha yeni bir revizyonda kaydedilmiş bir proje yüklenirse, yalnızca bir uyarı gösterir.</li></ul>
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="menus_teclado">Menüler ve Klavye</a></span><br />
+
+      <br />
+      <img src="Imagenes/config_menus_teclado.png" style="width: 375px; height: 267px; margin-left: 7px;" alt="" align="right" />Seçenekler şunlardır:<br />
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">OpenGL 3D Editör</span>: VIRTUAL 3D modülünün 3D editöründe OpenGL aracılığıyla sanal görüntülemeyi etkinleştirir.<br />
+        </li>
+      </ul>
+      <ul>
+
+        <li><span style="font-weight: bold;">Veri menüleri için nokta yuvarlama</span>: Fare ile grafik olarak elde edilen noktaların koordinatlarına atıfta bulunur ve 0.0 değerinin yuvarlama yapılmadığını, 0.001 değerinin üçüncü ondalık basamağa yuvarlandığını vb. belirtecek şekilde ayarlanmasına olanak tanır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">İmleci kaydırma</span>: Etkinleştirilirse, dikey menülerin açılır listelerinde imleç açılır listenin merkezine kaymaz.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Windows dosya seçicisi</span>: Bu seçenek devre dışı bırakılırsa, bir dosya yüklerken veya kaydederken kullanılan dosya seçicisi, Windows<sup>®</sup> seçicisi yerine programın kendi seçicisi olur.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Açarken/kaydederken son dizini hatırla</span>: Bu seçenek etkinse, dosya seçici, dosyaların en son açıldığı veya kaydedildiği klasörü hatırlar. Varsayılan olarak bu seçenek devre dışıdır. </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Tekerleksiz farelere uyarlanmış menüleri göster</span>: Bu seçenek etkinleştirildiğinde, o an tekerlekli bir fare kullanmayan bilgisayarlarda yaygın işlemleri kolaylaştırmak amacıyla bazı menüler ve program davranışları değiştirilir. Örneğin, yakınlaştırma/uzaklaştırma ve dinamik kaydırma işlemleri doğrudan <span style="font-weight: bold;">Görünüm</span> menüsünden erişilebilir hale gelir, bu da o an tekerlekli harici bir faresi olmayan dizüstü bilgisayarlarda özellikle kullanışlıdır.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">TabletPC ekran klavyesini otomatik olarak göster</span>: Program bir <span style="font-style: italic;">tablet</span>'te çalıştığını algıladığında, bu tür cihazlara uyarlanmış özel bir klavye ve bazı butonlar gösterir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Oturumlar arasında araç çubuklarının konumlarını hatırla</span>: Bu seçenek etkinleştirildiğinde, program kapanırken ekrandaki araç çubuklarının mevcut konumunu kaydeder, böylece bir sonraki oturum açıldığında aynı yerde görünürler.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Dikey menüleri otomatik olarak gizle</span>: Seçenek etkinleştirildiğinde, programın farklı bölümleriyle ilişkili dikey menüler daraltılmış olarak gösterilir ve fare imlecinin üzerlerinde olup olmamasına bağlı olarak açılır/gizlenir.</li>
+      </ul>
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="seguridad">Güvenlik</a></span><br />
+      <br />
+      <img src="Imagenes/config_seguridad.png" style="width: 249px; height: 168px; margin-left: 7px;" alt="" align="right" />Seçenekler şunlardır:<br />
+
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Otomatik Kaydetme</span>: Varsayılan olarak devre dışı olan bu seçenek, haritanın bir yedek kopyasının otomatik olarak oluşturulması için tıklama sayısını kontrol eder. Bu kopyanın oluşturulması neredeyse anlıktır. Varsayılan olarak, kutucuk etkinleştirilirse, program her 100 fare tıklamasında bir yedek kopya oluşturur. Bu kopya her yapıldığında, mesaj alanında <span style="font-style: italic;">Değişiklikler kaydediliyor...</span> şeklinde bir mesaj görüntülenir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">RAM'de Kaydet</span>: Bu kutucuk işaretli olduğu sürece, program harita düzenlemeyle ilgili her şey için sistemin ana belleğini (RAM), ikincil belleğe (sabit disk) göre yoğun bir şekilde kullanır, bu da düzenleme sürecini önemli ölçüde hızlandırır. Bu seçeneğin devre dışı bırakılmaması tavsiye edilir.</li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Önceki yedek kopyayı kaydet</span>: Bu seçenek devre dışı bırakılırsa, yedek dosyaların kopyası yapılmaz ve dolayısıyla bir sonraki oturumda, önceki oturumun dosyaları değil, kaydedildikleri son oturumun dosyaları geri yüklenir. Bununla iki şey elde edilebilir:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ol>
+        <li>Eğer çok büyük haritalarla çalışılıyorsa, programı başlatırken yedek dosyaların kopyasını yapmak için bekleme süresi önlenir.</li>
+      </ol>
+
+      <ol start="2">
+        <li>Sonraki herhangi bir oturum için aynı bilgiyi önceki yedek kopyada sabitleyebilirsiniz.</li>
+      </ol>
+      </div>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Başlangıçta projeyi geri yükle</span>: Bu seçenek işaretliyken (varsayılan), programın bir oturumu başlatıldığında, önceki oturumda mevcut olan veriler (EDM ve güzergah projesi) otomatik olarak geri yüklenir.</li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Tümünü silerken yönelimi koru</span>: <span style="font-weight: bold;">Yeni</span>, <span style="font-weight: bold;">Çizim Aç</span> vb. seçenek kullanıldığı için tüm EDM silindiğinde, program atanmış olan çizimin <a href="EDM_visualizacion.html#orientacion">yönelimini</a> korur.<br />
+        </li>
+      </ul>
+
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="graduacion_cursores">İmleç Ayarları</a></span><br />
+      <br />
+      <img src="Imagenes/config_graduacion_cursores.png" style="width: 320px; height: 381px; float: right;" alt="" hspace="5" />Buradan, ok tuşları veya imleçler kullanılarak grafik ekranda yapılan kaydırmaları ve fare tekerleği kullanıldığında yakınlaştırma hızını ayarlamak mümkündür (kaydırıcı <span style="font-weight: bold;">İmleç Ayarları)</span>.<br />
+      <br />
+Uçuşlar için gecikme, bir çizgi üzerindeki hıza veya <span style="font-weight: bold;">Görünüm</span> &#8594; <a href="EDM_visualizacion.html#vuelo"><span style="font-weight: bold;">Uçuş</span></a> ve Görünüm &#8594; <span style="font-weight: bold;">3D Görünüm</span> &#8594; <span style="font-weight: bold;">UÇUŞ</span> seçeneklerindeki döngüsel uçuşa atıfta bulunur.<br />
+
+      <br />
+<span style="font-weight: bold;">İmleç Yarıçapı</span> seçeneği, fare imlecinin etrafında, burada belirlenen yarıçapta bir daire çizer, böylece noktalar arasındaki mesafeler hakkında hızlı bir görsel referans elde edilebilir. İkinci bir İmleç Yarıçapı (metre) mevcuttur. Her iki yarıçap da yapılandırma dosyasından kaydedilir ve geri yüklenir.<br />
+      <br />
+<span style="font-weight: bold;">İmleç boyutu faktörü</span>, seçim imlecinin boyutunu değiştirmeyi sağlar.<br />
+      <br />
+      <span style="font-weight: bold;">İmleç kalınlığını iki katına çıkar</span> tam olarak belirttiği şeyi yapar: imleci, büyük monitörlere ve yüksek çözünürlüklere sahip sistemlerde daha kolay bulunabilir hale getirmek için kalınlaştırır.<br />
+      <br />
+<span style="font-weight: bold;">Kesit penceresinde köşe noktalarını vurgulama boyutu faktörü</span>, eksenin enkesitini gösteren pencerelerdeki köşe noktalarının boyutunu tanımlamayı sağlar.<br />
+      <br />
+<span style="font-weight: bold;">Tekerlek ile Yakınlaştırma</span> bölümünde, ekranda görünen alanın yüzde olarak artırılması (<span style="font-weight: bold;">uzaklaştır</span>) veya azaltılması (<span style="font-weight: bold;">yakınlaştır</span>) ayarlanır.<br />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="visualizacion">Görselleştirme</a></span><br />
+<br />Aşağıdaki seçenekleri sunar:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/config_visualizacion.png" style="width: 600px; height: 524px;" alt="" /><br />
+
+      </div>
+<ul>
+        <li><span style="font-weight: bold; font-style: italic;">Detaylı Göster</span><span style="font-style: italic;">:</span> Bu kutucuk işaretlendiğinde, nesnelerin yeniden çizimi <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Detaylı Gösterim</span> modunda</a> gerçekleşir. Bu seçenek &nbsp;<img src="Imagenes/icono_modo_decorado.png" style="width: 22px; height: 17px;" alt="" /> (<a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Detaylı Gösterim</span> modu</a>) ve &nbsp;<img src="Imagenes/icono_modo_no_decorado.png" style="width: 22px; height: 17px;" alt="" /> (<a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Basit Gösterim</span> modu</a>) simgeleri aracılığıyla kullanılabilir.</li>
+
+      </ul>
+      
+      <ul>
+        <li>
+          <span style="font-weight: bold; font-style: italic;">Kalemler</span><span style="font-style: italic;">:</span> Etkinleştirilirse, <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Yazdırma</span> moduna</a> veya <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Kalemler</span> moduna</a> geçilir. Bu seçeneğe doğrudan, program ortamının sol alt kısmında bulunan &nbsp;<img src="Imagenes/icono_modo_pantalla.png" style="width: 22px; height: 17px;" alt="" /> (<a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Ekran</span> modundayken</a>) ve &nbsp;<img src="Imagenes/icono_modo_impresion.png" style="width: 23px; height: 17px;" alt="" /> (<a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Yazdırma</span> modundayken</a>) simgeleri aracılığıyla erişilebilir.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Koordinatlar</span><span style="font-style: italic;">:</span> Koordinat takibinin sayısal gösteriminin etkinleştirilmesi.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Kalınlıklar</span><span style="font-style: italic;">:</span> Bu kutucuk işaretlendiğinde, ekrandaki çizim çizgi kalınlıklarıyla gösterilir. Kalınlıklarla yeniden çizim daha yavaştır, bu nedenle genellikle devre dışı bırakılması tavsiye edilir.<br />
+
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Dolgular</span><span style="font-style: italic;">:</span> Çizgi dolgularının gösterimi.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Resim</span><span style="font-style: italic;">:</span> Vektör haritasıyla birlikte işlenen raster <a href="EDM_imagenes.html">resimlerinin</a> sunumunu engeller.</li>
+
+      </ul>
+      <ul>
+        <li>
+          <span style="font-weight: bold; font-style: italic;">Hata Ayıklama</span>: Bir hata ayıklama durumunu etkinleştirir, bu da ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün belirli işlemlerinin başlangıç penceresindeki mesajlar aracılığıyla izlenmesine olanak tanır.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Sonradan Çizim</span>: Bu kutucuk işaretlenmezse, o zaman EDM'ye ait OLMAYAN grafik öğeler (topografik öğeler, plandaki sabit güzergah eksenlerinin gösterimi, tesviye eksenleri,...) çizilmez.</li>
+
+      
+      </ul>
+
+
+      
+      
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Yakalamayı Göster</span>: Bu seçenek etkinleştirildiğinde, ekranda yakalanan noktayı veya köşe noktasını takip eden bir artı işareti (X) belirir. Eğer <a href="EDM_coordenadas_enganches.html#enganches">yakalama modu</a> serbest ise, konumu imleçle eş merkezlidir; değilse, imlecin ekran üzerindeki konumuna tıklandığında ortaya çıkacak olan nokta veya köşe noktasına konumlanır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Sembolü Göster</span>: Bu seçenek etkinleştirildiğinde, imleç üzerinde <a href="EDM_coordenadas_enganches.html#enganches">yakalama</a> türünü tanımlayan bir sembol belirir: köşe noktası, nokta, kenar, orta nokta, kesişim vb. <a href="EDM_coordenadas_enganches.html#enganche_multiple">Çoklu yakalama</a> kullanıldığında çok kullanışlıdır.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Mevcut Kotu Göster</span>: <span style="font-weight: bold;">Yakalamayı Göster</span> ile ilişkilidir, eğer bu seçenek etkinleştirilirse, o zaman yakalanan noktanın veya köşe noktasının kotu fare imlecinin yanında gösterilir.</li>
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Pasifleri Göster %</span>: Bu seçenek, yeniden çizimlerde pasif katmanlarda ve/veya modellerde bulunan öğeleri (çizgiler, noktalar ve metinler) görmeyi sağlar, ancak bunları seçmeye, silmeye veya bir &nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span>'ye kaydetmeye izin vermez. Kutucuğa, pasif nesnelerin ekranda gösterildiği <span style="font-weight: bold;">soluklaştırma</span> değerine karşılık gelen yüzde olarak bir değer girilebilir; öyle ki %0, programa bunları ekranda göstermemesini belirtir.</li>
+
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Tutamaç Boyutu</span>: Seçilen grafik nesnelerin veya fare imlecinin üzerinde bulunduğu nesnenin köşe noktalarını ve yerleştirme noktalarını vurgulayan <a href="EDM_seleccion_pinzamientos_propiedades.html#pinzamientos">tutamaçların</a> piksel cinsinden boyutunu ayarlamayı sağlar.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">X,Y Göster:</span> Fare imlecinin gösterimine X ve Y koordinatları eşlik eder, GÜZERGAH PROJESİ'nin <a href="OL_rasantes_diseno.html">PROFİL</a> menüsünde KM,Z ve coğrafi koordinatlarda çalışılması durumunda enlem ve boylam görüntülenir.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Uzak Bağlantı</span><span style="font-style: italic;">:</span> Bu seçenek, program bir ağ üzerinden uzaktan çalıştırıldığında sistemi yavaşlatan gereksiz işlemleri (menülerdeki animasyonlar vb.) engeller.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">SAM'ı Göster</span>: <a href="EDM_topografia.html">TOPOGRAFYA</a> menüsünden çıkıldığında, düğümler, ağlar veya üçgenler kaldırılmaz. Bu bilgi, örneğin <a href="OL_perf_transv.html">ENKESİTLER</a> menüsünde (GÜZERGAH PROJESİ modülü) arazi enkesitlerini (TTP seçeneği) çıkarmak için kullanılabilecek bir sayısal arazi modeli oluşturur. Bu kutucuk, bu ağların <a href="EDM_topografia.html">TOPOGRAFYA</a> menüsü dışında görüntülenmesini etkinleştirmeyi/devre dışı bırakmayı sağlar. Açıkçası, <a href="EDM_topografia.html">TOPOGRAFYA</a>'ya geri dönüldüğünde bu bilgi kullanıcı için hala mevcuttur. Ayrıca, mevcut &nbsp;<span class="Archivo">.ttp</span>'ye (sağdaki kutucuk) yüklenen diğer &nbsp;<span class="Archivo">.ttp</span> dosyalarının (soldaki kutucuk) soluklaştırmasından farklı bir soluklaştırma yüzdesi uygulayabiliriz.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">8D Çizgileri Vurgula</span>: Bu tercih etkinleştirildiğinde, <a href="EDM_entidades_basicas.html#lineas8D">8D çizgiler</a> ekranda dikkat çekici bir renk ve kalınlıkla vurgulanarak gösterilir. Bu seçenek etkin olduğunda, yeniden çizim hızı daha yavaştır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Otomatik Kaydırma</span>: Bu seçenek etkinken, imleci grafik penceresinin kenarlarına yakın bir yere getirdiğinizde, çizim otomatik olarak kaydırılır ve imlecin altındaki noktayı pencerenin merkezine getirmeye çalışır. &nbsp; İki katsayı içerir:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>İlki, seçeneğin hassas olduğu kenarlara olan mesafeyi ayarlamayı sağlar.</li>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <li>İkincisi, çizimin ne kadar kaydırılacağını ayarlar. </li>
+        </ul>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Harita açarken dosyaları önizle</span>: Bu tercih etkinleştirilmişse, bir &nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> açmak için dosya seçici açıkken, program o an seçili olan dosyaya karşılık gelen çizimin bir minyatürünü ekranda gösterir.</li>
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold; font-style: italic;">Sembolleri/metinleri 3D'de göster</span>: <a href="EDM_entidades_basicas.html#simbolos">Sembolleri</a> ve <a href="EDM_entidades_basicas.html#textos">metinleri</a> (<a href="EDM_modo_decoracion_pantalla.html#modo_dec">detaylı</a> veya değil) 3D görünümlerde görüntülemeyi sağlar.</li>
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Minimum piksel</span>: Hem <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Detaylı Gösterim</span> modunda</a> hem de <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Basit Gösterim</span> modunda</a> sembollerin, metinlerin ve hücrelerin görüntüleneceği en küçük boyuta, piksel cinsinden karşılık gelir. <span style="font-style: italic;">Spixe</span> klavye komutuyla da bu değer tanımlanabilir. </li>
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Basit Gösterim modunda nesne boyutu</span>: <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">Basit Gösterim</span> modunda</a> sembollerin ve metinlerin işaretleri için temel boyutu, kağıt birimi cinsinden değiştirmeyi sağlar.</li>
+      </ul>
+      <ul>
+        <li><span class="Parf_negrita">Hücreleri Ölçekle ve Sembolleri Ölçekle</span>: Etkinleştirildiğinde, ISTRAM'ın gösterim ölçeğini değiştirirsek, bu öğeler boyutlarını ve göreli konumlarını haritanın geri kalanıyla koruyarak ölçeklenir (bir fotoğraf küçültmesi yapılıyormuş gibi). ÇOK ÖNEMLİ: Örneğin &nbsp;<span class="Archivo">.ALI</span> tipi bir etiketleme gösterileceği zaman, eğer &nbsp;<span class="Archivo">.ALI</span> dosyası 1:1000 Ölçeği için hazırlanmışsa, etiketleme o ölçekte oluşturulur ve sonra ölçek değiştirilir (örneğin 1:5000'e). Seçeneklerin oluşturmadan önce mi sonra mı etkinleştirildiği önemli değildir.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Ekran bilgisini etkinleştir</span>: Bu kutucuk etkin olduğu sürece, fare imlecinin üzerinde bulunduğu grafik nesne hakkında ekranda bilgi gösterilir. Bu bilgi, imleç nesne üzerinde <span style="font-weight: bold;">gecikme</span>'de belirtilen süre (milisaniye cinsinden) boyunca hareketsiz kaldığında görünecektir. Özellikle çok büyük çizimlerle çalışırken bu değerin ÇOK düşük olmaması tavsiye edilir, çünkü programda yavaşlamalara neden olabilir. Ekran bilgisi, standart araç çubuğundaki &nbsp;<img src="Imagenes/icono_toolBarEstandar_info.png" style="width: 12px; height: 14px;" alt="" /> simgesi kullanılarak geçici olarak devre dışı bırakılabilir.<br />
+
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Benzer çizgileri vurgula</span>: Bir nesnenin bilgisi ekranda gösterildiğinde, bu seçenek etkinse, aynı tipteki tüm çizgiler de vurgulanır (L26, L27, L34 ve L36 tipi çizgiler durumunda aynı kotta olanlar). Ayrıca, kullanıcı bir &nbsp;<a href="EDM_importar_dwg_dxf.html"><span class="Archivo">.dxf</span>/<span class="Archivo">.dwg</span></a> veya &nbsp;<a href="EDM_importar_dgn.html"><span class="Archivo">.dgn</span></a> dosyası içe aktarıyorsa, vurgulananlar aynı katmana veya seviyeye ait olan çizgilerdir. Eğer <span style="font-weight: bold;">vurgulanacak çizgi sayısı</span> belirtilen değeri aşarsa, verimlilik nedenleriyle vurgulanmazlar.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold; font-style: italic;">Vurgulanan çizgi kalınlığı</span>: İmleci üzerine getirdiğimizde vurgulanan (ve hakkında bilgi gösterilen) bir çizginin gösterildiği kalınlığı değiştirir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Vurgulanan benzer çizgilerin kalınlığı</span>: Vurguladığımız çizgiye benzer olan (yani, imleci bir süre üzerinde bıraktığımız) çizgilerin gösterildiği kalınlığı değiştirir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Çizgi kalınlığı</span>: Tüm çizgilerin varsayılan olarak gösterildiği kalınlığı değiştirir.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Seçilen çizgilerin kalınlığı</span>: Çizgiler seçildiğinde gösterildikleri kalınlığı değiştirir.<br />
+        </li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Yüzen araç çubukları</span>: Bu kutucuk etkinleştirilmişse, <a href="EDM_barras_herramientas.html">araç çubukları</a>, programın çalışma alanının dışına bile, tüm ekranda hareket ettirilebilir. İşaretli değilse, çubukların hareketi yalnızca çalışma alanıyla sınırlı kalır.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Koordinat gösteriminin ondalık basamak sayısı</span>: Koordinat gösterim penceresinde kaç ondalık basamak gösterilmek istendiğini belirtir. Varsayılan olarak 3 ondalık basamaktır ve 0 ila 6 ondalık basamak arasında yapılandırılabilir.</li></ul><ul><li><span style="font-weight: bold;">Y.N.B.</span>: Açık olmayan nirengiler için alanı gör, açık olmasa bile beyan edilen yoğun nokta bulutunun kapladığı alanı görme imkanını etkinleştirmeye/devre dışı bırakmaya olanak tanır, mevcut Y.N.B.'nin soluklaştırma ve soluklaştırma değerleri tanımlanabilir.</li>
+
+      </ul>
+
+      <br />
+      <span class="Titulo_2"><a name="opciones">Seçenekler</a></span><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="topografia">Topografya</a></span><br />
+      <br />
+SAYISAL HARİTA modülünün TOPOGRAFYA seçenekleri, <a href="EDM_topografia.html#opciones">Topografya seçenekleri</a> bölümünde uygun şekilde açıklanmıştır.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="obra_lineal">Güzergah Projesi</a></span><br />
+      <br />
+      <a name="planta">PLAN</a><br />
+      <br />
+      GÜZERGAH PROJESİ modülünün PLAN seçenekleri, <a href="OL_planta_opciones_visualizacion.html"><span style="font-style: italic;">Plan görüntüleme seçenekleri</span></a> bölümünde uygun şekilde açıklanmıştır.<br />
+<br />
+      <br />
+      <a name="rasantes">PROFİL (KIRMIZI HAT)</a><br />
+      <br />
+GÜZERGAH PROJESİ modülünün PROFİL seçenekleri, <a href="OL_rasantes_opciones_visualizacion.html"><span style="font-style: italic;">Profil görüntüleme seçenekleri</span></a> bölümünde uygun şekilde açıklanmıştır.<br />
+      <br />
+      <a name="alzado">BOYKESİT<br />
+      <br />
+GÜZERGAH PROJESİ modülünün BOYKESİT seçenekleri, </a><a href="OL_alzado_generalidades.html#opciones">Boykesit görüntüleme seçenekleri</a> bölümünde uygun şekilde açıklanmıştır.<br />
+<br />
+<br /><span class="Titulo_2"><a name="editor_perfiles">Enkesit Editörü</a></span><br />
+
+      <br />
+      <img src="Imagenes/config_editor_perfiles.png" style="width: 350px; height: 349px; margin-left: 7px;" alt="" align="right" />Buradan, <a href="EDM_editor_perfiles.html">enkesit düzenlemesi</a> sırasında, eğer mevcutsa, hangi bilgilerin görüneceği ayarlanır:<br />
+      <ul>
+        <li>Yüzeyler</li>
+        <li>Çizgi Tipleri</li>
+        <li>Alanlar</li>
+
+        <li>Diğer Veriler</li>
+      </ul>Ayrıca aşağıdaki seçenekler de mevcuttur:<br />
+<br />
+
+      <ul>
+        <li><span style="font-weight: bold;">Yakınlaştırmayı koru</span>: Enkesit dosyasında ileri veya geri giderken aynı pencereyi eksene olan mesafe - profile göreceli kot koordinatlarında tutmayı sağlar (yapılan tüm yakınlaştırmaları korur).</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Varsayılan seçenek</span>: <a href="EDM_editor_perfiles.html#editar">düzenle</a>, <a href="EDM_editor_perfiles.html#recortar">kırp</a>, <a href="EDM_editor_perfiles.html#completar">tamamla</a>, <a href="EDM_editor_perfiles.html#mas_baja">en alçak</a> ve <a href="EDM_editor_perfiles.html#mas_alta">en yüksek</a> gibi işlemlerle gösterilen iletişim kutusunda varsayılan olarak hangi seçeneğin seçili görüneceğine atıfta bulunur.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Kodları göster</span>: İşaretli çizgi tiplerine karşılık gelen kodları görüntülemeyi sağlar (L67 profile karşılık gelen, L68/69 alt temel+şevlere ve uygun olmayan yarmaya karşılık gelen ve L107 ile aşırı kazının temsil edildiği). Ayrıca, kodlarını görüntülemek için başka bir yüzeye karşılık gelen ek bir çizgi tipi belirtmek de mümkündür (<span style="font-weight: bold;">Diğer yüzey L</span> seçeneği).</li>
+
+      
+      </ul>
+
+      <ul>
+
+        
+        <ul>
+          <li><span style="font-weight: bold;">Maksimum ekran boyutu</span>: Gerçek metre cinsinden maksimum ekran genişliği; bu değerin altındaysa, kodlar görüntülenir.</li>
+          <li><span style="font-weight: bold;">Gerçek Kesitte kodları görmek için ekran boyutu faktörü</span>: 0 değeri, kodların her zaman görüleceği anlamına gelir. Değeri artırdıkça, kodların görünmesi için daha fazla yaklaşmak gerekir. </li>
+          <li><span style="font-weight: bold;">Gerçek Kesitte köşe noktalarını vurgulamak için ekran boyutu faktörü:</span> 0 değeri, karelerin her zaman görüleceği anlamına gelir.&nbsp; Değeri artırdıkça, karelerin görünmesi için daha fazla yaklaşmak gerekir.</li>
+          <li><span style="font-weight: bold;">Gerçek Kesitte köşe noktalarını işaretlemek için yüzey</span>: Bu yüzeyin nokta sayısı kontrol edilmeyecektir.</li>
+          <li><span style="font-weight: bold;">Gerçek Kesitte köşe noktalarını işaretlemek için yarı profilin maksimum nokta sayısı</span><br />
+          </li>
+
+        </ul>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">X, Y ve AZİMUT Kontrolü</span>: GÜZERGAH PROJESİ hesaplamalarında, profildeki eksenin koordinatlarının ve azimutunun plandaki ekseninkiyle eşleştiğini kontrol etmeyi sağlar. Bu seçeneği <a href="OL_tuberias.html">boru hattı projelerinde</a> devre dışı bırakmak uygundur, çünkü plandaki köşe noktalarında teğetlik olmadığı için farklı azimuta sahip iki profil meydana gelecektir.</li>
+      </ul>
+      <ul>
+
+        <li><span style="font-weight: bold;">Profilleri düzenlerken her zaman profil araç çubuğunu göster</span>: Bu seçenek etkinse, <a href="EDM_editor_perfiles.html">profil düzenlemesine</a> girildiğinde bu ortama özgü <a href="EDM_editor_perfiles.html#editar">araç çubuğu</a> belirir.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Ölçümleri görüntüleme kapalı alanlarını sıkıştır</span>: Bu seçenek etkinse, &nbsp;<span class="Archivo">.dar</span> tablosunun ölçümleri bir profilde görüntülendiğinde, alanı tanımlayan kapalı alanlar sıkıştırılır, böylece gri kapalı alanlar (çıkarılacak alanlar) kaldırılır ve bitişik kapalı alanlar birleştirilir.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">İlerlerken Detaylı Gösterim Modu</span>: Profillerde ilerlerken Detaylı Gösterim modunun davranışını belirler:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li><span style="font-weight: bold;">Detaylı Gösterim</span>: bir profil ilerletildiğinde, her zaman detaylı gösterimde görünür.</li>
+          <li><span style="font-weight: bold;">Basit Gösterim</span>: bir profil ilerletildiğinde, her zaman basit gösterimde görünür.</li>
+          <li><span style="font-weight: bold;">Koru</span>: ilerlemeden önceki detaylı/basit gösterim durumunu korur.</li>
+          <li><span style="font-weight: bold;">Otomatik</span>: eğer profil semboller içeriyorsa, Detaylı Gösterim modunu etkinleştirir. Değilse, etkinleştirmez.</li>
+        </ul>
+
+
+      
+      </ul>
+<br /><span class="Titulo_2"><a name="unidades_angulares">Açısal Birimler</a></span><br /><br /><img src="Imagenes/config_unidades_angulares.png" style="width: 375px; height: 363px; margin-left: 7px;" alt="" align="right" />Açı elde etme ve ölçme seçenekleri, hem altmışlık (derece), gradyan (grad) hem de radyan cinsinden açılarla çalışmaya olanak tanır.<br /><br />Ayrıca, açıların ölçüm başlangıcını ve ölçüm yönünü seçme imkanı sunar.<br /><br />Bu menüden, VIRTUAL 3D modülü için eksenlere göre dönme kriterleri de ayarlanır.<br /><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>'ün açısal birimler hakkında nasıl bilgi verdiğinin yapılandırmasını her zaman bilmenin gerekliliğini vurgulamak gerekir. <br /><br />
+<br /><br />
+      <span class="Titulo_2"><a name="sistema_unidades">Birim Sistemi</a></span><br />
+<br />Varsayılan olarak ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> Metrik Sistemde çalışır:<br />
+      <ul>
+        <li>Metre cinsinden uzunluklar (m)</li>
+        <li>Metrekare cinsinden alanlar (m<sup>2</sup>)</li>
+        <li>Metreküp cinsinden hacimler (m<sup>3</sup>)</li>
+      </ul>
+      <br />
+      <img src="Imagenes/config_sistema_unidades.png" style="width: 253px; height: 83px; margin-left: 7px;" alt="" align="right" />Ancak İmparatorluk Sistemini seçmek de mümkündür:<br />
+      <ul>
+        <li>Fit cinsinden uzunluklar (ft)</li>
+        <li>Fit kare cinsinden alanlar (ft<sup>2</sup>)</li>
+        <li>Yarda küp cinsinden hacimler (yd3, 1 yd<sup>3</sup> = 27 ft<sup>3</sup> eşitliğine göre)</li>
+      </ul>
+İmparatorluk Sistemi ile çalışırken haritanın fit (ft) cinsinden olduğu varsayılır.<br />
+<br />
+
+      <br />
+      <span class="Titulo_2"><a name="notacion_num_simb">Sembollerde Sayı Gösterimi</a></span><br />
+      <br />
+      <img src="Imagenes/config_notacion_num_simb.png" style="width: 291px; height: 264px;" alt="" align="right" hspace="7" /><a href="EDM_entidades_basicas.html#simbolos">Sembollerde</a> (etiketlerde) yazılan reel sayılar için gösterim türünü seçmeyi sağlar.<br />
+      <br />
+Bu değerler, enkesitlerin alan ve hacimlerinin sayısal değerlerini de etkiler.<br />
+      <br />
+Buradan, <span style="font-weight: bold;">Araçlar</span> &#8594; <span style="font-weight: bold;">Kotlar</span> &#8594; <a href="EDM_cotas.html#etiquetado_simb"><span style="font-weight: bold;">Nokta Etiketleme</span></a> seçeneği kullanıldığında etiketlerin sembole olan mesafesini (X ve Y cinsinden) de yapılandırmak mümkündür.<br />
+      <br />
+<span style="font-weight: bold; font-style: italic;">Kot gösteriminde otomatik mesafe</span> seçeneği etkinleştirildiğinde, program sembollerin kot değerini sembollerin boyutuna göre hesaplanan bir konumda gösterir. Aksi takdirde, bu kot burada belirtilen mesafede (Y cinsinden) gösterilir.<br />
+      <br />
+Sembollerin kotunun EDM'de görüntülenmesi, <span style="font-weight: bold;">Görünüm</span> &#8594; <span style="font-weight: bold;">Sembol Kotunu Göster</span> menüsü aracılığıyla sağlanır.<br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="suavizado_curvas">Eğri Yumuşatma</a></span><br />
+      <br />
+Bu menü, aşağıdaki parametrelere göre eğrilerin gösterimindeki ayrıklaştırmayı kontrol etmeyi sağlar:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Maksimum yay-kiriş mesafesi (mm)</span>, dairelerin ayrıklaştırılmasına atıfta bulunur. Bir dairenin çizimi, bir segmentin bir noktası ile gerçek yay arasındaki maksimum mesafenin bu değeri aşmayacağı şekilde segmentlere dayalı olarak yapılır. Varsayılan olarak, bu değer 0.01 mm düzlem (1:1000 ölçeğinde 1 cm gerçek) olarak ayarlanmıştır.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Maksimum klotoid segment uzunluğu (mm)</span>, güzergah projelerindeki yatay kurplara karşılık gelir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Maksimum parabol segment uzunluğu (mm)</span>, güzergah projelerindeki düşey kurplara karşılık gelir.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/config_suavizado_curvas.png" style="width: 375px; height: 288px;" alt="" /><br />
+      </div>
+      <br />
+İki maksimum uzunluk parametresi, çok büyük parametrelere sahip kurp durumlarında kullanışlıdır; bu durumlar, çizimde düz çizgiler olarak temsil edilmelerine neden olur ve bu da o bölümlerde köşe noktasıyla ilgili herhangi bir işlemi (köşe noktası yakalama,...) engeller.<br />
+      <br />
+Yumuşatma kontrolü ile ilgili olarak, bu menü, eğrilerin yumuşatılmasını çeşitli parametreler aracılığıyla kontrol etmeyi sağlar:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Yumuşatma katsayısı</span>: Yumuşatılmamış segmente göre uygulanacak kübik parabolün yay-kiriş mesafesinin yüzdesi (varsayılan, %100).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Yay-kiriş katsayısı</span>: Yumuşatma katsayısı gibi, ancak segmentlerin merkezine doğru daha fazla etkiler (varsayılan, %100).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Köşe noktası katsayısı</span>: Yumuşatma katsayısı gibidir, ancak segmentlerin kenarlarına doğru daha fazla etkiler (varsayılan, %100).</li>
+      </ul>
+      <div style="margin-left: 40px;">Üç katsayı birbiriyle yakından ilişkilidir; öyle ki, yumuşatma katsayısında %100 ve diğer ikisi için C değeri, yumuşatma için C değeri ve yay-kiriş ile köşe noktası için %100'e eşdeğerdir ve dolayısıyla aynı etkiyi yaratır.<br />
+      </div>
+      <ul>
+        <li><img src="Imagenes/overshooting.png" style="width: 158px; height: 153px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">Aşma (Overshooting) açısı</span>: Overshooting etkisini önlemek için bir köşe noktasındaki kübik parabolün teğetlerinin düzeltildiği, iki ardışık segment arasındaki açısal değişim. Varsayılan olarak, değeri 70'tir (0.7 radyana eşdeğer). Resimde overshooting etkisinin düzeltilmesi görülebilir.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Aşma (Overshooting) için açı azaltma katsayısı</span>: Varsayılan olarak %20'dir.</li>
+      </ul>
+      <div style="margin-left: 40px;">Bir uygulama örneği, bir üçgenlemeden gelen tesviye eğrileri durumunda verilebilir; öyle ki, çizgiler çok yakın ve çok köşeliyse, normal bir yumuşatmanın bazı çizgilerin kesişmesine neden olması mümkündür. Bu, overshooting ile ilgili değerleri değiştirerek, örneğin overshooting açısını 20'ye düşürerek ve overshooting için açı azaltma katsayısını sıfırlayarak kolayca önlenebilir.<br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="paginado_planos">Pafta Düzeni</a></span><br />
+      <br />
+Burada, <a href="EDM_impresion.html#opciones"><span style="font-style: italic;">Yazdırma Seçenekleri</span></a> bölümünde detaylandırılan pafta yazdırma seçenekleri yer alır.<br />
+      <br />
+      <table style="text-align: left; width: 691px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/config_paginado_planos_malla_coord.png" style="width: 292px; height: 276px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: right;"><img src="Imagenes/config_paginado_planos_otras_opciones.png" style="width: 312px; height: 314px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="config_memoria">Gelişmiş Bellek Yapılandırması</a></span><br />
+      <br />
+Bu iletişim kutusu, ilk olarak sistemin ana belleğinin (RAM) kullanımını bildirir ve yönetir:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/config_memoria.png" style="width: 375px; height: 327px;" alt="" /><br />
+      </div>
+      <br />
+Program, belirtilen sayıda çizgi, çizgi başına köşe noktası, sembol, yazı ve hücre için bellek yönetir ve ayırır; eğer bir değer aşılırsa, "Bellek sınırı aşıldı" türünde bir mesajla bilgilendirilir.<br />
+      <br />
+Bir sınıra ulaşıldığında, <span style="font-weight: bold; font-style: italic;">Otomatik bellek genişletme</span> seçeneği işaretli olmadıkça, o sınıftan daha fazla nesne belleğe yüklemek mümkün değildir. Bu durumda, program bir sınıra ulaşıldığında, sistemden bir ana bellek rezervi genişletmesi talep eder ve ilgili sınırı otomatik olarak artırır.<br />
+      <br />
+Bu iletişim kutusu açıldığında, bellekteki nesne sayısı ve belleğin doluluk durumu da gösterilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="estado">Durum Bilgisi. Mevcut Kotun Değiştirilmesi</a></span><br />
+      <br />
+      <img src="Imagenes/config_estado.png" style="width: 373px; height: 321px; margin-left: 7px;" alt="" align="right" />Bu menü, <span style="font-weight: bold;">Yapılandırma</span> &#8594; <span style="font-weight: bold;">Durum Bilgisi</span> menüsünden de erişilebilir; programın sürümünü ve derleme gününü, ayrıca lisans numarasını ve ilişkili adını gösterir.<br />
+      <br />
+Ayrıca programın bazı değişkenlerinin durumu hakkında bilgi verir: ölçek, mevcut kot, kullanımda olan kütüphanelerin yolları ve hücreler (<span style="font-weight: bold;">Cfac</span>), semboller (<span style="font-weight: bold;">Sfac</span>) ve yazılar (<span style="font-weight: bold;">Rfac</span>) için genel ölçek faktörleri.<br />
+      <br />
+Mevcut kotu değiştirmenin başka bir yolu, doğrudan Z koordinatı göstergesine tıklayıp yeni değeri girmektir:<br />
+      <br />
+      <img src="Imagenes/cambiar_cota_actual.png" style="width: 308px; height: 98px;" alt="" /><br />
+      <br />
+<br /><span class="Parrafo">
+
+      <span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

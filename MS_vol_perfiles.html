@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Enkesitlerden Hacim Hesabı</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ENKESİTLERDEN HACİM HESABI<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Mevcut en geleneksel hacim hesaplama yöntemlerinden biri enkesitlerden hacim hesabıdır. YÜZEY MODELLEME'den bu seçeneği kullanmak için, önceden en az iki tanımlanmış <a href="EDM_control_entidades.html#control_superficies">yüzey</a> ve bir kontur (kapalı çizgi) içeren bir EDM'nin mevcut olması gerekir.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 639px; height: 184px;" alt="" src="Imagenes/dialogo_ismos_vol_perfiles.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"></span></span><br />
+<ul>
+        <li><span class="Parrafo"><span class="Parrafo">Üzerinde çalışılacak üst ve alt <span style="font-weight: bold;">yüzeyler</span>.</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Profil Dosyası</span>: Profilleri kaydetmek için varsayılan dosya adı cubiper.per'dir. Bu dosya iletişim kutusundan değiştirilebilir.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Bitkisel Toprak Kalınlığı</span>: Bir bitkisel toprak tabakası kalınlığı tanımlamayı sağlar. O zaman bir sıyırma kazısı metrajı görünecektir.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Hacim hesaplaması yapılacak kapalı <span style="font-weight: bold;">kontur(lar)</span>. Konturları bildirmek için iki olasılık vardır:</span></span></li></ul>
+      <div style="margin-left: 40px;">
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">Çizgi</span>: Bu durumda hacim hesaplama konturu tektir ve kullanıcının grafiksel olarak seçeceği kapalı çizgiye karşılık gelir.</li>
+      </ul>
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">Tip</span>: Bir çizgi grafiksel olarak seçildikten sonra, aynı tipteki tüm kapalı çizgiler hacim hesaplama konturları olarak kabul edilir. Bu şekilde ikinci yüzey, birden çok bağımsız kapalı alanda olabilir, bu da <span style="font-weight: bold;">çoklu kontur hacim hesaplaması</span> yapmayı sağlar. <br />
+        </li>
+      </ul>
+      </div>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">Konturların içbükeylikleri veya dışbükeylikleri konusunda herhangi bir kısıtlama yoktur. Bir kontur çizgisi her iki yüzeyden hiçbirine ait DEĞİLSE, ikinci yüzeyden çıkarılan kotla bir kopyası oluşturulur ve gerçekten kontur çizgisi olarak kullanılan bu olur. Bu, bir kontur çizgisi tam olarak ikinci yüzeyi tanımlayan çizgilerin çevreleyen konturundan geçtiğinde daha hassas bir hacim hesaplaması yapmayı sağlar.</span></span></div>
+      <ul>
+
+      
+      </ul>
+
+      <ul>
+        </ul>
+      <div style="margin-left: 40px;">Kontur nihai yüzeye ait olmadığında, bu yüzeyi dikkate almak için iki seçenek vardır:<br />
+      <ol>
+        <li>Nihai yüzey, <span style="font-weight: bold;">kapalı alan içindeki herhangi bir nokta için mevcuttur</span>, gerekirse kotu kapalı alanın kenarına kadar ekstrapole edilir.</li>
+        <li>Nihai yüzeyin <span style="font-weight: bold;">kendi kenarı vardır</span>:<span style="font-weight: bold;"> Kapalı alan içinde kesilen ilk/son noktada Başlar/Biter</span>. Kontur çizgisine kadar ulaşması gerekmez.</li>
+      </ol>
+      <div style="text-align: center;"><img style="width: 388px; height: 361px;" alt="" src="Imagenes/vol_perf_recintos.png" /><br />
+      </div>
+      <br />
+Konturun nihai yüzeye ait olmadığı bu durum, kurgusal eksenin yukarıdaki şekildeki gibi iki kapalı alanı kestiği bir örnekte, daha önce açıklanan seçenekler kullanılarak görülebilir.<br />
+      <br />
+      </div>
+      <div style="text-align: center;"><img style="width: 600px; height: 37px;" alt="" src="Imagenes/volumen_perfil_sup_final.png" /><br />
+      </div>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Enkesitlerin <span style="font-weight: bold;">aralığı</span>.</span></span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Hacim hesaplamasının yapılacağı maksimum ve minimum <span style="font-weight: bold;">kotlar</span>. Bu veri, hacim hesaplama sınır kotlarını değiştirerek aynı kütlenin ardışık hacim hesaplamalarını yaparak hacim-alan eğrileri oluşturma imkanı sağlar.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Enkesitler için <span style="font-weight: bold;">yarı bant genişliği</span>.</span></span></li></ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Ayrıca iki farklı şekilde verilebilen <span style="font-weight: bold;">profil ekseni</span>:</span></span></li>
+
+      
+      </ul>
+</span></span></span></span>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Profillerin alınması için eksen görevi görecek düz bir çizginin uç <span style="font-weight: bold;">iki noktasını</span> girerek.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Haritanın herhangi bir <span style="font-weight: bold;">çizgisini</span> seçerek.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul>
+        
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 637px; height: 242px;" alt="" src="Imagenes/diagrama_vol_perfiles.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Bu veriler girildikten ve <span style="font-weight: bold;">[Metraj Oluştur]</span> butonuna basıldıktan sonra,</span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> program, profil eksenine veya ana çizgiye dik ve eşit aralıklı dikey düzlemler üzerinde çizilen profilleri hesaplar</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">. Aşağıdaki şema, bir ana çizgiye göre profillerle hacim hesaplama kavramını şematize eder:<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 519px; height: 251px;" alt="" src="Imagenes/concepto_vol_perfiles.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /><img style="width: 314px; height: 248px;" alt="" src="Imagenes/vol_perf_pks.png" align="right" hspace="4" />Profillerin oluşturulmasında, varsayılan olarak 505 sembolü ile KM kutucuğu etkinleştirilerek eksenimizin <span style="font-weight: bold;">KM'lerini</span> etiketleyebiliriz.<br />
+      <br />
+<span style="font-weight: bold;">Başlangıç KM</span> kutucuğu aracılığıyla, eksenimizin ilk profiline verilen değeri belirleyebiliriz.<br />
+<br />
+Hesaplama sırasında, enkesitlerin nasıl oluşturulduğu grafiksel olarak gösterilir. Her biri için program, hesaplamada yer alan iki yüzey üzerindeki profilleri, kapalı alanın içinde kalan bölümde belirler. Kısmi yarma ve dolgu alanları ile birikmiş hacim hesaplanır; bunlar, kullanıcının profil ekseni boyunca hacim hesaplamasının nasıl ilerlediğini görebilmesi için ekranda sunulur. Bu alan ve hacim değerleri, onlara yol açan profillerle birlikte, kullanıcı tarafından tanımlanan &nbsp;<span class="Archivo">.per</span> dosyasında saklanır. Bu dosya, <a href="EDM_editor_perfiles.html">profil editörü</a> tarafından değiştirilmek, yeniden hacim hesaplamak veya grafiksel olarak temsil edilmek üzere işlenebilir ve harita modülünün tüm grafik araçları kullanılabilir.<br />
+      <br />
+Kaydedilen &nbsp;<span class="Archivo">.per</span> dosyası, <img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarEstandar_editPerf.png" /> kutucuğuna tıklanarak otomatik bir şekilde düzenlenebilir.<br />
+      <br />
+Aynı anda, toprak işleri modülü, her bir hacim hesaplama profilinin plan izini takip ederek her iki yüzey üzerinde 3D çizgiler oluşturur. 3D kesitlere atanan çizgi tipi, her yüzeyin ilk tipidir. Bu çizgiler, <span style="font-weight: bold;">[Geri Al]</span> butonuna basılarak silinebilir.<br />
+      <br />
+Son olarak, program mesaj alanında, iki yüzey ve kontur tarafından sınırlanan kütle için toplam yarma ve dolgu hacimlerinde somutlaşan nihai sonucu gösterir ve alanların, kısmi hacimlerin ve birikmiş hacimlerin ölçümlerini içeren &nbsp;<span class="Archivo">cubica.res</span> listesini oluşturur; bu listeye <span style="font-weight: bold;">[cubica.res Listesi]</span> butonuna basılarak doğrudan erişilebilir.<br />
+      <br />
+İletişim kutusundan çıkıldığında bu menünün yapılandırması kaybolmaz.<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; text-align: justify;">YÜZEY MODELLEME modülü, <a href="MS_vol_prisma.html">prizmalarla hacim hesaplama</a>, <a href="MS_vol_parcelas.html">parsellere göre hacim</a>, <a href="MS_vol_ttp.html">üçgenlemeler arası hacim hesaplama</a> vb. gibi daha gelişmiş hacim hesaplama araçlarına sahiptir; bunlar çok daha hassas yöntemler kullanır ve örneğin, geleneksel profillerle ölçüme karşı bir kontrol ölçümü olarak kullanılabilir.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

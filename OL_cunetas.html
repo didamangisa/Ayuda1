@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Hendekler</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>HENDEKLER<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="Parrafo Parrafo Parrafo"><span class="Parrafo"><br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><a href="#def_parametrica">Parametrik Tanım</a></span><br />
+      <span class="Parrafo"><a href="#def_vectorial">Vektörel Tanım</a><br />
+      <a href="#cun_por_bordillo">Bordüre Göre Tanım</a><br />
+      <a href="#Bordillo_por_tipo">Tipe Göre Bordür Tanımı</a><br />
+</span>
+      <span class="Parrafo"><a href="#fija_y_porLongitudinal">Sabit Hendek ve Boyuna Hatta Göre Tanımlı Hendek</a></span><br />
+      <span class="Parrafo"><a href="#forzadaTerr_ptoOblidado">Dolguda Zorunlu Hendek. Zorunlu Nokta</a><br /><a href="#cunetapieterraplen"><span style="color: rgb(0, 79, 175);">Dolgu Topuk Hendeği</span></a><br /></span>
+      <span class="Parrafo"><a href="#cierre_subras">Tesviye Yüzeyinin Hendekle Kapatılması</a></span><br />
+      <span class="Parrafo"><a href="#revestimiento">Hendek Kaplaması</a><br />
+      <a href="#Bascular">Eğimi Ayarla</a><br />
+      <a href="#rejilla">Izgara</a><br /><a href="#subeTerraplen"> Dolgu Şevi Boyunca Yükselir</a><br /><a href="#material"><span style="color: rgb(0, 78, 175);">Malzeme</span></a><br /><br />
+</span>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Genel Bilgiler</a></span><br />
+      <span class="Parrafo"><br />
+Hendeği tanımlamak için iki yöntem vardır: <a href="#def_parametrica">parametrik</a>
+ve <a href="#def_vectorial">vektörel</a>.
+Ayrıca, hendek tabanının kendi
+      <a href="#por_longit">boyuna hattına</a> sahip olması mümkündür, bu da hendeklerin akışını kontrol etmeyi ve drenaj noktalarını zorlamayı sağlar. Hendeğin bağlantı noktası <a href="OL_punto_control_y_arranque_cuneta.html">KONTROL/HENDEK menüsünde</a> ayarlanır.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_cunetas.png" alt="" style="width: 549px; height: 174px;" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="def_parametrica">Parametrik Tanım</a></span> <br />
+      <br />
+Tanımlama, tabanı düz olan veya olmayan bir hendek oluşturmak için kullanılan beş değer aracılığıyla yapılır. Bu varsayılan moddur. Beş değer şunlardır:<br />
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><strong>CD</strong>: Hendeğin yarma tarafındaki yüzünün yatay genişliği.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><strong>CC</strong>: </span></span><span class="Parrafo"><span class="Parrafo">Hendeğin düz tabanının genişliği; üçgen hendekler için 0 olacaktır.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><strong>CA</strong>: </span></span><span class="Parrafo"><span class="Parrafo">Hendeğin banket tarafındaki yüzünün yatay genişliği.</span></span></li>
+        <li><span class="Parrafo"><strong>ZC</strong>: Hendeğin derinliği.</span></li>
+
+        
+        
+        <li><span class="Parrafo"><strong>Hm</strong>: Araziden itibaren minimum kazı derinliği. Kod 1399 (veya hendek araziyi kesiyorsa 1103) ile 600 arasındaki kot farkı bu değere eşit veya daha büyük olmalıdır. Değilse, istenen derinliği elde etmek için hendeğin ilk segmenti uzatılarak hendek tabanı alçaltılır.<br />
+</span></li>
+      </ul>Eğer <strong>[ ] Koru</strong> seçeneği etkinleştirilirse, bu geometrik değerler kaplamalı hendeklerin yüzeyinde korunacaktır.<br />
+
+      <span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="def_vectorial">Vektörel Tanım</a></span> <br />
+      <br />
+Tanımlama <strong>MODU</strong> <strong>[VEKTÖREL]</strong> olduğunda, <strong>[VEKTÖR n nkt]</strong> düğmesine basarak <a href="definicion_vectorial.html">vektör için veri tanımlamaya</a> girmek mümkündür; burada <strong>n</strong>, hendeğin vektörel tanımında kullanılan nokta sayısıdır.<br />
+      <br />
+      <div style="text-align: center;"><span class="Parrafo"></span><img style="width: 550px; height: 275px;" alt="" src="Imagenes/dialogo_vector_cuneta.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"> <br />
+Vektörde, üçüncü sütunda 600 koduyla tanımlayarak <strong>hendek tabanını</strong> işaretleyen nokta önceden belirlenebilir. </span>Eğer vektörel hendek ayrıca <a style="font-weight: bold;" href="#fija_y_porLongitudinal">bir boyuna hatta göre</a> tanımlanmışsa, davranış daha çok yönlüdür ve aşağıdaki olasılıklara izin verir:<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><strong>Kod 600</strong>: Hendek tabanını tanımlar, ancak bu noktanın boyuna hattan geçmesi için uzatılan segment, vektörün ilk segmentidir.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><strong>Kod 601</strong>: Hendek tabanını tanımlar ve bu noktanın boyuna hattan geçmesi için uzatılan segment, bu segmentin kendisidir (program daha sonra onu 600 olarak yeniden kodlar).</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Eğer <strong>600 veya 601 kodu yoksa</strong>, ilk segment hendek tabanını işaretler ve bu segment, boyuna hattın kotuna ulaşabilmesi için uzatılır.<br />
+          </span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Eğer <strong>birden fazla 600 ve/veya 601 varsa</strong>, bunlardan ilki alınır.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><strong>Kod 1000</strong>: <a href="#por_longit_cota">Boyuna hatta göre kotlu</a> hendekte, sabit hendek durumunda sahip olacağı göreceli kotunu geri kazanan noktadır.</span></span></li></ul><ul><li><span class="Parrafo"><span class="Parrafo"><strong>Kod 595</strong>: İlk ve hendek tabanından farklı olarak uzatılan bir nokta belirtilebilir; eğer aynı zamanda kaplanan ilk nokta ise, o zaman <strong>kod 594</strong> konulabilir.<br /></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><a href="#revestimiento"><strong>Kaplamalı hendekler</strong></a> durumunda, vektörde hendeğin kaplanmayacağı başlangıç noktasını tanımlama imkanı da sunulur.<br />
+</span></span>
+      <ul>
+        <li><strong>Kod 90</strong>: Bu noktadan önceki noktalar kaplanmaz.</li>
+      </ul>
+      <ul>
+        <li><strong>Kod 1100</strong>: Bu nokta ve sonrakiler kaplanmaz.</li>
+      </ul><a name="cun_por_bordillo"><span class="Titulo_2">Bordüre Göre Tanım</span><br />
+      <br />
+Bordür tablosundan bir eleman seçmeyi ve hendek geometrisini onunla oluşturmayı sağlar; taban çizgisini kazı, kapak çizgisini ise kaplama olarak alır. Kurulumla birlikte gelen Despejes.isa örneğinde, Cuneta_TTR_15.bor (TTR-15 geçilebilir hendek) bordürü hendek olarak kullanılır. <br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 549px; height: 174px;" alt="" src="Imagenes/cuneta_bordillo.png" /><br />
+
+      </div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      
+      <br />
+      <a name="Bordillo_por_tipo"><span class="Titulo_2">Tipe Göre Bordür Tanımı</span><br />
+      <br />
+Dördüncü bir mod olan Bordür+Tip, Bordür modu gibidir ancak bu hendeği genel bir hendek kaplaması olarak ölçmek yerine, bordürde tanımlanan tipi kullanır ve böylece ölçümler bordür tipine göre ayırt edilebilir.<br />
+<br />
+      </a></span></span></span><a name="fija_y_porLongitudinal"><span class="Titulo_2">Sabit Hendek ve Boyuna Hatta Göre Tanımlı Hendek</span></a><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <img style="width: 220px; height: 123px; margin-left: 7px;" src="Imagenes/rasantes_cunetas.png" align="right" />KIRMIZI KOTLAR menüsünden, biri SAĞ hendek ve diğeri SOL hendek için olmak üzere iki boyuna hat tanımlama seçeneği vardır. Bu boyuna hatlar, sadece hendeğin boyuna hatta göre tanımlandığı ve ayrıca boyuna hattın hendek tabanı noktasının altında olduğu bölgelerde kullanılır.<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; width: 461px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 402px; text-align: justify;"><span class="Info">Yardımcı olması için, eksen önceden tüm sabit hendeklerle hesaplanabilir ve çizilebilir. Daha sonra hendek tabanı çizgisi projelendirilebilir. Bu seçenek, KIRMIZI KOTLAR menüsüne yüklenebilecek bir .lon dosyası oluşturur. Bu sayede, hendek boyuna hattını oluşturmak için bir kılavuz görevi görebilecek olan sabit hendek boykesiti ekranda elde edilir.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img style="width: 139px; height: 141px;" alt="" src="Imagenes/cuneta_enganche.png" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo">Hendek veri penceresinde ayrıca, hendeğin nasıl uygulanacağını, yani sabit mi yoksa kendi boyuna hattını mı takip edeceğini seçmeyi sağlayan bir açılır menü bulunur. İkinci durumda, geometrisinin elde edilmesi için aşağıda ayrıntıları verilen birkaç olasılık daha vardır.<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><strong>Sabit</strong>: Hendeği, parametrik veya vektörel olarak tanımlandığı gibi (teorik hendek) uygular.</span></span></li>
+      </ul>
+      <ul>
+        <li><strong><a name="por_longit">Boyuna Hatta Göre</a></strong><span class="Parrafo">: Bu durumda, eğer sabit hendeğin tepe noktası, hendek için tanımlanan boyuna hattın üzerindeyse, hendeğin ilk segmenti, hendek için tanımlanan boyuna hattın kotuna inene kadar uzatılır.</span></li>
+      </ul>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><img style="width: 302px; height: 280px;" alt="" src="Imagenes/cuneta_enganche2.png" align="right" />Vektörel olarak tanımlanabilir. Bu durumda, hendeğin bağlanacağı tepe noktası, vektörel tanımın üçüncü sütununda 600 koduyla tanımlanan nokta olacaktır. Eğer 600 kodu kullanılmazsa, hendek tabanının ilk nokta tarafından belirlendiği anlaşılacaktır. Her durumda, hendek tabanının boyuna hattın kotuna sahip olması için uzunluğu değişen segment, hendeğin ilk segmenti olmaya devam eder.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <ul>
+        <li><strong><a name="por_longit_cota">Boyuna Hatta Göre Kotlu</a></strong><span class="Parrafo">: Vektörel olarak tanımlanabilir ve hendek vektörünün bir noktasına 1000 kodu atanmalıdır. Bu durumda, 1000 kodlu nokta, hendeğin bağlantı noktasıyla olan göreceli kotunu (parametrik hendeğin son noktası gibi) geri kazanır ve sonraki noktalar boyuna hattan etkilenmez.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><strong>Eşit Genişlikli Boyuna Hatta Göre</strong>: Bu hendek tipinde, taban noktası (veya trapez hendeklerde her ikisi) boyuna hattın kotuna iner, ancak hendeğin toplam genişliği korunur (yan şevler değişir).&nbsp;</span></span></li>
+      </ul></span><div style="text-align: center;"><span class="Parrafo"></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><strong><img src="Imagenes/cuneta_linea3d.png" alt="" style="width: 268px; height: 81px;" align="right" hspace="6" />3B Çizgiye Göre</strong>: Hendek tabanı, 3B çizgi tarafından tanımlanan noktayı arar. Eğer hendek vektörel ise, boyuna hatta göre hendek gibi çalışır: 600 kodlu nokta 3B çizgiyi arar ve hendeğin tüm noktaları paralel olarak kaydırılır. Eğer 601 kodu konulursa, bu nokta 3B çizgiyi arar ve sadece kendisi ve sonrakiler kaydırılır.<br />
+        </li>
+      </ul>
+      <span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo">Boyuna hatta göre tanımlanan hendeklerde, hendeğin boyuna hattının kotunun alındığı noktadan bir sembol çizen <i>B.H. Çiz</i> kutucuğunu etkinleştirmek mümkündür.<br />
+      <br />
+Ayrıca, boyuna hat açılır menüsünün yanında iki kutucuk etkinleştirilebilir. Birincisi, hendeğin, hendek tabanı yerine kaplamadan geçecek şekilde uygulanmasını zorlar. Vektörel kaplamalar durumunda, kotun doğru hesaplanması için kaplama kalınlığının belirtilmesi gerekir. İkinci kutucuk, normalde hendeğin boyuna hatta uyum sağlaması için uzayacak olan segmentin, gerekirse kısalmasına da izin verir.<br /><br />
+      </span></span></span><span class="Titulo_2"><a name="forzadaTerr_ptoOblidado">Dolguda Zorunlu Hendek. Zorunlu Nokta</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span class="Parrafo">Hendek geometrisinin tanımında, dolgu durumunda bile hendeğin yapılmasını zorlamak için <i>Dolgu</i> kutucuğu etkinleştirilebilir.<br />
+      <br />
+Hendek dolgu kesitinde kullanıldığında ve tesviye yüzeyinin kapanacağı hendek noktası kullanıldığında, eğer hendeğin son noktasından daha büyük bir sayı verirsek, o zaman tesviye yüzeyi eğimiyle dolgu şevini kesene kadar uzatılır.<br />
+      <br />
+Öte yandan, hendek arazi ile kesişim noktasında çizilmeyi bırakır. Bu davranış, <strong>zorunlu nokta</strong> olarak adlandırılan kutucukta, hendeğin gösteriminin hangi tepe noktasına kadar istendiği belirtilerek değiştirilebilir:<br />
+      <br />
+      </span></span></span>
+      <table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 286px; height: 84px;" alt="" src="Imagenes/cuneta_sin_puntoObligado.png" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Zorunlu nokta olmadan hendek</span><br />
+            </div>
+            </td>
+            <td style="vertical-align: top;"><img style="width: 295px; height: 85px;" alt="" src="Imagenes/cuneta_con_puntoObligado.png" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Zorunlu nokta ile hendek</span><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Resimde görüldüğü gibi, bu, hendek tepe noktalarının yeniden kodlanmasına ve şevi, tip kesitte dolgu şevi olarak tanımlanan şeve karşılık gelen küçük bir dolguya neden olur.<br />
+      <br />
+Zorunlu Nokta: Alçalan araziye sahip sığ yarmalarda, hendeğin son noktaları arazinin üzerinde kalabilir. Eğer zorunlu noktaya=100 değeri verirsek, o zaman hendeğin ilk noktası, dolgu kesitinin üst şeviyle kaydırılır, böylece hendeğin son noktası araziyle çakışır.<br /><br /><span class="Titulo_2" style="font-weight: bold;"><a name="cunetapieterraplen">Dolgu Topuk Hendeği<br /><br /></a></span></span></span></span></span><span style="font-weight: normal;"><img style="width: 295px; height: 136px; float: right;" alt="" src="Imagenes/cuneta_pie_terraplen.png" />Dolgu enkesitlerinde, hendek dolgu topuğundan itibaren eklenir (kod 601, 591 ile değiştirilir).<br />
+      <br />
+</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2" style="font-weight: bold;"><strong><br />
+</strong>
+      <br />
+
+      </span></span></span></span><span class="Titulo_2"><a name="cierre_subras">Tesviye Yüzeyinin Hendekle Kapatılması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Aşağıda, banket kenarından veya palyeden sarkan hendekler için farklı olasılıklar gösterilmektedir:<br />
+      <br />
+      </span></span></span>
+      <table style="text-align: left; margin-left: auto; margin-right: auto; width: 657px;" border="0" cellpadding="2" cellspacing="12">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: left;"><img style="width: 261px; height: 200px;" alt="" src="Imagenes/cuneta_cierre_subras_1.png" /><br />
+            <br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: left; width: 282px;"><img style="width: 251px; height: 229px;" alt="" src="Imagenes/cuneta_cierre_subras_2.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td class="Info" style="vertical-align: top; text-align: justify;">Varsayılan olarak, tesviye yüzeyi hendek tepe noktasının altından geçme eğiliminde olduğunda, hendeğin kontrol noktasına (<strong>Tesviye Yüzeyi</strong> = 0) ve dikey şevle (<strong>Şev</strong> = 0) kapatılır.<br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 282px;">Tesviye yüzeyinin hendeğin bir noktasına (0, 1, 2,...) bir şevle kapatılması tanımlandığında ve hendek öngörülen noktaya ulaşmadan araziyi kestiğinde, tesviye yüzeyi araziyle kesişim noktasına doğru ve tanımlanan şevle kapatılır.<br />
+            <br />
+Artık kırmızı kot-tesviye yüzeyi birleşiminden önce kalan hendek noktaları 90, 91,... olarak yeniden kodlanır.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 290px; height: 216px;" alt="" src="Imagenes/cuneta_cierre_subras_3.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 282px;"><img style="width: 315px; height: 182px;" alt="" src="Imagenes/cuneta_cierre_subras_4.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: justify;"><span class="Info">Tesviye yüzeyini, dış görüş palyesinin yarma başlangıcıyla birleştiği noktaya kadar da götürmek mümkündür.</span><br />
+            </td>
+            <td style="vertical-align: top; width: 282px;"><span class="Info">Negatif bir değer (örn. -1 veya -2), tesviye yüzeyinin palyeyi (kod 50) veya banketi (kod 11) bulmak için yükselmesini sağlar; kesişim noktası yine kod 100 olarak kalır. Kodlarda karışıklığı önlemek için, artık tesviye yüzeyi kesiminden sonra kalan platform noktaları (50, 11,..) yeniden kodlanır (50, 150'ye; 11, 111'e vb. geçer).</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span><span class="Titulo_2"><a name="revestimiento">Hendek Kaplaması</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span><img style="width: 161px; height: 92px; margin-left: 7px;" alt="" src="Imagenes/cuneta_revestida.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>BIM, hendeğin iç kaplamasını tanımlamaya olanak tanır. Kaplama kalınlığının değeri <strong>Kaplama</strong> alanında belirtilir. Yan duvarlar için farklı bir kaplama tanımlamak mümkündür. Kaplama değerleri kullanıldığında, program hacim raporlarında bunların metrajını çıkarır.<br />
+      <br /></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/revest_cuneta.png" alt="" style="width: 309px; height: 112px;" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Hendek palye kenarından başladığında, eğer kaplama yatay bir kesimle başlıyorsa, bu kesime palyenin aynı eğimi verilir. Eğer hendeğin dış yüzü araziyi keserse, kesit, kaplamanın araziyi kestiği yerde kesilir.<br />
+      <br />
+Birçok projede kaplama kalınlığı boyuna eğime bağlı olduğundan, program kaplama kalınlığını bu eğime göre koşullandırma seçeneği sunar. Bu, <strong>[%]</strong> düğmesi kullanılarak yapılır; bu düğme, iki kesme eğimine bağlı olarak üç farklı kaplama değeri beyan etmenin mümkün olduğu bir diyalog kutusu açar:<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 309px; height: 94px;" alt="" src="Imagenes/dialogo_revestimiento_cuneta.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Hendek kaplamasının başladığı vektörün bir noktası sabitlenebilir.<br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span><span class="Parrafo">Kaplama kalınlığına negatif bir değer verebiliriz. Negatif değerle toplam genişlik de korunur. (Parametrik ve benzeri vektörel hendekler için geçerlidir) Tesviye yüzeyinin değiştirilmiş hendeğe ulaşması için SubRasante=1 olarak ayarlanması tavsiye edilir. Negatif bir kaplama değeri kullanılırsa, yan duvarların kaplaması için kalınlık kutucuğu devre dışı bırakılır.<br />
+      <br />
+<strong>Hendek kaplamasını vektörel olarak tanımlamak</strong> mümkündür. Vektör, bir koddan (örn. 50) başlayarak vektör kazı yüzeyini (L68) kesene kadar uygulanır.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/cuneta_revest_vec.png" alt="" style="width: 320px; height: 115px;" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Alternatif bir referans kodu tanımlanabilir, örneğin hendek Dolgu'ya atlıyorsa ve farklı bir kod taşıyorsa.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 184px;" alt="" src="Imagenes/cun_guarda_revest_vec_codigoref.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+<br />
+      <a name="Bascular"><span class="Titulo_2">Eğimi Ayarla</span><br />
+      <br /></a></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><i><strong>Eğimi Ayarla (P-P0)</strong></i> seçeneği, bir <strong>palye-hendek</strong>'in tipik davranışını sabitlemeyi sağlar. Bunun için burada, çatı eğimi olabilecek bir <strong>P0</strong> dever değeri tanımlanır. Eğer platform, hendeğe doğru <strong>P0</strong> değerinden daha büyük bir <strong>P</strong> deveri ile akıyorsa, hendek <strong>P-P0</strong> değeri kadar eğilir. Eğer dever daha küçükse veya diğer tarafa akıyorsa, hendek hareket etmez.</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/cuneta_bascular.png" alt="" style="width: 550px; height: 159px;" /></span><span class="Parrafo"></span></div>
+
+      <span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo">
+<i>Kontrol/Hendek</i> = Seçme Malzeme / Seçme Malzeme veya Hendek Tabanı / Seçme Malzeme olan kesitler için, <i>Eğimi Ayarla</i> = -100.00 % olarak ayarlanabilir, böylece hendek, seçme malzemenin getirdiği aynı eğimle eğilir.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="rejilla">Izgara</a></span><br />
+
+      <br />
+Izgara seçeneği, hendeğin iki noktası arasına bir ızgara kapağı yerleştirmeyi etkinleştirir. Eğer hendek kaplamalı ise, ızgara kaplamanın omuzları arasına yerleştirilecektir.<br />
+
+      <br />
+
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/cuneta_rejilla.png" alt="" style="width: 226px; height: 91px;" /></span></span></span><a name="rejilla"><br />
+      </a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />Izgara bir gövde olarak oluşturulur. Geometrisi <a href="OL_parametros.html">PARAMETRELER</a> menüsünden yapılandırılabilir.<br /><br /></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><a name="subeTerraplen"><span class="Titulo_2">Dolgu Şevi Boyunca Yükselir</span><br />
+      <br /></a><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><i>Boyuna Hatta Göre</i> ve <i>Dolgu Topuğu</i> olarak tanımlanan hendekler için: bu seçenek etkinleştirilirse ve boyuna hattın kotu minimum hendek tabanının üzerindeyse, hendek, boyuna hatta uymak için minimum derinliği (hendeğin teorik geometrisini tanımlayan) koruyarak dolgu şevi boyunca yükselir. Bu durumda, zorunlu nokta değeri otomatik olarak hendeğin son noktasına taşınarak tam hendek oluşturulur.<br /><br /></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 550px; height: 174px;" alt="" src="Imagenes/cuneta_sube_por_terraplen.png" /></span><br />
+      </div>
+      <span class="Parrafo"><br /></span><span class="Parrafo"><span class="Titulo_2"><a name="material">Malzeme</a></span><br />
+
+
+      <br class="Parrafo" />
+      <span style="font-weight: normal;" class="Parrafo">
+Hendeği, dört farklı kaplama malzemesi arasından seçim yaparak kaplamak mümkündür.</span><br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 549px; height: 225px;" alt="" src="Imagenes/revestimiento_cuneta_material.png" /></span><br /><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>Kaplamalı hendek her zaman genel yüzey 176 ile ve ayrıca her bir malzeme için özel bir tiple (Malzeme 1 için 446, Malzeme 2 için 231, Malzeme 3 için 232 ve Malzeme 4 için 233) temsil edilecektir.<span class="Parrafo"><br /><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

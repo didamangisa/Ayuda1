@@ -1,0 +1,907 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>ISDIM</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@test.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ISDIM<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><a href="#conceptos_previos"><img style="border: 0px solid ; width: 81px; height: 78px;" alt="" src="Imagenes/icono_isdim.png" align="right" hspace="6" /></a><a href="#conceptos_previos">Ön Kavramlar</a></li>
+        <li><a href="#inicio">Başlangıç</a></li>
+        <li><a href="#menu_proyecto">Proje Menüsü</a></li>
+        <li><a href="#menu_configuracion">Yapılandırma Menüsü</a></li>
+        <ul>
+          <li><a href="#mediciones">Metrajlar</a></li>
+          <li><a href="#areas">Alanlar</a></li>
+          <li><a href="#elementos_tipo">Tip Elemanlar</a></li>
+          <li><a href="#menu_modificar">Değiştir Menüsü</a></li>
+        </ul>
+        <li><a href="#menu_compensacion">Dengeleme Menüsü</a></li>
+        <ul>
+          <li><a href="#comp_sin_cierre_iz_dcha">Kapanışsız Otomatik Dengeleme Sol - Sağ</a></li>
+          <li><a href="#comp_sin_cierre_dcha_izda">Kapanışsız Otomatik Dengeleme Sağ - Sol</a></li>
+          <li><a href="#comp_sin_cierre_dist_min">Kapanışsız Otomatik Dengeleme Minimum Mesafeler</a></li>
+          <li><a href="#comp_sin_cierre_trans">Kapanışsız Otomatik Dengeleme Enine Y - D</a></li>
+          <li><a href="#comp_sin_cierre_esp">Kapanışsız Otomatik Dengeleme Özel</a></li>
+          <li><a href="#comp_con_cierre">Kapanışlı Otomatik Dengeleme</a></li>
+          <li><a href="#resultados_e_informes">Sonuçlar ve Raporlar</a></li>
+        </ul>
+        <li><a href="#menu_compensacion_pks">Dengeleme Menüsü KM Modu</a></li>
+		<li><a href="#menu_ver">Görünüm Menüsü</a></li>
+        <ul>
+          <li>Alt Alanlar</li>
+        </ul>
+
+        <ul>
+          
+          <ul>
+            <li><a href="#totales_relaciones">Dengeleme İlişkileri Toplamları</a></li>
+          </ul>
+
+          
+          <ul>
+            <li><a href="#mediciones_sal">Metrajlar</a></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_Isdim.html#compensados">Dengelenmiş Toplam</a></span></span></span></span></li>
+            <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#sincompensar">Dengelenmemiş Toplam</a><br />
+              </span></span></span></span></li>
+
+          </ul>
+          <li>Alt Alanlar + Bölümler<br />
+          </li>
+
+          
+          <ul>
+            <li><a href="#particiones">Dengelenmiş toplam</a></li>
+          </ul>
+
+          
+          <ul>
+            <li><a href="#particiones_con_rellenos">Dengeleme ilişkileri<br />
+</a></li>
+          </ul>
+
+          
+          <li><a href="#perfil_longitudinal">Boykesit</a></li>
+          <li><a href="#rasante">Kırmızı Kot</a></li>
+          <li><a href="#curva_compensacion">Dengeleme Eğrisi</a></li>
+          <li><a href="#pks_gravedad">Ağırlık Merkezi KM'leri</a></li>
+          <li><a href="#leyenda">Lejant Oluştur</a><br />
+          </li>
+
+          
+        </ul>
+      </ul>
+      <span class="Titulo_2"><a name="conceptos_previos">Ön Kavramlar</a></span><a name="conceptos_previos"><br />
+      <br /></a></span>Bir projede Ana Güzergah, Bağlantı Yolları Güzergahı, Servis Yolu Güzergahı, Ariyet Güzergahı, Depo Güzergahı gibi çeşitli güzergahlarımız olacaktır.<br />
+Öte yandan, her güzergah, hesaplandıktan sonra Yarma, Dolgu vb. gibi Alanlardan oluşacaktır. Ayrıca her alan Kazı veya Dolgu olabilir.<br />
+      <br />
+Örnek: <br />
+      <br />
+</span></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 339px; text-align: center;">Ana Güzergah</td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Yarma (Kazı)</li>
+              <li>Zayıf Zemin Kazısı (Kazı)</li>
+              <li>Dolgu (Dolgu)</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Bağlantı Yolları<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Yarma (Kazı)</li>
+              <li>Zayıf Zemin Kazısı (Kazı)</li>
+              <li>Dolgu (Dolgu)</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Servis Yolları<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Yarma (Kazı)</li>
+              <li>Zayıf Zemin Kazısı (Kazı)</li>
+              <li>Dolgu (Dolgu)</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Ariyet<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Ariyet (Kazı)</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Depo<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Depo (Dolgu)</li>
+            </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Her alan, güzergahın KM'leri boyunca tanımlanmış <span style="font-weight: bold;">Alt Alanlara</span> sahip olacaktır.<br />
+      <br />
+Alanlar, malzeme dengeleme sürecini yönlendirecek olan <span style="font-weight: bold;">Dengeleme İlişkileri</span> adı verilen özelliklere sahip olacaktır. Bu Dengeleme İlişkileri, Lineer Proje modülünden elde edilen metrajlar tarafından sağlanan bilgilere dayanarak tanımlanır.<br />
+Alt alanlar, kaynak Alanlarının Dengeleme İlişkilerini miras alır, ancak bu ilişkiler bağımsız olarak değiştirilebilir.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 324px; height: 243px;" alt="" src="Imagenes/isdim_esquema_areas.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo">
+      <br />
+      <span class="Titulo_2"><a name="inicio">Başlangıç</a></span><a name="inicio"><br />
+      <br />
+ISDIM®, gerekli bilgiyi doğrudan Lineer Proje modülünden alır. Bunun için, proje hesaplaması sırasında oluşturulan pkcvXX.res dosyalarının içeriğine erişmesi gerekir.<br />
+      <br />
+Lineer Proje modülünün </a><a href="OL_proyecto.html">PROJE</a> menüsünde, proje hesaplaması yapılırken bu tür dosyaların oluşturulması için pkcvXX.res Oluştur seçeneğini işaretlemek ve hacimleri yansıtmak için bir güzergaha sahip olmak gerekir. Toprak dengelemesini analiz etmek istediğimiz farklı güzergahların en azından HES, YEN, YHES tuşlarının etkinleştirilmiş olması gerekir.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 582px; height: 389px;" alt="" src="Imagenes/isdim_generar_pkcv.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+ISDIM® modülü, ENKESİT (ALZADO) menüsünden, MENÜLER VE SEÇENEKLER bölümünden başlatılır.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 546px; height: 219px;" alt="" src="Imagenes/isdim_entrada_alzado.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+ISDIM® modülünün ana penceresi aşağıdaki gibidir:<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 639px; height: 387px;" alt="" src="Imagenes/isdim_proyecto_ventana.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Bu pencere dört bölüme veya menüye ayrılmıştır: PROJE, YAPILANDIRMA, DENGELEME ve GÖRÜNÜM.<br />
+      <br />
+YAPILANDIRMA bölümü, proje oluşturulduğunda adını DEĞİŞTİR olarak değiştirecektir, böylece bazı özelliklerin yapılandırılamayacağını dikkate alırız.<br />
+      <br />
+      <a name="menu_proyecto"><span class="Titulo_2">Proje Menüsü</span><br />
+      <br />
+PROJE menüsünde, pencerenin sol tarafında Lineer Proje modülünden alınan güzergah gruplarını içeren bir ağaç gösterilir. Her güzergah grubu bir veya daha fazla bireysel güzergahtan oluşacaktır. ISDIM® her güzergah grubunu tek bir varlık olarak ele alacaktır.<br />
+      <br />
+Pencerenin sağ tarafında, her bir güzergah grubuyla ilişkili pkcvXXX.res dosyalarında bulunan metrajlar, ISDIM® alanlarına atama ile birlikte gösterilir. Modüle ilk kez girildiğinde, metrajın alan tipine bağlı olarak, <span style="font-weight: bold;">Kazı</span> alan tipi için Yarma alanı ve <span style="font-weight: bold;">Dolgu</span> alan tipi için Dolgu alanı atanarak varsayılan bir atama yapılır.<br />
+      <br /></a><img style="width: 68px; height: 26px;" alt="" src="Imagenes/isdim_guardar_asociacion.png" align="right" hspace="6" />
+Bu atamayı değiştirebilir, ayrıca bu veya diğer projelerde daha sonra kullanmak üzere kaydedebiliriz. Bu metraj atama penceresinin sağ üst köşesinde, bu eylemleri gerçekleştirmek için üç butonumuz bulunmaktadır (Yeni atama, Atama yükle ve Atama kaydet).<br />
+
+      <br />
+
+Eğer ağaçta Güzergah Grupları düğümünü seçmişsek, metraj ataması tüm güzergah grupları için eşit olarak yapılacaktır. Belirli bir güzergah grubu düğümünü (örneğin Ana Güzergah) seçersek, metraj ataması sadece o güzergah grubu için yapılacaktır. Bu, metrajları ISDIM® alanlarına atarken bize büyük bir esneklik sağlar.<br />
+
+      <br />
+
+Metraj ataması tamamlandıktan sonra, ISDIM® projesini oluşturmaya geçebiliriz. Bunun için sağ alt köşede bulunan OLUŞTUR butonuna basmak yeterlidir. Oluşturma işlemi tamamlandıktan sonra, oluşturma sonucu grafik penceresinde gösterilecektir; burada ilgili güzergahlar boyunca, yarma alt alanlarını simgeleyen yeşil renkli dikdörtgenler ve dolgu alt alanlarını simgeleyen kırmızı renkli dikdörtgenler çizilir. Proje oluşturulurken herhangi bir güzergahı veya güzergah grubunu dikkate almak istemiyorsak, ağaçtaki düğümü devre dışı bırakmak yeterlidir. Ana güzergah grubu, önemi nedeniyle devre dışı bırakılamaz.<br />
+
+      <br />
+
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 579px; height: 427px;" alt="" src="Imagenes/isdim_generar_areas.png" /></span></span></span><a name="menu_proyecto"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Projenin oluşturulması için, program varsayılan olarak, daha sonraki toprak dengeleme sürecini yönlendirecek olan önceden belirlenmiş bir dengeleme ilişkileri yapılandırması kullanır. Bu ilişkiler </span></span></span><a href="#menu_configuracion">Yapılandırma</a> menüsü içinde düzenlenebilir. Bunu proje oluşturmadan önce yapmalıyız, çünkü bir kez oluşturulduktan sonra bu ilişkileri değiştiremeyiz.<br />
+      <br />
+Proje penceresinin alt kısmında, projeyi <span style="font-weight: bold;">Kaydetmemize/Yüklememize</span> ve <span style="font-weight: bold;">Sıfırlamamıza</span> (daha önce oluşturulmuş tüm yapıyı boşaltır) olanak tanıyan bir dizi kutucuk bulunur. Ayrıca<span style="font-weight: bold;">,
+</span>ISDIM® projesini, Dosya &gt; Çizimi farklı kaydet... açılır menüsünden ISTRAM®/ISPOL®'ün EDM formatına aktarabiliriz,
+böylece o modülde daha sonraki işlemler (pafta basımı, DXF, DGN formatına aktarma vb.) için kullanılabilir. <br />
+Kullanılan çizgi stilleri L705'ten L719'a kadar, etiketler ise R33'ten R42'ye kadardır. Bu elemanların tanımından yola çıkarak, kullanıcının ilgisini çeken katmanların tanımıyla kendi kütüphanesi oluşturulabilir.<br />
+
+      <br />
+
+Bu butonların üzerinde, ISDIM® projesinin oluşturulacağı pafta boyutunu seçmemize olanak tanıyan <span style="font-weight: bold;">Pafta boyutu</span> seçenekleri ve projenin alt alanlarını oluştururken dikkate alınacak minimum metre cinsinden değeri belirtmemize olanak tanıyan <span style="font-weight: bold;">Min.Mes.AltAlanlar</span> seçeneği bulunur. Yani, başka bir alt alandan o değerden daha az bir mesafede bulunan yeni bir alt alan oluşturulmayacak, bunun yerine aynı alt alan olduğu kabul edilerek hacmi ona eklenecektir.<br />
+<span style="font-weight: bold;">Ondalık Sayısı</span> kutucuğundan, toprak dengeleme listelerinde ve farklı alan ve alt alanların parametrelerinin yapılandırılmasında görünecek ondalık sayısını belirtebiliriz. Sınır olarak dört ondalık basamak belirlenmiştir.<br />
+Projenin yatay veya dikey olarak temsil edileceği <span style="font-weight: bold;">Yönlendirme</span> seçilebilir.<br />
+      <br />
+<span style="font-weight: bold;">Alt Alanlar Modu</span>. Bu seçenek devre dışı bırakıldığında, oluşturulan proje tüm km bilgilerini saklar. Etkinleştirildiğinde, bulunan metrajlar alt alanlarda gruplandırılır, böylece saklanan bilgi miktarı azalır, bu da işlemlerin daha hızlı gerçekleştirilmesini sağlar. Dengeleme süreci her durumda farklıdır.<br />
+      <br />
+Bilgisayarımızın klavyesindeki <span style="font-weight: bold;">F4</span> komutuyla, proje bloklarının görüntülenmesi sırasında bize yardımcı olabilecek bir haç şeklinde bir bilgi yankısı gösterilecektir. Komut satırında haç tarafından işaretlenen KM'yi takip edebiliriz.<br />
+      <br />
+      <span style="font-weight: bold;">ARALIKLARA BÖLME</span>: kullanıcı tarafından belirtilen belirli bir aralıkta kesimler oluşturur.<br />
+      <br />
+<span style="font-weight: bold;">Otomatik aralıklara bölme</span> ile belirli bir aralıkta kesimler yapabiliriz.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 630px; height: 190px;" alt="" src="Imagenes/isdim_tram.png" /><br />
+      </div>
+      <span class="Parrafo"><br />
+      <span class="Parrafo">
+      <br />
+      <a name="menu_configuracion"><span class="Titulo_2">Yapılandırma Menüsü</span><br />
+      <br />
+Bu menü, proje oluşturulduğunda adını DEĞİŞTİR olarak değiştirecektir, böylece proje oluşturulduktan sonra bazı özelliklerin yapılandırılamayacağını dikkate alırız.<br />
+      <br />
+      </a></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 594px; height: 327px;" alt="" src="Imagenes/isdim_generar_modificar.png" /><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Proje Oluşturulduktan sonra, Dengeleme İlişkilerindeki yüzdeleri değiştiremem.<br />
+      <br />
+Bu menüde üç bölümümüz var: <span style="font-weight: bold;">Metrajlar</span>, <span style="font-weight: bold;">Alanlar</span> ve <span style="font-weight: bold;">Tip Elemanlar</span>.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 432px; height: 402px;" alt="" src="Imagenes/isdim_configuracion.png" /><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <ul>
+        <li><a name="mediciones"><span style="font-weight: bold;">Metrajlar</span>:</a></li>
+      </ul>
+Metrajlar bölümünde, her bir metraj türüyle ilişkili dengeleme ilişkilerini ve bunların değiştirilmesini görüntüleyebiliriz.<br />
+
+      <br />
+
+ISDIM®, iki alt alan arasında malzeme hareketi olabilmesi için, bu alt alanların ortak bir malzeme özelliğine sahip olması gerektiğini, yani aynı dengeleme ilişkisinden mevcut hacme sahip olmaları gerektiğini varsayar.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 326px; height: 194px;" alt="" src="Imagenes/isdim_mediciones_ejemplo1.png" /><br />
+
+      </div>
+      <br />
+Yukarıdaki örnekte DT1 ve TT1 alt alanları, Tanımsız dengeleme ilişkisiyle 4000'lik bir hacmi dengeleyebilir.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 338px; height: 200px;" alt="" src="Imagenes/isdim_mediciones_ejemplo2.png" /><br />
+
+      </div>
+      <br />
+
+Bu diğer örnekte, iki alt alanın ortak dengeleme ilişkileri olmadığı için hiçbir malzeme dengeleyemezler.<br />
+
+      <br />
+
+Tüm alt alanların, başlangıçta ait oldukları alanlarda belirlenenlere göre ilişkilerinde hacim yüzdelerine sahip olacak olan dengeleme ilişkileri vardır, ancak daha sonra kullanıcı bu değerleri her bir alt alan için bağımsız olarak değiştirebilir.<br />
+
+      <br />
+
+Adını, her birinin yüzdesini, grafikte temsil edilecekleri rengi değiştirebilir ve yeni ilişkiler ekleyebiliriz. ISDIM® varsayılan olarak bir dizi ilişki sağlar, bunlar silinemez, ancak adları, yüzdeleri ve temsil renkleri değiştirilebilir. Kullanıcı tarafından oluşturulan ilişkiler ise silinebilir.<br />
+
+      <br />
+
+Yapılandırma penceresinin sol tarafında, projede bulunan farklı metrajları, Kazı veya Dolgu türlerine göre sınıflandırılmış bir ağaç gösterilir. Ağaçta seçtiğimiz düğüme bağlı olarak, dengeleme ilişkilerinde yapılan değişiklikler tek bir metrajı veya birkaçını etkileyecektir. Yani, ağaçta tek bir metraj seçmişsek (örneğin, YARMA_TOPRAK), yapılan değişiklikler sadece bu metrajı etkileyecektir. Buna karşılık, daha üst düzey bir düğüm seçmişsek (örneğin, Dolgu), yapılan değişiklikler o metraj türüne ait tüm metrajları etkileyecektir. Ve ağacın ana düğümü (Metrajlar) seçilirse, yapılan değişiklikler projenin tüm metrajlarını etkileyecektir.<br />
+
+      <br />
+
+      <img style="width: 159px; height: 151px;" alt="" src="Imagenes/isdim_nueva_relacion.png" align="right" hspace="6" />Yeni bir ilişki eklemek için <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_configuracion_icono_mas.png" /> butonuna tıklarız, böylece yeni ilişkinin verilerini girebileceğimiz yeni bir pencere açılır. Dengeleme ilişkisinin grafik penceresinde temsil edileceği rengi seçmek için, ISTRAM®/ISPOL®'ün renk paleti gösterilecektir.<br />
+
+      <br />
+
+Kullanıcı tarafından oluşturulan bir ilişkiyi silmek için, silmek istediğimiz ilişkinin sağında bulunan <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" /> butonuna tıklarız.<br />
+
+      <br />
+
+Yüzde değerlerini değiştirirken dikkatli olmalıyız, çünkü toplam toplamın %100 olması gerekir.<br />
+
+      <br />
+
+İlgili değişiklikler yapıldıktan sonra, projenin oluşturulması sırasında bu andan itibaren uygulanmasını onaylamak için Uygula butonuna basmalıyız. Geri Yükle butonuna basarak, orijinal değerler geri yüklenecektir. Yükle/Kaydet seçenekleriyle, bu yapılandırmayı içeren bir dosya, bu veya diğer projelerde daha sonra kullanılmak üzere kaydedilebilir.<br />
+
+      <ul>
+        <li><a name="areas"><span style="font-weight: bold;">Alanlar</span>:</a></li>
+      </ul>
+Bu bölümde ISDIM® projesinin alanları tanımlanır. Pencerenin sol tarafında proje güzergahlarını içeren bir ağaç gösterilir ve sağında her bir güzergahın oluştuğu alanlar gösterilir. Tek bir güzergahın düğümünü seçersek, o güzergahın alanları gösterilir ve ağacın başlangıç düğümünü (Güzergah Grupları) seçersek, projenin tüm güzergahlarının alanları gösterilir. Bu pencerede yeni alanlar ekleyebilir, mevcut olanları değiştirebilir ve projede kullanmak istemediklerimizi silebiliriz.<br />
+
+      <br />
+
+Varsayılan olarak, ISDIM® projenin tüm güzergahlarında Yarma, Dolgu ve Zayıf Zemin Kazısı alanlarını oluşturur. İlk ikisi sabittir ve silinemez. Ayrıca, Ariyet ve Depo olarak adlandırılan iki özel güzergah da oluşturulur ve bunlar aynı adda tek bir alana sahiptir. Bu özel güzergahların veya projenin oluştuğu diğer güzergahların kullanılmasını istemiyorsak, ağaçta devre dışı bırakılabilirler, böylece proje oluşturulurken dikkate alınmazlar. Ana güzergah, önemi nedeniyle devre dışı bırakılamaz.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 462px; height: 365px;" alt="" src="Imagenes/isdim_areas_cuadro_dialogo.png" /><br />
+      </div>
+
+      <br />
+      <img style="width: 148px; height: 169px;" alt="" src="Imagenes/isdim_nueva_area.png" align="right" hspace="6" />Yeni bir alan eklemek için <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_anadir_area.png" /> butonuna tıklarız, böylece yeni alanın verilerini girebileceğimiz yeni bir pencere açılır.<br />
+      <br />
+<span style="font-weight: bold;">Adını</span>, <span style="font-weight: bold;">Tipini</span> (Kazı mı yoksa Dolgu mu olduğunu) ve projenin alt alanlarını adlandırmak için kullanılacak olan alfabetik bir <span style="font-weight: bold;">Kodu</span> (bu koda sayısal bir sonek eklenir) belirteceğiz. <span style="font-weight: bold;">Ariyet/Depo'dur</span> kutucuğunu etkinleştirerek, alanın özel bir ariyet veya depo alanı gibi davranıp davranmayacağını belirteceğiz.<br />
+      <br />
+Butona <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" /> tıklayarak ilgili alanı sileceğiz.<br />
+      <br />
+Tüm alanlar tanımlandıktan sonra, yapılan değişikliklerin dikkate alınması için <span style="font-weight: bold;">Uygula</span> kutucuğuna tıklayacağız. <span style="font-weight: bold;">Geri Yükle</span> kutucuğuna tıklayarak, orijinal değerler geri yüklenecektir.<br />
+      <br />
+      <ul>
+        <li><a name="elementos_tipo"><span style="font-weight: bold;">Tip Elemanlar</span></a></li>
+      </ul>
+Bu bölümde, projenin ana güzergahına tip elemanlar (viyadükler, tüneller vb.) kaydetmek mümkündür. Tip elemanlar, bir tip eleman sınıfına ait olacaktır. Aşağıdaki sınıflar ve bunlara karşılık gelen tip elemanlar mevcuttur:<br />
+
+      <br />
+
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 339px; text-align: center;">Sanat Yapıları<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Borular</li>
+              <li>Menfezler</li>
+              
+              
+            </ul>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Tüneller ve Aç-Kapa Tüneller<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Tünel</li>
+              <li>Aç-Kapa Tünel</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Sanat Yapıları ve Viyadükler<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Viyadükler</li>
+              <li>Üstgeçitler</li>
+              <li>Altgeçitler</li>
+            </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+
+      <div style="text-align: center;"><img style="width: 571px; height: 342px;" alt="" src="Imagenes/isdim_elementos_tipo_dialogo.png" /><br />
+
+      </div>
+      <br />
+
+      <img style="width: 196px; height: 185px;" alt="" src="Imagenes/isdim_nuevo_elemento_tipo.png" align="right" hspace="6" />Bir tip eleman eklemek için <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_anadir_area.png" /> butonuna tıklarız, böylece yeni tip elemanın verilerini girebileceğimiz yeni bir pencere açılır.<br />
+
+      <br />
+
+İlgili açılır menüden tip elemanın <span style="font-weight: bold;">Sınıfını</span> seçeceğiz, istersek bir <span style="font-weight: bold;">Açıklama</span> gireceğiz (bu, aşağıdaki şekilde görülebileceği gibi, grafik penceresinde tip elemanın sembolüyle birlikte gösterilecektir) ve <span style="font-weight: bold;">Başlangıç KM</span> ile <span style="font-weight: bold;">Bitiş KM</span>'yi gireceğiz. <span style="font-weight: bold;">Geçilebilir</span> kutucuğunu etkinleştirerek, projeye o tip elemanın aşılabilir veya erişilebilir olduğunu belirtiriz, bu da toprak dengeleme hesaplaması yapılırken dikkate alınacaktır. Tüm bu veriler herhangi bir zamanda değiştirilebilir.<br />
+
+      <br />
+
+&nbsp;<img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" /> butonuna tıklayarak ilgili tip elemanı sileceğiz.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 618px; height: 181px;" alt="" src="Imagenes/isdim_dibujo_elementos.png" /><br />
+
+      </div>
+      <br />
+
+      <ul>
+        <li><a name="menu_modificar"><span style="font-weight: bold;">Değiştir Menüsü</span></a></li>
+      </ul>
+Proje oluşturulduktan sonra, birçok özelliğini değiştirebiliriz. Bunu <span style="font-weight: bold;">Değiştir</span> bölümünden yapabiliriz.<br />
+
+      <br />
+
+Bu menüde iki bölümümüz var: <span style="font-weight: bold;">Güzergahlar/Alanlar</span> ve <span style="font-weight: bold;">Alt Alanlar</span>.<br />
+
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="menu_modificar">Güzergahlar/Alanlar:</a></li>
+      </ul>
+Bu bölümde, projenin alt alanlarının <span style="font-weight: bold;">dengeleme ilişkilerini</span> ve <span style="font-weight: bold;">kazılabilirlik özelliklerini</span> bireysel düzeyde, ayrıca belirli bir güzergah veya alanın tamamı için görebilir ve düzenleyebiliriz. Kazılabilirlik özellikleri (kabarma katsayısı), başlangıçta Lineer Proje modülünün metrajlarından elde edilir.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 403px; height: 340px;" alt="" src="Imagenes/isdim_areas_subareas.png" /><br />
+
+      </div>
+      <br />
+
+Ağaçta seçtiğimiz düğüme bağlı olarak, dengeleme ilişkilerinde ve kazılabilirlik özelliklerinde yapılan değişiklikler tek bir alt alanı veya birkaçını etkileyecektir. Yani, ağaçta tek bir alt alan seçmişsek (örneğin, DT1), yapılan değişiklikler sadece bu alt alanı etkileyecektir. Buna karşılık, daha üst düzey bir düğüm seçmişsek (örneğin, Yarma), yapılan değişiklikler o düğüme bağlı tüm alt alanları (bu durumda, ana güzergahın tüm yarma alt alanları) etkileyecektir. Ve ağacın ana düğümü (Güzergah Grupları) seçilirse, yapılan değişiklikler projenin tüm alt alanlarını etkileyecektir.<br />
+
+      <br />
+
+Yüzde değerlerini değiştirirken dikkatli olmalıyız, çünkü toplam toplamın %100 olması gerekir.<br />
+
+      <br />
+
+İlgili değişiklikler yapıldıktan sonra, yapılan değişiklikleri onaylamak için <span style="font-weight: bold;">Uygula</span> butonuna basmalıyız.<br />
+
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="menu_modificar">Alt Alanlar</a></li>
+      </ul>
+Bu bölümde, projenin alt alanlarının verilerini, ayrıca <span style="font-weight: bold;">dengeleme ilişkilerini</span> ve <span style="font-weight: bold;">kazılabilirlik özelliklerini</span> görebilir ve düzenleyebiliriz. Önceki bölümden farklı olarak, tam bir güzergah veya alan seçmeye izin verilmez, sadece bireysel alt alanlar seçilebilir.<br />
+
+      <br />
+
+Bu pencereye, grafik penceresinde istenen alt alanın üzerine farenin sağ tuşuyla tıklayarak da erişilebilir.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 673px; height: 340px;" alt="" src="Imagenes/isdim_subarea.png" /><br />
+
+      </div>
+      <br />
+
+Alt alanın tüm verileri düzenlenemez. Alt alanın <span style="font-weight: bold;">Hacmini</span>, <span style="font-weight: bold;">KM</span> değerlerini ve hatta o alt alana ulaşmak için kat edilmesi gereken ek bir mesafe olan bir <span style="font-weight: bold;">Kullanıcı Mesafesi</span> bile verebiliriz.<br />
+
+      <br />
+
+İlgili değişiklikler yapıldıktan sonra, yapılan değişiklikleri onaylamak için <span style="font-weight: bold;">Uygula</span> kutucuğuna basmalıyız. <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" /> kutucuğuna tıklayarak seçilen alt alanın içeriğini sileriz. Bu işlem <img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_toolBarEstandar_deshacer.png" /> komutuyla geri alınabilir.<br />
+      <br />
+Dengeleme ilişkilerini <a href="OL_Isdim.html#menu_compensacion">Dengeleme</a> sekmesinden Yürüttüğümüz anda, malzemelerin farklı dengelemeleri gerçekleştirilecektir. Bu noktada belirli bir alt alana konumlanabilir ve ekranda farenin sağ tuşuyla tıklayarak o alt alanı <span style="font-weight: bold;">dengelemeden çıkarabiliriz</span> veya <img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_descompensar.png" /> simgesine tıklayarak da yapabiliriz.<br />
+
+      <br />
+Bir alt alanı dengeden çıkarırken, dengelemede yer alan tüm bölümleri içeren bir diyalog kutusu gösterilir ve silmek istediklerimizi seçebiliriz.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 519px; height: 189px;" alt="" src="Imagenes/isdim_descomp_subarea_part.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <br />
+<span style="font-weight: bold;">Ariyet/Depo</span> alanlarında, ihtiyacımız olan ariyet veya depo alt alanlarını manuel olarak ekleyebiliriz. Bunun için, ağaçta ilgili alanı seçeceğiz ve ALT ALAN VERİLERİ penceresindeki <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_anadir_area.png" /> butonuna tıklayarak, söz konusu ariyet/depo verilerini (hacim, güzergaha giriş kilometresi, kullanıcı mesafesi) girebileceğimiz yeni bir pencere gösterilecektir. Alt alan oluşturulduktan sonra, dengeleme ilişkilerini projenin ihtiyaçlarına göre düzenleyebiliriz.<br />
+      <br />
+	  
+      <span class="Parrafo"><br />
+
+      <a name="menu_compensacion"><span class="Titulo_2">Dengeleme Menüsü</span><br />
+      <br />
+Proje oluşturulduktan sonra, toprak dengeleme hesaplamasını yapmaya başlayabiliriz. Dengeleme menüsü, projeyi oluşturduğumuz moda göre (Alt Alanlar Modu seçeneği etkin veya değil) farklıdır. Alt Alanlar Modu kullanılmadığı durum için, </a><a href="#menu_compensacion_pks">Dengeleme Menüsü KM Modu</a> noktasına bakınız.<br />
+	<br />
+<span style="font-weight: bold;">Dengeleme</span> menüsünde, öncelikle gerçekleştirmek istediğimiz dengeleme türünü seçeceğiz ve <span style="font-weight: bold;">BAŞLAT</span> kutucuğuna tıklayacağız. Dengeleme işlemi tamamlandıktan sonra, dengelenmiş malzeme ve dengelenmeyi bekleyen malzeme ile bir özet oluşturulacaktır; bu özete <span style="font-weight: bold;">Sonuçlar</span> seçeneğiyle ulaşılabilir. Herhangi bir dengeleme türü yapıldıktan sonra, dengeleme eğrisini görselleştirmek ilginçtir. <span style="font-weight: bold;">Dengelemeyi Kaldır</span> seçeneğiyle, yapılan tüm dengelemeler silinecektir, böylece sıfırdan yeni bir dengeleme sürecine başlayabiliriz, aksi takdirde en son yapılan dengelemeden devam edilecektir.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 421px; height: 297px;" alt="" src="Imagenes/isdim_compensacion_dialogo.png" /><br />
+
+      </div>
+      <br />
+<span style="font-weight: bold;">+Seçenekler</span> kutucuğundan maksimum ve minimum Taşıma değerlerini tanımlayabiliriz:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 346px; height: 429px;" alt="" src="Imagenes/isdim_acarreos.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Bu İlişkiler ve Taşımalar tablosu aracılığıyla, her bir dengeleme ilişkisi için minimum ve maksimum malzeme taşıma mesafelerini yapılandırabiliriz. Bu şekilde, belirli bir ilişkiye sahip iki alt alan, onları dengelemek için kat edilmesi gereken mesafe, yapılandırılmış minimum mesafeden daha az ise veya bu mesafe yapılandırılmış maksimum mesafeden daha büyük ise birbirleriyle dengeleme yapamazlar. Minimum taşıma mesafesinin dikkate alınması için, <span style="font-weight: bold;">Minimumları Dikkate Al</span> bayrağı etkinleştirilmelidir, aksi takdirde sadece maksimum taşıma değeri dikkate alınacaktır. Bu pencerede ayrıca her bir dengeleme ilişkisinin temsil rengi de yapılandırılabilir. <br />
+<span style="font-weight: bold;">Ekseni Ayarla</span> butonuna tıklayarak, Maks.Taşıma sütunu projenin bitiş kilometresi ile otomatik olarak doldurulacaktır.<br />
+      <br />
+<span style="font-weight: bold;">[ ] Tüm ilişkiler Ariyet/Depo</span> seçeneğini etkinleştirerek, her türlü malzemenin ariyete veya depoya gitmesini sağlarız. Etkinleştirilmediği takdirde, sadece ariyette/depoda bulunan aynı ilişkideki malzeme ariyete/depoya gidecektir.<br />
+      <br />
+<span style="font-weight: bold;">[ ] Tüm Güzergahlarda Enine Dengeleme</span> seçeneğini etkinleştirmek, enine dengelemede, farklı güzergahlarda bulunan alt alanlar arasında, birinin ağırlık merkezinin diğerinin sınırları içinde olması koşulunu sağladıkları sürece toprak hareketleri yapılmasına olanak tanır. Bu seçenek etkinleştirilmezse, sadece aynı güzergahın alt alanları arasında toprak hareketleri olacaktır.<br />
+      <br />
+Dengeleme yapılırken, hesaplamada belirli proje elemanlarının (güzergahlar, alanlar veya alt alanlar) dikkate alınmasını istemiyorsak, alanlar/alt alanlar ağacında ilgili düğümleri etkinleştirebilir/devre dışı bırakabiliriz. Ana güzergah tamamen devre dışı bırakılamaz, ancak alanları/alt alanları devre dışı bırakılabilir.<br />
+      <br />
+Manuel komutu <img style="width: 80px; height: 30px;" alt="" src="Imagenes/icono_manual.png" /> ile bir kazı alt alanından bir dolgu alt alanına manuel dengelemeler yapmamızı sağlar. Bu tür bir dengelemede dengelenmek istenen hacmi belirtmeye izin verilir. Başlangıçta bu değer, kaynak alt alanın dengelenmeyi bekleyen hacmiyle aynıdır.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 633px; height: 586px;" alt="" src="Imagenes/isdim_comp_manual.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+<br />
+
+ISDIM®, aşağıda açıklamaya geçtiğimiz farklı dengeleme algoritmalarına sahiptir.<br />
+
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="comp_sin_cierre_iz_dcha">Kapanışsız Otomatik Dengeleme Sol-Sağ</a></li>
+      </ul>
+Bu dengeleme türünde, dolgu blokları (alt alanlar) soldan sağa artan km sırasıyla taranır ve her biri kendisine en yakın yarma bloğu ile doldurulur. Bloklar arasındaki mesafeyi ölçmek için ağırlık merkezi km'leri dikkate alınır. Malzeme artarsa veya eksik kalırsa, uygulama yeni bloklar oluşturmaz.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_sin_cierre_dcha_izda"><span style="font-weight: bold;">Kapanışsız Otomatik Dengeleme Sağ-Sol</span></a></li>
+      </ul>
+Bu dengeleme, bir öncekiyle aynıdır, ancak bu süreçte dolgu blokları sağdan sola azalan km sırasıyla taranır ve her biri kendisine en yakın yarma bloğu ile doldurulur.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_sin_cierre_dist_min"><span style="font-weight: bold;">Kapanışsız Otomatik Dengeleme Minimum Mesafeler</span></a></li>
+      </ul>
+Bu dengelemede, yarma-dolgu alt alan çiftlerinin aralarındaki mesafeye göre önceden bir sıralaması yapılır ve en küçük mesafeden en büyüğe doğru dengeleme yapılır.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_sin_cierre_trans"><span style="font-weight: bold;">Kapanışsız Otomatik Dengeleme Enine Y-D</span></a></li>
+      </ul>
+Yarma ve dolgu alanlarının dengelemesi, aynı güzergahın alt alanları için ve birinin ağırlık merkezi diğerinin sınırları içinde olacak şekilde gerçekleştirilir.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_sin_cierre_esp"><span style="font-weight: bold;">Kapanışsız Otomatik Dengeleme Özel</span></a></li>
+      </ul>
+Bu dengelemede, ilk olarak sadece ana güzergahın mı yoksa tüm projenin mi yarmalarını kullanmak istediğimizi sorar. Ardından, dengeleme, toprak denge eğrisini (dengeleme eğrisi) takip ederek şu şekilde gerçekleştirilir: bu eğrinin pozitif olduğu kesimlerde, dengeleme soldan sağa yapılır ve eğrinin negatif olduğu durumlarda, dengeleme sağdan sola yapılır.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_con_cierre"><span style="font-weight: bold;">Kapanışlı Otomatik Dengeleme</span></a></li>
+      </ul>
+Bu tür bir dengeleme yapmak için, öncelikle olası ariyet ve depo yerlerinin kesimlerini tanımlamamız gerekir. Bunun için, A/D Konumu butonuna tıklarız, böylece yeni bir pencereye erişiriz.<br />
+Tanımladığımız olası ariyet ve depo yerlerinin kesimlerini kaydedebilir/yükleyebiliriz.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 384px; height: 241px;" alt="" src="Imagenes/isdim_localizacion.png" /><br />
+
+      </div>
+      <br />
+
+Bu pencerede, açılır menüden gösterilenler arasından <span style="font-weight: bold;">Ariyet Güzergahını</span> seçeriz, böylece ISDIM® gerekirse bir ariyet alt alanı ekleyebileceği güzergahı bilir. Ardından, <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_anadir_area.png" /> butonuna tıklayarak bir ariyet oluşturmak için geçerli olası kesimleri belirtmeye geçeriz. Bu butona her tıkladığımızda, listeye yeni bir kesim eklenecektir. Artık sadece <span style="font-weight: bold;">Başlangıç KM</span> ve <span style="font-weight: bold;">Bitiş KM</span> alanlarını kesimin istenen değerleriyle doldurmamız gerekiyor. Bu listede görünen kesimlerin dışında hiçbir ariyet yerleştirmeye çalışılmayacaktır. <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" /> butonuna tıklarsak ilgili kesim silinecektir.<br />
+
+      <br />
+
+Aynı işlemi depo durumunda da yapacağız.<br />
+
+      <br />
+
+<span style="font-weight: bold;">Ariyet ve Depo Denemesi</span> alanında, malzeme hareketini en aza indiren en uygun yeri bulana kadar deneme yapmak için geçerli kesimlerde bir ariyet/deponun ne kadar aralıkla yerleştirilebileceğini metre cinsinden bir değerle belirteceğiz. Program, projenin büyüklüğüne bağlı olarak varsayılan bir değer sunar.<br />
+
+      <br />
+
+Kapanışsız otomatik dengeleme durumunda olduğu gibi, kapanışlı dengelemede de iki olasılık vardır: soldan sağa ve sağdan sola.<br />
+
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="comp_con_cierre">Kapanışlı Otomatik Dengeleme Sol-Sağ</a></li>
+      </ul>
+Bu dengeleme türünde, dolgu blokları soldan sağa artan km sırasıyla taranır ve her biri kendisine en yakın yarma bloğu ile doldurulur. Toprak hacimleri diyagramının dengelenmesi için en uygun durumda bir ariyet ve/veya bir depo eklenecektir.<br />
+
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="comp_con_cierre">Kapanışlı Otomatik Dengeleme Sağ-Sol</a></li>
+      </ul>
+Bu dengeleme türünde, dolgu blokları sağdan sola azalan km sırasıyla taranır ve her biri kendisine en yakın yarma bloğu ile doldurulur. Toprak hacimleri diyagramının dengelenmesi için en uygun durumda bir ariyet ve/veya bir depo eklenecektir.<br />
+
+      <br />
+
+      <a name="resultados_e_informes"><span class="Titulo_2">Sonuçlar ve Raporlar</span><br />
+      <br />
+Dengeleme işlemi tamamlandıktan sonra, dengelenmiş malzeme ve dengelenmeyi bekleyen malzeme ile bir özet oluşturulacaktır; bu özete <span style="font-weight: bold;">Sonuçlar</span> seçeneğiyle ulaşılabilir.<br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 271px; height: 381px;" alt="" src="Imagenes/isdim_resultados.png" /><br />
+
+      </div>
+      <br />
+
+Ayrıca, ISDIM® bize dengeleme sonuçlarını detaylı bir şekilde gösteren bir dizi rapor sunar. Bunun için, görüntülemek istediğimiz rapor türünü seçmek yeterlidir<span style="font-weight: bold;">, </span>böylece o raporla birlikte not defteri açılır ve istenirse daha sonra yazdırılabilir.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;"><a name="resultados_e_informes">Proje Verileri Raporu</a></span>:</li>
+      </ul>
+      </span>Bu raporda proje, mesafe etütleri vb. hakkında veriler gösterilir. Bu raporun oluşturulması için bir başlangıç ek mesafe değeri ve metre cinsinden bir aralık değeri girmemiz istenir. Ek mesafe, başlangıç ek mesafe değeriyle belirtilen sınırı aşan toprak hareketine verilen bir cezadır ve başlangıç değerinden itibaren aşılan her aralık için artacaktır. /isdim/informes klasöründe bir datosProyecto.txt dosyası oluşturur.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 642px; height: 583px;" alt="" src="Imagenes/isdim_listado_informe.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Dengeleme Raporu:</a></li>
+      </ul>
+      </span>Bu raporda, farklı alt alanlar arasındaki mevcut farklı dengelemeler gösterilir. /isdim/informes klasöründe bir compensaciones.txt dosyası oluşturur.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 502px; height: 382px;" alt="" src="Imagenes/isdim_compensaciones_listado.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Proje Alt Alanları Raporu</a></li>
+      </ul>
+      </span>Bu raporda, projenin farklı alt alanları hakkında bilgi gösterilir. /isdim/informes klasöründe bir subareas.txt dosyası oluşturur.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 431px; height: 489px;" alt="" src="Imagenes/isdim_subareas_listado.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Alt Alanlar - İlişkiler Raporu</a></li>
+      </ul>
+      </span>Bu raporda, her bir dengeleme ilişkisine karşılık gelen malzeme alt alanlara göre ayrıştırılır. /isdim/informes klasöründe bir subareas_relaciones.txt dosyası oluşturur.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 438px; height: 446px;" alt="" src="Imagenes/isdim_subareas_relaciones_list.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Ortalama Mesafe Raporu</a></li>
+      </ul>
+      </span>Bu raporda, her bir kaynak alt alanından hedefine olan ortalama taşıma mesafesi belirtilir. /isdim/informes klasöründe bir distanciaMedia.txt dosyası oluşturur.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 587px; height: 236px;" alt="" src="Imagenes/isdim_distancia_media_list.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Depoya Ortalama Mesafe Raporu</a></li>
+      </ul>
+      </span>Bu raporda, depolara olan ortalama taşıma mesafesi belirtilir. /isdim/informes klasöründe bir distanciaMediaVr.txt dosyası oluşturur.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 591px; height: 152px;" alt="" src="Imagenes/isdim_dist_media_vert_listado.png" /><br />
+
+      </div>
+      <br />
+</span></span><span class="Parrafo"><span style="font-weight: bold;"><ul style="font-weight: bold; list-style-type: circle;"><li><a name="resultados_e_informes">Dengelenmemiş Raporu</a></li></ul></span>
+Bu raporda, dengelenmemiş kalan alt alanların hacmini içeren liste oluşturulur.<br />
+      </span><span style="font-weight: bold;"><br />
+
+      <div style="text-align: center;"><img style="width: 600px; height: 373px;" alt="" src="Imagenes/isdim_sin_compensar_listado.png" /></div></span><br />
+      <span class="Parrafo"><span style="font-weight: bold;"><br />
+<br />
+
+      <a name="menu_compensacion_pks"><span class="Titulo_2">Dengeleme Menüsü KM Modu</span><br />
+      <br /></a></span>Bu moddaki dengeleme süreci, Alt Alanlar Modu'ndan tamamen farklıdır. Burada, km'ler sırayla taranır ve her bir alanın hacmi km'den km'ye dengelenir.
+	  <br />
+	  <br />
+      <div style="text-align: center;"><img style="width: 421px; height: 320px;" alt="" src="Imagenes/isdim_compensacion_pks.png" /><br />
+
+      </div>
+	  
+	  <br />
+Öncelikle, ilgili açılır menüler aracılığıyla dengelemek istediğimiz alanları seçeceğiz. Bir kazı alanı, bir dolgu alanı ve isteğe bağlı olarak özel bir alan (ariyet ve depolar) seçebiliriz. Ayrıca, dengeleme yapılırken dikkate alınmasını istediğimiz dengeleme ilişkisini de belirteceğiz. Bu şekilde, sadece aynı dengeleme ilişkisini paylaşan alanlar arasında hacim dengelenecektir. <span style="font-weight: bold;">BAŞLAT</span> butonuna tıklayarak dengeleme süreci başlayacaktır.	  
+	  <br />
+	  <br />
+	  <img style="width: 68px; height: 100px;" alt="" src="Imagenes/isdim_botones_resultados.png" align="right" hspace="6" />
+Dengeleme işlemi tamamlandıktan sonra, dengelenmiş ve dengelenmeyi bekleyen malzeme ile bir özet oluşturulacaktır; bu özete <span style="font-weight: bold;"><a href="#resultados_e_informes">Sonuçlar</a></span> seçeneğiyle ulaşılabilir. Ayrıca, <span style="font-weight: bold;">KM Raporu</span> butonuna tıklayarak erişebileceğimiz detaylı bir metin formatında bir rapor da oluşturulur. <span style="font-weight: bold;">Grafik</span> seçeneğiyle, dengeleme grafiğinin gösterimini etkinleştirebilir/devre dışı bırakabiliriz. Bu seçenekler sadece dengeleme çalıştırıldıktan sonra kullanılabilir.
+	  <br />
+	  <br />
+	  <div style="text-align: center;"><img style="width: 700px; height: 181px;" alt="" src="Imagenes/isdim_informe_pks.png" /></div><br />	  
+	  <br />
+	  <div style="text-align: center;"><img style="width: 700px; height: 531px;" alt="" src="Imagenes/isdim_grafico_pks.png" /></div><br />	  
+	  <br />Dengeleme menüsünün GRAFİK bölümünde, grafiğin farklı eğrilerinin gösterimini etkinleştirebilir/devre dışı bırakabilir, ayrıca dikey ölçeğin aralığını belirleyebilir veya otomatik olarak hesaplanmasını sağlayabiliriz. <br />
+	  <br />
+<span style="font-weight: bold;">Dengelemeyi Kaldır</span> seçeneğiyle, yapılan tüm dengelemeler silinecektir.	  
+	  <br />
+	  <br />
+      <a name="menu_ver"><span class="Titulo_2">Görünüm Menüsü</span><br />
+      <br /></a></span>GÖRÜNÜM sekmesini seçerek, farklı elemanların ve özelliklerin gösterimini etkinleştirebileceğimiz/devre dışı bırakabileceğimiz bir menüye erişiriz.<span style="font-weight: bold;"><a name="menu_ver"><br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 587px; height: 292px;" alt="" src="Imagenes/isdim_ver_dialogo.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="totales_relaciones">Dengeleme İlişkileri Toplamları</a></li>
+      </ul>
+      </span>Bu seçenek etkinleştirildiğinde, her bir alt alanın sahip olduğu farklı dengeleme ilişkileri ilgili renkleriyle birlikte gösterilir.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 407px; height: 268px;" alt="" src="Imagenes/isdim_totales_relaciones.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="mediciones_sal">Metrajlar</a></li>
+      </ul>
+      </span>Bu seçenek etkinleştirildiğinde, her bir alt alanın farklı metrajları gösterilir.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 270px; height: 394px;" alt="" src="Imagenes/isdim_dibujo_mediciones_sal.png" /><br />
+
+      </div>
+      <br />
+      </span>
+      <ul style="font-weight: bold;">
+<li><a name="compensados">Dengelenmiş</a></li>
+      </ul>
+
+Bu seçenek etkinleştirildiğinde, dolgu alt alanlarında dengelenen hacim soluk pembe bir dolguyla ve yarma alt alanlarında dengelenen hacim soluk yeşil renkle gösterilir. Herhangi bir alt alan parçasının dolgusuz görünmesi, tüm malzemenin dengelenemediğini gösterir.<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 440px; height: 291px;" alt="" src="Imagenes/isdim_dibujo_compensados.png" /></div>
+      <br />
+      <ul style="font-weight: bold;">
+<li><a name="sincompensar">Dengelenmemiş</a></li>
+      </ul>
+
+
+Bu seçenek etkinleştirildiğinde, dengelenmemiş kalan alt alanların hacmi gösterilir.<br />
+
+
+
+      <br />
+
+
+
+      
+      
+      <div style="text-align: center;"><img style="width: 600px; height: 300px;" alt="" src="Imagenes/isdim_dibujo_sincompensar.png" /></div>
+
+      <br />
+      <span class="Parrafo">
+
+      <ul style="font-weight: bold;">
+        <li><a name="particiones">Bölümler</a></li>
+      </ul>
+Bu seçenek etkinleştirildiğinde, yarma alt alanları ile dengeledikleri dolgu alt alanları arasındaki birleşim gösterilir. Ayrıca, bir alt alan birkaç alanla dengeleniyorsa, o alt alanda bu alt alanlarla dengelenen hacim bölümleri işaretlenir.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 462px; height: 288px;" alt="" src="Imagenes/isdim_dibujo_particion.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="particiones_con_rellenos">Dolgulu Bölümler</a></li>
+      </ul>
+Bu seçenek etkinleştirildiğinde, dengelenmiş bölümler, ait oldukları dengeleme ilişkisinin rengiyle doldurularak gösterilir. Bir bölümün birkaç farklı ilişkisi olması durumunda, bölüm gri renkte boyanır. Bu seçenek etkinleştirilirse, otomatik olarak <span style="font-weight: bold;">Bölümler</span> seçeneği de etkinleştirilir. Aynı şekilde, <span style="font-weight: bold;">Bölümler</span> seçeneği devre dışı bırakılırsa, <span style="font-weight: bold;">Dolgulu Bölümler</span> seçeneği de otomatik olarak devre dışı bırakılır.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 445px; height: 279px;" alt="" src="Imagenes/isdim_dibujo_particiones_rellenas.png" /><br />
+
+      </div>
+      <br /><br />
+<ul style="font-weight: bold;">
+        <li><a name="perfil_longitudinal">Boykesit</a></li>
+      </ul>
+Bu seçenek etkinleştirildiğinde, projenin boykesitini temsil eden grafik, açık kahverengi noktalı bir çizgiyle gösterilir. Profil verileri, Lineer Proje modülünden otomatik olarak alınır.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 458px; height: 314px;" alt="" src="Imagenes/isdim_perfil_long.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="rasante">Kırmızı Kot</a></li>
+      </ul>
+Bu seçenek etkinleştirildiğinde, projenin kırmızı kotunu temsil eden grafik, açık mavi noktalı bir çizgiyle gösterilir. Kırmızı kot verileri, Lineer Proje modülünden otomatik olarak alınır.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 434px; height: 292px;" alt="" src="Imagenes/isdim_dibujo_ras.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="curva_compensacion">Dengeleme Eğrisi</a></li>
+      </ul>
+Bu seçenek etkinleştirildiğinde, toprak hacimleri diyagramının dengeleme eğrisini temsil eden grafik, macenta renkli noktalı bir çizgiyle gösterilir.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 468px; height: 300px;" alt="" src="Imagenes/isdim_dibujo_curva_comp.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="pks_gravedad">Ağırlık Merkezi KM'leri</a></li>
+      </ul>
+Bu seçenek etkinleştirildiğinde, her bir alt alanda ağırlık merkezi kilometresi gösterilir.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 429px; height: 274px;" alt="" src="Imagenes/isdim_dibujo_pks_grav.png" /><br />
+
+      </div>
+      </span>
+      <ul style="font-weight: bold;">
+        <li>Güzergahları /Alanları Ölçekle</li>
+      </ul>
+Bu seçenekle, projenin farklı alanlarının görüntüleme ölçek faktörünü değiştirebiliriz, böylece çok küçük oldukları için ekranda neredeyse hiç görünmeyen alt alanları daha ayrıntılı görebiliriz. 1.0 ölçek değeri, ölçek faktörü uygulanmadığını gösterir. <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 300px; height: 225px;" alt="" src="Imagenes/isdim_escala.png" /><br />
+      </div>
+      <span class="Parrafo"><br />
+</span>
+      <ul style="font-weight: bold;">
+        <li><a name="leyenda">Lejant Oluştur</a></li>
+<a name="leyenda">      </a></ul>
+<a name="leyenda">Oluştur komutuyla, projenin farklı dengeleme ilişkileri için grafik penceresinde bir lejant oluşturabiliriz.<br />
+      <br />
+      </a><div style="text-align: center;"><a name="leyenda"><img style="width: 246px; height: 92px;" alt="" src="Imagenes/isdim_leyenda.png" /><br />
+      </a></div>
+<a name="leyenda">      <span class="Parrafo"><span class="Parrafo">
+
+      <ul style="font-weight: bold;">
+        <li>Yakınlaş</li>
+      </ul>
+      <img style="width: 111px; height: 78px;" alt="" src="Imagenes/isdim_zoom.png" align="right" hspace="6" />ISTRAM®/ISPOL® modülünün ana penceresinin sağ yan çubuğunda görünen seçeneklerle, projenin herhangi bir bölgesine <span style="font-weight: bold;">Yakınlaşma</span> yapabiliriz, böylece daha ayrıntılı görebiliriz, fareyle istenen bölgeyi seçerek. <span style="font-weight: bold;">Tümü</span> seçeneğini seçerek, projenin tüm uzantısına bir yakınlaştırma yapılır. <span style="font-weight: bold;">Önceki</span> seçeneği, kullanılan önceki yakınlaştırmayı gösterir.<br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+
+
+      </span></span></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>
